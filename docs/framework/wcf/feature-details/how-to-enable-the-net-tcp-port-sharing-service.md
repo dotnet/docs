@@ -38,7 +38,6 @@ manager: "erikre"
 5.  To return to the list of services, click the **OK**, and exit the MMC Console.  
   
 ## Example  
-<!-- TODO: review snippet reference  [!CODE [Microsoft.Win32.RegistryKey#4](Microsoft.Win32.RegistryKey#4)]  -->  
   
 ## See Also  
  [Net.TCP Port Sharing](../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)   

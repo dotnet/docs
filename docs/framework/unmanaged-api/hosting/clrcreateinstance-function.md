@@ -9,12 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CLRCreateInstance"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "mscoreei.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CLRCreateInstance"
 dev_langs: 

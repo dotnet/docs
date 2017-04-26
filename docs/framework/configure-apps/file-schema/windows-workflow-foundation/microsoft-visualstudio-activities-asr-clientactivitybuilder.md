@@ -7,11 +7,12 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder"
-apilocation: 
+api_location: 
   - "Microsoft.VisualStudio.Activities.dll"
-apitype: "Assembly"
+api_type: 
+  - "Assembly"
 ms.assetid: e7287d3f-59ee-448f-b7fe-b640508501a5
 caps.latest.revision: 3
 author: "Erikre"

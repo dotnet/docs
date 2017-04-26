@@ -32,7 +32,7 @@ namespace ServiceModel.Samples
             //This can now be used to serialize/deserialize Person but not PurchaseOrder.
             //</snippet2>
         }
-        //</snippet3>
+        //<snippet3>
         [DataContract]
         public class LibraryPatron
         {
@@ -42,19 +42,19 @@ namespace ServiceModel.Samples
         [DataContract]
         public class LibraryItem
         {
-            //code not shown…
+            //code not shownï¿½
         }
 
         [DataContract]
         public class Book : LibraryItem
         {
-            //code not shown…
+            //code not shownï¿½
         }
 
         [DataContract]
         public class Newspaper : LibraryItem
         {
-            //code not shown…
+            //code not shownï¿½
         }
         //</snippet3>
 

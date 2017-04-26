@@ -32,14 +32,14 @@ This topic is the second of four topics that discusses how to implement a discov
   
 4.  Add the following using statements.  
   
-    ```  
+    ```csharp  
     using System;  
     using System.ServiceModel;  
     ```  
   
 5.  Within CalculatorService.cs, define the service contract.  
   
-    ```  
+    ```csharp  
     // Define a service contract.  
         [ServiceContract(Namespace = "http://Microsoft.Samples.Discovery")]  
         public interface ICalculatorService  
@@ -58,7 +58,7 @@ This topic is the second of four topics that discusses how to implement a discov
   
 6.  Also within CalculatorService.cs, implement the service contract.  
   
-    ```  
+    ```csharp  
     // Service class which implements the service contract.      
         public class CalculatorService : ICalculatorService  
         {  
@@ -103,7 +103,7 @@ This topic is the second of four topics that discusses how to implement a discov
   
 2.  Add the following using statements.  
   
-    ```  
+    ```csharp  
     using System;  
     using System.ServiceModel;  
     using System.ServiceModel.Description;  
@@ -113,7 +113,7 @@ This topic is the second of four topics that discusses how to implement a discov
   
 3.  Within the `Main()` method, add the following code:  
   
-    ```  
+    ```csharp  
   
     // Define the base address of the service  
     Uri baseAddress = new Uri("net.tcp://localhost:9002/CalculatorService/" + Guid.NewGuid().ToString());  
@@ -169,7 +169,7 @@ This topic is the second of four topics that discusses how to implement a discov
 ## Example  
  This is the full listing of the code used in this topic.  
   
-```  
+```csharp  
 // CalculatorService.cs  
 //----------------------------------------------------------------  
 // Copyright (c) Microsoft Corporation.  All rights reserved.  
@@ -233,7 +233,7 @@ namespace Microsoft.Samples.Discovery
   
 ```  
   
-```  
+```csharp  
 // Program.cs  
 //----------------------------------------------------------------  
 // Copyright (c) Microsoft Corporation.  All rights reserved.  
@@ -294,9 +294,7 @@ namespace Microsoft.Samples.Discovery
     }  
 }  
 ```  
-  
-<!-- TODO: review snippet reference  [!CODE [Microsoft.Win32.RegistryKey#4](Microsoft.Win32.RegistryKey#4)]  -->  
-  
+ 
 ## See Also  
  [WCF Discovery](../../../../docs/framework/wcf/feature-details/wcf-discovery.md)   
  [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md)   

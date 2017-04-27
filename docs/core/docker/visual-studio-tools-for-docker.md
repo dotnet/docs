@@ -4,7 +4,7 @@ description: Using Visual Studio Tools for Docker
 keywords: .NET, .NET Core, Docker, ASP.NET Core, Visual Studio
 author: spboyer
 ms.author: shboyer
-ms.date: 09/16/2016
+ms.date: 04/27/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-docker
@@ -12,21 +12,20 @@ ms.devlang: dotnet
 ms.assetid: 1f3b9a68-4dea-4b60-8cb3-f46164eedbbf
 ---
 
-# Visual Studio Tools for Docker 
-Developing and debugging your application in a Docker container can be a ceremony of tasks to get setup with various tools. [Visual Studio Tools for Docker](https://visualstudiogallery.msdn.microsoft.com/0f5b2caa-ea00-41c8-b8a2-058c7da0b3e4) helps you get past the hurdles and find the bugs using F5 to debug your application directly in a locally hosted Docker Container. 
+# Visual Studio Tools for Docker
 
-> [!NOTE]
->The current version targets Linux Docker containers, with Windows Containers coming soon.
+[Microsoft Visual Studio 2017](https://www.visualstudio.com/) supports building and debugging .NET Framework web/console applications using Windows containers or .NET Core web/console applications using Linux containers. The [Docker for Windows](https://docs.docker.com/docker-for-windows/install/) install package includes everything you need to run Docker on a Windows system.
 
 ## Prerequisites
+
 - [Microsoft Visual Studio 2017](https://www.visualstudio.com/)
-- [.NET Core tools in Visual Studio 2017](https://www.microsoft.com/net/core#windowsvs2017)
-- [Docker For Windows](https://www.docker.com/products/docker#/windows) to run your Docker containers locally
+- [Docker For Windows](https://docs.docker.com/docker-for-windows/install/)
 
 ## Installation and setup
-Download and install the [Visual Studio Tools for Docker](https://aka.ms/DockerToolsForVS) from the [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/) or you can search for it in **Extensions and Updates** within Visual Studio. 
 
-A required configuration is to setup **[Shared Drives](https://docs.docker.com/docker-for-windows/#/shared-drives)** in Docker for Windows. The setting is required for the volume mapping and debugging support.
+Install [Microsoft Visual Studio 2017](https://www.visualstudio.com/). Review the information at [Docker for Windows: What to know before you install](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install) and install [Docker For Windows](https://docs.docker.com/docker-for-windows/install/).
+
+A required configuration is to setup **[Shared Drives](https://docs.docker.com/docker-for-windows/#shared-drives)** in Docker for Windows. The setting is required for the volume mapping and debugging support.
 
 Right click the Docker icon in the System Tray, click Settings and select Shared Drives.
 
@@ -46,8 +45,8 @@ Project Context Menu
 
 The following files are added to the project.
 
-- **Dockerfile**: the Docker file for ASP.NET Core applications is based on the [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore) image. This image includes the ASP.NET Core NuGet packages, which have been pre-jitted improving startup performance. When building .NET Core Console Applications, the Dockerfile FROM will reference the most recent [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet) image.
-- **docker-compose.yml**: base Docker Compose file used to define the collection of images to be built and run with docker-compose build/run.  
+- **Dockerfile**: the Docker file for ASP.NET Core applications is based on the [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore) image. This image includes the ASP.NET Core NuGet packages, which have been pre-jitted improving startup performance. When building .NET Core Console Applications, the Dockerfile FROM will reference the most recent [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet) image.   
+- **docker-compose.yml**: base Docker Compose file used to define the collection of images to be built and run with docker-compose build/run.   
 - **docker-compose.dev.debug.yml**: additional docker-compose file with for iterative changes when your configuration is set to debug. Visual Studio will call -f docker-compose.yml -f docker-compose.dev.debug.yml to merge these together. This compose file is used by Visual Studio development tools.   
 - **docker-compose.dev.release.yml**: additional Docker Compose file to debug your release definition. It will volume mount the debugger so it doesn't change the contents of the production image.  
 
@@ -72,6 +71,7 @@ In this example, `image: user/hellodockertools${TAG}` generates the image `user/
 You will want to change the `user` to your Docker Hub username if you plan to push the image to the registry. For example, `spboyer/hellodockertools`, or change to your private registry url `privateregistry.domain.com/` depending on your configuration.
 
 ### Debugging
+
 Select **Docker** from the debug dropdown in the toolbar and use F5 to start debugging the application. 
 
 - The microsoft/aspnetcore image is acquired (if not already in your cache)
@@ -106,7 +106,8 @@ CONTAINER ID        IMAGE                          COMMAND               CREATED
 3f240cf686c9        spboyer/hellodockertools:dev   "tail -f /dev/null"   10 minutes ago      Up 10 minutes       0.0.0.0:32769->80/tcp   hellodockertools_hellodockertools_1
 ```
 
-### Publishing Docker images 
+### Publishing Docker images
+
 Once you have completed the develop and debug cycle of your application, the Visual Studio Tools for Docker will help you create the production image of your application. Change the debug dropdown to **Release** and build the application. The tooling will produce the image with the `:latest` tag which you can push to your private registry or Docker Hub. 
 
 Using the `docker images` you can see the list of images.

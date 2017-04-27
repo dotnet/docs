@@ -3,8 +3,7 @@ title: Install the .NET Framework on Windows
 description: Learn how to install the .NET Framework on Windows
 author: rlander
 keywords: .NET Framework, Install
-
-ms.date: 03/28/2017
+ms.date: 04/27/2017
 ms.topic: article
 ms.prod: .net-framework-4.6
 ms.technology: vs-ide-deployment
@@ -32,3 +31,7 @@ In general, a higher .NET Framework version will run an application that was bui
 ## Unsupported Windows versions
 
 - [Windows XP](on-windows-xp.md)
+
+## See also
+
+[.NET Framework Development Guide](../development-guide.md)

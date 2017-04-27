@@ -28,6 +28,12 @@
         ' The field names are Not assigned. 'named' still has 'answer' and 'message' fields.
         Console.WriteLine($"{named.Answer}, {named.Message}")
         ' Output:   42, The meaning of life
+
+        ' Assign an (Integer, String) tuple to a (Long, String) tuple (using implicit conversion).
+        Dim conversion As (Long, String) = named
+        Console.WriteLine($"{conversion.Item1} ({conversion.Item1.GetType().Name}), " +
+                          $"{conversion.Item2} ({conversion.Item2.GetType().Name})")
+        ' Output:      42 (Int64), The meaning of life (String)
         ' </Snippet2>
         Console.ReadLine()
     End Sub

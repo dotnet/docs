@@ -35,7 +35,7 @@ translation.priority.mt:
 ---
 # Tuples (Visual Basic)
 
-Starting with Visual Basic 2017, the Visual Basic language offers built-in support for tuples that makes creating tuples and accessing the elements of tuples easier. A tuple is a light-weight data structure that has a specific number and sequence of values. When you instantiate the tuple, you define the number and the data type of each value (or element). For example, a 2-tuple (or pair) has two elements. The first might be a `Boolean` value, while the second is a `String`. Because tuples make it easy to store multiple values in a single object, they are often used as a lightweight way to pass multiple arguments to a method and to return multiple values from a method.
+Starting with Visual Basic 2017, the Visual Basic language offers built-in support for tuples that makes creating tuples and accessing the elements of tuples easier. A tuple is a light-weight data structure that has a specific number and sequence of values. When you instantiate the tuple, you define the number and the data type of each value (or element). For example, a 2-tuple (or pair) has two elements. The first might be a `Boolean` value, while the second is a `String`. Because tuples make it easy to store multiple values in a single object, they are often used as a lightweight way to return multiple values from a method.
 
 > [!IMPORTANT]
 > Tuple support requires the <xref:System.ValueTuple> type. If the .NET Framework 4.7 is not installed, you must add the NuGet package `System.ValueTuple`, which is available on the NuGet Gallery. Without this package, you may get a compilation error similar to, "Predefined type 'ValueTuple(Of,,,)' is not defined or imported."
@@ -68,7 +68,7 @@ A Visual Basic tuple is a value type that is an instance of one of the a **Syste
 
 - Validation. You cannot validate the data assigned to fields.
 
-- Mutability. Visual Basic tuples are mutable. In contrast, a custom structure allows you to control whether an instance is mutable or immutable.
+- Immutability. Visual Basic tuples are mutable. In contrast, a custom structure allows you to control whether an instance is mutable or immutable.
 
 If custom members, property and field validation, or immutability are important, you should use the Visual Basic [Structure](../../../language-reference/statements/structure-statement.md) statement to define a custom value type.
 
@@ -85,7 +85,15 @@ In addition, the **ValueTuple** types implement <xref:System.Collections.IStruct
 
 ## Assignment and tuples
 
-Visual Basic supports assignment between tuple types that have the same number of fields and the same type for each field. Those types must be exact compile-time matches. Other conversions are not considered for assignments. Let's look at the kinds of assignments that are allowed between tuple types.
+Visual Basic supports assignment between tuple types that have the same number of fields. The field types can be converted if one of the following is true:
+
+- The source and target field are of the same type.
+
+- A widening (or implicit) conversion of the source type to the target type is defined. 
+
+- `Option Strict` is `On`, and a narrowing (or explicit) conversion of the source type to the target type is defined. This conversion can throw an exception if the source value is outside the range of the target type.
+
+Other conversions are not considered for assignments. Let's look at the kinds of assignments that are allowed between tuple types.
 
 Consider these variables used in the following examples:
 
@@ -99,7 +107,11 @@ All four of these tuples have the same number of fields (referred to as 'arity')
 
 Notice that the names of the tuples are not assigned. The values of the fields are assigned following the order of the fields in the tuple.
 
-Tuples of different types or numbers of fields are not assignable:
+Finally, notice that we can assign the `named` tuple to the `conversion` tuple, even though the first field of `named` is an `Integer`, and the first field of `conversion` is a `Long`. This assignment succeeds because converting an `Integer` to a `Long` is a widening conversion.
+
+[!code-vb[Assign](../../../../../samples\snippets\visualbasic\programming-guide\language-features\data-types/tuple3.vb#3)]
+
+Tuples with different numbers of fields are not assignable:
 
 ```vb
 ' Does not compile.
@@ -133,17 +145,17 @@ You can then call the method with code like the following:
 
 ## Visual Basic tuples and tuples in the .NET Framework
 
-In addition to the **System.ValueTuple** generic types introduced in the .NET Framework 4.7, the .NET Framework also includes a set of generic **System.Tuple** classes. These classes, however, differ from Visual Basic tuples in a number of ways:
+A Visual Basic tuple is an instance of one of the **System.ValueTuple** generic types, which were introduced in the .NET Framework 4.7. The .NET Framework also includes a set of generic **System.Tuple** classes. These classes, however, differ from Visual Basic tuples and the **System.ValueTuple** generic types in a number of ways:
 
-- The elements of the **Tuple** classes are properties named `Item1`, `Item2`, and so on. In Visual Basic, tuple elements are fields.
+- The elements of the **Tuple** classes are properties named `Item1`, `Item2`, and so on. In Visual Basic tuples and the **ValueTuple** types, tuple elements are fields.
 
-- You cannot assign meaningful names to the elements of a **Tuple** instance. Visual Basic allows you to assign names that communicate the meaning of the fields.
+- You cannot assign meaningful names to the elements of a **Tuple** instance or of a **ValueTuple** instance. Visual Basic allows you to assign names that communicate the meaning of the fields.
 
-- The properties of a **Tuple** instance are read-only. In Visual Basic, tuple fields are read-write.
+- The properties of a **Tuple** instance are read-only; the tuples are immutable. In Visual Basic tuples and the **ValueTuple** types, tuple fields are read-write; the tuples are mutable.
 
-- The generic **Tuple** types are reference types. Using these **Tuple** types means allocating objects. On hot paths, this can have a measurable impact on your application's performance
+- The generic **Tuple** types are reference types. Using these **Tuple** types means allocating objects. On hot paths, this can have a measurable impact on your application's performance. Visual Basic tuples and the **ValueTuple** types are value types.
 
-Extension methods in the <xref:System.TupleExtensions> class makes it easy to convert between Visual Basic tuples and .NET **Tuple** objects. The **ToTuple** method converts a Visual Basic tuple to a .NET **Tuple** object, and the **ToValueTuple** method converts a .NET **Tuple** object to a Visual Basic tuple.
+Extension methods in the <xref:System.TupleExtensions> class make it easy to convert between Visual Basic tuples and .NET **Tuple** objects. The **ToTuple** method converts a Visual Basic tuple to a .NET **Tuple** object, and the **ToValueTuple** method converts a .NET **Tuple** object to a Visual Basic tuple.
 
 The following example creates a tuple, converts it to a .NET **Tuple** object, and converts it back to a Visual Basic tuple. The example then compares this tuple with the original one to ensure that they are equal.
 

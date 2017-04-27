@@ -32,7 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # var (C# Reference)
-Beginning in Visual C# 3.0, variables that are declared at method scope can have an implicit type `var`. An implicitly typed local variable is strongly typed just as if you had declared the type yourself, but the compiler determines the type. The following two declarations of `i` are functionally equivalent:  
+Beginning in Visual C# 3.0, variables that are declared at method scope can have an implicit "type" `var`. An implicitly typed local variable is strongly typed just as if you had declared the type yourself, but the compiler determines the type. The following two declarations of `i` are functionally equivalent:  
   
 ```  
 var i = 10; // implicitly typed  

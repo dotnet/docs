@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ITypeLibResolver"
-apilocation: 
+api_location: 
   - "tlbref.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ITypeLibResolver"
 dev_langs: 

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IValidator::FormatEventInfo method [.NET Framework hosting]"
   - "FormatEventInfo method, IValidator interface [.NET Framework hosting]"
 ms.assetid: 4c0c7477-05ba-461b-b21b-cbfba95f1db1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Unwrap method [.NET Framework hosting]"
   - "IObjectHandle::Unwrap method [.NET Framework hosting]"
 ms.assetid: 794c6f8e-ed58-416b-b756-e864f2c958f7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

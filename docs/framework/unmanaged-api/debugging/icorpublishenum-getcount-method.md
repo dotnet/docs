@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetCount method, ICorPublishEnum interface [.NET Framework debugging]"
   - "ICorPublishEnum::GetCount method [.NET Framework debugging]"
 ms.assetid: d228f684-2be3-4029-93ae-31fe02213c1f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

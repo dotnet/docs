@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModule2::ResolveAssembly method [.NET Framework debugging]"
   - "ResolveAssembly method [.NET Framework debugging]"
 ms.assetid: ddf9085c-7161-44bd-9609-cd2732b9009f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "FindAssembliesByName method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::FindAssembliesByName method [.NET Framework metadata]"
 ms.assetid: 4db97cf9-e4c1-4233-8efa-cbdc0e14a8e4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

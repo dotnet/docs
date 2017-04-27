@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EnumImportTypes method"
 ms.assetid: 83a0e4e7-ec06-40cb-9b63-700b9695bb04
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

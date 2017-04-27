@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetRuntimeInformation method [.NET Framework profiling]"
   - "ICorProfilerInfo3::GetRuntimeInformation method [.NET Framework profiling]"
 ms.assetid: 4400fb8c-0407-4791-8557-f011fd2aee51
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

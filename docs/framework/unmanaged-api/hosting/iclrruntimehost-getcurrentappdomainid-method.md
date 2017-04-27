@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRRuntimeHost::GetCurrentAppDomainId method [.NET Framework hosting]"
   - "GetCurrentAppDomainId method [.NET Framework hosting]"
 ms.assetid: 33800475-7815-4976-8aca-a1038761a2ef
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

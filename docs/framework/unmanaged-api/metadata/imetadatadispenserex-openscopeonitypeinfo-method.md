@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "OpenScopeOnITypeInfo method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::OpenScopeOnITypeInfo method [.NET Framework metadata]"
 ms.assetid: 3480bbdb-c442-44a0-b7c6-333354503c52
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

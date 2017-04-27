@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CLRDataEnumMemoryFlags enumeration [.NET Framework debugging]"
 ms.assetid: e249f9fc-e24a-4506-903c-92781f6eab7c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

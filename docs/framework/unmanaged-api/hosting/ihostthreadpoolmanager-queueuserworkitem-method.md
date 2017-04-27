@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostThreadPoolManager::QueueUserWorkItem method [.NET Framework hosting]"
   - "QueueUserWorkItem method [.NET Framework hosting]"
 ms.assetid: 41602053-8670-4827-9d61-cbfcba509b9c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

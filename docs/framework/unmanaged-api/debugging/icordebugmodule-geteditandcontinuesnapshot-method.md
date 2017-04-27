@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModule::GetEditAndContinueSnapshot method [.NET Framework debugging]"
   - "GetEditAndContinueSnapshot method [.NET Framework debugging]"
 ms.assetid: fad94e1e-78be-440f-aa43-e0c66e0b102e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetValue method, ICorDebugReferenceValue interface [.NET Framework debugging]"
   - "ICorDebugReferenceValue::GetValue method [.NET Framework debugging]"
 ms.assetid: 5da07f99-6c70-46ec-b997-5ab6fb7106cd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

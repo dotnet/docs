@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "FindManifestResourceByName method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::FindManifestResourceByName method [.NET Framework metadata]"
 ms.assetid: 7b72fa11-3866-402b-bdea-2b966b77cfe0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

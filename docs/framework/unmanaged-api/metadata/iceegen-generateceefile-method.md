@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GenerateCeeFile method [.NET Framework metadata]"
   - "ICeeGen::GenerateCeeFile method [.NET Framework metadata]"
 ms.assetid: cca4a9a1-731b-4411-9e04-00cffe7a56d8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

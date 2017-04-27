@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorThreadpool::CorSetMaxThreads method [.NET Framework hosting]"
   - "CorSetMaxThreads method [.NET Framework hosting]"
 ms.assetid: 4a846238-df4e-4060-ba3b-5173f6a51e85
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

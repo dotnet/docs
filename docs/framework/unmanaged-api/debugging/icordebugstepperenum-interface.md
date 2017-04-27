@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugStepperEnum interface [.NET Framework debugging]"
 ms.assetid: 988718c1-1a4a-40f2-a04c-7d67e5cfe1e2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

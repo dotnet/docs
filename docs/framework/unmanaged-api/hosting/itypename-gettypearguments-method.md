@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeName::GetTypeArguments method [.NET Framework hosting]"
   - "GetTypeArguments method [.NET Framework hosting]"
 ms.assetid: 638d77df-ff9c-40d9-88ee-930f5f87ada1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "VariableLocationType enumeration [.NET Framework debugging]"
 ms.assetid: 8635ee3a-c84b-4626-876c-416bee54f787
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

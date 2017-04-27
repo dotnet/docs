@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "InterceptCurrentException method [.NET Framework debugging]"
   - "ICorDebugThread2::InterceptCurrentException method [.NET Framework debugging]"
 ms.assetid: 536d2357-1b97-49e0-a10c-c860aed74e6e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

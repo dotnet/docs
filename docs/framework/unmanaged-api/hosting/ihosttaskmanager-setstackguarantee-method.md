@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostTaskManager::SetStackGuarantee method [.NET Framework hosting]"
   - "SetStackGuarantee method [.NET Framework hosting]"
 ms.assetid: 6dcc4a4b-3a78-4369-bcc7-c0be6dde57d4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

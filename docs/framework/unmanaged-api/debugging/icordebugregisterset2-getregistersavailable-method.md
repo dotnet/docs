@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetRegistersAvailable method, ICorDebugRegisterSet2 interface [.NET Framework debugging]"
   - "ICorDebugRegisterSet2::GetRegistersAvailable method [.NET Framework debugging]"
 ms.assetid: f3ed344b-0d3a-44e8-8000-2a97e0805a2c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

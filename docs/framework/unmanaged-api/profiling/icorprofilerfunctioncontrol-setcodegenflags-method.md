@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerFunctionControl::SetCodegenFlags method [.NET Framework profiling]"
   - "SetCodegenFlags method, ICorProfilerFunctionControl interface [.NET Framework profiling]"
 ms.assetid: a2d5daa5-b990-4ae5-bf2a-c0862fe58bd7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

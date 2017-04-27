@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostSyncManager interface [.NET Framework hosting]"
 ms.assetid: 2e081a37-6a28-4c93-b7ab-1c96a464637c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

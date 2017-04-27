@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetID method, ICorPublishAppDomain interface [.NET Framework debugging]"
   - "ICorPublishAppDomain::GetID method [.NET Framework debugging]"
 ms.assetid: 229437e3-1465-4bd8-8846-9804b2488133
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

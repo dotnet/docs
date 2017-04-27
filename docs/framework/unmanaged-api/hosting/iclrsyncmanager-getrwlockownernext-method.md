@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRSyncManager::GetRWLockOwnerNext method [.NET Framework hosting]"
   - "GetRWLockOwnerNext method [.NET Framework hosting]"
 ms.assetid: 0e025b6a-280e-40a2-a2d0-b15f58777b81
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

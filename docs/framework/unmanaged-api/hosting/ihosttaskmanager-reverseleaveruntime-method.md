@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostTaskManager::ReverseLeaveRuntime method [.NET Framework hosting]"
   - "ReverseLeaveRuntime method [.NET Framework hosting]"
 ms.assetid: 4837d398-16a1-4e32-902c-022cd1aad3ca
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

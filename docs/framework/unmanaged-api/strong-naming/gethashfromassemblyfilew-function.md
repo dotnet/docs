@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetHashFromAssemblyFileW function [.NET Framework strong naming]"
 ms.assetid: d1b2b172-5353-42af-a877-cf653c68ece0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

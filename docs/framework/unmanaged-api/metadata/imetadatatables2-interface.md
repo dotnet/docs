@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IMetaDataTables2 interface [.NET Framework metadata]"
 ms.assetid: c788bb7c-0212-4b6d-b840-22e8c8829028
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

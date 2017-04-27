@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Deactivate method [.NET Framework debugging]"
   - "ICorDebugStepper::Deactivate method [.NET Framework debugging]"
 ms.assetid: 855f4199-b62d-40ce-998e-1eb4a1772142
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

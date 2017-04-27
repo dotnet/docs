@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugMetaDataLocator interface [.NET Framework debugging]"
 ms.assetid: 287f5ecd-863f-4090-a615-077859f0257b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

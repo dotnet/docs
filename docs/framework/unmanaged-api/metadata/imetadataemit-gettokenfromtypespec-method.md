@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetTokenFromTypeSpec method [.NET Framework metadata]"
   - "IMetaDataEmit::GetTokenFromTypeSpec method [.NET Framework metadata]"
 ms.assetid: 7de6447a-a751-49d8-87e2-951cee77b536
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

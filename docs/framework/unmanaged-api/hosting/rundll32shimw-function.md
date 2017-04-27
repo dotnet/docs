@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "RunDll32ShimW function [.NET Framework hosting]"
 ms.assetid: 9ea07b57-96e2-44df-8711-8fe6c119087f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

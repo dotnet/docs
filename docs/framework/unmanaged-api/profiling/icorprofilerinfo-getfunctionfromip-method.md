@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetFunctionFromIP method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetFunctionFromIP method [.NET Framework profiling]"
 ms.assetid: f069802a-198f-46dd-9f09-4f77adffc9ba
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

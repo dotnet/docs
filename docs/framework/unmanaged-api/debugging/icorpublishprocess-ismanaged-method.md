@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsManaged method, ICorPublishProcess interface [.NET Framework debugging]"
   - "ICorPublishProcess::IsManaged method [.NET Framework debugging]"
 ms.assetid: 06b1f7cc-acdf-47a6-9d53-d9dec2424152
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

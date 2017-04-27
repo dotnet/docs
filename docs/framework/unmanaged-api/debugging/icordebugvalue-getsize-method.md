@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetSize method, ICorDebugValue interface [.NET Framework debugging]"
   - "ICorDebugValue::GetSize method [.NET Framework debugging]"
 ms.assetid: 445a9ee3-e050-4f3a-931a-96b0efb00110
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

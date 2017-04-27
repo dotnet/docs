@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Step method, ICorDebugStepper interface [.NET Framework debugging]"
   - "ICorDebugStepper::Step method [.NET Framework debugging]"
 ms.assetid: 38c1940b-ada1-40ba-8295-4c0833744e1e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetBlockingObjects method [.NET Framework debugging]"
   - "ICorDebugThread4::GetBlockingObjects method [.NET Framework debugging]"
 ms.assetid: a7e6c54e-7be9-4e52-bbb4-95f52458e8e4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

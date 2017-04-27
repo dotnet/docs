@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRStrongName::GetHashFromFile method [.NET Framework hosting]"
   - "GetHashFromFile method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: 9e50480a-8ada-4044-b2a5-97bb14ed3525
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

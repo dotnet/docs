@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread3::GetActiveInternalFrames method [.NET Framework debugging]"
   - "GetActiveInternalFrames method [.NET Framework debugging]"
 ms.assetid: d69796b4-5b6d-457c-85f6-2cf42e8a8773
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

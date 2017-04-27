@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IValidator interface [.NET Framework hosting]"
 ms.assetid: b297e3b0-20f9-478f-b707-5e2eecb2b5b2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

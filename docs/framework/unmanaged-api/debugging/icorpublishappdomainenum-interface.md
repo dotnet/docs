@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorPublishAppDomainEnum interface [.NET Framework debugging]"
 ms.assetid: bb798c56-042e-475d-a245-b6fac36d0c07
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

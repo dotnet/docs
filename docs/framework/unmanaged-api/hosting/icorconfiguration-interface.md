@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorConfiguration interface [.NET Framework hosting]"
 ms.assetid: aaf96116-372b-4538-afb1-9e0fcdac1f98
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

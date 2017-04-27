@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "GetTypeID method, ICorDebugType2 interface [.NET Framework debugging]"
   - "ICorDebugType2.GetTypeID method [.NET Framework debugging]"
 ms.assetid: 0b933686-226e-4373-92b7-fac579ee7b1a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

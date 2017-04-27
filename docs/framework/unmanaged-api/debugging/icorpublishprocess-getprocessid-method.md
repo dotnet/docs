@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorPublishProcess::GetProcessID method [.NET Framework debugging]"
   - "GetProcessID method [.NET Framework debugging]"
 ms.assetid: f31185e0-f01d-463a-b392-42163e39bfe9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

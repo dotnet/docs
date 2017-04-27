@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetVirtualMethodAndType method [.NET Framework debugging]"
   - "ICorDebugObjectValue2::GetVirtualMethodAndType method"
 ms.assetid: 621b4543-a8f7-4117-98e4-930992cd688a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

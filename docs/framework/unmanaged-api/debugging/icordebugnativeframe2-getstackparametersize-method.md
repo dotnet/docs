@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugNativeFrame2::GetStackParameterSize method [.NET Framework debugging]"
   - "GetStackParameterSize method [.NET Framework debugging]"
 ms.assetid: f6a449c8-a941-43ba-9a90-c98b29ae3c36
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

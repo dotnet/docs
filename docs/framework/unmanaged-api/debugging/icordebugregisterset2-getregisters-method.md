@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetRegisters method, ICorDebugRegisterSet2 interface [.NET Framework debugging]"
   - "ICorDebugRegisterSet2::GetRegisters method [.NET Framework debugging]"
 ms.assetid: dbc498a8-ba3f-42f2-bdd9-b623c77a1019
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

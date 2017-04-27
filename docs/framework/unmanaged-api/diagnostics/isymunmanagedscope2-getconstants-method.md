@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedScope2::GetConstants method [.NET Framework debugging]"
   - "GetConstants method [.NET Framework debugging]"
 ms.assetid: f241b620-9ec5-42fd-92ef-3b22329db72a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

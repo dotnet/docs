@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread4::HadUnhandledException method [.NET Framework debugging]"
   - "HadUnhandledException method [.NET Framework debugging]"
 ms.assetid: 05558daa-39e2-4c38-aeaf-e2aec4a09468
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "STARTUP_FLAGS enumeration [.NET Framework hosting]"
 ms.assetid: 4f043594-0c45-4bc6-988e-a6793f0d8d06
+topic_type: 
+  - "apiref"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

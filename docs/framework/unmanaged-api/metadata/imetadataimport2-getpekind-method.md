@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetPEKind method [.NET Framework metadata]"
   - "IMetaDataImport2::GetPEKind method [.NET Framework metadata]"
 ms.assetid: d91c3d89-8022-4a4c-a2a2-a8af2c387507
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

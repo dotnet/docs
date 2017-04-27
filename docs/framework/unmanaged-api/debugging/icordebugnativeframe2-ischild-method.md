@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsChild method [.NET Framework debugging]"
   - "ICorDebugNativeFrame2::IsChild method [.NET Framework debugging]"
 ms.assetid: 9e2aae09-49cb-4fbd-81e5-e29cd864a88b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

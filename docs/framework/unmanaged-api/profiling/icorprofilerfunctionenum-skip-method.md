@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Skip method, ICorProfilerFunctionEnum interface [.NET Framework profiling]"
   - "ICorProfilerFunctionEnum::Skip method [.NET Framework profiling]"
 ms.assetid: 051465b9-e479-494a-804b-c880323b4cbe
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

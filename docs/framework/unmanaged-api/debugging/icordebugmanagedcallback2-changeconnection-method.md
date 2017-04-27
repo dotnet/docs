@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugManagedCallback2::ChangeConnection method [.NET Framework debugging]"
   - "ChangeConnection method [.NET Framework debugging]"
 ms.assetid: 7263f9a9-4c0b-4d82-a181-288873fb2b18
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

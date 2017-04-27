@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameBuilder::CloseGenericArgument method [.NET Framework hosting]"
   - "CloseGenericArgument method [.NET Framework hosting]"
 ms.assetid: c9a8178d-be1f-4ad4-abdb-d38470659b82
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

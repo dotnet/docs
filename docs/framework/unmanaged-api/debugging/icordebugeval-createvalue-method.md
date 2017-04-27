@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugEval::CreateValue method [.NET Framework debugging]"
   - "CreateValue method [.NET Framework debugging]"
 ms.assetid: 9a1c0b47-6f10-4fcb-844a-4ab2d7990140
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

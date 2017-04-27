@@ -16,6 +16,8 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: c11d5231-78f2-45a7-9210-3b2d0969370e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "NewStringWithLength method [.NET Framework debugging]"
   - "ICorDebugEval2::NewStringWithLength method [.NET Framework debugging]"
 ms.assetid: d5f54a34-6335-4708-b407-a756ec70fab4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetRegisters method, ICorDebugRegisterSet interface [.NET Framework debugging]"
   - "ICorDebugRegisterSet::SetRegisters method [.NET Framework debugging]"
 ms.assetid: ac6244b9-54ba-475f-b72a-abed6afc46ec
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

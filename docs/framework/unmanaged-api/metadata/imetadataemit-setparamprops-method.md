@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::SetParamProps method [.NET Framework metadata]"
   - "SetParamProps method [.NET Framework metadata]"
 ms.assetid: a95a3908-9f87-4084-937e-8e01ef03ad63
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

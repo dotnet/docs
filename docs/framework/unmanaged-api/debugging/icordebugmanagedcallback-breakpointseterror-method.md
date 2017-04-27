@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "BreakpointSetError method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::BreakpointSetError method [.NET Framework debugging]"
 ms.assetid: f2b773a4-c4d0-429c-9717-51d6e2ed86af
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

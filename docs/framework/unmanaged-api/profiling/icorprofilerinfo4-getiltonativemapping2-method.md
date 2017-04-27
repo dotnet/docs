@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo4::GetILToNativeMapping2 method [.NET Framework profiling]"
   - "GetILToNativeMapping2 method, ICorProfilerInfo4 interface [.NET Framework profiling]"
 ms.assetid: 756c1c25-08a7-4060-9798-dbeaa2f3bee5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

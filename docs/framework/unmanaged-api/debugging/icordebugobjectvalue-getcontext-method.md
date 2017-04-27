@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetContext method, ICorDebugObjectValue interface [.NET Framework debugging]"
   - "ICorDebugObjectValue::GetContext method [.NET Framework debugging]"
 ms.assetid: 40594774-5105-4187-a06b-4e7f50bada3c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

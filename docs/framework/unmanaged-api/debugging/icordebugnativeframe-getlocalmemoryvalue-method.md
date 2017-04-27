@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetLocalMemoryValue method [.NET Framework debugging]"
   - "ICorDebugNativeFrame::GetLocalMemoryValue method [.NET Framework debugging]"
 ms.assetid: b600b3a2-9908-42d8-8093-ab6f39e9a2c9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

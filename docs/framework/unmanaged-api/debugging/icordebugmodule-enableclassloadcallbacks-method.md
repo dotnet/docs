@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModule::EnableClassLoadCallbacks method [.NET Framework debugging]"
   - "EnableClassLoadCallbacks method [.NET Framework debugging]"
 ms.assetid: 78dad5e4-8e2e-400f-bec3-92ff0205cd82
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

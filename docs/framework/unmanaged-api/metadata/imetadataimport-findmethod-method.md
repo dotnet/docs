@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "FindMethod method [.NET Framework metadata]"
   - "IMetaDataImport::FindMethod method [.NET Framework metadata]"
 ms.assetid: 0f9bde1d-e306-438d-941b-d0925b322304
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

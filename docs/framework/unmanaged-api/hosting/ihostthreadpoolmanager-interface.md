@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostThreadPoolManager interface [.NET Framework hosting]"
 ms.assetid: c3a2cd90-7c4e-4374-bb87-b41befb8344f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

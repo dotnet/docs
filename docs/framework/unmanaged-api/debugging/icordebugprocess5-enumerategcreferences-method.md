@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumerateGCReferences method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::EnumerateGCReferences method [.NET Framework debugging]"
 ms.assetid: 86c397c3-81d8-463e-a248-3cbe06c44d9d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

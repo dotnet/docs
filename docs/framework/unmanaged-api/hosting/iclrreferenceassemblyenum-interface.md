@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRReferenceAssemblyEnum interface [.NET Framework hosting]"
 ms.assetid: 8adbf092-c3ba-4bee-b25b-0de6e43a4ce5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

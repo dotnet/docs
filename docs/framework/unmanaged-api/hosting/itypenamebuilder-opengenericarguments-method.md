@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "OpenGenericArguments method [.NET Framework hosting]"
   - "ITypeNameBuilder::OpenGenericArguments method [.NET Framework hosting]"
 ms.assetid: 4da94508-30da-41f4-8bf9-ce88bdf96fd2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

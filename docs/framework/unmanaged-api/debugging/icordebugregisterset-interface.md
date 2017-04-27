@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugRegisterSet interface [.NET Framework debugging]"
 ms.assetid: d3d9676d-0b87-4bc3-b679-7bbc7a186c88
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

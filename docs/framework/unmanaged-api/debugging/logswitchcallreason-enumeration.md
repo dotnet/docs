@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "LogSwitchCallReason enumeration [.NET Framework debugging]"
 ms.assetid: 5bbb8d1b-bbc4-47b0-b1b1-2d54cc0be291
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

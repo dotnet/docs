@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Alink API, GetALinkMessageDll function"
   - "GetALinkMessageDll function"
 ms.assetid: 67985a22-88a2-4c54-8d99-4bcde9d6213e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

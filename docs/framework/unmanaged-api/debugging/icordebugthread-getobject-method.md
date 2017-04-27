@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetObject method, ICorDebugThread interface [.NET Framework debugging]"
   - "ICorDebugThread::GetObject method [.NET Framework debugging]"
 ms.assetid: 1590febe-96c2-4046-97db-d81d81d67e01
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

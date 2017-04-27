@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "AllocateMethodBuffer method [.NET Framework metadata]"
   - "ICeeGen::AllocateMethodBuffer method [.NET Framework metadata]"
 ms.assetid: 845ab77e-9639-47f5-99fb-f3b619e3e779
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

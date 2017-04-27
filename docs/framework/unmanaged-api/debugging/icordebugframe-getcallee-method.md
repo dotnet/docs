@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugFrame::GetCallee method [.NET Framework debugging]"
   - "GetCallee method, ICorDebugFrame interface [.NET Framework debugging]"
 ms.assetid: 92d8136d-0436-4c7e-a6b2-80765f892a0d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetRequestedRuntime method [.NET Framework hosting]"
   - "ICLRMetaHostPolicy::GetRequestedRuntime method [.NET Framework hosting]"
 ms.assetid: 59ec1832-9cc1-4b5c-983d-03407e51de56
+topic_type: 
+  - "apiref"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

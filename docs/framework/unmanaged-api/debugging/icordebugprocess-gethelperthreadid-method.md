@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetHelperThreadID method [.NET Framework debugging]"
   - "ICorDebugProcess::GetHelperThreadID method [.NET Framework debugging]"
 ms.assetid: 84e1e605-37c1-49a5-8e12-35db85654622
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

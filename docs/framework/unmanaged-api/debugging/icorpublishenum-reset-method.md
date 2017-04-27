@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorPublishEnum::Reset method [.NET Framework debugging]"
   - "Reset method, ICorPublishEnum interface [.NET Framework debugging]"
 ms.assetid: 8a4d9c86-b5ef-460a-9731-1d8c91b93a0b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

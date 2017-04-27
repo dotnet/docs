@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeName::GetAssemblyName method [.NET Framework hosting]"
   - "GetAssemblyName method [.NET Framework hosting]"
 ms.assetid: 97801d99-f5f1-4a30-882f-959827093fac
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

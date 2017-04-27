@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorMarkThreadInThreadPool function [.NET Framework hosting]"
 ms.assetid: 3f958d41-e82e-4ec3-ae6f-16c7b3b31e3e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

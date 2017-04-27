@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameFactory::GetTypeNameBuilder method [.NET Framework hosting]"
   - "GetTypeNameBuilder method [.NET Framework hosting]"
 ms.assetid: c682f744-996e-43c7-a9ea-c57cbc755398
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

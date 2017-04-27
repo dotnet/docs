@@ -14,22 +14,21 @@ ms.assetid: 1f3b9a68-4dea-4b60-8cb3-f46164eedbbf
 
 # Visual Studio Tools for Docker
 
-[Microsoft Visual Studio 2017](https://www.visualstudio.com/) supports building and debugging .NET Framework web/console applications using Windows containers or .NET Core web/console applications using Linux containers. The [Docker for Windows](https://docs.docker.com/docker-for-windows/install/) install package includes everything you need to run Docker on a Windows system.
+[Microsoft Visual Studio 2017](https://www.visualstudio.com/) supports building, debugging, and running .NET Framework and .NET Core web/console applications using Windows and Linux containers.
 
 ## Prerequisites
 
 - [Microsoft Visual Studio 2017](https://www.visualstudio.com/)
-- [Docker For Windows](https://docs.docker.com/docker-for-windows/install/)
 
 ## Installation and setup
 
-Install [Microsoft Visual Studio 2017](https://www.visualstudio.com/). Review the information at [Docker for Windows: What to know before you install](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install) and install [Docker For Windows](https://docs.docker.com/docker-for-windows/install/).
+Review the information at [Docker for Windows: What to know before you install](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install) and install [Microsoft Visual Studio 2017](https://www.visualstudio.com/) with the .NET Core workload.
 
 A required configuration is to setup **[Shared Drives](https://docs.docker.com/docker-for-windows/#shared-drives)** in Docker for Windows. The setting is required for the volume mapping and debugging support.
 
 Right click the Docker icon in the System Tray, click Settings and select Shared Drives.
 
-![Shared Drives](./media/visual-studio-tools-for-docker/settings-shared-drives-win.png) 
+![Shared Drives](./media/visual-studio-tools-for-docker/settings-shared-drives-win.png)
 
 ## Create an ASP.NET Web Application and add Docker Support
 
@@ -97,6 +96,7 @@ CONTAINER ID        IMAGE                          COMMAND               CREATED
 ```
 
 ### Edit and Continue
+
 Changes to static files and/or razor template files (.cshtml) are automatically updated without the need of a compilation step. Make the change, save and tap refresh in the browser to view the update.  
 
 Modifications to code files require compiling and a restart of Kestrel within the container. After making the change, use CTRL + F5 to perform the process and start the application within the container. The Docker container is not rebuilt or stopped; using `docker ps` in the command line you can see that the original container is still running as of 10 minutes ago. 

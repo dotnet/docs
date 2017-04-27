@@ -97,6 +97,26 @@ You can define a binary literal by using the prefix `&B` or `&b`. In addition, y
 
 For more information, see the "Literal assignments" section of the [Byte](../language-reference/data-types/byte-data-type.md#literal-assignments), [Integer](../language-reference/data-types/integer-data-type.md#literal-assignments), [Long](../language-reference/data-types/long-data-type.md#literal-assignments), [Short](../language-reference/data-types/short-data-type.md#literal-assignments), [SByte](../language-reference/data-types/sbyte-data-type.md#literal-assignments), [UInteger](../language-reference/data-types/uinteger-data-type.md#literal-assignments), [ULong](../language-reference/data-types/ulong-data-type.md#literal-assignments), and [UShort](../language-reference/data-types/ushort-data-type.md#literal-assignments) data types.
 
+**Support for C# reference return values**
+
+Starting with C# 7, C# supports reference return values. That is, when the calling method receives a value returned by reference, it can change the value of the reference. Visual Basic does not allow you to author methods with reference return values, but it does allow you to consume and modify the reference return values.
+
+For example, the following `Sentence` class written in C# includes a `FindNext` method that finds the next word in a sentence that begins with a specified substring. The string is returned as a reference return value, and a `Boolean` variable passed by reference to the method indicates whether the search was successful. This means that the caller can not only read the returned value; he or she can also modify it, and that modification is reflected in the `Sentence` class.
+
+[!code-vb[Ref-Return](../../../../../samples\snippets\visualbasic\getting-started/ref-return.cs)]
+
+In its simplest form, you can modify the word found in the sentence by using code like the following. Note that you are not assigning a value to the method, but rather to the expression that the method returns, which is the reference return value.
+
+[!code-vb[Ref-Return](../../../../../samples\snippets\visualbasic\getting-started/ref-return.vb#1)]
+
+A problem with this code, though, is that if a match is not found, the method returns the first word. Since the example does not examine the value of the `Boolean` argument to determine whether a match is found, it modifies the first word if there is no match. The following example corrects this by replacing the first word with itself if there is no match.
+
+[!code-vb[Ref-Return](../../../../../samples\snippets\visualbasic\getting-started/ref-return.vb#2)]
+
+A better solution is to use a helper method to which the reference return value is passed by reference. The helper method can then modify the argument passed to it by reference. The following example does that.
+
+[!code-vb[Ref-Return](../../../../../samples\snippets\visualbasic\getting-started/ref-return-helper.vb#1)]
+
 ## Visual Basic 14
 
 [Nameof](../../csharp/language-reference/keywords/nameof.md)  

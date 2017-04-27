@@ -43,7 +43,7 @@
  Also, the internal backing for <xref:System.Xaml.XamlMember.DeclaringType%2A> remains unset and returns `null`.  
   
 > [!IMPORTANT]
->  <xref:System.Xaml.XamlDirective> is a <xref:System.Xaml.XamlMember> subclass. As with <xref:System.Xaml.XamlMember>, <xref:System.Xaml.XamlDirective> has security considerations regarding how the XAML type system reports access. See Remarks in <xref:System.Xaml.XamlMember>.  
+>  <xref:System.Xaml.XamlDirective> is a <xref:System.Xaml.XamlMember> subclass. As with <xref:System.Xaml.XamlMember>, <xref:System.Xaml.XamlDirective> has security considerations regarding how the XAML type system reports access. See <xref:System.Xaml.XamlMember>.  
   
  ]]></format>
     </remarks>

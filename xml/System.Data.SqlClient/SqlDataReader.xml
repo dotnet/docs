@@ -716,7 +716,7 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the value to be returned. See the remarks section for more information.</typeparam>
+        <typeparam name="T">The type of the value to be returned.</typeparam>
         <param name="i">The column to be retrieved.</param>
         <summary>Synchronously gets the value of the specified column as a type. <see cref="M:System.Data.SqlClient.SqlDataReader.GetFieldValueAsync``1(System.Int32,System.Threading.CancellationToken)" /> is the asynchronous version of this method.</summary>
         <returns>The returned type object.</returns>
@@ -784,7 +784,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the value to be returned. See the remarks section for more information.</typeparam>
+        <typeparam name="T">The type of the value to be returned.</typeparam>
         <param name="i">The column to be retrieved.</param>
         <param name="cancellationToken">The cancellation instruction, which propagates a notification that operations should be canceled. This does not guarantee the cancellation. A setting of <see langword="CancellationToken.None" /> makes this method equivalent to <see cref="M:System.Data.SqlClient.SqlDataReader.IsDBNull(System.Int32)" />. The returned task must be marked as cancelled.</param>
         <summary>Asynchronously gets the value of the specified column as a type. <see cref="M:System.Data.SqlClient.SqlDataReader.GetFieldValue``1(System.Int32)" /> is the synchronous version of this method.</summary>

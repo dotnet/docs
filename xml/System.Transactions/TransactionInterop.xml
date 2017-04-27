@@ -252,7 +252,7 @@
         <summary>Generates a propagation token for the specified <see cref="T:System.Transactions.Transaction" />.</summary>
         <returns>This method, together with the <see cref="M:System.Transactions.TransactionInterop.GetTransactionFromTransmitterPropagationToken(System.Byte[])" /> method, provide functionality for Transmitter/Receiver propagation, in which the transaction is "pulled" from the remote machine when the latter is called to unmarshal the transaction.  
   
- For more information on different propagation models, see the Remarks section of the <see cref="T:System.Transactions.TransactionInterop" /> class.</returns>
+ For more information on different propagation models, see <see cref="T:System.Transactions.TransactionInterop" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

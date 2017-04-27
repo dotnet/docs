@@ -634,7 +634,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.UnauthorizedAccessException">The code trying to execute this operation does not have permission to manipulate this window. See the Remarks section for details.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The code trying to execute this operation does not have permission to manipulate this window.</exception>
       </Docs>
     </Member>
     <Member MemberName="MoveTo">
@@ -667,7 +667,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.UnauthorizedAccessException">The code trying to execute this operation does not have permission to manipulate this window. See the Remarks section for details.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The code trying to execute this operation does not have permission to manipulate this window.</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">

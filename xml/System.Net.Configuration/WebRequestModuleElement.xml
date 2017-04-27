@@ -68,7 +68,7 @@
       </Parameters>
       <Docs>
         <param name="prefix">A string containing a URI prefix.</param>
-        <param name="type">A string containing the type and assembly information for the class that handles creating requests for resources that use the <c>prefix</c> URI prefix. For more information, see the Remarks section.</param>
+        <param name="type">A string containing the type and assembly information for the class that handles creating requests for resources that use the <c>prefix</c> URI prefix.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.WebRequestModuleElement" /> class using the specified URI prefix and type information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

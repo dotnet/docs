@@ -61,7 +61,7 @@
       <Docs>
         <param name="targetForestName">The DNS name of the forest that the trust is created with.</param>
         <param name="direction">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> members that determines the direction of the trust, relative to this forest.</param>
-        <param name="trustPassword">The password for the trust. See the Remarks section for more information.</param>
+        <param name="trustPassword">The password for the trust.</param>
         <summary>Creates the local side of a trust relationship with the specified forest.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -609,7 +609,7 @@
       </Parameters>
       <Docs>
         <param name="targetForestName">The DNS name of the <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> with which the inbound trust relationship exists.</param>
-        <summary>Gets a Boolean value that indicates whether selective authentication is enabled on the inbound trust relationship with the specified forest.  <see langword="true" /> if selective authentication is enabled; otherwise, <see langword="false" />. For more information, see the Remarks section.</summary>
+        <summary>Gets a Boolean value that indicates whether selective authentication is enabled on the inbound trust relationship with the specified forest.  <see langword="true" /> if selective authentication is enabled; otherwise, <see langword="false" />.</summary>
         <returns>
           <see langword="true" /> if selective authentication is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>

@@ -263,7 +263,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the last object that was written. Typically only called when the node stream is at its end and the object graph is complete.</summary>
-        <value>The last object written, or <see langword="null" />. See Remarks.</value>
+        <value>The last object written, or <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

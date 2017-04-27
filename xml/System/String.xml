@@ -7912,7 +7912,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <Docs>
         <param name="separator">A character array that delimits the substrings in this string, an empty array that contains no delimiters, or <see langword="null" />.</param>
         <summary>Splits a string into substrings that are based on the characters in an array.</summary>
-        <returns>An array whose elements contain the substrings from this instance that are delimited by one or more characters in <paramref name="separator" />. For more information, see the Remarks section.</returns>
+        <returns>An array whose elements contain the substrings from this instance that are delimited by one or more characters in <paramref name="separator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -8083,7 +8083,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <param name="separator">A character array that delimits the substrings in this string, an empty array that contains no delimiters, or <see langword="null" />.</param>
         <param name="count">The maximum number of substrings to return.</param>
         <summary>Splits a string into a maximum number of substrings based on the characters in an array. You also specify the maximum number of substrings to return.</summary>
-        <returns>An array whose elements contain the substrings in this instance that are delimited by one or more characters in <paramref name="separator" />. For more information, see the Remarks section.</returns>
+        <returns>An array whose elements contain the substrings in this instance that are delimited by one or more characters in <paramref name="separator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -8173,7 +8173,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <param name="options">
           <see cref="F:System.StringSplitOptions.RemoveEmptyEntries" /> to omit empty array elements from the array returned; or <see cref="F:System.StringSplitOptions.None" /> to include empty array elements in the array returned.</param>
         <summary>Splits a string into substrings based on the characters in an array. You can specify whether the substrings include empty array elements.</summary>
-        <returns>An array whose elements contain the substrings in this string that are delimited by one or more characters in <paramref name="separator" />. For more information, see the Remarks section.</returns>
+        <returns>An array whose elements contain the substrings in this string that are delimited by one or more characters in <paramref name="separator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -8274,7 +8274,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <param name="options">
           <see cref="F:System.StringSplitOptions.RemoveEmptyEntries" /> to omit empty array elements from the array returned; or <see cref="F:System.StringSplitOptions.None" /> to include empty array elements in the array returned.</param>
         <summary>Splits a string into substrings based on the strings in an array. You can specify whether the substrings include empty array elements.</summary>
-        <returns>An array whose elements contain the substrings in this string that are delimited by one or more strings in <paramref name="separator" />. For more information, see the Remarks section.</returns>
+        <returns>An array whose elements contain the substrings in this string that are delimited by one or more strings in <paramref name="separator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -8394,7 +8394,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <param name="options">
           <see cref="F:System.StringSplitOptions.RemoveEmptyEntries" /> to omit empty array elements from the array returned; or <see cref="F:System.StringSplitOptions.None" /> to include empty array elements in the array returned.</param>
         <summary>Splits a string into a maximum number of substrings based on the characters in an array.</summary>
-        <returns>An array whose elements contain the substrings in this string that are delimited by one or more characters in <paramref name="separator" />. For more information, see the Remarks section.</returns>
+        <returns>An array whose elements contain the substrings in this string that are delimited by one or more characters in <paramref name="separator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -8481,7 +8481,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <param name="options">
           <see cref="F:System.StringSplitOptions.RemoveEmptyEntries" /> to omit empty array elements from the array returned; or <see cref="F:System.StringSplitOptions.None" /> to include empty array elements in the array returned.</param>
         <summary>Splits a string into a maximum number of substrings based on the strings in an array. You can specify whether the substrings include empty array elements.</summary>
-        <returns>An array whose elements contain the substrings in this string that are delimited by one or more strings in <paramref name="separator" />. For more information, see the Remarks section.</returns>
+        <returns>An array whose elements contain the substrings in this string that are delimited by one or more strings in <paramref name="separator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

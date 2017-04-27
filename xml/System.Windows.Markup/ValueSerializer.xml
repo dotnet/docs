@@ -154,7 +154,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="value" /> cannot be converted.</exception>
         <block subset="none" type="overrides">
-          <para>Avoid throwing exceptions from implementations. See Remarks in <see cref="T:System.Windows.Markup.ValueSerializer" />.</para>
+          <para>Avoid throwing exceptions from implementations. See <see cref="T:System.Windows.Markup.ValueSerializer" />.</para>
         </block>
       </Docs>
     </Member>
@@ -190,7 +190,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="value" /> cannot be converted.</exception>
         <block subset="none" type="overrides">
-          <para>Avoid throwing exceptions from implementations. See Remarks in <see cref="T:System.Windows.Markup.ValueSerializer" />.</para>
+          <para>Avoid throwing exceptions from implementations. See <see cref="T:System.Windows.Markup.ValueSerializer" />.</para>
         </block>
       </Docs>
     </Member>

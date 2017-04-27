@@ -598,7 +598,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the channel dispatcher adds addressing headers to request-reply messages.</summary>
         <value>
-          <see langword="true" /> if the proxy does not add any addressing headers; otherwise, <see langword="false" />. The default is <see langword="false" />. See Remarks.</value>
+          <see langword="true" /> if the proxy does not add any addressing headers; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

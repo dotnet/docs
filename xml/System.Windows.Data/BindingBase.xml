@@ -188,7 +188,7 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">The object that can provide services for the markup extension. May be <see langword="null" />; see the Remarks section for more information.</param>
+        <param name="serviceProvider">The object that can provide services for the markup extension. May be <see langword="null" />;</param>
         <summary>Returns an object that should be set on the property where this binding and extension are applied.</summary>
         <returns>The value to set on the binding target property.</returns>
         <remarks>

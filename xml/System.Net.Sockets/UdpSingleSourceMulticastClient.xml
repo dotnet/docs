@@ -140,7 +140,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The multicast group has already been joined or a join operation is currently in progress.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpSingleSourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginReceiveFromSource">
@@ -210,7 +210,7 @@
  <paramref name="offset" /> plus the count is greater than the length of the <paramref name="buffer" />.</exception>
         <exception cref="T:System.InvalidOperationException">The multicast group has not yet been joined.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpSingleSourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket for receiving. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket for receiving.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginSendToSource">
@@ -292,7 +292,7 @@
  <paramref name="remotePort" /> is less than 0 or greater than 65,535.</exception>
         <exception cref="T:System.InvalidOperationException">The multicast group has not yet been joined.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpSingleSourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -371,7 +371,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="result" /> is a null reference (Nothing in Visual Basic).</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpSingleSourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndReceiveFromSource">
@@ -419,7 +419,7 @@
           <paramref name="result" /> is a null reference (Nothing in Visual Basic).</exception>
         <exception cref="T:System.InvalidOperationException">The multicast group has not yet been joined.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpSingleSourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndSendToSource">
@@ -462,7 +462,7 @@
           <paramref name="result" /> is a null reference (Nothing in Visual Basic).</exception>
         <exception cref="T:System.InvalidOperationException">The multicast group has not yet been joined.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpSingleSourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReceiveBufferSize">

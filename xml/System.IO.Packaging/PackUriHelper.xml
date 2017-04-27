@@ -664,7 +664,7 @@
   
  -or-  
   
- The <see cref="P:System.IO.Packaging.PackageRelationship.SourceUri" /> of the relationship part references another relationship part (not valid, see Remarks).</exception>
+ The <see cref="P:System.IO.Packaging.PackageRelationship.SourceUri" /> of the relationship part references another relationship part (not valid).</exception>
       </Docs>
     </Member>
     <Member MemberName="IsRelationshipPartUri">

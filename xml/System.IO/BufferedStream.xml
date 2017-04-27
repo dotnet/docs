@@ -175,7 +175,7 @@
         <param name="count">The maximum number of bytes to read.</param>
         <param name="callback">An optional asynchronous callback, to be called when the read is complete.</param>
         <param name="state">A user-provided object that distinguishes this particular asynchronous read request from other requests.</param>
-        <summary>Begins an asynchronous read operation. (Consider using <see cref="M:System.IO.BufferedStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" /> instead; see the Remarks section.)</summary>
+        <summary>Begins an asynchronous read operation. (Consider using <see cref="M:System.IO.BufferedStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" /> instead.)</summary>
         <returns>An object that represents the asynchronous read, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -231,7 +231,7 @@
         <param name="count">The maximum number of bytes to write.</param>
         <param name="callback">The method to be called when the asynchronous write operation is completed.</param>
         <param name="state">A user-provided object that distinguishes this particular asynchronous write request from other requests.</param>
-        <summary>Begins an asynchronous write operation. (Consider using <see cref="M:System.IO.BufferedStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" /> instead; see the Remarks section.)</summary>
+        <summary>Begins an asynchronous write operation. (Consider using <see cref="M:System.IO.BufferedStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" /> instead.)</summary>
         <returns>An object that references the asynchronous write which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -442,7 +442,7 @@
       </Parameters>
       <Docs>
         <param name="asyncResult">The reference to the pending asynchronous request to wait for.</param>
-        <summary>Waits for the pending asynchronous read operation to complete. (Consider using <see cref="M:System.IO.BufferedStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" /> instead; see the Remarks section.)</summary>
+        <summary>Waits for the pending asynchronous read operation to complete. (Consider using <see cref="M:System.IO.BufferedStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" /> instead.)</summary>
         <returns>The number of bytes read from the stream, between 0 (zero) and the number of bytes you requested. Streams only return 0 only at the end of the stream, otherwise, they should block until at least 1 byte is available.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -481,7 +481,7 @@
       </Parameters>
       <Docs>
         <param name="asyncResult">The pending asynchronous request.</param>
-        <summary>Ends an asynchronous write operation and blocks until the I/O operation is complete. (Consider using <see cref="M:System.IO.BufferedStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" /> instead; see the Remarks section.)</summary>
+        <summary>Ends an asynchronous write operation and blocks until the I/O operation is complete. (Consider using <see cref="M:System.IO.BufferedStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" /> instead.)</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

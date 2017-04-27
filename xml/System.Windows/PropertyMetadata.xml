@@ -77,7 +77,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="defaultValue" /> cannot be set to the value <see cref="F:System.Windows.DependencyProperty.UnsetValue" />; see Remarks.</exception>
+          <paramref name="defaultValue" /> cannot be set to the value <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -140,7 +140,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="defaultValue" /> cannot be set to the value <see cref="F:System.Windows.DependencyProperty.UnsetValue" />; see Remarks.</exception>
+          <paramref name="defaultValue" /> cannot be set to the value <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -181,7 +181,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="defaultValue" /> cannot be set to the value <see cref="F:System.Windows.DependencyProperty.UnsetValue" />; see Remarks.</exception>
+          <paramref name="defaultValue" /> cannot be set to the value <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CoerceValueCallback">
@@ -226,7 +226,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the default value of the dependency property.</summary>
-        <value>The default value of the property. The default value on a <see cref="T:System.Windows.PropertyMetadata" /> instance created with the parameterless constructor will be <see cref="F:System.Windows.DependencyProperty.UnsetValue" />; see Remarks.</value>
+        <value>The default value of the property. The default value on a <see cref="T:System.Windows.PropertyMetadata" /> instance created with the parameterless constructor will be <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -241,7 +241,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">Cannot be set to the value <see cref="F:System.Windows.DependencyProperty.UnsetValue" /> once created; see Remarks.</exception>
+        <exception cref="T:System.ArgumentException">Cannot be set to the value <see cref="F:System.Windows.DependencyProperty.UnsetValue" /> once created.</exception>
         <exception cref="T:System.InvalidOperationException">Cannot set a metadata property once it is applied to a dependency property operation.</exception>
       </Docs>
     </Member>

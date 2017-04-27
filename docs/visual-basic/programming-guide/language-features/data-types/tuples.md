@@ -133,15 +133,15 @@ A method can return only a single value. Frequently, though, you'd like a method
 
 For example, the **TryParse** methods in .NET return a `Boolean` value that indicates whether the parsing operation succeeded. The result of the parsing operation is returned in a variable passed by reference to the method. Normally, a call to the a parsing method such as <xref:System.Int32.TryParse%2A> looks like the following:
 
-[!code-vb[Return](../../../../../samples\snippets\visualbasic\programming-guide\language-features\data-types/tuple-return.vb#1)]
+[!code-vb[Return](../../../../../samples\snippets\visualbasic\programming-guide\language-features\data-types/tuple-returns.vb#1)]
 
 We can return a tuple from the parsing operation if we wrap the call to the <xref:System.Int32.TryParse%2A> method in our own method. In the following example, `NumericLibrary.ParseInteger` calls the <xref:System.Int32.TryParse%2A> method and returns a named tuple with two elements. 
 
-[!code-vb[Return](../../../../../samples\snippets\visualbasic\programming-guide\language-features\data-types/tuple-return.vb#2)]
+[!code-vb[Return](../../../../../samples\snippets\visualbasic\programming-guide\language-features\data-types/tuple-returns.vb#2)]
 
 You can then call the method with code like the following:
 
-[!code-vb[Return](../../../../../samples\snippets\visualbasic\programming-guide\language-features\data-types/tuple-return.vb#2)]
+[!code-vb[Return](../../../../../samples\snippets\visualbasic\programming-guide\language-features\data-types/tuple-returns.vb#3)]
 
 ## Visual Basic tuples and tuples in the .NET Framework
 

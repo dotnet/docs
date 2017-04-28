@@ -23,7 +23,7 @@ ms.assetid: 1f3b9a68-4dea-4b60-8cb3-f46164eedbbf
 
 ## Installation and setup
 
-Install [Microsoft Visual Studio 2017](https://www.visualstudio.com/). Review the information at [Docker for Windows: What to know before you install](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install) and install [Docker For Windows](https://docs.docker.com/docker-for-windows/install/).
+Install [Microsoft Visual Studio 2017](https://www.visualstudio.com/) with the .NET Core workload. Review the information at [Docker for Windows: What to know before you install](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install) and install [Docker For Windows](https://docs.docker.com/docker-for-windows/install/).
 
 A required configuration is to setup **[Shared Drives](https://docs.docker.com/docker-for-windows/#shared-drives)** in Docker for Windows. The setting is required for the volume mapping and debugging support.
 

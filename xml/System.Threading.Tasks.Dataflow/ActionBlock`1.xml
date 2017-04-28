@@ -40,7 +40,7 @@
    
   
 ## Examples  
- The following example shows the use of the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> class to perform several computations using dataflow blocks, and returns the elapsed time required to perform the computations. This code example is part of a larger example provided for the [How to: Specify the Degree of Parallelism in a Dataflow Block](../Topic/How%20to:%20Specify%20the%20Degree%20of%20Parallelism%20in%20a%20Dataflow%20Block.md) topic.  
+ The following example shows the use of the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> class to perform several computations using dataflow blocks, and returns the elapsed time required to perform the computations. This code example is part of a larger example provided for the [How to: Specify the Degree of Parallelism in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md) topic.  
   
  [!code-csharp[TPLDataflow_DegreeOfParallelism#2](~/snippets/csharp/VS_Snippets_Misc/tpldataflow_degreeofparallelism/cs/dataflowdegreeofparallelism.cs#2)]
  [!code-vb[TPLDataflow_DegreeOfParallelism#2](~/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_degreeofparallelism/vb/dataflowdegreeofparallelism.vb#2)]  
@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to use the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601.%23ctor%28System.Action%7B%600%7D%2CSystem.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions%29> constructor to create a new <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> object. This code example is part of a larger example provided for the [How to: Specify the Degree of Parallelism in a Dataflow Block](../Topic/How%20to:%20Specify%20the%20Degree%20of%20Parallelism%20in%20a%20Dataflow%20Block.md) topic.  
+ The following example shows how to use the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601.%23ctor%28System.Action%7B%600%7D%2CSystem.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions%29> constructor to create a new <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> object. This code example is part of a larger example provided for the [How to: Specify the Degree of Parallelism in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md) topic.  
   
  [!code-csharp[TPLDataflow_DegreeOfParallelism#2](~/snippets/csharp/VS_Snippets_Misc/tpldataflow_degreeofparallelism/cs/dataflowdegreeofparallelism.cs#2)]
  [!code-vb[TPLDataflow_DegreeOfParallelism#2](~/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_degreeofparallelism/vb/dataflowdegreeofparallelism.vb#2)]  
@@ -180,7 +180,7 @@
    
   
 ## Examples  
- The following example shows the use of the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601.Complete%2A> method to signal to the dataflow block  that it shouldn't accept or produce any more messages nor consume any more postponed messages . This code example is part of a larger example provided for the [How to: Specify the Degree of Parallelism in a Dataflow Block](../Topic/How%20to:%20Specify%20the%20Degree%20of%20Parallelism%20in%20a%20Dataflow%20Block.md) topic.  
+ The following example shows the use of the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601.Complete%2A> method to signal to the dataflow block  that it shouldn't accept or produce any more messages nor consume any more postponed messages . This code example is part of a larger example provided for the [How to: Specify the Degree of Parallelism in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md) topic.  
   
  [!code-csharp[TPLDataflow_DegreeOfParallelism#2](~/snippets/csharp/VS_Snippets_Misc/tpldataflow_degreeofparallelism/cs/dataflowdegreeofparallelism.cs#2)]
  [!code-vb[TPLDataflow_DegreeOfParallelism#2](~/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_degreeofparallelism/vb/dataflowdegreeofparallelism.vb#2)]  
@@ -214,7 +214,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601.Completion%2A> property to wait for all messages to propagate through the network. This code example is part of a larger example provided for the [How to: Specify the Degree of Parallelism in a Dataflow Block](../Topic/How%20to:%20Specify%20the%20Degree%20of%20Parallelism%20in%20a%20Dataflow%20Block.md) topic.  
+ The following example shows how to use the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601.Completion%2A> property to wait for all messages to propagate through the network. This code example is part of a larger example provided for the [How to: Specify the Degree of Parallelism in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md) topic.  
   
  [!code-csharp[TPLDataflow_DegreeOfParallelism#2](~/snippets/csharp/VS_Snippets_Misc/tpldataflow_degreeofparallelism/cs/dataflowdegreeofparallelism.cs#2)]
  [!code-vb[TPLDataflow_DegreeOfParallelism#2](~/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_degreeofparallelism/vb/dataflowdegreeofparallelism.vb#2)]  
@@ -274,7 +274,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to use the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601.Post%2A> method to post an item to the target dataflow block. This code example is part of a larger example provided for the [How to: Specify the Degree of Parallelism in a Dataflow Block](../Topic/How%20to:%20Specify%20the%20Degree%20of%20Parallelism%20in%20a%20Dataflow%20Block.md) topic.  
+ The following example shows how to use the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601.Post%2A> method to post an item to the target dataflow block. This code example is part of a larger example provided for the [How to: Specify the Degree of Parallelism in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md) topic.  
   
  [!code-csharp[TPLDataflow_DegreeOfParallelism#2](~/snippets/csharp/VS_Snippets_Misc/tpldataflow_degreeofparallelism/cs/dataflowdegreeofparallelism.cs#2)]
  [!code-vb[TPLDataflow_DegreeOfParallelism#2](~/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_degreeofparallelism/vb/dataflowdegreeofparallelism.vb#2)]  

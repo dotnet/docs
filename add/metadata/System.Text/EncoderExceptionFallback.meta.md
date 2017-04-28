@@ -1,41 +1,23 @@
 ---
 uid: System.Text.EncoderExceptionFallback
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Text.EncoderExceptionFallback.GetHashCode
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Text.EncoderExceptionFallback.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Text.EncoderExceptionFallback.Equals(System.Object)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Text.EncoderExceptionFallback.CreateFallbackBuffer
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
 ---
 
 ---
 uid: System.Text.EncoderExceptionFallback.MaxCharCount
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
+---
+
+---
+uid: System.Text.EncoderExceptionFallback.GetHashCode
+---
+
+---
+uid: System.Text.EncoderExceptionFallback.#ctor
+---
+
+---
+uid: System.Text.EncoderExceptionFallback.CreateFallbackBuffer
+---
+
+---
+uid: System.Text.EncoderExceptionFallback.Equals(System.Object)
 ---

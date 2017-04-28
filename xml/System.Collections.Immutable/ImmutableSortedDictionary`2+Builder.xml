@@ -43,8 +43,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a sorted dictionary that mutates with little or no memory allocations and that can produce or build on immutable sorted dictionary instances very efficiently.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class allows multiple combinations of changes to be made to a set with equal efficiency.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -64,8 +73,8 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The object to add to the dictionary.</param>
+        <summary>Adds the specified item to the immutable sorted dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +96,9 @@
         <Parameter Name="value" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of the element to add.</param>
+        <param name="value">The value of the element to add.</param>
+        <summary>Adds an element that has the specified key and value to the immutable sorted dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +119,8 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="items">The items to add to the dictionary.</param>
+        <summary>Adds a sequence of values to the immutable sorted dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,7 +139,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all items from the immutable sorted dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,9 +160,10 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The object to locate in the dictionary.</param>
+        <summary>Determines whether the immutable sorted dictionary contains a specific value.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> is found in the dictionary; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,9 +184,10 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key to locate in the dictionary.</param>
+        <summary>Determines whether the immutable sorted dictionary contains an element with the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the dictionary contains an element with the key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,9 +208,10 @@
         <Parameter Name="value" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to locate in the dictionary. The value can be <see langword="null" /> for reference types.</param>
+        <summary>Determines whether the immutable sorted dictionary contains an element with the specified value.</summary>
+        <returns>
+          <see langword="true" /> if the immutable sorted dictionary contains an element with the specified value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,8 +229,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements in this immutable sorted dictionary.</summary>
+        <value>The number of elements in this dictionary.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,8 +249,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through the immutable sorted dictionary.</summary>
+        <returns>An enumerator that can be used to iterate through the dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,9 +271,9 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key to search for.</param>
+        <summary>Gets the value for a given key if a matching key exists in the dictionary; otherwise the default value.</summary>
+        <returns>The value for the key, or <c>default(TValue)</c> if no matching key was found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,10 +295,10 @@
         <Parameter Name="defaultValue" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="defaultValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key to search for.</param>
+        <param name="defaultValue">The default value to return if no matching key is found in the dictionary.</param>
+        <summary>Gets the value for a given key if a matching key exists in the dictionary; otherwise the default value.</summary>
+        <returns>The value for the key, or <paramref name="defaultValue" /> if no matching key was found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,9 +319,9 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The key to retrieve the value for.</param>
+        <summary>Gets or sets the value for a specified key in the immutable sorted dictionary.</summary>
+        <value>The value associated with the given key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,8 +339,8 @@
         <ReturnType>System.Collections.Generic.IComparer&lt;TKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the key comparer.</summary>
+        <value>The key comparer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,8 +358,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a strongly typed, read-only collection of elements.</summary>
+        <value>A strongly typed, read-only collection of elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,9 +380,10 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The object to remove from the dictionary.</param>
+        <summary>Removes the first occurrence of a specific object from the immutable sorted dictionary.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> was successfully removed from the dictionary; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,9 +404,10 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key of the element to remove.</param>
+        <summary>Removes the element with the specified key from the immutable sorted dictionary.</summary>
+        <returns>
+          <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="key" /> was not found in the original dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,8 +428,8 @@
         <Parameter Name="keys" Type="System.Collections.Generic.IEnumerable&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <param name="keys">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keys">The keys for entries to remove from the dictionary.</param>
+        <summary>Removes any entries with keys that match those found in the specified sequence from the immutable sorted dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -538,10 +552,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the dictionary. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the dictionary to an array, starting at a particular array index.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedDictionary%602.Builder> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -563,8 +586,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
+        <value>true if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,8 +610,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -610,10 +633,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The key of the element to add.</param>
+        <param name="value">The value of the element to add.</param>
+        <summary>Adds an element with the provided key and value to the dictionary object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedDictionary%602.Builder> instance is cast to an <xref:System.Collections.IDictionary> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Contains">
@@ -633,10 +663,18 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The key to locate.</param>
+        <summary>Determines whether the dictionary object contains an element with the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the dictionary contains an element with the key; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedDictionary%602.Builder> instance is cast to an <xref:System.Collections.IDictionary> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.GetEnumerator">
@@ -654,9 +692,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an <see cref="T:System.Collections.IDictionaryEnumerator" /> object for the dictionary.</summary>
+        <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> object for the dictionary.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedDictionary%602.Builder> instance is cast to an <xref:System.Collections.IDictionary> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsFixedSize">
@@ -673,8 +718,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IDictionary" /> object has a fixed size.</summary>
+        <value>true if the <see cref="T:System.Collections.IDictionary" /> object has a fixed size; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -692,8 +737,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
+        <value>true if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -714,8 +759,8 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key.</param>
+        <summary>Gets or sets the element with the specified key.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -734,8 +779,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
+        <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -756,9 +801,16 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The key of the element to remove.</param>
+        <summary>Removes the element with the specified key from the dictionary.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedDictionary%602.Builder> instance is cast to an <xref:System.Collections.IDictionary> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Values">
@@ -775,8 +827,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
+        <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -795,9 +847,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An enumerator object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedDictionary%602.Builder> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToImmutable">
@@ -815,9 +874,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates an immutable sorted dictionary based on the contents of this instance.</summary>
+        <returns>An immutable sorted dictionary.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an O(n) operation, and approaches O(1) time as the number of actual mutations to the set since the last call to this method approaches 0.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetKey">
@@ -838,11 +904,25 @@
         <Parameter Name="actualKey" Type="TKey&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="equalKey">To be added.</param>
-        <param name="actualKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="equalKey">The key to search for.</param>
+        <param name="actualKey">The matching key located in the dictionary if found, or <c>equalkey</c> if no match is found.</param>
+        <summary>Determines whether this dictionary contains a specified key.</summary>
+        <returns>
+          <see langword="true" /> if a match for <paramref name="equalKey" /> is found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Following are some scenarios where <xref:System.Collections.Immutable.ImmutableSortedDictionary%602.Builder.TryGetKey%2A> may be useful:  
+  
+-   You want to reuse a previously stored object reference instead of creating a new reference.  
+  
+-   You want to look up the canonical value of an object  
+  
+-   You want to retrieve more complete data about an object  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -863,10 +943,11 @@
         <Parameter Name="value" Type="TValue&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key whose value will be retrieved.</param>
+        <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, contains the default value for the type of the <c>value</c> parameter. This parameter is passed uninitialized.</param>
+        <summary>Gets the value associated with the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the object that implements the dictionary contains an element with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -884,8 +965,8 @@
         <ReturnType>System.Collections.Generic.IEqualityComparer&lt;TValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value comparer.</summary>
+        <value>The value comparer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -903,8 +984,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection that contains the values of the immutable sorted dictionary.</summary>
+        <value>A collection that contains the values of the object that implements the dictionary.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

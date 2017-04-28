@@ -1,6 +1,6 @@
 ---
 uid: System.Runtime.InteropServices
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "mairaw"
+ms.author: "mairaw"
 manager: "wpickett"
 ---

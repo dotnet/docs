@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebToken", "SimpleWebToken\SimpleWebToken.csproj", "{6F39A351-52CC-42DB-B67C-C88EDA7B6ED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassiveSTS", "PassiveSTS\PassiveSTS.csproj", "{0223518F-18B7-46C5-B4AD-4FE753879232}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelyingParty", "RelyingParty\RelyingParty.csproj", "{A302B6BF-61F0-4CDF-84CB-ED5D6CBE7EF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0223518F-18B7-46C5-B4AD-4FE753879232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0223518F-18B7-46C5-B4AD-4FE753879232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0223518F-18B7-46C5-B4AD-4FE753879232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0223518F-18B7-46C5-B4AD-4FE753879232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F39A351-52CC-42DB-B67C-C88EDA7B6ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F39A351-52CC-42DB-B67C-C88EDA7B6ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F39A351-52CC-42DB-B67C-C88EDA7B6ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F39A351-52CC-42DB-B67C-C88EDA7B6ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A302B6BF-61F0-4CDF-84CB-ED5D6CBE7EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A302B6BF-61F0-4CDF-84CB-ED5D6CBE7EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A302B6BF-61F0-4CDF-84CB-ED5D6CBE7EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A302B6BF-61F0-4CDF-84CB-ED5D6CBE7EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

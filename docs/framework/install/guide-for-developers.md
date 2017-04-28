@@ -1,5 +1,5 @@
 ---
-title: "Installing the .NET Framework | Microsoft Docs"
+title: "Install the .NET Framework for developers | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/07/2017"
 ms.prod: ".net-framework"
@@ -21,7 +21,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 
-# Installing the .NET Framework
+# Install the .NET Framework for developers
 
 .NET is an integral part of many applications running on Windows and provides common functionality for those applications to run. For developers, the .NET Framework provides a comprehensive and consistent programming model for building applications that have visually stunning user experiences and seamless and secure communication.
 
@@ -37,7 +37,7 @@ The fact that later .NET Framework 4.x versions are in-place updates to earlier 
 > [!NOTE]
 > For information on the .NET Framework 3.5, see [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](~/docs/framework/install/dotnet-35-windows-10.md).
 
-Use the following table for quick links, or read further for details. To view the system requirements for the .NET Framework before installation, see [System Requirements](~/docs/framework/get-started/system-requirements.md). For help with troubleshooting, see [Troubleshooting](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md).
+Use the following table for quick links, or read further for details. To view the system requirements for the .NET Framework before installation, see [System Requirements](~/docs/framework/get-started/system-requirements.md). For help with troubleshooting, see [Troubleshoot blocked .NET Framework installations and uninstallations](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md).
 
 | .NET Framework version | Developer installation | Redistributable installation | Platform support |  
 | ---------------------- | ---------------------- | ---------------------------- | ---------------- |  
@@ -126,7 +126,7 @@ To install or download the .NET Framework from the Microsoft Download Center, fo
 1. If you want to download resources for additional languages, follow the instructions in the next section to install one or more language packs.  
   
 > [!NOTE]
-> If you encounter any problems during the installation, see [Troubleshooting](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md).
+> If you encounter any problems during the installation, see [Troubleshoot blocked .NET Framework installations and uninstallations](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md).
 
  **Installation notes:**
 
@@ -214,4 +214,4 @@ The following table lists the supported languages.
 [Deployment Guide for Developers](~/docs/framework/deployment/deployment-guide-for-developers.md)
 [Deployment Guide for Administrators](~/docs/framework/deployment/guide-for-administrators.md)
 [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](~/docs/framework/install/dotnet-35-windows-10.md)
-[Troubleshooting](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)
+[Troubleshoot Blocked .NET Framework Installations and Uninstallations](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)

@@ -1,5 +1,5 @@
 ---
-title: Installing the .NET Framework on Windows 7 SP1
+title: Install the .NET Framework on Windows 7 SP1
 description: Learn how to install .NET Framework on Windows 7 SP1
 author: rlander
 keywords: .NET Framework, Install
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 85cda1d5-c9a4-4eb5-93e6-4f878de07fd7
 ---
 
-# Installing the .NET Framework on Windows 7 SP1
+# Install the .NET Framework on Windows 7 SP1
 
 You may need the .NET Framework to run an application on Windows 7 SP1. You can install the latest supported versions using the following instructions. The instructions depend on which version of the .NET Framework you need.
 

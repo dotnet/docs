@@ -37,7 +37,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
  [Using the Clrver tool](#clr_a)  
  [Using code to query the System.Environment class](#clr_b)  
   
- For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md). For information about installing the .NET Framework, see the [installation guide](../../../docs/framework/install/guide-for-developers.md).  
+ For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md). For information about installing the .NET Framework, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).  
   
 <a name="net_a"></a>   
 #### To find .NET Framework versions by viewing the registry (.NET Framework 1-4)  
@@ -192,5 +192,5 @@ Users can install and run multiple versions of the .NET Framework on their compu
   
 ## See Also  
  [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)   
- [Installation Guide](../../../docs/framework/install/guide-for-developers.md)   
+ [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)   
  [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)

@@ -1,5 +1,5 @@
 ---
-title: Installing the .NET Framework on Windows 8
+title: Install the .NET Framework on Windows 8
 description: Learn how to install .NET Framework on Windows 8
 author: rlander
 keywords: .NET Framework, Install
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 85cda1d5-c9a4-4eb5-93e6-4f478de07ff7
 ---
 
-# Installing the .NET Framework on Windows 8
+# Install the .NET Framework on Windows 8
 
 You may need the .NET Framework to run an application on Windows 8. You can use the following instructions to help you. The instructions depend on which version of the .NET Framework you need.
 

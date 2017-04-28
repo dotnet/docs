@@ -51,7 +51,7 @@ This article helps you get started deploying the .NET Framework with your applic
   
     -   [Reducing system restarts during .NET Framework 4.5 installations](../../../docs/framework/deployment/reducing-system-restarts.md)  
   
-    -   [Troubleshooting Blocked .NET Framework Installations and Uninstallations](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)  
+    -   [Troubleshoot blocked .NET Framework installations and uninstallations](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)  
   
 -   Deploying the .NET Framework with a client application (for developers):  
   

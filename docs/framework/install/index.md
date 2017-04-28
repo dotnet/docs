@@ -1,6 +1,6 @@
 ---
-title: Install the .NET Framework on Windows
-description: Learn how to install the .NET Framework on Windows
+title: Installation guide
+description: Learn how to install the .NET Framework on Windows.
 author: rlander
 keywords: .NET Framework, Install
 ms.date: 04/27/2017
@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.assetid: 87cda1d5-c5g8-8eb9-93e8-5f478de07ff7
 ---
 
-# Installing the .NET Framework on Windows
+# Installation guide
 
 ## Supported Windows versions
 

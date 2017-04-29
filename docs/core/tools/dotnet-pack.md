@@ -74,6 +74,10 @@ Sets the serviceable flag in the package. For more information, see [.NET Blog: 
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
+`/p:Version=<version>`
+
+Sets the version of the package 
+
 ## Examples
 
 Pack the project in the current directory:

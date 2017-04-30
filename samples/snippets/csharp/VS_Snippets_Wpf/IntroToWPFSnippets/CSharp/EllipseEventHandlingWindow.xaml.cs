@@ -1,6 +1,6 @@
 //<SnippetHandleEllipseMouseUpEventCODEBEHIND>
-using System.Windows; // Window, MessageBox
-using System.Windows.Input; // MouseButtonEventHandler
+using System.Windows;
+using System.Windows.Input;
 
 namespace SDKSample
 {

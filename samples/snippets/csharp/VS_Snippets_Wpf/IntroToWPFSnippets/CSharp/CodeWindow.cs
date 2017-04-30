@@ -1,6 +1,6 @@
 //<SnippetCodeWindow>
-using System.Windows; // Window, RoutedEventHandler, RoutedEventArgs, MessageBox
-using System.Windows.Controls; // Button
+using System.Windows;
+using System.Windows.Controls;
 
 namespace SDKSample
 {

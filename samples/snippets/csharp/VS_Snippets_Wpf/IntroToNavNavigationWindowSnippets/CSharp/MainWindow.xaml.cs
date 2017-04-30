@@ -1,5 +1,5 @@
 //<SnippetNavigationWindowCODEBEHIND>
-using System.Windows.Navigation; // NavigationWindow
+using System.Windows.Navigation;
 
 namespace SDKSample
 {

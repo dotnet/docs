@@ -1,10 +1,10 @@
 ﻿//<SnippetHostSideAdapterCode>
-using System.AddIn.Contract; // INativeHandleContract
-using System.AddIn.Pipeline; // HostAdapterAttribute, FrameworkElementAdapters, ContractHandle
-using System.Windows; // FrameworkElement
+using System.AddIn.Contract;
+using System.AddIn.Pipeline;
+using System.Windows;
 
-using Contracts; // IWPFAddInContract
-using HostViews; // IWPFAddInHostView
+using Contracts;
+using HostViews;
 
 namespace HostSideAdapters
 {

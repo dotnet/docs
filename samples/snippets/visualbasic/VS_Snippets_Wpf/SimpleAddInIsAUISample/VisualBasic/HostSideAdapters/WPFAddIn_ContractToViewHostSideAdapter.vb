@@ -1,11 +1,11 @@
 ﻿'<SnippetHostSideAdapterCode>
 
-Imports System.AddIn.Contract ' INativeHandleContract
-Imports System.AddIn.Pipeline ' HostAdapterAttribute, FrameworkElementAdapters, ContractHandle
-Imports System.Windows ' FrameworkElement
+Imports System.AddIn.Contract
+Imports System.AddIn.Pipeline
+Imports System.Windows
 
-Imports Contracts ' IWPFAddInContract
-Imports HostViews ' WPFAddInHostView
+Imports Contracts
+Imports HostViews
 
 Namespace HostSideAdapters
 	''' <summary>

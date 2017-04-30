@@ -1,6 +1,6 @@
 ﻿//<SnippetAddInViewCode>
-using System.AddIn.Pipeline; // AddInBaseAttribute
-using System.Windows.Controls; // UserControl
+using System.AddIn.Pipeline;
+using System.Windows.Controls;
 
 namespace AddInViews
 {

@@ -4,12 +4,12 @@
 using System;
 using System.IO;
 using System.IO.Packaging;
-using System.Security.Cryptography; // for CryptographicException
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Permissions;
 using System.Collections;
 using System.Collections.Generic;
-using System.Windows;               // for MessageBox
+using System.Windows;
 
 namespace SDKSample
 {

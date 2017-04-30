@@ -1,7 +1,7 @@
 //  <SNIPPET1>
 using System;
 using System.Reflection;
-using System.Security.Policy;  //for evidence object
+using System.Security.Policy;
 class ADUnload
 {
 	public static void Main()

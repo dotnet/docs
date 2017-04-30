@@ -1,10 +1,10 @@
 '<SnippetTextFoundEventCODEBEHIND1>
 '<SnippetTextFoundEventRaiseCODEBEHIND1>
 '<SnippetFindDialogCloseCODEBEHIND1>
-Imports System ' EventArgs
-Imports System.Windows ' Window, MessageBoxXxx, RoutedEventArgs
-Imports System.Windows.Controls ' TextBox, TextChangedEventArgs
-Imports System.Text.RegularExpressions ' Regex
+Imports System
+Imports System.Windows
+Imports System.Windows.Controls
+Imports System.Text.RegularExpressions
 
 Namespace SDKSample
 

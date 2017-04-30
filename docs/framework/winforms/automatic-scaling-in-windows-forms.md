@@ -23,12 +23,12 @@ manager: "wpickett"
 # Automatic Scaling in Windows Forms
 Automatic scaling enables a form and its controls, designed on one machine with a certain display resolution or system font, to be displayed appropriately on another machine with a different display resolution or system font. It assures that the form and its controls will intelligently resize to be consistent with native windows and other applications on both the users' and other developers' machines. The support of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] for automatic scaling and visual styles enables [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] applications to maintain a consistent look and feel when compared to native Windows applications on each user's machine.  
   
- For the most part, automatic scaling works as expected in [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 2.0 and later. However, font scheme changes can be problematic. To see an example of how to resolve this, see [Scaling Windows Forms](http://www.informit.com/guides/content.aspx?g=dotnet&seqNum=488).  
+ For the most part, automatic scaling works as expected in [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 2.0 and later. However, font scheme changes can be problematic. To see an example of how to resolve this, see [Scaling Windows Forms](https://msdn.microsoft.com/en-us/library/ms229594(v=vs.110).aspx).  
   
 ## Need for Automatic Scaling  
  Without automatic scaling, an application designed for one display resolution or font will either appear too small or too large when that resolution or font is changed. For example, if the application is designed using Tahoma 9 point as a baseline, without adjustment it will appear too small if run on a machine where the system font is Tahoma 12 point. Text elements, such as titles, menus, text box contents, and so on will render smaller than other applications. Furthermore, the size of user interface (UI) elements that contain text, such as the title bar, menus, and many controls are dependent on the font used. In this example, these elements will also appear relatively smaller.  
   
- An analogous situation occurs when an application is designed for a certain display resolution. The most common display resolution is 96 dots per inch (DPI), but higher resolution displays supporting 120, 133, 170, and above are becoming more common. Without adjustment, an application, especially a graphics-based one, designed for one resolution will appear either too large or too small when run at another resolution.  
+ An analogous situation occurs when an application is designed for a certain display resolution. The most common display resolution is 96 dots per inch (DPI), which equals 100% display scaling, but higher resolution displays supporting 125%, 150%, 200% (which respectively equal 120, 144 and 192 DPI) and above are becoming more common. Without adjustment, an application, especially a graphics-based one, designed for one resolution will appear either too large or too small when run at another resolution.  
   
  Automatic scaling seeks to ameliorate these problems by automatically resizing the form and its child controls according to the relative font size or display resolution. The Windows operating system supports automatic scaling of dialog boxes using a relative unit of measurement called dialog units. A dialog unit is based on the system font and its relationship to pixels can be determined though the Win32 SDK function `GetDialogBaseUnits`. When a user changes the theme used by Windows, all dialog boxes are automatically adjusted accordingly. In addition,  
   
@@ -47,12 +47,20 @@ Automatic scaling enables a form and its controls, designed on one machine with 
   
  While this mechanism was sufficient for most purposes, it suffered from the following limitations:  
   
--   Since the <xref:System.Windows.Forms.Form.AutoScaleBaseSize%2A> property represents the baseline font size as integral values, rounding errors occur that become evident when a form is cycled through multiple resolutions.  
+-   Since the <xref:System.Windows.Forms.Form.AutoScaleBaseSize%2A> property represents the baseline font size as integer values, rounding errors occur that become evident when a form is cycled through multiple resolutions.  
   
 -   Automatic scaling was implemented in only the <xref:System.Windows.Forms.Form> class, not in the <xref:System.Windows.Forms.ContainerControl> class. As a result, user controls would scale correctly only when the user control was designed at the same resolution as the form, and it was placed in the form at design time.  
   
--   Forms and their child controls could only be concurrently designed by multiple developers if their machine resolutions were the same. Likewise it also made inheritance of a form dependent on the resolution associated with the parent form.  
-  
+-   Forms and their child controls could only be concurrently designed by multiple developers if their machine resolutions were the same. Likewise it also made inheritance of a form dependent on the resolution associated with the parent form.
+
+> [!NOTE]
+> With display DPIs, especially in modern 2-in-1 devices, differing extremely, this can still happen with the most current versions of the .NET Framework and Visual Studio. To address this in a team using different DPI displays, make sure Visual Studio always starts in a non-High-DPI-aware mode, so the Windows Forms designer always bases the layout calculation on 96 DPI. To this end, simply set the following regestry key to disable Visual Studio's HighDPI awareness:
+
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\devenv.exe]
+"dpiAwareness"=dword:00000000
+```
+
 -   It is not compatible with the newer layout managers introduced with the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 2.0, such as <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel>.  
   
 -   It did not support scaling based directly on the display resolution that is required for compatibility to the [!INCLUDE[compact](../../../includes/compact-md.md)].  

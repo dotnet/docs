@@ -83,17 +83,17 @@ Tuples are a lightweight data structure that most commonly is used to return mul
  
 Visual Basic's support for tuples lets you quickly define a tuple, optionally assign semantic names to its values, and quickly retrieve its values. The following example wraps a call to the <xref:System.Int32.TryParse%2B%> method and returns a tuple.
 
-[!code-vb[Tuple](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#2)]
+[!code-vb[Tuple](../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#2)]
 
 You can then call the method and handle the returned tuple with code like the following.
 
-[!code-vb[Return](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#3)] 
+[!code-vb[Return](../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#3)] 
 
 **Binary literals and digit separators**
 
 You can define a binary literal by using the prefix `&B` or `&b`. In addition, you can use the underscore character, `_`, as a digit separator to enhance readability. The following example uses both features to assign a `Byte` value and to display it as a decimal, hexadecimal, and binary number.
 
-[!code-vb[Binary](../../../../../samples/snippets/visualbasic/getting-started/bin-example.vb#1)]
+[!code-vb[Binary](../../../samples/snippets/visualbasic/getting-started/bin-example.vb)]
 
 For more information, see the "Literal assignments" section of the [Byte](../language-reference/data-types/byte-data-type.md#literal-assignments), [Integer](../language-reference/data-types/integer-data-type.md#literal-assignments), [Long](../language-reference/data-types/long-data-type.md#literal-assignments), [Short](../language-reference/data-types/short-data-type.md#literal-assignments), [SByte](../language-reference/data-types/sbyte-data-type.md#literal-assignments), [UInteger](../language-reference/data-types/uinteger-data-type.md#literal-assignments), [ULong](../language-reference/data-types/ulong-data-type.md#literal-assignments), and [UShort](../language-reference/data-types/ushort-data-type.md#literal-assignments) data types.
 
@@ -103,19 +103,19 @@ Starting with C# 7, C# supports reference return values. That is, when the calli
 
 For example, the following `Sentence` class written in C# includes a `FindNext` method that finds the next word in a sentence that begins with a specified substring. The string is returned as a reference return value, and a `Boolean` variable passed by reference to the method indicates whether the search was successful. This means that the caller can not only read the returned value; he or she can also modify it, and that modification is reflected in the `Sentence` class.
 
-[!code-vb[Ref-Return](../../../../../samples/snippets/visualbasic/getting-started/ref-return.cs)]
+[!code-vb[Ref-Return](../../../samples/snippets/visualbasic/getting-started/ref-return.cs)]
 
 In its simplest form, you can modify the word found in the sentence by using code like the following. Note that you are not assigning a value to the method, but rather to the expression that the method returns, which is the reference return value.
 
-[!code-vb[Ref-Return](../../../../../samples/snippets/visualbasic/getting-started/ref-return.vb#1)]
+[!code-vb[Ref-Return](../../../samples/snippets/visualbasic/getting-started/ref-return.vb#1)]
 
 A problem with this code, though, is that if a match is not found, the method returns the first word. Since the example does not examine the value of the `Boolean` argument to determine whether a match is found, it modifies the first word if there is no match. The following example corrects this by replacing the first word with itself if there is no match.
 
-[!code-vb[Ref-Return](../../../../../samples/snippets/visualbasic/getting-started/ref-return.vb#2)]
+[!code-vb[Ref-Return](../../../samples/snippets/visualbasic/getting-started/ref-return.vb#2)]
 
 A better solution is to use a helper method to which the reference return value is passed by reference. The helper method can then modify the argument passed to it by reference. The following example does that.
 
-[!code-vb[Ref-Return](../../../../../samples/snippets/visualbasic/getting-started/ref-return-helper.vb#1)]
+[!code-vb[Ref-Return](../../../samples/snippets/visualbasic/getting-started/ref-return-helper.vb#1)]
 
 For more information, see [Reference Return Values](../programming-guide/language-features/procedures/ref-return-values.md).
 

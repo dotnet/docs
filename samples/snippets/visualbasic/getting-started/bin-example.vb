@@ -1,5 +1,3 @@
-' Visual Basic .NET Document
-Option Strict On
 
 Module Example
    Public Sub Main()

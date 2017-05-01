@@ -9,12 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "StrongNameGetPublicKey"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "mscorsn.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "StrongNameGetPublicKey"
 dev_langs: 

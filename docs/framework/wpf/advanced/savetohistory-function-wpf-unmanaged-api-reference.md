@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "SaveToHistory"
-apilocation: 
+api_location: 
   - "PresentationHost_v0400.dll"
 ms.assetid: 6dd101a3-44ad-4143-b228-772156f9b8ff
 caps.latest.revision: 3

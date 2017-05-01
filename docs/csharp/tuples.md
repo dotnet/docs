@@ -110,8 +110,8 @@ the rules for assigning named tuples to each other.
 ## Assignment and tuples
 
 The language supports assignment between tuple types that have
-the same number of fields and the same types for each of those
-fields. Those types must be exact compile-time matches. Other
+the same number of fields and implicit conversions for the types for each of those
+fields. Other
 conversions are not considered for assignments. Let's look at the kinds
 of assignments that are allowed between tuple types.
 

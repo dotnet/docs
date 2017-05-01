@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CreateVersionStringFromModule"
-apilocation: 
+api_location: 
   - "dbgshim.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CreateVersionStringFromModule"
 dev_langs: 

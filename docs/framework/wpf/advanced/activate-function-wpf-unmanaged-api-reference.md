@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "Acrivate"
-apilocation: 
+api_location: 
   - "PresentationHost_v0400.dll"
 ms.assetid: 1400329c-b598-465f-80f2-e3dabf044811
 caps.latest.revision: 3

@@ -2,16 +2,17 @@
 title: "Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor"
-apilocation: 
+api_location: 
   - "Microsoft.VisualStudio.Activities.dll"
-apitype: "Assembly"
+api_type: 
+  - "Assembly"
 ms.assetid: 6b44b13c-7a23-4df2-8f9f-45e2b1430002
 caps.latest.revision: 5
 author: "Erikre"

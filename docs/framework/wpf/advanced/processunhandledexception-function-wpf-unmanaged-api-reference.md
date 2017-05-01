@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "ProcessUnhandledException"
-apilocation: 
+api_location: 
   - "PresentationHost_v0400.dll"
 ms.assetid: 495ce5f6-bb4d-4b30-807a-c3c35f1ca95c
 caps.latest.revision: 3

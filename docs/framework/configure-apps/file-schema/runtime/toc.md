@@ -47,6 +47,6 @@
 ### [<Thread_UseAllCpuGroups> Element](thread-useallcpugroups-element.md)
 ### [<ThrowUnobservedTaskExceptions> Element](throwunobservedtaskexceptions-element.md)
 ### [<TimeSpan_LegacyFormatMode> Element](timespan-legacyformatmode-element.md)
-### [<useLegacyJIT> Element](uselegacyjit-element.md)
+### [<useLegacyJit> Element](uselegacyjit-element.md)
 ### [<UseRandomizedStringHashAlgorithm> Element](userandomizedstringhashalgorithm-element.md)
 ### [<UseSmallInternalThreadStacks> Element](usesmallinternalthreadstacks-element.md)

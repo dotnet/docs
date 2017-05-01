@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugComObjectValue::GetCachedInterfacePointers"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
 f1_keywords: 
   - "ICorDebugComObjectValue::GetCachedInterfacePointers"

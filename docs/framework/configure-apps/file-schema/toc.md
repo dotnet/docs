@@ -10,6 +10,7 @@
 ## [Trace and Debug Settings Schema](trace-debug/)
 ## [Compiler and Language Provider Settings Schema](compiler/)
 ## [Application Settings Schema](application-settings-schema.md)
+## [App Settings Schema](appsettings/)
 ## [Web Settings Schema](web/)
 ## [Windows Forms Configuration Section](winforms/)
 ## [WCF Configuration Schema](wcf/)

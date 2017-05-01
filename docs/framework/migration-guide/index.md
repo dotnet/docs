@@ -44,3 +44,4 @@ If you created your app using an earlier version of the .NET Framework, you can 
  [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)   
  [.NET Framework Version and Assembly Information](http://go.microsoft.com/fwlink/?LinkId=201701)   
  [Microsoft .NET Framework Support Lifecycle Policy](http://go.microsoft.com/fwlink/?LinkId=196607)
+ [.NET Framework 4 migration issues](net-framework-4-migration-issues.md)

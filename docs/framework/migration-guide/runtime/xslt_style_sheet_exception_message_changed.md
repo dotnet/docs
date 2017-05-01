@@ -2,15 +2,8 @@
 
 |   |   |
 |---|---|
-|Details|In the .NET Framework 4.5, the text of the error message when an XSLT file is
-too complex is &quot;The style sheet is too complex.&quot; In previous versions, the error
-message was &quot;XSLT compile error.&quot; Application code that depends on the text of
-the error message will no longer work. However, the exception types remain the
-same, so this change should have no real impact.|
-|Suggestion|Update any app code depending on the excepton message from this error condition
-to expect the new message, or (even better) update the code to depend only on
-the exception type (<xref:System.Xml.Xsl.XsltException?displayProperty=name>),
-which has not changed.|
+|Details|In the .NET Framework 4.5, the text of the error message when an XSLT file is too complex is &quot;The style sheet is too complex.&quot; In previous versions, the error message was &quot;XSLT compile error.&quot; Application code that depends on the text of the error message will no longer work. However, the exception types remain the same, so this change should have no real impact.|
+|Suggestion|Update any app code depending on the excepton message from this error condition to expect the new message, or (even better) update the code to depend only on the exception type (<xref:System.Xml.Xsl.XsltException?displayProperty=name>), which has not changed.|
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|

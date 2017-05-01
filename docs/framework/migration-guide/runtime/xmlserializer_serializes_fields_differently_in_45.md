@@ -2,13 +2,8 @@
 
 |   |   |
 |---|---|
-|Details|Changes in the
-<xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> in .NET
-Framework 4.5 caused fields to be formatted differently in the serialized XML.|
-|Suggestion|This behavior was corrected in a servicing update of .NET Framework 4.5. Please
-update the .NET Framework 4.5, or upgrade to .NET Framework 4.5.1 or later, to
-fix this issue. Alternatively, the following config setting will revert to 4.0
-<xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> behavior:<br /><pre><code>&lt;system.xml.serialization&gt;<br />&lt;xmlSerializer useLegacySerializerGeneration=&quot;true&quot; /&gt;<br />&lt;/system.xml.serialization&gt;</code></pre>|
+|Details|Changes in the <xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> in .NET Framework 4.5 caused fields to be formatted differently in the serialized XML.|
+|Suggestion|This behavior was corrected in a servicing update of .NET Framework 4.5. Please update the .NET Framework 4.5, or upgrade to .NET Framework 4.5.1 or later, to fix this issue. Alternatively, the following config setting will revert to 4.0 <xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> behavior:<br /><pre><code>&lt;system.xml.serialization&gt;<br />&lt;xmlSerializer useLegacySerializerGeneration=&quot;true&quot; /&gt;<br />&lt;/system.xml.serialization&gt;</code></pre>|
 |Scope|Major|
 |Version|4.5|
 |Type|Runtime|

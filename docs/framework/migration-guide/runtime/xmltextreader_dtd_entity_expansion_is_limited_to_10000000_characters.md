@@ -3,14 +3,7 @@
 |   |   |
 |---|---|
 |Details|DTD entity expansion is now limited to 10,000,000 characters. Loading XML files without DTD entity expansion or with limited DTD entity expansion is unaffected. Files with DTD entities that expand to more than 10,000,000 characters fail to load, and now throw an exception.|
-|Suggestion|If the limit of DTD entity expansion is too low 10,000,000, the value can be
-overridden with the
-<xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities>
-property. An <xref:System.Xml.XmlReaderSettings?displayProperty=name> with the
-proper <xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities?displayProperty=name>
-value can be passed to <code>XmlReader.Create</code> that takes
-<xref:System.Xml.XmlReaderSettings?displayProperty=name>
-(ie. <xref:System.Xml.XmlReader.Create(System.String,System.Xml.XmlReaderSettings)>)|
+|Suggestion|If the limit of DTD entity expansion is too low 10,000,000, the value can be overridden with the <xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities> property. An <xref:System.Xml.XmlReaderSettings?displayProperty=name> with the proper <xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities?displayProperty=name> value can be passed to <code>XmlReader.Create</code> that takes <xref:System.Xml.XmlReaderSettings?displayProperty=name> (ie. <xref:System.Xml.XmlReader.Create(System.String,System.Xml.XmlReaderSettings)>)|
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|

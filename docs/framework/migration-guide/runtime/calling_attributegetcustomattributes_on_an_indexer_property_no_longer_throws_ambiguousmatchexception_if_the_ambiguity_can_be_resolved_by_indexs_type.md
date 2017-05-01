@@ -2,11 +2,7 @@
 
 |   |   |
 |---|---|
-|Details|Prior to the .NET Framework 4.6, calling <code>GetCustomAttribute(s)</code> on an indexer
-property which differed from another property only by the type of the index
-would result in an
-<xref:System.Reflection.AmbiguousMatchException?displayProperty=name>. Beginning
-in the .NET Framework 4.6, the property&#39;s attributes will be correctly returned.|
+|Details|Prior to the .NET Framework 4.6, calling <code>GetCustomAttribute(s)</code> on an indexer property which differed from another property only by the type of the index would result in an <xref:System.Reflection.AmbiguousMatchException?displayProperty=name>. Beginning in the .NET Framework 4.6, the property&#39;s attributes will be correctly returned.|
 |Suggestion|Be aware that GetCustomAttribute(s) will work more frequently now. If an app was previously relying on the <xref:System.Reflection.AmbiguousMatchException?displayProperty=name>, reflection should now be used to explicitly look for multiple indexers, instead.|
 |Scope|Edge|
 |Version|4.6|

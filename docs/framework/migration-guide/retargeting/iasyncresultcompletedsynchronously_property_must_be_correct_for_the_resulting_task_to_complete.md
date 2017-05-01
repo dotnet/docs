@@ -2,18 +2,8 @@
 
 |   |   |
 |---|---|
-|Details|When calling TaskFactory.FromAsync, the implementation of the
-<xref:System.IAsyncResult.CompletedSynchronously>
-property must be correct for the resulting task to complete. That is, the
-property must return true if, and only if, the implementation completed
-synchronously. Previously, the property was not checked.|
-|Suggestion|If <xref:System.IAsyncResult?displayProperty=name> implementations correctly
-return true for the
-<xref:System.IAsyncResult.CompletedSynchronously?displayProperty=name> property
-only when a task completed synchronously, then no break will be observed. Users
-should review <xref:System.IAsyncResult?displayProperty=name> implementations
-they own (if any) to ensure that they correctly evaluate whether a task
-completed synchronously or not.|
+|Details|When calling TaskFactory.FromAsync, the implementation of the <xref:System.IAsyncResult.CompletedSynchronously> property must be correct for the resulting task to complete. That is, the property must return true if, and only if, the implementation completed synchronously. Previously, the property was not checked.|
+|Suggestion|If <xref:System.IAsyncResult?displayProperty=name> implementations correctly return true for the <xref:System.IAsyncResult.CompletedSynchronously?displayProperty=name> property only when a task completed synchronously, then no break will be observed. Users should review <xref:System.IAsyncResult?displayProperty=name> implementations they own (if any) to ensure that they correctly evaluate whether a task completed synchronously or not.|
 |Scope|Edge|
 |Version|4.5|
 |Type|Retargeting|

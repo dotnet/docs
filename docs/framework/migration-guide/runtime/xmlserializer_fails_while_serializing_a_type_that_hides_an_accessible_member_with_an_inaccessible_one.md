@@ -2,16 +2,8 @@
 
 |   |   |
 |---|---|
-|Details|When serializing a derived type, the
-<xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> can fail if
-the type contains an inaccessible field or property that hides (via the &#39;new&#39;
-keyword) a field or property of the same name that was previously accessible
-(public, for example) on the base type.|
-|Suggestion|This problem can be solved by making the new, hiding member accessible to the
-<xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> (by marking
-it public, for example).<br />Alternatively, the following config setting will revert to 4.0
-<xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> behavior,
-which will fix the problem:<br /><pre><code>&lt;system.xml.serialization&gt;<br />&lt;xmlSerializer useLegacySerializerGeneration=&quot;true&quot; /&gt;<br />&lt;/system.xml.serialization&gt;</code></pre>|
+|Details|When serializing a derived type, the <xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> can fail if the type contains an inaccessible field or property that hides (via the &#39;new&#39; keyword) a field or property of the same name that was previously accessible (public, for example) on the base type.|
+|Suggestion|This problem can be solved by making the new, hiding member accessible to the <xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> (by marking it public, for example).<br />Alternatively, the following config setting will revert to 4.0 <xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> behavior, which will fix the problem:<br /><pre><code>&lt;system.xml.serialization&gt;<br />&lt;xmlSerializer useLegacySerializerGeneration=&quot;true&quot; /&gt;<br />&lt;/system.xml.serialization&gt;</code></pre>|
 |Scope|Minor|
 |Version|4.5|
 |Type|Runtime|

@@ -2,17 +2,8 @@
 
 |   |   |
 |---|---|
-|Details|Two new members (<xref:System.Windows.Controls.PageRangeSelection.CurrentPage?displayProperty=name>
-and
-<xref:System.Windows.Controls.PageRangeSelection.SelectedPage?displayProperty=name>)
-have been added to the
-<xref:System.Windows.Controls.PageRangeSelection?displayProperty=name> enum.|
-|Suggestion|In most cases, these changes won&#39;t impact user code. Code that depends on a
-particular number of elements existing in
-<xref:System.Enum.GetNames(System.Type)> or
-<xref:System.Enum.GetValues(System.Type)> calls on
-the <xref:System.Windows.Controls.PageRangeSelection?displayProperty=name> type
-should be modified, though.|
+|Details|Two new members (<xref:System.Windows.Controls.PageRangeSelection.CurrentPage?displayProperty=name> and <xref:System.Windows.Controls.PageRangeSelection.SelectedPage?displayProperty=name>) have been added to the <xref:System.Windows.Controls.PageRangeSelection?displayProperty=name> enum.|
+|Suggestion|In most cases, these changes won&#39;t impact user code. Code that depends on a particular number of elements existing in <xref:System.Enum.GetNames(System.Type)> or <xref:System.Enum.GetValues(System.Type)> calls on the <xref:System.Windows.Controls.PageRangeSelection?displayProperty=name> type should be modified, though.|
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|

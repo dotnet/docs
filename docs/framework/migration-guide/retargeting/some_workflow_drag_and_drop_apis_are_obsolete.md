@@ -3,10 +3,7 @@
 |   |   |
 |---|---|
 |Details|This WorkFlow Drag/Drop API is obsolete and will cause compiler warnings if the app is rebuilt against 4.5.|
-|Suggestion|New <xref:System.Activities.Presentation.DragDropHelper?displayProperty=name>
-APIs that support operations with multiple objects should be used instead.
-Alternatively, the build warnings can be suppressed or they can be avoided by
-using an older compiler. The APIs are still supported.|
+|Suggestion|New <xref:System.Activities.Presentation.DragDropHelper?displayProperty=name> APIs that support operations with multiple objects should be used instead. Alternatively, the build warnings can be suppressed or they can be avoided by using an older compiler. The APIs are still supported.|
 |Scope|Minor|
 |Version|4.5|
 |Type|Retargeting|

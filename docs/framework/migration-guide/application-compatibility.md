@@ -42,7 +42,7 @@ In general, we have attempted to maintain a very high level of backward compatib
   
  If you are migrating from a version of the .NET Framework before the .NET Framework 4, review the following topics for application compatibility issues that may affect your app:  
   
--   [.NET Framework 4 Migration Issues](http://msdn.microsoft.com/library/ee941656\(v=vs.100\).aspx)  
+-   [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md)  
   
 -   [Application Compatibility in 4.5](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5.md)  
   

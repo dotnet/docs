@@ -19,7 +19,7 @@ ms.assetid: 1e8e4122-8110-4b48-afce-afffb6737776
 
 ## Synopsis
 
-`dotnet store --manifest [--framework-version] [--output] [--working-dir] [--preserve-working-dir] [--skip-optimization] [-v|--verbosity] [-h|--help]`
+`dotnet store -m|--manifest -r|--runtime -f|--framework --framework-version -c|--configuration [--output] [--working-dir] [--preserve-working-dir] [--skip-optimization] [-v|--verbosity] [-h|--help]`
 
 ## Description
 
@@ -35,9 +35,17 @@ For more information, see the [runtime package store](../deploying/runtime-packa
 
 Prints out a short help for the command.  
 
-`-m|--manifest <TARGET_MANIFEST>`
+`-m|--manifest <MANIFEST>`
 
 The XML file, or a list of XML files, that contain the list of packages to be stored. The format of the files is compatible with the `csproj` format, so a project file referencing the desired packages can be used. This parameter is mandatory.
+
+`-r|--runtime`
+
+The runtime identifier to target, for example `win7-x64`. This parameter is mandatory.
+
+`-f|--framework`
+
+The framework to target, for example `netcoreapp2.0`. This parameter is mandatory.
 
 `--framework-version <FRAMEWORK_VERSION>`
 

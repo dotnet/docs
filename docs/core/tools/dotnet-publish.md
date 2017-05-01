@@ -67,7 +67,7 @@ Defines the version suffix to replace the asterisk (`*`) in the version field of
 
 `--manifest`
 
-Specifies one or several [target manifests](../deploying/runtime-package-store.md) to use to trim the set of packages that will be published with the application.
+Specifies one or several [target manifests](../deploying/runtime-package-store.md) to use to trim the set of packages that will be published with the application. The manifest file is part of the output of the [`dotnet store` command](dotnet-store.md).
 
 `-v|--verbosity <LEVEL>`
 

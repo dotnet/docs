@@ -58,9 +58,20 @@ A different case would be an open-source project: the users of the project will 
 
 The administrator of a runtime environment can optimize for certain types of applications by building a runtime package store and the corresponding target manifest.
 
-The first step is to create an empty project and to add the packages that must compose the runtime package store. The runtime package store can then be provisioned by running a `dotnet store --manifest [target-manifest.xml]` command. Multiple target manifest paths can be passed to the [`dotnet store`](../tools/dotnet-store.md) command.
+The first step is to create an XML file that describes the packages that must compose the runtime package store. The format of this file is compatible with the `csproj` format. Here's an example of such a file that adds `Newtonsoft.Json` and `System.Runtime.Serialization.Primitives` to the package store:
 
-The target manifest that was used to build the runtime package store can be made available to be downloaded by application authors.
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.1.1" />
+  </ItemGroup>
+</Project>
+```
+
+The runtime package store can then be provisioned by running a `dotnet store --manifest [target-manifest.xml] --runtime [runtime id] --framework [target framework]` command. Multiple target manifest paths can be passed to a single [`dotnet store`](../tools/dotnet-store.md) command.
+
+The output of the command is a package store under the `.dotnet/store` subdirectory of the user profile, unless a specific location has been specified using the `--output` option. The root directory of the store contains a target manifest `artifact.xml` file, that can be made available to be downloaded by application authors who want to target this store when publishing.
 
 ## See Also
 

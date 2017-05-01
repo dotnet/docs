@@ -88,17 +88,17 @@ if (null != principal)
       </Parameters>
       <Docs>
         <param name="reader">A <see cref="T:System.IO.BinaryReader" /> pointing to a <see cref="T:System.Security.Claims.Claim" />.</param>
-        <summary>Initializes an instance of <see cref="T:System.Security.Claims.Claim" /> using a <see cref="T:System.IO.BinaryReader" />.</summary>
+        <summary>Initializes an instance of <see cref="T:System.Security.Claims.Claim" /> with the specified <see cref="T:System.IO.BinaryReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Normally, the reader is constructed from the bytes returned from <see cref="M:System.Security.Claims.Claim.WriteTo%2A" />. 
+ Normally, the reader is constructed from the bytes returned from <xref:System.Security.Claims.Claim.WriteTo%2A>. 
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="reader" /> is **null**.</exception>
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -486,7 +486,7 @@ if (null != principal)
       <Docs>
         <summary>Contains any additional data provided by a derived type. Typically set when calling <see cref="M:System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])" />.</summary>
         <remarks></remarks>
-        <value>A <see cref="T:System.Byte" /> value.</value>
+        <value>A <see cref="T:System.Byte" /> array representing the additional serialized data.</value>
       </Docs>
     </Member>
     <Member MemberName="Issuer">
@@ -793,11 +793,11 @@ if (null != principal)
         <Parameter Name="writer" Type="System.IO.BinaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.IO.BinaryWriter" /> to use for data storage.</param>
-        <summary>Serializes using a <see cref="T:System.IO.BinaryWriter" />.</summary>
+        <param name="writer">The writer to use for data storage.</param>
+        <summary>Writes this <see cref="T:System.Security.Claims.Claim" /> to the writer.</summary>
         <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="writer" /> is **null**.</exception>
+          <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -826,8 +826,8 @@ if (null != principal)
         <Parameter Name="userData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="writer">The writer to write this claim</param>
-        <param name="userData">The user data to claim</param>
+        <param name="writer">The writer to write this claim.</param>
+        <param name="userData">The user data to claim.</param>
         <summary>Writes this <see cref="T:System.Security.Claims.Claim" /> to the writer.</summary>
         <remarks></remarks>
       </Docs>

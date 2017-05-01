@@ -168,17 +168,17 @@ if (null != principal)
       </Parameters>
       <Docs>
         <param name="reader">A <see cref="T:System.IO.BinaryReader" /> pointing to a <see cref="T:System.Security.Claims.ClaimsPrincipal" />.</param>
-        <summary>Initializes an instance of <see cref="T:System.Security.Claims.ClaimsPrincipal" /> using a <see cref="T:System.IO.BinaryReader" />.</summary>
+        <summary>Initializes an instance of <see cref="T:System.Security.Claims.ClaimsPrincipal" /> with the specified <see cref="T:System.IO.BinaryReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Normally, the <see cref="T:System.IO.BinaryReader" /> is constructed using the bytes from <see cref="M:System.Security.Claims.ClaimsIdentity.WriteTo%2A" /> and initialized in the same way as the <see cref="T:System.IO.BinaryWriter" />.
+ Normally, the <xref:System.IO.BinaryReader> is constructed using the bytes from <xref:System.Security.Claims.ClaimsIdentity.WriteTo%2A> and initialized in the same way as the <xref:System.IO.BinaryWriter>.
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="reader" /> is **null**.</exception>
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -569,7 +569,7 @@ if (null != principal)
       <Docs>
         <summary>Contains any additional data provided by a derived type. Typically set when calling <see cref="M:System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])" />.</summary>
         <remarks></remarks>
-        <value>A <see cref="T:System.Byte" /> value.</value>
+        <value>A <see cref="T:System.Byte" /> array representing the additional serialized data.</value>
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -1014,11 +1014,11 @@ if (null != principal)
         <Parameter Name="writer" Type="System.IO.BinaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.IO.BinaryWriter" /> to use for data storage.</param>
+        <param name="writer">The writer to use for data storage.</param>
         <summary>Serializes using a <see cref="T:System.IO.BinaryWriter" />.</summary>
         <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="writer" /> is **null**.</exception>
+          <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -1047,12 +1047,12 @@ if (null != principal)
         <Parameter Name="userData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.IO.BinaryWriter" /> to use for data storage.</param>
+        <param name="writer">The writer to use for data storage.</param>
         <param name="userData">Additional data provided by the derived type.</param>
         <summary>Serializes using a <see cref="T:System.IO.BinaryWriter" />.</summary>
         <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="writer" /> is **null**.</exception>
+          <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

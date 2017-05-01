@@ -1,9 +1,9 @@
 ﻿'<SnippetAddInCodeBehind>
 
-Imports System.AddIn ' AddInAttribute
-Imports System.Windows ' MessageBox, RoutedEventArgs
+Imports System.AddIn
+Imports System.Windows
 
-Imports AddInViews ' WPFAddInView
+Imports AddInViews
 
 Namespace WPFAddIn1
 	''' <summary>

@@ -1,5 +1,5 @@
 //<SnippetStartupEventCODEBEHIND>
-using System.Windows; // Application, StartupEventArgs
+using System.Windows;
 
 namespace SDKSample
 {

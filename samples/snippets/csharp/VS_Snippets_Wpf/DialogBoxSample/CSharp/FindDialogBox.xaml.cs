@@ -1,10 +1,10 @@
 //<SnippetTextFoundEventCODEBEHIND1>
 //<SnippetTextFoundEventRaiseCODEBEHIND1>
 //<SnippetFindDialogCloseCODEBEHIND1>
-using System; // EventArgs
-using System.Windows; // Window, MessageBoxXxx, RoutedEventArgs
-using System.Windows.Controls; // TextBox, TextChangedEventArgs
-using System.Text.RegularExpressions; // Regex
+using System;
+using System.Windows;
+using System.Windows.Controls;
+using System.Text.RegularExpressions;
 
 namespace SDKSample
 {

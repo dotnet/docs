@@ -14,7 +14,7 @@ using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Text; // StringBuilder
+using System.Text;
 
 // important TODOS:
 // TODO 1. Start tags: The ParseXmlElement function has been modified to be called after both the

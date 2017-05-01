@@ -28,7 +28,7 @@
   
  <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
   
--   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exeption, [EntityDataReader](assetId:///EntityDataReader?qualifyHint=False&amp;autoUpgrade=True) will wrap it in <xref:System.Data.EntityException> (or a derived exception).  
+-   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exeption, the <xref:System.Data.EntityClient.EntityDataReader> will wrap it in an <xref:System.Data.EntityException> (or a derived exception).  
   
 -   <xref:System.Data.EntityClient.EntityDataReader.Close%2A> only closes the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
   
@@ -141,9 +141,9 @@
 ## Remarks  
  [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
   
- [EntityDataReader](assetId:///EntityDataReader?qualifyHint=False&amp;autoUpgrade=True) does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
+ <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
   
--   assetId:///EntityDataReader?qualifyHint=False&amp;autoUpgrade=True calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exception, assetId:///EntityDataReader?qualifyHint=False&amp;autoUpgrade=True will wrap it in <xref:System.Data.EntityException> (or a derived exception).  
+-   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exception, the <xref:System.Data.EntityClient.EntityDataReader> will wrap it in an <xref:System.Data.EntityException> (or a derived exception).  
   
 -   <xref:System.Data.EntityClient.EntityDataReader.Close%2A> only closes the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
   

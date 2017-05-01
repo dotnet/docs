@@ -13,6 +13,7 @@
   <Docs>
     <summary>Determines the manifest resource name to assign to a resource.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.CreateManifestResourceName" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateManifestName">
@@ -58,6 +60,7 @@
         <summary>When overridden in a derived class, creates the manifest resource name.</summary>
         <returns>The manifest resource name.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -78,6 +81,7 @@
         <returns>
           <see langword="true" /> if the method was successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsSourceFile">
@@ -101,6 +105,7 @@
         <returns>
           <see langword="true" /> if the file is a valid source file; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="itemSpecToTaskitem">
@@ -118,6 +123,7 @@
       <Docs>
         <summary>Contains the task item in a dictionary to provide quick access from a derived class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MakeValidEverettIdentifier">
@@ -140,6 +146,7 @@
         <summary>Creates a valid identifier for use with Visual Studio 2003.</summary>
         <returns>The identifier to use with Visual Studio 2003.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ManifestResourceNames">
@@ -163,6 +170,7 @@
         <summary>Gets the created manifest resource names.</summary>
         <value>The created manifest resource names.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PrependCultureAsDirectory">
@@ -189,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResourceFiles">
@@ -212,6 +221,7 @@
         <summary>Gets or sets the dependent resource files.</summary>
         <value>The dependent resource files.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResourceFilesWithManifestResourceNames">
@@ -235,6 +245,7 @@
         <summary>Gets or sets the initial list of resource names, along with additional metadata for manifest resource names.</summary>
         <value>An <see cref="T:Microsoft.Build.Framework.ITaskItem" /> object, representing the resource names and metadata.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RootNamespace">
@@ -253,6 +264,7 @@
         <summary>Gets or sets the root namespace to use for naming.</summary>
         <value>The root namespace to use for naming.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

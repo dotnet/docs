@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -58,6 +59,7 @@
           <see cref="T:System.Xml.Xsl.Runtime.XmlNavigatorFilter" /> object.</param>
         <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.XPathFollowingIterator" />. The <see cref="T:System.Xml.Xsl.Runtime.XPathFollowingIterator" /> does not contain duplicates.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -87,6 +89,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -118,6 +121,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

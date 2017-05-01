@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides high-level access to the definition of a binding, which connects the properties of binding target objects (typically, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] elements), and any data source (for example, a database, an [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] file, or any object that contains data).</summary>
+    <summary>Provides high-level access to the definition of a binding, which connects the properties of binding target objects (typically, WPF elements), and any data source (for example, a database, an XML file, or any object that contains data).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -1259,7 +1259,7 @@
   
  The <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> method handles the `XPath` expressions from the <xref:System.Windows.Data.Binding.XPath%2A> property. `XPath` functions are not supported. For `XPath` expression information, see the <xref:System.Xml.XmlNode.SelectNodes%2A> documentation and some examples provided in the Example section.  
   
- LINQ to XML objects <xref:System.Xml.Linq.XDocument> and <xref:System.Xml.Linq.XElement> do not use `XPath`. For details, see [How to: Bind to XDocument, XElement, or LINQ for XML Query Results](../Topic/How%20to:%20Bind%20to%20XDocument,%20XElement,%20or%20LINQ%20for%20XML%20Query%20Results.md).  
+ LINQ to XML objects <xref:System.Xml.Linq.XDocument> and <xref:System.Xml.Linq.XElement> do not use `XPath`. For details, see [How to: Bind to XDocument, XElement, or LINQ for XML Query Results](~/docs/framework/wpf/data/how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md).  
   
  ]]></format>
         </remarks>

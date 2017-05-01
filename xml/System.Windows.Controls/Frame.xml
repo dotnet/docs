@@ -1219,7 +1219,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- External content is [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] content that is not included with an application as either a resource file or a content file (see [WPF Application Resource, Content, and Data Files](../Topic/WPF%20Application%20Resource,%20Content,%20and%20Data%20Files.md)).  
+ External content is [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] content that is not included with an application as either a resource file or a content file (see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).  
   
  When <xref:System.Windows.Controls.Frame.SandboxExternalContent%2A> is `true`, and the source for the content of the <xref:System.Windows.Controls.Frame> is an external [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] file, the content is loaded into a partial trust security sandbox that is limited to the default `Internet` permission set. The external content is subsequently loaded into a separate process. As a result, the external content becomes isolated and does not have access to application-scope resources, such as resource dictionaries (see <xref:System.Windows.ResourceDictionary>).  
   

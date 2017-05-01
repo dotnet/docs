@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +48,7 @@
         <param name="owner">The <see cref="T:System.Windows.Forms.RadioButton" /> that this object provides information for.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.RadioButton.RadioButtonAccessibleObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultAction">
@@ -65,6 +67,7 @@
         <summary>Gets a string that describes the default action of the <see cref="T:System.Windows.Forms.RadioButton" /> control.</summary>
         <value>A description of the default action of the <see cref="T:System.Windows.Forms.RadioButton" /> control.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DoDefaultAction">
@@ -83,6 +86,7 @@
       <Docs>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Click" /> event.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Role">
@@ -101,6 +105,7 @@
         <summary>Gets the role of this accessible object.</summary>
         <value>The <see cref="F:System.Windows.Forms.AccessibleRole.RadioButton" /> value.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -119,6 +124,7 @@
         <summary>Gets the state of the <see cref="T:System.Windows.Forms.RadioButton" /> control.</summary>
         <value>If the <see cref="P:System.Windows.Forms.RadioButton.Checked" /> property is set to true, returns <see cref="F:System.Windows.Forms.AccessibleStates.Checked" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

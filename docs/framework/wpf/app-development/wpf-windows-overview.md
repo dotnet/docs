@@ -302,11 +302,11 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
  You can also specify the initial location of a                  <xref:System.Windows.Window> when it first appears by setting the                  <xref:System.Windows.Window.WindowStartupLocation%2A> property with one of the following                  <xref:System.Windows.WindowStartupLocation> enumeration values:  
   
--   <xref:System.Windows.WindowStartupLocation> (default)  
+-   <xref:System.Windows.WindowStartupLocation.CenterOwner> (default)  
   
--   <xref:System.Windows.WindowStartupLocation>  
+-   <xref:System.Windows.WindowStartupLocation.CenterScreen>  
   
--   <xref:System.Windows.WindowStartupLocation>  
+-   <xref:System.Windows.WindowStartupLocation.Manual>  
   
  If the startup location is specified as                  <xref:System.Windows.WindowStartupLocation>, and the                  <xref:System.Windows.Window.Left%2A> and                  <xref:System.Windows.Window.Top%2A> properties have not been set,                  <xref:System.Windows.Window> will ask                  [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] for a location to appear in.  
   

@@ -31,6 +31,7 @@
   <Docs>
     <summary>Contains a collection of <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -52,6 +53,7 @@
         <param name="builder">The <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object to add to the collection.</param>
         <summary>Adds a <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object to the product builder collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -71,6 +73,7 @@
         <summary>Returns an enumerator that can iterate through the product builder collection.</summary>
         <returns>An enumerator that can iterate through the product builder collection.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

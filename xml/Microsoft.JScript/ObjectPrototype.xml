@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.JSObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="constructor">
@@ -31,6 +32,7 @@
         <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="hasOwnProperty">
@@ -61,6 +63,7 @@
         <returns>
           <see langword="true" /> if <paramref name="name" /> is a property of <paramref name="thisob" /> and has been set; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="isPrototypeOf">
@@ -91,6 +94,7 @@
         <returns>
           <see langword="true" /> if <paramref name="ob" /> is in the inheritance hierarchy of <paramref name="thisob" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="propertyIsEnumerable">
@@ -121,6 +125,7 @@
         <returns>
           <see langword="true" /> if <paramref name="name" /> is an enumerable property; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toLocaleString">
@@ -148,6 +153,7 @@
         <summary>Creates a string representation of the specified object by using the <see cref="T:Microsoft.JScript.Convert" /> class.</summary>
         <returns>A string representation of <paramref name="thisob" /> that is created by the <see cref="T:Microsoft.JScript.Convert" /> class.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -175,6 +181,7 @@
         <summary>Creates a string representation of the specified object.</summary>
         <returns>The name of the class of the object, if it has one defined; otherwise, the <see cref="P:System.Reflection.MemberInfo.Name" /> of the <see cref="T:System.Type" /> of the object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="valueOf">
@@ -203,6 +210,7 @@
         <returns>
           <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -19,6 +19,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Abstract">
@@ -35,6 +36,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>abstract</c> modifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AccessField">
@@ -51,6 +53,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>.</c> field accessor symbol.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Assert">
@@ -67,6 +70,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>assert</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Assign">
@@ -83,6 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>=</c> assignment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BitwiseAnd">
@@ -99,6 +104,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&amp;</c> bitwise AND operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BitwiseAndAssign">
@@ -115,6 +121,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&amp;=</c> bitwise AND assignment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BitwiseNot">
@@ -131,6 +138,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>~</c> bitwise NOT operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BitwiseOr">
@@ -147,6 +155,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>|</c> bitwise OR operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BitwiseOrAssign">
@@ -163,6 +172,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>|=</c> bitwise OR assignment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BitwiseXor">
@@ -179,6 +189,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>^</c> bitwise XOR operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BitwiseXorAssign">
@@ -195,6 +206,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>^=</c> bitwise XOR assignment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Boolean">
@@ -211,6 +223,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>boolean</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Break">
@@ -227,6 +240,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>break</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Byte">
@@ -243,6 +257,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>byte</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Case">
@@ -259,6 +274,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>case</c> keyword of a <c>switch</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Catch">
@@ -275,6 +291,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>catch</c> keyword of a <c>try</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Char">
@@ -291,6 +308,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>char</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -307,6 +325,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>class</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Colon">
@@ -323,6 +342,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>:</c> ternary operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Comma">
@@ -339,6 +359,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>,</c> comma operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -355,6 +376,7 @@
       </ReturnValue>
       <Docs>
         <summary>Comment text.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConditionalIf">
@@ -371,6 +393,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>?</c> ternary operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Const">
@@ -387,6 +410,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>const</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Continue">
@@ -403,6 +427,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>continue</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Debugger">
@@ -419,6 +444,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>debugger</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Decimal">
@@ -435,6 +461,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>decimal</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Decrement">
@@ -451,6 +478,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>--</c> decrement operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -467,6 +495,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>default</c> keyword of a <c>switch</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -483,6 +512,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>delete</c> operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -499,6 +529,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>/</c> division operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DivideAssign">
@@ -515,6 +546,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>/=</c> division assignment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Do">
@@ -531,6 +563,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>do</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -547,6 +580,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>double</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DoubleColon">
@@ -563,6 +597,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>::</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Else">
@@ -579,6 +614,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>else</c> keyword of an <c>if</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EndOfFile">
@@ -595,6 +631,7 @@
       </ReturnValue>
       <Docs>
         <summary>The end of the file being scanned or parsed. This is the default value.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EndOfLine">
@@ -611,6 +648,7 @@
       </ReturnValue>
       <Docs>
         <summary>The end of the line being parsed.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ensure">
@@ -627,6 +665,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>ensure</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Enum">
@@ -643,6 +682,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>enum</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Equal">
@@ -659,6 +699,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>==</c> equality comparison operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Event">
@@ -675,6 +716,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>event</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -691,6 +733,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>export</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Extends">
@@ -707,6 +750,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>extends</c> keyword of a <c>class</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="False">
@@ -723,6 +767,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>false</c> literal.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Final">
@@ -739,6 +784,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>final</c> modifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Finally">
@@ -755,6 +801,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>finally</c> keyword of a <c>try</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FirstBinaryOp">
@@ -771,6 +818,7 @@
       </ReturnValue>
       <Docs>
         <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstBinaryOp &lt;= token &amp;&amp; token &lt;= JSToken.LastBinaryOp then...</c></summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FirstOp">
@@ -787,6 +835,7 @@
       </ReturnValue>
       <Docs>
         <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstOp &lt;= token &amp;&amp; token &lt;= JSToken.LastOp then...</c></summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Float">
@@ -803,6 +852,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>float</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -819,6 +869,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>for</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Function">
@@ -835,6 +886,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>function</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -851,6 +903,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>get</c> keyword of a <c>function get</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Goto">
@@ -867,6 +920,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>goto</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GreaterThan">
@@ -883,6 +937,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&gt;</c> relational comparison operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GreaterThanEqual">
@@ -899,6 +954,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&gt;=</c> relational comparison operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Identifier">
@@ -915,6 +971,7 @@
       </ReturnValue>
       <Docs>
         <summary>An identifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="If">
@@ -931,6 +988,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>if</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Implements">
@@ -947,6 +1005,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>implements</c> keyword of a <c>class</c> or <c>interface</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Import">
@@ -963,6 +1022,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>import</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="In">
@@ -979,6 +1039,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>in</c> operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Increment">
@@ -995,6 +1056,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>++</c> increment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Instanceof">
@@ -1011,6 +1073,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>instanceof</c> operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1027,6 +1090,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>int</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IntegerLiteral">
@@ -1043,6 +1107,7 @@
       </ReturnValue>
       <Docs>
         <summary>An integer literal.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Interface">
@@ -1059,6 +1124,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>interface</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Internal">
@@ -1075,6 +1141,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>internal</c> modifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Invariant">
@@ -1091,6 +1158,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>invariant</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LastAssign">
@@ -1107,6 +1175,7 @@
       </ReturnValue>
       <Docs>
         <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.Assign &lt;= token &amp;&amp; token &lt;= JSToken.LastAssign then...</c></summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LastBinaryOp">
@@ -1123,6 +1192,7 @@
       </ReturnValue>
       <Docs>
         <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstBinaryOp &lt;= token &amp;&amp; token &lt;= JSToken.LastBinaryOp then...</c></summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LastOp">
@@ -1139,6 +1209,7 @@
       </ReturnValue>
       <Docs>
         <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstBinaryOp &lt;= token &amp;&amp; token &lt;= JSToken.LastOp then...</c></summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LastPPOperator">
@@ -1155,6 +1226,7 @@
       </ReturnValue>
       <Docs>
         <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstBinaryOp &lt;= token &amp;&amp; token &lt;= JSToken.LastPPOperator then...</c> PPOperators are operations that can be pre-processed.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LeftBracket">
@@ -1171,6 +1243,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>[</c> symbol.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LeftCurly">
@@ -1187,6 +1260,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>{</c> symbol.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LeftParen">
@@ -1203,6 +1277,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>(</c> symbol.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LeftShift">
@@ -1219,6 +1294,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&lt;&lt;</c> bitwise left shift operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LeftShiftAssign">
@@ -1235,6 +1311,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&lt;&lt;=</c> left shift assignment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -1251,6 +1328,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&lt;</c> relational comparison operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LessThanEqual">
@@ -1267,6 +1345,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&lt;=</c> relational comparison operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LogicalAnd">
@@ -1283,6 +1362,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&amp;&amp;</c> logical AND operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LogicalNot">
@@ -1299,6 +1379,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>!</c> logical NOT operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LogicalOr">
@@ -1315,6 +1396,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>||</c> logical OR operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Long">
@@ -1331,6 +1413,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>long</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Minus">
@@ -1347,6 +1430,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>-</c> subtraction operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MinusAssign">
@@ -1363,6 +1447,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>-=</c> subtraction assignment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Modulo">
@@ -1379,6 +1464,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>%</c> modulus operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ModuloAssign">
@@ -1395,6 +1481,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>%=</c> modulus assignment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -1411,6 +1498,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>*</c> multiplication operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MultiplyAssign">
@@ -1427,6 +1515,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>*=</c> multiplication assignment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -1443,6 +1532,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>namespace</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Native">
@@ -1459,6 +1549,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>native</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="New">
@@ -1475,6 +1566,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>new</c> operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -1491,6 +1583,7 @@
       </ReturnValue>
       <Docs>
         <summary>No token. For example, before scanning any tokens, or in error situations.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotEqual">
@@ -1507,6 +1600,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>!=</c> inequality comparison operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -1523,6 +1617,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>null</c> literal.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NumericLiteral">
@@ -1539,6 +1634,7 @@
       </ReturnValue>
       <Docs>
         <summary>A numeric literal.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Package">
@@ -1555,6 +1651,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>package</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ParamArray">
@@ -1571,6 +1668,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>...</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Plus">
@@ -1587,6 +1685,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>+</c> addition operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlusAssign">
@@ -1603,6 +1702,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>+=</c> addition assignment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PreProcessDirective">
@@ -1619,6 +1719,7 @@
       </ReturnValue>
       <Docs>
         <summary>A preprocessor directive.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PreProcessorConstant">
@@ -1635,6 +1736,7 @@
       </ReturnValue>
       <Docs>
         <summary>A preprocessor constant.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Private">
@@ -1651,6 +1753,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>private</c> modifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Protected">
@@ -1667,6 +1770,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>protected</c> modifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Public">
@@ -1683,6 +1787,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>public</c> modifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Require">
@@ -1699,6 +1804,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>require</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Return">
@@ -1715,6 +1821,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>return</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RightBracket">
@@ -1731,6 +1838,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>]</c> symbol.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RightCurly">
@@ -1747,6 +1855,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>}</c> symbol.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RightParen">
@@ -1763,6 +1872,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>)</c> symbol.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RightShift">
@@ -1779,6 +1889,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&gt;&gt;</c> bitwise right shift operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RightShiftAssign">
@@ -1795,6 +1906,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&gt;&gt;=</c> right shift assignment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Sbyte">
@@ -1811,6 +1923,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>sbyte</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Semicolon">
@@ -1827,6 +1940,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>;</c> symbol.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -1843,6 +1957,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>set</c> keyword of a <c>function set</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Short">
@@ -1859,6 +1974,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>short</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Static">
@@ -1875,6 +1991,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>static</c> modifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StrictEqual">
@@ -1891,6 +2008,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>===</c> identity comparison operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StrictNotEqual">
@@ -1907,6 +2025,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>!==</c> identity comparison operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StringLiteral">
@@ -1923,6 +2042,7 @@
       </ReturnValue>
       <Docs>
         <summary>A numeric literal.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Super">
@@ -1939,6 +2059,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>super</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Switch">
@@ -1955,6 +2076,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>switch</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -1971,6 +2093,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>synchronized</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="This">
@@ -1987,6 +2110,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>this</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Throw">
@@ -2003,6 +2127,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>throw</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Throws">
@@ -2019,6 +2144,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>throws</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Transient">
@@ -2035,6 +2161,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>transient</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="True">
@@ -2051,6 +2178,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>true</c> literal.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Try">
@@ -2067,6 +2195,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>try</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Typeof">
@@ -2083,6 +2212,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>typeof</c> operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Uint">
@@ -2099,6 +2229,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>uint</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ulong">
@@ -2115,6 +2246,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>ulong</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnsignedRightShift">
@@ -2131,6 +2263,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&gt;&gt;&gt;</c> unsigned right shift operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnsignedRightShiftAssign">
@@ -2147,6 +2280,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>&gt;&gt;&gt;=</c> unsigned right shift assignment operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnterminatedComment">
@@ -2163,6 +2297,7 @@
       </ReturnValue>
       <Docs>
         <summary>An un-terminated comment.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Use">
@@ -2179,6 +2314,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>use</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ushort">
@@ -2195,6 +2331,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>ushort</c> data type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Var">
@@ -2211,6 +2348,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>var</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Void">
@@ -2227,6 +2365,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>void</c> operator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Volatile">
@@ -2243,6 +2382,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>volatile</c> reserved word.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="While">
@@ -2259,6 +2399,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>while</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="With">
@@ -2275,6 +2416,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <c>with</c> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Creates a C#-style manifest name from a given resource file name.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.CreateCSharpManifestResourceName" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateManifestName">
@@ -58,6 +60,7 @@
         <summary>Returns the C#-style manifest resource name that corresponds to the specified resource file.</summary>
         <returns>The manifest resource name that corresponds to the specified resource file.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsSourceFile">
@@ -81,6 +84,7 @@
         <returns>
           <see langword="true" /> if the specified file is a C# source file; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

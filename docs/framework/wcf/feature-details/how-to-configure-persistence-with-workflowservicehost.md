@@ -2,7 +2,7 @@
 title: "How to: Configure Persistence with WorkflowServiceHost | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # How to: Configure Persistence with WorkflowServiceHost
-This topic describes how to configure the SQL Workflow Instance Store feature to enable persistence for workflows hosted in <xref:System.ServiceHost.Activities.WorkflowServiceHost> by using a configuration file. Before using the SQL Workflow Instance Store feature you must create a SQL database that is used to persist workflow instances. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][How to: Enable SQL Persistence for Workflows and Workflow Services](../../../../docs/framework/windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md).  
+This topic describes how to configure the SQL Workflow Instance Store feature to enable persistence for workflows hosted in <xref:System.ServiceModel.Activities.WorkflowServiceHost> by using a configuration file. Before using the SQL Workflow Instance Store feature you must create a SQL database that is used to persist workflow instances. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][How to: Enable SQL Persistence for Workflows and Workflow Services](../../../../docs/framework/windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md).  
   
 ### To Configure the SQL Workflow Instance Store in Configuration  
   

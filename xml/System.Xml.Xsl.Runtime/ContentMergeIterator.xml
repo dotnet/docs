@@ -22,6 +22,7 @@
   <Docs>
     <summary>Iterates over child content nodes or following sibling nodes. Maintains the nodes in document order.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -47,6 +48,7 @@
         <param name="filter">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlNavigatorFilter" /> class, which enables you to filter nodes based on name.</param>
         <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.ContentMergeIterator" />. Merges multiple sets of content nodes in document order and removes duplicates.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -76,6 +78,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -102,6 +105,7 @@
         <summary>Positions the iterator on the next content or sibling node.</summary>
         <returns>Returns <see cref="F:System.Xml.Xsl.Runtime.IteratorResult.NoMoreNodes" /> if there are no more content or sibling nodes. Returns <see cref="F:System.Xml.Xsl.Runtime.IteratorResult.NeedInputNode" /> if the next input node must be fetched first. Returns <see cref="F:System.Xml.Xsl.Runtime.IteratorResult.HaveCurrentNode" /> if the <see cref="P:System.Xml.Xsl.Runtime.ContentMergeIterator.Current" /> property was set to the next node while iterating through the nodes.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

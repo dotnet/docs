@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="InfoSoap">
@@ -62,6 +63,7 @@
         <param name="messages">An array of trace messages to print.</param>
         <summary>Prints SOAP trace messages.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LoadAssemblyFromString">
@@ -85,6 +87,7 @@
         <summary>Loads a specified assembly to debug.</summary>
         <returns>The <see cref="T:System.Reflection.Assembly" /> to debug.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SerializationSetValue">
@@ -111,6 +114,7 @@
         <param name="value">The value to set.</param>
         <summary>Sets the value of a field.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Soap">
@@ -144,6 +148,7 @@
         <param name="messages">An array of messages to process.</param>
         <summary>Processes the specified array of messages.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SoapAssert">
@@ -173,6 +178,7 @@
         <param name="message">The message to use when asserting.</param>
         <summary>Asserts the specified message.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SoapCheckEnabled">
@@ -194,6 +200,7 @@
         <returns>
           <see langword="true" />, if tracing is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -12,6 +12,7 @@
   <Docs>
     <summary>Specifies the built-in JScript functions. These functions correspond to the static methods of the intrinsic JScript objects. The members of this enumeration are used to create <see cref="T:Microsoft.JScript.JSFunctionAttribute" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Array_concat">
@@ -28,6 +29,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.concat(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array_join">
@@ -44,6 +46,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.join(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array_pop">
@@ -60,6 +63,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.pop(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array_push">
@@ -76,6 +80,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.push(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array_reverse">
@@ -92,6 +97,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.reverse(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array_shift">
@@ -108,6 +114,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.shift(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array_slice">
@@ -124,6 +131,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.slice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array_sort">
@@ -140,6 +148,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.sort(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array_splice">
@@ -156,6 +165,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.splice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Double,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array_toLocaleString">
@@ -172,6 +182,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array_toString">
@@ -188,6 +199,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array_unshift">
@@ -204,6 +216,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.unshift(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Boolean_toString">
@@ -220,6 +233,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.BooleanPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.BooleanPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Boolean_valueOf">
@@ -236,6 +250,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.BooleanPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.BooleanPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getDate">
@@ -252,6 +267,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getDate(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getDay">
@@ -268,6 +284,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getDay(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getFullYear">
@@ -284,6 +301,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getFullYear(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getHours">
@@ -300,6 +318,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getHours(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getMilliseconds">
@@ -316,6 +335,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getMilliseconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getMinutes">
@@ -332,6 +352,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getMinutes(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getMonth">
@@ -348,6 +369,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getMonth(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getSeconds">
@@ -364,6 +386,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getSeconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getTime">
@@ -380,6 +403,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getTime(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getTimezoneOffset">
@@ -396,6 +420,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getTimezoneOffset(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCDate">
@@ -412,6 +437,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCDate(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCDay">
@@ -428,6 +454,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCDay(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCFullYear">
@@ -444,6 +471,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCFullYear(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCHours">
@@ -460,6 +488,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCHours(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCMilliseconds">
@@ -476,6 +505,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCMilliseconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCMinutes">
@@ -492,6 +522,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCMinutes(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCMonth">
@@ -508,6 +539,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCMonth(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCSeconds">
@@ -524,6 +556,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCSeconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getVarDate">
@@ -540,6 +573,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getVarDate(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_getYear">
@@ -556,6 +590,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getYear(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_parse">
@@ -572,6 +607,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DateConstructor.parse(System.String)" /> method of the <see cref="T:Microsoft.JScript.DateConstructor" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setDate">
@@ -588,6 +624,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setDate(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setFullYear">
@@ -604,6 +641,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setFullYear(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setHours">
@@ -620,6 +658,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setHours(System.Object,System.Double,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setMilliseconds">
@@ -636,6 +675,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setMilliseconds(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setMinutes">
@@ -652,6 +692,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setMinutes(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setMonth">
@@ -668,6 +709,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setMonth(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setSeconds">
@@ -684,6 +726,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setSeconds(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setTime">
@@ -700,6 +743,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setTime(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCDate">
@@ -716,6 +760,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCDate(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCFullYear">
@@ -732,6 +777,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCFullYear(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCHours">
@@ -748,6 +794,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCHours(System.Object,System.Double,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCMilliseconds">
@@ -764,6 +811,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCMilliseconds(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCMinutes">
@@ -780,6 +828,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCMinutes(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCMonth">
@@ -796,6 +845,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCMonth(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCSeconds">
@@ -812,6 +862,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCSeconds(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_setYear">
@@ -828,6 +879,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setYear(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_toDateString">
@@ -844,6 +896,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toDateString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_toGMTString">
@@ -860,6 +913,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toGMTString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_toLocaleDateString">
@@ -876,6 +930,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toLocaleDateString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_toLocaleString">
@@ -892,6 +947,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_toLocaleTimeString">
@@ -908,6 +964,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toLocaleTimeString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_toString">
@@ -924,6 +981,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_toTimeString">
@@ -940,6 +998,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toTimeString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_toUTCString">
@@ -956,6 +1015,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toUTCString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_UTC">
@@ -972,6 +1032,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DateConstructor.UTC(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DateConstructor" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date_valueOf">
@@ -988,6 +1049,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Enumerator_atEnd">
@@ -1004,6 +1066,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.EnumeratorPrototype.atEnd(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Enumerator_item">
@@ -1020,6 +1083,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.EnumeratorPrototype.item(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Enumerator_moveFirst">
@@ -1036,6 +1100,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.EnumeratorPrototype.moveFirst(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Enumerator_moveNext">
@@ -1052,6 +1117,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.EnumeratorPrototype.moveNext(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Error_toString">
@@ -1068,6 +1134,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ErrorPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ErrorPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Function_apply">
@@ -1084,6 +1151,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.FunctionPrototype.apply(System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Function_call">
@@ -1100,6 +1168,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.FunctionPrototype.call(System.Object,System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Function_toString">
@@ -1116,6 +1185,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.FunctionPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_CollectGarbage">
@@ -1132,6 +1202,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.CollectGarbage" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_decodeURI">
@@ -1148,6 +1219,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.decodeURI(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_decodeURIComponent">
@@ -1164,6 +1236,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.decodeURIComponent(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_encodeURI">
@@ -1180,6 +1253,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.encodeURI(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_encodeURIComponent">
@@ -1196,6 +1270,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.encodeURIComponent(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_escape">
@@ -1212,6 +1287,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.escape(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_eval">
@@ -1228,6 +1304,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.eval(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_GetObject">
@@ -1244,6 +1321,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.GetObject(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_isFinite">
@@ -1260,6 +1338,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.isFinite(System.Double)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_isNaN">
@@ -1276,6 +1355,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.isNaN(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_parseFloat">
@@ -1292,6 +1372,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.parseFloat(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_parseInt">
@@ -1308,6 +1389,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.parseInt(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_ScriptEngine">
@@ -1324,6 +1406,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngine" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_ScriptEngineBuildVersion">
@@ -1340,6 +1423,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineBuildVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_ScriptEngineMajorVersion">
@@ -1356,6 +1440,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineMajorVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_ScriptEngineMinorVersion">
@@ -1372,6 +1457,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineMinorVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Global_unescape">
@@ -1388,6 +1474,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.unescape(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_abs">
@@ -1404,6 +1491,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.abs(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_acos">
@@ -1420,6 +1508,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.acos(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_asin">
@@ -1436,6 +1525,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.asin(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_atan">
@@ -1452,6 +1542,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.atan(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_atan2">
@@ -1468,6 +1559,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.atan2(System.Double,System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_ceil">
@@ -1484,6 +1576,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.ceil(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_cos">
@@ -1500,6 +1593,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.cos(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_exp">
@@ -1516,6 +1610,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.exp(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_floor">
@@ -1532,6 +1627,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.floor(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_log">
@@ -1548,6 +1644,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.log(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_max">
@@ -1564,6 +1661,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.max(System.Object,System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_min">
@@ -1580,6 +1678,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.min(System.Object,System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_pow">
@@ -1596,6 +1695,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.pow(System.Double,System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_random">
@@ -1612,6 +1712,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.random" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_round">
@@ -1628,6 +1729,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.round(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_sin">
@@ -1644,6 +1746,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.sin(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_sqrt">
@@ -1660,6 +1763,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.sqrt(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math_tan">
@@ -1676,6 +1780,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.tan(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -1692,6 +1797,7 @@
       </ReturnValue>
       <Docs>
         <summary>No method. This is the default value.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Number_toExponential">
@@ -1708,6 +1814,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toExponential(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Number_toFixed">
@@ -1724,6 +1831,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toFixed(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Number_toLocaleString">
@@ -1740,6 +1848,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Number_toPrecision">
@@ -1756,6 +1865,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toPrecision(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Number_toString">
@@ -1772,6 +1882,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toString(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Number_valueOf">
@@ -1788,6 +1899,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Object_hasOwnProperty">
@@ -1804,6 +1916,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.hasOwnProperty(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Object_isPrototypeOf">
@@ -1820,6 +1933,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.isPrototypeOf(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Object_propertyIsEnumerable">
@@ -1836,6 +1950,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.propertyIsEnumerable(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Object_toLocaleString">
@@ -1852,6 +1967,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Object_toString">
@@ -1868,6 +1984,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Object_valueOf">
@@ -1884,6 +2001,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegExp_compile">
@@ -1900,6 +2018,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.RegExpPrototype.compile(System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.RegExpPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegExp_exec">
@@ -1916,6 +2035,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.RegExpPrototype.exec(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.RegExpPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegExp_test">
@@ -1932,6 +2052,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.RegExpPrototype.test(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.RegExpPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegExp_toString">
@@ -1948,6 +2069,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.RegExpPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.RegExpPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_anchor">
@@ -1964,6 +2086,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.anchor(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_big">
@@ -1980,6 +2103,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.big(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_blink">
@@ -1996,6 +2120,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.blink(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_bold">
@@ -2012,6 +2137,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.bold(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_charAt">
@@ -2028,6 +2154,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.charAt(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_charCodeAt">
@@ -2044,6 +2171,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.charCodeAt(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_concat">
@@ -2060,6 +2188,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.concat(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_fixed">
@@ -2076,6 +2205,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.fixed(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_fontcolor">
@@ -2092,6 +2222,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.fontcolor(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_fontsize">
@@ -2108,6 +2239,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.fontsize(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_fromCharCode">
@@ -2124,6 +2256,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringConstructor.fromCharCode(System.Object[])" /> method of the <see cref="T:Microsoft.JScript.StringConstructor" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_indexOf">
@@ -2140,6 +2273,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.indexOf(System.Object,System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_italics">
@@ -2156,6 +2290,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.italics(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_lastIndexOf">
@@ -2172,6 +2307,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.lastIndexOf(System.Object,System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_link">
@@ -2188,6 +2324,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.link(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_localeCompare">
@@ -2204,6 +2341,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.localeCompare(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_match">
@@ -2220,6 +2358,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.match(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_replace">
@@ -2236,6 +2375,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.replace(System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_search">
@@ -2252,6 +2392,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.search(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_slice">
@@ -2268,6 +2409,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.slice(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_small">
@@ -2284,6 +2426,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.small(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_split">
@@ -2300,6 +2443,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.split(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_strike">
@@ -2316,6 +2460,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.strike(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_sub">
@@ -2332,6 +2477,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.sub(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_substr">
@@ -2348,6 +2494,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.substr(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_substring">
@@ -2364,6 +2511,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.substring(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_sup">
@@ -2380,6 +2528,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.sup(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_toLocaleLowerCase">
@@ -2396,6 +2545,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toLocaleLowerCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_toLocaleUpperCase">
@@ -2412,6 +2562,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toLocaleUpperCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_toLowerCase">
@@ -2428,6 +2579,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toLowerCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_toString">
@@ -2444,6 +2596,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_toUpperCase">
@@ -2460,6 +2613,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toUpperCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String_valueOf">
@@ -2476,6 +2630,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VBArray_dimensions">
@@ -2492,6 +2647,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.dimensions(System.Object)" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VBArray_getItem">
@@ -2508,6 +2664,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.getItem(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VBArray_lbound">
@@ -2524,6 +2681,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.lbound(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VBArray_toArray">
@@ -2540,6 +2698,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.toArray(System.Object,Microsoft.JScript.Vsa.VsaEngine)" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VBArray_ubound">
@@ -2556,6 +2715,7 @@
       </ReturnValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.ubound(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

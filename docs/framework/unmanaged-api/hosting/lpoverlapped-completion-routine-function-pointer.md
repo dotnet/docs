@@ -2,18 +2,19 @@
 title: "LPOVERLAPPED_COMPLETION_ROUTINE Function Pointer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "LPOVERLAPPED_COMPLETION_ROUTINE"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "LPOVERLAPPED_COMPLETION_ROUTINE"
 dev_langs: 

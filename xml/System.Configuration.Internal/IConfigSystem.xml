@@ -10,6 +10,7 @@
   <Docs>
     <summary>Defines an interface used by the .NET Framework to support the initialization of configuration properties.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Host">
@@ -28,6 +29,7 @@
         <summary>Gets the configuration host.</summary>
         <value>An <see cref="T:System.Configuration.Internal.IInternalConfigHost" /> object that is used by the .NET Framework to initialize application configuration properties.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -57,6 +59,7 @@
         <param name="hostInitParams">An array of configuration host parameters.</param>
         <summary>Initializes a configuration object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -82,6 +85,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

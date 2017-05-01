@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="IL">
@@ -52,6 +53,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method implementation is in Microsoft intermediate language (MSIL).</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Native">
@@ -73,6 +75,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method is implemented in native code.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OPTIL">
@@ -94,6 +97,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method implementation is in optimized intermediate language (OPTIL).</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Runtime">
@@ -115,6 +119,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies that the method implementation is provided by the runtime.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

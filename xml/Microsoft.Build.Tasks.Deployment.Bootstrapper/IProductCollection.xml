@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Count">
@@ -51,6 +52,7 @@
         <summary>Gets the number of elements that are contained in the product collection.</summary>
         <value>The number of elements that are contained in the product collection.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -78,6 +80,7 @@
         <summary>Retrieves the product at the specified index.</summary>
         <returns>The <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product" /> object at the specified index.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Product">
@@ -105,6 +108,7 @@
         <summary>Retrieves the product with the specified product code.</summary>
         <returns>The <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product" /> object that has the specified product code; null if the specified product code is not found.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

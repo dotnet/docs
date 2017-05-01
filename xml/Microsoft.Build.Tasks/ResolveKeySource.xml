@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>ResolveKeySource</c> task. Use the <c>ResolveKeySource</c> element in your project file to create and execute this task. For usage and parameter information, see [ResolveKeySource Task](http://msdn.microsoft.com/library/449f06c2-e9aa-4236-ab1e-c45c25452b2e).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ResolveKeySource" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AutoClosePasswordPromptShow">
@@ -53,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AutoClosePasswordPromptTimeout">
@@ -78,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CertificateFile">
@@ -96,6 +100,7 @@
         <summary>Gets or sets the path of the certificate file.</summary>
         <value>The path of the certificate file.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CertificateThumbprint">
@@ -114,6 +119,7 @@
         <summary>Gets or sets the certificate thumbprint.</summary>
         <value>The certificate thumbprint.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -134,6 +140,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeyFile">
@@ -152,6 +159,7 @@
         <summary>Gets or sets the path of the key file.</summary>
         <value>The path of the key file.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResolvedKeyContainer">
@@ -175,6 +183,7 @@
         <summary>Gets or sets the resolved key container.</summary>
         <value>The resolved key container.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResolvedKeyFile">
@@ -198,6 +207,7 @@
         <summary>Gets or sets the resolved key file.</summary>
         <value>The resolved key file.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResolvedThumbprint">
@@ -221,6 +231,7 @@
         <summary>Gets or sets the resolved certificate thumbprint.</summary>
         <value>The resolved certificate thumbprint.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShowImportDialogDespitePreviousFailures">
@@ -247,6 +258,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SuppressAutoClosePasswordPrompt">
@@ -273,6 +285,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

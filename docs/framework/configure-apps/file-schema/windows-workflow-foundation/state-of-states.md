@@ -2,7 +2,7 @@
 title: "&lt;state&gt; of &lt;states&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -71,7 +71,7 @@ A configuration element that contains the state of the subscribed activity for w
 ```  
   
 ## See Also  
- [System.ServiceModel.Activities.Tracking.Configuration.StateElement](assetId:///System.ServiceModel.Activities.Tracking.Configuration.StateElement?qualifyHint=False&amp;autoUpgrade=True)   
- [System.Activities.Tracking.ActivityStateQuery](assetId:///System.Activities.Tracking.ActivityStateQuery?qualifyHint=False&amp;autoUpgrade=True)   
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement?displayProperty=fullName>       
+ <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=fullName>       
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

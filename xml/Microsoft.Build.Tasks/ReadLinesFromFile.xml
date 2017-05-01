@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>ReadLinesFromFile</c> task. Use the <c>ReadLinesFromFile</c> element in your project file to create and execute this task. For usage and parameter information, see [ReadLinesFromFile Task](http://msdn.microsoft.com/library/a18af929-b53a-4d9e-b7bf-e3d3737ee85f).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ReadLinesFromFile" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -48,6 +50,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="File">
@@ -78,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Lines">
@@ -101,6 +105,7 @@
         <summary>Gets or sets the lines read from the file.</summary>
         <value>The lines read from the file.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

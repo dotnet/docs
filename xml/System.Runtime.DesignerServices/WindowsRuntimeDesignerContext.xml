@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides customized assembly binding for designers that are used to create [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps.</summary>
+    <summary>Provides customized assembly binding for designers that are used to create Windows 8.x Store apps.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +58,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> or <paramref name="paths" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetAssembly">
@@ -85,6 +87,7 @@
         <returns>The assembly, if it is found in the current context; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -113,6 +116,7 @@
         <returns>The type, if it is found in the current context; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InitializeSharedContext">
@@ -164,6 +168,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="paths" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -182,6 +187,7 @@
         <summary>Gets the name of the designer binding context.</summary>
         <value>The name of the context.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetIterationContext">
@@ -221,6 +227,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

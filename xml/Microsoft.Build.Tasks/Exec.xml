@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>Exec</c> task. Use the <c>Exec</c> element in your project file to create and execute this task. For usage and parameter information, see [Exec Task](http://msdn.microsoft.com/library/c9b7525a-b1c9-40fc-8bce-77a5b8f960d8).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Exec" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddCommandLineCommands">
@@ -49,6 +51,7 @@
         <param name="commandLine">Command line builder to add arguments to.</param>
         <summary>Generates command line arguments that the command line tool must run directly from the command line and not from a response file.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -79,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConsoleOutput">
@@ -104,6 +108,7 @@
  ConsoleOutput is enabled when ConsoleToMSBuild is true. This avoids holding lines in memory if they aren't used. ConsoleOutput is a combination of stdout and stderr.</summary>
         <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConsoleToMSBuild">
@@ -122,6 +127,7 @@
         <summary>Enable the standard output to pipe to an item. (StandardOutput).</summary>
         <value>Returns <see cref="T:System.Boolean" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CustomErrorRegularExpression">
@@ -147,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CustomWarningRegularExpression">
@@ -172,6 +179,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExecuteTool">
@@ -205,6 +213,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GenerateFullPathToTool">
@@ -224,6 +233,7 @@
         <summary>Returns the full path to the system tool cmd.exe.</summary>
         <returns>The full path to the system tool cmd.exe.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetWorkingDirectory">
@@ -250,6 +260,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HandleTaskExecutionErrors">
@@ -277,6 +288,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IgnoreExitCode">
@@ -296,6 +308,7 @@
         <value>
           <see langword="true" /> if the <c>Exec</c> task should ignore the exit code provided by the executed command; <see langword="false" /> if the <c>Exec</c> task should return <see langword="false" /> if the executed command returns a non-zero exit code.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IgnoreStandardErrorWarningFormat">
@@ -322,6 +335,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LogEventsFromTextOutput">
@@ -345,6 +359,7 @@
         <param name="messageImportance">The importance to log the message with.</param>
         <summary>Logs the specified single line of text as an error or warning if the single line matched custom or standard error and warning formats or as a regular message if <see cref="P:Microsoft.Build.Tasks.Exec.IgnoreStandardErrorWarningFormat" /> is set to <see langword="true" /> and no custom format matched.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LogPathToTool">
@@ -368,6 +383,7 @@
         <param name="pathToTool">The current directory where the tool is run.</param>
         <summary>Logs the tool name and path.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LogToolCommand">
@@ -389,6 +405,7 @@
         <param name="message">Specify an empty string. This parameter is not used.</param>
         <summary>Logs the batch file command to be executed.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Outputs">
@@ -419,6 +436,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StandardErrorEncoding">
@@ -437,6 +455,7 @@
         <summary>Gets the encoding of the captured task standard error stream.</summary>
         <value>The encoding of the captured task standard error stream.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StandardErrorLoggingImportance">
@@ -455,6 +474,7 @@
         <summary>Gets the importance to log ordinary messages with in the standard error stream.</summary>
         <value>The importance to log ordinary messages with in the standard error stream.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StandardOutputEncoding">
@@ -473,6 +493,7 @@
         <summary>Gets the encoding of the captured task standard output stream.</summary>
         <value>The encoding of the captured task standard output stream.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StandardOutputLoggingImportance">
@@ -491,6 +512,7 @@
         <summary>Gets the importance to log ordinary messages with in the standard out stream.</summary>
         <value>The importance to log ordinary messages with in the standard out stream.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StdErrEncoding">
@@ -514,6 +536,7 @@
         <summary>Gets or sets the encoding of the captured task standard error stream that is visible to the project.</summary>
         <value>The encoding of the captured task standard error stream that is visible to the project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StdOutEncoding">
@@ -537,6 +560,7 @@
         <summary>Gets or sets the encoding of the captured task standard output stream that is visible to the project.</summary>
         <value>The encoding of the captured task standard output stream that is visible to the project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToolName">
@@ -555,6 +579,7 @@
         <summary>Gets the name of the tool (cmd.exe).</summary>
         <value>The name of the tool (cmd.exe).</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ValidateParameters">
@@ -575,6 +600,7 @@
         <returns>
           <see langword="true" /> if task execution should proceed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WorkingDirectory">
@@ -593,6 +619,7 @@
         <summary>Gets or sets the directory in which the command will run.</summary>
         <value>The directory in which the command will run.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

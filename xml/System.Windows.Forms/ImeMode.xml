@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Alpha">
@@ -54,6 +55,7 @@
       </ReturnValue>
       <Docs>
         <summary>Alphanumeric single-byte characters(SBC). This setting is valid for Korean and Japanese IME only.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AlphaFull">
@@ -70,6 +72,7 @@
       </ReturnValue>
       <Docs>
         <summary>Alphanumeric double-byte characters. This setting is valid for Korean and Japanese IME only.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -86,6 +89,7 @@
       </ReturnValue>
       <Docs>
         <summary>IME closed. This setting is valid for Chinese IME only.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Disable">
@@ -102,6 +106,7 @@
       </ReturnValue>
       <Docs>
         <summary>The IME is disabled. With this setting, the users cannot turn the IME on from the keyboard, and the IME floating window is hidden.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Hangul">
@@ -118,6 +123,7 @@
       </ReturnValue>
       <Docs>
         <summary>Hangul SBC. This setting is valid for the Korean IME only.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HangulFull">
@@ -134,6 +140,7 @@
       </ReturnValue>
       <Docs>
         <summary>Hangul DBC. This setting is valid for the Korean IME only.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Hiragana">
@@ -150,6 +157,7 @@
       </ReturnValue>
       <Docs>
         <summary>Hiragana DBC. This setting is valid for the Japanese IME only.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Inherit">
@@ -166,6 +174,7 @@
       </ReturnValue>
       <Docs>
         <summary>Inherits the IME mode of the parent control.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Katakana">
@@ -194,6 +203,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KatakanaHalf">
@@ -210,6 +220,7 @@
       </ReturnValue>
       <Docs>
         <summary>Katakana SBC. This setting is valid for the Japanese IME only.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoControl">
@@ -226,6 +237,7 @@
       </ReturnValue>
       <Docs>
         <summary>None (Default).</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Off">
@@ -242,6 +254,7 @@
       </ReturnValue>
       <Docs>
         <summary>The IME is off. This mode indicates that the IME is off, meaning that the object behaves the same as English entry mode. This setting is valid for Japanese, Simplified Chinese, and Traditional Chinese IME only.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="On">
@@ -258,6 +271,7 @@
       </ReturnValue>
       <Docs>
         <summary>The IME is on. This value indicates that the IME is on and characters specific to Chinese or Japanese can be entered. This setting is valid for Japanese, Simplified Chinese, and Traditional Chinese IME only.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnHalf">
@@ -274,6 +288,7 @@
       </ReturnValue>
       <Docs>
         <summary>IME on HalfShape. This setting is valid for Chinese IME only.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

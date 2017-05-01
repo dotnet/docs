@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,6 +46,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializerImplementation" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanSerialize">
@@ -73,6 +75,7 @@
         <returns>
           <see langword="true" /> if the type can be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetSerializer">
@@ -100,6 +103,7 @@
         <summary>Returns a serializer for the specified type.</summary>
         <returns>An instance of a type derived from the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Reader">
@@ -123,6 +127,7 @@
         <summary>Gets the XML reader object that is used by the serializer.</summary>
         <value>An <see cref="T:System.Xml.Serialization.XmlSerializationReader" /> that is used to read an XML document or data stream.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReadMethods">
@@ -146,6 +151,7 @@
         <summary>Gets the collection of methods that is used to read a data stream.</summary>
         <value>A <see cref="T:System.Collections.Hashtable" /> that contains the methods.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypedSerializers">
@@ -169,6 +175,7 @@
         <summary>Gets the collection of typed serializers that is found in the assembly.</summary>
         <value>A <see cref="T:System.Collections.Hashtable" /> that contains the typed serializers.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WriteMethods">
@@ -192,6 +199,7 @@
         <summary>Get the collection of methods that is used to write to a data stream.</summary>
         <value>A <see cref="T:System.Collections.Hashtable" /> that contains the methods.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Writer">
@@ -215,6 +223,7 @@
         <summary>Gets the XML writer object for the serializer.</summary>
         <value>An <see cref="T:System.Xml.Serialization.XmlSerializationWriter" /> that is used to write to an XML data stream or document.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

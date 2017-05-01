@@ -13,6 +13,7 @@
   <Docs>
     <summary>Parses JScript code. This class belongs to the scanning and parsing category. For more information about scanning and parsing, see [Create a Language Compiler for the .NET Framework](http://go.microsoft.com/fwlink/?LinkId=110392).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +32,7 @@
         <param name="context">The source code to parse.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSParser" /> class, specifying the source code to parse.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -57,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ParseEvalBody">
@@ -83,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

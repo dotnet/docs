@@ -8,9 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream"
-apilocation: 
+api_location: 
   - "System.Runtime.WindowsRuntime.dll"
 dev_langs: 
   - "VB"

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>GenerateBootstrapper</c> task. Use the <c>GenerateBootstrapper</c> element in your project file to create and execute this task. For usage and parameter information, see [GenerateBootstrapper Task](http://msdn.microsoft.com/library/ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.GenerateBootstrapper" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ApplicationFile">
@@ -46,6 +48,7 @@
         <summary>Gets or sets the file the bootstrapper will use to begin the installation of the application after all prerequisites have been installed.</summary>
         <value>The file the bootstrapper will use to begin the installation of the application after all prerequisites have been installed.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -71,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ApplicationRequiresElevation">
@@ -98,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ApplicationUrl">
@@ -116,6 +121,7 @@
         <summary>Gets or sets the Web location that is hosting the application’s installer.</summary>
         <value>The Web location that is hosting the application’s installer.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BootstrapperComponentFiles">
@@ -146,6 +152,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BootstrapperItems">
@@ -164,6 +171,7 @@
         <summary>Gets or sets the products to build into the bootstrapper.</summary>
         <value>The products to build into the bootstrapper.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BootstrapperKeyFile">
@@ -187,6 +195,7 @@
         <summary>Gets or sets the built location of setup.exe.</summary>
         <value>The built location of setup.exe.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ComponentsLocation">
@@ -220,6 +229,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ComponentsUrl">
@@ -238,6 +248,7 @@
         <summary>Gets or sets the URL containing the installation prerequisites.</summary>
         <value>The URL containing the installation prerequisites.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CopyComponents">
@@ -264,6 +275,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Culture">
@@ -289,6 +301,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -309,6 +322,7 @@
         <returns>
           <see langword="true" /> if the task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FallbackCulture">
@@ -327,6 +341,7 @@
         <summary>Gets or sets the secondary culture to use for the bootstraper UI and installation prerequisites.</summary>
         <value>The secondary culture to use for the bootstraper UI and installation prerequisites.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutputPath">
@@ -345,6 +360,7 @@
         <summary>Gets or sets the location to copy setup.exe and all package files.</summary>
         <value>The location to copy setup.exe and all package files.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -363,6 +379,7 @@
         <summary>Gets or sets the location of all available prerequisite packages.</summary>
         <value>The location of all available prerequisite packages.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SupportUrl">
@@ -381,6 +398,7 @@
         <summary>Gets or sets the URL to provide should the bootstrapper installation fail.</summary>
         <value>The URL to provide should the bootstrapper installation fail.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -407,6 +425,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VisualStudioVersion">
@@ -425,6 +444,7 @@
         <summary>The Visual Studio version, in the form &lt;major build.minor build&gt;, for example “4.0”.</summary>
         <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

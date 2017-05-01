@@ -21,6 +21,7 @@
   <Docs>
     <summary>Represents messages that occur during the <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder" /> build operation.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="HelpId">
@@ -44,6 +45,7 @@
         <summary>Gets the MSBuild Help ID for the host IDE.</summary>
         <value>An integer representing the MSBuild Help ID for the host IDE.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HelpKeyword">
@@ -74,6 +76,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -97,6 +100,7 @@
         <summary>Gets a description of the details of the build message.</summary>
         <value>A text string that describes the details of the build message.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Severity">
@@ -120,6 +124,7 @@
         <summary>Gets the severity of the build message.</summary>
         <value>A <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessageSeverity" /> object that represents the severity of the build message.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

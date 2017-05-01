@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a function declaration. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="JScriptFunctionDeclaration">
@@ -55,6 +56,7 @@
         <summary>Creates a new closure function, using the specified information.</summary>
         <returns>A new closure function that represents the function declaration.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

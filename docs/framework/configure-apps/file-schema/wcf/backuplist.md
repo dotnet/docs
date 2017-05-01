@@ -2,7 +2,7 @@
 title: "&lt;backupList&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -77,4 +77,4 @@ Represents a configuration section for defining a backup list that enumerates a 
 ```  
   
 ## See Also  
- [System.ServiceModel.Routing.Configuration.BackupEndpointCollection](assetId:///System.ServiceModel.Routing.Configuration.BackupEndpointCollection?qualifyHint=False&amp;autoUpgrade=True)
+ <xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection?displayProperty=fullName>    

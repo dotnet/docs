@@ -2,7 +2,7 @@
 title: "&lt;add&gt; of &lt;protocolMapping&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -67,5 +67,5 @@ Represents a default protocol mapping between a transport protocol scheme (e.g.,
 ```  
   
 ## See Also  
- [System.ServiceModel.Configuration.ProtocolMappingSection](assetId:///System.ServiceModel.Configuration.ProtocolMappingSection?qualifyHint=False&amp;autoUpgrade=True)   
- [System.ServiceModel.Configuration.ProtocolMappingElement](assetId:///System.ServiceModel.Configuration.ProtocolMappingElement?qualifyHint=False&amp;autoUpgrade=True)
+ <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=fullName>      
+ <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=fullName>    

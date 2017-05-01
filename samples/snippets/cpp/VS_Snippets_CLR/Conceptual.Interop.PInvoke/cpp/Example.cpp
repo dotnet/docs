@@ -1,4 +1,4 @@
-// </Snippet1>
+// <Snippet1>
 using namespace System::Runtime::InteropServices;
 
 typedef void* HWND;

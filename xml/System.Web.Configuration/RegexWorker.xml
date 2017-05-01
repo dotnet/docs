@@ -13,6 +13,7 @@
   <Docs>
     <summary>Used internally at run time by <see cref="T:System.Web.Configuration.BrowserCapabilitiesFactory" /> and <see cref="T:System.Web.Configuration.BrowserCapabilitiesCodeGenerator" /> to parse request data and identify the browser.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +32,7 @@
         <param name="browserCaps">The <see cref="T:System.Web.Configuration.HttpCapabilitiesBase" /> object to be configured.</param>
         <summary>Creates a new instance of <see cref="T:System.Web.Configuration.RegexWorker" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -53,6 +55,7 @@
         <summary>Accessor to this class.</summary>
         <value>The internal value associated with the specified<paramref name="key" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProcessRegex">
@@ -78,6 +81,7 @@
         <returns>
           <see langword="true" /> if the specified request-header value matches any of the capabilities of an internal collection of browsers; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

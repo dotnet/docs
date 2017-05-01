@@ -2,7 +2,7 @@
 title: "&lt;cancelRequestedQuery&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -51,7 +51,7 @@ Represents a query that is used to track requests to cancel a child activity by 
 |[\<faultPropagationQuery>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/faultpropagationquery.md)|Represents a list of configuration elements that are used to track requests to cancel a child activity by the parent activity. The query is necessary for a tracking participant to subscribe to cancel request record objects.|  
   
 ## See Also  
- [System.ServiceModel.Activities.Tracking.Configuration.CancelRequestQueryElement](assetId:///System.ServiceModel.Activities.Tracking.Configuration.CancelRequestQueryElement?qualifyHint=False&amp;autoUpgrade=True)   
- [System.Activities.Tracking.CancelRequestedQuery](assetId:///System.Activities.Tracking.CancelRequestedQuery?qualifyHint=False&amp;autoUpgrade=True)   
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestQueryElement?displayProperty=fullName>       
+ <xref:System.Activities.Tracking.CancelRequestedQuery?displayProperty=fullName>       
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

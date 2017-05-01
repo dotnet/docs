@@ -27,7 +27,7 @@
   </Interfaces>
   <Docs>
     <typeparam name="TChannel">The channel to be used to connect to the service.</typeparam>
-    <summary>Provides the base implementation used to create [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client objects that can call services.</summary>
+    <summary>Provides the base implementation used to create Windows Communication Foundation (WCF) client objects that can call services.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

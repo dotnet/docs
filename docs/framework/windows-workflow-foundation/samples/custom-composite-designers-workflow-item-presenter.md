@@ -67,7 +67,7 @@ The <xref:System.Activities.Presentation.WorkflowItemPresenter> is a key type in
 </sap:ActivityDesigner>  
 ```  
   
- Note the use of WPF data binding to bind to `ModelItem.Body`. `ModelItem` is the property on <xref:System.Activities.Presentation.WorkflowElementDesigner> that refers to the underlying object the designer is being used for, in this case, **SimpleNativeActivity**.  
+ Note the use of WPF data binding to bind to `ModelItem.Body`. `ModelItem` is the property on <xref:System.Activities.Presentation.ActivityDesigner> that refers to the underlying object the designer is being used for, in this case, **SimpleNativeActivity**.  
   
 #### To setup, build, and run the sample  
   

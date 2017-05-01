@@ -2,8 +2,8 @@
 title: Debugging Your C# Hello World Application with Visual Studio 2017
 description: Learn how to debug a Hello World app written in C# with Visual Studio 2017
 keywords: .NET Core, .NET Core console application, .NET Core debugging
-author: stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod: .net-core
@@ -70,7 +70,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. In the text box that reads "e.g. x == 5", enter the following:
 
-   ```cs
+   ```csharp
    String.IsNullOrEmpty(name)
    ```
 
@@ -88,7 +88,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. Note that the value of the `name` variable is "", or [String.Empty](xref:System.String.Empty). Confirm this by entering the following statement in the **Immediate window**:
 
-   ```cs
+   ```csharp
    ? name == String.Empty
    ```
 
@@ -138,6 +138,6 @@ To build and test the release version of your console application, change the bu
 
 ![Image](./media/release.jpg)
 
-When you press F5 or choose **Build Solution** from the **Build** menu, Visual Studio compiles the release version of your console application for you to test. You can then run and test it as you did the debug verison of the application.
+When you press F5 or choose **Build Solution** from the **Build** menu, Visual Studio compiles the release version of your console application for you to test. You can then run and test it as you did the debug version of the application.
 
 Once you've finished debugging your application, the next step is to publish a distributable version of your application. For information about how to do this, see [Publishing the C# Hello World application with Visual Studio 2017](./publishing-with-visual-studio-2017.md).

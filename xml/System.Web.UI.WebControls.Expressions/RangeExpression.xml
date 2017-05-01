@@ -1,0 +1,211 @@
+<Type Name="RangeExpression" FullName="System.Web.UI.WebControls.Expressions.RangeExpression">
+  <TypeSignature Language="C#" Value="public class RangeExpression : System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RangeExpression extends System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.RangeExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a way to determine whether a value is greater than or less than a specified value, or whether a value is between two specified values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.QueryExtender> control provides the ability to filter data in a Web page by using classes in the <xref:System.Web.UI.WebControls.Expressions> namespace. These classes include the <xref:System.Web.UI.WebControls.Expressions.RangeExpression> class.  
+  
+ The <xref:System.Web.UI.WebControls.Expressions.RangeExpression> class searches a data column using a pair of values that define the range. You use the <xref:System.Web.UI.WebControls.Expressions.RangeExpression.DataField%2A> property to specify the column to search. You use the <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MinType%2A> property to specify whether to include or exclude the minimum in the search results, and you use the <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType%2A> property to specify whether to include or exclude the maximum value. The maximum and minimum values can be specified in [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] controls and the values can then be passed to the <xref:System.Web.UI.WebControls.QueryExtender> control as parameters in <xref:System.Web.UI.WebControls.ControlParameter> controls. The results are typically displayed in a data-bound control.  
+  
+   
+  
+## Examples  
+ The following example shows how to search the ListPrice column in the Products table of the AdventureWorks database for products that have a list price in the range that is specified in the `FromTextBox` and `ToTextBox` text boxes. The filter includes the minimum value but excludes the maximum value in the results. The results are displayed in a <xref:System.Web.UI.WebControls.Label> control.  
+  
+ This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
+  
+  
+  
+ ]]></format>
+    </remarks>
+    <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.Expressions.RangeExpression.DataField" /> property is <see langword="null" />.</exception>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RangeExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.RangeExpression.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Expressions.RangeExpression" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataField">
+      <MemberSignature Language="C#" Value="public string DataField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.RangeExpression.DataField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the field to use for the comparison.</summary>
+        <value>The field to use for the comparison.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The range expression searches data field for the specified range.  
+  
+   
+  
+## Examples  
+ The following example shows how to search the List Price column in the Products table of the AdventureWorks database for products that have a list price in the range that is specified in the `FromTextBox` and `ToTextBox` text boxes.  
+  
+ This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
+  
+```  
+<asp:RangeExpression DataField="ListPrice"    
+    MinType="Inclusive" MaxType="Exclusive">  
+  <asp:ControlParameter ControlID="FromTextBox" />  
+  <asp:ControlParameter ControlID="ToTextBox" />  
+</asp:RangeExpression>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueryable">
+      <MemberSignature Language="C#" Value="public override System.Linq.IQueryable GetQueryable (System.Linq.IQueryable source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Linq.IQueryable GetQueryable(class System.Linq.IQueryable source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.RangeExpression.GetQueryable(System.Linq.IQueryable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object to use for the comparison.</param>
+        <summary>Gets the <see cref="T:System.Linq.IQueryable" /> object that the range comparison was performed on.</summary>
+        <returns>An instance of the <see cref="T:System.Linq.IQueryable" /> object that the expression was applied to.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses the specified <xref:System.Linq.IQueryable> object to resolve the expression.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.Expressions.RangeExpression.DataField" /> property is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.Web.UI.WebControls.Expressions.RangeExpression.MinType" /> and the <see cref="P:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType" /> properties are set to <see cref="F:System.Web.UI.WebControls.Expressions.RangeType.None" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.Web.UI.WebControls.Expressions.RangeExpression.MinType" /> or <see cref="P:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType" /> property is not set to <see cref="F:System.Web.UI.WebControls.Expressions.RangeType.None" /> and the parameter collection is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Expressions.RangeType MaxType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Expressions.RangeType MaxType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Expressions.RangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum value of the range.</summary>
+        <value>The type of comparison to use for the maximum value. The default is <see cref="F:System.Web.UI.WebControls.Expressions.RangeType.None" />, which indicates that the maximum comparison is not performed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible values for this property are <xref:System.Web.UI.WebControls.Expressions.RangeType>, <xref:System.Web.UI.WebControls.Expressions.RangeType>, and <xref:System.Web.UI.WebControls.Expressions.RangeType>.  
+  
+ When the <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType%2A> is set to <xref:System.Web.UI.WebControls.Expressions.RangeType>, the maximum value of the range is included in the search results. This is equivalent to performing a >= operation. If you set the property to <xref:System.Web.UI.WebControls.Expressions.RangeType> field, it is equivalent to specifying a > or < operation. If you set the property to <xref:System.Web.UI.WebControls.Expressions.RangeType>, no limit is imposed on the range.  
+  
+   
+  
+## Examples  
+ The following example shows how to include the minimum value that is specified in the range and how to exclude the maximum value. The maximum and minimum values are entered into text boxes. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
+  
+```  
+<asp:RangeExpression DataField="ListPrice"    
+    MinType="Inclusive" MaxType="Exclusive">  
+  <asp:ControlParameter ControlID="FromTextBox" />  
+  <asp:ControlParameter ControlID="ToTextBox" />  
+</asp:RangeExpression>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Expressions.RangeType MinType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Expressions.RangeType MinType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.RangeExpression.MinType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Expressions.RangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum value of the range.</summary>
+        <value>The type of comparison to use for the minimum value. The default is <see cref="F:System.Web.UI.WebControls.Expressions.RangeType.None" />, which indicates that the minimum comparison is not performed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible values for this property are <xref:System.Web.UI.WebControls.Expressions.RangeType>, <xref:System.Web.UI.WebControls.Expressions.RangeType>, and <xref:System.Web.UI.WebControls.Expressions.RangeType>.  
+  
+ When the <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MinType%2A> or <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType%2A> property is set to <xref:System.Web.UI.WebControls.Expressions.RangeType>, the minimum and maximum value of the range is included in the search results. This is equivalent to performing a >= or \<= operation. The <xref:System.Web.UI.WebControls.Expressions.RangeType> field is equivalent to the > or < operation and <xref:System.Web.UI.WebControls.Expressions.RangeType> imposes no limit on the range.  
+  
+   
+  
+## Examples  
+ The following example shows how to include the minimum value that is specified in the range and how to exclude the maximum value. The maximum and minimum values are entered into text boxes. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
+  
+```  
+<asp:RangeExpression DataField="ListPrice"    
+    MinType="Inclusive" MaxType="Exclusive">  
+  <asp:ControlParameter ControlID="FromTextBox" />  
+  <asp:ControlParameter ControlID="ToTextBox" />  
+</asp:RangeExpression>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

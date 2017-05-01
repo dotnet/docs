@@ -1,0 +1,93 @@
+<Type Name="OpenAccess" FullName="Microsoft.VisualBasic.OpenAccess">
+  <TypeSignature Language="C#" Value="public enum OpenAccess" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OpenAccess extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.OpenAccess" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates how to open a file when calling file-access functions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call file access-related functions, you can use enumeration members in your code in place of the actual values.  
+  
+ The `OpenAccess` enumeration defines constants used to identify whether a file can be read from (`Read`), written to (`Write`), or both (`ReadWrite`). A file opened for `Read` access cannot be modified, only read from. The following table lists the `OpenAccess` enumeration members.  
+  
+ When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenAccess Default = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenAccess.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read and write access permitted. This is the default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="Read" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenAccess Read = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenAccess.Read" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read access permitted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadWrite">
+      <MemberSignature Language="C#" Value="ReadWrite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenAccess ReadWrite = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenAccess.ReadWrite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read and write access permitted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="Write" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenAccess Write = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenAccess.Write" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Write access permitted.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

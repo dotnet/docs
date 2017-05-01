@@ -1,0 +1,115 @@
+<Type Name="ICustomAttributeTypeProvider&lt;TType&gt;" FullName="System.Reflection.Metadata.ICustomAttributeTypeProvider&lt;TType&gt;">
+  <TypeSignature Language="C#" Value="public interface ICustomAttributeTypeProvider&lt;TType&gt; : System.Reflection.Metadata.IPrimitiveTypeProvider&lt;TType&gt;, System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;, System.Reflection.Metadata.ITypeProvider&lt;TType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICustomAttributeTypeProvider`1&lt;TType&gt; implements class System.Reflection.Metadata.IPrimitiveTypeProvider`1&lt;!TType&gt;, class System.Reflection.Metadata.ISZArrayTypeProvider`1&lt;!TType&gt;, class System.Reflection.Metadata.ITypeProvider`1&lt;!TType&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ICustomAttributeTypeProvider`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TType" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Reflection.Metadata.IPrimitiveTypeProvider&lt;TType&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Reflection.Metadata.ITypeProvider&lt;TType&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TType">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSystemType">
+      <MemberSignature Language="C#" Value="public TType GetSystemType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetSystemType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ICustomAttributeTypeProvider`1.GetSystemType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeFromSerializedName">
+      <MemberSignature Language="C#" Value="public TType GetTypeFromSerializedName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetTypeFromSerializedName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ICustomAttributeTypeProvider`1.GetTypeFromSerializedName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUnderlyingEnumType">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.PrimitiveTypeCode GetUnderlyingEnumType (TType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Reflection.Metadata.PrimitiveTypeCode GetUnderlyingEnumType(!TType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ICustomAttributeTypeProvider`1.GetUnderlyingEnumType(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="TType" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSystemType">
+      <MemberSignature Language="C#" Value="public bool IsSystemType (TType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSystemType(!TType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ICustomAttributeTypeProvider`1.IsSystemType(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="TType" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

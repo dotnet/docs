@@ -1,0 +1,46 @@
+<Type Name="CacheItemUpdateCallback" FullName="System.Web.Caching.CacheItemUpdateCallback">
+  <TypeSignature Language="C#" Value="public delegate void CacheItemUpdateCallback(string key, CacheItemUpdateReason reason, out object expensiveObject, out CacheDependency dependency, out DateTime absoluteExpiration, out TimeSpan slidingExpiration);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheItemUpdateCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemUpdateCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="key" Type="System.String" />
+    <Parameter Name="reason" Type="System.Web.Caching.CacheItemUpdateReason" />
+    <Parameter Name="expensiveObject" Type="System.Object&amp;" RefType="out" />
+    <Parameter Name="dependency" Type="System.Web.Caching.CacheDependency&amp;" RefType="out" />
+    <Parameter Name="absoluteExpiration" Type="System.DateTime&amp;" RefType="out" />
+    <Parameter Name="slidingExpiration" Type="System.TimeSpan&amp;" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="key">The identifier of the item that is being removed from the cache.</param>
+    <param name="reason">The reason that the item is being removed from the cache.</param>
+    <param name="expensiveObject">When this method returns, contains the cached item object that contains the updates.</param>
+    <param name="dependency">When this method returns, contains the object that defines the dependency between the item object and a file, a cache key, an array of either, or another <see cref="T:System.Web.Caching.CacheDependency" /> object.</param>
+    <param name="absoluteExpiration">When this method returns, contains the time at which the object expired.</param>
+    <param name="slidingExpiration">When this method returns, contains the interval between the time that the object was last accessed and the time at which the object expired.</param>
+    <summary>Defines a callback method for notifying applications before a cached item is removed from the cache.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an object expires in the cache, ASP.NET calls the <xref:System.Web.Caching.CacheItemUpdateCallback> method with the key for the cache item and the reason you might want to update the item. The remaining parameters of this method are out parameters. You supply the new cached item and optional expiration and dependency values to use when refreshing the cached item.  
+  
+ The update callback is not called if the cached item is explicitly removed by using a call to <xref:System.Web.Caching.Cache.Remove%2A>.  
+  
+ If you want the cached item to be removed from the cache, you must return `null` in the `expensiveObject` parameter. Otherwise, you return a reference to the new cached data by using the `expensiveObject` parameter. If you do not specify expiration or dependency values, the item will be removed from the cache only when memory is needed.  
+  
+ If the callback method throws an exception, ASP.NET suppresses the exception and removes the cached value.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

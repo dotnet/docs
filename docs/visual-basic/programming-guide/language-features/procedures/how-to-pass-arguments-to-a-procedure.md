@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "argument passing, procedures"
 ms.assetid: 08723588-3890-4ddc-8249-79e049e0f241
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,107 @@
+<Type Name="OutputColor" FullName="System.Printing.OutputColor">
+  <TypeSignature Language="C#" Value="public enum OutputColor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputColor extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.OutputColor" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how to print content that contains color or shades of gray.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the values of this type for these purposes:  
+  
+-   As members of the <xref:System.Printing.PrintCapabilities.OutputColorCapability%2A> collection, which is a property of <xref:System.Printing.PrintCapabilities>, these values specify the types of output that a printer supports. (Many printers support more than one type.)  
+  
+-   As the value of the <xref:System.Printing.PrintTicket.OutputColor%2A> property of a <xref:System.Printing.PrintTicket>, they direct the printer to produce the designated type of output.  
+  
+ The **Unknown** value is never used in properties of <xref:System.Printing.PrintCapabilities> objects.  
+  
+ You should never set a <xref:System.Printing.PrintTicket> property to `Unknown`. If some other <xref:System.Printing.PrintTicket> producing application has created a *PrintTicket document* that sets the output color feature to an unrecognized option (that is, an option that is not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)), then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have `Unknown` as the value of the <xref:System.Printing.PrintTicket.OutputColor%2A> property.  
+  
+ Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](http://msdn.microsoft.com/en-us/a3600218-1ea5-478a-9853-6560464f2885).  
+  
+   
+  
+## Examples  
+ The following example shows how to use this enumeration to set <xref:System.Printing.PrintTicket> values.  
+  
+ [!code-csharp[XpsPrint#OutputColorAndPageOrientation](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#outputcolorandpageorientation)]
+ [!code-vb[XpsPrint#OutputColorAndPageOrientation](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#outputcolorandpageorientation)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="Color" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputColor Color = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.OutputColor.Color" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.OutputColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Output that prints in color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Grayscale">
+      <MemberSignature Language="C#" Value="Grayscale" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputColor Grayscale = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.OutputColor.Grayscale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.OutputColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Output that prints in a grayscale.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Monochrome">
+      <MemberSignature Language="C#" Value="Monochrome" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputColor Monochrome = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.OutputColor.Monochrome" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.OutputColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Output that prints in a single color and with the same degree of intensity.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputColor Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.OutputColor.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.OutputColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

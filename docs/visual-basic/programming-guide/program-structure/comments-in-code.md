@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "code comments"
 ms.assetid: 90136fba-22eb-49f9-ba81-63db629b4a47
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,62 @@
+<Type Name="IRegisteredObject" FullName="System.Web.Hosting.IRegisteredObject">
+  <TypeSignature Language="C#" Value="public interface IRegisteredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRegisteredObject" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IRegisteredObject" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines methods for objects that are managed by the hosting environment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Objects must implement the <xref:System.Web.Hosting.IRegisteredObject> interface in order to register with the hosting environment and have their lifetime managed by the hosting environment.  
+  
+ You can create an instance of a registered object by calling the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A?displayProperty=fullName> method on the application manager. The application manager returns the newly created object to the caller, which can then call a type-specific method on the object. During startup, the registered object should call the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A?displayProperty=fullName> method to complete registration of the object.  
+  
+ When the application manager needs to stop a registered object, it will call the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method.  
+  
+ Applications can have only one instance of a registered type. To create multiple instances of a registered type, use the factory pattern to create an object manager that is registered with the application and then manages the multiple instances. For an example of an object implementing the factory pattern, see the example for the <xref:System.Web.Hosting.ApplicationManager> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop (bool immediate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stop(bool immediate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IRegisteredObject.Stop(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="immediate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="immediate">
+          <see langword="true" /> to indicate the registered object should unregister from the hosting environment before returning; otherwise, <see langword="false" />.</param>
+        <summary>Requests a registered object to unregister.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application manager will call the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method to ask a registered object to unregister. During processing of the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method, the registered object must call the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A?displayProperty=fullName> method.  
+  
+ The <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method is first called with the `immediate` parameter set to `false`. The object can either complete processing, call the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A> method, and then return or it can return immediately and complete processing asynchronously before calling the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A> method.  
+  
+ If the registered object does not complete processing before the application manager's time-out period expires, the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method is called again with the `immediate` parameter set to `true`. When the `immediate` parameter is `true`, the registered object must call the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A> method before returning; otherwise, its registration will be removed by the application manager.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

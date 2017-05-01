@@ -1,0 +1,118 @@
+<Type Name="FilterFactory" FullName="System.Web.DynamicData.FilterFactory">
+  <TypeSignature Language="C#" Value="public class FilterFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FilterFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.FilterFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Creates a filter template.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.FilterFactory> class is used at run time by Dynamic Data to get an instance of a filter template for a specific column type.  
+  
+ You can override the methods that are defined in this class to customize how filter templates are loaded. For example, a custom implementation could load the filter templates from a location different than the default ~/DynamicData/Filters folder.  
+  
+ Dynamic Data provides filter templates for foreign-key, Boolean, and enumeration column types and displays them by using a <xref:System.Web.UI.WebControls.DropDownList> control. You can also create custom filter templates.  
+  
+   
+  
+## Examples  
+ For an example of table row filtering uses the default filter templates, see the <xref:System.Web.DynamicData.QueryableFilterRepeater> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FilterFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.FilterFactory" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFilterControl">
+      <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.QueryableFilterUserControl CreateFilterControl (System.Web.DynamicData.MetaColumn column, string filterUIHint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.DynamicData.QueryableFilterUserControl CreateFilterControl(class System.Web.DynamicData.MetaColumn column, string filterUIHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterFactory.CreateFilterControl(System.Web.DynamicData.MetaColumn,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.QueryableFilterUserControl</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Web.DynamicData.MetaColumn" />
+        <Parameter Name="filterUIHint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="column">The data column to which the filter template applies.</param>
+        <param name="filterUIHint">The name of the filter template to use.</param>
+        <summary>Creates an instance of the filter template.</summary>
+        <returns>An instance of the <see cref="T:System.Web.DynamicData.QueryableFilterUserControl" /> class.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by Dynamic Data to get an instance of a filter template. Derived classes can override this method to customize how instances of filter templates are created. For example, a custom implementation could load templates from a compiled assembly instead of from the default ~/DynamicData/Filters folder.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="column" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFilterVirtualPath">
+      <MemberSignature Language="C#" Value="public virtual string GetFilterVirtualPath (System.Web.DynamicData.MetaColumn column, string filterUIHint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetFilterVirtualPath(class System.Web.DynamicData.MetaColumn column, string filterUIHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterFactory.GetFilterVirtualPath(System.Web.DynamicData.MetaColumn,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Web.DynamicData.MetaColumn" />
+        <Parameter Name="filterUIHint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="column">The data column to which the filter template applies.</param>
+        <param name="filterUIHint">The filter template to use.</param>
+        <summary>Gets the virtual path of the filter template.</summary>
+        <returns>The virtual path of the filter template.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, filter templates are located in the ~/DynamicData/Filers folder.  
+  
+ This method determines the virtual path of the folder that contains the field template. Derived classes can override this method to provide filter templates from a different virtual path.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="column" /> is **null**.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

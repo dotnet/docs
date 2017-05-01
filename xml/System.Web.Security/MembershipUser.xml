@@ -1,0 +1,948 @@
+<Type Name="MembershipUser" FullName="System.Web.Security.MembershipUser">
+  <TypeSignature Language="C#" Value="public class MembershipUser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MembershipUser extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipUser" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web, Version=2.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes and updates membership user information in the membership data store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.MembershipUser> object is used to represent a single membership user in the membership data store. It exposes information about the membership user such as the e-mail address, and provides functionality for the membership user such as the ability to change or reset his or her password.  
+  
+> [!NOTE]
+>  If you are not familiar with the membership features of ASP.NET, see [Introduction to Membership](http://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980) before continuing. For a list of other topics related to membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+  
+ A <xref:System.Web.Security.MembershipUser> object is returned by the <xref:System.Web.Security.Membership.GetUser%2A> and <xref:System.Web.Security.Membership.CreateUser%2A> methods or as part of a <xref:System.Web.Security.MembershipUserCollection> returned by the <xref:System.Web.Security.Membership.GetAllUsers%2A>, <xref:System.Web.Security.Membership.FindUsersByName%2A>, and <xref:System.Web.Security.Membership.FindUsersByEmail%2A> methods.  
+  
+ A <xref:System.Web.Security.MembershipUser> object is required by the <xref:System.Web.Security.Membership.UpdateUser%2A> method when you want to update the information for an existing membership user.  
+  
+   
+  
+## Examples  
+ The following code example updates the e-mail address for a user.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/UpdateEmailcs.aspx#11)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/UpdateEmailvb.aspx#11)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MembershipUser ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of a <see cref="T:System.Web.Security.MembershipUser" /> object for a class that inherits the <see cref="T:System.Web.Security.MembershipUser" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.MembershipUser> constructor is not intended to be used from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MembershipUser (string providerName, string name, object providerUserKey, string email, string passwordQuestion, string comment, bool isApproved, bool isLockedOut, DateTime creationDate, DateTime lastLoginDate, DateTime lastActivityDate, DateTime lastPasswordChangedDate, DateTime lastLockoutDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string providerName, string name, object providerUserKey, string email, string passwordQuestion, string comment, bool isApproved, bool isLockedOut, valuetype System.DateTime creationDate, valuetype System.DateTime lastLoginDate, valuetype System.DateTime lastActivityDate, valuetype System.DateTime lastPasswordChangedDate, valuetype System.DateTime lastLockoutDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.#ctor(System.String,System.String,System.Object,System.String,System.String,System.String,System.Boolean,System.Boolean,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="providerName" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="providerUserKey" Type="System.Object" />
+        <Parameter Name="email" Type="System.String" />
+        <Parameter Name="passwordQuestion" Type="System.String" />
+        <Parameter Name="comment" Type="System.String" />
+        <Parameter Name="isApproved" Type="System.Boolean" />
+        <Parameter Name="isLockedOut" Type="System.Boolean" />
+        <Parameter Name="creationDate" Type="System.DateTime" />
+        <Parameter Name="lastLoginDate" Type="System.DateTime" />
+        <Parameter Name="lastActivityDate" Type="System.DateTime" />
+        <Parameter Name="lastPasswordChangedDate" Type="System.DateTime" />
+        <Parameter Name="lastLockoutDate" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="providerName">The <see cref="P:System.Web.Security.MembershipUser.ProviderName" /> string for the membership user.</param>
+        <param name="name">The <see cref="P:System.Web.Security.MembershipUser.UserName" /> string for the membership user.</param>
+        <param name="providerUserKey">The <see cref="P:System.Web.Security.MembershipUser.ProviderUserKey" /> identifier for the membership user.</param>
+        <param name="email">The <see cref="P:System.Web.Security.MembershipUser.Email" /> string for the membership user.</param>
+        <param name="passwordQuestion">The <see cref="P:System.Web.Security.MembershipUser.PasswordQuestion" /> string for the membership user.</param>
+        <param name="comment">The <see cref="P:System.Web.Security.MembershipUser.Comment" /> string for the membership user.</param>
+        <param name="isApproved">The <see cref="P:System.Web.Security.MembershipUser.IsApproved" /> value for the membership user.</param>
+        <param name="isLockedOut">
+          <see langword="true" /> to lock out the membership user; otherwise, <see langword="false" />.</param>
+        <param name="creationDate">The <see cref="P:System.Web.Security.MembershipUser.CreationDate" /><see cref="T:System.DateTime" /> object for the membership user.</param>
+        <param name="lastLoginDate">The <see cref="P:System.Web.Security.MembershipUser.LastLoginDate" /><see cref="T:System.DateTime" /> object for the membership user.</param>
+        <param name="lastActivityDate">The <see cref="P:System.Web.Security.MembershipUser.LastActivityDate" /><see cref="T:System.DateTime" /> object for the membership user.</param>
+        <param name="lastPasswordChangedDate">The <see cref="P:System.Web.Security.MembershipUser.LastPasswordChangedDate" /><see cref="T:System.DateTime" /> object for the membership user.</param>
+        <param name="lastLockoutDate">The <see cref="P:System.Web.Security.MembershipUser.LastLockoutDate" /><see cref="T:System.DateTime" /> object for the membership user.</param>
+        <summary>Creates a new membership user object with the specified property values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creating a new <xref:System.Web.Security.MembershipUser> object does not add a new membership user object to the membership data store. To add a new membership user to the membership data store, use the <xref:System.Web.Security.Membership.CreateUser%2A> method. Note that the <xref:System.Web.Security.Membership.CreateUser%2A> method returns a <xref:System.Web.Security.MembershipUser> object for the membership user added to the data store.  
+  
+ <xref:System.Web.Security.MembershipUser> objects can be constructed in application code for use with the <xref:System.Web.Security.Membership.UpdateUser%2A> method. Alternatively, you can also pass a <xref:System.Web.Security.MembershipUser> object returned from the <xref:System.Web.Security.Membership.CreateUser%2A>, <xref:System.Web.Security.Membership.GetUser%2A>, <xref:System.Web.Security.Membership.GetAllUsers%2A>, <xref:System.Web.Security.Membership.FindUsersByName%2A>, or <xref:System.Web.Security.Membership.FindUsersByEmail%2A> method to the <xref:System.Web.Security.Membership.UpdateUser%2A> method as well.  
+  
+ <xref:System.Web.Security.MembershipUser> objects are also commonly constructed by membership-provider implementations for the <xref:System.Web.Security.MembershipProvider.CreateUser%2A>, <xref:System.Web.Security.MembershipProvider.GetUser%2A>, <xref:System.Web.Security.MembershipProvider.GetAllUsers%2A>, <xref:System.Web.Security.MembershipProvider.FindUsersByName%2A>, and <xref:System.Web.Security.MembershipProvider.FindUsersByEmail%2A> methods.  
+  
+ The `name`, `email`, and `passwordQuestion` parameters are all trimmed before being used.  
+  
+   
+  
+## Examples  
+ The following code example shows an implementation of the <xref:System.Web.Security.Membership.CreateUser%2A> method for a membership provider. The method constructs a <xref:System.Web.Security.MembershipUser> object that is returned when the user is successfully added to the data store.  
+  
+ [!code-csharp[System.Web.Security.MembershipUser.Constructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser.Constructor/CS/newuser.cs#1)]
+ [!code-vb[System.Web.Security.MembershipUser.Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser.Constructor/VB/newuser.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="providerName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="providerName" /> is not found in the <see cref="P:System.Web.Security.Membership.Providers" /> collection.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The constructor is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, derive your class from the type and then call the default protected constructor, or change the application to target the full version of the .NET Framework.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangePassword">
+      <MemberSignature Language="C#" Value="public virtual bool ChangePassword (string oldPassword, string newPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ChangePassword(string oldPassword, string newPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.ChangePassword(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldPassword" Type="System.String" />
+        <Parameter Name="newPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="oldPassword">The current password for the membership user.</param>
+        <param name="newPassword">The new password for the membership user.</param>
+        <summary>Updates the password for the membership user in the membership data store.</summary>
+        <returns>
+          <see langword="true" /> if the update was successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Security.MembershipUser.ChangePassword%2A> calls the <xref:System.Web.Security.MembershipProvider.ChangePassword%2A> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to update the password for the membership user in the membership data store.  
+  
+ The membership provider may have restrictions on the size of the password. For size limitations, see the documentation for the membership provider.  
+  
+   
+  
+## Examples  
+ The following code example modifies the password for the current logged-on user.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ChangePasswordcs.aspx#8)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ChangePasswordvb.aspx#8)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="oldPassword" /> is an empty string.  
+  
+ -or-  
+  
+ <paramref name="newPassword" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="oldPassword" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="newPassword" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangePasswordQuestionAndAnswer">
+      <MemberSignature Language="C#" Value="public virtual bool ChangePasswordQuestionAndAnswer (string password, string newPasswordQuestion, string newPasswordAnswer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ChangePasswordQuestionAndAnswer(string password, string newPasswordQuestion, string newPasswordAnswer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="newPasswordQuestion" Type="System.String" />
+        <Parameter Name="newPasswordAnswer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="password">The current password for the membership user.</param>
+        <param name="newPasswordQuestion">The new password question value for the membership user.</param>
+        <param name="newPasswordAnswer">The new password answer value for the membership user.</param>
+        <summary>Updates the password question and answer for the membership user in the membership data store.</summary>
+        <returns>
+          <see langword="true" /> if the update was successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Security.MembershipUser.ChangePasswordQuestionAndAnswer%2A> calls the <xref:System.Web.Security.MembershipProvider.ChangePasswordQuestionAndAnswer%2A> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to update the password question and answer for the membership user in the membership data store.  
+  
+ The membership provider may have restrictions on the size of the password question and answer. For size limitations, see the documentation for the membership provider.  
+  
+   
+  
+## Examples  
+ The following code example updates the password question and answer for the current logged-on user.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ChangePasswordQuestioncs.aspx#9)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ChangePasswordQuestionvb.aspx#9)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="password" /> is an empty string.  
+  
+ -or-  
+  
+ <paramref name="newPasswordQuestion" /> is an empty string.  
+  
+ -or-  
+  
+ <paramref name="newPasswordAnswer" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="password" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Comment">
+      <MemberSignature Language="C#" Value="public virtual string Comment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.Comment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets application-specific information for the membership user.</summary>
+        <value>Application-specific information for the membership user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.MembershipUser.Comment%2A> property can be used to store custom information for a membership user that is specific to an application. The amount of information that can be stored in the <xref:System.Web.Security.MembershipUser.Comment%2A> property for a <xref:System.Web.Security.MembershipUser> is defined by the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property. If your application requires more space to store user information than is allowed by the membership provider, you can implement a custom membership provider, or use the user <xref:System.Web.Profile>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreationDate">
+      <MemberSignature Language="C#" Value="public virtual DateTime CreationDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreationDate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.CreationDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the date and time when the user was added to the membership data store.</summary>
+        <value>The date and time when the user was added to the membership data store.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.SqlMembershipProvider> sets the <xref:System.Web.Security.MembershipUser.CreationDate%2A>, <xref:System.Web.Security.MembershipUser.LastLoginDate%2A>, <xref:System.Web.Security.MembershipUser.LastActivityDate%2A>, and <xref:System.Web.Security.MembershipUser.LastPasswordChangedDate%2A> date to the same date and time when a membership user is created by the <xref:System.Web.Security.Membership.CreateUser%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.CreationDate%2A> property for the membership user.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Email">
+      <MemberSignature Language="C#" Value="public virtual string Email { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Email" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.Email" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the e-mail address for the membership user.</summary>
+        <value>The e-mail address for the membership user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.Email%2A> property for the membership user.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPassword">
+      <MemberSignature Language="C#" Value="public virtual string GetPassword ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPassword() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.GetPassword" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the password for the membership user from the membership data store.</summary>
+        <returns>The password for the membership user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Security.MembershipUser.GetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.GetPassword%2A?displayProperty=fullName> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to retrieve the password for the membership from the membership data store.  
+  
+ If <xref:System.Web.Security.Membership.EnablePasswordRetrieval%2A> is `false`, the membership provider will return an exception. If the provider supports passwords with a <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> of <xref:System.Web.Security.MembershipPasswordFormat>, you will be unable to retrieve the password for the membership user and should consider making use of the <xref:System.Web.Security.MembershipUser.ResetPassword%2A> method when a user has forgotten his or her password.  
+  
+> [!NOTE]
+>  A <xref:System.Configuration.ConfigurationException> will be thrown if `enablePasswordRetrieval` is set to `true` and `passwordFormat` is set to `Hashed` in the Web.config file for the ASP.NET application.  
+  
+ If <xref:System.Web.Security.Membership.RequiresQuestionAndAnswer%2A> is `true`, you must use the <xref:System.Web.Security.MembershipUser.GetPassword%2A> overload that takes a password answer as a parameter and supply the password answer for the membership user. If a password answer is required and an incorrect password answer is supplied, a <xref:System.Web.Security.MembershipPasswordException> is thrown by the membership provider.  
+  
+   
+  
+## Examples  
+ The following code example calls the <xref:System.Web.Security.MembershipUser.GetPassword%2A> method to retrieve the password for a specified user name. The password is sent to the user's e-mail address. Note that <xref:System.Web.Security.Membership.RequiresQuestionAndAnswer%2A> is assumed to be `false`.  
+  
+> [!NOTE]
+>  Returning a password in clear text using e-mail is not recommended for sites that require a high level of security. For high-security sites, it is recommended that you return passwords using encryption, such as SSL.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/retrievepassword2cs.aspx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/retrievepassword2vb.aspx#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPassword">
+      <MemberSignature Language="C#" Value="public virtual string GetPassword (string passwordAnswer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPassword(string passwordAnswer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.GetPassword(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="passwordAnswer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="passwordAnswer">The password answer for the membership user.</param>
+        <summary>Gets the password for the membership user from the membership data store.</summary>
+        <returns>The password for the membership user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Security.MembershipUser.GetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.GetPassword%2A?displayProperty=fullName> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to retrieve the password for the membership user from the membership data store. If a password answer is required and an incorrect password answer is supplied, a <xref:System.Web.Security.MembershipPasswordException> is thrown by the membership provider.  
+  
+ If <xref:System.Web.Security.Membership.EnablePasswordRetrieval%2A> is `false`, the membership provider will return an exception. If the provider supports passwords with a <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> of <xref:System.Web.Security.MembershipPasswordFormat>, you will be unable to retrieve the password for the membership user and should consider making use of the <xref:System.Web.Security.MembershipUser.ResetPassword%2A> method when a user has forgotten his or her password.  
+  
+> [!NOTE]
+>  A <xref:System.Configuration.ConfigurationException> will be thrown if `enablePasswordRetrieval` is set to `true` and `passwordFormat` is set to `Hashed` in the Web.config file for the ASP.NET application.  
+  
+ If <xref:System.Web.Security.Membership.RequiresQuestionAndAnswer%2A> is `false`, you can supply `null` for the `answer` parameter, or use the <xref:System.Web.Security.MembershipUser.GetPassword%2A> overload that does not take any parameters.  
+  
+   
+  
+## Examples  
+ The following code example calls the <xref:System.Web.Security.MembershipUser.GetPassword%2A> method to retrieve the password for a specified user name if the correct password answer is supplied. The password is sent to the user's e-mail address.  
+  
+> [!NOTE]
+>  Returning a password in clear text using e-mail is not recommended for sites that require a high level of security. For high-security sites, it is recommended that you return passwords using encryption, such as SSL.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/retrievepasswordcs.aspx#4)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/retrievepasswordvb.aspx#4)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsApproved">
+      <MemberSignature Language="C#" Value="public virtual bool IsApproved { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsApproved" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.IsApproved" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the membership user can be authenticated.</summary>
+        <value>
+          <see langword="true" /> if the user can be authenticated; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.MembershipUser.IsApproved%2A> value for a membership user is checked during the call to <xref:System.Web.Security.Membership.ValidateUser%2A> by the <xref:System.Web.Security.SqlMembershipProvider>. If the <xref:System.Web.Security.MembershipUser.IsApproved%2A> property is set to `false`, the <xref:System.Web.Security.Membership.ValidateUser%2A> method returns `false` even if the supplied user name and password are correct.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLockedOut">
+      <MemberSignature Language="C#" Value="public virtual bool IsLockedOut { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLockedOut" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.IsLockedOut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the membership user is locked out and unable to be validated.</summary>
+        <value>
+          <see langword="true" /> if the membership user is locked out and unable to be validated; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Users are most commonly locked out and cannot be validated by the <xref:System.Web.Security.Membership.ValidateUser%2A> method when the <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A> is reached within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A>.  
+  
+ Users can also be locked out if you use the <xref:System.Web.Security.MembershipUser.GetPassword%2A> or <xref:System.Web.Security.MembershipUser.ResetPassword%2A> overload that accepts a password answer and the number of bad answers entered by the user reaches the <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A?displayProperty=fullName>within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A?displayProperty=fullName>.  
+  
+ To set this property to `false` and let the user try to log in again, you can use the <xref:System.Web.Security.MembershipUser.UnlockUser%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOnline">
+      <MemberSignature Language="C#" Value="public virtual bool IsOnline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOnline" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.IsOnline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether the user is currently online.</summary>
+        <value>
+          <see langword="true" /> if the user is online; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A user is considered online if the current date and time minus the <xref:System.Web.Security.Membership.UserIsOnlineTimeWindow%2A> property value is earlier than the <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> for the user.  
+  
+ The <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> for a user is updated to the current date and time by the <xref:System.Web.Security.Membership.CreateUser%2A>, <xref:System.Web.Security.Membership.UpdateUser%2A> and <xref:System.Web.Security.Membership.ValidateUser%2A> methods, and can be updated by some of the overloads of the <xref:System.Web.Security.Membership.GetUser%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> property value for a user is updated by the classes in the <xref:System.Web.Profile> and the <xref:System.Web.UI.WebControls.WebParts> namespaces whenever user data is retrieved from or set at the data source. If your application uses the same data source to store user information, and your <xref:System.Web.Profile.ProfileProvider> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> are configured with the same `applicationName` as your <xref:System.Web.Security.MembershipProvider>, then the <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> and <xref:System.Web.Security.MembershipUser.IsOnline%2A> properties of the user will reflect this behavior.  
+  
+   
+  
+## Examples  
+ The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> control and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.IsOnline%2A> property value for the membership user.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LastActivityDate">
+      <MemberSignature Language="C#" Value="public virtual DateTime LastActivityDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastActivityDate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.LastActivityDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the date and time when the membership user was last authenticated or accessed the application.</summary>
+        <value>The date and time when the membership user was last authenticated or accessed the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> for a user is updated to the current date and time by the <xref:System.Web.Security.Membership.CreateUser%2A> and <xref:System.Web.Security.Membership.ValidateUser%2A> methods, and can be updated by some overloads of the <xref:System.Web.Security.Membership.GetUser%2A> method. You can use the <xref:System.Web.Security.Membership.UpdateUser%2A> method to set the <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> property to a specific date and time.  
+  
+ The <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> is used to determine whether a user is online. A user is considered online if the current date and time minus the <xref:System.Web.Security.Membership.UserIsOnlineTimeWindow%2A> property value is earlier than the <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> for the user.  
+  
+ The <xref:System.Web.Security.SqlMembershipProvider> sets the <xref:System.Web.Security.MembershipUser.CreationDate%2A>, <xref:System.Web.Security.MembershipUser.LastLoginDate%2A>, <xref:System.Web.Security.MembershipUser.LastActivityDate%2A>, and <xref:System.Web.Security.MembershipUser.LastPasswordChangedDate%2A> date to the same date and time when a membership user is created by the <xref:System.Web.Security.Membership.CreateUser%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> for a user is updated by the classes in the <xref:System.Web.Profile> and the <xref:System.Web.UI.WebControls.WebParts> namespaces whenever user data is retrieved from or set at the data source. If your application uses the same data source to store user information, and your <xref:System.Web.Profile.ProfileProvider> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> are configured with the same `applicationName` as your <xref:System.Web.Security.MembershipProvider>, then the <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> and <xref:System.Web.Security.MembershipUser.IsOnline%2A> properties of the user will reflect this behavior.  
+  
+   
+  
+## Examples  
+ The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> control and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> property value for the membership user.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastLockoutDate">
+      <MemberSignature Language="C#" Value="public virtual DateTime LastLockoutDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastLockoutDate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.LastLockoutDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the most recent date and time that the membership user was locked out.</summary>
+        <value>A <see cref="T:System.DateTime" /> object that represents the most recent date and time that the membership user was locked out.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Users are most commonly locked out when the <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A> is reached within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A>.  
+  
+ Users can also be locked out if you use the <xref:System.Web.Security.MembershipUser.GetPassword%2A> or <xref:System.Web.Security.MembershipUser.ResetPassword%2A> overload that accepts a password answer and the number of bad answers entered by the user reaches the <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A?displayProperty=fullName> within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A?displayProperty=fullName>.  
+  
+ The default value for the <xref:System.Web.Security.MembershipUser.LastLockoutDate%2A> property is determined by the membership provider. For example, when a membership user is created using the <xref:System.Web.Security.SqlMembershipProvider> provider, the <xref:System.Web.Security.MembershipUser.LastLockoutDate%2A> property for the user is initially set to 01/01/1754.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastLoginDate">
+      <MemberSignature Language="C#" Value="public virtual DateTime LastLoginDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastLoginDate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.LastLoginDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the date and time when the user was last authenticated.</summary>
+        <value>The date and time when the user was last authenticated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For new users, the <xref:System.Web.Security.MembershipUser.LastLoginDate%2A> is equal to the <xref:System.Web.Security.MembershipUser.CreationDate%2A> if the user has not yet logged on. The <xref:System.Web.Security.MembershipUser.LastLoginDate%2A> is updated to the current date and time if a call to the <xref:System.Web.Security.Membership.ValidateUser%2A> method is successful.  
+  
+ You can also modify the last login date by setting the <xref:System.Web.Security.MembershipUser.LastLoginDate%2A> property of a <xref:System.Web.Security.MembershipUser> and passing the modified <xref:System.Web.Security.MembershipUser> object to the <xref:System.Web.Security.Membership.UpdateUser%2A> method.  
+  
+ The <xref:System.Web.Security.SqlMembershipProvider> sets the <xref:System.Web.Security.MembershipUser.CreationDate%2A>, <xref:System.Web.Security.MembershipUser.LastLoginDate%2A>, <xref:System.Web.Security.MembershipUser.LastActivityDate%2A>, and <xref:System.Web.Security.MembershipUser.LastPasswordChangedDate%2A> date to the same date and time when a membership user is created by the <xref:System.Web.Security.Membership.CreateUser%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> control and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.LastLoginDate%2A> property value for the membership user.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastPasswordChangedDate">
+      <MemberSignature Language="C#" Value="public virtual DateTime LastPasswordChangedDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastPasswordChangedDate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.LastPasswordChangedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the date and time when the membership user's password was last updated.</summary>
+        <value>The date and time when the membership user's password was last updated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.SqlMembershipProvider> sets the <xref:System.Web.Security.MembershipUser.CreationDate%2A>, <xref:System.Web.Security.MembershipUser.LastLoginDate%2A>, <xref:System.Web.Security.MembershipUser.LastActivityDate%2A>, and <xref:System.Web.Security.MembershipUser.LastPasswordChangedDate%2A> date to the same date and time when a membership user is created by the <xref:System.Web.Security.Membership.CreateUser%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example shows a login page that indicates a password has expired after a specified number of days. If the <xref:System.Web.Security.MembershipUser.LastPasswordChangedDate%2A> is earlier than the current date and time minus the number of days specified for the expiration of a password, then the user is directed to change his or her password.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/login2cs.aspx#7)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/login2vb.aspx#7)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PasswordQuestion">
+      <MemberSignature Language="C#" Value="public virtual string PasswordQuestion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PasswordQuestion" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.PasswordQuestion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the password question for the membership user.</summary>
+        <value>The password question for the membership user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Web.Security.Membership.RequiresQuestionAndAnswer%2A> is `true`, then the password answer for a membership user must be supplied to the <xref:System.Web.Security.MembershipUser.GetPassword%2A> and <xref:System.Web.Security.MembershipUser.ResetPassword%2A> methods. The <xref:System.Web.Security.MembershipUser.PasswordQuestion%2A> serves as a reminder to the membership user of what his or her password answer is. Once the membership user has supplied a password answer, the answer value can be supplied to the <xref:System.Web.Security.MembershipUser.GetPassword%2A> or <xref:System.Web.Security.MembershipUser.ResetPassword%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example resets a user's password if he or she supplies the appropriate password answer. The <xref:System.Web.Security.MembershipUser.PasswordQuestion%2A> for the user is displayed as a reminder to the user of the password answer.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPasswordcs.aspx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPasswordvb.aspx#5)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderName">
+      <MemberSignature Language="C#" Value="public virtual string ProviderName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProviderName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.ProviderName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the membership provider that stores and retrieves user information for the membership user.</summary>
+        <value>The name of the membership provider that stores and retrieves user information for the membership user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.MembershipUser.ProviderName%2A> property exposes the name of the membership provider that manages the information for the <xref:System.Web.Security.MembershipUser>. You can access the specific membership provider instance for a membership user by using the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class, whether or not the provider is the default provider for the application. For example, you may create a method that takes a <xref:System.Web.Security.MembershipUser> object as input and updates the <xref:System.Web.Security.MembershipUser> based on your business logic. You can ensure that the appropriate membership provider is used to update the <xref:System.Web.Security.MembershipUser> by calling the <xref:System.Web.Security.MembershipProvider.UpdateUser%2A> method of the membership provider from the <xref:System.Web.Security.Membership.Providers%2A> collection that is indexed by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderUserKey">
+      <MemberSignature Language="C#" Value="public virtual object ProviderUserKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ProviderUserKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.ProviderUserKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the user identifier from the membership data source for the user.</summary>
+        <value>The user identifier from the membership data source for the user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.MembershipUser.ProviderUserKey%2A> property exposes the identifier from the membership data source typed as `object`. The type of the identifier depends on the <xref:System.Web.Security.MembershipProvider> or the <xref:System.Web.Security.MembershipUser>. In the case of the <xref:System.Web.Security.SqlMembershipProvider>, the <xref:System.Web.Security.MembershipUser.ProviderUserKey%2A> can be cast as a <xref:System.Guid>, since the <xref:System.Web.Security.SqlMembershipProvider> stores the user identifier as a <xref:System.Data.SqlDbType>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetPassword">
+      <MemberSignature Language="C#" Value="public virtual string ResetPassword ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResetPassword() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.ResetPassword" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets a user's password to a new, automatically generated password.</summary>
+        <returns>The new password for the membership user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Security.MembershipUser.ResetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.ResetPassword%2A?displayProperty=fullName> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to reset the password for the membership user to a new, automatically generated password. The new password is then returned to the caller.  
+  
+ If <xref:System.Web.Security.Membership.EnablePasswordReset%2A> is `false`, the membership provider will return an exception.  
+  
+ If <xref:System.Web.Security.Membership.RequiresQuestionAndAnswer%2A> is `true`, you must use the <xref:System.Web.Security.MembershipUser.ResetPassword%2A> overload that takes a password answer as a parameter and supply the password answer for the membership user. If a password answer is required and an incorrect password answer is supplied, a <xref:System.Web.Security.MembershipPasswordException> is thrown by the membership provider.  
+  
+   
+  
+## Examples  
+ The following code example resets a user's password and returns the new, automatically generated password. Note that <xref:System.Web.Security.Membership.RequiresQuestionAndAnswer%2A> is assumed to be `false`.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPassword2cs.aspx#6)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPassword2vb.aspx#6)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetPassword">
+      <MemberSignature Language="C#" Value="public virtual string ResetPassword (string passwordAnswer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResetPassword(string passwordAnswer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.ResetPassword(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="passwordAnswer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="passwordAnswer">The password answer for the membership user.</param>
+        <summary>Resets a user's password to a new, automatically generated password.</summary>
+        <returns>The new password for the membership user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Security.MembershipUser.ResetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.ResetPassword%2A?displayProperty=fullName> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to reset the password for the membership user to a new, automatically generated password. The new password is then returned to the caller.  
+  
+ If <xref:System.Web.Security.Membership.EnablePasswordReset%2A> is `false`, the membership provider will return an exception.  
+  
+ If <xref:System.Web.Security.Membership.RequiresQuestionAndAnswer%2A> is `false`, you can supply `null` for the `answer` parameter, or use the <xref:System.Web.Security.MembershipUser.ResetPassword%2A> overload that does not take any parameters.  
+  
+ If a password answer is required and an incorrect password answer is supplied, a <xref:System.Web.Security.MembershipPasswordException> is thrown by the membership provider.  
+  
+   
+  
+## Examples  
+ The following code example resets a user's password and returns the new, automatically generated password.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPasswordcs.aspx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPasswordvb.aspx#5)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the user name for the membership user.</summary>
+        <returns>The <see cref="P:System.Web.Security.MembershipUser.UserName" /> for the membership user.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnlockUser">
+      <MemberSignature Language="C#" Value="public virtual bool UnlockUser ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool UnlockUser() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.UnlockUser" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the locked-out state of the user so that the membership user can be validated.</summary>
+        <returns>
+          <see langword="true" /> if the membership user was successfully unlocked; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Users are most commonly locked out and cannot be validated by the <xref:System.Web.Security.Membership.ValidateUser%2A> method when the <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A> is reached within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A>.  
+  
+ Users can also be locked out if you use the <xref:System.Web.Security.MembershipUser.GetPassword%2A> or <xref:System.Web.Security.MembershipUser.ResetPassword%2A> overload that accepts a password answer and the number of bad answers entered by the user reaches the value of <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A?displayProperty=fullName> within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A?displayProperty=fullName>.  
+  
+ Your implementation of this method should set the <xref:System.Web.Security.MembershipUser.IsLockedOut%2A> property to `false`, set the <xref:System.Web.Security.MembershipUser.LastLockoutDate%2A> property to the current date, and reset any counters that you use to track the number of failed log in attempts and so forth.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UserName">
+      <MemberSignature Language="C#" Value="public virtual string UserName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.UserName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the logon name of the membership user.</summary>
+        <value>The logon name of the membership user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A membership user's <xref:System.Web.Security.MembershipUser.UserName%2A> is used in conjunction with the membership user's password to authenticate the membership user.  
+  
+ The <xref:System.Web.Security.MembershipUser.UserName%2A> of a <xref:System.Web.Security.MembershipUser> identifies a unique user for each application that uses <xref:System.Web.Security.Membership> for authentication. An application is identified by the membership <xref:System.Web.Security.Membership.ApplicationName%2A>. The same user name can be used in multiple applications for different users. Alternatively, a single user name can be used to identify a user for multiple applications, provided the applications are configured with the same <xref:System.Web.Security.Membership.ApplicationName%2A>.  
+  
+ You can retrieve a <xref:System.Web.Security.MembershipUser> object for a membership user by passing the user name to one of the overloads of the <xref:System.Web.Security.Membership.GetUser%2A> method, or as a member of a <xref:System.Web.Security.MembershipUserCollection> returned from the <xref:System.Web.Security.Membership.GetAllUsers%2A>, <xref:System.Web.Security.Membership.FindUsersByName%2A>, or <xref:System.Web.Security.Membership.FindUsersByEmail%2A> method.  
+  
+ You can retrieve the user name for a membership user if the e-mail address for the user is known, by using the <xref:System.Web.Security.Membership.GetUserNameByEmail%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example binds the <xref:System.Web.Security.MembershipUser.UserName%2A> property of all the membership users in an application to a <xref:System.Web.UI.WebControls.ListBox> control and uses labels to show specific membership information for a selected user name.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

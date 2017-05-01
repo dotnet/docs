@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- <Snippet1>-->
+<!-- <Snippet14>-->
+<feed xml:lang="en-us" CustomAttribute="Value" xmlns="http://www.w3.org/2005/Atom">
+  <!-- </Snippet14>-->
+  <!-- <Snippet39> -->
+  <title type="text">Feed Title</title>
+  <!-- </Snippet39> -->
+  <!-- <Snippet24> -->
+  <subtitle type="text">This is a sample feed</subtitle>
+  <!-- </Snippet24> -->
+  <!-- <Snippet27> -->
+  <id>FeedID</id>
+  <!-- </Snippet27> -->
+
+  <!-- <Snippet22> -->
+  <rights type="text">Copyright 2007</rights>
+  <!-- </Snippet22> -->
+  <!-- <Snippet34> -->
+  <updated>2007-04-13T17:29:38Z</updated>
+  <!-- </Snippet34> -->
+  <!-- <Snippet18>-->
+  <category term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme" />
+  <!-- </Snippet18>-->
+  <!-- <Snippet29>-->
+  <logo>http://contoso/image.jpg</logo>
+  <!-- </Snippet29>-->
+  <!-- <Snippet16>-->
+  <author>
+    <name>Jesper Aaberg</name>
+    <uri>http://contoso/Aaberg</uri>
+    <email>Jesper.Asberg@contoso.com</email>
+  </author>
+  <!-- </Snippet16>-->
+  <!-- <Snippet20>-->
+  <contributor>
+    <name>Lene Aalling</name>
+    <uri>http://contoso/Aalling</uri>
+    <email>Lene.Aaling@contoso.com</email>
+  </contributor>
+  <!-- </Snippet20>-->
+  <!-- <Snippet26> -->
+  <generator>Sample Code</generator>
+  <!-- </Snippet26> -->
+  <!-- <Snippet36> -->
+  <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://contoso/link" />
+  <!-- </Snippet36> -->
+
+  <link customAttribute="value" rel="alternate" type="text/html" title="Link Title" length="1000" href="http://contoso/link" />
+  <CustomElement xmlns="">Some text</CustomElement>
+  <!-- <Snippet31> -->
+  <entry>
+    <id>ItemID</id>
+    <title type="text">Item Title</title>
+    <updated>2007-04-13T17:29:38Z</updated>
+    <link rel="alternate" href="http://contoso/items" />
+    <content type="text">Some text content</content>
+  </entry>
+  <!-- </Snippet31> -->
+
+</feed>
+<!-- </Snippet1>-->
+

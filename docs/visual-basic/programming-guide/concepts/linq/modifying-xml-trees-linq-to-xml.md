@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 4ae511a5-4fc9-4178-9c8e-761357deae3f
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Modifying XML Trees (LINQ to XML) (Visual Basic)

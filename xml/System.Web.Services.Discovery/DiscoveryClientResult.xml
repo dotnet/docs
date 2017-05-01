@@ -1,0 +1,207 @@
+<Type Name="DiscoveryClientResult" FullName="System.Web.Services.Discovery.DiscoveryClientResult">
+  <TypeSignature Language="C#" Value="public sealed class DiscoveryClientResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryClientResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the details of a discovery reference without the contents of the referenced document. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll%2A> method of <xref:System.Web.Services.Discovery.DiscoveryClientProtocol>, all valid referenced documents and a file containing a map of all save documents can be written to disk. The file containing a map of all saved documents contains the details of each document as summarized by the properties of <xref:System.Web.Services.Discovery.DiscoveryClientResult>.  
+  
+ After the referenced documents and the map of the referenced documents have been written to disk using the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll%2A> method, you can invoke the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.ReadAll%2A> method to read the discovery documents.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DiscoveryClientResult#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientResult/CPP/discoveryclientresult.cpp#1)]
+ [!code-csharp[DiscoveryClientResult#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientResult/CS/discoveryclientresult.cs#1)]
+ [!code-vb[DiscoveryClientResult#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientResult/VB/discoveryclientresult.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscoveryClientResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientResult.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryClientResult_Filename#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientResult_Filename/CPP/discoveryclientresult_filename.cpp#2)]
+ [!code-csharp[DiscoveryClientResult_Filename#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientResult_Filename/CS/discoveryclientresult_filename.cs#2)]
+ [!code-vb[DiscoveryClientResult_Filename#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientResult_Filename/VB/discoveryclientresult_filename.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscoveryClientResult (Type referenceType, string url, string filename);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type referenceType, string url, string filename) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientResult.#ctor(System.Type,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="referenceType" Type="System.Type" />
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="filename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="referenceType">Name of the class representing the type of reference in the discovery document. Sets the <see cref="P:System.Web.Services.Discovery.DiscoveryClientResult.ReferenceTypeName" /> property.</param>
+        <param name="url">URL for the reference. Sets the <see cref="P:System.Web.Services.Discovery.DiscoveryClientResult.Url" /> property.</param>
+        <param name="filename">Name of the file in which the reference was saved. Sets the <see cref="P:System.Web.Services.Discovery.DiscoveryClientResult.Filename" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> class and sets the <see cref="P:System.Web.Services.Discovery.DiscoveryClientResult.ReferenceTypeName" /> property to <paramref name="referenceType" />, the <see cref="P:System.Web.Services.Discovery.DiscoveryClientResult.Url" /> property to <paramref name="url" /> and the <see cref="P:System.Web.Services.Discovery.DiscoveryClientResult.Filename" /> property to <paramref name="filename" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryClientResult_ctor#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientResult_ctor/CPP/discoveryclientresult_ctor.cpp#1)]
+ [!code-csharp[DiscoveryClientResult_ctor#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientResult_ctor/CS/discoveryclientresult_ctor.cs#1)]
+ [!code-vb[DiscoveryClientResult_ctor#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientResult_ctor/VB/discoveryclientresult_ctor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filename">
+      <MemberSignature Language="C#" Value="public string Filename { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Filename" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientResult.Filename" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("filename")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the file in which the reference is saved.</summary>
+        <value>Name of the file in which the reference is saved.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of the file is the name of the file saved on the local computer based on the contents of the file. For instance, if the referenced file is a discovery document, the saved file will have a.disco extension on a Windows operating system.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DiscoveryClientResult_Filename#5](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientResult_Filename/CPP/discoveryclientresult_filename.cpp#5)]
+ [!code-csharp[DiscoveryClientResult_Filename#5](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientResult_Filename/CS/discoveryclientresult_filename.cs#5)]
+ [!code-vb[DiscoveryClientResult_Filename#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientResult_Filename/VB/discoveryclientresult_filename.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceTypeName">
+      <MemberSignature Language="C#" Value="public string ReferenceTypeName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReferenceTypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientResult.ReferenceTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("referenceType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Name of the class representing the type of reference in the discovery document.</summary>
+        <value>Name of the class representing the type of a reference. Default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A reference within a discovery document can contain references to service descriptions, XSD schemas, or other discovery documents. Therefore, <xref:System.Web.Services.Discovery.DiscoveryClientResult.ReferenceTypeName%2A> can have the following values: <xref:System.Web.Services.Description.ServiceDescription>, <xref:System.Xml.Schema.XmlSchema>, and <xref:System.Web.Services.Discovery.DiscoveryDocument>.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DiscoveryClientResult_Filename#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientResult_Filename/CPP/discoveryclientresult_filename.cpp#2)]
+ [!code-csharp[DiscoveryClientResult_Filename#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientResult_Filename/CS/discoveryclientresult_filename.cs#2)]
+ [!code-vb[DiscoveryClientResult_Filename#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientResult_Filename/VB/discoveryclientresult_filename.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public string Url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Url" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientResult.Url" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("url")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL for the reference.</summary>
+        <value>The URL of the reference.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The URL can refer to a discovery document, XML Schema Definition (XSD) schema, or a Service Description.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DiscoveryClientResult_Filename#4](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientResult_Filename/CPP/discoveryclientresult_filename.cpp#4)]
+ [!code-csharp[DiscoveryClientResult_Filename#4](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientResult_Filename/CS/discoveryclientresult_filename.cs#4)]
+ [!code-vb[DiscoveryClientResult_Filename#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientResult_Filename/VB/discoveryclientresult_filename.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

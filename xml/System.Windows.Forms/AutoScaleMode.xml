@@ -1,0 +1,96 @@
+<Type Name="AutoScaleMode" FullName="System.Windows.Forms.AutoScaleMode">
+  <TypeSignature Language="C#" Value="public enum AutoScaleMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoScaleMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AutoScaleMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the different types of automatic scaling modes supported by Windows Forms.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ContainerControl> class and classes derived from it, such as <xref:System.Windows.Forms.Form>, can automatically resize themselves and their contents according to either the current system font or the resolution of the display, measured in dots per inch (DPI). The <xref:System.Windows.Forms.AutoScaleMode> enumeration defines the automatic scaling modes supported by these classes and their derived types. A control's current mode can be accessed through its <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A?displayProperty=fullName> property.  
+  
+ Most business applications should use the Font automatic scaling mode. The Dpi scaling mode is useful for graphics-based applications and is compatible with the default scaling used by the .NET Compact Framework.  
+  
+> [!IMPORTANT]
+>  In the .NET Framework versions 1.0 and 1.1, automatic scaling was supported using a simpler mechanism that always relied on the current system font. This mechanism is now obsolete but still supported for backward compatibility. You can obtain the older scaling behavior by setting the <xref:System.Windows.Forms.Form.AutoScale%2A> property of the containing <xref:System.Windows.Forms.Form> to `true`, which will also implicitly set the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A?displayProperty=fullName> property to None. Conversely, setting the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A?displayProperty=fullName> property of a form will set <xref:System.Windows.Forms.Form.AutoScale%2A> to `false`, enabling the newer scaling mechanism introduced with the .NET Framework version 2.0.  
+  
+ Note that for Smartphone applications, this enumeration requires Windows Mobile Version 5.0 software for Smartphones.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dpi">
+      <MemberSignature Language="C#" Value="Dpi" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoScaleMode Dpi = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoScaleMode.Dpi" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoScaleMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Controls scale relative to the display resolution. Common resolutions are 96 and 120 DPI.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="Font" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoScaleMode Font = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoScaleMode.Font" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoScaleMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Controls scale relative to the dimensions of the font the classes are using, which is typically the system font.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherit">
+      <MemberSignature Language="C#" Value="Inherit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoScaleMode Inherit = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoScaleMode.Inherit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoScaleMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Controls scale according to the classes' parent's scaling mode. If there is no parent, automatic scaling is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoScaleMode None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoScaleMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoScaleMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Automatic scaling is disabled.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

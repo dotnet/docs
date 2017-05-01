@@ -1,0 +1,66 @@
+<Type Name="NewItemPlaceholderPosition" FullName="System.ComponentModel.NewItemPlaceholderPosition">
+  <TypeSignature Language="C#" Value="public enum NewItemPlaceholderPosition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NewItemPlaceholderPosition extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.NewItemPlaceholderPosition" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies where the placeholder for a new item appears in the collection.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AtBeginning">
+      <MemberSignature Language="C#" Value="AtBeginning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.NewItemPlaceholderPosition AtBeginning = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.NewItemPlaceholderPosition.AtBeginning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.NewItemPlaceholderPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The placeholder for a new item appears at the beginning of the collection.  New items are at the beginning of the collection, after the new item placeholder.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AtEnd">
+      <MemberSignature Language="C#" Value="AtEnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.NewItemPlaceholderPosition AtEnd = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.NewItemPlaceholderPosition.AtEnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.NewItemPlaceholderPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The placeholder for a new item appears at the end of the collection. New items are added at the end of the collection, before the new item placeholder.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.NewItemPlaceholderPosition None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.NewItemPlaceholderPosition.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.NewItemPlaceholderPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The collection does not use a new item placeholder. The position of items that are added depends on the underlying collection.  Usually, they are added at the end of the collection.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

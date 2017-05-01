@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "summary XML tag"
 ms.assetid: 861c847d-dd94-478a-aa23-bf4899cdc848
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

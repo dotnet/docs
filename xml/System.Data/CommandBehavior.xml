@@ -1,0 +1,239 @@
+<Type Name="CommandBehavior" FullName="System.Data.CommandBehavior">
+  <TypeSignature Language="C#" Value="public enum CommandBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CommandBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.CommandBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a description of the results of the query and its effect on the database.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.CommandBehavior> values are used by the <xref:System.Data.IDbCommand.ExecuteReader%2A> method of <xref:System.Data.IDbCommand> and any classes derived from it.  
+  
+ A bitwise combination of these values may be used.  
+  
+ <xref:System.Data.CommandBehavior> is ignored when used to define a <xref:System.Data.Sql.SqlNotificationRequest> or <xref:System.Data.SqlClient.SqlDependency> and should therefore not be used. Use the constructor that does not require a `CommandBehavior` parameter in these two cases.  
+  
+> [!NOTE]
+>  Use SequentialAccess to retrieve large values and binary data. Otherwise, an <xref:System.OutOfMemoryException> might occur and the connection will be closed.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CloseConnection">
+      <MemberSignature Language="C#" Value="CloseConnection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandBehavior CloseConnection = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.CloseConnection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.CommandBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When the command is executed, the associated <see langword="Connection" /> object is closed when the associated <see langword="DataReader" /> object is closed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandBehavior Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.CommandBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The query may return multiple result sets. Execution of the query may affect the database state. <see langword="Default" /> sets no <see cref="T:System.Data.CommandBehavior" /> flags, so calling <see langword="ExecuteReader(CommandBehavior.Default)" /> is functionally equivalent to calling <see langword="ExecuteReader()" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyInfo">
+      <MemberSignature Language="C#" Value="KeyInfo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandBehavior KeyInfo = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.KeyInfo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.CommandBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The query returns column and primary key information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When KeyInfo is used for command execution, the provider will append extra columns to the result set for existing primary key and timestamp columns.  
+  
+ When using KeyInfo, the .NET Framework Data Provider for SQL Server precedes the statement being executed with SET FMTONLY OFF and SET NO_BROWSETABLE ON. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. See SQL Server Books Online for more information.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaOnly">
+      <MemberSignature Language="C#" Value="SchemaOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandBehavior SchemaOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.SchemaOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.CommandBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The query returns column information only. When using <see cref="F:System.Data.CommandBehavior.SchemaOnly" />, the .NET Framework Data Provider for SQL Server precedes the statement being executed with SET FMTONLY ON.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SequentialAccess">
+      <MemberSignature Language="C#" Value="SequentialAccess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandBehavior SequentialAccess = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.SequentialAccess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.CommandBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides a way for the <see langword="DataReader" /> to handle rows that contain columns with large binary values. Rather than loading the entire row, <see langword="SequentialAccess" /> enables the <see langword="DataReader" /> to load data as a stream. You can then use the <see langword="GetBytes" /> or <see langword="GetChars" /> method to specify a byte location to start the read operation, and a limited buffer size for the data being returned.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you specify `SequentialAccess`, you are required to read from the columns in the order they are returned, although you are not required to read each column. Once you have read past a location in the returned stream of data, data at or before that location can no longer be read from the `DataReader`. When using the <xref:System.Data.OleDb.OleDbDataReader>, you can reread the current column value until reading past it. When using the <xref:System.Data.SqlClient.SqlDataReader>, you can read a column value only once.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleResult">
+      <MemberSignature Language="C#" Value="SingleResult" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandBehavior SingleResult = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.SingleResult" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.CommandBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The query returns a single result set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleRow">
+      <MemberSignature Language="C#" Value="SingleRow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandBehavior SingleRow = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.SingleRow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.CommandBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The query is expected to return a single row of the first result set. Execution of the query may affect the database state. Some .NET Framework data providers may, but are not required to, use this information to optimize the performance of the command. When you specify <see cref="F:System.Data.CommandBehavior.SingleRow" /> with the <see cref="M:System.Data.OleDb.OleDbCommand.ExecuteReader" /> method of the <see cref="T:System.Data.OleDb.OleDbCommand" /> object, the .NET Framework Data Provider for OLE DB performs binding using the OLE DB <see langword="IRow" /> interface if it is available. Otherwise, it uses the <see langword="IRowset" /> interface. If your SQL statement is expected to return only a single row, specifying <see cref="F:System.Data.CommandBehavior.SingleRow" /> can also improve application performance. It is possible to specify <see langword="SingleRow" /> when executing queries that are expected to return multiple result sets.  In that case, where both a multi-result set SQL query and single row are specified, the result returned will contain only the first row of the first result set. The other result sets of the query will not be returned.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

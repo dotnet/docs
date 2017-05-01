@@ -1,0 +1,62 @@
+<Type Name="DbInsertCommandTree" FullName="System.Data.Common.CommandTrees.DbInsertCommandTree">
+  <TypeSignature Language="C#" Value="public sealed class DbInsertCommandTree : System.Data.Common.CommandTrees.DbModificationCommandTree" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DbInsertCommandTree extends System.Data.Common.CommandTrees.DbModificationCommandTree" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbInsertCommandTree" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.CommandTrees.DbModificationCommandTree</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a single row insert operation expressed as a command tree. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Data.Common.CommandTrees.DbInsertCommandTree.Returning%2A> property is set, the command returns a reader; otherwise, it returns a scalar value indicating the number of rows affected.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Returning">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Returning { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Returning" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbInsertCommandTree.Returning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies a projection of results to be returned based on the modified rows.</summary>
+        <value>An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies a projection of results to be returned based on the modified rows. <see langword="null" /> indicates that no results should be returned from this command.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetClauses">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbModificationClause&gt; SetClauses { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Data.Common.CommandTrees.DbModificationClause&gt; SetClauses" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbInsertCommandTree.SetClauses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbModificationClause&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of insert set clauses that define the insert operation.</summary>
+        <value>The list of insert set clauses that define the insert operation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

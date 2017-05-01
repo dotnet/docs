@@ -1,0 +1,97 @@
+<Type Name="ICheckBoxControl" FullName="System.Web.UI.ICheckBoxControl">
+  <TypeSignature Language="C#" Value="public interface ICheckBoxControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICheckBoxControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ICheckBoxControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the property and event a control implements to act as a check box.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ICheckBoxControl> interface defines the property and event that must be implemented for a control to act as a check box on a Web page. The <xref:System.Web.UI.ICheckBoxControl.Checked%2A> property can be used to determine whether the check box is selected or to set the property programmatically. The <xref:System.Web.UI.ICheckBoxControl.CheckedChanged> event is raised when the <xref:System.Web.UI.ICheckBoxControl.Checked%2A> value changes between posts to the server.  
+  
+   
+  
+## Examples  
+ <xref:System.Web.UI.WebControls.CheckBox> implements <xref:System.Web.UI.ICheckBoxControl>. The following code example demonstrates how to read the value of the <xref:System.Web.UI.ICheckBoxControl.Checked%2A> property and respond to a <xref:System.Web.UI.ICheckBoxControl.CheckedChanged> event.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CheckBoxCheckedChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxCheckedChanged/CS/checkboxcheckedchangedcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CheckBoxCheckedChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxCheckedChanged/VB/checkboxcheckedchangedvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Checked">
+      <MemberSignature Language="C#" Value="public bool Checked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Checked" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ICheckBoxControl.Checked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of an <see cref="T:System.Web.UI.ICheckBoxControl" /> control that indicates whether the control is selected.</summary>
+        <value>
+          <see langword="true" /> if the check box is selected; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Controls implementing <xref:System.Web.UI.ICheckBoxControl> use <xref:System.Web.UI.ICheckBoxControl.Checked%2A> to determine whether the control is selected, or to set the value programmatically.  
+  
+   
+  
+## Examples  
+ <xref:System.Web.UI.WebControls.CheckBox> implements <xref:System.Web.UI.ICheckBoxControl>. The following code example demonstrates how to read the value of the <xref:System.Web.UI.ICheckBoxControl.Checked%2A> property and respond to a <xref:System.Web.UI.ICheckBoxControl.CheckedChanged> event.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CheckBoxCheckedChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxCheckedChanged/CS/checkboxcheckedchangedcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CheckBoxCheckedChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxCheckedChanged/VB/checkboxcheckedchangedvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckedChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler CheckedChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CheckedChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.ICheckBoxControl.CheckedChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Web.UI.ICheckBoxControl.Checked" /> property changes between posts to the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ICheckBoxControl.CheckedChanged> event is raised when the value of <xref:System.Web.UI.ICheckBoxControl.Checked%2A> changes between posts to the server.  
+  
+   
+  
+## Examples  
+ <xref:System.Web.UI.WebControls.CheckBox> implements <xref:System.Web.UI.ICheckBoxControl>. The following code example demonstrates how to read the value of the <xref:System.Web.UI.ICheckBoxControl.Checked%2A> property and respond to a <xref:System.Web.UI.ICheckBoxControl.CheckedChanged> event.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CheckBoxCheckedChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxCheckedChanged/CS/checkboxcheckedchangedcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CheckBoxCheckedChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxCheckedChanged/VB/checkboxcheckedchangedvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

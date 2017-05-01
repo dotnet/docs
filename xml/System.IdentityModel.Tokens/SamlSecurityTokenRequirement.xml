@@ -1,0 +1,191 @@
+<Type Name="SamlSecurityTokenRequirement" FullName="System.IdentityModel.Tokens.SamlSecurityTokenRequirement">
+  <TypeSignature Language="C#" Value="public class SamlSecurityTokenRequirement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlSecurityTokenRequirement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Extends the <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> class by adding new properties that are useful for issued tokens.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SamlSecurityTokenRequirement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" /> class to default values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SamlSecurityTokenRequirement (System.Xml.XmlElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.#ctor(System.Xml.XmlElement)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="element" Type="System.Xml.XmlElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The XML element from which the instance is to be loaded.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" /> class from the specified XML.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateValidator">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.X509CertificateValidator CertificateValidator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.X509CertificateValidator CertificateValidator" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.CertificateValidator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Selectors.X509CertificateValidator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Selectors.X509CertificateValidator" /> that is associated with this token requirement.</summary>
+        <value>The X.509 certificate validator that is associated with this token requirement. The default is <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapToWindows">
+      <MemberSignature Language="C#" Value="public bool MapToWindows { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MapToWindows" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.MapToWindows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the token handler will attempt to map the SAML identity to a Windows identity by using the unique principal name (UPN) claim.</summary>
+        <value>
+          <see langword="true" /> to attempt to map the SAML identity to a Windows identity; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameClaimType">
+      <MemberSignature Language="C#" Value="public string NameClaimType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NameClaimType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.NameClaimType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the claim type that will be used to generate the FederatedIdentity.Name property.</summary>
+        <value>The claim type. The default is the value of the <see cref="F:System.Security.Claims.ClaimsIdentity.DefaultNameClaimType" /> field.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoleClaimType">
+      <MemberSignature Language="C#" Value="public string RoleClaimType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RoleClaimType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.RoleClaimType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the claim type that is used to generate the FederatedIdentity.Roles property.</summary>
+        <value>The role claim type. The default is the value of the <see cref="F:System.Security.Claims.ClaimTypes.Role" /> field.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldEnforceAudienceRestriction">
+      <MemberSignature Language="C#" Value="public virtual bool ShouldEnforceAudienceRestriction (System.IdentityModel.Selectors.AudienceUriMode audienceUriMode, System.IdentityModel.Tokens.SecurityToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldEnforceAudienceRestriction(valuetype System.IdentityModel.Selectors.AudienceUriMode audienceUriMode, class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.ShouldEnforceAudienceRestriction(System.IdentityModel.Selectors.AudienceUriMode,System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audienceUriMode" Type="System.IdentityModel.Selectors.AudienceUriMode" />
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="audienceUriMode">One of the enumeration values that defines the audience requirement.</param>
+        <param name="token">The security token to be tested for Audience Enforcement.</param>
+        <summary>Returns a value that indicates whether Audience Enforcement checks are required for the specified token based on the settings of this <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" />.</summary>
+        <returns>
+          <see langword="true" /> if Audience Enforcement should be applied; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="token" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateAudienceRestriction">
+      <MemberSignature Language="C#" Value="public virtual void ValidateAudienceRestriction (System.Collections.Generic.IList&lt;Uri&gt; allowedAudienceUris, System.Collections.Generic.IList&lt;Uri&gt; tokenAudiences);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ValidateAudienceRestriction(class System.Collections.Generic.IList`1&lt;class System.Uri&gt; allowedAudienceUris, class System.Collections.Generic.IList`1&lt;class System.Uri&gt; tokenAudiences) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.ValidateAudienceRestriction(System.Collections.Generic.IList{System.Uri},System.Collections.Generic.IList{System.Uri})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="allowedAudienceUris" Type="System.Collections.Generic.IList&lt;System.Uri&gt;" />
+        <Parameter Name="tokenAudiences" Type="System.Collections.Generic.IList&lt;System.Uri&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="allowedAudienceUris">Collection of AudienceUris.</param>
+        <param name="tokenAudiences">Collection of audience URIs the token applies to.</param>
+        <summary>Checks the specified list of Audience URIs with the AllowedAudienceUri list.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="allowedAudienceUris" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="tokenAudiences" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.AudienceUriValidationFailedException">
+          <paramref name="tokenAudiences" /> is an empty collection.  
+  
+ -or-  
+  
+ <paramref name="allowedAudienceUris" /> is an empty collection.  
+  
+ -or-  
+  
+ Validation fails.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

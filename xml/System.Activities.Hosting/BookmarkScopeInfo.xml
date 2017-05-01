@@ -1,0 +1,86 @@
+<Type Name="BookmarkScopeInfo" FullName="System.Activities.Hosting.BookmarkScopeInfo">
+  <TypeSignature Language="C#" Value="public sealed class BookmarkScopeInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BookmarkScopeInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.BookmarkScopeInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains identification and initialization information about a <see cref="T:System.Activities.BookmarkScope" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Guid Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.BookmarkScopeInfo.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unique identifier for the <see cref="T:System.Activities.BookmarkScope" />.</summary>
+        <value>The unique identifier for the <see cref="T:System.Activities.BookmarkScope" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInitialized">
+      <MemberSignature Language="C#" Value="public bool IsInitialized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInitialized" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.BookmarkScopeInfo.IsInitialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.BookmarkScope" /> has been initialized.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Activities.BookmarkScope" /> has been initialized; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemporaryId">
+      <MemberSignature Language="C#" Value="public string TemporaryId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TemporaryId" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.BookmarkScopeInfo.TemporaryId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that uniquely identifies the <see cref="T:System.Activities.BookmarkScope" /> when the <see cref="T:System.Activities.BookmarkScope" /> is in an uninitialized state.</summary>
+        <value>A value that uniquely identifies the <see cref="T:System.Activities.BookmarkScope" /> when the <see cref="T:System.Activities.BookmarkScope" /> is in an uninitialized state.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Activities.BookmarkScope> is initialized, the returned value is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

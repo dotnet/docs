@@ -1,0 +1,37 @@
+<Type Name="ObjectListCommandEventHandler" FullName="System.Web.UI.MobileControls.ObjectListCommandEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ObjectListCommandEventHandler(object sender, ObjectListCommandEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectListCommandEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListCommandEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.MobileControls.ObjectListCommandEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event, an <see cref="T:System.Web.UI.MobileControls.ObjectList" />.</param>
+    <param name="e">An <see cref="T:System.Web.UI.MobileControls.ObjectListCommandEventArgs" /> object that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemCommand" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create an <xref:System.Web.UI.MobileControls.ObjectListCommandEventHandler> delegate for an <xref:System.Web.UI.MobileControls.ObjectList> you identify the method that will handle the event. The <xref:System.Web.UI.MobileControls.ObjectList> notifies the handler when an item event is generated. To associate the event with your event handler, add an instance of the delegate to the event. Unless you remove the delegate, the event handler is called whenever the event occurs.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

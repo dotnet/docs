@@ -1,0 +1,86 @@
+<Type Name="TemplateModeChangedEventArgs" FullName="System.Web.UI.Design.TemplateModeChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class TemplateModeChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateModeChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplateModeChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for a <see cref="E:System.Web.UI.Design.IControlDesignerView.ViewEvent" /> event that is raised when the template mode changes for a control on the design surface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> event is raised by a designer host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], for certain actions on a control on the design surface. For example, an event is raised when you enter or exit template editing mode for a control.  
+  
+ The <xref:System.Web.UI.Design.ControlDesigner> class supplies a default delegate to handle the <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> event. When you exit or enter template editing mode, the designer host initializes a <xref:System.Web.UI.Design.ViewEventArgs> object for a <xref:System.Web.UI.Design.ViewEvent.TemplateModeChanged> event type, and then sets the <xref:System.Web.UI.Design.ViewEventArgs.EventArgs%2A> property with a <xref:System.Web.UI.Design.TemplateModeChangedEventArgs> object.  
+  
+ When the <xref:System.Web.UI.Design.ViewEventArgs> object indicates that the template mode has changed, the default delegate in the <xref:System.Web.UI.Design.ControlDesigner> class updates the value for the <xref:System.Web.UI.Design.ControlDesigner.InTemplateMode%2A> property.  
+  
+ Custom designers that are derived from the <xref:System.Web.UI.Design.TemplatedControlDesigner> class can override the <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method to perform additional processing when the template editing mode changes for a control on the design surface.  
+  
+ For more information about events and delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateModeChangedEventArgs (System.Web.UI.Design.TemplateGroup newTemplateGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.TemplateGroup newTemplateGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateModeChangedEventArgs.#ctor(System.Web.UI.Design.TemplateGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="newTemplateGroup" Type="System.Web.UI.Design.TemplateGroup" />
+      </Parameters>
+      <Docs>
+        <param name="newTemplateGroup">A new template group that is used to initialize the <see cref="P:System.Web.UI.Design.TemplateModeChangedEventArgs.NewTemplateGroup" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateModeChangedEventArgs" /> class with the specified template group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> delegate method uses the <xref:System.Web.UI.Design.TemplateModeChangedEventArgs.%23ctor%2A> constructor to initialize a <xref:System.Web.UI.Design.TemplateModeChangedEventArgs> object for use with a <xref:System.Web.UI.Design.ViewEventArgs> object.  
+  
+ When you exit or enter template editing mode, the designer host initializes a <xref:System.Web.UI.Design.ViewEventArgs> object for a <xref:System.Web.UI.Design.ViewEvent.TemplateModeChanged> event type, and then sets the <xref:System.Web.UI.Design.ViewEventArgs.EventArgs%2A> property with a <xref:System.Web.UI.Design.TemplateModeChangedEventArgs> object. The `newTemplateGroup` parameter specifies a new template group when you enter template editing mode. The `newTemplateGroup` parameter is typically `null` for exiting template editing mode.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewTemplateGroup">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.TemplateGroup NewTemplateGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.TemplateGroup NewTemplateGroup" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateModeChangedEventArgs.NewTemplateGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.TemplateGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the template group that was created when you entered template editing mode.</summary>
+        <value>A <see cref="T:System.Web.UI.Design.TemplateGroup" /> if you entered template editing mode with a new template; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.TemplateModeChangedEventArgs.NewTemplateGroup%2A> property specifies a new template group when you enter template editing mode. <xref:System.Web.UI.Design.TemplateModeChangedEventArgs.NewTemplateGroup%2A> is `null`for events that are raised when you exit template editing mode.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

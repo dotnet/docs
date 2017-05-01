@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Visual Basic application model"
 ms.assetid: 17538984-84fe-43c9-82c8-724c9529fe8b
 caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

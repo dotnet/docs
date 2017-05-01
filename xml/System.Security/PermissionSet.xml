@@ -1,0 +1,1302 @@
+<Type Name="PermissionSet" FullName="System.Security.PermissionSet">
+  <TypeSignature Language="C#" Value="public class PermissionSet : System.Collections.ICollection, System.Runtime.Serialization.IDeserializationCallback, System.Security.ISecurityEncodable, System.Security.IStackWalk" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PermissionSet extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Runtime.Serialization.IDeserializationCallback, class System.Security.ISecurityEncodable, class System.Security.IStackWalk" />
+  <TypeSignature Language="DocId" Value="T:System.Security.PermissionSet" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.IDeserializationCallback</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Security.ISecurityEncodable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Security.IStackWalk</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection that can contain many different types of permissions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use <xref:System.Security.PermissionSet> to perform operations on several different permissions as a group.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Security.PermissionSet> class and members.  
+  
+ [!code-cpp[System.Security.PermissionSet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#1)]
+ [!code-csharp[System.Security.PermissionSet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#1)]
+ [!code-vb[System.Security.PermissionSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for inheritors to be fully trusted, or in an assembly that is signed with the Microsoft <see cref="T:System.Security.Policy.StrongName" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PermissionSet (System.Security.Permissions.PermissionState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+      </Parameters>
+      <Docs>
+        <param name="state">One of the enumeration values that specifies the permission set's access to resources.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.PermissionSet" /> class with the specified <see cref="T:System.Security.Permissions.PermissionState" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Unrestricted` state allows all permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface, while `None` allows no permissions.  
+  
+ Use <xref:System.Security.PermissionSet.AddPermission%2A> on an empty <xref:System.Security.PermissionSet> to define the set in greater detail.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.%23ctor%2A> constructor to create a permission set with a permission state of <xref:System.Security.Permissions.PermissionState>. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#2)]
+ [!code-csharp[System.Security.PermissionSet#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#2)]
+ [!code-vb[System.Security.PermissionSet#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="state" /> parameter is not a valid <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PermissionSet (System.Security.PermissionSet permSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.PermissionSet permSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.#ctor(System.Security.PermissionSet)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="permSet" Type="System.Security.PermissionSet" />
+      </Parameters>
+      <Docs>
+        <param name="permSet">The set from which to take the value of the new <see cref="T:System.Security.PermissionSet" />, or <see langword="null" /> to create an empty <see cref="T:System.Security.PermissionSet" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.PermissionSet" /> class with initial values taken from the <paramref name="permSet" /> parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new <xref:System.Security.PermissionSet> contains copies of the permissions contained in the specified <xref:System.Security.PermissionSet>.  
+  
+> [!NOTE]
+>  This is equivalent to <xref:System.Security.PermissionSet.Copy%2A> when the `permSet` parameter is not `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPermission">
+      <MemberSignature Language="C#" Value="public System.Security.IPermission AddPermission (System.Security.IPermission perm);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.IPermission AddPermission(class System.Security.IPermission perm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.AddPermission(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="perm" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="perm">The permission to add.</param>
+        <summary>Adds a specified permission to the <see cref="T:System.Security.PermissionSet" />.</summary>
+        <returns>The union of the permission added and any permission of the same type that already exists in the <see cref="T:System.Security.PermissionSet" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a permission of the same type as the added permission already exists in the <xref:System.Security.PermissionSet>, the new permission is the union of the existing permission object and the specified permission object. For example, if a permission that implements <xref:System.Security.Permissions.IUnrestrictedPermission> is added to an <xref:System.Security.Permissions.PermissionState><xref:System.Security.PermissionSet>, the resulting union is the original `Unrestricted`<xref:System.Security.PermissionSet>.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.AddPermission%2A> method to add a permission to a permission set. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#3)]
+ [!code-csharp[System.Security.PermissionSet#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#3)]
+ [!code-vb[System.Security.PermissionSet#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The method is called from a <see cref="T:System.Security.ReadOnlyPermissionSet" />.</exception>
+        <block subset="none" type="overrides">
+          <para>When you inherit from <see cref="T:System.Security.PermissionSet" />, you can change the behavior of the <see cref="M:System.Security.PermissionSet.AddPermission(System.Security.IPermission)" /> method by overriding the <see cref="M:System.Security.PermissionSet.AddPermissionImpl(System.Security.IPermission)" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPermissionImpl">
+      <MemberSignature Language="C#" Value="protected virtual System.Security.IPermission AddPermissionImpl (System.Security.IPermission perm);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Security.IPermission AddPermissionImpl(class System.Security.IPermission perm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.AddPermissionImpl(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="perm" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="perm">The permission to add.</param>
+        <summary>Adds a specified permission to the <see cref="T:System.Security.PermissionSet" />.</summary>
+        <returns>The union of the permission added and any permission of the same type that already exists in the <see cref="T:System.Security.PermissionSet" />, or <see langword="null" /> if <paramref name="perm" /> is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.PermissionSet.AddPermissionImpl%2A> method is the implementation for the <xref:System.Security.PermissionSet.AddPermission%2A> method.  
+  
+ If a permission of the same type as the added permission already exists in the <xref:System.Security.PermissionSet>, the new permission is the union of the existing permission object and the specified permission object. For example, if a permission that implements <xref:System.Security.Permissions.IUnrestrictedPermission> is added to an <xref:System.Security.Permissions.PermissionState><xref:System.Security.PermissionSet>, the resulting union is the original `Unrestricted`<xref:System.Security.PermissionSet>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The method is called from a <see cref="T:System.Security.ReadOnlyPermissionSet" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Assert">
+      <MemberSignature Language="C#" Value="public void Assert ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Assert() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Assert" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Declares that the calling code can access the resource protected by a permission demand through the code that calls this method, even if callers higher in the stack have not been granted permission to access the resource. Using <see cref="M:System.Security.PermissionSet.Assert" /> can create security vulnerabilities.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the only way to assert multiple permissions at the same time within a frame because only one <xref:System.Security.PermissionSet.Assert%2A> can be active on a frame. <xref:System.Security.PermissionSet.Assert%2A> is only effective for granted permissions. Call the <xref:System.Security.CodeAccessPermission.RevertAssert%2A?displayProperty=fullName> or <xref:System.Security.CodeAccessPermission.RevertAll%2A?displayProperty=fullName> method to cancel an active <xref:System.Security.PermissionSet.Assert%2A>.  
+  
+> [!CAUTION]
+>  Because calling the <xref:System.Security.PermissionSet.Assert%2A> method removes the requirement that all code in the call chain must be granted permission to access the specified resource, it can open up security vulnerabilities if used incorrectly or inappropriately. Therefore, it should be used with great caution.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The <see cref="T:System.Security.PermissionSet" /> instance asserted has not been granted to the asserting code.  
+  
+ -or-  
+  
+ There is already an active <see cref="M:System.Security.PermissionSet.Assert" /> for the current frame.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsNonCodeAccessPermissions">
+      <MemberSignature Language="C#" Value="public bool ContainsNonCodeAccessPermissions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsNonCodeAccessPermissions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.ContainsNonCodeAccessPermissions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Security.PermissionSet" /> contains permissions that are not derived from <see cref="T:System.Security.CodeAccessPermission" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Security.PermissionSet" /> contains permissions that are not derived from <see cref="T:System.Security.CodeAccessPermission" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.ContainsNonCodeAccessPermissions%2A> method. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#9)]
+ [!code-csharp[System.Security.PermissionSet#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#9)]
+ [!code-vb[System.Security.PermissionSet#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertPermissionSet">
+      <MemberSignature Language="C#" Value="public static byte[] ConvertPermissionSet (string inFormat, byte[] inData, string outFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] ConvertPermissionSet(string inFormat, unsigned int8[] inData, string outFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.ConvertPermissionSet(System.String,System.Byte[],System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inFormat" Type="System.String" />
+        <Parameter Name="inData" Type="System.Byte[]" />
+        <Parameter Name="outFormat" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="inFormat">A string representing one of the following encoding formats: ASCII, Unicode, or Binary. Possible values are "XMLASCII" or "XML", "XMLUNICODE", and "BINARY".</param>
+        <param name="inData">An XML-encoded permission set.</param>
+        <param name="outFormat">A string representing one of the following encoding formats: ASCII, Unicode, or Binary. Possible values are "XMLASCII" or "XML", "XMLUNICODE", and "BINARY".</param>
+        <summary>Converts an encoded <see cref="T:System.Security.PermissionSet" /> from one XML encoding format to another XML encoding format.</summary>
+        <returns>An encrypted permission set with the specified output format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not use this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">In all cases.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public virtual System.Security.PermissionSet Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.PermissionSet Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.PermissionSet</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the <see cref="T:System.Security.PermissionSet" />.</summary>
+        <returns>A copy of the <see cref="T:System.Security.PermissionSet" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A copy of a <xref:System.Security.PermissionSet> represents the same access to resources as the original object. Changes made to the copy do not affect the original permission set.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.Copy%2A> method to create a copy of a permission set. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#20](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#20)]
+ [!code-csharp[System.Security.PermissionSet#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#20)]
+ [!code-vb[System.Security.PermissionSet#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public virtual void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The target array to which to copy.</param>
+        <param name="index">The starting position in the array to begin copying (zero based).</param>
+        <summary>Copies the permission objects of the set to the indicated location in an <see cref="T:System.Array" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="array" /> parameter has more than one dimension.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is out of the range of the <paramref name="array" /> parameter.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public virtual int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Security.PermissionSet.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of permission objects contained in the permission set.</summary>
+        <value>The number of permission objects contained in the <see cref="T:System.Security.PermissionSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the `None` or `Unrestricted` state this returns zero, because no actual permission object instances are used.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.Count%2A> property to get the number of permission objects in a permission set. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#5)]
+ [!code-csharp[System.Security.PermissionSet#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#5)]
+ [!code-vb[System.Security.PermissionSet#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Demand">
+      <MemberSignature Language="C#" Value="public void Demand ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Demand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Demand" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces a <see cref="T:System.Security.SecurityException" /> at run time if all callers higher in the call stack have not been granted the permissions specified by the current instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Security.PermissionSet.Demand%2A> on a <xref:System.Security.PermissionSet> to ensure that all callers have all permissions in the set with one operation.  
+  
+ The permissions of the code that calls this method are not examined; the check begins from the immediate caller of that code and proceeds up the stack. The call stack is typically represented as growing down, so that methods higher in the call stack call methods lower in the call stack. <xref:System.Security.PermissionSet.Demand%2A> succeeds only if no <xref:System.Security.SecurityException> is thrown.  
+  
+ If the <xref:System.Security.PermissionSet> contains permissions that do not inherit from <xref:System.Security.CodeAccessPermission>, the `Demand` methods of those permissions are called as well.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.Demand%2A> method to demand all the permissions in a permission set. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#4)]
+ [!code-csharp[System.Security.PermissionSet#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#4)]
+ [!code-vb[System.Security.PermissionSet#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">A caller in the call chain does not have the permission demanded.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Deny" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes any <see cref="M:System.Security.PermissionSet.Demand" /> that passes through the calling code for a permission that has an intersection with a permission of a type contained in the current <see cref="T:System.Security.PermissionSet" /> to fail.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method prevents callers higher in the call stack from accessing the protected resource through the code that calls this method, even if those callers have been granted permission to access it. The call stack is typically represented as growing down, so that methods higher in the call stack call methods lower in the call stack.  
+  
+ <xref:System.Security.PermissionSet.Deny%2A> can limit the liability of the programmer or help prevent accidental security vulnerabilities because it helps prevent the method that calls <xref:System.Security.PermissionSet.Deny%2A> from being used to access the resource protected by the denied permission. If a method calls <xref:System.Security.PermissionSet.Deny%2A> on a permission, and if a <xref:System.Security.PermissionSet.Demand%2A> for that permission is invoked by a caller lower in the call stack, that security check fails when it reaches the <xref:System.Security.PermissionSet.Deny%2A>.  
+  
+ <xref:System.Security.PermissionSet.Deny%2A> is ignored for a permission that is not granted because a demand for that permission cannot succeed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">A previous call to <see cref="M:System.Security.PermissionSet.Deny" /> has already restricted the permissions for the current stack frame.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current <see cref="T:System.Security.PermissionSet" />.</param>
+        <summary>Determines whether the specified <see cref="T:System.Security.PermissionSet" /> or <see cref="T:System.Security.NamedPermissionSet" /> object is equal to the current <see cref="T:System.Security.PermissionSet" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current <see cref="T:System.Security.PermissionSet" /> object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Equality is determined by the permissions contained in the permission set specified by `obj`. `obj` can be either a <xref:System.Security.PermissionSet> object or a <xref:System.Security.NamedPermissionSet> object. If `obj` is a <xref:System.Security.NamedPermissionSet>, the name and description are ignored.  
+  
+ For more information, see <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public virtual void FromXml (System.Security.SecurityElement et);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FromXml(class System.Security.SecurityElement et) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.FromXml(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="et" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="et">The XML encoding to use to reconstruct the security object.</param>
+        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.FromXml%2A> method. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#17](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#17)]
+ [!code-csharp[System.Security.PermissionSet#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#17)]
+ [!code-vb[System.Security.PermissionSet#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="et" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="et" /> parameter is not a valid permission element.  
+  
+ -or-  
+  
+ The <paramref name="et" /> parameter's version number is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator for the permissions of the set.</summary>
+        <returns>An enumerator object for the permissions of the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the enumerator as an index to access individual permission objects in the set.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.GetEnumerator%2A> method to list all the permissions in a permission set. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#18](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#18)]
+ [!code-csharp[System.Security.PermissionSet#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#18)]
+ [!code-vb[System.Security.PermissionSet#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from <see cref="T:System.Security.PermissionSet" />, you can change the behavior of the <see cref="M:System.Security.PermissionSet.GetEnumerator" /> method by overriding the <see cref="M:System.Security.PermissionSet.GetEnumeratorImpl" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumeratorImpl">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.IEnumerator GetEnumeratorImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumeratorImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.GetEnumeratorImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator for the permissions of the set.</summary>
+        <returns>An enumerator object for the permissions of the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.PermissionSet.GetEnumeratorImpl%2A> method is the implementation for the <xref:System.Security.PermissionSet.GetEnumerator%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a hash code for the <see cref="T:System.Security.PermissionSet" /> object that is suitable for use in hashing algorithms and data structures such as a hash table.</summary>
+        <returns>A hash code for the current <see cref="T:System.Security.PermissionSet" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The hash code for two instances of the same permission set might be different, so a hash code should not be used to compare two <xref:System.Security.PermissionSet> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPermission">
+      <MemberSignature Language="C#" Value="public System.Security.IPermission GetPermission (Type permClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.IPermission GetPermission(class System.Type permClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.GetPermission(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permClass" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="permClass">The type of the desired permission object.</param>
+        <summary>Gets a permission object of the specified type, if it exists in the set.</summary>
+        <returns>A copy of the permission object of the type specified by the <paramref name="permClass" /> parameter contained in the <see cref="T:System.Security.PermissionSet" />, or <see langword="null" /> if none exists.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method returns `null` for an `Unrestricted`<xref:System.Security.PermissionSet>. Although an `Unrestricted`<xref:System.Security.PermissionSet> effectively contains all permissions, it does not have any actual instances to return.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from <see cref="T:System.Security.PermissionSet" />, you can change the behavior of the <see cref="M:System.Security.PermissionSet.GetPermission(System.Type)" /> method by overriding the <see cref="M:System.Security.PermissionSet.GetPermissionImpl(System.Type)" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPermissionImpl">
+      <MemberSignature Language="C#" Value="protected virtual System.Security.IPermission GetPermissionImpl (Type permClass);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Security.IPermission GetPermissionImpl(class System.Type permClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.GetPermissionImpl(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permClass" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="permClass">The type of the permission object.</param>
+        <summary>Gets a permission object of the specified type, if it exists in the set.</summary>
+        <returns>A copy of the permission object, of the type specified by the <paramref name="permClass" /> parameter, contained in the <see cref="T:System.Security.PermissionSet" />, or <see langword="null" /> if none exists.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.PermissionSet.GetPermissionImpl%2A> method is the implementation for the <xref:System.Security.PermissionSet.GetPermission%2A> method.  
+  
+ The method returns `null` for an `Unrestricted`<xref:System.Security.PermissionSet>. Although an `Unrestricted`<xref:System.Security.PermissionSet> effectively contains all permissions, it does not have any actual instances to return.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="public System.Security.PermissionSet Intersect (System.Security.PermissionSet other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.PermissionSet Intersect(class System.Security.PermissionSet other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Intersect(System.Security.PermissionSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.PermissionSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Security.PermissionSet" />
+      </Parameters>
+      <Docs>
+        <param name="other">A permission set to intersect with the current <see cref="T:System.Security.PermissionSet" />.</param>
+        <summary>Creates and returns a permission set that is the intersection of the current <see cref="T:System.Security.PermissionSet" /> and the specified <see cref="T:System.Security.PermissionSet" />.</summary>
+        <returns>A new permission set that represents the intersection of the current <see cref="T:System.Security.PermissionSet" /> and the specified target. This object is <see langword="null" /> if the intersection is empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The intersection of two permission sets is a permission set that describes the set of operations they both describe in common. Specifically, it represents the minimum permissions such that any demand that passes both permission sets also passes their intersection.  
+  
+ For each type of permission that is present in both sets, the two instances of those permissions are intersected using the permission's `Intersect` method; the resulting permission is included in the resulting <xref:System.Security.PermissionSet>. Permission types that exist in only one of the two sets are excluded from the resulting set.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.Intersect%2A> method. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#12)]
+ [!code-csharp[System.Security.PermissionSet#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#12)]
+ [!code-vb[System.Security.PermissionSet#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="public bool IsEmpty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEmpty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.IsEmpty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Security.PermissionSet" /> is empty.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Security.PermissionSet" /> is empty; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Security.PermissionSet> can be empty and yet contain instances of permissions if those permissions are in the fully-restricted state. Permissions are in a fully restricted state if their `IsSubsetOf` methods return `true` when `null` is passed as a parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public virtual bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Security.PermissionSet.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the collection is read-only.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Security.PermissionSet> cannot be read-only, so this property is always `false`.  
+  
+   
+  
+## Examples  
+ The following code example shows the value returned by the <xref:System.Security.PermissionSet.IsReadOnly%2A> property. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#7)]
+ [!code-csharp[System.Security.PermissionSet#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#7)]
+ [!code-vb[System.Security.PermissionSet#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubsetOf">
+      <MemberSignature Language="C#" Value="public bool IsSubsetOf (System.Security.PermissionSet target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsSubsetOf(class System.Security.PermissionSet target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.IsSubsetOf(System.Security.PermissionSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.PermissionSet" />
+      </Parameters>
+      <Docs>
+        <param name="target">The permission set to test for the subset relationship. This must be either a <see cref="T:System.Security.PermissionSet" /> or a <see cref="T:System.Security.NamedPermissionSet" />.</param>
+        <summary>Determines whether the current <see cref="T:System.Security.PermissionSet" /> is a subset of the specified <see cref="T:System.Security.PermissionSet" />.</summary>
+        <returns>
+          <see langword="true" /> if the current <see cref="T:System.Security.PermissionSet" /> is a subset of the <paramref name="target" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Security.PermissionSet> is a subset of the target <xref:System.Security.PermissionSet> if all demands that succeed for the <xref:System.Security.PermissionSet> also succeed for the target. That is, the target contains at least the permissions contained in the subset.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.IsSubsetOf%2A> method. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#11)]
+ [!code-csharp[System.Security.PermissionSet#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#11)]
+ [!code-vb[System.Security.PermissionSet#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public virtual bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Security.PermissionSet.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the collection is guaranteed to be thread safe.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.PermissionSet> does not automatically handle thread safety, so this property is always `false`.  
+  
+ This method is required to support <xref:System.Collections.ICollection>.  
+  
+   
+  
+## Examples  
+ The following code example shows the value returned by the <xref:System.Security.PermissionSet.IsSynchronized%2A> property. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#6)]
+ [!code-csharp[System.Security.PermissionSet#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#6)]
+ [!code-vb[System.Security.PermissionSet#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnrestricted">
+      <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsUnrestricted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.IsUnrestricted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether the <see cref="T:System.Security.PermissionSet" /> is <see langword="Unrestricted" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Security.PermissionSet" /> is <see langword="Unrestricted" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An `Unrestricted`<xref:System.Security.PermissionSet> effectively contains all permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.IsUnrestricted%2A> method. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#19](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#19)]
+ [!code-csharp[System.Security.PermissionSet#19](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#19)]
+ [!code-vb[System.Security.PermissionSet#19](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PermitOnly">
+      <MemberSignature Language="C#" Value="public void PermitOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PermitOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.PermitOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes any <see cref="M:System.Security.PermissionSet.Demand" /> that passes through the calling code for any <see cref="T:System.Security.PermissionSet" /> that is not a subset of the current <see cref="T:System.Security.PermissionSet" /> to fail.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.PermissionSet.PermitOnly%2A> is similar to <xref:System.Security.PermissionSet.Deny%2A>, in that both cause stack walks to fail when they would otherwise succeed. The difference is that <xref:System.Security.PermissionSet.Deny%2A> specifies permissions that will cause the stack walk to fail, but <xref:System.Security.PermissionSet.PermitOnly%2A> specifies the only permissions that do not cause the stack walk to fail. Call this method to ensure that your code can be used to access only the specified resources.  
+  
+ <xref:System.Security.PermissionSet.PermitOnly%2A> is ignored for a permission not granted because a demand for that permission cannot succeed. However, if code lower on the call stack later calls <xref:System.Security.PermissionSet.Demand%2A> for that permission, a <xref:System.Security.SecurityException> is thrown when the stack walk reaches the code that tried to call <xref:System.Security.PermissionSet.PermitOnly%2A>. This is because the code that called <xref:System.Security.PermissionSet.PermitOnly%2A> has not been granted the permission, even though it called <xref:System.Security.PermissionSet.PermitOnly%2A> for that permission. The call stack is typically represented as growing down, so that methods higher in the call stack call methods lower in the call stack.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePermission">
+      <MemberSignature Language="C#" Value="public System.Security.IPermission RemovePermission (Type permClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.IPermission RemovePermission(class System.Type permClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.RemovePermission(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permClass" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="permClass">The type of permission to delete.</param>
+        <summary>Removes a permission of a certain type from the set.</summary>
+        <returns>The permission removed from the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  You cannot remove permissions from an unrestricted permission set. The permission set remains unrestricted after you attempt to remove the permission, and an exception is not thrown.  
+  
+ The following C# code attempts to remove the <xref:System.Security.Permissions.FileIOPermission> from the `FullTrust` permission set, but the permission is not removed.  
+  
+```  
+PolicyLevel myPol = PolicyLevel.CreateAppDomainLevel();  
+PermissionSet myPermSet = myPol.GetNamedPermissionSet("FullTrust");  
+myPermSet.RemovePermission(typeof(FileIOPermission));  
+```  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.RemovePermission%2A> method to remove a <xref:System.Security.Permissions.FileIOPermission> from a permission set. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#15](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#15)]
+ [!code-csharp[System.Security.PermissionSet#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#15)]
+ [!code-vb[System.Security.PermissionSet#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The method is called from a <see cref="T:System.Security.ReadOnlyPermissionSet" />.</exception>
+        <block subset="none" type="overrides">
+          <para>When you inherit from <see cref="T:System.Security.PermissionSet" />, you can change the behavior of the <see cref="M:System.Security.PermissionSet.RemovePermission(System.Type)" /> method by overriding the <see cref="M:System.Security.PermissionSet.RemovePermissionImpl(System.Type)" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePermissionImpl">
+      <MemberSignature Language="C#" Value="protected virtual System.Security.IPermission RemovePermissionImpl (Type permClass);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Security.IPermission RemovePermissionImpl(class System.Type permClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.RemovePermissionImpl(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permClass" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="permClass">The type of the permission to remove.</param>
+        <summary>Removes a permission of a certain type from the set.</summary>
+        <returns>The permission removed from the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.PermissionSet.RemovePermissionImpl%2A> method is the implementation for the <xref:System.Security.PermissionSet.RemovePermission%2A> method.  
+  
+> [!IMPORTANT]
+>  You cannot remove permissions from an unrestricted permission set. The permission set remains unrestricted after you attempt to remove the permission, and an exception is not thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The method is called from a <see cref="T:System.Security.ReadOnlyPermissionSet" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RevertAssert">
+      <MemberSignature Language="C#" Value="public static void RevertAssert ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RevertAssert() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.RevertAssert" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes any previous <see cref="M:System.Security.CodeAccessPermission.Assert" /> for the current frame to be removed and no longer be in effect.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is no <xref:System.Security.CodeAccessPermission.Assert%2A> for the current frame, an <xref:System.ExecutionEngineException> is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">There is no previous <see cref="M:System.Security.CodeAccessPermission.Assert" /> for the current frame.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPermission">
+      <MemberSignature Language="C#" Value="public System.Security.IPermission SetPermission (System.Security.IPermission perm);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.IPermission SetPermission(class System.Security.IPermission perm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.SetPermission(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="perm" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="perm">The permission to set.</param>
+        <summary>Sets a permission to the <see cref="T:System.Security.PermissionSet" />, replacing any existing permission of the same type.</summary>
+        <returns>The set permission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method removes any existing permission object of the same type from the <xref:System.Security.PermissionSet> and replaces it with the `perm` parameter. If a permission that implements <xref:System.Security.Permissions.IUnrestrictedPermission> is set on a <xref:System.Security.PermissionSet> that is <xref:System.Security.Permissions.PermissionState>, the resulting <xref:System.Security.PermissionSet> is no longer `Unrestricted`.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.SetPermission%2A> method. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#16](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#16)]
+ [!code-csharp[System.Security.PermissionSet#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#16)]
+ [!code-vb[System.Security.PermissionSet#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The method is called from a <see cref="T:System.Security.ReadOnlyPermissionSet" />.</exception>
+        <block subset="none" type="overrides">
+          <para>When you inherit from <see cref="T:System.Security.PermissionSet" />, you can change the behavior of the <see cref="M:System.Security.PermissionSet.SetPermission(System.Security.IPermission)" /> method by overriding the <see cref="M:System.Security.PermissionSet.SetPermissionImpl(System.Security.IPermission)" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPermissionImpl">
+      <MemberSignature Language="C#" Value="protected virtual System.Security.IPermission SetPermissionImpl (System.Security.IPermission perm);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Security.IPermission SetPermissionImpl(class System.Security.IPermission perm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.SetPermissionImpl(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="perm" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="perm">The permission to set.</param>
+        <summary>Sets a permission to the <see cref="T:System.Security.PermissionSet" />, replacing any existing permission of the same type.</summary>
+        <returns>The set permission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.PermissionSet.SetPermissionImpl%2A> method is the implementation for the <xref:System.Security.PermissionSet.SetPermission%2A> method.  
+  
+ This method removes any existing permission object of the same type from the <xref:System.Security.PermissionSet> and replaces it with the `perm` parameter. If a permission that implements <xref:System.Security.Permissions.IUnrestrictedPermission> is set on a <xref:System.Security.PermissionSet> that is <xref:System.Security.Permissions.PermissionState>, the resulting <xref:System.Security.PermissionSet> is no longer `Unrestricted`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The method is called from a <see cref="T:System.Security.ReadOnlyPermissionSet" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public virtual object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Security.PermissionSet.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the root object of the current collection.</summary>
+        <value>The root object of the current collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is required to support <xref:System.Collections.ICollection>.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of <xref:System.Security.PermissionSet.SyncRoot%2A> property to get the root object of the current collection. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#8)]
+ [!code-csharp[System.Security.PermissionSet#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#8)]
+ [!code-vb[System.Security.PermissionSet#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.IDeserializationCallback.OnDeserialization">
+      <MemberSignature Language="C#" Value="void IDeserializationCallback.OnDeserialization (object sender);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The object that initiated the callback. The functionality for this parameter is not currently implemented.</param>
+        <summary>Runs when the entire object graph has been deserialized.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the <see cref="T:System.Security.PermissionSet" />.</summary>
+        <returns>A representation of the <see cref="T:System.Security.PermissionSet" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string representation is useful in debugging to see the state of a <xref:System.Security.PermissionSet>.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.ToString%2A> method. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#10)]
+ [!code-csharp[System.Security.PermissionSet#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#10)]
+ [!code-vb[System.Security.PermissionSet#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public virtual System.Security.SecurityElement ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.SecurityElement ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an XML encoding of the security object and its current state.</summary>
+        <returns>An XML encoding of the security object, including any state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.ToXml%2A> method. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#17](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#17)]
+ [!code-csharp[System.Security.PermissionSet#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#17)]
+ [!code-vb[System.Security.PermissionSet#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public System.Security.PermissionSet Union (System.Security.PermissionSet other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.PermissionSet Union(class System.Security.PermissionSet other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Union(System.Security.PermissionSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.PermissionSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Security.PermissionSet" />
+      </Parameters>
+      <Docs>
+        <param name="other">The permission set to form the union with the current <see cref="T:System.Security.PermissionSet" />.</param>
+        <summary>Creates a <see cref="T:System.Security.PermissionSet" /> that is the union of the current <see cref="T:System.Security.PermissionSet" /> and the specified <see cref="T:System.Security.PermissionSet" />.</summary>
+        <returns>A new permission set that represents the union of the current <see cref="T:System.Security.PermissionSet" /> and the specified <see cref="T:System.Security.PermissionSet" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The result of a call to <xref:System.Security.PermissionSet.Union%2A> is a <xref:System.Security.PermissionSet> that represents all the operations represented by the current <xref:System.Security.PermissionSet> as well as all the operations represented by the specified <xref:System.Security.PermissionSet>. If either set is `Unrestricted`, the union is `Unrestricted` as well.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.PermissionSet.Union%2A> method. This code example is part of a larger example provided for the <xref:System.Security.PermissionSet> class.  
+  
+ [!code-cpp[System.Security.PermissionSet#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.PermissionSet/CPP/permissionset.cpp#13)]
+ [!code-csharp[System.Security.PermissionSet#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.PermissionSet/CS/permissionset.cs#13)]
+ [!code-vb[System.Security.PermissionSet#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.PermissionSet/VB/permissionset.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,73 @@
+<Type Name="OverrideMode" FullName="System.Configuration.OverrideMode">
+  <TypeSignature Language="C#" Value="public enum OverrideMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OverrideMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.OverrideMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the override behavior of a configuration element for configuration elements in child directories.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.OverrideMode> enumeration values to set the <xref:System.Configuration.SectionInformation.OverrideMode%2A> property of the <xref:System.Configuration.SectionInformation> class. You set this property in order to programmatically specify override behavior of a configuration element or group. To declaratively set the override behavior for all configuration elements inside a  element, use the `allowOverride` attribute. The <xref:System.Configuration.SectionInformation.OverrideMode%2A> property gives you more granular control over the elements inside a `location` element.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Allow">
+      <MemberSignature Language="C#" Value="Allow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.OverrideMode Allow = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.OverrideMode.Allow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.OverrideMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The configuration setting of the element or group can be overridden by configuration settings that are in child directories.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="Deny" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.OverrideMode Deny = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.OverrideMode.Deny" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.OverrideMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The configuration setting of the element or group cannot be overridden by configuration settings that are in child directories.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherit">
+      <MemberSignature Language="C#" Value="Inherit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.OverrideMode Inherit = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.OverrideMode.Inherit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.OverrideMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The configuration setting of the element or group will be overridden by configuration settings that are in child directories if explicitly allowed by a parent element of the current configuration element or group. Permission to override is specified by using the <see langword="OverrideMode" /> attribute.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

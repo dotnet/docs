@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 79be877c-fadc-4dfb-9f03-426082b13656
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Advanced Query Techniques (LINQ to XML) (Visual Basic)

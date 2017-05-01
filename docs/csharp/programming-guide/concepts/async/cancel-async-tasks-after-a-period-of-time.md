@@ -56,7 +56,7 @@ You can cancel an asynchronous operation after a period of time by using the  <x
   
  To specify a maximum time before the tasks are marked as canceled, add a call to `CancelAfter` to `startButton_Click`, as the following example shows. The addition is marked with asterisks.  
   
-```cs  
+```csharp  
 private async void startButton_Click(object sender, RoutedEventArgs e)  
 {  
     // Instantiate the CancellationTokenSource.  
@@ -105,7 +105,7 @@ Downloads canceled.
   
  You can download the project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046).  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  

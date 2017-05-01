@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrArgument_TCNotSupported"
 ms.assetid: 95bace92-c7b9-4641-b71f-c088ddb418c9
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

@@ -4,7 +4,7 @@ description: See a mapping between project.json and csproj elements.
 keywords: project.json, csproj, .NET Core, MSBuild
 author: natemcmaster
 ms.author: mairaw
-ms.date: 03/02/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -14,7 +14,7 @@ ms.assetid: 79c50621-a24a-4e64-bbb9-b953113e841c
 
 # A mapping between project.json and csproj properties
 
-By [Nate McMaster](http://github.com/natemcmaster)
+By [Nate McMaster](https://github.com/natemcmaster)
 
 During the development of the .NET Core tooling, an important design change was made to 
 no longer support *project.json* files and instead move the .NET Core projects to the MSBuild/csproj 
@@ -99,8 +99,8 @@ You can also use the `Version` property, but this may override version settings 
 
 ```xml
 <PropertyGroup>
-  <Authors>Anne;Bob<Authors>
-  <Company>Contoso<Company>
+  <Authors>Anne;Bob</Authors>
+  <Company>Contoso</Company>
   <NeutralLanguage>en-US</NeutralLanguage>
   <AssemblyTitle>My library</AssemblyTitle>
   <Description>This is my library.
@@ -327,7 +327,7 @@ There is no equivalent in csproj.
 
 ```xml
 <PropertyGroup>
-  <RuntimeIdentifiers>win7-x64;osx.10-11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
+  <RuntimeIdentifiers>win7-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
 </PropertyGroup>
 ```
 
@@ -623,7 +623,7 @@ In MSBuild, this is done using [items](https://docs.microsoft.com/visualstudio/m
 ```
 
 > [!NOTE]
-> Many of default globbing patterns are added automatically by the .NET Core SDK.
+> Many of the default [globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are added automatically by the .NET Core SDK.
 > For more information, see [Default Compile Item Values](https://aka.ms/sdkimplicititems).
 
 All MSBuild `ItemGroup` elements support `Include`, `Exclude`, and `Remove`.
@@ -679,6 +679,5 @@ to the project-relative file path.
 ```
 
 ## See Also
-[project.json reference](project-json.md)
 
 [High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)

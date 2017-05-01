@@ -1,0 +1,191 @@
+<Type Name="ConfigurationBasedIssuerNameRegistry" FullName="System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry">
+  <TypeSignature Language="C#" Value="public class ConfigurationBasedIssuerNameRegistry : System.IdentityModel.Tokens.IssuerNameRegistry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConfigurationBasedIssuerNameRegistry extends System.IdentityModel.Tokens.IssuerNameRegistry" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.IssuerNameRegistry</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an issuer name registry that maintains a list of trusted issuers loaded from elements in the application configuration file that associate each issuer name to the X.509 certificate that is needed to verify the signature of tokens produced by the issuer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> class maintains a dictionary of trusted issuers by mapping the certificate of each trusted issuer to a name that refers to that issuer. The certificates are specified using the ASN.1 encoded form of the thumbprint. The issuer name can be any string, as long as it is unique within the scope of the application. This dictionary can be accessed through the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.ConfiguredTrustedIssuers%2A> property. The class can only resolve X.509 certificates.  
+  
+ The map of trusted issuers is specified in a configuration file by adding entries under the [\&lt;trustedIssuers\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/trustedissuers.md) element. The `<trustedIssuers>` element is a child element of the [\&lt;issuerNameRegistry\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md) element and it is valid when the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> class is specified in the `type` attribute of that element. For more information, see the documentation for each of these elements in the [WIF Configuration Schema](http://msdn.microsoft.com/library/4d4f6d76-49a5-4bad-b345-097b2e2844e9). For more information about issuer name registries, see the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class.  
+  
+ You can derive from <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> to implement your own configuration based issuer name registry. Which methods you override will depend upon your implementation. For example, you can override the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.LoadCustomConfiguration%2A> method to load configuration from a custom configuration schema.  
+  
+   
+  
+## Examples  
+ The following XML shows configuration for a <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> added for a collection of security token handlers. The `<trustedIssuers>` element behaves like a classic .NET configuration collection, allowing the `<add>`, `<delete>` and `<clear>` elements as child elements.  
+  
+```  
+<system.identityModel>  
+  <identityConfiguration>  
+    <securityTokenHandlersCollection>  
+      <securityTokenHandlerConfiguration>  
+        <issuerNameRegistry type="System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry, System.IdentityModel">  
+          <trustedIssuers>  
+             <add thumbprint="97249e … 158de" name="contoso.com" />  
+         </trustedIssuers>  
+        </issuerNameRegistry>  
+      </securityTokenHandlerConfiguration>  
+  </identityConfiguration>  
+</system.identityModel>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConfigurationBasedIssuerNameRegistry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTrustedIssuer">
+      <MemberSignature Language="C#" Value="public void AddTrustedIssuer (string certificateThumbprint, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTrustedIssuer(string certificateThumbprint, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.AddTrustedIssuer(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certificateThumbprint" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="certificateThumbprint">ASN.1 encoded form of the issuer's certificate thumbprint.</param>
+        <param name="name">The name of the issuer.</param>
+        <summary>Adds an issuer to the dictionary of trusted issuers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can call this method to add issuers to the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.ConfiguredTrustedIssuers%2A> dictionary. In derived classes, you can call this method from the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.LoadCustomConfiguration%2A> method to add issuers to the dictionary.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="certificateThumbprint" /> is <see langword="null" /> or empty.  
+  
+ -or-  
+  
+ <paramref name="name" /> is <see langword="null" /> or empty.</exception>
+        <exception cref="T:System.InvalidOperationException">The issuer specified by <paramref name="certificateThumbprint" /> has already been configured. (The issuer already exists in the <see cref="P:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.ConfiguredTrustedIssuers" /> dictionary.)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfiguredTrustedIssuers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; ConfiguredTrustedIssuers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; ConfiguredTrustedIssuers" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.ConfiguredTrustedIssuers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the dictionary of trusted issuers that have been configured for this instance.</summary>
+        <value>A dictionary that contains the trusted issuers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The key to the dictionary is the ASN.1 encoded form of the thumbprint of the trusted issuer's certificate and the value is the issuer name. The dictionary contains the issuers that were specified in configuration and any additional issuers that have been added with the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.AddTrustedIssuer%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIssuerName">
+      <MemberSignature Language="C#" Value="public override string GetIssuerName (System.IdentityModel.Tokens.SecurityToken securityToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetIssuerName(class System.IdentityModel.Tokens.SecurityToken securityToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.GetIssuerName(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityToken" Type="System.IdentityModel.Tokens.SecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="securityToken">The security token for which the issuer name is requested. Should be assignable as <see cref="T:System.IdentityModel.Tokens.X509SecurityToken" />.</param>
+        <summary>Returns the issuer name associated with the specified <see cref="T:System.IdentityModel.Tokens.X509SecurityToken" /> by mapping the certificate thumbprint to a name in the trusted issuers dictionary.</summary>
+        <returns>The issuer name if an entry for the certificate thumbprint of the token exists in the <see cref="P:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.ConfiguredTrustedIssuers" /> dictionary; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation searches the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.ConfiguredTrustedIssuers%2A> dictionary for the thumbprint of the X.509 certificate specified in `securityToken`. If an entry is found, the issuer name is returned; otherwise, `null` is returned. If `securityToken` is not assignable from <xref:System.IdentityModel.Tokens.X509SecurityToken>, `null` is returned.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="securityToken" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadCustomConfiguration">
+      <MemberSignature Language="C#" Value="public override void LoadCustomConfiguration (System.Xml.XmlNodeList customConfiguration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadCustomConfiguration(class System.Xml.XmlNodeList customConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="customConfiguration" Type="System.Xml.XmlNodeList" />
+      </Parameters>
+      <Docs>
+        <param name="customConfiguration">The XML that represents the map of trusted issuers that is specified in the configuration file.</param>
+        <summary>Loads the trusted issuers from configuration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.LoadCustomConfiguration%2A> method is called by the configuration infrastructure. When this method is called, the `nodelist` will contain the top-level child elements of the [\&lt;issuerNameRegistry\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md) element from the configuration file. Each of these may, in turn, contain attributes or child elements depending on the configuration schema you define for your derived class.  
+  
+ This method is called by the configuration infrastructure. The default implementation loads configuration from a [\&lt;trustedIssuers\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/trustedissuers.md) element (configured under the [\&lt;issuerNameRegistry\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md) element). You can override this method to provide support for your own custom configuration elements in derived classes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="customConfiguration" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The configuration contains one or more elements that are not recognized.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "DirectCast keyword"
 ms.assetid: 63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

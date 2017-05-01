@@ -1,0 +1,125 @@
+<Type Name="TreeViewCancelEventArgs" FullName="System.Windows.Forms.TreeViewCancelEventArgs">
+  <TypeSignature Language="C#" Value="public class TreeViewCancelEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TreeViewCancelEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewCancelEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.TreeView.BeforeCheck" />, <see cref="E:System.Windows.Forms.TreeView.BeforeCollapse" />, <see cref="E:System.Windows.Forms.TreeView.BeforeExpand" />, and <see cref="E:System.Windows.Forms.TreeView.BeforeSelect" /> events of a <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to change the collapse state of a <xref:System.Windows.Forms.TreeView> so that all the checked nodes are visible. First, all the nodes are collapsed, and a handler is added to the <xref:System.Windows.Forms.TreeView.BeforeExpand?displayProperty=fullName> event. Next, all the nodes are expanded. The <xref:System.Windows.Forms.TreeView.BeforeExpand?displayProperty=fullName> event handler determines whether a given node has child nodes that are checked. If a node does not have checked children, the expansion is canceled for that node. In order to allow normal node expansion when the plus sign next to a node is clicked, the <xref:System.Windows.Forms.TreeView.BeforeExpand?displayProperty=fullName> event handler is then removed.  
+  
+ This behavior can also be implemented by handling the <xref:System.Windows.Forms.TreeView.BeforeCollapse?displayProperty=fullName> event, as illustrated in the example for that topic.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.TreeView.CheckBoxes%2A?displayProperty=fullName> reference topic.  
+  
+ [!code-cpp[TreeViewShowCheckedNodes1#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewShowCheckedNodes1/CPP/treeviewshowcheckednodes1.cpp#2)]
+ [!code-csharp[TreeViewShowCheckedNodes1#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewShowCheckedNodes1/CS/treeviewshowcheckednodes1.cs#2)]
+ [!code-vb[TreeViewShowCheckedNodes1#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeViewShowCheckedNodes1/VB/treeviewshowcheckednodes1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TreeViewCancelEventArgs (System.Windows.Forms.TreeNode node, bool cancel, System.Windows.Forms.TreeViewAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.TreeNode node, bool cancel, valuetype System.Windows.Forms.TreeViewAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeViewCancelEventArgs.#ctor(System.Windows.Forms.TreeNode,System.Boolean,System.Windows.Forms.TreeViewAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="node" Type="System.Windows.Forms.TreeNode" />
+        <Parameter Name="cancel" Type="System.Boolean" />
+        <Parameter Name="action" Type="System.Windows.Forms.TreeViewAction" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Windows.Forms.TreeNode" /> that the event is responding to.</param>
+        <param name="cancel">
+          <see langword="true" /> to cancel the event; otherwise, <see langword="false" />.</param>
+        <param name="action">One of the <see cref="T:System.Windows.Forms.TreeViewAction" /> values indicating the type of action that raised the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeViewCancelEventArgs" /> class with the specified tree node, a value specifying whether the event is to be canceled, and the type of tree view action that raised the event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeViewAction Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.TreeViewAction Action" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeViewCancelEventArgs.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of <see cref="T:System.Windows.Forms.TreeView" /> action that raised the event.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.TreeViewAction" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TreeView.BeforeCheck?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TreeView> named `TreeView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TreeView.BeforeCheck?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#626](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#626)]
+ [!code-vb[System.Windows.Forms.EventExamples#626](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#626)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Node">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode Node { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode Node" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeViewCancelEventArgs.Node" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the tree node to be checked, expanded, collapsed, or selected.</summary>
+        <value>The <see cref="T:System.Windows.Forms.TreeNode" /> to be checked, expanded, collapsed, or selected.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to change the collapse state of a <xref:System.Windows.Forms.TreeView> so that all the checked nodes are visible. First, all the nodes are collapsed, and a handler is added to the <xref:System.Windows.Forms.TreeView.BeforeExpand?displayProperty=fullName> event. Next, all the nodes are expanded. The <xref:System.Windows.Forms.TreeView.BeforeExpand?displayProperty=fullName> event handler determines whether a given node has child nodes that are checked. If a node does not have checked children, the expansion is canceled for that node. In order to allow normal node expansion when the plus sign next to a node is clicked, the <xref:System.Windows.Forms.TreeView.BeforeExpand?displayProperty=fullName> event handler is then removed.  
+  
+ This behavior can also be implemented by handling the <xref:System.Windows.Forms.TreeView.BeforeCollapse?displayProperty=fullName> event, as illustrated in the example for that topic.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.TreeView.CheckBoxes%2A?displayProperty=fullName> reference topic.  
+  
+ [!code-cpp[TreeViewShowCheckedNodes1#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewShowCheckedNodes1/CPP/treeviewshowcheckednodes1.cpp#2)]
+ [!code-csharp[TreeViewShowCheckedNodes1#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewShowCheckedNodes1/CS/treeviewshowcheckednodes1.cs#2)]
+ [!code-vb[TreeViewShowCheckedNodes1#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeViewShowCheckedNodes1/VB/treeviewshowcheckednodes1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

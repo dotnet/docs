@@ -1,0 +1,1278 @@
+<Type Name="Conversions" FullName="Microsoft.VisualBasic.CompilerServices.Conversions">
+  <TypeSignature Language="C#" Value="public sealed class Conversions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Conversions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.Conversions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides methods that perform various type conversions.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChangeType">
+      <MemberSignature Language="C#" Value="public static object ChangeType (object Expression, Type TargetType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object ChangeType(object Expression, class System.Type TargetType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ChangeType(System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+        <Parameter Name="TargetType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">The object to convert.</param>
+        <param name="TargetType">The type to which to convert the object.</param>
+        <summary>Converts an object to the specified type.</summary>
+        <returns>An object of the specified target type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackUserDefinedConversion">
+      <MemberSignature Language="C#" Value="public static object FallbackUserDefinedConversion (object Expression, Type TargetType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object FallbackUserDefinedConversion(object Expression, class System.Type TargetType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.FallbackUserDefinedConversion(System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("do not use this method", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+        <Parameter Name="TargetType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">The object to convert.</param>
+        <param name="TargetType">The type to which to convert the object.</param>
+        <summary>Converts an object to the specified type.</summary>
+        <returns>An object of the specified target type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromCharAndCount">
+      <MemberSignature Language="C#" Value="public static string FromCharAndCount (char Value, int Count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string FromCharAndCount(char Value, int32 Count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.FromCharAndCount(System.Char,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Char" />
+        <Parameter Name="Count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Char" /> value to convert.</param>
+        <param name="Count">The byte count of the <see langword="Char" /> value.</param>
+        <summary>Converts a <see cref="T:System.Char" /> value to a string, given a byte count.</summary>
+        <returns>The string representation of the specified value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromCharArray">
+      <MemberSignature Language="C#" Value="public static string FromCharArray (char[] Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string FromCharArray(char[] Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.FromCharArray(System.Char[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Char[]" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Char" /> array to convert.</param>
+        <summary>Converts a <see cref="T:System.Char" /> array to a string.</summary>
+        <returns>The string representation of the specified array.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromCharArraySubset">
+      <MemberSignature Language="C#" Value="public static string FromCharArraySubset (char[] Value, int StartIndex, int Length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string FromCharArraySubset(char[] Value, int32 StartIndex, int32 Length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.FromCharArraySubset(System.Char[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Char[]" />
+        <Parameter Name="StartIndex" Type="System.Int32" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Char" /> array to convert.</param>
+        <param name="StartIndex">Zero-based index of the start position.</param>
+        <param name="Length">Length of the subset in bytes.</param>
+        <summary>Converts a subset of a <see cref="T:System.Char" /> array to a string.</summary>
+        <returns>The string representation of the specified array from the start position to the specified length.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBoolean">
+      <MemberSignature Language="C#" Value="public static bool ToBoolean (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ToBoolean(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see cref="T:System.Boolean" /> value.</summary>
+        <returns>A <see langword="Boolean" /> value. Returns <see langword="False" /> if the object is null; otherwise, <see langword="True" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBoolean">
+      <MemberSignature Language="C#" Value="public static bool ToBoolean (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ToBoolean(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to a <see cref="T:System.Boolean" /> value.</summary>
+        <returns>A <see langword="Boolean" /> value. Returns <see langword="False" /> if the string is null; otherwise, <see langword="True" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToByte">
+      <MemberSignature Language="C#" Value="public static byte ToByte (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int8 ToByte(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see cref="T:System.Byte" /> value.</summary>
+        <returns>The <see langword="Byte" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToByte">
+      <MemberSignature Language="C#" Value="public static byte ToByte (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int8 ToByte(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to a <see cref="T:System.Byte" /> value.</summary>
+        <returns>The <see langword="Byte" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToChar">
+      <MemberSignature Language="C#" Value="public static char ToChar (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char ToChar(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see cref="T:System.Char" /> value.</summary>
+        <returns>The <see langword="Char" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToChar">
+      <MemberSignature Language="C#" Value="public static char ToChar (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char ToChar(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to a <see cref="T:System.Char" /> value.</summary>
+        <returns>The <see langword="Char" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToCharArrayRankOne">
+      <MemberSignature Language="C#" Value="public static char[] ToCharArrayRankOne (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char[] ToCharArrayRankOne(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a one-dimensional <see cref="T:System.Char" /> array.</summary>
+        <returns>A one-dimensional <see langword="Char" /> array.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToCharArrayRankOne">
+      <MemberSignature Language="C#" Value="public static char[] ToCharArrayRankOne (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char[] ToCharArrayRankOne(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to a one-dimensional <see cref="T:System.Char" /> array.</summary>
+        <returns>A one-dimensional <see langword="Char" /> array.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDate">
+      <MemberSignature Language="C#" Value="public static DateTime ToDate (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime ToDate(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see cref="T:System.DateTime" /> value.</summary>
+        <returns>The <see langword="DateTime" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDate">
+      <MemberSignature Language="C#" Value="public static DateTime ToDate (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime ToDate(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to a <see cref="T:System.DateTime" /> value.</summary>
+        <returns>The <see langword="DateTime" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDecimal">
+      <MemberSignature Language="C#" Value="public static decimal ToDecimal (bool Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal ToDecimal(bool Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Value">A Boolean value to convert.</param>
+        <summary>Converts a <see cref="T:System.Boolean" /> value to a <see cref="T:System.Decimal" /> value.</summary>
+        <returns>The <see langword="Decimal" /> value of the Boolean value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDecimal">
+      <MemberSignature Language="C#" Value="public static decimal ToDecimal (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal ToDecimal(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see cref="T:System.Decimal" /> value.</summary>
+        <returns>The <see langword="Decimal" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDecimal">
+      <MemberSignature Language="C#" Value="public static decimal ToDecimal (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal ToDecimal(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to a <see cref="T:System.Decimal" /> value.</summary>
+        <returns>The <see langword="Decimal" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDouble">
+      <MemberSignature Language="C#" Value="public static double ToDouble (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 ToDouble(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see cref="T:System.Double" /> value.</summary>
+        <returns>The <see langword="Double" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDouble">
+      <MemberSignature Language="C#" Value="public static double ToDouble (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 ToDouble(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to a <see cref="T:System.Double" /> value.</summary>
+        <returns>The <see langword="Double" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToGenericParameter&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T ToGenericParameter&lt;T&gt; (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T ToGenericParameter&lt;T&gt;(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToGenericParameter``1(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type to convert <c>Value</c> to.</typeparam>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a generic type <paramref name="T" />.</summary>
+        <returns>A structure or object of generic type <paramref name="T" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToInteger">
+      <MemberSignature Language="C#" Value="public static int ToInteger (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 ToInteger(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to an integer value.</summary>
+        <returns>The <see langword="int" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToInteger">
+      <MemberSignature Language="C#" Value="public static int ToInteger (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 ToInteger(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to an integer value.</summary>
+        <returns>The <see langword="int" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToLong">
+      <MemberSignature Language="C#" Value="public static long ToLong (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int64 ToLong(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see langword="Long" /> value.</summary>
+        <returns>The <see langword="Long" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToLong">
+      <MemberSignature Language="C#" Value="public static long ToLong (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int64 ToLong(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to a <see langword="Long" /> value.</summary>
+        <returns>The <see langword="Long" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSByte">
+      <MemberSignature Language="C#" Value="public static sbyte ToSByte (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int8 ToSByte(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to an <see cref="T:System.SByte" /> value.</summary>
+        <returns>The <see langword="SByte" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.Object)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ToSByte">
+      <MemberSignature Language="C#" Value="public static sbyte ToSByte (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int8 ToSByte(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to an <see cref="T:System.SByte" /> value.</summary>
+        <returns>The <see langword="SByte" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.String)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ToShort">
+      <MemberSignature Language="C#" Value="public static short ToShort (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int16 ToShort(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see langword="Short" /> value.</summary>
+        <returns>The <see langword="Short" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToShort">
+      <MemberSignature Language="C#" Value="public static short ToShort (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int16 ToShort(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to a <see langword="Short" /> value.</summary>
+        <returns>The <see langword="Short" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSingle">
+      <MemberSignature Language="C#" Value="public static float ToSingle (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float32 ToSingle(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see cref="T:System.Single" /> value.</summary>
+        <returns>The <see langword="Single" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSingle">
+      <MemberSignature Language="C#" Value="public static float ToSingle (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float32 ToSingle(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a <see cref="T:System.String" /> to a <see cref="T:System.Single" /> value.</summary>
+        <returns>The <see langword="Single" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (bool Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(bool Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Boolean" /> value to convert.</param>
+        <summary>Converts a <see cref="T:System.Boolean" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Boolean" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (byte Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(unsigned int8 Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Byte" /> value to convert.</param>
+        <summary>Converts a <see cref="T:System.Byte" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Byte" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (char Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(char Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Char" /> value to convert.</param>
+        <summary>Converts a <see cref="T:System.Char" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Char" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (DateTime Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(valuetype System.DateTime Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="DateTime" /> value to convert.</param>
+        <summary>Converts a <see cref="T:System.DateTime" /> value to a <see cref="T:System.String" /> value.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="DateTime" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (decimal Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(valuetype System.Decimal Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Decimal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Decimal" /> value to convert.</param>
+        <summary>Converts a <see cref="T:System.Decimal" /> value to a <see cref="T:System.String" /> value.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Decimal" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (double Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(float64 Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Double" /> value to convert.</param>
+        <summary>Converts a <see cref="T:System.Double" /> value to a <see cref="T:System.String" /> value.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Double" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (short Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(int16 Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Short" /> value to convert.</param>
+        <summary>Converts a <see langword="Short" /> value to a <see cref="T:System.String" /> value.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Short" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (int Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(int32 Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="int" /> value to convert.</param>
+        <summary>Converts an integer value to a <see cref="T:System.String" /> value.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="int" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (long Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(int64 Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Long" /> value to convert.</param>
+        <summary>Converts a <see langword="Long" /> value to a <see cref="T:System.String" /> value.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Long" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see cref="T:System.String" /> value.</summary>
+        <returns>The <see langword="String" /> representation of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (float Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(float32 Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Single" /> value to convert.</param>
+        <summary>Converts a <see cref="T:System.Single" /> value (a single-precision floating point number) to a <see cref="T:System.String" /> value.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Single" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (uint Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(unsigned int32 Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Uint" /> value to convert.</param>
+        <summary>Converts a <see langword="uint" /> value to a <see cref="T:System.String" /> value.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Uint" /> value.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int32)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (ulong Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(unsigned int64 Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Ulong" /> value to convert.</param>
+        <summary>Converts a <see langword="Ulong" /> value to a <see cref="T:System.String" /> value.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Ulong" /> value.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int64)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (decimal Value, System.Globalization.NumberFormatInfo NumberFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(valuetype System.Decimal Value, class System.Globalization.NumberFormatInfo NumberFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Decimal,System.Globalization.NumberFormatInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Decimal" />
+        <Parameter Name="NumberFormat" Type="System.Globalization.NumberFormatInfo" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="decimal" /> value to convert.</param>
+        <param name="NumberFormat">The number format to use, according to <see cref="T:System.Globalization.NumberFormatInfo" />.</param>
+        <summary>Converts a <see cref="T:System.Decimal" /> value to a <see cref="T:System.String" /> value, using the specified number format.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Decimal" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (double Value, System.Globalization.NumberFormatInfo NumberFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(float64 Value, class System.Globalization.NumberFormatInfo NumberFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Double,System.Globalization.NumberFormatInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Double" />
+        <Parameter Name="NumberFormat" Type="System.Globalization.NumberFormatInfo" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Double" /> value to convert.</param>
+        <param name="NumberFormat">The number format to use, according to <see cref="T:System.Globalization.NumberFormatInfo" />.</param>
+        <summary>Converts a <see cref="T:System.Double" /> value to a <see cref="T:System.String" /> value, using the specified number format.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Double" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (float Value, System.Globalization.NumberFormatInfo NumberFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string ToString(float32 Value, class System.Globalization.NumberFormatInfo NumberFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Single,System.Globalization.NumberFormatInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Single" />
+        <Parameter Name="NumberFormat" Type="System.Globalization.NumberFormatInfo" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The <see langword="Single" /> value to convert.</param>
+        <param name="NumberFormat">The number format to use, according to <see cref="T:System.Globalization.NumberFormatInfo" />.</param>
+        <summary>Converts a <see cref="T:System.Single" /> value to a <see cref="T:System.String" /> value, using the specified number format.</summary>
+        <returns>The <see langword="String" /> representation of the <see langword="Single" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToUInteger">
+      <MemberSignature Language="C#" Value="public static uint ToUInteger (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int32 ToUInteger(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see langword="Uint" /> value.</summary>
+        <returns>The <see langword="Uint" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.Object)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ToUInteger">
+      <MemberSignature Language="C#" Value="public static uint ToUInteger (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int32 ToUInteger(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to a <see langword="Uint" /> value.</summary>
+        <returns>The <see langword="Uint" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.String)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ToULong">
+      <MemberSignature Language="C#" Value="public static ulong ToULong (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int64 ToULong(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see langword="Ulong" /> value.</summary>
+        <returns>The <see langword="Ulong" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.Object)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ToULong">
+      <MemberSignature Language="C#" Value="public static ulong ToULong (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int64 ToULong(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to a <see langword="Ulong" /> value.</summary>
+        <returns>The <see langword="Ulong" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.String)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ToUShort">
+      <MemberSignature Language="C#" Value="public static ushort ToUShort (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int16 ToUShort(object Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The object to convert.</param>
+        <summary>Converts an object to a <see langword="Ushort" /> value.</summary>
+        <returns>The <see langword="Ushort" /> value of the object.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.Object)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ToUShort">
+      <MemberSignature Language="C#" Value="public static ushort ToUShort (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int16 ToUShort(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">The string to convert.</param>
+        <summary>Converts a string to a <see langword="Ushort" /> value.</summary>
+        <returns>The <see langword="Ushort" /> value of the string.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.String)" />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

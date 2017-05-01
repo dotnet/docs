@@ -1,0 +1,1586 @@
+<Type Name="ClientScriptManager" FullName="System.Web.UI.ClientScriptManager">
+  <TypeSignature Language="C#" Value="public sealed class ClientScriptManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientScriptManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ClientScriptManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines methods for managing client scripts in Web applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ClientScriptManager> class is used to manage client scripts and add them to Web applications. You can get a reference to the <xref:System.Web.UI.ClientScriptManager> class from the <xref:System.Web.UI.Page.ClientScript%2A> property of the <xref:System.Web.UI.Page> object.  
+  
+ You can add a client script to a Web page declaratively by including the script in the HTML markup of the page. However, there are situations when adding client script dynamically is needed. To add a script dynamically, use the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method, the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude%2A> method, the <xref:System.Web.UI.ClientScriptManager.RegisterStartupScript%2A> method, or the <xref:System.Web.UI.ClientScriptManager.RegisterOnSubmitStatement%2A> method, depending on when and how you want to add the script. For more information, see [How to: Add Client Script Dynamically to ASP.NET Web Pages](http://msdn.microsoft.com/library/e89f1306-e43d-49ae-a66a-e18b71007666).  
+  
+ The <xref:System.Web.UI.ClientScriptManager> class uniquely identifies scripts by a key <xref:System.String> and a <xref:System.Type>. Scripts with the same key and type are considered duplicates. Using the script type helps to avoid confusing similar scripts from different user controls that might be in use on the page.  
+  
+ The <xref:System.Web.UI.ClientScriptManager> class can be used to invoke client callbacks in situations when it is desirable to run server code from the client without performing a postback. This is referred to as performing an out-of-band callback to the server. In a client callback, a client script function sends an asynchronous request to an ASP.NET Web page. The Web page runs a modified version of its normal life cycle to process the callback. Use the <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> method to obtain a reference to a client function that, when invoked, initiates a client callback to a server event. For more information, see [Implementing Client Callbacks Without Postbacks](http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185).  
+  
+> [!NOTE]
+>  Script callbacks will not work in older browsers that do not support the Document Object Model (DOM), and they require that ECMAScript is enabled on the client. To check if the browser supports callbacks, use the <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsCallback%2A> property, which is accessible through the <xref:System.Web.HttpRequest.Browser%2A> property of the ASP.NET intrinsic <xref:System.Web.HttpContext.Request%2A> object.  
+  
+ Use the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method and the <xref:System.Web.UI.ClientScriptManager.GetPostBackClientHyperlink%2A> method to define a client postback event. These methods enable client script functions, when invoked, to cause the server to post back to the page. A client postback event is different from a client callback in that the Web page completes a normal life cycle to process the client postback event.  
+  
+> [!NOTE]
+>  If you are using a <xref:System.Web.UI.WebControls.Button> control and the <xref:System.Web.UI.WebControls.Button.UseSubmitBehavior%2A> property is set to `false`, then you can use the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method to return the client postback event for the <xref:System.Web.UI.WebControls.Button> control.  
+  
+ The <xref:System.Web.UI.WebControls.Button.OnClientClick%2A> property of the <xref:System.Web.UI.WebControls.Button> control, <xref:System.Web.UI.WebControls.ImageButton> control, and <xref:System.Web.UI.WebControls.LinkButton> control can be used to run client script.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method of the <xref:System.Web.UI.ClientScriptManager> class. Two client scripts are defined in the page: `PopupScript`, which displays an alert message when the page is loaded, and `ButtonClickScript`, which defines a client handler for an HTML button's `onClick` event.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager1/cs/page_registerstartupscriptcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager1/vb/page_registerstartupscriptvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCallbackEventReference">
+      <MemberSignature Language="C#" Value="public string GetCallbackEventReference (System.Web.UI.Control control, string argument, string clientCallback, string context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetCallbackEventReference(class System.Web.UI.Control control, string argument, string clientCallback, string context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.Web.UI.Control,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="argument" Type="System.String" />
+        <Parameter Name="clientCallback" Type="System.String" />
+        <Parameter Name="context" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="control">The server <see cref="T:System.Web.UI.Control" /> that handles the client callback. The control must implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface and provide a <see cref="M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)" /> method.</param>
+        <param name="argument">An argument passed from the client script to the server  
+  
+ <see cref="M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)" /> method.</param>
+        <param name="clientCallback">The name of the client event handler that receives the result of the successful server event.</param>
+        <param name="context">The client script that is evaluated on the client prior to initiating the callback. The result of the script is passed back to the client event handler.</param>
+        <summary>Obtains a reference to a client function that, when invoked, initiates a client call back to a server event. The client function for this overloaded method includes a specified control, argument, client script, and context.</summary>
+        <returns>The name of a client function that invokes the client callback.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%28System.Web.UI.Control%2CSystem.String%2CSystem.String%2CSystem.String%29> method performs an out-of-band callback to the server that is a modified version of a page's normal life cycle. For more information, see [Implementing Client Callbacks Without Postbacks](http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185).  
+  
+> [!NOTE]
+>  When the browser is Microsoft Internet Explorer (version 5.0 or later), the script callback mechanism is implemented through the Microsoft.XmlHttp COM object and requires the browser to be set to run ActiveX controls. For other browsers, an XMLHttpRequest using the browser's local Document Object Model (DOM) is used. To check whether a browser supports client callbacks, use the <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsCallback%2A> property. To check whether a browser supports XML over HTTP, use the <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsXmlHttp%2A> property. Both properties are accessible through the <xref:System.Web.HttpRequest.Browser%2A> property of the intrinsic ASP.NET <xref:System.Web.HttpContext.Request%2A> object.  
+  
+ The <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> overload of the <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> method performs a callback synchronously using XML over HTTP. When sending data synchronously in a callback scenario, synchronous callbacks return immediately and do not block the browser. No two synchronous callbacks callback can execute at the same time in the browser. If a second synchronous callback is fired while one is currently pending, the second synchronous callback cancels the first and only the second callback will return.  
+  
+ To send data asynchronously, use one of the overloads that takes the `useAsync` parameter, which is a Boolean value controlling this behavior. In the asynchronous scenario you can have multiple pending callbacks; however, the order in which they return is not guaranteed to match the order in which they were initiated.  
+  
+ Additionally, this overload of the <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> method specifies no client function to handle the case of an error condition generated by the <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> method. To specify a client error callback handler, use one of the overloads that takes the `clientErrorCallback` parameter.  
+  
+ The <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%28System.Web.UI.Control%2CSystem.String%2CSystem.String%2CSystem.String%29> method takes an optional string `argument` parameter and returns a string. To pass in or to receive multiple values, concatenate values in the input or return string, respectively.  
+  
+> [!NOTE]
+>  Avoid using the view state in the implementation of page or control properties that need be updated during script callback operations. If the properties are to survive page requests, you can use session state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use two overloads of the <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> method in a client callback scenario that increments integers.  
+  
+ Two callback mechanisms are shown; the difference between them is the use of the `context` parameter. A `ReceiveServerData1` client callback function is provided using the `context` parameter. In contrast, the `ReceiveServerData2` client callback function is defined in a `<script>` block on the page. A <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> method is the server handler that increments the value that is passed to it and the <xref:System.Web.UI.ICallbackEventHandler.GetCallbackResult%2A> method returns the incremented value as a string. If the <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> method returns an error, then the `ProcessCallBackError` client function is called.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager7#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager7/cs/getcallbackeventreference.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager7#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager7/vb/getcallbackeventreference.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.Control" /> specified is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.Control" /> specified does not implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCallbackEventReference">
+      <MemberSignature Language="C#" Value="public string GetCallbackEventReference (System.Web.UI.Control control, string argument, string clientCallback, string context, bool useAsync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetCallbackEventReference(class System.Web.UI.Control control, string argument, string clientCallback, string context, bool useAsync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.Web.UI.Control,System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="argument" Type="System.String" />
+        <Parameter Name="clientCallback" Type="System.String" />
+        <Parameter Name="context" Type="System.String" />
+        <Parameter Name="useAsync" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="control">The server <see cref="T:System.Web.UI.Control" /> that handles the client callback. The control must implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface and provide a <see cref="M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)" /> method.</param>
+        <param name="argument">An argument passed from the client script to the server  
+  
+ <see cref="M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)" /> method.</param>
+        <param name="clientCallback">The name of the client event handler that receives the result of the successful server event.</param>
+        <param name="context">The client script that is evaluated on the client prior to initiating the callback. The result of the script is passed back to the client event handler.</param>
+        <param name="useAsync">
+          <see langword="true" /> to perform the callback asynchronously; <see langword="false" /> to perform the callback synchronously.</param>
+        <summary>Obtains a reference to a client function that, when invoked, initiates a client call back to server events. The client function for this overloaded method includes a specified control, argument, client script, context, and Boolean value.</summary>
+        <returns>The name of a client function that invokes the client callback.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload of the <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> method requires a `useAsync` parameter, which allows you to perform the client callback asynchronously by setting the value to `true`. The overload versions of this method that do not require the `useAsync` parameter set the value to `false` by default.  
+  
+ For more information on this method, see the remarks for the overload <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.Control" /> specified is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.Control" /> specified does not implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCallbackEventReference">
+      <MemberSignature Language="C#" Value="public string GetCallbackEventReference (string target, string argument, string clientCallback, string context, string clientErrorCallback, bool useAsync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetCallbackEventReference(string target, string argument, string clientCallback, string context, string clientErrorCallback, bool useAsync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.String,System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="argument" Type="System.String" />
+        <Parameter Name="clientCallback" Type="System.String" />
+        <Parameter Name="context" Type="System.String" />
+        <Parameter Name="clientErrorCallback" Type="System.String" />
+        <Parameter Name="useAsync" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="target">The name of a server <see cref="T:System.Web.UI.Control" /> that handles the client callback. The control must implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface and provide a <see cref="M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)" /> method.</param>
+        <param name="argument">An argument passed from the client script to the server  
+  
+ <see cref="M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)" /> method.</param>
+        <param name="clientCallback">The name of the client event handler that receives the result of the successful server event.</param>
+        <param name="context">The client script that is evaluated on the client prior to initiating the callback. The result of the script is passed back to the client event handler.</param>
+        <param name="clientErrorCallback">The name of the client event handler that receives the result when an error occurs in the server event handler.</param>
+        <param name="useAsync">
+          <see langword="true " /> to perform the callback asynchronously; <see langword="false" /> to perform the callback synchronously.</param>
+        <summary>Obtains a reference to a client function that, when invoked, initiates a client call back to server events. The client function for this overloaded method includes a specified target, argument, client script, context, error handler, and Boolean value.</summary>
+        <returns>The name of a client function that invokes the client callback.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload of the <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> method takes a `target` string parameter instead of a <xref:System.Web.UI.Control> parameter. Use this overload when you want the callback to go back to something other than a string containing the <xref:System.Web.UI.Control.UniqueID%2A> of the control.  
+  
+ Additionally, this overload of the <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> method requires a `useAsync` and a `clientErrorCallback` parameter. The `useAsync` parameter allows you to perform the client callback asynchronously by setting the value to `true`. The overload versions of this method that do not require the `useAsync` parameter set the value to `false` by default. The `clientErrorCallback` parameter allows you to define the name of the client function that is called if the server handler, the <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> method, returns an error. The overload versions of this method that do not require the `clientErrorCallback` parameter set the value to null.  
+  
+ For more information on this method, see the remarks for the overload <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use two overloads of the <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> method in a client callback scenario that increments integers.  
+  
+ Two callback mechanisms are shown; the difference between them is the use of the `context` parameter. A `ReceiveServerData1` client callback function is provided using the `context` parameter. In contrast, the `ReceiveServerData2` client callback function is defined in a `<script>` block on the page. A <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> method is the server handler that increments the value that is passed to it and the <xref:System.Web.UI.ICallbackEventHandler.GetCallbackResult%2A> method returns the incremented value as a string. If the <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> method returns an error, then the client function `ProcessCallBackError` is called.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager7#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager7/cs/getcallbackeventreference.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager7#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager7/vb/getcallbackeventreference.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCallbackEventReference">
+      <MemberSignature Language="C#" Value="public string GetCallbackEventReference (System.Web.UI.Control control, string argument, string clientCallback, string context, string clientErrorCallback, bool useAsync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetCallbackEventReference(class System.Web.UI.Control control, string argument, string clientCallback, string context, string clientErrorCallback, bool useAsync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.Web.UI.Control,System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="argument" Type="System.String" />
+        <Parameter Name="clientCallback" Type="System.String" />
+        <Parameter Name="context" Type="System.String" />
+        <Parameter Name="clientErrorCallback" Type="System.String" />
+        <Parameter Name="useAsync" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="control">The server <see cref="T:System.Web.UI.Control" /> that handles the client callback. The control must implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface and provide a <see cref="M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)" /> method.</param>
+        <param name="argument">An argument passed from the client script to the server <see cref="M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)" /> method.</param>
+        <param name="clientCallback">The name of the client event handler that receives the result of the successful server event.</param>
+        <param name="context">The client script that is evaluated on the client prior to initiating the callback. The result of the script is passed back to the client event handler.</param>
+        <param name="clientErrorCallback">The name of the client event handler that receives the result when an error occurs in the server event handler.</param>
+        <param name="useAsync">
+          <see langword="true " />to perform the callback asynchronously; <see langword="false" /> to perform the callback synchronously.</param>
+        <summary>Obtains a reference to a client function that, when invoked, initiates a client call back to server events. The client function for this overloaded method includes a specified control, argument, client script, context, error handler, and Boolean value.</summary>
+        <returns>The name of a client function that invokes the client callback.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload of the <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> method requires a `useAsync` and a `clientErrorCallback` parameter. The `useAsync` parameter allows you to perform the client callback asynchronously by setting the value to `true`. The overload versions of this method that do not require the `useAsync` parameter set the value to `false` by default. The `clientErrorCallback` parameter allows you to define the name of the client function that is called if the server handler (the <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> method) returns an error. The overload versions of this method that do not require the `clientErrorCallback` parameter set the value to null.  
+  
+ For more information on this method, see the remarks for the overload <xref:System.Web.UI.ClientScriptManager.GetCallbackEventReference%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.Control" /> specified is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.Control" /> specified does not implement the <see cref="T:System.Web.UI.ICallbackEventHandler" /> interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostBackClientHyperlink">
+      <MemberSignature Language="C#" Value="public string GetPostBackClientHyperlink (System.Web.UI.Control control, string argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackClientHyperlink(class System.Web.UI.Control control, string argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetPostBackClientHyperlink(System.Web.UI.Control,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="argument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="control">The server control to process the postback.</param>
+        <param name="argument">The parameter passed to the server control.</param>
+        <summary>Gets a reference, with <see langword="javascript:" /> appended to the beginning of it, that can be used in a client event to post back to the server for the specified control and with the specified event arguments.</summary>
+        <returns>A string representing a JavaScript call to the postback function that includes the target control's ID and event arguments.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method requires the control that handles the postback to implement the <xref:System.Web.UI.IPostBackEventHandler> interface. To implement the <xref:System.Web.UI.IPostBackEventHandler> interface for a <xref:System.Web.UI.Page>,  use the  directive.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.GetPostBackClientHyperlink%2A> method. The custom control, `MyControl`, implements the <xref:System.Web.UI.IPostBackEventHandler> interface. When the HTML anchor element on the page is clicked, the <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A> method of the custom control is invoked.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager8#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager8/cs/getpostbackeventreferencecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager8#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager8/vb/getpostbackeventreferencevb.aspx#1)]  -->  
+  
+ The following code example has the same functionality as the preceding one, except that instead of a custom control, the <xref:System.Web.UI.Page> class implements the <xref:System.Web.UI.IPostBackEventHandler> interface.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager8#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager8/cs/getpostbackeventreference2cs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager8#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager8/vb/getpostbackeventreference2vb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostBackClientHyperlink">
+      <MemberSignature Language="C#" Value="public string GetPostBackClientHyperlink (System.Web.UI.Control control, string argument, bool registerForEventValidation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackClientHyperlink(class System.Web.UI.Control control, string argument, bool registerForEventValidation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetPostBackClientHyperlink(System.Web.UI.Control,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="argument" Type="System.String" />
+        <Parameter Name="registerForEventValidation" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="control">The server control to process the postback.</param>
+        <param name="argument">The parameter passed to the server control.</param>
+        <param name="registerForEventValidation">
+          <see langword="true" /> to register the postback event for validation; <see langword="false" /> to not register the post back event for validation.</param>
+        <summary>Gets a reference, with <see langword="javascript:" /> appended to the beginning of it, that can be used in a client event to post back to the server for the specified control with the specified event arguments and Boolean indication whether to register the post back for event validation.</summary>
+        <returns>A string representing a JavaScript call to the postback function that includes the target control's ID and event arguments.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method requires the control that handles the postback to implement the <xref:System.Web.UI.IPostBackEventHandler> interface. To implement the <xref:System.Web.UI.IPostBackEventHandler> interface for a <xref:System.Web.UI.Page>, use the  directive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostBackEventReference">
+      <MemberSignature Language="C#" Value="public string GetPostBackEventReference (System.Web.UI.PostBackOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackEventReference(class System.Web.UI.PostBackOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetPostBackEventReference(System.Web.UI.PostBackOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.Web.UI.PostBackOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">A <see cref="T:System.Web.UI.PostBackOptions" /> that defines the postback.</param>
+        <summary>Returns a string that can be used in a client event to cause postback to the server. The reference string is defined by the specified <see cref="T:System.Web.UI.PostBackOptions" /> instance.</summary>
+        <returns>A string that, when treated as script on the client, initiates the client postback.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To implement the <xref:System.Web.UI.IPostBackEventHandler> interface for a <xref:System.Web.UI.Page>,  use the  directive.  
+  
+ The <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method can be used with the <xref:System.Web.UI.WebControls.Button> control when the <xref:System.Web.UI.WebControls.Button.UseSubmitBehavior%2A> property is `false`. In this scenario, the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method returns the client postback event for the <xref:System.Web.UI.WebControls.Button> control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.PostBackOptions" /> parameter is <see langword="null" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostBackEventReference">
+      <MemberSignature Language="C#" Value="public string GetPostBackEventReference (System.Web.UI.Control control, string argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackEventReference(class System.Web.UI.Control control, string argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetPostBackEventReference(System.Web.UI.Control,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="argument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="control">The server <see cref="T:System.Web.UI.Control" /> that processes the postback on the server.</param>
+        <param name="argument">A string of optional arguments to pass to the control that processes the postback.</param>
+        <summary>Returns a string that can be used in a client event to cause postback to the server. The reference string is defined by the specified control that handles the postback and a string argument of additional event information.</summary>
+        <returns>A string that, when treated as script on the client, initiates the postback.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To implement the <xref:System.Web.UI.IPostBackEventHandler> interface for a <xref:System.Web.UI.Page>,  use the  directive.  
+  
+ The <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method can be used with the <xref:System.Web.UI.WebControls.Button> control when the <xref:System.Web.UI.WebControls.Button.UseSubmitBehavior%2A> property is `false`. In this scenario, the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method returns the client postback event for the <xref:System.Web.UI.WebControls.Button> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method. The custom control, `MyControl`, implements the <xref:System.Web.UI.IPostBackEventHandler> interface. When the button on the page is clicked, the <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A> method of the custom control is invoked.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager8#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager8/cs/getpostbackeventreferencecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager8#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager8/vb/getpostbackeventreferencevb.aspx#1)]  -->  
+  
+ The following code example has the same functionality as the preceding one, except that instead of a custom control, the <xref:System.Web.UI.Page> class implements the <xref:System.Web.UI.IPostBackEventHandler> interface.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager8#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager8/cs/getpostbackeventreference2cs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager8#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager8/vb/getpostbackeventreference2vb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <see cref="T:System.Web.UI.Control" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostBackEventReference">
+      <MemberSignature Language="C#" Value="public string GetPostBackEventReference (System.Web.UI.PostBackOptions options, bool registerForEventValidation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackEventReference(class System.Web.UI.PostBackOptions options, bool registerForEventValidation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetPostBackEventReference(System.Web.UI.PostBackOptions,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.Web.UI.PostBackOptions" />
+        <Parameter Name="registerForEventValidation" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="options">A <see cref="T:System.Web.UI.PostBackOptions" /> that defines the postback.</param>
+        <param name="registerForEventValidation">
+          <see langword="true" /> to register the event reference for validation; otherwise, <see langword="false" />.</param>
+        <summary>Returns a string that can be used in a client event to cause postback to the server. The reference string is defined by the specified <see cref="T:System.Web.UI.PostBackOptions" /> object. Optionally, registers the event reference for validation.</summary>
+        <returns>A string that, when treated as script on the client, initiates the client postback.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To implement the <xref:System.Web.UI.IPostBackEventHandler> interface for a <xref:System.Web.UI.Page> object, use the  directive.  
+  
+ The <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method can be used with the <xref:System.Web.UI.WebControls.Button> control when the <xref:System.Web.UI.WebControls.Button.UseSubmitBehavior%2A> property is `false`. In this scenario, the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method returns the client postback event for the <xref:System.Web.UI.WebControls.Button> control.  
+  
+ If `registerForEventValidation` is `true`, the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%28System.Web.UI.PostBackOptions%2CSystem.Boolean%29> method calls the <xref:System.Web.UI.ClientScriptManager.RegisterForEventValidation%28System.String%2CSystem.String%29> method to register the event reference for validation with a unique control ID that represents the client control that is generating the event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.PostBackOptions" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostBackEventReference">
+      <MemberSignature Language="C#" Value="public string GetPostBackEventReference (System.Web.UI.Control control, string argument, bool registerForEventValidation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackEventReference(class System.Web.UI.Control control, string argument, bool registerForEventValidation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetPostBackEventReference(System.Web.UI.Control,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="argument" Type="System.String" />
+        <Parameter Name="registerForEventValidation" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="control">The server <see cref="T:System.Web.UI.Control" /> that processes the postback on the server.</param>
+        <param name="argument">A string of optional arguments to pass to <c>control</c>.</param>
+        <param name="registerForEventValidation">
+          <see langword="true" /> to register the event reference for validation; otherwise, <see langword="false" />.</param>
+        <summary>Returns a string to use in a client event to cause postback to the server. The reference string is defined by the specified control that handles the postback and a string argument of additional event information. Optionally, registers the event reference for validation.</summary>
+        <returns>A string that, when treated as script on the client, initiates the postback.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To implement the <xref:System.Web.UI.IPostBackEventHandler> interface for a <xref:System.Web.UI.Page>, use the  directive.  
+  
+ The <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method can be used with the <xref:System.Web.UI.WebControls.Button> control when the <xref:System.Web.UI.WebControls.Button.UseSubmitBehavior%2A> property is `false`. In this scenario, the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method returns the client postback event for the <xref:System.Web.UI.WebControls.Button> control.  
+  
+ If `registerForEventValidation` is true, the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%28System.Web.UI.PostBackOptions%2CSystem.Boolean%29> method calls the <xref:System.Web.UI.ClientScriptManager.RegisterForEventValidation%28System.String%2CSystem.String%29> method to register the event reference for validation with a unique control ID that represents the client control that is generating the event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <see cref="T:System.Web.UI.Control" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWebResourceUrl">
+      <MemberSignature Language="C#" Value="public string GetWebResourceUrl (Type type, string resourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetWebResourceUrl(class System.Type type, string resourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetWebResourceUrl(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="resourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the resource.</param>
+        <param name="resourceName">The fully qualified name of the resource in the assembly.</param>
+        <summary>Gets a URL reference to a resource in an assembly.</summary>
+        <returns>The URL reference to the resource.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ClientScriptManager.GetWebResourceUrl%2A> method returns a URL reference to a resource embedded in an assembly. The returned reference is not URL encoded. Resources can be script files, images, or any static file. You specify the type based on the object that will be accessing the resource.  
+  
+ A Web resource registered with the page is uniquely identified by its type and name. Only one resource with a given type and name pair can be registered with the page. Attempting to register a resource that is already registered does not create a duplicate of the registered resource.  
+  
+ The <xref:System.Web.UI.ClientScriptManager.GetWebResourceUrl%2A> method is used in conjunction with the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptResource%2A> method for accessing resources embedded in assemblies. For more information on using resources in applications, see [ASP.NET Web Page Resources Overview](http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.GetWebResourceUrl%2A> method. The *type* parameter in this example is set to the type of class in the assembly containing the resource. The `resourceName` parameter is specified with the fully qualified path to the resource, which includes the default namespace.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager4/cs/clientscriptwebresource.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager4/vb/clientscriptwebresource.aspx#1)]  -->  
+  
+ The following code example demonstrates how to programmatically apply the <xref:System.Web.UI.WebResourceAttribute> metadata attribute to mark the assembly for the resources that will be served. Compile the following class in a class library with a default namespace set to `Samples.AspNet.CS.Controls` or `Samples.AspNet.VB.Controls`, depending on what language you are using.  
+  
+ [!code-csharp[System.Web.UI.ClientScriptManager4#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager4/cs/resource.cs#2)]
+ [!code-vb[System.Web.UI.ClientScriptManager4#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager4/vb/resource.vb#2)]  
+  
+ This example requires a JavaScript file named `Script_include.js`. The .js file is an embedded resource in the assembly that contains the `ClientScriptResourceLabel` object. If you are using [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)], in the Properties window of the class library project, set **Build Action** to **Embedded Resource** when the script file is selected. If you are compiling the library at the command line, use the  switch to embed the resource.  
+  
+```  
+function DoClick() {Form1.Message.value='Text from resource script.'}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The web resource name is <see langword="null" />.  
+  
+ \- or -  
+  
+ The web resource name has a length of zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClientScriptBlockRegistered">
+      <MemberSignature Language="C#" Value="public bool IsClientScriptBlockRegistered (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsClientScriptBlockRegistered(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsClientScriptBlockRegistered(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the client script block to search for.</param>
+        <summary>Determines whether the client script block is registered with the <see cref="T:System.Web.UI.Page" /> object using the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the client script block is registered; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method before calling the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method to avoid registering duplicate scripts. This is particularly important if the script requires a large amount of server resources to create.  
+  
+ A client script is uniquely identified by its key and its type. Scripts with the same key and type are considered duplicates.  
+  
+ This overload of the <xref:System.Web.UI.ClientScriptManager.IsClientScriptBlockRegistered%2A> method calls the overload that takes both a `key` and a `type` parameter with the type set as a <xref:System.Web.UI.Page> object  
+  
+   
+  
+## Examples  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager1/cs/page_registerstartupscriptcs2.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager1/vb/page_registerstartupscriptvb2.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClientScriptBlockRegistered">
+      <MemberSignature Language="C#" Value="public bool IsClientScriptBlockRegistered (Type type, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsClientScriptBlockRegistered(class System.Type type, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsClientScriptBlockRegistered(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the client script block to search for.</param>
+        <param name="key">The key of the client script block to search for.</param>
+        <summary>Determines whether the client script block is registered with the <see cref="T:System.Web.UI.Page" /> object using a key and type.</summary>
+        <returns>
+          <see langword="true" /> if the client script block is registered; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method before calling the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method to avoid registering duplicate scripts. This is particularly important if the script requires a large amount of server resources to create.  
+  
+ A client script is uniquely identified by its key and its type. Scripts with the same key and type are considered duplicates. You specify the type based on the object that will be accessing the resource. For instance, when using a `Page` instance to access the resource, you specify the `Page` type.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.IsClientScriptBlockRegistered%2A> method. Note that, if the logic to check for the existing client script block were removed, there would not be two duplicate client scripts in the HTML source code of the rendered page because the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method checks for duplicates. The benefit of checking is to reduce unnecessary computation.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager1/cs/page_registerstartupscriptcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager1/vb/page_registerstartupscriptvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The client script type is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClientScriptIncludeRegistered">
+      <MemberSignature Language="C#" Value="public bool IsClientScriptIncludeRegistered (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsClientScriptIncludeRegistered(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsClientScriptIncludeRegistered(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the client script include to search for.</param>
+        <summary>Determines whether the client script include is registered with the <see cref="T:System.Web.UI.Page" /> object using the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the client script include is registered; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method before calling the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude%2A> method to avoid registering duplicate scripts. This is particularly important if the script requires a large amount of server resources to create.  
+  
+ A client script include is uniquely identified by its key and its type. Scripts with the same key and type are considered duplicates.  
+  
+ This overload of the <xref:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered%2A> method calls the overload that takes both a `key` and a `type` parameter with the type set as a <xref:System.Web.UI.Page> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClientScriptIncludeRegistered">
+      <MemberSignature Language="C#" Value="public bool IsClientScriptIncludeRegistered (Type type, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsClientScriptIncludeRegistered(class System.Type type, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsClientScriptIncludeRegistered(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the client script include to search for.</param>
+        <param name="key">The key of the client script include to search for.</param>
+        <summary>Determines whether the client script include is registered with the <see cref="T:System.Web.UI.Page" /> object using a key and type.</summary>
+        <returns>
+          <see langword="true" /> if the client script include is registered; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method before calling the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude%2A> method to avoid registering duplicate client script includes. This is particularly important if the script requires a large amount of server resources to create.  
+  
+ A client script include is uniquely identified by its key and its type. Scripts with the same key and type are considered duplicates. You specify the type based on the object that will be accessing the resource. For instance, when using a Page instance to access the resource, you specify the `Page` type.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.IsClientScriptIncludeRegistered%2A> method. Note that, if the logic to check for the existing client script include were removed, there would not be two duplicate client scripts in the HTML source code of the rendered page because the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude%2A> method checks for duplicates. The benefit of checking is to reduce unnecessary computation.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager2/cs/clientscriptincludes.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager2/vb/clientscriptincludes.aspx#1)]  -->  
+  
+ This example requires a JavaScript file named `Script_include.js`, with the following contents:  
+  
+```  
+function DoClick() {Form1.Message.value='Text from include script.'}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The client script include type is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOnSubmitStatementRegistered">
+      <MemberSignature Language="C#" Value="public bool IsOnSubmitStatementRegistered (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOnSubmitStatementRegistered(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsOnSubmitStatementRegistered(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the OnSubmit statement to search for.</param>
+        <summary>Determines whether the OnSubmit statement is registered with the <see cref="T:System.Web.UI.Page" /> object using the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the OnSubmit statement is registered; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method before calling the <xref:System.Web.UI.ClientScriptManager.RegisterOnSubmitStatement%2A> method to avoid registering duplicate OnSubmit statements. This is particularly important if the statement requires a large amount of server resources to create.  
+  
+ A statement is uniquely identified by its key and its type. Statements with the same key and type are considered duplicates.  
+  
+ This overload of the <xref:System.Web.UI.ClientScriptManager.IsOnSubmitStatementRegistered%2A> method calls the overload that takes both a `key` and a `type` parameter with the type set as a <xref:System.Web.UI.Page> object  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOnSubmitStatementRegistered">
+      <MemberSignature Language="C#" Value="public bool IsOnSubmitStatementRegistered (Type type, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOnSubmitStatementRegistered(class System.Type type, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsOnSubmitStatementRegistered(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the OnSubmit statement to search for.</param>
+        <param name="key">The key of the OnSubmit statement to search for.</param>
+        <summary>Determines whether the OnSubmit statement is registered with the <see cref="T:System.Web.UI.Page" /> object using the specified key and type.</summary>
+        <returns>
+          <see langword="true" /> if the OnSubmit statement is registered; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method before calling the <xref:System.Web.UI.ClientScriptManager.RegisterOnSubmitStatement%2A> method to avoid registering duplicate statements. This is particularly important if the statement requires a large amount of server resources to create.  
+  
+ A statement is uniquely identified by its key and its type. Statements with the same key and type are considered duplicates. You specify the type based on the object that will be accessing the resource. For instance, when using a `Page` instance to access the resource, you specify the `Page` type.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.IsOnSubmitStatementRegistered%2A> method. A script named `OnSubmitScript` is registered with the <xref:System.Web.UI.Page> so that when the page's form is submitted the script is invoked.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager3/cs/clientscriptonsubmit.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager3/vb/clientscriptonsubmit.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The OnSubmit statement type is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStartupScriptRegistered">
+      <MemberSignature Language="C#" Value="public bool IsStartupScriptRegistered (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsStartupScriptRegistered(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the startup script to search for.</param>
+        <summary>Determines whether the startup script is registered with the <see cref="T:System.Web.UI.Page" /> object using the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the startup script is registered; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method before calling the <xref:System.Web.UI.ClientScriptManager.RegisterStartupScript%2A> method to avoid registering duplicate scripts. This is particularly important if the script requires a large amount of server resources to create.  
+  
+ A startup script is uniquely identified by its key and its type. Scripts with the same key and type are considered duplicates.  
+  
+ This overload of the <xref:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered%2A> method calls the overload that takes both a string `key` and a `type` parameter with the type set as a <xref:System.Web.UI.Page> object  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStartupScriptRegistered">
+      <MemberSignature Language="C#" Value="public bool IsStartupScriptRegistered (Type type, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsStartupScriptRegistered(class System.Type type, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the startup script to search for.</param>
+        <param name="key">The key of the startup script to search for.</param>
+        <summary>Determines whether the startup script is registered with the <see cref="T:System.Web.UI.Page" /> object using the specified key and type.</summary>
+        <returns>
+          <see langword="true" /> if the startup script is registered; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method before calling the <xref:System.Web.UI.ClientScriptManager.RegisterStartupScript%2A> method to avoid registering duplicate scripts. This is particularly important if the script requires a large amount of server resources to create.  
+  
+ A client startup script is uniquely identified by its key and its type. Scripts with the same key and type are considered duplicates.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered%2A> method. Note that, if the logic to check for the existing startup script block were removed, there would not be two duplicate startup scripts in the HTML source code of the rendered page because the <xref:System.Web.UI.ClientScriptManager.RegisterStartupScript%2A> method checks for duplicates. The benefit of checking is to reduce unnecessary computation.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager1/cs/page_registerstartupscriptcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager1/vb/page_registerstartupscriptvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The startup script type is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterArrayDeclaration">
+      <MemberSignature Language="C#" Value="public void RegisterArrayDeclaration (string arrayName, string arrayValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterArrayDeclaration(string arrayName, string arrayValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterArrayDeclaration(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arrayName" Type="System.String" />
+        <Parameter Name="arrayValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="arrayName">The array name to register.</param>
+        <param name="arrayValue">The array value or values to register.</param>
+        <summary>Registers a JavaScript array declaration with the <see cref="T:System.Web.UI.Page" /> object using an array name and array value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ClientScriptManager.RegisterArrayDeclaration%2A> checks to see whether a registered array exists with the same name as the name specified in the `arrayName` parameter and, if so, adds the values specified in the `arrayValue` parameter. Because the underlying storage mechanism is based on an <xref:System.Collections.ArrayList>, duplicates are allowed. If a registered array with the same name as the `arrayName` parameter does not exist, it is created and the values in the `arrayValue` parameter added to it.  
+  
+ If you want string literals in the resulting JavaScript array, include single quotation marks (') or escaped double quotation marks (\\") in the `arrayValue` parameter. The value of the `arrayValue` parameter should be a single element. If more than one value needs to be added to the array, make multiple calls using the <xref:System.Web.UI.ClientScriptManager.RegisterArrayDeclaration%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.RegisterArrayDeclaration%2A> and <xref:System.Web.UI.ClientScriptManager.RegisterHiddenField%2A> methods. The example registers an array and a hidden value and defines the `OnClick` event of an `<input>` button to calculate the sum of two values of the array and the hidden value.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager5/cs/clientscriptregisterarray.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager5/vb/clientscriptregisterarray.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="arrayName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterClientScriptBlock">
+      <MemberSignature Language="C#" Value="public void RegisterClientScriptBlock (Type type, string key, string script);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterClientScriptBlock(class System.Type type, string key, string script) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock(System.Type,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the client script to register.</param>
+        <param name="key">The key of the client script to register.</param>
+        <param name="script">The client script literal to register.</param>
+        <summary>Registers the client script with the <see cref="T:System.Web.UI.Page" /> object using a type, key, and script literal.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A client script is uniquely identified by its key and its type. Scripts with the same key and type are considered duplicates. Only one script with a given type and key pair can be registered with the page. Attempting to register a script that is already registered does not create a duplicate of the script.  
+  
+ Call the <xref:System.Web.UI.ClientScriptManager.IsClientScriptBlockRegistered%2A> method to determine whether a client script with a given key and type pair is already registered and avoid unnecessarily attempting to add the script.  
+  
+ In this overload of the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method, you must make sure that the script provided in the `script` parameter is wrapped in a `<script>` element block.  
+  
+ The <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method adds a script block to the top of the rendered page. The script blocks are not guaranteed to be output in the order they are registered. If the order of the script blocks is important, use a <xref:System.Text.StringBuilder> object to gather the scripts together in a single string, and then register them all in a single client script block.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager12#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.clientscriptmanager12/cs/default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager12#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.clientscriptmanager12/vb/default.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterClientScriptBlock">
+      <MemberSignature Language="C#" Value="public void RegisterClientScriptBlock (Type type, string key, string script, bool addScriptTags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterClientScriptBlock(class System.Type type, string key, string script, bool addScriptTags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock(System.Type,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+        <Parameter Name="addScriptTags" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the client script to register.</param>
+        <param name="key">The key of the client script to register.</param>
+        <param name="script">The client script literal to register.</param>
+        <param name="addScriptTags">A Boolean value indicating whether to add script tags.</param>
+        <summary>Registers the client script with the <see cref="T:System.Web.UI.Page" /> object using a type, key, script literal, and Boolean value indicating whether to add script tags.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A client script is uniquely identified by its key and its type. Scripts with the same key and type are considered duplicates. Only one script with a given type and key pair can be registered with the page. Attempting to register a script that is already registered does not create a duplicate of the script.  
+  
+ Call the <xref:System.Web.UI.ClientScriptManager.IsClientScriptBlockRegistered%2A> method to determine whether a client script with a given key and type pair is already registered. This lets you avoid unnecessarily attempting to add the script.  
+  
+ In this overload of the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method, you can indicate whether the script provided in the `script` parameter is wrapped with a `<script>` element block by using the `addScriptTags` parameter. Setting `addScriptTags` to `true` indicates that script tags will be added automatically.  
+  
+ The <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method adds a script block to the top of the rendered page. The script blocks are not guaranteed to be output in the order they are registered. If the order of the script blocks is important, use a <xref:System.Text.StringBuilder> object to gather the scripts together in a single string, and then register them all in a single client script block.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock%2A> method. Note that the `addScriptTags` parameter is set to `true` so the beginning and closing script tags are not included with the `script` parameter.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager1/cs/page_registerstartupscriptcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager1/vb/page_registerstartupscriptvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The client script block type is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterClientScriptInclude">
+      <MemberSignature Language="C#" Value="public void RegisterClientScriptInclude (string key, string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterClientScriptInclude(string key, string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the client script include to register.</param>
+        <param name="url">The URL of the client script include to register.</param>
+        <summary>Registers the client script with the <see cref="T:System.Web.UI.Page" /> object using a key and a URL, which enables the script to be called from the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A client script include is uniquely identified by its key and its type. Scripts with the same key and type are considered duplicates. Only one script with a given type and key pair can be registered with the page. Attempting to register a script that is already registered does not create a duplicate of the script.  
+  
+ Call the <xref:System.Web.UI.ClientScriptManager.IsClientScriptIncludeRegistered%2A> method to determine whether a client script include with a given key and type pair is already registered and avoid unnecessarily attempting to add the script.  
+  
+> [!NOTE]
+>  To resolve the client URL, use the <xref:System.Web.UI.Control.ResolveClientUrl%2A> method. This method uses the context of the URL on which it is called to resolve the path.  
+  
+ This overload of the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude%2A> method calls the overload that takes a `key`, a `URL`, and a `type` parameter.  
+  
+ The method adds a script block at the top of the rendered page.  
+  
+   
+  
+## Examples  
+ For related information, including syntax, usage, and an example, see <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterClientScriptInclude">
+      <MemberSignature Language="C#" Value="public void RegisterClientScriptInclude (Type type, string key, string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterClientScriptInclude(class System.Type type, string key, string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude(System.Type,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the client script include to register.</param>
+        <param name="key">The key of the client script include to register.</param>
+        <param name="url">The URL of the client script include to register.</param>
+        <summary>Registers the client script include with the <see cref="T:System.Web.UI.Page" /> object using a type, a key, and a URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload of the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude%2A> method takes *key* and *url* parameters to identify the script, as well as a `type` parameter to specify the identification of the client script include. You specify the type based on the object that will be accessing the resource. For instance, when using a `Page` instance to access the resource, you specify the `Page` type.  
+  
+> [!NOTE]
+>  To resolve the client URL, use the <xref:System.Web.UI.Control.ResolveClientUrl%2A> method. This method uses the context of the URL on which it is called to resolve the path.  
+  
+ This method adds a script block at the top of the rendered page.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude%2A> method. Note that if the logic to check for the existing client script include were removed, there would still not be duplicate client scripts in the rendered page because the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude%2A> method checks for duplicates. The benefit of checking is to reduce unnecessary computation.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager2/cs/clientscriptincludes.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager2/vb/clientscriptincludes.aspx#1)]  -->  
+  
+ This example requires a JavaScript file named Script_include.js with the following contents:  
+  
+```  
+function DoClick() {Form1.Message.value='Text from include script.'}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The client script include type is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The URL is <see langword="null" />.  
+  
+ \- or -  
+  
+ The URL is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterClientScriptResource">
+      <MemberSignature Language="C#" Value="public void RegisterClientScriptResource (Type type, string resourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterClientScriptResource(class System.Type type, string resourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterClientScriptResource(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="resourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the client script resource to register.</param>
+        <param name="resourceName">The name of the client script resource to register.</param>
+        <summary>Registers the client script resource with the <see cref="T:System.Web.UI.Page" /> object using a type and a resource name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptResource%2A> method is used when accessing compiled-in resources from assemblies through the WebResource.axd HTTP handler. The <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptResource%2A> method registers the script with the <xref:System.Web.UI.Page> object and prevents duplicate scripts. This method wraps the contents of the resource URL with a `<script>` element block.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.RegisterClientScriptResource%2A> method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager4/cs/clientscriptwebresource.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager4/vb/clientscriptwebresource.aspx#1)]  -->  
+  
+ The following code example demonstrates how to programmatically apply the <xref:System.Web.UI.WebResourceAttribute> metadata attribute to mark the assembly for the resources that will be served.  
+  
+ [!code-csharp[System.Web.UI.ClientScriptManager4#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager4/cs/resource.cs#2)]
+ [!code-vb[System.Web.UI.ClientScriptManager4#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager4/vb/resource.vb#2)]  
+  
+ This example requires a JavaScript file named `Script_include.js`, with the following contents:  
+  
+```  
+function DoClick() {Form1.Message.value='Text from resource script.'}  
+```  
+  
+ Compile the `Script_include.js` file as a resource in the `Samples.AspNet.CS.Controls` assembly that contains the `ClientScriptResourceLabel` class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The client resource name is <see langword="null" />.  
+  
+ \- or -  
+  
+ The client resource name has a length of zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterExpandoAttribute">
+      <MemberSignature Language="C#" Value="public void RegisterExpandoAttribute (string controlId, string attributeName, string attributeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterExpandoAttribute(string controlId, string attributeName, string attributeValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterExpandoAttribute(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="controlId" Type="System.String" />
+        <Parameter Name="attributeName" Type="System.String" />
+        <Parameter Name="attributeValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="controlId">The <see cref="T:System.Web.UI.Control" /> on the page that contains the custom attribute.</param>
+        <param name="attributeName">The name of the custom attribute to register.</param>
+        <param name="attributeValue">The value of the custom attribute.</param>
+        <summary>Registers a name/value pair as a custom (expando) attribute of the specified control given a control ID, attribute name, and attribute value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ClientScriptManager.RegisterExpandoAttribute%2A> method registers a name/value pair as a custom (expando) attribute on the specified <xref:System.Web.UI.Control>. The expando attribute is set dynamically from JavaScript to preserve XHTML compatibility for the rendered control's markup. Quotes and backslashes in the custom (expando) attribute's values are escaped. If you do not want to escape quotes and backslashes, call the <xref:System.Web.UI.ClientScriptManager.RegisterExpandoAttribute%2A> overload method and set the `encode` parameter to `false`.  
+  
+ If the expando attribute is not found or the control to add the expando attribute to is not found, the client script is still emitted, but it will not affect the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterExpandoAttribute">
+      <MemberSignature Language="C#" Value="public void RegisterExpandoAttribute (string controlId, string attributeName, string attributeValue, bool encode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterExpandoAttribute(string controlId, string attributeName, string attributeValue, bool encode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterExpandoAttribute(System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="controlId" Type="System.String" />
+        <Parameter Name="attributeName" Type="System.String" />
+        <Parameter Name="attributeValue" Type="System.String" />
+        <Parameter Name="encode" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="controlId">The <see cref="T:System.Web.UI.Control" /> on the page that contains the custom attribute.</param>
+        <param name="attributeName">The name of the custom attribute to register.</param>
+        <param name="attributeValue">The value of the custom attribute.</param>
+        <param name="encode">A Boolean value indicating whether to encode the custom attribute to register.</param>
+        <summary>Registers a name/value pair as a custom (expando) attribute of the specified control given a control ID, an attribute name, an attribute value, and a Boolean value indicating whether to encode the attribute value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ClientScriptManager.RegisterExpandoAttribute%2A> method registers a name/value pair as a custom (expando) attribute on the specified <xref:System.Web.UI.Control>. The expando attribute is set dynamically from JavaScript to preserve XHTML compatibility for the rendered control's markup. Set the `encode` parameter to `true` if you need to escape quotes and backslashes in your expando attribute's value.  
+  
+ If the expando attribute is not found or the control to add the expando attribute to is not found, the client script is still emitted, but it will not affect the control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.ClientScriptManager.RegisterExpandoAttribute%2A> method of the <xref:System.Web.UI.ClientScriptManager> class. The client script in the rendered page sets the `title` attribute of a `<span>` element.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager6/cs/clientscriptexpando.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager6/vb/clientscriptexpando.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterForEventValidation">
+      <MemberSignature Language="C#" Value="public void RegisterForEventValidation (string uniqueId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForEventValidation(string uniqueId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uniqueId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uniqueId">A unique ID representing the client control generating the event.</param>
+        <summary>Registers an event reference for validation with a unique control ID representing the client control generating the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information and examples, see the <xref:System.Web.UI.ClientScriptManager.RegisterForEventValidation%2A> method.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.ClientScriptManager.RegisterForEventValidation%2A> method and the <xref:System.Web.UI.ClientScriptManager.ValidateEvent%2A> method in order to register a callback for validation, and how to validate that the callback originated from the page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager9#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager9/cs/eventvalidation2cs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager9#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager9/vb/eventvalidation2vb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterForEventValidation">
+      <MemberSignature Language="C#" Value="public void RegisterForEventValidation (System.Web.UI.PostBackOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForEventValidation(class System.Web.UI.PostBackOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.Web.UI.PostBackOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.Web.UI.PostBackOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">A <see cref="T:System.Web.UI.PostBackOptions" /> object that specifies how client JavaScript is generated to initiate a postback event.</param>
+        <summary>Registers an event reference for validation with <see cref="T:System.Web.UI.PostBackOptions" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information and examples, see the <xref:System.Web.UI.ClientScriptManager.RegisterForEventValidation%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterForEventValidation">
+      <MemberSignature Language="C#" Value="public void RegisterForEventValidation (string uniqueId, string argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForEventValidation(string uniqueId, string argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uniqueId" Type="System.String" />
+        <Parameter Name="argument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uniqueId">A unique ID representing the client control generating the event.</param>
+        <param name="argument">Event arguments passed with the client event.</param>
+        <summary>Registers an event reference for validation with a unique control ID and event arguments representing the client control generating the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.ClientScriptManager.RegisterForEventValidation%2A> method and the <xref:System.Web.UI.ClientScriptManager.ValidateEvent%2A> method to register a callback for validation and to validate that the callback originated from the page. To improve on the validation shown in the example, you could modify the validation `argument` parameter to contain information specific to the user such as an identity or role  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager9/cs/EventValidationCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager9/vb/EventValidationVB.aspx#1)]  -->  
+  
+ The following code example demonstrates using the <xref:System.Web.UI.ClientScriptManager.RegisterForEventValidation%2A> method to register a callback for validation.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.clientscriptmanager10/cs/default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.clientscriptmanager10/vb/default.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The method is called prior to the <see cref="M:System.Web.UI.Page.Render(System.Web.UI.HtmlTextWriter)" /> method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterHiddenField">
+      <MemberSignature Language="C#" Value="public void RegisterHiddenField (string hiddenFieldName, string hiddenFieldInitialValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterHiddenField(string hiddenFieldName, string hiddenFieldInitialValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterHiddenField(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hiddenFieldName" Type="System.String" />
+        <Parameter Name="hiddenFieldInitialValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="hiddenFieldName">The name of the hidden field to register.</param>
+        <param name="hiddenFieldInitialValue">The initial value of the field to register.</param>
+        <summary>Registers a hidden value with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ClientScriptManager.RegisterHiddenField%2A> method creates a hidden `<input>` element on the rendered HTML page.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.RegisterArrayDeclaration%2A> and <xref:System.Web.UI.ClientScriptManager.RegisterHiddenField%2A> methods. The example registers an array and a hidden value and defines the `OnClick` event of an `<input>` button to calculate the sum of two values of the array and the hidden value.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager5/cs/clientscriptregisterarray.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager5/vb/clientscriptregisterarray.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="hiddenFieldName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterOnSubmitStatement">
+      <MemberSignature Language="C#" Value="public void RegisterOnSubmitStatement (Type type, string key, string script);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterOnSubmitStatement(class System.Type type, string key, string script) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterOnSubmitStatement(System.Type,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the OnSubmit statement to register.</param>
+        <param name="key">The key of the OnSubmit statement to register.</param>
+        <param name="script">The script literal of the OnSubmit statement to register.</param>
+        <summary>Registers an OnSubmit statement with the <see cref="T:System.Web.UI.Page" /> object using a type, a key, and a script literal. The statement executes when the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> is submitted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An OnSubmit statement is uniquely identified by its key and its type. Statements with the same key and type are considered duplicates. Only one statement with a given type and key pair can be registered with the page. Attempting to register a statement that is already registered will not create a duplicate of the statement.  
+  
+ Call the <xref:System.Web.UI.ClientScriptManager.IsOnSubmitStatementRegistered%2A> method to determine whether an OnSubmit statement is already registered with a given key and type pair and avoid unnecessarily attempting to add the script.  
+  
+ The `script` parameter of the <xref:System.Web.UI.ClientScriptManager.RegisterOnSubmitStatement%2A> method can contain multiple script commands as long as they are properly delimited with a semicolon (;).  
+  
+ The <xref:System.Web.UI.ClientScriptManager.RegisterOnSubmitStatement%2A> adds a script that is executed before the page is submitted and gives you an opportunity to cancel the submission.  
+  
+ For more information on HTML forms and the `OnSubmit` attribute, see the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.RegisterOnSubmitStatement%2A> method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager3/cs/clientscriptonsubmit.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager3/vb/clientscriptonsubmit.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterStartupScript">
+      <MemberSignature Language="C#" Value="public void RegisterStartupScript (Type type, string key, string script);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterStartupScript(class System.Type type, string key, string script) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterStartupScript(System.Type,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the startup script to register.</param>
+        <param name="key">The key of the startup script to register.</param>
+        <param name="script">The startup script literal to register.</param>
+        <summary>Registers the startup script with the <see cref="T:System.Web.UI.Page" /> object using a type, a key, and a script literal.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A client script is uniquely identified by its key and its type. Scripts with the same key and type are considered duplicates. Only one script with a given type and key pair can be registered with the page. Attempting to register a script that is already registered does not create a duplicate of the script.  
+  
+ Call the <xref:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered%2A> method to determine whether a startup script with a given key and type pair is already registered and avoid unnecessarily attempting to add the script.  
+  
+ In this overload of the <xref:System.Web.UI.ClientScriptManager.RegisterStartupScript%2A> method, you must make sure that the script provided in the `script` parameter is wrapped with a `<script>` element block.  
+  
+ The script block added by the <xref:System.Web.UI.ClientScriptManager.RegisterStartupScript%2A> method executes when the page finishes loading but before the page's <xref:System.Web.UI.Control.OnLoad%2A> event is raised. The script blocks are not guaranteed to be output in the order they are registered. If the order of the script blocks is important, use a <xref:System.Text.StringBuilder> object to gather the scripts together in a single string, and then register them all in a single client script block.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.RegisterStartupScript%2A> method. Note that the beginning and closing script tags are included within the `script` parameter. To have the script tags added based on an additional parameter setting, see the <xref:System.Web.UI.ClientScriptManager.RegisterStartupScript%2A> method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager11#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.clientscriptmanager11/cs/default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager11#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.clientscriptmanager11/vb/default.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterStartupScript">
+      <MemberSignature Language="C#" Value="public void RegisterStartupScript (Type type, string key, string script, bool addScriptTags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterStartupScript(class System.Type type, string key, string script, bool addScriptTags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterStartupScript(System.Type,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+        <Parameter Name="addScriptTags" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the startup script to register.</param>
+        <param name="key">The key of the startup script to register.</param>
+        <param name="script">The startup script literal to register.</param>
+        <param name="addScriptTags">A Boolean value indicating whether to add script tags.</param>
+        <summary>Registers the startup script with the <see cref="T:System.Web.UI.Page" /> object using a type, a key, a script literal, and a Boolean value indicating whether to add script tags.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A startup script is uniquely identified by its key and its type. Scripts with the same key and type are considered duplicates. Only one script with a given type and key pair can be registered with the page. Attempting to register a script that is already registered does not create a duplicate of the script.  
+  
+ Call the <xref:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered%2A> method to determine whether a startup script with a given key and type pair is already registered and avoid unnecessarily attempting to add the script.  
+  
+ In this overload of the <xref:System.Web.UI.ClientScriptManager.RegisterStartupScript%2A> method, you can indicate whether the script provided in the `script` parameter is wrapped with a `<script>` element block by using the `addScriptTags` parameter. Setting `addScriptTags` to `true` indicates that script tags will be added automatically.  
+  
+ The script block added by the <xref:System.Web.UI.ClientScriptManager.RegisterStartupScript%2A> method executes when the page finishes loading but before the page's <xref:System.Web.UI.Control.OnLoad%2A> event is raised. The script blocks are not guaranteed to be output in the order they are registered. If the order of the script blocks is important, use a <xref:System.Text.StringBuilder> object to gather the scripts together in a single string, and then register them all in a single client script block.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.ClientScriptManager.RegisterStartupScript%2A> method. Note that the `addScriptTags` parameter is set to `false` so the beginning and closing script tags are included with the `script` parameter.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager1/cs/page_registerstartupscriptcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager1/vb/page_registerstartupscriptvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateEvent">
+      <MemberSignature Language="C#" Value="public void ValidateEvent (string uniqueId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateEvent(string uniqueId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.ValidateEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uniqueId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uniqueId">A unique ID representing the client control generating the event.</param>
+        <summary>Validates a client event that was registered for event validation using the <see cref="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.String)" /> method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateEvent">
+      <MemberSignature Language="C#" Value="public void ValidateEvent (string uniqueId, string argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateEvent(string uniqueId, string argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.ValidateEvent(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uniqueId" Type="System.String" />
+        <Parameter Name="argument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uniqueId">A unique ID representing the client control generating the event.</param>
+        <param name="argument">The event arguments passed with the client event.</param>
+        <summary>Validates a client event that was registered for event validation using the <see cref="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.String,System.String)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.ClientScriptManager.RegisterForEventValidation%2A> method and the <xref:System.Web.UI.ClientScriptManager.ValidateEvent%2A> method to register a callback for validation and to validate that the callback originated from the page. To improve on the validation shown here, you could modify the validation `argument` parameter to contain information specific to the user such as an identity or role  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ClientScriptManager9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager9/cs/EventValidationCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ClientScriptManager9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager9/vb/EventValidationVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="uniqueId" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

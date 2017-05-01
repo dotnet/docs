@@ -1,0 +1,23 @@
+<Window x:Class="PasswordBoxSnippets.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+    Title="PasswordBoxSnippets" Loaded="WindowLoaded"
+    Width="520" Height="240"
+    >
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+
+      <PasswordBox
+        Name="pwdBox" 
+        MaxLength="64"
+        PasswordChar="#"
+        PasswordChanged="PasswordChangedHandler"  
+      />
+    
+    </Grid>
+</Window>

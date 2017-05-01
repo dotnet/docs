@@ -1,0 +1,737 @@
+<Type Name="AddressHeader" FullName="System.ServiceModel.Channels.AddressHeader">
+  <TypeSignature Language="C#" Value="public abstract class AddressHeader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AddressHeader extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.AddressHeader" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a header that encapsulates an address information item used to identify or interact with an endpoint.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.ServiceModel.Channels.AddressHeader> is characterized by a name and namespace and has a value that contains optional information used to identify or interact with an endpoint. The name can be accessed by the <xref:System.ServiceModel.Channels.AddressHeader.Name%2A> property and the namespace by the <xref:System.ServiceModel.Channels.AddressHeader.Namespace%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to create address headers, access their properties, add them to a service endpoint and host the service using the endpoint.  
+  
+ [!code-csharp[SL_AddressHeader#0](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#0)]
+ [!code-csharp[SL_AddressHeader#0](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#0)]
+ [!code-vb[SL_AddressHeader#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#0)]
+ [!code-vb[SL_AddressHeader#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AddressHeader ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader%2A> to create new <xref:System.ServiceModel.Channels.AddressHeader> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAddressHeader">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressHeader CreateAddressHeader (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.AddressHeader CreateAddressHeader(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.AddressHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The information item for the address header.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class with a specified value.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> that contains the information item specified by the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create an address header using this method.  
+  
+ [!code-csharp[SL_AddressHeader#3](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#3)]
+ [!code-csharp[SL_AddressHeader#3](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#3)]
+ [!code-vb[SL_AddressHeader#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#3)]
+ [!code-vb[SL_AddressHeader#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAddressHeader">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressHeader CreateAddressHeader (object value, System.Runtime.Serialization.XmlObjectSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.AddressHeader CreateAddressHeader(object value, class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader(System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.AddressHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="value">The information item for the address header.</param>
+        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> used to serialize the specified object in the <c>value</c> parameter.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class using a specified formatter to serialize the information item from a specified object.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> that contains the information item specified by the value parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create an address header using this method.  
+  
+ [!code-csharp[SL_AddressHeader#4](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#4)]
+ [!code-csharp[SL_AddressHeader#4](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#4)]
+ [!code-vb[SL_AddressHeader#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#4)]
+ [!code-vb[SL_AddressHeader#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="formatter" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAddressHeader">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressHeader CreateAddressHeader (string name, string ns, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.AddressHeader CreateAddressHeader(string name, string ns, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader(System.String,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.AddressHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the address header.</param>
+        <param name="ns">The namespace of the address header.</param>
+        <param name="value">The information item for the address header.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class with a specified value, name and namespace.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> with the specified <paramref name="name" /> and <paramref name="ns" /> that contains the information item specified by <paramref name="value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create an address header using this method.  
+  
+ [!code-csharp[SL_AddressHeader#5](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#5)]
+ [!code-csharp[SL_AddressHeader#5](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#5)]
+ [!code-vb[SL_AddressHeader#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#5)]
+ [!code-vb[SL_AddressHeader#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> is <see langword="null" /> or <paramref name="name" />.Length == 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAddressHeader">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressHeader CreateAddressHeader (string name, string ns, object value, System.Runtime.Serialization.XmlObjectSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.AddressHeader CreateAddressHeader(string name, string ns, object value, class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader(System.String,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.AddressHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the address header.</param>
+        <param name="ns">The namespace of the address header.</param>
+        <param name="value">The information item for the address header.</param>
+        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> used to serialize the specified object in the <c>value</c> parameter.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class with a specified name and namespace that uses a specified formatter to serialize the information item from a specified object.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> with the specified <paramref name="name" /> and <paramref name="ns" /> that contains the information item specified by <paramref name="value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create an address header using this method.  
+  
+ [!code-csharp[SL_AddressHeader#6](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#6)]
+ [!code-csharp[SL_AddressHeader#6](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#6)]
+ [!code-vb[SL_AddressHeader#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#6)]
+ [!code-vb[SL_AddressHeader#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="serializer" /> is <see langword="null" /> or <paramref name="name" />.Length == 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> to compare with the object contained in the current address header.</param>
+        <summary>Determines whether the information item in a specified object is equal to the object contained in the current address header.</summary>
+        <returns>
+          <see langword="true" /> if the information item in a specified <paramref name="obj" /> is equivalent to the information item contained in the current address header; otherwise, <see langword="false" />. In particular, returns <see langword="false" /> if <paramref name="obj" /> is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Checks for equivalence of serialized canonical XML between the information items.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAddressHeaderReader">
+      <MemberSignature Language="C#" Value="public virtual System.Xml.XmlDictionaryReader GetAddressHeaderReader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlDictionaryReader GetAddressHeaderReader() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.GetAddressHeaderReader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReader</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an XML reader that can serialize the current address header object.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can serialize the current address header object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call this method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides a unique hash code for an address header.</summary>
+        <returns>A unique hash code for the current address header.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the string-based implementation.  
+  
+ <xref:System.ServiceModel.Channels.AddressHeader.GetHashCode%2A> is suitable for use in hashing algorithms and data structures like a hash table.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetValue&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetValue&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.GetValue``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">A class of type <c>T</c> with its fields and properties set to the values supplied by the current address header object.</typeparam>
+        <summary>Deserializes the information item from the current address header to an object of a specified type.</summary>
+        <returns>An instance of a class of type <paramref name="T" /> with its fields and properties set to the values supplied by the current address header object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using this overload, you must supply a type for the generic parameter `T`. The type of the return value is determined by the generic type parameter.  
+  
+ Use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload if you want to use a customized XML formatter.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method.  
+  
+ [!code-csharp[SL_AddressHeader#10](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#10)]
+ [!code-csharp[SL_AddressHeader#10](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#10)]
+ [!code-vb[SL_AddressHeader#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#10)]
+ [!code-vb[SL_AddressHeader#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetValue&lt;T&gt; (System.Runtime.Serialization.XmlObjectSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetValue&lt;T&gt;(class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.GetValue``1(System.Runtime.Serialization.XmlObjectSerializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">A class of type <c>T</c> with its fields and properties set to the values supplied by the current address header object.</typeparam>
+        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> used to deserialize the information item from the current address header object.</param>
+        <summary>Deserializes the information item from the current address header to an object of a specified type that uses a specified formatter to serialize this information.</summary>
+        <returns>An instance of a class of type <paramref name="T" /> with its fields and properties set to the values supplied by the current address header object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using this overload, you must supply a type for the generic parameter `T`. The type of the return value is determined by the generic type parameter.  
+  
+ Use this overload only if you want to use a customized XML formatter; otherwise use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601> overload.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="serializer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public abstract string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.AddressHeader.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented, gets the name of the address header.</summary>
+        <value>The name of the address header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to access this property.  
+  
+ [!code-csharp[SL_AddressHeader#1](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#1)]
+ [!code-csharp[SL_AddressHeader#1](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#1)]
+ [!code-vb[SL_AddressHeader#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#1)]
+ [!code-vb[SL_AddressHeader#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public abstract string Namespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.AddressHeader.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented, gets the namespace of the address header.</summary>
+        <value>The namespace of the address header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to access this property.  
+  
+ [!code-csharp[SL_AddressHeader#2](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#2)]
+ [!code-csharp[SL_AddressHeader#2](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#2)]
+ [!code-vb[SL_AddressHeader#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#2)]
+ [!code-vb[SL_AddressHeader#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnWriteAddressHeaderContents">
+      <MemberSignature Language="C#" Value="protected abstract void OnWriteAddressHeaderContents (System.Xml.XmlDictionaryWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteAddressHeaderContents(class System.Xml.XmlDictionaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents(System.Xml.XmlDictionaryWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the address header contents to a stream or file.</param>
+        <summary>When overridden in a derived class, is invoked when the address header contents are written to a stream or file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnWriteStartAddressHeader">
+      <MemberSignature Language="C#" Value="protected virtual void OnWriteStartAddressHeader (System.Xml.XmlDictionaryWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteStartAddressHeader(class System.Xml.XmlDictionaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.OnWriteStartAddressHeader(System.Xml.XmlDictionaryWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the address header to a stream or file.</param>
+        <summary>When overridden in a derived class, is invoked when the address header contents begin to be written to a stream or file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToMessageHeader">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.MessageHeader ToMessageHeader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.MessageHeader ToMessageHeader() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.ToMessageHeader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.MessageHeader</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Wraps the address header as a message header.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.MessageHeader" /> that wraps the current address header.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call this method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAddressHeader">
+      <MemberSignature Language="C#" Value="public void WriteAddressHeader (System.Xml.XmlDictionaryWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAddressHeader(class System.Xml.XmlDictionaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.WriteAddressHeader(System.Xml.XmlDictionaryWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the address header to a stream or file.</param>
+        <summary>Writes the address header to a stream or file using a specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload calls the abstract  
+  
+ <xref:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents%28System.Xml.XmlDictionaryWriter%29> method, so users must provide an implementation of that method to use this method.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAddressHeader">
+      <MemberSignature Language="C#" Value="public void WriteAddressHeader (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAddressHeader(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.WriteAddressHeader(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the address header to a stream or file.</param>
+        <summary>Writes the address header to a stream or file using a specified <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload wraps <xref:System.Xml.XmlWriter> as a <xref:System.Xml.XmlDictionaryWriter> and then the calls the abstract  
+  
+ <xref:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents%28System.Xml.XmlDictionaryWriter%29> method. Users must provide an implementation for that abstract method to use this overload.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAddressHeaderContents">
+      <MemberSignature Language="C#" Value="public void WriteAddressHeaderContents (System.Xml.XmlDictionaryWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAddressHeaderContents(class System.Xml.XmlDictionaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.WriteAddressHeaderContents(System.Xml.XmlDictionaryWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the address header contents to a stream or file.</param>
+        <summary>Writes the address header contents to a stream or file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call this method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartAddressHeader">
+      <MemberSignature Language="C#" Value="public void WriteStartAddressHeader (System.Xml.XmlDictionaryWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartAddressHeader(class System.Xml.XmlDictionaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.WriteStartAddressHeader(System.Xml.XmlDictionaryWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the address header to a stream or file.</param>
+        <summary>Starts to write the address header contents to a stream or file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call this method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="CreateAddressHeader">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object that contains the information item is serialized into the address header by an <xref:System.Runtime.Serialization.XmlObjectSerializer> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetValue&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes the information item from the current address header object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload if you want to use a customized XML formatter; otherwise use the <xref:System.ServiceModel.Channels.AddressHeader.GetValue%60%601> overload.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAddressHeader">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the address header to a stream or file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.AddressHeader.WriteAddressHeader%2A> and <xref:System.ServiceModel.Channels.AddressHeader.WriteAddressHeader%28System.Xml.XmlWriter%29> overloads provide interfaces to use in writing an address header to a stream or file. Both call the abstract <xref:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents%28System.Xml.XmlDictionaryWriter%29> method, so users must provide an implementation of this method to use these overloads.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

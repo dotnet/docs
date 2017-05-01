@@ -1,0 +1,302 @@
+<Type Name="SymLanguageType" FullName="System.Diagnostics.SymbolStore.SymLanguageType">
+  <TypeSignature Language="C#" Value="public class SymLanguageType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymLanguageType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymLanguageType" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Holds the public GUIDs for language types to be used with the symbol store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how <xref:System.Diagnostics.SymbolStore.SymLanguageType> is used when calling <xref:System.Reflection.Emit.ModuleBuilder.DefineDocument%2A>.  
+  
+ [!code-cpp[ModuleBuilder_DefineDocument#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CPP/modulebuilder_definedocument.cpp#1)]
+ [!code-csharp[ModuleBuilder_DefineDocument#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CS/modulebuilder_definedocument.cs#1)]
+ [!code-vb[ModuleBuilder_DefineDocument#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineDocument/VB/modulebuilder_definedocument.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SymLanguageType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymLanguageType.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymLanguageType" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Basic">
+      <MemberSignature Language="C#" Value="public static readonly Guid Basic;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Basic" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.Basic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the GUID of the Basic language type to be used with the symbol store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="C">
+      <MemberSignature Language="C#" Value="public static readonly Guid C;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid C" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.C" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the GUID of the C language type to be used with the symbol store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cobol">
+      <MemberSignature Language="C#" Value="public static readonly Guid Cobol;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Cobol" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.Cobol" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the GUID of the Cobol language type to be used with the symbol store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CPlusPlus">
+      <MemberSignature Language="C#" Value="public static readonly Guid CPlusPlus;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid CPlusPlus" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.CPlusPlus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the GUID of the C++ language type to be used with the symbol store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CSharp">
+      <MemberSignature Language="C#" Value="public static readonly Guid CSharp;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid CSharp" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.CSharp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the GUID of the C# language type to be used with the symbol store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ILAssembly">
+      <MemberSignature Language="C#" Value="public static readonly Guid ILAssembly;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid ILAssembly" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.ILAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the GUID of the ILAssembly language type to be used with the symbol store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Java">
+      <MemberSignature Language="C#" Value="public static readonly Guid Java;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Java" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.Java" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the GUID of the Java language type to be used with the symbol store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JScript">
+      <MemberSignature Language="C#" Value="public static readonly Guid JScript;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid JScript" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.JScript" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the GUID of the JScript language type to be used with the symbol store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MCPlusPlus">
+      <MemberSignature Language="C#" Value="public static readonly Guid MCPlusPlus;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid MCPlusPlus" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.MCPlusPlus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the GUID of the C++ language type to be used with the symbol store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pascal">
+      <MemberSignature Language="C#" Value="public static readonly Guid Pascal;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Pascal" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.Pascal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the GUID of the Pascal language type to be used with the symbol store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SMC">
+      <MemberSignature Language="C#" Value="public static readonly Guid SMC;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid SMC" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageType.SMC" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the GUID of the SMC language type to be used with the symbol store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

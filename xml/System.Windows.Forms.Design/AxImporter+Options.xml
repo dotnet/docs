@@ -1,0 +1,387 @@
+<Type Name="AxImporter+Options" FullName="System.Windows.Forms.Design.AxImporter+Options">
+  <TypeSignature Language="C#" Value="public sealed class AxImporter.Options" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit AxImporter/Options extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.AxImporter.Options" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a set of options for an <see cref="T:System.Windows.Forms.Design.AxImporter" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Options ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxImporter.Options.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxImporter.Options" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="delaySign">
+      <MemberSignature Language="C#" Value="public bool delaySign;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool delaySign" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.delaySign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether the generated assembly is strongly named and will be signed later.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="genSources">
+      <MemberSignature Language="C#" Value="public bool genSources;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool genSources" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.genSources" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether sources for the type library wrapper should be generated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ignoreRegisteredOcx">
+      <MemberSignature Language="C#" Value="public bool ignoreRegisteredOcx;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool ignoreRegisteredOcx" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.ignoreRegisteredOcx" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether to use only input from the command line instead relying on a registered version.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="keyContainer">
+      <MemberSignature Language="C#" Value="public string keyContainer;" />
+      <MemberSignature Language="ILAsm" Value=".field public string keyContainer" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.keyContainer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the path to the file that contains the strong name key container for the generated assemblies.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="keyFile">
+      <MemberSignature Language="C#" Value="public string keyFile;" />
+      <MemberSignature Language="ILAsm" Value=".field public string keyFile" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.keyFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the path to the file that contains the strong name key for the generated assemblies.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="keyPair">
+      <MemberSignature Language="C#" Value="public System.Reflection.StrongNameKeyPair keyPair;" />
+      <MemberSignature Language="ILAsm" Value=".field public class System.Reflection.StrongNameKeyPair keyPair" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.keyPair" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.StrongNameKeyPair</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the strong name used for the generated assemblies.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="msBuildErrors">
+      <MemberSignature Language="C#" Value="public bool msBuildErrors;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool msBuildErrors" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.msBuildErrors" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether errors are output in the Microsoft Build Engine (MSBuild) format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="noLogo">
+      <MemberSignature Language="C#" Value="public bool noLogo;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool noLogo" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.noLogo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the ActiveX importer tool logo will be displayed when the control is imported.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="outputDirectory">
+      <MemberSignature Language="C#" Value="public string outputDirectory;" />
+      <MemberSignature Language="ILAsm" Value=".field public string outputDirectory" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.outputDirectory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the path to the directory that the generated assemblies will be created in.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="outputName">
+      <MemberSignature Language="C#" Value="public string outputName;" />
+      <MemberSignature Language="ILAsm" Value=".field public string outputName" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.outputName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the filename to generate the ActiveX control wrapper to.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `null`. If this field is `null`, the file name will be a concatenation of "Ax" + the type library name from the assembly + ".dll".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="overwriteRCW">
+      <MemberSignature Language="C#" Value="public bool overwriteRCW;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool overwriteRCW" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.overwriteRCW" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether to overwrite existing files when generating assemblies.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="publicKey">
+      <MemberSignature Language="C#" Value="public byte[] publicKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] publicKey" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.publicKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the public key used to sign the generated assemblies.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="references">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.AxImporter.IReferenceResolver references;" />
+      <MemberSignature Language="ILAsm" Value=".field public class System.Windows.Forms.Design.AxImporter/IReferenceResolver references" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.references" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.AxImporter+IReferenceResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the <see cref="T:System.Windows.Forms.Design.AxImporter.IReferenceResolver" /> to use to resolve types and references when generating assemblies.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="silentMode">
+      <MemberSignature Language="C#" Value="public bool silentMode;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool silentMode" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.silentMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether to compile in silent mode, which generates less displayed information at compile time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="verboseMode">
+      <MemberSignature Language="C#" Value="public bool verboseMode;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool verboseMode" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxImporter.Options.verboseMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether to compile in verbose mode, which generates more displayed information at compile time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this field is set to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,708 @@
+<Type Name="XmlSiteMapProvider" FullName="System.Web.XmlSiteMapProvider">
+  <TypeSignature Language="C#" Value="public class XmlSiteMapProvider : System.Web.StaticSiteMapProvider, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSiteMapProvider extends System.Web.StaticSiteMapProvider implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.XmlSiteMapProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.StaticSiteMapProvider</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>The <see cref="T:System.Web.XmlSiteMapProvider" /> class is derived from the <see cref="T:System.Web.SiteMapProvider" /> class and is the default site map provider for ASP.NET. The <see cref="T:System.Web.XmlSiteMapProvider" /> class generates site map trees from XML files with the file name extension .sitemap.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.XmlSiteMapProvider> class loads site map data from an XML file that follows a known schema. The site map data is bounded by `<siteMap>` tags and consists of nested `<siteMapNode>` tags. Two constraints are imposed by the <xref:System.Web.SiteMapProvider> and <xref:System.Web.XmlSiteMapProvider> classes on the structure of the site map data:  
+  
+-   Only one root node can exist.  
+  
+-   For <xref:System.Web.SiteMapNode> objects that specify URLs, the URLs must be unique within the scope of the provider. (For nodes that do not specify URLs, all keys must be unique.)  
+  
+ The following code example shows an example of an XML file that can be used with the <xref:System.Web.XmlSiteMapProvider>.  
+  
+```  
+<siteMap>  
+  <siteMapNode title="RootNode" description="This is the root node of the site map. There can be only one root node." url="Page1.aspx" >  
+    <siteMapNode title="ChildofRootNode" description="Descriptions do not have to be unique." url="Page2.aspx">  
+      <siteMapNode title="ChildOfChildNode" description="SiteMapNode objects can be nested to any level." url="Page3.aspx"/>  
+    </siteMapNode>  
+    <siteMapNode title="ChildofRootNode" description="Descriptions do not have to be unique." url="Page4.aspx"/>  
+  </siteMapNode>  
+</siteMap>  
+```  
+  
+ The <xref:System.Web.XmlSiteMapProvider> is the default provider for ASP.NET and it reads XML data from a file named Web.sitemap that is located within the directory structure of the ASP.NET application. By default, the Web.sitemap file is located at the application root; however, if you want to change the name or location of the file from which the <xref:System.Web.XmlSiteMapProvider> loads data, you can override the default configuration in your Web.config file. By overriding the default configuration settings in your Web.config file, you can tailor the behavior of the <xref:System.Web.XmlSiteMapProvider> for each ASP.NET application, as necessary.  
+  
+ The following code example demonstrates an example Web.config file, where the <xref:System.Web.XmlSiteMapProvider> is still used, but a different site map file is used. Because all providers in a <xref:System.Web.SiteMapProviderCollection> object must be named uniquely, the one that is specified in the Web.config file uses a name other than the default but is also set as the default provider so that it will be used instead of the <xref:System.Web.XmlSiteMapProvider> that is specified in the default ASP.NET configuration.  
+  
+> [!NOTE]
+>  You can change the name of the site navigation data file, but you cannot change its extension. The <xref:System.Web.XmlSiteMapProvider> only reads data from files that are named with the file name extension .sitemap.  
+  
+```  
+<siteMap defaultProvider="MyXmlSiteMapProvider" enabled="true">  
+  <providers>  
+    <add name="MyXmlSiteMapProvider"  
+      description="SiteMap provider that reads in .sitemap files."  
+      type="System.Web.XmlSiteMapProvider, System.Web, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
+      siteMapFile="CustomWeb.sitemap" />  
+  </providers>  
+</siteMap>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSiteMapProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new, unnamed, instance of the <see cref="T:System.Web.XmlSiteMapProvider" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddNode">
+      <MemberSignature Language="C#" Value="protected override void AddNode (System.Web.SiteMapNode node, System.Web.SiteMapNode parentNode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void AddNode(class System.Web.SiteMapNode node, class System.Web.SiteMapNode parentNode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.AddNode(System.Web.SiteMapNode,System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Web.SiteMapNode" />
+        <Parameter Name="parentNode" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Web.SiteMapNode" /> to add to the provider.</param>
+        <param name="parentNode">The <see cref="T:System.Web.SiteMapNode" /> under which to add <c>node</c>.</param>
+        <summary>Adds a <see cref="T:System.Web.SiteMapNode" /> object to the collections that are maintained by the current provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `node` parameter is added to an internal collection, and a parent/child relationship is created between it and `parentNode`.  
+  
+ The <xref:System.Web.XmlSiteMapProvider> class, derived from the <xref:System.Web.StaticSiteMapProvider> class and the default site map provider for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A> property of a <xref:System.Web.SiteMapNode> object as a lookup key in its internal collections, by default. If the <xref:System.Web.SiteMapNode.Url%2A> property of the <xref:System.Web.SiteMapNode> is set, it must be unique within the scope of the provider. The <xref:System.Web.XmlSiteMapProvider.FindSiteMapNode%2A> method attempts to retrieve nodes based on their <xref:System.Web.SiteMapNode.Url%2A>. Otherwise, you can use the <xref:System.Web.SiteMapNode.Key%2A> property, and the corresponding <xref:System.Web.XmlSiteMapProvider.FindSiteMapNodeFromKey%2A> method, to retrieve nodes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="node" /> or <paramref name="parentNode" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The current <see cref="T:System.Web.XmlSiteMapProvider" /> is not the provider associated with <paramref name="node" />.</exception>
+        <exception cref="T:System.InvalidOperationException">A node with the same URL or key is already registered with the <see cref="T:System.Web.XmlSiteMapProvider" />. - or -  
+  
+ A duplicate site map node has been encountered programmatically, such as when linking two site map providers.  
+  
+ \- or -  
+  
+ <paramref name="node" /> is the root node of the <see cref="T:System.Web.XmlSiteMapProvider" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddProvider">
+      <MemberSignature Language="C#" Value="protected virtual void AddProvider (string providerName, System.Web.SiteMapNode parentNode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddProvider(string providerName, class System.Web.SiteMapNode parentNode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.AddProvider(System.String,System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerName" Type="System.String" />
+        <Parameter Name="parentNode" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="providerName">The name of one of the <see cref="T:System.Web.SiteMapProvider" /> objects currently registered in the <see cref="P:System.Web.SiteMap.Providers" />.</param>
+        <param name="parentNode">A site map node of the current site map provider under which the root node and all nodes of the child provider is added.</param>
+        <summary>Links a child site map provider to the current provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.XmlSiteMapProvider.AddProvider%2A> method links `providerName` to the current provider as a child of the current provider. The root node of `providerName` is added to the hierarchy for the current provider as a child node of `parentNode`. Because the parent provider calls the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method on `providerName`, the exceptions that are described in the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method might be thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.SiteMapNode.Provider" /> property of the <paramref name="parentNode" /> does not reference the current provider.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parentNode" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Configuration.Provider.ProviderException">
+          <paramref name="providerName" /> cannot be resolved.</exception>
+        <exception cref="T:System.InvalidOperationException">The site map file used by <paramref name="providerName" /> is already in use within the provider hierarchy.  
+  
+ -or-  
+  
+ The root node returned by <paramref name="providerName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The root node returned by <paramref name="providerName" /> has a URL or key that is already registered with the parent <see cref="T:System.Web.XmlSiteMapProvider" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildSiteMap">
+      <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode BuildSiteMap ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNode BuildSiteMap() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.BuildSiteMap" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Loads the site map information from an XML file and builds it in memory.</summary>
+        <returns>Returns the root <see cref="T:System.Web.SiteMapNode" /> of the site map navigation structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method is called to load and build the site map from persistent storage.  
+  
+ For the default behavior when security trimming is enabled, see "Remarks" in <xref:System.Web.SiteMapProvider.IsAccessibleToUser%2A>.  
+  
+ After the <xref:System.Web.XmlSiteMapProvider> object parses and loads site map data, all loaded <xref:System.Web.SiteMapNode> objects and <xref:System.Web.SiteMapNodeCollection> collections are made read-only. When the <xref:System.Web.XmlSiteMapProvider> parses the <xref:System.Web.SiteMapNode.Url%2A> property from a site map file, it converts application-relative URLs, as well as relative URLs, to application-absolute virtual paths.  
+  
+ The <xref:System.Web.XmlSiteMapProvider> subscribes to file change notifications for the .sitemap file. If any change is made to the .sitemap file, the <xref:System.Web.XmlSiteMapProvider> is reloaded, and the site map structure is rebuilt.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Web.XmlSiteMapProvider> class and initialize it to build a site map from XML data.  
+  
+```csharp  
+<%@ Page Language="c#" %>  
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">  
+ <SCRIPT runat="server">  
+ private void Page_Load(object sender, System.EventArgs e)  
+ {  
+     // Create an instance of the XmlSiteMapProvider class.  
+     XmlSiteMapProvider testXmlProvider = new XmlSiteMapProvider();  
+     NameValueCollection providerAttributes = new NameValueCollection(1);  
+     providerAttributes.Add("siteMapFile","test.sitemap");  
+     // Initialize the provider with a provider name and file name.  
+     testXmlProvider.Initialize("testProvider", providerAttributes);  
+  
+     // The BuildSiteMap method is implicitly called when the   
+     // RootNode propety is accessed.  
+  
+     // Prints "/myvirtualdirectory/WebForm1.aspx"  
+     Response.Write(testXmlProvider.RootNode.Url + "<BR>");  
+     // Prints "/myvirtualdirectory/WebForm2.aspx"  
+     Response.Write(testXmlProvider.CurrentNode.Url + "<BR>");  
+ }  
+```  
+  
+ The preceding code example uses an XML file that is located in the virtual root of the ASP.NET application. The file has the following format:  
+  
+```  
+<siteMap>  
+     <siteMapNode title="RootNode" description="The root page." url="WebForm1.aspx">  
+         <siteMapNode title="CurrentNode" description="Some sub page." url="WebForm2.aspx"/>  
+     </siteMapNode>  
+ </siteMap>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.XmlSiteMapProvider" /> was not initialized properly.  
+  
+ \- or -  
+  
+ A <see langword="siteMapFile" /> is parsed for a <see langword="&lt;siteMapNode&gt;" /> that is not unique.  
+  
+ \- or -  
+  
+ The file specified by the <see langword="siteMapFile" /> does not have the file name extension .sitemap.  
+  
+ \- or -  
+  
+ The file specified by the <see langword="siteMapFile" /> does not exist.  
+  
+ \- or -  
+  
+ A provider configured in the <see langword="provider" /> of a <see langword="&lt;siteMapNode&gt;" /> returns a null root node.</exception>
+        <exception cref="T:System.ArgumentException">The <see langword="siteMapFile" /> is specified but the path lies outside the current directory structure for the application.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">There is an error loading the configuration file.  
+  
+ \- or -  
+  
+ The top element of the configuration file is not <see langword="named &lt;siteMap&gt;" />.  
+  
+ \- or -  
+  
+ More than one top node exists in the configuration file.  
+  
+ \- or -  
+  
+ A child of the <see langword="&lt;siteMap&gt;" /> has a name other than <see langword="&lt;siteMapNode&gt;" />.  
+  
+ \- or -  
+  
+ An unexpected attribute is parsed for the <see langword="&lt;siteMapNode&gt;" />.  
+  
+ \- or -  
+  
+ Sub-elements are nested beneath a <see langword="&lt;siteMapNode&gt;" /> where the <see langword="provider" /> is set.  
+  
+ \- or -  
+  
+ The <see langword="roles" /> of the <see langword="&lt;siteMapNode&gt;" /> contain characters that are not valid.  
+  
+ \- or -  
+  
+ A <see langword="url" /> is parsed for a <see langword="&lt;siteMapNode&gt;" /> that is not unique.  
+  
+ \- or -  
+  
+ A <see cref="T:System.Web.SiteMapNode" /> was encountered with a duplicate value for <see cref="P:System.Web.SiteMapNode.Key" />.  
+  
+ \- or -  
+  
+ The <see cref="P:System.Web.SiteMapNode.ResourceKey" /> or <see cref="P:System.Web.SiteMapNode.Title" /> was specified on a <see cref="T:System.Web.SiteMapNode" /> or a <see langword="custom" /> attribute defined for the node contained an explicit resource expression.  
+  
+ \- or -  
+  
+ An explicit resource expression was applied either to the <see cref="P:System.Web.SiteMapNode.Title" /> or <see cref="P:System.Web.SiteMapNode.Description" /> or to a <see langword="custom" /> attribute of a <see cref="T:System.Web.SiteMapNode" /> but the explicit information was not valid.  
+  
+ \- or -  
+  
+ An error occurred while parsing the <see cref="P:System.Web.SiteMapNode.Url" /> of a <see cref="T:System.Web.SiteMapNode" />.</exception>
+        <exception cref="T:System.Configuration.Provider.ProviderException">A named provider cannot be found in the current site map providers collection.</exception>
+        <exception cref="T:System.ArgumentNullException">A <see langword="&lt;siteMapNode&gt;" /> referencing a site map file contains an empty string for the <see langword="siteMapFile" />.</exception>
+        <exception cref="T:System.Web.HttpException">A <see langword="siteMapFile" /> of a <see langword="&lt;siteMapNode&gt;" /> uses a physical path.  
+  
+ \- or -  
+  
+ An error occurred while attempting to parse the virtual path to the file specified in the <see langword="siteMapFile" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="protected override void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements in the collections of child and parent site map nodes and site map providers that the <see cref="T:System.Web.XmlSiteMapProvider" /> object internally tracks as part of its state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.XmlSiteMapProvider> class overrides the inherited <xref:System.Web.XmlSiteMapProvider.Clear%2A> method to provide additional state cleanup beyond the basic <xref:System.Web.StaticSiteMapProvider.Clear%2A?displayProperty=fullName> implementation, including clearing its child provider tracking and the <xref:System.Web.XmlSiteMapProvider.RootNode%2A> property tracking mechanisms.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentNode">
+      <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode CurrentNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SiteMapNode CurrentNode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.XmlSiteMapProvider.CurrentNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.SiteMapNode" /> object that represents the currently requested page.</summary>
+        <value>The site map object that represents the currently requested page.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Notifies the file monitor of the Web.sitemap file that the <see cref="T:System.Web.XmlSiteMapProvider" /> object no longer requires the file to be monitored.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.XmlSiteMapProvider> class implements the <xref:System.IDisposable.Dispose%2A> method of the <xref:System.IDisposable> interface to release its associated file monitor when the site map file is unloaded from memory. This overload of the <xref:System.Web.XmlSiteMapProvider.Dispose%2A> method calls the overload that takes a <xref:System.Boolean> parameter and sets the value to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Notifies the file monitor of the Web.sitemap file that the <see cref="T:System.Web.XmlSiteMapProvider" /> object no longer requires the file to be monitored. The <see cref="M:System.Web.XmlSiteMapProvider.Dispose(System.Boolean)" /> method takes a Boolean parameter indicating whether the method is called by user code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.XmlSiteMapProvider.Dispose%2A> method returns `true` if the <xref:System.Web.XmlSiteMapProvider.Dispose%2A> method is called by user code. Otherwise it returns `false`, if the <xref:System.Web.XmlSiteMapProvider.Dispose%2A> method is called by the finalizer thread during run time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindSiteMapNode">
+      <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode FindSiteMapNode (string rawUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNode FindSiteMapNode(string rawUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.FindSiteMapNode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rawUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rawUrl">A URL that identifies the page for which to retrieve a <see cref="T:System.Web.SiteMapNode" />.</param>
+        <summary>Retrieves a <see cref="T:System.Web.SiteMapNode" /> object that represents the page at the specified URL.</summary>
+        <returns>A <see cref="T:System.Web.SiteMapNode" /> that represents the page identified by <paramref name="rawURL" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.XmlSiteMapProvider> object overrides the <xref:System.Web.StaticSiteMapProvider.FindSiteMapNode%2A> method to ensure that any linked child providers are searched for the node if the implementation of the base class does not return a node for the specified URL.  
+  
+ The `rawUrl` parameter should be either an absolute virtual path or an application-relative path, depending on how it is specified in the XML site map data file.  
+  
+ The <xref:System.Web.XmlSiteMapProvider> class and classes that are derived from it use the URL of a <xref:System.Web.SiteMapNode> object as a key in the various collections that the class maintains. Therefore, these URLs must be unique within the scope of the site map. If the URL is not found within the immediate site map data that is managed by the <xref:System.Web.XmlSiteMapProvider>, it calls the <xref:System.Web.XmlSiteMapProvider.FindSiteMapNode%2A> on each child provider that is linked to it through the `provider` attribute of its site map nodes.  
+  
+ The <xref:System.Web.XmlSiteMapProvider.FindSiteMapNode%2A> method indirectly calls the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method to retrieve the top-level node in the site map. Therefore, any exceptions that occur for the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method can also occur when calling the <xref:System.Web.XmlSiteMapProvider.FindSiteMapNode%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.Provider.ProviderException">A child provider linked to the current site map provider returned a node that is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindSiteMapNodeFromKey">
+      <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode FindSiteMapNodeFromKey (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNode FindSiteMapNodeFromKey(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.FindSiteMapNodeFromKey(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">A lookup key with which to search for a <see cref="T:System.Web.SiteMapNode" />.</param>
+        <summary>Retrieves a <see cref="T:System.Web.SiteMapNode" /> object based on a specified key.</summary>
+        <returns>A <see cref="T:System.Web.SiteMapNode" /> that represents the page identified by <paramref name="key" />; otherwise, <see langword="null" />, if security trimming is enabled and the node cannot be shown to the current user or the node is not found by <paramref name="key" /> in the node collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.XmlSiteMapProvider> class overrides the <xref:System.Web.StaticSiteMapProvider.FindSiteMapNodeFromKey%2A> method to ensure that any linked child providers are searched for the node, if the implementation for the base class does not return a node for `key`.  
+  
+ The <xref:System.Web.XmlSiteMapProvider> object, derived from the <xref:System.Web.StaticSiteMapProvider> class and the default site map provider for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A> property of a <xref:System.Web.SiteMapNode> object as a lookup key in its internal collections, by default. If the <xref:System.Web.SiteMapNode.Url%2A> property of the <xref:System.Web.SiteMapNode> is set, it must be unique within the scope of the provider. If no <xref:System.Web.SiteMapNode.Url%2A> is specified, the <xref:System.Web.XmlSiteMapProvider> automatically generates a <xref:System.Web.SiteMapNode.Key%2A> to track the nodes.  
+  
+ The <xref:System.Web.XmlSiteMapProvider.FindSiteMapNodeFromKey%2A> method might call the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method on any child providers that are associated with the current provider. Therefore, the exceptions that are described in the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method might be thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.Provider.ProviderException">A child provider linked to the current site map provider returned a node that is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildNodes">
+      <MemberSignature Language="C#" Value="public override System.Web.SiteMapNodeCollection GetChildNodes (System.Web.SiteMapNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNodeCollection GetChildNodes(class System.Web.SiteMapNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.GetChildNodes(System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNodeCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Web.SiteMapNode" /> object to get child nodes from.</param>
+        <summary>Returns the child nodes of the site map.</summary>
+        <returns>A collection of site map nodes.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParentNode">
+      <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode GetParentNode (System.Web.SiteMapNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNode GetParentNode(class System.Web.SiteMapNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.GetParentNode(System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Web.SiteMapNode" /> object to get the parent node from.</param>
+        <summary>Returns the parent node of the site map.</summary>
+        <returns>The parent node of the site map.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRootNodeCore">
+      <MemberSignature Language="C#" Value="protected override System.Web.SiteMapNode GetRootNodeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Web.SiteMapNode GetRootNodeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.GetRootNodeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the top-level node of the current site map data structure.</summary>
+        <returns>A <see cref="T:System.Web.SiteMapNode" /> that represents the top-level node in the current site map data structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.XmlSiteMapProvider.GetRootNodeCore%2A> method calls the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method to retrieve the top-level node in the site map. Therefore, any exceptions that occur for the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method can also occur when calling the <xref:System.Web.XmlSiteMapProvider.GetRootNodeCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (string name, System.Collections.Specialized.NameValueCollection attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="attributes" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="T:System.Web.XmlSiteMapProvider" /> to initialize.</param>
+        <param name="attributes">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that can contain additional attributes to help initialize <c>name</c>. These attributes are read from the <see cref="T:System.Web.XmlSiteMapProvider" /> configuration in the Web.config file.</param>
+        <summary>Initializes the <see cref="T:System.Web.XmlSiteMapProvider" /> object. The <see cref="M:System.Web.XmlSiteMapProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" /> method does not actually build a site map, it only prepares the state of the <see cref="T:System.Web.XmlSiteMapProvider" /> to do so.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.XmlSiteMapProvider> class overrides the inherited <xref:System.Web.XmlSiteMapProvider.Initialize%2A> method to apply several attributes, such as the `siteMapFile` and `description` attributes, to the `attributes` collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Web.XmlSiteMapProvider> class and initialize it to build a site map from XML data.  
+  
+```csharp  
+<%@ Page Language="c#" %>  
+<SCRIPT runat="server">  
+ private void Page_Load(object sender, System.EventArgs e) {  
+     // Create an instance of the XmlSiteMapProvider class.  
+     XmlSiteMapProvider testXmlProvider = new XmlSiteMapProvider();  
+     NameValueCollection providerAttributes = new NameValueCollection(1);  
+     providerAttributes.Add("siteMapFile","test.sitemap");  
+  
+     // Initialize the provider with a provider name and file name.  
+     testXmlProvider.Initialize("testProvider", providerAttributes);  
+  
+     // Call the BuildSiteMap to load the site map information into memory.  
+     testXmlProvider.BuildSiteMap();  
+  
+     // Prints "/myvirtualdirectory/WebForm1.aspx"  
+     Response.Write(testXmlProvider.RootNode.Url + "<BR>");  
+  
+     // Prints "/myvirtualdirectory/WebForm2.aspx"  
+     Response.Write(testXmlProvider.CurrentNode.Url + "<BR>");  
+ }  
+ </SCRIPT>  
+```  
+  
+ The preceding code example uses an XML file that is located in the virtual root of the ASP.NET application. The file has the following format:  
+  
+```  
+<siteMap>  
+  <siteMapNode title="RootNode" description="The root page." url="WebForm1.aspx">  
+    <siteMapNode title="CurrentNode" description="Some sub page." url="WebForm2.aspx"/>  
+  </siteMapNode>  
+</siteMap>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.XmlSiteMapProvider" /> is initialized more than once.</exception>
+        <exception cref="T:System.Web.HttpException">A <see cref="T:System.Web.SiteMapNode" /> used a physical path to reference a site map file.  
+  
+ \- or -  
+  
+ An error occurred while attempting to parse the virtual path supplied for the <see langword="siteMapFile" /> attribute.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveNode">
+      <MemberSignature Language="C#" Value="protected override void RemoveNode (System.Web.SiteMapNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RemoveNode(class System.Web.SiteMapNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.RemoveNode(System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The node to remove from the node collections.</param>
+        <summary>Removes the specified <see cref="T:System.Web.SiteMapNode" /> object from all node collections that are tracked by the provider.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="node" /> is the root node of the site map provider that owns it.  
+  
+ \- or -  
+  
+ <paramref name="node" /> is not managed by the provider or by a provider in the chain of parent providers for this provider.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="node" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveProvider">
+      <MemberSignature Language="C#" Value="protected virtual void RemoveProvider (string providerName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RemoveProvider(string providerName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.RemoveProvider(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="providerName">The name of one of the <see cref="T:System.Web.SiteMapProvider" /> objects currently registered in the <see cref="P:System.Web.SiteMap.Providers" />.</param>
+        <summary>Removes a linked child site map provider from the hierarchy for the current provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.XmlSiteMapProvider.RemoveProvider%2A> method removes `providerName` from the hierarchy for the current provider, including any parent/child relationships that are established by the <xref:System.Web.XmlSiteMapProvider.AddProvider%2A> method between site map nodes of the current provider and the removed provider.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.Provider.ProviderException">
+          <paramref name="providerName" /> cannot be resolved.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="providerName" /> is not a registered child provider of the current site map provider.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="providerName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNode">
+      <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode RootNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SiteMapNode RootNode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.XmlSiteMapProvider.RootNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the root node of the site map.</summary>
+        <value>A <see cref="T:System.Web.SiteMapNode" /> that represents the root node of the site map; otherwise, <see langword="null" />, if security trimming is enabled and the root node is not accessible to the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.XmlSiteMapProvider.RootNode%2A> property calls the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method to retrieve the top-level node in the site map. Therefore, any exceptions that occur for the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method can also occur when accessing the <xref:System.Web.XmlSiteMapProvider.RootNode%2A> property.  
+  
+ The <xref:System.Web.SiteMapProvider> and <xref:System.Web.XmlSiteMapProvider> classes permit only one root <xref:System.Web.SiteMapNode> object in a site map. The <xref:System.Web.XmlSiteMapProvider> class overrides the abstract <xref:System.Web.SiteMapProvider.RootNode%2A?displayProperty=fullName> property and provides a simple implementation to track the root node.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

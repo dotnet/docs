@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Equals keyword"
 ms.assetid: 3f5a7f21-3d54-4479-8197-bab62b34ac2e
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

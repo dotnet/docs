@@ -1,0 +1,209 @@
+<Type Name="SystemGesture" FullName="System.Windows.Input.SystemGesture">
+  <TypeSignature Language="C#" Value="public enum SystemGesture" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SystemGesture extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.SystemGesture" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the available system gestures.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the operating system recognizes system gestures, the <xref:System.Windows.UIElement.StylusSystemGesture> event occurs. Many of the gestures map to traditional mouse events. For example, the Tap system gesture mimics a single left-click on a mouse.  
+  
+   
+  
+## Examples  
+ The following example determines which type of system gesture that raised the <xref:System.Windows.Input.SystemGesture> event. This example assumes that there is a <xref:System.Windows.Controls.InkCanvas> called `inkcanvas1` and that <xref:System.Windows.Input.SystemGesture> is connected to the event handler below.  
+  
+ [!code-csharp[PacketSpy#15](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#15)]
+ [!code-vb[PacketSpy#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#15)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Drag">
+      <MemberSignature Language="C#" Value="Drag" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SystemGesture Drag = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.Drag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Maps to a left drag on a mouse.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Flick">
+      <MemberSignature Language="C#" Value="Flick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SystemGesture Flick = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.Flick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs with a short, quick stroke that translates into a specific command. The action taken by a flick is set system-wide. An application can listen for a <see cref="F:System.Windows.Input.SystemGesture.Flick" /> and prevent it from becoming one of the standard <see cref="T:System.Windows.Input.ApplicationCommands" /> by setting the <see cref="P:System.Windows.RoutedEventArgs.Handled" /> property to true in the <see cref="E:System.Windows.UIElement.StylusSystemGesture" /> event. Only Windows Vista supports flicks.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HoldEnter">
+      <MemberSignature Language="C#" Value="HoldEnter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SystemGesture HoldEnter = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.HoldEnter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that press and hold has occurred.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HoldLeave">
+      <MemberSignature Language="C#" Value="HoldLeave" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SystemGesture HoldLeave = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.HoldLeave" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Not implemented.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HoverEnter">
+      <MemberSignature Language="C#" Value="HoverEnter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SystemGesture HoverEnter = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.HoverEnter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Maps to a mouse hover. This can be used to show ToolTip rollover effects, or other mouse hover behaviors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HoverLeave">
+      <MemberSignature Language="C#" Value="HoverLeave" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SystemGesture HoverLeave = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.HoverLeave" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Maps to a mouse leaving a hover. This can be used to end ToolTip rollover effects or other mouse hover behaviors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SystemGesture None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No system gesture.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightDrag">
+      <MemberSignature Language="C#" Value="RightDrag" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SystemGesture RightDrag = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.RightDrag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Maps to a right drag on a mouse. This can be used to drag an object or selection to a different area and is followed by the appearance of the shortcut menu which provides options for moving the object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightTap">
+      <MemberSignature Language="C#" Value="RightTap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SystemGesture RightTap = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.RightTap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Maps to a right-click on a mouse. This can be used to show a shortcut menu.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tap">
+      <MemberSignature Language="C#" Value="Tap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SystemGesture Tap = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.Tap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Maps to a left-click on a mouse. This can be used to choose a command from the menu or toolbar, take action if a command is chosen, set an insertion point, or show selection feedback.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoFingerTap">
+      <MemberSignature Language="C#" Value="TwoFingerTap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SystemGesture TwoFingerTap = int32(4352)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SystemGesture.TwoFingerTap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Maps to a double-click of a mouse.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

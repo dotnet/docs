@@ -1,0 +1,312 @@
+<Type Name="HttpResponseMessageProperty" FullName="System.ServiceModel.Channels.HttpResponseMessageProperty">
+  <TypeSignature Language="C#" Value="public sealed class HttpResponseMessageProperty : System.ServiceModel.Channels.IMessageProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpResponseMessageProperty extends System.Object implements class System.ServiceModel.Channels.IMessageProperty" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpResponseMessageProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IMessageProperty</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides access to the HTTP response in order to access and respond to the additional information made available for requests over the HTTP protocol.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a general-purpose class that gives you direct access to the HTTP response information, which could be used for encapsulation of HTTP-specific information.  One use of this class is to support services implemented in accordance with the Representational State Transfer (REST) architecture.  
+  
+ This class enables you to support the following scenarios:  
+  
+-   Controls whether an entity body is transmitted.  
+  
+-   Allows HTTP header (key, value) pairs to be set for each response.  
+  
+-   Varies the status code and status description used for each response.  
+  
+ This class can be used by <xref:System.ServiceModel.Channels.HttpTransportBindingElement> and related classes.  
+  
+   
+  
+## Examples  
+ This shows how to use create an instance of the `HttpResponseProperty` class and modify some of its members:  
+  
+ [!code-csharp[S_UEHttpResponseMessageProperty#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uehttpresponsemessageproperty/cs/service.cs#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpResponseMessageProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpResponseMessageProperty.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.HttpResponseMessageProperty" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the object as follows:  
+  
+-   <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusCode%2A> = <xref:System.Net.HttpStatusCode>.  
+  
+-   <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusDescription%2A> is set to `null`.  
+  
+-   <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressEntityBody%2A> = `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public System.Net.WebHeaderCollection Headers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebHeaderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the HTTP headers from the HTTP response.</summary>
+        <value>Returns a <see cref="T:System.Net.WebHeaderCollection" /> that contains the HTTP headers in the HTTP response.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This shows how to get the HTTP headers from the HTTP response:  
+  
+ [!code-csharp[S_UEHttpResponseMessageProperty#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uehttpresponsemessageproperty/cs/service.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public static string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the message property associated with the <see cref="T:System.ServiceModel.Channels.HttpResponseMessageProperty" /> class.</summary>
+        <value>Returns "httpResponse".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This shows how to get the name of the message property:  
+  
+ [!code-csharp[S_UEHttpResponseMessageProperty#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uehttpresponsemessageproperty/cs/service.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusCode">
+      <MemberSignature Language="C#" Value="public System.Net.HttpStatusCode StatusCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.HttpStatusCode StatusCode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the status code of the current HTTP response to which this property is attached.</summary>
+        <value>Returns the <see cref="P:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusCode" /> to send on the HTTP response.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property has one of the values in the <xref:System.Net.HttpStatusCode> enumeration.  
+  
+   
+  
+## Examples  
+ This shows how to get the <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusCode%2A> that is sent on the HTTP response:  
+  
+ [!code-csharp[S_UEHttpResponseMessageProperty#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_uehttpresponsemessageproperty/cs/service.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is set to less than 100 or greater than 599.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusDescription">
+      <MemberSignature Language="C#" Value="public string StatusDescription { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StatusDescription" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the description of the status code of the current HTTP response to which this property is attached.</summary>
+        <value>Returns the <see cref="P:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusDescription" /> to send for the HTTP response.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides a user-friendly description of the returned status code.  
+  
+   
+  
+## Examples  
+ This shows how to get the description of the status code of the current HTTP response to which this property is attached:  
+  
+ [!code-csharp[S_UEHttpResponseMessageProperty#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_uehttpresponsemessageproperty/cs/service.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressEntityBody">
+      <MemberSignature Language="C#" Value="public bool SuppressEntityBody { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressEntityBody" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressEntityBody" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the body of the message is ignored and an empty message is sent.</summary>
+        <value>
+          <see langword="true" /> if the message body is suppressed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used for empty message responses, for example, a service that accepts a POST request and returns a response that contains no message body with StatusCode = 200 and StatusDescription = OK. The <xref:System.ServiceModel.Channels.HttpResponseMessageProperty> associated with this response has this property set to `true`.  
+  
+   
+  
+## Examples  
+ This shows how to suppress the message body:  
+  
+ [!code-csharp[S_UEHttpResponseMessageProperty#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_uehttpresponsemessageproperty/cs/service.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressPreamble">
+      <MemberSignature Language="C#" Value="public bool SuppressPreamble { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressPreamble" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the message preamble is suppressed.</summary>
+        <value>
+          <see langword="true" /> if the message preamble is suppressed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble%2A> property enables users to write content into the <xref:System.Web.HttpResponseBase.OutputStream%2A> from within a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] operation body. This takes effect only on webhosted scenarios. The <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble%2A> property is `false` by default.  
+  
+> [!WARNING]
+>  If the <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble%2A> property is set to `true`, you must set the headers, content-type, status code on the response because WCF will no longer do it.  
+  
+ The following code shows an example of how to do this.  
+  
+```  
+public class Service1 : IService1  
+{  
+   public void GetData()  
+   {  
+      HttpContext hc = HttpContext.Current;  
+      string str = @"<?xml version=""1.0"" encoding=""utf-8"" ?>";  
+      byte[] buffer = new byte[str.Length];  
+      buffer = ASCIIEncoding.UTF8.GetBytes(str);  
+  
+      // enable the property  
+      HttpResponseMessageProperty responseProperty = new HttpResponseMessageProperty();  
+      responseProperty.SuppressPreamble = true;  
+      OperationContext.Current.OutgoingMessageProperties[HttpResponseMessageProperty.Name] = responseProperty;  
+  
+      // set the response   
+      hc.Response.StatusCode = 200;  
+      hc.Response.ContentType = "text/xml; charset=utf-8";  
+      hc.Response.ClearContent();  
+      hc.Response.Flush();  
+  
+      hc.Response.OutputStream.Write(buffer, 0, buffer.Length);  
+     hc.Response.Flush();  
+   }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Channels.IMessageProperty.CreateCopy">
+      <MemberSignature Language="C#" Value="System.ServiceModel.Channels.IMessageProperty IMessageProperty.CreateCopy ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ServiceModel.Channels.IMessageProperty System.ServiceModel.Channels.IMessageProperty.CreateCopy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpResponseMessageProperty.System#ServiceModel#Channels#IMessageProperty#CreateCopy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IMessageProperty</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new copy of the current instance.</summary>
+        <returns>A newly created copy of type <see cref="T:System.ServiceModel.Channels.IMessageProperty" /> of the current instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

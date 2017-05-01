@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 76b9b2a5-b3ba-49da-ba74-82100e1bd21c
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Retrieve the Value of an Element (LINQ to XML) (Visual Basic)

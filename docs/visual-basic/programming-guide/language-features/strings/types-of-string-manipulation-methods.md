@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "string manipulation"
 ms.assetid: 905055cd-7f50-48fb-9eed-b0995af1dc1f
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

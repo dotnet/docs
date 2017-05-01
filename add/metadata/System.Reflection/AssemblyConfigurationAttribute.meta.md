@@ -1,0 +1,20 @@
+---
+uid: System.Reflection.AssemblyConfigurationAttribute
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.AssemblyConfigurationAttribute.#ctor(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.AssemblyConfigurationAttribute.Configuration
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---

@@ -1,0 +1,116 @@
+<Type Name="IConstructedTypeProvider&lt;TType&gt;" FullName="System.Reflection.Metadata.IConstructedTypeProvider&lt;TType&gt;">
+  <TypeSignature Language="C#" Value="public interface IConstructedTypeProvider&lt;TType&gt; : System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConstructedTypeProvider`1&lt;TType&gt; implements class System.Reflection.Metadata.ISZArrayTypeProvider`1&lt;!TType&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.IConstructedTypeProvider`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TType" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TType">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetArrayType">
+      <MemberSignature Language="C#" Value="public TType GetArrayType (TType elementType, System.Reflection.Metadata.ArrayShape shape);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetArrayType(!TType elementType, valuetype System.Reflection.Metadata.ArrayShape shape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.IConstructedTypeProvider`1.GetArrayType(`0,System.Reflection.Metadata.ArrayShape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="TType" />
+        <Parameter Name="shape" Type="System.Reflection.Metadata.ArrayShape" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">To be added.</param>
+        <param name="shape">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByReferenceType">
+      <MemberSignature Language="C#" Value="public TType GetByReferenceType (TType elementType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetByReferenceType(!TType elementType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.IConstructedTypeProvider`1.GetByReferenceType(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="TType" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGenericInstance">
+      <MemberSignature Language="C#" Value="public TType GetGenericInstance (TType genericType, System.Collections.Immutable.ImmutableArray&lt;TType&gt; typeArguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetGenericInstance(!TType genericType, valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; typeArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.IConstructedTypeProvider`1.GetGenericInstance(`0,System.Collections.Immutable.ImmutableArray{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericType" Type="TType" />
+        <Parameter Name="typeArguments" Type="System.Collections.Immutable.ImmutableArray&lt;TType&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="genericType">To be added.</param>
+        <param name="typeArguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPointerType">
+      <MemberSignature Language="C#" Value="public TType GetPointerType (TType elementType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetPointerType(!TType elementType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.IConstructedTypeProvider`1.GetPointerType(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="TType" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

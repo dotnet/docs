@@ -1,0 +1,60 @@
+<Type Name="WrappedOptions" FullName="System.ServiceModel.Channels.WrappedOptions">
+  <TypeSignature Language="C#" Value="public class WrappedOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WrappedOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WrappedOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains information required to perform schema importation using the <see cref="T:System.Xml.Serialization.XmlSerializer" /> and <see cref="T:System.Web.Services.Description.ServiceDescriptionImporter" /> infrastructure.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.WrappedOptions> is used by the <xref:System.ServiceModel.Description.XmlSerializerMessageContractImporter> and the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). The <xref:System.ServiceModel.Channels.WrappedOptions> class controls whether special-casing is used for document-literal styled documents with wrapped parameters. Use the **/wrapped** switch with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool to specify normal casing.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WrappedOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WrappedOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.WrappedOptions" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WrappedFlag">
+      <MemberSignature Language="C#" Value="public bool WrappedFlag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WrappedFlag" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WrappedOptions.WrappedFlag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether special-casing is used for document-wrapped-literal styled documents when parameters are unwrapped.</summary>
+        <value>
+          <see langword="true" /> if special-casing is used for document-wrapped-literal styled documents when parameters are unwrapped; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1181 @@
+<Type Name="ConfigurationElement" FullName="System.Configuration.ConfigurationElement">
+  <TypeSignature Language="C#" Value="public abstract class ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ConfigurationElement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a configuration element within a configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement> is an abstract class that is used to represent an XML element in a configuration file (such as Web.config). An element in a configuration file can contain zero, one, or more child elements.  
+  
+ Because the <xref:System.Configuration.ConfigurationElement> class is defined as abstract, you cannot create an instance of it. You can only derive classes from it. The .NET Framework includes classes that derive from the <xref:System.Configuration.ConfigurationElement> class in order to represent standard XML configuration elements, such as <xref:System.Configuration.ConfigurationSection>. You can also extend the <xref:System.Configuration.ConfigurationElement> class to access custom configuration elements and sections. The example included later in this topic shows how to access custom configuration elements and sections by using custom classes that derive from <xref:System.Configuration.ConfigurationElement>.  
+  
+ You can also extend the standard configuration types such as <xref:System.Configuration.ConfigurationElement>, <xref:System.Configuration.ConfigurationElementCollection>, <xref:System.Configuration.ConfigurationProperty>, and <xref:System.Configuration.ConfigurationSection>. For more information, see the documentation for those classes.  
+  
+ For more information about how to access information in configuration files, see the <xref:System.Configuration.ConfigurationManager> class and the <xref:System.Web.Configuration.WebConfigurationManager> class.  
+  
+   
+  
+## Examples  
+ The following code example shows how to implement a custom <xref:System.Configuration.ConfigurationElement> both as an individual element in a custom section and as a collection of elements in a custom section. The example consists of the following files:  
+  
+-   An app.config file that contains a custom section that is named `MyUrls`. This section contains a simple element (it does not contain any other elements) and a collection of elements. The simple element is named `simple` and the collection is named `urls`.  
+  
+-   A console application. The application reads the contents of the app.config file and writes the information to the console. It uses classes that derive from <xref:System.Configuration.ConfigurationElement>, <xref:System.Configuration.ConfigurationElementCollection>, and <xref:System.Configuration.ConfigurationSection>.  
+  
+-   A class named `UrlsSection` that derives from the <xref:System.Configuration.ConfigurationSection> class. This class is used to access the `MyUrls` section in the configuration file.  
+  
+-   A class named `UrlsCollection` that derives from the <xref:System.Configuration.ConfigurationElementCollection> class. This class is used to access the `urls` collection in the configuration file.  
+  
+-   A class named `UrlConfigElement` that derives from the <xref:System.Configuration.ConfigurationElement> class. This class is used to access the `simple` element and the members of the `urls` collection in the configuration file.  
+  
+ To run the example, perform the following steps:  
+  
+1.  Create a solution that has a console application project and a class library project that is named `ConfigurationElement`.  
+  
+2.  Put the three class files in the class library project and put the other files in the console library project.  
+  
+3.  In both projects set a reference to `System.Configuration`.  
+  
+4.  In the console application project set a project reference to the class library project.  
+  
+  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#151](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#151)]
+ [!code-vb[System.Configuration.ConfigurationElement#151](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#151)]  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#71](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomSection.cs#71)]
+ [!code-vb[System.Configuration.ConfigurationElement#71](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomSection.vb#71)]  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#51](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElementCollection.cs#51)]
+ [!code-vb[System.Configuration.ConfigurationElement#51](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElementCollection.vb#51)]  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#31](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#31)]
+ [!code-vb[System.Configuration.ConfigurationElement#31](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#31)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Every <see cref="T:System.Configuration.ConfigurationElement" /> object creates an internal <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that represents either the element attributes or a collection of child elements.  
+  
+ Non-customizable information and functionality is contained by an <see cref="T:System.Configuration.ElementInformation" /> object provided by the <see cref="P:System.Configuration.ConfigurationElement.ElementInformation" /> property.  
+  
+ You can use either a programmatic or a declarative (attributed) coding model to create a custom configuration element:  
+  
+-   The programmatic model requires that for each element attribute, you create a property to get or set its value and add it to the internal property bag of the underlying <see cref="T:System.Configuration.ConfigurationElement" /> base class. For an example of how to use this model, see the <see cref="T:System.Configuration.ConfigurationSection" /> class.  
+  
+-   The simpler declarative model, also called the attributed model, allows you to define an element attribute by using a property and then decorate it with attributes. These attributes instruct the ASP.NET configuration system about the property types and their default values. With this information, obtained through reflection, the ASP.NET configuration system creates the element property objects for you and performs the required initialization. The example shown later in this topic shows how to use this model.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ConfigurationElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationElement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You create a new instance of the <xref:System.Configuration.ConfigurationElement> class, for example, every time your application needs to add a new element to the related <xref:System.Configuration.ConfigurationElementCollection> collection.  
+  
+   
+  
+## Examples  
+ The following example shows how to use a customized constructor.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#32](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#32)]
+ [!code-vb[System.Configuration.ConfigurationElement#32](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#32)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentConfiguration">
+      <MemberSignature Language="C#" Value="public System.Configuration.Configuration CurrentConfiguration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.Configuration CurrentConfiguration" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.CurrentConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Configuration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the top-level <see cref="T:System.Configuration.Configuration" /> instance that represents the configuration hierarchy that the current <see cref="T:System.Configuration.ConfigurationElement" /> instance belongs to.</summary>
+        <value>The top-level <see cref="T:System.Configuration.Configuration" /> instance that the current <see cref="T:System.Configuration.ConfigurationElement" /> instance belongs to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.CurrentConfiguration%2A> property makes it easy to determine which version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is targeted. The <xref:System.Configuration.Configuration.TargetFramework%2A> property of the top-level <xref:System.Configuration.Configuration> instance indicates the targeted framework version.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeElement">
+      <MemberSignature Language="C#" Value="protected virtual void DeserializeElement (System.Xml.XmlReader reader, bool serializeCollectionKey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void DeserializeElement(class System.Xml.XmlReader reader, bool serializeCollectionKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="serializeCollectionKey" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> that reads from the configuration file.</param>
+        <param name="serializeCollectionKey">
+          <see langword="true" /> to serialize only the collection key properties; otherwise, <see langword="false" />.</param>
+        <summary>Reads XML from the configuration file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to extend the <xref:System.Configuration.ConfigurationElement.DeserializeElement%2A> method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#33](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#33)]
+ [!code-vb[System.Configuration.ConfigurationElement#33](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The element to read is locked.  
+  
+ \- or -  
+  
+ An attribute of the current node is not recognized.  
+  
+ \- or -  
+  
+ The lock status of the current node cannot be determined.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementInformation">
+      <MemberSignature Language="C#" Value="public System.Configuration.ElementInformation ElementInformation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ElementInformation ElementInformation" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.ElementInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ElementInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Configuration.ElementInformation" /> object that contains the non-customizable information and functionality of the <see cref="T:System.Configuration.ConfigurationElement" /> object.</summary>
+        <value>An <see cref="T:System.Configuration.ElementInformation" /> that contains the non-customizable information and functionality of the <see cref="T:System.Configuration.ConfigurationElement" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationElement.ElementInformation%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#80](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#80)]
+ [!code-vb[System.Configuration.ConfigurationElement#80](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#80)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementProperty">
+      <MemberSignature Language="C#" Value="protected virtual System.Configuration.ConfigurationElementProperty ElementProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationElementProperty ElementProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.ElementProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElementProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Configuration.ConfigurationElementProperty" /> object that represents the <see cref="T:System.Configuration.ConfigurationElement" /> object itself.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationElementProperty" /> that represents the <see cref="T:System.Configuration.ConfigurationElement" /> itself.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object compareTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object compareTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareTo" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="compareTo">The object to compare with.</param>
+        <summary>Compares the current <see cref="T:System.Configuration.ConfigurationElement" /> instance to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the object to compare with is equal to the current <see cref="T:System.Configuration.ConfigurationElement" /> instance; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluationContext">
+      <MemberSignature Language="C#" Value="protected System.Configuration.ContextInformation EvaluationContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ContextInformation EvaluationContext" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.EvaluationContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ContextInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Configuration.ContextInformation" /> object for the <see cref="T:System.Configuration.ConfigurationElement" /> object.</summary>
+        <value>The <see cref="T:System.Configuration.ContextInformation" /> for the <see cref="T:System.Configuration.ConfigurationElement" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Configuration.ContextInformation> object provides the context necessary for a <xref:System.Configuration.ConfigurationElement> object to make decisions based upon where it is being evaluated.  
+  
+ The <xref:System.Configuration.ContextInformation> object provides environment details related to an element of the configuration. For example, you can use the <xref:System.Configuration.ContextInformation.IsMachineLevel%2A> property to determine whether a <xref:System.Configuration.ConfigurationElement> was set in Machine.config, or you can determine which hierarchy a <xref:System.Configuration.ConfigurationElement> element belongs to by using the <xref:System.Configuration.ContextInformation.HostingContext%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The current element is not associated with a context.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a unique value representing the current <see cref="T:System.Configuration.ConfigurationElement" /> instance.</summary>
+        <returns>A unique value representing the current <see cref="T:System.Configuration.ConfigurationElement" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTransformedAssemblyString">
+      <MemberSignature Language="C#" Value="protected virtual string GetTransformedAssemblyString (string assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetTransformedAssemblyString(string assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.GetTransformedAssemblyString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The name of the assembly.</param>
+        <summary>Returns the transformed version of the specified assembly name.</summary>
+        <returns>The transformed version of the assembly name. If no transformer is available, the <paramref name="assemblyName" /> parameter value is returned unchanged. The <see cref="P:System.Configuration.Configuration.TypeStringTransformer" /> property is <see langword="null" /> if no transformer is available.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.SerializeElement%2A> method and the <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> method call this method in order to transform an assembly name when an earlier version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is targeted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTransformedTypeString">
+      <MemberSignature Language="C#" Value="protected virtual string GetTransformedTypeString (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetTransformedTypeString(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.GetTransformedTypeString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">The name of the type.</param>
+        <summary>Returns the transformed version of the specified type name.</summary>
+        <returns>The transformed version of the specified type name. If no transformer is available, the <paramref name="typeName" /> parameter value is returned unchanged. The <see cref="P:System.Configuration.Configuration.TypeStringTransformer" /> property is <see langword="null" /> if no transformer is available.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.SerializeElement%2A> method and the <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> method call this method in order to transform a type name when an earlier version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is targeted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasContext">
+      <MemberSignature Language="C#" Value="protected bool HasContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasContext" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.HasContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="P:System.Configuration.ConfigurationElement.CurrentConfiguration" /> property is <see langword="null" />.</summary>
+        <value>false if the <see cref="P:System.Configuration.ConfigurationElement.CurrentConfiguration" /> property is <see langword="null" />; otherwise, <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Init">
+      <MemberSignature Language="C#" Value="protected virtual void Init ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Init() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Init" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the <see cref="T:System.Configuration.ConfigurationElement" /> object to its initial state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeDefault">
+      <MemberSignature Language="C#" Value="protected virtual void InitializeDefault ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void InitializeDefault() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.InitializeDefault" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Used to initialize a default set of values for the <see cref="T:System.Configuration.ConfigurationElement" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Called to set the internal state of the object to appropriate default values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsModified">
+      <MemberSignature Language="C#" Value="protected virtual bool IsModified ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsModified() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.IsModified" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether this configuration element has been modified since it was last saved or loaded, when implemented in a derived class.</summary>
+        <returns>
+          <see langword="true" /> if the element has been modified; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.IsModified%2A> method determines whether this <xref:System.Configuration.ConfigurationElement> object will be written to the configuration file when the <xref:System.Configuration.Configuration.Save%2A> method is called. If the return value is `false`, it is assumed that the configuration file represents the current state of the element.  
+  
+ By default, <xref:System.Configuration.ConfigurationElement.IsModified%2A> returns `true` after a property is set through the indexer to this <xref:System.Configuration.ConfigurationElement> object.  
+  
+ Override the <xref:System.Configuration.ConfigurationElement.IsModified%2A> method to provide custom indication of the state of this <xref:System.Configuration.ConfigurationElement> element.  
+  
+   
+  
+## Examples  
+ The following example shows how to extend <xref:System.Configuration.ConfigurationElement.IsModified%2A>.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#35](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#35)]
+ [!code-vb[System.Configuration.ConfigurationElement#35](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#35)]  
+  
+ The method shown in the previous example is called when a configuration element is modified, as in the following example.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#6)]
+ [!code-vb[System.Configuration.ConfigurationElement#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public virtual bool IsReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.IsReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Configuration.ConfigurationElement" /> object is read-only.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationElement" /> object is read-only; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system defines configuration elements that cannot be modified.  
+  
+ To determine which elements can be modified, use the <xref:System.Configuration.ConfigurationElement.IsReadOnly%2A> method.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationElement.IsReadOnly%2A> method. It is used on a custom section and returns `false`.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#7)]
+ [!code-vb[System.Configuration.ConfigurationElement#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="protected object this[System.Configuration.ConfigurationProperty property] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(class System.Configuration.ConfigurationProperty)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.Item(System.Configuration.ConfigurationProperty)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prop" Type="System.Configuration.ConfigurationProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">To be added.</param>
+        <summary>Gets or sets a property or attribute of this configuration element.</summary>
+        <value>The specified property, attribute, or child element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.ConfigurationElement.Item%2A> property to get or set the values of a <xref:System.Configuration.ConfigurationProperty> object.  
+  
+ In C#, this property is the indexer for the <xref:System.Configuration.ConfigurationSectionCollection> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationException">
+          <paramref name="prop" /> is <see langword="null" /> or does not exist within the element.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">
+          <paramref name="prop" /> is read only or locked.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="protected object this[string property_name] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="property_name">To be added.</param>
+        <summary>Gets or sets a property, attribute, or child element of this configuration element.</summary>
+        <value>The specified property, attribute, or child element</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.ConfigurationElement.Item%2A> property to get or set the values of a <xref:System.Configuration.ConfigurationProperty> object.  
+  
+ In C#, this property is the indexer for the <xref:System.Configuration.ConfigurationSectionCollection> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">
+          <paramref name="prop" /> is read-only or locked.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ListErrors">
+      <MemberSignature Language="C#" Value="protected virtual void ListErrors (System.Collections.IList list);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ListErrors(class System.Collections.IList list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.ListErrors(System.Collections.IList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="errorList" Type="System.Collections.IList" />
+      </Parameters>
+      <Docs>
+        <param name="list">To be added.</param>
+        <summary>Adds the invalid-property errors in this <see cref="T:System.Configuration.ConfigurationElement" /> object, and in all subelements, to the passed list.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockAllAttributesExcept">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationLockCollection LockAllAttributesExcept { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationLockCollection LockAllAttributesExcept" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.LockAllAttributesExcept" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationLockCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of locked attributes.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationLockCollection" /> of locked attributes (properties) for the element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.LockAllAttributesExcept%2A> property allows you to lock all the attributes at once, with the exception of the one you specify. To do that, you use the <xref:System.Configuration.ConfigurationLockCollection.Contains%2A> method, as explained in the Example section.  
+  
+> [!NOTE]
+>  The <xref:System.Configuration.ConfigurationElement.LockAllAttributesExcept%2A> property allows you to prevent the child configuration elements of the element to which you apply the rule from being modified. Use the <xref:System.Configuration.ConfigurationElement.LockItem%2A> property if you want to put a general lock on the parent element itself and its child elements.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockAllAttributesExcept%2A>.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#9)]
+ [!code-vb[System.Configuration.ConfigurationElement#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you use the <see cref="P:System.Configuration.ConfigurationElement.LockAllAttributesExcept" /> and <see cref="P:System.Configuration.ConfigurationElement.LockAttributes" /> properties at the same time, the most restrictive rule applies.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="LockAllElementsExcept">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationLockCollection LockAllElementsExcept { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationLockCollection LockAllElementsExcept" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.LockAllElementsExcept" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationLockCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of locked elements.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationLockCollection" /> of locked elements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.LockAllElementsExcept%2A> property allows you to lock all the elements at once, except for the one you specify.  
+  
+> [!NOTE]
+>  The <xref:System.Configuration.ConfigurationElement.LockAllElementsExcept%2A> property allows you to prevent the child configuration elements of the element to which you apply the rule from being modified. Use the <xref:System.Configuration.ConfigurationElement.LockItem%2A> property if you want to put a general lock on the element itself and its child elements.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockAllElementsExcept%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#5)]
+ [!code-vb[System.Configuration.ConfigurationElement#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockAttributes">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationLockCollection LockAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationLockCollection LockAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.LockAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationLockCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of locked attributes</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationLockCollection" /> of locked attributes (properties) for the element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property allows you to lock all the attributes you specify.  
+  
+ To do that you use the <xref:System.Configuration.ConfigurationLockCollection.Contains%2A> method, as explained in the Example section.  
+  
+> [!NOTE]
+>  The <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property allows you to prevent the child configuration elements of the element to which you apply the rule from being modified. Use <xref:System.Configuration.ConfigurationElement.LockItem%2A> if you want to put a general lock on the element itself and its child elements.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#8)]
+ [!code-vb[System.Configuration.ConfigurationElement#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you use the <see cref="P:System.Configuration.ConfigurationElement.LockAllAttributesExcept" /> and <see cref="P:System.Configuration.ConfigurationElement.LockAttributes" /> properties at the same time, the most restrictive rule applies.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="LockElements">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationLockCollection LockElements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationLockCollection LockElements" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.LockElements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationLockCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of locked elements.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationLockCollection" /> of locked elements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.LockElements%2A> property allows you to lock all the elements you specify.  
+  
+ To do that, you use the <xref:System.Configuration.ConfigurationLockCollection.Contains%2A> method, as explained in the next example.  
+  
+> [!NOTE]
+>  The <xref:System.Configuration.ConfigurationElement.LockElements%2A> property allows you to prevent the child configuration elements of the element to which you apply the rule from being modified. Use <xref:System.Configuration.ConfigurationElement.LockItem%2A> if you want to put a general lock on the element itself and its child elements.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockElements%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#4)]
+ [!code-vb[System.Configuration.ConfigurationElement#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockItem">
+      <MemberSignature Language="C#" Value="public bool LockItem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LockItem" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.LockItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the element is locked.</summary>
+        <value>
+          <see langword="true" /> if the element is locked; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.ConfigurationElement.LockItem%2A> property if you want to put a general lock on the element itself and its child elements.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationElement.LockItem%2A>.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#3)]
+ [!code-vb[System.Configuration.ConfigurationElement#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The element has already been locked at a higher configuration level.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeserializeUnrecognizedAttribute">
+      <MemberSignature Language="C#" Value="protected virtual bool OnDeserializeUnrecognizedAttribute (string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDeserializeUnrecognizedAttribute(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedAttribute(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the unrecognized attribute.</param>
+        <param name="value">The value of the unrecognized attribute.</param>
+        <summary>Gets a value indicating whether an unknown attribute is encountered during deserialization.</summary>
+        <returns>
+          <see langword="true" /> when an unknown attribute is encountered while deserializing; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedAttribute%2A> is invoked when an unknown attribute is encountered while deserializing the <xref:System.Configuration.ConfigurationElement> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeserializeUnrecognizedElement">
+      <MemberSignature Language="C#" Value="protected virtual bool OnDeserializeUnrecognizedElement (string element, System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDeserializeUnrecognizedElement(string element, class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementName" Type="System.String" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> being used for deserialization.</param>
+        <summary>Gets a value indicating whether an unknown element is encountered during deserialization.</summary>
+        <returns>
+          <see langword="true" /> when an unknown element is encountered while deserializing; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedElement%2A> is invoked when an unknown attribute is encountered while deserializing the <xref:System.Configuration.ConfigurationElement> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The element identified by <paramref name="elementName" /> is locked.  
+  
+ \- or -  
+  
+ One or more of the element's attributes is locked.  
+  
+ \- or -  
+  
+ <paramref name="elementName" /> is unrecognized, or the element has an unrecognized attribute.  
+  
+ \- or -  
+  
+ The element has a Boolean attribute with an invalid value.  
+  
+ \- or -  
+  
+ An attempt was made to deserialize a property more than once.  
+  
+ \- or -  
+  
+ An attempt was made to deserialize a property that is not a valid member of the element.  
+  
+ \- or -  
+  
+ The element cannot contain a CDATA or text element.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRequiredPropertyNotFound">
+      <MemberSignature Language="C#" Value="protected virtual object OnRequiredPropertyNotFound (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object OnRequiredPropertyNotFound(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.OnRequiredPropertyNotFound(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the required attribute that was not found.</param>
+        <summary>Throws an exception when a required property is not found.</summary>
+        <returns>None.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedElement%2A> is invoked when an unknown attribute is encountered while deserializing the <xref:System.Configuration.ConfigurationElement> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">In all cases.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PostDeserialize">
+      <MemberSignature Language="C#" Value="protected virtual void PostDeserialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PostDeserialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.PostDeserialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called after deserialization.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreSerialize">
+      <MemberSignature Language="C#" Value="protected virtual void PreSerialize (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PreSerialize(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.PreSerialize(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> that will be used to serialize the <see cref="T:System.Configuration.ConfigurationElement" />.</param>
+        <summary>Called before serialization.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected virtual System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of properties.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> of properties for the element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.Properties%2A> property, also called the property bag, contains all the properties (attributes) that apply to the element.  
+  
+   
+  
+## Examples  
+ For an example that shows how to use the <xref:System.Configuration.ConfigurationElement.Properties%2A> property, refer to the <xref:System.Configuration.ConfigurationProperty> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="protected virtual void Reset (System.Configuration.ConfigurationElement parentElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="parentElement">The parent node of the configuration element.</param>
+        <summary>Resets the internal state of the <see cref="T:System.Configuration.ConfigurationElement" /> object, including the locks and the properties collections.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetModified">
+      <MemberSignature Language="C#" Value="protected virtual void ResetModified ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void ResetModified() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.ResetModified" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the value of the <see cref="M:System.Configuration.ConfigurationElement.IsModified" /> method to <see langword="false" /> when implemented in a derived class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.ResetModified%2A> method is automatically called after changes to this <xref:System.Configuration.ConfigurationElement> object have been written to the configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeElement">
+      <MemberSignature Language="C#" Value="protected virtual bool SerializeElement (System.Xml.XmlWriter writer, bool serializeCollectionKey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool SerializeElement(class System.Xml.XmlWriter writer, bool serializeCollectionKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.SerializeElement(System.Xml.XmlWriter,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="serializeCollectionKey" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> that writes to the configuration file.</param>
+        <param name="serializeCollectionKey">
+          <see langword="true" /> to serialize only the collection key properties; otherwise, <see langword="false" />.</param>
+        <summary>Writes the contents of this configuration element to the configuration file when implemented in a derived class.</summary>
+        <returns>
+          <see langword="true" /> if any data was actually serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to extend the <xref:System.Configuration.ConfigurationElement.SerializeElement%2A> method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#34](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/CustomElement.cs#34)]
+ [!code-vb[System.Configuration.ConfigurationElement#34](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/CustomElement.vb#34)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The current attribute is locked at a higher configuration level.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeToXmlElement">
+      <MemberSignature Language="C#" Value="protected virtual bool SerializeToXmlElement (System.Xml.XmlWriter writer, string elementName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool SerializeToXmlElement(class System.Xml.XmlWriter writer, string elementName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.SerializeToXmlElement(System.Xml.XmlWriter,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="elementName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> that writes to the configuration file.</param>
+        <param name="elementName">The name of the <see cref="T:System.Configuration.ConfigurationElement" /> to be written.</param>
+        <summary>Writes the outer tags of this configuration element to the configuration file when implemented in a derived class.</summary>
+        <returns>
+          <see langword="true" /> if writing was successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> method is called after the call to the <xref:System.Configuration.ConfigurationElement.Unmerge%2A> method during serialization. The <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> method writes out the contents of the configuration element between the beginning and ending tags of the element. Override <xref:System.Configuration.ConfigurationElement.SerializeToXmlElement%2A> to provide a custom serialization method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">The element has multiple child elements.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropertyValue">
+      <MemberSignature Language="C#" Value="protected void SetPropertyValue (System.Configuration.ConfigurationProperty prop, object value, bool ignoreLocks);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetPropertyValue(class System.Configuration.ConfigurationProperty prop, object value, bool ignoreLocks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.SetPropertyValue(System.Configuration.ConfigurationProperty,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prop" Type="System.Configuration.ConfigurationProperty" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="ignoreLocks" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="prop">The element property to set.</param>
+        <param name="value">The value to assign to the property.</param>
+        <param name="ignoreLocks">
+          <see langword="true" /> if the locks on the property should be ignored; otherwise, <see langword="false" />.</param>
+        <summary>Sets a property to the specified value.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">Occurs if the element is read-only or <paramref name="ignoreLocks" /> is <see langword="true" /> but the locks cannot be ignored.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetReadOnly">
+      <MemberSignature Language="C#" Value="protected virtual void SetReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void SetReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.SetReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the <see cref="M:System.Configuration.ConfigurationElement.IsReadOnly" /> property for the <see cref="T:System.Configuration.ConfigurationElement" /> object and all subelements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used internally to set aside those system-configuration elements that cannot be modified.  
+  
+ To determine which elements can be modified, use the <xref:System.Configuration.ConfigurationElement.IsReadOnly%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unmerge">
+      <MemberSignature Language="C#" Value="protected virtual void Unmerge (System.Configuration.ConfigurationElement source, System.Configuration.ConfigurationElement parent, System.Configuration.ConfigurationSaveMode updateMode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Unmerge(class System.Configuration.ConfigurationElement source, class System.Configuration.ConfigurationElement parent, valuetype System.Configuration.ConfigurationSaveMode updateMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceElement" Type="System.Configuration.ConfigurationElement" />
+        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" />
+        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="parent">To be added.</param>
+        <param name="updateMode">To be added.</param>
+        <summary>Modifies the <see cref="T:System.Configuration.ConfigurationElement" /> object to remove all values that should not be saved.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called before the <xref:System.Configuration.ConfigurationElement> object is saved by the <xref:System.Configuration.Configuration> object in order to remove all unneeded properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a property, attribute, or child element of this <see cref="T:System.Configuration.ConfigurationElement" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to get or set the values of a <xref:System.Configuration.ConfigurationProperty> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

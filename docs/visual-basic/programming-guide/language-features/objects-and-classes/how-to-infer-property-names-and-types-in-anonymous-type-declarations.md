@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "inferring property types [Visual Basic]"
 ms.assetid: 7c748b22-913f-4d9d-b747-6b7bf296a0bc
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

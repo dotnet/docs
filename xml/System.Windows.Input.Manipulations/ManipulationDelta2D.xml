@@ -1,0 +1,152 @@
+<Type Name="ManipulationDelta2D" FullName="System.Windows.Input.Manipulations.ManipulationDelta2D">
+  <TypeSignature Language="C#" Value="public class ManipulationDelta2D" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManipulationDelta2D extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulations.ManipulationDelta2D" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the result of a 2D manipulation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Input.Manipulations.ManipulationDelta2D> object is used in the event arguments of <xref:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs> to inform the event handler of the changes (both incremental and cumulative) involved in the manipulation, and in the event arguments of <xref:System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs> to inform the event handler of the total changes involved in the manipulation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExpansionX">
+      <MemberSignature Language="C#" Value="public float ExpansionX { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ExpansionX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationDelta2D.ExpansionX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the amount of expansion along the x-axis, in coordinate units.</summary>
+        <value>The amount of expansion along the x-axis, in coordinate units.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpansionY">
+      <MemberSignature Language="C#" Value="public float ExpansionY { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ExpansionY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationDelta2D.ExpansionY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the amount of expansion along the y-axis, in coordinate units.</summary>
+        <value>The amount of expansion along the y-axis, in coordinate units.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotation">
+      <MemberSignature Language="C#" Value="public float Rotation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Rotation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationDelta2D.Rotation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the amount of rotation, in radians.</summary>
+        <value>The amount of rotation, in radians.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleX">
+      <MemberSignature Language="C#" Value="public float ScaleX { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ScaleX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationDelta2D.ScaleX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the scale factor along the x-axis.</summary>
+        <value>The scale factor along the x-axis.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleY">
+      <MemberSignature Language="C#" Value="public float ScaleY { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ScaleY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationDelta2D.ScaleY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the scale factor along the y-axis.</summary>
+        <value>The scale factor along the y-axis.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslationX">
+      <MemberSignature Language="C#" Value="public float TranslationX { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 TranslationX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationDelta2D.TranslationX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the translation along the x-axis, in coordinate units.</summary>
+        <value>The translation along the x-axis, in coordinate units.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslationY">
+      <MemberSignature Language="C#" Value="public float TranslationY { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 TranslationY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.ManipulationDelta2D.TranslationY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the translation along the y-axis, in coordinate units.</summary>
+        <value>The translation along the y-axis, in coordinate units.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

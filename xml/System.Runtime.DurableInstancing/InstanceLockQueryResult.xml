@@ -1,0 +1,90 @@
+<Type Name="InstanceLockQueryResult" FullName="System.Runtime.DurableInstancing.InstanceLockQueryResult">
+  <TypeSignature Language="C#" Value="public sealed class InstanceLockQueryResult : System.Runtime.DurableInstancing.InstanceStoreQueryResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InstanceLockQueryResult extends System.Runtime.DurableInstancing.InstanceStoreQueryResult" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceLockQueryResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.DurableInstancing.InstanceStoreQueryResult</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains query result set represented by a dictionary of ID of instance and the instance owner which currently owns the lock on each instance.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InstanceLockQueryResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceLockQueryResult.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceLockQueryResult" /> class with any empty query result set.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InstanceLockQueryResult (System.Collections.Generic.IDictionary&lt;Guid,Guid&gt; instanceOwnerIds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;valuetype System.Guid, valuetype System.Guid&gt; instanceOwnerIds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceLockQueryResult.#ctor(System.Collections.Generic.IDictionary{System.Guid,System.Guid})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instanceOwnerIds" Type="System.Collections.Generic.IDictionary&lt;System.Guid,System.Guid&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="instanceOwnerIds">A dictionary that represents the query result set. The dictionary has instance ID as the key and ID of the instance owner who owns the lock on the instance as the value.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceLockQueryResult" /> class and sets the <see cref="P:System.Runtime.DurableInstancing.InstanceLockQueryResult.InstanceOwnerIds" /> property using the dictionary of instance IDs and instance owner IDs.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InstanceLockQueryResult (Guid instanceId, Guid instanceOwnerId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid instanceId, valuetype System.Guid instanceOwnerId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceLockQueryResult.#ctor(System.Guid,System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="instanceOwnerId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The ID of the instance.</param>
+        <param name="instanceOwnerId">The ID of the instance owner who owns the lock on the instance represented by the <c>instanceId</c> parameter.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceLockQueryResult" /> class and sets the <see cref="P:System.Runtime.DurableInstancing.InstanceLockQueryResult.InstanceOwnerIds" /> property using a dictionary that contains the single query result represented by the instance ID and the instance owner ID.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceOwnerIds">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;Guid,Guid&gt; InstanceOwnerIds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;valuetype System.Guid, valuetype System.Guid&gt; InstanceOwnerIds" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceLockQueryResult.InstanceOwnerIds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Guid,System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary that contains the query result set. The query result set is represented by a dictionary, which has Instance ID as the key and the ID of the instance owner who owns the lock on the instance as the value.</summary>
+        <value>The dictionary that contains instance IDs and instance owner IDs.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

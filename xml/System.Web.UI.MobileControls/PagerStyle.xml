@@ -1,0 +1,370 @@
+<Type Name="PagerStyle" FullName="System.Web.UI.MobileControls.PagerStyle">
+  <TypeSignature Language="C#" Value="public class PagerStyle : System.Web.UI.MobileControls.Style" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PagerStyle extends System.Web.UI.MobileControls.Style" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.PagerStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.MobileControls.Style</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides style capability for the pagination UI of a page. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.PagerStyle> object is a <xref:System.Web.UI.MobileControls.Style> object with additional style properties specific to the pagination user interface (UI) of a form. Use the properties and methods of the <xref:System.Web.UI.MobileControls.PagerStyle> class to override default text for the <xref:System.Web.UI.MobileControls.PagerStyle.NextPageText%2A>, <xref:System.Web.UI.MobileControls.PagerStyle.PreviousPageText%2A>, and <xref:System.Web.UI.MobileControls.PagerStyle.PageLabel%2A> properties. For example, if you are programmatically creating a form with Next and Previous links to the appropriate pages, you can override the text for these links by setting the value of the properties previously mentioned. You can use methods, such as <xref:System.Web.UI.MobileControls.PagerStyle.GetNextPageText%2A>, <xref:System.Web.UI.MobileControls.PagerStyle.GetPreviousPageText%2A>, or <xref:System.Web.UI.MobileControls.PagerStyle.GetPageLabelText%2A> to retrieve the current value of the properties.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.MobileControls.PagerStyle.PageLabel%2A> property applies only to HTML markup and may not be rendered in other markups such as WML.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PagerStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagerStyle.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Instantiates a new instance of the <see cref="T:System.Web.UI.MobileControls.PagerStyle" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextPageText">
+      <MemberSignature Language="C#" Value="public string GetNextPageText (int currentPageIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetNextPageText(int32 currentPageIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagerStyle.GetNextPageText(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="currentPageIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="currentPageIndex">The index of the current page.</param>
+        <summary>Returns a formatted string for the user interface (UI) element used to navigate to the next page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>A formatted string for the user interface (UI) element used to navigate to the next page.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Uses the <xref:System.Web.UI.MobileControls.PagerStyle.NextPageText%2A> property and the one-based current page index passed in to format the string. Used by form adapters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPageLabelText">
+      <MemberSignature Language="C#" Value="public string GetPageLabelText (int currentPageIndex, int pageCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPageLabelText(int32 currentPageIndex, int32 pageCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagerStyle.GetPageLabelText(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="currentPageIndex" Type="System.Int32" />
+        <Parameter Name="pageCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="currentPageIndex">The current page index.</param>
+        <param name="pageCount">The page count.</param>
+        <summary>Returns a formatted string for the UI element used to navigate to the next page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>A formatted string for the UI element used to navigate to the next page.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Uses the property and the one-based current page index passed in to format the string. Used by form adapters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreviousPageText">
+      <MemberSignature Language="C#" Value="public string GetPreviousPageText (int currentPageIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPreviousPageText(int32 currentPageIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagerStyle.GetPreviousPageText(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="currentPageIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="currentPageIndex">The index of the current page.</param>
+        <summary>Returns a formatted string for the UI element used to navigate to the previous page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>A formatted string for the UI element used to navigate to the previous page.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Uses the <xref:System.Web.UI.MobileControls.PagerStyle.PreviousPageText%2A> property and the one-based current page index passed in to format the string. Used by form adapters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextPageText">
+      <MemberSignature Language="C#" Value="public string NextPageText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NextPageText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the label used for a UI element that is used to navigate to the next page. The default value is "Next". This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The label used for a UI element that is used to navigate to the next page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The label can include the format specifier `{0}`, which is substituted with the page number of the next page when the label is rendered.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to the use the <xref:System.Web.UI.MobileControls.PagerStyle.NextPageText%2A> property to set the next page label to one more than the current page.  
+  
+```vb  
+Private Sub Form1_PageIndexChanged(sender As Object, e As EventArgs)  
+     Form1.PagerStyle.NextPageText = (Form1.CurrentPage + 1)  
+End Sub  
+```  
+  
+```csharp  
+void Form1_PageIndexChanged(object sender, EventArgs e)  
+{  
+    Form1.PagerStyle.NextPageText =   
+        (Form1.CurrentPage + 1).ToString();  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextPageTextKey">
+      <MemberSignature Language="C#" Value="public static readonly object NextPageTextKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly object NextPageTextKey" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.PagerStyle.NextPageTextKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the key for retrieving the style from the embedded stylesheet for <see cref="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageLabel">
+      <MemberSignature Language="C#" Value="public string PageLabel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PageLabel" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagerStyle.PageLabel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the label used for the current page. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The label used for the current page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property contains an empty string, no label is displayed. The label can include the format specifiers `{0}` and `{1}`, which are substituted with the page number of the current page and the total number of pages, respectively, when the label is rendered. For example, the format specifier `Page {0} of {1}` would show the current position within the total number of pages.  
+  
+> [!NOTE]
+>  WML devices do not render this property.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.PagerStyle.PageLabel%2A> property to set the page label to "Go to page".  
+  
+```vb  
+Private Sub Page_Load(ByVal sender As System.Object, _  
+    ByVal e As System.EventArgs) Handles MyBase.Load  
+    If Not IsPostBack  
+        Form1.PagerStyle.NextPageText = "2"  
+    End If  
+    Form1.PagerStyle.StyleReference = "title"  
+    Form1.PagerStyle.PageLabel = "Go to page"  
+End Sub  
+```  
+  
+```csharp  
+void Page_Load(object sender, EventArgs e)  
+{  
+    if(!IsPostBack)  
+    {  
+        Form1.PagerStyle.NextPageText = "2";  
+    }  
+    Form1.PagerStyle.StyleReference = "title";  
+    Form1.PagerStyle.PageLabel = "Go to page"  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageLabelKey">
+      <MemberSignature Language="C#" Value="public static readonly object PageLabelKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly object PageLabelKey" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.PagerStyle.PageLabelKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the key for retrieving the style from the embedded stylesheet for <see cref="P:System.Web.UI.MobileControls.PagerStyle.PageLabel" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousPageText">
+      <MemberSignature Language="C#" Value="public string PreviousPageText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PreviousPageText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagerStyle.PreviousPageText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the label used for the UI element used to navigate to the previous page. The default value is <see langword="Previous" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The label used for the UI element used to navigate to the previous page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The label can include the format specifier `{0}`, which is substituted with the page number of the previous page when the label is rendered.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.PagerStyle.PreviousPageText%2A> property to set the previous page label to one less than the current page.  
+  
+```vb  
+Sub Form1_PageIndexChanged(ByVal sender As Object, _  
+    ByVal e As EventArgs)  
+    Form1.PagerStyle.PreviousPageText = _  
+       (Form1.CurrentPage - 1).ToString()  
+End Sub  
+```  
+  
+```csharp  
+void Form1_PageIndexChanged(object sender, EventArgs e)  
+{  
+    Form1.PagerStyle.PreviousPageText =   
+        (Form1.CurrentPage - 1).ToString();  
+    Form1.PagerStyle.NextPageText = (Form1.CurrentPage + 1).ToString();  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousPageTextKey">
+      <MemberSignature Language="C#" Value="public static readonly object PreviousPageTextKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly object PreviousPageTextKey" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.PagerStyle.PreviousPageTextKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the key for retrieving the style from the embedded stylesheet for <see cref="P:System.Web.UI.MobileControls.PagerStyle.PreviousPageText" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

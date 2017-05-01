@@ -1,0 +1,417 @@
+<Type Name="Thickness" FullName="System.Windows.Thickness">
+  <TypeSignature Language="C#" Value="public struct Thickness : IEquatable&lt;System.Windows.Thickness&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Thickness extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Thickness&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Thickness" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Windows.Thickness&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.ThicknessConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the thickness of a frame around a rectangle. Four <see cref="T:System.Double" /> values describe the <see cref="P:System.Windows.Thickness.Left" />, <see cref="P:System.Windows.Thickness.Top" />, <see cref="P:System.Windows.Thickness.Right" />, and <see cref="P:System.Windows.Thickness.Bottom" /> sides of the rectangle, respectively.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can specify <xref:System.Windows.Thickness> values in two ways. If you pass four <xref:System.Double> values to the structure, they represent the <xref:System.Windows.Thickness.Left%2A>, <xref:System.Windows.Thickness.Top%2A>, <xref:System.Windows.Thickness.Right%2A> and <xref:System.Windows.Thickness.Bottom%2A> sides, respectively, of the bounding rectangle. You can also supply a single value, which applies a uniform value to all four sides of the bounding rectangle.  
+  
+<a name="xamlAttributeUsage_Thickness"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="left"/>  
+- or -  
+<object property="left,top"/>  
+- or -  
+<object property=" left,top,right,bottom" ... />  
+```  
+  
+<a name="xamlValues_Thickness"></a>   
+## XAML Values  
+ *left*  
+ The left edge of the frame, described as either a <xref:System.Double> value that specifies a [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] measure, or as a *qualifiedDouble* (see below). If only a single measure is specified, that measure is applied to ALL of the left,top,right,bottom values of a <xref:System.Windows.Thickness>. If only a pair of left,top measures are specified, these measures are applied symmetrically to a <xref:System.Windows.Thickness>: the left value is used for right; the top value is used for bottom.  
+  
+ *top*  
+ The top edge of the frame, described as either a <xref:System.Double> value that specifies a [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] measure, or as a *qualifiedDouble* (see below). If only a pair of left,top measures are specified, these measures are applied symmetrically to a <xref:System.Windows.Thickness>: the left value is used for right; the top value is used for bottom.  
+  
+ *right*  
+ The right edge of the frame, described as either a <xref:System.Double> value that specifies a [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] measure, or as a *qualifiedDouble* (see below). If left unspecified, will use the left value.  
+  
+ *bottom*  
+ The bottom edge of the frame, described as either a <xref:System.Double> value that specifies a [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] measure, or as a *qualifiedDouble* (see below). If left unspecified, will use the left value.  
+  
+ *qualifiedDouble*  
+ A *double* value as described above for any of the measures, followed by one of the following unit declaration strings: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+> [!NOTE]
+>  Values need not include the decimal point explicitly when specified as a string. The string "1" provided in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] evaluates to a value of 1.0 when referenced in code.  
+  
+   
+  
+## Examples  
+ The following example shows how to create an instance of a <xref:System.Windows.Thickness> structure and set its properties by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+  
+ [!code-csharp[ThicknessStruct#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#2)]
+ [!code-vb[ThicknessStruct#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#2)]
+ [!code-xml[ThicknessStruct#2](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Thickness (double uniformLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 uniformLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.#ctor(System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uniformLength" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="uniformLength">The uniform length applied to all four sides of the bounding rectangle.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Thickness" /> structure that has the specified uniform length on each side.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Thickness (double left, double top, double right, double bottom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 left, float64 top, float64 right, float64 bottom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.#ctor(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="left" Type="System.Double" />
+        <Parameter Name="top" Type="System.Double" />
+        <Parameter Name="right" Type="System.Double" />
+        <Parameter Name="bottom" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="left">The thickness for the left side of the rectangle.</param>
+        <param name="top">The thickness for the upper side of the rectangle.</param>
+        <param name="right">The thickness for the right side of the rectangle</param>
+        <param name="bottom">The thickness for the lower side of the rectangle.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Thickness" /> structure that has specific lengths (supplied as a <see cref="T:System.Double" />) applied to each side of the rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create an instance of a <xref:System.Windows.Thickness> structure by using code.  
+  
+ [!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
+ [!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
+ [!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="public double Bottom { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Bottom" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Thickness.Bottom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width, in pixels, of the lower side of the bounding rectangle.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the width, in pixels, of the lower side of the bounding rectangle for this instance of <see cref="T:System.Windows.Thickness" />. A pixel is equal to 1/96 of an inch. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the value of the <xref:System.Windows.Thickness.Bottom%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+  
+ [!code-csharp[ThicknessStruct#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#2)]
+ [!code-vb[ThicknessStruct#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#2)]
+ [!code-xml[ThicknessStruct#2](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare.</param>
+        <summary>Compares this <see cref="T:System.Windows.Thickness" /> structure to another <see cref="T:System.Object" /> for equality.</summary>
+        <returns>
+          <see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Testing for equality on two floating-point values that are logically equivalent might fail because of precision errors that can accumulate as the values are operated on.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Thickness thickness);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Thickness thickness) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.Equals(System.Windows.Thickness)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thickness" Type="System.Windows.Thickness" />
+      </Parameters>
+      <Docs>
+        <param name="thickness">An instance of <see cref="T:System.Windows.Thickness" /> to compare for equality.</param>
+        <summary>Compares this <see cref="T:System.Windows.Thickness" /> structure to another <see cref="T:System.Windows.Thickness" /> structure for equality.</summary>
+        <returns>
+          <see langword="true" /> if the two instances of <see cref="T:System.Windows.Thickness" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Testing for equality or inequality on two floating-point values that are logically equivalent might fail because of precision errors that can accumulate as the values are operated on.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code of the structure.</summary>
+        <returns>A hash code for this instance of <see cref="T:System.Windows.Thickness" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public double Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Thickness.Left" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width, in pixels, of the left side of the bounding rectangle.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the width, in pixels, of the left side of the bounding rectangle for this instance of <see cref="T:System.Windows.Thickness" />. a pixel is equal to 1/96 on an inch. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the value of the <xref:System.Windows.Thickness.Left%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+  
+ [!code-csharp[ThicknessStruct#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#2)]
+ [!code-vb[ThicknessStruct#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#2)]
+ [!code-xml[ThicknessStruct#2](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Thickness t1, System.Windows.Thickness t2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Thickness t1, valuetype System.Windows.Thickness t2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.op_Equality(System.Windows.Thickness,System.Windows.Thickness)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t1" Type="System.Windows.Thickness" />
+        <Parameter Name="t2" Type="System.Windows.Thickness" />
+      </Parameters>
+      <Docs>
+        <param name="t1">The first structure to compare.</param>
+        <param name="t2">The other structure to compare.</param>
+        <summary>Compares the value of two <see cref="T:System.Windows.Thickness" /> structures for equality.</summary>
+        <returns>
+          <see langword="true" /> if the two instances of <see cref="T:System.Windows.Thickness" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Testing for equality on two floating-point values that are logically equivalent might fail because of precision errors that can accumulate as the values are operated on.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Thickness t1, System.Windows.Thickness t2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Thickness t1, valuetype System.Windows.Thickness t2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.op_Inequality(System.Windows.Thickness,System.Windows.Thickness)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t1" Type="System.Windows.Thickness" />
+        <Parameter Name="t2" Type="System.Windows.Thickness" />
+      </Parameters>
+      <Docs>
+        <param name="t1">The first structure to compare.</param>
+        <param name="t2">The other structure to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Thickness" /> structures for inequality.</summary>
+        <returns>
+          <see langword="true" /> if the two instances of <see cref="T:System.Windows.Thickness" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Testing for equality or inequality on two floating-point values that are logically equivalent might fail because of precision errors that can accumulate as the values are operated on.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public double Right { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Right" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Thickness.Right" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width, in pixels, of the right side of the bounding rectangle.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the width, in pixels, of the right side of the bounding rectangle for this instance of <see cref="T:System.Windows.Thickness" />. A pixel is equal to 1/96 of an inch. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the value of the <xref:System.Windows.Thickness.Right%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+  
+ [!code-csharp[ThicknessStruct#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#2)]
+ [!code-vb[ThicknessStruct#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#2)]
+ [!code-xml[ThicknessStruct#2](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public double Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Thickness.Top" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width, in pixels, of the upper side of the bounding rectangle.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the width, in pixels, of the upper side of the bounding rectangle for this instance of <see cref="T:System.Windows.Thickness" />. A pixel is equal to 1/96 of an inch. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the value of the <xref:System.Windows.Thickness.Top%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+  
+ [!code-csharp[ThicknessStruct#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#2)]
+ [!code-vb[ThicknessStruct#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#2)]
+ [!code-xml[ThicknessStruct#2](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the string representation of the <see cref="T:System.Windows.Thickness" /> structure.</summary>
+        <returns>A <see cref="T:System.String" /> that represents the <see cref="T:System.Windows.Thickness" /> value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

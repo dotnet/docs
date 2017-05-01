@@ -1,0 +1,628 @@
+<Type Name="DataPagerField" FullName="System.Web.UI.WebControls.DataPagerField">
+  <TypeSignature Language="C#" Value="public abstract class DataPagerField : System.Web.UI.IStateManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataPagerField extends System.Object implements class System.Web.UI.IStateManager" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataPagerField" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IStateManager</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Serves as the base class for data pager field types, which represent a navigation control for the <see cref="T:System.Web.UI.WebControls.DataPager" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField> class serves as the base class for all data pager field types. Data pager fields are used by the <xref:System.Web.UI.WebControls.DataPager> control to represent a navigation control.  
+  
+ Use the classes that are derived from <xref:System.Web.UI.WebControls.DataPagerField> to select which type of pager is displayed in the <xref:System.Web.UI.WebControls.DataPager> control. The following table lists available data pager field types.  
+  
+|Pager field type|Description|  
+|----------------------|-----------------|  
+|<xref:System.Web.UI.WebControls.NextPreviousPagerField>|Lets users navigate through data pages one page at a time, or to jump to the first or last page.|  
+|<xref:System.Web.UI.WebControls.NumericPagerField>|Lets users select a page by page number.|  
+|<xref:System.Web.UI.WebControls.TemplatePagerField>|Lets page developers create a custom paging UI.|  
+  
+ You can derive from the <xref:System.Web.UI.WebControls.DataPagerField> class to create additional pager field types.  
+  
+   
+  
+## Examples  
+ The following example shows how to use <xref:System.Web.UI.WebControls.NextPreviousPagerField>, <xref:System.Web.UI.WebControls.NumericPagerField>, and <xref:System.Web.UI.WebControls.TemplatePagerField> objects to display page navigation controls in a <xref:System.Web.UI.WebControls.DataPager> control. The objects are derived from the <xref:System.Web.UI.WebControls.DataPagerField> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.DataPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataPagerField/CS/DataPagerFieldCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.DataPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataPagerField/VB/DataPagerFieldVB.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> class, you must override the following members:  
+  
+-   <see cref="M:System.Web.UI.WebControls.DataPagerField.CreateDataPagers(System.Web.UI.WebControls.DataPagerFieldItem,System.Int32,System.Int32,System.Int32,System.Int32)" />  
+  
+-   <see cref="M:System.Web.UI.WebControls.DataPagerField.CreateField" />  
+  
+-   <see cref="M:System.Web.UI.WebControls.DataPagerField.HandleEvent(System.Web.UI.WebControls.CommandEventArgs)" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DataPagerField ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.UI.WebControls.DataPagerField> class is abstract, you cannot create a <xref:System.Web.UI.WebControls.DataPagerField> object directly. This constructor is typically called by the constructor of a derived class to initialize the properties that are defined in the <xref:System.Web.UI.WebControls.DataPagerField> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneField">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.WebControls.DataPagerField CloneField ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Web.UI.WebControls.DataPagerField CloneField() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.CloneField" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataPagerField</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the current object that is derived from <see cref="T:System.Web.UI.WebControls.DataPagerField" />.</summary>
+        <returns>A copy of the current <see cref="T:System.Web.UI.WebControls.DataControlField" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.CloneField%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.CloneFields%2A> method to create a copy of the current object that is derived from <xref:System.Web.UI.WebControls.DataPagerField>. To create a copy of the current object, the <xref:System.Web.UI.WebControls.DataPagerField.CloneField%2A> method first creates a new instance of a <xref:System.Web.UI.WebControls.DataPagerField> object by using the <xref:System.Web.UI.WebControls.DataPagerField.CreateField%2A> method. Then it calls the <xref:System.Web.UI.WebControls.DataPagerField.CopyProperties%2A> method to copy the property values of the current object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyProperties">
+      <MemberSignature Language="C#" Value="protected virtual void CopyProperties (System.Web.UI.WebControls.DataPagerField newField);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CopyProperties(class System.Web.UI.WebControls.DataPagerField newField) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newField" Type="System.Web.UI.WebControls.DataPagerField" />
+      </Parameters>
+      <Docs>
+        <param name="newField">The object to copy the properties of the current <see cref="T:System.Web.UI.WebControls.DataControlField" />. object to.</param>
+        <summary>Copies the properties of the current object derived from <see cref="T:System.Web.UI.WebControls.DataPagerField" /> to the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.CopyProperties%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPagerField.CloneField%2A> method to copy the properties of the current object derived from <xref:System.Web.UI.WebControls.DataPagerField> to the <xref:System.Web.UI.WebControls.DataPagerField> object created by the method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDataPagers">
+      <MemberSignature Language="C#" Value="public abstract void CreateDataPagers (System.Web.UI.WebControls.DataPagerFieldItem container, int startRowIndex, int maximumRows, int totalRowCount, int fieldIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateDataPagers(class System.Web.UI.WebControls.DataPagerFieldItem container, int32 startRowIndex, int32 maximumRows, int32 totalRowCount, int32 fieldIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.CreateDataPagers(System.Web.UI.WebControls.DataPagerFieldItem,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Web.UI.WebControls.DataPagerFieldItem" />
+        <Parameter Name="startRowIndex" Type="System.Int32" />
+        <Parameter Name="maximumRows" Type="System.Int32" />
+        <Parameter Name="totalRowCount" Type="System.Int32" />
+        <Parameter Name="fieldIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="container">The container that is used to store the controls.</param>
+        <param name="startRowIndex">The index of the first record on the page.</param>
+        <param name="maximumRows">The maximum number of items on a single page.</param>
+        <param name="totalRowCount">The total number of items.</param>
+        <param name="fieldIndex">The index of the data pager field in the <see cref="P:System.Web.UI.WebControls.DataPager.Fields" /> collection.</param>
+        <summary>When overridden in a derived class, creates the user interface (UI) controls for the data pager field object and adds them to the specified container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.CreateDataPagers%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A?displayProperty=fullName> method to create the UI controls for the data pager field.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateField">
+      <MemberSignature Language="C#" Value="protected abstract System.Web.UI.WebControls.DataPagerField CreateField ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.DataPagerField CreateField() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.CreateField" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataPagerField</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, creates an empty object that is derived <see cref="T:System.Web.UI.WebControls.DataPagerField" />.</summary>
+        <returns>An empty object that is derived from <see cref="T:System.Web.UI.WebControls.DataPagerField" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.CreateField%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPagerField.CloneField%2A> method to create an empty object that is derived from <xref:System.Web.UI.WebControls.DataPagerField>. The current <xref:System.Web.UI.WebControls.DataPagerField> object is copied into the empty object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataPager">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.WebControls.DataPager DataPager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataPager DataPager" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.DataPager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataPager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the data pager that the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object is associated with.</summary>
+        <value>The object that contains the data pager field.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.DataPager%2A> reference is internally set when the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.OnInsertComplete%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueryStringNavigateUrl">
+      <MemberSignature Language="C#" Value="protected string GetQueryStringNavigateUrl (int pageNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetQueryStringNavigateUrl(int32 pageNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.GetQueryStringNavigateUrl(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pageNumber">The target page number.</param>
+        <summary>Creates a URL that contains a query string field that has the specified page number.</summary>
+        <returns>The target URL.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.GetQueryStringNavigateUrl%2A> method is used by the <xref:System.Web.UI.WebControls.NumericPagerField> and <xref:System.Web.UI.WebControls.NextPreviousPagerField> pager fields to create the target URL for each button of the pager field. The target URL includes a query string field that contains a name/value pair. The name is the value of the <xref:System.Web.UI.WebControls.DataPager.QueryStringField%2A?displayProperty=fullName> property, and the value represents the value of `pageNumber`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HandleEvent">
+      <MemberSignature Language="C#" Value="public abstract void HandleEvent (System.Web.UI.WebControls.CommandEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void HandleEvent(class System.Web.UI.WebControls.CommandEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.HandleEvent(System.Web.UI.WebControls.CommandEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.CommandEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>When overridden in a derived class, handles events that occur in the data pager field object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.HandleEvent%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=fullName> method to handle events that occur in the pager field object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTrackingViewState">
+      <MemberSignature Language="C#" Value="protected bool IsTrackingViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTrackingViewState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.IsTrackingViewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object is tracking its view-state changes.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object is tracking its view-state changes; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected virtual void LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">The saved view-state values for the control.</param>
+        <summary>Restores view-state information that was saved previously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.LoadViewState%2A> method restores view-state information for the <xref:System.Web.UI.WebControls.DataPagerField> object that was saved by the <xref:System.Web.UI.WebControls.DataPagerField.SaveViewState%2A> method during a previous page request.  
+  
+ This method is primarily used by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFieldChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnFieldChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFieldChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.OnFieldChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Raises the <see langword="FieldChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.OnFieldChanged%2A> method raises an event that indicates that the state of the <xref:System.Web.UI.WebControls.DataPagerField> object has changed. Changes to the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property cause this event to be raised. Changes to properties in derived types also raise this event when state changes occur.  
+  
+ The <xref:System.Web.UI.WebControls.DataPagerField.OnFieldChanged%2A> method enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you override <see cref="M:System.Web.UI.WebControls.DataPagerField.OnFieldChanged" /> in a derived class, call the base class's <see cref="M:System.Web.UI.WebControls.DataPagerField.OnFieldChanged" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryStringHandled">
+      <MemberSignature Language="C#" Value="protected bool QueryStringHandled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool QueryStringHandled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.QueryStringHandled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the query string field has been evaluated.</summary>
+        <value>
+          <see langword="true" /> if the query string field has been evaluated; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NumericPagerField> and <xref:System.Web.UI.WebControls.NextPreviousPagerField> pager fields use the <xref:System.Web.UI.WebControls.DataPagerField.QueryStringHandled%2A> property to determine whether the query string field has been evaluated. If <xref:System.Web.UI.WebControls.DataPagerField.QueryStringHandled%2A> is `false`, the pager field class processes the page number that is contained in the query string field. It also updates the page properties of the <xref:System.Web.UI.WebControls.DataPager> control. The pager field class uses this property only when the <xref:System.Web.UI.WebControls.DataPagerField.QueryStringValue%2A> property is not an empty string or `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryStringValue">
+      <MemberSignature Language="C#" Value="protected string QueryStringValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryStringValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.QueryStringValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the query string field from the URL of the request.</summary>
+        <value>The value of the query string field.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.DataPager.QueryStringField%2A?displayProperty=fullName> property is not an empty string or `null`, the <xref:System.Web.UI.WebControls.DataPager> control uses the HTTP GET command to navigate through the pages. A query string field that consists of a name/value pair is added to the URL of the page. The <xref:System.Web.UI.WebControls.DataPagerField.QueryStringValue%2A> property retrieves the value of the query string field from the URL of the request. The <xref:System.Web.UI.WebControls.DataPagerField.QueryStringValue%2A> property contains the requested page number.  
+  
+ This property is used by the <xref:System.Web.UI.WebControls.NumericPagerField> and <xref:System.Web.UI.WebControls.NextPreviousPagerField> pager fields to evaluate the index of the first record for the page of data requested. The page properties of the <xref:System.Web.UI.WebControls.DataPager> control are then updated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected virtual object SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the changes that were made to the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object's view state.</summary>
+        <returns>The view-state changes for the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is no view state associated with the object, the <xref:System.Web.UI.WebControls.DataPagerField.SaveViewState%2A> method returns `null`.  
+  
+ The <xref:System.Web.UI.WebControls.DataPagerField.SaveViewState%2A> method is primarily used by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
+      <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object is tracking its view-state changes.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object is tracking its view-state changes; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.System%23Web%23UI%23IStateManager%23IsTrackingViewState%2A> interface property uses the value of the <xref:System.Web.UI.WebControls.DataPagerField.IsTrackingViewState%2A> property. This contains the actual implementation and can be extended by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
+      <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object state);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="state">The saved view-state values for the control.</param>
+        <summary>Restores view-state information that was saved previously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.System%23Web%23UI%23IStateManager%23LoadViewState%2A> interface method invokes the <xref:System.Web.UI.WebControls.DataPagerField.LoadViewState%2A> method. This contains the actual implementation and can be extended by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
+      <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the changes that were made to the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object's view state.</summary>
+        <returns>The view-state changes for the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.System%23Web%23UI%23IStateManager%23SaveViewState%2A> interface method invokes the <xref:System.Web.UI.WebControls.DataPagerField.SaveViewState%2A> method. This contains the actual implementation and can be extended by control developers.  
+  
+   
+  
+## Examples  
+ <xref:System.Web.UI.WebControls.DataPagerField.SaveViewState%2A>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
+      <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object to track changes to its view state so that they can be stored in the control's <see cref="P:System.Web.UI.WebControls.DataPagerField.ViewState" /> property and persisted across requests for the same page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.System%23Web%23UI%23IStateManager%23TrackViewState%2A> interface method invokes the <xref:System.Web.UI.WebControls.DataPagerField.TrackViewState%2A> method. This contains the actual implementation and can be extended by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackViewState">
+      <MemberSignature Language="C#" Value="protected virtual void TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerField.TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object to track changes to its view state so that they can be stored in the control's <see cref="P:System.Web.UI.WebControls.DataPagerField.ViewState" /> property and persisted across requests for the same page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField.TrackViewState%2A> method internally sets the <xref:System.Web.UI.WebControls.DataPagerField.IsTrackingViewState%2A> property to `true` and invokes the <xref:System.Web.UI.IStateManager.TrackViewState%2A> method for the <xref:System.Web.UI.WebControls.DataPagerField.ViewState%2A> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewState">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.StateBag ViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.StateBag ViewState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.ViewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.StateBag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary of state information that enables you to save and restore the view state of a <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object across multiple requests for the same page.</summary>
+        <value>An object that contains the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> view-state information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A data pager field's view state is the accumulation of all its property values. To preserve values across HTTP requests for the same page, ASP.NET server controls use this property to store the property values. The values are stored in an HTML hidden input element on the page. For more information, see [ASP.NET View State Overview](http://msdn.microsoft.com/library/19d2a6ed-9a77-4c7c-a7f5-74dd4b6c3818).  
+  
+ By default, view state is enabled for all server controls, but there are circumstances when you might want to disable it. For more information, see [ASP.NET Performance Overview](http://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b).  
+  
+ For more information about dictionaries and how to use them, see [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerField.Visible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a data pager field is rendered.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> is rendered; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

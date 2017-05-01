@@ -1,0 +1,77 @@
+<Type Name="NavigationUIVisibility" FullName="System.Windows.Navigation.NavigationUIVisibility">
+  <TypeSignature Language="C#" Value="public enum NavigationUIVisibility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NavigationUIVisibility extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationUIVisibility" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a <see cref="T:System.Windows.Controls.Frame" /> displays its navigation chrome. <see cref="T:System.Windows.Navigation.NavigationUIVisibility" /> is used by the <see cref="P:System.Windows.Controls.Frame.NavigationUIVisibility" /> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how always show the navigation chrome of a <xref:System.Windows.Controls.Frame> by setting <xref:System.Windows.Navigation.NavigationUIVisibility> to <xref:System.Windows.Navigation.NavigationUIVisibility>.  
+  
+ [!code-csharp[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameNavigationUIVisibilitySnippets/CSharp/Window1.xaml.cs#setnavigationuivisibility)]
+ [!code-vb[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FrameNavigationUIVisibilitySnippets/visualbasic/window1.xaml.vb#setnavigationuivisibility)]
+ [!code-xml[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/samples/snippets/xaml/VS_Snippets_Wpf/FrameNavigationUIVisibilitySnippets/XAML/Window1.xaml#setnavigationuivisibility)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Automatic">
+      <MemberSignature Language="C#" Value="Automatic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Navigation.NavigationUIVisibility Automatic = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationUIVisibility.Automatic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Navigation.NavigationUIVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The navigation chrome is visible when a <see cref="T:System.Windows.Controls.Frame" /> uses its own journal (see <see cref="P:System.Windows.Controls.Frame.JournalOwnership" />).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hidden">
+      <MemberSignature Language="C#" Value="Hidden" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Navigation.NavigationUIVisibility Hidden = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationUIVisibility.Hidden" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Navigation.NavigationUIVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The navigation chrome is not visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="Visible" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Navigation.NavigationUIVisibility Visible = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationUIVisibility.Visible" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Navigation.NavigationUIVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The navigation chrome is visible.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

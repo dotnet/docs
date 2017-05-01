@@ -1,0 +1,34 @@
+---
+uid: System.Windows.Forms.IDropTarget
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.IDropTarget.OnDragLeave(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.IDropTarget.OnDragDrop(System.Windows.Forms.DragEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.IDropTarget.OnDragEnter(System.Windows.Forms.DragEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.IDropTarget.OnDragOver(System.Windows.Forms.DragEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---

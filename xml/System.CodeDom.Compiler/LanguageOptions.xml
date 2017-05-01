@@ -1,0 +1,62 @@
+<Type Name="LanguageOptions" FullName="System.CodeDom.Compiler.LanguageOptions">
+  <TypeSignature Language="C#" Value="public enum LanguageOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed LanguageOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.LanguageOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines identifiers that indicate special features of a language.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.CodeDom.Compiler.CodeDomProvider> has a <xref:System.CodeDom.Compiler.CodeDomProvider.LanguageOptions%2A> property that is used to indicate certain characteristics of the programming language supported by the provider. The meaning of a <xref:System.CodeDom.Compiler.LanguageOptions> identifier can be relevant to properly generating, compiling, and reading the language.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CaseInsensitive">
+      <MemberSignature Language="C#" Value="CaseInsensitive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.LanguageOptions CaseInsensitive = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.LanguageOptions.CaseInsensitive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.LanguageOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The language is case-insensitive.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.LanguageOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.LanguageOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.LanguageOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The language has default characteristics.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

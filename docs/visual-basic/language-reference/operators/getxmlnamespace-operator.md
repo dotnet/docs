@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "GetXmlNamespace keyword"
 ms.assetid: d0d28cfd-0755-4896-ae0b-4981aa35517c
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

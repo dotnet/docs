@@ -1,0 +1,53 @@
+<Type Name="InstalledFontCollection" FullName="System.Drawing.Text.InstalledFontCollection">
+  <TypeSignature Language="C#" Value="public sealed class InstalledFontCollection : System.Drawing.Text.FontCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InstalledFontCollection extends System.Drawing.Text.FontCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Text.InstalledFontCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Drawing.Text.FontCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the fonts installed on the system. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Text.InstalledFontCollection> allows you to get a list of fonts families that are installed on the computer running the application with its <xref:System.Drawing.Text.FontCollection.Families%2A> property. For additional information on fonts and text, including example code, see [Using Fonts and Text](~/docs/framework/winforms/advanced/using-fonts-and-text.md).  
+  
+ Do not use the <xref:System.Drawing.Text.InstalledFontCollection> class to install a font to Windows. Instead use the [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] `AddFontResource` function. An <xref:System.Drawing.Text.InstalledFontCollection> object sees only fonts that are installed in Windows before the object is created.  
+  
+   
+  
+## Examples  
+ The following example shows how to get a list of fonts that support the regular <xref:System.Drawing.FontStyle>.  
+  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
+  
+ [!code-csharp[System.Drawing.Misc3#InstalledFonts](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#installedfonts)]
+ [!code-vb[System.Drawing.Misc3#InstalledFonts](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#installedfonts)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InstalledFontCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Text.InstalledFontCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Text.InstalledFontCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,34 @@
+<Type Name="OrderedEnumerableRowCollection&lt;TRow&gt;" FullName="System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;">
+  <TypeSignature Language="C#" Value="public sealed class OrderedEnumerableRowCollection&lt;TRow&gt; : System.Data.EnumerableRowCollection&lt;TRow&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OrderedEnumerableRowCollection`1&lt;TRow&gt; extends System.Data.EnumerableRowCollection`1&lt;!TRow&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OrderedEnumerableRowCollection`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TRow" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Data.EnumerableRowCollection&lt;TRow&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TRow">TRow</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TRow">The type of objects in the source sequence, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+    <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code. Represents a collection of ordered <see cref="T:System.Data.DataRow" /> objects returned from a query.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OrderedEnumerableRowCollection%601> is used to contain the results of a LINQ to DataSet query that returns an ordered sequence of rows. This <xref:System.Data.EnumerableRowCollection%601> maintains a state of call LINQ operators for the originating query, and this state is used to construct the predicate and sorting expressions for any subsequent <xref:System.Data.DataView>.  
+  
+ An <xref:System.Data.OrderedEnumerableRowCollection%601> cannot be directly instantiated because there are no public constructors for this class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

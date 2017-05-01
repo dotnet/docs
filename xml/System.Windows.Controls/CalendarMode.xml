@@ -1,0 +1,91 @@
+<Type Name="CalendarMode" FullName="System.Windows.Controls.CalendarMode">
+  <TypeSignature Language="C#" Value="public enum CalendarMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CalendarMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.CalendarMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a <see cref="T:System.Windows.Controls.Calendar" /> displays a month, year, or decade.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Calendar> can display a month, a year, or a decade at a time. The following table lists how the user navigates to each mode.  
+  
+|DisplayMode|Action|  
+|-----------------|------------|  
+|Month|To navigate to Year mode, click the month heading.|  
+|Year|To navigate to Decade mode, click the year heading. To navigate to Month mode, click one of the displayed months.|  
+|Decade|To navigate to Year mode, click one of the displayed years.|  
+  
+   
+  
+## Examples  
+ The following example creates a calendar that displays the months in a year and handles the <xref:System.Windows.Controls.Calendar.DisplayModeChanged> event so that when the user clicks on a month or the year, the calendar does not change its <xref:System.Windows.Controls.Calendar.DisplayMode%2A>.  
+  
+ [!code-csharp[CalendarSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#4)]
+ [!code-vb[CalendarSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#4)]
+ [!code-xml[CalendarSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#4)]  
+  
+ [!code-csharp[CalendarSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#5)]
+ [!code-vb[CalendarSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#5)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Decade">
+      <MemberSignature Language="C#" Value="Decade" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CalendarMode Decade = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarMode.Decade" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.CalendarMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.Calendar" /> displays a decade at a time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Month">
+      <MemberSignature Language="C#" Value="Month" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CalendarMode Month = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarMode.Month" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.CalendarMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.Calendar" /> displays a month at a time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Year">
+      <MemberSignature Language="C#" Value="Year" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CalendarMode Year = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarMode.Year" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.CalendarMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.Calendar" /> displays a year at a time.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "XML literals [Visual Basic], embedded expressions"
 ms.assetid: 75016fad-0141-42de-8564-5051be29487e
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

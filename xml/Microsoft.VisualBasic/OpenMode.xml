@@ -1,0 +1,113 @@
+<Type Name="OpenMode" FullName="Microsoft.VisualBasic.OpenMode">
+  <TypeSignature Language="C#" Value="public enum OpenMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OpenMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.OpenMode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates how to open a file when calling file-access functions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call file access–related functions, you can use enumeration members in your code instead of the actual values.  
+  
+ The `OpenMode` enumeration defines constants used to set file access modes. The following table lists the `OpenMode` enumeration members.  
+  
+ `Input`, `Output`, and `Append` are used when sequentially accessing files, such as text files, whereas `Binary` is used for binary file access and `Random` for random file access. For examples, see the <xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A> method.  
+  
+ When sequentially accessing a file, you cannot change its data. You can read the data, append to it, or overwrite it with new data. If you open it for input, the contents of the file will be overwritten, even if you do not directly write to the file.  
+  
+ When performing file I/O operations, the `My.Computer.FileSystem` object provides better performance and ease of use than earlier file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Append">
+      <MemberSignature Language="C#" Value="Append" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenMode Append = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Append" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>File opened to append to it. Default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Binary">
+      <MemberSignature Language="C#" Value="Binary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenMode Binary = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Binary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>File opened for binary access.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="Input" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenMode Input = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Input" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>File opened for read access.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Output">
+      <MemberSignature Language="C#" Value="Output" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenMode Output = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Output" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>File opened for write access.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Random">
+      <MemberSignature Language="C#" Value="Random" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenMode Random = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Random" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>File opened for random access.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

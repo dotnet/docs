@@ -1,0 +1,72 @@
+<Type Name="ExecutionType" FullName="System.Workflow.Activities.ExecutionType">
+  <TypeSignature Language="C#" Value="public enum ExecutionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExecutionType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ExecutionType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the execution mode for activities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+   
+  
+## Examples  
+ The following code example shows how to set the execution mode for activities using the <xref:System.Workflow.Activities.ExecutionType> enumeration. This code example is part of the Replicator SDK Sample from the Simplereplicatorworkflow.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using Replicator](http://msdn.microsoft.com/en-us/4e35f26b-cf12-4c04-9d25-9ceb958f2858).  
+  
+ [!code-csharp[Wf_samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
+ [!code-vb[Wf_samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Parallel">
+      <MemberSignature Language="C#" Value="Parallel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.ExecutionType Parallel = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ExecutionType.Parallel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.ExecutionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Executes activities in parallel.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sequence">
+      <MemberSignature Language="C#" Value="Sequence" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.ExecutionType Sequence = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ExecutionType.Sequence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.ExecutionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Executes activities in sequential order. Each activity is executed in turn, after the previous activity has finished running.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

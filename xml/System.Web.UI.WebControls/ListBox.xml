@@ -1,0 +1,573 @@
+<Type Name="ListBox" FullName="System.Web.UI.WebControls.ListBox">
+  <TypeSignature Language="C#" Value="public class ListBox : System.Web.UI.WebControls.ListControl, System.Web.UI.IPostBackDataHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListBox extends System.Web.UI.WebControls.ListControl implements class System.Web.UI.IPostBackDataHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListBox" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.ListControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackDataHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ValidationProperty("SelectedItem")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a list box control that allows single or multiple item selection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Accessibility](#accessibility)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ Use the <xref:System.Web.UI.WebControls.ListBox> control to create a list control that allows single or multiple item selection. Use the <xref:System.Web.UI.WebControls.ListBox.Rows%2A> property to specify the height of the control. To enable multiple item selection, set the <xref:System.Web.UI.WebControls.ListBox.SelectionMode%2A> property to `ListSelectionMode.Multiple`.  
+  
+ To specify the items that you want to appear in the <xref:System.Web.UI.WebControls.ListBox> control, place a `ListItem` element for each entry between the opening and closing tags of the <xref:System.Web.UI.WebControls.ListBox> control.  
+  
+ Use the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection to examine the <xref:System.Web.UI.WebControls.ListItem> objects contained in the <xref:System.Web.UI.WebControls.ListBox> control. For example, you can determine the selected item(s) in the <xref:System.Web.UI.WebControls.ListBox> control by enumerating the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection and testing the <xref:System.Web.UI.WebControls.ListItem.Selected%2A> value for each <xref:System.Web.UI.WebControls.ListItem> element.  
+  
+ The <xref:System.Web.UI.WebControls.ListBox> control also supports data binding. To bind the control to a data source, first create a data source, such as one of the <xref:System.Web.UI.DataSourceControl> objects, that contains the items to display in the control. Next, use the <xref:System.Web.UI.Control.DataBind%2A> method to bind the data source to the <xref:System.Web.UI.WebControls.ListBox> control. Use the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> and <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> properties to specify which field in the data source to bind to the `Text` and `Value` properties, respectively, of each list item in the control. The <xref:System.Web.UI.WebControls.ListBox> control will now display the information from the data source.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+  
+<a name="accessibility"></a>   
+## Accessibility  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:ListBox  
+    AccessKey="string"  
+    AppendDataBoundItems="True|False"  
+    AutoPostBack="True|False"  
+    BackColor="color name|#dddddd"  
+    BorderColor="color name|#dddddd"  
+    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
+        Inset|Outset"  
+    BorderWidth="size"  
+    CausesValidation="True|False"  
+    CssClass="string"  
+    DataMember="string"  
+    DataSource="string"  
+    DataSourceID="string"  
+    DataTextField="string"  
+    DataTextFormatString="string"  
+    DataValueField="string"  
+    Enabled="True|False"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    Font-Bold="True|False"  
+    Font-Italic="True|False"  
+    Font-Names="string"  
+    Font-Overline="True|False"  
+    Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
+        Large|X-Large|XX-Large"  
+    Font-Strikeout="True|False"  
+    Font-Underline="True|False"  
+    ForeColor="color name|#dddddd"  
+    Height="size"  
+    ID="string"  
+    OnDataBinding="DataBinding event handler"  
+    OnDataBound="DataBound event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnSelectedIndexChanged="SelectedIndexChanged event handler"  
+    OnTextChanged="TextChanged event handler"  
+    OnUnload="Unload event handler"  
+    Rows="integer"  
+    runat="server"  
+    SelectedIndex="integer"  
+    SelectedValue="string"  
+    SelectionMode="Single|Multiple"  
+    SkinID="string"  
+    Style="string"  
+    TabIndex="integer"  
+    ToolTip="string"  
+    ValidationGroup="string"  
+    Visible="True|False"  
+    Width="size"  
+>  
+            <asp:ListItem  
+                Enabled="True|False"  
+                Selected="True|False"  
+                Text="string"  
+                Value="string"  
+            />  
+</asp:ListBox>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a <xref:System.Web.UI.WebControls.ListBox> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic ListBox Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListBox Example 2/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic ListBox Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListBox Example 2/VB/sourcevb.aspx#1)]  -->  
+  
+ The following example shows how to create a <xref:System.Web.UI.WebControls.ListBox> control that supports multiple selections.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic ListBox Example 2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListBox Example 2/CS/source3cs.aspx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic ListBox Example 2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListBox Example 2/VB/source3vb.aspx#3)]  -->  
+  
+ The following example demonstrates how to create a <xref:System.Web.UI.WebControls.ListBox> control through data binding.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic ListBox Example 2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListBox Example 2/CS/source2cs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic ListBox Example 2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListBox Example 2/VB/source2vb.aspx#2)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListBox" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.ListBox> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttributesToRender">
+      <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The output stream that renders HTML content to the client.</param>
+        <summary>Adds <see langword="name" />, <see langword="size" />, <see langword="multiple" />, and <see langword="onchange" /> to the list of attributes to render.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.ListBox.AddAttributesToRender%2A> method in a custom server control, so that the <xref:System.Web.UI.WebControls.ListBox> list item text always displays as bold.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomListBoxAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomListBoxAddAttributesToRender/CS/custom_listbox_addattributestorendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomListBoxAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomListBoxAddAttributesToRender/VB/custom_listbox_addattributestorendervb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomListBoxAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomListBoxAddAttributesToRender/CS/custom_listbox_addattributestorender.cs#2)]
+ [!code-vb[CustomListBoxAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomListBoxAddAttributesToRender/VB/custom_listbox_addattributestorender.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color BorderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListBox.BorderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border color of the control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> object that represents the border color of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.ListBox.BorderColor%2A> property is inherited from the <xref:System.Web.UI.WebControls.WebControl> class and is not applicable to the <xref:System.Web.UI.WebControls.ListBox> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderStyle">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.BorderStyle BorderStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.BorderStyle BorderStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListBox.BorderStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border style of the control.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.BorderStyle" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.ListBox.BorderStyle%2A> property is inherited from the <xref:System.Web.UI.WebControls.WebControl> class and is not applicable to the <xref:System.Web.UI.WebControls.ListBox> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderWidth">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.Unit BorderWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit BorderWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListBox.BorderWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border width for the control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> object that represents the border width of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.ListBox.BorderWidth%2A> property is inherited from the <xref:System.Web.UI.WebControls.WebControl> class and is not applicable to the <xref:System.Web.UI.WebControls.ListBox> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelectedIndices">
+      <MemberSignature Language="C#" Value="public virtual int[] GetSelectedIndices ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32[] GetSelectedIndices() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.GetSelectedIndices" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the array of index values for currently selected items in the <see cref="T:System.Web.UI.WebControls.ListBox" /> control.</summary>
+        <returns>An array of integers, each representing the index of a selected item in the list box.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListBox.GetSelectedIndices%2A> method to identify or access the selected items in the <xref:System.Web.UI.WebControls.ListBox> control. Each element in the returned array represents the index for a selected list item. You can use the index values to access the items in the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadPostData">
+      <MemberSignature Language="C#" Value="protected virtual bool LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key identifier for the control, used to index the <c>postCollection</c>.</param>
+        <param name="postCollection">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains value information indexed by control identifiers.</param>
+        <summary>Loads the posted content of the list control, if it is different from the last posting.</summary>
+        <returns>
+          <see langword="true" /> if the posted content is different from the last posting; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListBox.LoadPostData%2A> method is used primarily by control developers, when deriving a custom control from the <xref:System.Web.UI.WebControls.ListBox> class.  
+  
+ The <xref:System.Web.UI.WebControls.ListBox.LoadPostData%2A> method indicates if the state of the <xref:System.Web.UI.WebControls.ListBox> control has changed. In other words, it determines if each list item in the control has the same <xref:System.Web.UI.WebControls.ListItem.Selected%2A> value as the last posted value. A user selecting an item in the control changes the <xref:System.Web.UI.WebControls.ListItem.Selected%2A> value for the corresponding <xref:System.Web.UI.WebControls.ListItem> object in the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection of the <xref:System.Web.UI.WebControls.ListBox> control. If some list items are selected in the control, or if the <xref:System.Web.UI.WebControls.ListBox> is disabled, <xref:System.Web.UI.WebControls.ListBox.LoadPostData%2A> returns `false`.  
+  
+ When the <xref:System.Web.UI.WebControls.ListBox.LoadPostData%2A> method returns `true` for a control, the ASP.NET page framework invokes the <xref:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent%2A> method for the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreRender">
+      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.OnPreRender(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Configures the <see cref="T:System.Web.UI.WebControls.ListBox" /> control prior to rendering on the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListBox.OnPreRender%2A> method is used primarily by control developers, when deriving a custom control from the <xref:System.Web.UI.WebControls.ListBox> class. The <xref:System.Web.UI.WebControls.ListBox.OnPreRender%2A> method allows derived classes to handle the <xref:System.Web.UI.Control.PreRender> event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ The <xref:System.Web.UI.WebControls.ListBox.OnPreRender%2A> method performs any necessary prerendering steps prior to saving view state and rendering content for the <xref:System.Web.UI.WebControls.ListBox>.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.ListBox.OnPreRender(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ListBox.OnPreRender(System.EventArgs)" /> method of the base class so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="protected virtual void RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Invokes the <see cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" /> method whenever posted data for the <see cref="T:System.Web.UI.WebControls.ListBox" /> control has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent%2A> method is used primarily by control developers, when deriving a custom control from the <xref:System.Web.UI.WebControls.ListBox> control.  
+  
+ The ASP.NET page framework calls the <xref:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent%2A> method on a <xref:System.Web.UI.WebControls.ListBox> control when the <xref:System.Web.UI.WebControls.ListBox.LoadPostData%2A> method indicates that the state of the list items have changed in the <xref:System.Web.UI.WebControls.ListBox> control. The <xref:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent%2A> method calls the <xref:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged%2A> method to raise the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event. Control developers can override the <xref:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged%2A> method to perform custom processing when the user selects list items in the control.  
+  
+ The <xref:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent%2A> method can optionally perform validation before raising the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event for the control. To validate a group of controls on the page when a list item within the <xref:System.Web.UI.WebControls.ListBox> is selected, set the <xref:System.Web.UI.WebControls.ListControl.AutoPostBack%2A> and <xref:System.Web.UI.WebControls.ListControl.CausesValidation%2A> properties to `true`, and then specify the group of controls to validate in the <xref:System.Web.UI.WebControls.ListControl.ValidationGroup%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rows">
+      <MemberSignature Language="C#" Value="public virtual int Rows { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Rows" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListBox.Rows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of rows displayed in the <see cref="T:System.Web.UI.WebControls.ListBox" /> control.</summary>
+        <value>The number of rows displayed in the <see cref="T:System.Web.UI.WebControls.ListBox" /> control. The default value is <see langword="4" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListBox.Rows%2A> property to specify the number of rows to display in the <xref:System.Web.UI.WebControls.ListBox> control.  
+  
+> [!CAUTION]
+>  The number of rows must be between one and 2000. Values outside of this range will raise an exception.  
+  
+ The value of the <xref:System.Web.UI.WebControls.ListBox.Rows%2A> property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ListBox.Rows%2A> property to display six rows in the <xref:System.Web.UI.WebControls.ListBox> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic ListBox.Rows Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListBox.Rows Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic ListBox.Rows Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListBox.Rows Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified number of rows is less than one or greater than 2000.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionMode">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ListSelectionMode SelectionMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ListSelectionMode SelectionMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListBox.SelectionMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ListSelectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the selection mode of the <see cref="T:System.Web.UI.WebControls.ListBox" /> control.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.ListSelectionMode" /> values. The default value is <see langword="Single" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListBox.SelectionMode%2A> property to specify the mode behavior of the <xref:System.Web.UI.WebControls.ListBox> control. Setting this property to `ListSelectionMode.Single` indicates only a single item can be selected from the <xref:System.Web.UI.WebControls.ListBox> control, while `ListSelectionMode.Multiple` specifies multiple items can be selected.  
+  
+ The value of the <xref:System.Web.UI.WebControls.ListBox.SelectionMode%2A> property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to use the <xref:System.Web.UI.WebControls.ListBox.SelectionMode%2A> property to allow the user to select multiple selections from the <xref:System.Web.UI.WebControls.ListBox> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ListBoxSelectionMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxSelectionMode/CS/listboxselectionmodecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ListBoxSelectionMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxSelectionMode/VB/listboxselectionmodevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified selection mode is not one of the <see cref="T:System.Web.UI.WebControls.ListSelectionMode" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
+      <MemberSignature Language="C#" Value="bool IPostBackDataHandler.LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IPostBackDataHandler.LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The index within the posted collection that references the content to load.</param>
+        <param name="postCollection">The collection posted to the server.</param>
+        <summary>Loads the posted content of the list control, if it is different from the last posting.</summary>
+        <returns>
+          <see langword="true" /> if the posted content is different from the last posting; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you should use the <xref:System.Web.UI.WebControls.ListBox.LoadPostData%2A?displayProperty=fullName> method to process posted data for changes to a <xref:System.Web.UI.WebControls.ListBox> object.  
+  
+ The <xref:System.Web.UI.WebControls.ListBox.System%23Web%23UI%23IPostBackDataHandler%23LoadPostData%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ListBox> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To define a custom implementation for processing posted data for a <see cref="T:System.Web.UI.WebControls.ListBox" /> object, override the <see cref="M:System.Web.UI.WebControls.ListBox.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.ListBox.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method to process the posted data for the control.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="void IPostBackDataHandler.RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Invokes the <see cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" /> method whenever posted data for the <see cref="T:System.Web.UI.WebControls.ListBox" /> control has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you should use the <xref:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent%2A?displayProperty=fullName> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.ListBox> object changes.  
+  
+ The <xref:System.Web.UI.WebControls.ListBox.System%23Web%23UI%23IPostBackDataHandler%23LoadPostData%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ListBox> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.ListBox" /> object, override the <see cref="M:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent" /> method to raise the event when posted data has changed for the control.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

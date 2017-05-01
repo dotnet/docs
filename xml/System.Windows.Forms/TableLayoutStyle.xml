@@ -1,0 +1,91 @@
+<Type Name="TableLayoutStyle" FullName="System.Windows.Forms.TableLayoutStyle">
+  <TypeSignature Language="C#" Value="public abstract class TableLayoutStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TableLayoutStyle extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.TableLayoutSettings/StyleConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implements the basic functionality that represents the appearance and behavior of a table layout.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TableLayoutStyle> class is a common base class for the <xref:System.Windows.Forms.ColumnStyle> and <xref:System.Windows.Forms.RowStyle> classes, which describe the appearance and behavior of columns and rows, respectively, in a <xref:System.Windows.Forms.TableLayoutPanel>.  
+  
+ The series of styles that represent the current columns and rows in the current table layout are aggregated in a <xref:System.Windows.Forms.TableLayoutColumnStyleCollection> and <xref:System.Windows.Forms.TableLayoutRowStyleCollection>, respectively.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TableLayoutStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutStyle.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TableLayoutStyle" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the default constructor for the <xref:System.Windows.Forms.TableLayoutStyle> class. It effectively sets the <xref:System.Windows.Forms.SizeType> property to <xref:System.Windows.Forms.SizeType>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeType">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.SizeType SizeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.SizeType SizeType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutStyle.SizeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SizeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag indicating how a row or column should be sized relative to its containing table.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.SizeType" /> values that specifies how rows or columns of user interface (UI) elements should be sized relative to their container. The default is <see cref="F:System.Windows.Forms.SizeType.AutoSize" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The table layout engine sizes a row or column in one of the following ways:  
+  
+-   In an absolute number of pixels (<xref:System.Windows.Forms.SizeType>).  
+  
+-   As a percentage of the parent container (<xref:System.Windows.Forms.SizeType>).  
+  
+-   To share equal space with its peers (<xref:System.Windows.Forms.SizeType>).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

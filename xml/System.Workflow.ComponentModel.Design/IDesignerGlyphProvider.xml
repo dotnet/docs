@@ -1,0 +1,76 @@
+<Type Name="IDesignerGlyphProvider" FullName="System.Workflow.ComponentModel.Design.IDesignerGlyphProvider">
+  <TypeSignature Language="C#" Value="public interface IDesignerGlyphProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignerGlyphProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IDesignerGlyphProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the method that glyph provider classes use to generate an array of glyphs to display on an activity designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This interface defines the method that implementing classes must use to provide an appropriate set of <xref:System.Workflow.ComponentModel.Design.DesignerGlyph> objects to activity designers. The implementing class should also render the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph> objects onto the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can implement the <xref:System.Workflow.ComponentModel.Design.IDesignerGlyphProvider> interface. It shows how you can implement the <xref:System.Workflow.ComponentModel.Design.IDesignerGlyphProvider.GetGlyphs%2A> method to draw custom glyph objects on an activity designer surface.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the DesignerGlyphProvider.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#130](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#130)]
+ [!code-vb[WF_Samples#130](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#130)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetGlyphs">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection GetGlyphs (System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection GetGlyphs(class System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IDesignerGlyphProvider.GetGlyphs(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
+      </Parameters>
+      <Docs>
+        <param name="activityDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> object for which to retrieve the glyphs.</param>
+        <summary>Returns an array of glyphs that are associated with the specified activity designer.</summary>
+        <returns>An array of <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" /> objects to render to the activity designer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how you can implement the <xref:System.Workflow.ComponentModel.Design.IDesignerGlyphProvider.GetGlyphs%2A> method to draw custom glyph objects on an activity designer surface.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the DesignerGlyphProvider.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#130](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#130)]
+ [!code-vb[WF_Samples#130](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#130)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,51 @@
+<Type Name="AuthenticationSchemeSelector" FullName="System.Net.AuthenticationSchemeSelector">
+  <TypeSignature Language="C#" Value="public delegate System.Net.AuthenticationSchemes AuthenticationSchemeSelector(HttpListenerRequest httpRequest);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationSchemeSelector extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Net.AuthenticationSchemeSelector" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="httpRequest" Type="System.Net.HttpListenerRequest" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="httpRequest">The <see cref="T:System.Net.HttpListenerRequest" /> instance for which to select an authentication scheme.</param>
+    <summary>Selects the authentication scheme for an <see cref="T:System.Net.HttpListener" /> instance.</summary>
+    <returns>One of the <see cref="T:System.Net.AuthenticationSchemes" /> values that indicates the method of authentication to use for the specified client request.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Delegates of this type are used by <xref:System.Net.HttpListener> instances to select an authentication scheme based on the characteristics of a request.  
+  
+ An <xref:System.Net.AuthenticationSchemeSelector> delegate is passed an <xref:System.Net.HttpListenerRequest> object for each incoming request that has not provided authentication information. The method invoked by the delegate uses the <xref:System.Net.HttpListenerRequest> object and any other available information to decide which authentication scheme to require. The delegate is specified by using the <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> property.  
+  
+   
+  
+## Examples  
+ The following example uses an instance of this type to set the <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> property.  
+  
+ [!code-csharp[NCLListener#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLListener/CS/sample.cs#2)]
+ [!code-vb[NCLListener#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLListener/vb/sample.vb#2)]  
+  
+ The following example shows the implementation of the method invoked by the <xref:System.Net.AuthenticationSchemeSelector> delegate in the previous example.  
+  
+ [!code-csharp[NCLListener#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLListener/CS/sample.cs#1)]
+ [!code-vb[NCLListener#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLListener/vb/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: c7cb3b77-3424-4b54-9efa-4dc715948e41
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find Elements in a Namespace (XPath-LINQ to XML) (Visual Basic)

@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrPPMT_PerGT0AndLTNPer"
 ms.assetid: 5f3fadba-d32c-4e52-b949-85a907e6c12f
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

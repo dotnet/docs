@@ -1,0 +1,608 @@
+<Type Name="ImageList" FullName="System.Windows.Forms.ImageList">
+  <TypeSignature Language="C#" Value="public sealed class ImageList : System.ComponentModel.Component" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImageList extends System.ComponentModel.Component" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImageList" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Component</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Images")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer("System.Windows.Forms.Design.ImageListCodeDomSerializer, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.ComponentModel.Design.Serialization.CodeDomSerializer, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.ImageListDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItemFilter("System.Windows.Forms")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ImageListConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides methods to manage a collection of <see cref="T:System.Drawing.Image" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ImageList> is typically used by other controls, such as the <xref:System.Windows.Forms.ListView>, <xref:System.Windows.Forms.TreeView>, or <xref:System.Windows.Forms.ToolBar>. You can add bitmaps or icons to the <xref:System.Windows.Forms.ImageList>, and the other controls are able to use the images as they require.  
+  
+ <xref:System.Windows.Forms.ImageList> uses a handle to manage the list of images. The <xref:System.Windows.Forms.ImageList.Handle%2A> is not created until certain operations, such as getting the <xref:System.Windows.Forms.ImageList.Handle%2A> or calling <xref:System.Windows.Forms.ImageList.Draw%2A>, are performed on the image list. Performing other operations, such as setting the <xref:System.Windows.Forms.ImageList.ColorDepth%2A> or <xref:System.Windows.Forms.ImageList.ImageSize%2A> will cause the <xref:System.Windows.Forms.ImageList.Handle%2A> to be recreated. Therefore, you should perform these operations before you add images to the <xref:System.Windows.Forms.ImageList>. In addition, when you work with forms that will be localized, you should always add an <xref:System.Windows.Forms.ImageList> and images when the Language property of a form is set to Default. Changing the form's language before you add images will corrupt the application resource files.  
+  
+   
+  
+## Examples  
+ The following code example shows how to select, remove, and display images.  
+  
+ [!code-cpp[Classic ImageList Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ImageList Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ImageList Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ImageList Example/CS/source.cs#1)]
+ [!code-vb[Classic ImageList Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ImageList Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImageList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ImageList" /> class with default values for <see cref="P:System.Windows.Forms.ImageList.ColorDepth" />, <see cref="P:System.Windows.Forms.ImageList.ImageSize" />, and <see cref="P:System.Windows.Forms.ImageList.TransparentColor" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.Windows.Forms.ImageList>.  
+  
+|Item|Description|  
+|----------|-----------------|  
+|<xref:System.Windows.Forms.ImageList.ColorDepth%2A>|In the .NET Framework version 1.0, the default is <xref:System.Windows.Forms.ColorDepth>. In the .NET Framework version 1.1 or later, the default is <xref:System.Windows.Forms.ColorDepth>.|  
+|<xref:System.Windows.Forms.ImageList.ImageSize%2A>|The default is a <xref:System.Drawing.Size> object with a height and width of 16 by 16.|  
+|<xref:System.Windows.Forms.ImageList.TransparentColor%2A>|The default value is <xref:System.Drawing.Color.Transparent%2A>.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates constructing an <xref:System.Windows.Forms.ImageList.%23ctor%2A>, adding images to the <xref:System.Windows.Forms.ImageList.Images%2A> property, setting the <xref:System.Windows.Forms.ImageList.ImageSize%2A> property, and using the <xref:System.Windows.Forms.ImageList.Draw%2A> method. To run this example, place it in a form containing a button named `Button1`. The example assumes the existence of `FeatherTexture.bmp` and `Gone Fishing.bmp` at c:\Windows\\. Change the example accordingly if the bitmaps do not exist on your system, or exist at another location.  
+  
+ [!code-cpp[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImageList (System.ComponentModel.IContainer container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.#ctor(System.ComponentModel.IContainer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="container" Type="System.ComponentModel.IContainer" />
+      </Parameters>
+      <Docs>
+        <param name="container">An object implementing <see cref="T:System.ComponentModel.IContainer" /> to associate with this instance of <see cref="T:System.Windows.Forms.ImageList" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ImageList" /> class, associating it with a container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ImageList> constructor enables you to associate a <xref:System.Windows.Forms.ImageList> with any <xref:System.ComponentModel.Container> object. By associating the <xref:System.Windows.Forms.ImageList> like this, you hand over control of the lifetime of the <xref:System.Windows.Forms.ImageList> to the <xref:System.ComponentModel.Container>. This can be useful if you use a number of components in your application, and want to dispose of all of them simultaneously. For example, if you associate a <xref:System.Windows.Forms.ToolTip>, an <xref:System.Windows.Forms.ImageList>, and a <xref:System.Windows.Forms.Timer> with a <xref:System.ComponentModel.Container>, calling <xref:System.ComponentModel.Container.Dispose%2A> on the Container will force disposal of all of these components as well.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorDepth">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ColorDepth ColorDepth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ColorDepth ColorDepth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ColorDepth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColorDepth</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the color depth of the image list.</summary>
+        <value>The number of available colors for the image. In the .NET Framework version 1.0, the default is <see cref="F:System.Windows.Forms.ColorDepth.Depth4Bit" />. In the .NET Framework version 1.1 or later, the default is <see cref="F:System.Windows.Forms.ColorDepth.Depth8Bit" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you set the color depth to a new value, the <xref:System.Windows.Forms.ImageList.Handle%2A> for the image list is recreated. Because setting the <xref:System.Windows.Forms.ImageList.ColorDepth%2A> property causes the handle to be recreated, you should set <xref:System.Windows.Forms.ImageList.ColorDepth%2A> prior to setting the <xref:System.Windows.Forms.ImageList.Images%2A> property. When the handle for the <xref:System.Windows.Forms.ImageList> has been created, setting the <xref:System.Windows.Forms.ImageList.ColorDepth%2A> or <xref:System.Windows.Forms.ImageList.ImageSize%2A> properties in code, after setting the <xref:System.Windows.Forms.ImageList.Images%2A> property, will cause the collection of images set for the <xref:System.Windows.Forms.ImageList.Images%2A> property to be deleted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The color depth is not a valid <see cref="T:System.Windows.Forms.ColorDepth" /> enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Draw">
+      <MemberSignature Language="C#" Value="public void Draw (System.Drawing.Graphics g, System.Drawing.Point pt, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Draw(class System.Drawing.Graphics g, valuetype System.Drawing.Point pt, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.Draw(System.Drawing.Graphics,System.Drawing.Point,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="pt" Type="System.Drawing.Point" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
+        <param name="pt">The location defined by a <see cref="T:System.Drawing.Point" /> at which to draw the image.</param>
+        <param name="index">The index of the image in the <see cref="T:System.Windows.Forms.ImageList" /> to draw.</param>
+        <summary>Draws the image indicated by the specified index on the specified <see cref="T:System.Drawing.Graphics" /> at the given location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates constructing an <xref:System.Windows.Forms.ImageList.%23ctor%2A>, adding images to the <xref:System.Windows.Forms.ImageList.Images%2A> property, setting the <xref:System.Windows.Forms.ImageList.ImageSize%2A> property, and using the <xref:System.Windows.Forms.ImageList.Draw%2A> method. To run this example, place it in a form containing a button named `Button1`. The example assumes the existence of `FeatherTexture.bmp` and `Gone Fishing.bmp` at c:\Windows\\. Change the example accordingly if the bitmaps do not exist on your system, or exist at another location.  
+  
+ [!code-cpp[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The index is less than 0.  
+  
+ -or-  
+  
+ The index is greater than or equal to the count of images in the image list.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Draw">
+      <MemberSignature Language="C#" Value="public void Draw (System.Drawing.Graphics g, int x, int y, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Draw(class System.Drawing.Graphics g, int32 x, int32 y, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.Draw(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
+        <param name="x">The horizontal position at which to draw the image.</param>
+        <param name="y">The vertical position at which to draw the image.</param>
+        <param name="index">The index of the image in the <see cref="T:System.Windows.Forms.ImageList" /> to draw.</param>
+        <summary>Draws the image indicated by the given index on the specified <see cref="T:System.Drawing.Graphics" /> at the specified location.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The index is less than 0.  
+  
+ -or-  
+  
+ The index is greater than or equal to the count of images in the image list.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Draw">
+      <MemberSignature Language="C#" Value="public void Draw (System.Drawing.Graphics g, int x, int y, int width, int height, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Draw(class System.Drawing.Graphics g, int32 x, int32 y, int32 width, int32 height, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.Draw(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> to draw on.</param>
+        <param name="x">The horizontal position at which to draw the image.</param>
+        <param name="y">The vertical position at which to draw the image.</param>
+        <param name="width">The width, in pixels, of the destination image.</param>
+        <param name="height">The height, in pixels, of the destination image.</param>
+        <param name="index">The index of the image in the <see cref="T:System.Windows.Forms.ImageList" /> to draw.</param>
+        <summary>Draws the image indicated by the given index on the specified <see cref="T:System.Drawing.Graphics" /> using the specified location and size.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The image is stretched or compressed as necessary to fit the bounds provided.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The index is less than 0.  
+  
+ -or-  
+  
+ The index is greater than or equal to the count of images in the image list.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.Handle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the handle of the image list object.</summary>
+        <value>The handle for the image list. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This corresponds to a Win32 HIMAGELIST handle. The handle is not created until you need to use it. Getting the handle causes it to be created.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Creating the handle for the <see cref="T:System.Windows.Forms.ImageList" /> failed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HandleCreated">
+      <MemberSignature Language="C#" Value="public bool HandleCreated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HandleCreated" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.HandleCreated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the underlying Win32 handle has been created.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Forms.ImageList.Handle" /> has been created; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Images">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ImageList.ImageCollection Images { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ImageList/ImageCollection Images" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.Images" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImageList+ImageCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ImageList.ImageCollection" /> for this image list.</summary>
+        <value>The collection of images.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the image collection has not yet been created, it is created when you retrieve this property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates constructing an <xref:System.Windows.Forms.ImageList.%23ctor%2A>, adding images to the <xref:System.Windows.Forms.ImageList.Images%2A> property, setting the <xref:System.Windows.Forms.ImageList.ImageSize%2A> property, and using the <xref:System.Windows.Forms.ImageList.Draw%2A> method. To run this example, place it in a form containing a button named `Button1`. The example assumes the existence of `FeatherTexture.bmp` and `Gone Fishing.bmp` at c:\Windows\\. Change the example accordingly if the bitmaps do not exist on your system, or exist at another location.  
+  
+ [!code-cpp[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageSize">
+      <MemberSignature Language="C#" Value="public System.Drawing.Size ImageSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size ImageSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the size of the images in the image list.</summary>
+        <value>The <see cref="T:System.Drawing.Size" /> that defines the height and width, in pixels, of the images in the list. The default size is 16 by 16. The maximum size is 256 by 256.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Windows.Forms.ImageList.ImageSize%2A> property prior to adding images to the image collection causes the images to be resized to the image size specified.  
+  
+ When you set the <xref:System.Windows.Forms.ImageList.ImageSize%2A> property to a new value, the <xref:System.Windows.Forms.ImageList.Handle%2A> for the image list is recreated.  
+  
+ Because setting the <xref:System.Windows.Forms.ImageList.ImageSize%2A> property causes the handle to be recreated, you should set <xref:System.Windows.Forms.ImageList.ImageSize%2A> prior to setting the <xref:System.Windows.Forms.ImageList.Images%2A> property. When the handle for the <xref:System.Windows.Forms.ImageList> has been created, setting the <xref:System.Windows.Forms.ImageList.ColorDepth%2A> or <xref:System.Windows.Forms.ImageList.ImageSize%2A> properties in code, after setting the <xref:System.Windows.Forms.ImageList.Images%2A> property, will cause the collection of images set for the <xref:System.Windows.Forms.ImageList.Images%2A> property to be deleted.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates constructing an <xref:System.Windows.Forms.ImageList.%23ctor%2A>, adding images to the <xref:System.Windows.Forms.ImageList.Images%2A> property, setting the <xref:System.Windows.Forms.ImageList.ImageSize%2A> property, and using the <xref:System.Windows.Forms.ImageList.Draw%2A> method. To run this example, place it in a form containing a button named `Button1`. The example assumes the existence of `FeatherTexture.bmp` and `Gone Fishing.bmp` at c:\Windows\\. Change the example accordingly if the bitmaps do not exist on your system, or exist at another location.  
+  
+ [!code-cpp[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.HelpProviderAndImageListExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpProviderAndImageListExample/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value assigned is equal to <see cref="P:System.Drawing.Size.IsEmpty" />.  
+  
+ -or-  
+  
+ The value of the height or width is less than or equal to 0.  
+  
+ -or-  
+  
+ The value of the height or width is greater than 256.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The new size has a dimension less than 0 or greater than 256.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageStream">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ImageListStreamer ImageStream { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ImageListStreamer ImageStream" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.ImageStream" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImageListStreamer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ImageListStreamer" /> associated with this image list.</summary>
+        <value>
+          <see langword="null" /> if the image list is empty; otherwise, a <see cref="T:System.Windows.Forms.ImageListStreamer" /> for this <see cref="T:System.Windows.Forms.ImageList" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ImageListStreamer> is the data portion of the image list. When you work with forms that will be localized, you should always add an <xref:System.Windows.Forms.ImageList> and images when the Language property of a form is set to Default. Changing the form's language before you add images will corrupt the image stream.  
+  
+ You can pass this handle to another instance of an <xref:System.Windows.Forms.ImageList>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecreateHandle">
+      <MemberSignature Language="C#" Value="public event EventHandler RecreateHandle;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RecreateHandle" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ImageList.RecreateHandle" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.ImageList.Handle" /> is recreated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this event to do special processing when the <xref:System.Windows.Forms.ImageList.Handle%2A> is recreated by actions such as changing the <xref:System.Windows.Forms.ImageList.ColorDepth%2A> or <xref:System.Windows.Forms.ImageList.ImageSize%2A>. Special processing may be required because setting the <xref:System.Windows.Forms.ImageList.ColorDepth%2A> or the <xref:System.Windows.Forms.ImageList.ImageSize%2A> property after setting the <xref:System.Windows.Forms.ImageList.Images%2A> property causes the handle to be recreated and the images to be discarded.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ImageList.RecreateHandle> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ImageList> named `ImageList1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ImageList.RecreateHandle> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#160](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#160)]
+ [!code-vb[System.Windows.Forms.EventExamples#160](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#160)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tag">
+      <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.Tag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object that contains additional data about the <see cref="T:System.Windows.Forms.ImageList" />.</summary>
+        <value>An <see cref="T:System.Object" /> that contains additional data about the <see cref="T:System.Windows.Forms.ImageList" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageList.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current <see cref="T:System.Windows.Forms.ImageList" />.</summary>
+        <returns>A string that represents the current <see cref="T:System.Windows.Forms.ImageList" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ImageList.ToString%2A> method returns a string that includes the <xref:System.Windows.Forms.ImageList.ImageCollection.Count%2A> and <xref:System.Windows.Forms.ImageList.ImageSize%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransparentColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color TransparentColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color TransparentColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImageList.TransparentColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color to treat as transparent.</summary>
+        <value>One of the <see cref="T:System.Drawing.Color" /> values. The default is <see langword="Transparent" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The transparent color is not rendered when the image is drawn.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

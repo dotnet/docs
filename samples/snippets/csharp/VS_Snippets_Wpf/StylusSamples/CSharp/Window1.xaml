@@ -1,0 +1,13 @@
+﻿<Window x:Class="StylusSamples.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="StylusSamples"
+    >
+	<DockPanel>
+		<Button DockPanel.Dock="Top" Click="Button1Click" Name="button1">Click Here to Reset</Button>
+		<Label DockPanel.Dock="Top">Move the stylus around and click below</Label>
+		<Slider DockPanel.Dock="Top" Name="horizontalSlider1" Stylus.IsPressAndHoldEnabled="true"/>
+		<TextBox DockPanel.Dock="Top" Name="textbox1"  />
+		<!--<Canvas Name="canvas1" Stylus.IsFlicksEnabled="true"></Canvas>-->
+	</DockPanel>
+</Window>

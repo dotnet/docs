@@ -1,0 +1,230 @@
+<Type Name="PingOptions" FullName="System.Net.NetworkInformation.PingOptions">
+  <TypeSignature Language="C#" Value="public class PingOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PingOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.PingOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Ping</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used to control how <see cref="T:System.Net.NetworkInformation.Ping" /> data packets are transmitted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.NetworkInformation.PingOptions> class provides the <xref:System.Net.NetworkInformation.PingOptions.Ttl%2A> and <xref:System.Net.NetworkInformation.PingOptions.DontFragment%2A> properties to control how Internet Control Message Protocol (ICMP) echo request packets are transmitted.  
+  
+ The <xref:System.Net.NetworkInformation.PingOptions.Ttl%2A> property specifies the Time to Live for packets sent by the <xref:System.Net.NetworkInformation.Ping> class. This value indicates the number of routing nodes that can forward a <xref:System.Net.NetworkInformation.Ping> packet before it is discarded. Setting this option is useful if you want to test the number of forwards, also known as hops, are required to send a packet from a source computer to a destination computer.  
+  
+ The <xref:System.Net.NetworkInformation.PingOptions.DontFragment%2A> property controls whether data sent to a remote host can be divided into multiple packets.  This option is useful if you want to test the maximum transmission unit (MTU) of the routers and gateways used to transmit the packet.  
+  
+ Instances of the <xref:System.Net.NetworkInformation.PingOptions> class are passed to the <xref:System.Net.NetworkInformation.Ping.Send%2A> and <xref:System.Net.NetworkInformation.Ping.SendAsync%2A> methods, and the <xref:System.Net.NetworkInformation.PingReply> class returns instances of <xref:System.Net.NetworkInformation.PingOptions> via the <xref:System.Net.NetworkInformation.PingReply.Options%2A> property.  
+  
+ For a list of initial property values for an instance of <xref:System.Net.NetworkInformation.PingOptions>, see the <xref:System.Net.NetworkInformation.PingOptions.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.NetworkInformation.Ping>, <xref:System.Net.NetworkInformation.PingOptions> and <xref:System.Net.NetworkInformation.PingReply> classes to send an ICMP echo request to the host specified on the command line.  
+  
+ [!code-cpp[NCLPingSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclPingSync/CPP/syncping.cpp#1)]
+ [!code-csharp[NCLPingSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclPingSync/CS/syncping.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PingOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.PingOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Ping</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.PingOptions" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.Net.NetworkInformation.PingOptions>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Net.NetworkInformation.PingOptions.Ttl%2A>|128|  
+|<xref:System.Net.NetworkInformation.PingOptions.DontFragment%2A>|`false`|  
+  
+ You can set the properties to new values before calling <xref:System.Net.NetworkInformation.Ping.Send%2A> or <xref:System.Net.NetworkInformation.Ping.SendAsync%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling this constructor.  
+  
+ [!code-cpp[NCLPingSync#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclPingSync/CPP/syncping.cpp#2)]
+ [!code-csharp[NCLPingSync#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclPingSync/CS/syncping.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PingOptions (int ttl, bool dontFragment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 ttl, bool dontFragment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.PingOptions.#ctor(System.Int32,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Ping</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ttl" Type="System.Int32" />
+        <Parameter Name="dontFragment" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="ttl">An <see cref="T:System.Int32" /> value greater than zero that specifies the number of times that the <see cref="T:System.Net.NetworkInformation.Ping" /> data packets can be forwarded.</param>
+        <param name="dontFragment">
+          <see langword="true" /> to prevent data sent to the remote host from being fragmented; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.PingOptions" /> class and sets the Time to Live and fragmentation values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `ttl` parameter limits the number of routers and gateways that can forward the data. This is useful for testing the length of the route between the local and remote computers. The `dontFragment` parameter allows you to test the maximum transmission unit (MTU) of the routers and gateways used to transmit the packet.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling this constructor and displaying the new instance's property values.  
+  
+ [!code-cpp[NCLPingAsync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclPingAsync/CPP/asyncping.cpp#3)]
+ [!code-csharp[NCLPingAsync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclPingAsync/CS/asyncping.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="ttl " />is less than or equal to zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DontFragment">
+      <MemberSignature Language="C#" Value="public bool DontFragment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DontFragment" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingOptions.DontFragment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Ping</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> value that controls fragmentation of the data sent to the remote host.</summary>
+        <value>
+          <see langword="true" /> if the data cannot be sent in multiple packets; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Applications use this property to control whether data sent to a remote host by the <xref:System.Net.NetworkInformation.Ping> class can be divided into multiple packets.  This option is useful if you want to test the maximum transmission unit (MTU) of the routers and gateways used to transmit the packet. If this property is `true` and the data sent to the remote host is larger then the MTU of a gateway or router between the sender and the remote host, the ping operation fails with status <xref:System.Net.NetworkInformation.IPStatus>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates setting the value of this property using a <xref:System.Net.NetworkInformation.PingOptions.%23ctor%2A> constructor, and then displaying the value.  
+  
+ [!code-cpp[NCLPingAsync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclPingAsync/CPP/asyncping.cpp#3)]
+ [!code-csharp[NCLPingAsync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclPingAsync/CS/asyncping.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ttl">
+      <MemberSignature Language="C#" Value="public int Ttl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Ttl" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingOptions.Ttl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Ping</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of routing nodes that can forward the <see cref="T:System.Net.NetworkInformation.Ping" /> data before it is discarded.</summary>
+        <value>An <see cref="T:System.Int32" /> value that specifies the number of times the <see cref="T:System.Net.NetworkInformation.Ping" /> data packets can be forwarded. The default is 128.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As gateways and routers transmit packets through a network, they decrement the current Time-to-Live (TTL) value found in the packet header. If the TTL value reaches zero, the packet is deemed undeliverable and is discarded. This option is useful if you want to test the number of routers and gateways used to transmit the data.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates setting the value of this property using a <xref:System.Net.NetworkInformation.PingOptions.%23ctor%2A> constructor, and then displaying the value.  
+  
+ [!code-cpp[NCLPingAsync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclPingAsync/CPP/asyncping.cpp#3)]
+ [!code-csharp[NCLPingAsync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclPingAsync/CS/asyncping.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is less than or equal to zero.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

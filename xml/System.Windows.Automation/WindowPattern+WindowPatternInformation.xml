@@ -1,0 +1,203 @@
+<Type Name="WindowPattern+WindowPatternInformation" FullName="System.Windows.Automation.WindowPattern+WindowPatternInformation">
+  <TypeSignature Language="C#" Value="public struct WindowPattern.WindowPatternInformation" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit WindowPattern/WindowPatternInformation extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.WindowPattern.WindowPatternInformation" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.WindowPattern" /> object using its <see cref="P:System.Windows.Automation.WindowPattern.Current" /> or <see cref="P:System.Windows.Automation.WindowPattern.Cached" /> accessors.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanMaximize">
+      <MemberSignature Language="C#" Value="public bool CanMaximize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanMaximize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.WindowPattern.WindowPatternInformation.CanMaximize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the <see cref="T:System.Windows.Automation.AutomationElement" /> can be maximized.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Automation.AutomationElement" /> can be maximized; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAWindowPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#101)]
+ [!code-vb[UIAWindowPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#101)]  
+[!code-csharp[UIAWindowPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#103)]
+[!code-vb[UIAWindowPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#103)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanMinimize">
+      <MemberSignature Language="C#" Value="public bool CanMinimize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanMinimize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.WindowPattern.WindowPatternInformation.CanMinimize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the current <see cref="T:System.Windows.Automation.AutomationElement" /> can be minimized.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Automation.AutomationElement" /> can be minimized; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAWindowPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#101)]
+ [!code-vb[UIAWindowPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#101)]  
+[!code-csharp[UIAWindowPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#103)]
+[!code-vb[UIAWindowPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#103)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsModal">
+      <MemberSignature Language="C#" Value="public bool IsModal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsModal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.WindowPattern.WindowPatternInformation.IsModal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the <see cref="T:System.Windows.Automation.AutomationElement" /> is modal.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Automation.AutomationElement" /> is modal; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAWindowPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#101)]
+ [!code-vb[UIAWindowPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#101)]  
+[!code-csharp[UIAWindowPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#103)]
+[!code-vb[UIAWindowPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#103)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTopmost">
+      <MemberSignature Language="C#" Value="public bool IsTopmost { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTopmost" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.WindowPattern.WindowPatternInformation.IsTopmost" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the <see cref="T:System.Windows.Automation.AutomationElement" /> is the topmost element in the z-order.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Automation.AutomationElement" /> is topmost; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, an <xref:System.Windows.Automation.AutomationPropertyChangedEventHandler> is defined to listen for changes to the <xref:System.Windows.Automation.WindowPattern.IsTopmostProperty> of an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAWindowPattern_snip#105](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#105)]
+ [!code-vb[UIAWindowPattern_snip#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#105)]  
+[!code-csharp[UIAWindowPattern_snip#106](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#106)]
+[!code-vb[UIAWindowPattern_snip#106](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#106)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowInteractionState">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.WindowInteractionState WindowInteractionState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.WindowInteractionState WindowInteractionState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.WindowPattern.WindowPatternInformation.WindowInteractionState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.WindowInteractionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Automation.WindowInteractionState" /> of the <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <value>The <see cref="T:System.Windows.Automation.WindowInteractionState" /> of the <see cref="T:System.Windows.Automation.AutomationElement" />. The default value is <see cref="F:System.Windows.Automation.WindowInteractionState.Running" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAWindowPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#101)]
+ [!code-vb[UIAWindowPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#101)]  
+[!code-csharp[UIAWindowPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#103)]
+[!code-vb[UIAWindowPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#103)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowVisualState">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.WindowVisualState WindowVisualState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.WindowVisualState WindowVisualState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.WindowPattern.WindowPatternInformation.WindowVisualState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.WindowVisualState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Automation.WindowVisualState" /> of the <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <value>The <see cref="T:System.Windows.Automation.WindowVisualState" /> of the <see cref="T:System.Windows.Automation.AutomationElement" />. The default value is <see cref="F:System.Windows.Automation.WindowVisualState.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.WindowPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to specify the visual state of the <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAWindowPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#101)]
+ [!code-vb[UIAWindowPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#101)]  
+[!code-csharp[UIAWindowPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAWindowPattern_snip/CSharp/UIAWindowPattern_snippets.cs#103)]
+[!code-vb[UIAWindowPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAWindowPattern_snip/VisualBasic/UIAWindowPattern_snippets.vb#103)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

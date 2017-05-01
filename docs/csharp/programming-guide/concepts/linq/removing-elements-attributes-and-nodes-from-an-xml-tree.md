@@ -46,7 +46,7 @@ You can modify an XML tree, removing elements, attributes, and other types of no
   
 ### Code  
   
-```cs  
+```csharp  
 XElement root = XElement.Parse(@"<Root>  
     <Child1>  
         <GrandChild1/>  

@@ -1,0 +1,23 @@
+<Namespace Name="System.Printing.IndexedProperties">
+  <Docs>
+    <summary>Provides classes that enable rapidly copying the property settings of a print system object to another object of the same type. Also, enables iteration through the properties of print system objects and the discovery of their types at run time, without using reflection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This namespace contains the following core classes:  
+  
+-   The <xref:System.Printing.IndexedProperties.PrintProperty> class, which is the base class for most of the other classes.  
+  
+-   The <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>, which is a <xref:System.Collections.Hashtable> whose entries are all instances of classes derived from <xref:System.Printing.IndexedProperties.PrintProperty>.  
+  
+ This namespace makes it possible to discover at run time, without using reflection, the types of the properties of print system objects, such as <xref:System.Printing.PrintServer>, <xref:System.Printing.PrintQueue>, or <xref:System.Printing.PrintSystemJobInfo>.  
+  
+ For examples that show the use of the classes in this namespace, see <xref:System.Printing.IndexedProperties.PrintBooleanProperty>, <xref:System.Printing.IndexedProperties.PrintProperty>, and <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>.  
+  
+ This namespace is part of the enhanced printing services provided with [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)]. Managed code developers using [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] must use the [!INCLUDE[TLA#tla_api](~/includes/tlasharptla-api-md.md)] in the <xref:System.Drawing.Printing> namespace.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

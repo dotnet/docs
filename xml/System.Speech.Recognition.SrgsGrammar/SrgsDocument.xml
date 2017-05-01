@@ -1,0 +1,750 @@
+<Type Name="SrgsDocument" FullName="System.Speech.Recognition.SrgsGrammar.SrgsDocument">
+  <TypeSignature Language="C#" Value="public class SrgsDocument" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SrgsDocument extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a design-time object that is used to build strongly-typed runtime grammars that conform to the [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://www.w3.org/TR/speech-grammar/).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can you construct an empty <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance and build a grammar by adding instances of classes that represent SRGS elements, such as <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf>,<xref:System.Speech.Recognition.SrgsGrammar.SrgsItem>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag>, and <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken>. You can also construct an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance from an existing SRGS-compliant XML grammar file, from an instance of <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule>, or from an instance of <xref:System.Speech.Recognition.GrammarBuilder>.  
+  
+ After the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object is created, it can be loaded into a <xref:System.Speech.Recognition.Grammar> object or compiled by <xref:System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler>, enabling it to be read by a <xref:System.Speech.Recognition.Grammar> object.  
+  
+ See [Create Grammars Using SrgsGrammar](http://msdn.microsoft.com/en-us/e4d9f96e-2241-4c39-b9e0-ac9ef4e9a906) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/en-us/610116c7-3817-40ff-857b-5d41e8511043) for more information and examples.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SrgsDocument ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsDocument.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates an empty <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance. To build a grammar within an empty <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance, add instances of classes that represent SRGS elements, such as <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf>, and <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem>.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object and then creates a public rule named `winnerRule`. It then creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> that consists of the string "A nation that has won the world cup is:", and adds this item to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements%2A> property of the rule. The example then creates two more rules (`ruleEurope` and `ruleSAmerica`), each of which is an <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object that contains three <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects. After that, another <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object is created that contains <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> objects that refer to `ruleEurope` and `ruleSAmerica`. The new <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object is then added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements%2A> property of `winnerRule`. After this, all three rules (`winnerRule`, `ruleEurope`, and `ruleSAmerica`) are added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> property of <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>. Finally, the three rules are compiled into a binary representation of the grammar.  
+  
+```csharp  
+public void WorldSoccerWinners ()  
+{  
+  
+  // Create an SrgsDocument, create a new rule  
+  // and set its scope to public.  
+  SrgsDocument document = new SrgsDocument();  
+  SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
+  winnerRule.Scope = SrgsRuleScope.Public;  
+  
+  // Add the introduction.  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  
+  // Create the rule for the European nations.  
+  SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
+    new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
+  SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
+  
+  // Create the rule for the South American nations.  
+  SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
+    new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
+  SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
+  
+  // Add references to winnerRule for ruleEurope and ruleSAmerica.  
+  winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
+    (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
+  
+  // Add all the rules to the document and make winnerRule   
+  // the root rule of the document.  
+  document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
+  document.Root = winnerRule;  
+  
+  String fileName = Path.GetTempFileName();  
+  using (FileStream stream = new FileStream(fileName, FileMode.Create))   
+  {   
+  
+    // Compile the grammar to a binary format.  
+    SrgsGrammarCompiler.Compile(document, stream);   
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SrgsDocument (System.Speech.Recognition.GrammarBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.GrammarBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsDocument.#ctor(System.Speech.Recognition.GrammarBuilder)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Speech.Recognition.GrammarBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The <see cref="T:System.Speech.Recognition.GrammarBuilder" /> object used to create the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class from a <see cref="T:System.Speech.Recognition.GrammarBuilder" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example builds a grammar in a <xref:System.Speech.Recognition.GrammarBuilder> instance using <xref:System.Speech.Recognition.Choices> objects. It then creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> from the <xref:System.Speech.Recognition.GrammarBuilder> object.  
+  
+```csharp  
+GrammarBuilder builder = null;  
+  
+// Create new Choices objects and add countries, and create GrammarBuilder objects.  
+Choices choicesEurope = new Choices(new string[] { "England", "France", "Germany", "Italy" });  
+GrammarBuilder europe = new GrammarBuilder(choicesEurope);  
+  
+Choices choicesSAmerica = new Choices(new string[] { "Argentina", "Brazil", "Uruguay" });  
+GrammarBuilder sAmerica = new GrammarBuilder(choicesSAmerica);  
+  
+Choices worldCupWinnerChoices = new Choices(new GrammarBuilder[] {choicesEurope, choicesSAmerica});  
+  
+// Create new GrammarBuilder from a Choices object.  
+builder = new GrammarBuilder(worldCupWinnerChoices);  
+  
+// Create an SrgsDocument object from a GrammarBuilder object.  
+SrgsDocument document = new SrgsDocument(builder);  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="builder" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SrgsDocument (System.Speech.Recognition.SrgsGrammar.SrgsRule grammarRootRule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.SrgsGrammar.SrgsRule grammarRootRule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsDocument.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsRule)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="grammarRootRule" Type="System.Speech.Recognition.SrgsGrammar.SrgsRule" />
+      </Parameters>
+      <Docs>
+        <param name="grammarRootRule">The <see langword="root rule" /> in the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class and specifies an <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> object to be the root rule of the grammar.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor adds the specified rule to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection> of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object and sets it as the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Root%2A> rule for the grammar.  
+  
+   
+  
+## Examples  
+ The following example creates two rules (`chooseCities` and `destCities`) for choosing origin and destination cities for a flight. The example initializes the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance using the `chooseCities` rule as an argument. The example writes the contents  of the rules collection and the name of the root rule to the console.  
+  
+```csharp  
+// Create a rule that contains a list of destination cities.  
+SrgsRule destCities = new SrgsRule("Destination");  
+SrgsOneOf toCities = new SrgsOneOf(new string[] { "New York", "Seattle", "Denver" });  
+destCities.Add(toCities);  
+  
+// Create a list of origin cities and supporting phrases.  
+SrgsOneOf fromCities = new SrgsOneOf(new SrgsItem[] {   
+  new SrgsItem("Dallas"), new SrgsItem("Miami"), new SrgsItem("Chicago") });  
+SrgsItem intro = new SrgsItem("I want to fly from");  
+SrgsItem to = new SrgsItem("to");  
+  
+// Create the root rule of the grammar, and assemble the components.  
+SrgsRule chooseCities = new SrgsRule("Trip");  
+chooseCities.Add(intro);  
+chooseCities.Add(fromCities);  
+chooseCities.Add(to);  
+chooseCities.Add(new SrgsRuleRef(destCities));  
+  
+// Create the SrgsDocument and specify the root rule to add.  
+SrgsDocument bookFlight = new SrgsDocument(chooseCities);  
+  
+// Add the rule for the destination cities to the document's rule collection.  
+bookFlight.Rules.Add(new SrgsRule[] { destCities });  
+  
+// Display the contents of the Rules collection and the name of the root rule.  
+foreach (SrgsRule rule in bookFlight.Rules)  
+{  
+  Console.WriteLine("Rule " + rule.Id + " is in the rules collection");  
+}  
+Console.WriteLine("Root Rule " + bookFlight.Root.Id);  
+  
+// Create a Grammar object and load it to the recognizer.  
+Grammar g = new Grammar(bookFlight);  
+g.Name = ("City Chooser");  
+recognizer.LoadGrammarAsync(g);  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="grammarRootRule" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SrgsDocument (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsDocument.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The location of the SRGS XML file.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class specifying the location of the XML document that is used to fill in the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> from the file named "srgsDocumentFile.xml".  
+  
+```csharp  
+string srgsDocumentFile = Path.Combine(Path.GetTempPath(), "srgsDocumentFile.xml");  
+SrgsDocument document = null;  
+  
+if (File.Exists(srgsDocumentFile))  
+   document = new SrgsDocument(srgsDocumentFile);  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SrgsDocument (System.Xml.XmlReader srgsGrammar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlReader srgsGrammar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsDocument.#ctor(System.Xml.XmlReader)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="srgsGrammar" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="srgsGrammar">The <see cref="T:System.Xml.XmlReader" /> object that was created with the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> XML instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class from an instance of <see cref="T:System.Xml.XmlReader" /> that references an XML-format grammar file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new instance of <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> from an instance of <xref:System.Xml.XmlReader> that references the file "srgsDocumentFile.xml".  
+  
+```csharp  
+string srgsDocumentFile = Path.Combine(Path.GetTempPath(), "srgsDocumentFile.xml");  
+SrgsDocument document = null;  
+  
+if (File.Exists(srgsDocumentFile))  
+{  
+  XmlReader reader = XmlReader.Create(srgsDocumentFile);  
+  document = new SrgsDocument(reader);  
+  reader.Close();  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="srgsGrammar" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyReferences">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; AssemblyReferences { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; AssemblyReferences" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.AssemblyReferences" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the assembly reference information for the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> instance.</summary>
+        <value>The <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.AssemblyReferences" /> property returns a string collection containing a list of the assembly references.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeBehind">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; CodeBehind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; CodeBehind" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.CodeBehind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the code-behind information for the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> instance.</summary>
+        <value>The <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.CodeBehind" /> property returns a string collection that contains a list of the code-behind documents.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Culture">
+      <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo Culture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Culture" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Culture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the culture information for the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> instance.</summary>
+        <value>A <see cref="T:System.Globalization.CultureInfo" /> object that contains the current culture information for <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Microsoft Windows and the System.Speech API accept all valid language-country codes. To perform speech recognition using the language specified in the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Culture%2A> property, a speech recognition engine that supports that language-country code must be installed. The speech recognition engines that shipped with Microsoft Windows 7 work with the following language-country codes.  
+  
+-   en-GB. English (United Kingdom)  
+  
+-   en-US. English (United States)  
+  
+-   de-DE. German (Germany)  
+  
+-   es-ES. Spanish (Spain)  
+  
+-   fr-FR. French (France)  
+  
+-   ja-JP. Japanese (Japan)  
+  
+-   zh-CN. Chinese (China)  
+  
+-   zh-TW. Chinese (Taiwan)  
+  
+ Two-letter language codes such as "en", "fr", or "es" are also permitted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value being assigned to <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Culture" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The value being assigned to <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Culture" /> is <see cref="P:System.Globalization.CultureInfo.InvariantCulture" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Debug">
+      <MemberSignature Language="C#" Value="public bool Debug { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Debug" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Debug" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether line numbers should be added to inline scripts.</summary>
+        <value>The <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Debug" /> property returns <see langword="true" /> if line numbers should be added for debugging purposes; otherwise the property returns <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportNamespaces">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; ImportNamespaces { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; ImportNamespaces" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.ImportNamespaces" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the related namespaces for the current <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> instance.</summary>
+        <value>The <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.ImportNamespaces" /> property returns a string collection that contains a list of the related namespaces in the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Language">
+      <MemberSignature Language="C#" Value="public string Language { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Language" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Language" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the programming language used for inline code in the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</summary>
+        <value>The <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Language" /> property returns the programming language to which <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> is currently set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode Mode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode Mode" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Mode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the mode for the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</summary>
+        <value>The recognition mode of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Mode%2A> property returns a member of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode> that determines the type of input that the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> expects. The two possible values are `Voice` for speech input, and `Dtmf` for input of  dual-tone multi-frequency (DTMF) tones that are commonly associated with a telephone.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the namespace of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</summary>
+        <value>The <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Namespace" /> property returns the namespace for the current <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhoneticAlphabet">
+      <MemberSignature Language="C#" Value="public System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet PhoneticAlphabet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet PhoneticAlphabet" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.PhoneticAlphabet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the phonetic alphabet of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</summary>
+        <value>Returns the phonetic alphabet that must be used to specify custom pronunciations in the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsToken" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Phonetic alphabets are composed of phones, which consist of letters, numbers or characters, sometimes in combination. Each phone describes a unique sound of speech. This is in contrast to the Latin alphabet, for which any letter may represent multiple spoken sounds. Consider the different pronunciations of the letter "c" in the words "candy" and "cease", or the different pronunciations of the letter combination "th" in the words "thing" and "those".  
+  
+ In System.Speech, you can use any of three phonetic alphabets to specify custom pronunciations: International Phone Alphabet (IPA), Universal Phone Set (UPS), or the SAPI phone set. The specified phonetic alphabet determines which phone set will be used to define inline pronunciations for <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken> objects. The phones specified in <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation%2A> must match the phonetic alphabet specified in <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.PhoneticAlphabet%2A>.  
+  
+ See [Lexicons and Phonetic Alphabets](http://msdn.microsoft.com/en-us/435e3c6f-6834-4e5a-b0f6-c17b2275dc51) for more information.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Root">
+      <MemberSignature Language="C#" Value="public System.Speech.Recognition.SrgsGrammar.SrgsRule Root { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Speech.Recognition.SrgsGrammar.SrgsRule Root" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Root" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsRule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the root rule of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</summary>
+        <value>Returns the rule that is designated as the root rule of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object must already be in the document's <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection> before it can be set to the **root rule**.  
+  
+ You can also set the root rule for an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object by using an <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object as the argument to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> constructor.  
+  
+   
+  
+## Examples  
+ The following example creates a rule named `winnerRule`, and then creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object named `document`. The example then calls the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add%2A> method to add the rule to the document. Finally, the example sets the document's <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Root%2A> property to `winnerRule`, thereby making it the `root rule` for the grammar defined by the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object.  
+  
+```csharp  
+SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
+winnerRule.Scope = SrgsRuleScope.Public;  
+  
+SrgsDocument document = new SrgsDocument();  
+  
+document.Rules.Add(winnerRule);  
+document.Root = winnerRule;   
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rules">
+      <MemberSignature Language="C#" Value="public System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection Rules { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection Rules" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of rules that are currently defined for the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</summary>
+        <value>Returns the rules defined for the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> objects to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection> by using the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add%2A> method on the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> property. If you initialize an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object and specify an <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object as the argument, the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> is automatically added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection> for the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>.  
+  
+   
+  
+## Examples  
+ The following example creates a grammar that recognizes the phrase "A nation that has won the World Cup is" followed by the name of a country that has won the World Cup. The example creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object, and then creates a public rule named `winnerRule`. After adding a string to the rule `winnerRule`, the example creates two more rules (`ruleEurope` and `ruleSAmerica`), each containing a list of countries. Using the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add%2A> method, the example adds all three rules (`winnerRule`, `ruleEurope`, and `ruleSAmerica`) to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> property of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>.  
+  
+```csharp  
+public void WorldSoccerWinners ()  
+{  
+  
+  // Create an SrgsDocument, create a new rule  
+  // and set its scope to public.  
+  SrgsDocument document = new SrgsDocument();  
+  SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
+  winnerRule.Scope = SrgsRuleScope.Public;  
+  
+  // Add the introduction.  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  
+  // Create the rule for the European nations.  
+  SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
+    new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
+  SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
+  
+  // Create the rule for the South American nations.  
+  SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
+    new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
+  SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
+  
+  // Add references to winnerRule for ruleEurope and ruleSAmerica.  
+  winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
+    (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
+  
+  // Add all the rules to the document and make winnerRule   
+  // the root rule of the document.  
+  document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
+  document.Root = winnerRule;  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public string Script { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Script" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Script" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the .NET scripting language for the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</summary>
+        <value>The <see langword="Script" /> property returns the current .NET scripting language for the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This property has been deprecated. Its use is no longer recommended.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt is made to set the <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Script" /> property to null.</exception>
+        <exception cref="T:System.ArgumentException">An attempt is made to set the <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Script" /> property to an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSrgs">
+      <MemberSignature Language="C#" Value="public void WriteSrgs (System.Xml.XmlWriter srgsGrammar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteSrgs(class System.Xml.XmlWriter srgsGrammar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsDocument.WriteSrgs(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srgsGrammar" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="srgsGrammar">The <see cref="T:System.Xml.XmlWriter" /> that is used to write the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> instance.</param>
+        <summary>Writes the contents of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> object to an XML-format grammar file that conforms to the [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object, and then creates a public rule named `winnerRule`. It then creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> that consists of the string "A nation that has won the world cup is:", and adds this item to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements%2A> property of the rule. The example then creates two more rules (`ruleEurope` and `ruleSAmerica`), each of which is an <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object that contains three <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects. After that, another <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object is created that contains <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> objects that refer to `ruleEurope` and `ruleSAmerica`. The new <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object is then added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements%2A> property of `winnerRule`. After this, all three rules (`winnerRule`, `ruleEurope`, and `ruleSAmerica`) are added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> property of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>. Finally, the example creates an empty XML file and an instance of <xref:System.Xml.XmlWriter>.  The <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.WriteSrgs%2A> method uses the <xref:System.Xml.XmlWriter> instance to write the contents of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> to the XML file.  
+  
+```csharp  
+public void WorldSoccerWinners ()  
+{  
+  
+  // Create an SrgsDocument, create a new rule  
+  // and set its scope to public.  
+  SrgsDocument document = new SrgsDocument();  
+  SrgsRule winnerRule = new SrgsRule("WorldCupWinner");  
+  winnerRule.Scope = SrgsRuleScope.Public;  
+  
+  // Add the introduction.  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  
+  // Create the rule for the European nations.  
+  SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
+    new SrgsItem("France"), new SrgsItem("Germany"), new SrgsItem("Italy")});  
+  SrgsRule ruleEurope = (new SrgsRule("EuropeanNations", new SrgsElement[] {oneOfEurope}));  
+  
+  // Create the rule for the South American nations.  
+  SrgsOneOf oneOfSAmerica = new SrgsOneOf(new SrgsItem[] {new SrgsItem("Argentina"),   
+    new SrgsItem("Brazil"), new SrgsItem("Uruguay")});  
+  SrgsRule ruleSAmerica = (new SrgsRule("SouthAmericanNations", new SrgsElement[] {oneOfSAmerica}));  
+  
+  // Add references to winnerRule for ruleEurope and ruleSAmerica.  
+  winnerRule.Elements.Add(new SrgsOneOf(new SrgsItem[] {(new SrgsItem   
+    (new SrgsRuleRef(ruleEurope))), new SrgsItem(new SrgsRuleRef(ruleSAmerica))}));  
+  
+  // Add all the rules to the document and make winnerRule   
+  // the root rule of the document.  
+  document.Rules.Add(new SrgsRule[] {winnerRule, ruleEurope, ruleSAmerica});  
+  document.Root = winnerRule;  
+  
+  // Create a string object with the path to the file to use.  
+  string srgsDocumentFile = Path.Combine(Path.GetTempPath(), "srgsDocumentFile.xml");  
+  
+  // Create an XmlWriter object and pass the file path.  
+  XmlWriter writer = XmlWriter.Create(srgsDocumentFile);  
+  
+  // Write the contents of the XmlWriter object to an SRGS-compatible XML file.  
+  document.WriteSrgs(writer);  
+  writer.Close();  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="srgsGrammar" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlBase">
+      <MemberSignature Language="C#" Value="public Uri XmlBase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri XmlBase" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsDocument.XmlBase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the base URI of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</summary>
+        <value>The current base URI of <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.XmlBase%2A> property gets a value that is used to resolve relative URIs in a <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object. Suppose the value for <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.XmlBase%2A> is "http://www.contoso.com/" and the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> contains a relative rule reference to another document, for example `SrgsRuleRef("ExternalGrammar.grxml")`. This creates the following absolute path to the external document: `http://www.contoso.com/ExternalGrammar.grxml`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using the constructors for the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> class, you can create an instance of <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> from a <xref:System.Speech.Recognition.GrammarBuilder>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule>, or <xref:System.Xml.XmlReader> object, from a string that contains the path to an XML-format grammar, or you can initiate a blank instance of <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

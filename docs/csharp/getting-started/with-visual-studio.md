@@ -1,10 +1,10 @@
 ---
 title: Building a C# Hello World application with .NET Core in Visual Studio 2017
 description: Learn how to build a simple .NET Core console application using Visual Studio 2017.
-keywords: .NET Core, console application, Visual Studio 2017
-author: stevehoag
-ms.author: shoag
-ms.date: 03/08/2017
+keywords: .NET Core, .NET Core console application, Visual Studio 2017
+author: BillWagner
+ms.author: wiwagn
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp
@@ -58,7 +58,7 @@ Enhance your application to prompt the user for their name and display it along 
 
 1. Enter the following C# code in the code window immediately after the opening bracket that follows the `public static void Main(string[] args)` line and before the first closing bracket:
 
-   [!CODE [GettingStarted#1](../../../samples/snippets/csharp/getting_started/with_visual_studio/helloworld.cs#1)]
+   [!code-csharp[GettingStarted#1](../../../samples/snippets/csharp/getting_started/with_visual_studio/helloworld.cs#1)]
 
    ![Visual Studio Program c-sharp file with updated Main method](./media/with-visual-studio/codewindow.png)
 

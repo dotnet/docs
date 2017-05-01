@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "files, accessing"
 ms.assetid: 6c8ba7e8-dd37-4853-92bf-762b67c98160
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

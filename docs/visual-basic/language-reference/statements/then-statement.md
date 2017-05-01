@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Then keyword"
 ms.assetid: 41fdb422-d222-4c10-b5b0-c421c79e9070
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

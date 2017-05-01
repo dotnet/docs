@@ -1,0 +1,160 @@
+<Type Name="EditableDesignerRegion" FullName="System.Web.UI.Design.EditableDesignerRegion">
+  <TypeSignature Language="C#" Value="public class EditableDesignerRegion : System.Web.UI.Design.DesignerRegion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EditableDesignerRegion extends System.Web.UI.Design.DesignerRegion" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.EditableDesignerRegion" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.DesignerRegion</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an editable content region within the design-time markup for the associated control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.Design.EditableDesignerRegion> class to help manage templates at design time. A <xref:System.Web.UI.Design.ControlDesigner> will use an instance of this class with its <xref:System.Web.UI.Design.ControlDesigner.GetEditableDesignerRegionContent%2A> method to generate HTML markup of the region's content.  
+  
+   
+  
+## Examples  
+ This example shows how to create a control with two clickable regions and an <xref:System.Web.UI.Design.EditableDesignerRegion> object with two views, or templates. Compile the project, then open the page in a visual designer and switch to design (WYSIWYG) view. There are two clickable views, **View1** and **View2**. Click **View1** and drag the <xref:System.Web.UI.WebControls.CheckBox> control from the lower part of the page into the empty designer region just below the clickable regions. Click **View2** and drag the <xref:System.Web.UI.WebControls.RadioButton> control into the empty designer region. Click **View1** again, and the region with the <xref:System.Web.UI.WebControls.CheckBox> reappears. Click **View2** and the region with the <xref:System.Web.UI.WebControls.RadioButton> reappears. Switch back to source view to see how your changes are persisted in the HTML markup  
+  
+> [!NOTE]
+>  Your project must have a reference to the System.Design.dll assembly.  
+  
+ [!code-csharp[SimpleMultiRegionControlDesigner#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SimpleMultiRegionControlDesigner/CS/SimpleMultiRegionControlDesigner.cs#1)]
+ [!code-vb[SimpleMultiRegionControlDesigner#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SimpleMultiRegionControlDesigner/VB/SimpleMultiRegionControlDesigner.vb#1)]  
+<!-- TODO: review snippet reference [!code-csharp[SimpleMultiRegionControlDesigner#8](~/samples/snippets/csharp/VS_Snippets_WebNet/SimpleMultiRegionControlDesigner/CS/SimpleMultiRegionControlDesigner.aspx#8)]  -->
+<!-- TODO: review snippet reference [!code-vb[SimpleMultiRegionControlDesigner#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SimpleMultiRegionControlDesigner/VB/SimpleMultiRegionControlDesigner.aspx#8)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EditableDesignerRegion (System.Web.UI.Design.ControlDesigner owner, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ControlDesigner owner, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.EditableDesignerRegion.#ctor(System.Web.UI.Design.ControlDesigner,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.UI.Design.ControlDesigner" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="owner">A <see cref="T:System.Web.UI.Design.ControlDesigner" /> object, or a designer that derives from <see cref="T:System.Web.UI.Design.ControlDesigner" />.</param>
+        <param name="name">The name of the region.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> class using the given owner and name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EditableDesignerRegion (System.Web.UI.Design.ControlDesigner owner, string name, bool serverControlsOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ControlDesigner owner, string name, bool serverControlsOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.EditableDesignerRegion.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.UI.Design.ControlDesigner" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="serverControlsOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="owner">A <see cref="T:System.Web.UI.Design.ControlDesigner" /> object, or a designer that derives from <see cref="T:System.Web.UI.Design.ControlDesigner" />.</param>
+        <param name="name">The name of the region.</param>
+        <param name="serverControlsOnly">
+          <see langword="true" /> to have the region accept only Web server controls for content; otherwise, <see langword="false" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> class using the given owner and name and the initial value of the <see cref="P:System.Web.UI.Design.EditableDesignerRegion.ServerControlsOnly" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public virtual string Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Content" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.EditableDesignerRegion.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the HTML markup for the content of the region.</summary>
+        <value>HTML markup representing the content of the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildViewRendering">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.Design.ViewRendering GetChildViewRendering (System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.ViewRendering GetChildViewRendering(class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.EditableDesignerRegion.GetChildViewRendering(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ViewRendering</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="control">The control for which to get the <see cref="T:System.Web.UI.Design.ViewRendering" /> object for the current region.</param>
+        <summary>Returns a <see cref="T:System.Web.UI.Design.ViewRendering" /> object containing the design-time HTML markup for the given control.</summary>
+        <returns>A <see cref="T:System.Web.UI.Design.ViewRendering" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerControlsOnly">
+      <MemberSignature Language="C#" Value="public bool ServerControlsOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ServerControlsOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.EditableDesignerRegion.ServerControlsOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the region can accept only Web server controls.</summary>
+        <value>
+          <see langword="true" /> if the region can contain only Web server controls; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsDataBinding">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsDataBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDataBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.EditableDesignerRegion.SupportsDataBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the region can be bound to a data source.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> content supports binding to a data source; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

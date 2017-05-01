@@ -1,0 +1,347 @@
+<Type Name="OleDbEnumerator" FullName="System.Data.OleDb.OleDbEnumerator">
+  <TypeSignature Language="C#" Value="public sealed class OleDbEnumerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbEnumerator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbEnumerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a mechanism for enumerating all available OLE DB providers within the local network.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OleDbEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbEnumerator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Data.OleDb.OleDbEnumerator" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElements">
+      <MemberSignature Language="C#" Value="public System.Data.DataTable GetElements ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable GetElements() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbEnumerator.GetElements" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a <see cref="T:System.Data.DataTable" /> that contains information about all visible OLE DB providers.</summary>
+        <returns>Returns a <see cref="T:System.Data.DataTable" /> that contains information about the visible OLE DB providers.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The table that is returned by this method contains the following columns, all of which contain strings:  
+  
+|Column Ordinal|Column|Description|  
+|--------------------|------------|-----------------|  
+|0|SOURCES_NAME|The invariant name of the native OLEDB data source or enumerator.|  
+|1|SOURCES_PARSENAME|A human-readable name that can be converted to a moniker by using the native COM interface IParseDisplayName. Corresponds to the SOURCES_PARSENAME column returned by the native OLE DB sources rowset.|  
+|2|SOURCES_DESCRIPTION|Description of the native OLE DB data source. Corresponds to the SOURCES_DESCRIPTION column returned by the native OLE DB sources rowset.|  
+|3|SOURCES_TYPE|One of the following enumeration members: Binder (0), DataSource_MDP (1), DataSource_TDP (2), Enumerator (3). These correspond to the values returned in the SOURCES_TYPE column of the native OLE DB sources rowset.|  
+|4|SOURCES_ISPARENT|Applicable to enumerators only. If `true`, indicates that the entry applies to the same enumerator on which GetSourcesRowset was called, implying that it is also included in the sub-enumeration. Corresponds to the SOURCES_ISPARENT column of the native OLE DB sources rowset|  
+|5|SOURCES_CLSID|A human-readable name, that can be converted to a moniker using the native COM interface IParseDisplayName. Corresponds to the SOURCES_CLSID column returned by the native OLE DB sources rowset.|  
+  
+   
+  
+## Examples  
+ The following console application retrieves information about all the visible OLE DB providers and displays the information in the console window.  
+  
+```vb  
+Imports System.Data  
+Imports System.Data.OleDb  
+  
+Module Module1  
+  
+Sub Main()  
+  Dim enumerator As New OleDbEnumerator  
+  Dim table As System.Data.DataTable = enumerator.GetElements()  
+  
+  DisplayData(table)  
+  
+   Console.WriteLine("Press any key to continue.")  
+   Console.ReadKey()  
+ End Sub  
+  
+ Private Sub DisplayData(ByVal table As DataTable)  
+   For Each row As DataRow In table.Rows  
+     For Each col As DataColumn In table.Columns  
+       Console.WriteLine("{0} = {1}", col.ColumnName, row(col))  
+     Next  
+     Console.WriteLine("==================================")  
+   Next  
+ End Sub  
+End Module  
+```  
+  
+```csharp  
+using System;  
+using System.Data;  
+using System.Data.OleDb;  
+  
+class Program  
+{  
+ static void Main()  
+ {  
+   OleDbEnumerator enumerator = new OleDbEnumerator();  
+   DataTable table = enumerator.GetElements();  
+  
+   DisplayData(table);  
+  
+   Console.WriteLine("Press any key to continue.");  
+   Console.ReadKey();  
+ }  
+  
+ static void DisplayData(DataTable table)  
+ {  
+   foreach (DataRow row in table.Rows)  
+   {  
+     foreach (DataColumn col in table.Columns)  
+     {  
+       Console.WriteLine("{0} = {1}", col.ColumnName, row[col]);  
+     }  
+     Console.WriteLine("==================================");  
+   }  
+ }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The provider does not support ISourcesRowset.</exception>
+        <exception cref="T:System.Data.OleDb.OleDbException">Exception has occurred in the underlying provider.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public static System.Data.OleDb.OleDbDataReader GetEnumerator (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OleDb.OleDbDataReader GetEnumerator(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbEnumerator.GetEnumerator(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">A <see cref="T:System.Type" />.</param>
+        <summary>Uses a specific OLE DB enumerator to return an <see cref="T:System.Data.OleDb.OleDbDataReader" /> that contains information about the currently installed OLE DB providers, without requiring an instance of the <see cref="T:System.Data.OleDb.OleDbEnumerator" /> class.</summary>
+        <returns>Returns an <see cref="T:System.Data.OleDb.OleDbDataReader" /> that contains information about the requested OLE DB providers, using the specified OLE DB enumerator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The reader that is returned by this method contains the following columns, all of which contain strings:  
+  
+|Column ordinal|Column|Description|  
+|--------------------|------------|-----------------|  
+|0|SOURCES_NAME|The invariant name of the native OLE DB data source or enumerator.|  
+|1|SOURCES_PARSENAME|A human-readable name that can be converted to a moniker by using the native COM interface **IParseDisplayName**. Corresponds to the SOURCES_PARSENAME column returned by the native OLE DB sources rowset.|  
+|2|SOURCES_DESCRIPTION|Description of the native OLE DB data source. Corresponds to the SOURCES_DESCRIPTION column returned by the native OLE DB sources rowset.|  
+|3|SOURCES_TYPE|One of the following enumeration members: Binder (0), DataSource_MDP (1), DataSource_TDP (2), Enumerator (3). These correspond to the values returned in the SOURCES_TYPE column of the native OLE DB sources rowset.|  
+|4|SOURCES_ISPARENT|Applicable to enumerators only. If `true`, indicates that the entry applies to the same enumerator on which **GetSourcesRowset** was called, implying that it is also included in the sub-enumeration. Corresponds to the SOURCES_ISPARENT column of the native OLE DB sources rowset|  
+  
+ OLE DB provides several enumerator components, including MSDAENUM, MSDASQL Enumerator, SQLNCLI Enumerator, SQLOLEDB Enumerator, and others. For more information about the enumerator components and how to use them, see the [OLE DB Programmer's Reference](http://go.microsoft.com/fwlink/?LinkId=45232).  
+  
+   
+  
+## Examples  
+ The following console application uses the MSDAENUM component to retrieve information about all the OLE DB providers and displays the information in the console window.  
+  
+```vb  
+Imports System.Data  
+Imports System.Data.OleDb  
+  
+Module Module1  
+  
+  Sub Main()  
+    Dim enumerator As New OleDbEnumerator  
+    Dim reader As OleDbDataReader = _  
+     OleDbEnumerator.GetEnumerator(Type.GetTypeFromProgID("MSDAENUM"))  
+  
+    DisplayData(reader)  
+  
+    Console.WriteLine("Press any key to continue.")  
+    Console.ReadKey()  
+  End Sub  
+  
+  Private Sub DisplayData(ByVal reader As OleDbDataReader)  
+    While reader.Read()  
+      For i As Integer = 0 To reader.FieldCount - 1  
+        Console.WriteLine("{0} = {1}", _  
+         reader.GetName(i), reader.GetValue(i))  
+      Next  
+      Console.WriteLine("==================================")  
+    End While  
+  
+  End Sub  
+End Module  
+```  
+  
+```csharp  
+using System;  
+using System.Data;  
+using System.Data.OleDb;  
+  
+class Program  
+{  
+ static void Main()  
+ {  
+   OleDbDataReader reader =   
+     OleDbEnumerator.GetEnumerator(Type.GetTypeFromProgID("MSDAENUM"));  
+  
+   DisplayData(reader);  
+  
+   Console.WriteLine("Press any key to continue.");  
+   Console.ReadKey();  
+ }  
+  
+ static void DisplayData(OleDbDataReader reader)  
+ {  
+   while (reader.Read())  
+   {  
+     for (int i = 0; i < reader.FieldCount; i++)  
+     {  
+       Console.WriteLine("{0} = {1}",  
+        reader.GetName(i), reader.GetValue(i));  
+     }  
+     Console.WriteLine("==================================");  
+   }  
+ }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The provider does not support **ISourcesRowset**.</exception>
+        <exception cref="T:System.Data.OleDb.OleDbException">An exception has occurred in the underlying provider.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRootEnumerator">
+      <MemberSignature Language="C#" Value="public static System.Data.OleDb.OleDbDataReader GetRootEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OleDb.OleDbDataReader GetRootEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbEnumerator.GetRootEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.OleDb.OleDbDataReader" /> that contains information about the currently installed OLE DB providers, without requiring an instance of the <see cref="T:System.Data.OleDb.OleDbEnumerator" /> class.</summary>
+        <returns>Returns a <see cref="T:System.Data.OleDb.OleDbDataReader" /> that contains information about the visible OLE DB providers.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The reader returned by this method contains the following columns, all of which contain strings:  
+  
+|Column Ordinal|Column|Description|  
+|--------------------|------------|-----------------|  
+|0|SOURCES_NAME|The invariant name of the native OLEDB data source or enumerator.|  
+|1|SOURCES_PARSENAME|A human-readable name that can be converted to a moniker using the native COM interface IParseDisplayName. Corresponds to the SOURCES_PARSENAME column returned by the native OLE DB sources rowset.|  
+|2|SOURCES_DESCRIPTION|Description of the native OLE DB data source. Corresponds to the SOURCES_DESCRIPTION column returned by the native OLE DB sources rowset.|  
+|3|SOURCES_TYPE|One of the following enumeration members: Binder (0), DataSource_MDP (1), DataSource_TDP (2), Enumerator (3). These correspond to the values returned in the SOURCES_TYPE column of the native OLE DB sources rowset.|  
+|4|SOURCES_ISPARENT|Applicable to enumerators only. If `true`, indicates that the entry applies to the same enumerator on which GetSourcesRowset was called, implying that it is also included in the sub-enumeration. Corresponds to the SOURCES_ISPARENT column of the native OLE DB sources rowset|  
+|5|SOURCES_CLSID|A human-readable name, that can be converted to a moniker using the native COM interface IParseDisplayName. Corresponds to the SOURCES_CLSID column returned by the native OLE DB sources rowset.|  
+  
+   
+  
+## Examples  
+ The following console application retrieves information about all the visible OLE DB providers and displays the information in the console window.  
+  
+```vb  
+Imports System.Data  
+Imports System.Data.OleDb  
+  
+Module Module1  
+  
+  Sub Main()  
+    Dim enumerator As New OleDbEnumerator  
+    Dim reader As OleDbDataReader = OleDbEnumerator.GetRootEnumerator()  
+  
+    DisplayData(reader)  
+  
+    Console.WriteLine("Press any key to continue.")  
+    Console.ReadKey()  
+  End Sub  
+  
+  Private Sub DisplayData(ByVal reader As OleDbDataReader)  
+    While reader.Read()  
+      For i As Integer = 0 To reader.FieldCount - 1  
+        Console.WriteLine("{0} = {1}", _  
+         reader.GetName(i), reader.GetValue(i))  
+      Next  
+      Console.WriteLine("==================================")  
+    End While  
+  
+  End Sub  
+End Module  
+```  
+  
+```csharp  
+using System;  
+using System.Data;  
+using System.Data.OleDb;  
+  
+class Program  
+{  
+ static void Main()  
+ {  
+   OleDbDataReader reader = OleDbEnumerator.GetRootEnumerator();  
+  
+   DisplayData(reader);  
+  
+   Console.WriteLine("Press any key to continue.");  
+   Console.ReadKey();  
+ }  
+  
+ static void DisplayData(OleDbDataReader reader)  
+ {  
+   while (reader.Read())  
+   {  
+     for (int i = 0; i < reader.FieldCount; i++)  
+     {  
+       Console.WriteLine("{0} = {1}",  
+        reader.GetName(i), reader.GetValue(i));  
+     }  
+     Console.WriteLine("==================================");  
+   }  
+ }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The provider does not support ISourcesRowset.</exception>
+        <exception cref="T:System.Data.OleDb.OleDbException">Exception has occurred in the underlying provider.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

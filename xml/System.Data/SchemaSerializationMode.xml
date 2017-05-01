@@ -1,0 +1,72 @@
+<Type Name="SchemaSerializationMode" FullName="System.Data.SchemaSerializationMode">
+  <TypeSignature Language="C#" Value="public enum SchemaSerializationMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SchemaSerializationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SchemaSerializationMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the schema serialization mode for a typed <see cref="T:System.Data.DataSet" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Data.DataSet.SchemaSerializationMode%2A> property of a typed <xref:System.Data.DataSet> to ExcludeSchema provides the option of omitting schema information from the serialization payload.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExcludeSchema">
+      <MemberSignature Language="C#" Value="ExcludeSchema" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SchemaSerializationMode ExcludeSchema = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SchemaSerializationMode.ExcludeSchema" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SchemaSerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Skips schema serialization for a typed <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeSchema">
+      <MemberSignature Language="C#" Value="IncludeSchema" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SchemaSerializationMode IncludeSchema = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SchemaSerializationMode.IncludeSchema" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SchemaSerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Includes schema serialization for a typed <see cref="T:System.Data.DataSet" />. The default.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

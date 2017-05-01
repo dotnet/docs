@@ -146,10 +146,7 @@ The following procedure creates a C# version of the traditional "Hello World!" p
   
      `Hello`  
   
- For more information about the C# compiler and its options, see [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md).  
-  
-## Featured Book Chapter  
- [Writing a C# Program](http://go.microsoft.com/fwlink/?LinkId=221227) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
+ For more information about the C# compiler and its options, see [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md).
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

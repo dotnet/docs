@@ -1,0 +1,219 @@
+<Type Name="ActivityExecutionContextManager" FullName="System.Workflow.ComponentModel.ActivityExecutionContextManager">
+  <TypeSignature Language="C#" Value="public sealed class ActivityExecutionContextManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityExecutionContextManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityExecutionContextManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows a <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> to create and manage execution contexts for its child activities. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompleteExecutionContext">
+      <MemberSignature Language="C#" Value="public void CompleteExecutionContext (System.Workflow.ComponentModel.ActivityExecutionContext childContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CompleteExecutionContext(class System.Workflow.ComponentModel.ActivityExecutionContext childContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContextManager.CompleteExecutionContext(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="childContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="childContext">The designated <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</param>
+        <summary>Marks an execution context as completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The workflow runtime enables this operation to succeed only if the activity in the execution context being completed is in the `Closed` state. The `forcePersist``Boolean` parameter indicates whether the completed execution context should be persisted so that it is available for retrieval at a later time (for example, for compensation to run).  
+  
+ The overload of <xref:System.Workflow.ComponentModel.ActivityExecutionContextManager.CompleteExecutionContext%2A> that does not have the `forcePersist` parameter effectively uses a value of `false`, so that by default, completed execution contexts are not persisted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="childContext" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="childContext" /> is not contained in this instance's <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContextManager.ExecutionContexts" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CompleteExecutionContext">
+      <MemberSignature Language="C#" Value="public void CompleteExecutionContext (System.Workflow.ComponentModel.ActivityExecutionContext childContext, bool forcePersist);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CompleteExecutionContext(class System.Workflow.ComponentModel.ActivityExecutionContext childContext, bool forcePersist) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContextManager.CompleteExecutionContext(System.Workflow.ComponentModel.ActivityExecutionContext,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="childContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
+        <Parameter Name="forcePersist" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="childContext">The designated <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</param>
+        <param name="forcePersist">
+          <see langword="Boolean" /> that indicates whether the completed context will be persisted.</param>
+        <summary>Marks an execution context as completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The workflow runtime enables this operation to succeed only if the activity in the execution context being completed is in the `Closed` state. The `forcePersist``Boolean` parameter indicates whether the completed execution context should be persisted so that it is available for retrieval at a later time (for example, for compensation to run).  
+  
+ The overload of <xref:System.Workflow.ComponentModel.ActivityExecutionContextManager.CompleteExecutionContext%2A> that does not have the `forcePersist` parameter effectively uses a value of `false`, so that by default, completed execution contexts are not persisted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="childContext" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="childContext" /> is not contained in this instance's <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContextManager.ExecutionContexts" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateExecutionContext">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityExecutionContext CreateExecutionContext (System.Workflow.ComponentModel.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.ActivityExecutionContext CreateExecutionContext(class System.Workflow.ComponentModel.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContextManager.CreateExecutionContext(System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityExecutionContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The designated <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <summary>Creates an <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for the designated <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <returns>The created <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for the designated <see cref="T:System.Workflow.ComponentModel.Activity" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="activity" /> is not a valid child activity of owner of this context.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionContexts">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.ActivityExecutionContext&gt; ExecutionContexts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.ActivityExecutionContext&gt; ExecutionContexts" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContextManager.ExecutionContexts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.ActivityExecutionContext&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the set of execution contexts, created by the current activity, that have not yet been completed.</summary>
+        <value>The collection that contains the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />(s) associated with this instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExecutionContext">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityExecutionContext GetExecutionContext (System.Workflow.ComponentModel.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.ActivityExecutionContext GetExecutionContext(class System.Workflow.ComponentModel.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContextManager.GetExecutionContext(System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityExecutionContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The designated <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> associated with the designated <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> associated with the designated <see cref="T:System.Workflow.ComponentModel.Activity" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns the first context for an activity with the same qualified name as the designated activity.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activity" /> is a null reference (<see langword="Nothing" /> in Visual basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPersistedExecutionContext">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityExecutionContext GetPersistedExecutionContext (Guid contextGuid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.ActivityExecutionContext GetPersistedExecutionContext(valuetype System.Guid contextGuid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContextManager.GetPersistedExecutionContext(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityExecutionContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contextGuid" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="contextGuid">The designated <see cref="T:System.Guid" />.</param>
+        <summary>Retrieves the persisted <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> corresponding to the designated <see cref="T:System.Guid" />.</summary>
+        <returns>The persisted <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> corresponding to the designated <see cref="T:System.Guid" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistedExecutionContexts">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Guid&gt; PersistedExecutionContexts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Guid&gt; PersistedExecutionContexts" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContextManager.PersistedExecutionContexts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the set of execution contexts, created by the current activity, that have been completed and were persisted upon their completion.</summary>
+        <value>The collection of type <see cref="T:System.Guid" /> that represents the set of all persisted <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

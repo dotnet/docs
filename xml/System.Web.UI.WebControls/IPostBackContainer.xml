@@ -1,0 +1,56 @@
+<Type Name="IPostBackContainer" FullName="System.Web.UI.WebControls.IPostBackContainer">
+  <TypeSignature Language="C#" Value="public interface IPostBackContainer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPostBackContainer" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IPostBackContainer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a method that enables controls to obtain client-side script options.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that implement the <xref:System.Web.UI.WebControls.IPostBackContainer> interface enable buttons to get a <xref:System.Web.UI.PostBackOptions> object that is used to create the correct postback event reference.  
+  
+ For more information about postback processing, see [ASP.NET Web Forms Server Control Event Model](http://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3).  
+  
+ Controls that implement the <xref:System.Web.UI.WebControls.IPostBackContainer> interface should also implement the <xref:System.Web.UI.IPostBackEventHandler> interface to handle events raised by contained buttons.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetPostBackOptions">
+      <MemberSignature Language="C#" Value="public System.Web.UI.PostBackOptions GetPostBackOptions (System.Web.UI.WebControls.IButtonControl buttonControl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.PostBackOptions GetPostBackOptions(class System.Web.UI.WebControls.IButtonControl buttonControl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.IPostBackContainer.GetPostBackOptions(System.Web.UI.WebControls.IButtonControl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.PostBackOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buttonControl" Type="System.Web.UI.WebControls.IButtonControl" />
+      </Parameters>
+      <Docs>
+        <param name="buttonControl">The control generating the postback event.</param>
+        <summary>Returns the options required for a postback script for a specified button control.</summary>
+        <returns>A <see cref="T:System.Web.UI.PostBackOptions" /> object containing the options required to generate a postback script for <paramref name="buttonControl" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implementations of the <xref:System.Web.UI.WebControls.IPostBackContainer.GetPostBackOptions%2A> method should configure a new <xref:System.Web.UI.PostBackOptions> instance with the information required for the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method to construct a valid postback event reference, which, when executed on the client, initiates a postback.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

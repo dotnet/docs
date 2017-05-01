@@ -1,0 +1,108 @@
+<Type Name="WindowsAccountType" FullName="System.Security.Principal.WindowsAccountType">
+  <TypeSignature Language="C#" Value="public enum WindowsAccountType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed WindowsAccountType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Principal.WindowsAccountType" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the type of Windows account used.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Principal.WindowsAccountType> enumeration is used by the <xref:System.Security.Principal.WindowsIdentity> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.Principal.WindowsIdentity.%23ctor%2A> constructor to create a new instance of the <xref:System.Security.Principal.WindowsIdentity> class for the user represented by the specified Windows account token, the specified authentication type, and the specified Windows account type. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
+  
+ [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Principal.WindowsIdentity_AllMembers/CPP/windowsidentitymembers.cpp#7)]
+ [!code-csharp[System.Security.Principal.WindowsIdentity_AllMembers#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsIdentity_AllMembers/CS/windowsidentitymembers.cs#7)]
+ [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Principal.WindowsIdentity_AllMembers/VB/Form1.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Anonymous">
+      <MemberSignature Language="C#" Value="Anonymous" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsAccountType Anonymous = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsAccountType.Anonymous" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.WindowsAccountType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An anonymous account.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Guest">
+      <MemberSignature Language="C#" Value="Guest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsAccountType Guest = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsAccountType.Guest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.WindowsAccountType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A Windows guest account.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsAccountType Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsAccountType.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.WindowsAccountType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A standard user account.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="System">
+      <MemberSignature Language="C#" Value="System" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsAccountType System = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsAccountType.System" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.WindowsAccountType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A Windows system account.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

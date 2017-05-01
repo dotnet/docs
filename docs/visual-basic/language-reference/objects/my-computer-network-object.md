@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "My.Computer.Network object"
 ms.assetid: 94ddbade-aff1-42f8-a6c8-88b78c28c0db
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

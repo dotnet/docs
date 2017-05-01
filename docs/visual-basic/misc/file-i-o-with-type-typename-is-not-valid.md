@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrArgument_UnsupportedIOType1"
 ms.assetid: b6c527e3-b75a-4c1a-b6f1-ee9f7460b5f0
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

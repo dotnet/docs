@@ -1,0 +1,248 @@
+<Type Name="SoapMethodAttribute" FullName="System.Runtime.Remoting.Metadata.SoapMethodAttribute">
+  <TypeSignature Language="C#" Value="public sealed class SoapMethodAttribute : System.Runtime.Remoting.Metadata.SoapAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapMethodAttribute extends System.Runtime.Remoting.Metadata.SoapAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.SoapMethodAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.Remoting.Metadata.SoapAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Customizes SOAP generation and processing for a method. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The target objects for the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute> attribute are methods that can be remotely invoked. Apply the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute> to customize SOAP generation and processing. Properties of this attribute allow the programmer to customize the SOAPAction HTTP header field to indicate the intent of the SOAP HTTP request.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the members in the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute> class to customize SOAP generation and processing for a method.  
+  
+ [!code-cpp[System.Runtime.Remoting.Metadata.SoapMethodAttribute#100](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.SoapMethodAttribute/CPP/demo.cpp#100)]
+ [!code-csharp[System.Runtime.Remoting.Metadata.SoapMethodAttribute#100](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.SoapMethodAttribute/CS/demo.cs#100)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapMethodAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.SoapMethodAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Runtime.Remoting.Metadata.SoapMethodAttribute" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseXmlElementName">
+      <MemberSignature Language="C#" Value="public string ResponseXmlElementName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseXmlElementName" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapMethodAttribute.ResponseXmlElementName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XML element name to use for the method response to the target method.</summary>
+        <value>The XML element name to use for the method response to the target method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is the string "Response" appended to the name of the method.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute.ResponseXmlElementName%2A> property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute> class.  
+  
+ [!code-cpp[System.Runtime.Remoting.Metadata.SoapMethodAttribute#110](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.SoapMethodAttribute/CPP/demo.cpp#110)]
+ [!code-csharp[System.Runtime.Remoting.Metadata.SoapMethodAttribute#110](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.SoapMethodAttribute/CS/demo.cs#110)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseXmlNamespace">
+      <MemberSignature Language="C#" Value="public string ResponseXmlNamespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseXmlNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapMethodAttribute.ResponseXmlNamespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XML element namesapce used for method response to the target method.</summary>
+        <value>The XML element namesapce used for method response to the target method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute.ResponseXmlNamespace%2A> property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute> class.  
+  
+ [!code-cpp[System.Runtime.Remoting.Metadata.SoapMethodAttribute#110](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.SoapMethodAttribute/CPP/demo.cpp#110)]
+ [!code-csharp[System.Runtime.Remoting.Metadata.SoapMethodAttribute#110](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.SoapMethodAttribute/CS/demo.cs#110)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnXmlElementName">
+      <MemberSignature Language="C#" Value="public string ReturnXmlElementName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReturnXmlElementName" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapMethodAttribute.ReturnXmlElementName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XML element name used for the return value from the target method.</summary>
+        <value>The XML element name used for the return value from the target method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is the "__return" string.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute.ReturnXmlElementName%2A> property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute> class.  
+  
+ [!code-cpp[System.Runtime.Remoting.Metadata.SoapMethodAttribute#110](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.SoapMethodAttribute/CPP/demo.cpp#110)]
+ [!code-csharp[System.Runtime.Remoting.Metadata.SoapMethodAttribute#110](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.SoapMethodAttribute/CS/demo.cs#110)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapAction">
+      <MemberSignature Language="C#" Value="public string SoapAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SoapAction" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapMethodAttribute.SoapAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the SOAPAction header field used with HTTP requests sent with this method. This property is currently not implemented.</summary>
+        <value>The SOAPAction header field used with HTTP requests sent with this method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is currently not implemented.  
+  
+ The SOAPAction HTTP request header field indicates the intent of the SOAP HTTP request. For more information on the SOAPAction field, see www.w3.org/tr/soap/#_Toc478383528.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute.SoapAction%2A> property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute> class.  
+  
+ [!code-cpp[System.Runtime.Remoting.Metadata.SoapMethodAttribute#110](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.SoapMethodAttribute/CPP/demo.cpp#110)]
+ [!code-csharp[System.Runtime.Remoting.Metadata.SoapMethodAttribute#110](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.SoapMethodAttribute/CS/demo.cs#110)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseAttribute">
+      <MemberSignature Language="C#" Value="public override bool UseAttribute { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseAttribute" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapMethodAttribute.UseAttribute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the target of the current attribute will be serialized as an XML attribute instead of an XML field.</summary>
+        <value>The current implementation always returns <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute.UseAttribute%2A> property cannot be set on the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute> attribute.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">An attempt was made to set the current property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlNamespace">
+      <MemberSignature Language="C#" Value="public override string XmlNamespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XmlNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapMethodAttribute.XmlNamespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XML namespace that is used during serialization of remote method calls of the target method.</summary>
+        <value>The XML namespace that is used during serialization of remote method calls of the target method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute.XmlNamespace%2A> property. This code example is part of a larger example provided for the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute> class.  
+  
+ [!code-cpp[System.Runtime.Remoting.Metadata.SoapMethodAttribute#110](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.SoapMethodAttribute/CPP/demo.cpp#110)]
+ [!code-csharp[System.Runtime.Remoting.Metadata.SoapMethodAttribute#110](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.SoapMethodAttribute/CS/demo.cs#110)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

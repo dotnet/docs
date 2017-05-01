@@ -1,0 +1,271 @@
+<Type Name="TypeLibImporterFlags" FullName="System.Runtime.InteropServices.TypeLibImporterFlags">
+  <TypeSignature Language="C#" Value="public enum TypeLibImporterFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeLibImporterFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibImporterFlags" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates how an assembly should be produced.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:System.Runtime.InteropServices.TypeLibConverter.ConvertTypeLibToAssembly%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ImportAsAgnostic">
+      <MemberSignature Language="C#" Value="ImportAsAgnostic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags ImportAsAgnostic = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.ImportAsAgnostic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Imports a type library for any platform.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportAsArm">
+      <MemberSignature Language="C#" Value="ImportAsArm" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags ImportAsArm = int32(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.ImportAsArm" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Imports a library for the ARM platform.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportAsItanium">
+      <MemberSignature Language="C#" Value="ImportAsItanium" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags ImportAsItanium = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.ImportAsItanium" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Imports a type library for the Itanium platform.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportAsX64">
+      <MemberSignature Language="C#" Value="ImportAsX64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags ImportAsX64 = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.ImportAsX64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Imports a type library for the x86 64-bit platform.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportAsX86">
+      <MemberSignature Language="C#" Value="ImportAsX86" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags ImportAsX86 = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.ImportAsX86" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Imports a type library for the x86 platform.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoDefineVersionResource">
+      <MemberSignature Language="C#" Value="NoDefineVersionResource" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags NoDefineVersionResource = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.NoDefineVersionResource" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Prevents inclusion of a version resource in the interop assembly. For more information, see the <see cref="M:System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource" /> method.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No special settings. This is the default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreventClassMembers">
+      <MemberSignature Language="C#" Value="PreventClassMembers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags PreventClassMembers = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.PreventClassMembers" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Not used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimaryInteropAssembly">
+      <MemberSignature Language="C#" Value="PrimaryInteropAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags PrimaryInteropAssembly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.PrimaryInteropAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Generates a primary interop assembly. For more information, see the <see cref="T:System.Runtime.InteropServices.PrimaryInteropAssemblyAttribute" /> attribute. A keyfile must be specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReflectionOnlyLoading">
+      <MemberSignature Language="C#" Value="ReflectionOnlyLoading" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags ReflectionOnlyLoading = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.ReflectionOnlyLoading" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Uses reflection-only loading.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SafeArrayAsSystemArray">
+      <MemberSignature Language="C#" Value="SafeArrayAsSystemArray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags SafeArrayAsSystemArray = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.SafeArrayAsSystemArray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Imports all <see langword="SAFEARRAY" /> instances as <see cref="T:System.Array" /> instead of typed, single-dimensional, zero-based managed arrays. This option is useful when dealing with multi-dimensional, non-zero-based <see langword="SAFEARRAY" /> instances, which otherwise cannot be accessed unless you edit the resulting assembly by using the MSIL Disassembler (Ildasm.exe) and MSIL Assembler (Ilasm.exe) tools.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializableValueClasses">
+      <MemberSignature Language="C#" Value="SerializableValueClasses" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags SerializableValueClasses = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.SerializableValueClasses" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Uses serializable classes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformDispRetVals">
+      <MemberSignature Language="C#" Value="TransformDispRetVals" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags TransformDispRetVals = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.TransformDispRetVals" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Transforms <see langword="[out, retval]" /> parameters of methods on dispatch-only interfaces ([dispinterface](http://msdn.microsoft.com/en-us/e8c18ae5-3d9e-4dff-aa20-b5acc723eacf)) into return values.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsafeInterfaces">
+      <MemberSignature Language="C#" Value="UnsafeInterfaces" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibImporterFlags UnsafeInterfaces = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibImporterFlags.UnsafeInterfaces" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibImporterFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Imports all interfaces as interfaces that suppress the common language runtime's stack crawl for <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /> permission. Be sure you understand the responsibilities associated with suppressing this security check.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

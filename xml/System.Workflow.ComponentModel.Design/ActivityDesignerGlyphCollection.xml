@@ -1,0 +1,91 @@
+<Type Name="ActivityDesignerGlyphCollection" FullName="System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection">
+  <TypeSignature Language="C#" Value="public sealed class ActivityDesignerGlyphCollection : System.Collections.Generic.List&lt;System.Workflow.ComponentModel.Design.DesignerGlyph&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityDesignerGlyphCollection extends System.Collections.Generic.List`1&lt;class System.Workflow.ComponentModel.Design.DesignerGlyph&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Generic.List&lt;System.Workflow.ComponentModel.Design.DesignerGlyph&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Workflow.ComponentModel.Design.DesignerGlyph</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes a generic <see cref="T:System.Collections.Generic.List`1" /> of designer glyphs associated with an activity designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection> contains all designer glyphs that appear on the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class with which the collection is associated.  
+  
+ You can access the contents of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection> through the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Glyphs%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityDesignerGlyphCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> class that is empty and has the default initial capacity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityDesignerGlyphCollection (System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Design.DesignerGlyph&gt; glyphs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.ComponentModel.Design.DesignerGlyph&gt; glyphs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.Design.DesignerGlyph})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="glyphs" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Design.DesignerGlyph&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="glyphs">Enumerable generic collection containing <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> class that contains elements copied from the specified generic collection of <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" />, and has sufficient capacity to accommodate the number of elements copied.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityDesignerGlyphCollection (System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection glyphs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection glyphs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection.#ctor(System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="glyphs" Type="System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" />
+      </Parameters>
+      <Docs>
+        <param name="glyphs">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> from which to copy collection elements.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> class that contains elements copied from the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> and has sufficient capacity to accommodate the number of elements copied.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

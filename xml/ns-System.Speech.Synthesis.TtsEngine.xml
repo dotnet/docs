@@ -1,0 +1,31 @@
+<Namespace Name="System.Speech.Synthesis.TtsEngine">
+  <Docs>
+    <summary>Supports the creation of Speech Synthesis Markup Language (SSML) based custom engines for rendering text to speech (TTS).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The members of the <xref:System.Speech.Synthesis.TtsEngine> namespace make available Windows Desktop Speech Technology support for Speech Synthesis Markup Language (SSML) based markup language and the construction of synthetic speech engines.  
+  
+ The SSML markup language is the industry standard to provide a rich, XML-based language for assisting the synthetic speech engines. It is endorsed by Microsoft and our competitors. For more information on SSML, see [Speech Synthesis Markup Language Specification](http://go.microsoft.com/fwlink/?LinkId=15144).  
+  
+ Creating of a new of synthetic speech engine using <xref:System.Speech.Synthesis.TtsEngine> requires the implementation and registration of an object derived from the abstract base class <xref:System.Speech.Synthesis.TtsEngine.TtsEngineSsml>.  
+  
+ <xref:System.Speech.Synthesis.TtsEngine> based synthetic speech engines are accessed through Windows Desktop Speech Technology infrastructure, using the tools in the <xref:System.Speech.Synthesis> namespace, in particular <xref:System.Speech.Synthesis.SpeechSynthesizer> object, and are never directly used by applications.  
+  
+ The Windows Desktop Speech Technology infrastructures ensures that all parameters passed to a synthetic speech engine are validated and thread synchronized.  
+  
+ A of synthetic speech engine implemented using <xref:System.Speech.Synthesis.TtsEngine> technology can:  
+  
+-   Receive input, (see <xref:System.Speech.Synthesis.TtsEngine.TtsEngineSsml.Speak%2A>,.<xref:System.Speech.Synthesis.TtsEngine.TextFragment>, <xref:System.Speech.Synthesis.TtsEngine.FragmentState>, and <xref:System.Speech.Synthesis.TtsEngine.SkipInfo> )  
+  
+-   Queue events, and specify actions (see <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction>, <xref:System.Speech.Synthesis.TtsEngine.ITtsEngineSite>, <xref:System.Speech.Synthesis.TtsEngine.EventParameterType>, <xref:System.Speech.Synthesis.TtsEngine.SpeechEventInfo>).  
+  
+-   Control the control the pitch, speaking rate and volume of the speech output (see <xref:System.Speech.Synthesis.TtsEngine.ContourPoint>, <xref:System.Speech.Synthesis.TtsEngine.ContourPointChangeType>, <xref:System.Speech.Synthesis.TtsEngine.EmphasisBreak>, <xref:System.Speech.Synthesis.TtsEngine.EmphasisWord>, <xref:System.Speech.Synthesis.TtsEngine.Prosody>, <xref:System.Speech.Synthesis.TtsEngine.ProsodyNumber>, <xref:System.Speech.Synthesis.TtsEngine.ProsodyPitch>, <xref:System.Speech.Synthesis.TtsEngine.ProsodyRange>, <xref:System.Speech.Synthesis.TtsEngine.ProsodyRate>, <xref:System.Speech.Synthesis.TtsEngine.ProsodyUnit>, and <xref:System.Speech.Synthesis.TtsEngine.ProsodyVolume>)  
+  
+-   Determine usage and output target of speech synthesis (see <xref:System.Speech.Synthesis.TtsEngine.SayAs>, <xref:System.Speech.Synthesis.TtsEngine.SpeakOutputFormat>)  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

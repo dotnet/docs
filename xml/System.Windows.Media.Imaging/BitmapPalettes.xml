@@ -1,0 +1,775 @@
+<Type Name="BitmapPalettes" FullName="System.Windows.Media.Imaging.BitmapPalettes">
+  <TypeSignature Language="C#" Value="public static class BitmapPalettes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BitmapPalettes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapPalettes" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines several color palettes that are commonly used by bitmap images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+ Only [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] and [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] image formats support palettes.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BlackAndWhite">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette BlackAndWhite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette BlackAndWhite" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.BlackAndWhite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a black-and-white color palette. This palette consists of 2 colors total.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class.  Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlackAndWhiteTransparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette BlackAndWhiteTransparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette BlackAndWhiteTransparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.BlackAndWhiteTransparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a black, white, and transparent color palette. This palette consists of 3 colors total.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray16">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Gray16 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Gray16" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Gray16" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 16 shades of gray. The palette ranges from black to gray to white. This palette contains 16 total colors.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray16Transparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Gray16Transparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Gray16Transparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Gray16Transparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 16 shades of gray. The palette ranges from black to gray to white with an additional transparent color. This palette contains 17 total colors.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray256">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Gray256 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Gray256" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Gray256" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 256 shades of gray, ranging from black to gray to white. This palette contains 256 total colors.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray256Transparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Gray256Transparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Gray256Transparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Gray256Transparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 256 shades of gray, ranging from black to gray to white with an additional transparent color. This palette contains 257 total colors.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray4">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Gray4 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Gray4" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Gray4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 4 shades of gray, ranging from black to gray to white. This palette contains 4 total colors.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray4Transparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Gray4Transparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Gray4Transparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Gray4Transparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 4 shades of gray, ranging from black to gray to white with an additional transparent color. This palette contains 5 total colors.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone125">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone125 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone125" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone125" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 125 primary colors and 16 system colors, with duplicate colors removed. There are a total of 133 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone125Transparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone125Transparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone125Transparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone125Transparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 125 primary colors, 16 system colors, and 1 additional transparent color. Duplicate colors in the palette are removed. There are a total of 134 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone216">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone216 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone216" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone216" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 216 primary colors and 16 system colors, with duplicate colors removed. There are a total of 224 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone216Transparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone216Transparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone216Transparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone216Transparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 216 primary colors, 16 system colors, and 1 additional transparent color. Duplicate colors in the palette are removed. There are a total of 225 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone252">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone252 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone252" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone252" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 252 primary colors and 16 system colors, with duplicate colors removed. There are a total of 256 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone252Transparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone252Transparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone252Transparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone252Transparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 252 primary colors, 16 system colors, and 1 additional transparent color. Duplicate colors in the palette are removed. There are a total of 256 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone256">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone256 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone256" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone256" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 256 primary colors and 16 system colors, with duplicate colors removed. There are a total of 256 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone256Transparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone256Transparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone256Transparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone256Transparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 256 primary colors, 16 system colors, and 1 additional transparent color that replaces the final color in the sequence. Duplicate colors in the palette are removed. There are a total of 256 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone27">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone27 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone27" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone27" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 27 primary colors and 16 system colors, with duplicate colors removed. There are a total of 35 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone27Transparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone27Transparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone27Transparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone27Transparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 27 primary colors and 16 system colors, with duplicate colors removed and 1 additional transparent color. There are a total of 36 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone64">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone64 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone64" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone64" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 64 primary colors and 16 system colors, with duplicate colors removed. There are a total of 72 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone64Transparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone64Transparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone64Transparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone64Transparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 64 primary colors and 16 system colors, with duplicate colors removed and 1 additional transparent color. There are a total of 73 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone8">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone8 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone8" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone8" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 8 primary colors and 16 system colors, with duplicate colors removed. There are a total of 16 colors in this palette, which are the same as the system palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Halftone8Transparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette Halftone8Transparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone8Transparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone8Transparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 8 primary colors and 16 system colors, with duplicate colors removed and 1 additional transparent color. There are a total of 17 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebPalette">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette WebPalette { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette WebPalette" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.WebPalette" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 216 primary colors and 16 system colors, with duplicate colors removed. There are a total of 224 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> is identical to the <xref:System.Windows.Media.Imaging.BitmapPalettes.Halftone216%2A> palette.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebPaletteTransparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapPalette WebPaletteTransparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette WebPaletteTransparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.WebPaletteTransparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents a color palette that contains 216 primary colors and 16 system colors, with duplicate colors removed and 1 additional transparent color. There are a total of 225 colors in this palette.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPaletteTransparent%2A> is identical to the <xref:System.Windows.Media.Imaging.BitmapPalettes.Halftone216Transparent%2A> palette.  
+  
+ <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+  
+ [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+ [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

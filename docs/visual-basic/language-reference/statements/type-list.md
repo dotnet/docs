@@ -35,8 +35,8 @@ helpviewer_keywords:
   - "constraints, Class keyword"
 ms.assetid: 56db947a-2ae8-40f2-a70a-960764e9d0db
 caps.latest.revision: 33
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

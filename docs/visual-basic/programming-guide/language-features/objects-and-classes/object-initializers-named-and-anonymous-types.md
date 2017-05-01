@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "named types [Visual Basic]"
 ms.assetid: e2df3807-a70f-49dd-ac94-f1e07f472b1b
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

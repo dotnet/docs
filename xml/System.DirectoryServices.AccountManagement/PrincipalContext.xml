@@ -1,0 +1,544 @@
+<Type Name="PrincipalContext" FullName="System.DirectoryServices.AccountManagement.PrincipalContext">
+  <TypeSignature Language="C#" Value="public class PrincipalContext : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrincipalContext extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Encapsulates the server or domain against which all operations are performed, the container that is used as the base of those operations, and the credentials used to perform the operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For search operations, the principal context defines the search base, and for insert operations the context defines the container into which the object is inserted.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrincipalContext (System.DirectoryServices.AccountManagement.ContextType contextType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.AccountManagement.ContextType contextType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalContext.#ctor(System.DirectoryServices.AccountManagement.ContextType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
+      </Parameters>
+      <Docs>
+        <param name="contextType">A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value specifying the type of store for the principal context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class with the specified context type.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">A name or container must be specified when using the application directory context.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrincipalContext (System.DirectoryServices.AccountManagement.ContextType contextType, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.AccountManagement.ContextType contextType, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalContext.#ctor(System.DirectoryServices.AccountManagement.ContextType,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contextType">A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value specifying the type of store for the principal context.</param>
+        <param name="name">The name of the domain or server for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> context types, the machine name for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, or the name of the server and port hosting the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> instance.  
+  
+ If the name is null for a <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> context type this context is a domain controller for the domain of the user principal under which the thread is running. If the name is null for a <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context type, this is the local machine name. This parameter cannot be null for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> context types.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class with the specified context type and name.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">A name must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="F:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrincipalContext (System.DirectoryServices.AccountManagement.ContextType contextType, string name, string container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.AccountManagement.ContextType contextType, string name, string container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalContext.#ctor(System.DirectoryServices.AccountManagement.ContextType,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="container" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contextType">A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value specifying the type of store for the principal context.</param>
+        <param name="name">The name of the domain or server for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> context types, the machine name for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, or the name of the server and port hosting the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> instance.  
+  
+ If the name is null for a <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> context type this context is a domain controller for the domain of the user principal under which the thread is running. If the name is null for a <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context type, this is the local machine name. This parameter cannot be null for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> context types.</param>
+        <param name="container">The container on the store to use as the root of the context. All queries are performed under this root, and all inserts are performed into this container.  
+  
+ For <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> and <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> context types, this parameter is the distinguished name of a container object.  
+  
+ For <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, this parameter must be set to null.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class with the specified context type, name, and container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A container cannot be specified when the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context type is specified in the <paramref name="contextType" /> parameter.  
+  
+ A name or container must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="F:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrincipalContext (System.DirectoryServices.AccountManagement.ContextType contextType, string name, string container, System.DirectoryServices.AccountManagement.ContextOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.AccountManagement.ContextType contextType, string name, string container, valuetype System.DirectoryServices.AccountManagement.ContextOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalContext.#ctor(System.DirectoryServices.AccountManagement.ContextType,System.String,System.String,System.DirectoryServices.AccountManagement.ContextOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="container" Type="System.String" />
+        <Parameter Name="options" Type="System.DirectoryServices.AccountManagement.ContextOptions" />
+      </Parameters>
+      <Docs>
+        <param name="contextType">A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value specifying the type of store for the principal context.</param>
+        <param name="name">The name of the domain or server for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> context types, the machine name for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, or the name of the server and port hosting the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> instance.  
+  
+ If the name is null for a <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> context type this context is a domain controller for the domain of the user principal under which the thread is running. If the name is null for a <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context type, this is the local machine name. This parameter cannot be null for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> context types.</param>
+        <param name="container">The container on the store to use as the root of the context. All queries are performed under this root, and all inserts are performed into this container.  
+  
+ For <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> and <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> context types, this parameter is the distinguished name of a container object.  
+  
+ For <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, this parameter must be set to null.</param>
+        <param name="options">A combination of one or more <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration values specifying the options used to bind to the server. If this parameter is null, the default options are ContextOptions.Negotiate | ContextOptions.Signing | ContextOptions.Sealing.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class with the specified context type, name, container, and context options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A container cannot be specified when the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context type is specified in the <paramref name="contextType" /> parameter.  
+  
+ A name or container must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.  
+  
+ The <paramref name="options" /> parameter does not contain a combination of valid <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrincipalContext (System.DirectoryServices.AccountManagement.ContextType contextType, string name, string userName, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.AccountManagement.ContextType contextType, string name, string userName, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalContext.#ctor(System.DirectoryServices.AccountManagement.ContextType,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contextType">A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value specifying the type of store for the principal context.</param>
+        <param name="name">The name of the domain or server for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> context types, the machine name for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, or the name of the server and port hosting the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> instance.  
+  
+ If the name is null for a <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> context type this context is a domain controller for the domain of the user principal under which the thread is running. If the name is null for a <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context type, this is the local machine name. This parameter cannot be null for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> context types.</param>
+        <param name="userName">The username used to connect to the store. If the <c>username</c> and <c>password</c> parameters are both null, the default credentials of the current principal are used. Otherwise, both <c>username</c> and <c>password</c> must be non-null, and the credentials they specify are used to connect to the store.</param>
+        <param name="password">The password used to connect to the store. If the <c>username</c> and <c>password</c> parameters are both null, the default credentials of the current principal are used. Otherwise, both <c>username</c> and <c>password</c> must be non-null, and the credentials they specify are used to connect to the store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class with the specified context type, name, username, and password.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="username" /> and <paramref name="password" /> parameters must either be null or contain a value.  
+  
+ A name must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrincipalContext (System.DirectoryServices.AccountManagement.ContextType contextType, string name, string container, string userName, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.AccountManagement.ContextType contextType, string name, string container, string userName, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalContext.#ctor(System.DirectoryServices.AccountManagement.ContextType,System.String,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="container" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contextType">A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value specifying the type of store for the principal context.</param>
+        <param name="name">The name of the domain or server for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> context types, the machine name for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, or the name of the server and port hosting the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> instance.  
+  
+ If the name is null for a <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> context type this context is a domain controller for the domain of the user principal under which the thread is running. If the name is null for a <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context type, this is the local machine name. This parameter cannot be null for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> context types.</param>
+        <param name="container">The container on the store to use as the root of the context. All queries are performed under this root, and all inserts are performed into this container.  
+  
+ For <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> and <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> context types, this parameter is the distinguished name of a container object.  
+  
+ For <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, this parameter must be set to null.</param>
+        <param name="userName">The username used to connect to the store. If the <c>username</c> and <c>password</c> parameters are both null, the default credentials of the current principal are used.  Otherwise, both <c>username</c> and <c>password</c> must be non-null, and the credentials they specify are used to connect to the store.</param>
+        <param name="password">The password used to connect to the store. If the <c>username</c> and <c>password</c> parameters are both null, the default credentials of the current principal are used.  Otherwise, both <c>username</c> and <c>password</c> must be non-null, and the credentials they specify are used to connect to the store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class with the specified context type, name, container, username, and password.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="username" /> and <paramref name="password" /> parameters must either be null or contain a value.  
+  
+ A container cannot be specified when the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context type is specified in the <paramref name="contextType" /> parameter.  
+  
+ A <paramref name="name" /> or <paramref name="container" /> must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrincipalContext (System.DirectoryServices.AccountManagement.ContextType contextType, string name, string container, System.DirectoryServices.AccountManagement.ContextOptions options, string userName, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.AccountManagement.ContextType contextType, string name, string container, valuetype System.DirectoryServices.AccountManagement.ContextOptions options, string userName, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalContext.#ctor(System.DirectoryServices.AccountManagement.ContextType,System.String,System.String,System.DirectoryServices.AccountManagement.ContextOptions,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="container" Type="System.String" />
+        <Parameter Name="options" Type="System.DirectoryServices.AccountManagement.ContextOptions" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contextType">A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value specifying the type of store for the principal context.</param>
+        <param name="name">The name of the domain or server for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> context types, the machine name for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, or the name of the server and port hosting the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> instance.  
+  
+ If the name is null for a <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> context type this context is a domain controller for the domain of the user principal under which the thread is running. If the name is null for a <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context type, this is the local machine name. This parameter cannot be null for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> context types.</param>
+        <param name="container">The container on the store to use as the root of the context. All queries are performed under this root, and all inserts are performed into this container.  
+  
+ For <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> and <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> context types, this parameter is the distinguished name of a container object.  
+  
+ For <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, this parameter must be set to null.</param>
+        <param name="options">A combination of one or more <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration values the options used to bind to the server. If this parameter is null, the default options are ContextOptions.Negotiate | ContextOptions.Signing | ContextOptions.Sealing.</param>
+        <param name="userName">The username used to connect to the store. If the <c>username</c> and <c>password</c> parameters are both null, the default credentials of the current principal are used. Otherwise, both <c>username</c> and <c>password</c> must be non-null, and the credentials they specify are used to connect to the store.</param>
+        <param name="password">The password used to connect to the store. If the <c>username</c> and <c>password</c> parameters are both null, the default credentials of the current principal are used.  Otherwise, both <c>username</c> and <c>password</c> must be non-null, and the credentials they specify are used to connect to the store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class with the specified context type, name, container, context options, username, and password.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="username" /> and <paramref name="password" /> parameters must either be null or contain a value.  
+  
+ A container cannot be specified when the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context type is specified in the <paramref name="contextType" /> parameter.  
+  
+ A name or container must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.  
+  
+ The <paramref name="options" /> parameter does not contain a combination of valid <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectedServer">
+      <MemberSignature Language="C#" Value="public string ConnectedServer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectedServer" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalContext.ConnectedServer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the server to which the principal context is connected.</summary>
+        <value>The name of the server to which the principal context is connected or null if the principal context is not connected to a server.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType>, this property returns the name of the domain controller or application directory instance. When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType>, this property returns the machine name.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Container">
+      <MemberSignature Language="C#" Value="public string Container { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Container" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalContext.Container" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value specified in the container parameter in the constructor.</summary>
+        <value>The container on the store to use as the root of the context or null if the container is not specified.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All queries are performed under this root, and all inserts are performed into this container. For <xref:System.DirectoryServices.AccountManagement.ContextType> and <xref:System.DirectoryServices.AccountManagement.ContextType> context types, this property is the distinguished name of a container object. For <xref:System.DirectoryServices.AccountManagement.ContextType> context types, this property must be null.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextType">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.ContextType ContextType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.AccountManagement.ContextType ContextType" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalContext.ContextType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ContextType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the context type that specifies the type of store for the principal context.</summary>
+        <value>A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value specifying the type of target to connect to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used when the application does not directly create the principal context and specify the context type. For example, when the application enumerates group membership, this property can be used to determine the type of store to which the principal belongs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalContext.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Disposes the current instance of the <see cref="T:System.DirectorySerices.AccountManagement.PrincipalContext" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalContext.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value specified as the <paramref name="name" /> parameter in the constructor.</summary>
+        <value>The name of the domain or server for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> contexts types, the host name for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, the name of the server hosting the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> instance, or null if no name is set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.ContextOptions Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.AccountManagement.ContextOptions Options" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalContext.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the options specified in the <paramref name="contextOptions" /> parameter of the constructor.</summary>
+        <value>A <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration value specifying the type of target to connect to.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserName">
+      <MemberSignature Language="C#" Value="public string UserName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalContext.UserName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value specified in the username parameter in the constructor.</summary>
+        <value>The username used to connect to the store, or null if no user name exists.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be set by passing it a user name in any one of various different formats.  For a complete list of the acceptable types of formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCredentials">
+      <MemberSignature Language="C#" Value="public bool ValidateCredentials (string userName, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ValidateCredentials(string userName, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userName">The username that is validated on the server.</param>
+        <param name="password">The password that is validated on the server.</param>
+        <summary>Creates the connections to the server and returns a Boolean value that specifies whether the specified username and password are valid.</summary>
+        <returns>
+          <see langword="true" /> if the credentials are valid; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCredentials">
+      <MemberSignature Language="C#" Value="public bool ValidateCredentials (string userName, string password, System.DirectoryServices.AccountManagement.ContextOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ValidateCredentials(string userName, string password, valuetype System.DirectoryServices.AccountManagement.ContextOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials(System.String,System.String,System.DirectoryServices.AccountManagement.ContextOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="options" Type="System.DirectoryServices.AccountManagement.ContextOptions" />
+      </Parameters>
+      <Docs>
+        <param name="userName">The username that is validated on the server.</param>
+        <param name="password">The password that is validated on the server.</param>
+        <param name="options">A combination of one or more <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration values the options used to bind to the server. This parameter can only specify Simple bind with or without SSL, or Negotiate bind.</param>
+        <summary>Creates the connections to the server and returns a Boolean value that specifies whether the specified user name and password are valid. This method performs fast credential validation of the username and password.</summary>
+        <returns>
+          <see langword="true" /> if the credentials are valid; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, the credentials specified in the constructor are validated. If no credential were specified in the constructor, and the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="options" /> parameter must specify Negotiate when the context type is <see cref="T:System.DirectoryServices.AccountManagement.ContextType.Machine." /></exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="ValidateCredentials">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates the connection to the server and validates the specified credentials if the connection is successful.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In each version of this function, the `userName` string can be in one of a variety of different formats.  For a complete list of the acceptable types of formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructors perform validation of the parameters and server, but not do not attempt to validate credentials.  
+  
+ When the principal context object is created without specifying a container, it may be used to represent multiple distinct containers. One container may be used as the base of query operations, while additional containers can hold newly-created principal objects. For example, when users or groups are inserted into the domian context type, the Account Management API uses the default well-known user container, "CN=Users,DC=Fabrikam,DC=com". When computers are inserted in the store, the API uses the default "CN=Computers,DC=Fabrikam,DC=com" container. Note that the default container names can be changed by the domain administrator. Since the principal object constructors can only specify one principal context, additional contexts are exposed as the default behavior when the application creates a domain context without specifying a container. Since the application directory does not have well-known containers, the application must specify a container in the constructor or the <xref:System.ArgumentException> is thrown. Since SAM does not have containers, a <xref:System.ArgumentException> is thrown if the application attempts to specify a container in the constructor.  
+  
+ In each version of the constructor that takes a user name as a parameter, the `userName` string can be in various different formats.  The three supported NameFormats for are Nt4Name, UserPrincipalName, and SamAccountName.  For more information about name formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

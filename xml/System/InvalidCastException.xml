@@ -1,0 +1,354 @@
+<Type Name="InvalidCastException" FullName="System.InvalidCastException">
+  <TypeSignature Language="C#" Value="public class InvalidCastException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InvalidCastException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.InvalidCastException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The exception that is thrown for invalid casting or explicit conversion.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework supports automatic conversion from derived types to their base types and back to the derived type, as well as from types that present interfaces to interface objects and back. It also includes a variety of mechanisms that support custom conversions. For more information, see [Type Conversion in the .NET Framework](~/docs/standard/base-types/type-conversion.md).  
+  
+ An <xref:System.InvalidCastException> exception is thrown when the conversion of an instance of one type to another type is not supported. For example, attempting to convert a <xref:System.Char> value to a <xref:System.DateTime> value throws an <xref:System.InvalidCastException> exception. It differs from an <xref:System.OverflowException> exception, which is thrown when a conversion of one type to another is supported, but the value of the source type is outside the range of the target type.  An <xref:System.InvalidCastException> exception is caused by developer error and should not be handled in a `try/catch` block; instead, the cause of the exception should be eliminated.  
+  
+ For information about conversions supported by the system, see the <xref:System.Convert> class. For errors that occur when the destination type can store source type values, but is not large enough to store a specific source value, see the <xref:System.OverflowException> exception.  
+  
+> [!NOTE]
+>  In many cases, your language compiler detects that no conversion exists between the source type and the target type and issues a compiler error.  
+  
+ Some of the conditions under which an attempted conversion throws an <xref:System.InvalidCastException> exception are discussed in the following sections:  
+  
+ [Primitive types and IConvertible](#Primitive)   
+ [The Convert.ChangeType method](#ChangeType)   
+ [Narrowing conversions and IConvertible implementations](#Narrowing)   
+ [Downcasting](#Downcasting)   
+ [Conversion from an interface object](#Interface)   
+ [String conversions](#String)   
+ [Visual Basic 6.0 migration](#Migration)  
+  
+ For an explicit reference conversion to be successful, the source value must be `null`, or the object type referenced by the source argument must be convertible to the destination type by an implicit reference conversion.  
+  
+ The following intermediate language (IL) instructions throw an <xref:System.InvalidCastException> exception:  
+  
+-   `castclass`  
+  
+-   `refanyval`  
+  
+-   `unbox`  
+  
+ <xref:System.InvalidCastException> uses the HRESULT COR_E_INVALIDCAST, which has the value 0x80004002.  
+  
+ For a list of initial property values for an instance of <xref:System.InvalidCastException>, see the <xref:System.InvalidCastException.%23ctor%2A> constructors.  
+  
+<a name="Primitive"></a>   
+## Primitive types and IConvertible  
+ You directly or indirectly call a primitive type's <xref:System.IConvertible> implementation that does not support a particular conversion. For example, trying to convert a <xref:System.Boolean> value to a <xref:System.Char> or a <xref:System.DateTime> value to an <xref:System.Int32> throws an <xref:System.InvalidCastException> exception. The following example calls both the <xref:System.Boolean.System%23IConvertible%23ToChar%2A?displayProperty=fullName> and <xref:System.Convert.ToChar%28System.Boolean%29?displayProperty=fullName> methods to convert a <xref:System.Boolean> value to a <xref:System.Char>. In both cases, the method call throws an <xref:System.InvalidCastException> exception.  
+  
+ [!code-csharp[System.InvalidCastException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidcastexception/cs/iconvertible1.cs#2)]
+ [!code-vb[System.InvalidCastException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidcastexception/vb/iconvertible1.vb#2)]  
+  
+ Because the conversion is not supported, there is no workaround.  
+  
+<a name="ChangeType"></a>   
+## The Convert.ChangeType method  
+ You've called the <xref:System.Convert.ChangeType%2A?displayProperty=fullName> method to convert an object from one type to another, but one or both types don't implement the <xref:System.IConvertible> interface.  
+  
+ In most cases, because the conversion is not supported, there is no workaround. In some cases, a possible workaround is to manually assign property values from the source type to similar properties of a the target type.  
+  
+<a name="Narrowing"></a>   
+## Narrowing conversions and IConvertible implementations  
+ Narrowing operators define the explicit conversions supported by a type.  A casting operator in C# or the `CType` conversion method in Visual Basic (if `Option Strict` is on)  is required to perform the conversion.  
+  
+ However, if neither the source type nor the target type defines an explicit or narrowing conversion between the two types, and the <xref:System.IConvertible> implementation of one or both types doesn't support a conversion from the source type to the target type, an <xref:System.InvalidCastException> exception is thrown.  
+  
+ In most cases, because the conversion is not supported, there is no workaround.  
+  
+<a name="Downcasting"></a>   
+## Downcasting  
+ You are downcasting, that is, trying to convert an instance of a base type to one of its derived types. In the following example, trying to convert a `Person` object to a `PersonWithID` object fails.  
+  
+ [!code-csharp[System.InvalidCastException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidcastexception/cs/basetoderived1.cs#1)]
+ [!code-vb[System.InvalidCastException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidcastexception/vb/basetoderived1.vb#1)]  
+  
+ As the example shows, the downcast succeeds only if the `Person` object was created by an upcast from a `PersonWithId` object to a `Person` object, or if the `Person` object is `null`.  
+  
+<a name="Interface"></a>   
+## Conversion from an interface object  
+ You are attempting to convert an interface object to a type that  implements that interface, but the target type is not the same type or a base class of the type from which the interface object was originally derived. The following example throws an <xref:System.InvalidCastException> exception when it attempts to convert an <xref:System.IFormatProvider> object  to a <xref:System.Globalization.DateTimeFormatInfo> object. The conversion fails because although the <xref:System.Globalization.DateTimeFormatInfo> class implements the <xref:System.IFormatProvider> interface, the <xref:System.Globalization.DateTimeFormatInfo> object is not related to the <xref:System.Globalization.CultureInfo> class from which  the interface object was derived.  
+  
+ [!code-csharp[System.InvalidCastException#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidcastexception/cs/Interface1.cs#3)]
+ [!code-vb[System.InvalidCastException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidcastexception/vb/Interface1.vb#3)]  
+  
+ As the exception message indicates, the conversion would succeed only if the interface object is converted back to an instance of the original type, in this case a  <xref:System.Globalization.CultureInfo>. The conversion would also succeed if the interface object is converted to an instance of a base type of the original type.  
+  
+<a name="String"></a>   
+## String conversions  
+ You are trying to convert a value or an object to its string representation by using a casting operator in C#. In the following example, both the attempt to cast a <xref:System.Char> value to a string and the attempt to cast an integer to a string throw an <xref:System.InvalidCastException> exception.  
+  
+ [!code-csharp[System.InvalidCastException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidcastexception/cs/ToString1.cs#4)]  
+  
+> [!NOTE]
+>  Using the Visual Basic `CStr` operator to convert a value of a primitive type to a string succeeds. The operation does not throw an <xref:System.InvalidCastException> exception.  
+  
+ To successfully covert an instance of any type to its string representation, call its `ToString` method, as the following example does.  The `ToString` method is always present, since the <xref:System.Object.ToString%2A> method is defined by the <xref:System.Object> class and therefore is either inherited or overridden by all managed types.  
+  
+ [!code-csharp[System.InvalidCastException#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidcastexception/cs/ToString2.cs#5)]  
+  
+<a name="Migration"></a>   
+## Visual Basic 6.0 migration  
+ You're upgrading a Visual Basic 6.0 application with a call to a custom event in a user control to Visual Basic .NET, and an <xref:System.InvalidCastException> exception is thrown with the message, "Specified cast is not valid." To eliminate this exception, change the line of code in your form (such as `Form1`)  
+  
+```  
+Call UserControl11_MyCustomEvent(UserControl11, New UserControl1.MyCustomEventEventArgs(5))  
+```  
+  
+ and replace it with the following line of code:  
+  
+```  
+Call UserControl11_MyCustomEvent(UserControl11(0), New UserControl1.MyCustomEventEventArgs(5))  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvalidCastException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.InvalidCastException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.InvalidCastException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Cannot cast from source type to destination type." This message takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.InvalidCastException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|The localized error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvalidCastException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.InvalidCastException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.InvalidCastException" /> class with a specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.InvalidCastException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected InvalidCastException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.InvalidCastException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The object that holds the serialized object data.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.InvalidCastException" /> class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvalidCastException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.InvalidCastException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.InvalidCastException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or returns `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+  
+ The following table shows the initial property values for an instance of <xref:System.InvalidCastException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvalidCastException (string message, int errorCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, int32 errorCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.InvalidCastException.#ctor(System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="errorCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that indicates the reason the exception occurred.</param>
+        <param name="errorCode">The error code (HRESULT) value associated with the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.InvalidCastException" /> class with a specified message and error code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+  
+ This constructor supplies an HRESULT value that is accessible to inheritors of the <xref:System.InvalidCastException> class, via the protected <xref:System.Exception.HResult%2A> property of the <xref:System.Exception> class.  
+  
+ The following table shows the initial property values for an instance of <xref:System.InvalidCastException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "-delaysign compiler option [Visual Basic]"
 ms.assetid: c76e61a4-1884-4252-9fb2-377f99caa690
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

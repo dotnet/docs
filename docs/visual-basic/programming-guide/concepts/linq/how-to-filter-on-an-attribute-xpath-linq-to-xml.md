@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: ffefb9d6-45ec-4677-a396-dd9c2b36298f
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Filter on an Attribute (XPath-LINQ to XML) (Visual Basic)

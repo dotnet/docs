@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "arguments [Visual Basic], changing value"
 ms.assetid: d2b7c766-ce16-4d2c-8d79-3fc0e7ba2227
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

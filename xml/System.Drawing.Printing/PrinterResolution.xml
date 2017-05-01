@@ -1,0 +1,155 @@
+<Type Name="PrinterResolution" FullName="System.Drawing.Printing.PrinterResolution">
+  <TypeSignature Language="C#" Value="public class PrinterResolution" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PrinterResolution extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterResolution" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the resolution supported by a printer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by the <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutions%2A?displayProperty=fullName> and <xref:System.Drawing.Printing.PageSettings.PrinterResolution%2A?displayProperty=fullName> properties to get the printer resolutions that are available on the printer and to set the printing resolution for a page, respectively.  
+  
+ Use the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> property to determine whether the printer resolution type is the <xref:System.Drawing.Printing.PrinterResolutionKind> value <xref:System.Drawing.Printing.PrinterResolutionKind>. If so, use the <xref:System.Drawing.Printing.PrinterResolution.X%2A> and <xref:System.Drawing.Printing.PrinterResolution.Y%2A> properties to determine the printer resolution in the horizontal and vertical directions, respectively.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+   
+  
+## Examples  
+ The following code example populates the `comboPrintResolution` combo box with the supported resolutions. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` exists and that the specific combo box exists.  
+  
+ [!code-cpp[PaperSource and PaperSize Example with Resolution#3](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#3)]
+ [!code-csharp[PaperSource and PaperSize Example with Resolution#3](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#3)]
+ [!code-vb[PaperSource and PaperSize Example with Resolution#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrinterResolution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterResolution.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrinterResolution" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of the <xref:System.Drawing.Printing.PrinterResolution> class.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Drawing.Printing.PrinterResolution.Kind%2A>|<xref:System.Drawing.Printing.PrinterResolutionKind>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrinterResolutionKind Kind { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Printing.PrinterResolutionKind Kind" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterResolution.Kind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrinterResolutionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the printer resolution.</summary>
+        <value>One of the <see cref="T:System.Drawing.Printing.PrinterResolutionKind" /> values.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not a member of the <see cref="T:System.Drawing.Printing.PrinterResolutionKind" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterResolution.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This member overrides the <see cref="M:System.Object.ToString" /> method.</summary>
+        <returns>A <see cref="T:System.String" /> that contains information about the <see cref="T:System.Drawing.Printing.PrinterResolution" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="public int X { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 X" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterResolution.X" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the horizontal printer resolution, in dots per inch.</summary>
+        <value>The horizontal printer resolution, in dots per inch, if <see cref="P:System.Drawing.Printing.PrinterResolution.Kind" /> is set to <see cref="F:System.Drawing.Printing.PrinterResolutionKind.Custom" />; otherwise, a <see langword="dmPrintQuality" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `dmPrintQuality` is a member of the `DEVMODE` (device mode) structure, which defines constants that map to printer quality settings. The <xref:System.Drawing.Printing.PrinterResolution.X%2A> property contains the value `DMRES_HIGH` if <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> is set to <xref:System.Drawing.Printing.PrinterResolutionKind>, `DMRES_MEDIUM` if <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> is set to <xref:System.Drawing.Printing.PrinterResolutionKind>, `DMRES_LOW` if <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> is set to <xref:System.Drawing.Printing.PrinterResolutionKind>, and `DMRES_DRAFT` if <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> is set to <xref:System.Drawing.Printing.PrinterResolutionKind>.  
+  
+ For more information about the `DEVMODE` structure, see the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="public int Y { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Y" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterResolution.Y" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the vertical printer resolution, in dots per inch.</summary>
+        <value>The vertical printer resolution, in dots per inch.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> property is not set to <xref:System.Drawing.Printing.PrinterResolutionKind>, the default value of the <xref:System.Drawing.Printing.PrinterResolution.Y%2A> property is -1.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

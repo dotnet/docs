@@ -1,0 +1,594 @@
+<Type Name="PeerNameRegistration" FullName="System.Net.PeerToPeer.PeerNameRegistration">
+  <TypeSignature Language="C#" Value="public class PeerNameRegistration : IDisposable, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable PeerNameRegistration extends System.Object implements class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PeerNameRegistration" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Registers a <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" /> in a <see cref="T:System.Net.PeerToPeer.Cloud" /> or set of clouds.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Registration creates (or updates) all the information that is associated with a <xref:System.Net.PeerToPeer.PeerName> in a peer cloud or clouds.  
+  
+ It is possible to have multiple <xref:System.Net.PeerToPeer.PeerNameRegistration> objects for the same peer name. In such a case, if the peer name is secured, each instance represents <xref:System.Net.PeerToPeer.PeerNameRegistration> in a different cloud. However, if the peer name is not secured, it can be registered in the same cloud multiple times, providing that each registration is from a different process.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PeerNameRegistration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new default instance of the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns a new default instance of type <xref:System.Net.PeerToPeer.PeerNameRegistration>. It does not perform peer name registration during construction.  
+  
+ After instantiating an object with this constructor, the caller should populate the appropriate fields in the instance prior to calling <xref:System.Net.PeerToPeer.PeerNameRegistration.Start%2A> or <xref:System.Net.PeerToPeer.PeerNameRegistration.Stop%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PeerNameRegistration (System.Net.PeerToPeer.PeerName name, int port);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.PeerToPeer.PeerName name, int32 port) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.#ctor(System.Net.PeerToPeer.PeerName,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.Net.PeerToPeer.PeerName" />
+        <Parameter Name="port" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="T:System.Net.PeerToPeer.PeerName" /> object to register.</param>
+        <param name="port">Integer value that specifies the port number to register.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> class with the specified name and port number.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this constructor creates an instance that will be used to register all source addresses (both IPv6and IPv4) and the provided port for all clouds in which the peer is currently participating.  If the object is constructed successfully, the specified <xref:System.Net.PeerToPeer.PeerNameRegistration.PeerName%2A> and <xref:System.Net.PeerToPeer.PeerNameRegistration.Port%2A> are populated.  
+  
+ If the peer name is secured and was previously registered in a <xref:System.Net.PeerToPeer.PeerNameRegistration.Cloud%2A> the peer is currently participating in, an <xref:System.Net.PeerToPeer.PeerToPeerException> is thrown.  
+  
+ This constructor only creates a <xref:System.Net.PeerToPeer.PeerNameRegistration> instance; it does not perform the registration. After instantiating the registration object with this constructor and populating its fields, the application must call <xref:System.Net.PeerToPeer.PeerNameRegistration.Start%2A> to perform the actual registration.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter cannot be <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified port number is less than zero.  Port numbers must be greater than or equal to zero and less than 65,535 (0xFFFF).</exception>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">-   The <see cref="T:System.Net.PeerToPeer.PeerName" /> specified has already been registered from this host.  
+  
+-   The remote peer does not own the <see cref="P:System.Net.PeerToPeer.PeerName.Authority" /> for the supplied <see cref="T:System.Net.PeerToPeer.PeerName" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PeerNameRegistration (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">Reference to the object that holds the data needed to deserialize this instance.</param>
+        <param name="context">Context that provides the means for deserializing the data. Also referred to as the source of the serialized data.</param>
+        <summary>Initializes a new serializable <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PeerNameRegistration (System.Net.PeerToPeer.PeerName name, int port, System.Net.PeerToPeer.Cloud cloud);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.PeerToPeer.PeerName name, int32 port, class System.Net.PeerToPeer.Cloud cloud) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.#ctor(System.Net.PeerToPeer.PeerName,System.Int32,System.Net.PeerToPeer.Cloud)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.Net.PeerToPeer.PeerName" />
+        <Parameter Name="port" Type="System.Int32" />
+        <Parameter Name="cloud" Type="System.Net.PeerToPeer.Cloud" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="T:System.Net.PeerToPeer.PeerName" /> object to register.</param>
+        <param name="port">Integer value that specifies the port number to register.</param>
+        <param name="cloud">
+          <see cref="T:System.Net.PeerToPeer.Cloud" /> in which to register the peer name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> class with the specified peer name, port number, and <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this constructor creates an instance that will be used to register all source addresses (both IPv6 and IPv4), the provided port, and the specified <xref:System.Net.PeerToPeer.PeerNameRegistration.Cloud%2A>.  If the object is constructed successfully, the properties are populated with the specified <xref:System.Net.PeerToPeer.PeerNameRegistration.PeerName%2A>, <xref:System.Net.PeerToPeer.PeerNameRegistration.Port%2A> and <xref:System.Net.PeerToPeer.PeerNameRegistration.Cloud%2A>.  
+  
+ If the cloud parameter is `null`, the name is registered using the <xref:System.Net.PeerToPeer.Cloud.Available> shortcut, which initializes default values for the <xref:System.Net.PeerToPeer.Cloud.Name%2A>, <xref:System.Net.PeerToPeer.Cloud.Scope%2A>, and <xref:System.Net.PeerToPeer.Cloud.ScopeId%2A>.  
+  
+ After instantiation, the <xref:System.Net.PeerToPeer.PeerNameRegistration.Start%2A> method must be called to register the <xref:System.Net.PeerToPeer.PeerName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter cannot be <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified port number is less than zero.  Port numbers must be greater than or equal to zero and less than 65,535 (0xFFFF).</exception>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">-   The <see cref="T:System.Net.PeerToPeer.PeerName" /> specified has already been registered from this host.  
+  
+-   The remote peer does not own the <see cref="P:System.Net.PeerToPeer.PeerName.Authority" /> for the supplied <see cref="T:System.Net.PeerToPeer.PeerName" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Cloud">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Cloud Cloud { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Cloud Cloud" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.Cloud" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Cloud</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets information in a <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.Cloud" /> into which this <see cref="P:System.Net.PeerToPeer.PeerNameRecord.PeerName" /> object will be registered.</summary>
+        <value>An object of type <see cref="T:System.Net.PeerToPeer.Cloud" /> that specifies the peer cloud for which this registration is defined. This property is set to <see langword="null" /> by default.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comment">
+      <MemberSignature Language="C#" Value="public string Comment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.Comment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets additional information about the <see cref="T:System.Net.PeerToPeer.PeerName" /> object that will be registered with the <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
+        <value>The comment that contains additional information about the <see cref="T:System.Net.PeerToPeer.PeerName" /> to associate with the <see cref="T:System.Net.PeerToPeer.Cloud" />. This property is set to <see langword="null" /> by default.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The specified string value is greater than 39 Unicode characters.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public byte[] Data { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Data" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets application-defined binary data for the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</summary>
+        <value>An array of bytes that holds the binary data associated with the entry. This property is set to <see langword="null" /> by default.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The maximum amount of <xref:System.Net.PeerToPeer.PeerNameRegistration.Data%2A> that can be supplied is 4,096 bytes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.Data" /> is greater than 4096 bytes.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="usage">
+          <para>lways call the Dispose method before destroying the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="True" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources and optionally releases the managed resources used by the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="usage">
+          <para>Always call the Dispose method before releasing the last reference to the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="EndPointCollection">
+      <MemberSignature Language="C#" Value="public System.Net.IPEndPointCollection EndPointCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPEndPointCollection EndPointCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.EndPointCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IPEndPointCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of network endpoints for which the associated peer name is registered.</summary>
+        <value>An <see cref="P:System.Net.PeerToPeer.PeerNameRecord.EndPointCollection" /> object that contains the network endpoints for which the associated peer name is registered. Unless explicitly specified, the default value for all properties is <see langword="null" /> for reference types.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the <xref:System.Net> namespace, an <xref:System.Net.IPEndPoint> represents a network endpoint as an IP address and a port number.  For PNRP, an IP address and port value must be provided for each endpoint.  The maximum number of endpoints that can be provided is ten. Automatic address selection is used when this parameter is `null`.  
+  
+ If a registration method is used that automatically selects the addresses to register, there is no method to determine theaddresses for which the peer name was registered.  That is, the <xref:System.Net.PeerToPeer.PeerNameRegistration.EndPointCollection%2A> property will not be updated to reflect the addresses selected.  
+  
+ When a peer name is registered for more than one node, each <xref:System.Net.PeerToPeer.PeerNameRegistration> is distinct and the <xref:System.Net.PeerToPeer.PeerNameRegistration.EndPointCollection%2A> property defined on each registration instance will be different. Also, when a <xref:System.Net.PeerToPeer.PeerNameRegistration.PeerName%2A> is registered into more than one <xref:System.Net.PeerToPeer.PeerNameRegistration.Cloud%2A>, each registration is distinct and the collection of endpoints will usually be different for each instance.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>The list of endpoints with which this peer will communicate is not the same as the list of endpoints by which this peer name is known, which is stored differently.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="protected virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">Holds the serialized data associated with the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</param>
+        <param name="context">Contains destination for the serialized stream associated with the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</param>
+        <summary>Populates a serialization information object with the data needed to serialize the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRegistered">
+      <MemberSignature Language="C#" Value="public bool IsRegistered ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsRegistered() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.IsRegistered" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets or sets whether the peer name specified in the <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" /> property is registered with a specific <see cref="T:System.Net.PeerToPeer.Cloud" /> on a host.</summary>
+        <returns>If <see langword="true" />, the peer name is registered with a <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.Cloud" /> for the peer host. If <see langword="false" />, then the registration process can be started with <see cref="M:System.Net.PeerToPeer.PeerNameRegistration.Start" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">An object that has been disposed already cannot be registered.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerName">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.PeerName PeerName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.PeerName PeerName" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.PeerName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the peer name to register with a peer cloud.</summary>
+        <value>An object of type <see cref="T:System.Net.PeerToPeer.PeerName" /> that contains values associated with this <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object. Unless explicitly specified, the default value for all properties is <see langword="null" /> for reference types.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A peer name can be registered for more than one node; each <xref:System.Net.PeerToPeer.PeerNameRegistration> instance is distinct. The <xref:System.Net.PeerToPeer.PeerNameRegistration.EndPointCollection%2A> property associated with each corresponding <xref:System.Net.PeerToPeer.PeerName> instance is different. Also, it is possible to register a peer name for more than one cloud that the node is connected to; each of these registrations is distinct. The peer name's <xref:System.Net.IPEndPointCollection> will be different in each of these instances.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Port">
+      <MemberSignature Language="C#" Value="public int Port { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Port" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.Port" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the [TCP/IP](http://go.microsoft.com/fwlink?LinkID=98458) port number used by the peer being registered into the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</summary>
+        <value>An integer value indicating the TCP port number of the <see cref="T:System.Net.IPEndPoint" />. Unless explicitly specified, the default value for this property is zero (0).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default port is used by the <xref:System.Net.PeerToPeer.PeerNameRegistration.Start%2A> method only when no endpoints are specified.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified port value is less than zero.  Port numbers must be greater than or equal to zero and less than 65,535 (0xFFFF).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Registers the <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" /> into the <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.Cloud" />. If no <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.EndPointCollection" /> is specified, automatic address selection is used with the port value specified by the <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.Port" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method registers the peer name specified in the <xref:System.Net.PeerToPeer.PeerNameRegistration.PeerName%2A> property with all source addresses and the <xref:System.Net.PeerToPeer.PeerNameRegistration.Port%2A> specified in the constructor. The default port is used by this method only when no endpoints are specified.  
+  
+ If the <xref:System.Net.PeerToPeer.PeerNameRegistration.Cloud%2A> property is `null`, this method registers the peer name specified in the <xref:System.Net.PeerToPeer.PeerNameRecord.PeerName%2A> property using the <xref:System.Net.PeerToPeer.Cloud.Available> field, which initializes default values for the <xref:System.Net.PeerToPeer.Cloud.Name%2A>, <xref:System.Net.PeerToPeer.Cloud.Scope%2A>, and <xref:System.Net.PeerToPeer.Cloud.ScopeId%2A>.  
+  
+ After a <xref:System.Net.PeerToPeer.PeerNameRegistration> object has been started, the <xref:System.Net.PeerToPeer.PeerNameRegistration.Stop%2A> method is used to stop it.  
+  
+ To update a registration, the <xref:System.Net.PeerToPeer.PeerNameRegistration.Update%2A> method must be used.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Net.PeerToPeer.PeerName> and registers it along with the metadata specified.  
+  
+ [!code-csharp[NCLPNRPRegisterPeerName#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPRegisterPeerName/CS/RegisterPeerName.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" /> property is set to <see langword="null" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">This object had Dispose() called on it previously.</exception>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">-   The <see cref="T:System.Net.PeerToPeer.PeerName" /> specified has already been registered. The <see cref="M:System.Net.PeerToPeer.PeerNameRegistration.Update" /> method must be used to update a registration.  
+  
+-   The remote peer does not own the <see cref="P:System.Net.PeerToPeer.PeerName.Authority" /> for the <see cref="T:System.Net.PeerToPeer.PeerName" /> specified.  
+  
+-   Either the <see cref="T:System.Net.PeerToPeer.PeerName" /> or the <see cref="P:System.Net.PeerToPeer.PeerNameRecord.Data" /> is not specified; at least one needs to be provided.  
+  
+-   The message or data elements are invalid. Or, <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.UseAutoEndPointSelection" /> is not set and no data blob or <see cref="T:System.Net.IPEndPoint" /> is specified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Unregisters the peer name specified in the <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" /> property from all the clouds in which it was registered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After the registration process has been stopped, the registration object's state is equal to the state directly after being constructed by the default constructor. In this state, all of its properties are assumed to have no value. The <xref:System.Net.PeerToPeer.PeerNameRegistration.Start%2A> method may be used to restart it.  
+  
+ It is possible to have multiple registration objects for the same peer name.  In such a case, if the peer name is secured, each instance will represent a registration in a different PNRP cloud.  However, if the peer name is not secured, it can be registered in the same cloud multiple times.  
+  
+ If this instance is already stopped, calling this method has no effect.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" /> property has not yet been registered. This occurs when a <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object is constructed using the empty constructor. The <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" /> property must be populated in this instance prior to calling <see cref="M:System.Net.PeerToPeer.PeerNameRegistration.Start" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">This object had Dispose() called on it previously.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">Holds the serialized data associated with the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> instance.</param>
+        <param name="context">Contains the destination for the serialized stream associated with the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> instance.</param>
+        <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and returns the data needed to serialize the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public void Update ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Update() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRegistration.Update" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Updates the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> for a node registered with a specific <see cref="T:System.Net.PeerToPeer.Cloud" />. Update is performed using the information specified in the properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All information registered in cloud(s) for this <xref:System.Net.PeerToPeer.PeerName> prior to the call is completely discarded.  The new data is not combined with the existing registration.  To update a <xref:System.Net.PeerToPeer.PeerNameRegistration>, first update the properties on this instance and then call this method.  
+  
+ After a <xref:System.Net.PeerToPeer.PeerNameRecord> is registered, the <xref:System.Net.PeerToPeer.PeerNameRecord.PeerName%2A> property cannot be updated.  All other fields in the record may be updated.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" /> property is set to <see langword="null" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">-   The <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" /> property has not yet been registered. The <see cref="M:System.Net.PeerToPeer.PeerNameRegistration.Update" /> method cannot be called until the peer name specified in the <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" /> property is registered in one or more clouds.  
+  
+-   The peer name specified in the <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.PeerName" /> property has changed since the corresponding <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> was registered.</exception>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">An object that has been disposed cannot be registered.</exception>
+        <exception cref="T:System.ArgumentNullException">A <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> property is set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseAutoEndPointSelection">
+      <MemberSignature Language="C#" Value="public bool UseAutoEndPointSelection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseAutoEndPointSelection" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRegistration.UseAutoEndPointSelection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether to use automatic endpoint selection when traversing a peer mesh or <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.Cloud" />.</summary>
+        <value>
+          <see langword="True" /> if automatic endpoint selection is to be used; <see langword="false" /> if some other method will be used to determine an endpoint. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When auto endpoint selection is used (this property is set to `true`) with no endpoint information specified prior to the start of a <xref:System.Net.PeerToPeer.PeerNameRegistration>, the system chooses individual endpoints and publishes them with the associated peer name into all available clouds.  If the port is not specified, auto selection chooses zero as the <xref:System.Net.PeerToPeer.PeerNameRegistration.Port%2A>.  
+  
+ When set to `false`, auto selection as described above is not performed.  This enables the registration process to publish a peer name along with a data blob (as specified by the <xref:System.Net.PeerToPeer.PeerNameRecord.Data%2A> property). No endpoints are associated with the name.  
+  
+ If a registration method is used that automatically selects the addresses to register, there is no method to determine what addresses for which the <xref:System.Net.PeerToPeer.PeerName> object was registered.  That is, the <xref:System.Net.PeerToPeer.PeerNameRegistration.EndPointCollection%2A> property will not be updated to reflect the addresses selected.  
+  
+ Updating this property after peer name registration has started has no effect.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a peer leaves a <xref:System.Net.PeerToPeer.Cloud>, the cloud no longer requires the <xref:System.Net.PeerToPeer.PeerNameRegistration> object associated with the peer.  Whether the registration object is stopped or disposed is dependent upon whether the cloud will reuse the object to register this peer or another peer. If there are any other endpoint(s) within the registration object with which the peer host expected to communicate, registering those endpoints within the cloud must occur before stopping or disposing of this object.  
+  
+ If the cloud expects to register more peers, the <xref:System.Net.PeerToPeer.PeerNameRegistration.Stop%2A> method is recommended; when the cloud no longer needs the memory, it should be returned to the operating system via the <xref:System.Net.PeerToPeer.PeerNameRegistration.Dispose%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

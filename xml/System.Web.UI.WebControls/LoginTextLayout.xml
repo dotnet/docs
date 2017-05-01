@@ -1,0 +1,60 @@
+<Type Name="LoginTextLayout" FullName="System.Web.UI.WebControls.LoginTextLayout">
+  <TypeSignature Language="C#" Value="public enum LoginTextLayout" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LoginTextLayout extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginTextLayout" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the position of labels relative to their associated text boxes for the <see cref="T:System.Web.UI.WebControls.Login" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.WebControls.LoginTextLayout> enumeration to set the <xref:System.Web.UI.WebControls.Login.TextLayout%2A> property on the <xref:System.Web.UI.WebControls.Login> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[LoginLoginTextLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginLoginTextLayout/CS/loginlogintextlayoutcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[LoginLoginTextLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginLoginTextLayout/VB/loginlogintextlayoutvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TextOnLeft">
+      <MemberSignature Language="C#" Value="TextOnLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.LoginTextLayout TextOnLeft = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LoginTextLayout.TextOnLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.LoginTextLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Places labels to the left of the associated text entry fields.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TextOnTop">
+      <MemberSignature Language="C#" Value="TextOnTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.LoginTextLayout TextOnTop = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LoginTextLayout.TextOnTop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.LoginTextLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Places labels above the associated text entry fields.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

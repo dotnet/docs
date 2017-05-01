@@ -1,0 +1,45 @@
+<Type Name="ObjectDataSourceObjectEventHandler" FullName="System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ObjectDataSourceObjectEventHandler(object sender, ObjectDataSourceEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectDataSourceObjectEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.ObjectDataSourceEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">An <see cref="T:System.Web.UI.WebControls.ObjectDataSourceEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating" /> and <see cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreated" /> events of the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create an <xref:System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to retrieve and display information. In this example, as in many real-world scenarios, it might not be possible or appropriate to use a default instance of the business object with the <xref:System.Web.UI.WebControls.ObjectDataSource> control. In this example, the <xref:System.Web.UI.WebControls.ObjectDataSource> cannot successfully call the default constructor because it will throw an exception. In some cases, the default constructor might be protected, and in others it might not initialize the business object to a desired state. Whatever the reason, you can instantiate the business object yourself and set the instance to the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs> object that is passed to the handler. This is the business object instance that the <xref:System.Web.UI.WebControls.ObjectDataSource> will use to perform its work.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/CS/objds15cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/VB/objds15vb.aspx#1)]  -->  
+  
+ The following code example demonstrates the example basic business object used in the preceding example.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_15#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/CS/northwindemployee15.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.ObjectDataSource_15#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/VB/northwindemployee15.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

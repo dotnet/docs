@@ -1,0 +1,65 @@
+<Type Name="SortDirection" FullName="System.Web.UI.WebControls.SortDirection">
+  <TypeSignature Language="C#" Value="public enum SortDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SortDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SortDirection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the direction in which to sort a list of items.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SortDirection> enumeration is used to represent the direction in which items are sorted. It is commonly used by properties (such as the <xref:System.Web.UI.WebControls.GridView.SortDirection%2A> property of the <xref:System.Web.UI.WebControls.GridView> class) to indicate the order in which items are displayed in a control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SortDirection> enumeration to determine the direction in which the <xref:System.Web.UI.WebControls.GridView> control is displaying its items. The <xref:System.Web.UI.WebControls.GridView.SortDirection%2A> property of the <xref:System.Web.UI.WebControls.GridView> control is tested for its value to determine the sort direction.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[SortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SortDirection/CS/sortdirectioncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[SortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SortDirection/VB/sortdirectionvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ascending">
+      <MemberSignature Language="C#" Value="Ascending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.SortDirection Ascending = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SortDirection.Ascending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SortDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sort from smallest to largest. For example, from A to Z.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Descending">
+      <MemberSignature Language="C#" Value="Descending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.SortDirection Descending = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SortDirection.Descending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SortDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sort from largest to smallest. For example, from Z to A.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

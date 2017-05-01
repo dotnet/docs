@@ -1,0 +1,223 @@
+<Type Name="RadioButton" FullName="System.Windows.Controls.RadioButton">
+  <TypeSignature Language="C#" Value="public class RadioButton : System.Windows.Controls.Primitives.ToggleButton" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi RadioButton extends System.Windows.Controls.Primitives.ToggleButton" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.RadioButton" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.Primitives.ToggleButton</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.RadioButton)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a button that can be selected, but not cleared, by a user. The <see cref="P:System.Windows.Controls.Primitives.ToggleButton.IsChecked" /> property of a <see cref="T:System.Windows.Controls.RadioButton" /> can be set by clicking it, but it can only be cleared programmatically.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.RadioButton> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
+  
+ A <xref:System.Windows.Controls.RadioButton> has two states: `true` or `false`. The <xref:System.Windows.Controls.RadioButton> is a control that is usually used as an item in a group of <xref:System.Windows.Controls.RadioButton> controls. However, it is possible to create a single <xref:System.Windows.Controls.RadioButton>.  Whether a <xref:System.Windows.Controls.RadioButton> is selected is determined by the state of its <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property.  
+  
+ When a <xref:System.Windows.Controls.RadioButton> is selected, it cannot be cleared by clicking it. When <xref:System.Windows.Controls.RadioButton> elements are grouped, the buttons are mutually exclusive. A user can select only one item at a time within a <xref:System.Windows.Controls.RadioButton> group. You can group <xref:System.Windows.Controls.RadioButton> controls by placing them inside a parent or by setting the <xref:System.Windows.Controls.RadioButton.GroupName%2A> property on each <xref:System.Windows.Controls.RadioButton>.  
+  
+## Customizing the RadioButton Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.RadioButton> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.RadioButton>, see [RadioButton Styles and Templates](~/docs/framework/wpf/controls/radiobutton-styles-and-templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.RadioButton> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to create <xref:System.Windows.Controls.RadioButton> controls, group them inside a container, and handle the <xref:System.Windows.Controls.Primitives.ToggleButton.Checked> event.  
+  
+ [!code-xml[RadioButton#3](~/samples/snippets/csharp/VS_Snippets_Wpf/RadioButton/CSharp/Pane1.xaml#3)]  
+  
+ [!code-csharp[RadioButton#5](~/samples/snippets/csharp/VS_Snippets_Wpf/RadioButton/CSharp/Pane1.xaml.cs#5)]
+ [!code-vb[RadioButton#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RadioButton/VisualBasic/Window1.xaml.vb#5)]  
+  
+ The following code sample creates two separate <xref:System.Windows.Controls.RadioButton> groups: `colorgrp` and `numgrp`. The user can choose one <xref:System.Windows.Controls.RadioButton> in each group.  
+  
+ [!code-xml[RadioButton#4](~/samples/snippets/csharp/VS_Snippets_Wpf/RadioButton/CSharp/Pane1.xaml#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RadioButton ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.RadioButton" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupName">
+      <MemberSignature Language="C#" Value="public string GroupName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GroupName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RadioButton.GroupName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.NeverLocalize)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name that specifies which <see cref="T:System.Windows.Controls.RadioButton" /> controls are mutually exclusive.</summary>
+        <value>The name that specifies which <see cref="T:System.Windows.Controls.RadioButton" /> controls are mutually exclusive.  The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When two or more <xref:System.Windows.Controls.RadioButton> controls have the same <xref:System.Windows.Controls.RadioButton.GroupName%2A>, a user can select only one <xref:System.Windows.Controls.RadioButton> at a time.  
+  
+<a name="dependencyPropertyInfo_GroupName"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.RadioButton>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following code sample creates two separate <xref:System.Windows.Controls.RadioButton> groups: `colorgrp` and `numgrp`. The user can choose one <xref:System.Windows.Controls.RadioButton> in each group.  
+  
+ [!code-xml[RadioButton#4](~/samples/snippets/csharp/VS_Snippets_Wpf/RadioButton/CSharp/Pane1.xaml#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty GroupNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty GroupNameProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.RadioButton.GroupNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.RadioButton.GroupName" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAccessKey">
+      <MemberSignature Language="C#" Value="protected override void OnAccessKey (System.Windows.Input.AccessKeyEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAccessKey(class System.Windows.Input.AccessKeyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.AccessKeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Provides data for <see cref="T:System.Windows.Input.AccessKeyEventArgs" />.</param>
+        <summary>Called when the <see cref="P:System.Windows.Controls.AccessText.AccessKey" /> for a radio button is invoked.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChecked">
+      <MemberSignature Language="C#" Value="protected override void OnChecked (System.Windows.RoutedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChecked(class System.Windows.RoutedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.OnChecked(System.Windows.RoutedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Provides data for <see cref="T:System.Windows.RoutedEventArgs" />.</param>
+        <summary>Called when the <see cref="P:System.Windows.Controls.Primitives.ToggleButton.IsChecked" /> property becomes <see langword="true" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.RadioButtonAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] automation infrastructure.</summary>
+        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnToggle">
+      <MemberSignature Language="C#" Value="protected override void OnToggle ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnToggle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RadioButton.OnToggle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called by the <see cref="M:System.Windows.Controls.Primitives.ToggleButton.OnClick" /> method to implement a <see cref="T:System.Windows.Controls.RadioButton" /> control's toggle behavior.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method toggles the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

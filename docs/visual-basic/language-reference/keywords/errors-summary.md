@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "errors [Visual Basic]"
 ms.assetid: 2557da60-c6dc-4e99-8128-fceb6f8a0736
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

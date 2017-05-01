@@ -1,0 +1,183 @@
+<Type Name="TrackingProfileSerializer" FullName="System.Workflow.Runtime.Tracking.TrackingProfileSerializer">
+  <TypeSignature Language="C#" Value="public class TrackingProfileSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TrackingProfileSerializer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingProfileSerializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides methods to serialize and deserialize tracking profiles into and from XML documents by using the tracking profile XML schema definition (XSD).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> uses the tracking profile XSD contained in <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Schema%2A?displayProperty=fullName> to serialize <xref:System.Workflow.Runtime.Tracking.TrackingProfile> objects into valid XML documents and to deserialize valid XML documents into <xref:System.Workflow.Runtime.Tracking.TrackingProfile> objects. The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> performs validation during both serialization and deserialization and, if necessary, throws an appropriate exception.  
+  
+ An XML document provides a convenient format in which to store a tracking profile. It also provides a non-programmatic way of authoring tracking profiles. The out-of-box <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> uses a <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> to serialize and deserialize the tracking profiles that are stored in its database.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> using the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.%23ctor%2A> constructor to serialize a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The code also uses the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Serialize%2A> method.  
+  
+ This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/en-us/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
+  
+ [!code-csharp[WF_Samples#291](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#291)]
+ [!code-vb[WF_Samples#291](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#291)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TrackingProfileSerializer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfileSerializer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> using the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.%23ctor%2A> constructor to serialize a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The code also uses the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Serialize%2A> method.  
+  
+ This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/en-us/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
+  
+ [!code-csharp[WF_Samples#291](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#291)]
+ [!code-vb[WF_Samples#291](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#291)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.TrackingProfile Deserialize (System.IO.TextReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.Tracking.TrackingProfile Deserialize(class System.IO.TextReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Deserialize(System.IO.TextReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingProfile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">A <see cref="T:System.IO.TextReader" /> that contains an XML document.</param>
+        <summary>Deserializes the XML document that is contained in the text reader by using the tracking profile XML Schema definition (XSD).</summary>
+        <returns>A <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> that contains the deserialized tracking profile.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Deserialization refers to the process of creating an object from a well-formed XML document. <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Deserialize%2A> uses the tracking profile XSD contained in <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Schema%2A> to deserialize the XML document that is contained in the text reader into a valid <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. Validation on the XML document is performed during deserialization, and, if the document is not valid, a <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException> is thrown. You can catch this exception and examine <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A> to determine the cause of the validation error. If there are any unhandled exceptions while deserializing the tracking profile then the workflow instance for which the tracking profile was requested will be terminated.  
+  
+> [!NOTE]
+>  If you want to perform validation without deserializing the XML representation of a tracking profile, you can write your own tracking profile validator. See the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Schema%2A> property for more information.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException">
+          <paramref name="reader" /> does not contain a document that conforms to the tracking profile XSD.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Schema">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchema Schema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchema Schema" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Schema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the tracking profile XML schema definition (XSD).</summary>
+        <value>The tracking profile XSD.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property exposes the tracking profile XSD used by the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> to perform serialization and deserialization of a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. You may also use this property to get the tracking profile XSD in order to write your own validator for tracking profiles. For example, you may want to do this in order to validate XML representations of tracking profiles without performing deserialization.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.IO.TextWriter writer, System.Workflow.Runtime.Tracking.TrackingProfile profile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.TextWriter writer, class System.Workflow.Runtime.Tracking.TrackingProfile profile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Serialize(System.IO.TextWriter,System.Workflow.Runtime.Tracking.TrackingProfile)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.IO.TextWriter" />
+        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A valid <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" />.</param>
+        <param name="profile">When this method returns, contains a <see cref="T:System.IO.TextWriter" /> that holds the XML document. The parameter is passed uninitialized.</param>
+        <summary>Serializes the tracking profile into an XML document by using the tracking profile XML Schema definition (XSD).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Serialization refers to the process of creating a well-formed XML document from a valid <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Serialize%2A> uses the tracking profile <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Schema%2A> to serialize the tracking profile. `profile` must be a valid <xref:System.Workflow.Runtime.Tracking.TrackingProfile> that contains at least one valid track point. Validation on the tracking profile is performed during serialization, and, if the tracking profile is not valid, an <xref:System.ArgumentException> is thrown. You can catch this exception and examine its message property to determine the cause of the validation error. If there are any unhandled exceptions while serializing the tracking profile, then the workflow instance for which the tracking profile was requested is terminated.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> using the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.%23ctor%2A> constructor to serialize a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The code also uses the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Serialize%2A> method.  
+  
+ This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/en-us/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
+  
+ [!code-csharp[WF_Samples#291](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#291)]
+ [!code-vb[WF_Samples#291](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#291)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="profile" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="profile" /> is not a valid tracking profile.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

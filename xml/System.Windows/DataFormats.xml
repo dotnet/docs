@@ -1,0 +1,775 @@
+<Type Name="DataFormats" FullName="System.Windows.DataFormats">
+  <TypeSignature Language="C#" Value="public static class DataFormats" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DataFormats extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DataFormats" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a set of predefined data format names that can be used to identify data formats available in the clipboard or drag-and-drop operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface use the static formats defined by <xref:System.Windows.DataFormats> to describe each data format that is stored in a data object. Data objects are typically used for transferring data to and from the system clipboard, and in drag-and-drop operations.  
+  
+ The following table lists the values of the static data format fields provided by <xref:System.Windows.DataFormats>.  These field values are provided for informational purposes only; in general, code should always refer to the appropriate field, rather than hard-coded strings.  
+  
+|Field|Field Value|Description|  
+|-----------|-----------------|-----------------|  
+|<xref:System.Windows.DataFormats.Bitmap>|"Bitmap"|Specifies a [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] bitmap data format.|  
+|<xref:System.Windows.DataFormats.CommaSeparatedValue>|"CSV"|Specifies a comma-separated value (CSV) data format.|  
+|<xref:System.Windows.DataFormats.Dib>|"DeviceIndependentBitmap"|Specifies the [!INCLUDE[TLA#tla_dib](~/includes/tlasharptla-dib-md.md)] data format.|  
+|<xref:System.Windows.DataFormats.Dif>|"DataInterchangeFormat"|Specifies the Windows Data Interchange Format (DIF) data format.|  
+|<xref:System.Windows.DataFormats.EnhancedMetafile>|"EnhancedMetafile"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] enhanced metafile format.|  
+|<xref:System.Windows.DataFormats.FileDrop>|"FileDrop"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] file drop format.|  
+|<xref:System.Windows.DataFormats.Html>|"HTML Format"|Specifies the [!INCLUDE[TLA#tla_html](~/includes/tlasharptla-html-md.md)] data format.|  
+|<xref:System.Windows.DataFormats.Locale>|"Locale"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] locale (culture) data format.|  
+|<xref:System.Windows.DataFormats.MetafilePicture>|"MetaFilePict"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] metafile picture data format.|  
+|<xref:System.Windows.DataFormats.OemText>|"OEMText"|Specifies the standard [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] [!INCLUDE[TLA#tla_oem](~/includes/tlasharptla-oem-md.md)] text data format.|  
+|<xref:System.Windows.DataFormats.Palette>|"Palette"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] palette data format.|  
+|<xref:System.Windows.DataFormats.PenData>|"PenData"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] pen data format.|  
+|<xref:System.Windows.DataFormats.Riff>|"RiffAudio"|Specifies the [!INCLUDE[TLA#tla_riff](~/includes/tlasharptla-riff-md.md)] audio data format.|  
+|<xref:System.Windows.DataFormats.Rtf>|"Rich Text Format"|Specifies the [!INCLUDE[TLA#tla_rtf](~/includes/tlasharptla-rtf-md.md)] data format.|  
+|<xref:System.Windows.DataFormats.Serializable>|"PersistentObject"|Specifies a data format that encapsulates any type of serializable data objects.|  
+|<xref:System.Windows.DataFormats.StringFormat>|"System.String"|Specifies the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] string class data format.|  
+|<xref:System.Windows.DataFormats.SymbolicLink>|"SymbolicLink"|Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] symbolic link data format.|  
+|<xref:System.Windows.DataFormats.Text>|"Text"|Specifies the [!INCLUDE[TLA#tla_ansi](~/includes/tlasharptla-ansi-md.md)] text data format.|  
+|<xref:System.Windows.DataFormats.Tiff>|"TaggedImageFileFormat"|Specifies the [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] data format.|  
+|<xref:System.Windows.DataFormats.UnicodeText>|"UnicodeText"|Specifies the [!INCLUDE[TLA#tla_unicode](~/includes/tlasharptla-unicode-md.md)] text data format.|  
+|<xref:System.Windows.DataFormats.WaveAudio>|"WaveAudio"|Specifies the wave audio data format.|  
+|<xref:System.Windows.DataFormats.Xaml>|"Xaml"|Specifies the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] data format.|  
+|<xref:System.Windows.DataFormats.XamlPackage>|"XamlPackage"|Specifies the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] package data format.|  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bitmap">
+      <MemberSignature Language="C#" Value="public static readonly string Bitmap;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Bitmap" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.Bitmap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] bitmap data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommaSeparatedValue">
+      <MemberSignature Language="C#" Value="public static readonly string CommaSeparatedValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string CommaSeparatedValue" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.CommaSeparatedValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a comma-separated value (CSV) data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This format is a basic interchange format commonly used by spreadsheets.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dib">
+      <MemberSignature Language="C#" Value="public static readonly string Dib;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Dib" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.Dib" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_dib](~/includes/tlasharptla-dib-md.md)] data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[TLA2#tla_dib](~/includes/tla2sharptla-dib-md.md)] is a file format designed to ensure that bitmapped graphics created using one application can be loaded and displayed in another application exactly the way they appeared in the originating application.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dif">
+      <MemberSignature Language="C#" Value="public static readonly string Dif;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Dif" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.Dif" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the Windows Data Interchange Format (DIF) data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ DIF is a format consisting of ASCII codes in which database, spreadsheet, and similar documents can be structured to facilitate their use by and transfer to other programs.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnhancedMetafile">
+      <MemberSignature Language="C#" Value="public static readonly string EnhancedMetafile;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string EnhancedMetafile" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.EnhancedMetafile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] enhanced metafile format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The enhanced metafile format is a [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] file that stores an image in terms of graphic objects rather than pixels. When resized, a metafile preserves an image better than a bitmap.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileDrop">
+      <MemberSignature Language="C#" Value="public static readonly string FileDrop;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string FileDrop" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.FileDrop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] file drop format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this format to interact with shell file drags during drag-and-drop operations.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataFormat">
+      <MemberSignature Language="C#" Value="public static System.Windows.DataFormat GetDataFormat (int id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DataFormat GetDataFormat(int32 id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DataFormats.GetDataFormat(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataFormat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="id">The numeric ID of the data format to request a <see cref="T:System.Windows.DataFormat" /> object for.</param>
+        <summary>Returns a <see cref="T:System.Windows.DataFormat" /> object that defines a name and numeric ID for the specified data format. The desired data format is specified by numeric ID.</summary>
+        <returns>A <see cref="T:System.Windows.DataFormat" /> object that contains the numeric ID and the name of the requested data format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can also be used to register new formats. If the specified format cannot be found, it is automatically registered as a new data format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataFormat">
+      <MemberSignature Language="C#" Value="public static System.Windows.DataFormat GetDataFormat (string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DataFormat GetDataFormat(string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DataFormats.GetDataFormat(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataFormat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="format">The name of the data format to request a <see cref="T:System.Windows.DataFormat" /> object for.</param>
+        <summary>Returns a <see cref="T:System.Windows.DataFormat" /> object that defines a name and numeric ID for the specified data format. The desired data format is specified by name (a string).</summary>
+        <returns>A <see cref="T:System.Windows.DataFormat" /> object that contains the numeric ID and the name of the requested data format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can also be used to register new formats. If the specified format cannot be found, it is automatically registered as a new data format.  
+  
+ Use of this method requires that the caller have <xref:System.Security.Permissions.UIPermission> with the <xref:System.Security.Permissions.UIPermissionClipboard?displayProperty=fullName>  
+  
+ flag set.  The following code shows the attribute syntax to request this permission for an assembly.  
+  
+```csharp  
+[assembly: SecurityPermissionAttribute(SecurityAction.RequestMinimum, Flags = UIPermissionClipboard.AllClipboard)]  
+```  
+  
+```vb  
+<assembly: SecurityPermissionAttribute(SecurityAction.RequestMinimum, Flags := UIPermissionClipboard.AllClipboard)>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="format" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for accessing low-level unmanaged code that supports the registration of clipboard formats.  Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Html">
+      <MemberSignature Language="C#" Value="public static readonly string Html;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Html" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.Html" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_html](~/includes/tlasharptla-html-md.md)] data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locale">
+      <MemberSignature Language="C#" Value="public static readonly string Locale;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Locale" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.Locale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] locale (culture) data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetafilePicture">
+      <MemberSignature Language="C#" Value="public static readonly string MetafilePicture;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string MetafilePicture" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.MetafilePicture" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] metafile picture data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The metafile picture format is a Windows file that stores an image in terms of graphic objects rather than pixels. When resized, a metafile preserves an image better than a bitmap.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OemText">
+      <MemberSignature Language="C#" Value="public static readonly string OemText;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string OemText" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.OemText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the standard [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] [!INCLUDE[TLA#tla_oem](~/includes/tlasharptla-oem-md.md)] text data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Palette">
+      <MemberSignature Language="C#" Value="public static readonly string Palette;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Palette" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.Palette" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] palette data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PenData">
+      <MemberSignature Language="C#" Value="public static readonly string PenData;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string PenData" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.PenData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] pen data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] pen data consists of pen strokes for handwriting software.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Riff">
+      <MemberSignature Language="C#" Value="public static readonly string Riff;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Riff" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.Riff" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_riff](~/includes/tlasharptla-riff-md.md)] audio data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[TLA2#tla_riff](~/includes/tla2sharptla-riff-md.md)] is a broad-based specification, designed to be used in defining standard formats for different types of multimedia files.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rtf">
+      <MemberSignature Language="C#" Value="public static readonly string Rtf;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Rtf" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.Rtf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_rtf](~/includes/tlasharptla-rtf-md.md)] data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[TLA2#tla_rtf](~/includes/tla2sharptla-rtf-md.md)] is an adaptation of Document Content Architecture that is used for transferring formatted text documents between applications.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serializable">
+      <MemberSignature Language="C#" Value="public static readonly string Serializable;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Serializable" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.Serializable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a data format that encapsulates any type of serializable data objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringFormat">
+      <MemberSignature Language="C#" Value="public static readonly string StringFormat;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string StringFormat" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.StringFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] string class data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SymbolicLink">
+      <MemberSignature Language="C#" Value="public static readonly string SymbolicLink;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string SymbolicLink" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.SymbolicLink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] symbolic link data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A symbolic link is a disk directory entry that takes the place of a directory entry for a file, but is actually a reference to a file in a different directory. A symbolic link may also be referred to an alias, shortcut, soft link, or symlink.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public static readonly string Text;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Text" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.Text" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_ansi](~/includes/tlasharptla-ansi-md.md)] text data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tiff">
+      <MemberSignature Language="C#" Value="public static readonly string Tiff;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Tiff" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.Tiff" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[TLA2#tla_tiff](~/includes/tla2sharptla-tiff-md.md)] is a standard file format commonly used for scanning, storage, and interchanges of gray-scale graphic images.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnicodeText">
+      <MemberSignature Language="C#" Value="public static readonly string UnicodeText;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string UnicodeText" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.UnicodeText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_unicode](~/includes/tlasharptla-unicode-md.md)] text data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and UCS-2.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WaveAudio">
+      <MemberSignature Language="C#" Value="public static readonly string WaveAudio;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string WaveAudio" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.WaveAudio" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the wave audio data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xaml">
+      <MemberSignature Language="C#" Value="public static readonly string Xaml;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Xaml" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.Xaml" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[TLA2#tla_xaml#initcap](~/includes/tla2sharptla-xamlsharpinitcap-md.md)] is an XML-based language used to represent a tree of objects. Events generated by these objects can be handled using any [!INCLUDE[TLA#tla_net](~/includes/tlasharptla-net-md.md)] programming language. In [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)], [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] is typically used to describe user interfaces (UI), documents, and media experiences.  
+  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XamlPackage">
+      <MemberSignature Language="C#" Value="public static readonly string XamlPackage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string XamlPackage" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DataFormats.XamlPackage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] package data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is used by the <xref:System.Windows.DataObject> class and other classes that implement the <xref:System.Windows.IDataObject> interface to describe an available data format.  
+  
+ Use this field with the <xref:System.Windows.IDataObject.SetData%2A> method to add data with a corresponding format to a data object; use this field with the <xref:System.Windows.IDataObject.GetData%2A> method to retrieve data in the corresponding format. To check whether a data object contains data in this format, use the <xref:System.Windows.IDataObject.GetDataPresent%2A> method to query for the format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="GetDataFormat">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.DataFormat" /> object that defines a name and numeric ID for a specified data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can also be used to register new formats. If the specified format cannot be found, it is automatically registered as a new data format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

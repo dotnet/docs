@@ -1,0 +1,105 @@
+<Type Name="MenuGlyph" FullName="System.Windows.Forms.MenuGlyph">
+  <TypeSignature Language="C#" Value="public enum MenuGlyph" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MenuGlyph extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MenuGlyph" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the image to draw when drawing a menu with the <see cref="M:System.Windows.Forms.ControlPaint.DrawMenuGlyph(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.MenuGlyph)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values of this enumeration are used in the <xref:System.Windows.Forms.ControlPaint.DrawMenuGlyph%2A> method of the <xref:System.Windows.Forms.ControlPaint> class. These values represent the different types of symbols that can be drawn on a menu item.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Arrow">
+      <MemberSignature Language="C#" Value="Arrow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MenuGlyph Arrow = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MenuGlyph.Arrow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MenuGlyph</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Draws a submenu arrow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bullet">
+      <MemberSignature Language="C#" Value="Bullet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MenuGlyph Bullet = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MenuGlyph.Bullet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MenuGlyph</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Draws a menu bullet.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Checkmark">
+      <MemberSignature Language="C#" Value="Checkmark" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MenuGlyph Checkmark = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MenuGlyph.Checkmark" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MenuGlyph</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Draws a menu check mark.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Max">
+      <MemberSignature Language="C#" Value="Max" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MenuGlyph Max = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MenuGlyph.Max" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MenuGlyph</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The maximum value available by this enumeration (equal to the <see cref="F:System.Windows.Forms.MenuGlyph.Bullet" /> value).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Min">
+      <MemberSignature Language="C#" Value="Min" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MenuGlyph Min = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MenuGlyph.Min" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MenuGlyph</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The minimum value available by this enumeration (equal to the <see cref="F:System.Windows.Forms.MenuGlyph.Arrow" /> value).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

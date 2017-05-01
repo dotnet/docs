@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 84b60854-48b2-452c-87f2-77d53e1d653a
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Transform the Shape of an XML Tree (Visual Basic)

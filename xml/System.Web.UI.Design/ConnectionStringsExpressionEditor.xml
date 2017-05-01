@@ -1,0 +1,113 @@
+<Type Name="ConnectionStringsExpressionEditor" FullName="System.Web.UI.Design.ConnectionStringsExpressionEditor">
+  <TypeSignature Language="C#" Value="public class ConnectionStringsExpressionEditor : System.Web.UI.Design.ExpressionEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectionStringsExpressionEditor extends System.Web.UI.Design.ExpressionEditor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ConnectionStringsExpressionEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.ExpressionEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides properties and methods for selecting a data connection expression that is associated with a control property at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A visual designer host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], uses the <xref:System.Web.UI.Design.ConnectionStringsExpressionEditor> class to select a connection string from the `connectionStrings` configuration section.  
+  
+ The <xref:System.Web.UI.Design.ConnectionStringsExpressionEditor> class is derived from the <xref:System.Web.UI.Design.ExpressionEditor> class, and although it is public for technical reasons, there is no advantage in deriving from it.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectionStringsExpressionEditor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ConnectionStringsExpressionEditor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ConnectionStringsExpressionEditor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateExpression">
+      <MemberSignature Language="C#" Value="public override object EvaluateExpression (string expression, object parseTimeData, Type propertyType, IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EvaluateExpression(string expression, object parseTimeData, class System.Type propertyType, class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ConnectionStringsExpressionEditor.EvaluateExpression(System.String,System.Object,System.Type,System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="parseTimeData" Type="System.Object" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="expression">A connection string expression to evaluate. The expression does not include the <see langword="ConnectionStrings" /> expression prefix.</param>
+        <param name="parseTimeData">An object containing additional parsing information for evaluating the expression.</param>
+        <param name="propertyType">The type of the control property.</param>
+        <param name="serviceProvider">A service provider implementation supplied by the designer host, used to obtain additional design-time services.</param>
+        <summary>Evaluates a connection string expression and provides the design-time value for a control property.</summary>
+        <returns>The object referenced by the evaluated expression string if the expression evaluation succeeded; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.ConnectionStringsExpressionEditor.EvaluateExpression%2A> method looks up the connection name and type specified by `expression`, and then returns the connection.  
+  
+ The visual designer uses the <xref:System.Web.UI.Design.ConnectionStringsExpressionEditor.EvaluateExpression%2A> method to evaluate a connection string expression and provide the design-time value for an associated control property. The visual designer uses the <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder.ParseExpression%2A?displayProperty=fullName> method to parse the expression string at design time, and then calls the <xref:System.Web.UI.Design.ConnectionStringsExpressionEditor.EvaluateExpression%2A> method with the parsed expression data. The visual designer uses the evaluated expression result to assign control property values that are rendered on the design surface.  
+  
+ At run time, the page parser uses the <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder.EvaluateExpression%2A> and <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetCodeExpression%2A> methods of the corresponding <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder> implementation to evaluate an expression and provide the run-time value for an associated control property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpressionEditorSheet">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.Design.ExpressionEditorSheet GetExpressionEditorSheet (string expression, IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.Design.ExpressionEditorSheet GetExpressionEditorSheet(string expression, class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ConnectionStringsExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ExpressionEditorSheet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The expression string set for a control property, used to initialize the expression editor sheet. The expression does not include the <see langword="ConnectionStrings" /> expression prefix.</param>
+        <param name="serviceProvider">A service provider implementation supplied by the designer host, used to obtain additional design-time services.</param>
+        <summary>Returns an expression editor sheet for a connection string expression.</summary>
+        <returns>An <see cref="T:System.Web.UI.Design.ExpressionEditorSheet" /> instance that defines the connection string expression properties.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.ConnectionStringsExpressionEditor.GetExpressionEditorSheet%2A> method returns an editor sheet implementation for connection string expressions. The editor sheet for connection string expressions allows users to select a connection name and type, based on the current connection strings that are defined in the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) section of the Web configuration file. Once users have selected the connection expression properties, the editor sheet implementation combines the connection name and type into a connection string expression, which is returned to the visual designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

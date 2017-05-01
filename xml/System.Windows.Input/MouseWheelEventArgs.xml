@@ -1,0 +1,135 @@
+<Type Name="MouseWheelEventArgs" FullName="System.Windows.Input.MouseWheelEventArgs">
+  <TypeSignature Language="C#" Value="public class MouseWheelEventArgs : System.Windows.Input.MouseEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MouseWheelEventArgs extends System.Windows.Input.MouseEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseWheelEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Input.MouseEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for various events that report changes to the mouse wheel delta value of a mouse device.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Input.MouseWheelEventArgs> is used with the following events:  
+  
+-   <xref:System.Windows.UIElement.MouseWheel?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.MouseWheel?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Input.Mouse.MouseWheel?displayProperty=fullName> (attached event)  
+  
+-   <xref:System.Windows.UIElement.PreviewMouseWheel?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.PreviewMouseWheel?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Input.Mouse.PreviewMouseWheel?displayProperty=fullName> (attached event)  
+  
+ The <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> property is positive if the mouse wheel is moved upward or forward (away from the user) or negative if the mouse wheel is moved downward or backward (toward the user).  
+  
+ This event is raised even for small mouse wheel movements. For some scenarios, it is appropriate to implement handlers that throttle small mouse wheel deltas by checking whether the delta exceeds a certain threshold. Otherwise, you might invoke your handler for cases where the mouse wheel delta was so small that any UI that is tied to the mouse wheel movement would not update. Exactly how you implement the threshold behavior in a handler and what that threshold should be is entirely implementation-specific.  
+  
+   
+  
+## Examples  
+ The following example moves a <xref:System.Windows.Controls.TextBox> up if the mouse wheel <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> is positive and moves the <xref:System.Windows.Controls.TextBox> down if the mouse wheel <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> is negative. The <xref:System.Windows.Controls.TextBox> is attached to a <xref:System.Windows.Controls.Canvas>.  
+  
+ [!code-csharp[mousesnippetsample#MouseWheelDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mousewheeldelta)]
+ [!code-vb[mousesnippetsample#MouseWheelDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mousewheeldelta)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MouseWheelEventArgs (System.Windows.Input.MouseDevice mouse, int timestamp, int delta);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.MouseDevice mouse, int32 timestamp, int32 delta) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseWheelEventArgs.#ctor(System.Windows.Input.MouseDevice,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="mouse" Type="System.Windows.Input.MouseDevice" />
+        <Parameter Name="timestamp" Type="System.Int32" />
+        <Parameter Name="delta" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="mouse">The mouse device associated with this event.</param>
+        <param name="timestamp">The time when the input occurred.</param>
+        <param name="delta">The amount the wheel has changed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.MouseWheelEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delta">
+      <MemberSignature Language="C#" Value="public int Delta { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Delta" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseWheelEventArgs.Delta" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the amount that the mouse wheel has changed.</summary>
+        <value>The amount the wheel has changed. This value is positive if the mouse wheel is rotated in an upward direction (away from the user) or negative if the mouse wheel is rotated in a downward direction (toward the user).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The effective upper and lower ranges of this value potentially come from device implementations or other callers that raised the event, and are therefore not defined.  
+  
+   
+  
+## Examples  
+ The following example moves a <xref:System.Windows.Controls.TextBox> up if the mouse wheel <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> is positive and moves the <xref:System.Windows.Controls.TextBox> down if the mouse wheel <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> is negative. The <xref:System.Windows.Controls.TextBox> is attached to a <xref:System.Windows.Controls.Canvas>.  
+  
+ [!code-csharp[mousesnippetsample#MouseWheelDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mousewheeldelta)]
+ [!code-vb[mousesnippetsample#MouseWheelDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mousewheeldelta)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseWheelEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">The generic handler to call in a type-specific way.</param>
+        <param name="genericTarget">The target to call the handler on.</param>
+        <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation casts the generic handler as a <xref:System.Windows.Input.MouseWheelEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

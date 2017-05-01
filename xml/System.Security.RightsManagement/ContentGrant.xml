@@ -1,0 +1,169 @@
+<Type Name="ContentGrant" FullName="System.Security.RightsManagement.ContentGrant">
+  <TypeSignature Language="C#" Value="public class ContentGrant" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentGrant extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.ContentGrant" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a right granted to a user to access information in a rights managed document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As with other <xref:System.Security.RightsManagement> types, <xref:System.Security.RightsManagement.ContentGrant> is only usable in full trust applications.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContentGrant (System.Security.RightsManagement.ContentUser user, System.Security.RightsManagement.ContentRight right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.RightsManagement.ContentUser user, valuetype System.Security.RightsManagement.ContentRight right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.ContentGrant.#ctor(System.Security.RightsManagement.ContentUser,System.Security.RightsManagement.ContentRight)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="user" Type="System.Security.RightsManagement.ContentUser" />
+        <Parameter Name="right" Type="System.Security.RightsManagement.ContentRight" />
+      </Parameters>
+      <Docs>
+        <param name="user">The user the access right is granted to.</param>
+        <param name="right">The access right that is granted.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.ContentGrant" /> class that grants a specified <see cref="T:System.Security.RightsManagement.ContentUser" /> a specified <see cref="T:System.Security.RightsManagement.ContentRight" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Security.RightsManagement.ContentGrant> instance with no date or time limitations.  
+  
+-   The <xref:System.Security.RightsManagement.ContentGrant.ValidFrom%2A> property is set to <xref:System.DateTime>.<xref:System.DateTime.MinValue> which indicates there is no starting limitation.  
+  
+-   The <xref:System.Security.RightsManagement.ContentGrant.ValidUntil%2A> property is set to <xref:System.DateTime>.<xref:System.DateTime.MaxValue> which indicates there is no ending limitation.  
+  
+ Use the alternate <xref:System.Security.RightsManagement.ContentGrant.%23ctor%2A> constructor to create an instance with date and time limitations.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContentGrant (System.Security.RightsManagement.ContentUser user, System.Security.RightsManagement.ContentRight right, DateTime validFrom, DateTime validUntil);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.RightsManagement.ContentUser user, valuetype System.Security.RightsManagement.ContentRight right, valuetype System.DateTime validFrom, valuetype System.DateTime validUntil) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.ContentGrant.#ctor(System.Security.RightsManagement.ContentUser,System.Security.RightsManagement.ContentRight,System.DateTime,System.DateTime)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="user" Type="System.Security.RightsManagement.ContentUser" />
+        <Parameter Name="right" Type="System.Security.RightsManagement.ContentRight" />
+        <Parameter Name="validFrom" Type="System.DateTime" />
+        <Parameter Name="validUntil" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="user">The user the access right is granted to.</param>
+        <param name="right">The access right that is granted.</param>
+        <param name="validFrom">The starting date and time that the right begins.</param>
+        <param name="validUntil">The ending date and time that the right expires.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.ContentGrant" /> class that grants a specified <see cref="T:System.Security.RightsManagement.ContentUser" /> a specified <see cref="T:System.Security.RightsManagement.ContentRight" /> for a specified <see cref="T:System.DateTime" /> duration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify the `validFrom` parameter with <xref:System.DateTime>.<xref:System.DateTime> if there is no start date and time limitation.  
+  
+ Specify the `validUntil` parameter with <xref:System.DateTime>.<xref:System.DateTime> if there is no end date and time limitation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public System.Security.RightsManagement.ContentRight Right { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.RightsManagement.ContentRight Right" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.ContentGrant.Right" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Security.RightsManagement.ContentRight" /> that is granted.</summary>
+        <value>The access right that is granted to the <see cref="P:System.Security.RightsManagement.ContentGrant.User" />, as specified to the <see cref="M:System.Security.RightsManagement.ContentGrant.#ctor(System.Security.RightsManagement.ContentUser,System.Security.RightsManagement.ContentRight)" /> constructor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="public System.Security.RightsManagement.ContentUser User { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.RightsManagement.ContentUser User" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.ContentGrant.User" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.ContentUser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the user who is granted the access <see cref="P:System.Security.RightsManagement.ContentGrant.Right" />.</summary>
+        <value>The user that the access <see cref="P:System.Security.RightsManagement.ContentGrant.Right" /> is granted to, as specified to the <see cref="M:System.Security.RightsManagement.ContentGrant.#ctor(System.Security.RightsManagement.ContentUser,System.Security.RightsManagement.ContentRight)" /> constructor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidFrom">
+      <MemberSignature Language="C#" Value="public DateTime ValidFrom { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidFrom" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.ContentGrant.ValidFrom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting date and time that the granted <see cref="P:System.Security.RightsManagement.ContentGrant.Right" /> begins.</summary>
+        <value>The start date and time that the granted <see cref="P:System.Security.RightsManagement.ContentGrant.Right" /> begins, or <see cref="T:System.DateTime" />.<see cref="F:System.DateTime.MinValue" /> if there is there is no starting limitation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidUntil">
+      <MemberSignature Language="C#" Value="public DateTime ValidUntil { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidUntil" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.ContentGrant.ValidUntil" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ending date and time that the granted <see cref="P:System.Security.RightsManagement.ContentGrant.Right" /> expires.</summary>
+        <value>The end date and time that the granted <see cref="P:System.Security.RightsManagement.ContentGrant.Right" /> expires, or <see cref="T:System.DateTime" />.<see cref="F:System.DateTime.MaxValue" /> if there is no ending limitation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1613 @@
+<Type Name="HttpContext" FullName="System.Web.HttpContext">
+  <TypeSignature Language="C#" Value="public sealed class HttpContext : IServiceProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpContext extends System.Object implements class System.IServiceProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.HttpContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IServiceProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Encapsulates all HTTP-specific information about an individual HTTP request.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that inherit the <xref:System.Web.IHttpModule> and <xref:System.Web.IHttpHandler> interfaces are provided a reference to an <xref:System.Web.HttpContext> object for the current HTTP request. The object provides access to the intrinsic <xref:System.Web.HttpContext.Request%2A>, <xref:System.Web.HttpContext.Response%2A>, and <xref:System.Web.HttpContext.Server%2A> properties for the request.  
+  
+   
+  
+## Examples  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192422).  
+  
+ The following example demonstrates how to access and display properties of the <xref:System.Web.HttpContext> object. The context of the current HTTP request is accessed by using the <xref:System.Web.UI.Page.Context%2A> property of the <xref:System.Web.UI.Page> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpContext#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext/cs/httpcontextcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.HttpContext#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext/vb/httpcontextvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpContext (System.Web.HttpWorkerRequest wr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpWorkerRequest wr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.#ctor(System.Web.HttpWorkerRequest)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="wr" Type="System.Web.HttpWorkerRequest" />
+      </Parameters>
+      <Docs>
+        <param name="wr">The <see cref="T:System.Web.HttpWorkerRequest" /> object for the current HTTP request.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpContext" /> class that uses the specified worker-request object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpContext (System.Web.HttpRequest request, System.Web.HttpResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpRequest request, class System.Web.HttpResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.#ctor(System.Web.HttpRequest,System.Web.HttpResponse)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="request" Type="System.Web.HttpRequest" />
+        <Parameter Name="response" Type="System.Web.HttpResponse" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:System.Web.HttpRequest" /> object for the current HTTP request.</param>
+        <param name="response">The <see cref="T:System.Web.HttpResponse" /> object for the current HTTP request.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpContext" /> class by using the specified request and response objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptWebSocketRequest">
+      <MemberSignature Language="C#" Value="public void AcceptWebSocketRequest (Func&lt;System.Web.WebSockets.AspNetWebSocketContext,System.Threading.Tasks.Task&gt; userFunc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AcceptWebSocketRequest(class System.Func`2&lt;class System.Web.WebSockets.AspNetWebSocketContext, class System.Threading.Tasks.Task&gt; userFunc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.AcceptWebSocketRequest(System.Func{System.Web.WebSockets.AspNetWebSocketContext,System.Threading.Tasks.Task})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userFunc" Type="System.Func&lt;System.Web.WebSockets.AspNetWebSocketContext,System.Threading.Tasks.Task&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="userFunc">The user function.</param>
+        <summary>Accepts an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> request using the specified user function.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method is equivalent to calling the <xref:System.Web.HttpContext.AcceptWebSocketRequest%2A> method overload and passing `null` for the `options` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="userFunc" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The request is not an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> request.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptWebSocketRequest">
+      <MemberSignature Language="C#" Value="public void AcceptWebSocketRequest (Func&lt;System.Web.WebSockets.AspNetWebSocketContext,System.Threading.Tasks.Task&gt; userFunc, System.Web.WebSockets.AspNetWebSocketOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AcceptWebSocketRequest(class System.Func`2&lt;class System.Web.WebSockets.AspNetWebSocketContext, class System.Threading.Tasks.Task&gt; userFunc, class System.Web.WebSockets.AspNetWebSocketOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.AcceptWebSocketRequest(System.Func{System.Web.WebSockets.AspNetWebSocketContext,System.Threading.Tasks.Task},System.Web.WebSockets.AspNetWebSocketOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userFunc" Type="System.Func&lt;System.Web.WebSockets.AspNetWebSocketContext,System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="options" Type="System.Web.WebSockets.AspNetWebSocketOptions" />
+      </Parameters>
+      <Docs>
+        <param name="userFunc">The user function.</param>
+        <param name="options">The options object.</param>
+        <summary>Accepts an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> request using the specified user function and options object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="userFunc" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The request is not an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> request.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddError">
+      <MemberSignature Language="C#" Value="public void AddError (Exception errorInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddError(class System.Exception errorInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.AddError(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="errorInfo" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="errorInfo">The <see cref="T:System.Exception" /> to add to the exception collection.</param>
+        <summary>Adds an exception to the exception collection for the current HTTP request.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOnRequestCompleted">
+      <MemberSignature Language="C#" Value="public System.Web.ISubscriptionToken AddOnRequestCompleted (Action&lt;System.Web.HttpContext&gt; callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.ISubscriptionToken AddOnRequestCompleted(class System.Action`1&lt;class System.Web.HttpContext&gt; callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.AddOnRequestCompleted(System.Action{System.Web.HttpContext})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ISubscriptionToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Action&lt;System.Web.HttpContext&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The HTTP context object.</param>
+        <summary>Raises a virtual event that occurs when the HTTP part of the request is ending.</summary>
+        <returns>The subscription token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event occurs before the <xref:System.Web.WebSockets.AspNetWebSocket> connection begins.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="callback" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AllErrors">
+      <MemberSignature Language="C#" Value="public Exception[] AllErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception[] AllErrors" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.AllErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an array of errors accumulated while processing an HTTP request.</summary>
+        <value>An array of <see cref="T:System.Exception" /> objects for the current HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowAsyncDuringSyncStages">
+      <MemberSignature Language="C#" Value="public bool AllowAsyncDuringSyncStages { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowAsyncDuringSyncStages" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.AllowAsyncDuringSyncStages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether asynchronous operations are allowed during parts of ASP.NET request processing when they are not expected.</summary>
+        <value>
+          <see langword="false" /> if ASP.NET will throw an exception when the asynchronous API is used at a time when it is not expected; otherwise, <see langword="true" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this flag is not set to `true`, ASP.NET will throw an exception when it detects the application misusing the async API. This can occur if you try to call an asynchronous method during a part of the request processing pipeline where asynchronous operations are not expected, or if there is still outstanding asynchronous work when an asynchronous module or handler signals completion. This behavior is meant as a safety net to let you know early on if you're writing async code that doesn't fit expected patterns and might have negative side effects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public System.Web.HttpApplicationState Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpApplicationState Application" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Application" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpApplicationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.HttpApplicationState" /> object for the current HTTP request.</summary>
+        <value>The <see cref="T:System.Web.HttpApplicationState" /> for the current HTTP request.  
+  
+ To get the <see cref="T:System.Web.HttpApplication" /> object for the current HTTP request, use <see cref="P:System.Web.HttpContext.ApplicationInstance" />. (ASP.NET uses <see langword="ApplicationInstance" /> instead of <see langword="Application" /> as a property name to refer to the current <see cref="T:System.Web.HttpApplication" /> instance in order to avoid confusion between ASP.NET and classic ASP. In classic ASP, <see langword="Application" /> refers to the global application state dictionary.)</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationInstance">
+      <MemberSignature Language="C#" Value="public System.Web.HttpApplication ApplicationInstance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpApplication ApplicationInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.ApplicationInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpApplication</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Web.HttpApplication" /> object for the current HTTP request.</summary>
+        <value>The <see cref="T:System.Web.HttpApplication" /> for the current HTTP request.  
+  
+ ASP.NET uses <see langword="ApplicationInstance" /> instead of <see langword="Application" /> as a property name to refer to the current <see cref="T:System.Web.HttpApplication" /> instance in order to avoid confusion between ASP.NET and classic ASP. In classic ASP, <see langword="Application" /> refers to the global application state dictionary.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The Web application is running under IIS 7.0 in Integrated mode, and an attempt was made to change the property value from a non-null value to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncPreloadMode">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.AsyncPreloadModeFlags AsyncPreloadMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.AsyncPreloadModeFlags AsyncPreloadMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.AsyncPreloadMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object that contains flags that pertain to asynchronous preload mode.</summary>
+        <value>An object that contains flags that pertain to asynchronous preload mode.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The first time this property is accessed, the object that contains flags for asynchronous preload mode is loaded from the <xref:System.Web.Configuration.HttpRuntimeSection.AsyncPreloadMode%2A> setting in the configuration file.  
+  
+ Although this property can be set programmatically, changing the property value only has effect if the property is set before the `ExecuteRequestHandler` step in the ASP.NET request pipeline.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cache">
+      <MemberSignature Language="C#" Value="public System.Web.Caching.Cache Cache { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Caching.Cache Cache" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Cache" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Caching.Cache</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Caching.Cache" /> object for the current application domain.</summary>
+        <value>The <see cref="T:System.Web.Caching.Cache" /> for the current application domain.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is one instance of the <xref:System.Web.Caching.Cache> class per application domain. As a result, the <xref:System.Web.Caching.Cache> object that is returned by the <xref:System.Web.HttpContext.Cache%2A> property is the <xref:System.Web.Caching.Cache> object for all requests in the application domain.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearError">
+      <MemberSignature Language="C#" Value="public void ClearError ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearError() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.ClearError" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears all errors for the current HTTP request.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static System.Web.HttpContext Current { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.HttpContext Current" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Web.HttpContext" /> object for the current HTTP request.</summary>
+        <value>The <see cref="T:System.Web.HttpContext" /> instance for the current HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is a static property of the <xref:System.Web.HttpContext> class. The property stores the <xref:System.Web.HttpContext> instance that applies to the current request. The properties of this instance are the non-static properties of the <xref:System.Web.HttpContext> class.  
+  
+ You can also use the <xref:System.Web.UI.Page.Context%2A?displayProperty=fullName> property to access the <xref:System.Web.HttpContext> object for the current HTTP request.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Web.HttpContext.Current%2A> property to access the <xref:System.Web.HttpContext.AddError%2A?displayProperty=fullName> and <xref:System.Web.HttpContext.ClearError%2A?displayProperty=fullName> methods and the <xref:System.Web.HttpContext.AllErrors%2A?displayProperty=fullName> property. The example creates three custom exceptions using the <xref:System.Web.HttpContext.AddError%2A> method and uses the <xref:System.Web.HttpContext.AllErrors%2A> property to load these exceptions to an array. It then writes the array to the containing page and uses the <xref:System.Web.HttpContext.ClearError%2A> method to clear all the errors from the <xref:System.Web.UI.Page.Context%2A> property.  
+  
+```csharp  
+protected void Page_Load(object sender, EventArgs e)  
+{  
+    HttpContext context = HttpContext.Current;  
+    Response.Write("<p>HttpContext.Current Example:</p>");  
+  
+    // Add three custom exceptions.  
+    context.AddError(new Exception("New Exception #1"));  
+    context.AddError(new Exception("New Exception #2"));  
+    context.AddError(new Exception("New Exception #3"));  
+  
+    // Capture all the new Exceptions in an array.  
+    Exception[] errs = context.AllErrors;  
+  
+    foreach (Exception ex in errs)  
+    {  
+        Response.Write("<p>" + Server.HtmlEncode(ex.ToString()) + "</p>");  
+    }  
+  
+    // Clear the exceptions so ASP.NET won't handle them.  
+    context.ClearError();  
+}  
+```  
+  
+```vb  
+Protected Sub Page_Load(sender As Object, e As EventArgs)  
+Dim context As HttpContext = HttpContext.Current  
+Response.Write("<p>HttpContext.Current Example:</p>")  
+  
+' Add three custom exceptions.  
+context.AddError(New Exception("New Exception #1"))  
+context.AddError(New Exception("New Exception #2"))  
+context.AddError(New Exception("New Exception #3"))  
+  
+' Capture all the new Exceptions in an array.  
+Dim errs As Exception() = context.AllErrors  
+  
+For Each ex As Exception In errs  
+Response.Write("<p>" & Server.HtmlEncode(ex.ToString()) & "</p>")  
+Next  
+  
+' Clear the exceptions so ASP.NET won't handle them.  
+context.ClearError()  
+End Sub  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentHandler">
+      <MemberSignature Language="C#" Value="public System.Web.IHttpHandler CurrentHandler { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.IHttpHandler CurrentHandler" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.CurrentHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.IHttpHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.IHttpHandler" /> object that represents the currently executing handler.</summary>
+        <value>An <see cref="T:System.Web.IHttpHandler" /> that represents the currently executing handler.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The currently executing handler that is referenced by the <xref:System.Web.HttpContext.CurrentHandler%2A> property might be different than the handler that is referenced by the <xref:System.Web.HttpContext.Handler%2A> property. This can occur when another handler was requested by using the <xref:System.Web.HttpServerUtility.Execute%2A> method or the <xref:System.Web.HttpServerUtility.Transfer%2A> method. When the currently executing handler finishes processing, the previously determined handler is restored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentNotification">
+      <MemberSignature Language="C#" Value="public System.Web.RequestNotification CurrentNotification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.RequestNotification CurrentNotification" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.CurrentNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.RequestNotification</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.RequestNotification" /> value that indicates the current <see cref="T:System.Web.HttpApplication" /> event that is processing.</summary>
+        <value>One of the <see cref="T:System.Web.RequestNotification" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.CurrentNotification%2A> property requires the integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework version 3.0. When available, the property returns a <xref:System.Web.RequestNotification> value. The value of the <xref:System.Web.HttpContext.CurrentNotification%2A> property indicates which event in the <xref:System.Web.HttpApplication> instance is currently processing the request.  
+  
+ The <xref:System.Web.HttpContext.CurrentNotification%2A> property is not intended to be set. Instead, it is set by [!INCLUDE[iisver](~/includes/iisver-md.md)] during the processing of the request in the ASP.NET pipeline. Setting the <xref:System.Web.HttpContext.CurrentNotification%2A> property will result in a compilation error.  
+  
+ <xref:System.Web.HttpContext.CurrentNotification%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.HttpContext.CurrentNotification%2A> property to determine what event of the <xref:System.Web.HttpApplication> object that is handling the current request is being processed. In the example, the event handler handles several events of the <xref:System.Web.HttpApplication> object, and the <xref:System.Web.HttpContext.CurrentNotification%2A> property determines what code is invoked for each event being handled.  
+  
+ [!code-csharp[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/CS/App_Code/TestModule.cs#1)]
+ [!code-vb[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/VB/App_Code/TestModule.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The operation requires integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework version 3.0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DisposeOnPipelineCompleted">
+      <MemberSignature Language="C#" Value="public System.Web.ISubscriptionToken DisposeOnPipelineCompleted (IDisposable target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.ISubscriptionToken DisposeOnPipelineCompleted(class System.IDisposable target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.DisposeOnPipelineCompleted(System.IDisposable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ISubscriptionToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.IDisposable" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object whose <see cref="M:System.IDisposable.Dispose" /> method must be called when the <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> connection part of the request is completed.</param>
+        <summary>Enables an object's <see cref="M:System.IDisposable.Dispose" /> method to be called when the <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> connection part of this request is completed.</summary>
+        <returns>The subscription token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IDisposable.Dispose%2A> method of the target object is called after both the HTTP part of the request and the <xref:System.Web.WebSockets.AspNetWebSocket> connection have ended. The <xref:System.Web.HttpContext> object is not available for inspection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="public Exception Error { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Error" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Error" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the first error (if any) accumulated during HTTP request processing.</summary>
+        <value>The first <see cref="T:System.Exception" /> for the current HTTP request/response process; otherwise, <see langword="null" /> if no errors were accumulated during the HTTP request processing. The default is <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppConfig">
+      <MemberSignature Language="C#" Value="public static object GetAppConfig (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetAppConfig(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.GetAppConfig(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The recommended alternative is System.Web.Configuration.WebConfigurationManager.GetWebApplicationSection in System.Web.dll. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The application configuration tag for which information is requested.</param>
+        <summary>Returns requested configuration information for the current application.</summary>
+        <returns>An object containing configuration information. (Cast the returned configuration section to the appropriate configuration type before use.)</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.GetAppConfig%2A> method has been deprecated. Use the <xref:System.Web.Configuration.WebConfigurationManager.GetWebApplicationSection%2A> method of the <xref:System.Web.Configuration.WebConfigurationManager> class to get configuration information for the current application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConfig">
+      <MemberSignature Language="C#" Value="public object GetConfig (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetConfig(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.GetConfig(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The recommended alternative is System.Web.HttpContext.GetSection in System.Web.dll. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The configuration tag for which information is requested.</param>
+        <summary>Returns requested configuration information for the current HTTP request.</summary>
+        <returns>The specified <see cref="T:System.Configuration.ConfigurationSection" />, <see langword="null" /> if the section does not exist, or an internal object if the section is not accessible at run time. (Cast the returned object to the appropriate configuration type before use.)</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.GetConfig%2A> method has been deprecated. Use the <xref:System.Web.HttpContext.GetSection%2A> method to get configuration information for the current HTTP request.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalResourceObject">
+      <MemberSignature Language="C#" Value="public static object GetGlobalResourceObject (string classKey, string resourceKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetGlobalResourceObject(string classKey, string resourceKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.GetGlobalResourceObject(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="classKey" Type="System.String" />
+        <Parameter Name="resourceKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="classKey">A string that represents the <see cref="P:System.Web.Compilation.ResourceExpressionFields.ClassKey" /> property of the requested resource object.</param>
+        <param name="resourceKey">A string that represents the <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" /> property of the requested resource object.</param>
+        <summary>Gets an application-level resource object based on the specified <see cref="P:System.Web.Compilation.ResourceExpressionFields.ClassKey" /> and <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" /> properties.</summary>
+        <returns>An <see cref="T:System.Object" /> that represents the requested application-level resource object; otherwise, null if a resource object is not found or if a resource object is found but it does not have the requested property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> method returns a global resource by using the culture that is specified in the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property.  
+  
+> [!NOTE]
+>  In some editing environments, such as [!INCLUDE[vwprvw](~/includes/vwprvw-md.md)], the editor might throw a design-time <xref:System.Resources.MissingManifestResourceException> exception if you use a period (.) in the global resource-key name. However, this does not affect your ability to edit or save the file, and you can ignore the error.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Resources.MissingManifestResourceException">A resource object with the specified <paramref name="classKey" /> parameter was not found.  
+  
+ \- or -  
+  
+ The main assembly does not contain the resources for the neutral culture, and these resources are required because the appropriate satellite assembly is missing.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalResourceObject">
+      <MemberSignature Language="C#" Value="public static object GetGlobalResourceObject (string classKey, string resourceKey, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetGlobalResourceObject(string classKey, string resourceKey, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.GetGlobalResourceObject(System.String,System.String,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="classKey" Type="System.String" />
+        <Parameter Name="resourceKey" Type="System.String" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="classKey">A string that represents the <see cref="P:System.Web.Compilation.ResourceExpressionFields.ClassKey" /> property of the requested resource object.</param>
+        <param name="resourceKey">A string that represents a <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" /> property of the requested resource object.</param>
+        <param name="culture">A string that represents the <see cref="T:System.Globalization.CultureInfo" /> object of the requested resource.</param>
+        <summary>Gets an application-level resource object based on the specified <see cref="P:System.Web.Compilation.ResourceExpressionFields.ClassKey" /> and <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" /> properties, and on the <see cref="T:System.Globalization.CultureInfo" /> object.</summary>
+        <returns>An <see cref="T:System.Object" /> that represents the requested application-level resource object, which is localized for the specified culture; otherwise, <see langword="null" /> if a resource object is not found or if a resource object is found but it does not have the requested property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.CultureInfo> object represents the culture for which the resource was localized. If the resource is not localized for this culture, the lookup will follow a fallback process to locate an appropriate resource. For more information, see [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
+  
+> [!NOTE]
+>  In some editing environments, such as Visual Web Developer, the editor might throw a design-time <xref:System.Resources.MissingManifestResourceException> exception if you use a period (.) in the global resource-key name. However, this does not affect your ability to edit or save the file, and you can ignore the error.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Resources.MissingManifestResourceException">A resource object for which the specified <paramref name="classKey" /> parameter was not found.  
+  
+ \- or -  
+  
+ The main assembly does not contain the resources for the neutral culture, and these resources are required because the appropriate satellite assembly is missing.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalResourceObject">
+      <MemberSignature Language="C#" Value="public static object GetLocalResourceObject (string virtualPath, string resourceKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetLocalResourceObject(string virtualPath, string resourceKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.GetLocalResourceObject(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="resourceKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The <see cref="P:System.Web.Compilation.ExpressionBuilderContext.VirtualPath" /> property for the local resource object.</param>
+        <param name="resourceKey">A string that represents a <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" /> property of the requested resource object</param>
+        <summary>Gets a page-level resource object based on the specified <see cref="P:System.Web.Compilation.ExpressionBuilderContext.VirtualPath" /> and <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" /> properties.</summary>
+        <returns>An <see cref="T:System.Object" /> that represents the requested page-level resource object; otherwise, <see langword="null" /> if a matching resource object is found but not a <paramref name="resourceKey" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.GetLocalResourceObject%2A> method returns a local resource by using the culture that is specified in the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Resources.MissingManifestResourceException">A resource object was not found for the specified <paramref name="virtualPath" /> parameter.</exception>
+        <exception cref="T:System.ArgumentException">The specified <paramref name="virtualPath" /> parameter is not in the current application's root directory.</exception>
+        <exception cref="T:System.InvalidOperationException">The resource class for the page was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalResourceObject">
+      <MemberSignature Language="C#" Value="public static object GetLocalResourceObject (string virtualPath, string resourceKey, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetLocalResourceObject(string virtualPath, string resourceKey, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.GetLocalResourceObject(System.String,System.String,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="resourceKey" Type="System.String" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The <see cref="P:System.Web.Compilation.ExpressionBuilderContext.VirtualPath" /> property for the local resource object.</param>
+        <param name="resourceKey">A string that represents a <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" /> property of the requested resource object.</param>
+        <param name="culture">A string that represents the <see cref="T:System.Globalization.CultureInfo" /> object of the requested resource object.</param>
+        <summary>Gets a page-level resource object based on the specified <see cref="P:System.Web.Compilation.ExpressionBuilderContext.VirtualPath" /> and <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" /> properties, and on the <see cref="T:System.Globalization.CultureInfo" /> object.</summary>
+        <returns>An <see cref="T:System.Object" /> that represents the requested local resource object, which is localized for the specified culture; otherwise <see langword="null" /> if a matching resource object is found but not a <paramref name="resourceKey" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the resource is not localized for this culture, the lookup will follow a fallback process to locate an appropriate resource. For more information, see [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Resources.MissingManifestResourceException">A resource object was not found for the specified <paramref name="virtualPath" /> Parameter.</exception>
+        <exception cref="T:System.ArgumentException">The specified <paramref name="virtualPath" /> parameter is not in the current application's root directory.</exception>
+        <exception cref="T:System.InvalidOperationException">The resource class for the page was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSection">
+      <MemberSignature Language="C#" Value="public object GetSection (string sectionName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetSection(string sectionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.GetSection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sectionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sectionName">The configuration section path (in XPath format) and the configuration element name.</param>
+        <summary>Gets a specified configuration section for the current application's default configuration.</summary>
+        <returns>The specified <see cref="T:System.Configuration.ConfigurationSection" />, <see langword="null" /> if the section does not exist, or an internal object if the section is not accessible at run time.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handler">
+      <MemberSignature Language="C#" Value="public System.Web.IHttpHandler Handler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.IHttpHandler Handler" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Handler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.IHttpHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Web.IHttpHandler" /> object responsible for processing the HTTP request.</summary>
+        <value>An <see cref="T:System.Web.IHttpHandler" /> responsible for processing the HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.Handler%2A> property contains a reference to the handler that processes the HTTP request. The handler can be specified by using the  element, or by using a custom handler defined in user code. For more information about handlers, see [HTTP Handlers and HTTP Modules Overview](http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b).  
+  
+ The reference to the <xref:System.Web.HttpContext.Handler%2A> property will remain the same even after the current page has been changed by a server-side method, such as the <xref:System.Web.HttpServerUtility.Execute%2A> method or the <xref:System.Web.HttpServerUtility.Transfer%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCustomErrorEnabled">
+      <MemberSignature Language="C#" Value="public bool IsCustomErrorEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCustomErrorEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.IsCustomErrorEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether custom errors are enabled for the current HTTP request.</summary>
+        <value>
+          <see langword="true" /> if custom errors are enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDebuggingEnabled">
+      <MemberSignature Language="C#" Value="public bool IsDebuggingEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDebuggingEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.IsDebuggingEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the current HTTP request is in debug mode.</summary>
+        <value>
+          <see langword="true" /> if the request is in debug mode; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPostNotification">
+      <MemberSignature Language="C#" Value="public bool IsPostNotification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPostNotification" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.IsPostNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that is the current processing point in the ASP.NET pipeline just after an <see cref="T:System.Web.HttpApplication" /> event has finished processing.</summary>
+        <value>
+          <see langword="true" /> if custom errors are enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.IsPostNotification%2A> property is only supported with the integrated mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework 3.0. When available, the property returns a Boolean value that indicates whether an event in the <xref:System.Web.HttpApplication> object has finished processing.  
+  
+ The <xref:System.Web.HttpContext.IsPostNotification%2A> property is not intended to be set. Instead, it is provided by [!INCLUDE[iisver](~/includes/iisver-md.md)] to the ASP.NET runtime for each notification. Setting the <xref:System.Web.HttpContext.IsPostNotification%2A> property will result in a compilation error.  
+  
+ In scenarios where multiple events of the <xref:System.Web.HttpApplication> object are handled by one event handler, you can use the <xref:System.Web.HttpContext.IsPostNotification%2A> property in combination with the <xref:System.Web.RequestNotification> enumeration to precisely determine where in the application lifecycle the current request is.  
+  
+ <xref:System.Web.HttpContext.IsPostNotification%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.HttpContext.IsPostNotification%2A> property to determine when an event of the <xref:System.Web.HttpApplication> object has finished processing all the associated event handlers. The custom event handler in this example handles several events of the <xref:System.Web.HttpApplication> object, and the <xref:System.Web.HttpContext.IsPostNotification%2A> property is used to determine what code is invoked after a specific event is handled.  
+  
+ [!code-csharp[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/CS/App_Code/TestModule.cs#1)]
+ [!code-vb[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/VB/App_Code/TestModule.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The operation requires the integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework 3.0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsWebSocketRequest">
+      <MemberSignature Language="C#" Value="public bool IsWebSocketRequest { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsWebSocketRequest" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.IsWebSocketRequest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the request is an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> request.</summary>
+        <value>
+          <see langword="true" /> if the request is an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> request; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns `true` if the request contains the initial <xref:System.Web.WebSockets.AspNetWebSocket> handshake and the `WebSocket` module of IIS is active.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsWebSocketRequestUpgrading">
+      <MemberSignature Language="C#" Value="public bool IsWebSocketRequestUpgrading { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsWebSocketRequestUpgrading" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.IsWebSocketRequestUpgrading" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the connection is upgrading from an HTTP connection to an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> connection.</summary>
+        <value>
+          <see langword="true" /> if the connection is upgrading; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public System.Collections.IDictionary Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Items" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a key/value collection that can be used to organize and share data between an <see cref="T:System.Web.IHttpModule" /> interface and an <see cref="T:System.Web.IHttpHandler" /> interface during an HTTP request.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> key/value collection that provides access to an individual value in the collection by a specified key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageInstrumentation">
+      <MemberSignature Language="C#" Value="public System.Web.Instrumentation.PageInstrumentationService PageInstrumentation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Instrumentation.PageInstrumentationService PageInstrumentation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.PageInstrumentation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Instrumentation.PageInstrumentationService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the page-instrumentation service instance for this request.</summary>
+        <value>The page-instrumentation service instance for this request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousHandler">
+      <MemberSignature Language="C#" Value="public System.Web.IHttpHandler PreviousHandler { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.IHttpHandler PreviousHandler" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.PreviousHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.IHttpHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.IHttpHandler" /> object for the parent handler.</summary>
+        <value>An <see cref="T:System.Web.IHttpHandler" /> instance, or <see langword="null" /> if no previous handler was found.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.PreviousHandler%2A> property corresponds to the last handler before the current request was executed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Profile">
+      <MemberSignature Language="C#" Value="public System.Web.Profile.ProfileBase Profile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Profile.ProfileBase Profile" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Profile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Profile.ProfileBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Profile.ProfileBase" /> object for the current user profile.</summary>
+        <value>A <see cref="T:System.Web.Profile.ProfileBase" /> if the application configuration file contains a definition for the profile's properties; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.HttpContext.Profile%2A> property is used for persistent storage of structured data using a type-safe API. When a <xref:System.Web.HttpContext.Profile%2A> property is accessed but no value is present, an empty instance is returned; `null` is not returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemapHandler">
+      <MemberSignature Language="C#" Value="public void RemapHandler (System.Web.IHttpHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemapHandler(class System.Web.IHttpHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.RemapHandler(System.Web.IHttpHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.Web.IHttpHandler" />
+      </Parameters>
+      <Docs>
+        <param name="handler">The object that should process the request.</param>
+        <summary>Enables you to specify a handler for the request.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set `handler` to `null`, the default handler is used to process the request. You can set `handler` to either an asynchronous handler or to an synchronous handler. The handler must implement the <xref:System.Web.IHttpHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.HttpContext.RemapHandler(System.Web.IHttpHandler)" /> method was called after the <see cref="E:System.Web.HttpApplication.MapRequestHandler" /> event occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Request">
+      <MemberSignature Language="C#" Value="public System.Web.HttpRequest Request { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpRequest Request" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Request" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpRequest</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.HttpRequest" /> object for the current HTTP request.</summary>
+        <value>The <see cref="T:System.Web.HttpRequest" /> for the current HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.Request%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.HttpRequest> class. Because ASP.NET pages contain a default reference to the <xref:System.Web> namespace (which contains the <xref:System.Web.HttpContext> class), you can reference the members of <xref:System.Web.HttpRequest> on an .aspx page without using the fully qualified class reference to <xref:System.Web.HttpContext>. For example, you can use `Request.Browser` to get the capabilities of the client browser. However, if you want to use the members of <xref:System.Web.HttpRequest> from an ASP.NET code-behind module, you must include a reference to the <xref:System.Web> namespace in the module and a fully qualified reference to both the currently active request/response context and the class in <xref:System.Web> that you want to use. For example, in a code-behind page you must specify the fully qualified name `HttpContext.Current.Request.Browser`.  
+  
+> [!NOTE]
+>  ASP.NET will throw an exception if you try to use this property when the <xref:System.Web.HttpRequest> object is not available. For example, this would be true in the Application_Start method of the Global.asax file, or in a method that is called from the Application_Start method. At that time no HTTP request has been created yet.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The Web application is running under IIS 7 in Integrated mode.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Response">
+      <MemberSignature Language="C#" Value="public System.Web.HttpResponse Response { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpResponse Response" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Response" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpResponse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.HttpResponse" /> object for the current HTTP response.</summary>
+        <value>The <see cref="T:System.Web.HttpResponse" /> for the current HTTP response.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.Response%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.HttpResponse> class. Because ASP.NET pages contain a default reference to the <xref:System.Web> namespace (which contains the <xref:System.Web.HttpContext> class), you can reference the members of <xref:System.Web.HttpContext> on an .aspx page without using the fully qualified class reference to <xref:System.Web.HttpContext>. For example, you can use `Response.Write("some output")` to write output to an HTTP output stream. However, if you want to use the members of <xref:System.Web.HttpResponse> from an ASP.NET code-behind module, you must include a reference to the <xref:System.Web> namespace in the module and a fully qualified reference to the currently active request/response context and the class in <xref:System.Web> that you want to use. For example, in a code-behind page you must specify the fully qualified name `HttpContext.Current.Response.Write("some output")`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The Web application is running under IIS 7 in Integrated mode.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RewritePath">
+      <MemberSignature Language="C#" Value="public void RewritePath (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RewritePath(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.RewritePath(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The internal rewrite path.</param>
+        <summary>Rewrites the URL using the given path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.RewritePath%28System.String%29> method redirects a request for a resource to a different path than the one that is indicated by the requested URL. If you have to reset the virtual path so that requests from the client for server resources resolve correctly, use the overload of this method that takes the `rebaseClientPath` parameter and set the parameter to `false`.  
+  
+ URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
+  
+ If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.HttpContext.RewritePath%2A> method to enable a Web site to respond to URLs that do not reflect the file structure in the Web site. The first block of code is an ASP.NET Web page that is named RewritePath.aspx. It requires a query string. If the name of your site is WebSite1, the URL `http://localhost/WebSite1/RewritePath.aspx?page=1` displays "Page 1" in the browser. The block of code that follows the Web page is the `Application_BeginRequest` event handler in the Global.asax file. This code intercepts requests for URLs such as `http://localhost/WebSite1/page1` and converts them to the form that is required for RewritePath.aspx before they are processed. Therefore, the URL `http://localhost/WebSite1/page1` invokes RewritePath.aspx with the query-string parameter that displays "Page 1" in the browser. If a URL such as `http://localhost/WebSite1/page1` is received, an overload of <xref:System.Web.HttpContext.RewritePath%2A> is invoked that enables you to provide a value for the <xref:System.Web.HttpRequest.PathInfo%2A> property as well as a query string parameter.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HttpContext_RewritePath#2](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpContext_ReWritePath/CS/rewritepath.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HttpContext_RewritePath#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpContext_ReWritePath/VB/rewritepath.aspx#2)]  -->  
+  
+ [!code-csharp[HttpContext_RewritePath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpContext_ReWritePath/CS/global.asax#1)]
+ [!code-vb[HttpContext_RewritePath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpContext_ReWritePath/VB/global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Web.HttpException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RewritePath">
+      <MemberSignature Language="C#" Value="public void RewritePath (string path, bool rebaseClientPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RewritePath(string path, bool rebaseClientPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.RewritePath(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="rebaseClientPath" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="path">The internal rewrite path.</param>
+        <param name="rebaseClientPath">
+          <see langword="true" /> to reset the virtual path; <see langword="false" /> to keep the virtual path unchanged.</param>
+        <summary>Rewrites the URL using the given path and a Boolean value that specifies whether the virtual path for server resources is modified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.RewritePath%28System.String%2CSystem.Boolean%29?displayProperty=fullName> method is called by the <xref:System.Web.HttpContext.RewritePath%28System.String%29?displayProperty=fullName> method with the `rebaseClientPath` parameter set to `true`. To ensure that the virtual path that is used to construct paths to resources is not modified, set the `rebaseClientPath` parameter to `false`. A common scenario in which you might want to set `rebaseClientPath` to `false` is when you need to rewrite the URL, and you are using themes and redirecting the URL to a resource located in a different folder than the requested resource.  
+  
+ URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
+  
+ If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+  
+   
+  
+## Examples  
+ For a code example, see the <xref:System.Web.HttpContext.RewritePath%28System.String%29> method overload.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Web.HttpException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RewritePath">
+      <MemberSignature Language="C#" Value="public void RewritePath (string filePath, string pathInfo, string queryString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RewritePath(string filePath, string pathInfo, string queryString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.RewritePath(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="pathInfo" Type="System.String" />
+        <Parameter Name="queryString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filePath">The internal rewrite path.</param>
+        <param name="pathInfo">Additional path information for a resource. For more information, see <see cref="P:System.Web.HttpRequest.PathInfo" />.</param>
+        <param name="queryString">The request query string.</param>
+        <summary>Rewrites the URL by using the given path, path information, and query string information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.RewritePath%2A> method redirects a request for a resource to another resource without changing the URL.  
+  
+ The `filePath` parameter does not include the `pathInfo` parameter content. For the URL http://www.microsoft.com/virdir/page.html/tail, the `filePath` parameter is http://www.microsoft.com/virdir/page.html, and the `pathInfo` parameter is tail.  
+  
+ URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
+  
+ If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+  
+   
+  
+## Examples  
+ For a code example, including an example of this method overload, see the <xref:System.Web.HttpContext.RewritePath%28System.String%29> method overload.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
+        <exception cref="T:System.Web.HttpException">The <paramref name="filePath" /> parameter is not in the current application's root directory.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RewritePath">
+      <MemberSignature Language="C#" Value="public void RewritePath (string filePath, string pathInfo, string queryString, bool setClientFilePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RewritePath(string filePath, string pathInfo, string queryString, bool setClientFilePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.RewritePath(System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="pathInfo" Type="System.String" />
+        <Parameter Name="queryString" Type="System.String" />
+        <Parameter Name="setClientFilePath" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="filePath">The virtual path to the resource that services the request.</param>
+        <param name="pathInfo">Additional path information to use for the URL redirect. For more information, see <see cref="P:System.Web.HttpRequest.PathInfo" />.</param>
+        <param name="queryString">The request query string to use for the URL redirect.</param>
+        <param name="setClientFilePath">
+          <see langword="true" /> to set the file path used for client resources to the value of the <c>filePath</c> parameter; otherwise <see langword="false" />.</param>
+        <summary>Rewrites the URL using the given virtual path, path information, query string information, and a Boolean value that specifies whether the client file path is set to the rewrite path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `filePath` parameter does not include the content of the `pathInfo` parameter. For the URL http://www.microsoft.com/virdir/page.html/tail, the `filePath` parameter is http://www.microsoft.com/virdir/page.html, and the `pathInfo` parameter is tail.  
+  
+ To ensure that the virtual path that is used to construct paths to resources is not modified, set the `setClientFilePath` parameter to `false`. A common scenario in which you might want to set `setClientFilePath` to `false` is when you need to rewrite the URL, and you are using themes and redirecting the URL to a resource located in a different folder than the requested resource.  
+  
+ URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
+  
+ If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+  
+   
+  
+## Examples  
+ For a code example, see the <xref:System.Web.HttpContext.RewritePath%28System.String%29> method overload.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
+        <exception cref="T:System.Web.HttpException">The <paramref name="filePath" /> parameter is not in the current application's root directory.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Server">
+      <MemberSignature Language="C#" Value="public System.Web.HttpServerUtility Server { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpServerUtility Server" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Server" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpServerUtility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.HttpServerUtility" /> object that provides methods used in processing Web requests.</summary>
+        <value>The <see cref="T:System.Web.HttpServerUtility" /> for the current HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.Server%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.HttpServerUtility> class. Because ASP.NET pages contain a default reference to the <xref:System.Web> namespace (which contains the <xref:System.Web.HttpContext> class), you can reference the members of <xref:System.Web.HttpContext> on an .aspx page without using the fully qualified class reference to <xref:System.Web.HttpContext>. For example, you can use `Server.CreateObject("MyCOMComponent")` to create an instance of a COM object on the server. However, if you want to use the members of <xref:System.Web.HttpServerUtility> from an ASP.NET code-behind module, you must include a reference to the <xref:System.Web> namespace in the module and a fully qualified reference to both the currently active request/response context and the class in <xref:System.Web> that you want to use. For example, in a code-behind page you must specify the fully qualified name `HttpContext.Current.Server.CreateObject("MyCOMComponent")`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public System.Web.SessionState.HttpSessionState Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SessionState.HttpSessionState Session" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Session" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SessionState.HttpSessionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.SessionState.HttpSessionState" /> object for the current HTTP request.</summary>
+        <value>The <see cref="T:System.Web.SessionState.HttpSessionState" /> object for the current HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.Session%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.SessionState.HttpSessionState> class.  
+  
+ In order to use session state you have to enable it. For information about how to enable session state, see **Configuring Session State** in [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
+  
+ For information about how to save values in session state, see [How to: Save Values in Session State](http://msdn.microsoft.com/library/a6cb2e3a-df49-4b12-9d9a-eed45541c165). For information about how to read values from session state, see [How to: Read Values from Session State](http://msdn.microsoft.com/library/2ef449bc-5c17-4785-b7cf-378c601af8f5).  
+  
+   
+  
+## Examples  
+ The following examples show how to save values in session state and how to read values from session state.  
+  
+ These examples require:  
+  
+-   An ASP.NET application that has session state enabled.  
+  
+-   A Web Forms page class that has access to the <xref:System.Web.UI.Page.Session%2A?displayProperty=fullName> property, or any class that has access to the <xref:System.Web.HttpContext.Current%2A?displayProperty=fullName> property.  
+  
+```csharp  
+string firstName = "Jeff";  
+string lastName = "Smith";  
+string city = "Seattle";  
+  
+// Save to session state in a Web Forms page class.  
+Session["FirstName"] = firstName;  
+Session["LastName"] = lastName;  
+Session["City"] = city;  
+  
+// Read from session state in a Web Forms page class.  
+firstName = (string)(Session["FirstName"]);  
+lastName = (string)(Session["LastName"]);  
+city = (string)(Session["City"]);  
+  
+// Outside of Web Forms page class, use HttpContext.Current.  
+HttpContext context = HttpContext.Current;  
+context.Session["FirstName"] = firstName;  
+firstName = (string)(context.Session["FirstName"]);  
+  
+```  
+  
+```vb  
+Dim firstName As String = "Jeff"  
+Dim lastName As String = "Smith"  
+Dim city As String = "Seattle"  
+  
+' Save to session state in a Web Forms page class.  
+Session("FirstName") = firstName  
+Session("LastName") = lastName  
+Session("City") = city  
+  
+' Read from session state in a Web Forms page class.  
+firstName = DirectCast(Session("FirstName"), String)  
+lastName = DirectCast(Session("LastName"), String)  
+city = DirectCast(Session("City"), String)  
+  
+' Outside of Web Forms page class, use HttpContext.Current.  
+Dim context As HttpContext = HttpContext.Current  
+context.Session("FirstName") = firstName  
+firstName = DirectCast(context.Session("FirstName"), String)  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSessionStateBehavior">
+      <MemberSignature Language="C#" Value="public void SetSessionStateBehavior (System.Web.SessionState.SessionStateBehavior sessionStateBehavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSessionStateBehavior(valuetype System.Web.SessionState.SessionStateBehavior sessionStateBehavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.SetSessionStateBehavior(System.Web.SessionState.SessionStateBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionStateBehavior" Type="System.Web.SessionState.SessionStateBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="sessionStateBehavior">One of the enumeration values that specifies what type of session state behavior is required.</param>
+        <summary>Sets the type of session state behavior that is required in order to support an HTTP request.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the ASP.NET default implementation, an HTTP request handler indicates whether it requires session state by implementing the <xref:System.Web.SessionState.IRequiresSessionState> interface or the <xref:System.Web.SessionState.IReadOnlySessionState> interface. The <xref:System.Web.HttpContext.SetSessionStateBehavior%2A> method and the <xref:System.Web.SessionState.SessionStateBehavior> enumeration let you provide more detail about what type of session state support is required in order to handle a request. For more information, see the <xref:System.Web.SessionState.SessionStateBehavior> enumeration.  
+  
+ The <xref:System.Web.HttpContext.SetSessionStateBehavior%2A> method must be called before the <xref:System.Web.HttpApplication.AcquireRequestState> pipeline event. Calls that occur during or after this event will cause an <xref:System.InvalidOperationException> exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The method was called after the <see cref="E:System.Web.HttpApplication.AcquireRequestState" /> event was raised.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipAuthorization">
+      <MemberSignature Language="C#" Value="public bool SkipAuthorization { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SkipAuthorization" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.SkipAuthorization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the <see cref="T:System.Web.Security.UrlAuthorizationModule" /> object should skip the authorization check for the current request.</summary>
+        <value>
+          <see langword="true" /> if <see cref="T:System.Web.Security.UrlAuthorizationModule" /> should skip the authorization check; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.SkipAuthorization%2A> property is intended for advanced use by authentication modules that need to redirect to a page that allows anonymous connections. The Forms authentication module and Passport authentication module both set <xref:System.Web.HttpContext.SkipAuthorization%2A> when redirecting to a configured logon page. Setting <xref:System.Web.HttpContext.SkipAuthorization%2A> requires the `ControlPrincipal` flag to be set. For information about the `ControlPrincipal` flag, see <xref:System.Security.Permissions.SecurityPermissionFlag>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IServiceProvider.GetService">
+      <MemberSignature Language="C#" Value="object IServiceProvider.GetService (Type service);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IServiceProvider.GetService(class System.Type service) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpContext.System#IServiceProvider#GetService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="service">A type of <see cref="T:System.Web.HttpContext" /> service to set the service provider to.</param>
+        <summary>Returns an object for the current service type.</summary>
+        <returns>A <see cref="T:System.Web.HttpContext" />; otherwise, <see langword="null" /> if no service is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is useful to gain access to the underlying <xref:System.Web.HttpWorkerRequest> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreadAbortOnTimeout">
+      <MemberSignature Language="C#" Value="public bool ThreadAbortOnTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ThreadAbortOnTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.ThreadAbortOnTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the ASP.NET runtime should call <see cref="M:System.Threading.Thread.Abort" /> on the thread that is servicing this request when the request times out.</summary>
+        <value>
+          <see langword="true" /> if <see cref="M:System.Threading.Thread.Abort" /> will be called when the thread times out; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In handlers and modules that are using the <xref:System.Web.HttpRequest.TimedOutToken%2A?displayProperty=fullName> property to implement cooperative cancellation, you might wish to disable the <xref:System.Threading.Thread.Abort%2A?displayProperty=fullName> behavior that ASP.NET performs by default when a request times out. Setting this property to `false` can help you make sure that cancellation and cleanup routines will run without being interrupted by ASP.NET.  
+  
+ If you set this property to `false`, ASP.NET will not automatically display a "Request timed out" error page when a timeout occurs. The application is responsible for setting the response content appropriately.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timestamp">
+      <MemberSignature Language="C#" Value="public DateTime Timestamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Timestamp" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Timestamp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the initial timestamp of the current HTTP request.</summary>
+        <value>The timestamp of the current HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The timestamp returned from the <xref:System.Web.HttpContext.Timestamp%2A> property is the local time of the server and is set during the instantiation of the <xref:System.Web.HttpContext> object. The local time is equal to the UTC time plus the UTC offset.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trace">
+      <MemberSignature Language="C#" Value="public System.Web.TraceContext Trace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.TraceContext Trace" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.Trace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.TraceContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.TraceContext" /> object for the current HTTP response.</summary>
+        <value>The <see cref="T:System.Web.TraceContext" /> for the current HTTP response.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="public System.Security.Principal.IPrincipal User { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IPrincipal User" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.User" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.IPrincipal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets security information for the current HTTP request.</summary>
+        <value>Security information for the current HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext.User%2A> property provides programmatic access to the properties and methods of the <xref:System.Security.Principal.IPrincipal> interface.  
+  
+ Because ASP.NET pages contain a default reference to the <xref:System.Web> namespace (which contains the <xref:System.Web.HttpContext> class), you can reference the members of <xref:System.Web.HttpContext> on an .aspx page without using the fully qualified class reference to <xref:System.Web.HttpContext>. For example, you can use `User.Identity.Name` to get the name of the user on whose behalf the current process is running. However, if you want to use the members of <xref:System.Security.Principal.IPrincipal> from an ASP.NET code-behind module, you must include a reference to the <xref:System.Web> namespace in the module and a fully qualified reference to both the currently active request/response context and the class in <xref:System.Web> that you want to use. For example, in a code-behind page you must specify the fully qualified name `HttpContext.Current.User.Identity.Name`.  
+  
+   
+  
+## Examples  
+ The following example shows how to access properties of the current user through the <xref:System.Web.HttpContext.User%2A> property. Those properties are used to set the title of the Web page.  
+  
+ If the application uses Windows authentication, the user name includes the domain. For example, the page title would be “Home page for DOMAIN\username”.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpContext.User#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext.User/cs/Default.aspx.cs#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.HttpContext.User#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext.User/vb/Default.aspx.vb#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebSocketNegotiatedProtocol">
+      <MemberSignature Language="C#" Value="public string WebSocketNegotiatedProtocol { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WebSocketNegotiatedProtocol" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.WebSocketNegotiatedProtocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the negotiated protocol that was sent from the server to the client for an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> connection.</summary>
+        <value>The negotiated protocol.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebSocketRequestedProtocols">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; WebSocketRequestedProtocols { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; WebSocketRequestedProtocols" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpContext.WebSocketRequestedProtocols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ordered list of protocols requested by the client.</summary>
+        <value>The requested protocols, or <see langword="null" /> if this is not an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> request or if no list is present.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

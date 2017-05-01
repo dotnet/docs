@@ -1,0 +1,50 @@
+!include $(_NTROOT)\ndp\Indigo\Samples\sdk\buildenv.inc
+
+# -----------------------------------------------------------------------------
+# The name and type of the assembly.
+# -----------------------------------------------------------------------------
+
+TARGETNAME                  = service
+TARGETTYPE                  = NOTARGET
+TARGETPATH                  = obj
+CLR_TARGETTYPE              = EXE
+
+NO_BROWSER_FILE             = 1
+CLS_COMPLIANT               = 0
+
+SIGN_ASSEMBLY               = 0
+
+MANAGED_CODE                = 1
+
+# -----------------------------------------------------------------------------
+# Sources to build.
+# -----------------------------------------------------------------------------
+
+SOURCES                     = \
+
+CSHARP_SOURCES              = \
+                            service.cs \
+
+RESOURCE_FILES              = \
+                            
+MISCFILES                   =  \
+                            $(_OBJ_DIR)\$(TARGET_DIRECTORY)\$(TARGETNAME).exe.config \
+                            service.bsl \
+
+# -----------------------------------------------------------------------------
+# Assembly References 
+# -----------------------------------------------------------------------------
+
+CLR_REFERENCES              = \
+                            $(SDK_REF_PATH)\System.dll \
+                            $(SYSTEM_INDIGO_REF) \
+                            $(SDK_REF_PATH)\System.Configuration.dll \
+                            $(SDK_REF_PATH)\System.Web.dll \
+                            $(_NTTREE)\System.IdentityModel.dll \
+                          
+# -----------------------------------------------------------------------------
+# Binplace 
+# -----------------------------------------------------------------------------
+
+!undef BINPLACE_GENERATE_PLACEFILE
+BINPLACE_PLACEFILE=.\placefil.txt

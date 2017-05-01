@@ -1,0 +1,2472 @@
+<Type Name="XamlType" FullName="System.Xaml.XamlType">
+  <TypeSignature Language="C#" Value="public class XamlType : IEquatable&lt;System.Xaml.XamlType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlType extends System.Object implements class System.IEquatable`1&lt;class System.Xaml.XamlType&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.XamlType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Xaml.XamlType&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Reports information about XAML types as part of the overall XAML system that is implemented in .NET Framework XAML Services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Many APIs in the <xref:System.Xaml.XamlType> class provide information about XAML types, where the concept they report on is similar to particular sections of the XAML specification [MS-XAML].  
+  
+ <xref:System.Xaml.XamlType> is used extensively in the .NET Framework XAML Services API for reporting information about a XAML type. <xref:System.Xaml.XamlType> reports the information that you might need to know about a XAML type in order to work with an instance or to access its members from a XAML node stream, or a similar XAML representation. Its reporting is similar to how the <xref:System.Type> in the CLR type system, together with reflection classes such as <xref:System.Reflection.MemberInfo>, provide information about a CLR type and its usage.  
+  
+ To extend the XAML type system, you can derive from <xref:System.Xaml.XamlType>. To do so effectively, you might also need to implement a <xref:System.Xaml.Schema.XamlTypeInvoker>. The <xref:System.Xaml.Schema.XamlTypeInvoker> enables the generalized XAML type system to work with the type system backing that you specify as part of the invocation behavior. The specific custom <xref:System.Xaml.Schema.XamlTypeInvoker> provides a way to reduce the dependencies on the CLR type system, which are used by the default <xref:System.Xaml.XamlType> behavior.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlType (Type underlyingType, System.Xaml.XamlSchemaContext schemaContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type underlyingType, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.#ctor(System.Type,System.Xaml.XamlSchemaContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="underlyingType" Type="System.Type" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+      </Parameters>
+      <Docs>
+        <param name="underlyingType">The underlying CLR <see cref="T:System.Type" /> for the XAML type to construct.</param>
+        <param name="schemaContext">XAML schema context for XAML readers or XAML writers.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlType" /> class based on the underlying CLR type information.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of <paramref name="underlyingType" /> or <paramref name="schemaContext" /> are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected XamlType (string typeName, System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt; typeArguments, System.Xaml.XamlSchemaContext schemaContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string typeName, class System.Collections.Generic.IList`1&lt;class System.Xaml.XamlType&gt; typeArguments, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.#ctor(System.String,System.Collections.Generic.IList{System.Xaml.XamlType},System.Xaml.XamlSchemaContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="typeArguments" Type="System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">The name of the type to create.</param>
+        <param name="typeArguments">The type arguments for a <see cref="T:System.Xaml.XamlType" /> that represents a generic type. Can be (and often is) <see langword="null" />, which indicates that the represented type is not a generic type.</param>
+        <param name="schemaContext">XAML schema context for XAML readers and XAML writers.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlType" /> class based on a string name for the type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a protected constructor. No current public derived classes exist that use this particular path for construction. As a consumer of the existing <xref:System.Xaml.XamlType>, you must use the other constructor signatures (<xref:System.Xaml.XamlType.%23ctor%28System.Type%2CSystem.Xaml.XamlSchemaContext%2CSystem.Xaml.Schema.XamlTypeInvoker%29>, <xref:System.Xaml.XamlType.%23ctor%28System.Type%2CSystem.Xaml.XamlSchemaContext%29>, or <xref:System.Xaml.XamlType.%23ctor%28System.String%2CSystem.String%2CSystem.Collections.Generic.IList%7BSystem.Xaml.XamlType%7D%2CSystem.Xaml.XamlSchemaContext%29>) to initialize a <xref:System.Xaml.XamlType> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of <paramref name="typeName" /> or <paramref name="schemaContext" /> are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlType (Type underlyingType, System.Xaml.XamlSchemaContext schemaContext, System.Xaml.Schema.XamlTypeInvoker invoker);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type underlyingType, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.Schema.XamlTypeInvoker invoker) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.#ctor(System.Type,System.Xaml.XamlSchemaContext,System.Xaml.Schema.XamlTypeInvoker)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="underlyingType" Type="System.Type" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+        <Parameter Name="invoker" Type="System.Xaml.Schema.XamlTypeInvoker" />
+      </Parameters>
+      <Docs>
+        <param name="underlyingType">The underlying type for the XAML type to construct.</param>
+        <param name="schemaContext">XAML schema context for the XAML reader.</param>
+        <param name="invoker">The <see cref="T:System.Xaml.Schema.XamlTypeInvoker" /> implementation that handles run-time reflection calls against the <see cref="T:System.Xaml.XamlType" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlType" /> class based on underlying type information and a <see cref="T:System.Xaml.Schema.XamlTypeInvoker" /> implementation.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of <paramref name="underlyingType" /> or <paramref name="schemaContext" /> are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlType (string unknownTypeNamespace, string unknownTypeName, System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt; typeArguments, System.Xaml.XamlSchemaContext schemaContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string unknownTypeNamespace, string unknownTypeName, class System.Collections.Generic.IList`1&lt;class System.Xaml.XamlType&gt; typeArguments, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.#ctor(System.String,System.String,System.Collections.Generic.IList{System.Xaml.XamlType},System.Xaml.XamlSchemaContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="unknownTypeNamespace" Type="System.String" />
+        <Parameter Name="unknownTypeName" Type="System.String" />
+        <Parameter Name="typeArguments" Type="System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+      </Parameters>
+      <Docs>
+        <param name="unknownTypeNamespace">The XAML namespace for the type, as a string.</param>
+        <param name="unknownTypeName">The name of the type in the provided <c>unknownTypeNamespace</c> XAML namespace.</param>
+        <param name="typeArguments">The type arguments for a <see cref="T:System.Xaml.XamlType" /> that represents a generic type. Can be (and often is) <see langword="null" />, which indicates that the represented type is not a generic type.</param>
+        <param name="schemaContext">XAML schema context for XAML readers or XAML writers.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlType" /> class based on the XAML namespace and a string name for the type. This constructor is exclusively for analysis and XAML-node recording of type usages that are known to not have backing in the supporting type system and XAML schema context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor only for "unknown" types where a XAML type that maps to an underlying type system is unavailable. This constructor might not produce a result where <xref:System.Xaml.XamlType.IsUnknown%2A?displayProperty=fullName> is `true`. Instead, the default reflector logic reports the underlying type as <xref:System.Xaml.XamlLanguage.Object%2A?displayProperty=fullName>. However, this behavior can change because of the <xref:System.Xaml.XamlType.LookupIsUnknown%2A> override.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of <paramref name="unknownTypeNamespace" />, <paramref name="unknownTypeName" />, or <paramref name="schemaContext" /> are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowedContentTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt; AllowedContentTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Xaml.XamlType&gt; AllowedContentTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.AllowedContentTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a read-only collection of the types that are usable as the <see cref="P:System.Xaml.XamlType.ContentProperty" /> value for this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <value>A read-only collection of possible content types.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Types that are assignable a specific content type (for example, assignable to a base type that is an allowed content type) are not considered multiple types for purposes of <xref:System.Xaml.XamlType.AllowedContentTypes%2A>.  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupAllowedContentTypes%2A> overrides on <xref:System.Xaml.XamlType> derived classes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseType">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlType BaseType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType BaseType" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.BaseType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xaml.XamlType" /> for the immediate base type of this XAML type. Determination of this value is based on the underlying type of this <see cref="T:System.Xaml.XamlType" /> and schema context.</summary>
+        <value>The <see cref="T:System.Xaml.XamlType" /> for the immediate base type of this XAML type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupBaseType%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupBaseType%2A> on this type. By default, <xref:System.Xaml.XamlType.BaseType%2A> returns an internal constant that represents an <xref:System.Object> if <xref:System.Xaml.XamlType.UnderlyingType%2A> is `null`.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlType.LookupBaseType%2A> is virtual, and therefore, can be overridden. The override has the potential (whether for malicious purposes or otherwise) to change the reported type information about a XAML type so that it no longer aligns in an expected way with the type system information of its underlying CLR type. For any security-critical checks of assignment operations and access, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanAssignTo">
+      <MemberSignature Language="C#" Value="public virtual bool CanAssignTo (System.Xaml.XamlType xamlType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanAssignTo(class System.Xaml.XamlType xamlType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.CanAssignTo(System.Xaml.XamlType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xamlType" Type="System.Xaml.XamlType" />
+      </Parameters>
+      <Docs>
+        <param name="xamlType">The type to check against the current <see cref="T:System.Xaml.XamlType" /> .</param>
+        <summary>Returns a value that indicates whether an instance of this <see cref="T:System.Xaml.XamlType" /> has the specified <see cref="T:System.Xaml.XamlType" /> in its list of assignable types.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="xamlType" /> is in the assignable types list; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the assignable type does not have all the capabilities of the reference type, you can use it for assignment. For example, you can use assignment to make type matches for the values of a property. The concept of assignable types in XAML is similar to the concept of casting up in the CLR type system. For example, under a CLR type system, every type has an <xref:System.Object> in its assignable type list.  
+  
+ If one of the two <xref:System.Xaml.XamlType> instances that are used for comparison has <xref:System.Xaml.XamlType.IsUnknown%2A> equal to `true`, this method has a special Unknown mode that returns `true` if the two <xref:System.Xaml.XamlType> instances are equivalent.  
+  
+ The default implementation uses the CLR <xref:System.Type> from <xref:System.Xaml.XamlType.UnderlyingType%2A> for this <xref:System.Xaml.XamlType> and the input <xref:System.Xaml.XamlType>, and calls <xref:System.Type.IsAssignableFrom%2A>. Override this method if you want a different determination of assignable types.  
+  
+ Passing a null `xamlType` does not throw an exception and always returns `false`.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlType.CanAssignTo%2A> is virtual, and therefore, can be overridden. The override has the potential (whether for malicious purposes or otherwise) to change the assignability of a XAML type so that it no longer aligns in an expected way with the type-casting behavior of its underlying CLR type. For any security-critical checks of assignment operations and access, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConstructionRequiresArguments">
+      <MemberSignature Language="C#" Value="public bool ConstructionRequiresArguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConstructionRequiresArguments" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.ConstructionRequiresArguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> must have arguments (generic constraints through <see langword="x:TypeArguments" />, initialization text, or other XAML techniques) to construct a valid instance of the type.</summary>
+        <value>
+          <see langword="true" /> if construction of an instance requires some argument value; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupConstructionRequiresArguments%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupConstructionRequiresArguments%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentProperty">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlMember ContentProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlMember ContentProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.ContentProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xaml.XamlMember" /> information for the content property of this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <value>
+          <see cref="T:System.Xaml.XamlMember" /> information for the content property of this <see cref="T:System.Xaml.XamlType" />. May be <see langword="null" /> if no content property exists.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using the binding or backing of the CLR type system, the XAML content property can be specified on a type by applying <xref:System.Windows.Markup.ContentPropertyAttribute> to the type definition.  
+  
+ This property aligns to the `[content property]` information item in the [MS-XAML] specification.  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupContentProperty%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupContentProperty%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentWrappers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt; ContentWrappers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Xaml.XamlType&gt; ContentWrappers" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.ContentWrappers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the types that are used to wrap content for a content property when it is not a strict type match, such as strings in a strongly typed <see langword="Collection&lt;T&gt;" />.</summary>
+        <value>A read-only collection of possible content wrapper types; otherwise, <see langword="null" />. See Remarks.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there are no wrappers to account for type match loosening, this property is `null`.  
+  
+ Types that evaluate as <xref:System.Xaml.XamlType.CanAssignTo%2A> for a specific content type are not considered multiple types for purposes of <xref:System.Xaml.XamlType.ContentWrappers%2A>.  
+  
+ In the CLR binding for <xref:System.Xaml> and <xref:System.Xaml.XamlType>, the XAML content wrapper type can be specified on a type as a <xref:System.Windows.Markup.ContentWrapperAttribute>.  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupContentWrappers%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupContentWrappers%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeferringLoader">
+      <MemberSignature Language="C#" Value="public System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt; DeferringLoader { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.Schema.XamlValueConverter`1&lt;class System.Xaml.XamlDeferringLoader&gt; DeferringLoader" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.DeferringLoader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> that represents the deferred loading conversion behavior for this type.</summary>
+        <value>The <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> with <see cref="T:System.Xaml.XamlDeferringLoader" /> constraint that represents the deferred loading behavior for this type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XAML template behavior in WPF is an example of deferred loading behavior.  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupDeferringLoader%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupDeferringLoader%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="obj" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Xaml.XamlType other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Xaml.XamlType other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.Equals(System.Xaml.XamlType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Xaml.XamlType" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAliasedProperty">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlMember GetAliasedProperty (System.Xaml.XamlDirective directive);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xaml.XamlMember GetAliasedProperty(class System.Xaml.XamlDirective directive) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetAliasedProperty(System.Xaml.XamlDirective)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="directive" Type="System.Xaml.XamlDirective" />
+      </Parameters>
+      <Docs>
+        <param name="directive">The directive for which to find the aliased member.</param>
+        <summary>Returns the XAML member that is aliased to a XAML directive by this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>The aliased member, if found; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this method can invoke <xref:System.Xaml.XamlType.LookupAliasedProperty%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupAliasedProperty%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllAttachableMembers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Xaml.XamlMember&gt; GetAllAttachableMembers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.ICollection`1&lt;class System.Xaml.XamlMember&gt; GetAllAttachableMembers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetAllAttachableMembers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Xaml.XamlMember&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection that contains all the attachable properties that are exposed by this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>A collection that contains zero or more <see cref="T:System.Xaml.XamlMember" /> values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.Xaml.XamlMember> in the returned collection should contain values that support the concept that the <xref:System.Xaml.XamlMember> is an attachable member. For example, members should return `true` for <xref:System.Xaml.XamlMember.IsAttachable%2A>, a type for <xref:System.Xaml.XamlMember.TargetType%2A>, and so on.  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this method can invoke <xref:System.Xaml.XamlType.LookupAllAttachableMembers%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupAllAttachableMembers%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllMembers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Xaml.XamlMember&gt; GetAllMembers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.ICollection`1&lt;class System.Xaml.XamlMember&gt; GetAllMembers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetAllMembers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Xaml.XamlMember&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection that contains all the members that are exposed by this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>A collection that contains zero or more <see cref="T:System.Xaml.XamlMember" /> values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calls to this method can invoke <xref:System.Xaml.XamlType.LookupAllMembers%2A> overrides on <xref:System.Xaml.XamlType> derived classes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttachableMember">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlMember GetAttachableMember (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xaml.XamlMember GetAttachableMember(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetAttachableMember(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the attachable member to get, in <c>ownerTypeName.MemberName</c> form.</param>
+        <summary>Returns a <see cref="T:System.Xaml.XamlMember" /> representing a specific named attachable member of this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>A <see cref="T:System.Xaml.XamlMember" /> object for the requested attachable member; otherwise, <see langword="null" />, if no attachable member by that name exists.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calls to this method can invoke <xref:System.Xaml.XamlType.LookupAttachableMember%2A> overrides on <xref:System.Xaml.XamlType> derived classes.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlType.LookupAttachableMember%2A> is virtual, and therefore, can be overridden. The override has the potential (whether for malicious purposes or otherwise) to change the reported members of a XAML type so that they no longer align in an expected way with the <xref:System.ComponentModel.TypeDescriptor> `Get*` information about the underlying CLR type. For any security-critical checks of member reporting, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this object.</summary>
+        <returns>An integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMember">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlMember GetMember (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xaml.XamlMember GetMember(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetMember(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the member to get (as a string).</param>
+        <summary>Returns a <see cref="T:System.Xaml.XamlMember" /> for a specific named member from this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>The <see cref="T:System.Xaml.XamlMember" /> information for the member, if such a member was found; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value for `name` is expected to be unqualified. Type-qualified names that indicate an attached member should be submitted to <xref:System.Xaml.XamlType.GetAttachableMember%2A> instead. Prefixed member names should not be used; a prefix is situational to a usage and the XAML type system cannot know the context of such a usage and how the prefix is mapped.  
+  
+ Calls to this method can invoke <xref:System.Xaml.XamlType.LookupMember%2A> overrides on <xref:System.Xaml.XamlType> derived classes.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlType.LookupMember%2A> is virtual, and therefore, can be overridden. The override has the potential (whether for malicious purposes or otherwise) to change the reported members of a XAML type so that they no longer align in an expected way with the <xref:System.ComponentModel.TypeDescriptor> `Get*` information about the underlying CLR type. For any security-critical checks of member reporting, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPositionalParameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt; GetPositionalParameters (int parameterCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Xaml.XamlType&gt; GetPositionalParameters(int32 parameterCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetPositionalParameters(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameterCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parameterCount">The count (arity) of the particular syntax or constructor mode that you want information about.</param>
+        <summary>For markup extension types, returns the types of the positional parameters that are supported in a specific markup extension usage for this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>A list of <see cref="T:System.Xaml.XamlType" /> values, where each <see cref="T:System.Xaml.XamlType" /> is the type for that position in the syntax. You must specify the types in the same order when you supply markup input for the markup extension.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This API is only relevant if this <xref:System.Xaml.XamlType> represents a markup extension (<xref:System.Xaml.XamlType.IsMarkupExtension%2A> is `true`).  
+  
+ The input `parameterCount` is not for requesting the type of a specific positional parameter. It is for specifying the arity of a markup extension usage. Markup extension usage often has multiple "signatures" and uses different parameter arity (count) of positional parameters to differentiate. However, you can configure a schema context to allow duplicate arities and use types of the positional parameters for differentiation. For more information, see <xref:System.Xaml.XamlSchemaContext.SupportMarkupExtensionsWithDuplicateArity%2A>. For a specific arity (count), the parameter positions and types can vary. To get the positional type of a specific arity's markup extension usage, you first call <xref:System.Xaml.XamlType.GetPositionalParameters%2A> specifying the arity count. Then get the item at that position from the returned collection.  
+  
+ Calls to this method can invoke <xref:System.Xaml.XamlType.LookupPositionalParameters%2A> overrides on <xref:System.Xaml.XamlType> derived classes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXamlNamespaces">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;string&gt; GetXamlNamespaces ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;string&gt; GetXamlNamespaces() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.GetXamlNamespaces" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a list of string identifiers for XAML namespaces that the type is included in.</summary>
+        <returns>A list of string values, where each string is the URI identifier for a XAML namespace.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typical XAML namespace identifiers are strings in URI form.  
+  
+ The default implementation checks the following, in order: the XAML namespace that is supplied in construction (<xref:System.Xaml.XamlType.%23ctor%28System.String%2CSystem.String%2CSystem.Collections.Generic.IList%7BSystem.Xaml.XamlType%7D%2CSystem.Xaml.XamlSchemaContext%29> signature only); and the namespaces that are available from the schema context. If these are each `null`, a new list is generated that contains a single empty string. You can override this method to change the lookup methodology.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoker">
+      <MemberSignature Language="C#" Value="public System.Xaml.Schema.XamlTypeInvoker Invoker { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.Schema.XamlTypeInvoker Invoker" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.Invoker" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlTypeInvoker</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xaml.Schema.XamlTypeInvoker" /> implementation that is associated with this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <value>The <see cref="T:System.Xaml.Schema.XamlTypeInvoker" /> implementation that is associated with this <see cref="T:System.Xaml.XamlType" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calling <xref:System.Xaml.XamlType.Invoker%2A> can invoke either <xref:System.Xaml.XamlType.LookupInvoker%2A> or a specific override of that method. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupInvoker%2A> on this type.  
+  
+ If a <xref:System.Xaml.XamlType.LookupInvoker%2A> override returns `null`, or if the default implementation returns `null` because of lack of <xref:System.Xaml.XamlType.UnderlyingType%2A> for this <xref:System.Xaml.XamlType>, then <xref:System.Xaml.XamlType.Invoker%2A> returns <xref:System.Xaml.Schema.XamlTypeInvoker.UnknownInvoker%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAmbient">
+      <MemberSignature Language="C#" Value="public bool IsAmbient { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAmbient" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsAmbient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents an ambient type, as per the XAML definition.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents an ambient type; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupIsAmbient%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupIsAmbient%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsArray">
+      <MemberSignature Language="C#" Value="public bool IsArray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsArray" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsArray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents an array.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents an array; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupCollectionKind%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupCollectionKind%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCollection">
+      <MemberSignature Language="C#" Value="public bool IsCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a collection.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a collection; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupCollectionKind%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupCollectionKind%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConstructible">
+      <MemberSignature Language="C#" Value="public bool IsConstructible { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConstructible" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsConstructible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a constructible type, as per the XAML definition.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a constructible type; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property aligns to the `[is default constructible]` information item in the [MS-XAML] specification.  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupIsConstructible%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupIsConstructible%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDictionary">
+      <MemberSignature Language="C#" Value="public bool IsDictionary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDictionary" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsDictionary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a dictionary, as per the XAML definition.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a dictionary; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property aligns to the `[is dictionary]` information item in the [MS-XAML] specification.  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupCollectionKind%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupCollectionKind%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGeneric">
+      <MemberSignature Language="C#" Value="public bool IsGeneric { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsGeneric" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsGeneric" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a generic type.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a generic type; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is a helper property that checks for a null value of <xref:System.Xaml.XamlType.TypeArguments%2A>. There is no specific `Lookup` method related to <xref:System.Xaml.XamlType.IsGeneric%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMarkupExtension">
+      <MemberSignature Language="C#" Value="public bool IsMarkupExtension { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMarkupExtension" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsMarkupExtension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a markup extension.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a markup extension; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In XAML specification terms, this type must be assignable to `x:MarkupExtension` in order to return `true` for <xref:System.Xaml.XamlType.IsMarkupExtension%2A>.  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupIsMarkupExtension%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupIsMarkupExtension%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNameScope">
+      <MemberSignature Language="C#" Value="public bool IsNameScope { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNameScope" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsNameScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a XAML namescope, as per the XAML definition.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a XAML namescope; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A XAML namescope enforces the name uniqueness of the property or properties used for `x:Name` / `[name property]`. If <xref:System.Xaml.XamlType.IsNameScope%2A> is `true`, some mechanism for enforcing uniqueness should exist and should evaluate from the perspective of this type owning a XAML namescope. The XAML namescope then extends to the content of the type until another XAML namescope-owning type is encountered.  
+  
+ This property aligns to the `[is name scope]` information item in the [MS-XAML] specification.  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupIsNameScope%2A> overrides on <xref:System.Xaml.XamlType> derived classes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNameValid">
+      <MemberSignature Language="C#" Value="public bool IsNameValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNameValid" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsNameValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> is initialized by using a valid <see langword="xamlName" /> string as its <see cref="P:System.Xaml.XamlType.Name" />.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> is initialized by using a valid <see langword="xamlName" /> string; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNullable">
+      <MemberSignature Language="C#" Value="public bool IsNullable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsNullable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a nullable type, as per the XAML definition.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a nullable type; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property aligns to the `[is nullable]` information item in the [MS-XAML] specification.  
+  
+ If you are not using the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupIsNullable%2A> overrides on <xref:System.Xaml.XamlType> derived classes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPublic">
+      <MemberSignature Language="C#" Value="public bool IsPublic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPublic" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsPublic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a public type in the relevant type system.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a public type; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupIsPublic%2A> overrides on <xref:System.Xaml.XamlType> derived classes.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlType.LookupIsPublic%2A> is virtual, and therefore, can be overridden. The override has the potential (whether for malicious purposes or otherwise) to change the reported access information about a XAML type so that it no longer aligns in an expected way with the type system and access information of its underlying CLR type. For any security-critical checks of assignment operations and access, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnknown">
+      <MemberSignature Language="C#" Value="public bool IsUnknown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsUnknown" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsUnknown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a type that cannot be resolved in the underlying type system.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents an unresolvable type; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupIsUnknown%2A> overrides on <xref:System.Xaml.XamlType>derived classes.  
+  
+ For a load path that involves <xref:System.Xaml.XamlObjectWriter>, a <xref:System.Xaml.XamlType> that has `true` for <xref:System.Xaml.XamlType.IsUnknown%2A> cannot be written into an object graph. Under the default implementations in <xref:System.Xaml> , the <xref:System.Xaml.XamlObjectWriter.WriteStartObject%2A?displayProperty=fullName> call throws a <xref:System.Xaml.XamlObjectWriterException> when the relevant <xref:System.Xaml.XamlType> reports `true` for <xref:System.Xaml.XamlType.IsUnknown%2A>. You should not pass a <xref:System.Xaml.XamlType> that has <xref:System.Xaml.XamlType.IsUnknown%2A> as `true` unless you are prepared to handle the exceptions from <xref:System.Xaml.XamlObjectWriter>, or you have other ways to adjust the <xref:System.Xaml.XamlObjectWriter> behavior or the XAML node stream prior to writing the object graph.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUsableDuringInitialization">
+      <MemberSignature Language="C#" Value="public bool IsUsableDuringInitialization { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsUsableDuringInitialization" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsUsableDuringInitialization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> is built top-down during XAML initialization.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> is built top-down during XAML initialization; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Top-down is a metaphor that approximates XAML processor behavior when creating the object graph. When built top-down, a type is instantiated, attached to the parent, and then has its properties set. Top-down construction avoids invoking property-changed handlers multiple times. Such handling ripples up the object graph and therefore, eliminates the multiple handler calls and provides a performance optimization for startup of the object graph.  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupUsableDuringInitialization%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupUsableDuringInitialization%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsWhitespaceSignificantCollection">
+      <MemberSignature Language="C#" Value="public bool IsWhitespaceSignificantCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsWhitespaceSignificantCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsWhitespaceSignificantCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a whitespace significant collection, as per the XML definition.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a whitespace significant collection; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupIsWhitespaceSignificantCollection%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupIsWhitespaceSignificantCollection%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsXData">
+      <MemberSignature Language="C#" Value="public bool IsXData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsXData" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.IsXData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents XML <see langword="XDATA" />, as per the XAML definition.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents <see langword="XDATA" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property aligns to the `[is xdata]` information item in the [MS-XAML] specification.  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupIsXData%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupIsXData%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemType">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlType ItemType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType ItemType" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.ItemType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that provides the type information for the <see langword="Items" /> property of this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <value>A <see cref="T:System.Xaml.XamlType" /> object for the type of the items in the collection; otherwise, <see langword="null" />, if this <see cref="T:System.Xaml.XamlType" /> does not represent a collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is only relevant if this <xref:System.Xaml.XamlType> represents a collection (<xref:System.Xaml.XamlType.IsCollection%2A> is `true`). The `Items` property is whatever property holds items in that type of collection or array.  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupItemType%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupItemType%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyType">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlType KeyType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType KeyType" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.KeyType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that provides the type information for the key property of this <see cref="T:System.Xaml.XamlType" />, if the <see cref="T:System.Xaml.XamlType" /> represents a dictionary.</summary>
+        <value>A <see cref="T:System.Xaml.XamlType" /> object for the type of the key for dictionary usage, otherwise, <see langword="null" />, if this <see cref="T:System.Xaml.XamlType" /> does not represent a dictionary.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is only relevant if this <xref:System.Xaml.XamlType> represents a dictionary (<xref:System.Xaml.XamlType.IsDictionary%2A> is `true`).  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupKeyType%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupKeyType%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupAliasedProperty">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlMember LookupAliasedProperty (System.Xaml.XamlDirective directive);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.XamlMember LookupAliasedProperty(class System.Xaml.XamlDirective directive) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupAliasedProperty(System.Xaml.XamlDirective)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="directive" Type="System.Xaml.XamlDirective" />
+      </Parameters>
+      <Docs>
+        <param name="directive">The directive for which to find the aliased member.</param>
+        <summary>Returns the XAML member that is aliased to a XAML directive by this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>The aliased member, if found; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked when a caller gets a value from <xref:System.Xaml.XamlType.GetAliasedProperty%2A>.  
+  
+ The default implementation can return results for the following XAML directives: `Key`; `Name`; `Uid`; and `xml:lang`. Values for these depend on underlying reflection and might still return `null` if no aliased property is found.  
+  
+ Override this method if you are not relying on default internal CLR reflection and are using metadata or other techniques for reporting the XAML type system information or the schema information of a type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupAllAttachableMembers">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IEnumerable&lt;System.Xaml.XamlMember&gt; LookupAllAttachableMembers ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xaml.XamlMember&gt; LookupAllAttachableMembers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupAllAttachableMembers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xaml.XamlMember&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerable set that contains all attachable properties that are exposed by this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>An enumerable set that contains zero or more <see cref="T:System.Xaml.XamlMember" /> values; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked when a caller gets a value from <xref:System.Xaml.XamlType.GetAllAttachableMembers%2A>.  
+  
+ Although <xref:System.Xaml.XamlType.GetAllAttachableMembers%2A> returns a generic collection, this `Lookup` method returns a generic enumerable set.  
+  
+ The default implementation uses the internal CLR reflection. When <xref:System.Xaml.XamlType.UnderlyingType%2A> is `null`, the default implementation can use <xref:System.Xaml.XamlType.BaseType%2A>, if it is available. This behavior calls <xref:System.Xaml.XamlType.LookupAllAttachableMembers%2A> recursively to attempt to find a valid base type and returns `null` if no valid base type exists.  
+  
+ Override this method if you are not relying on default internal CLR reflection and are using metadata or other techniques for reporting the XAML type system information or schema information of a type. A null return should be reserved for cases where information cannot be determined because of lack of type system or reflection support. If a type is valid and reflection or other techniques are available, but a type does not have attachable members, you should instead return an empty <xref:System.Collections.Generic.IEnumerable%601> set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupAllMembers">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IEnumerable&lt;System.Xaml.XamlMember&gt; LookupAllMembers ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xaml.XamlMember&gt; LookupAllMembers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupAllMembers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xaml.XamlMember&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerable set that contains all the members that are exposed by this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>An enumerable set that contains zero or more <see cref="T:System.Xaml.XamlMember" /> values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked when a caller gets a value from <xref:System.Xaml.XamlType.GetAllMembers%2A>.  
+  
+ Although <xref:System.Xaml.XamlType.GetAllMembers%2A> returns a generic collection, this `Lookup` method returns a generic enumerable set.  
+  
+ The default implementation uses the internal CLR reflection. For cases where <xref:System.Xaml.XamlType.UnderlyingType%2A> is `null`, the default implementation can use <xref:System.Xaml.XamlType.BaseType%2A>, if it is available. This behavior calls <xref:System.Xaml.XamlType.LookupAllMembers%2A> recursively to attempt to find a valid base type, and returns `null` if no valid base type exists.  
+  
+ Override this method if you are not relying on default internal CLR reflection and are using metadata or other techniques for reporting the XAML type system information or schema information of a type. A null return should be reserved for cases where information cannot be determined because of lack of type system or reflection support. If a type is valid, reflection or other techniques are available; if a type does not have members, you should instead return an empty <xref:System.Collections.Generic.IEnumerable%601> set.  
+  
+ Return values for <xref:System.Xaml.XamlType.LookupAllMembers%2A> and <xref:System.Xaml.XamlType.LookupAllAttachableMembers%2A> should be mutually exclusive. If you have a situation where a backing type system property can support a standard instance usage as well as an attachable usage, that member should be reported as two different <xref:System.Xaml.XamlMember> values, with one value appearing in the attachable list and another in the standard members list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupAllowedContentTypes">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt; LookupAllowedContentTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Xaml.XamlType&gt; LookupAllowedContentTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupAllowedContentTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a list of the types that are usable as the <see cref="P:System.Xaml.XamlType.ContentProperty" /> value for this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>A list of possible content types.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked when a caller gets a value from <xref:System.Xaml.XamlType.AllowedContentTypes%2A>.  
+  
+ Types that evaluate as <xref:System.Xaml.XamlType.CanAssignTo%2A> for a specific content type are not considered multiple types for purposes of <xref:System.Xaml.XamlType.AllowedContentTypes%2A>.  
+  
+ The default implementation can use other properties of <xref:System.Xaml.XamlType> (<xref:System.Xaml.XamlType.ContentWrappers%2A>, <xref:System.Xaml.XamlType.ContentProperty%2A>, or <xref:System.Xaml.XamlType.ItemType%2A>) to obtain a result. The `Lookup` overrides for the preceding property list can also be invoked in this determination.  
+  
+ Override this method if you are not relying on default internal CLR reflection and are using metadata or other techniques for reporting the XAML type system information or schema information of a type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupAttachableMember">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlMember LookupAttachableMember (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.XamlMember LookupAttachableMember(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupAttachableMember(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the attachable member to get, in <c>ownerTypeName.MemberName</c> form.</param>
+        <summary>Returns a <see cref="T:System.Xaml.XamlMember" /> for a specific named attachable from this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>A <see cref="T:System.Xaml.XamlMember" /> object for the requested attachable member; otherwise, <see langword="null" />, if no attachable member by that name exists.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked when a caller gets a value from <xref:System.Xaml.XamlType.GetAttachableMember%2A>.  
+  
+ The default implementation uses the internal CLR reflection. When <xref:System.Xaml.XamlType.UnderlyingType%2A> is `null`, the default implementation can use <xref:System.Xaml.XamlType.BaseType%2A>, if it is available. This behavior calls <xref:System.Xaml.XamlType.LookupAttachableMember%2A> recursively to attempt to find a valid base type and returns `null` if no valid base type exists.  
+  
+ Override this method if you are not relying on default internal CLR reflection and are using metadata or other techniques for reporting the XAML type system information or schema information of a type.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlType.LookupAttachableMember%2A> is virtual, and therefore, can be overridden. The override has the potential (whether for malicious purposes or otherwise) to change the reported members of a XAML type so that they no longer align in an expected way with the <xref:System.ComponentModel.TypeDescriptor> `Get*` information about the underlying CLR type. For any security-critical checks of member reporting, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupBaseType">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlType LookupBaseType ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.XamlType LookupBaseType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupBaseType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the <see cref="T:System.Xaml.XamlType" /> for the immediate base type of this XAML type. Determination of this value is based on the underlying type of this <see cref="T:System.Xaml.XamlType" /> and schema context.</summary>
+        <returns>The <see cref="T:System.Xaml.XamlType" /> for the immediate base type of this XAML type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked when a caller gets a value from <xref:System.Xaml.XamlType.BaseType%2A>.  
+  
+ The default implementation might return an internal constant that represents the <xref:System.Object> if <xref:System.Xaml.XamlType.UnderlyingType%2A> is `null`.  
+  
+ Override this method if you are not relying on default internal CLR reflection and are using metadata or other techniques for reporting the XAML type system information or schema information of a type.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlType.LookupBaseType%2A> is virtual, and therefore, can be overridden. The override has the potential (whether for malicious purposes or otherwise) to change the reported type information about a XAML type so that it no longer aligns in an expected way with the type system information of its underlying CLR type. For any security-critical checks of assignment operations and access, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupCollectionKind">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.Schema.XamlCollectionKind LookupCollectionKind ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Xaml.Schema.XamlCollectionKind LookupCollectionKind() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupCollectionKind" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlCollectionKind</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value of the <see cref="T:System.Xaml.Schema.XamlCollectionKind" /> enumeration that declares which specific collection type this <see cref="T:System.Xaml.XamlType" /> uses.</summary>
+        <returns>A value of the <see cref="T:System.Xaml.Schema.XamlCollectionKind" /> enumeration.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked by an internal private method (no public `CollectionKind` or `GetCollectionKind` API exists on <xref:System.Xaml.XamlType>).  
+  
+ The default implementation uses the internal CLR reflection. For cases where <xref:System.Xaml.XamlType.UnderlyingType%2A> is `null`, the default implementation can use <xref:System.Xaml.XamlType.BaseType%2A>, if it is available. This behavior indirectly calls <xref:System.Xaml.XamlType.LookupCollectionKind%2A> recursively to attempt to find a valid base type; it returns <xref:System.Xaml.Schema.XamlCollectionKind?displayProperty=fullName> if no valid base type exists. In general, the default implementation attempts to find the `Add` method of the underlying type by reflection. If found, the <xref:System.Reflection.MethodInfo> of the `Add` method is enough information to determine which <xref:System.Xaml.Schema.XamlCollectionKind> value should be returned. Otherwise, it returns <xref:System.Xaml.Schema.XamlCollectionKind?displayProperty=fullName>.  
+  
+ Override this method if you are not relying on default internal CLR reflection and are using metadata or other techniques for reporting the XAML type system information or schema information of a type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupConstructionRequiresArguments">
+      <MemberSignature Language="C#" Value="protected virtual bool LookupConstructionRequiresArguments ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupConstructionRequiresArguments() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupConstructionRequiresArguments" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> must have arguments (generic constraints through <see langword="x:TypeArguments" />, initialization text, or other XAML techniques) to construct a valid instance of the type.</summary>
+        <returns>
+          <see langword="true" /> if construction of an instance requires some argument value; otherwise, false.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked when a caller gets a value from <xref:System.Xaml.XamlType.ConstructionRequiresArguments%2A>.  
+  
+ The default implementation returns `false` for types considered value types in the CLR type system. For other than value types, CLR reflection <xref:System.Reflection.ConstructorInfo> is used to determine whether a default constructor exists.  
+  
+ Override this method if you are not relying on default internal CLR reflection and are using metadata or other techniques for reporting the XAML type system information or schema information of a type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupContentProperty">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlMember LookupContentProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.XamlMember LookupContentProperty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupContentProperty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns <see cref="T:System.Xaml.XamlMember" /> information for the content property of this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>
+          <see cref="T:System.Xaml.XamlMember" /> information for the content property of this <see cref="T:System.Xaml.XamlType" />. May be <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked when a caller gets a value from <xref:System.Xaml.XamlType.ContentProperty%2A>.  
+  
+ The default implementation checks for <xref:System.Windows.Markup.ContentPropertyAttribute> on the type definition. It can also check <xref:System.Xaml.XamlType.BaseType%2A> for the attribute if no attribute is found on the immediate underlying type. If these checks do not discover a content type, the default implementation returns `null`.  
+  
+ Override this method if you are not relying on default internal CLR reflection and are using metadata or other techniques for reporting the XAML type system information or schema information of a type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupContentWrappers">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt; LookupContentWrappers ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Xaml.XamlType&gt; LookupContentWrappers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupContentWrappers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a list of <see cref="T:System.Xaml.XamlType" /> values that represent the content wrappers for this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>A list of <see cref="T:System.Xaml.XamlType" /> values that represent the content wrappers for this <see cref="T:System.Xaml.XamlType" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A content wrapper is a class that represents the content collection type when the types that are used in that collection are not contiguous to the type system. The types of collection items for the content wrapper are expected to be limited in some manner beyond <xref:System.Object> or a neutral object equivalent. However, this limitation is only enforced by the design or purpose of the properties that use that type, and not by the type system. More than one content wrapper can exist on a type.  
+  
+ For an example class and scenario from the WPF XAML implementation, see <xref:System.Windows.Documents.InlineCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupCustomAttributeProvider">
+      <MemberSignature Language="C#" Value="protected virtual System.Reflection.ICustomAttributeProvider LookupCustomAttributeProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Reflection.ICustomAttributeProvider LookupCustomAttributeProvider() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupCustomAttributeProvider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.ICustomAttributeProvider</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, returns an <see cref="T:System.Reflection.ICustomAttributeProvider" /> implementation.</summary>
+        <returns>An <see cref="T:System.Reflection.ICustomAttributeProvider" /> implementation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override this method to provide the internal reflection with an alternative way to obtain CLR attribute values. In absence of an override, the internal reflector uses typical CLR reflection logic.  
+  
+ The default implementation returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupDeferringLoader">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt; LookupDeferringLoader ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.Schema.XamlValueConverter`1&lt;class System.Xaml.XamlDeferringLoader&gt; LookupDeferringLoader() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupDeferringLoader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> object, which is used for deferred loading of XAML-declared objects.</summary>
+        <returns>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> that has a <see cref="T:System.Xaml.XamlDeferringLoader" /> constraint on the generic.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked when a caller gets a value from <xref:System.Xaml.XamlType.DeferringLoader%2A>. Override this method if you want <xref:System.Xaml.XamlType.DeferringLoader%2A> to return a different value than is enabled by default internal reflection and are also providing custom <xref:System.Xaml.Schema.XamlTypeInvoker> information.  
+  
+ The default implementation returns an object on the basis of reading <xref:System.Windows.Markup.XamlDeferLoadAttribute>. It can also  check <xref:System.Xaml.XamlType.BaseType%2A> for the attribute if no attribute is found on the immediate underlying type. If a value is unavailable, this method returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupInvoker">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.Schema.XamlTypeInvoker LookupInvoker ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.Schema.XamlTypeInvoker LookupInvoker() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupInvoker" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlTypeInvoker</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.Xaml.Schema.XamlTypeInvoker" /> that is associated with this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>The <see cref="T:System.Xaml.Schema.XamlTypeInvoker" /> information for this <see cref="T:System.Xaml.XamlType" />; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.Invoker%2A>.  
+  
+ The default implementation does not require that a <xref:System.Xaml.XamlType> be constructed by using one of the constructors that pass an initial <xref:System.Xaml.Schema.XamlTypeInvoker>. However, an <xref:System.Xaml.XamlType.UnderlyingType%2A> value must exist for the <xref:System.Xaml.XamlType>; otherwise, the default implementation returns `null`.  
+  
+ Override this method if you also create a derived class from <xref:System.Xaml.Schema.XamlTypeInvoker> and intend to return the derived class. If you return `null`, <xref:System.Xaml.XamlType.Invoker%2A> returns <xref:System.Xaml.Schema.XamlTypeInvoker.UnknownInvoker%2A?displayProperty=fullName> to callers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupIsAmbient">
+      <MemberSignature Language="C#" Value="protected virtual bool LookupIsAmbient ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsAmbient() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsAmbient" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents an ambient type, as per the XAML definition.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents an ambient type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.IsAmbient%2A>.  
+  
+ The default implementation uses CLR reflection on the <xref:System.Xaml.XamlType.UnderlyingType%2A> and can check the base types. This implementation checks for the <xref:System.Windows.Markup.AmbientAttribute> that is applied to the relevant type's definition at the class level and returns `true` in this case. All other cases return `false`.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.IsAmbient%2A> to return a different value than is enabled by default internal reflection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupIsConstructible">
+      <MemberSignature Language="C#" Value="protected virtual bool LookupIsConstructible ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsConstructible() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsConstructible" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a constructible type, as per the XAML definition.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a constructible type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.IsConstructible%2A>.  
+  
+ The default implementation uses CLR reflection on the <xref:System.Xaml.XamlType.UnderlyingType%2A>. The type must be concrete, non-nested, and closed. The default implementation checks whether the type is a value type and the return of <xref:System.Xaml.XamlType.ConstructionRequiresArguments%2A>. For a null <xref:System.Xaml.XamlType.UnderlyingType%2A>, this method returns `true`.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.IsConstructible%2A> to return a different value than is enabled by default internal reflection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupIsMarkupExtension">
+      <MemberSignature Language="C#" Value="protected virtual bool LookupIsMarkupExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsMarkupExtension() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsMarkupExtension" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a markup extension.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a markup extension; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.IsMarkupExtension%2A>.  
+  
+ The default implementation consists only of this call:  
+  
+ `return CanAssignTo(XamlLanguage.MarkupExtension);`  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.IsMarkupExtension%2A> to use different logic.  
+  
+ In XAML specification terms, this type must be assignable to `x:MarkupExtension` in order to return `true` for <xref:System.Xaml.XamlType.IsMarkupExtension%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupIsNameScope">
+      <MemberSignature Language="C#" Value="protected virtual bool LookupIsNameScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsNameScope() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsNameScope" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a XAML namescope, as per the XAML definition.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a XAML namescope; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.IsNameScope%2A>.  
+  
+ The default implementation makes a <xref:System.Xaml.XamlType.CanAssignTo%2A> call indirectly against the type <xref:System.Windows.Markup.INameScope>. <xref:System.Windows.Markup.INameScope> is an interface that is defined in the assembly WindowsBase. This technique for XAML namescope identification is used both by WPF and [!INCLUDE[TLA#tla_workflow](~/includes/tlasharptla-workflow-md.md)] implementations of XAML.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.IsNameScope%2A> to use different logic.  
+  
+ A XAML namescope enforces the name uniqueness of the property or properties that are used for `x:Name` / `[name property]`. If <xref:System.Xaml.XamlType.IsNameScope%2A> is `true`, then some mechanism for enforcing uniqueness should exist and should evaluate from the perspective of this type owning a XAML namescope. The XAML namescope then extends to the content of the type until another XAML namescope owning type is encountered.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupIsNullable">
+      <MemberSignature Language="C#" Value="protected virtual bool LookupIsNullable ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsNullable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsNullable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a nullable type, as per the XAML definition.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a nullable type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.IsNullable%2A>.  
+  
+ The default implementation makes a determination based on the CLR core library nullable concept, checked against <xref:System.Xaml.XamlType.UnderlyingType%2A>. For a null <xref:System.Xaml.XamlType.UnderlyingType%2A>, it returns `true`.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.IsNullable%2A> to use different logic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupIsPublic">
+      <MemberSignature Language="C#" Value="protected virtual bool LookupIsPublic ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsPublic() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsPublic" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a public type in the relevant type system.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a public type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.IsPublic%2A>.  
+  
+ The default implementation uses CLR reflection against a non-null <xref:System.Xaml.XamlType.UnderlyingType%2A>. For a null <xref:System.Xaml.XamlType.UnderlyingType%2A>, it returns `true`.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.IsPublic%2A> to use different logic.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlType.LookupIsPublic%2A> is virtual, and therefore, can be overridden. The override has the potential (whether for malicious purposes or otherwise) to change the reported access information about a XAML type so that it no longer aligns in an expected way with the type system or access information of its underlying CLR type. For any security-critical checks of assignment operations and access, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupIsUnknown">
+      <MemberSignature Language="C#" Value="protected virtual bool LookupIsUnknown ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsUnknown() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsUnknown" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a type that cannot be resolved in the underlying type system.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a nonresolvable type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.IsUnknown%2A>.  
+  
+ The default implementation can use CLR reflection. For a null <xref:System.Xaml.XamlType.UnderlyingType%2A>, it returns `true`.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.IsUnknown%2A> to use different logic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupIsWhitespaceSignificantCollection">
+      <MemberSignature Language="C#" Value="protected virtual bool LookupIsWhitespaceSignificantCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsWhitespaceSignificantCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsWhitespaceSignificantCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents a whitespace significant collection, as per the XML definition.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a white-space significant collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.IsWhitespaceSignificantCollection%2A>.  
+  
+ The default implementation returns a value based on reading <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute>. It can also check the <xref:System.Xaml.XamlType.BaseType%2A> for the attribute if no attribute is found on the immediate underlying type. If a value is not available, it returns `false`.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.IsWhitespaceSignificantCollection%2A> to use different logic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupIsXData">
+      <MemberSignature Language="C#" Value="protected virtual bool LookupIsXData ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsXData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupIsXData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> represents XML <see langword="XDATA" />, as per the XAML definition.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents <see langword="XDATA" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.IsXData%2A>.  
+  
+ The default implementation makes a <xref:System.Xaml.XamlType.CanAssignTo%2A> call indirectly against the type <xref:System.Xml.Serialization.IXmlSerializable>.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.IsXData%2A> to use different logic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupItemType">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlType LookupItemType ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.XamlType LookupItemType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupItemType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that provides the type information for the <see langword="Items" /> property of this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>A <see cref="T:System.Xaml.XamlType" /> object for the type of the items in the collection; otherwise, <see langword="null" /> if this <see cref="T:System.Xaml.XamlType" /> does not represent a collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.ItemType%2A>.  
+  
+ The default implementation can use CLR reflection concepts, such as checking for an `Add` method by <xref:System.Reflection.MethodInfo> and using the <xref:System.Reflection.ParameterInfo>; checking <xref:System.Xaml.XamlType.IsArray%2A>; and checking <xref:System.Xaml.XamlType.BaseType%2A> and trying the same logic there.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.ItemType%2A> to use different logic. Cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A> returns <xref:System.Xaml.Schema.XamlCollectionKind?displayProperty=fullName> should return `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupKeyType">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlType LookupKeyType ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.XamlType LookupKeyType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupKeyType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that provides the type information for the key property of this <see cref="T:System.Xaml.XamlType" />, if the <see cref="T:System.Xaml.XamlType" /> represents a dictionary.</summary>
+        <returns>A <see cref="T:System.Xaml.XamlType" /> object for the type of the key for dictionary usage, or <see langword="null" /> if this <see cref="T:System.Xaml.XamlType" /> does not represent a dictionary,</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.KeyType%2A>.  
+  
+ The default implementation can use CLR reflection concepts, such as checking for an `Add` method by <xref:System.Reflection.MethodInfo> and using the <xref:System.Reflection.ParameterInfo>; and checking <xref:System.Xaml.XamlType.BaseType%2A> and trying the same logic there.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.KeyType%2A> to use different logic. Cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A> does not return <xref:System.Xaml.Schema.XamlCollectionKind?displayProperty=fullName> should return `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupMarkupExtensionReturnType">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlType LookupMarkupExtensionReturnType ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.XamlType LookupMarkupExtensionReturnType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupMarkupExtensionReturnType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that provides the type information for the returned <see langword="ProvideValue" /> of this <see cref="T:System.Xaml.XamlType" />, if it represents a markup extension.</summary>
+        <returns>A <see cref="T:System.Xaml.XamlType" /> object for the return type for markup extension usage; otherwise, <see langword="null" />, if this <see cref="T:System.Xaml.XamlType" /> does not represent a markup extension.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.MarkupExtensionReturnType%2A>.  
+  
+ The default implementation returns a <xref:System.Xaml.XamlType> on the basis of reading <xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute>. It can also check <xref:System.Xaml.XamlType.BaseType%2A> for the attribute if no attribute is found on the immediate underlying type. If a value is not available, it returns `null`.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.MarkupExtensionReturnType%2A> to use different logic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupMember">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlMember LookupMember (string name, bool skipReadOnlyCheck);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.XamlMember LookupMember(string name, bool skipReadOnlyCheck) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupMember(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="skipReadOnlyCheck" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the member to get (as a string).</param>
+        <param name="skipReadOnlyCheck">
+          <see langword="true" /> to return a member even if that member has a <see langword="true" /> value for <see cref="P:System.Xaml.XamlMember.IsReadOnly" />; <see langword="false" /> to not return a <see cref="P:System.Xaml.XamlMember.IsReadOnly" /> member. The default is <see langword="false" />.</param>
+        <summary>Returns the <see cref="T:System.Xaml.XamlMember" /> for a specific named member from this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>The <see cref="T:System.Xaml.XamlMember" /> information for the member, if a member was found; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.GetMember%2A>.  
+  
+ The default implementation returns a <xref:System.Xaml.XamlType> based on internal CLR reflection and evaluation against the schema context.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.GetMember%2A> to use different logic.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlType.LookupMember%2A> is virtual, and therefore, can be overridden. The override has the potential (whether for malicious purposes or otherwise) to change the reported members of a XAML type so that they no longer align in an expected way with the <xref:System.ComponentModel.TypeDescriptor> `Get*` information about the underlying CLR type. For any security-critical checks of member reporting, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupPositionalParameters">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt; LookupPositionalParameters (int parameterCount);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Xaml.XamlType&gt; LookupPositionalParameters(int32 parameterCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupPositionalParameters(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameterCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parameterCount">The count (arity) of the particular syntax or constructor mode that you want information about.</param>
+        <summary>For markup extension types, returns the types of the positional parameters that are supported in a specific markup extension usage for this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>A list of <see cref="T:System.Xaml.XamlType" /> values where each such <see cref="T:System.Xaml.XamlType" /> is the type for that position in the syntax. You must specify those types in the same order when supplying markup input for the markup extension.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.GetPositionalParameters%2A>.  
+  
+ The default implementation uses internal reflection information based on finding constructors and checking the arity. Override this method if you want <xref:System.Xaml.XamlType.GetPositionalParameters%2A> to use different logic.  
+  
+ This API is only relevant if this <xref:System.Xaml.XamlType> represents a markup extension (<xref:System.Xaml.XamlType.IsMarkupExtension%2A> is `true`).  
+  
+ The input `parameterCount` is not for requesting the type of a specific positional parameter. It is for specifying the arity of a markup extension usage. Markup extension usage often has multiple signatures and uses different parameter arity (count) of positional parameters to differentiate. However, you can configure a schema context to allow duplicate arities and use types of the positional parameters for differentiation. For more information, see <xref:System.Xaml.XamlSchemaContext.SupportMarkupExtensionsWithDuplicateArity%2A>. For a specific arity count, the parameter positions and types can vary. To get the positional type of a specific arity's markup extension usage, you first call <xref:System.Xaml.XamlType.GetPositionalParameters%2A> with the arity count. Then get the item at that position from the returned collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupSetMarkupExtensionHandler">
+      <MemberSignature Language="C#" Value="protected virtual EventHandler&lt;System.Windows.Markup.XamlSetMarkupExtensionEventArgs&gt; LookupSetMarkupExtensionHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.EventHandler`1&lt;class System.Windows.Markup.XamlSetMarkupExtensionEventArgs&gt; LookupSetMarkupExtensionHandler() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupSetMarkupExtensionHandler" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Markup.XamlSetMarkupExtensionEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a handler callback to use for the set operations of markup extensions.</summary>
+        <returns>A handler callback to use for the set operations of markup extensions.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation returns a value based on reading <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute>. It can also check <xref:System.Xaml.XamlType.BaseType%2A> for the attribute if no attribute is found on the immediate underlying type. If a value is unavailable, it returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupSetTypeConverterHandler">
+      <MemberSignature Language="C#" Value="protected virtual EventHandler&lt;System.Windows.Markup.XamlSetTypeConverterEventArgs&gt; LookupSetTypeConverterHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.EventHandler`1&lt;class System.Windows.Markup.XamlSetTypeConverterEventArgs&gt; LookupSetTypeConverterHandler() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupSetTypeConverterHandler" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Markup.XamlSetTypeConverterEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a handler to use for type converter setting cases.</summary>
+        <returns>A handler to use for type converter setting cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation returns a value based on reading <xref:System.Windows.Markup.XamlSetTypeConverterAttribute>. It can also check <xref:System.Xaml.XamlType.BaseType%2A> for the attribute if no attribute is found on the immediate underlying type. If a value is unavailable, it returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupTrimSurroundingWhitespace">
+      <MemberSignature Language="C#" Value="protected virtual bool LookupTrimSurroundingWhitespace ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupTrimSurroundingWhitespace() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupTrimSurroundingWhitespace" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> should be serialized using a mode that  trims surrounding whitespace.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> should be serialized in a mode that trims surrounding whitespace; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.TrimSurroundingWhitespace%2A>.  
+  
+ The default implementation returns a value based on reading <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute>. It can also check <xref:System.Xaml.XamlType.BaseType%2A> for the attribute if no attribute is found on the immediate underlying type. If a value is unavailable, it returns `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupTypeConverter">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt; LookupTypeConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.Schema.XamlValueConverter`1&lt;class System.ComponentModel.TypeConverter&gt; LookupTypeConverter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupTypeConverter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> that has a <see cref="T:System.ComponentModel.TypeConverter" /> constraint, which represents type-conversion behavior for values of this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> with <see cref="T:System.ComponentModel.TypeConverter" /> constraint that represents type-conversion behavior for values of this <see cref="T:System.Xaml.XamlType" />; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.TypeConverter%2A>.  
+  
+ The default implementation returns a value based on reading <xref:System.ComponentModel.TypeConverterAttribute>. The default implementation can also check <xref:System.Xaml.XamlType.BaseType%2A> for the attribute if no attribute is found on the immediate underlying type. It also includes special logic for default conversion of enumerations, common value types, and generics. If a value is unavailable, it returns `null`.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.TypeConverter%2A> to use different logic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupUnderlyingType">
+      <MemberSignature Language="C#" Value="protected virtual Type LookupUnderlyingType ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Type LookupUnderlyingType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupUnderlyingType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the CLR <see cref="T:System.Type" /> that underlies this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>The CLR <see cref="T:System.Type" /> that underlies this <see cref="T:System.Xaml.XamlType" />; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.UnderlyingType%2A>.  
+  
+ The default implementation returns an internal field. That field is generally initialized during construction and its value is based on which constructor was called and the information that you provided.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.UnderlyingType%2A> to use different logic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupUsableDuringInitialization">
+      <MemberSignature Language="C#" Value="protected virtual bool LookupUsableDuringInitialization ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupUsableDuringInitialization() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupUsableDuringInitialization" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> is built top-down during XAML initialization.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> is built top-down during XAML initialization; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Top-down is a metaphor that approximates XAML processor behavior when it creates the object graph. When built top-down, a type is instantiated, attached to the parent, and has its properties set. Top-down construction avoids invoking property-changed handlers multiple times. Such handling ripples up the object graph and therefore, eliminates the multiple handler calls and provides a performance optimization for startup of the object graph.  
+  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.IsUsableDuringInitialization%2A>.  
+  
+ The default implementation returns a value based on reading <xref:System.Windows.Markup.UsableDuringInitializationAttribute>. It can also check <xref:System.Xaml.XamlType.BaseType%2A> for the attribute if no attribute is found on the immediate underlying type. If a value is unavailable, it returns `false`.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.IsUsableDuringInitialization%2A> to use different logic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupValueSerializer">
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt; LookupValueSerializer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.Schema.XamlValueConverter`1&lt;class System.Windows.Markup.ValueSerializer&gt; LookupValueSerializer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.LookupValueSerializer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> that has a <see cref="T:System.Windows.Markup.ValueSerializer" /> constraint, which represents value serialization behavior for values of this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> with <see cref="T:System.Windows.Markup.ValueSerializer" /> constraint that represents value serialization behavior for values of this <see cref="T:System.Xaml.XamlType" />; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be invoked by calls to <xref:System.Xaml.XamlType.ValueSerializer%2A>.  
+  
+ The default implementation returns a value based on reading <xref:System.Windows.Markup.ValueSerializerAttribute>. It can also check <xref:System.Xaml.XamlType.BaseType%2A> for the attribute if no attribute is found on the immediate underlying type. It also includes special logic for default serialization of enumerations, common value types, or generics. If a value is unavailable, it returns `null`.  
+  
+ Override this method if you want <xref:System.Xaml.XamlType.ValueSerializer%2A> to use different logic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkupExtensionReturnType">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlType MarkupExtensionReturnType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType MarkupExtensionReturnType" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.MarkupExtensionReturnType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that provides the type information for the returned <see langword="ProvideValue" /> of this <see cref="T:System.Xaml.XamlType" />, if it represents a markup extension.</summary>
+        <value>A <see cref="T:System.Xaml.XamlType" /> object for the return type for markup extension usage; otherwise, <see langword="null" />, if this <see cref="T:System.Xaml.XamlType" /> does not represent a markup extension.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is only relevant if this <xref:System.Xaml.XamlType> represents a markup extension (`x:MarkupExtension` is in the assignable types list).  
+  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupMarkupExtensionReturnType%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupMarkupExtensionReturnType%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the string name of the type that this <see cref="T:System.Xaml.XamlType" /> represents.</summary>
+        <value>The string name of this XAML type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property typically gets the schema-constructed name (per the <xref:System.Xaml.XamlType.%23ctor%2A> signature), or the name of the <xref:System.Type>, if it is constructed by using the pertinent constructor of the CLR type system.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Xaml.XamlType xamlType1, System.Xaml.XamlType xamlType2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Xaml.XamlType xamlType1, class System.Xaml.XamlType xamlType2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.op_Equality(System.Xaml.XamlType,System.Xaml.XamlType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xamlType1" Type="System.Xaml.XamlType" />
+        <Parameter Name="xamlType2" Type="System.Xaml.XamlType" />
+      </Parameters>
+      <Docs>
+        <param name="xamlType1">A <see cref="T:System.Xaml.XamlType" /> or <see langword="null" />.</param>
+        <param name="xamlType2">A <see cref="T:System.Xaml.XamlType" /> or <see langword="null" />.</param>
+        <summary>Determines whether two specified <see cref="T:System.Xaml.XamlType" /> objects have the same value.</summary>
+        <returns>
+          <see langword="true" /> if the value of <paramref name="xamlType1" /> is the same as the value of <paramref name="xamlType2" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Xaml.XamlType xamlType1, System.Xaml.XamlType xamlType2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xaml.XamlType xamlType1, class System.Xaml.XamlType xamlType2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.op_Inequality(System.Xaml.XamlType,System.Xaml.XamlType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xamlType1" Type="System.Xaml.XamlType" />
+        <Parameter Name="xamlType2" Type="System.Xaml.XamlType" />
+      </Parameters>
+      <Docs>
+        <param name="xamlType1">A <see cref="T:System.Xaml.XamlType" /> or <see langword="null" />.</param>
+        <param name="xamlType2">A <see cref="T:System.Xaml.XamlType" /> or <see langword="null" />.</param>
+        <summary>Determines whether two specified <see cref="T:System.Xaml.XamlType" /> objects have different values.</summary>
+        <returns>
+          <see langword="true" /> if the value of <paramref name="xamlType1" /> is different from the value of <paramref name="xamlType2" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferredXamlNamespace">
+      <MemberSignature Language="C#" Value="public string PreferredXamlNamespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PreferredXamlNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.PreferredXamlNamespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the single XAML namespace that is the primary XAML namespace for this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <value>The identifier, as a string, of the primary XAML namespace for this XAML type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation provides the same value as calling <xref:System.Xaml.XamlType.GetXamlNamespaces%2A> and then getting the first value string from the returned enumerable set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaContext">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlSchemaContext SchemaContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlSchemaContext SchemaContext" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.SchemaContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlSchemaContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the active <see cref="T:System.Xaml.XamlSchemaContext" /> for processing this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <value>The active <see cref="T:System.Xaml.XamlSchemaContext" /> for processing this <see cref="T:System.Xaml.XamlType" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xaml.XamlSchemaContext> is a required parameter entry when constructing a <xref:System.Xaml.XamlType>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlType.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <returns>A string representation of this <see cref="T:System.Xaml.XamlType" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xaml.XamlType> implementation of <xref:System.Object.ToString%2A> returns the <xref:System.Xaml.XamlType.Name%2A> property of the <xref:System.Xaml.XamlType>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimSurroundingWhitespace">
+      <MemberSignature Language="C#" Value="public bool TrimSurroundingWhitespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TrimSurroundingWhitespace" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.TrimSurroundingWhitespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlType" /> has whitespace handling behavior for serialization that trims the surrounding whitespace in its content.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlType" /> represents a type that uses whitespace trimming; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupIsWhitespaceSignificantCollection%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupIsWhitespaceSignificantCollection%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeArguments">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt; TypeArguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Xaml.XamlType&gt; TypeArguments" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.TypeArguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Xaml.XamlType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of type arguments for cases where this <see cref="T:System.Xaml.XamlType" /> represents a generic.</summary>
+        <value>A list of type argument types; otherwise, <see langword="null" />, if this <see cref="T:System.Xaml.XamlType" /> does not represent a generic.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are certain scenarios for a <xref:System.Xaml.XamlType> where calling the <xref:System.Xaml.XamlType.TypeArguments%2A> parameter returns a list where the types are still open. In this case, one or more of the returned <xref:System.Xaml.XamlType> values will have placeholder values for <xref:System.Xaml.XamlType.Name%2A?displayProperty=fullName>, such as `T`, to represent that the generic is still open. This scenario can occur if you get a <xref:System.Xaml.XamlType> from a call to <xref:System.Xaml.XamlSchemaContext.GetXamlType%2A>, instead of from a XAML reader implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeConverter">
+      <MemberSignature Language="C#" Value="public System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt; TypeConverter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.Schema.XamlValueConverter`1&lt;class System.ComponentModel.TypeConverter&gt; TypeConverter" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.TypeConverter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> with <see cref="T:System.ComponentModel.TypeConverter" /> constraint that represents type conversion behavior for values of this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <value>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> with <see cref="T:System.ComponentModel.TypeConverter" /> constraint that represents type conversion behavior for values of this <see cref="T:System.Xaml.XamlType" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupTypeConverter%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupTypeConverter%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnderlyingType">
+      <MemberSignature Language="C#" Value="public Type UnderlyingType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type UnderlyingType" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.UnderlyingType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the CLR <see cref="T:System.Type" /> that underlies this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <value>The CLR <see cref="T:System.Type" /> that underlies this <see cref="T:System.Xaml.XamlType" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueSerializer">
+      <MemberSignature Language="C#" Value="public System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt; ValueSerializer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.Schema.XamlValueConverter`1&lt;class System.Windows.Markup.ValueSerializer&gt; ValueSerializer" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlType.ValueSerializer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> with <see cref="T:System.Windows.Markup.ValueSerializer" /> constraint that represents value serialization behavior for values of this <see cref="T:System.Xaml.XamlType" />.</summary>
+        <value>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> with <see cref="T:System.Windows.Markup.ValueSerializer" /> constraint that represents value serialization behavior for values of this <see cref="T:System.Xaml.XamlType" />; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not use the default internal CLR reflection technique for a <xref:System.Xaml.XamlType>, calls to this property can invoke <xref:System.Xaml.XamlType.LookupValueSerializer%2A> overrides on <xref:System.Xaml.XamlType> derived classes. For more information about return values and other behavior, see the documentation for <xref:System.Xaml.XamlType.LookupValueSerializer%2A> on this type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

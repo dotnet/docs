@@ -1,0 +1,143 @@
+<Type Name="TransferMode" FullName="System.ServiceModel.TransferMode">
+  <TypeSignature Language="C#" Value="public enum TransferMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransferMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.TransferMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates whether a channel uses streamed or buffered modes for the transfer of request and response messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo1](~/includes/indigo1-md.md)] transports support two modes of transferring messages in each direction:  
+  
+-   Buffered transfers hold the entire message in a memory buffer until the transfer is complete.  
+  
+-   Streamed transfers only buffer the message headers and expose the message body as a stream, from which smaller portions can be read at a time.  
+  
+ Setting the transfer mode to Streamed enables streaming communication in both directions. Setting the transfer mode to StreamedRequest or StreamedResponse enables streaming communication only in the indicated direction.  
+  
+ Streamed transfers can improve the scalability of a service by eliminating the need for large memory buffers. Whether changing the transfer mode actually improves scalability in practice depends on the size of the messages being transferred. Improvements in scalability should be most evident when large messages use streamed instead of buffered transfers.  
+  
+ By default, the HTTP, TCP/IP and named pipe transports use buffered message transfers. You can set the values of <xref:System.ServiceModel.TransferMode> on the <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.NetTcpBinding>, <xref:System.ServiceModel.NetNamedPipeBinding> system-provided bindings using the transfer mode properties exposed on them. The mode can be set on the <xref:System.ServiceModel.NetTcpBinding>, for example, by using the <xref:System.ServiceModel.NetTcpBinding.TransferMode%2A> property. It can also be set in the configuration section for the binding.  
+  
+ For bindings that do not expose the transfer mode property, the transfer mode can be set on the binding element of the transport and this element can then be added to a custom binding. For example, create an <xref:System.ServiceModel.Channels.HttpTransportBindingElement> and use the <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.TransferMode%2A> property to set the transfer mode when creating a custom binding. The transfer mode can also be set in the configuration section for the custom binding.  
+  
+ The decision to use either buffered or streamed transfers is a local decision of the endpoint for HTTP transports. For HTTP transports, the transfer mode does not propagate across a connection, or to proxy servers or other intermediaries. Setting the transfer mode is not reflected in the description of the service contract. After generating a proxy to a service, you can (it is allowed but not required) edit the configuration file for services intended to be used with streamed transfers to set the transfer mode. For TCP and named pipe transports, the transfer mode is propagated as a policy assertion.  
+  
+ Using the Streamed transfer mode causes the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] runtime to enforce some restrictions.  
+  
+-   Operations that occur across a streamed transport can have a contract with at most one input and/or one output parameter at the programming model layer. That parameter corresponds to the entire body of the message and must be a <xref:System.ServiceModel.Channels.Message>, be a subtype of <xref:System.IO.Stream>, or implement the <xref:System.Xml.Serialization.IXmlSerializable> interface. Having a return value for an operation is equivalent to having an output parameter.  
+  
+-   Some [!INCLUDE[indigo2](~/includes/indigo2-md.md)] features such as Reliable Messaging and SOAP message-level security rely on buffering messages for transmissions. Using these features may reduce or eliminate the performance benefits gained by using streaming. To secure a streamed transport, use transport level security only or use mixed-mode security, which combines WS-Security claims with transport security.  
+  
+-   SOAP headers are always buffered, even when the transfer mode is set to Streamed. The headers for a message must not exceed the size of the MaxBufferSize transport quota which is exposed on the various bindings and binding elements.  
+  
+ Changing the transfer mode from Buffered to Streamed also changes the native channel shape of the TCP and named pipe transports. For buffered transfers, the native channel shape is <xref:System.ServiceModel.Channels.IDuplexSessionChannel>. For streamed transfers, the native channels are <xref:System.ServiceModel.Channels.IRequestChannel> and <xref:System.ServiceModel.Channels.IReplyChannel>. A consequence of this is that sessionful service contracts cannot be used with transport streaming.  
+  
+   
+  
+## Examples  
+ The following code sample shows setting the <xref:System.ServiceModel.TransferMode> property to Streamed through code:  
+  
+ **c#**  
+  
+```  
+TcpTransportBindingElement transport = new TcpTransportBindingElement();  
+transport.TransferMode = TransferMode.Streamed;  
+BinaryMessageEncodingBindingElement encoder = new BinaryMessageEncodingBindingElement();  
+CustomBinding binding = new CustomBinding(encoder, transport);  
+```  
+  
+ The following sample shows <xref:System.ServiceModel.TransferMode> property to Streamed through configuration:  
+  
+```  
+<customBinding>  
+    <binding name="streamingBinding">  
+        <binaryMessageEncoding />  
+            <tcpTransport transferMode=”Streamed” />  
+     </binding>  
+</customBinding>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Buffered">
+      <MemberSignature Language="C#" Value="Buffered" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.TransferMode Buffered = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransferMode.Buffered" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.TransferMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The request and response messages are both buffered.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Streamed">
+      <MemberSignature Language="C#" Value="Streamed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.TransferMode Streamed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransferMode.Streamed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.TransferMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The request and response messages are both streamed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StreamedRequest">
+      <MemberSignature Language="C#" Value="StreamedRequest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.TransferMode StreamedRequest = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransferMode.StreamedRequest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.TransferMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The request message is streamed and the response message is buffered.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StreamedResponse">
+      <MemberSignature Language="C#" Value="StreamedResponse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.TransferMode StreamedResponse = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransferMode.StreamedResponse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.TransferMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The request message is buffered and the response message is streamed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

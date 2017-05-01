@@ -1,0 +1,34 @@
+<Type Name="TypeValidationEventHandler" FullName="System.Windows.Forms.TypeValidationEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void TypeValidationEventHandler(object sender, TypeValidationEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TypeValidationEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TypeValidationEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.TypeValidationEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.TypeValidationEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted" /> event of the <see cref="T:System.Windows.Forms.MaskedTextBox" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event of the <xref:System.Windows.Forms.MaskedTextBox> class is an optional event that is raised only if the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property is explicitly set to a type other than `null`.  
+  
+ Typically, a handler for the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event is implemented to perform mask-specific and type-specific validation processing. In contrast, general validation is typically performed in the standard <xref:System.Windows.Forms.Control.Validating> event defined in the <xref:System.Windows.Forms.Control> base class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

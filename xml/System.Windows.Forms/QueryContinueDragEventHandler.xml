@@ -1,0 +1,49 @@
+<Type Name="QueryContinueDragEventHandler" FullName="System.Windows.Forms.QueryContinueDragEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void QueryContinueDragEventHandler(object sender, QueryContinueDragEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueryContinueDragEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QueryContinueDragEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.QueryContinueDragEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of an event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.QueryContinueDragEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.Control.QueryContinueDrag" /> event of a <see cref="T:System.Windows.Forms.Control" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Windows.Forms.QueryContinueDragEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about handling events with delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=fullName> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
+  
+ The example also demonstrates using custom cursors for the drag-and-drop operation. The example assumes that two cursor files, `3dwarro.cur` and `3dwno.cur`, exist in the application directory, for the custom drag and no-drop cursors, respectively. The custom cursors will be used if the `UseCustomCursorsCheck`<xref:System.Windows.Forms.CheckBox> is checked. The custom cursors are set in the <xref:System.Windows.Forms.Control.GiveFeedback> event handler.  
+  
+ The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to <xref:System.Windows.Forms.DragDropEffects?displayProperty=fullName>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
+  
+ The data to drop for the right `ListBox` is determined in the <xref:System.Windows.Forms.Control.DragDrop> event handler and the `String` value is added at the appropriate place in the `ListBox`. If the drag operation moves outside the bounds of the form, then the drag-and-drop operation is canceled in the <xref:System.Windows.Forms.Control.QueryContinueDrag> event handler.  
+  
+ This code excerpt demonstrates using the <xref:System.Windows.Forms.QueryContinueDragEventHandler> delegate with the <xref:System.Windows.Forms.Control.QueryContinueDrag> event. See the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method for the complete code example.  
+  
+ [!code-cpp[System.Windows.Forms.Control.DoDragDrop#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.DoDragDrop/CPP/form1.cpp#6)]
+ [!code-csharp[System.Windows.Forms.Control.DoDragDrop#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.DoDragDrop/CS/form1.cs#6)]
+ [!code-vb[System.Windows.Forms.Control.DoDragDrop#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Control.DoDragDrop/VB/form1.vb#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

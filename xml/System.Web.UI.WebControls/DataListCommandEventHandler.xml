@@ -1,0 +1,55 @@
+<Type Name="DataListCommandEventHandler" FullName="System.Web.UI.WebControls.DataListCommandEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataListCommandEventHandler(object source, DataListCommandEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataListCommandEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataListCommandEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="source" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.DataListCommandEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="source">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.DataListCommandEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Web.UI.WebControls.DataList.CancelCommand" />, <see cref="E:System.Web.UI.WebControls.DataList.DeleteCommand" />, <see cref="E:System.Web.UI.WebControls.DataList.EditCommand" />, <see cref="E:System.Web.UI.WebControls.DataList.ItemCommand" />, and <see cref="E:System.Web.UI.WebControls.DataList.UpdateCommand" /> events of a <see cref="T:System.Web.UI.WebControls.DataList" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataList.CancelCommand> event is raised when the `Cancel` button for an item in the <xref:System.Web.UI.WebControls.DataList> control is clicked.  
+  
+ The <xref:System.Web.UI.WebControls.DataList.DeleteCommand> event is raised when the `Delete` button for an item in the <xref:System.Web.UI.WebControls.DataList> control is clicked.  
+  
+ The <xref:System.Web.UI.WebControls.DataList.EditCommand> event is raised when the `Edit` button for an item in the <xref:System.Web.UI.WebControls.DataList> control is clicked.  
+  
+ The <xref:System.Web.UI.WebControls.DataList.ItemCommand> event is raised when any button for an item in the <xref:System.Web.UI.WebControls.DataList> control is clicked. This allows you to programmatically test for when a specific command button is clicked and take appropriate action. This event is commonly used to handle custom command buttons for the <xref:System.Web.UI.WebControls.DataList> control.  
+  
+ The <xref:System.Web.UI.WebControls.DataList.UpdateCommand> event is raised when the `Update` button for an item in the <xref:System.Web.UI.WebControls.DataList> control is clicked.  
+  
+ When you create a <xref:System.Web.UI.WebControls.DataListCommandEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to define event handlers for the <xref:System.Web.UI.WebControls.DataList.EditCommand>, <xref:System.Web.UI.WebControls.DataList.UpdateCommand>, <xref:System.Web.UI.WebControls.DataList.CancelCommand> and <xref:System.Web.UI.WebControls.DataList.DeleteCommand> events of a <xref:System.Web.UI.WebControls.DataList> control. This example specifies the event handlers declaratively, setting the event handler for each command property on the <xref:System.Web.UI.WebControls.DataList> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to specify the event handlers and programmatically add them to the events in the `Page_Load` method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

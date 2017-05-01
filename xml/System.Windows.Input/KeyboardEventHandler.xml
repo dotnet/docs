@@ -1,0 +1,32 @@
+<Type Name="KeyboardEventHandler" FullName="System.Windows.Input.KeyboardEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void KeyboardEventHandler(object sender, KeyboardEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyboardEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Input.KeyboardEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle keyboard-related routed events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No existing keyboard event in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] uses the <xref:System.Windows.Input.KeyboardEventHandler> delegate. <xref:System.Windows.Input.KeyboardEventHandler> uses the <xref:System.Windows.Input.KeyboardEventArgs> base class as its event data class. <xref:System.Windows.Input.KeyboardEventArgs> serves as the base class for the more specific <xref:System.Windows.Input.KeyEventArgs> and <xref:System.Windows.Input.KeyboardFocusChangedEventArgs> event data classes. These event data classes are used by the <xref:System.Windows.Input.KeyEventHandler> and <xref:System.Windows.Input.KeyboardFocusChangedEventHandler> delegates, and those delegates are used by existing [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] events such as <xref:System.Windows.UIElement.KeyDown?displayProperty=fullName> and <xref:System.Windows.UIElement.LostKeyboardFocus?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

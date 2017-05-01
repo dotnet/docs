@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "<include> XML tag"
 ms.assetid: ba8e9173-82cd-460b-8938-a075a2dfb36d
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

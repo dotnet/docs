@@ -1,0 +1,207 @@
+<Type Name="AddressHeaderCollection" FullName="System.ServiceModel.Channels.AddressHeaderCollection">
+  <TypeSignature Language="C#" Value="public sealed class AddressHeaderCollection : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ServiceModel.Channels.AddressHeader&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AddressHeaderCollection extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.ServiceModel.Channels.AddressHeader&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.AddressHeaderCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ServiceModel.Channels.AddressHeader&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.ServiceModel.Channels.AddressHeader</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a thread-safe, read-only collection of address headers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.AddressHeaderCollection> can be initialized with an <xref:System.Collections.Generic.IEnumerable%601> set of <xref:System.ServiceModel.Channels.AddressHeader> objects and then searched for a header with a specific qualified name using the <xref:System.ServiceModel.Channels.AddressHeaderCollection.FindHeader%28System.String%2CSystem.String%29> method. To find all of the headers with a specific qualified name, use the <xref:System.ServiceModel.Channels.AddressHeaderCollection.FindAll%28System.String%2CSystem.String%29> method. The <xref:System.ServiceModel.Channels.AddressHeaderCollection.AddHeadersTo%28System.ServiceModel.Channels.Message%29> method is used to add headers to the headers of a specified message.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [SL_AddressHeaderCollection#0](SL_AddressHeaderCollection#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AddressHeaderCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeaderCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeaderCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code snippet illustrates how to create an instance of <xref:System.ServiceModel.Channels.AddressHeaderCollection> class with the default constructor.  
+  
+<!-- TODO: review snippet reference  [!CODE [SL_AddressHeaderCollection#1](SL_AddressHeaderCollection#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AddressHeaderCollection (System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Channels.AddressHeader&gt; addressHeaders);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Channels.AddressHeader&gt; addressHeaders) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeaderCollection.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.AddressHeader})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="addressHeaders" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Channels.AddressHeader&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="addressHeaders">The <see cref="T:System.Collections.Generic.IEnumerable`1" /> set of <see cref="T:System.ServiceModel.Channels.AddressHeader" /> objects used to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeaderCollection" /> class from an enumerable set of address headers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code snippet illustrates how to create an instance of <xref:System.ServiceModel.Channels.AddressHeaderCollection> class.  
+  
+<!-- TODO: review snippet reference  [!CODE [SL_AddressHeaderCollection#2](SL_AddressHeaderCollection#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">One of the address headers in the <paramref name="addressHeaders" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHeadersTo">
+      <MemberSignature Language="C#" Value="public void AddHeadersTo (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddHeadersTo(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeaderCollection.AddHeadersTo(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to which the headers are added.</param>
+        <summary>Adds the headers in the collection to the headers of a specified message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This inserts the headers from the current collection into the <xref:System.ServiceModel.Channels.MessageHeaders> associated with the <xref:System.ServiceModel.Channels.Message> and accessible through the <xref:System.ServiceModel.Channels.Message.Headers%2A> property.  
+  
+   
+  
+## Examples  
+ The following code snippet illustrates how to call this method.  
+  
+<!-- TODO: review snippet reference  [!CODE [SL_AddressHeaderCollection#3](SL_AddressHeaderCollection#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="message" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAll">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.AddressHeader[] FindAll (string name, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.AddressHeader[] FindAll(string name, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeaderCollection.FindAll(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.AddressHeader[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the address header to be found.</param>
+        <param name="ns">The namespace of the address header to be found.</param>
+        <summary>Finds all the address headers in the collection with the specified name and namespace.</summary>
+        <returns>The <see cref="T:System.Array" /> of type <see cref="T:System.ServiceModel.Channels.AddressHeader" /> that contains all the headers in the collection with the specified name and namespace.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code snippet illustrates how to call this method.  
+  
+<!-- TODO: review snippet reference  [!CODE [SL_AddressHeaderCollection#5](SL_AddressHeaderCollection#5)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="ns" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindHeader">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.AddressHeader FindHeader (string name, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.AddressHeader FindHeader(string name, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeaderCollection.FindHeader(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.AddressHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the address header to be found.</param>
+        <param name="ns">The namespace of the address header to be found.</param>
+        <summary>Finds the first address header in the collection with a specified name and namespace.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> in the collection with the specified name and namespace.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you need to find all the address headers in the collection with the specified name and namespace, use the <xref:System.ServiceModel.Channels.AddressHeaderCollection.FindAll%28System.String%2CSystem.String%29> method instead.  
+  
+ <xref:System.ArgumentException> is not the ideal exception type when there is more than one header in the collection. Callers of this method should take care to handle this exception when the collection contains multiple entries with the same name and namespace.  
+  
+   
+  
+## Examples  
+ The following code snippet illustrates how to call this method.  
+  
+<!-- TODO: review snippet reference  [!CODE [SL_AddressHeaderCollection#4](SL_AddressHeaderCollection#4)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="ns" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">There is more than one header that has the specified <paramref name="name" /> and <paramref name="ns" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

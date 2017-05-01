@@ -1,0 +1,95 @@
+<Type Name="IFileChangeNotificationSystem" FullName="System.Runtime.Caching.Hosting.IFileChangeNotificationSystem">
+  <TypeSignature Language="C#" Value="public interface IFileChangeNotificationSystem" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFileChangeNotificationSystem" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Caching</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a way to expose a custom <see cref="T:System.Runtime.Caching.FileChangeMonitor" /> object to a cache implementation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In ASP.NET, the <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface provides access to internal file-change notification management.  
+  
+ The <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface is used internally by the <xref:System.Runtime.Caching.HostFileChangeMonitor> class.  
+  
+ When a cache implementation runs in an ASP.NET application domain, ASP.NET implements an <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface through the <xref:System.Runtime.Caching.ObjectCache.Host%2A> property. The <xref:System.Runtime.Caching.HostFileChangeMonitor> class detects this property and uses the ASP.NET file-change notification system to evict cache entries based on file-change notification.  
+  
+ In non-ASP.NET applications, there is no host environment that implements a custom <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface. As a result, the <xref:System.Runtime.Caching.HostFileChangeMonitor> class uses the <xref:System.IO.FileSystemWatcher> class of the CLR.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="StartMonitoring">
+      <MemberSignature Language="C#" Value="public void StartMonitoring (string filePath, System.Runtime.Caching.OnChangedCallback onChangedCallback, out object state, out DateTimeOffset lastWriteTime, out long fileSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartMonitoring(string filePath, class System.Runtime.Caching.OnChangedCallback onChangedCallback, object state, valuetype System.DateTimeOffset lastWriteTime, int64 fileSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StartMonitoring(System.String,System.Runtime.Caching.OnChangedCallback,System.Object@,System.DateTimeOffset@,System.Int64@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="onChangedCallback" Type="System.Runtime.Caching.OnChangedCallback" />
+        <Parameter Name="state" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="lastWriteTime" Type="System.DateTimeOffset&amp;" RefType="out" />
+        <Parameter Name="fileSize" Type="System.Int64&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="filePath">The fully qualified physical path of a directory or file to monitor for changes.</param>
+        <param name="onChangedCallback">A reference to a method that implements the <see cref="T:System.Runtime.Caching.OnChangedCallback" /> delegate. When the monitored file or directory changes, the host environment's implementation of the <see cref="T:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem" /> interface raises an event by calling the <see cref="T:System.Runtime.Caching.OnChangedCallback" /> class.</param>
+        <param name="state">The state that is supplied by the host environment. Cache implementations and custom change monitors should treat the state value as opaque. However, the state must be stored so that it can be sent to the host environment when the cache implementation calls the <see cref="M:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StopMonitoring(System.String,System.Object)" /> method.</param>
+        <param name="lastWriteTime">When this method returns, contains the last date and time that a write operation occurred on <c>filePath</c>. This parameter is passed uninitialized. This parameter is returned from the host environment.</param>
+        <param name="fileSize">When this method returns, contains the total size of the monitored <c>filePath</c>. This parameter is passed uninitialized. This parameter is returned from the host environment.</param>
+        <summary>Registers a file path to monitor with the host environment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used by custom cache objects and custom change monitors that implement the host environment's <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface in order to register file paths for monitoring with the host environment. The <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StartMonitoring%2A> method is called by implementers of the <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface in order to register a file or directory for change monitoring.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopMonitoring">
+      <MemberSignature Language="C#" Value="public void StopMonitoring (string filePath, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopMonitoring(string filePath, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StopMonitoring(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="filePath">The path of the file or folder to stop monitoring. This should match a file path value that was passed in an earlier call to the <see cref="M:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StartMonitoring(System.String,System.Runtime.Caching.OnChangedCallback,System.Object@,System.DateTimeOffset@,System.Int64@)" /> method.</param>
+        <param name="state">The state information that was originally supplied by the host environment during an earlier call to the <see cref="M:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StartMonitoring(System.String,System.Runtime.Caching.OnChangedCallback,System.Object@,System.DateTimeOffset@,System.Int64@)" /> method.</param>
+        <summary>Ends change monitoring.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StopMonitoring%2A> method must be called by custom caches and custom change monitors that are being disposed by the host environment in order to stop monitoring file paths and directories.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

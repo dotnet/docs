@@ -1,0 +1,335 @@
+<Type Name="FormParameter" FullName="System.Web.UI.WebControls.FormParameter">
+  <TypeSignature Language="C#" Value="public class FormParameter : System.Web.UI.WebControls.Parameter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormParameter extends System.Web.UI.WebControls.Parameter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormParameter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.Parameter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("FormField")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Binds the value of an HTTP request <see cref="P:System.Web.HttpRequest.Form" /> field to a parameter object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.UI.WebControls.FormParameter> class to bind the value of a form variable in the <xref:System.Web.HttpRequest.Form%2A> collection to a parameter used in a parameterized query or command. Controls that bind data to the parameter might throw an exception if a <xref:System.Web.UI.WebControls.FormParameter> is specified but no corresponding form variable is passed. They might also display no data if the form variable is passed with no corresponding value. Set the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> to avoid these situations where appropriate.  
+  
+ The <xref:System.Web.UI.WebControls.FormParameter> class provides the <xref:System.Web.UI.WebControls.FormParameter.FormField%2A> property, which identifies the name of the form variable to bind to, in addition to those inherited from the <xref:System.Web.UI.WebControls.Parameter> class.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Web.UI.WebControls.FormParameter> does not validate the value passed by the form element in any way; it uses the raw value. In most cases you can validate the value of the <xref:System.Web.UI.WebControls.FormParameter> before it is used by a data source control by handling an event, such as the `Selecting`, `Updating`, `Inserting`, or `Deleting` event exposed by the data source control you are using. If the value of the parameter does not pass your validation tests, you can cancel the data operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the associated <xref:System.ComponentModel.CancelEventArgs> class to `true`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to insert data into a database using the <xref:System.Web.UI.WebControls.SqlDataSource> control and a simple ASP.NET Web page. The current data in the data table is displayed in the <xref:System.Web.UI.WebControls.DropDownList> control. You can add new records by entering values in the <xref:System.Web.UI.WebControls.TextBox> controls and clicking the button. When the button is clicked, the specified values are inserted into the database, and the <xref:System.Web.UI.WebControls.DropDownList> is refreshed.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormParameter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new unnamed instance of the <see cref="T:System.Web.UI.WebControls.FormParameter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.FormParameter> object created with the <xref:System.Web.UI.WebControls.FormParameter.%23ctor%2A> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.FormParameter.FormField%2A> is initialized to <xref:System.String.Empty?displayProperty=fullName>. Additionally, the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to null (`Nothing` in Visual Basic).  
+  
+   
+  
+## Examples  
+  
+> [!IMPORTANT]
+>  The <xref:System.Web.UI.WebControls.FormParameter> does not validate the value passed by the form element in any way; it uses the raw value. In most cases, you can validate the value of the <xref:System.Web.UI.WebControls.FormParameter> before it is used by a data source control by handling an event, such as the `Selecting`, `Updating`, `Inserting`, or `Deleting` event exposed by the data source control you are using. If the value of the parameter does not pass your validation tests, you can cancel the data operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the associated <xref:System.ComponentModel.CancelEventArgs> class to `true`.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.FormParameter_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_1/CS/fp1cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.FormParameter_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_1/VB/fp1vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected FormParameter (System.Web.UI.WebControls.FormParameter original);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.FormParameter original) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.#ctor(System.Web.UI.WebControls.FormParameter)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="original" Type="System.Web.UI.WebControls.FormParameter" />
+      </Parameters>
+      <Docs>
+        <param name="original">A <see cref="T:System.Web.UI.WebControls.FormParameter" /> instance that the current instance is initialized from.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FormParameter" /> class with the values of the instance specified by the <paramref name="original" /> parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FormParameter.%23ctor%2A> constructor is a `protected` copy constructor used to clone a <xref:System.Web.UI.WebControls.FormParameter> instance. The values of the <xref:System.Web.UI.WebControls.FormParameter>, including <xref:System.Web.UI.WebControls.FormParameter.FormField%2A>, <xref:System.Web.UI.WebControls.Parameter.Name%2A>, and <xref:System.Web.UI.WebControls.Parameter.Type%2A> are all transferred to the new instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormParameter (string name, string formField);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string formField) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="formField" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the parameter.</param>
+        <param name="formField">The name of the form variable that the parameter object is bound to. The default is <see cref="F:System.String.Empty" />.</param>
+        <summary>Initializes a new named instance of the <see cref="T:System.Web.UI.WebControls.FormParameter" /> class, using the specified string to identify which form variable field to bind to.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.FormParameter> object created with the <xref:System.Web.UI.WebControls.FormParameter.%23ctor%2A> constructor is initialized with the specified parameter name and string that identifies the form variable that the parameter binds to. The <xref:System.Web.UI.WebControls.Parameter.Type%2A> and <xref:System.Web.UI.WebControls.Parameter.Direction%2A> properties are initialized with default values.  
+  
+   
+  
+## Examples  
+  
+> [!IMPORTANT]
+>  The <xref:System.Web.UI.WebControls.FormParameter> does not validate the value passed by the form element in any way; it uses the raw value. In most cases, you can validate the value of the <xref:System.Web.UI.WebControls.FormParameter> before it is used by a data source control by handling an event, such as the `Selecting`, `Updating`, `Inserting`, or `Deleting` event exposed by the data source control you are using. If the value of the parameter does not pass your validation tests, you can cancel the data operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the associated <xref:System.ComponentModel.CancelEventArgs> class to `true`.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/CS/fp2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/VB/fp2vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormParameter (string name, System.Data.DbType dbType, string formField);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType, string formField) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.#ctor(System.String,System.Data.DbType,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dbType" Type="System.Data.DbType" />
+        <Parameter Name="formField" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the parameter.</param>
+        <param name="dbType">The database type of the parameter.</param>
+        <param name="formField">The name of the form variable that the parameter object is bound to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FormParameter" /> class, using the specified string to identify which form variable field to bind to.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormParameter (string name, TypeCode type, string formField);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.TypeCode type, string formField) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.#ctor(System.String,System.TypeCode,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.TypeCode" />
+        <Parameter Name="formField" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the parameter.</param>
+        <param name="type">The type that the parameter represents. The default is <see cref="F:System.TypeCode.Object" />.</param>
+        <param name="formField">The name of the form variable that the parameter object is bound to. The default is <see cref="F:System.String.Empty" />.</param>
+        <summary>Initializes a new named and strongly typed instance of the <see cref="T:System.Web.UI.WebControls.FormParameter" /> class, using the specified string to identify which form variable to bind to.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.FormParameter> object created with the <xref:System.Web.UI.WebControls.FormParameter.%23ctor%2A> constructor is initialized with the specified parameter name, <xref:System.Web.UI.WebControls.Parameter.Type%2A>, and string that identifies the form variable that the parameter binds to. Only the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> and <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A> properties are initialized with default values.  
+  
+   
+  
+## Examples  
+  
+> [!IMPORTANT]
+>  The <xref:System.Web.UI.WebControls.FormParameter> does not validate the value passed by the form element in any way; it uses the raw value. In most cases, you can validate the value of the <xref:System.Web.UI.WebControls.FormParameter> before it is used by a data source control by handling an event, such as the `Selecting`, `Updating`, `Inserting`, or `Deleting` event exposed by the data source control you are using. If the value of the parameter does not pass your validation tests, you can cancel the data operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the associated <xref:System.ComponentModel.CancelEventArgs> class to `true`.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.FormParameter_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_3/CS/fp3cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.FormParameter_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_3/VB/fp3vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.Parameter Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.Parameter Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Parameter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a duplicate of the current <see cref="T:System.Web.UI.WebControls.FormParameter" /> instance.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.FormParameter" /> that is an exact duplicate of the current one.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FormParameter.Clone%2A> method calls the <xref:System.Web.UI.WebControls.FormParameter.%23ctor%2A> copy constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.FormParameter> class with the values of the current instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="protected override object Evaluate (System.Web.HttpContext context, System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="context">The current <see cref="T:System.Web.HttpContext" /> of the request.</param>
+        <param name="control">A <see cref="T:System.Web.UI.Control" /> that is associated with the page where the <see cref="T:System.Web.UI.WebControls.FormParameter" /> is used.</param>
+        <summary>Updates and returns the value of the <see cref="T:System.Web.UI.WebControls.FormParameter" /> object.</summary>
+        <returns>An object that represents the updated and current value of the parameter. If the context or the request is null (<see langword="Nothing" /> in Visual Basic), the <see cref="M:System.Web.UI.WebControls.FormParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" /> method returns null.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FormParameter> attempts to bind to the form variable every time the <xref:System.Web.UI.WebControls.FormParameter.Evaluate%2A> method is called.  
+  
+ The `context` parameter is used by the <xref:System.Web.UI.WebControls.FormParameter.Evaluate%2A> method to retrieve the value of the specified form field from the request. The `control` parameter is ignored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormField">
+      <MemberSignature Language="C#" Value="public string FormField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FormField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormParameter.FormField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the form variable that the parameter binds to.</summary>
+        <value>A string that identifies the form variable to which the parameter binds.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FormParameter.FormField%2A> identifies a name/value pair that is passed in the <xref:System.Web.HttpRequest.Form%2A> collection. While the <xref:System.Web.UI.WebControls.FormParameter.FormField%2A> property identifies the name of the pair, the <xref:System.Web.UI.WebControls.FormParameter> binds to its corresponding value at run time. If the expected form variable string name/value pair is not passed to the ASP.NET Web page in the collection, the <xref:System.Web.UI.WebControls.FormParameter.Evaluate%2A> method binds the parameter to the value of the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property, if it is set. If the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> is not set, the <xref:System.Web.UI.WebControls.FormParameter.Evaluate%2A> method fails to bind the parameter to a value.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to display filtered data using an <xref:System.Web.UI.WebControls.ObjectDataSource> control and a <xref:System.Web.UI.WebControls.FormParameter> to retrieve data from a middle-tier business object and a <xref:System.Web.UI.WebControls.GridView> control to display the results.  
+  
+ The code example consists of a <xref:System.Web.UI.WebControls.TextBox>, a <xref:System.Web.UI.WebControls.GridView> control, the <xref:System.Web.UI.WebControls.ObjectDataSource> control, and a submit button. By default, the <xref:System.Web.UI.WebControls.TextBox> is populated with the name of one of the Northwind Traders employees. The <xref:System.Web.UI.WebControls.GridView> displays information about the employee identified by the name in the <xref:System.Web.UI.WebControls.TextBox>. To retrieve data on another employee, enter the full name of the employee in the <xref:System.Web.UI.WebControls.TextBox> and click the button.  
+  
+ The <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property specifies an expression used to filter the data retrieved by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A>. This property uses parameter placeholders that are evaluated to the parameters contained in the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterParameters%2A> collection. In this example, the parameter placeholder is a <xref:System.Web.UI.WebControls.FormParameter> bound to the value of the <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  -->  
+  
+ The following code example shows the middle-tier business object that the previous code example uses. This example consists of two basic classes: The `EmployeeLogic` class encapsulates business logic, and the `NorthwindEmployee` class is a model class that contains only the basic functionality required to load and persist data from the data tier. For simplicity, the `EmployeeLogic` class creates a static set of data, rather than retrieving the data from a data tier. It is also helpful for this example, because the sample relies on the user to provide the full name of a Northwind Traders employee to demonstrate filtering. For a complete working example, you must compile and use these classes with the ASP.NET code examples provided.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Web.UI.WebControls.FormParameter> does not validate the value passed by the form element in any way; it uses the raw value. In most cases, you can validate the value of the <xref:System.Web.UI.WebControls.FormParameter> before it is used by a data source control by handling an event, such as the `Selecting`, `Updating`, `Inserting`, or `Deleting` event exposed by the data source control you are using. If the value of the parameter does not pass your validation tests, you can cancel the data operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the associated <xref:System.ComponentModel.CancelEventArgs> class to `true`.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/northwindemployee9.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/northwindemployee9.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateInput">
+      <MemberSignature Language="C#" Value="public bool ValidateInput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ValidateInput" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormParameter.ValidateInput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the client input in the parameter is validated.</summary>
+        <value>
+          <see langword="true" /> if client input is validated; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

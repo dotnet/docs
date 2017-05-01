@@ -1,0 +1,56 @@
+<Type Name="IMessageFilter" FullName="System.Windows.Forms.IMessageFilter">
+  <TypeSignature Language="C#" Value="public interface IMessageFilter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageFilter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IMessageFilter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a message filter interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface allows an application to capture a message before it is dispatched to a control or form.  
+  
+ A class that implements the <xref:System.Windows.Forms.IMessageFilter> interface can be added to the application's message pump to filter out a message or perform other operations before the message is dispatched to a form or control. To add the message filter to an application's message pump, use the <xref:System.Windows.Forms.Application.AddMessageFilter%2A> method in the <xref:System.Windows.Forms.Application> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PreFilterMessage">
+      <MemberSignature Language="C#" Value="public bool PreFilterMessage (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool PreFilterMessage(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IMessageFilter.PreFilterMessage(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The message to be dispatched. You cannot modify this message.</param>
+        <summary>Filters out a message before it is dispatched.</summary>
+        <returns>
+          <see langword="true" /> to filter the message and stop it from being dispatched; <see langword="false" /> to allow the message to continue to the next filter or control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Windows.Forms.IMessageFilter.PreFilterMessage%2A> to filter out a message before it is dispatched to a control or form. For example, to stop the <xref:System.Windows.Forms.Control.Click> event of a <xref:System.Windows.Forms.Button> control from being dispatched to the control, you implement the <xref:System.Windows.Forms.IMessageFilter.PreFilterMessage%2A> method and return a `true` value when the <xref:System.Windows.Forms.Control.Click> message occurs. You can also use this method to perform code work that you might need to do before the message is dispatched.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">Requires <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" /> permission at link time.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

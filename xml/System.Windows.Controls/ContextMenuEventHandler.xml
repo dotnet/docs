@@ -1,0 +1,25 @@
+<Type Name="ContextMenuEventHandler" FullName="System.Windows.Controls.ContextMenuEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ContextMenuEventHandler(object sender, ContextMenuEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextMenuEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ContextMenuEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Controls.ContextMenuEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.FrameworkElement.ContextMenuOpening" /> and <see cref="E:System.Windows.FrameworkElement.ContextMenuClosing" /> routed events, as well as equivalent <see cref="T:System.Windows.ContentElement" /> events.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

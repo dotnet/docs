@@ -1,0 +1,200 @@
+<Type Name="FederationManagement" FullName="System.IdentityModel.Services.FederationManagement">
+  <TypeSignature Language="C#" Value="public static class FederationManagement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FederationManagement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.FederationManagement" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines static methods for creating Federation Metadata documents and for updating application configuration based on Federation Metadata documents.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about Federation Metadata documents, see section three of the following specification: [Web Services Federation Language (WS-Federation) Version 1.2](http://go.microsoft.com/fwlink/?LinkID=210152) (http://go.microsoft.com/fwlink/?LinkID=210152).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateApplicationFederationMetadata">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlReader CreateApplicationFederationMetadata (Uri applicationUri, System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.DisplayClaim&gt; claimsRequired, System.IdentityModel.Services.ApplicationType applicationType, System.Collections.ObjectModel.Collection&lt;Uri&gt; audienceUris);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlReader CreateApplicationFederationMetadata(class System.Uri applicationUri, class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Metadata.DisplayClaim&gt; claimsRequired, valuetype System.IdentityModel.Services.ApplicationType applicationType, class System.Collections.ObjectModel.Collection`1&lt;class System.Uri&gt; audienceUris) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationManagement.CreateApplicationFederationMetadata(System.Uri,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Collections.ObjectModel.Collection{System.IdentityModel.Metadata.DisplayClaim},System.IdentityModel.Services.ApplicationType,System.Collections.ObjectModel.Collection{System.Uri})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="applicationUri" Type="System.Uri" />
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
+        <Parameter Name="claimsRequired" Type="System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.DisplayClaim&gt;" />
+        <Parameter Name="applicationType" Type="System.IdentityModel.Services.ApplicationType" />
+        <Parameter Name="audienceUris" Type="System.Collections.ObjectModel.Collection&lt;System.Uri&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="applicationUri">The application URI.</param>
+        <param name="certificate">The X.509 certificate to use to sign the metadata.</param>
+        <param name="claimsRequired">The claims required by the application.</param>
+        <param name="applicationType">One of the <see cref="T:System.IdentityModel.Services.ApplicationType" /> values that specifies the type of application that the metadata describes. This is used to determine the endpoints to create.</param>
+        <param name="audienceUris">The collection of acceptable URIs that can be used for this application.</param>
+        <summary>Creates an XML document that contains Federation Metadata.</summary>
+        <returns>An XML reader that contains the metadata document that was created by using the parameters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateIdentityProviderTrustInfo">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlReader UpdateIdentityProviderTrustInfo (System.Xml.XmlReader metadataReader, System.Xml.XmlReader inputConfiguration, bool claimsOfferedUpdate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlReader UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, bool claimsOfferedUpdate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo(System.Xml.XmlReader,System.Xml.XmlReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="inputConfiguration" Type="System.Xml.XmlReader" />
+        <Parameter Name="claimsOfferedUpdate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="metadataReader">An XML reader that contains the metadata document.</param>
+        <param name="inputConfiguration">An XML reader that contains the configuration.</param>
+        <param name="claimsOfferedUpdate">
+          <see langword="true" /> if the claims offered list should be updated; otherwise, <see langword="false" />.</param>
+        <summary>Updates the specified application configuration, if needed, based on the specified Federation Metadata document and a value that specifies whether the claims offered list should be updated.</summary>
+        <returns>An XML reader that contains the updated configuration or <see langword="null" /> if the configuration could not be updated.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="metadataReader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="inputConfiguration" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateIdentityProviderTrustInfo">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlReader UpdateIdentityProviderTrustInfo (System.Xml.XmlReader metadataReader, System.Xml.XmlReader inputConfiguration, bool claimsOfferedUpdate, System.IdentityModel.Metadata.MetadataSerializer metadataSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlReader UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, bool claimsOfferedUpdate, class System.IdentityModel.Metadata.MetadataSerializer metadataSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo(System.Xml.XmlReader,System.Xml.XmlReader,System.Boolean,System.IdentityModel.Metadata.MetadataSerializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="inputConfiguration" Type="System.Xml.XmlReader" />
+        <Parameter Name="claimsOfferedUpdate" Type="System.Boolean" />
+        <Parameter Name="metadataSerializer" Type="System.IdentityModel.Metadata.MetadataSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="metadataReader">An XML reader that contains the metadata document.</param>
+        <param name="inputConfiguration">An XML reader that contains the configuration.</param>
+        <param name="claimsOfferedUpdate">
+          <see langword="true" /> if the claims offered list should be updated; otherwise, <see langword="false" />.</param>
+        <param name="metadataSerializer">The serializer with which to read the STS metadata.</param>
+        <summary>Updates the specified application configuration, if needed, based on the specified Federation Metadata document and a value that specifies whether the claims offered list should be updated. The serializer with which to read the security token service (STS) metadata is also specified.</summary>
+        <returns>An XML reader that contains the updated configuration or <see langword="null" /> if the configuration could not be updated.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="metadataReader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="inputConfiguration" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="metadataSerializer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateIdentityProviderTrustInfo">
+      <MemberSignature Language="C#" Value="public static void UpdateIdentityProviderTrustInfo (System.Xml.XmlReader metadataReader, System.Xml.XmlReader inputConfiguration, out System.Xml.XmlNodeReader newIssuerNameRegistry, out System.Xml.XmlNodeReader claimTypesOffered);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, class System.Xml.XmlNodeReader newIssuerNameRegistry, class System.Xml.XmlNodeReader claimTypesOffered) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo(System.Xml.XmlReader,System.Xml.XmlReader,System.Xml.XmlNodeReader@,System.Xml.XmlNodeReader@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="inputConfiguration" Type="System.Xml.XmlReader" />
+        <Parameter Name="newIssuerNameRegistry" Type="System.Xml.XmlNodeReader&amp;" RefType="out" />
+        <Parameter Name="claimTypesOffered" Type="System.Xml.XmlNodeReader&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="metadataReader">An XML reader that contains the metadata document.</param>
+        <param name="inputConfiguration">An XML reader that contains the configuration.</param>
+        <param name="newIssuerNameRegistry">When this method returns, contains an XML node reader that contains the elements that specify the issuer name registry. <see langword="null" /> if there are is no issuer name registry specified. This parameter is treated as uninitialized.</param>
+        <param name="claimTypesOffered">When this method returns, if the list of claim types offered has been changed, contains an XML node reader that contains elements that specify new list. If the list has not been changed, returns <see langword="null" />. This parameter is treated as uninitialized.</param>
+        <summary>Updates the specified application configuration, if needed, based on the specified Federation Metadata document. Returns the configuration elements for the issuer name registry, as well as the configuration elements for the updated list of claims types offered, if it has been updated.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="metadataReader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="inputConfiguration" /> <paramref name="metadataReader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateIdentityProviderTrustInfo">
+      <MemberSignature Language="C#" Value="public static void UpdateIdentityProviderTrustInfo (System.Xml.XmlReader metadataReader, System.Xml.XmlReader inputConfiguration, out System.Xml.XmlNodeReader newIssuerNameRegistry, out System.Xml.XmlNodeReader claimTypesOffered, System.IdentityModel.Metadata.MetadataSerializer metadataSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, class System.Xml.XmlNodeReader newIssuerNameRegistry, class System.Xml.XmlNodeReader claimTypesOffered, class System.IdentityModel.Metadata.MetadataSerializer metadataSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo(System.Xml.XmlReader,System.Xml.XmlReader,System.Xml.XmlNodeReader@,System.Xml.XmlNodeReader@,System.IdentityModel.Metadata.MetadataSerializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="inputConfiguration" Type="System.Xml.XmlReader" />
+        <Parameter Name="newIssuerNameRegistry" Type="System.Xml.XmlNodeReader&amp;" RefType="out" />
+        <Parameter Name="claimTypesOffered" Type="System.Xml.XmlNodeReader&amp;" RefType="out" />
+        <Parameter Name="metadataSerializer" Type="System.IdentityModel.Metadata.MetadataSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="metadataReader">An XML reader that contains the metadata document.</param>
+        <param name="inputConfiguration">An XML reader that contains the configuration.</param>
+        <param name="newIssuerNameRegistry">When this method returns, contains an XML node reader that contains the elements that specify the issuer name registry. <see langword="null" /> if there are is no issuer name registry specified. This parameter is treated as uninitialized.</param>
+        <param name="claimTypesOffered">When this method returns, if the list of claim types offered has been changed, contains an XML node reader that contains elements that specify new list. If the list has not been changed, returns <see langword="null" />. This parameter is treated as uninitialized.</param>
+        <param name="metadataSerializer">The serializer with which to read the STS metadata.</param>
+        <summary>Updates the specified application configuration, if needed, based on the specified Federation Metadata document. Returns configuration elements for the issuer name registry, as well as the configuration elements for the updated list of claims types offered, if it has been updated. The serializer with which to read the security token service (STS) metadata is also specified.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="metadataReader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="inputConfiguration" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="metadataSerializer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,15 @@
+This shows how the bug on the velocities occurs.
+This was removed from GamePiece.cs so that it doesn't appear in the full listing.
+---------------------------------------------------------------------------------
+
+ private void OnInertiaDeltaTestHandler(object sender, Manipulation2DDeltaEventArgs e)
+ {
+     float testX = e.Velocities.LinearVelocityX;
+     float testY = e.Velocities.LinearVelocityY;
+     // The Complete() method sets the velocities to zero
+     // unless you access the velocities first. Then, it leaves them alone.
+     inertiaProcessor.Complete(System.Diagnostics.Stopwatch.GetTimestamp());
+     // If you comment out the testX and testY lines, this outputs 0,0.
+     // Otherwise, it outputs some non-zero values.
+     System.Diagnostics.Debug.WriteLine(String.Format("{0}, {1}", e.Velocities.LinearVelocityX, e.Velocities.LinearVelocityY));
+ }

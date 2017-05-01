@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "breaking changes [Visual Basic]"
 ms.assetid: 708fb176-35eb-4cbc-a6e7-a04c6e3bdaff
 caps.latest.revision: 49
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

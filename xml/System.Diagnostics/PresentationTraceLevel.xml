@@ -1,0 +1,98 @@
+<Type Name="PresentationTraceLevel" FullName="System.Diagnostics.PresentationTraceLevel">
+  <TypeSignature Language="C#" Value="public enum PresentationTraceLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PresentationTraceLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.PresentationTraceLevel" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the level of detail to trace about a particular object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.PresentationTraceLevel> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+   
+  
+## Examples  
+ If you run the application that contains the following [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] under a debugger, the output window provides lines of information describing the status and evaluation of the binding:  
+  
+ [!code-xml[Debugging#1](~/samples/snippets/csharp/VS_Snippets_Wpf/Debugging/CSharp/Page1.xaml#1)]  
+[!code-xml[Debugging#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Debugging/CSharp/Page1.xaml#2)]  
+[!code-xml[Debugging#3](~/samples/snippets/csharp/VS_Snippets_Wpf/Debugging/CSharp/Page1.xaml#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="High">
+      <MemberSignature Language="C#" Value="High" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PresentationTraceLevel High = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PresentationTraceLevel.High" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PresentationTraceLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Traces all additional information.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Low">
+      <MemberSignature Language="C#" Value="Low" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PresentationTraceLevel Low = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PresentationTraceLevel.Low" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PresentationTraceLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Traces some additional information.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Medium">
+      <MemberSignature Language="C#" Value="Medium" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PresentationTraceLevel Medium = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PresentationTraceLevel.Medium" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PresentationTraceLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Traces a medium amount of additional information.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PresentationTraceLevel None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PresentationTraceLevel.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PresentationTraceLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Traces no available additional information.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

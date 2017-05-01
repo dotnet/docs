@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "XML literals [Visual Basic], creating"
 ms.assetid: 8ae29ec5-e5fb-4137-9df5-60a288df7045
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

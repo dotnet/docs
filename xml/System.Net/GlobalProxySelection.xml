@@ -1,0 +1,149 @@
+<Type Name="GlobalProxySelection" FullName="System.Net.GlobalProxySelection">
+  <TypeSignature Language="C#" Value="public class GlobalProxySelection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GlobalProxySelection extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.GlobalProxySelection" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("This class has been deprecated. Please use WebRequest.DefaultWebProxy instead to access and set the global default proxy. Use 'null' instead of GetEmptyWebProxy. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains a global default proxy instance for all HTTP requests.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.GlobalProxySelection> stores the proxy settings for the default proxy that <xref:System.Net.WebRequest> instances use to contact Internet sites beyond the local network. The default proxy setting is initialized from the global or application configuration file, and can be overridden for individual requests or disabled by setting the <xref:System.Net.HttpWebRequest.Proxy%2A?displayProperty=fullName> property to the result of the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A> method.  
+  
+ The proxy settings stored in <xref:System.Net.GlobalProxySelection> are used by any <xref:System.Net.WebRequest> derived objects that support proxies and have their <xref:System.Net.WebRequest.Proxy%2A> property value set to `null` (the default). Proxies are currently supported by <xref:System.Net.FtpWebRequest>, <xref:System.Net.HttpWebRequest>, and <xref:System.Net.WebClient>.  
+  
+ **Note** Changes to the <xref:System.Net.GlobalProxySelection> after a request is made are not reflected in a <xref:System.Net.WebRequest>.  
+  
+   
+  
+## Examples  
+ The following code example sets the <xref:System.Net.GlobalProxySelection> for an HTTP proxy named "webproxy" on port 80.  
+  
+ [!code-cpp[Classic GlobalProxySelection Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic GlobalProxySelection Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic GlobalProxySelection Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic GlobalProxySelection Example/CS/source.cs#1)]
+ [!code-vb[Classic GlobalProxySelection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic GlobalProxySelection Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GlobalProxySelection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.GlobalProxySelection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.GlobalProxySelection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEmptyWebProxy">
+      <MemberSignature Language="C#" Value="public static System.Net.IWebProxy GetEmptyWebProxy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IWebProxy GetEmptyWebProxy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.GlobalProxySelection.GetEmptyWebProxy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IWebProxy</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an empty proxy instance.</summary>
+        <returns>An <see cref="T:System.Net.IWebProxy" /> that contains no information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A> method returns a blank <xref:System.Net.IWebProxy> instance to indicate that no proxy is used to access an Internet resource.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Net.WebRequest> instance that does not use a proxy.  
+  
+ [!code-cpp[NclEmptyWebProxy#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLEmptyWebProxy/CPP/test.cpp#1)]
+ [!code-csharp[NclEmptyWebProxy#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLEmptyWebProxy/CS/test.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public static System.Net.IWebProxy Select { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Net.IWebProxy Select" />
+      <MemberSignature Language="DocId" Value="P:System.Net.GlobalProxySelection.Select" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IWebProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the global HTTP proxy.</summary>
+        <value>An <see cref="T:System.Net.IWebProxy" /> that every call to <see cref="M:System.Net.HttpWebRequest.GetResponse" /> uses.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.GlobalProxySelection.Select%2A> property sets the proxy that all <xref:System.Net.WebRequest> instances use if the request supports proxies and no proxy is set explicitly using the <xref:System.Net.HttpWebRequest.Proxy%2A> property. Proxies are currently supported by <xref:System.Net.FtpWebRequest> and <xref:System.Net.HttpWebRequest>.  
+  
+   
+  
+## Examples  
+ The following code example sets the <xref:System.Net.GlobalProxySelection.Select%2A> property to the empty proxy.  
+  
+ [!code-cpp[NclEmptyWebProxy#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLEmptyWebProxy/CPP/test.cpp#1)]
+ [!code-csharp[NclEmptyWebProxy#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLEmptyWebProxy/CS/test.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value specified for a set operation was <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have permission for the requested operation.</exception>
+        <permission cref="T:System.Net.WebPermission">to get or set the global HTTP proxy. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

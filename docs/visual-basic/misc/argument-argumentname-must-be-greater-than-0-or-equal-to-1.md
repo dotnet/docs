@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrArgument_MinusOneOrGTZero1"
 ms.assetid: 22c6bf5f-5194-43ec-8a8c-88f781801927
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

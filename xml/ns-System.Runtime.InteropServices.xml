@@ -1,0 +1,13 @@
+<Namespace Name="System.Runtime.InteropServices">
+  <Docs>
+    <summary>The <see cref="N:System.Runtime.InteropServices" /> namespace provides a wide variety of members that support COM interop and platform invoke services. If you are unfamiliar with these services, see <see href="http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258">Interoperating with Unmanaged Code</see>.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Members of this namespace provide several categories of functionality, as shown in the following table. Attributes control marshaling behavior, such as how to arrange structures or how to represent strings. The most important attributes are <xref:System.Runtime.InteropServices.DllImportAttribute>, which you use to define platform invoke methods for accessing unmanaged APIs, and <xref:System.Runtime.InteropServices.MarshalAsAttribute>, which you use to specify how data is marshaled between managed and unmanaged memory.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

@@ -1,0 +1,173 @@
+<Type Name="MouseAction" FullName="System.Windows.Input.MouseAction">
+  <TypeSignature Language="C#" Value="public enum MouseAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MouseAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseAction" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Input.MouseActionConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Input.MouseActionValueSerializer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies constants that define actions performed by the mouse.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.MouseAction> enumeration specifies constants which correspond to actions performed by the mouse, such as RightClick and RightDoubleClick.  
+  
+ <xref:System.Windows.Input.MouseAction> can be used with a <xref:System.Windows.Input.MouseGesture> to create a input gesture which can be bound to a command using a <xref:System.Windows.Input.MouseBinding>.  For more information about commanding, see the [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to construct a <xref:System.Windows.Input.MouseGesture> using a <xref:System.Windows.Input.MouseAction> and how to bind the gesture to a <xref:System.Windows.Input.RoutedCommand> using a <xref:System.Windows.Input.MouseBinding>.  
+  
+ [!code-xml[commandlibrarysnippets#MouseBindingMouseActionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindingmouseactionxaml)]  
+  
+ [!code-csharp[commandlibrarysnippets#MouseBindingMouseAction](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#mousebindingmouseaction)]
+ [!code-vb[commandlibrarysnippets#MouseBindingMouseAction](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#mousebindingmouseaction)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LeftClick">
+      <MemberSignature Language="C#" Value="LeftClick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.MouseAction LeftClick = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseAction.LeftClick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A left mouse button click.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftDoubleClick">
+      <MemberSignature Language="C#" Value="LeftDoubleClick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.MouseAction LeftDoubleClick = unsigned int8(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseAction.LeftDoubleClick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A left mouse button double-click.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddleClick">
+      <MemberSignature Language="C#" Value="MiddleClick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.MouseAction MiddleClick = unsigned int8(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseAction.MiddleClick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A middle mouse button click.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddleDoubleClick">
+      <MemberSignature Language="C#" Value="MiddleDoubleClick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.MouseAction MiddleDoubleClick = unsigned int8(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseAction.MiddleDoubleClick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A middle mouse button double-click.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.MouseAction None = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseAction.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No action.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightClick">
+      <MemberSignature Language="C#" Value="RightClick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.MouseAction RightClick = unsigned int8(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseAction.RightClick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A right mouse button click.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightDoubleClick">
+      <MemberSignature Language="C#" Value="RightDoubleClick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.MouseAction RightDoubleClick = unsigned int8(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseAction.RightDoubleClick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A right mouse button double-click.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WheelClick">
+      <MemberSignature Language="C#" Value="WheelClick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.MouseAction WheelClick = unsigned int8(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseAction.WheelClick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A mouse wheel rotation.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

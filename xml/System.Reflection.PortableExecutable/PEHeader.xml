@@ -1,0 +1,837 @@
+<Type Name="PEHeader" FullName="System.Reflection.PortableExecutable.PEHeader">
+  <TypeSignature Language="C#" Value="public sealed class PEHeader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PEHeader extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEHeader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddressOfEntryPoint">
+      <MemberSignature Language="C#" Value="public int AddressOfEntryPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AddressOfEntryPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.AddressOfEntryPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseOfCode">
+      <MemberSignature Language="C#" Value="public int BaseOfCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BaseOfCode" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.BaseOfCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseOfData">
+      <MemberSignature Language="C#" Value="public int BaseOfData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BaseOfData" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.BaseOfData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseRelocationTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry BaseRelocationTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry BaseRelocationTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.BaseRelocationTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BoundImportTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry BoundImportTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry BoundImportTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.BoundImportTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry CertificateTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry CertificateTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.CertificateTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckSum">
+      <MemberSignature Language="C#" Value="public uint CheckSum { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 CheckSum" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.CheckSum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyrightTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry CopyrightTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry CopyrightTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.CopyrightTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorHeaderTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry CorHeaderTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry CorHeaderTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.CorHeaderTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry DebugTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry DebugTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.DebugTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DelayImportTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry DelayImportTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry DelayImportTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.DelayImportTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DllCharacteristics">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DllCharacteristics DllCharacteristics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DllCharacteristics DllCharacteristics" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.DllCharacteristics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DllCharacteristics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ExceptionTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ExceptionTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ExceptionTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ExportTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ExportTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ExportTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileAlignment">
+      <MemberSignature Language="C#" Value="public int FileAlignment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FileAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.FileAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalPointerTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry GlobalPointerTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry GlobalPointerTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.GlobalPointerTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageBase">
+      <MemberSignature Language="C#" Value="public ulong ImageBase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 ImageBase" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ImageBase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportAddressTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ImportAddressTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ImportAddressTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ImportAddressTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ImportTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ImportTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ImportTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadConfigTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry LoadConfigTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry LoadConfigTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.LoadConfigTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Magic">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.PEMagic Magic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.PEMagic Magic" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.Magic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.PEMagic</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorImageVersion">
+      <MemberSignature Language="C#" Value="public ushort MajorImageVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MajorImageVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MajorImageVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorLinkerVersion">
+      <MemberSignature Language="C#" Value="public byte MajorLinkerVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 MajorLinkerVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MajorLinkerVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorOperatingSystemVersion">
+      <MemberSignature Language="C#" Value="public ushort MajorOperatingSystemVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MajorOperatingSystemVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MajorOperatingSystemVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorSubsystemVersion">
+      <MemberSignature Language="C#" Value="public ushort MajorSubsystemVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MajorSubsystemVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MajorSubsystemVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorImageVersion">
+      <MemberSignature Language="C#" Value="public ushort MinorImageVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MinorImageVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MinorImageVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorLinkerVersion">
+      <MemberSignature Language="C#" Value="public byte MinorLinkerVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 MinorLinkerVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MinorLinkerVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorOperatingSystemVersion">
+      <MemberSignature Language="C#" Value="public ushort MinorOperatingSystemVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MinorOperatingSystemVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MinorOperatingSystemVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorSubsystemVersion">
+      <MemberSignature Language="C#" Value="public ushort MinorSubsystemVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MinorSubsystemVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MinorSubsystemVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfRvaAndSizes">
+      <MemberSignature Language="C#" Value="public int NumberOfRvaAndSizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfRvaAndSizes" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.NumberOfRvaAndSizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ResourceTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ResourceTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ResourceTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SectionAlignment">
+      <MemberSignature Language="C#" Value="public int SectionAlignment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SectionAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SectionAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfCode">
+      <MemberSignature Language="C#" Value="public int SizeOfCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SizeOfCode" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfHeaders">
+      <MemberSignature Language="C#" Value="public int SizeOfHeaders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SizeOfHeaders" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfHeaders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfHeapCommit">
+      <MemberSignature Language="C#" Value="public ulong SizeOfHeapCommit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 SizeOfHeapCommit" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfHeapCommit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfHeapReserve">
+      <MemberSignature Language="C#" Value="public ulong SizeOfHeapReserve { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 SizeOfHeapReserve" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfHeapReserve" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfImage">
+      <MemberSignature Language="C#" Value="public int SizeOfImage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SizeOfImage" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfInitializedData">
+      <MemberSignature Language="C#" Value="public int SizeOfInitializedData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SizeOfInitializedData" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfInitializedData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfStackCommit">
+      <MemberSignature Language="C#" Value="public ulong SizeOfStackCommit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 SizeOfStackCommit" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfStackCommit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfStackReserve">
+      <MemberSignature Language="C#" Value="public ulong SizeOfStackReserve { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 SizeOfStackReserve" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfStackReserve" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfUninitializedData">
+      <MemberSignature Language="C#" Value="public int SizeOfUninitializedData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SizeOfUninitializedData" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfUninitializedData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subsystem">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.Subsystem Subsystem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.Subsystem Subsystem" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.Subsystem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.Subsystem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreadLocalStorageTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ThreadLocalStorageTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ThreadLocalStorageTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ThreadLocalStorageTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

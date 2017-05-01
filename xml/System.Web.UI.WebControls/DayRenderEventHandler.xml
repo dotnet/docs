@@ -1,0 +1,45 @@
+<Type Name="DayRenderEventHandler" FullName="System.Web.UI.WebControls.DayRenderEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DayRenderEventHandler(object sender, DayRenderEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DayRenderEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DayRenderEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.DayRenderEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.DayRenderEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.Calendar.DayRender" /> event of the <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although data binding is not supported for the <xref:System.Web.UI.WebControls.Calendar> control, it is possible to modify the content and formatting of the individual date cells. Before the <xref:System.Web.UI.WebControls.Calendar> control is displayed on a Web page, it creates and assembles the components that make up the control. The <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised when each date cell in the <xref:System.Web.UI.WebControls.Calendar> control is created. You can control the contents and formatting of a date cell when it is created by providing code in the event handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event. For more information on customizing the contents of a date cell, see <xref:System.Web.UI.WebControls.Calendar.OnDayRender%2A>.  
+  
+ When you create a <xref:System.Web.UI.WebControls.DayRenderEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event to make the background color yellow for the days in the displayed month. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=fullName> control to the cell.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic Calendar.DayRender Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayRender Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic Calendar.DayRender Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayRender Example/VB/sourcevb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CalendarDayRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CalendarDayRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,574 @@
+<Type Name="Connector" FullName="System.Workflow.ComponentModel.Design.Connector">
+  <TypeSignature Language="C#" Value="public class Connector : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Connector extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.Connector" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.Design.ConnectorLayoutSerializer), typeof(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a connector between two activity designers on a workflow design surface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ A connector is the line that appears on a workflow design surface that connects one activity designer to another. <xref:System.Workflow.ComponentModel.Design.Connector> provides methods and properties that allow you to customize how to draw a set of connectors when an activity designer is rendered at design time.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Connector (System.Workflow.ComponentModel.Design.ConnectionPoint source, System.Workflow.ComponentModel.Design.ConnectionPoint target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.ConnectionPoint source, class System.Workflow.ComponentModel.Design.ConnectionPoint target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.#ctor(System.Workflow.ComponentModel.Design.ConnectionPoint,System.Workflow.ComponentModel.Design.ConnectionPoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="source" Type="System.Workflow.ComponentModel.Design.ConnectionPoint" />
+        <Parameter Name="target" Type="System.Workflow.ComponentModel.Design.ConnectionPoint" />
+      </Parameters>
+      <Docs>
+        <param name="source">The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> where drawing for the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> begins.</param>
+        <param name="target">The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> where drawing for the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> ends.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="target" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessibilityObject">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.AccessibleObject AccessibilityObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AccessibleObject AccessibilityObject" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.AccessibilityObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Windows.Forms.AccessibleObject" /> that accessibility applications use to adjust the application UI for users who have impairments.</summary>
+        <value>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that accessibility applications use to adjust the application UI for users who have impairments.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bounding rectangle for the connector on the workflow design surface.</summary>
+        <value>The <see cref="T:System.Drawing.Rectangle" /> that bounds the connector on the workflow design surface.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectorModified">
+      <MemberSignature Language="C#" Value="public bool ConnectorModified { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConnectorModified" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.ConnectorModified" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that indicates whether the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> is modified.</summary>
+        <value>
+          <see langword="true" /> if the connector is modified; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectorSegments">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Drawing.Point&gt; ConnectorSegments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Drawing.Point&gt; ConnectorSegments" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.ConnectorSegments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Drawing.Point&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a read-only collection of points that contains all segments found in the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</summary>
+        <value>A <see cref="T:System.Drawing.Point" /> read-only collection that contains all segments found in the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> to compare with the current connector.</param>
+        <summary>Determines whether the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> is equal to the specified connector.</summary>
+        <returns>
+          <see langword="true" /> if the specified connector is equal to the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Equals verifies that both the <xref:System.Workflow.ComponentModel.Design.Connector.Source%2A> and <xref:System.Workflow.ComponentModel.Design.Connector.Target%2A> properties of the two connectors hold references to the same <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExcludedRoutingRectangles">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.ICollection&lt;System.Drawing.Rectangle&gt; ExcludedRoutingRectangles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;valuetype System.Drawing.Rectangle&gt; ExcludedRoutingRectangles" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.ExcludedRoutingRectangles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Drawing.Rectangle&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns an empty array of Rectangle object. Derived classes populate this collection.</summary>
+        <value>A generic collection of Rectangle objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</summary>
+        <returns>A hash code for the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService">
+      <MemberSignature Language="C#" Value="protected virtual object GetService (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.GetService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The <see cref="T:System.Type" /> of the service object to return.</param>
+        <summary>Returns a service object of the specified type if it is available.</summary>
+        <returns>A service object of type <paramref name="serviceType" /> or a null reference (<see langword="Nothing" /> in Visual Basic) if there is no service object of type <paramref name="serviceType" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.Connector.GetService%2A> returns the service object available through <xref:System.Workflow.ComponentModel.Design.Connector.ParentDesigner%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public virtual bool HitTest (System.Drawing.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HitTest(valuetype System.Drawing.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.HitTest(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">The <see cref="T:System.Drawing.Point" /> to test.</param>
+        <summary>Returns a value that indicates whether the specified point resides on the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="point" /> resides on the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, <xref:System.Workflow.ComponentModel.Design.Connector.HitTest%2A> indicates whether a user has clicked a point on a connector displayed on a workflow design surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalidate">
+      <MemberSignature Language="C#" Value="public void Invalidate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.Invalidate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Invalidates the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> and causes it to be redrawn.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.Connector.Invalidate%2A> causes all contents found in <xref:System.Workflow.ComponentModel.Design.Connector.Bounds%2A> to be included in the update region for the <xref:System.Workflow.ComponentModel.Design.Connector.ParentDesigner%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public virtual void Offset (System.Drawing.Size size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Offset(valuetype System.Drawing.Size size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.Offset(System.Drawing.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Drawing.Size" />
+      </Parameters>
+      <Docs>
+        <param name="size">The <see cref="T:System.Drawing.Size" /> that contains the height and width settings to offset the connector.</param>
+        <summary>Changes the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> height and width using the settings defined in the specified <see cref="T:System.Drawing.Size" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLayout">
+      <MemberSignature Language="C#" Value="protected virtual void OnLayout (System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnLayout(class System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.OnLayout(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that contains the event data.</param>
+        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> that layout operations are occurring.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.Connector.OnLayout%2A> clears <xref:System.Workflow.ComponentModel.Design.Connector.ConnectorSegments%2A> and repopulates it with a new range of points.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaint">
+      <MemberSignature Language="C#" Value="protected virtual void OnPaint (System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnPaint(class System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> that contains the drawing data.</param>
+        <summary>Renders the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> on the workflow design surface.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaintEdited">
+      <MemberSignature Language="C#" Value="protected virtual void OnPaintEdited (System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e, System.Drawing.Point[] segments, System.Drawing.Point[] segmentEditPoints);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnPaintEdited(class System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e, valuetype System.Drawing.Point[] segments, valuetype System.Drawing.Point[] segmentEditPoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.OnPaintEdited(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs,System.Drawing.Point[],System.Drawing.Point[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
+        <Parameter Name="segments" Type="System.Drawing.Point[]" />
+        <Parameter Name="segmentEditPoints" Type="System.Drawing.Point[]" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> object that specifies the graphics to use to draw the object and the clipping rectangle in which to draw it.</param>
+        <param name="segments">Coordinates for the segments in the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</param>
+        <param name="segmentEditPoints">Coordinated for the edit points on the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</param>
+        <summary>Used for drawing the Connector when it is dragged from one state to another.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when a user is creating a connector, moving a middle point or moving an endpoint from one activity to another.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaintSelected">
+      <MemberSignature Language="C#" Value="protected virtual void OnPaintSelected (System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e, bool primarySelection, System.Drawing.Point[] segmentEditPoints);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnPaintSelected(class System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e, bool primarySelection, valuetype System.Drawing.Point[] segmentEditPoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.OnPaintSelected(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs,System.Boolean,System.Drawing.Point[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
+        <Parameter Name="primarySelection" Type="System.Boolean" />
+        <Parameter Name="segmentEditPoints" Type="System.Drawing.Point[]" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> object that specifies the graphics to use to draw the object and the clipping rectangle in which to draw it.</param>
+        <param name="primarySelection">Not used.</param>
+        <param name="segmentEditPoints">Coordinates for the edit points on the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</param>
+        <summary>Used for drawing a Connector that is selected by the user.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentDesigner">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Design.FreeformActivityDesigner ParentDesigner { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.FreeformActivityDesigner ParentDesigner" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.ParentDesigner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.FreeformActivityDesigner</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the designer on which the connecter appears on the workflow design surface.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> on which the connector appears on the workflow design surface.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentView">
+      <MemberSignature Language="C#" Value="protected System.Workflow.ComponentModel.Design.WorkflowView ParentView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.WorkflowView ParentView" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.ParentView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.WorkflowView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the workflow view associated with the connector.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> that is associated with the connector.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.Connector.ParentView%2A> provides access to the workflow design surface on which the connector appears.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformLayout">
+      <MemberSignature Language="C#" Value="protected void PerformLayout ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PerformLayout() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.PerformLayout" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs layout tasks for the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.Connector.PerformLayout%2A> calls the <xref:System.Workflow.ComponentModel.Design.WorkflowView.PerformLayout%2A?displayProperty=fullName> method and specifies that the layout update does not need to occur immediately.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetConnectorSegments">
+      <MemberSignature Language="C#" Value="protected void SetConnectorSegments (System.Collections.Generic.ICollection&lt;System.Drawing.Point&gt; segments);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void SetConnectorSegments(class System.Collections.Generic.ICollection`1&lt;valuetype System.Drawing.Point&gt; segments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.SetConnectorSegments(System.Collections.Generic.ICollection{System.Drawing.Point})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="segments" Type="System.Collections.Generic.ICollection&lt;System.Drawing.Point&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="segments">A <see cref="T:System.Drawing.Point" /> collection that represents the new connector segments to use for rerouting.</param>
+        <summary>Reroutes the connector from source to target if the connector has changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Design.ConnectionPoint Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.ConnectionPoint Source" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.ConnectionPoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> where drawing of the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> begins.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> where drawing of the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> begins.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">When setting this property the source <see cref="P:System.Workflow.ComponentModel.Design.ConnectionPoint.AssociatedDesigner" /> does not match the target associated designer.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <see cref="P:System.Workflow.ComponentModel.Design.Connector.Source" /> was set to a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.Connector.System#IDisposable#Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Design.ConnectionPoint Target { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.ConnectionPoint Target" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.Connector.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.ConnectionPoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> where drawing of the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> ends.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> where drawing of the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> ends.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">When setting this property the source <see cref="P:System.Workflow.ComponentModel.Design.ConnectionPoint.AssociatedDesigner" /> does not match the target associated designer.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <see cref="P:System.Workflow.ComponentModel.Design.Connector.Target" /> was set to a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

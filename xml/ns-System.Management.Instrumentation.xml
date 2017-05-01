@@ -1,0 +1,6 @@
+<Namespace Name="System.Management.Instrumentation">
+  <Docs>
+    <summary>Provides the classes necessary for instrumenting applications for management and exposing their management information and events through WMI to potential consumers. Consumers such as Microsoft Application Center or Microsoft Operations Manager can then manage your application easily, and monitoring and configuring of your application is available for administrator scripts or other applications, both managed as well as unmanaged. Instrumentation of your application is easy to achieve using the InstrumentationClass custom attribute on classes you wish to expose, or using the provided <see cref="T:System.Management.Instrumentation.BaseEvent" /> and <see cref="T:System.Management.Instrumentation.Instance" /> base classes and the <see cref="T:System.Management.Instrumentation.Instrumentation" /> helper class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Namespace>

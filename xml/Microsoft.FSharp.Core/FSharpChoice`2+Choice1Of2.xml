@@ -1,0 +1,65 @@
+<Type Name="FSharpChoice&lt;T1,T2&gt;+Choice1Of2" FullName="Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2&gt;+Choice1Of2">
+  <TypeSignature Language="C#" Value="public class FSharpChoice&lt;T1,T2&gt;.Choice1Of2 : Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit FSharpChoice`2/Choice1Of2&lt;T1, T2&gt; extends Microsoft.FSharp.Core.FSharpChoice`2&lt;!T1, !T2&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FSharpChoice`2.Choice1Of2" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T1" />
+    <TypeParameter Name="T2" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T1">T1</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="T2">T2</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.FSharp.Core.FSharpChoice`2/Choice1Of2@DebugTypeProxy))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public T1 Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T1 Item" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.FSharpChoice`2.Choice1Of2.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Field, 0, 0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerNonUserCode</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T1</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "properties [Visual Basic]"
 ms.assetid: 4d229712-6be8-4c5c-bac5-06995ce9185a
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

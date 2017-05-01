@@ -2,8 +2,8 @@
 title: Language independence and language-independent components
 description: Language independence and language-independent components
 keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
+author: dotnet-bot
+ms.author: dotnetcontent
 ms.date: 07/22/2016
 ms.topic: article
 ms.prod: .net

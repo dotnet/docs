@@ -1,0 +1,100 @@
+<Type Name="IToggleProvider" FullName="System.Windows.Automation.Provider.IToggleProvider">
+  <TypeSignature Language="C#" Value="public interface IToggleProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IToggleProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IToggleProvider" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("56d00bd0-c4f4-433c-a836-1a52a57e0892")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods and properties to support UI Automation client access to controls that can cycle through a set of states and maintain a state once set.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TogglePattern> control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Toggle">
+      <MemberSignature Language="C#" Value="public void Toggle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Toggle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IToggleProvider.Toggle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cycles through the toggle states of a control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A control must cycle through its toggle states in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState>, and (if supported) <xref:System.Windows.Automation.ToggleState>.  
+  
+   
+  
+## Examples  
+ The following example shows one possible implementation of this method for a custom control that can be toggled.  
+  
+ [!code-csharp[UIAIToggleProvider_snip#Toggle](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAIToggleProvider_snip/CSharp/ToggleFragment.cs#toggle)]
+ [!code-vb[UIAIToggleProvider_snip#Toggle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAIToggleProvider_snip/visualbasic/togglefragment.vb#toggle)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToggleState">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.ToggleState ToggleState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ToggleState ToggleState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IToggleProvider.ToggleState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ToggleState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the toggle state of the control.</summary>
+        <value>The <see cref="T:System.Windows.Automation.ToggleState" /> of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A control must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState>, and (if supported) <xref:System.Windows.Automation.ToggleState>.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of this method for a control that can be toggled. The ToggleState returned is based on the color of the control; this is analogous to the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property of a CheckBox control.  
+  
+ [!code-csharp[UIAIToggleProvider_snip#ToggleState](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAIToggleProvider_snip/CSharp/ToggleFragment.cs#togglestate)]
+ [!code-vb[UIAIToggleProvider_snip#ToggleState](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAIToggleProvider_snip/visualbasic/togglefragment.vb#togglestate)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

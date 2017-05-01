@@ -1,0 +1,331 @@
+<Type Name="OracleClientFactory" FullName="System.Data.OracleClient.OracleClientFactory">
+  <TypeSignature Language="C#" Value="public sealed class OracleClientFactory : System.Data.Common.DbProviderFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OracleClientFactory extends System.Data.Common.DbProviderFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleClientFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.OracleClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.DbProviderFactory</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("OracleClientFactory has been deprecated. http://go.microsoft.com/fwlink/?LinkID=144260", false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a set of methods for creating instances of the Oracle provider's implementation of the data source classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](~/docs/framework/data/adonet/oracle-and-adonet.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateCommand">
+      <MemberSignature Language="C#" Value="public override System.Data.Common.DbCommand CreateCommand ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbCommand CreateCommand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleClientFactory.CreateCommand" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbCommand</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbCommand" /> instance.</summary>
+        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbCommand" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommand> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim command As DbCommand = newFactory.CreateCommand()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbCommand command = newFactory.CreateCommand();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCommandBuilder">
+      <MemberSignature Language="C#" Value="public override System.Data.Common.DbCommandBuilder CreateCommandBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbCommandBuilder CreateCommandBuilder() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleClientFactory.CreateCommandBuilder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbCommandBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbCommandBuilder" /> instance.</summary>
+        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbCommandBuilder" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommandBuilder> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim commandBuilder As DbCommandBuilder = newFactory.CreateCommandBuilder()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbCommandBuilder commandBuilder = newFactory.CreateCommandBuilder();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateConnection">
+      <MemberSignature Language="C#" Value="public override System.Data.Common.DbConnection CreateConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbConnection CreateConnection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleClientFactory.CreateConnection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbConnection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbConnection" /> instance.</summary>
+        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbConnection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbConnection> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim connection As DbConnection = newFactory.CreateConnection()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbConnection connection = newFactory.CreateConnection();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateConnectionStringBuilder">
+      <MemberSignature Language="C#" Value="public override System.Data.Common.DbConnectionStringBuilder CreateConnectionStringBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbConnectionStringBuilder CreateConnectionStringBuilder() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleClientFactory.CreateConnectionStringBuilder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbConnectionStringBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> instance.</summary>
+        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbConnectionStringBuilder" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbConnectionStringBuilder> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim connectionBuilder As DbConnectionStringBuilder = newFactory.CreateConnectionStringBuilder()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbConnectionStringBuilder connectionBuilder = newFactory.CreateConnectionStringBuilder();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDataAdapter">
+      <MemberSignature Language="C#" Value="public override System.Data.Common.DbDataAdapter CreateDataAdapter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbDataAdapter CreateDataAdapter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleClientFactory.CreateDataAdapter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbDataAdapter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbDataAdapter" /> instance.</summary>
+        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbDataAdapter" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbDataAdapter> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim dataAdpater As DbDataAdapter = newFactory.CreateDataAdapter()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbDataAdapter dataAdpater = newFactory.CreateDataAdapter();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParameter">
+      <MemberSignature Language="C#" Value="public override System.Data.Common.DbParameter CreateParameter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbParameter CreateParameter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleClientFactory.CreateParameter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbParameter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbParameter" /> instance.</summary>
+        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbParameter" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbParameter> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim parameter As DbParameter = newFactory.CreateParameter()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbParameter parameter = newFactory.CreateParameter();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePermission">
+      <MemberSignature Language="C#" Value="public override System.Security.CodeAccessPermission CreatePermission (System.Security.Permissions.PermissionState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.CodeAccessPermission CreatePermission(valuetype System.Security.Permissions.PermissionState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleClientFactory.CreatePermission(System.Security.Permissions.PermissionState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.CodeAccessPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+      </Parameters>
+      <Docs>
+        <param name="state">A member of the <see cref="T:System.Security.Permissions.PermissionState" /> enumeration.</param>
+        <summary>Returns a strongly typed <see cref="T:System.Security.CodeAccessPermission" /> instance.</summary>
+        <returns>A strongly typed instance of <see cref="T:System.Security.CodeAccessPermission" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleClientFactory Instance;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Data.OracleClient.OracleClientFactory Instance" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleClientFactory.Instance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleClientFactory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an instance of the <see cref="T:System.Data.OracleClient.OracleClientFactory" />, which can be used to retrieve strongly typed data objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment uses the <xref:System.Data.OracleClient.OracleClientFactory.Instance> field to retrieve an <xref:System.Data.OracleClient.OracleClientFactory> instance and then return a strongly typed <xref:System.Data.Common.DbCommand> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim command As DbCommand = newFactory.CreateCommand()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbCommand command = newFactory.CreateCommand();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

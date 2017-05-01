@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 61ccd6fb-0c47-4075-afdf-5b5021330f21
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Creating the Source Office Open XML Document (Visual Basic)

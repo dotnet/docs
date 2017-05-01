@@ -1,0 +1,116 @@
+<Type Name="IntersectionDetail" FullName="System.Windows.Media.IntersectionDetail">
+  <TypeSignature Language="C#" Value="public enum IntersectionDetail" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IntersectionDetail extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.IntersectionDetail" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Provides information about the intersection between the geometries in the <see cref="T:System.Windows.Media.GeometryHitTestParameters" /> and the visual which was hit.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration shows the relationship between the hit test geometry (the blue circle) and the visual geometry (the red square).  
+  
+ ![Diagram of IntersectionDetail used in hit testing](~/add/media/intersectiondetail01.png "Diagram of IntersectionDetail used in hit testing")  
+Intersection between hit test geometry and visual geometry during hit testing  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.GeometryHitTestResult.IntersectionDetail%2A> property of <xref:System.Windows.Media.GeometryHitTestResult>.  
+  
+ [!code-csharp[HitTestingOverview#HitTestingOverviewSnippet11](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/GeometryHitTest.cs#hittestingoverviewsnippet11)]
+ [!code-vb[HitTestingOverview#HitTestingOverviewSnippet11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/geometryhittest.vb#hittestingoverviewsnippet11)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="Empty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.IntersectionDetail Empty = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.Empty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Media.Geometry" /> hit test parameter and the target visual, or geometry, do not intersect.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FullyContains">
+      <MemberSignature Language="C#" Value="FullyContains" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.IntersectionDetail FullyContains = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.FullyContains" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Media.Geometry" /> hit test parameter is fully contained within the boundary of the target visual or geometry.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FullyInside">
+      <MemberSignature Language="C#" Value="FullyInside" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.IntersectionDetail FullyInside = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.FullyInside" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The target visual, or geometry, is fully inside the <see cref="T:System.Windows.Media.Geometry" /> hit test parameter.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersects">
+      <MemberSignature Language="C#" Value="Intersects" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.IntersectionDetail Intersects = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.Intersects" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Media.Geometry" /> hit test parameter and the target visual, or geometry, intersect. This means that the two elements overlap, but neither element contains the other.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotCalculated">
+      <MemberSignature Language="C#" Value="NotCalculated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.IntersectionDetail NotCalculated = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.NotCalculated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Media.IntersectionDetail" /> value is not calculated.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

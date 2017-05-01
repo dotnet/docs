@@ -1,0 +1,117 @@
+<Type Name="ExpressionPrefixAttribute" FullName="System.Web.Compilation.ExpressionPrefixAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ExpressionPrefixAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionPrefixAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ExpressionPrefixAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the prefix attribute to use for the expression builder. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ExpressionPrefixAttribute> class is used at design time with expressions that are not defined in the configuration file. Use the <xref:System.Web.Compilation.ExpressionPrefixAttribute.ExpressionPrefix%2A> property to get the name of the prefix that is associated with the <xref:System.Web.Compilation.ExpressionPrefixAttribute> object. An expression builder looks for any statements with the following form:  
+  
+ `<%$ [expressionPrefix]:[expressionValue] %>`  
+  
+ Then the expression builder, based on the prefix of the expression, generates code for the property assignment. The `expressionPrefix` parameter refers to a configured expression builder, which is defined in the configuration file or through an <xref:System.Web.Compilation.ExpressionPrefixAttribute> object.  
+  
+   
+  
+## Examples  
+ The following code examples demonstrate how to use the <xref:System.Web.Compilation.ExpressionPrefixAttribute> class. The attribute is applied to a custom expression builder that implements the <xref:System.Web.Compilation.ExpressionBuilder> abstract class. This implementation of <xref:System.Web.Compilation.ExpressionBuilder> returns an evaluated statement that is passed to the expression. To run this example, you must first register the custom expression builder in the Web.config file. The first code example demonstrates how to register the custom expression builder in the Web.config file.  
+  
+```  
+<configuration>  
+    <system.web>  
+       <compilation>  
+          <expressionBuilders>  
+              <add expressionPrefix="MyCustomExpression"  
+               type="MyCustomExpressionBuilder"/>  
+          </expressionBuilders>  
+       </compilation>  
+    </system.web>  
+</configuration>  
+```  
+  
+ The second code example demonstrates how to reference the expression in an .aspx file.  
+  
+```  
+<asp:Label ID="Label1" runat="server"   
+Text="<%$ MyCustomExpression:Hello, world! %>" />  
+```  
+  
+ The third code example demonstrates how to develop a customized expression builder by deriving from <xref:System.Web.Compilation.ExpressionBuilder>. To run this code example, you must place the class in the App_Code folder.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Compilation.ExpressionBuilder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ExpressionBuilder/CS/MyExpressionBuilder.cs#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Compilation.ExpressionBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ExpressionBuilder/VB/MyExpressionBuilder.vb#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionPrefixAttribute (string expressionPrefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string expressionPrefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ExpressionPrefixAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="expressionPrefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="expressionPrefix">The prefix of the current <see cref="T:System.Web.Compilation.ExpressionBuilder" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ExpressionPrefixAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Compilation.ExpressionPrefixAttribute.%23ctor%2A> constructor to initialize an instance of the <xref:System.Web.Compilation.ExpressionPrefixAttribute> class using a prefix identifier. The <xref:System.Web.Compilation.ExpressionPrefixAttribute.%23ctor%2A> is the default constructor for the <xref:System.Web.Compilation.ExpressionPrefixAttribute> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="expressionPrefix" /> is null or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionPrefix">
+      <MemberSignature Language="C#" Value="public string ExpressionPrefix { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExpressionPrefix" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ExpressionPrefixAttribute.ExpressionPrefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the prefix value for the current <see cref="T:System.Web.Compilation.ExpressionBuilder" /> object.</summary>
+        <value>The expression prefix for the configured <see cref="T:System.Web.Compilation.ExpressionBuilder" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Compilation.ExpressionPrefixAttribute.ExpressionPrefix%2A> property to retrieve the name of the prefix that is associated with a given attribute.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,105 @@
+<Type Name="IResourceService" FullName="System.ComponentModel.Design.IResourceService">
+  <TypeSignature Language="C#" Value="public interface IResourceService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IResourceService" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IResourceService" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface for designers to access resource readers and writers for specific <see cref="T:System.Globalization.CultureInfo" /> resource types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resource writer or resource reader can be used to serialize or deserialze objects or data according to the specified <xref:System.Globalization.CultureInfo> resource settings.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a designer that uses the <xref:System.ComponentModel.Design.IResourceService> to read from and write to resource files in order to configure a property of an associated control.  
+  
+ [!code-cpp[IResourceServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IResourceServiceExample/CPP/source.cpp#1)]
+ [!code-csharp[IResourceServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IResourceServiceExample/CS/source.cs#1)]
+ [!code-vb[IResourceServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IResourceServiceExample/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetResourceReader">
+      <MemberSignature Language="C#" Value="public System.Resources.IResourceReader GetResourceReader (System.Globalization.CultureInfo info);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Resources.IResourceReader GetResourceReader(class System.Globalization.CultureInfo info) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IResourceService.GetResourceReader(System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Resources.IResourceReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Globalization.CultureInfo" /> of the resource for which to retrieve a resource reader.</param>
+        <summary>Locates the resource reader for the specified culture and returns it.</summary>
+        <returns>An <see cref="T:System.Resources.IResourceReader" /> interface that contains the resources for the culture, or <see langword="null" /> if no resources for the culture exist.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no resources are associated with the designer for the specified culture, this method returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceWriter">
+      <MemberSignature Language="C#" Value="public System.Resources.IResourceWriter GetResourceWriter (System.Globalization.CultureInfo info);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Resources.IResourceWriter GetResourceWriter(class System.Globalization.CultureInfo info) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IResourceService.GetResourceWriter(System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Resources.IResourceWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Globalization.CultureInfo" /> of the resource for which to create a resource writer.</param>
+        <summary>Locates the resource writer for the specified culture and returns it.</summary>
+        <returns>An <see cref="T:System.Resources.IResourceWriter" /> interface for the specified culture.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a new resource for the specified culture and destroys an existing resource, if one already exists.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

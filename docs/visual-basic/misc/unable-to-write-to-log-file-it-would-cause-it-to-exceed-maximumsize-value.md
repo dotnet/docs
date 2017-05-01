@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrApplicationLog_FileExceedsMaximumSize"
 ms.assetid: 61747a9c-e460-424b-a365-73cdba9dd428
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

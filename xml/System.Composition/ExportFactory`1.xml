@@ -1,0 +1,60 @@
+<Type Name="ExportFactory&lt;T&gt;" FullName="System.Composition.ExportFactory&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class ExportFactory&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExportFactory`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.ExportFactory`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.Runtime</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExportFactory (Func&lt;Tuple&lt;T,Action&gt;&gt; exportCreator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;class System.Tuple`2&lt;!T, class System.Action&gt;&gt; exportCreator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.ExportFactory`1.#ctor(System.Func{System.Tuple{`0,System.Action}})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exportCreator" Type="System.Func&lt;System.Tuple&lt;T,System.Action&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="exportCreator">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateExport">
+      <MemberSignature Language="C#" Value="public System.Composition.Export&lt;T&gt; CreateExport ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Export`1&lt;!T&gt; CreateExport() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.ExportFactory`1.CreateExport" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Export&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

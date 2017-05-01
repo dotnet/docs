@@ -1,0 +1,70 @@
+<Type Name="CompressionFormat" FullName="System.ServiceModel.Channels.CompressionFormat">
+  <TypeSignature Language="C#" Value="public enum CompressionFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompressionFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CompressionFormat" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the channels compression format.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Deflate">
+      <MemberSignature Language="C#" Value="Deflate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.CompressionFormat Deflate = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.CompressionFormat.Deflate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.CompressionFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Deflate compression format.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GZip">
+      <MemberSignature Language="C#" Value="GZip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.CompressionFormat GZip = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.CompressionFormat.GZip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.CompressionFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The GZip compression format.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.CompressionFormat None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.CompressionFormat.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.CompressionFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The none compression format.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

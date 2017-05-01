@@ -33,8 +33,8 @@ helpviewer_keywords:
   - "arguments [Visual Basic], listing by name"
 ms.assetid: 1ad7358f-1da9-48da-a95b-f3c7ed41eff3
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

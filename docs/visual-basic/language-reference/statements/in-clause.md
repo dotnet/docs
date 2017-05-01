@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "In keyword [Visual Basic]"
 ms.assetid: 2f003a85-8fb6-4280-822b-6ac12839b915
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "short-circuit evaluation"
 ms.assetid: bbc15191-b374-495b-9b8f-7b8c2f4388eb
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

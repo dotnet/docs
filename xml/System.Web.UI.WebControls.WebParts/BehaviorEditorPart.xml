@@ -1,0 +1,386 @@
+<Type Name="BehaviorEditorPart" FullName="System.Web.UI.WebControls.WebParts.BehaviorEditorPart">
+  <TypeSignature Language="C#" Value="public sealed class BehaviorEditorPart : System.Web.UI.WebControls.WebParts.EditorPart" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BehaviorEditorPart extends System.Web.UI.WebControls.WebParts.EditorPart" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.WebParts.EditorPart</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an editor control that enables end users to edit several user interface (UI) properties on an associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> class is an editor control that derives from the <xref:System.Web.UI.WebControls.WebParts.EditorPart> class, and is used to edit properties that affect the behavior of an associated <xref:System.Web.UI.WebControls.WebParts.WebPart> or <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control.  
+  
+ Just as there are tool-oriented zones in the Web Parts control set (for details, see the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class overview), there are tool-oriented part controls (tool parts), and each tool part must reside in a certain type of tool zone. Tool parts in the Web Parts control set have two distinguishing characteristics:  
+  
+-   They are helper controls that enable end users to personalize controls on a Web Parts page.  
+  
+-   They are visible only in certain display modes.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control is a tool part that becomes visible only when a Web Parts page is in edit mode, and when a specific <xref:System.Web.UI.WebControls.WebParts.WebPart> control has been selected for editing. The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control, like all other <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, resides in an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control.  
+  
+> [!IMPORTANT]
+>  An <xref:System.Web.UI.WebControls.WebParts.EditorZone> zone can contain only <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, and <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls cannot be placed in any other type of zone.  
+  
+ The control is not displayed on the page under certain conditions. If the <xref:System.Web.UI.WebControls.WebParts.WebPart.IsShared%2A> property value on the <xref:System.Web.UI.WebControls.WebParts.WebPart> control being edited is `true`, and the page is in user personalization scope (which is the default), the control is not displayed. For the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control to be displayed in this scenario, typically you would need to follow two steps:  
+  
+-   Add an entry to the Web.config file that gives an authorized user permission to edit Web pages in shared personalization scope (which means that the changes the user makes will be visible to all users of the application).  
+  
+-   Programmatically change the page from user-level to shared-level personalization scope at run time, for example by using the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ToggleScope%2A> method.  
+  
+ For an example of how to make the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control visible in a page, see the Example section of this topic. For more information about shared controls and personalization scope, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> class also has an important method, <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.SyncChanges%2A>, which it inherits from the <xref:System.Web.UI.WebControls.WebParts.EditorPart> class and overrides. The method is critical because it enables getting the property values from the <xref:System.Web.UI.WebControls.WebParts.WebPart> control being edited and assigning them to the fields of the editing control.  
+  
+ In most cases, the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control should be used in page persistence format by declaring an `<asp:behavioreditorpart>` element inside a `<zonetemplate>` element, which is in turn contained by an `<asp:editorzone>` element on a Web page. The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control enables end users to edit the following UI properties of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control:  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.Part.Description%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.TitleUrl%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.TitleIconImageUrl%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.ImportErrorMessage%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowClose%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowConnect%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowEdit%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowHide%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowMinimize%2A>  
+  
+-   <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowZoneChange%2A>  
+  
+ To edit other properties and behavior of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, you can use the other <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls supplied with the Web Parts control set. These controls include the <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart>, the <xref:System.Web.UI.WebControls.WebParts.AppearanceEditorPart>, and the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control. The supplied <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls should provide most editing features required to edit <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, but you can also create a custom editor control by inheriting from the <xref:System.Web.UI.WebControls.WebParts.EditorPart> class. For a code example, see the <xref:System.Web.UI.WebControls.WebParts.EditorPart> class overview.  
+  
+> [!NOTE]
+>  To improve accessibility, the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control is rendered within a `<fieldset>` element. The `<fieldset>` element groups the related set of controls used for editing in the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control, and it facilitates tabbed navigation among those controls for both visual user agents (such as ordinary Web browsers) and speech-oriented user agents (such as screen-reading software).  
+  
+## Accessibility  
+ The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declare a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control on a Web page, and enable it to edit several UI properties of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The code example has four parts:  
+  
+-   A user control that enables you to change display modes on a Web Parts page.  
+  
+-   A Web page that contains an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control and a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control, which is used to edit the behavior properties of a <xref:System.Web.UI.WebControls.BulletedList> control.  
+  
+-   An entry to make in the Web.config file to give an authorized user permission to edit the page in shared personalization scope.  
+  
+-   An explanation of how the example works when you load the page in a browser.  
+  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0). The documentation for this user control explains how to call the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ToggleScope%2A> method to switch the page into shared mode, which enables the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control to appear.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_BehaviorEditorPart_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/CS/DisplayModeMenuCS.ascx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_BehaviorEditorPart_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/VB/DisplayModeMenuVB.ascx#5)]  -->  
+  
+ The second part of the code example is the Web page. It contains a declarative reference to an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, with a child `<zonetemplate>` element that contains declarative references to a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control. Note that the page also contains a <xref:System.Web.UI.WebControls.BulletedList> control that is bound to the Pubs database; because this control resides in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone>, it is able to function as a <xref:System.Web.UI.WebControls.WebParts.WebPart> control that can be edited by the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_BehaviorEditorPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/CS/behavioreditorpartcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_BehaviorEditorPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/VB/behavioreditorpartvb.aspx#1)]  -->  
+  
+ The third part of the example is an entry in the Web.config file. You must make an entry like the following in the `<webParts>` section of the file, to enable an authorized user or set of users to edit the Web page when it is in shared personalization scope. This entry is a critical step; otherwise, the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control will not be visible when you switch the page into edit mode.  
+  
+ `<webParts>`  
+  
+ `<personalization>`  
+  
+ `<authorization>`  
+  
+ `<allow users="User_account" roles="admin"`  
+  
+ `verbs="enterSharedScope"/>`  
+  
+ `</authorization>`  
+  
+ `</personalization>`  
+  
+ `</webParts>`  
+  
+ When you load the page in a browser, you can first select the **Shared** option on the **Display Mode** drop-down list control. Next, click the drop-down list itself, and select **Edit Mode** to switch the page into edit mode. You can click the verbs menu (the downward arrow) in the title bar of the **Author List WebPart** control, and click **Edit** to begin editing. When the editing UI is visible, you can see the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control, and a button and text box positioned above it. If you make some changes in the editing UI and click the **Apply** button, you can use the **Display Mode** drop-down list control to return the page to browse mode and see the full effect of the editing changes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BehaviorEditorPart ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.%23ctor%2A> constructor is a default; no constructor is declared in the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> class and hence no special tasks are carried out when a new instance of the class is created.  
+  
+ Normally you do not need to use the constructor, because you can add a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control to a page declaratively at design time. However, if you need to add a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control programmatically for some reason, you can use the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyChanges">
+      <MemberSignature Language="C#" Value="public override bool ApplyChanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ApplyChanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.ApplyChanges" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the values from a <see cref="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" /> control to the corresponding properties in the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <returns>
+          <see langword="true" /> if the action of saving values from the <see cref="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" /> control to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is successful; otherwise (if an error occurs), <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.ApplyChanges%2A> method is a critical method on a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control. The method's purpose is to save the values a user has set on a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control to the corresponding properties in the associated <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The associated control is referenced in the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control's inherited <xref:System.Web.UI.WebControls.WebParts.EditorPart.WebPartToEdit%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.ApplyChanges%2A> method attempts to set a number of user interface (UI)-related property values on the associated <xref:System.Web.UI.WebControls.WebParts.WebPart> control. For a list of the property values that are set in this method, see the Remarks in the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> class overview.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.ApplyChanges%2A> method is called when the user clicks an OK verb or an apply verb in the editing UI.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">An error occurred when trying to set the value for a property on the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChildControls">
+      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.CreateChildControls" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultButton">
+      <MemberSignature Language="C#" Value="public override string DefaultButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultButton" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.DefaultButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the ID of the default button on the control.</summary>
+        <value>A string that contains the ID of the default button.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.DefaultButton%2A> property overrides the base property to set several attributes on the property. The property cannot be used with themes, and it cannot be browsed with a design-time user interface (UI). The value of the property is retrieved from the base property value.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Display">
+      <MemberSignature Language="C#" Value="public override bool Display { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Display" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.Display" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a control should be displayed when its associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is in edit mode.</summary>
+        <value>A Boolean value that indicates whether the control should be displayed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.Display%2A> property returns a value of `true`, meaning that the control will be displayed, except in one case. If the <xref:System.Web.UI.WebControls.WebParts.WebPart.IsShared%2A> property value on the <xref:System.Web.UI.WebControls.WebParts.WebPart> control being edited is `true`, and the page is in user personalization scope (which is the default), the control is not displayed. For an explanation of the steps required, and a code example that shows how to cause the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control to be displayed for editing, see the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> class overview and code example.  
+  
+ The Web Parts control set is designed with the assumption that shared controls--controls that are visible to all users--should be visible for editing only when a page is in shared personalization scope, meaning that the editing changes are visible to all users.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreRender">
+      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.OnPreRender(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderContents">
+      <MemberSignature Language="C#" Value="protected override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncChanges">
+      <MemberSignature Language="C#" Value="public override void SyncChanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SyncChanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.SyncChanges" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the property values from a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control and assigns them to the associated <see cref="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.SyncChanges%2A> method is a critical method on a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control. It implements the <xref:System.Web.UI.WebControls.WebParts.EditorPart.SyncChanges%2A> method from the base class, retrieves the current values from the associated <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and updates the controls in the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control with those values so a user can edit them.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.SyncChanges%2A> method is called whenever the values in the associated <xref:System.Web.UI.WebControls.WebParts.WebPart> control might have changed. For a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control, the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone that contains the control calls the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.SyncChanges%2A> method, so that the values in the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control are always synchronized with the values in the associated <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public override string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a title for the editor control.</summary>
+        <value>A string that is used as the title of the control. The default value is a calculated control name supplied by the Web Parts control set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.Title%2A> property value is displayed in the title bar of a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control when the control is visible in edit mode. When the control is declared in a page, you can set a value for the `Title` attribute. If you do not supply a value for the title, a culture-specific default value is used to describe the properties that this control allows users to edit.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.Title%2A> property of a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> class overview.  
+  
+ The following code shows how to set the title on a <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control declaratively in a Web page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_BehaviorEditorPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/CS/behavioreditorpartcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_BehaviorEditorPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/VB/behavioreditorpartvb.aspx#2)]  -->  
+  
+ The next part of the code example shows how to set the value of the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.Title%2A> property programmatically.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ [!code-csharp[WebParts_BehaviorEditorPart_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/CS/behavioreditorpartcs.aspx#3)]
+ [!code-vb[WebParts_BehaviorEditorPart_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_BehaviorEditorPart_Overview/VB/behavioreditorpartvb.aspx#3)]  
+  
+ When you load the page in a browser, you can select **Edit Mode** in the **Display Mode** drop-down list control to switch to edit mode. You can click the verbs menu (the downward arrow) in the title bar of the **Author List WebPart** control, and click **Edit** to begin editing. When the editing UI is visible, you can see the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control, and a button and text box positioned above it. Note that the title of the <xref:System.Web.UI.WebControls.WebParts.BehaviorEditorPart> control is the value assigned to it in the declarative markup of the Web page. If you enter some text in the text box next to the **Update EditorPart Title** button, and then click the button, the title for the control is updated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

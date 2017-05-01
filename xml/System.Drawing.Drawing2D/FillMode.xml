@@ -1,0 +1,75 @@
+<Type Name="FillMode" FullName="System.Drawing.Drawing2D.FillMode">
+  <TypeSignature Language="C#" Value="public enum FillMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FillMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.FillMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how the interior of a closed path is filled.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application fills the interior of a path using one of two fill modes: alternate or winding. The mode determines how to fill and clip the interior of a closed figure.  
+  
+ The default mode is Alternate. To determine the interiors of closed figures in the alternate mode, draw a line from any arbitrary start point in the path to some point obviously outside the path. If the line crosses an odd number of path segments, the starting point is inside the closed region and is therefore part of the fill or clipping area. An even number of crossings means that the point is not in an area to be filled or clipped. An open figure is filled or clipped by using a line to connect the last point to the first point of the figure.  
+  
+ The Winding mode considers the direction of the path segments at each intersection. It adds one for every clockwise intersection, and subtracts one for every counterclockwise intersection. If the result is nonzero, the point is considered inside the fill or clip area. A zero count means that the point lies outside the fill or clip area.  
+  
+ A figure is considered clockwise or counterclockwise based on the order in which the segments of the figure are drawn.  
+  
+   
+  
+## Examples  
+ The following example creates a path that has one open figure (an arc) and one closed figure (an ellipse). The FillPath method fills the path according to the default fill mode, which is Alternate.The following illustration shows the output of the example code. Note that the path is filled (according to Alternate) as if the open figure were closed by a straight line from its ending point to its starting point.  
+  
+ ![Fill Open Path](~/add/media/fillopenpath.png "Fill Open Path")  
+  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
+  
+ [!code-csharp[System.Drawing.ConstructingDrawingPaths#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingPaths/CS/Class1.cs#11)]
+ [!code-vb[System.Drawing.ConstructingDrawingPaths#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingPaths/VB/Class1.vb#11)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Alternate">
+      <MemberSignature Language="C#" Value="Alternate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.FillMode Alternate = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.FillMode.Alternate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.FillMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the alternate fill mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Winding">
+      <MemberSignature Language="C#" Value="Winding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.FillMode Winding = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.FillMode.Winding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.FillMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the winding fill mode.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

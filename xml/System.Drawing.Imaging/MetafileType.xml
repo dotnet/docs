@@ -1,0 +1,114 @@
+<Type Name="MetafileType" FullName="System.Drawing.Imaging.MetafileType">
+  <TypeSignature Language="C#" Value="public enum MetafileType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MetafileType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.MetafileType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies types of metafiles. The <see cref="P:System.Drawing.Imaging.MetafileHeader.Type" /> property returns a member of this enumeration.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Emf">
+      <MemberSignature Language="C#" Value="Emf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileType Emf = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileType.Emf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an Enhanced Metafile (EMF) file. Such a file contains only GDI records.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EmfPlusDual">
+      <MemberSignature Language="C#" Value="EmfPlusDual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileType EmfPlusDual = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileType.EmfPlusDual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an EMF+ Dual file. Such a file contains GDI+ records along with alternative GDI records and can be displayed by using either GDI or GDI+. Displaying the records using GDI may cause some quality degradation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EmfPlusOnly">
+      <MemberSignature Language="C#" Value="EmfPlusOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileType EmfPlusOnly = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileType.EmfPlusOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an EMF+ file. Such a file contains only GDI+ records and must be displayed by using GDI+. Displaying the records using GDI may cause unpredictable results.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileType Invalid = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileType.Invalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a metafile format that is not recognized in GDI+.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wmf">
+      <MemberSignature Language="C#" Value="Wmf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileType Wmf = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileType.Wmf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a WMF (Windows Metafile) file. Such a file contains only GDI records.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WmfPlaceable">
+      <MemberSignature Language="C#" Value="WmfPlaceable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileType WmfPlaceable = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileType.WmfPlaceable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a WMF (Windows Metafile) file that has a placeable metafile header in front of it.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

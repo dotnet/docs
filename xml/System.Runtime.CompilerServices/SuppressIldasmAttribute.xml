@@ -1,0 +1,83 @@
+<Type Name="SuppressIldasmAttribute" FullName="System.Runtime.CompilerServices.SuppressIldasmAttribute">
+  <TypeSignature Language="C#" Value="public sealed class SuppressIldasmAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SuppressIldasmAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.SuppressIldasmAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Prevents the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) from disassembling an assembly. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute to an assembly or module to prevent the assembly or module from being disassembled using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md).  
+  
+ This attribute does not prevent an assembly from being viewed using reflection.  
+  
+ Note that <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute does not block the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) from viewing header information and meta-information.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute to an assembly.  
+  
+ [!code-csharp[Runtime.CompilerServices.SuppressIldasmAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.CompilerServices.SuppressIldasmAttribute/cs/sample.cs#1)]
+ [!code-vb[Runtime.CompilerServices.SuppressIldasmAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.CompilerServices.SuppressIldasmAttribute/vb/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SuppressIldasmAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.SuppressIldasmAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.SuppressIldasmAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute to an assembly or module to prevent the assembly or module from being disassembled using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute to an assembly.  
+  
+ [!code-csharp[Runtime.CompilerServices.SuppressIldasmAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.CompilerServices.SuppressIldasmAttribute/cs/sample.cs#1)]
+ [!code-vb[Runtime.CompilerServices.SuppressIldasmAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.CompilerServices.SuppressIldasmAttribute/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

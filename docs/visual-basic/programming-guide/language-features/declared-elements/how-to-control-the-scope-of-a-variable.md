@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "visibility, variables"
 ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

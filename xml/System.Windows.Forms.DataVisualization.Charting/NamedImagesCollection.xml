@@ -1,0 +1,34 @@
+<Type Name="NamedImagesCollection" FullName="System.Windows.Forms.DataVisualization.Charting.NamedImagesCollection">
+  <TypeSignature Language="C#" Value="public class NamedImagesCollection : System.Windows.Forms.DataVisualization.Charting.ChartNamedElementCollection&lt;System.Windows.Forms.DataVisualization.Charting.NamedImage&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NamedImagesCollection extends System.Windows.Forms.DataVisualization.Charting.ChartNamedElementCollection`1&lt;class System.Windows.Forms.DataVisualization.Charting.NamedImage&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.NamedImagesCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DataVisualization.Charting.ChartNamedElementCollection&lt;System.Windows.Forms.DataVisualization.Charting.NamedImage&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">System.Windows.Forms.DataVisualization.Charting.NamedImage</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Windows.Forms.DataVisualization.Charting.NamedImage" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.NamedImagesCollection> class represents a collection of <xref:System.Windows.Forms.DataVisualization.Charting.NamedImage> objects, which are objects that have an associated image and a name that is unique to the collection.  
+  
+ This class is exposed as the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.Images%2A> collection property of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object, and is only available at run time.  
+  
+ An image can be any object derived from the .NET Framework <xref:System.Drawing.Image> class, such as <xref:System.Drawing.Bitmap>, which is created dynamically. The image can be stored in this collection, and then assigned at a later time to any image property in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control, such as <xref:System.Windows.Forms.DataVisualization.Charting.Chart.BackImage%2A>.  
+  
+ When one of the image properties in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control is set by specifying a `string` value, the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.Images%2A> collection property, of type <xref:System.Windows.Forms.DataVisualization.Charting.NamedImagesCollection>, is first checked to see if an image with that name exists. If a matching <xref:System.Windows.Forms.DataVisualization.Charting.NamedImage> object is found, this image is used. If a matching <xref:System.Windows.Forms.DataVisualization.Charting.NamedImage> object is not located, the string expression is treated as a URL, image resource name or pathname.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

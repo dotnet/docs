@@ -1,0 +1,120 @@
+<Type Name="RibbonScrollButtonVisibilityConverter" FullName="System.Windows.Controls.Ribbon.Primitives.RibbonScrollButtonVisibilityConverter">
+  <TypeSignature Language="C#" Value="public sealed class RibbonScrollButtonVisibilityConverter : System.Windows.Data.IMultiValueConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RibbonScrollButtonVisibilityConverter extends System.Object implements class System.Windows.Data.IMultiValueConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.RibbonScrollButtonVisibilityConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Data.IMultiValueConverter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Converts a scroll bar visibility and scroll position to <see cref="T:System.Windows.Visibility" /> values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> and <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel> provide horizontal scrolling behavior for the ribbon. When scrolling is needed, the ribbon replaces the typical scroll bar with a repeat button at each end of the ribbon. This converter uses the visibility and position of the scroll bar to determine the visibility of each of the repeat buttons.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonScrollButtonVisibilityConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonScrollButtonVisibilityConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonScrollButtonVisibilityConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public object Convert (object[] values, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object[] values, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonScrollButtonVisibilityConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="values">The values to be converted. Four values are expected, one <see cref="T:System.Windows.Visibility" /> object that represents scroll bar visibility and three <see cref="T:System.Double" /> values that represent the scroll bar position.</param>
+        <param name="targetType">The type to be converted to. The <see cref="T:System.Windows.Visibility" /> type is expected.</param>
+        <param name="parameter">The desired percentage that the ribbon is scrolled to the right before the scroll button is hidden. A <see cref="T:System.Double" /> is expected.</param>
+        <param name="culture">The culture to use when converting.</param>
+        <summary>Converts a scroll bar visibility and scroll position to a <see cref="T:System.Windows.Visibility" /> value.</summary>
+        <returns>A <see cref="T:System.Windows.Visibility" /> object representing the visibility of the scroll button.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The three <xref:System.Double> values that represent the scroll bar position are the <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel.HorizontalOffset%2A>, <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel.ExtentWidth%2A>, and <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel.ViewportWidth%2A> property values of the <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel> or <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel>. These properties contain values from the panel’s internal <xref:System.Windows.Controls.ScrollViewer>.  
+  
+ The `parameter` value represents the desired percentage that the ribbon is scrolled to the right before the scroll button is hidden. By default, the left scroll button passes 0 as the parameter, and it is hidden when the ribbon is scrolled 0 percent to the right. The right scroll button passes 100 as the parameter, and it is hidden when the ribbon is scrolled 100 percent to the right.  
+  
+ Passing in `null` or parameters of unexpected types may cause this method to return <xref:System.Windows.DependencyProperty.UnsetValue>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertBack">
+      <MemberSignature Language="C#" Value="public object[] ConvertBack (object value, Type[] targetTypes, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] ConvertBack(object value, class System.Type[] targetTypes, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonScrollButtonVisibilityConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="targetTypes" Type="System.Type[]" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">This API is not implemented.</param>
+        <param name="targetTypes">This API is not implemented.</param>
+        <param name="parameter">This API is not implemented.</param>
+        <param name="culture">This API is not implemented.</param>
+        <summary>This API is not implemented.</summary>
+        <returns>
+          <see cref="F:System.Windows.Data.Binding.DoNothing" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Data.Binding.DoNothing?displayProperty=fullName> is returned to indicate that the binding should use the fallback or default value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

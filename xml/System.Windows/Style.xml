@@ -1,0 +1,665 @@
+<Type Name="Style" FullName="System.Windows.Style">
+  <TypeSignature Language="C#" Value="public class Style : System.Windows.Threading.DispatcherObject, System.Windows.Markup.IAddChild, System.Windows.Markup.INameScope, System.Windows.Markup.IQueryAmbient" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Style extends System.Windows.Threading.DispatcherObject implements class System.Windows.Markup.IAddChild, class System.Windows.Markup.INameScope, class System.Windows.Markup.IQueryAmbient" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Style" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Threading.DispatcherObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.IAddChild</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.INameScope</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.IQueryAmbient</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.Ignore)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Setters")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.DictionaryKeyProperty("TargetType")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables the sharing of properties, resources, and event handlers between instances of a type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set a <xref:System.Windows.Style> on any element that derives from <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. A style is most commonly declared as a resource inside the <xref:System.Windows.Application.Resources%2A> section. Because styles are resources, they obey the same scoping rules that apply to all resources, so where you declare a style affects where it can be applied. If, for instance, you declare the style in the root element of your application definition [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] file, the style can be used anywhere in your application. If you are creating a navigation application and declare the style in one of the application's [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] files, the style can be used only in that [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] file. For more information on scoping rules for resources, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+  
+ The style declaration consists of a <xref:System.Windows.Style> object that contains a collection of one or more <xref:System.Windows.Setter> objects. Each <xref:System.Windows.Setter> consists of a <xref:System.Windows.Setter.Property%2A> and a <xref:System.Windows.Setter.Value%2A>. The property is the name of the property of the element the style is to apply to. After the style is declared as a resource, it can then be referenced just like any other resource.  
+  
+> [!NOTE]
+>  If there is more than one setter in the setter collection with the same <xref:System.Windows.Setter.Property%2A> property value, the setter that is declared last is used. Similarly, if you set a value for the same property in a style and on an element directly, the value set on the element directly takes precedence.  
+  
+ The [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] styling and templating model allows maintenance and sharing of a look as well as the separation of presentation and logic. The styling and templating model includes a suite of features that enable you to customize your [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)]. This suite of features includes the <xref:System.Windows.Style> class as well as the following:  
+  
+-   <xref:System.Windows.Trigger>  
+  
+-   <xref:System.Windows.EventTrigger> and <xref:System.Windows.Media.Animation.Storyboard>  
+  
+-   <xref:System.Windows.Controls.ControlTemplate>  
+  
+-   <xref:System.Windows.DataTemplate>  
+  
+ For more information, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
+  
+   
+  
+## Examples  
+ The following example shows a style declaration that will affect the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Controls.Control>.  
+  
+ [!code-xml[StyleOvw01#StyleSimple](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#stylesimple)]
+ <!-- TODO: review snippet reference [!code-xml[StyleOvw01#StyleSimple](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleOvw01/XAML/Page1.xaml#stylesimple)]  -->  
+  
+ To apply the above style, do the following:  
+  
+ [!code-xml[StyleOvw01#StyleSimpleApplied](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#stylesimpleapplied)]
+ <!-- TODO: review snippet reference [!code-xml[StyleOvw01#StyleSimpleApplied](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleOvw01/XAML/Page1.xaml#stylesimpleapplied)]  -->  
+  
+ You can also apply styles to all elements of a given type by using the <xref:System.Windows.Style.TargetType%2A> property. Adding the target type to the style means that you no longer have to fully qualify the property you are setting with the `ClassName.PropertyName` syntax. The following example defines a style that will be applied to every <xref:System.Windows.Controls.TextBlock> element.  
+  
+ [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]
+ <!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#1)]  -->  
+  
+> [!NOTE]
+>  Many [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] controls consist of a combination of other [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] controls, so creating a style that applies to all controls of a type can have broad impact. For instance, if you create a style that targets the <xref:System.Windows.Controls.TextBlock> controls in a <xref:System.Windows.Controls.Canvas>, the style is applied to all <xref:System.Windows.Controls.TextBlock> controls in the canvas, even if the <xref:System.Windows.Controls.TextBlock> is part of another control, such as a <xref:System.Windows.Controls.ListBox>.  
+  
+ For information on how to extend or inherit from a defined style, see the <xref:System.Windows.Style.BasedOn%2A> page.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Style ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Style.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Style" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor call requires delayed validation of <xref:System.Windows.Style.TargetType%2A> and <xref:System.Windows.Style.BasedOn%2A> style type. If this is used outside the context of the parser, behavior is undefined.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Style (Type targetType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type targetType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Style.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="targetType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="targetType">The type to which the style will apply.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Style" /> class to use on the specified <see cref="T:System.Type" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Style (Type targetType, System.Windows.Style basedOn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type targetType, class System.Windows.Style basedOn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Style.#ctor(System.Type,System.Windows.Style)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="basedOn" Type="System.Windows.Style" />
+      </Parameters>
+      <Docs>
+        <param name="targetType">The type to which the style will apply.</param>
+        <param name="basedOn">The style to base this style on.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Style" /> class to use on the specified <see cref="T:System.Type" /> and based on the specified <see cref="T:System.Windows.Style" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BasedOn">
+      <MemberSignature Language="C#" Value="public System.Windows.Style BasedOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style BasedOn" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Style.BasedOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.Ambient</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a defined style that is the basis of the current style.</summary>
+        <value>A defined style that is the basis of the current style. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each style only supports one <xref:System.Windows.Style.BasedOn%2A> value.  
+  
+<a name="xamlAttributeUsage_BasedOn"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object BasedOn="myStyle" .../>  
+```  
+  
+<a name="xamlValues_BasedOn"></a>   
+## XAML Values  
+ *myStyle*  
+ An existing style. Typically, you use the [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md) to refer to an existing style.  
+  
+   
+  
+## Examples  
+ There are several ways that styles in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] can be extended or inherited. Styles can be based on other styles through this property. When you use this property, the new style will inherit the values of the original style that are not explicitly redefined in the new style. In the following example, `Style2` inherits the <xref:System.Windows.Controls.Control.Background%2A?displayProperty=fullName>value of `Yellow`, and adds a <xref:System.Windows.Controls.Control.Foreground%2A?displayProperty=fullName>value of `Blue`.  
+  
+ [!code-xml[StyleOvw01#ExtendingStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#extendingstyle)]
+ <!-- TODO: review snippet reference [!code-xml[StyleOvw01#ExtendingStyle](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleOvw01/XAML/Page1.xaml#extendingstyle)]  -->  
+  
+ Similarly, styles can be based on the style of an existing [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element, as in the following example where the new style is based on the style of a <xref:System.Windows.Controls.TextBlock> element.  
+  
+ [!code-xml[PhotoStoreDemoStyled#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#2)]
+ <!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#2](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#2)]  -->  
+  
+> [!NOTE]
+>  If you create a style with a <xref:System.Windows.Style.TargetType%2A> property and base it on another style that also defines a <xref:System.Windows.Style.TargetType%2A> property, the target type of the derived style must be the same as or be derived from the type of the base style.  
+  
+ Styles defined for specific types can also be based on other styles, as in the following example.  
+  
+ [!code-xml[StyleOvw01#ExtendingStyleTargetType](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#extendingstyletargettype)]
+ <!-- TODO: review snippet reference [!code-xml[StyleOvw01#ExtendingStyleTargetType](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleOvw01/XAML/Page1.xaml#extendingstyletargettype)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Style.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this <see cref="T:System.Windows.Style" />.</summary>
+        <returns>The hash code for this <see cref="T:System.Windows.Style" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSealed">
+      <MemberSignature Language="C#" Value="public bool IsSealed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSealed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Style.IsSealed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the style is read-only and cannot be changed.</summary>
+        <value>
+          <see langword="true" /> if the style is sealed; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A style is sealed when another style is based on it or when it is applied for the first time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterName">
+      <MemberSignature Language="C#" Value="public void RegisterName (string name, object scopedElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterName(string name, object scopedElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Style.RegisterName(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="scopedElement" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name to register.</param>
+        <param name="scopedElement">The object to map to the specified <c>name</c>.</param>
+        <summary>Registers a new name-object pair in the current namescope.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resources">
+      <MemberSignature Language="C#" Value="public System.Windows.ResourceDictionary Resources { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.ResourceDictionary Resources" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Style.Resources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.Ambient</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.ResourceDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of resources that can be used within the scope of this style.</summary>
+        <value>The resources that can be used within the scope of this style.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlPropertyElementUsage_Resources"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.Resources>  
+    oneOrMoreResourceElements  
+  </object.Resources>  
+</object>  
+- or -   
+<object>  
+  <object.Resources>  
+    <ResourceDictionary Source="externalDictionarySource"/>  
+  </object.Resources>  
+</object>  
+```  
+  
+<a name="xamlValues_Resources"></a>   
+## XAML Values  
+ *oneOrMoreResourceElements*  
+ One or more resource elements. To be referenced later in either [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md) or [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md) syntax in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], a resource element must have an `x:Key` attribute.  
+  
+ \<ResourceDictionary Source=" *externalDictionarySource*"/>  
+ An external dictionary source. For details, see [Merged Resource Dictionaries](~/docs/framework/wpf/advanced/merged-resource-dictionaries.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seal">
+      <MemberSignature Language="C#" Value="public void Seal ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Seal() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Style.Seal" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Locks this style and all factories and triggers so they cannot be changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Setters">
+      <MemberSignature Language="C#" Value="public System.Windows.SetterBaseCollection Setters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.SetterBaseCollection Setters" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Style.Setters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.SetterBaseCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Windows.Setter" /> and <see cref="T:System.Windows.EventSetter" /> objects.</summary>
+        <value>A collection of <see cref="T:System.Windows.Setter" /> and <see cref="T:System.Windows.EventSetter" /> objects. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Style.Setters%2A> property of a <xref:System.Windows.Style> object can consist only of objects assignable to <xref:System.Windows.SetterBase>. Adding a <xref:System.Windows.SetterBase> child to a <xref:System.Windows.Style> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.Style> object.  
+  
+ An explicit property element usage  for <xref:System.Windows.Style.Setters%2A> is also relatively common. This is a markup style decision that can sometimes help distinguish <xref:System.Windows.Style.Setters%2A> from <xref:System.Windows.Style.Resources%2A> and <xref:System.Windows.Style.Triggers%2A> items in a complex style. For example:  
+  
+```  
+<Style>  
+  <Style.Setters>  
+    <!--one or more SetterBase derived object elements here-->  
+  </Style.Setters>  
+</Style>  
+```  
+  
+<a name="xamlPropertyElementUsage_Setters"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  oneOrMoreSetters  
+</object>  
+```  
+  
+<a name="xamlValues_Setters"></a>   
+## XAML Values  
+ *oneOrMoreSetters*  
+ One or more <xref:System.Windows.Setter> or <xref:System.Windows.EventSetter> objects.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this property.  
+  
+ [!code-csharp[listboxitemstyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxItemStyle/CSharp/Pane1.xaml.cs#1)]
+ [!code-vb[listboxitemstyle#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxItemStyle/VisualBasic/Pane1.xaml.vb#1)]  
+  
+ Adding a <xref:System.Windows.SetterBase> child to a <xref:System.Windows.Style> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.Style> object. The following <xref:System.Windows.EventSetter> is implicitly added to the <xref:System.Windows.SetterBaseCollection> of the style:  
+  
+ [!code-xml[eventovwsupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
+      <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Style.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The child object to add.</param>
+        <summary>Adds a child object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Style> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IAddChild.AddText">
+      <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Style.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Style> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.INameScope.FindName">
+      <MemberSignature Language="C#" Value="object INameScope.FindName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Windows.Markup.INameScope.FindName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Style.System#Windows#Markup#INameScope#FindName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name identifier for the object being requested.</param>
+        <summary>Returns an object that has the provided identifying name.</summary>
+        <returns>The object, if found. Returns <see langword="null" /> if no object of that name was found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Style> instance is cast to an <xref:System.Windows.Markup.INameScope> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable">
+      <MemberSignature Language="C#" Value="bool IQueryAmbient.IsAmbientPropertyAvailable (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Style.System#Windows#Markup#IQueryAmbient#IsAmbientPropertyAvailable(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the requested ambient property.</param>
+        <summary>Queries whether a specified ambient property is available in the current scope.</summary>
+        <returns>
+          <see langword="true" /> if the requested ambient property is available; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetType">
+      <MemberSignature Language="C#" Value="public Type TargetType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type TargetType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Style.TargetType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.NeverLocalize)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.Ambient</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type for which this style is intended.</summary>
+        <value>The target type for this style.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set a style on any element that derives from <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. Therefore, your target type can be any of those elements. However, if you create a style with a <xref:System.Windows.Style.TargetType%2A> property and base it on another style that also defines a <xref:System.Windows.Style.TargetType%2A> property, the target type of the derived style must be the same as or be derived from the target type of the base style.  
+  
+ If you do not specify a <xref:System.Windows.Style.TargetType%2A>, then you must specify an `x:Key` for your <xref:System.Windows.Style> and also qualify the properties in your style with a class name.  
+  
+<a name="xamlAttributeUsage_TargetType"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object  TargetType="{x:Type typeName}"/>  
+-or-  
+<object  TargetType="typeName"/>  
+```  
+  
+<a name="xamlValues_TargetType"></a>   
+## XAML Values  
+ `{x:Type ...}`  
+ An [x:Type Markup Extension](~/docs/framework/xaml-services/x-type-markup-extension.md) markup extension usage.  
+  
+ *typeName*  
+ The type name of the class.  
+  
+   
+  
+## Examples  
+ The following example defines a style that will be applied to all instances of the <xref:System.Windows.Controls.TextBlock> element.  
+  
+ [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]
+ <!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#1)]  -->  
+  
+ Setting the <xref:System.Windows.Style.TargetType%2A> property to the <xref:System.Windows.Controls.TextBlock> type without setting an `x:Key` implicitly sets the `x:Key` to `{x:Type TextBlock}`. This also means that if you give the above <xref:System.Windows.Style> an `x:Key` value of anything other than `{x:Type TextBlock}`, the <xref:System.Windows.Style> would not be applied to all <xref:System.Windows.Controls.TextBlock> elements automatically. Instead, you need to apply the style to the <xref:System.Windows.Controls.TextBlock> elements explicitly.  
+  
+ Many [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] controls consist of a combination of other [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] controls, so creating a style that applies to all controls of a type can have broad impact. For instance, if you create a style that targets the <xref:System.Windows.Controls.TextBox> controls in a <xref:System.Windows.Controls.Canvas>, the style is applied to all <xref:System.Windows.Controls.TextBox> controls in the canvas, even if the <xref:System.Windows.Controls.TextBox> is part of another control, such as a <xref:System.Windows.Controls.ComboBox>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Triggers">
+      <MemberSignature Language="C#" Value="public System.Windows.TriggerCollection Triggers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TriggerCollection Triggers" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Style.Triggers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.TriggerCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Windows.TriggerBase" /> objects that apply property values based on specified conditions.</summary>
+        <value>A collection of <see cref="T:System.Windows.TriggerBase" /> objects. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] styling and templating model enables you to specify triggers within your <xref:System.Windows.Style>. Essentially, triggers are objects that enable you to apply changes when certain conditions (such as when a certain property value becomes `true`, or when an event occurs) are satisfied.  
+  
+<a name="xamlPropertyElementUsage_Triggers"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.Triggers>  
+    oneOrMoreTriggers  
+  </object.Triggers>  
+</object>  
+```  
+  
+<a name="xamlValues_Triggers"></a>   
+## XAML Values  
+ *oneOrMoreTriggers*  
+ Zero or more object elements that are classes deriving from <xref:System.Windows.TriggerBase>.  
+  
+   
+  
+## Examples  
+ The following example shows a named <xref:System.Windows.Style> available to <xref:System.Windows.Controls.Button> controls. The <xref:System.Windows.Style> defines a <xref:System.Windows.Trigger> element that changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is `true`.  
+  
+ [!code-xml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterName">
+      <MemberSignature Language="C#" Value="public void UnregisterName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Style.UnregisterName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the mapping to remove.</param>
+        <summary>Removes a name-object mapping from the namescope.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

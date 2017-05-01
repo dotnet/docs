@@ -1,0 +1,194 @@
+<Type Name="BamlLocalizerError" FullName="System.Windows.Markup.Localizer.BamlLocalizerError">
+  <TypeSignature Language="C#" Value="public enum BamlLocalizerError" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BamlLocalizerError extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizerError" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies error conditions that may be encountered by the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizer" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DuplicateElement">
+      <MemberSignature Language="C#" Value="DuplicateElement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.Localizer.BamlLocalizerError DuplicateElement = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.DuplicateElement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The localized BAML  contains more than one reference to the same element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateUid">
+      <MemberSignature Language="C#" Value="DuplicateUid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.Localizer.BamlLocalizerError DuplicateUid = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.DuplicateUid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>More than one element has the same <see cref="P:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid" /> value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IncompleteElementPlaceholder">
+      <MemberSignature Language="C#" Value="IncompleteElementPlaceholder" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.Localizer.BamlLocalizerError IncompleteElementPlaceholder = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.IncompleteElementPlaceholder" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The element's substitution contains incomplete child placeholders.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCommentingXml">
+      <MemberSignature Language="C#" Value="InvalidCommentingXml" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.Localizer.BamlLocalizerError InvalidCommentingXml = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.InvalidCommentingXml" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XML comments do not have the correct format.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidLocalizationAttributes">
+      <MemberSignature Language="C#" Value="InvalidLocalizationAttributes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.Localizer.BamlLocalizerError InvalidLocalizationAttributes = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.InvalidLocalizationAttributes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The localization commenting text contains invalid attributes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidLocalizationComments">
+      <MemberSignature Language="C#" Value="InvalidLocalizationComments" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.Localizer.BamlLocalizerError InvalidLocalizationComments = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.InvalidLocalizationComments" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The localization commenting text contains invalid comments.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidUid">
+      <MemberSignature Language="C#" Value="InvalidUid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.Localizer.BamlLocalizerError InvalidUid = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.InvalidUid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid" /> does not correspond to any element in the BAML source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MismatchedElements">
+      <MemberSignature Language="C#" Value="MismatchedElements" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.Localizer.BamlLocalizerError MismatchedElements = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.MismatchedElements" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a mismatch between substitution and source. The substitution must contain all the element placeholders in the source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SubstitutionAsPlaintext">
+      <MemberSignature Language="C#" Value="SubstitutionAsPlaintext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.Localizer.BamlLocalizerError SubstitutionAsPlaintext = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.SubstitutionAsPlaintext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The substitution of an element's content cannot be parsed as XML, therefore any formatting tags in the substitution are not recognized. The substitution is instead applied as plain text.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UidMissingOnChildElement">
+      <MemberSignature Language="C#" Value="UidMissingOnChildElement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.Localizer.BamlLocalizerError UidMissingOnChildElement = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.UidMissingOnChildElement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A child element does not have a <see cref="P:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid" />. As a result, it cannot be represented as a placeholder in the parent's content string.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownFormattingTag">
+      <MemberSignature Language="C#" Value="UnknownFormattingTag" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.Localizer.BamlLocalizerError UnknownFormattingTag = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.Localizer.BamlLocalizerError.UnknownFormattingTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A formatting tag in the substitution is not recognized.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

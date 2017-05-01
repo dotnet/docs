@@ -1,0 +1,73 @@
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s0="http://tempuri.org/" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+    <message name="m1">
+        <part name="part1" type="xsd:string"/>
+        <part name="part2" type="xsd:int"/>
+        <part name="part3" type="xsd:string"/>
+    </message>
+
+    <message name="m2">
+        <part name="image" type="xsd:binary"/>
+    </message>
+
+    <portType name="pt1">
+        <operation name="o1">
+           <input message="m1"/>
+           <output message="m2"/>
+        </operation>
+    </portType>
+
+    <service name="service1">
+        <port name="port1" binding="b1">
+           <http:address location="http://example.com/"/>
+        </port>
+        <port name="port2" binding="b2">
+           <http:address location="http://example.com/"/>
+        </port>
+        <port name="port3" binding="b3">
+             <http:address location="http://example.com/"/>
+        </port>
+    </service>
+
+    <binding name="b1" type="pt1">
+        <http:binding verb="GET"/>
+        <operation name="o1">
+           <http:operation location="o1/A(part1)B(part2)/(part3)"/>
+           <input>
+               <http:urlReplacement/>
+           </input>
+           <output>
+               <mime:content part="logo" type="image/gif"/>
+               <mime:content part="logo" type="image/jpeg"/>
+           </output>
+        </operation>
+    </binding>
+
+    <binding name="b2" type="pt1">
+        <http:binding verb="GET"/>
+        <operation name="o1">
+           <http:operation location="o1"/>
+           <input>
+               <http:urlEncoded/>
+           </input>
+           <output>
+               <mime:content type="image/gif"/>
+               <mime:content type="image/jpeg"/>
+           </output>
+        </operation>
+    </binding>
+
+    <binding name="b3" type="pt1">
+        <http:binding verb="POST"/>
+        <operation name="o1">
+           <http:operation location="o1"/>
+           <input>
+               <mime:content type="application/x-www-form-urlencoded"/>
+           </input>
+           <output>
+               <mime:content type="image/gif"/>
+               <mime:content type="image/jpeg"/>
+           </output>
+        </operation>
+    </binding>
+</definitions>

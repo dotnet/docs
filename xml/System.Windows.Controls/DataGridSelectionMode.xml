@@ -1,0 +1,59 @@
+<Type Name="DataGridSelectionMode" FullName="System.Windows.Controls.DataGridSelectionMode">
+  <TypeSignature Language="C#" Value="public enum DataGridSelectionMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridSelectionMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridSelectionMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines constants that specify whether single or multiple item selections are supported by a <see cref="T:System.Windows.Controls.DataGrid" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> and <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> properties together determine how users can select items in a <xref:System.Windows.Controls.DataGrid>. For example, if the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is Single and the <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> is <xref:System.Windows.Controls.DataGridSelectionUnit>, the user can select one cell at a time in the <xref:System.Windows.Controls.DataGrid>.  
+  
+ InExtended mode, select multiple items by holding down the SHIFT key to extend the selection from an anchor point or the CTRL key to individually select additional items.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Extended">
+      <MemberSignature Language="C#" Value="Extended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridSelectionMode Extended = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridSelectionMode.Extended" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridSelectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Multiple items in the <see cref="T:System.Windows.Controls.DataGrid" /> can be selected at the same time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Single">
+      <MemberSignature Language="C#" Value="Single" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridSelectionMode Single = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridSelectionMode.Single" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridSelectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only one item in the <see cref="T:System.Windows.Controls.DataGrid" /> can be selected at a time.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,235 @@
+<Type Name="CircleHotSpot" FullName="System.Web.UI.WebControls.CircleHotSpot">
+  <TypeSignature Language="C#" Value="public sealed class CircleHotSpot : System.Web.UI.WebControls.HotSpot" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CircleHotSpot extends System.Web.UI.WebControls.HotSpot" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CircleHotSpot" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.HotSpot</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a circular hot spot region in an <see cref="T:System.Web.UI.WebControls.ImageMap" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class defines a circle-shaped hot spot region in an <xref:System.Web.UI.WebControls.ImageMap> control. To define the region of the <xref:System.Web.UI.WebControls.CircleHotSpot> object, set the <xref:System.Web.UI.WebControls.CircleHotSpot.X%2A> property to the value that represents the x-coordinate of the center of the circular region. Set the <xref:System.Web.UI.WebControls.CircleHotSpot.Y%2A> property to the value that represents the y-coordinate of the center of the circular region. Set the <xref:System.Web.UI.WebControls.CircleHotSpot.Radius%2A> property to the distance from the center of the circle to the edge.  
+  
+ When a <xref:System.Web.UI.WebControls.CircleHotSpot> control is clicked, the page either navigates to a URL, generates a post back to the server, or does nothing. The <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property specifies this behavior. To navigate to a URL, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property to `HotSpotMode.Navigate`, and use the <xref:System.Web.UI.WebControls.HotSpot.NavigateUrl%2A> property to specify the URL to navigate to. To post back to the server, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property to `HotSpotMode.PostBack`, and use the <xref:System.Web.UI.WebControls.HotSpot.PostBackValue%2A> property to specify a name for the <xref:System.Web.UI.WebControls.CircleHotSpot> object. This name will be passed in the <xref:System.Web.UI.WebControls.ImageMapEventArgs> event data when the <xref:System.Web.UI.WebControls.CircleHotSpot> is clicked. If you want the <xref:System.Web.UI.WebControls.CircleHotSpot> object to have no behavior, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property to `HotSpotMode.Inactive`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.CircleHotSpot> objects. The <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property is set to `HotSpotMode.Navigate`, which causes the page to navigate to the specified URL each time a user clicks one of the hot spot regions. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ImageMapClass1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass1/CS/imagemapclass1cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ImageMapClass1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass1/VB/imagemapclass1vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CircleHotSpot ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CircleHotSpot.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CircleHotSpot" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.CircleHotSpot> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically create two <xref:System.Web.UI.WebControls.CircleHotSpot> objects, set their properties, and add them to the <xref:System.Web.UI.WebControls.ImageMap> control's <xref:System.Web.UI.WebControls.HotSpotCollection>. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CircleHotSpot.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CircleHotSpot.Cstr/CS/circlehotspot.cstrcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CircleHotSpot.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CircleHotSpot.Cstr/VB/circlehotspot.cstrvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCoordinates">
+      <MemberSignature Language="C#" Value="public override string GetCoordinates ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetCoordinates() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CircleHotSpot.GetCoordinates" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the x- and y-coordinates of a <see cref="T:System.Web.UI.WebControls.CircleHotSpot" /> object's center and the length of its radius.</summary>
+        <returns>A string that represents the x- and y-coordinates of a <see cref="T:System.Web.UI.WebControls.CircleHotSpot" /> object's center and the length of its radius.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses the values assigned to the <xref:System.Web.UI.WebControls.CircleHotSpot.X%2A> and <xref:System.Web.UI.WebControls.CircleHotSpot.Y%2A> properties to return the center coordinates and the value assigned to the <xref:System.Web.UI.WebControls.CircleHotSpot.Radius%2A> property to return the radius.  
+  
+ The <xref:System.Web.UI.WebControls.CircleHotSpot.GetCoordinates%2A> method is used internally by ASP.NET to get the text to use for the coordinates of a <xref:System.Web.UI.WebControls.CircleHotSpot> when it is rendered.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.CircleHotSpot> objects. When a user clicks one of the <xref:System.Web.UI.WebControls.CircleHotSpot> objects, the <xref:System.Web.UI.WebControls.CircleHotSpot.GetCoordinates%2A> method returns its coordinates and displays them to the user. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CircleHotSpot.GetCoordinates#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CircleHotSpot.GetCoordinates/CS/circlehotspot.getcoordinatescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CircleHotSpot.GetCoordinates#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CircleHotSpot.GetCoordinates/VB/circlehotspot.getcoordinatesvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkupName">
+      <MemberSignature Language="C#" Value="protected override string MarkupName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MarkupName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CircleHotSpot.MarkupName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Radius">
+      <MemberSignature Language="C#" Value="public int Radius { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Radius" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CircleHotSpot.Radius" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the distance from the center to the edge of the circular region defined by this <see cref="T:System.Web.UI.WebControls.CircleHotSpot" /> object.</summary>
+        <value>An integer that represents the distance in pixels from the center to the edge of the circular region defined by this <see cref="T:System.Web.UI.WebControls.CircleHotSpot" /> object. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.CircleHotSpot.Radius%2A> property allows you to get or set a value that represents the distance in pixels from the center to the edge of the circular region defined by this <xref:System.Web.UI.WebControls.CircleHotSpot> object. To completely define a <xref:System.Web.UI.WebControls.CircleHotSpot> object, you must specify a value for the <xref:System.Web.UI.WebControls.CircleHotSpot.Radius%2A> property as well as the <xref:System.Web.UI.WebControls.CircleHotSpot.X%2A> and <xref:System.Web.UI.WebControls.CircleHotSpot.Y%2A> properties.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.CircleHotSpot> objects. One is created declaratively; its <xref:System.Web.UI.WebControls.CircleHotSpot.X%2A>, <xref:System.Web.UI.WebControls.CircleHotSpot.Y%2A>, and <xref:System.Web.UI.WebControls.CircleHotSpot.Radius%2A> properties are likewise set declaratively. The other is created programmatically and its <xref:System.Web.UI.WebControls.CircleHotSpot.X%2A>, <xref:System.Web.UI.WebControls.CircleHotSpot.Y%2A>, and <xref:System.Web.UI.WebControls.CircleHotSpot.Radius%2A> properties are set programmatically. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CircleHotSpot.Radius#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CircleHotSpot.Radius/CS/circlehotspot.radiuscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CircleHotSpot.Radius#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CircleHotSpot.Radius/VB/circlehotspot.radiusvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified value is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="public int X { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 X" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CircleHotSpot.X" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the x-coordinate of the center of the circular region defined by this <see cref="T:System.Web.UI.WebControls.CircleHotSpot" /> object.</summary>
+        <value>The x-coordinate of the center of the circular region defined by this <see cref="T:System.Web.UI.WebControls.CircleHotSpot" /> object. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.CircleHotSpot.X%2A> property allows you to get or set a value that represents the x-coordinate of the center of the circular region defined by this <xref:System.Web.UI.WebControls.CircleHotSpot> object. To completely define a <xref:System.Web.UI.WebControls.CircleHotSpot> object, you must specify a value for the <xref:System.Web.UI.WebControls.CircleHotSpot.X%2A> property as well as the <xref:System.Web.UI.WebControls.CircleHotSpot.Y%2A> and <xref:System.Web.UI.WebControls.CircleHotSpot.Radius%2A> properties.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.CircleHotSpot> objects. One is created declaratively; its <xref:System.Web.UI.WebControls.CircleHotSpot.X%2A>, <xref:System.Web.UI.WebControls.CircleHotSpot.Y%2A>, and <xref:System.Web.UI.WebControls.CircleHotSpot.Radius%2A> properties are likewise set declaratively. The other is created programmatically and its <xref:System.Web.UI.WebControls.CircleHotSpot.X%2A>, <xref:System.Web.UI.WebControls.CircleHotSpot.Y%2A>, and <xref:System.Web.UI.WebControls.CircleHotSpot.Radius%2A> properties are set programmatically. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CircleHotSpot.Radius#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CircleHotSpot.Radius/CS/circlehotspot.radiuscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CircleHotSpot.Radius#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CircleHotSpot.Radius/VB/circlehotspot.radiusvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="public int Y { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Y" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CircleHotSpot.Y" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the y-coordinate of the center of the circular region defined by this <see cref="T:System.Web.UI.WebControls.CircleHotSpot" /> object.</summary>
+        <value>The y-coordinate of the center of the circular region defined by this <see cref="T:System.Web.UI.WebControls.CircleHotSpot" /> object. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.CircleHotSpot.Y%2A> property allows you to get or set a value that represents the y-coordinate of the center of the circular region defined by this <xref:System.Web.UI.WebControls.CircleHotSpot> object. To completely define a <xref:System.Web.UI.WebControls.CircleHotSpot> object, you must specify a value for the <xref:System.Web.UI.WebControls.CircleHotSpot.Y%2A> property as well as the <xref:System.Web.UI.WebControls.CircleHotSpot.X%2A> and <xref:System.Web.UI.WebControls.CircleHotSpot.Radius%2A> properties.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.CircleHotSpot> objects. One is created declaratively; its <xref:System.Web.UI.WebControls.CircleHotSpot.X%2A>, <xref:System.Web.UI.WebControls.CircleHotSpot.Y%2A>, and <xref:System.Web.UI.WebControls.CircleHotSpot.Radius%2A> properties are likewise set declaratively. The other is created programmatically and its <xref:System.Web.UI.WebControls.CircleHotSpot.X%2A>, <xref:System.Web.UI.WebControls.CircleHotSpot.Y%2A>, and <xref:System.Web.UI.WebControls.CircleHotSpot.Radius%2A> properties are set programmatically. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CircleHotSpot.Radius#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CircleHotSpot.Radius/CS/circlehotspot.radiuscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CircleHotSpot.Radius#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CircleHotSpot.Radius/VB/circlehotspot.radiusvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,111 @@
+<Type Name="X509CertificateValidationMode" FullName="System.ServiceModel.Security.X509CertificateValidationMode">
+  <TypeSignature Language="C#" Value="public enum X509CertificateValidationMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X509CertificateValidationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.X509CertificateValidationMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>An enumeration that lists the ways of validating a certificate.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEX509CertificateValidationMode#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uex509certificatevalidationmode/cs/client.cs#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChainTrust">
+      <MemberSignature Language="C#" Value="ChainTrust" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.X509CertificateValidationMode ChainTrust = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate is valid if the chain builds to a certification authority in the trusted root store.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Custom">
+      <MemberSignature Language="C#" Value="Custom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.X509CertificateValidationMode Custom = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.Custom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user must plug in a custom <see cref="T:System.IdentityModel.Selectors.X509CertificateValidator" /> to validate the certificate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.X509CertificateValidationMode None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No validation of the certificate is done.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerOrChainTrust">
+      <MemberSignature Language="C#" Value="PeerOrChainTrust" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.X509CertificateValidationMode PeerOrChainTrust = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.PeerOrChainTrust" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate is valid if it is in the trusted people store, or if the chain builds to a certification authority in the trusted root store.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerTrust">
+      <MemberSignature Language="C#" Value="PeerTrust" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.X509CertificateValidationMode PeerTrust = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.X509CertificateValidationMode.PeerTrust" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate is valid if it is in the trusted people store.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

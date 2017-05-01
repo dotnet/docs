@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: d4cce80c-342f-4097-be8b-40ab0bfa90ba
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Scope of Default Namespaces in Visual Basic

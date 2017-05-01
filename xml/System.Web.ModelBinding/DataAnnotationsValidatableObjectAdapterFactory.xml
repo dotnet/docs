@@ -1,0 +1,26 @@
+<Type Name="DataAnnotationsValidatableObjectAdapterFactory" FullName="System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory">
+  <TypeSignature Language="C#" Value="public delegate System.Web.ModelBinding.ModelValidator DataAnnotationsValidatableObjectAdapterFactory(ModelMetadata metadata, ModelBindingExecutionContext context);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataAnnotationsValidatableObjectAdapterFactory extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="metadata" Type="System.Web.ModelBinding.ModelMetadata" />
+    <Parameter Name="context" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Web.ModelBinding.ModelValidator</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="metadata">To be added.</param>
+    <param name="context">To be added.</param>
+    <summary>Represents a factory for validators that are based on the <see cref="T:System.ComponentModel.DataAnnotations.IValidatableObject" /> interface.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

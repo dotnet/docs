@@ -1,0 +1,126 @@
+<Type Name="WaitHandleExtensions" FullName="System.Threading.WaitHandleExtensions">
+  <TypeSignature Language="C#" Value="public static class WaitHandleExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WaitHandleExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.WaitHandleExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Handles</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides convenience methods to for working with a safe handle for a wait handle.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Threading.WaitHandleExtensions> class includes two extension methods that allow you to create a safe handle for a wait handle and to retrieve the native operating system handle from a safe handle.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSafeWaitHandle">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.SafeHandles.SafeWaitHandle GetSafeWaitHandle (this System.Threading.WaitHandle waitHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Win32.SafeHandles.SafeWaitHandle GetSafeWaitHandle(class System.Threading.WaitHandle waitHandle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandleExtensions.GetSafeWaitHandle(System.Threading.WaitHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Handles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.SafeHandles.SafeWaitHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitHandle" Type="System.Threading.WaitHandle" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="waitHandle">A native operating system handle.</param>
+        <summary>Gets the safe handle for a native operating system wait handle.</summary>
+        <returns>The safe wait handle that wraps the native operating system wait handle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Threading.WaitHandleExtensions.GetSafeWaitHandle%2A> is an extension method that is equivalent to retrieving the value of the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="waitHandle" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSafeWaitHandle">
+      <MemberSignature Language="C#" Value="public static void SetSafeWaitHandle (this System.Threading.WaitHandle waitHandle, Microsoft.Win32.SafeHandles.SafeWaitHandle value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSafeWaitHandle(class System.Threading.WaitHandle waitHandle, class Microsoft.Win32.SafeHandles.SafeWaitHandle value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandleExtensions.SetSafeWaitHandle(System.Threading.WaitHandle,Microsoft.Win32.SafeHandles.SafeWaitHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Handles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitHandle" Type="System.Threading.WaitHandle" RefType="this" />
+        <Parameter Name="value" Type="Microsoft.Win32.SafeHandles.SafeWaitHandle" />
+      </Parameters>
+      <Docs>
+        <param name="waitHandle">A wait handle that encapsulates an operating system-specific object that waits for exclusive access to a shared resource.</param>
+        <param name="value">The safe handle to wrap the operating system handle.</param>
+        <summary>Sets a safe handle for a native operating system wait handle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Threading.WaitHandleExtensions.SetSafeWaitHandle%2A> is an extension method that is equivalent to assigning a value to the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="waitHandle" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

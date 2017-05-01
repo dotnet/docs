@@ -13,19 +13,25 @@ ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
 
 # Additions to the csproj format for .NET Core
 
-This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and 
-[MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, 
-see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  
+This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and [MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  
 
 ## Implicit package references
-Metapackages are now implicitly referenced based on the target framework specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. 
-If the target framework is `netcoreap1.x`, the proper version of the `Microsoft.NETCore.App` metapackage is referenced. 
-Otherwise, if the target framework is `netstandard1.x`, the proper version of the `NetStandard.Library` metapackage is referenced.
+Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order.
 
-As far as the rest of the behavior is concerned, the tools will work as expected and most of the gestures will remain the same (for example, `dotnet restore`). 
+```xml
+ <PropertyGroup>
+   <TargetFramework>netcoreapp1.1</TargetFramework>
+ </PropertyGroup>
+ ```
+ 
+ ```xml
+ <PropertyGroup>
+   <TargetFrameworks>netcoreapp1.1;net462</TargetFrameworks>
+ </PropertyGroup>
+ ```
 
 ### Recommendations
-Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are now implicitly referenced, the following are our recommended best practices:
+Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are implicitly referenced, the following are our recommended best practices:
 
 * Never have an explicit reference to the `Microsoft.NETCore.App` or `NetStandard.Library` metapackages via the `<PackageReference>` property in your project file.
 * If you need a specific version of the runtime, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
@@ -35,9 +41,9 @@ Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are now impl
 ## Default compilation includes in .NET Core projects
 With the move to the *csproj* format in the latest SDK versions, we've moved the default includes and excludes for compile items and embedded resources to the SDK properties files. This means that you no longer need to specify these items in your project file. 
 
-The main reason for doing this is to reduce the clutter on your project file. The defaults that are present in the SDK should cover most common use cases, so there is no need to repeat them in every project that you create. This leads to smaller project files that are much easier to understand as well as edit by hand, if needed. 
+The main reason for doing this is to reduce the clutter in your project file. The defaults that are present in the SDK should cover most common use cases, so there is no need to repeat them in every project that you create. This leads to smaller project files that are much easier to understand as well as edit by hand, if needed. 
 
-The following table shows which element and which globs are both included and excluded in the SDK: 
+The following table shows which element and which [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are both included and excluded in the SDK: 
 
 | Element          	| Include glob                           	| Exclude glob                                     	            | Remove glob             	 |
 |-------------------|-------------------------------------------|---------------------------------------------------------------|----------------------------|
@@ -61,7 +67,7 @@ Setting this property to `false` will override implicit inclusion and the behavi
 This change does not modify the main mechanics of other includes. However, if you wish to specify, for example, some files to get published with your app, you can still use the known mechanisms in *csproj* for that (for example, the `<Content>` element).
 
 ### Recommendation
-With csproj, we recommend that you remove the default globs from your project and only add globs file paths for those artifacts that your app/library needs for various scenarios (runtime, NuGet packaging, etc.)
+With csproj, we recommend that you remove the default globs from your project and only add file paths with globs for those artifacts that your app/library needs for various scenarios (runtime, NuGet packaging, etc.)
 
 
 ## Additions
@@ -111,12 +117,12 @@ Alternatively, the attribute can contain:
 * `None` – none of the assets are used.
 * `All` – all assets are used.
 
-### DotnetCliToolReference
-`<DotnetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It's 
+### DotNetCliToolReference
+`<DotNetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It's 
 a replacement for the `tools` node in *project.json*. 
 
 ```xml
-<DotnetCliToolReference Include="<package-id>" Version="" />
+<DotNetCliToolReference Include="<package-id>" Version="" />
 ```
 
 #### Version

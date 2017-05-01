@@ -1,0 +1,17 @@
+<Window
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
+  xmlns:src="clr-namespace:SDKSample">
+  <Window.Resources>
+    <src:Person x:Key="myDataSource" PersonName="Joe"/>
+  </Window.Resources>
+
+    <TextBox>
+        <TextBox.Text>
+            <Binding Source="{StaticResource myDataSource}" Path="PersonName"
+                     diag:PresentationTraceSources.TraceLevel="High"/>
+        </TextBox.Text>
+    </TextBox>
+    
+</Window>

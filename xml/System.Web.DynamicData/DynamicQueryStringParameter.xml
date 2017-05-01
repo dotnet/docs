@@ -1,0 +1,123 @@
+<Type Name="DynamicQueryStringParameter" FullName="System.Web.DynamicData.DynamicQueryStringParameter">
+  <TypeSignature Language="C#" Value="public class DynamicQueryStringParameter : System.Web.UI.WebControls.Parameter, System.Web.DynamicData.IWhereParametersProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicQueryStringParameter extends System.Web.UI.WebControls.Parameter implements class System.Web.DynamicData.IWhereParametersProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicQueryStringParameter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.Parameter</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.DynamicData.IWhereParametersProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Automatically generates a collection of parameters that is used to create the <see langword="Where" /> clause for the data source control by retrieving query string values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DynamicQueryStringParameter> class is used by pages that are using ASP.NET Dynamic Data features. The <xref:System.Web.DynamicData.DynamicQueryStringParameter> class will generate a collection of <xref:System.Web.UI.WebControls.Parameter> objects for the primary keys, foreign keys, and Boolean columns of a table by retrieving query string values.  
+  
+ For primary keys, you can simply add a <xref:System.Web.DynamicData.DynamicQueryStringParameter> object without supplying any other parameters. Dynamic Data will generate the parameters for the primary key or keys. For foreign keys or Boolean columns, you must set the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property to the name of the column you want to filter.  
+  
+ In order to use the <xref:System.Web.DynamicData.DynamicQueryStringParameter> class, you must add a <xref:System.Web.DynamicData.DynamicDataManager> control to the page and you must register the data-bound control with the <xref:System.Web.DynamicData.DynamicDataManager> control by using the <xref:System.Web.DynamicData.DynamicDataManager.RegisterControl%2A?displayProperty=fullName> method.  
+  
+ See a run-time code example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.DynamicQueryStringParameter).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.DynamicData.DynamicQueryStringParameter> object as filter when displaying data in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.GridView> control contains a <xref:System.Web.UI.WebControls.TemplateField> object that creates a link that sets the query string value by using the foreign key value.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicQueryStringParameter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicQueryStringParameter/CS/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicQueryStringParameter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicQueryStringParameter/VB/Default.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicQueryStringParameter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicQueryStringParameter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicQueryStringParameter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="protected override object Evaluate (System.Web.HttpContext context, System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicQueryStringParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="context">Information about the HTTP request.</param>
+        <param name="control">The control the parameter is bound to.</param>
+        <summary>Throws an <see cref="T:System.InvalidOperationException" /> exception in all cases.</summary>
+        <returns>Throws an <see cref="T:System.InvalidOperationException" /> exception in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.DynamicData.DynamicQueryStringParameter.Evaluate%2A> method is invoked by ASP.NET, it throws an T:System.InvalidOperationException exception in all cases. This happens because one of the following conditions are met:  
+  
+-   The page does not contain a <xref:System.Web.DynamicData.DynamicDataManager> control.  
+  
+-   The data-bound control is not registered for use by the <xref:System.Web.DynamicData.DynamicDataManager> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWhereParameters">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Web.UI.WebControls.Parameter&gt; GetWhereParameters (System.Web.DynamicData.IDynamicDataSource dataSource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.WebControls.Parameter&gt; GetWhereParameters(class System.Web.DynamicData.IDynamicDataSource dataSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicQueryStringParameter.GetWhereParameters(System.Web.DynamicData.IDynamicDataSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.UI.WebControls.Parameter&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataSource" Type="System.Web.DynamicData.IDynamicDataSource" />
+      </Parameters>
+      <Docs>
+        <param name="dataSource">The data source object.</param>
+        <summary>Returns a collection of <see cref="T:System.Web.UI.WebControls.Parameter" /> objects that are automatically generated for the columns of a table by retrieving query string values.</summary>
+        <returns>A collection of parameters that are automatically generated for the columns of a table by retrieving query string values</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DynamicQueryStringParameter> class will generate a collection of <xref:System.Web.UI.WebControls.Parameter> objects for the primary keys, foreign keys and Boolean columns of a table by retrieving query string values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

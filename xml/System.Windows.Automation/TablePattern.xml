@@ -1,0 +1,227 @@
+<Type Name="TablePattern" FullName="System.Windows.Automation.TablePattern">
+  <TypeSignature Language="C#" Value="public class TablePattern : System.Windows.Automation.GridPattern" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TablePattern extends System.Windows.Automation.GridPattern" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TablePattern" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.GridPattern</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents controls that act as containers for a collection of child elements. The children of this element support <see cref="T:System.Windows.Automation.TableItemPattern" /> and are organized in a two-dimensional logical coordinate system that can be traversed by row and column.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This control pattern is analogous to <xref:System.Windows.Automation.GridPattern> with the distinction that any control that supports <xref:System.Windows.Automation.TablePattern> also exposes a column or row header relationship, or both, for each child element.  
+  
+ Controls that support the <xref:System.Windows.Automation.TablePattern> control pattern also support the <xref:System.Windows.Automation.GridPattern> control pattern in order to provide access to the inherent grid functionality of a table.  
+  
+ See [Control Pattern Mapping for UI Automation Clients](~/docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md) for examples of controls that may implement this control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cached">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.TablePattern.TablePatternInformation Cached { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.TablePattern/TablePatternInformation Cached" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TablePattern.Cached" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.TablePattern+TablePatternInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cached [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for this <see cref="T:System.Windows.Automation.TablePattern" />.</summary>
+        <value>A structure containing the cached [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for the control pattern.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Cached property values must have been previously requested using a <xref:System.Windows.Automation.CacheRequest>. Use <xref:System.Windows.Automation.TablePattern.Current%2A> to get the current value of a property.  
+  
+ For information on the properties available and their use, see <xref:System.Windows.Automation.TablePattern.TablePatternInformation>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The requested property is not in the cache.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeadersProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ColumnHeadersProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ColumnHeadersProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TablePattern.ColumnHeadersProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that gets the collection of column headers for a table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications.  UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TablePatternIdentifiers>.  
+  
+ The order of the headers returned will be consistent within a provider, but not necessarily across providers.  
+  
+ This property is not present in <xref:System.Windows.Automation.TablePattern.TablePatternInformation> and must be retrieved by using <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> or <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
+  
+   
+  
+## Examples  
+ In the following example, an array of <xref:System.Windows.Automation.AutomationElement> objects representing the primary row or column headers of a table is retrieved.  
+  
+ For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
+  
+ [!code-csharp[UIATablePattern_snip#1025](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#1025)]
+ [!code-vb[UIATablePattern_snip#1025](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#1025)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.TablePattern.TablePatternInformation Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.TablePattern/TablePatternInformation Current" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TablePattern.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.TablePattern+TablePatternInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for this <see cref="T:System.Windows.Automation.TablePattern" />.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.TablePattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
+  
+ For information on the properties available and their use, see <xref:System.Windows.Automation.TablePattern.TablePatternInformation>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pattern">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TablePattern.Pattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationPattern</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="T:System.Windows.Automation.TablePattern" /> control pattern.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TablePatternIdentifiers>.  
+  
+ The pattern identifier is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.TablePattern> control pattern is obtained from a <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIATablePattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#101)]
+ [!code-vb[UIATablePattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#101)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowHeadersProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty RowHeadersProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty RowHeadersProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TablePattern.RowHeadersProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that gets the collection of row headers for a table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications.  UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TablePatternIdentifiers>.  
+  
+ The order of the headers returned will be consistent within a provider, but not necessarily across providers.  
+  
+ This property is not present in <xref:System.Windows.Automation.TablePattern.TablePatternInformation> and must be retrieved by using <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> or <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
+  
+   
+  
+## Examples  
+ In the following example, an array of <xref:System.Windows.Automation.AutomationElement> objects representing the primary row or column headers of a table is retrieved.  
+  
+ For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
+  
+ [!code-csharp[UIATablePattern_snip#1025](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#1025)]
+ [!code-vb[UIATablePattern_snip#1025](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#1025)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowOrColumnMajorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty RowOrColumnMajorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty RowOrColumnMajorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TablePattern.RowOrColumnMajorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications.  UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TablePatternIdentifiers>.  
+  
+   
+  
+## Examples  
+ In the following example, a root element is passed to a function that returns a collection of <xref:System.Windows.Automation.AutomationElement> objects that are descendants of the root and satisfy a set of property conditions. This example retrieves the <xref:System.Windows.Automation.AutomationElement>s that support <xref:System.Windows.Automation.TablePattern> and where the <xref:System.Windows.Automation.TablePattern.RowOrColumnMajorProperty> is either <xref:System.Windows.Automation.RowOrColumnMajor> or <xref:System.Windows.Automation.RowOrColumnMajor>.  
+  
+ [!code-csharp[UIATablePattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#100)]
+ [!code-vb[UIATablePattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#100)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

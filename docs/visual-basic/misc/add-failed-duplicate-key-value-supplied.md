@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrCollection_DuplicateKey"
 ms.assetid: 7b1d6e6c-a69d-4713-a19d-ae1534a60464
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

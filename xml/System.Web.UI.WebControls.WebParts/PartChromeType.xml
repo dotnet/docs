@@ -1,0 +1,122 @@
+<Type Name="PartChromeType" FullName="System.Web.UI.WebControls.WebParts.PartChromeType">
+  <TypeSignature Language="C#" Value="public enum PartChromeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PartChromeType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PartChromeType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the kind of border that surrounds a Web Parts control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A part control's <xref:System.Web.UI.WebControls.WebParts.PartChromeType> enumeration determines what kind of border surrounds a Web Parts control. Options include showing a title bar only, a border only, a title bar and border, or neither.  
+  
+ If the enumeration value is set to Default on the <xref:System.Web.UI.WebControls.WebParts.Part.ChromeType%2A> property of a part control, the control inherits its setting from the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType%2A> property of the zone that contains the control.  
+  
+   
+  
+## Examples  
+ The following code examples demonstrate the declarative use of the <xref:System.Web.UI.WebControls.WebParts.PartChromeType> enumeration by using a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control referenced in an ASP.NET Web page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ The first part of the example contains the code for the custom control, named `TextDisplayWebPart`. Because the control derives from <xref:System.Web.UI.WebControls.WebParts.WebPart>, it also inherits the common properties that the <xref:System.Web.UI.WebControls.WebParts.Part> class provides, including the <xref:System.Web.UI.WebControls.WebParts.Part.ChromeType%2A> property, which uses the <xref:System.Web.UI.WebControls.WebParts.PartChromeType> enumeration as its return type.  
+  
+ [!code-csharp[WebParts_Part_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/textdisplaywebpart.cs#2)]
+ [!code-vb[WebParts_Part_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/textdisplaywebpart.vb#2)]  
+  
+ Note that in the declarative markup for the Web page, the second instance of the `TextDisplayWebPart` control sets its <xref:System.Web.UI.WebControls.WebParts.Part.ChromeType%2A> property value to TitleOnly. After you load the page in a browser, the second control instance appears minimized. When you expand the second control, it has only a title bar without a border.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_Part_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Part_Overview/CS/partoverviewcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_Part_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Part_Overview/VB/partoverviewvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BorderOnly">
+      <MemberSignature Language="C#" Value="BorderOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeType BorderOnly = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.BorderOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A border only, without a title bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeType Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A border setting inherited from the part control's containing zone.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeType None = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No border and no title bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleAndBorder">
+      <MemberSignature Language="C#" Value="TitleAndBorder" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeType TitleAndBorder = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.TitleAndBorder" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A title bar and a border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleOnly">
+      <MemberSignature Language="C#" Value="TitleOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeType TitleOnly = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeType.TitleOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A title bar only, without a border.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

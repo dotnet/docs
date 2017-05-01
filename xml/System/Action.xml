@@ -1,0 +1,68 @@
+<Type Name="Action" FullName="System.Action">
+  <TypeSignature Language="C#" Value="public delegate void Action();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Action extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Action" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>Encapsulates a method that has no parameters and does not return a value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this delegate to pass a method as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have no parameters and no return value. (In C#, the method must return `void`. In Visual Basic, it must be defined by the `Sub`…`End Sub` construct. It can also be a method that returns a value that is ignored.) Typically, such a method is used to perform an operation.  
+  
+> [!NOTE]
+>  To reference a method that has no parameters and returns a value, use the generic <xref:System.Func%601> delegate instead.  
+  
+ When you use the <xref:System.Action> delegate, you do not have to explicitly define a delegate that encapsulates a parameterless procedure. For example, the following code explicitly declares a delegate named `ShowValue` and assigns a reference to the `Name.DisplayToWindow` instance method to its delegate instance.  
+  
+ [!code-cpp[System.Action.Delegate#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.action.delegate/cpp/delegate.cpp#1)]
+ [!code-csharp[System.Action.Delegate#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.action.delegate/cs/delegate.cs#1)]
+ [!code-vb[System.Action.Delegate#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.action.delegate/vb/delegate.vb#1)]  
+  
+ The following example simplifies this code by instantiating the <xref:System.Action> delegate instead of explicitly defining a new delegate and assigning a named method to it.  
+  
+ [!code-cpp[System.Action#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Action/cpp/action.cpp#2)]
+ [!code-csharp[System.Action#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action/cs/Action.cs#2)]
+ [!code-vb[System.Action#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Action/vb/Action.vb#2)]  
+  
+ You can also use the <xref:System.Action> delegate with anonymous methods in C#, as the following example illustrates. (For an introduction to anonymous methods, see [Anonymous Methods](~/docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md).)  
+  
+ [!code-csharp[System.Action#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action/cs/Anon.cs#3)]  
+  
+ You can also assign a lambda expression to an <xref:System.Action> delegate instance, as the following example illustrates. (For an introduction to lambda expressions, see [Lambda Expressions](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).)  
+  
+ [!code-csharp[System.Action#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action/cs/Lambda.cs#4)]
+ [!code-vb[System.Action#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Action/vb/lambda.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

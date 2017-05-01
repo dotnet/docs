@@ -1,0 +1,66 @@
+<Type Name="DsmlDirectoryIdentifier" FullName="System.DirectoryServices.Protocols.DsmlDirectoryIdentifier">
+  <TypeSignature Language="C#" Value="public class DsmlDirectoryIdentifier : System.DirectoryServices.Protocols.DirectoryIdentifier" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DsmlDirectoryIdentifier extends System.DirectoryServices.Protocols.DirectoryIdentifier" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryIdentifier</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier" /> class identifies an HTTP server.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used to identify a server that provides DSML over SOAP/HTTP.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DsmlDirectoryIdentifier (Uri serverUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri serverUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier.#ctor(System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serverUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="serverUri">A server represented as a <see cref="T:System.Uri" /> object.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier.#ctor(System.Uri)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier" /> class using the specified parameter.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serverUri" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serverUri" /> scheme is not http or https.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerUri">
+      <MemberSignature Language="C#" Value="public Uri ServerUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ServerUri" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier.ServerUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier.ServerUri" /> property contains the <see cref="T:System.Uri" /> of the server this object identifies.</summary>
+        <value>The <see cref="T:System.Uri" /> of the server this object identifies.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

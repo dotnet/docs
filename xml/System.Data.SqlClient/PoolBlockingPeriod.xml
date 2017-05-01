@@ -1,0 +1,70 @@
+<Type Name="PoolBlockingPeriod" FullName="System.Data.SqlClient.PoolBlockingPeriod">
+  <TypeSignature Language="C#" Value="public enum PoolBlockingPeriod" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PoolBlockingPeriod extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.PoolBlockingPeriod" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a value for [PoolBlockingPeriod Property](../Topic/PoolBlockingPeriod%20Property.md).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AlwaysBlock">
+      <MemberSignature Language="C#" Value="AlwaysBlock" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.PoolBlockingPeriod AlwaysBlock = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.PoolBlockingPeriod.AlwaysBlock" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.PoolBlockingPeriod</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Blocking period ON for all SQL servers including Azure SQL servers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.PoolBlockingPeriod Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.PoolBlockingPeriod.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.PoolBlockingPeriod</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Blocking period OFF for Azure SQL servers, but ON for all other SQL servers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeverBlock">
+      <MemberSignature Language="C#" Value="NeverBlock" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.PoolBlockingPeriod NeverBlock = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.PoolBlockingPeriod.NeverBlock" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.PoolBlockingPeriod</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Blocking period OFF for all SQL servers including Azure SQL servers.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

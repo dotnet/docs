@@ -1,0 +1,139 @@
+<Type Name="DependencyPropertyOptions" FullName="System.Workflow.ComponentModel.DependencyPropertyOptions">
+  <TypeSignature Language="C#" Value="public enum DependencyPropertyOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DependencyPropertyOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.DependencyPropertyOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an enumeration of <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> options.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.DependencyPropertyOptions Default = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.DependencyPropertyOptions.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default option. No noted characteristic.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DelegateProperty">
+      <MemberSignature Language="C#" Value="DelegateProperty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.DependencyPropertyOptions DelegateProperty = unsigned int8(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.DependencyPropertyOptions.DelegateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This option is used to specify whether or not a property is of type <see cref="T:System.Delegate" />. It is important to use this to disambiguate the delegate properties from events.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Metadata">
+      <MemberSignature Language="C#" Value="Metadata" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.DependencyPropertyOptions Metadata = unsigned int8(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.DependencyPropertyOptions.Metadata" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> represents metadata.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NonSerialized">
+      <MemberSignature Language="C#" Value="NonSerialized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.DependencyPropertyOptions NonSerialized = unsigned int8(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.DependencyPropertyOptions.NonSerialized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /></summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ is not serialized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Optional">
+      <MemberSignature Language="C#" Value="Optional" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.DependencyPropertyOptions Optional = unsigned int8(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.DependencyPropertyOptions.Optional" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> is an optional property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="ReadOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.DependencyPropertyOptions ReadOnly = unsigned int8(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.DependencyPropertyOptions.ReadOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> is read-only.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

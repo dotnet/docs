@@ -1,0 +1,496 @@
+<Type Name="Audio" FullName="Microsoft.VisualBasic.Devices.Audio">
+  <TypeSignature Language="C#" Value="public class Audio" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Audio extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Audio" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods for playing sounds.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the `My.Computer.Audio.Play` and `My.Computer.Audio.PlaySystemSound` methods to play .wav sound files and system sounds.  
+  
+ For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ The `My.Computer.Audio.Play` method plays the specified sound in the background when `AudioPlayMode.Background` is specified.  
+  
+ [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+  
+ This code can run only within a Windows Forms application.  
+  
+ The file name should reference a .wav sound file on your system.  
+  
+ To simplify the management of your sound files, consider storing the files as application resources. The files can then be accessed through the `My.Resources` object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Audio ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Devices.Audio" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [Objects](http://msdn.microsoft.com/library/651c73e4-dca8-402b-9c6b-e3902b3a3f4b)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Play">
+      <MemberSignature Language="C#" Value="public void Play (string location);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void Play(string location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Play(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="location">A <see langword="String" /> containing the name of the sound file</param>
+        <summary>Plays a .wav sound file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Play` method plays the .wav sound file stored as a file at `location`, as a byte array in `data`, or as a stream in `stream`.  
+  
+ If the overload that takes only the `location` parameter is used, the `Play` method plays the sound in the background. Otherwise, the `playMode` parameter determines how the sound will play.  
+  
+|`playMode`|Description|  
+|-|-|  
+|`AudioPlayMode.Background`|Plays the sound in the background. The calling code continues to execute.|  
+|`AudioPlayMode.BackgroundLoop`|Plays the sound in the background until the <xref:Microsoft.VisualBasic.Devices.Audio.Stop%2A> method is called. The calling code continues to execute.|  
+|`AudioPlayMode.WaitToComplete`|Plays the sound and waits until it completes before the calling code continues.|  
+  
+ Background playing lets the application execute other code while the sound plays.  
+  
+ For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
+  
+ [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+  
+ This code example can only run within a Windows Forms application.  
+  
+ The file name should reference a .wav sound file on your system.  
+  
+ To simplify the management of your sound files, consider storing the files as application resources. They can then be accessed through the `My.Resources` object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is an empty string.</exception>
+        <exception cref="T:System.IO.IOException">The user does not have sufficient permissions to access the file named by <paramref name="location" />.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The file path is malformed in <paramref name="location" />.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The path name in <paramref name="location" /> is too long.</exception>
+        <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Play">
+      <MemberSignature Language="C#" Value="public void Play (byte[] data, Microsoft.VisualBasic.AudioPlayMode playMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void Play(unsigned int8[] data, valuetype Microsoft.VisualBasic.AudioPlayMode playMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Play(System.Byte[],Microsoft.VisualBasic.AudioPlayMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Byte[]" />
+        <Parameter Name="playMode" Type="Microsoft.VisualBasic.AudioPlayMode" />
+      </Parameters>
+      <Docs>
+        <param name="data">
+          <see langword="Byte" /> array that represents the sound file.</param>
+        <param name="playMode">
+          <see cref="T:Microsoft.VisualBasic.AudioPlayMode" /> mode for playing the sound. By default, <see langword="AudioPlayMode.Background" />.</param>
+        <summary>Plays a .wav sound file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Play` method plays the .wav sound file stored as a file at `location`, as a byte array in `data`, or as a stream in `stream`.  
+  
+ If the overload that takes only the `location` parameter is used, the `Play` method plays the sound in the background. Otherwise, the `playMode` parameter determines how the sound will play.  
+  
+|`playMode`|Description|  
+|-|-|  
+|`AudioPlayMode.Background`|Plays the sound in the background. The calling code continues to execute.|  
+|`AudioPlayMode.BackgroundLoop`|Plays the sound in the background until the <xref:Microsoft.VisualBasic.Devices.Audio.Stop%2A> method is called. The calling code continues to execute.|  
+|`AudioPlayMode.WaitToComplete`|Plays the sound and waits until it completes before the calling code continues.|  
+  
+ Background playing lets the application execute other code while the sound plays.  
+  
+ For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
+  
+ [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+  
+ This code example can only run within a Windows Forms application.  
+  
+ The file name should reference a .wav sound file on your system.  
+  
+ To simplify the management of your sound files, consider storing the files as application resources. They can then be accessed through the `My.Resources` object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="playMode" /> is not one of the <see cref="T:Microsoft.VisualBasic.AudioPlayMode" /> enumeration values.</exception>
+        <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Play">
+      <MemberSignature Language="C#" Value="public void Play (System.IO.Stream stream, Microsoft.VisualBasic.AudioPlayMode playMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void Play(class System.IO.Stream stream, valuetype Microsoft.VisualBasic.AudioPlayMode playMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Play(System.IO.Stream,Microsoft.VisualBasic.AudioPlayMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="playMode" Type="Microsoft.VisualBasic.AudioPlayMode" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+          <see cref="T:System.IO.Stream" /> that represents the sound file.</param>
+        <param name="playMode">
+          <see cref="T:Microsoft.VisualBasic.AudioPlayMode" /> mode for playing the sound. By default, <see langword="AudioPlayMode.Background" />.</param>
+        <summary>Plays a .wav sound file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Play` method plays the .wav sound file stored as a file at `location`, as a byte array in `data`, or as a stream in `stream`.  
+  
+ If the overload that takes only the `location` parameter is used, the `Play` method plays the sound in the background. Otherwise, the `playMode` parameter determines how the sound will play.  
+  
+|`playMode`|Description|  
+|-|-|  
+|`AudioPlayMode.Background`|Plays the sound in the background. The calling code continues to execute.|  
+|`AudioPlayMode.BackgroundLoop`|Plays the sound in the background until the <xref:Microsoft.VisualBasic.Devices.Audio.Stop%2A> method is called. The calling code continues to execute.|  
+|`AudioPlayMode.WaitToComplete`|Plays the sound and waits until it completes before the calling code continues.|  
+  
+ Background playing lets the application execute other code while the sound plays.  
+  
+ For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
+  
+ [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+  
+ This code example can only run within a Windows Forms application.  
+  
+ The file name should reference a .wav sound file on your system.  
+  
+ To simplify the management of your sound files, consider storing the files as application resources. They can then be accessed through the `My.Resources` object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="playMode" /> is not one of the <see cref="T:Microsoft.VisualBasic.AudioPlayMode" /> enumeration values.</exception>
+        <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Play">
+      <MemberSignature Language="C#" Value="public void Play (string location, Microsoft.VisualBasic.AudioPlayMode playMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void Play(string location, valuetype Microsoft.VisualBasic.AudioPlayMode playMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Play(System.String,Microsoft.VisualBasic.AudioPlayMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="playMode" Type="Microsoft.VisualBasic.AudioPlayMode" />
+      </Parameters>
+      <Docs>
+        <param name="location">A <see langword="String" /> containing the name of the sound file</param>
+        <param name="playMode">
+          <see cref="T:Microsoft.VisualBasic.AudioPlayMode" /> mode for playing the sound. By default, <see langword="AudioPlayMode.Background" />.</param>
+        <summary>Plays a .wav sound file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Play` method plays the .wav sound file stored as a file at `location`, as a byte array in `data`, or as a stream in `stream`.  
+  
+ If the overload that takes only the `location` parameter is used, the `Play` method plays the sound in the background. Otherwise, the `playMode` parameter determines how the sound will play.  
+  
+|`playMode`|Description|  
+|-|-|  
+|`AudioPlayMode.Background`|Plays the sound in the background. The calling code continues to execute.|  
+|`AudioPlayMode.BackgroundLoop`|Plays the sound in the background until the <xref:Microsoft.VisualBasic.Devices.Audio.Stop%2A> method is called. The calling code continues to execute.|  
+|`AudioPlayMode.WaitToComplete`|Plays the sound and waits until it completes before the calling code continues.|  
+  
+ Background playing lets the application execute other code while the sound plays.  
+  
+ For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
+  
+ [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+  
+ This code example can only run within a Windows Forms application.  
+  
+ The file name should reference a .wav sound file on your system.  
+  
+ To simplify the management of your sound files, consider storing the files as application resources. They can then be accessed through the `My.Resources` object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is an empty string.</exception>
+        <exception cref="T:System.IO.IOException">The user does not have sufficient permissions to access the file named by <paramref name="location" />.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The file path is malformed in <paramref name="location" />.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The path name in <paramref name="location" /> is too long.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="playMode" /> is not one of the <see cref="T:Microsoft.VisualBasic.AudioPlayMode" /> enumeration values.</exception>
+        <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaySystemSound">
+      <MemberSignature Language="C#" Value="public void PlaySystemSound (System.Media.SystemSound systemSound);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void PlaySystemSound(class System.Media.SystemSound systemSound) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.PlaySystemSound(System.Media.SystemSound)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="systemSound" Type="System.Media.SystemSound" />
+      </Parameters>
+      <Docs>
+        <param name="systemSound">
+          <see cref="T:System.Media.SystemSound" /> object representing the system sound to play.</param>
+        <summary>Plays a system sound.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `PlaySystemSound` method plays the system sound described by `systemSound`; the sound is played once, in the background.  
+  
+ The value of `systemSound` must be one of the shared members from the <xref:System.Media.SystemSounds> class:  
+  
+-   <xref:System.Media.SystemSounds.Asterisk%2A>  
+  
+-   <xref:System.Media.SystemSounds.Beep%2A>  
+  
+-   <xref:System.Media.SystemSounds.Exclamation%2A>  
+  
+-   <xref:System.Media.SystemSounds.Hand%2A>  
+  
+-   <xref:System.Media.SystemSounds.Question%2A>  
+  
+ For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Computer.Audio.PlaySystemSound` method to play a system sound.  
+  
+ [!code-vb[VbVbalrMyComputer#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#17)]  
+  
+ This code example can run only within a Windows Forms application.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="systemSound" /> is <see langword="Nothing" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stops a sound playing in the background.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Computer.Audio.Stop` method stops a sound playing in the background that was started by the `My.Computer.Audio.Play` method.  
+  
+ In general, when an application plays a looping sound, it should stop the sound at some point.  
+  
+ For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Computer.Audio.Stop` method to stop the application currently playing background or looping sound and uses the `My.Computer.Audio.Play` method to play a looping sound in the background.  
+  
+ [!code-vb[VbVbalrMyComputer#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#19)]  
+  
+ This code example can run only within a Windows Forms application.  
+  
+ The file name should reference a .wav sound file on your system.  
+  
+ To simplify the management of your sound files, consider storing the files as application resources. These files can then be accessed through the `My.Resources` object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 9a22bea1-c755-4aac-800a-fcd9e5107ace
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Deferred Execution Example (Visual Basic)

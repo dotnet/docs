@@ -1,0 +1,104 @@
+<Type Name="DataControlExtensions" FullName="System.Web.UI.DataControlExtensions">
+  <TypeSignature Language="C#" Value="public static class DataControlExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DataControlExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataControlExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides extension methods that are used by ASP.NET Dynamic Data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataControlExtensions> class is used to enable Dynamic Data features in ASP.NET data-bound controls.  
+  
+   
+  
+## Examples  
+ For an example of how to enable Dynamic Data features in a data-bound control, see [Walkthrough: Enabling Dynamic Data in ASP.NET Data-Bound Controls](http://msdn.microsoft.com/en-us/c170c9df-54f2-4fee-ad9f-33f2a882928f).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnableDynamicData">
+      <MemberSignature Language="C#" Value="public static void EnableDynamicData (this System.Web.UI.INamingContainer control, Type entityType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableDynamicData(class System.Web.UI.INamingContainer control, class System.Type entityType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataControlExtensions.EnableDynamicData(System.Web.UI.INamingContainer,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.INamingContainer" RefType="this" />
+        <Parameter Name="entityType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="control">The data control to enable Dynamic Data behavior for.</param>
+        <param name="entityType">The type to use for metadata.</param>
+        <summary>Enables Dynamic Data behavior for the specified data control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableDynamicData">
+      <MemberSignature Language="C#" Value="public static void EnableDynamicData (this System.Web.UI.INamingContainer control, Type entityType, System.Collections.Generic.IDictionary&lt;string,object&gt; defaultValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableDynamicData(class System.Web.UI.INamingContainer control, class System.Type entityType, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; defaultValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataControlExtensions.EnableDynamicData(System.Web.UI.INamingContainer,System.Type,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.INamingContainer" RefType="this" />
+        <Parameter Name="entityType" Type="System.Type" />
+        <Parameter Name="defaultValues" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="control">The data control to enable Dynamic Data behavior for.</param>
+        <param name="entityType">The type to use for metadata.</param>
+        <param name="defaultValues">The default values to use with the <see cref="T:System.Web.UI.INamingContainer" /> object.</param>
+        <summary>Enables Dynamic Data behavior for the specified data control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableDynamicData">
+      <MemberSignature Language="C#" Value="public static void EnableDynamicData (this System.Web.UI.INamingContainer control, Type entityType, object defaults);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableDynamicData(class System.Web.UI.INamingContainer control, class System.Type entityType, object defaults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataControlExtensions.EnableDynamicData(System.Web.UI.INamingContainer,System.Type,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.INamingContainer" RefType="this" />
+        <Parameter Name="entityType" Type="System.Type" />
+        <Parameter Name="defaults" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="control">The data control to enable Dynamic Data behavior for.</param>
+        <param name="entityType">The type that represents the table to display.</param>
+        <param name="defaults">The default values to use with the <see cref="T:System.Web.UI.INamingContainer" /> object.</param>
+        <summary>Enables Dynamic Data behavior for the specified data control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

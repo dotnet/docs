@@ -1,0 +1,139 @@
+<Type Name="IStyleSheet" FullName="System.Web.UI.IStyleSheet">
+  <TypeSignature Language="C#" Value="public interface IStyleSheet" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStyleSheet" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IStyleSheet" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the methods that a class must implement in order to support the creation of style rules.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that implement this interface can use it to support the creation of style rules.  
+  
+ To customize the way cascading style sheets are created and registered, you must create a class that implements this interface.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlHead> class implements this interface for use by ASP.NET through the <xref:System.Web.UI.Page.Header%2A> property.  
+  
+> [!NOTE]
+>  Adding or modifying styles or style rules programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](http://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Web.UI.Page.Header%2A> implementation of <xref:System.Web.UI.IStyleSheet> to demonstrate programmatically creating a new style rule and registering the custom <xref:System.Web.UI.WebControls.Style> object.  
+  
+ In the first part of the example, a custom <xref:System.Web.UI.WebControls.Style> object, `labelStyle`, is created and then registered for the current location (URL). Then the `label1` label calls the <xref:System.Web.UI.WebControls.WebControl.MergeStyle%2A> method so that the `labelStyle` style is applied to the `label1` label.  
+  
+ The second part of the example defines another custom <xref:System.Web.UI.WebControls.Style> object, `bodyStyle`,and sets its properties to create a new style rule.  
+  
+> [!NOTE]
+>  This class is intended primarily for developers that want to create a custom implementation. This example demonstrates the implementation provided by the .NET Framework.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.IStyleSheet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IStyleSheet/CS/istylesheetcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.IStyleSheet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IStyleSheet/VB/istylesheetvb.aspx#1)]  -->  
+  
+ The following is the code-behind file for the Web page in the preceding example.  
+  
+ [!code-csharp[System.Web.UI.IStyleSheet#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IStyleSheet/CS/istylesheetcs.aspx.cs#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateStyleRule">
+      <MemberSignature Language="C#" Value="public void CreateStyleRule (System.Web.UI.WebControls.Style style, System.Web.UI.IUrlResolutionService urlResolver, string selector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateStyleRule(class System.Web.UI.WebControls.Style style, class System.Web.UI.IUrlResolutionService urlResolver, string selector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IStyleSheet.CreateStyleRule(System.Web.UI.WebControls.Style,System.Web.UI.IUrlResolutionService,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
+        <Parameter Name="urlResolver" Type="System.Web.UI.IUrlResolutionService" />
+        <Parameter Name="selector" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="style">The style rule to be added to the embedded style sheet.</param>
+        <param name="urlResolver">An <see cref="T:System.Web.UI.IUrlResolutionService" />-implemented object that contains the context information for the current location (URL).</param>
+        <param name="selector">The part of the HTML page affected by the style.</param>
+        <summary>When implemented by a class, creates a style rule for the specified document language element type, or selector.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IStyleSheet.CreateStyleRule%2A> method creates a style rule for the specified selector. Multiple style rules can be created for the same selector.  
+  
+ If `urlResolver` is set to `null`, the URL of the current <xref:System.Web.UI.Page> instance is used.  
+  
+> [!NOTE]
+>  Adding or modifying styles or style rules programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](http://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Web.UI.Page.Header%2A> implementation of <xref:System.Web.UI.IStyleSheet> to demonstrate defining a new <xref:System.Web.UI.WebControls.Style> object, `bodyStyle`. Then `bodyStyle` is added to the current URL by calling <xref:System.Web.UI.IStyleSheet.CreateStyleRule%2A>.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.IStyleSheetCreateStyleRule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IStyleSheetCreateStyleRule/CS/istylesheetcreatestylerulecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.IStyleSheetCreateStyleRule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IStyleSheetCreateStyleRule/VB/istylesheetcreatestylerulevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterStyle">
+      <MemberSignature Language="C#" Value="public void RegisterStyle (System.Web.UI.WebControls.Style style, System.Web.UI.IUrlResolutionService urlResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterStyle(class System.Web.UI.WebControls.Style style, class System.Web.UI.IUrlResolutionService urlResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IStyleSheet.RegisterStyle(System.Web.UI.WebControls.Style,System.Web.UI.IUrlResolutionService)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
+        <Parameter Name="urlResolver" Type="System.Web.UI.IUrlResolutionService" />
+      </Parameters>
+      <Docs>
+        <param name="style">The style rule to be added to the embedded style sheet.</param>
+        <param name="urlResolver">An <see cref="T:System.Web.UI.IUrlResolutionService" />-implemented object that contains the context information for the current location (URL).</param>
+        <summary>When implemented by a class, adds a new style rule to the embedded style sheet in the <see langword="&lt;head&gt;" /> section of a Web page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds a new style rule and <xref:System.Web.UI.WebControls.Style.RegisteredCssClass%2A> property name to the embedded style sheet within the `<head>` section of a <xref:System.Web.UI.Page> object, and associates the rule with an auto-generated style name. The <xref:System.Web.UI.WebControls.Style> object is rendered using the specified `urlResolver` parameter.  
+  
+ If `urlResolver` is set to `null`, the URL of the current <xref:System.Web.UI.Page> is used.  
+  
+ If a <xref:System.Web.UI.WebControls.Style> object is already registered, it is not added multiple times.  
+  
+> [!NOTE]
+>  Adding or modifying styles programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](http://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Web.UI.Page.Header%2A> implementation of <xref:System.Web.UI.IStyleSheet> to demonstrate creating a custom <xref:System.Web.UI.WebControls.Style> object, `labelStyle`, and then registering it for the current location (URL). Then the `label1` label calls the <xref:System.Web.UI.WebControls.WebControl.MergeStyle%2A> method so that the `labelStyle` style is applied to the `label1` label.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.IStyleSheetRegisterStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IStyleSheetRegisterStyle/CS/istylesheetregisterstylecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.IStyleSheetRegisterStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IStyleSheetRegisterStyle/VB/istylesheetregisterstylevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

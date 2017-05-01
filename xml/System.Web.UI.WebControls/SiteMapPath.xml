@@ -1,0 +1,1368 @@
+<Type Name="SiteMapPath" FullName="System.Web.UI.WebControls.SiteMapPath">
+  <TypeSignature Language="C#" Value="public class SiteMapPath : System.Web.UI.WebControls.CompositeControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SiteMapPath extends System.Web.UI.WebControls.CompositeControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapPath" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.CompositeControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.SiteMapPathDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Displays a set of text or image hyperlinks that enable users to more easily navigate a Web site, while taking a minimal amount of page space.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Nodes](#nodes)  
+  
+-   [Node Appearance](#node_appearance)  
+  
+-   [Events](#events)  
+  
+-   [Customizing the SiteMapPath Control](#customizing_the_sitemappath_control)  
+  
+-   [Accessibility](#accessibility)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control is a site navigation control that reflects data provided by the <xref:System.Web.SiteMap> object. It provides a space-saving way to easily navigate a site and serves as a point of reference for where the currently displayed page is within a site. This type of control is commonly called a breadcrumb, or eyebrow, because it displays a hierarchical path of hyperlinked page names that provides an escape up the hierarchy of pages from the current location. <xref:System.Web.UI.WebControls.SiteMapDataSource>. The <xref:System.Web.UI.WebControls.SiteMapPath> is useful for sites that have deep hierarchical page structures, but where a <xref:System.Web.UI.WebControls.TreeView> or <xref:System.Web.UI.WebControls.Menu> might require too much space on a page.  
+  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control works directly with your Web site's site map data. If you use it on a page that is not represented in your site map, it will not be displayed. For more information about site maps, see [ASP.NET Site Navigation](http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d).  
+  
+<a name="nodes"></a>   
+## Nodes  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> is made up of nodes. Each element in the path is called a node and is represented by a <xref:System.Web.UI.WebControls.SiteMapNodeItem> object. The node that anchors the path and represents the base of the hierarchical tree is called the root node. The node that represents the currently displayed page is the current node. Any other node between the current node and root node is a parent node. The following table describes the three different node types.  
+  
+|Node type|Description|  
+|---------------|-----------------|  
+|root|A node that anchors a hierarchical set of nodes.|  
+|parent|A node that has one or more child nodes, but is not the current node.|  
+|current|A node that represents the currently displayed page.|  
+  
+<a name="node_appearance"></a>   
+## Node Appearance  
+ Each node displayed by a <xref:System.Web.UI.WebControls.SiteMapPath> is a <xref:System.Web.UI.WebControls.HyperLink> or <xref:System.Web.UI.WebControls.Literal> control that you can apply a template or style to. The templates and styles are applied to nodes according to two rules of precedence:  
+  
+-   If a template is defined for a node, it overrides any style defined for the node.  
+  
+-   Templates and styles that are specific to types of nodes override general templates and styles defined for all nodes.  
+  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> and <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A> properties are applied to all nodes, regardless of their node type. If both these properties are defined, the <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A> takes precedence.  
+  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> and <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> properties are applied to nodes that represent the currently displayed page. If a <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A> is defined in addition to the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A>, it is ignored. If a <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> is defined in addition to the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A>, it is merged with the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> to create a merged style. This merged style uses all the elements of the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A>, plus any additional elements of the <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> that do not conflict with the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A>.  
+  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> and <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> properties are applied to the node that represents the root of the site navigation hierarchy. If a <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A> is defined in addition to the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A>, it is ignored. If a <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> is defined in addition to the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A>, it is merged with the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> to create a merged style. This merged style uses all the elements of the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A>, plus any additional elements of the <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> that did not conflict with the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A>. Finally, if the currently displayed page is the root page of the site, the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> and <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> are used instead of the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> or <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A>.  
+  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control uses the site map provider identified by the <xref:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider%2A> property as its data source for site navigation information. If no provider is specified, it uses the default provider for the site, identified in the <xref:System.Web.SiteMap.Provider%2A?displayProperty=fullName> property. Typically, this is an instance of the default site map provider for ASP.NET, the <xref:System.Web.XmlSiteMapProvider>. If the <xref:System.Web.UI.WebControls.SiteMapPath> control is used within a site but no site map provider is configured, the control throws an <xref:System.Web.HttpException> exception.  
+  
+<a name="events"></a>   
+## Events  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control also provides events that you can program against. This allows you to run a custom routine whenever an event occurs. The following table lists the events supported by the <xref:System.Web.UI.WebControls.SiteMapPath> control.  
+  
+|Event|Description|  
+|-----------|-----------------|  
+|<xref:System.Web.UI.WebControls.SiteMapPath.ItemCreated>|Occurs when the <xref:System.Web.UI.WebControls.SiteMapPath> control first creates a <xref:System.Web.UI.WebControls.SiteMapNodeItem> and associates it with a <xref:System.Web.SiteMapNode>.|  
+|<xref:System.Web.UI.WebControls.SiteMapPath.ItemDataBound>|Occurs when a <xref:System.Web.UI.WebControls.SiteMapNodeItem> is bound to site map data contained by the <xref:System.Web.SiteMapNode>.|  
+  
+<a name="customizing_the_sitemappath_control"></a>   
+## Customizing the SiteMapPath Control  
+ Classes that derive from <xref:System.Web.UI.WebControls.SiteMapPath> override the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method to customize the <xref:System.Web.UI.WebControls.SiteMapNodeItem> controls contained by the navigation control. For complete control over the way <xref:System.Web.UI.WebControls.SiteMapNodeItem> objects are created and added to the <xref:System.Web.UI.WebControls.SiteMapPath>, derived classes override the <xref:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy%2A> method.  
+  
+<a name="accessibility"></a>   
+## Accessibility  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:SiteMapPath  
+    AccessKey="string"  
+    BackColor="color name|#dddddd"  
+    BorderColor="color name|#dddddd"  
+    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
+        Inset|Outset"  
+    BorderWidth="size"  
+    CssClass="string"  
+    Enabled="True|False"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    Font-Bold="True|False"  
+    Font-Italic="True|False"  
+    Font-Names="string"  
+    Font-Overline="True|False"  
+    Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
+        Large|X-Large|XX-Large"  
+    Font-Strikeout="True|False"  
+    Font-Underline="True|False"  
+    ForeColor="color name|#dddddd"  
+    Height="size"  
+    ID="string"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnItemCreated="ItemCreated event handler"  
+    OnItemDataBound="ItemDataBound event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    ParentLevelsDisplayed="integer"  
+    PathDirection="RootToCurrent|CurrentToRoot"  
+    PathSeparator="string"  
+    RenderCurrentNodeAsLink="True|False"  
+    runat="server"  
+    ShowToolTips="True|False"  
+    SiteMapProvider="string"  
+    SkinID="string"  
+    SkipLinkText="string"  
+    Style="string"  
+    TabIndex="integer"  
+    ToolTip="string"  
+    Visible="True|False"  
+    Width="size"  
+>  
+        <CurrentNodeStyle />  
+        <CurrentNodeTemplate>  
+            <!-- child controls -->  
+        </CurrentNodeTemplate>  
+        <NodeStyle />  
+        <NodeTemplate>  
+            <!-- child controls -->  
+        </NodeTemplate>  
+        <PathSeparatorStyle />  
+        <PathSeparatorTemplate>  
+            <!-- child controls -->  
+        </PathSeparatorTemplate>  
+        <RootNodeStyle />  
+        <RootNodeTemplate>  
+            <!-- child controls -->  
+        </RootNodeTemplate>  
+</asp:SiteMapPath>  
+```  
+  
+   
+  
+## Examples  
+ The following code example uses a <xref:System.Web.UI.WebControls.SiteMapPath> control declaratively in a Web Forms page. This example demonstrates some of the rules of precedence that govern the order with which templates and styles are applied to <xref:System.Web.UI.WebControls.SiteMapPath> nodes.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/CS/webform2navpathcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/VB/webform2navpathvb.aspx#1)]  -->  
+  
+ The previous example uses the default site map provider and a Web.sitemap file with the following structure.  
+  
+```  
+<siteMap>  
+  <siteMapNode title="WebForm1" description="WebForm1" url="WebForm1.aspx" >  
+    <siteMapNode title="WebForm2" description="WebForm2" url="WebForm2.aspx"/>  
+  </siteMapNode>  
+</siteMap>  
+```  
+  
+ The following code example demonstrates extends the <xref:System.Web.UI.WebControls.SiteMapPath> control and adds new functionality to it by overriding the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method. The `DropDownSiteMapPath` control adds a <xref:System.Web.UI.WebControls.DropDownList> after the current node, to enable easy navigation to pages that are child nodes of the current page. This example demonstrates how to work with <xref:System.Web.UI.WebControls.SiteMapNodeItem> objects, including checking their <xref:System.Web.UI.WebControls.SiteMapNodeItemType> and calling the <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method after the items are created.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.DropDownNavigationPath_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.DropDownNavigationPath_1/CS/dropdownnavigationpath.cs#1)]
+ [!code-vb[Urtue.Samples.Alexkr.DropDownNavigationPath_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.DropDownNavigationPath_1/VB/dropdownnavigationpath.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SiteMapPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.SiteMapPath> class. To dynamically add a <xref:System.Web.UI.WebControls.SiteMapPath> control to a page, create a new <xref:System.Web.UI.WebControls.SiteMapPath> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a container control such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SiteMapPath.%23ctor%2A> constructor to add a <xref:System.Web.UI.WebControls.SiteMapPath> control to a page. For the example to work, you need to add an image to your root directory and change the image name in the example code from "myimage.jpg" to the name of your image file.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/CS/aboutus2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/VB/aboutus2vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChildControls">
+      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.CreateChildControls" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the current child controls collection, and rebuilds it by calling the <see cref="M:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the ASP.NET infrastructure to notify any controls that use composition-based implementation, including controls that derive from <xref:System.Web.UI.WebControls.CompositeDataBoundControl> and <xref:System.Web.UI.WebControls.CompositeControl> to create any child controls they contain in preparation for postback or rendering.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlHierarchy">
+      <MemberSignature Language="C#" Value="protected virtual void CreateControlHierarchy ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CreateControlHierarchy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Examines the site map structure provided by the <see cref="P:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider" /> and builds a child controls collection based on the styles and templates defined for the functional nodes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy%2A> method creates <xref:System.Web.UI.WebControls.SiteMapNodeItem> controls, associates them with the corresponding <xref:System.Web.SiteMapNode> objects from the current site map provider, and adds the nodes to the <xref:System.Web.UI.Control.Controls%2A> collection.  
+  
+ The method begins by finding the <xref:System.Web.SiteMap.CurrentNode%2A?displayProperty=fullName>, and then walks up the hierarchical tree of <xref:System.Web.SiteMapNode> objects, creating a <xref:System.Web.UI.WebControls.SiteMapNodeItem> for each one until the <xref:System.Web.SiteMap.RootNode%2A> is reached. After each <xref:System.Web.UI.WebControls.SiteMapNodeItem> is created, but before it is bound to its corresponding <xref:System.Web.SiteMapNode>, the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method is called. The <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method applies any templates or styles defined for a particular node type and creates and initializes any child controls that the <xref:System.Web.UI.WebControls.SiteMapNodeItem> contains. Finally, the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method adds the child controls of the <xref:System.Web.UI.WebControls.SiteMapNodeItem> to the <xref:System.Web.UI.Control.Controls%2A> collection.  
+  
+ After each <xref:System.Web.UI.WebControls.SiteMapNodeItem> is initialized, the <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method is called. Then the <xref:System.Web.UI.WebControls.SiteMapNodeItem> is bound to its corresponding <xref:System.Web.SiteMapNode>, and <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound%2A> is called.  
+  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy%2A> method is called from the <xref:System.Web.UI.WebControls.SiteMapPath.CreateChildControls%2A> method.  
+  
+ Classes that extend the <xref:System.Web.UI.WebControls.SiteMapPath> control override the <xref:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy%2A> method to alter how the <xref:System.Web.UI.WebControls.SiteMapNodeItem> controls are created or added to the <xref:System.Web.UI.WebControls.SiteMapPath> control. The manipulation of individual node items is performed in the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method, and most classes that extend <xref:System.Web.UI.WebControls.SiteMapPath> override that method only.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">No <see cref="P:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider" /> is available to the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentNodeStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style CurrentNodeStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style CurrentNodeStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style used for the display text for the current node.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.Style" /> that contains the style settings for the display text for the current node of the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> property to control the appearance of the display text for the navigation path node that represents the currently displayed page. By default, the display text is that specified in the <xref:System.Web.SiteMapNode.Title%2A> property of the <xref:System.Web.SiteMapNode> that represents the page. Common style settings include custom background color, foreground color, font properties, and node spacing.  
+  
+ For <xref:System.Web.UI.WebControls.SiteMapPath> nodes, style properties are merged into a single style, in the following order:  
+  
+1.  <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A>  
+  
+2.  <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> or, if the currently displayed page is the root node, <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A>.  
+  
+> [!NOTE]
+>  If you set the node font style to a strikeout or overline style, the default underline style of the node is not displayed unless it is explicitly set to `true`.  
+  
+ If a <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> property is defined, the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> property is ignored.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> of a <xref:System.Web.UI.WebControls.SiteMapPath> control in a Web Forms page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/CS/customerservicecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/VB/customerservicevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentNodeTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate CurrentNodeTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate CurrentNodeTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.SiteMapNodeItem))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ITemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a control template to use for the node of a site navigation path that represents the currently displayed page.</summary>
+        <value>An <see cref="T:System.Web.UI.ITemplate" /> object that implements the <see cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" /> method, to render custom content for the navigation path node that represents the currently displayed page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> to an <xref:System.Web.UI.ITemplate> object to use an <xref:System.Web.UI.WebControls.Image> control or some other control, such as a <xref:System.Web.UI.WebControls.Label>, as the current node's user interface element instead of a string.  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> property is set, the template overrides both the current navigation node text displayed and any <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> applied to it. If the currently displayed page corresponds to the root node, however, the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> or <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> is used.  
+  
+ You can declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> property to any Web server control, and the ASP.NET infrastructure performs the necessary steps to wrap the Web server control as an <xref:System.Web.UI.ITemplate> object. However, Web server controls do not implement the <xref:System.Web.UI.ITemplate> interface; therefore, when you work with the <xref:System.Web.UI.ITemplate> properties programmatically, you must write an <xref:System.Web.UI.ITemplate> wrapper for any template code. Then, the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> property is set to an instance of the <xref:System.Web.UI.ITemplate> wrapper.  
+  
+   
+  
+## Examples  
+ The following code example declaratively defines a <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> and overrides a defined <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A>.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/CS/webform2navpathcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/VB/webform2navpathvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBind">
+      <MemberSignature Language="C#" Value="public override void DataBind ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DataBind() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.DataBind" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Binds a data source to the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control and its child controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control is designed to retrieve its data directly from a site map provider by using the <xref:System.Web.UI.WebControls.SiteMapPath.Provider%2A> property. Do not use the <xref:System.Web.UI.WebControls.SiteMapPath> control to bind to ASP.NET data source controls, and do not call the <xref:System.Web.UI.WebControls.SiteMapPath.DataBind%2A> method explicitly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeItem">
+      <MemberSignature Language="C#" Value="protected virtual void InitializeItem (System.Web.UI.WebControls.SiteMapNodeItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializeItem(class System.Web.UI.WebControls.SiteMapNodeItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.InitializeItem(System.Web.UI.WebControls.SiteMapNodeItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Web.UI.WebControls.SiteMapNodeItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The <see cref="T:System.Web.UI.WebControls.SiteMapNodeItem" /> to initialize.</param>
+        <summary>Populates a <see cref="T:System.Web.UI.WebControls.SiteMapNodeItem" />, which is a Web server control that represents a <see cref="T:System.Web.SiteMapNode" />, with a set of child controls based on the node's function and the specified templates and styles for the node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method determines the functional type of node that the item represents by checking the <xref:System.Web.UI.WebControls.SiteMapNodeItemType>, and applies any templates or styles that are defined for that kind of node.  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapNodeItem> has a <xref:System.Web.UI.WebControls.SiteMapNodeItemType> item type, a <xref:System.Web.UI.WebControls.HyperLink> child control is created, and the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> and <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> may be applied. If the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> is set, its <xref:System.Web.UI.ITemplate> is applied to the node. In instead the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> is set, it is merged with any defined <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> and applied. Finally, if no templates or styles are defined, a basic <xref:System.Web.UI.WebControls.HyperLink> control is created and initialized with values from the node.  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapNodeItem> has a <xref:System.Web.UI.WebControls.SiteMapNodeItemType> item type, either a <xref:System.Web.UI.WebControls.Literal> or <xref:System.Web.UI.WebControls.HyperLink> child control is created, depending on the return value of <xref:System.Web.UI.WebControls.SiteMapPath.RenderCurrentNodeAsLink%2A>. Then either the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> or <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> may be applied. If the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> is set, its <xref:System.Web.UI.ITemplate> is applied to the node. If instead the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> is set, it is merged with any defined <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> and applied.  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapNodeItem> has a <xref:System.Web.UI.WebControls.SiteMapNodeItemType> item type, a <xref:System.Web.UI.WebControls.HyperLink> child control is created and the <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A> and <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> may be applied. If the <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A> is set, its <xref:System.Web.UI.ITemplate> is applied to the node. If instead the <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> is set, it is applied.  
+  
+ Finally, if the <xref:System.Web.UI.WebControls.SiteMapNodeItem> has a <xref:System.Web.UI.WebControls.SiteMapNodeItemType> item type, a <xref:System.Web.UI.WebControls.Literal> child control is created and the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate%2A> and <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorStyle%2A> are applied according to the same general rules defined for a <xref:System.Web.UI.WebControls.SiteMapNodeItemType> node type.  
+  
+ Override the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method to manipulate individual <xref:System.Web.UI.WebControls.SiteMapNodeItem> objects. If the design of the class requires more extensive control over how the <xref:System.Web.UI.WebControls.SiteMapNodeItem> objects are created and added to the <xref:System.Web.UI.WebControls.SiteMapPath> control, override the <xref:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method to add functionality to a control that derives from <xref:System.Web.UI.WebControls.SiteMapPath>. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.SiteMapPath> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.DropDownNavigationPath_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.DropDownNavigationPath_1/CS/dropdownnavigationpath.cs#2)]
+ [!code-vb[Urtue.Samples.Alexkr.DropDownNavigationPath_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.DropDownNavigationPath_1/VB/dropdownnavigationpath.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemCreated">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.SiteMapNodeItemEventHandler ItemCreated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.SiteMapNodeItemEventHandler ItemCreated" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SiteMapPath.ItemCreated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SiteMapNodeItemEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a <see cref="T:System.Web.UI.WebControls.SiteMapNodeItem" /> is created by the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> and is associated with its corresponding <see cref="T:System.Web.SiteMapNode" />. This event is raised by the <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemCreated(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemDataBound">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.SiteMapNodeItemEventHandler ItemDataBound;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.SiteMapNodeItemEventHandler ItemDataBound" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SiteMapPath.ItemDataBound" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SiteMapNodeItemEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after a <see cref="T:System.Web.UI.WebControls.SiteMapNodeItem" /> has been bound to its underlying <see cref="T:System.Web.SiteMapNode" /> data by the <see cref="T:System.Web.UI.WebControls.SiteMapPath" />. This event is raised by the <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemDataBound(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Object" /> that represents the control state to be restored.</param>
+        <summary>Restores view-state information from a previous request that was saved with the <see cref="M:System.Web.UI.WebControls.SiteMapPath.SaveViewState" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ The <xref:System.Web.UI.WebControls.Login.LoadViewState%2A> method restores the view-state information saved during a previous request.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style NodeStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style NodeStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.NodeStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style used for the display text for all nodes in the site navigation path.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.Style" /> that contains the style settings for the display text in the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> property to control the appearance of the display text for all navigation path nodes rendered by the control. By default, the display text is that specified in the <xref:System.Web.SiteMapNode.Title%2A> property of the <xref:System.Web.SiteMapNode> that represents the page. Common style settings include custom background color, foreground color, font properties, and node spacing.  
+  
+ For <xref:System.Web.UI.WebControls.SiteMapPath> nodes, style properties are merged into a single style, in the following order:  
+  
+1.  <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A>  
+  
+2.  <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> or <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A>, depending on the node type.  
+  
+> [!NOTE]
+>  If you set the node font style to a strikeout or overline style, the default underline style of the node is not displayed unless it is explicitly set to `true`.  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> is defined, it is initially applied to each node. If an additional style is defined for a particular type of node, such as the root node or current node, this style supersedes the general style specified in the <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> property. If a template is defined for a particular type of node, it supersedes all defined styles for that node.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to define a <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> that is merged with a <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> to demonstrate the order of style precedence for the <xref:System.Web.UI.WebControls.SiteMapPath> nodes.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/CS/webform2navpathcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_5/VB/webform2navpathvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate NodeTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate NodeTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.NodeTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.SiteMapNodeItem))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ITemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a control template to use for all functional nodes of a site navigation path.</summary>
+        <value>An <see cref="T:System.Web.UI.ITemplate" /> object that implements the <see cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" /> method, to render custom content for each node of a navigation path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A> to an <xref:System.Web.UI.ITemplate> object to use an <xref:System.Web.UI.WebControls.Image> or some other control, such as a <xref:System.Web.UI.WebControls.Label>, as a user interface element for all navigation path nodes.  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A> property is set, the template overrides both the navigation node text displayed and any <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> applied to it. For the current and root nodes, if a <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> or <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> is set, these templates override the <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A>.  
+  
+ You can declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A> property to any Web server control, and the ASP.NET infrastructure performs the necessary steps to wrap the Web server control as an <xref:System.Web.UI.ITemplate> object. However, Web server controls do not implement the <xref:System.Web.UI.ITemplate> interface; therefore, when you work with the <xref:System.Web.UI.ITemplate> properties programmatically, you must write an <xref:System.Web.UI.ITemplate> wrapper for any template code. Then, the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> property is set to an instance of the <xref:System.Web.UI.ITemplate> wrapper.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A>, when one is specified, overrides styles defined for all nodes, including special styles for the root node and current node.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_6/CS/webform1navpathcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_6/VB/webform1navpathvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataBinding">
+      <MemberSignature Language="C#" Value="protected override void OnDataBinding (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDataBinding(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.OnDataBinding(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
+        <summary>Overrides the <see cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" /> method of the <see cref="T:System.Web.UI.WebControls.CompositeControl" /> class and raises the <see cref="E:System.Web.UI.Control.DataBinding" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemCreated">
+      <MemberSignature Language="C#" Value="protected virtual void OnItemCreated (System.Web.UI.WebControls.SiteMapNodeItemEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemCreated(class System.Web.UI.WebControls.SiteMapNodeItemEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.OnItemCreated(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.SiteMapNodeItemEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.SiteMapNodeItemEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.SiteMapPath.ItemCreated" /> event of the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.ItemCreated> event is raised after the <xref:System.Web.UI.WebControls.SiteMapPath> control creates a <xref:System.Web.UI.WebControls.SiteMapNodeItem>, which is a Web server control that represents a <xref:System.Web.SiteMapNode>, and associates it to a <xref:System.Web.SiteMapNode>. The <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method is called before the created node item is bound to its data. This allows you to provide an event-handling method that performs a custom routine whenever a <xref:System.Web.UI.WebControls.SiteMapNodeItem> is created.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method after creating a <xref:System.Web.UI.WebControls.SiteMapNodeItem> within the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.SiteMapPath> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.DropDownNavigationPath_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.DropDownNavigationPath_1/CS/dropdownnavigationpath.cs#3)]
+ [!code-vb[Urtue.Samples.Alexkr.DropDownNavigationPath_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.DropDownNavigationPath_1/VB/dropdownnavigationpath.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemCreated(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemCreated(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemDataBound">
+      <MemberSignature Language="C#" Value="protected virtual void OnItemDataBound (System.Web.UI.WebControls.SiteMapNodeItemEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemDataBound(class System.Web.UI.WebControls.SiteMapNodeItemEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.OnItemDataBound(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.SiteMapNodeItemEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.SiteMapNodeItemEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.SiteMapPath.ItemDataBound" /> event of the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.ItemDataBound> event is raised when the <xref:System.Web.UI.WebControls.SiteMapPath> control binds to the data provided by its <xref:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider%2A>. This allows you to provide an event-handling method that performs a custom routine, such as updating a database or the displayed content, whenever this event occurs.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.OnItemDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemDataBound(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemDataBound(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentLevelsDisplayed">
+      <MemberSignature Language="C#" Value="public virtual int ParentLevelsDisplayed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ParentLevelsDisplayed" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.ParentLevelsDisplayed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of levels of parent nodes the control displays, relative to the currently displayed node.</summary>
+        <value>An integer that specifies the number of levels of parent nodes displayed, relative to the current context node. The default value is -1, which indicates no restriction on the number of parent levels that the control displays.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.ParentLevelsDisplayed%2A> property governs how many levels of parent nodes are displayed by the <xref:System.Web.UI.WebControls.SiteMapPath> control above the current context node. By default, all parent and ancestor nodes above the current context node are displayed.  
+  
+ The value of this property is stored in view state.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value for <see cref="P:System.Web.UI.WebControls.SiteMapPath.ParentLevelsDisplayed" /> is less than -1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PathDirection">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.PathDirection PathDirection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.PathDirection PathDirection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.PathDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.PathDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the order that the navigation path nodes are rendered in.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.PathDirection" /> that indicates the hierarchical order that navigation nodes are rendered in. The default is <see cref="F:System.Web.UI.WebControls.PathDirection.RootToCurrent" />, which indicates that the nodes are rendered in hierarchical order from the top-most node to the current node, from left to right.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set <xref:System.Web.UI.WebControls.SiteMapPath.PathDirection%2A> to <xref:System.Web.UI.WebControls.PathDirection> if you want to display the navigation path from left to right; the navigation path appears as a progression from left to right of site map nodes. In other words, the root node is at the leftmost position, each subsequent node is in the next position to the right, and the current node is in the rightmost position.  
+  
+ Set <xref:System.Web.UI.WebControls.SiteMapPath.PathDirection%2A> to <xref:System.Web.UI.WebControls.PathDirection> if you want to display the navigation path from right to left. In other words, the node order is reversed so that the root node displays at the rightmost position and the current node displays at the leftmost position. While not as common, this ordering can be used for localizing Web Forms pages and the <xref:System.Web.UI.WebControls.SiteMapPath> control for languages that read from right to left.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.PathDirection%2A> property of a <xref:System.Web.UI.WebControls.SiteMapPath> in a Web Forms page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/CS/catalog3cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/VB/catalog3vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value for <see cref="P:System.Web.UI.WebControls.SiteMapPath.PathDirection" /> is not one of the base <see cref="T:System.Web.UI.WebControls.PathDirection" /> enumerations.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PathSeparator">
+      <MemberSignature Language="C#" Value="public virtual string PathSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PathSeparator" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.PathSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(" &gt; ")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that delimits <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> nodes in the rendered navigation path.</summary>
+        <value>A string that represents the delimiter for the nodes in a navigation path. The default is " &gt; ", which is a character pointing from left to right, and corresponds to the default <see cref="T:System.Web.UI.WebControls.PathDirection" />, which is set to <see cref="F:System.Web.UI.WebControls.PathDirection.RootToCurrent" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorStyle%2A> is defined, it is applied to the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparator%2A> property. However, if a <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate%2A> property is defined, both the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparator%2A> and <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorStyle%2A> properties are ignored.  
+  
+ The value of this property is stored in view state.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparator%2A> property of a <xref:System.Web.UI.WebControls.SiteMapPath> to a string other than the default.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/CS/aboutus2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/VB/aboutus2vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathSeparatorStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style PathSeparatorStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style PathSeparatorStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.PathSeparatorStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style used for the <see cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparator" /> string.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.Style" /> that contains the style settings of the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control's <see cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparator" /> text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorStyle%2A> property to control the appearance of the path separator that appears between navigation path nodes. Common style settings include font properties and a foreground color for the font used by the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparator%2A> property.  
+  
+ If a <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate%2A> property is defined, both the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparator%2A> and <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorStyle%2A> properties are ignored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathSeparatorTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate PathSeparatorTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate PathSeparatorTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.SiteMapNodeItem))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ITemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a control template to use for the path delimiter of a site navigation path.</summary>
+        <value>An <see cref="T:System.Web.UI.ITemplate" /> object that implements the <see cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" /> method, to render custom content for the path delimiter of a navigation path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate%2A> to an <xref:System.Web.UI.ITemplate> object to use an <xref:System.Web.UI.WebControls.Image> or some other control, such as a <xref:System.Web.UI.WebControls.Label>, as the path delimiter between navigation nodes instead of the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparator%2A> string.  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate%2A> property is set, the template overrides both the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparator%2A> text displayed and any <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorStyle%2A> applied to it.  
+  
+ You can declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate%2A> property to any Web server control, and the ASP.NET infrastructure performs the necessary steps to wrap the Web server control as an <xref:System.Web.UI.ITemplate>. However, Web server controls do not implement the <xref:System.Web.UI.ITemplate> interface; therefore, when you work with the <xref:System.Web.UI.ITemplate> properties programmatically, you must write an <xref:System.Web.UI.ITemplate> wrapper for any template code. Then, the <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate%2A> property is set to an instance of the <xref:System.Web.UI.ITemplate> wrapper.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to define an <xref:System.Web.UI.WebControls.Image> as a <xref:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate%2A> declaratively in a Web Form.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_2/CS/aboutuscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_2/VB/aboutusvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Provider">
+      <MemberSignature Language="C#" Value="public System.Web.SiteMapProvider Provider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SiteMapProvider Provider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.Provider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Web.SiteMapProvider" /> that is associated with the Web server control.</summary>
+        <value>A <see cref="T:System.Web.SiteMapProvider" /> instance that is associated with the control. If no provider is explicitly set, the default site map provider is used.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.Provider%2A> property specifies an instance of a site map provider to use with the control. This provider may be different from the provider identified by the <xref:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider%2A> property, if set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The provider named by the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider" /> property is not available.  
+  
+ \- or -  
+  
+ There is no default provider configured for the site.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered output.</param>
+        <summary>Writes the <see cref="T:System.Web.UI.WebControls.CompositeControl" /> content to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object, for display on the client.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderContents">
+      <MemberSignature Language="C#" Value="protected override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream used to write content to a Web page.</param>
+        <summary>Renders the nodes in the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control overrides the <xref:System.Web.UI.WebControls.SiteMapPath.RenderContents%2A> method to perform its accessibility rendering, if the <xref:System.Web.UI.WebControls.SiteMapPath.SkipLinkText%2A> property is not set to <xref:System.String.Empty?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderCurrentNodeAsLink">
+      <MemberSignature Language="C#" Value="public virtual bool RenderCurrentNodeAsLink { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RenderCurrentNodeAsLink" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.RenderCurrentNodeAsLink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the site navigation node that represents the currently displayed page is rendered as a hyperlink.</summary>
+        <value>
+          <see langword="true" /> if the node that represents the current page is rendered as a hyperlink; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The node that represents the currently displayed page is the <xref:System.Web.SiteMap.CurrentNode%2A?displayProperty=fullName>. Its <xref:System.Web.SiteMapNode.Title%2A> property specifies the text to display for the current node, and its <xref:System.Web.SiteMapNode.Url%2A> property is used to create a hyperlink. By default, no hyperlink is rendered for the current page to prevent erroneous form posts.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SiteMapPath.RenderCurrentNodeAsLink%2A> property to `true` to make the current node a hyperlink when the <xref:System.Web.UI.WebControls.SiteMapPath> control renders its content.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/CS/catalog3cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/VB/catalog3vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNodeStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style RootNodeStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style RootNodeStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style for the root node display text.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.Style" /> that contains the style settings for the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control root node display text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> property to control the appearance of the display text for the root node of the navigation path. By default, the display text is that specified in the <xref:System.Web.SiteMapNode.Title%2A> property of the <xref:System.Web.SiteMapNode> that represents the page. Common style settings include custom background color, foreground color, font properties, and node spacing.  
+  
+ For <xref:System.Web.UI.WebControls.SiteMapPath> nodes, style properties are merged into a single style, in the following order:  
+  
+1.  <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A>  
+  
+2.  <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> or <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A>, depending on the node type.  
+  
+> [!NOTE]
+>  If you set the node font style to a strikeout or overline style, the default underline style of the node is not displayed unless it is explicitly set to `true`.  
+  
+ If a <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> property is defined, the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> property is ignored.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> attributes on a <xref:System.Web.UI.WebControls.SiteMapPath> control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/CS/customerservicecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/VB/customerservicevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNodeTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate RootNodeTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate RootNodeTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.SiteMapNodeItem))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ITemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a control template to use for the root node of a site navigation path.</summary>
+        <value>An <see cref="T:System.Web.UI.ITemplate" /> object that implements the <see cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" /> method, to render custom content for the root node of a navigation path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> to an <xref:System.Web.UI.ITemplate> object to use an <xref:System.Web.UI.WebControls.Image> control or some other control, such as a <xref:System.Web.UI.WebControls.Label> as the root node's user interface element instead of a string.  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> property is set, the template overrides both the root navigation node text displayed and any <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> applied to it. The template also overrides the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> and <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A> properties if the root page is the currently displayed page.  
+  
+ You can declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> property to any Web server control, and the ASP.NET infrastructure performs the necessary steps to wrap the Web server control as an <xref:System.Web.UI.ITemplate>. However, Web server controls do not implement the <xref:System.Web.UI.ITemplate> interface; therefore, when you work with the <xref:System.Web.UI.ITemplate> properties programmatically, you must write an <xref:System.Web.UI.ITemplate> wrapper for any template code. Then, the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> property is set to an instance of the <xref:System.Web.UI.ITemplate> wrapper.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically define a class that implements the <xref:System.Web.UI.ITemplate> interface to wrap an <xref:System.Web.UI.WebControls.Image> control. Then, the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> property is set to an instance of the class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/CS/aboutus2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_3/VB/aboutus2vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves changes to view state for the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</summary>
+        <returns>Returns the server control's current view state. If there is no view state associated with the control, this method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. The value of this property is then persisted to a string object after the save state stage of the server control life cycle.  
+  
+ When view state is saved, this string object is returned to the client as a variable that is stored in an `Hidden` HTML element. When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's <xref:System.Web.UI.Control.ViewState%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowToolTips">
+      <MemberSignature Language="C#" Value="public virtual bool ShowToolTips { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowToolTips" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.ShowToolTips" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control writes an additional hyperlink attribute for hyperlinked navigation nodes. Depending on client support, when a mouse hovers over a hyperlink that has the additional attribute set, a ToolTip is displayed.</summary>
+        <value>
+          <see langword="true" /> if alternate text should be written for hyperlinked navigation nodes; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The most common scenario is when a `Title` HTML attribute exists for an HTML `A Href` hyperlink. For example, Microsoft Internet Explorer 4.0 and later and Netscape 6.0 and later implement the `Title` attribute as a hovering ToolTip, while Opera 3.0 and later implements the `Title` attribute as both a ToolTip and a caption in Opera's toolbar area. Not all clients display ToolTips for additional hyperlink attributes.  
+  
+ The value of this property is stored in view state.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.ShowToolTips%2A> property to `false` in a Web Forms page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/CS/catalog3cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NavigationPath_decl_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_4/VB/catalog3vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteMapProvider">
+      <MemberSignature Language="C#" Value="public virtual string SiteMapProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SiteMapProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Web.SiteMapProvider" /> used to render the site navigation control.</summary>
+        <value>The name of a <see cref="T:System.Web.SiteMapProvider" /> that defines the navigation structure for the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> to display. All available providers are contained in the <see cref="P:System.Web.SiteMap.Providers" /> collection, and can be enumerated and retrieved by name using the <see cref="P:System.Web.SiteMapProviderCollection.Item(System.String)" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control uses a <xref:System.Web.SiteMapProvider> as a source for the site map data it renders. If the <xref:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider%2A> property is not set, the <xref:System.Web.UI.WebControls.SiteMapPath> control uses the provider identified by the <xref:System.Web.SiteMap.Provider%2A?displayProperty=fullName> property, which is the default <xref:System.Web.SiteMapProvider> defined for the site in the configuration hierarchy, typically the <xref:System.Web.XmlSiteMapProvider>. Setting the <xref:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider%2A> property directs the <xref:System.Web.UI.WebControls.SiteMapPath> control to render the site map data that the provider defines.  
+  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control works directly with a <xref:System.Web.SiteMapProvider> and its <xref:System.Web.SiteMapNode> objects to display site map information. Other controls, such as <xref:System.Web.UI.WebControls.Menu> and <xref:System.Web.UI.WebControls.TreeView>, require a data abstraction, provided by the <xref:System.Web.UI.WebControls.SiteMapDataSource> class, to display the same site navigation information.  
+  
+ The value of this property is stored in view state.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipLinkText">
+      <MemberSignature Language="C#" Value="public virtual string SkipLinkText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SkipLinkText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapPath.SkipLinkText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that is used to render alternate text for screen readers to skip the control's content.</summary>
+        <value>A string that the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control renders as alternate text with an invisible image, as a hint to screen readers. The default value is "Skip Navigation Links".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.WebControls.SiteMapPath.SkipLinkText%2A> is a property that you can set to make a Web page more or less accessible to users of screen readers. Web sites that contain content that repeats on multiple pages, such as controls that display site map data, can provide a mechanism that allows users of screen readers to skip the repeated content so that it is not read aloud.  
+  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control provides the <xref:System.Web.UI.WebControls.SiteMapPath.SkipLinkText%2A> property as a way for the entire control to be skipped by screen readers.  If the <xref:System.Web.UI.WebControls.SiteMapPath.SkipLinkText%2A> property is set, an invisible image with alternate text is rendered, giving the user the option to jump to the end of the content. Screen readers read the alternate text aloud but the image does not disturb the visual flow of the page. The property is set to "Skip Navigation Links" by default, which makes screen readers skip the control. If you want to disable this behavior, set the property to <xref:System.String.Empty?displayProperty=fullName>.  
+  
+ The value of this property is stored in view state.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackViewState">
+      <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapPath.TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Tracks changes to the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control's view state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

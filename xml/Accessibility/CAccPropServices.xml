@@ -1,0 +1,34 @@
+<Type Name="CAccPropServices" FullName="Accessibility.CAccPropServices">
+  <TypeSignature Language="C#" Value="public interface CAccPropServices : Accessibility.IAccPropServices" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CAccPropServices implements class Accessibility.IAccPropServices" />
+  <TypeSignature Language="DocId" Value="T:Accessibility.CAccPropServices" />
+  <AssemblyInfo>
+    <AssemblyName>Accessibility</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Accessibility.IAccPropServices</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Accessibility.CAccPropServicesClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("6E26E776-04F0-495D-80E4-3330352E3169")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see cref="T:Accessibility.CAccPropServices" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

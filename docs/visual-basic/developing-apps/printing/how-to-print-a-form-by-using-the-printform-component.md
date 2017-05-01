@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Form, printing"
 ms.assetid: df963bf6-3ee1-49f4-8b2e-1d95d1beb0be
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

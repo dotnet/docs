@@ -1,0 +1,114 @@
+<Type Name="NameValueSectionHandler" FullName="System.Configuration.NameValueSectionHandler">
+  <TypeSignature Language="C#" Value="public class NameValueSectionHandler : System.Configuration.IConfigurationSectionHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NameValueSectionHandler extends System.Object implements class System.Configuration.IConfigurationSectionHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.NameValueSectionHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Configuration.IConfigurationSectionHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides name/value-pair configuration information from a configuration section.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class implements the `IConfigSectionHandler` interface. The <xref:System.Configuration.NameValueSectionHandler> defines rules for manipulating XML configuration sections.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NameValueSectionHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueSectionHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.NameValueSectionHandler" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public object Create (object parent, object context, System.Xml.XmlNode section);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(object parent, object context, class System.Xml.XmlNode section) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Object" />
+        <Parameter Name="context" Type="System.Object" />
+        <Parameter Name="section" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Parent object.</param>
+        <param name="context">Configuration context object.</param>
+        <param name="section">Section XML node.</param>
+        <summary>Creates a new configuration handler and adds it to the section-handler collection based on the specified parameters.</summary>
+        <returns>A configuration object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `parent` object parameter acts as the configuration settings in the corresponding parent configuration section. The `context` object parameter is the virtual path for which the configuration section handler computes configuration values. Normally this parameter is reserved and is `null`. The `section` parameter is the <xref:System.Xml.XmlNode> object that contains the configuration information to be handled. The `section` parameter provides direct access to the XML contents of the configuration section.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyAttributeName">
+      <MemberSignature Language="C#" Value="protected virtual string KeyAttributeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeyAttributeName" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueSectionHandler.KeyAttributeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the XML attribute name to use as the key in a key/value pair.</summary>
+        <value>A <see cref="T:System.String" /> value containing the name of the key attribute.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueAttributeName">
+      <MemberSignature Language="C#" Value="protected virtual string ValueAttributeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValueAttributeName" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueSectionHandler.ValueAttributeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the XML attribute name to use as the value in a key/value pair.</summary>
+        <value>A <see cref="T:System.String" /> value containing the name of the value attribute.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

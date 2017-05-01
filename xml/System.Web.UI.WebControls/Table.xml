@@ -1,0 +1,1157 @@
+<Type Name="Table" FullName="System.Web.UI.WebControls.Table">
+  <TypeSignature Language="C#" Value="public class Table : System.Web.UI.WebControls.WebControl, System.Web.UI.IPostBackEventHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Table extends System.Web.UI.WebControls.WebControl implements class System.Web.UI.IPostBackEventHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Table" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.WebControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackEventHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Rows")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.TableDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ParseChildren(true, "Rows")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Displays a table on a Web page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Accessibility](#accessibility)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ The <xref:System.Web.UI.WebControls.Table> control allows you to build an HTML table and specify its characteristics in a straightforward manner.  
+  
+ A table can be built at design time given some static content, but the power of a <xref:System.Web.UI.WebControls.Table> Web server control is often realized when the table is built programmatically with dynamic contents.  
+  
+> [!NOTE]
+>  If the `controlRenderingCompatibilityVersion` attribute of the  element in the Web.config file is set to `3.5`, the control renders a `border` attribute that is set to "0" on the HTML `table` element.  
+  
+ It is important to remember that any programmatic addition or modification of table rows or cells will not persist across posts to the server. This is because table rows and cells are controls of their own, and not properties of the <xref:System.Web.UI.WebControls.Table> control. To persist any changes to the table, rows and cells must be reconstructed after each postback. In fact, if substantial modifications are expected, it is recommended that a <xref:System.Web.UI.WebControls.DataList>, <xref:System.Web.UI.WebControls.DataGrid>, or <xref:System.Web.UI.WebControls.GridView> control be used instead of the <xref:System.Web.UI.WebControls.Table> control. As a result, the <xref:System.Web.UI.WebControls.Table> class is primarily used by control developers.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+  
+<a name="accessibility"></a>   
+## Accessibility  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:Table  
+    AccessKey="string"  
+    BackColor="color name|#dddddd"  
+    BackImageUrl="uri"  
+    BorderColor="color name|#dddddd"  
+    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
+        Inset|Outset"  
+    BorderWidth="size"  
+    Caption="string"  
+    CaptionAlign="NotSet|Top|Bottom|Left|Right"  
+    CellPadding="integer"  
+    CellSpacing="integer"  
+    CssClass="string"  
+    Enabled="True|False"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    Font-Bold="True|False"  
+    Font-Italic="True|False"  
+    Font-Names="string"  
+    Font-Overline="True|False"  
+    Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
+        Large|X-Large|XX-Large"  
+    Font-Strikeout="True|False"  
+    Font-Underline="True|False"  
+    ForeColor="color name|#dddddd"  
+    GridLines="None|Horizontal|Vertical|Both"  
+    Height="size"  
+    HorizontalAlign="NotSet|Left|Center|Right|Justify"  
+    ID="string"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    runat="server"  
+    SkinID="string"  
+    Style="string"  
+    TabIndex="integer"  
+    ToolTip="string"  
+    Visible="True|False"  
+    Width="size"  
+>  
+            <asp:TableFooterRow  
+                AccessKey="string"  
+                BackColor="color name|#dddddd"  
+                BorderColor="color name|#dddddd"  
+                BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|  
+                    Groove|Ridge|Inset|Outset"  
+                BorderWidth="size"  
+                CssClass="string"  
+                Enabled="True|False"  
+                EnableTheming="True|False"  
+                EnableViewState="True|False"  
+                Font-Bold="True|False"  
+                Font-Italic="True|False"  
+                Font-Names="string"  
+                Font-Overline="True|False"  
+                Font-Size="string|Smaller|Larger|XX-Small|X-Small|  
+                    Small|Medium|Large|X-Large|XX-Large"  
+                Font-Strikeout="True|False"  
+                Font-Underline="True|False"  
+                ForeColor="color name|#dddddd"  
+                Height="size"  
+                HorizontalAlign="NotSet|Left|Center|Right|Justify"  
+                ID="string"  
+                OnDataBinding="DataBinding event handler"  
+                OnDisposed="Disposed event handler"  
+                OnInit="Init event handler"  
+                OnLoad="Load event handler"  
+                OnPreRender="PreRender event handler"  
+                OnUnload="Unload event handler"  
+                runat="server"  
+                SkinID="string"  
+                Style="string"  
+                TabIndex="integer"  
+                TableSection="TableHeader|TableBody|TableFooter"  
+                ToolTip="string"  
+                VerticalAlign="NotSet|Top|Middle|Bottom"  
+                Visible="True|False"  
+                Width="size"  
+>  
+                        <asp:TableCell  
+                            AccessKey="string"  
+                            AssociatedHeaderCellID="string"  
+                            BackColor="color name|#dddddd"  
+                            BorderColor="color name|#dddddd"  
+                            BorderStyle="NotSet|None|Dotted|Dashed|  
+                                Solid|Double|Groove|Ridge|Inset|  
+                                Outset"  
+                            BorderWidth="size"  
+                            ColumnSpan="integer"  
+                            CssClass="string"  
+                            Enabled="True|False"  
+                            EnableTheming="True|False"  
+                            EnableViewState="True|False"  
+                            Font-Bold="True|False"  
+                            Font-Italic="True|False"  
+                            Font-Names="string"  
+                            Font-Overline="True|False"  
+                            Font-Size="string|Smaller|Larger|  
+                                XX-Small|X-Small|Small|Medium|Large|  
+                                X-Large|XX-Large"  
+                            Font-Strikeout="True|False"  
+                            Font-Underline="True|False"  
+                            ForeColor="color name|#dddddd"  
+                            Height="size"  
+                            HorizontalAlign="NotSet|Left|Center|  
+                            Right|Justify"  
+                            ID="string"  
+                            OnDataBinding="DataBinding event handler"  
+                            OnDisposed="Disposed event handler"  
+                            OnInit="Init event handler"  
+                            OnLoad="Load event handler"  
+                            OnPreRender="PreRender event handler"  
+                            OnUnload="Unload event handler"  
+                            RowSpan="integer"  
+                            runat="server"  
+                            SkinID="string"  
+                            Style="string"  
+                            TabIndex="integer"  
+                            Text="string"  
+                            ToolTip="string"  
+                            VerticalAlign="NotSet|Top|Middle|Bottom"  
+                            Visible="True|False"  
+                            Width="size"  
+                            Wrap="True|False"  
+                        />  
+                        <asp:TableHeaderCell  
+                            AbbreviatedText="string"  
+                            AccessKey="string"  
+                            AssociatedHeaderCellID="string"  
+                            BackColor="color name|#dddddd"  
+                            BorderColor="color name|#dddddd"  
+                            BorderStyle="NotSet|None|Dotted|Dashed|  
+                                Solid|Double|Groove|Ridge|Inset|  
+                                Outset"  
+                            BorderWidth="size"  
+                            CategoryText="string"  
+                            ColumnSpan="integer"  
+                            CssClass="string"  
+                            Enabled="True|False"  
+                            EnableTheming="True|False"  
+                            EnableViewState="True|False"  
+                            Font-Bold="True|False"  
+                            Font-Italic="True|False"  
+                            Font-Names="string"  
+                            Font-Overline="True|False"  
+                            Font-Size="string|Smaller|Larger|  
+                                XX-Small|X-Small|Small|Medium|Large|  
+                                X-Large|XX-Large"  
+                            Font-Strikeout="True|False"  
+                            Font-Underline="True|False"  
+                            ForeColor="color name|#dddddd"  
+                            Height="size"  
+                            HorizontalAlign="NotSet|Left|Center|  
+                                Right|Justify"  
+                            ID="string"  
+                            OnDataBinding="DataBinding event handler"  
+                            OnDisposed="Disposed event handler"  
+                            OnInit="Init event handler"  
+                            OnLoad="Load event handler"  
+                            OnPreRender="PreRender event handler"  
+                            OnUnload="Unload event handler"  
+                            RowSpan="integer"  
+                            runat="server"  
+                            Scope="NotSet|Row|Column"  
+                            SkinID="string"  
+                            Style="string"  
+                            TabIndex="integer"  
+                            Text="string"  
+                            ToolTip="string"  
+                            VerticalAlign="NotSet|Top|Middle|Bottom"  
+                            Visible="True|False"  
+                            Width="size"  
+                            Wrap="True|False"  
+                        />  
+            </asp:TableFooterRow>  
+            <asp:TableHeaderRow  
+                AccessKey="string"  
+                BackColor="color name|#dddddd"  
+                BorderColor="color name|#dddddd"  
+                BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|  
+                    Groove|Ridge|Inset|Outset"  
+                BorderWidth="size"  
+                CssClass="string"  
+                Enabled="True|False"  
+                EnableTheming="True|False"  
+                EnableViewState="True|False"  
+                Font-Bold="True|False"  
+                Font-Italic="True|False"  
+                Font-Names="string"  
+                Font-Overline="True|False"  
+                Font-Size="string|Smaller|Larger|XX-Small|X-Small|  
+                    Small|Medium|Large|X-Large|XX-Large"  
+                Font-Strikeout="True|False"  
+                Font-Underline="True|False"  
+                ForeColor="color name|#dddddd"  
+                Height="size"  
+                HorizontalAlign="NotSet|Left|Center|Right|Justify"  
+                ID="string"  
+                OnDataBinding="DataBinding event handler"  
+                OnDisposed="Disposed event handler"  
+                OnInit="Init event handler"  
+                OnLoad="Load event handler"  
+                OnPreRender="PreRender event handler"  
+                OnUnload="Unload event handler"  
+                runat="server"  
+                SkinID="string"  
+                Style="string"  
+                TabIndex="integer"  
+                TableSection="TableHeader|TableBody|TableFooter"  
+                ToolTip="string"  
+                VerticalAlign="NotSet|Top|Middle|Bottom"  
+                Visible="True|False"  
+                Width="size"  
+>  
+                        <asp:TableCell  
+                            AccessKey="string"  
+                            AssociatedHeaderCellID="string"  
+                            BackColor="color name|#dddddd"  
+                            BorderColor="color name|#dddddd"  
+                            BorderStyle="NotSet|None|Dotted|Dashed|  
+                                Solid|Double|Groove|Ridge|Inset|  
+                                Outset"  
+                            BorderWidth="size"  
+                            ColumnSpan="integer"  
+                            CssClass="string"  
+                            Enabled="True|False"  
+                            EnableTheming="True|False"  
+                            EnableViewState="True|False"  
+                            Font-Bold="True|False"  
+                            Font-Italic="True|False"  
+                            Font-Names="string"  
+                            Font-Overline="True|False"  
+                            Font-Size="string|Smaller|Larger|  
+                                XX-Small|X-Small|Small|Medium|Large|  
+                                X-Large|XX-Large"  
+                            Font-Strikeout="True|False"  
+                            Font-Underline="True|False"  
+                            ForeColor="color name|#dddddd"  
+                            Height="size"  
+                            HorizontalAlign="NotSet|Left|Center|  
+                                Right|Justify"  
+                            ID="string"  
+                            OnDataBinding="DataBinding event handler"  
+                            OnDisposed="Disposed event handler"  
+                            OnInit="Init event handler"  
+                            OnLoad="Load event handler"  
+                            OnPreRender="PreRender event handler"  
+                            OnUnload="Unload event handler"  
+                            RowSpan="integer"  
+                            runat="server"  
+                            SkinID="string"  
+                            Style="string"  
+                            TabIndex="integer"  
+                            Text="string"  
+                            ToolTip="string"  
+                            VerticalAlign="NotSet|Top|Middle|Bottom"  
+                            Visible="True|False"  
+                            Width="size"  
+                            Wrap="True|False"  
+                        />  
+                        <asp:TableHeaderCell  
+                            AbbreviatedText="string"  
+                            AccessKey="string"  
+                            AssociatedHeaderCellID="string"  
+                            BackColor="color name|#dddddd"  
+                            BorderColor="color name|#dddddd"  
+                            BorderStyle="NotSet|None|Dotted|Dashed|  
+                                Solid|Double|Groove|Ridge|Inset|  
+                                Outset"  
+                            BorderWidth="size"  
+                            CategoryText="string"  
+                            ColumnSpan="integer"  
+                            CssClass="string"  
+                            Enabled="True|False"  
+                            EnableTheming="True|False"  
+                            EnableViewState="True|False"  
+                            Font-Bold="True|False"  
+                            Font-Italic="True|False"  
+                            Font-Names="string"  
+                            Font-Overline="True|False"  
+                            Font-Size="string|Smaller|Larger|  
+                                XX-Small|X-Small|Small|Medium|Large|  
+                                X-Large|XX-Large"  
+                            Font-Strikeout="True|False"  
+                            Font-Underline="True|False"  
+                            ForeColor="color name|#dddddd"  
+                            Height="size"  
+                            HorizontalAlign="NotSet|Left|Center|  
+                                Right|Justify"  
+                            ID="string"  
+                            OnDataBinding="DataBinding event handler"  
+                            OnDisposed="Disposed event handler"  
+                            OnInit="Init event handler"  
+                            OnLoad="Load event handler"  
+                            OnPreRender="PreRender event handler"  
+                            OnUnload="Unload event handler"  
+                            RowSpan="integer"  
+                            runat="server"  
+                            Scope="NotSet|Row|Column"  
+                            SkinID="string"  
+                            Style="string"  
+                            TabIndex="integer"  
+                            Text="string"  
+                            ToolTip="string"  
+                            VerticalAlign="NotSet|Top|Middle|Bottom"  
+                            Visible="True|False"  
+                            Width="size"  
+                            Wrap="True|False"  
+                        />  
+            </asp:TableHeaderRow>  
+            <asp:TableRow  
+                AccessKey="string"  
+                BackColor="color name|#dddddd"  
+                BorderColor="color name|#dddddd"  
+                BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|  
+                    Groove|Ridge|Inset|Outset"  
+                BorderWidth="size"  
+                CssClass="string"  
+                Enabled="True|False"  
+                EnableTheming="True|False"  
+                EnableViewState="True|False"  
+                Font-Bold="True|False"  
+                Font-Italic="True|False"  
+                Font-Names="string"  
+                Font-Overline="True|False"  
+                Font-Size="string|Smaller|Larger|XX-Small|  
+                    X-Small|Small|Medium|Large|X-Large|XX-Large"  
+                Font-Strikeout="True|False"  
+                Font-Underline="True|False"  
+                ForeColor="color name|#dddddd"  
+                Height="size"  
+                HorizontalAlign="NotSet|Left|Center|Right|Justify"  
+                ID="string"  
+                OnDataBinding="DataBinding event handler"  
+                OnDisposed="Disposed event handler"  
+                OnInit="Init event handler"  
+                OnLoad="Load event handler"  
+                OnPreRender="PreRender event handler"  
+                OnUnload="Unload event handler"  
+                runat="server"  
+                SkinID="string"  
+                Style="string"  
+                TabIndex="integer"  
+                TableSection="TableHeader|TableBody|TableFooter"  
+                ToolTip="string"  
+                VerticalAlign="NotSet|Top|Middle|Bottom"  
+                Visible="True|False"  
+                Width="size"  
+>  
+                        <asp:TableCell  
+                            AccessKey="string"  
+                            AssociatedHeaderCellID="string"  
+                            BackColor="color name|#dddddd"  
+                            BorderColor="color name|#dddddd"  
+                            BorderStyle="NotSet|None|Dotted|Dashed|  
+                                Solid|Double|Groove|Ridge|Inset|  
+                                Outset"  
+                            BorderWidth="size"  
+                            ColumnSpan="integer"  
+                            CssClass="string"  
+                            Enabled="True|False"  
+                            EnableTheming="True|False"  
+                            EnableViewState="True|False"  
+                            Font-Bold="True|False"  
+                            Font-Italic="True|False"  
+                            Font-Names="string"  
+                            Font-Overline="True|False"  
+                            Font-Size="string|Smaller|Larger|  
+                                XX-Small|X-Small|Small|Medium|Large|  
+                                X-Large|XX-Large"  
+                            Font-Strikeout="True|False"  
+                            Font-Underline="True|False"  
+                            ForeColor="color name|#dddddd"  
+                            Height="size"  
+                            HorizontalAlign="NotSet|Left|Center|  
+                                Right|Justify"  
+                            ID="string"  
+                            OnDataBinding="DataBinding event handler"  
+                            OnDisposed="Disposed event handler"  
+                            OnInit="Init event handler"  
+                            OnLoad="Load event handler"  
+                            OnPreRender="PreRender event handler"  
+                            OnUnload="Unload event handler"  
+                            RowSpan="integer"  
+                            runat="server"  
+                            SkinID="string"  
+                            Style="string"  
+                            TabIndex="integer"  
+                            Text="string"  
+                            ToolTip="string"  
+                            VerticalAlign="NotSet|Top|Middle|Bottom"  
+                            Visible="True|False"  
+                            Width="size"  
+                            Wrap="True|False"  
+                        />  
+                        <asp:TableHeaderCell  
+                            AbbreviatedText="string"  
+                            AccessKey="string"  
+                            AssociatedHeaderCellID="string"  
+                            BackColor="color name|#dddddd"  
+                            BorderColor="color name|#dddddd"  
+                            BorderStyle="NotSet|None|Dotted|Dashed|  
+                                Solid|Double|Groove|Ridge|Inset|  
+                                Outset"  
+                            BorderWidth="size"  
+                            CategoryText="string"  
+                            ColumnSpan="integer"  
+                            CssClass="string"  
+                            Enabled="True|False"  
+                            EnableTheming="True|False"  
+                            EnableViewState="True|False"  
+                            Font-Bold="True|False"  
+                            Font-Italic="True|False"  
+                            Font-Names="string"  
+                            Font-Overline="True|False"  
+                            Font-Size="string|Smaller|Larger|  
+                                XX-Small|X-Small|Small|Medium|Large|  
+                                X-Large|XX-Large"  
+                            Font-Strikeout="True|False"  
+                            Font-Underline="True|False"  
+                            ForeColor="color name|#dddddd"  
+                            Height="size"  
+                            HorizontalAlign="NotSet|Left|Center|  
+                                Right|Justify"  
+                            ID="string"  
+                            OnDataBinding="DataBinding event handler"  
+                            OnDisposed="Disposed event handler"  
+                            OnInit="Init event handler"  
+                            OnLoad="Load event handler"  
+                            OnPreRender="PreRender event handler"  
+                            OnUnload="Unload event handler"  
+                            RowSpan="integer"  
+                            runat="server"  
+                            Scope="NotSet|Row|Column"  
+                            SkinID="string"  
+                            Style="string"  
+                            TabIndex="integer"  
+                            Text="string"  
+                            ToolTip="string"  
+                            VerticalAlign="NotSet|Top|Middle|Bottom"  
+                            Visible="True|False"  
+                            Width="size"  
+                            Wrap="True|False"  
+                        />  
+            </asp:TableRow>  
+</asp:Table>  
+```  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a table at design time. The table contains two rows of two cells each.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic Table Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Table Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic Table Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Table Example/VB/sourcevb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to construct a table programmatically. Creating a table dynamically consists of three steps. First, create <xref:System.Web.UI.WebControls.TableCell> objects to represent the cells in a row. Content for the cells is added by either setting the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property or by adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.WebControls.TableCell>. Next, create a <xref:System.Web.UI.WebControls.TableRow> to represent a row in the table. Add the <xref:System.Web.UI.WebControls.TableCell> objects created earlier to the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection of the <xref:System.Web.UI.WebControls.TableRow>. Finally, add the <xref:System.Web.UI.WebControls.TableRow> to the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection of the <xref:System.Web.UI.WebControls.Table> control. Repeat this process for each row in the table.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic Table Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Table Example/CS/source2cs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic Table Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Table Example/VB/source2vb.aspx#2)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Table ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Table.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Table" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Table> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttributesToRender">
+      <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Table.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The output stream that renders HTML content to the client.</param>
+        <summary>Adds HTML attributes and styles that need to be rendered to the specified <see cref="T:System.Web.UI.HtmlTextWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers to insert the appropriate attributes and styles into the <xref:System.Web.UI.HtmlTextWriter> output stream for a <xref:System.Web.UI.WebControls.Table> control. This method overrides <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Table.AddAttributesToRender%2A> method in a custom server control to add an attribute to the <xref:System.Web.UI.WebControls.Table>.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomTableAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableAddAttributesToRender/CS/custom_table_addattributestorendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomTableAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableAddAttributesToRender/VB/custom_table_addattributestorendervb.aspx#1)]  -->  
+[!code-csharp[CustomTableAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableAddAttributesToRender/CS/custom_table_addattributestorender.cs#2)]
+[!code-vb[CustomTableAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableAddAttributesToRender/VB/custom_table_addattributestorender.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackImageUrl">
+      <MemberSignature Language="C#" Value="public virtual string BackImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BackImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Table.BackImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL of the background image to display behind the <see cref="T:System.Web.UI.WebControls.Table" /> control.</summary>
+        <value>The URL of the background image for the <see cref="T:System.Web.UI.WebControls.Table" /> control. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.Table.BackImageUrl%2A> property to specify the location of an image to display in the background of the <xref:System.Web.UI.WebControls.Table> control. You can use a relative or an absolute URL. A relative URL relates the location of the image to the location of the Web page or user control without specifying a complete path on the server. The path is relative to the location of the Web page. This makes it easier to move the entire site to another directory on the server without updating the path to the image in code. An absolute URL provides the complete path, so moving the site to another directory requires updating the code.  
+  
+> [!NOTE]
+>  If the image is smaller than the <xref:System.Web.UI.WebControls.Table> control, it will be tiled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="public virtual string Caption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Table.Caption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text to render in an HTML caption element in a <see cref="T:System.Web.UI.WebControls.Table" /> control. This property is provided to make the control more accessible to users of Assistive Technology devices.</summary>
+        <value>A string that represents the text to render in an HTML caption element in a <see cref="T:System.Web.UI.WebControls.Table" /> control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.Table.Caption%2A> property to specify the text to render in an HTML caption element in a <xref:System.Web.UI.WebControls.Table> control. The text that you specify provides Assistive Technology devices with a description of the table that can be used to make the control more accessible.  
+  
+ Additional accessibility support for the <xref:System.Web.UI.WebControls.Table> control is provided by the <xref:System.Web.UI.WebControls.Table.CaptionAlign%2A> property. Use the <xref:System.Web.UI.WebControls.Table.CaptionAlign%2A> property to specify the alignment of the HTML caption element in a <xref:System.Web.UI.WebControls.Table> control.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionAlign">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableCaptionAlign CaptionAlign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.TableCaptionAlign CaptionAlign" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Table.CaptionAlign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TableCaptionAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the horizontal or vertical position of the HTML caption element in a <see cref="T:System.Web.UI.WebControls.Table" /> control. This property is provided to make the control more accessible to users of Assistive Technology devices.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values. The default value is <see langword="NotSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.Table.CaptionAlign%2A> property to specify the horizontal or vertical position of the HTML caption element in a <xref:System.Web.UI.WebControls.Table> control. This property is provided to make the control more accessible to users of Assistive Technology devices.  
+  
+ This property is set using one of the <xref:System.Web.UI.WebControls.TableCaptionAlign> enumeration values. The following table lists the possible values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`NotSet`|The caption element's alignment is not set.|  
+|`Top`|The caption element is aligned with the top of the table.|  
+|`Bottom`|The caption element is aligned with the bottom of the table.|  
+|`Left`|The caption element is aligned with the left of the table.|  
+|`Right`|The caption element is aligned with the right of the table.|  
+  
+ Additional accessibility support for the <xref:System.Web.UI.WebControls.Table> control is provided by the <xref:System.Web.UI.WebControls.Table.Caption%2A> property. Use the <xref:System.Web.UI.WebControls.Table.Caption%2A> property to specify the text to render in an HTML caption element in a <xref:System.Web.UI.WebControls.Table> control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CellPadding">
+      <MemberSignature Language="C#" Value="public virtual int CellPadding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CellPadding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Table.CellPadding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of space between the contents of a cell and the cell's border.</summary>
+        <value>The amount of space, in pixels, between the contents of a cell and the cell's border. The default value is -1, which indicates that the property has not been set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.Table.CellPadding%2A> property to control the spacing between the contents of a cell and the cell's border. The padding amount specified is added to all four sides of the cell.  
+  
+ All cells in the same column of a <xref:System.Web.UI.WebControls.Table> control have the same width. The padding amount is applied to the widest cell and all other cells in the column have this cell width.  
+  
+ Similarly, all cells in the same row have the same height. The padding amount is applied to the tallest cell in the row and all other cells in the row have this cell height. Individual cell sizes cannot be specified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellSpacing">
+      <MemberSignature Language="C#" Value="public virtual int CellSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CellSpacing" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Table.CellSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of space between cells.</summary>
+        <value>The amount of space, in pixels, between cells. The default value is -1, which indicates that the property has not been set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.Table.CellSpacing%2A> property to control the spacing between adjacent cells in the <xref:System.Web.UI.WebControls.Table> control. This spacing is applied both vertically and horizontally. The cell spacing is uniform for the entire table. Individual cell spacing between each row or column cannot be specified.  
+  
+> [!NOTE]
+>  If you set this property to a value greater than 0 and set the <xref:System.Web.UI.WebControls.Table.GridLines%2A> property to a value that displays the cell borders, a gap is displayed between the borders of adjacent cells. In this situation, the <xref:System.Web.UI.WebControls.Table.CellSpacing%2A> property controls the size of the gap.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlCollection">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.ControlCollection CreateControlCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Table.CreateControlCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ControlCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Web.UI.ControlCollection" /> object to hold the <see cref="T:System.Web.UI.WebControls.TableRow" /> controls of the current <see cref="T:System.Web.UI.WebControls.Table" /> control.</summary>
+        <returns>A <see cref="T:System.Web.UI.ControlCollection" /> object to contain the <see cref="T:System.Web.UI.WebControls.TableRow" /> controls of the current <see cref="T:System.Web.UI.WebControls.Table" /> control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers when deriving a custom class from a <xref:System.Web.UI.WebControls.Table> control.  
+  
+ This method overrides the <xref:System.Web.UI.Control.CreateControlCollection%2A> implementation for the base <xref:System.Web.UI.Control> class. For a <xref:System.Web.UI.WebControls.Table> control, the <xref:System.Web.UI.WebControls.Table.CreateControlCollection%2A> always returns a <xref:System.Web.UI.ControlCollection> that can only contain <xref:System.Web.UI.WebControls.TableRow> controls of the current <xref:System.Web.UI.WebControls.Table> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Table.CreateControlCollection%2A> method in a custom server control so that it always returns a new instance of the <xref:System.Web.UI.EmptyControlCollection> class for the <xref:System.Web.UI.WebControls.Table>.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomTableCreateControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCreateControlCollection/CS/custom_table_createcontrolcollectioncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomTableCreateControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCreateControlCollection/VB/custom_table_createcontrolcollectionvb.aspx#1)]  -->  
+[!code-csharp[CustomTableCreateControlCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCreateControlCollection/CS/custom_table_createcontrolcollection.cs#2)]
+[!code-vb[CustomTableCreateControlCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCreateControlCollection/VB/custom_table_createcontrolcollection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlStyle">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.Style CreateControlStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.Style CreateControlStyle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Table.CreateControlStyle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a reference to a collection of properties that define the appearance of a <see cref="T:System.Web.UI.WebControls.Table" /> control.</summary>
+        <returns>A reference to the <see cref="T:System.Web.UI.WebControls.Style" /> object that contains the properties that define the appearance of the <see cref="T:System.Web.UI.WebControls.Table" /> control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers when deriving a custom control from the <xref:System.Web.UI.WebControls.Table> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Table.CreateControlStyle%2A> method in a custom server control so that it always returns an empty <xref:System.Web.UI.WebControls.TableStyle> for the <xref:System.Web.UI.WebControls.Table>.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomTableCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCreateControlStyle/CS/custom_table_createcontrolstylecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomTableCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCreateControlStyle/VB/custom_table_createcontrolstylevb.aspx#1)]  -->  
+[!code-csharp[CustomTableCreateControlStyle#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCreateControlStyle/CS/custom_table_createcontrolstyle.cs#2)]
+[!code-vb[CustomTableCreateControlStyle#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCreateControlStyle/VB/custom_table_createcontrolstyle.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridLines">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.GridLines GridLines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.GridLines GridLines" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Table.GridLines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the grid line style to display in the <see cref="T:System.Web.UI.WebControls.Table" /> control.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.GridLines" /> enumeration values. The default value is <see langword="None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.Table.GridLines%2A> property to specify which cell borders are displayed in the <xref:System.Web.UI.WebControls.Table> control. The following table lists the different grid line styles.  
+  
+|GridLine value|Description|  
+|--------------------|-----------------|  
+|`None`|No cell borders are displayed.|  
+|`Horizontal`|Only the horizontal cell borders are displayed.|  
+|`Vertical`|Only the vertical cell borders are displayed.|  
+|`Both`|Both the horizontal and vertical cell borders are displayed.|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Table.GridLines%2A> property to specify the grid line style.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic Table.GridLines Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Table.GridLines Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic Table.GridLines Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Table.GridLines Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalAlign">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.HorizontalAlign HorizontalAlign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.HorizontalAlign HorizontalAlign" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Table.HorizontalAlign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the horizontal alignment of the <see cref="T:System.Web.UI.WebControls.Table" /> control on the page.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.HorizontalAlign" /> enumeration values. The default value is <see langword="NotSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.Table.HorizontalAlign%2A> property to specify the horizontal alignment of the <xref:System.Web.UI.WebControls.Table> control within the page. The following table lists the different horizontal alignment styles.  
+  
+|HorizontalAlign value|Description|  
+|---------------------------|-----------------|  
+|`NotSet`|The horizontal alignment of the <xref:System.Web.UI.WebControls.Table> control has not been set.|  
+|`Left`|The <xref:System.Web.UI.WebControls.Table> control is left justified on the page.|  
+|`Center`|The <xref:System.Web.UI.WebControls.Table> control is centered on the page.|  
+|`Right`|The <xref:System.Web.UI.WebControls.Table> control is right justified on the page.|  
+|`Justify`|The <xref:System.Web.UI.WebControls.Table> control is aligned with both the left and right margins of the page.|  
+  
+   
+  
+## Examples  
+ <!-- TODO: review snippet reference [!code-csharp[CustomTableAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableAlign/CS/custom_table_aligncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomTableAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableAlign/VB/custom_table_alignvb.aspx#1)]  -->  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostBackEvent">
+      <MemberSignature Language="C#" Value="protected virtual void RaisePostBackEvent (string argument);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(string argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Table.RaisePostBackEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="argument">A <see cref="T:System.String" /> that represents the argument for the event.</param>
+        <summary>Raises events for the <see cref="T:System.Web.UI.WebControls.Table" /> control when a form is posted back to the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The page passes the value of the `argument` parameter to the <xref:System.Web.UI.WebControls.Table.RaisePostBackEvent%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBeginTag">
+      <MemberSignature Language="C#" Value="public override void RenderBeginTag (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RenderBeginTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Table.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Renders the HTML opening tag of the <see cref="T:System.Web.UI.WebControls.Table" /> control to the specified writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers when deriving a custom class from a <xref:System.Web.UI.WebControls.Table> control.  
+  
+ The <xref:System.Web.UI.WebControls.Table.RenderBeginTag%2A> method renders the opening tag for the <xref:System.Web.UI.WebControls.Table> control, and renders tags for the table caption and alignment, if necessary.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderContents">
+      <MemberSignature Language="C#" Value="protected override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Table.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Renders the rows in the table control to the specified writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers when deriving a custom class from a <xref:System.Web.UI.WebControls.Table> control.  
+  
+ The <xref:System.Web.UI.WebControls.Table> control implements the <xref:System.Web.UI.WebControls.Table.RenderContents%2A> to render the <xref:System.Web.UI.WebControls.Table.Rows%2A> of the table.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Table.RenderContents%2A> method in a custom server control so that it always inserts a header row for a custom <xref:System.Web.UI.WebControls.Table> server control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomTableRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableRenderContents/CS/custom_table_rendercontentscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomTableRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableRenderContents/VB/custom_table_rendercontentsvb.aspx#1)]  -->  
+[!code-csharp[CustomTableRenderContents#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableRenderContents/CS/custom_table_rendercontents.cs#2)]
+[!code-vb[CustomTableRenderContents#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableRenderContents/VB/custom_table_rendercontents.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The table sections are not in order.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Rows">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableRowCollection Rows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableRowCollection Rows" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Table.Rows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerDefaultProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TableRowCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of rows in the <see cref="T:System.Web.UI.WebControls.Table" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.TableRowCollection" /> that contains the <see cref="T:System.Web.UI.WebControls.TableRow" /> objects in the <see cref="T:System.Web.UI.WebControls.Table" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection to programmatically manage the <xref:System.Web.UI.WebControls.TableRow> objects in the <xref:System.Web.UI.WebControls.Table> control. A <xref:System.Web.UI.WebControls.TableRow> represents a row in the table.  
+  
+> [!NOTE]
+>  This property is normally used only when building tables programmatically. At design time, it is set by declaring <xref:System.Web.UI.WebControls.TableRow> objects between the opening and closing tags of the <xref:System.Web.UI.WebControls.Table> control.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how use the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection to construct a table programmatically. Creating a table dynamically consists of three steps. First, create <xref:System.Web.UI.WebControls.TableCell> objects to represent the cells in a row. Content for the cells is added by either setting the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property or by adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.WebControls.TableCell>. Next, create a <xref:System.Web.UI.WebControls.TableRow> to represent a row in the table. Add the <xref:System.Web.UI.WebControls.TableCell> objects created earlier to the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection of the <xref:System.Web.UI.WebControls.TableRow>. Finally, add the <xref:System.Web.UI.WebControls.TableRow> to the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection of the <xref:System.Web.UI.WebControls.Table> control. Repeat this process for each row in the table.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an. aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic Table Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Table Example/CS/source2cs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic Table Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Table Example/VB/source2vb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsDisabledAttribute">
+      <MemberSignature Language="C#" Value="public override bool SupportsDisabledAttribute { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDisabledAttribute" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Table.SupportsDisabledAttribute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the control should set the <see langword="disabled" /> attribute of the rendered HTML element to "disabled" when the control's <see cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" /> property is <see langword="false" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Web.UI.Control.RenderingCompatibility" /> property indicates an ASP.NET version lower than <c>4.0</c>; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
+      <MemberSignature Language="C#" Value="void IPostBackEventHandler.RaisePostBackEvent (string eventArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Table.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgument">The argument for the event.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you should use the <xref:System.Web.UI.WebControls.Table.RaisePostBackEvent%2A?displayProperty=fullName> method to raise an event for the <xref:System.Web.UI.WebControls.Table> control when a form is posted back to the server.  
+  
+ This method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Table> instance is cast to an <xref:System.Web.UI.IPostBackEventHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.Table" /> object, override the <see cref="M:System.Web.UI.WebControls.Table.RaisePostBackEvent(System.String)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.Table.RaisePostBackEvent(System.String)" /> method to raise the event when posted data has changed for the control.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

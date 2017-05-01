@@ -1,0 +1,91 @@
+<Type Name="ToggleState" FullName="System.Windows.Automation.ToggleState">
+  <TypeSignature Language="C#" Value="public enum ToggleState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToggleState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ToggleState" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("ad7db4af-7166-4478-a402-ad5b77eab2fa")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains values that specify the <see cref="T:System.Windows.Automation.ToggleState" /> of a UI Automation element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A control must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: On, Off and if supported, Indeterminate.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Indeterminate">
+      <MemberSignature Language="C#" Value="Indeterminate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ToggleState Indeterminate = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ToggleState.Indeterminate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ToggleState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The UI Automation element is in an indeterminate state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Indeterminate property can be used to indicate whether the user has acted on a control. For example, a check box can appear checked and dimmed, indicating an indeterminate state.  
+  
+ Creating an indeterminate state is different from disabling the control. Consequently, a check box in the indeterminate state can still receive the focus. When the user clicks an indeterminate control the <xref:System.Windows.Automation.ToggleState> cycles to its next value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Off">
+      <MemberSignature Language="C#" Value="Off" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ToggleState Off = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ToggleState.Off" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ToggleState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The UI Automation element is not selected, checked, marked or otherwise activated.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="On">
+      <MemberSignature Language="C#" Value="On" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ToggleState On = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ToggleState.On" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ToggleState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The UI Automation element is selected, checked, marked or otherwise activated.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,197 @@
+<Type Name="RuleExpressionWalker" FullName="System.Workflow.Activities.Rules.RuleExpressionWalker">
+  <TypeSignature Language="C#" Value="public static class RuleExpressionWalker" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RuleExpressionWalker extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleExpressionWalker" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Propagates the current behavior in the expression to child nodes. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by all <xref:System.Workflow.Activities.Rules.IRuleExpression> methods to propagate behavior to child nodes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnalyzeUsage">
+      <MemberSignature Language="C#" Value="public static void AnalyzeUsage (System.Workflow.Activities.Rules.RuleAnalysis analysis, System.CodeDom.CodeExpression expression, bool isRead, bool isWritten, System.Workflow.Activities.Rules.RulePathQualifier qualifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AnalyzeUsage(class System.Workflow.Activities.Rules.RuleAnalysis analysis, class System.CodeDom.CodeExpression expression, bool isRead, bool isWritten, class System.Workflow.Activities.Rules.RulePathQualifier qualifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionWalker.AnalyzeUsage(System.Workflow.Activities.Rules.RuleAnalysis,System.CodeDom.CodeExpression,System.Boolean,System.Boolean,System.Workflow.Activities.Rules.RulePathQualifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="analysis" Type="System.Workflow.Activities.Rules.RuleAnalysis" />
+        <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="isRead" Type="System.Boolean" />
+        <Parameter Name="isWritten" Type="System.Boolean" />
+        <Parameter Name="qualifier" Type="System.Workflow.Activities.Rules.RulePathQualifier" />
+      </Parameters>
+      <Docs>
+        <param name="analysis">The <see cref="T:System.Workflow.Activities.Rules.RuleAnalysis" /> instance that stores symbols representing the properties and fields used by rule conditions and actions.</param>
+        <param name="expression">The expression being executed.</param>
+        <param name="isRead">
+          <see langword="true" /> if fields and properties read by a <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> are to be added to <see cref="T:System.Workflow.Activities.Rules.RuleAnalysis" />; otherwise, <see langword="false" />.</param>
+        <param name="isWritten">
+          <see langword="true" /> if fields and properties written by a <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> are to be added to <see cref="T:System.Workflow.Activities.Rules.RuleAnalysis" />; otherwise, <see langword="false" />.</param>
+        <param name="qualifier">The path of a field or property determined up to this point.</param>
+        <summary>Identifies the fields and properties used by an expression and adds these as symbols to the <see cref="T:System.Workflow.Activities.Rules.RuleAnalysis" /> instance.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="analysis" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public static System.CodeDom.CodeExpression Clone (System.CodeDom.CodeExpression originalExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.CodeDom.CodeExpression Clone(class System.CodeDom.CodeExpression originalExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionWalker.Clone(System.CodeDom.CodeExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originalExpression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="originalExpression">The expression that the clone is based on.</param>
+        <summary>Creates a deep copy of the child nodes of the current <see cref="T:System.CodeDom.CodeExpression" />.</summary>
+        <returns>A <see cref="T:System.CodeDom.CodeExpression" /> that is identical to this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decompile">
+      <MemberSignature Language="C#" Value="public static void Decompile (System.Text.StringBuilder stringBuilder, System.CodeDom.CodeExpression expression, System.CodeDom.CodeExpression parentExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Decompile(class System.Text.StringBuilder stringBuilder, class System.CodeDom.CodeExpression expression, class System.CodeDom.CodeExpression parentExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionWalker.Decompile(System.Text.StringBuilder,System.CodeDom.CodeExpression,System.CodeDom.CodeExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:AvoidTypeNamesInParameters", MessageId="0#")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringBuilder" Type="System.Text.StringBuilder" />
+        <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="parentExpression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringBuilder">The <see cref="T:System.Text.StringBuilder" /> that contains the mutable string of characters.</param>
+        <param name="expression">The current <see cref="T:System.CodeDom.CodeExpression" />.</param>
+        <param name="parentExpression">The parent <see cref="T:System.CodeDom.CodeExpression" />.</param>
+        <summary>Decompiles the child nodes of the expression into string form.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="public static System.Workflow.Activities.Rules.RuleExpressionResult Evaluate (System.Workflow.Activities.Rules.RuleExecution execution, System.CodeDom.CodeExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.Activities.Rules.RuleExpressionResult Evaluate(class System.Workflow.Activities.Rules.RuleExecution execution, class System.CodeDom.CodeExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionWalker.Evaluate(System.Workflow.Activities.Rules.RuleExecution,System.CodeDom.CodeExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleExpressionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="execution" Type="System.Workflow.Activities.Rules.RuleExecution" />
+        <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="execution">The <see cref="T:System.Workflow.Activities.Rules.RuleExecution" /> to execute the expression.</param>
+        <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> to evaluate.</param>
+        <summary>Evaluates the expression and all child expressions.</summary>
+        <returns>The <see cref="T:System.Workflow.Activities.Rules.RuleExpressionResult" /> that indicates the result of the expression evaluation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="execution" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Match">
+      <MemberSignature Language="C#" Value="public static bool Match (System.CodeDom.CodeExpression firstExpression, System.CodeDom.CodeExpression secondExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Match(class System.CodeDom.CodeExpression firstExpression, class System.CodeDom.CodeExpression secondExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionWalker.Match(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1062:ValidateArgumentsOfPublicMethods")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="firstExpression" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="secondExpression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="firstExpression">The first <see cref="T:System.CodeDom.CodeExpression" /> in the comparison.</param>
+        <param name="secondExpression">The second <see cref="T:System.CodeDom.CodeExpression" /> in the comparison.</param>
+        <summary>Compares the current expression and child nodes to another expression to determine whether they are equal.</summary>
+        <returns>
+          <see langword="true" /> if the expressions are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public static System.Workflow.Activities.Rules.RuleExpressionInfo Validate (System.Workflow.Activities.Rules.RuleValidation validation, System.CodeDom.CodeExpression expression, bool isWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.Activities.Rules.RuleExpressionInfo Validate(class System.Workflow.Activities.Rules.RuleValidation validation, class System.CodeDom.CodeExpression expression, bool isWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionWalker.Validate(System.Workflow.Activities.Rules.RuleValidation,System.CodeDom.CodeExpression,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleExpressionInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validation" Type="System.Workflow.Activities.Rules.RuleValidation" />
+        <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="isWritten" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="validation">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> to manage the validation process.</param>
+        <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> to evaluate.</param>
+        <param name="isWritten">
+          <see langword="true" /> if fields and properties written by a <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> are stored in by <see cref="T:System.Workflow.Activities.Rules.RuleAnalysis" />; otherwise, <see langword="false" />.</param>
+        <summary>Verifies that the expression and child nodes are configured correctly and has no errors.</summary>
+        <returns>The <see cref="T:System.Workflow.Activities.Rules.RuleExpressionInfo" /> for the <see cref="T:System.CodeDom.CodeExpression" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="validation" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.InvalidOperationException">The <paramref name="expression" /> is null and the errors collection on the <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> object is a null reference (<see langword="Nothing" />).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

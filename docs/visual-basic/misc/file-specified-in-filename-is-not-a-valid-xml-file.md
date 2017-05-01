@@ -11,8 +11,8 @@ ms.technology:
 ms.topic: "article"
 ms.assetid: c4c30bf3-e0ad-4bc8-89e0-2c3e49e9793b
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

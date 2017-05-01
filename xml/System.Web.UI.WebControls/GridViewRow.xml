@@ -1,0 +1,402 @@
+<Type Name="GridViewRow" FullName="System.Web.UI.WebControls.GridViewRow">
+  <TypeSignature Language="C#" Value="public class GridViewRow : System.Web.UI.WebControls.TableRow, System.Web.UI.IDataItemContainer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridViewRow extends System.Web.UI.WebControls.TableRow implements class System.Web.UI.IDataItemContainer, class System.Web.UI.INamingContainer" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewRow" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.TableRow</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IDataItemContainer</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents an individual row in a <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.GridViewRow> class is used represent an individual row in a <xref:System.Web.UI.WebControls.GridView> control. Each row in the <xref:System.Web.UI.WebControls.GridView> control has a designated row type using the <xref:System.Web.UI.WebControls.DataControlRowType> enumeration. The following table lists the different row types.  
+  
+|Row type|Description|  
+|--------------|-----------------|  
+|`DataRow`|A data row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|`EmptyDataRow`|The empty row in the <xref:System.Web.UI.WebControls.GridView> control. The empty row is displayed when the <xref:System.Web.UI.WebControls.GridView> control has no records to display and the <xref:System.Web.UI.WebControls.GridView.EmptyDataTemplate%2A?displayProperty=fullName> template is not `null`.|  
+|`Footer`|The footer row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|`Header`|The header row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|`Pager`|A pager row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|`Separator`|A separator row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+  
+ To determine the row type of a <xref:System.Web.UI.WebControls.GridViewRow> object, use the <xref:System.Web.UI.WebControls.GridViewRow.RowType%2A> property. A <xref:System.Web.UI.WebControls.GridViewRow> object also has a state associated with it. The state can be a bitwise combination of the values in the following table.  
+  
+|State value|Description|  
+|-----------------|-----------------|  
+|`Alternate`|The <xref:System.Web.UI.WebControls.GridViewRow> object is an alternate row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|`Edit`|The <xref:System.Web.UI.WebControls.GridViewRow> object is in edit mode.|  
+|`Normal`|The <xref:System.Web.UI.WebControls.GridViewRow> object is in its normal (default) state.|  
+|`Selected`|The <xref:System.Web.UI.WebControls.GridViewRow> object is selected.|  
+  
+ To determine the state of a <xref:System.Web.UI.WebControls.GridViewRow> object, use the <xref:System.Web.UI.WebControls.GridViewRow.RowState%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.GridView> control stores all of its data rows in the <xref:System.Web.UI.WebControls.GridView.Rows%2A> collection. To determine the index of a <xref:System.Web.UI.WebControls.GridViewRow> object in the <xref:System.Web.UI.WebControls.GridView.Rows%2A> collection, use the <xref:System.Web.UI.WebControls.GridViewRow.RowIndex%2A> property.  
+  
+ You can access the properties of the underlying data object that is bound to the <xref:System.Web.UI.WebControls.GridViewRow> object by using the <xref:System.Web.UI.WebControls.GridViewRow.DataItem%2A> property.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.GridViewRow.DataItem%2A> property is available only during and after the <xref:System.Web.UI.WebControls.GridView.RowDataBound> event of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ To determine the index of the data object in the underlying data source, use the <xref:System.Web.UI.WebControls.GridViewRow.DataItemIndex%2A> property.  
+  
+ You can access the individual cells of the <xref:System.Web.UI.WebControls.GridViewRow> object by using the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property. If a cell contains other controls, you can retrieve a control from the cell by using the <xref:System.Web.UI.Control.Controls%2A> collection of the cell. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the cell to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> specified.  
+  
+ To retrieve a field value from a <xref:System.Web.UI.WebControls.BoundField> field column or an automatically generated field column, use the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property of the cell. To retrieve a field value from other field column types where the field value is bound to a control, first retrieve the control from the appropriate cell and then access the appropriate property of the control.  
+  
+> [!NOTE]
+>  It is possible to use a data-binding expression directly in a <xref:System.Web.UI.WebControls.TemplateField> field column without binding the value to a property of a control. In this case, the field value is automatically placed in a <xref:System.Web.UI.DataBoundLiteralControl> control. To retrieve the field value, you must first retrieve the <xref:System.Web.UI.DataBoundLiteralControl> control from the appropriate cell and then use its <xref:System.Web.UI.DataBoundLiteralControl.Text%2A> property.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewRow>, see the <xref:System.Web.UI.WebControls.GridViewRow.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use a <xref:System.Web.UI.WebControls.GridViewRow> object to retrieve a field value from a cell in the <xref:System.Web.UI.WebControls.GridView> control and then display the value on the page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRow/CS/gridviewrowcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRow/VB/gridviewrowvb.aspx#1)]  -->  
+  
+ The following example demonstrates how to use a <xref:System.Web.UI.WebControls.GridViewRow> object to retrieve a <xref:System.Web.UI.WebControls.TextBox> control declared in a <xref:System.Web.UI.WebControls.TemplateField> field column's edit item template. The value of the text box is then passed to a <xref:System.Web.UI.WebControls.SqlDataSource> control for updating in the data source.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRowFindControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowFindControl/CS/gridviewrowfindcontrolcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRowFindControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowFindControl/VB/gridviewrowfindcontrolvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GridViewRow (int rowIndex, int dataItemIndex, System.Web.UI.WebControls.DataControlRowType rowType, System.Web.UI.WebControls.DataControlRowState rowState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 rowIndex, int32 dataItemIndex, valuetype System.Web.UI.WebControls.DataControlRowType rowType, valuetype System.Web.UI.WebControls.DataControlRowState rowState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewRow.#ctor(System.Int32,System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rowIndex" Type="System.Int32" />
+        <Parameter Name="dataItemIndex" Type="System.Int32" />
+        <Parameter Name="rowType" Type="System.Web.UI.WebControls.DataControlRowType" />
+        <Parameter Name="rowState" Type="System.Web.UI.WebControls.DataControlRowState" />
+      </Parameters>
+      <Docs>
+        <param name="rowIndex">The index of the <see cref="T:System.Web.UI.WebControls.GridViewRow" /> object in the <see cref="P:System.Web.UI.WebControls.GridView.Rows" /> collection of a <see cref="T:System.Web.UI.WebControls.GridView" /> control.</param>
+        <param name="dataItemIndex">The index of the <see cref="P:System.Web.UI.WebControls.GridViewRow.DataItem" /> in the underlying <see cref="T:System.Data.DataSet" />.</param>
+        <param name="rowType">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowType" /> enumeration values.</param>
+        <param name="rowState">A bitwise combination of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> enumeration values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.GridViewRow" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of a <xref:System.Web.UI.WebControls.GridViewRow> object.  
+  
+ The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewRow>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.GridViewRow.DataItemIndex%2A>|The value of the `dataItemIndex` parameter.|  
+|<xref:System.Web.UI.WebControls.GridViewRow.RowIndex%2A>|The value of the `rowIndex` parameter.|  
+|<xref:System.Web.UI.WebControls.GridViewRow.RowState%2A>|The value of the `rowState` parameter.|  
+|<xref:System.Web.UI.WebControls.GridViewRow.RowType%2A>|The value of the `rowType` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataItem">
+      <MemberSignature Language="C#" Value="public virtual object DataItem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DataItem" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.DataItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the underlying data object to which the <see cref="T:System.Web.UI.WebControls.GridViewRow" /> object is bound.</summary>
+        <value>An <see cref="T:System.Object" /> that represents the underlying data object to which the <see cref="T:System.Web.UI.WebControls.GridViewRow" /> object is bound.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.GridViewRow.DataItem%2A> property to access the properties of the underlying data object to which the <xref:System.Web.UI.WebControls.GridViewRow> object is bound. The <xref:System.Web.UI.WebControls.GridViewRow.DataItem%2A> property is only available during and after the <xref:System.Web.UI.WebControls.GridView.RowDataBound> event of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+> [!NOTE]
+>  This property applies only to data rows.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRow.DataItem%2A> property to retrieve a field value. The value is then used to pre-select an item in a <xref:System.Web.UI.WebControls.DropDownList> control displayed when a row is in edit mode.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRowDataItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataItem/CS/gridviewrowdataitemcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRowDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataItem/VB/gridviewrowdataitemvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataItemIndex">
+      <MemberSignature Language="C#" Value="public virtual int DataItemIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DataItemIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.DataItemIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the <see cref="P:System.Web.UI.WebControls.GridViewRow.DataItem" /> in the underlying <see cref="T:System.Data.DataSet" />.</summary>
+        <value>The index of the <see cref="P:System.Web.UI.WebControls.GridViewRow.DataItem" /> in the underlying data source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.GridViewRow.DataItemIndex%2A> property to determine the index of the <xref:System.Web.UI.WebControls.GridViewRow.DataItem%2A> in the underlying <xref:System.Data.DataSet>.  
+  
+> [!NOTE]
+>  This property applies only to data rows.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBubbleEvent">
+      <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object source, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object source, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Determines whether to pass an event up the page's ASP.NET server control hierarchy.</summary>
+        <returns>
+          <see langword="true" /> if the event has been canceled; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowIndex">
+      <MemberSignature Language="C#" Value="public virtual int RowIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.RowIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the <see cref="T:System.Web.UI.WebControls.GridViewRow" /> object in the <see cref="P:System.Web.UI.WebControls.GridView.Rows" /> collection of a <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
+        <value>The index of the <see cref="T:System.Web.UI.WebControls.GridViewRow" /> object in the <see cref="P:System.Web.UI.WebControls.GridView.Rows" /> collection of a <see cref="T:System.Web.UI.WebControls.GridView" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.GridViewRow.RowIndex%2A> property to determine the index of the <xref:System.Web.UI.WebControls.GridViewRow> object in the <xref:System.Web.UI.WebControls.GridView.Rows%2A> collection of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+> [!NOTE]
+>  This property applies only to data rows.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowState">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataControlRowState RowState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.DataControlRowState RowState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.RowState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of the <see cref="T:System.Web.UI.WebControls.GridViewRow" /> object.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.GridViewRow.RowType%2A> property to determine the state of the <xref:System.Web.UI.WebControls.GridViewRow> object. The state can be a bitwise combination of the values in the following table:  
+  
+|Status value|Description|  
+|------------------|-----------------|  
+|`DataControlRowState.Alternate`|The <xref:System.Web.UI.WebControls.GridViewRow> object is an alternate row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|`DataControlRowState.Edit`|The <xref:System.Web.UI.WebControls.GridViewRow> object is in edit mode.|  
+|`DataControlRowState.Normal`|The <xref:System.Web.UI.WebControls.GridViewRow> object is in its normal (default) state.|  
+|`DataControlRowState.Selected`|The <xref:System.Web.UI.WebControls.GridViewRow> object is selected.|  
+  
+ This property is commonly used to determine the state of a row before performing an operation.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRow.RowState%2A> property to determine whether a row is in edit mode or is selected. If the user selects a different row while the <xref:System.Web.UI.WebControls.GridView> control is in edit mode, the <xref:System.Web.UI.WebControls.GridView> control exits edit mode.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRowRowState#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowRowState/CS/gridviewrowrowstatecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRowRowState#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowRowState/VB/gridviewrowrowstatevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowType">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataControlRowType RowType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.DataControlRowType RowType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.RowType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the row type of the <see cref="T:System.Web.UI.WebControls.GridViewRow" /> object.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.DataControlRowType" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.GridViewRow.RowType%2A> property to determine the type of row that the <xref:System.Web.UI.WebControls.GridViewRow> object represents. The following table lists the different row type values using the <xref:System.Web.UI.WebControls.DataControlRowType> enumeration.  
+  
+|Row type|Description|  
+|--------------|-----------------|  
+|<xref:System.Web.UI.WebControls.DataControlRowType>|A data row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType>|The footer row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType>|The header row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType>|The empty row in the <xref:System.Web.UI.WebControls.GridView> control. The empty row is displayed when <xref:System.Web.UI.WebControls.GridView> control does not have any records to display.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType>|A pager row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType>|A separator row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+  
+ This property is commonly used to determine a row's type before performing an operation.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRow.RowType%2A> property to determine whether a row being created is a footer row. If the row is a footer row, the value for the sum of the column is updated into the footer row.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRowRowType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowRowType/CS/gridviewrowrowtypecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRowRowType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowRowType/VB/gridviewrowrowtypevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IDataItemContainer.DataItem">
+      <MemberSignature Language="C#" Value="object System.Web.UI.IDataItemContainer.DataItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Web.UI.IDataItemContainer.DataItem" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.System#Web#UI#IDataItemContainer#DataItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Web.UI.IDataItemContainer.DataItem" />.</summary>
+        <value>Returns <see cref="P:System.Web.UI.WebControls.GridViewRow.DataItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.GridViewRow> instance is cast to the <xref:System.Web.UI.IDataItemContainer> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IDataItemContainer.DataItemIndex">
+      <MemberSignature Language="C#" Value="int System.Web.UI.IDataItemContainer.DataItemIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Web.UI.IDataItemContainer.DataItemIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.System#Web#UI#IDataItemContainer#DataItemIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Web.UI.IDataItemContainer.DataItemIndex" />.</summary>
+        <value>Returns <see cref="P:System.Web.UI.WebControls.GridViewRow.DataItemIndex" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.GridViewRow> instance is cast to the <xref:System.Web.UI.IDataItemContainer> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IDataItemContainer.DisplayIndex">
+      <MemberSignature Language="C#" Value="int System.Web.UI.IDataItemContainer.DisplayIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Web.UI.IDataItemContainer.DisplayIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.System#Web#UI#IDataItemContainer#DisplayIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Web.UI.IDataItemContainer.DisplayIndex" />.</summary>
+        <value>Returns <see cref="P:System.Web.UI.WebControls.GridViewRow.RowIndex" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.GridViewRow> instance is cast to the <xref:System.Web.UI.IDataItemContainer> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

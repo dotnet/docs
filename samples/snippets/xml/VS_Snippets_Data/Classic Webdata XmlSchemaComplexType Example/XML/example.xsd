@@ -1,0 +1,14 @@
+﻿<!--<Snippet2>-->
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="stringElementWithAnyAttribute">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:anyAttribute namespace="##targetNamespace"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+<!--</Snippet2>-->

@@ -78,12 +78,12 @@ for more information.
 
 ### AppVeyor
 
-The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview2 already installed in the build worker image `Visual Studio 2015`.
+The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK 1.0.1 already installed in the build worker image `Visual Studio 2017`.
 
 Just use:
 
 ```yaml
-os: Visual Studio 2015
+os: Visual Studio 2017
 ```
 
 It's possible to install a specific version of .NET Core SDK, see [example appveyor.yml](https://github.com/dotnet/docs/blob/master/appveyor.yml) 

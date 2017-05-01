@@ -28,7 +28,9 @@ The `dotnet pack` command builds the project and creates NuGet packages. The res
 
 NuGet dependencies of the packed project are added to the *.nuspec* file, so they're properly resolved when the package is installed. Project-to-project references aren't packaged inside the project. Currently, you must have a package per project if you have project-to-project dependencies.
 
-By default, `dotnet pack` builds the project first. If you wish to avoid this behavior, pass the `--no-build` option. This is often useful in Continuous Integration (CI) build scenarios where you know the code was previously built. 
+By default, `dotnet pack` builds the project first. If you wish to avoid this behavior, pass the `--no-build` option. This is often useful in Continuous Integration (CI) build scenarios where you know the code was previously built.
+
+You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet metadata properties](csproj.md#nuget-metadata-properties) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference).
 
 ## Arguments
 
@@ -95,3 +97,7 @@ Pack the project in the current directory into the `nupkgs` folder and skip the 
 With the project's version suffix configured as `<VersionSuffix>$(VersionSuffix)</VersionSuffix>` in the *.csproj* file, pack the current project and update the resulting package version with the given suffix:
 
 `dotnet pack --version-suffix "ci-1234"`
+
+Set the package version to `2.1.0` with the `PackageVersion` MSBuild property:
+
+`dotnet pack /p:PackageVersion=2.1.0`

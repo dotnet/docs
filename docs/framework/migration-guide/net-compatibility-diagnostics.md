@@ -460,7 +460,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |Scope|Edge|  
 |Version|4.5|  
 |Type|Runtime|  
-|Affected APIs|<xref:System.Linq.Enumerable.Empty%60%601%2A?displayProperty=fullName>|  
+|Affected APIs|<xref:System.Linq.Enumerable.Empty%60%601?displayProperty=fullName>|  
 |Analyzers|CD0042|  
   
 <a name="diagnostic43"></a>   

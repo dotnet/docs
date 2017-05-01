@@ -1,11 +1,11 @@
-//<Snippet11>
+// <Snippet11>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-//<Snippet11>
+// </Snippet11>
 
-//<Snippet12>
+// <Snippet12>
 public class SynchronizedCache 
 {
     private ReaderWriterLockSlim cacheLock = new ReaderWriterLockSlim();
@@ -131,7 +131,7 @@ public class SynchronizedCache
        if (cacheLock != null) cacheLock.Dispose();
     }
 }
-//</Snippet12>
+// </Snippet12>
 
 // <Snippet13>
 public class Example

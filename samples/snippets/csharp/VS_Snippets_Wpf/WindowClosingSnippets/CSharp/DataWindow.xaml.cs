@@ -1,6 +1,6 @@
-using System; // EventArgs
-using System.ComponentModel; // CancelEventArgs
-using System.Windows; // window
+using System;
+using System.ComponentModel;
+using System.Windows;
 
 namespace CSharp
 {

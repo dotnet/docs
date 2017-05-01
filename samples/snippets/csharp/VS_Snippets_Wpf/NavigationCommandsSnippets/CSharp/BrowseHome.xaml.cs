@@ -1,6 +1,6 @@
 //<SnippetBrowseHomeCODEBEHIND>
-using System.Windows; // Window
-using System.Windows.Input; // CanExecuteRoutedEventArgs, ExecutedRoutedEventArgs
+using System.Windows;
+using System.Windows.Input;
 
 namespace SDKSample
 {

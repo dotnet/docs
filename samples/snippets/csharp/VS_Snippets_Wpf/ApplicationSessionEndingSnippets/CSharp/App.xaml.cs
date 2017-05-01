@@ -1,5 +1,5 @@
 //<SnippetHandlingSessionEndingCODEBEHIND>
-using System.Windows; // Application, SessionEndingCancelEventArgs, MessageBox, MessageBoxResult, MessageBoxButton
+using System.Windows;
 
 namespace SDKSample
 {

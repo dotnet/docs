@@ -2,9 +2,9 @@
 //<SnippetMarginsDialogBoxValidationCODEBEHIND1>
 //<SnippetMarginsDialogBoxOKResultSetCODEBEHIND1>
 //<SnippetMarginsDialogBoxCancelResultSetCODEBEHIND1>
-using System.Windows; // Window, RoutedEventArgs, IInputElement, DependencyObject
-using System.Windows.Controls; // Validation
-using System.Windows.Input; // Keyboard
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace SDKSample
 {

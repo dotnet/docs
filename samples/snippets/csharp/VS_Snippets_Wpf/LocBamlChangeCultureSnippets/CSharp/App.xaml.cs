@@ -1,7 +1,7 @@
 //<SnippetLocBamlChangeCultureCODEBEHIND>
-using System.Windows; // Application
-using System.Globalization; // CultureInfo
-using System.Threading; // Thread
+using System.Windows;
+using System.Globalization;
+using System.Threading;
 
 namespace SDKSample
 {

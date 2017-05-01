@@ -1,6 +1,6 @@
-Imports System ' EventArgs
-Imports System.ComponentModel ' CancelEventArgs
-Imports System.Windows ' window
+Imports System
+Imports System.ComponentModel
+Imports System.Windows
 
 Namespace VisualBasic
     Partial Public Class DataWindow

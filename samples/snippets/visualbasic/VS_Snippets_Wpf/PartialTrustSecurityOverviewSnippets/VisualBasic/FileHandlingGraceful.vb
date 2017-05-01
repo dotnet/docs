@@ -1,10 +1,10 @@
 '<SnippetDetectPermsGracefulCODE1>
 
-Imports System.IO ' File, FileStream, StreamWriter
-Imports System.IO.IsolatedStorage ' IsolatedStorageFile
-Imports System.Security ' CodeAccesPermission
-Imports System.Security.Permissions ' FileIOPermission, FileIOPermissionAccess
-Imports System.Windows ' MessageBox
+Imports System.IO
+Imports System.IO.IsolatedStorage
+Imports System.Security
+Imports System.Security.Permissions
+Imports System.Windows
 
 Namespace SDKSample
 	Public Class FileHandlingGraceful

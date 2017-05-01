@@ -18,8 +18,8 @@ namespace SdkSample
     using System.Text;
     using System.IO;
 
-    using System.Windows; // DependencyProperty
-    using System.Windows.Documents; // TextElement
+    using System.Windows;
+    using System.Windows.Documents;
   
     internal static class HtmlCssParser
     {

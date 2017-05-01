@@ -12,7 +12,7 @@
 using System;
 using System.IO;
 using System.IO.Packaging;
-using System.Windows;       // for MessageBox
+using System.Windows;
 
 
 namespace SDKSample

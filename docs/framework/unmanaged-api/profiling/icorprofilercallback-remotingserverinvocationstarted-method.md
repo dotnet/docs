@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.RemotingServerInvocationStarted"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RemotingServerInvocationStarted"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "RemotingServerInvocationStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::RemotingServerInvocationStarted method [.NET Framework profiling]"
 ms.assetid: 86051a11-ad8e-4ace-9a11-ff0f982a5e11
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

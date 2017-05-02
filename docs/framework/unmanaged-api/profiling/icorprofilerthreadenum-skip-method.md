@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerThreadEnum.Skip"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerThreadEnum::Skip"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Skip method, ICorProfilerThreadEnum interface [.NET Framework profiling]"
   - "ICorProfilerThreadEnum::Skip method [.NET Framework profiling]"
 ms.assetid: acb8b029-4a96-4ed7-ae3c-310204e5ceea
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

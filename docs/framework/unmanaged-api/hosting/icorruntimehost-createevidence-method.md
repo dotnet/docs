@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorRuntimeHost.CreateEvidence"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CreateEvidence"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CreateEvidence method [.NET Framework hosting]"
   - "ICorRuntimeHost::CreateEvidence method [.NET Framework hosting]"
 ms.assetid: e235ea80-b84c-4442-a4c3-fc96c25a8eb9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

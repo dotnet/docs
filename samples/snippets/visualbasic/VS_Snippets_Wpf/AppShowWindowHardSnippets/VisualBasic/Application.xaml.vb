@@ -1,7 +1,7 @@
 '<SnippetStartupEventCODEBEHIND>
 
 Imports Microsoft.VisualBasic
-Imports System.Windows ' Application, StartupEventArgs
+Imports System.Windows
 
 Namespace SDKSample
 	Partial Public Class App

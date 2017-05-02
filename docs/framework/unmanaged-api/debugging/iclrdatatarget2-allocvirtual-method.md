@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDataTarget2.AllocVirtual"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDataTarget2::AllocVirtual"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRDataTarget2::AllocVirtual method [.NET Framework debugging]"
   - "AllocVirtual method [.NET Framework debugging]"
 ms.assetid: e3226230-964b-47fb-9f53-d6fdbeda1e9e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

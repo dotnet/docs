@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebug.Initialize"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebug::Initialize"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Initialize method, ICorDebug interface [.NET Framework debugging]"
   - "ICorDebug::Initialize method [.NET Framework debugging]"
 ms.assetid: 6fae3b23-5c9f-47c0-85d8-6bb75e050786
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

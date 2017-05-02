@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRErrorReportingManager.GetBucketParametersForCurrentException"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRErrorReportingManager::GetBucketParametersForCurrentException"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRErrorReportingManager::GetBucketParametersForCurrentException method [.NET Framework hosting]"
   - "GetBucketParametersForCurrentException method [.NET Framework hosting]"
 ms.assetid: a13ec8a6-8e18-4acb-8054-77f5b1a0e0b9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

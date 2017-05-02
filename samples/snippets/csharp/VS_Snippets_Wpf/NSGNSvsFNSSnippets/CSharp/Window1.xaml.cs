@@ -4,8 +4,8 @@ using System.Text;
 using System.Windows;
 
 //<SnippetNSFrameDiffCODE1>
-using System.Windows.Controls; // Frame
-using System.Windows.Navigation; // NavigationService
+using System.Windows.Controls;
+using System.Windows.Navigation;
 //</SnippetNSFrameDiffCODE1>
 
 namespace NSGNSvsFNSSnippets

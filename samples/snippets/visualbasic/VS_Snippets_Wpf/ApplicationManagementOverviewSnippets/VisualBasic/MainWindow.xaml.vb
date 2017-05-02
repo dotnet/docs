@@ -1,5 +1,5 @@
 Imports Microsoft.VisualBasic
-Imports System.Windows ' Window
+Imports System.Windows
 
 Namespace SDKSample
 	Public Class App

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IAssemblyCache.UninstallAssembly"
-apilocation: 
+api_location: 
   - "fusion.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyCache::UninstallAssembly"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "UninstallAssembly method [.NET Framework fusion]"
   - "IAssemblyCache::UninstallAssembly method [.NET Framework fusion]"
 ms.assetid: 973b2c44-8dfc-40c1-9035-10f4846627e9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

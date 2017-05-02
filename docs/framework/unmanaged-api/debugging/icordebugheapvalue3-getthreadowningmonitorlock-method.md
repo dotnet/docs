@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugHeapValue3.GetThreadOwningMonitorLock"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugHeapValue3::GetThreadOwningMonitorLock"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetThreadOwningMonitorLock method [.NET Framework debugging]"
   - "ICorDebugHeapValue3::GetThreadOwningMonitorLock method [.NET Framework debugging]"
 ms.assetid: e06fc19d-2cf4-4cad-81a3-137a68af8969
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

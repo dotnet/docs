@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebug.EnumerateProcesses"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EnumerateProcesses"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumerateProcesses method [.NET Framework debugging]"
   - "ICorDebug::EnumerateProcesses method [.NET Framework debugging]"
 ms.assetid: ba25d166-1d28-4f1d-aca2-de298bbca669
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo3.GetThreadStaticAddress2 Method"
-apilocation: 
+api_location: 
   - "Mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetThreadStaticAddress2"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo3::GetThreadStaticAddress2 method [.NET Framework profiling]"
   - "GetThreadStaticAddress2 method [.NET Framework profiling]"
 ms.assetid: a9608861-ae64-4467-8a73-be05ad34beac
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

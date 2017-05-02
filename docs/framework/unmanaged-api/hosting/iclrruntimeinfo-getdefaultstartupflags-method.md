@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRRuntimeInfo.GetDefaultStartupFlags"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::GetDefaultStartupFlags"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRRuntimeInfo::GetDefaultStartupFlags method [.NET Framework hosting]"
   - "GetDefaultStartupFlags method [.NET Framework hosting]"
 ms.assetid: 35c2173e-3b0b-4b2a-950d-e0a01c6df052
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

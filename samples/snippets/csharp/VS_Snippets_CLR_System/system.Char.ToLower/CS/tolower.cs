@@ -1,6 +1,6 @@
 // <snippet16>
 using System;
-using System.Globalization;  // for CultureInfo
+using System.Globalization;
 
 public class ToLowerSample {
 	public static void Main() {

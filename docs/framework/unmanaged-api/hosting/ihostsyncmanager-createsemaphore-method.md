@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostSyncManager.CreateSemaphore"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateSemaphore"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CreateSemaphore method [.NET Framework hosting]"
   - "IHostSyncManager::CreateSemaphore method [.NET Framework hosting]"
 ms.assetid: 37679e94-5ff9-4173-8fa5-457febeb89bf
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -1,6 +1,6 @@
 '<SnippetHandleEllipseMouseUpEventCODEBEHIND>
-Imports System.Windows ' Window, MessageBox
-Imports System.Windows.Input ' MouseButtonEventArgs
+Imports System.Windows
+Imports System.Windows.Input
 
 Namespace SDKSample
 

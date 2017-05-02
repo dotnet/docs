@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.JITCachedFunctionSearchStarted"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::JITCachedFunctionSearchStarted"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "JITCachedFunctionSearchStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITCachedFunctionSearchStarted method [.NET Framework profiling]"
 ms.assetid: 5cba642c-0d80-48ee-889d-198c5044d821
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

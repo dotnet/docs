@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorConfiguration.SetDebuggerThreadControl"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "SetDebuggerThreadControl"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetDebuggerThreadControl method [.NET Framework hosting]"
   - "ICorConfiguration::SetDebuggerThreadControl method [.NET Framework hosting]"
 ms.assetid: 1ded7639-dacb-4db1-961c-d1ceaec01959
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

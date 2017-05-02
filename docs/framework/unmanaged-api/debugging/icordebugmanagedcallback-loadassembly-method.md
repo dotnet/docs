@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugManagedCallback.LoadAssembly"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::LoadAssembly"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "LoadAssembly method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::LoadAssembly method [.NET Framework debugging]"
 ms.assetid: 55cb673a-e240-43a6-a406-6912e7c0fe66
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

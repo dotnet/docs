@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback5.ConditionalWeakTableReferences"
-apilocation: 
+api_location: 
   - "Mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CondiitonalWeakTableElementReferences"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ConditionalWeakTableElementReferences method, ICorProfilerCallback5 interface [.NET Framework profiling]"
   - "ICorProfilerCallback5::ConditionalWeakTableElementReferences method [.NET Framework profiling]"
 ms.assetid: 532c7a02-a9de-4cea-bb2b-7f470da594de
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

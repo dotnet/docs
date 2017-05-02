@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICeeGen.GetIlSection"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICeeGen::GetIlSection"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetIlSection method [.NET Framework metadata]"
   - "ICeeGen::GetIlSection method [.NET Framework metadata]"
 ms.assetid: 6f2db2ca-203f-4ac3-9530-208642ca385e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

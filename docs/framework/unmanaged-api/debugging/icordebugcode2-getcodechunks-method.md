@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugCode2.GetCodeChunks"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugCode2::GetCodeChunks"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetCodeChunks method [.NET Framework debugging]"
   - "ICorDebugCode2::GetCodeChunks method [.NET Framework debugging]"
 ms.assetid: 210a2f02-2678-4555-bc4a-78a0408764c8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

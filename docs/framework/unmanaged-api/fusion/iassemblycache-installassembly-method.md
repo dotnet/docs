@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IAssemblyCache.InstallAssembly"
-apilocation: 
+api_location: 
   - "fusion.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyCache::InstallAssembly"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "InstallAssembly method [.NET Framework fusion]"
   - "IAssemblyCache::InstallAssembly method [.NET Framework fusion]"
 ms.assetid: 33c1d269-c85e-4cb1-b0e6-1c510c8fb5fa
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

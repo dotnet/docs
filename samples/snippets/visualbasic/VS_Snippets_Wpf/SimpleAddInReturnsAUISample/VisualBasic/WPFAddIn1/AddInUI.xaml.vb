@@ -1,7 +1,7 @@
 ﻿'<SnippetAddInUICodeBehind>
 
-Imports System.Windows ' MessageBox, RoutedEventArgs
-Imports System.Windows.Controls ' UserControl
+Imports System.Windows
+Imports System.Windows.Controls
 
 Namespace WPFAddIn1
 	Partial Public Class AddInUI

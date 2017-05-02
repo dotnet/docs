@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataTables.GetBlob"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetBlob"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetBlob method [.NET Framework metadata]"
   - "IMetaDataTables::GetBlob method [.NET Framework metadata]"
 ms.assetid: 94667c1c-6d58-4aa7-b74e-530b11e2a276
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

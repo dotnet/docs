@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataAssemblyEmit.SetManifestResourceProps"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::SetManifestResourceProps"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetManifestResourceProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetManifestResourceProps method [.NET Framework metadata]"
 ms.assetid: ef77efd1-849c-4e51-ba92-7ee3d2bf0339
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

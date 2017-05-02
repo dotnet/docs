@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo4::InitializeCurrentThread"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::InitializeCurrentThread"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo4::InitializeCurrentThread method [.NET Framework profiling]"
   - "InitializeCurrentThread method, ICorProfilerInfo4 interface [.NET Framework profiling]"
 ms.assetid: 18a3335c-8c75-476c-b6de-72c0bfedae5d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport2.EnumGenericParams"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport2::EnumGenericParams"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumGenericParams method [.NET Framework metadata]"
   - "IMetaDataImport2::EnumGenericParams method [.NET Framework metadata]"
 ms.assetid: b50488a5-3cf0-483c-82dc-2892a3ec61ac
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

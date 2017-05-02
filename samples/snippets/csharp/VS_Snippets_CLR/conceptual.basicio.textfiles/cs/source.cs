@@ -44,7 +44,7 @@ class WriteTextFiles
             foreach (string line in lines)
                 outputFile.WriteLine(line);
         }
-        // <SnippetWriteLine>
+        // </SnippetWriteLine>
 
     }
 
@@ -58,7 +58,7 @@ class WriteTextFiles
         using (StreamWriter outputFile = new StreamWriter(mydocpath + @"\WriteLines.txt", true)) {
             outputFile.WriteLine("Fourth Line");
         }
-        // <SnippetAppendText>
+        // </SnippetAppendText>
 
     }
 

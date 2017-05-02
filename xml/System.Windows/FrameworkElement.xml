@@ -35,7 +35,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a WPF framework-level set of properties, events, and methods for [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] elements. This class represents the provided WPF framework-level implementation that is built on the WPF core-level [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] that are defined by <see cref="T:System.Windows.UIElement" />.</summary>
+    <summary>Provides a WPF framework-level set of properties, events, and methods for Windows Presentation Foundation (WPF) elements. This class represents the provided WPF framework-level implementation that is built on the WPF core-level APIs that are defined by <see cref="T:System.Windows.UIElement" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -4087,7 +4087,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a reference to the template parent of this element. This property is not relevant if the element was not created through a template.</summary>
-        <value>The element whose <see cref="T:System.Windows.FrameworkTemplate" /> <see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> caused this element to be created. This value is frequently <see langword="null" />; see Remarks.</value>
+        <value>The element whose <see cref="T:System.Windows.FrameworkTemplate" /><see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> caused this element to be created. This value is frequently <see langword="null" />; see Remarks.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

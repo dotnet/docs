@@ -9,12 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "GetCORVersion"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "mscoreei.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "GetCORVersion"
 dev_langs: 
@@ -22,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetCORVersion function [.NET Framework hosting]"
 ms.assetid: 2f09cd37-bf3a-4cc5-87b0-adc42a7eed31
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

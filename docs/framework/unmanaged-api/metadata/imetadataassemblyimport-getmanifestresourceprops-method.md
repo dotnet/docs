@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataAssemblyImport.GetManifestResourceProps"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::GetManifestResourceProps"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetManifestResourceProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::GetManifestResourceProps method [.NET Framework metadata]"
 ms.assetid: 00be4789-ac63-4397-b2ec-1629a5c5a585
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

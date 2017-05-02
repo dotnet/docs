@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRStrongName.StrongNameTokenFromAssemblyEx"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameTokenFromAssemblyEx"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "StrongNameTokenFromAssemblyEx method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameTokenFromAssemblyEx method [.NET Framework hosting]"
 ms.assetid: 648ea90e-5e60-40a0-a56a-3e61bf2fba7c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

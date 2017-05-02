@@ -47,13 +47,13 @@ All communication with a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] se
 ## Defining Endpoint Addresses in Configuration  
  To define an endpoint in a configuration file, use the [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
   
- <!-- TODO: review snippet reference [!code[S_UEHelloWorld#5](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp2.config#5)]  -->  
+ [!code-xml[S_UEHelloWorld#5](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp2.config#5)]   
   
  When the <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> method is called (that is, when the hosting application attempts to start the service), the system looks for a [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md) element with a name attribute that specifies "UE.Samples.HelloService". If the [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md) element is found, the system loads the specified class and creates endpoints using the endpoint definitions provided in the configuration file. This mechanism allows you to load and start a service with two lines of code while keeping binding and addressing information out of your code. The advantage of this approach is that these changes can be made without having to recompile or redeploy the application.  
   
  The optional headers are declared in a [\<headers>](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md). The following is an example of the elements used to specify endpoints for a service in a configuration file that distinguishes between two headers: "Gold" clients from http://tempuri1.org/ and "Standard" clients from http://tempuri2.org/. The client calling this service must have the appropriate [\<headers>](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md) in its configuration file.  
   
- <!-- TODO: review snippet reference [!code[S_UEHelloWorld#1](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp.config#1)]  -->  
+ [!code-xml[S_UEHelloWorld#1](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp.config#1)]        
   
  Headers can also be set on individual messages instead of all messages on an endpoint (as shown previously). This is done by using <xref:System.ServiceModel.OperationContextScope> to create a new context in a client application to add a custom header to the outgoing message, as shown in the following example.  
   
@@ -70,7 +70,7 @@ All communication with a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] se
   
  The following example demonstrates how to specify the full endpoint address in code.  
   
- [!code-csharp[S_UEHelloWorld#2](../../../samples/snippets/csharp/VS_Snippets_CFX/s_uehelloworld/cs/snippet.cs#2)]  
+ [!code-csharp[S_UEHelloWorld#2](../../../samples/snippets/csharp/VS_Snippets_CFX/s_uehelloworld/cs/snippet.cs#2)]   
   
  The following example demonstrates how to add a relative address ("MyService") to the base address of the service host.  
   

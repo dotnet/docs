@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedScope.GetStartOffset"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetStartOffset"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetStartOffset method, ISymUnmanagedScope interface [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetStartOffset method [.NET Framework debugging]"
 ms.assetid: da6bbc75-94d1-4354-9722-0d455b4428fb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

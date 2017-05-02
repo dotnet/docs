@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedENCUpdate.UpdateSymbolStore2"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedENCUpdate::UpdateSymbolStore2"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedENCUpdate::UpdateSymbolStore2 method [.NET Framework debugging]"
   - "UpdateSymbolStore2 method [.NET Framework debugging]"
 ms.assetid: 35588317-6184-485c-ab41-4b15fc1765d9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

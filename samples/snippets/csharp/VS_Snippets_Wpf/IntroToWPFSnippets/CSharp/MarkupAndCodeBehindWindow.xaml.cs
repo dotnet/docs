@@ -1,5 +1,5 @@
 //<SnippetMarkupAndCodeBehindWindowCODEBEHIND>
-using System.Windows; // Window, RoutedEventArgs, MessageBox
+using System.Windows;
 
 namespace SDKSample
 {

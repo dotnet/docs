@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICeeGen.GetString"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICeeGen::GetString"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICeeGen::GetString method [.NET Framework metadata]"
   - "GetString method, ICeeGen interface [.NET Framework metadata]"
 ms.assetid: 7cc22562-128c-440a-9147-55ff20f173d7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

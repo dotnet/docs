@@ -1,9 +1,9 @@
 ﻿'<SnippetAddInCode>
 
-Imports System.AddIn ' AddInAttribute
-Imports System.Windows ' FrameworkElement
+Imports System.AddIn
+Imports System.Windows
 
-Imports AddInViews ' IWPFAddInView
+Imports AddInViews
 
 Namespace WPFAddIn1
 	''' <summary>

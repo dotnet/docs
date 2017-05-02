@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorConfiguration.AddDebuggerSpecialThread"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AddDebuggerSpecialThread"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "AddDebuggerSpecialThread method [.NET Framework hosting]"
   - "ICorConfiguration::AddDebuggerSpecialThread method [.NET Framework hosting]"
 ms.assetid: 1f1e3239-438e-4be9-a3bb-7d0722d3a76d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

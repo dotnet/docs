@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorRuntimeHost.SwitchOutLogicalThreadState"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::SwitchOutLogicalThreadState"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorRuntimeHost::SwitchOutLogicalThreadState method [.NET Framework hosting]"
   - "SwitchOutLogicalThreadState method [.NET Framework hosting]"
 ms.assetid: e1968f0b-2675-4dc2-8507-46164e1df154
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

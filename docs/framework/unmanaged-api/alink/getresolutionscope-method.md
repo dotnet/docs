@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IALink.GetResolutionScope"
-apilocation: 
+api_location: 
   - "alink.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetResolutionScope"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetResolutionScope method"
 ms.assetid: 5b48ca60-dacd-44b2-9979-4a5122f00812
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

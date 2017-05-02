@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.GetTypeSpecFromToken"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetTypeSpecFromToken"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetTypeSpecFromToken method [.NET Framework metadata]"
   - "IMetaDataImport::GetTypeSpecFromToken method [.NET Framework metadata]"
 ms.assetid: ee518bda-3296-482e-a7b7-e9d51dd1a181
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

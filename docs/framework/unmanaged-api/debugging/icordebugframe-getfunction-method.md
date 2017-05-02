@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugFrame.GetFunction"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugFrame::GetFunction"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetFunction method, ICorDebugFrame interface [.NET Framework debugging]"
   - "ICorDebugFrame::GetFunction method [.NET Framework debugging]"
 ms.assetid: 879d2311-0ff1-4616-a8b3-959ea5868b2e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

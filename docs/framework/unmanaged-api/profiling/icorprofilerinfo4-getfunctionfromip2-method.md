@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo4.GetFunctionFromIP2"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::GetFunctionFromIP2"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo4::GetFunctionFromIP2 method [.NET Framework profiling]"
   - "GetFunctionFromIP2 method, ICorProfilerInfo4 interface [.NET Framework profiling]"
 ms.assetid: 46ff70f4-13e9-40a0-802a-0a40abcfc6a0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

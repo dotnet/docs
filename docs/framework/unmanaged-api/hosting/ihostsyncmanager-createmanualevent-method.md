@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostSyncManager.CreateManualEvent"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateManualEvent"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CreateManualEvent method [.NET Framework hosting]"
   - "IHostSyncManager::CreateManualEvent method [.NET Framework hosting]"
 ms.assetid: 68661fbd-09cf-46dc-890b-e694f8a3880a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

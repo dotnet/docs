@@ -2,18 +2,19 @@
 title: "ICorPublishEnum::Reset Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorPublishEnum.Reset"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorPublishEnum::Reset"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorPublishEnum::Reset method [.NET Framework debugging]"
   - "Reset method, ICorPublishEnum interface [.NET Framework debugging]"
 ms.assetid: 8a4d9c86-b5ef-460a-9731-1d8c91b93a0b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

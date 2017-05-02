@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo.GetModuleMetaData"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetModuleMetaData"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetModuleMetaData method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetModuleMetaData method [.NET Framework profiling]"
 ms.assetid: 7a439d92-348a-44dd-b60f-cad7cba56379
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

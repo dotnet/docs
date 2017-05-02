@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo.IsArrayClass"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::IsArrayClass"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IsArrayClass method [.NET Framework profiling]"
   - "ICorProfilerInfo::IsArrayClass method [.NET Framework profiling]"
 ms.assetid: 7f230961-23a6-4d56-ad2d-7a876d65705f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

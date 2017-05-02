@@ -40,7 +40,16 @@
         "docset_postbuild": [
           "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
         ]
-      }
+      },
+      "pdf_build_exclude_tocs": [
+        "api/_splitted/System.Windows.Forms/toc.json",
+        "api/_splitted/System.Web.UI.WebControls/toc.json",
+        "api/_splitted/System.Windows.Controls/toc.json",
+        "api/_splitted/System.Windows/toc.json",
+        "api/_splitted/Microsoft.VisualBasic.Compatibility.VB6/toc.json",
+        "api/_splitted/System.Windows.Media.Animation/toc.json",
+        "api/_splitted/System/toc.json"
+      ]
     }
   ],
   "notification_subscribers": [],
@@ -72,7 +81,7 @@
     },
     {
       "id": "SplitToc",
-      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2",
       "path_to_root": "_dependentPackages/splitToc",
       "target_framework": "net45",
       "version": "latest"

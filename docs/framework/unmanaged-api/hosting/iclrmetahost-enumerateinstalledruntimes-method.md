@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRMetaHost.EnumerateInstalledRuntimes"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRMetaHost::EnumerateInstalledRuntimes"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRMetaHost::EnumerateInstalledRuntimes method [.NET Framework hosting]"
   - "EnumerateInstalledRuntimes method [.NET Framework hosting]"
 ms.assetid: 9e359384-0d3d-451c-807e-5d7fcebf2be7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -2,18 +2,19 @@
 title: "StrongNameGetPublicKeyEx Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRStrongName2.StrongNameGetPublicKeyEx"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "StrongNameGetPublicKeyEx"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "StrongNameGetPublicKeyEx method, ICLRStrongName2 interface [.NET Framework hosting]"
   - "ICLRStrongName2::StrongNameGetPublicKeyEx method [.NET Framework hosting]"
 ms.assetid: 63d8260c-fb32-4f8f-a357-768afd570f68
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

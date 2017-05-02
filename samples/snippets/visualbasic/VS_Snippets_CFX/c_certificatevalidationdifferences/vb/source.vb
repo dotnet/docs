@@ -27,7 +27,7 @@ Public Class Test
     Private Sub Run()
         '<snippet1>
         ServicePointManager.ServerCertificateValidationCallback = New RemoteCertificateValidationCallback(AddressOf ValidateServerCertificate)
-        '<snippet1>
+        '</snippet1>
     End Sub
 
     '<snippet2>

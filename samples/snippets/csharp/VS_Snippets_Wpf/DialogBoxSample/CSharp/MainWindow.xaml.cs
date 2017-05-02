@@ -2,11 +2,11 @@
 //<SnippetOpenFindDialogCODEBEHIND1>
 //<SnippetOpenMarginsDialogProcessReturnCODEBEHIND1>
 //<SnippetOpenFindDialogResultCODEBEHIND1>
-using System; // EventArgs
-using System.ComponentModel; // CancelEventArgs
-using System.Windows; // Window, MessageBoxXxx, RoutedEventArgs
-using System.Windows.Controls; // TextChangedEventArgs
-using Microsoft.Win32; // OpenFileDialog
+using System;
+using System.ComponentModel;
+using System.Windows;
+using System.Windows.Controls;
+using Microsoft.Win32;
 
 namespace SDKSample
 {

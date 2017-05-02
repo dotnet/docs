@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRGCManager.SetGCStartupLimits"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRGCManager::SetGCStartupLimits"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetGCStartupLimits method, ICLRGCManager interface [.NET Framework hosting]"
   - "ICLRGCManager::SetGCStartupLimits method [.NET Framework hosting]"
 ms.assetid: 1c8d9959-95b5-4131-be4a-556d97774014
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugDataTarget.GetThreadContext Method"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugDataTarget::GetThreadContext"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugDataTarget::GetThreadContext method [.NET Framework debugging]"
   - "GetThreadContext method, ICorDebugDataTarget interface [.NET Framework debugging]"
 ms.assetid: c8954268-1821-4b23-b665-dbb55f2af31b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

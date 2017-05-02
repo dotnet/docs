@@ -3,11 +3,11 @@
 '<SnippetOpenFindDialogCODEBEHIND1>
 '<SnippetOpenFindDialogResultCODEBEHIND1>
 
-Imports System '  EventArgs
-Imports System.ComponentModel '  CancelEventArgs
-Imports System.Windows '  Window, MessageBoxXxx, RoutedEventArgs
-Imports System.Windows.Controls '  TextChangedEventArgs
-Imports Microsoft.Win32 '  OpenFileDialog
+Imports System
+Imports System.ComponentModel
+Imports System.Windows
+Imports System.Windows.Controls
+Imports Microsoft.Win32
 
 Namespace SDKSample
 

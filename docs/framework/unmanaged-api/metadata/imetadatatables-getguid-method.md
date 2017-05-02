@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataTables.GetGuid"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetGuid"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetGuid method [.NET Framework metadata]"
   - "IMetaDataTables::GetGuid method [.NET Framework metadata]"
 ms.assetid: a3546316-e24d-417f-9909-e45d42c9d471
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

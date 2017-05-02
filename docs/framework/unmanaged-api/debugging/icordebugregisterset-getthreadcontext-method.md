@@ -2,18 +2,19 @@
 title: "ICorDebugRegisterSet::GetThreadContext Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugRegisterSet.GetThreadContext"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugRegisterSet::GetThreadContext"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetThreadContext method, ICorDebugRegisterSet interface [.NET Framework debugging]"
   - "ICorDebugRegisterSet::GetThreadContext method [.NET Framework debugging]"
 ms.assetid: 0f63400b-dc1c-48d6-b51a-75c3f7f28e03
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

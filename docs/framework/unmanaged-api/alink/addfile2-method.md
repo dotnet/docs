@@ -9,12 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "AddFile2"
   - "IALink2.AddFile2"
-apilocation: 
+api_location: 
   - "alink.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AddFile2"
 dev_langs: 
@@ -22,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "AddFile2 method"
 ms.assetid: 03bc49bf-a89b-4fb6-a88d-97482e061195
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

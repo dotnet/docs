@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IGCHost.Collect"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "Collect"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Collect method, IGCHost interface [.NET Framework hosting]"
   - "IGCHost::Collect method [.NET Framework hosting]"
 ms.assetid: fc7d9448-3186-494d-9f0d-ea39717e9a82
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

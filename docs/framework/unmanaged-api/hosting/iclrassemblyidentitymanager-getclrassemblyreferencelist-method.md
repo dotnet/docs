@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRAssemblyIdentityManager.GetCLRAssemblyReferenceList"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetClrAssemblyReferenceList method [.NET Framework hosting]"
   - "ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList method [.NET Framework hosting]"
 ms.assetid: cb5ffae5-287b-4a87-9ca8-7ce3ae0601b7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

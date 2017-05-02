@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugManagedCallback2.FunctionRemapOpportunity"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::FunctionRemapOpportunity"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "FunctionRemapOpportunity method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::FunctionRemapOpportunity method [.NET Framework debugging]"
 ms.assetid: 0d6471bc-ad9b-4b1d-a307-c10443918863
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

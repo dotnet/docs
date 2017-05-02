@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CorDebugJITCompilerFlagsDeprecated"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorDebugJITCompilerFlagsDeprecated"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugJITCompilerFlagsDeprecated enumeration [.NET Framework debugging]"
 ms.assetid: af15e2ca-6be1-472b-bd36-03644a1e3ddd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

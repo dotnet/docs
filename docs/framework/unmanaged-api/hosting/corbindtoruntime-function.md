@@ -9,12 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CorBindToRuntime"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "mscoreei.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "CorBindToRuntime"
 dev_langs: 
@@ -22,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorBindToRuntime function [.NET Framework hosting]"
 ms.assetid: 799740aa-46ec-4532-95da-6444565b4971
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataDispenserEx.FindAssembly"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::FindAssembly"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "FindAssembly method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::FindAssembly method [.NET Framework metadata]"
 ms.assetid: 3afe7252-5f28-48d9-a74d-1927566c404c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,9 +2,9 @@
 ' <SnippetPassingDataCODEBEHIND1>
 ' <SnippetSendDataCODEBEHIND1>
 ' <SnippetProcessResultCODEBEHIND1>
-Imports System.Windows ' RoutedEventArgs, RoutedEventHandler, Visibility
-Imports System.Windows.Controls ' Page
-Imports System.Windows.Navigation ' ReturnEventArgs
+Imports System.Windows
+Imports System.Windows.Controls
+Imports System.Windows.Navigation
 
 Namespace StructuredNavigationSample
 

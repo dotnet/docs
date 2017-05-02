@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.GetModuleFromScope"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetModuleFromScope"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetModuleFromScope method [.NET Framework metadata]"
   - "IMetaDataImport::GetModuleFromScope method [.NET Framework metadata]"
 ms.assetid: add68d3f-45fd-4bef-af94-eb5273f26b11
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

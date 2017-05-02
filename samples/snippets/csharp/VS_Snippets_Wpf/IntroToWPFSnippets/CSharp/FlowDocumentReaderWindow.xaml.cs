@@ -1,8 +1,8 @@
 //<SnippetFlowDocumentReaderCODEBEHIND>
-using System.Windows; // Window
-using System.Windows.Documents; // FlowDocument
-using System.IO; // FileStream, FileMode
-using System.Windows.Markup; // XamlReader
+using System.Windows;
+using System.Windows.Documents;
+using System.IO;
+using System.Windows.Markup;
 
 namespace SDKSample
 {

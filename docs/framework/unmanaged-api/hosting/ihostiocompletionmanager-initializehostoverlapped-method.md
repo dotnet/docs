@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostIoCompletionManager.InitializeHostOverlapped"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::InitializeHostOverlapped"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostIoCompletionManager::InitializeHostOverlapped method [.NET Framework hosting]"
   - "InitializeHostOverlapped method [.NET Framework hosting]"
 ms.assetid: c35199bf-bc47-4901-b467-4e8a37644bbb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -39,11 +39,11 @@ Let's do a quick walkthrough:
 
 1. `$ dotnet new console`
 
-[`dotnet new`](../tools/dotnet-new.md) creates an up-to-date `Hello.csproj` project file with the dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
+   [`dotnet new`](../tools/dotnet-new.md) creates an up-to-date `Hello.csproj` project file with the dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
    
-`Hello.csproj`:
+   `Hello.csproj`:
 
-[!code[Hello.csproj](../../../samples/core/console-apps/HelloMsBuild/Hello.csproj)]   
+   [!code[Hello.csproj](../../../samples/core/console-apps/HelloMsBuild/Hello.csproj)]   
 
    The project file specifies everything that's needed to restore dependencies and build the program.
 
@@ -52,7 +52,7 @@ Let's do a quick walkthrough:
 
    `Program.cs`:
 
-[!code-csharp[Program.cs](../../../samples/core/console-apps/HelloMsBuild/Program.cs)]   
+   [!code-csharp[Program.cs](../../../samples/core/console-apps/HelloMsBuild/Program.cs)]   
 
    The program starts by `using System`, which means "bring everything in the `System` namespace into scope for this file". The `System` namespace includes basic constructs such as `string`, or numeric types.
 
@@ -88,32 +88,32 @@ Let's change the program a bit. Fibonacci numbers are fun, so let's add that in 
 
 1. Replace the contents of your *Program.cs*  file with the following code:
 
-[!code-csharp[Fibonacci](../../../samples/core/console-apps/fibonacci-msbuild/Program.cs)]   
+   [!code-csharp[Fibonacci](../../../samples/core/console-apps/fibonacci-msbuild/Program.cs)]   
 
 2. Execute [`dotnet build`](../tools/dotnet-build.md) to compile the changes.
 
 3. Run the program passing a parameter to the app:
 
-```
-$ dotnet run -- John
-Hello John!
-Fibonacci Numbers 1-15:
-1: 0
-2: 1
-3: 1
-4: 2
-5: 3
-6: 5
-7: 8
-8: 13
-9: 21
-10: 34
-11: 55
-12: 89
-13: 144
-14: 233
-15: 377
-```
+   ```
+   $ dotnet run -- John
+   Hello John!
+   Fibonacci Numbers 1-15:
+   1: 0
+   2: 1
+   3: 1
+   4: 2
+   5: 3
+   6: 5
+   7: 8
+   8: 13
+   9: 21
+   10: 34
+   11: 55
+   12: 89
+   13: 144
+   14: 233
+   15: 377
+   ```
 
 And that's it!  You can augment `Program.cs` any way you like.
 
@@ -124,33 +124,33 @@ Let's build off of the previous Fibonacci example by caching some Fibonacci valu
 
 1. Add a new file inside the *Hello* directory named *FibonacciGenerator.cs* with the following code:
 
-[!code-csharp[Fibonacci Generator](../../../samples/core/console-apps/FibonacciBetterMsBuild/FibonacciGenerator.cs)]   
+   [!code-csharp[Fibonacci Generator](../../../samples/core/console-apps/FibonacciBetterMsBuild/FibonacciGenerator.cs)]   
 
 2. Change the `Main` method in your *Program.cs* file to instantiate the new class and call its method as in the following example:
 
-[!code-csharp[New Program.cs](../../../samples/core/console-apps/FibonacciBetterMsBuild/Program.cs)]
+   [!code-csharp[New Program.cs](../../../samples/core/console-apps/FibonacciBetterMsBuild/Program.cs)]
 
 3. Execute [`dotnet build`](../tools/dotnet-build.md) to compile the changes.
 
 4. Run your app by executing [`dotnet run`](../tools/dotnet-run.md). The following shows the program output:
 
-```
-0
-1
-1
-2
-3
-5
-8
-13
-21
-34
-55
-89
-144
-233
-377
-```
+   ```
+   0
+   1
+   1
+   2
+   3
+   5
+   8
+   13
+   21
+   34
+   55
+   89
+   144
+   233
+   377
+   ```
 
 And that's it! Now, you can start using the basic concepts learned here to create your own programs.
 

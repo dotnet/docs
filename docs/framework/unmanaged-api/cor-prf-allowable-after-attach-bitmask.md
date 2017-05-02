@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "COR_PRF_ALLOWABLE_AFTER_ATTACH"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_PRF_ALLOWABLE_AFTER_ATTACH"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_ALLOWABLE_AFTER_ATTACH bitmask [.NET Framework profiling]"
 ms.assetid: 9326ced8-7609-4ffe-a644-b73cf77607d0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

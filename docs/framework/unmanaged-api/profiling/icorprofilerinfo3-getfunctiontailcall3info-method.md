@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo3.GetFunctionTailcall3Info Method"
-apilocation: 
+api_location: 
   - "Mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetFunctionTailcall3Info"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo3::GetFunctionTailcall3Info method [.NET Framework profiling]"
   - "GetFunctionTailcall3Info method [.NET Framework profiling]"
 ms.assetid: afdb5ac9-5bf5-4b91-b7cb-f81db23d7da3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

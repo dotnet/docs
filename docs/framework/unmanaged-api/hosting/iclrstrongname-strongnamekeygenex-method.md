@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRStrongName.StrongNameKeyGenEx"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameKeyGenEx"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameKeyGenEx method [.NET Framework hosting]"
   - "StrongNameKeyGenEx method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: 1f8b59d0-5b72-45b8-ab74-c2b43ffc806e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

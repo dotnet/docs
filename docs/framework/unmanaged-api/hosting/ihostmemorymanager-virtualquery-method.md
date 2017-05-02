@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostMemoryManager.VirtualQuery"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMemoryManager::VirtualQuery"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostMemoryManager::VirtualQuery method [.NET Framework hosting]"
   - "VirtualQuery method [.NET Framework hosting]"
 ms.assetid: 757af1e6-b9e8-49e7-b5db-342be3aa205f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

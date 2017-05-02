@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedWriter.UsingNamespace"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::UsingNamespace"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "UsingNamespace method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::UsingNamespace method [.NET Framework debugging]"
 ms.assetid: 8d746e0a-d158-4983-88da-db0a0856bc0b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

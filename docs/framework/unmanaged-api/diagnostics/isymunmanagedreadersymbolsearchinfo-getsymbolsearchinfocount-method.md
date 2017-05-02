@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedReaderSymbolSearchInfo.GetSymbolSearchInfoCount"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetSymbolSearchInfoCount method [.NET Framework debugging]"
   - "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount method [.NET Framework debugging]"
 ms.assetid: 4068b6ec-525f-4446-8818-0296178cbd19
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

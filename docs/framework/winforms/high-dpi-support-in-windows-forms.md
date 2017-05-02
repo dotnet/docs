@@ -107,7 +107,7 @@ The .NET Framework 4.7 also adds a number of new helper methods and properties t
 
 ## Versioning considerations 
 
-In addition to running on .NET Framework 4.7 and Windows 10 Creators Update, you application may also run in an environment in which it is not compatible with high DPI improvements. In this case, you'll need to develop a fallback for your application. You can do this to perform [custom drawing](User-Drawn%20Controls.md) to handle scaling. 
+In addition to running on .NET Framework 4.7 and Windows 10 Creators Update, your application may also run in an environment in which it is not compatible with high DPI improvements. In this case, you'll need to develop a fallback for your application. You can do this to perform [custom drawing](User-Drawn%20Controls.md) to handle scaling. 
 
 To do this, you also need to determine the operating system on which your app is running. You can do that with code like the following:
 
@@ -123,7 +123,7 @@ Console.WriteLine(Environment.OSVersion.VersionString);
 Console.WriteLine(Environment.OSVersion.Version.CompareTo(OsMinVersion));
 ```
 
-Note that your application will not successfully detect WIndows 10 if it was not listed aas a supported operating system in the application manifest.
+Note that your application will not successfully detect Windows 10 if it was not listed as a supported operating system in the application manifest.
 
 You can also check the version of the .NET Framework that the application was built against:
 

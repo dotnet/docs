@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostSyncManager.CreateMonitorEvent"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateMonitorEvent"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CreateMonitorEvent method [.NET Framework hosting]"
   - "IHostSyncManager::CreateMonitorEvent method [.NET Framework hosting]"
 ms.assetid: 524c7fd3-9b5c-46e7-99ba-555fd2fe33f0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

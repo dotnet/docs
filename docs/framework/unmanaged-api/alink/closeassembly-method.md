@@ -9,12 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IALink.CloseAssembly"
   - "CloseAssembly"
-apilocation: 
+api_location: 
   - "alink.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CloseAssembly"
 dev_langs: 
@@ -22,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CloseAssembly method"
 ms.assetid: f66a43bc-a5c5-4190-acbe-63fd27640634
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

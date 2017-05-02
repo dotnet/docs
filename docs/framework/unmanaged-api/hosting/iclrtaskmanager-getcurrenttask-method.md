@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRTaskManager.GetCurrentTask"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRTaskManager::GetCurrentTask"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetCurrentTask method, ICLRTaskManager interface [.NET Framework hosting]"
   - "ICLRTaskManager::GetCurrentTask method [.NET Framework hosting]"
 ms.assetid: c0b82a9f-edc6-4878-9c81-48de53c02142
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

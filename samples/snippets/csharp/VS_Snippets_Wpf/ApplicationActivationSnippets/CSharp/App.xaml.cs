@@ -1,6 +1,6 @@
 //<SnippetDetectActivationStateCODEBEHIND>
-using System; // EventArgs
-using System.Windows; // Application
+using System;
+using System.Windows;
 
 namespace SDKSample
 {

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo2"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorProfilerInfo2 interface [.NET Framework profiling]"
 ms.assetid: 91bd49b6-4d12-494f-a8f1-2f251e8c65e3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"

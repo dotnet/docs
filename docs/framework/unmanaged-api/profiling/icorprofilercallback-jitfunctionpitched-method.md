@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.JITFunctionPitched"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::JITFunctionPitched"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "JITFunctionPitched method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITFunctionPitched method [.NET Framework profiling]"
 ms.assetid: 116085df-7a77-404a-afac-d0557a12b986
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

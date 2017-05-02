@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugAppDomain2.GetFunctionPointerType"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain2::GetFunctionPointerType"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugAppDomain2::GetFunctionPointerType method [.NET Framework debugging]"
   - "GetFunctionPointerType method [.NET Framework debugging]"
 ms.assetid: 0aba6096-5b38-435c-a72a-86d35db4daef
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

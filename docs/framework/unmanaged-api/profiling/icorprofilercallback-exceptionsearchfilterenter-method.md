@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.ExceptionSearchFilterEnter"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionSearchFilterEnter"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ExceptionSearchFilterEnter method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionSearchFilterEnter method [.NET Framework profiling]"
 ms.assetid: acc239ce-3eef-418c-b1df-c5a6dd8e8a4c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

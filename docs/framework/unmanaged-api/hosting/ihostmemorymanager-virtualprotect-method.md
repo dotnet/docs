@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostMemoryManager.VirtualProtect"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMemoryManager::VirtualProtect"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostMemoryManager::VirtualProtect method [.NET Framework hosting]"
   - "VirtualProtect method [.NET Framework hosting]"
 ms.assetid: 13be0299-df0d-4951-aabf-0676a30b385f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

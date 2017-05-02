@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.EnumMethodImpls"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumMethodImpls"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumMethodImpls method [.NET Framework metadata]"
   - "IMetaDataImport::EnumMethodImpls method [.NET Framework metadata]"
 ms.assetid: 4e0f865d-88b5-44bd-be35-492622e5e08e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

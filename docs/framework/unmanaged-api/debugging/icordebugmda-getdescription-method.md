@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugMDA.GetDescription"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugMDA::GetDescription"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetDescription method [.NET Framework debugging]"
   - "ICorDebugMDA::GetDescription method [.NET Framework debugging]"
 ms.assetid: 01d1b481-ca67-4712-8744-d342ec0df639
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

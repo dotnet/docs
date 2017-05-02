@@ -1,7 +1,7 @@
 //  <SNIPPET1>
 using System;
 using System.Reflection;
-using System.Security.Policy;  //for Evidence object
+using System.Security.Policy;
 
 class ADGetAssemblies 
 {

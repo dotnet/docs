@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugFunction.GetNativeCode"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugFunction::GetNativeCode"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetNativeCode method [.NET Framework debugging]"
   - "ICorDebugFunction::GetNativeCode method [.NET Framework debugging]"
 ms.assetid: c8a34916-0eef-4987-8d29-c8bcb4be9cf6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

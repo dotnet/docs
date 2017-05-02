@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICatalogServices.Autodone"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "Autodone"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICatalogServices::Autodone method [.NET Framework hosting]"
   - "Autodone method [.NET Framework hosting]"
 ms.assetid: 3002f051-7aaa-4669-9314-cbc65b3a1772
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

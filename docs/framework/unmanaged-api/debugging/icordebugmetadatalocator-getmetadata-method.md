@@ -2,18 +2,19 @@
 title: "ICorDebugMetaDataLocator::GetMetaData Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugMetaDataLocator.GetMetaData"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugMetaDataLocator::GetMetaData"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugMetaDataLocator::GetMetaData method [.NET Framework debugging]"
   - "GetMetaData method, ICorDebugMetaDataLocator interface [.NET Framework debugging]"
 ms.assetid: f9b0ff22-54db-45eb-9cc3-508000a3141d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

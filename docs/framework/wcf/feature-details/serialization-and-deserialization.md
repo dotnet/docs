@@ -2,7 +2,7 @@
 title: "Serialization and Deserialization | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,7 +48,7 @@ manager: "erikre"
   
  The following example shows a class, `LibraryPatron`, that includes a collection of a specific type, the `LibraryItem`. The second class defines the `LibraryItem` type. The third and four classes (`Book` and `Newspaper`) inherit from the `LibraryItem` class.  
   
- <!-- TODO: review snippet reference [!code-csharp[c_StandaloneDataContractSerializer#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_standalonedatacontractserializer/cs/source.cs#3)]  -->
+ [!code-csharp[c_StandaloneDataContractSerializer#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_standalonedatacontractserializer/cs/source.cs#3)] 
  [!code-vb[c_StandaloneDataContractSerializer#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_standalonedatacontractserializer/vb/source.vb#3)]  
   
  The following code constructs an instance of the serializer using the `knownTypes` parameter.  

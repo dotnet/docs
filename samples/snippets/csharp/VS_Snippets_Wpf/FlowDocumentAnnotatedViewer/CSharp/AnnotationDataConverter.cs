@@ -1,9 +1,9 @@
-using System; // Type
-using System.Globalization; // CultureInfo
-using System.IO; // MemoryStream
-using System.Windows.Data; // IValueConverter
-using System.Windows.Documents; // Section, TextRange
-using System.Windows.Markup; // XamlReader
+using System;
+using System.Globalization;
+using System.IO;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Markup;
 
 namespace FlowDocumentAnnotatedReader
 {

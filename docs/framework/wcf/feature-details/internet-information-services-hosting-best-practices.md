@@ -2,7 +2,7 @@
 title: "Internet Information Services Hosting Best Practices | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -53,7 +53,7 @@ This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../
  Then user2 cannot change the code-generation folder for /application2 (under c:\tempForUser1).  
   
 ## Enabling asynchronous processing  
- By default messages sent to a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service hosted under IIS 6.0 and earlier are processed in a synchronous manner. ASP.NET calls into [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] on its own thread (the ASP.NET worker thread) and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses another thread to process the request. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] holds onto the ASP.NET worker thread until it completes its processing. This leads to synchronous processing of requests. Processing requests asynchronously enables greater scalability because it reduces the number of threads required to process a request –[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not hold on to the ASP.NET thread while processing the request. Use of asynchronous behavior is not recommended for machines running IIS 6.0 because there is no way to throttle incoming requests that open up the server to *Denial Of Service* (DOS) attacks. Starting with IIS 7.0, a concurrent request throttle has been introduced: `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0]“MaxConcurrentRequestsPerCpu`. With this new throttle it is safe to use the asynchronous processing.  By default in IIS 7.0, the asynchronous handler and module are registered. If this has been turned off, you can manually enable asynchronous processing of requests in your application's Web.config file. The settings you use depend on your `aspNetCompatibilityEnabled` setting. If you have `aspNetCompatibilityEnabled` set to `false`, configure the <xref:System.ServiceModel.Activation.ServiceHttpModule> as shown in the following configuration snippet.  
+ By default messages sent to a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service hosted under IIS 6.0 and earlier are processed in a synchronous manner. ASP.NET calls into [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] on its own thread (the ASP.NET worker thread) and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses another thread to process the request. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] holds onto the ASP.NET worker thread until it completes its processing. This leads to synchronous processing of requests. Processing requests asynchronously enables greater scalability because it reduces the number of threads required to process a request –[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not hold on to the ASP.NET thread while processing the request. Use of asynchronous behavior is not recommended for machines running IIS 6.0 because there is no way to throttle incoming requests that open up the server to *Denial Of Service* (DOS) attacks. Starting with IIS 7.0, a concurrent request throttle has been introduced: `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0]“MaxConcurrentRequestsPerCpu`. With this new throttle it is safe to use the asynchronous processing.  By default in IIS 7.0, the asynchronous handler and module are registered. If this has been turned off, you can manually enable asynchronous processing of requests in your application's Web.config file. The settings you use depend on your `aspNetCompatibilityEnabled` setting. If you have `aspNetCompatibilityEnabled` set to `false`, configure the `System.ServiceModel.Activation.ServiceHttpModule` as shown in the following configuration snippet.  
   
 ```  
 <system.serviceModel>  
@@ -70,7 +70,7 @@ This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../
   
 ```  
   
- If you have `aspNetCompatibilityEnabled` set to `true`, configure the <xref:System.ServiceModel.Activation.ServiceHttpHandlerFactory> as shown in the following config snippet.  
+ If you have `aspNetCompatibilityEnabled` set to `true`, configure the `System.ServiceModel.Activation.ServiceHttpHandlerFactory` as shown in the following config snippet.  
   
 ```  
 <system.serviceModel>  

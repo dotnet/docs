@@ -2,18 +2,19 @@
 title: "ICorDebugValue::GetSize Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugValue.GetSize"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugValue::GetSize"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetSize method, ICorDebugValue interface [.NET Framework debugging]"
   - "ICorDebugValue::GetSize method [.NET Framework debugging]"
 ms.assetid: 445a9ee3-e050-4f3a-931a-96b0efb00110
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

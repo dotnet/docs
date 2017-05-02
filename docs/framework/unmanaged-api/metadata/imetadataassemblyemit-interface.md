@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataAssemblyEmit"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IMetaDataAssemblyEmit interface [.NET Framework metadata]"
 ms.assetid: 34fb03cc-2285-4a45-ac48-ad993b7a921a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

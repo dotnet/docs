@@ -9,12 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "StrongNameSignatureVerificationEx"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "mscorwks.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "StrongNameSignatureVerificationEx"
 dev_langs: 
@@ -22,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameSignatureVerificationEx function [.NET Framework strong naming]"
 ms.assetid: cfe4b634-18bf-44b8-9773-d94fb7e8a480
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostCrst.SetSpinCount"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostCrst::SetSpinCount"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostCrst::SetSpinCount method [.NET Framework hosting]"
   - "SetSpinCount method [.NET Framework hosting]"
 ms.assetid: 863fc8ce-9b8a-477e-8dd8-75c8544bb43a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

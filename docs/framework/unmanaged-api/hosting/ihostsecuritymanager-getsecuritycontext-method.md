@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostSecurityManager.GetSecurityContext"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSecurityManager::GetSecurityContext"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetSecurityContext method [.NET Framework hosting]"
   - "IHostSecurityManager::GetSecurityContext method [.NET Framework hosting]"
 ms.assetid: 958970d6-f6a2-4b84-b32a-f555cbaf8f61
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

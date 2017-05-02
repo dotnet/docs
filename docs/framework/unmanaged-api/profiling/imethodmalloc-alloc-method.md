@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMethodMalloc.Alloc"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMethodMalloc::Alloc"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IMethodMalloc::Alloc method [.NET Framework profiling]"
   - "Alloc method, IMethodMalloc interface [.NET Framework profiling]"
 ms.assetid: 8653bd4c-2290-43d2-a3e1-cbbd50033f4f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

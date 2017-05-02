@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostCrst.TryEnter"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostCrst::TryEnter"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostCrst::TryEnter method [.NET Framework hosting]"
   - "TryEnter method [.NET Framework hosting]"
 ms.assetid: a922fa98-beab-4f09-a342-cc94fc65687f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

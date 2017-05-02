@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDataTarget.SetThreadContext"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDataTarget::SetThreadContext"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetThreadContext method, ICLRDataTarget interface [.NET Framework debugging]"
   - "ICLRDataTarget::SetThreadContext method [.NET Framework debugging]"
 ms.assetid: 103c8502-81fe-40d7-9c1e-9008d8fb19e1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

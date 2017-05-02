@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.RemotingServerSendingReply"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RemotingServerSendingReply"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "RemotingServerSendingReply method [.NET Framework profiling]"
   - "ICorProfilerCallback::RemotingServerSendingReply method [.NET Framework profiling]"
 ms.assetid: dfe84a19-2e03-4be2-8b25-f02bad38e4a9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

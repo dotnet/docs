@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRPolicyManager.SetTimeout"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRPolicyManager::SetTimeout"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetTimeout method [.NET Framework hosting]"
   - "ICLRPolicyManager::SetTimeout method [.NET Framework hosting]"
 ms.assetid: 954404fd-d52d-4e68-b582-8692f3a5f608
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

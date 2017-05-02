@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedReader.GetSymAttribute"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetSymAttribute"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetSymAttribute method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetSymAttribute method [.NET Framework debugging]"
 ms.assetid: c675ce7e-76e7-45ff-8273-3b6489a2767c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

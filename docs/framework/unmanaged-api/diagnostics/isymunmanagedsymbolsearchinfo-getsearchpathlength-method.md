@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedSymbolSearchInfo.GetSearchPathLength"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedSymbolSearchInfo::GetSearchPathLength"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetSearchPathLength method [.NET Framework debugging]"
   - "ISymUnmanagedSymbolSearchInfo::GetSearchPathLength method [.NET Framework debugging]"
 ms.assetid: 274e73cf-8333-47ba-ac12-70214e2b0112
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

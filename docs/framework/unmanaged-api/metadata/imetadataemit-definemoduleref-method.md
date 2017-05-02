@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.DefineModuleRef"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineModuleRef"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "DefineModuleRef method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineModuleRef method [.NET Framework metadata]"
 ms.assetid: f2833594-d90b-4a71-9a53-34b12470c64a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

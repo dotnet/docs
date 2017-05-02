@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugCode"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugCode"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugCode interface [.NET Framework debugging]"
 ms.assetid: 7bd14fb6-8b54-4484-a891-e3c21859c019
+topic_type: 
+  - "apiref"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

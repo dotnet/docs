@@ -2,18 +2,19 @@
 title: "IObjectHandle::Unwrap Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IObjectHandle.Unwrap"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "Unwrap"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Unwrap method [.NET Framework hosting]"
   - "IObjectHandle::Unwrap method [.NET Framework hosting]"
 ms.assetid: 794c6f8e-ed58-416b-b756-e864f2c958f7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

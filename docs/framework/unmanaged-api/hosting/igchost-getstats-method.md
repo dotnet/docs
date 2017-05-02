@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IGCHost.GetStats"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetStats"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetStats method, IGCHost interface [.NET Framework hosting]"
   - "IGCHost::GetStats method [.NET Framework hosting]"
 ms.assetid: c4ae022c-46ac-4f19-9ddd-09b955f19412
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

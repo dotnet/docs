@@ -2,18 +2,19 @@
 title: "ICorDebugModule::EnableClassLoadCallbacks Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugModule.EnableClassLoadCallbacks"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugModule::EnableClassLoadCallbacks"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModule::EnableClassLoadCallbacks method [.NET Framework debugging]"
   - "EnableClassLoadCallbacks method [.NET Framework debugging]"
 ms.assetid: 78dad5e4-8e2e-400f-bec3-92ff0205cd82
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

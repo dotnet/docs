@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDebugManager.SetSymbolReadingPolicy"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDebugManager::SetSymbolReadingPolicy"
 dev_langs: 
@@ -23,6 +24,8 @@ helpviewer_keywords:
   - "SetSymbolReadingPolicy method [.NET Framework hosting]"
   - "ICLRDebugManager::SetSymbolReadingPolicy method [.NET Framework hosting]"
 ms.assetid: bd921fa2-d377-4d79-acfc-64c38d4dcae9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

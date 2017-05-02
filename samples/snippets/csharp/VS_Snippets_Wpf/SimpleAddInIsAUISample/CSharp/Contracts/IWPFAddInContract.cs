@@ -1,6 +1,6 @@
 ﻿//<SnippetContractCode>
-using System.AddIn.Contract; // INativeHandleContract
-using System.AddIn.Pipeline; // AddInContractAttribute
+using System.AddIn.Contract;
+using System.AddIn.Pipeline;
 
 namespace Contracts
 {

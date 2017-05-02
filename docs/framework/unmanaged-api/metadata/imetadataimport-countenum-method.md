@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.CountEnum"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::CountEnum"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CountEnum method [.NET Framework metadata]"
   - "IMetaDataImport::CountEnum method [.NET Framework metadata]"
 ms.assetid: d1de53ad-9435-4b5f-9df7-07f21210e5b5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

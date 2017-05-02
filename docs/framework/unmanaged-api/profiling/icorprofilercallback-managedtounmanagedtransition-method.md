@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.ManagedToUnmanagedTransition"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ManagedToUnmanagedTransition"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ManagedToUnmanagedTransition method [.NET Framework profiling]"
   - "ICorProfilerCallback::ManagedToUnmanagedTransition method [.NET Framework profiling]"
 ms.assetid: ef3cd619-912d-40c5-a449-03ba02a39ee7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

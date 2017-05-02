@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IALink.ExportNestedTypeForwarder"
-apilocation: 
+api_location: 
   - "alink.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ExportNestedTypeForwarder"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ExportNestedTypeForwarder method"
 ms.assetid: 886ea6c5-6b26-4b88-8bf6-448d6d191950
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostMemoryManager.RegisterMemoryNotificationCallback"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMemoryManager::RegisterMemoryNotificationCallback"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostMemoryManager::RegisterMemoryNotificationCallback method [.NET Framework hosting]"
   - "RegisterMemoryNotificationCallback method [.NET Framework hosting]"
 ms.assetid: 65d301f6-4dbb-4b5f-8eff-82540e2b6465
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

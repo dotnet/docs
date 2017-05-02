@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.Save"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::Save"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Save method, IMetaDataEmit interface [.NET Framework metadata]"
   - "IMetaDataEmit::Save method [.NET Framework metadata]"
 ms.assetid: c1de8400-adfe-4a71-b828-a1d0cc1ea505
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

@@ -134,7 +134,8 @@ Public Class Test
         '</snippet9>
 
 
-        Private Sub TransportSecurityOverview()            '<snippet10>
+        Private Sub TransportSecurityOverview()            
+            '<snippet10>
             Dim b As BasicHttpBinding = New BasicHttpBinding()
             b.Security.Mode = BasicHttpSecurityMode.Transport
             b.Security.Transport.ClientCredentialType = HttpClientCredentialType.Windows

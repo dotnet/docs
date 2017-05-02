@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorRuntimeHost.Start"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::Start"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Start method, ICorRuntimeHost interface [.NET Framework hosting]"
   - "ICorRuntimeHost::Start method [.NET Framework hosting]"
 ms.assetid: c66f3ac5-6489-484a-9bed-c31b711cee01
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

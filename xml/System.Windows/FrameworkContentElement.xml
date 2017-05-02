@@ -36,7 +36,7 @@
   </Attributes>
   <Docs>
     <summary>
-      <see cref="T:System.Windows.FrameworkContentElement" /> is the WPF framework-level implementation and expansion of the <see cref="T:System.Windows.ContentElement" /> base class. <see cref="T:System.Windows.FrameworkContentElement" /> adds support for additional input [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] (including tooltips and context menus), storyboards, data context for data binding, styles support, and logical tree helper [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)].</summary>
+      <see cref="T:System.Windows.FrameworkContentElement" /> is the WPF framework-level implementation and expansion of the <see cref="T:System.Windows.ContentElement" /> base class. <see cref="T:System.Windows.FrameworkContentElement" /> adds support for additional input APIs (including tooltips and context menus), storyboards, data context for data binding, styles support, and logical tree helper APIs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -2354,7 +2354,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a reference to the template parent of this element. This property is not relevant if the element was not created through a template.</summary>
-        <value>The element whose <see cref="T:System.Windows.FrameworkTemplate" /> <see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> caused this element to be created. This value is frequently <see langword="null" />; see Remarks.</value>
+        <value>The element whose <see cref="T:System.Windows.FrameworkTemplate" /><see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> caused this element to be created. This value is frequently <see langword="null" />; see Remarks.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

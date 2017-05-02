@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo3.GetFunctionEnter3Info Method"
-apilocation: 
+api_location: 
   - "Mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetFunctionEnter3Info"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetFunctionEnter3Info method [.NET Framework profiling]"
   - "ICorProfilerInfo3::GetFunctionEnter3Info method [.NET Framework profiling]"
 ms.assetid: 542c7c65-dd56-4651-b76f-5db2465e4a15
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

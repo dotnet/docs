@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostIoCompletionManager.SetMinThreads"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::SetMinThreads"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetMinThreads method, IHostIoCompletionManager interface [.NET Framework hosting]"
   - "IHostIoCompletionManager::SetMinThreads method [.NET Framework hosting]"
 ms.assetid: dea34b81-8d2b-4cc3-8696-0ad4291d8a92
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

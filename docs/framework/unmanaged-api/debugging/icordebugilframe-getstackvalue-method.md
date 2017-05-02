@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugILFrame.GetStackValue"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::GetStackValue"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetStackValue method [.NET Framework debugging]"
   - "ICorDebugILFrame::GetStackValue method [.NET Framework debugging]"
 ms.assetid: 397a4d72-6a87-4f0b-8813-af31af91d68f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostAssemblyManager.GetNonHostStoreAssemblies"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostAssemblyManager::GetNonHostStoreAssemblies"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostAssemblyManager::GetNonHostStoreAssemblies method [.NET Framework hosting]"
   - "GetNonHostStoreAssemblies method [.NET Framework hosting]"
 ms.assetid: d2250b38-c76a-40ce-80c8-ba45149886e8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

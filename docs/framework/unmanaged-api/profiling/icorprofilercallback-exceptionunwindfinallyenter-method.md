@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.ExceptionUnwindFinallyEnter"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionUnwindFinallyEnter"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::ExceptionUnwindFinallyEnter method [.NET Framework profiling]"
   - "ExceptionUnwindFinallyEnter method [.NET Framework profiling]"
 ms.assetid: c7fab986-b69f-4ec8-b7b7-91dcfc239cd0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

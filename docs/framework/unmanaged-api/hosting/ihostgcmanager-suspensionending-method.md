@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostGCManager.SuspensionEnding"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostGCManager::SuspensionEnding"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SuspensionEnding method, IHostGCManager interface [.NET Framework hosting]"
   - "IHostGCManager::SuspensionEnding method [.NET Framework hosting]"
 ms.assetid: 8849a1db-17f0-44b7-880a-bd36d431eb91
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

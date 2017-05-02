@@ -103,4 +103,4 @@ Public Class CalculatorClient
     
     End Function 'Divide
 End Class 'CalculatorClient
-'<snippet0>
+'</snippet0>

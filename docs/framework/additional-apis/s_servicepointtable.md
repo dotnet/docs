@@ -1,21 +1,23 @@
 ---
-title: "s_ServicePointTable Field | Microsoft Docs"
-ms.date: "04/24/2017"
+title: "ServicePointManager.s_ServicePointTable Field | Microsoft Docs"
+ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
 ms.topic: "reference"
-topic_type: "apiref"
+topic_type: 
+  - "apiref"
 api_name:
   - "System.Net.ServicePointManager.s_ServicePointTable"
 api_location:
   - "System.dll"
-api_type: "Assembly"
+api_type: 
+  - "Assembly"
 ms.assetid: 24459679-291c-401a-9def-e42b29466fcf
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# s_ServicePointTable Field
+# ServicePointManager.s_ServicePointTable Field
 
 `ServicePointManager.s_ServicePointTable` is a <xref:System.​Collections.​Hashtable> that contains the list of active HTTP connections (<xref:System.​Net.​Service​Point>s) in the <xref:System.​App​Domain>. 
 

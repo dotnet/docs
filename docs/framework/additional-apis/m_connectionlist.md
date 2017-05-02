@@ -1,21 +1,23 @@
 ---
-title: "m_ConnectionList Field | Microsoft Docs"
-ms.date: "04/24/2017"
+title: "ConnectionGroup.m_ConnectionList Field | Microsoft Docs"
+ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
 ms.topic: "reference"
-topic_type: "apiref"
+topic_type: 
+  - "apiref"
 api_name:
   - "System.Net.ConnectionGroup.m_ConnectionList"
 api_location:
   - "System.dll"
-api_type: "Assembly"
+api_type: 
+  - "Assembly"
 ms.assetid: 186083cf-8dff-4600-a2ab-6fed4b4de6af
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# m_ConnectionList Field
+# ConnectionGroup.m_ConnectionList Field
 
 `ConnectionGroup.m_ConnectionList` is an <xref:System.​Collections.​Array​List> of connection objects that serves the same URI and share the same values for some other properties like expiration and authentication.
 

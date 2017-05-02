@@ -1,5 +1,5 @@
 ---
-title: "ServicePoint.m_ConnectionGroupList Field | Microsoft Docs"
+title: "HttpWebRequest._AutoRedirects Field | Microsoft Docs"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
@@ -7,22 +7,22 @@ ms.topic: "reference"
 topic_type: 
   - "apiref"
 api_name:
-  - "System.Net.ServicePoint.m_ConnectionGroupList"
+  - "System.Net.HttpWebRequest._AutoRedirects"
 api_location:
   - "System.dll"
 api_type: 
   - "Assembly"
-ms.assetid: df8afb59-f0f6-4ddc-b3c1-839b9fc601d8
+ms.assetid: bd58e91c-4e35-4866-9d55-75ff58c3ed73
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# ServicePoint.m_ConnectionGroupList Field
+# HttpWebRequest._AutoRedirects Field
 
-`ServicePoint.m_ConnectionGroupList` is a <xref:System.​Collections.​Hashtable> of connection groups, each holding a connection for the <xref:System.​Net.​Service​Point>'s URI.
+`HttpWebRequest._AutoRedirects` is an <xref:System.Int32> that reflects the number of redirects made for this <xref:System.Net.HttpWebRequest>.
 
 > [!WARNING]
-> The `ServicePoint.m_ConnectionGroupList` field is private and not meant to be used directly in your code.
+> The `HttpWebRequest._AutoRedirects` field is internal and not meant to be used directly in your code.
 > 
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

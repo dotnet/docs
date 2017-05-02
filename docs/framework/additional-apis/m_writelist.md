@@ -1,21 +1,23 @@
 ---
-title: "m_WriteList Field | Microsoft Docs"
-ms.date: "04/24/2017"
+title: "Connection.m_WriteList Field | Microsoft Docs"
+ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
 ms.topic: "reference"
-topic_type: "apiref"
+topic_type: 
+  - "apiref"
 api_name:
   - "System.Net.Connection.m_WriteList"
 api_location:
   - "System.dll"
-api_type: "Assembly"
+api_type: 
+  - "Assembly"
 ms.assetid: 235503c1-1d01-4f59-895f-ae2cf15b3345
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# m_WriteList Field
+# Connection.m_WriteList Field
 
 `Connection.m_WriteList` is an <xref:System.​Collections.​Array​List> of <xref:System.Net.HttpWebRequest> objects that are queued up to be sent over HTTP.
 

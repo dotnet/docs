@@ -1,15 +1,17 @@
 ---
 title: "Connection Class | Microsoft Docs"
-ms.date: "04/24/2017"
+ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
 ms.topic: "reference"
-topic_type: "apiref"
+topic_type: 
+  - "apiref"
 api_name:
   - "System.Net.Connection"
 api_location:
   - "System.dll"
-api_type: "Assembly"
+api_type: 
+  - "Assembly"
 ms.assetid: 6f0b8902-f31c-4ab9-a8c9-de43228995ec
 author: "guardrex"
 ms.author: "mairaw"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "_EFN_GetManagedObjectFieldInfo"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "_EFN_GetManagedObjectFieldInfo"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "_EFN_GetManagedObjectFieldInfo function [.NET Framework debugging]"
 ms.assetid: 3b93bcff-62a4-47b2-babc-6bcf4216119a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

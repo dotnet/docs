@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugEval.CreateValue"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEval::CreateValue"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugEval::CreateValue method [.NET Framework debugging]"
   - "CreateValue method [.NET Framework debugging]"
 ms.assetid: 9a1c0b47-6f10-4fcb-844a-4ab2d7990140
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IDebuggerThreadControl"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IDebuggerThreadControl"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IDebuggerThreadControl interface [.NET Framework hosting]"
 ms.assetid: 0a270c42-a7d1-45f1-a64d-fa3e84d14532
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

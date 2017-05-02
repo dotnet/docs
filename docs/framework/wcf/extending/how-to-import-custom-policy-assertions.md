@@ -49,9 +49,7 @@ Policy assertions describe the capabilities and requirements of a service endpoi
   
 1.  Add the importer type to the `<extensions>` element inside the [\<policyImporters>](../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md) element in the client configuration file.  
   
-     <!-- TODO: review snippet reference [!code[CustomPolicySample#7](../../../../samples/snippets/common/VS_Snippets_CFX/custompolicysample/common/client.exe.config#7)]  -->
-     <!-- TODO: review snippet reference [!code-csharp[CustomPolicySample#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/client.exe.config#7)]  -->
-     <!-- TODO: review snippet reference [!code-vb[CustomPolicySample#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/custompolicysample/vb/client.exe.config#7)]  -->  
+     [!code-xml[CustomPolicySample#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/client.exe.config#7)]   
   
 2.  In the client application, use the <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=fullName> or <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=fullName> to resolve the metadata and the importer is invoked automatically.  
   

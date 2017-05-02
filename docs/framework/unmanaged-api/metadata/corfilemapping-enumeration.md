@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CorFileMapping"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorFileMapping"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorFileMapping enumeration [.NET Framework metadata]"
 ms.assetid: 3ca41592-b8da-475a-8032-a15627730003
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

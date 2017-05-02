@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.JITCompilationStarted"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::JITCompilationStarted"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "JITCompilationStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITCompilationStarted method [.NET Framework profiling]"
 ms.assetid: 31782b36-d311-4518-8f45-25f65385af5b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

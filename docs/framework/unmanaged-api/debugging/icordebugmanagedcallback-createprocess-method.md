@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugManagedCallback.CreateProcess"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::CreateProcess"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugManagedCallback::CreateProcess method [.NET Framework debugging]"
   - "CreateProcess method, ICorDebugManagedCallback interface [.NET Framework debugging]"
 ms.assetid: 8e89d5ee-e4e3-4738-8302-0b7d1cf4846e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

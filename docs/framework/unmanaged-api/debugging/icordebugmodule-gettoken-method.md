@@ -2,18 +2,19 @@
 title: "ICorDebugModule::GetToken Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugModule.GetToken"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetToken"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModule::GetToken method [.NET Framework debugging]"
   - "GetToken method, ICorDebugModule interface [.NET Framework debugging]"
 ms.assetid: f759f87a-18ae-4c1a-8300-29b803432d0a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

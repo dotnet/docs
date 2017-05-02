@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CloseCLREnumeration"
-apilocation: 
+api_location: 
   - "dbgshim.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CloseCLREnumeration"
 dev_langs: 
@@ -23,6 +24,8 @@ helpviewer_keywords:
   - "Silverlight, debugging"
   - "CloseCLR Enumeration function"
 ms.assetid: 5e3c3958-80bb-43b1-a96b-dd3e6dbd9cd7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

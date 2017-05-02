@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedVariable.GetAddressField2"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetAddressField2"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetAddressField2 method [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetAddressField2 method [.NET Framework debugging]"
 ms.assetid: 1f25b294-72b6-4882-a49b-6c9d364b6008
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

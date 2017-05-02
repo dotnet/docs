@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostAssemblyStore"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostAssemblyStore"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostAssemblyStore interface [.NET Framework hosting]"
 ms.assetid: cccb650f-abe0-41e2-9fd1-b383788eb1f6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

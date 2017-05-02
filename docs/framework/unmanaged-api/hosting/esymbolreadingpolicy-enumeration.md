@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ESymbolReadingPolicy"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ESymbolReadingPolicy"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ESymbolReadingPolicy enumeration [.NET Framework hosting]"
 ms.assetid: 4dc6c80d-b694-480b-a378-d5b18420ce17
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

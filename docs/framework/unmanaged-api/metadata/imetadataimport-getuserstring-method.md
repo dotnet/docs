@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.GetUserString"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetUserString"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::GetUserString method [.NET Framework metadata]"
   - "GetUserString method, IMetaDataImport interface [.NET Framework metadata]"
 ms.assetid: 0fd3bb47-58b5-4083-b241-b9719df7a285
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

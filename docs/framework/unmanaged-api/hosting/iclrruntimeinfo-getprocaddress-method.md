@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRRuntimeInfo.GetProcAddress"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::GetProcAddress"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetProcAddress method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::GetProcAddress method [.NET Framework hosting]"
 ms.assetid: a7732bfc-689a-4926-88fd-4f81e6f9ed78
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

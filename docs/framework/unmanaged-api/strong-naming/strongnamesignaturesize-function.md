@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "StrongNameSignatureSize"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "StrongNameSignatureSize"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameSignatureSize function [.NET Framework strong naming]"
 ms.assetid: 4fde4cd0-f53e-4411-a2fe-fc5c54472f95
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

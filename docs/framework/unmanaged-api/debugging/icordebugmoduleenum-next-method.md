@@ -2,18 +2,19 @@
 title: "ICorDebugModuleEnum::Next Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugModuleEnum.Next"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugModuleEnum::Next"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModuleEnum::Next method [.NET Framework debugging]"
   - "Next method, ICorDebugModuleEnum interface [.NET Framework debugging]"
 ms.assetid: 9ff3fcd6-38fe-41f8-bfd3-f0ab6c7d77ca
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

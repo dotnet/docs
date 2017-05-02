@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CorDebugUserState"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorDebugUserState"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugUserState enumeration [.NET Framework debugging]"
 ms.assetid: 5f6c2bcd-8102-4e3b-abc5-86ab0bd62def
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

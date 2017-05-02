@@ -1804,7 +1804,7 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether they are not equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is [System.Data.SqlTypes.SqlDecimal.NotEquals(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)](assetId:///M :System.Data.SqlTypes.SqlDecimal.NotEquals(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False)]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.NotEquals(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>]]></format> 
         </remarks>
       </Docs>
     </Member>

@@ -2,18 +2,19 @@
 title: "ICorDebugProcess5::GetObject Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugProcess5.GetObject"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::GetObject"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetObject method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::GetObject method [.NET Framework debugging]"
 ms.assetid: c8111502-5a20-447f-9dc2-76e8acd7ed5a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

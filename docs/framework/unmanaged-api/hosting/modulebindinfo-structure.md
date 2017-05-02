@@ -2,18 +2,19 @@
 title: "ModuleBindInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ModuleBindInfo"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ModuleBindInfo"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ModuleBindInfo structure [.NET Framework hosting]"
 ms.assetid: 632d4adc-dbc9-4ce8-9397-abc3285c1c69
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

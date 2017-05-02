@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedBinder.GetReaderFromStream"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedBinder::GetReaderFromStream"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedBinder::GetReaderFromStream method [.NET Framework debugging]"
   - "GetReaderFromStream method [.NET Framework debugging]"
 ms.assetid: aa38efd4-de7e-4482-a5d3-adc152093460
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

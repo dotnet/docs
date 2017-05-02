@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CorSymVarFlag"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorSymVarFlag"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorSymVarFlag enumeration [.NET Framework debugging]"
 ms.assetid: c3f7d307-4047-4f9a-be8c-f152fca42fd0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

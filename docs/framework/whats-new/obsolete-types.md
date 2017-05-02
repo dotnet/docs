@@ -516,7 +516,7 @@ manager: "wpickett"
   
 |Type|Message|  
 |----------|-------------| 
-|System.Activities.Statements.Interop](assetId:///T:System.Activities.Statements.Interop)|First deprecated in the .NET Framework 4.5.<br /><br />The Workflow Foundation 3.0 types are deprecated. Instead, use the Workflow 4.0 types from <xref:System.Activities>.\*.|  
+|<xref:System.Activities.Statements.Interop>|First deprecated in the .NET Framework 4.5.<br /><br />The Workflow Foundation 3.0 types are deprecated. Instead, use the Workflow 4.0 types from <xref:System.Activities>.\*.|  
 |<xref:System.Activities.Tracking.InteropTrackingRecord>|First deprecated in the .NET Framework 4.5.<br /><br />The Workflow Foundation 3.0 types are deprecated. Instead, use the Workflow 4.0 types from <xref:System.Activities>.\*.|   
 |All types in the <xref:System.Workflow.Runtime> namespace|First deprecated in the .NET Framework 4.5.<br /><br /> The System.Workflow.\* types are deprecated. Instead, please use the new types from <xref:System.Activities>.\*.|  
 |All types in the <xref:System.Workflow.Runtime.Configuration> namespace|First deprecated in the .NET Framework 4.5.<br /><br /> The System.Workflow.\* types are deprecated. Instead, please use the new types from <xref:System.Activities>.\*.|  

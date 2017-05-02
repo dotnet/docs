@@ -9,13 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "NukeDownloadedCache"
-apilocation: 
+api_location: 
   - "fusion.dll"
   - "clr.dll"
   - "mscorwks.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "NukeDownloadedCache"
 dev_langs: 
@@ -23,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "NukeDownloadedCache function [.NET Framework fusion]"
 ms.assetid: fac2b1c6-6fa3-4818-805b-b63972024c86
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

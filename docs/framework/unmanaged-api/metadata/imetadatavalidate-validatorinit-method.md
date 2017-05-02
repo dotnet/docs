@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataValidate.ValidatorInit"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataValidate::ValidatorInit"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataValidate::ValidatorInit method [.NET Framework metadata]"
   - "ValidatorInit method [.NET Framework metadata]"
 ms.assetid: 6bafd75a-e2d0-4aea-aed1-074374d5dff6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

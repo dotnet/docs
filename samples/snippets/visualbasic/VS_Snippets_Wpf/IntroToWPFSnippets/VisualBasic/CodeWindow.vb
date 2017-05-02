@@ -1,6 +1,6 @@
 '<SnippetCodeWindow>
-Imports System.Windows ' Window, RoutedEventHandler, RoutedEventArgs, MessageBox
-Imports System.Windows.Controls ' Button
+Imports System.Windows
+Imports System.Windows.Controls
 
 Namespace SDKSample
 

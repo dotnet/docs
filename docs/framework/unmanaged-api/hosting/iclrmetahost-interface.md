@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRMetaHost"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRMetaHost"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRMetaHost interface [.NET Framework hosting]"
 ms.assetid: c627fcdd-fc4f-4b1c-8e91-df8536f627d8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 28
 author: "rpetrusha"
 ms.author: "ronpet"

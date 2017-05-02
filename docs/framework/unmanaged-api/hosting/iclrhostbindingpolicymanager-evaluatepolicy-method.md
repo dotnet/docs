@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRHostBindingPolicyManager.EvaluatePolicy"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRHostBindingPolicyManager::EvaluatePolicy"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRHostBindingPolicyManager::EvaluatePolicy method [.NET Framework hosting]"
   - "EvaluatePolicy method [.NET Framework hosting]"
 ms.assetid: 3a3a9446-7a4e-4836-9b27-5c536c15993d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

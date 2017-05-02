@@ -25,7 +25,7 @@ title: .NET Documentation
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netcore-1.1.0">
+                <a href="/dotnet/api/?view=netcore-1.1">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -210,7 +210,6 @@ title: .NET Documentation
                             <li class="fullSpan">
                                 <div class="container footer">
                                     <p><a href="https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md">Contribute to .NET docs and samples</a></p>
-                                    <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/project-json">Find Visual Studio 2015/project.json version of the documentation</a></p>
                                 </div>
                             </li>
                         </ul>

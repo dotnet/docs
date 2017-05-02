@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedENCUpdate.UpdateMethodLines"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedENCUpdate::UpdateMethodLines"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "UpdateMethodLines method [.NET Framework debugging]"
   - "ISymUnmanagedENCUpdate::UpdateMethodLines method [.NET Framework debugging]"
 ms.assetid: 275ef87b-0b53-49f9-af6b-58506335dc06
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

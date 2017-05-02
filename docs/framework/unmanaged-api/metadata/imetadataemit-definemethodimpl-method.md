@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.DefineMethodImpl"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineMethodImpl"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "DefineMethodImpl method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineMethodImpl method [.NET Framework metadata]"
 ms.assetid: 9dcc8b3d-33ee-4c7c-8d6f-322c57b94a0f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

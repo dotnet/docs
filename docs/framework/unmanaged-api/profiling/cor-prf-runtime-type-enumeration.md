@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "COR_PRF_RUNTIME_TYPE Enumeration"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_PRF_RUNTIME_TYPE"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_RUNTIME_TYPE enumeration [.NET Framework profiling]"
 ms.assetid: 35449514-333f-4918-9c60-7aa198d655d2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.EnumTypeRefs"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumTypeRefs"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumTypeRefs method [.NET Framework metadata]"
   - "IMetaDataImport::EnumTypeRefs method [.NET Framework metadata]"
 ms.assetid: b4896b8f-8e97-469c-8089-e72a025661b5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRMetaHost.GetVersionFromFile"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRMetaHost::GetVersionFromFile"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRMetaHost::GetVersionFromFile method [.NET Framework hosting]"
   - "GetVersionFromFile method [.NET Framework hosting]"
 ms.assetid: 55bb3eb4-f665-42fc-973c-465567570e82
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

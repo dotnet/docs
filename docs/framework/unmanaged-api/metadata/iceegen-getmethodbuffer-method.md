@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICeeGen.GetMethodBuffer"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICeeGen::GetMethodBuffer"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICeeGen::GetMethodBuffer method [.NET Framework metadata]"
   - "GetMethodBuffer method [.NET Framework metadata]"
 ms.assetid: c7c5b39a-d4ac-41f1-9d1e-44163f563a49
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

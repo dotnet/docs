@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRRuntimeInfo.BindAsLegacyV2Runtime"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::BindAsLegacyV2Runtime"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRRuntimeInfo::BindAsLegacyV2Runtime method [.NET Framework hosting]"
   - "BindAsLegacyV2Runtime method [.NET Framework hosting]"
 ms.assetid: 65fd55ac-4a24-4479-9384-a2e8013bfb2b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

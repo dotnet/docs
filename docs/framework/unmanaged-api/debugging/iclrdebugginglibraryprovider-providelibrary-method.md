@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDebuggingLibraryProvider.ProvideLibrary Method"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDebuggingLibraryProvider::ProvideLibrary"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ProvideLibrary method [.NET Framework debugging]"
   - "ICLRDebuggingLibraryProvider::ProvideLibrary method [.NET Framework debugging]"
 ms.assetid: 86f06245-9517-49be-8d8c-ca5deaf34c02
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

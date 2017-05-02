@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "EClrUnhandledException"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "EClrUnhandledException"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EClrUnhandledException enumeration [.NET Framework hosting]"
 ms.assetid: d231044e-2b53-4836-93f9-8117ff0e5c3a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

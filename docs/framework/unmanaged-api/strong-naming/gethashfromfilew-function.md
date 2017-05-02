@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "GetHashFromFileW"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "GetHashFromFileW"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetHashFromFileW function [.NET Framework strong naming]"
 ms.assetid: 97c2d7a6-5376-45a1-ba65-146a249147cc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedReader2.GetMethodsInDocument"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader2::GetMethodsInDocument"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedReader2::GetMethodsInDocument method [.NET Framework debugging]"
   - "GetMethodsInDocument method [.NET Framework debugging]"
 ms.assetid: c7ae84d6-81e8-4cb7-a1f9-d48b6cde5d79
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

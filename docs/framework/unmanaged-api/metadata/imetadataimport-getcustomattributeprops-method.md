@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.GetCustomAttributeProps"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetCustomAttributeProps"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetCustomAttributeProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetCustomAttributeProps method [.NET Framework metadata]"
 ms.assetid: 6eefb243-a281-41c1-bcdc-7e17513bc446
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

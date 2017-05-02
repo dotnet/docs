@@ -9,14 +9,17 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDataTarget3.GetExceptionThreadID"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 307d6ac7-4a86-45f3-999d-6b47004a68f2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"

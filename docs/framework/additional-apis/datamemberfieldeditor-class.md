@@ -9,12 +9,15 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "System.Windows.Forms.Design.DataMemberFieldEditor"
-apilocation: 
+api_location: 
   - "System.Design.dll"
-apitype: "Assembly"
+api_type: 
+  - "Assembly"
 ms.assetid: 27ae39b7-3491-40f9-9b33-2de798f123ad
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

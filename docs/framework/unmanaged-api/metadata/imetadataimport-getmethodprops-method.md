@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.GetMethodProps"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetMethodProps"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetMethodProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetMethodProps method [.NET Framework metadata]"
 ms.assetid: e0667ef7-1d31-4c89-a2d3-d426f023f8d2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

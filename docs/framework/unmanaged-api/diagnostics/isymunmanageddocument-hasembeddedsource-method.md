@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedDocument.HasEmbeddedSource"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::HasEmbeddedSource"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "HasEmbeddedSource method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::HasEmbeddedSource method [.NET Framework debugging]"
 ms.assetid: 385fc4d3-365c-4645-b7b0-6c4c5344b79f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

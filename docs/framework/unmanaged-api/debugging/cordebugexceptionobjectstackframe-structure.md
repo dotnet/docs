@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CorDebugExceptionObjectStackFrame"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorDebugExceptionObjectStackFrame"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugExceptionObjectStackFrame structure [.NET Framework debugging]"
 ms.assetid: 542cdd81-5ae7-4361-b0ef-1ae4775df258
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

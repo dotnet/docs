@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "COR_ARRAY_LAYOUT"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "COR_ARRAY_LAYOUT"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_DEBUG_IL_TO_NATIVE_MAP structure [.NET Framework debugging]"
 ms.assetid: aa20ac3d-6f60-4aa2-91c5-f3a86f82eba8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

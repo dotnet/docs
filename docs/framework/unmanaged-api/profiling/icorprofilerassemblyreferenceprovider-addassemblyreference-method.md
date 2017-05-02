@@ -9,14 +9,17 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerAssemblyReferenceProvider.AddAssemblyReference"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 3d5af8e7-c337-48f4-9fa6-97c83878b9b1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

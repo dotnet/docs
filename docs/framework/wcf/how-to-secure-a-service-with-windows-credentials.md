@@ -37,7 +37,7 @@ This topic shows how to enable transfer security on a [!INCLUDE[indigo1](../../.
   
 2.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class.  
   
-3.  Set the <xref:System.ServiceModel.WsHttpSecurity.Mode%2A> property of the <xref:System.ServiceModel.WsHttpSecurity> class to <xref:System.ServiceModel.SecurityMode>.  
+3.  Set the <xref:System.ServiceModel.WSHttpSecurity.Mode%2A> property of the <xref:System.ServiceModel.WSHttpSecurity> class to <xref:System.ServiceModel.SecurityMode>.  
   
 4.  Set the <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A> property of the <xref:System.ServiceModel.MessageSecurityOverHttp> class to <xref:System.ServiceModel.MessageCredentialType>.  
   
@@ -77,7 +77,7 @@ This topic shows how to enable transfer security on a [!INCLUDE[indigo1](../../.
   
 ##### To use a binding in a client with code  
   
-1.  Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase%601> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.  
+1.  Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase%601> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.  
   
 2.  This procedure's code is inserted at the beginning of the `Main` method of the client program.  
   
@@ -147,8 +147,8 @@ This topic shows how to enable transfer security on a [!INCLUDE[indigo1](../../.
 ## Example  
  [!code-csharp[c_SecureWindowsService#0](../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewindowsservice/cs/secureservice.cs#0)]  
   
- [!code-csharp[c_SecureWindowsClient#0](../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewindowsclient/cs/secureclient.cs#0)]
- <!-- TODO: review snippet reference [!code-vb[c_SecureWindowsClient#0](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsclient/vb/secureclient.vb#0)]  -->  
+ [!code-csharp[c_SecureWindowsClient#0](../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewindowsclient/cs/secureclient.cs#0)] 
+ [!code-vb[c_SecureWindowsClient#0](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsclient/vb/secureclient.vb#0)]      
   
 ## See Also  
  <xref:System.ServiceModel.WSHttpBinding>   

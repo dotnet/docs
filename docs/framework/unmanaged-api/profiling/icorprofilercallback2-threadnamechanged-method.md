@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback2.ThreadNameChanged"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback2::ThreadNameChanged"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ThreadNameChanged method [.NET Framework profiling]"
   - "ICorProfilerCallback2::ThreadNameChanged method [.NET Framework profiling]"
 ms.assetid: c8bbd76d-a9ff-44f2-87a6-be052819da36
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

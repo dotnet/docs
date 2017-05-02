@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedBinder3.GetReaderFromCallback"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedBinder3::GetReaderFromCallback"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetReaderFromCallback method [.NET Framework debugging]"
   - "ISymUnmanagedBinder3::GetReaderFromCallback method [.NET Framework debugging]"
 ms.assetid: 4ef83bd2-3d8e-499e-8a12-d9d6fd6ced30
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

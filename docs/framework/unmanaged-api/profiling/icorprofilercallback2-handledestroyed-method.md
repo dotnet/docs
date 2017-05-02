@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback2.HandleDestroyed"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback2::HandleDestroyed"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback2::HandleDestroyed method [.NET Framework profiling]"
   - "HandleDestroyed method [.NET Framework profiling]"
 ms.assetid: ab4f4bbd-40c7-4667-bfde-60cd73803110
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

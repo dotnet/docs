@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "GetStartupNotificationEvent"
-apilocation: 
+api_location: 
   - "dbgshim.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetStartupNotificationEvent"
 dev_langs: 
@@ -23,6 +24,8 @@ helpviewer_keywords:
   - "debugging API [Silverlight]"
   - "Silverlight, debugging"
 ms.assetid: c94b1b61-045a-4695-bacd-0f18c5acc246
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

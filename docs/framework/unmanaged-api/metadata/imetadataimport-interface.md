@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IMetaDataImport interface [.NET Framework metadata]"
 ms.assetid: 0adbbd35-5e8d-4fec-8268-dc70a07c5975
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

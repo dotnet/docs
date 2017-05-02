@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.DefineProperty"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineProperty"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::DefineProperty method [.NET Framework metadata]"
   - "DefineProperty method [.NET Framework metadata]"
 ms.assetid: 5c4c1dc2-d40d-4173-bbe6-7058fb21c98f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

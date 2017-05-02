@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.ExceptionSearchFunctionLeave"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionSearchFunctionLeave"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ExceptionSearchFunctionLeave method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionSearchFunctionLeave method [.NET Framework profiling]"
 ms.assetid: 01de7ac6-0aad-42ef-bf93-50737667b0a4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

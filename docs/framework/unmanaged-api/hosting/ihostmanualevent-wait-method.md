@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostManualEvent.Wait"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostManualEvent::Wait"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostManualEvent::Wait method [.NET Framework hosting]"
   - "Wait method, IHostManualEvent interface [.NET Framework hosting]"
 ms.assetid: 1fbb7d8b-8a23-4c2b-8376-1a70cd2d6030
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

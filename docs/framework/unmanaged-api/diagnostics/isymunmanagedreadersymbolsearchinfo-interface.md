@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedReaderSymbolSearchInfo"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReaderSymbolSearchInfo"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedReaderSymbolSearchInfo interface [.NET Framework debugging]"
 ms.assetid: fde7e21d-1169-4bed-a34d-792e69652bf9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

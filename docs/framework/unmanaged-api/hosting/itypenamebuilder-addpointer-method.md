@@ -2,18 +2,19 @@
 title: "ITypeNameBuilder::AddPointer Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ITypeNameBuilder.AddPointer"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AddPointer"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameBuilder::AddPointer method [.NET Framework hosting]"
   - "AddPointer method [.NET Framework hosting]"
 ms.assetid: b6f1dbd4-1a9f-44dd-b54b-c530ab44eb48
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

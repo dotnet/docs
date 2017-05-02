@@ -1,5 +1,5 @@
 //<SnippetWindowWithFileExitCODEBEHIND>
-using System.Windows; // window, RoutedEventArgs
+using System.Windows;
 
 namespace SDKSample
 {

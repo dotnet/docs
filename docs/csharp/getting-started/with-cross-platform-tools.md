@@ -8,6 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 48cac496-2dc2-4dc7-b8fd-b9ade0fcdfd2
+redirect_url: /dotnet/articles/csharp/getting-started/index
 ---
 
 # 🔧 Getting started with C# using the cross platform command line tools

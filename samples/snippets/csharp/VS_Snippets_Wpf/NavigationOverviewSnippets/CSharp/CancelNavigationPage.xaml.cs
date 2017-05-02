@@ -1,8 +1,8 @@
 //<SnippetCancelNavigationPageCODEBEHIND>
-using System; // Uri, UriKind
-using System.Windows; // RoutedEventArgs, MessageBox, MessageBoxResult
-using System.Windows.Controls; // Page
-using System.Windows.Navigation; // NavigationService, NavigatingCancelEventArgs
+using System;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Navigation;
 
 namespace SDKSample
 {

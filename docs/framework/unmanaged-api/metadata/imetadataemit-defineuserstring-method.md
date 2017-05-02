@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.DefineUserString"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineUserString"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "DefineUserString method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineUserString method [.NET Framework metadata]"
 ms.assetid: 88fb7ef3-bbdf-429c-b678-c9c153456461
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

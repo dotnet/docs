@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataDispenserEx.GetCORSystemDirectory"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::GetCORSystemDirectory"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataDispenserEx::GetCORSystemDirectory method [.NET Framework metadata]"
   - "GetCORSystemDirectory method [.NET Framework metadata]"
 ms.assetid: d9e0f3b6-e106-4820-bada-5bfba34ce360
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo2.GetRVAStaticAddress"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetRVAStaticAddress"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetRVAStaticAddress method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetRVAStaticAddress method [.NET Framework profiling]"
 ms.assetid: a25a8f8b-5cfa-440d-9376-a1a1c3a9fc11
+topic_type: 
+  - "apiref"
 caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"

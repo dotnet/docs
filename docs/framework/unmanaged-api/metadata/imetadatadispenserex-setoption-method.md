@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataDispenserEx.SetOption"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::SetOption"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataDispenserEx::SetOption method [.NET Framework metadata]"
   - "SetOption method [.NET Framework metadata]"
 ms.assetid: 9f1c7ccd-7fb2-41d8-aa00-24b823376527
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"

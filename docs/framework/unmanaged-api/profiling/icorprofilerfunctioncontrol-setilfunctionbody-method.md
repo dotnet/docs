@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerFunctionControl.SetILFunctionBody"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerFunctionControl::SetILFunctionBody"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerFunctionControl::SetILFunctionBody method [.NET Framework profiling]"
   - "SetILFunctionBody method, ICorProfilerFunctionControl interface [.NET Framework profiling]"
 ms.assetid: 2c33f0f7-75b2-4c19-b2c7-c94b54997576
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

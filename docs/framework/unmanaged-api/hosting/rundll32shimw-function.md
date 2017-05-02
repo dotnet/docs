@@ -2,18 +2,19 @@
 title: "RunDll32ShimW Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "RunDll32ShimW"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "RunDll32ShimW"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "RunDll32ShimW function [.NET Framework hosting]"
 ms.assetid: 9ea07b57-96e2-44df-8711-8fe6c119087f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

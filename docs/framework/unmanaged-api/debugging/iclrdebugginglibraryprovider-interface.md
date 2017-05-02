@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDebuggingLibraryProvider"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDebuggingLibraryProvider"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRDebuggingLibraryProvider interface [.NET Framework debugging]"
 ms.assetid: 67739617-6add-41a9-9de5-a3200c3109ce
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

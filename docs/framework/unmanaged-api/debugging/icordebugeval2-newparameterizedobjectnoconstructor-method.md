@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugEval2.NewParameterizedObjectNoConstructor"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEval2::NewParameterizedObjectNoConstructor"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "NewParameterizedObjectNoConstructor method [.NET Framework debugging]"
   - "ICorDebugEval2::NewParameterizedObjectNoConstructor method [.NET Framework debugging]"
 ms.assetid: f15b5b78-94f4-4eb9-b3b3-a621272f357c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

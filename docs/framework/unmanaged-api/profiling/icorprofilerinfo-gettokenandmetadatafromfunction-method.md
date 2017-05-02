@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo.GetTokenAndMetadataFromFunction"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetTokenAndMetadataFromFunction"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo::GetTokenAndMetadataFromFunction method [.NET Framework profiling]"
   - "GetTokenAndMetadataFromFunction method [.NET Framework profiling]"
 ms.assetid: e525aa16-c923-4b16-833b-36f1f0dd70fc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

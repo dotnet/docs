@@ -2,18 +2,19 @@
 title: "ICorDebugProcess::GetHelperThreadID Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugProcess.GetHelperThreadID"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess::GetHelperThreadID"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetHelperThreadID method [.NET Framework debugging]"
   - "ICorDebugProcess::GetHelperThreadID method [.NET Framework debugging]"
 ms.assetid: 84e1e605-37c1-49a5-8e12-35db85654622
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

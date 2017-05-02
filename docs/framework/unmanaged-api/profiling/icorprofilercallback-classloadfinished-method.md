@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.ClassLoadFinished"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ClassLoadFinished"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ClassLoadFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::ClassLoadFinished method [.NET Framework profiling]"
 ms.assetid: 3dd80fbe-d62d-4d4d-acf8-5b7d0efe607e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

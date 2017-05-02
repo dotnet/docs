@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugFunction2.EnumerateNativeCode"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugFunction2::EnumerateNativeCode"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugFunction2::EnumerateNativeCode method [.NET Framework debugging]"
   - "EnumerateNativeCode method [.NET Framework debugging]"
 ms.assetid: d383f5cc-1144-4b6d-b57a-db34d9134ab2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

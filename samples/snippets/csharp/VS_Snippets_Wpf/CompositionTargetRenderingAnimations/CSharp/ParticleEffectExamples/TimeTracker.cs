@@ -1,9 +1,9 @@
 namespace Microsoft.Samples.PerFrameAnimations
 {
     using System;
-    using System.Windows; //uielement
-    using System.Windows.Media; //visual operations
-    using System.Windows.Media.Animation; //animation effect stuff
+    using System.Windows;
+    using System.Windows.Media;
+    using System.Windows.Media.Animation;
 
     public class TimeTracker
     {

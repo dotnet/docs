@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo.GetInprocInspectionIThisThread"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetInprocInspectionIThisThread"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo::GetInprocInspectionIThisThread method [.NET Framework profiling]"
   - "GetInprocInspectionIThisThread method [.NET Framework profiling]"
 ms.assetid: badddccd-f85c-416e-9f0f-419eab2c9d42
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"

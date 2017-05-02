@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedReader.GetUserEntryPoint"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetUserEntryPoint"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetUserEntryPoint method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetUserEntryPoint method [.NET Framework debugging]"
 ms.assetid: 3fd3a34c-d176-46e9-9996-fb1646cff9b0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

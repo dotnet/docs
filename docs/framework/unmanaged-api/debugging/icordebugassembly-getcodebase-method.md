@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugAssembly.GetCodeBase"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugAssembly::GetCodeBase"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetCodeBase method [.NET Framework debugging]"
   - "ICorDebugAssembly::GetCodeBase method [.NET Framework debugging]"
 ms.assetid: 48adc154-9058-4fef-9c43-e9aad80e4dbf
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

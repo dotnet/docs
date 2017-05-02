@@ -9,13 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ClearDownloadCache"
-apilocation: 
+api_location: 
   - "fusion.dll"
   - "clr.dll"
   - "mscorwks.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "ClearDownloadCache"
 dev_langs: 
@@ -23,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ClearDownloadCache function [.NET Framework fusion]"
 ms.assetid: df7595d1-430f-44b4-8160-4c2ba9df70b1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

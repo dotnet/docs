@@ -2,7 +2,7 @@
 title: "Discovery Proxy Sample | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,9 +39,9 @@ This sample shows how to create an implementation of a Discovery proxy to store 
 ## DiscoveryProxy  
  In the `Main` method of the Program.cs file, the sample shows how a service of type <xref:System.ServiceModel.Discovery.DiscoveryProxy> is hosted. It exposes two endpoints, one of type <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> and another of type <xref:System.ServiceModel.Discovery.AnnouncementEndpoint>. Both of the endpoints use TCP as a transport. The <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> is listening at the URI specified by the `probeEndpointAddress` parameter, this is where clients can send probe messages to query the proxy for its data. The <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> is listening at the URI specified by the `announcementEndpointAddress` parameter. This is where the proxy listens to for announcements. When an online announcement is received, the proxy adds the service to its cache and when an offline announcement is received it removes the service from its cache.  
   
- The DiscoveryProxy.cs contains the implementation of the <xref:System.ServiceModel.Discovery.DiscoveryProxy>. The Proxy must inherit from the <xref:System.Object> class and requires an implementation of <xref:System.Runtime.Remoting.Messaging.AsyncResult>. At instantiation, the Proxy creates a new <xref:System.Collections.Generic.Dictionary%601>, which it uses to store elements it knows about.  
+ The DiscoveryProxy.cs contains the implementation of the <xref:System.ServiceModel.Discovery.DiscoveryProxy>. The Proxy must inherit from the <xref:System.Object> class and requires an implementation of <xref:System.Runtime.Remoting.Messaging.AsyncResult>. At instantiation, the Proxy creates a new <xref:System.Collections.Generic.Dictionary%602>, which it uses to store elements it knows about.  
   
- The file is divided into two regions, Proxy Cache Methods and Discovery Proxy Implementation. The Proxy Cache Methods region contains methods used to update the <xref:System.Collections.Generic.Dictionary%601>, perform queries against the <xref:Systems.Collections.Generic.Dictionary%601>, and print the data for users. The Discovery Proxy Implementation region contains the overridden methods required for the Announcement and Probe functionality. They define the actions taken by a proxy after receiving an Online Announcement, an Offline Announcement, or a Probe message.  
+ The file is divided into two regions, Proxy Cache Methods and Discovery Proxy Implementation. The Proxy Cache Methods region contains methods used to update the <xref:System.Collections.Generic.Dictionary%602>, perform queries against the <xref:System.Collections.Generic.Dictionary%602>, and print the data for users. The Discovery Proxy Implementation region contains the overridden methods required for the Announcement and Probe functionality. They define the actions taken by a proxy after receiving an Online Announcement, an Offline Announcement, or a Probe message.  
   
 ## Service  
  In the Program.cs file in the Service project, the same URI is used for its announcement endpoint as the discovery proxy. This is because service uses the endpoint for sending the announcements, while the proxy uses it for receiving them. The service uses the <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> and adds an announcement endpoint to it.  

@@ -1,7 +1,7 @@
 '<SnippetActivationDeactivationCODEBEHIND>
 
-Imports System ' EventArgs
-Imports System.Windows ' Window
+Imports System
+Imports System.Windows
 
 Namespace SDKSample
 	Partial Public Class CustomMediaPlayerWindow

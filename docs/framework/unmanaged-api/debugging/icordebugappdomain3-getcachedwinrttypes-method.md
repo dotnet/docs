@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugAppDomain3.GetCachedWinRTTypes"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain3::GetCachedWinRTTypes"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugAppDomain3::GetCachedWinRTTypes method [.NET Framework debugging]"
   - "GetCachedWinRTTypes method, ICorDebugAppDomain3 interface [.NET Framework debugging]"
 ms.assetid: 9afd0e04-a403-41e2-9528-a6dcbcdcbd4d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

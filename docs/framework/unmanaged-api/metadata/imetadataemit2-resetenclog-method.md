@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit2.ResetENCLog"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit2::ResetENCLog"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ResetENCLog method [.NET Framework metadata]"
   - "IMetaDataEmit2::ResetENCLog method [.NET Framework metadata]"
 ms.assetid: 44b9fd76-a022-4e9a-aea3-dec5411a9c22
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

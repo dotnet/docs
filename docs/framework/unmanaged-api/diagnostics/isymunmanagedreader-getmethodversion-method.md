@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedReader.GetMethodVersion"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetMethodVersion"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetMethodVersion method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetMethodVersion method [.NET Framework debugging]"
 ms.assetid: d6f9ac84-302a-4f5e-b990-e76f4269fceb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

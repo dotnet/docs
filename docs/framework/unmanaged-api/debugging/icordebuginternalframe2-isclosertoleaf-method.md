@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugInternalFrame2.IsCloserToLeaf Method"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugInternalFrame2::IsCloserToLeaf"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugInternalFrame2::IsCloserToLeaf method [.NET Framework debugging]"
   - "IsCloserToLeaf method [.NET Framework debugging]"
 ms.assetid: c1d3d1eb-8370-4f25-8297-3bd262b4740a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

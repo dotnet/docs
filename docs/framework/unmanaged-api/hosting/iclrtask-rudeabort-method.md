@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRTask.RudeAbort"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRTask::RudeAbort"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "RudeAbort method, ICLRTask interface [.NET Framework hosting]"
   - "ICLRTask::RudeAbort method [.NET Framework hosting]"
 ms.assetid: b5785468-fcd7-4cc3-8a5d-8796337b53fc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

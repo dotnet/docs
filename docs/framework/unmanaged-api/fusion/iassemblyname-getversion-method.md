@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IAssemblyName.GetVersion"
-apilocation: 
+api_location: 
   - "fusion.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyName::GetVersion"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IAssemblyName::GetVersion method [.NET Framework fusion]"
   - "GetVersion method, IAssemblyName interface [.NET Framework fusion]"
 ms.assetid: 42230928-2c33-41fd-9519-d96efef6c7af
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "StrongNameSignatureVerificationFromImage"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "StrongNameSignatureVerificationFromImage"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongnameSignatureVerificationFromImage function [.NET Framework strong naming]"
 ms.assetid: 9fb144d2-07e0-4a0e-8e05-907bbb6c9e03
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

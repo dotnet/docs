@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerFunctionEnum.Reset Method"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerFunctionEnum::Reset"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerFunctionEnum::Reset method [.NET Framework profiling]"
   - "Reset method, ICorProfilerFunctionEnum interface [.NET Framework profiling]"
 ms.assetid: 80046b2e-55b7-40a2-9adf-cf2763ee59c8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

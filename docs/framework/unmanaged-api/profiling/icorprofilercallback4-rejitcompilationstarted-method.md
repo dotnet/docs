@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback4.ReJITCompilationStarted"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback4::ReJITCompilationStarted"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ReJITCompilationStarted method, ICorProfilerCallback4 interface [.NET Framework profiling]"
   - "ICorProfilerCallback4::ReJITCompilationStarted method [.NET Framework profiling]"
 ms.assetid: 512fdd00-262a-4456-a075-365ef4133c4d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

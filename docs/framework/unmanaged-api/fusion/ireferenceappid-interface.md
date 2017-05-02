@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IReferenceAppId"
-apilocation: 
+api_location: 
   - "fusion.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IReferenceAppId"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IReferenceAppId interface [.NET Framework fusion]"
 ms.assetid: 8eb9e565-f358-43ce-900e-a8f8a5aa6cfb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

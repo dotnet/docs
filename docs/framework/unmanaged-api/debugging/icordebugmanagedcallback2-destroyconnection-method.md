@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugManagedCallback2.DestroyConnection"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::DestroyConnection"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "DestroyConnection method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::DestroyConnection method [.NET Framework debugging]"
 ms.assetid: cf7940e9-4558-4319-925c-09f6c98c8fcd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

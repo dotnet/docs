@@ -2,7 +2,7 @@
 title: "&lt;routing&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,4 +51,4 @@ Represents a configuration section for defining a set of routing filters, which 
 |system.ServiceModel|The root element of all WCF configuration elements.|  
   
 ## See Also  
- [System.ServiceModel.Routing.Configuration.RoutingSection](assetId:///System.ServiceModel.Routing.Configuration.RoutingSection?qualifyHint=False&amp;autoUpgrade=True)
+ <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=fullName>    

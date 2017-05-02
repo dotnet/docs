@@ -9,14 +9,15 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "_CorExeMain"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "_CorExeMain"
 dev_langs: 
@@ -24,6 +25,8 @@ dev_langs:
 helpviewer_keywords: 
   - "_CorExeMain function [.NET Framework hosting]"
 ms.assetid: 898f76e2-16f4-4a63-b7d9-dad2d3824d8a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

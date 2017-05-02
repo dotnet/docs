@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostTask.Alert"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostTask::Alert"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostTask::Alert method [.NET Framework hosting]"
   - "Alert method, IHostTask interface [.NET Framework hosting]"
 ms.assetid: 5245d4b5-b6c3-48df-9cb9-8caf059f43fb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

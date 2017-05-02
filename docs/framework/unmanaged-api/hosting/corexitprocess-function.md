@@ -9,14 +9,15 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CorExitProcess"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "CorExitProcess"
 dev_langs: 
@@ -24,6 +25,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorExitProcess function [.NET Framework hosting]"
 ms.assetid: a5cab4c6-990e-47f3-8798-cf422b791015
+topic_type: 
+  - "apiref"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

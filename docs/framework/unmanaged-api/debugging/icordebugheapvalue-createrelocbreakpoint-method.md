@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugHeapValue.CreateRelocBreakpoint"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugHeapValue::CreateRelocBreakpoint"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugHeapValue::CreateRelocBreakpoint method [.NET Framework debugging]"
   - "CreateRelocBreakpoint method [.NET Framework debugging]"
 ms.assetid: 54d31e7b-b1e2-4f2b-8a4f-867b8759fe41
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

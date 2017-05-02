@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRRuntimeHost.ExecuteApplication"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::ExecuteApplication"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRRuntimeHost::ExecuteApplication method [.NET Framework hosting]"
   - "ExecuteApplication method [.NET Framework hosting]"
 ms.assetid: 5f28cc4e-7176-4e00-aa1f-58ae6ee52fe4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

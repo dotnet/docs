@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IALink2.GetFileDef"
-apilocation: 
+api_location: 
   - "alink.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetFileDef"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetFileDef method"
 ms.assetid: 4e3fbe6c-b82a-4181-ab17-7faa1263f5b3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

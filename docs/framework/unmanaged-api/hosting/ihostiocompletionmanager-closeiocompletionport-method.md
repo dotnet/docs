@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostIoCompletionManager.CloseIoCompletionPort"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::CloseIoCompletionPort"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostIoCompletionManager::CloseIoCompletionPort method [.NET Framework hosting]"
   - "CloseIoCompletionPort method [.NET Framework hosting]"
 ms.assetid: e86ad7be-3758-498a-a972-5522d69dfbb3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

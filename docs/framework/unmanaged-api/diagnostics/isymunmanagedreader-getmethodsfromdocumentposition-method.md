@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedReader.GetMethodsFromDocumentPosition"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetMethodsFromDocumentPosition"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetMethodsFromDocumentPosition method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetMethodsFromDocumentPosition method [.NET Framework debugging]"
 ms.assetid: 83605f1e-e4f3-49e6-859b-f13cad68bb54
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

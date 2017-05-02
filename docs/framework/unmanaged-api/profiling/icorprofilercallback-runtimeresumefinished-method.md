@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.RuntimeResumeFinished"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RuntimeResumeFinished"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "RuntimeResumeFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::RuntimeResumeFinished method [.NET Framework profiling]"
 ms.assetid: 76de0494-dc49-426b-887d-bee98806a982
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

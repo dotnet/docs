@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.COMClassicVTableCreated"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::COMClassicVTableCreated"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "COMClassicVTableCreated method [.NET Framework profiling]"
   - "ICorProfilerCallback::COMClassicVTableCreated method [.NET Framework profiling]"
 ms.assetid: 6e1834ab-c359-498a-b10b-984ae23cdda4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

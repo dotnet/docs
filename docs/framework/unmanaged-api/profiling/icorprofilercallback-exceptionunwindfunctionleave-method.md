@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.ExceptionUnwindFunctionLeave"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionUnwindFunctionLeave"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::ExceptionUnwindFunctionLeave method [.NET Framework profiling]"
   - "ExceptionUnwindFunctionLeave method [.NET Framework profiling]"
 ms.assetid: ebaad1d5-ee0a-4cb0-96bc-8ba5d371b747
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

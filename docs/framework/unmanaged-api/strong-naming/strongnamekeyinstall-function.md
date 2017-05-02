@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "StrongNameKeyInstall"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "StrongNameKeyInstall"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameKeyInstall function [.NET Framework strong naming]"
 ms.assetid: e32fd546-7757-4681-be3d-658e93281e50
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

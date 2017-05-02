@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugComObjectValue::GetCachedInterfaceTypes"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
 f1_keywords: 
   - "ICorDebugComObjectValue::GetCachedInterfaceTypes"
@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "GetCachedInterface method, ICorDebugComObjectValue interface [.NET Framework debugging]"
   - "ICorDebugComObjectValue::GetCachedInterface method [.NET Framework debugging]"
 ms.assetid: d492284f-d3c5-4614-adb8-d718d5042500
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

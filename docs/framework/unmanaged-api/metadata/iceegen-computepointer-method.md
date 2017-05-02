@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICeeGen.ComputePointer"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICeeGen::ComputePointer"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICeeGen::ComputePointer method [.NET Framework metadata]"
   - "ComputePointer method [.NET Framework metadata]"
 ms.assetid: b6b95c04-0f2c-4fcc-a8bc-3b1dcbdba731
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

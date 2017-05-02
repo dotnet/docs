@@ -15,7 +15,7 @@
   <Docs>
     <summary>Allows an object to implement a DataAdapter, and represents a set of methods and mapping action-related properties that are used to fill and update a <see cref="T:System.Data.DataSet" /> and update a data source.  
   
- <see cref="T:System.Data.IDbDataAdapter" /> instances are for data sources that are (or resemble) relational databases with textual commands (like [!INCLUDE[tsql](~/includes/tsql-md.md)]), while <see cref="T:System.Data.IDataAdapter" /> instances could can use any type of data source.</summary>
+ <see cref="T:System.Data.IDbDataAdapter" /> instances are for data sources that are (or resemble) relational databases with textual commands (like Transact-SQL), while <see cref="T:System.Data.IDataAdapter" /> instances could can use any type of data source.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -41,48 +41,27 @@
   
  When you inherit from the <see cref="T:System.Data.IDataAdapter" /> interface, you should implement the following constructors:  
   
- <list type="table">  
-<listheader>  
-<term> Item  
+ <list type="table"><listheader><term> Item  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> PrvDataAdapter()  
+ </description></listheader><item><term> PrvDataAdapter()  
   
- </term>  
-<description> Initializes a new instance of the PrvDataAdapter class.  
+ </term><description> Initializes a new instance of the PrvDataAdapter class.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvDataAdapter(PrvCommand selectCommand)  
+ </description></item><item><term> PrvDataAdapter(PrvCommand selectCommand)  
   
- </term>  
-<description> Initializes a new instance of the PrvDataAdapter class by using the specified SQL SELECT statement.  
+ </term><description> Initializes a new instance of the PrvDataAdapter class by using the specified SQL SELECT statement.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvDataAdapter(string selectCommandText, string selectConnectionString)  
+ </description></item><item><term> PrvDataAdapter(string selectCommandText, string selectConnectionString)  
   
- </term>  
-<description> Initializes a new instance of the PrvDataAdapter class by using an SQL SELECT statement and a connection string.  
+ </term><description> Initializes a new instance of the PrvDataAdapter class by using an SQL SELECT statement and a connection string.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvDataAdapter(string selectCommandText, PrvConnection selectConnection)  
+ </description></item><item><term> PrvDataAdapter(string selectCommandText, PrvConnection selectConnection)  
   
- </term>  
-<description> Initializes a new instance of the PrvDataAdapter class by using an SQL SELECT statement and a PrvConnection object.  
+ </term><description> Initializes a new instance of the PrvDataAdapter class by using an SQL SELECT statement and a PrvConnection object.  
   
- </description>  
-</item>  
-</list></para>
+ </description></item></list></para>
     </block>
   </Docs>
   <Members>

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDebugManager.IsDebuggerAttached"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDebugManager::IsDebuggerAttached"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IsDebuggerAttached method, ICLRDebugManager interface [.NET Framework hosting]"
   - "ICLRDebugManager::IsDebuggerAttached method [.NET Framework hosting]"
 ms.assetid: 2f105fe0-f52d-49c5-bda5-583fb27e3aa6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

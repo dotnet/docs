@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo2.GetBoxClassLayout"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetBoxClassLayout"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetBoxClassLayout method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetBoxClassLayout method [.NET Framework profiling]"
 ms.assetid: 624672b5-1189-488a-85d2-3e12b49617c1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

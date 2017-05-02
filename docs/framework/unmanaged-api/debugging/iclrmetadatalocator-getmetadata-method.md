@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRMetadataLocator.GetMetadata"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRMetadataLocator::GetMetadata"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetMetadata method, ICLRMetadataLocator interface [.NET Framework debugging]"
   - "ICLRMetadataLocator::GetMetadata method [.NET Framework debugging]"
 ms.assetid: 704a8893-ac56-43b4-90ea-715f38ccb40e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,13 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CreateAssemblyCache"
-apilocation: 
+api_location: 
   - "fusion.dll"
   - "clr.dll"
   - "mscorwks.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "CreateAssemblyCache"
 dev_langs: 
@@ -23,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CreateAssemblyCache function [.NET Framework fusion]"
 ms.assetid: 348c7c8c-8578-46ae-97cf-480d6015c3c6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

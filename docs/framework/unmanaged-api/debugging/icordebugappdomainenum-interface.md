@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugAppDomainEnum"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugAppDomainEnum"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugAppDomainEnum interface [.NET Framework debugging]"
 ms.assetid: e9226e6e-ca2c-428e-bb38-0c099210f507
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

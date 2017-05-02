@@ -2,18 +2,19 @@
 title: "ITypeName::GetTypeArguments Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ITypeName.GetTypeArguments"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetTypeArguments"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ITypeName::GetTypeArguments method [.NET Framework hosting]"
   - "GetTypeArguments method [.NET Framework hosting]"
 ms.assetid: 638d77df-ff9c-40d9-88ee-930f5f87ada1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

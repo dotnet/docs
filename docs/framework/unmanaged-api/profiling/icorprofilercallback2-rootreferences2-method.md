@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback2.RootReferences2"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback2::RootReferences2"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "RootReferences2 method [.NET Framework profiling]"
   - "ICorProfilerCallback2::RootReferences2 method [.NET Framework profiling]"
 ms.assetid: 55a2f907-d216-42eb-8f2f-e5d59c2eebd6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

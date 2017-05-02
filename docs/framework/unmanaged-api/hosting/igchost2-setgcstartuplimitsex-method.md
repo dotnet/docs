@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IGCHost2.SetGCStartupLimitsEx"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IGCHost2::SetGCStartupLimitsEx"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IGCHost2::SetGCStartupLimitsEx method [.NET Framework hosting]"
   - "SetGCStartupLimitsEx method, IGCHost2 interface [.NET Framework hosting]"
 ms.assetid: bba941c2-1c57-46d3-bbf5-5fb92700c490
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

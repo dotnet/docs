@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDataTarget.GetPointerSize"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDataTarget::GetPointerSize"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetPointerSize method [.NET Framework debugging]"
   - "ICLRDataTarget::GetPointerSize method [.NET Framework debugging]"
 ms.assetid: 51d9f4a4-81a7-4527-8537-5212bdb05c70
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

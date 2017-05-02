@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugGCReferenceEnum.Next"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugGCReferenceEnum::Next"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Next method, ICorDebugGCReferenceEnum interface [.NET Framework debugging]"
   - "ICorDebugGCReferenceEnum::Next method [.NET Framework debugging]"
 ms.assetid: 91b1345c-a94f-4ef8-9696-3823d06c6d05
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

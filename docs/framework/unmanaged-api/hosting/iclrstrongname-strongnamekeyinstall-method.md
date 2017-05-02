@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRStrongName.StrongNameKeyInstall"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameKeyInstall"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameKeyInstall method [.NET Framework hosting]"
   - "StrongNameKeyInstall method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: 5c15cf3b-164c-49d1-8e57-e42949d55acf
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

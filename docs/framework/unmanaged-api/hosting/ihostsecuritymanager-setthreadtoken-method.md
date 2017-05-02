@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostSecurityManager.SetThreadToken"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSecurityManager::SetThreadToken"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetThreadToken method [.NET Framework hosting]"
   - "IHostSecurityManager::SetThreadToken method [.NET Framework hosting]"
 ms.assetid: e951c345-8a86-4587-911b-a1a57bc6428a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

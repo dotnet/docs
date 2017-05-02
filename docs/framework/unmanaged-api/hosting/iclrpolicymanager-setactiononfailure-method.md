@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRPolicyManager.SetActionOnFailure"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRPolicyManager::SetActionOnFailure"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetActionOnFailure method [.NET Framework hosting]"
   - "ICLRPolicyManager::SetActionOnFailure method [.NET Framework hosting]"
 ms.assetid: 4664033f-db97-4388-b988-2ec470796e58
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

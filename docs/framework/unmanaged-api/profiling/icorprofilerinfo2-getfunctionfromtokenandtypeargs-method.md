@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo2.GetFunctionFromTokenAndTypeArgs"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs method [.NET Framework profiling]"
   - "GetFunctionFromTokenAndTypeArgs method [.NET Framework profiling]"
 ms.assetid: ce8f6aa6-4ebf-4a86-b429-4bbc8af41a8f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

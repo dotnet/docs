@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugArrayValue.GetCount"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetCount"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugArrayValue::GetCount method [.NET Framework debugging]"
   - "GetCount method, ICorDebugArrayValue interface [.NET Framework debugging]"
 ms.assetid: 44cd98cf-2127-4d46-8c6a-da4e857bb6b0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

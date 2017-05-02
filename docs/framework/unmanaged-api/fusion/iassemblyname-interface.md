@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IAssemblyName"
-apilocation: 
+api_location: 
   - "fusion.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyName"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IAssemblyName interface [.NET Framework fusion]"
 ms.assetid: f7f8e605-6b67-4151-936f-f04ecd671d90
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

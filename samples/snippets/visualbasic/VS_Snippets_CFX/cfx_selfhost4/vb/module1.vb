@@ -27,7 +27,7 @@ Module Module1
         Dim baseAddress As Uri = New Uri("http://localhost:8080/hello")
         '</snippet3>
 
-        '//<snippet4>
+        '<snippet4>
         ' Create the ServiceHost.
         Using host As New ServiceHost(GetType(HelloWorldService), baseAddress)
 

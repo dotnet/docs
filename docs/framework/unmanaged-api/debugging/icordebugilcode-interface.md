@@ -9,14 +9,17 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugILCode"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 51c4de0c-3813-4142-be25-a85bb84efb90
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

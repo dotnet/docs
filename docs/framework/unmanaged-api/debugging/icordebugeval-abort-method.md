@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugEval.Abort"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEval::Abort"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Abort method, ICorDebugEval interface [.NET Framework debugging]"
   - "ICorDebugEval::Abort method [.NET Framework debugging]"
 ms.assetid: 7070b6d0-f2e0-44ff-b124-0944cd807e69
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

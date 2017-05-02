@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedWriter.Initialize2"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::Initialize2"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter::Initialize2 method [.NET Framework debugging]"
   - "Initialize2 method [.NET Framework debugging]"
 ms.assetid: 93de56b6-4ae8-4cca-acdc-25a434623509
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

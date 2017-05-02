@@ -2,18 +2,19 @@
 title: "ITypeNameBuilder::OpenGenericArguments Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ITypeNameBuilder.OpenGenericArguments"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "OpenGenericArguments"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "OpenGenericArguments method [.NET Framework hosting]"
   - "ITypeNameBuilder::OpenGenericArguments method [.NET Framework hosting]"
 ms.assetid: 4da94508-30da-41f4-8bf9-ce88bdf96fd2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

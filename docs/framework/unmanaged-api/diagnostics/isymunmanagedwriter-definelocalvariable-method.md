@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedWriter.DefineLocalVariable"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::DefineLocalVariable"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter::DefineLocalVariable method [.NET Framework debugging]"
   - "DefineLocalVariable method [.NET Framework debugging]"
 ms.assetid: 6fab8a58-3883-490f-8b27-64042c90f104
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

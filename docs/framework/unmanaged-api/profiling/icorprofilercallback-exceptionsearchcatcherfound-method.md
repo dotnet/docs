@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.ExceptionSearchCatcherFound"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionSearchCatcherFound"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ExceptionSearchCatcherFound method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionSearchCatcherFound method [.NET Framework profiling]"
 ms.assetid: 190f424d-5e37-4163-a191-0895686e9476
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

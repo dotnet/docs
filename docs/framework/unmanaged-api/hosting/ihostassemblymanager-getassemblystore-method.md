@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostAssemblyManager.GetAssemblyStore"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostAssemblyManager::GetAssemblyStore"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostAssemblyManager::GetAssemblyStore method [.NET Framework hosting]"
   - "GetAssemblyStore method [.NET Framework hosting]"
 ms.assetid: d0f74593-9bb1-4a11-8096-e29734b20698
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDebugging.CanUnloadNow Method"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDebugging::CanUnloadNow"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CanUnloadNow method [.NET Framework debugging]"
   - "ICLRDebugging::CanUnloadNow method [.NET Framework debugging]"
 ms.assetid: 62e0630c-8cb7-45d2-b622-5a472abfd8cf
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

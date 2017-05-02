@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport2.GetPEKind"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport2::GetPEKind"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetPEKind method [.NET Framework metadata]"
   - "IMetaDataImport2::GetPEKind method [.NET Framework metadata]"
 ms.assetid: d91c3d89-8022-4a4c-a2a2-a8af2c387507
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

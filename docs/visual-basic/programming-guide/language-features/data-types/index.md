@@ -65,6 +65,7 @@ The *data type* of a programming element refers to what kind of data it can hold
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
  [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
  [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
+ [Tuples](tuples.md)     
  [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
  [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)   
  [Efficient Use of Data Types](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

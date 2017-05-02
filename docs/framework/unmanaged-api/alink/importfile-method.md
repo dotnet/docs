@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IALink.ImportFile"
-apilocation: 
+api_location: 
   - "alink.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ImportFile"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ImportFile method"
 ms.assetid: bcbe321f-b83a-4e9a-9f10-8d913e244dc9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

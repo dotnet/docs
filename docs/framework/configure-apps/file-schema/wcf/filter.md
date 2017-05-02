@@ -2,7 +2,7 @@
 title: "&lt;filter&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -63,6 +63,6 @@ None.
 
 ## See also
 
-[System.ServiceModel.Routing.Configuration.FilterElement](assetId:///System.ServiceModel.Routing.Configuration.FilterElement?qualifyHint=False&amp;autoUpgrade=True)
-<xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>
-<xref:System.ServiceModel.Routing.Configuration.FilterType>
+<xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=fullName>    
+<xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A?displayProperty=fullName>   
+<xref:System.ServiceModel.Routing.Configuration.FilterType?displayProperty=fullName>   

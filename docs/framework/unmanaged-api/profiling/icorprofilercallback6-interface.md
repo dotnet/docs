@@ -9,15 +9,18 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback6"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
   - "corprof.idl"
-apitype: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: edc420b7-96d1-4dec-ace0-36d907f644bc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

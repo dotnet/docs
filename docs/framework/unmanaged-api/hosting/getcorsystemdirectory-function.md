@@ -9,12 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "GetCORSystemDirectory"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "mscoreei.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "GetCORSystemDirectory"
 dev_langs: 
@@ -22,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetCORSystemDirectory function [.NET Framework hosting]"
 ms.assetid: 3dcd16a7-dafc-4ca8-b5cd-20ffb37db91d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

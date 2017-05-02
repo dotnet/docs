@@ -41,7 +41,7 @@ The `using static` directive applies to any type that has static members, even i
 
 The `using static` directive was introduced in C# 6.
 
-## Reamrks
+## Remarks
  
 Ordinarily, when you call a static member, you provide the type name along with the member name. Repeatedly entering the same type name to invoke members of the type can result in verbose, obscure code. For example, the following definition of a `Circle` class references a number of members of the @System.Math class.
   

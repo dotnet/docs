@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedMethod.GetToken"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetToken"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedMethod::GetToken method [.NET Framework debugging]"
   - "GetToken method, ISymUnmanagedMethod interface [.NET Framework debugging]"
 ms.assetid: 4effbe95-c36e-4a45-8b2a-ee21339415fb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

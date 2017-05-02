@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRStrongName.StrongNameGetPublicKey"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameGetPublicKey"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "StrongNameGetPublicKey method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameGetPublicKey method [.NET Framework hosting]"
 ms.assetid: a31dcaa9-a404-4c1d-8cc7-081827c52935
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

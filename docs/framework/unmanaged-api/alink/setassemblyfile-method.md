@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IALink.SetAssemblyFile"
-apilocation: 
+api_location: 
   - "alink.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "SetAssemblyFile"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "SetAssemblyFile method"
 ms.assetid: 3a912787-f139-43ca-a841-8bbda3107ecf
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

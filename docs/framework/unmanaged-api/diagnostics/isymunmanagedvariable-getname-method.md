@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedVariable.GetName"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetName"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetName method, ISymUnmanagedVariable interface [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetName method [.NET Framework debugging]"
 ms.assetid: eedf1ef0-9d4a-4847-a201-4e99572dfe5e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

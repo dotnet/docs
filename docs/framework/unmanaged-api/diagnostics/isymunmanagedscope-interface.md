@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedScope"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedScope interface [.NET Framework debugging]"
 ms.assetid: 3db7a220-cfe9-4810-8ca8-a094bb8e0f5b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

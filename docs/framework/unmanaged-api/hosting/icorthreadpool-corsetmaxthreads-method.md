@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorThreadpool.CorSetMaxThreads"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorSetMaxThreads"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorThreadpool::CorSetMaxThreads method [.NET Framework hosting]"
   - "CorSetMaxThreads method [.NET Framework hosting]"
 ms.assetid: 4a846238-df4e-4060-ba3b-5173f6a51e85
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -31,7 +31,7 @@ translation.priority.mt:
 
 Used to construct strings.  An interpolated string looks like a template string that contains *interpolated expressions*.  An interpolated string returns a string that replaces the interpolated expressions that it contains with their string representations.  
 
-The arguments of an interpolated string are easier to understand than a [composite format string](../../../standard/base-types/composite-format.md#composite-format-string).  For example, the interpolated string  
+The arguments of an interpolated string are easier to understand than a [composite format string](../../../standard/base-types/composite-formatting.md#composite-format-string).  For example, the interpolated string  
   
 ```csharp  
 Console.WriteLine($"Name = {name}, hours = {hours:hh}"); 

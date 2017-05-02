@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "StrongNameKeyGenEx"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "StrongNameKeyGenEx"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameKeyGenEx function [.NET Framework strong naming]"
 ms.assetid: 36bd10b9-9857-45f3-8d3b-0da091d6169e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

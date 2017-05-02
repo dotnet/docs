@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostSecurityManager.ImpersonateLoggedOnUser"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSecurityManager::ImpersonateLoggedOnUser"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ImpersonateLoggedOnUser method [.NET Framework hosting]"
   - "IHostSecurityManager::ImpersonateLoggedOnUser method [.NET Framework hosting]"
 ms.assetid: acc49ba0-f1d9-45ad-871f-9d053a89dcbe
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -2,7 +2,7 @@
 title: "How to: Migrate AJAX-Enabled ASP.NET Web Services to WCF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -189,7 +189,7 @@ namespace ASPHello
   
 -   If ASMX Web Service is added first, invoking method on [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service causes exception in <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> because the Web Service style definition of the order in the proxy takes precedence.  
   
- There are significant differences in behavior between the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> and the ASP.NET AJAX <!--zz <xref:System.Web.Script.Serialization.JavascriptSerializer>--> `JavascriptSerializer`. For example, the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> represents a dictionary as an array of key/value pairs, whereas the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavascriptSerializer> represents a dictionary as actual JSON objects. So the following is the dictionary represented in ASP.NET AJAX.  
+ There are significant differences in behavior between the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> and the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>. For example, the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> represents a dictionary as an array of key/value pairs, whereas the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer> represents a dictionary as actual JSON objects. So the following is the dictionary represented in ASP.NET AJAX.  
   
 ```  
 Dictionary<string, int> d = new Dictionary<string, int>();  
@@ -201,9 +201,9 @@ d.Add(“two”, 2);
   
 -   [{"Key":"one","Value":1},{"Key":"two","Value":2}] by the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>  
   
--   {“one”:1,”two”:2} by the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavascriptSerializer>  
+-   {“one”:1,”two”:2} by the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>  
   
- The <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> is more powerful in the sense that it can handle dictionaries where the key type is not string, while the <xref:System.Web.Script.Serialization.JavascriptSerializer> cannot. But the latter is more JSON-friendly.  
+ The <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> is more powerful in the sense that it can handle dictionaries where the key type is not string, while the <xref:System.Web.Script.Serialization.JavaScriptSerializer> cannot. But the latter is more JSON-friendly.  
   
  The significant differences between these serializers are summarized in the following table.  
   

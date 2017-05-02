@@ -1881,9 +1881,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call this method to determine the gauge element, if any, which is located at a specified point. This method is often used in some mouse-related event, for example, [M:System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseDown(System.Windows.Forms.MouseEventArgs](assetId:///M:System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseDown(System.Windows.Forms.MouseEventArgs?qualifyHint=False&autoUpgrade=True), to determine which gauge element the end-user clicked. The X and Y mouse coordinates obtained from the event parameters are then used for the X and Y parameter values of this method call.  
+ Call this method to determine the gauge element, if any, which is located at a specified point. This method is often used in some mouse-related event, for example, <xref:System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseDown%2A>, to determine which gauge element the end-user clicked. The X and Y mouse coordinates obtained from the event parameters are then used for the X and Y parameter values of this method call.   
   
- The properties of the returned [HitTestResult](assetId:///T:System.Windows.Forms.DataVisualization.Charting.HitTestResult?qualifyHint=False&autoUpgrade=True) object can then be used to determine which chart element was clicked; the [HitTestResult](assetId:///T:System.Windows.Forms.DataVisualization.Charting.HitTestResult?qualifyHint=False&autoUpgrade=True) object also provides an instance of the actual object selected, if any.  
+ The properties of the returned <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult> object can then be used to determine which chart element was clicked; the <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult> object also provides an instance of the actual object selected, if any.  
   
  ]]></format>
         </remarks>
@@ -3096,9 +3096,9 @@
 ## Remarks  
  Call this method to determine the chart element, if any, that is located at a specified point.  
   
- This method is often used in some mouse-related event—for example, [M:System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseDown(System.Windows.Forms.MouseEventArgs](assetId:///M:System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseDown(System.Windows.Forms.MouseEventArgs?qualifyHint=False&autoUpgrade=True)—to determine which chart element the end-user clicked. The X and Y mouse coordinates obtained from the event parameters are then used for the `x` and `y` parameter values of this method call.  
+ This method is often used in some mouse-related event—for example, <xref:System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseDown%2A>—to determine which chart element the end-user clicked. The X and Y mouse coordinates obtained from the event parameters are then used for the `x` and `y` parameter values of this method call.   
   
- The properties of the [HitTestResult](assetId:///T:System.Windows.Forms.DataVisualization.Charting.HitTestResult?qualifyHint=False&autoUpgrade=True) object that is returned can then be used to determine which chart element was clicked; the [HitTestResult](assetId:///T:System.Windows.Forms.DataVisualization.Charting.HitTestResult?qualifyHint=False&autoUpgrade=True) object also provides an instance of the actual object selected, if any.  
+ The properties of the <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult> object that is returned can then be used to determine which chart element was clicked; the <xref:System.Windows.Forms.DataVisualization.Charting.HitTestResult> object also provides an instance of the actual object selected, if any.  
   
  ]]></format>
         </remarks>

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "FunctionEnter2"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "FunctionEnter2"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "FunctionEnter2 function [.NET Framework profiling]"
 ms.assetid: ce7a21f9-0ca3-4b92-bc4b-bb803cae3f51
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

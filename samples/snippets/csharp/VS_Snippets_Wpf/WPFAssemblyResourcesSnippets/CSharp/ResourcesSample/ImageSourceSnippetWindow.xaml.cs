@@ -1,9 +1,9 @@
 //<SnippetSetImageSourceCODEBEHIND1>
-using System; // Uri
-using System.Windows.Media.Imaging; // BitmapImage
+using System;
+using System.Windows.Media.Imaging;
 //</SnippetSetImageSourceCODEBEHIND1>
-using System.IO; // Stream
-using System.Windows.Resources; // StreamResourceInfo
+using System.IO;
+using System.Windows.Resources;
 using System.Windows;
 using System.Windows.Controls;
 

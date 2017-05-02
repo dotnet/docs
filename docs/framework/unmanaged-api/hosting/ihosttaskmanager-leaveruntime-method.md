@@ -2,18 +2,19 @@
 title: "IHostTaskManager::LeaveRuntime Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostTaskManager.LeaveRuntime"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostTaskManager::LeaveRuntime"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostTaskManager::LeaveRuntime method [.NET Framework hosting]"
   - "LeaveRuntime method [.NET Framework hosting]"
 ms.assetid: 43689cc4-e48e-46e5-a22d-bafd768b8759
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

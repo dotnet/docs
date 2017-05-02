@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides an interface for access to a master page from a content page at design time, if provided by a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].</summary>
+    <summary>Provides an interface for access to a master page from a content page at design time, if provided by a design host, such as Visual Studio 2005.</summary>
     <remarks>To be added.</remarks>
     <block subset="none" type="overrides">
       <para>A control designer, or a class implementing the <see cref="T:System.Web.UI.Design.IContentResolutionService" /> interface, should not assume the availability of the <see cref="T:System.Web.UI.Design.IContentResolutionService" /> from a design host and, if it is not available, should fail gracefully.</para>

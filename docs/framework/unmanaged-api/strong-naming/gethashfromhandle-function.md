@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "GetHashFromHandle"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "GetHashFromHandle"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetHashFromHandle function [.NET Framework strong naming]"
 ms.assetid: 9e00337f-b307-4602-9bc3-965a8dbf02cd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

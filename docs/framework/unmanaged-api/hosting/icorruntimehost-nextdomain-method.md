@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorRuntimeHost.NextDomain"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::NextDomain"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorRuntimeHost::NextDomain method [.NET Framework hosting]"
   - "NextDomain method [.NET Framework hosting]"
 ms.assetid: fe07a05b-f6d6-44b5-ab01-b9a6eb15c350
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,13 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "GetAssemblyIdentityFromFile"
-apilocation: 
+api_location: 
   - "fusion.dll"
   - "clr.dll"
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetAssemblyIdentityFromFile"
 dev_langs: 
@@ -23,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetAssemblyIdentityFromFile function [.NET Framework fusion]"
 ms.assetid: 2c32da53-76c7-4048-84d0-d05207333004
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

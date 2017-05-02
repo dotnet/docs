@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo4.GetObjectSize2"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::GetObjectSize2"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetObjectSize2 method, ICorProfilerInfo4 interface [.NET Framework profiling]"
   - "ICorProfilerInfo4::GetObjectSize2 method [.NET Framework profiling]"
 ms.assetid: 4a3e43ed-3ee3-4395-ab14-f78b903be13e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

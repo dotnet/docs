@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "_CorValidateImage"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "_CorValidateImage"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "_CorValidateImage function [.NET Framework hosting]"
 ms.assetid: 0117e080-05f9-4772-885d-e1847230947c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

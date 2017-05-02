@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback2.GarbageCollectionStarted"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback2::GarbageCollectionStarted"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GarbageCollectionStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback2::GarbageCollectionStarted method [.NET Framework profiling]"
 ms.assetid: 44eef087-f21f-4fe2-b481-f8a0ee022e7d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

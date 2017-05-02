@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugClass2.SetJMCStatus"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugClass2::SetJMCStatus"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugClass2::SetJMCStatus method [.NET Framework debugging]"
   - "SetJMCStatus method, ICorDebugClass2 interface [.NET Framework debugging]"
 ms.assetid: 077e6c7f-f857-480c-bebb-76ee1de4e8fc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

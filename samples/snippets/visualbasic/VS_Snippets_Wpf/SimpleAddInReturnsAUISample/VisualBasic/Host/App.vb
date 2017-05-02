@@ -1,5 +1,5 @@
-﻿Imports System ' STAThreadAttribute, LoaderOptimization
-Imports System.Windows ' Application
+﻿Imports System
+Imports System.Windows
 
 Namespace Host
 	''' <summary>

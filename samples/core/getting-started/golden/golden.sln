@@ -1,21 +1,13 @@
-<<<<<<< HEAD
-﻿
-=======
-
->>>>>>> Update for new VS code extension behavior.
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-<<<<<<< HEAD
-=======
 Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "library", "library\library.csproj", "{A546901F-B028-4FBB-82AE-E9B623687A0C}"
 EndProject
 Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "test-library", "test-library\test-library.csproj", "{C424DA1F-BFC4-4991-B1D4-A0D6D7BBD60F}"
 EndProject
 Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "app", "app\app.csproj", "{C3496C68-A579-4717-8ED6-95A17FF0192E}"
 EndProject
->>>>>>> Update for new VS code extension behavior.
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,8 +20,6 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-<<<<<<< HEAD
-=======
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A546901F-B028-4FBB-82AE-E9B623687A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A546901F-B028-4FBB-82AE-E9B623687A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
@@ -68,5 +58,4 @@ Global
 		{C3496C68-A579-4717-8ED6-95A17FF0192E}.Release|x86.ActiveCfg = Release|x86
 		{C3496C68-A579-4717-8ED6-95A17FF0192E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
->>>>>>> Update for new VS code extension behavior.
 EndGlobal

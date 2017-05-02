@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.ExceptionThrown"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionThrown"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ExceptionThrown method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionThrown method [.NET Framework profiling]"
 ms.assetid: f1a23f3b-ac21-4905-8abf-8ea59f15af53
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

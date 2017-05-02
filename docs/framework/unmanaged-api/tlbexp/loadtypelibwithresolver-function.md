@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "LoadTypeLibWithResolver"
-apilocation: 
+api_location: 
   - "TlbRef.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "LoadTypeLibWithResolver"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "LoadTypeLibWithResolver function [.NET Framework]"
 ms.assetid: 7123a89b-eb9b-463a-a552-a081e33b0a3a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

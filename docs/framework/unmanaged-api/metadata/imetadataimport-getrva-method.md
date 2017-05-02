@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.GetRVA"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetRVA"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetRVA method [.NET Framework metadata]"
   - "IMetaDataImport::GetRVA method [.NET Framework metadata]"
 ms.assetid: ea422217-988b-4acd-b2db-c55357938275
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

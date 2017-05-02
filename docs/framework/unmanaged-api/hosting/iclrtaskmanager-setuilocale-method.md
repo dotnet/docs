@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRTaskManager.SetUILocale"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRTaskManager::SetUILocale"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRTaskManager::SetUILocale method [.NET Framework hosting]"
   - "SetUILocale method, ICLRTaskManager interface [.NET Framework hosting]"
 ms.assetid: 03adaa9a-2beb-49b3-b2c4-6b4fc3f10715
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

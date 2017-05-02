@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IAssemblyName.SetProperty"
-apilocation: 
+api_location: 
   - "fusion.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyName::SetProperty"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IAssemblyName::SetProperty method [.NET Framework fusion]"
   - "SetProperty method [.NET Framework fusion]"
 ms.assetid: 496c3add-f60b-4073-943f-d1bcf33330cb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

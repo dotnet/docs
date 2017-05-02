@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IALink.PreCloseAssembly"
-apilocation: 
+api_location: 
   - "alink.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "PreCloseAssembly"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "PreCloseAssembly method"
 ms.assetid: 6d23ac54-15ea-4027-a172-9ebef43e8f56
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataAssemblyImport.CloseEnum"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::CloseEnum"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CloseEnum method, IMetaDataAssemblyImport interface [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::CloseEnum method [.NET Framework metadata]"
 ms.assetid: c9df4087-12b3-46d9-b075-9067dd7805df
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

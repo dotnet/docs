@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugFunction.CreateBreakpoint"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugFunction::CreateBreakpoint"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugFunction::CreateBreakpoint method [.NET Framework debugging]"
   - "CreateBreakpoint method, ICorDebugFunction interface [.NET Framework debugging]"
 ms.assetid: ffd0f708-0d21-4fae-a395-63b6c45828fa
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

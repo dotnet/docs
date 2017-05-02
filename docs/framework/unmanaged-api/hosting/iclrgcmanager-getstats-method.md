@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRGCManager.GetStats"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRGCManager::GetStats"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetStats method, ICLRGCManager interface [.NET Framework hosting]"
   - "ICLRGCManager::GetStats method [.NET Framework hosting]"
 ms.assetid: ce259d1d-cd81-4490-a7a1-0d0ea0804872
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

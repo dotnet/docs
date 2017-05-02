@@ -2,18 +2,19 @@
 title: "ICorDebugNativeFrame2::GetStackParameterSize Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugNativeFrame2.GetStackParameterSize Method"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame2::GetStackParameterSize"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugNativeFrame2::GetStackParameterSize method [.NET Framework debugging]"
   - "GetStackParameterSize method [.NET Framework debugging]"
 ms.assetid: f6a449c8-a941-43ba-9a90-c98b29ae3c36
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

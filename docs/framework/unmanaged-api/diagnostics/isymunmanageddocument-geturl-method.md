@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedDocument.GetURL"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetURL"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetURL method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::GetURL method [.NET Framework debugging]"
 ms.assetid: 60600178-c2b5-4cab-b3a5-f0f61acebaf1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

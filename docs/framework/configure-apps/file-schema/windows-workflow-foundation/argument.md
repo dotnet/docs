@@ -2,7 +2,7 @@
 title: "&lt;argument&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -71,7 +71,7 @@ A configuration element that represents an argument associated with an activity 
 ```  
   
 ## See Also  
- [System.ServiceModel.Activities.Tracking.Configuration.ArgumentElement](assetId:///System.ServiceModel.Activities.Tracking.Configuration.ArgumentElement?qualifyHint=False&amp;autoUpgrade=True)   
- [System.Activities.Tracking.ActivityStateQuery](assetId:///System.Activities.Tracking.ActivityStateQuery?qualifyHint=False&amp;autoUpgrade=True)   
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.ArgumentElement?displayProperty=fullName>       
+ <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=fullName>       
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

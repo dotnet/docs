@@ -9,15 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "StrongNameFreeBuffer"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "mscorsn.dll"
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "StrongNameFreeBuffer"
 dev_langs: 
@@ -25,6 +26,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameFreeBuffer function [.NET Framework strong naming]"
 ms.assetid: eda21ecf-4734-4f92-aaba-9f34884385db
+topic_type: 
+  - "apiref"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

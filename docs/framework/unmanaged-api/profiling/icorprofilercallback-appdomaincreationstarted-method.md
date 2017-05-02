@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.AppDomainCreationStarted"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::AppDomainCreationStarted"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "AppDomainCreationStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::AppDomainCreationStarted method [.NET Framework profiling]"
 ms.assetid: b2a8240b-07fe-4859-bb2b-7d3adbfa0a9f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

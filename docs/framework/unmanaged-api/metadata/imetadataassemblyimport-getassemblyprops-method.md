@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataAssemblyImport.GetAssemblyProps"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::GetAssemblyProps"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetAssemblyProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::GetAssemblyProps method [.NET Framework metadata]"
 ms.assetid: 0eaa4aa9-9441-444a-920c-e4b2a2db899e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

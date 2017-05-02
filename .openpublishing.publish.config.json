@@ -20,7 +20,7 @@
       "build_source_folder": ".",
       "build_output_subfolder": ".",
       "locale": "en-us",
-      "monikers": ["netframework-4.5.1","netframework-4.5.2","netframework-4.5","netframework-4.6","netframework-4.6.1","netframework-4.6.2","netframework-4.7","netcore-1.0","netcore-1.1.0","netstandard-1.0","netstandard-1.1","netstandard-1.2","netstandard-1.3","netstandard-1.4","netstandard-1.5","netstandard-1.6","xamarinios-10.8","xamarinandroid-7.1","xamarinmac-3.0"],
+      "monikers": ["netframework-4.5.1","netframework-4.5.2","netframework-4.5","netframework-4.6","netframework-4.6.1","netframework-4.6.2","netframework-4.7","netcore-1.0","netcore-1.1","netstandard-1.0","netstandard-1.1","netstandard-1.2","netstandard-1.3","netstandard-1.4","netstandard-1.5","netstandard-1.6","xamarinios-10.8","xamarinandroid-7.1","xamarinmac-3.0"],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -40,7 +40,16 @@
         "docset_postbuild": [
           "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
         ]
-      }
+      },
+      "pdf_build_exclude_tocs": [
+        "api/_splitted/System.Windows.Forms/toc.json",
+        "api/_splitted/System.Web.UI.WebControls/toc.json",
+        "api/_splitted/System.Windows.Controls/toc.json",
+        "api/_splitted/System.Windows/toc.json",
+        "api/_splitted/Microsoft.VisualBasic.Compatibility.VB6/toc.json",
+        "api/_splitted/System.Windows.Media.Animation/toc.json",
+        "api/_splitted/System/toc.json"
+      ]
     }
   ],
   "notification_subscribers": [],
@@ -58,7 +67,7 @@
   "dependent_packages": [
     {
       "id": "Microsoft.DocAsCode.ECMA2Yaml",
-      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2",
       "path_to_root": "_dependentPackages/ECMA2Yaml",
       "target_framework": "net45",
       "version": "latest"
@@ -72,7 +81,7 @@
     },
     {
       "id": "SplitToc",
-      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2",
       "path_to_root": "_dependentPackages/splitToc",
       "target_framework": "net45",
       "version": "latest"

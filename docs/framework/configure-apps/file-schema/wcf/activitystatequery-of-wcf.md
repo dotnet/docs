@@ -2,7 +2,7 @@
 title: "&lt;activityStateQuery&gt; of WCF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -76,7 +76,7 @@ Represents a query that is used to track life cycle changes of the activities th
 ```  
   
 ## See Also  
- [System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement](assetId:///System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement?qualifyHint=False&amp;autoUpgrade=True)   
- [System.Activities.Tracking.ActivityStateQuery](assetId:///System.Activities.Tracking.ActivityStateQuery?qualifyHint=False&amp;autoUpgrade=True)   
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement>    
+ <xref:System.Activities.Tracking.ActivityStateQuery>     
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

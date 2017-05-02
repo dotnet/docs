@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.ResolveTypeRef"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::ResolveTypeRef"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ResolveTypeRef method [.NET Framework metadata]"
   - "IMetaDataImport::ResolveTypeRef method [.NET Framework metadata]"
 ms.assetid: 556bccfb-61bc-4761-b1d5-de4b1c18a38f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

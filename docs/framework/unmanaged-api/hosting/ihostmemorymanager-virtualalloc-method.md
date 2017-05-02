@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostMemoryManager.VirtualAlloc"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMemoryManager::VirtualAlloc"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "VirtualAlloc method [.NET Framework hosting]"
   - "IHostMemoryManager::VirtualAlloc method [.NET Framework hosting]"
 ms.assetid: 4dff3646-a050-4bd9-ac31-fe307e8637ec
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

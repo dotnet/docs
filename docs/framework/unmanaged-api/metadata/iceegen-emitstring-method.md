@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICeeGen.EmitString"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICeeGen::EmitString"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EmitString method [.NET Framework metadata]"
   - "ICeeGen::EmitString method [.NET Framework metadata]"
 ms.assetid: ad2710a7-edb8-4493-8619-3fce235e3334
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

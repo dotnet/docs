@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugManagedCallback.StepComplete"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::StepComplete"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "StepComplete method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::StepComplete method [.NET Framework debugging]"
 ms.assetid: 5e1f2c47-81df-4530-826d-96489cd68719
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -406,7 +406,7 @@
   
  A <xref:System.Text.RegularExpressions.Regex> object is immutable, which means that it can be used only for the match pattern that you define when you create it. However, it can be used any number of times without being recompiled.  
   
- The `matchTimeout` parameter specifies how long a pattern-matching method should try to find a match before it times out. If no match is found in that time interval, the pattern-matching method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is created. The instance pattern-matching methods that observe the `matchTimeout`time-out interval include the following:  
+ The `matchTimeout` parameter specifies how long a pattern-matching method should try to find a match before it times out. If no match is found in that time interval, the pattern-matching method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is created. The instance pattern-matching methods that observe the `matchTimeout` time-out interval include the following:  
   
 -   <xref:System.Text.RegularExpressions.Regex.IsMatch%2A>  
   

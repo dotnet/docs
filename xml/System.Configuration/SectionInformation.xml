@@ -443,7 +443,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Configuration.SectionInformation.InheritInChildApplications%2A> property represents the `inheritInChildApplications`attribute of a `location` element in a configuration file.  
+ The <xref:System.Configuration.SectionInformation.InheritInChildApplications%2A> property represents the `inheritInChildApplications` attribute of a `location` element in a configuration file.  
   
  Set <xref:System.Configuration.SectionInformation.InheritInChildApplications%2A> to `false` to prevent settings that are specific to a certain location (such as the root directory of a Web site) from being inherited by applications that exist in subdirectories.  
   

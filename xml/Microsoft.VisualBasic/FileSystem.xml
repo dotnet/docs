@@ -499,7 +499,7 @@
    
   
 ## Examples  
- This example uses the `FileClose`function to close a file opened for `Input`.  
+ This example uses the `FileClose` function to close a file opened for `Input`.  
   
  [!code-vb[VbVbalrCatRef#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#69)]  
   
@@ -643,7 +643,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -706,7 +706,7 @@
   
 -   By default, if the variable being read into is a string, `FileGet` reads a two-byte descriptor that contains the string length and then reads the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause of the `FileOpen` function must be at least two bytes greater than the actual length of the string. Visual Basic 6.0 and earlier versions support fixed-length strings; when put to a file, the length descriptor is not written. If you want to read a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
--   If the variable being read into is an array, you can choose whether to read a descriptor for the size and dimension of the array. To write the descriptor, set the `ArrayIsDynamic`parameter to `True`. When reading the array, you have to match the way the array was written. If it was written with the descriptor, you have to read the descriptor. If the descriptor is not used. Then the size and bounds of the array passed into `FileGet` determine what to read.  
+-   If the variable being read into is an array, you can choose whether to read a descriptor for the size and dimension of the array. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When reading the array, you have to match the way the array was written. If it was written with the descriptor, you have to read the descriptor. If the descriptor is not used. Then the size and bounds of the array passed into `FileGet` determine what to read.  
   
      The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` parameter in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -720,7 +720,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -783,7 +783,7 @@
   
 -   By default, if the variable being read into is a string, `FileGet` reads a two-byte descriptor that contains the string length and then reads the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause of the `FileOpen` function must be at least two bytes greater than the actual length of the string. Visual Basic 6.0 and earlier versions support fixed-length strings; when put to a file, the length descriptor is not written. If you want to read a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
--   If the variable being read into is an array, you can choose whether to read a descriptor for the size and dimension of the array. To write the descriptor, set the `ArrayIsDynamic`parameter to `True`. When reading the array, you have to match the way the array was written. If it was written with the descriptor, you have to read the descriptor. If the descriptor is not used, the size and bounds of the array passed into `FileGet` determine what to read.  
+-   If the variable being read into is an array, you can choose whether to read a descriptor for the size and dimension of the array. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When reading the array, you have to match the way the array was written. If it was written with the descriptor, you have to read the descriptor. If the descriptor is not used, the size and bounds of the array passed into `FileGet` determine what to read.  
   
      The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` parameter in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -797,7 +797,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -874,7 +874,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -951,7 +951,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1028,7 +1028,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1091,7 +1091,7 @@
   
 -   By default, if the variable being read into is a string, `FileGet` reads a two-byte descriptor that contains the string length and then reads the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause of the `FileOpen` function must be at least two bytes greater than the actual length of the string. Visual Basic 6.0 and earlier versions support fixed-length strings; when put to a file, the length descriptor is not written. If you want to read a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
--   If the variable being read into is an array, you can choose whether to read a descriptor for the size and dimension of the array. To write the descriptor, set the `ArrayIsDynamic`parameter to `True`. When reading the array, you have to match the way the array was written. If it was written with the descriptor, you have to read the descriptor. If the descriptor is not used, the size and bounds of the array passed into `FileGet` determine what to read.  
+-   If the variable being read into is an array, you can choose whether to read a descriptor for the size and dimension of the array. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When reading the array, you have to match the way the array was written. If it was written with the descriptor, you have to read the descriptor. If the descriptor is not used, the size and bounds of the array passed into `FileGet` determine what to read.  
   
      The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` parameter in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -1105,7 +1105,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1182,7 +1182,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1259,7 +1259,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1336,7 +1336,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1413,7 +1413,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1650,7 +1650,7 @@
 ## Binary Mode  
  For files opened in `Binary` mode, all of the `Random` rules apply, with these exceptions:  
   
--   The `RecordLength` clause in the `FileOpen` function has no effect. `FileGetObject`reads all variables from disk contiguously, that is, with no padding between records.  
+-   The `RecordLength` clause in the `FileOpen` function has no effect. `FileGetObject` reads all variables from disk contiguously, that is, with no padding between records.  
   
 -   For any array other than an array in a structure, `FileGetObject` reads only the data. No descriptor is read.  
   
@@ -1824,7 +1824,7 @@
 ## Random Mode  
  For files opened in `Random` mode, the following rules apply:  
   
--   If the length of the data being written is less than the length specified in the `RecordLength` clause of the `FileOpen` function, `FilePut` writes subsequent records on record-length boundaries. The space between the end of one record and the start of the next record is padded with the existing contents of the file buffer. Because the amount of padding data cannot be determined with any certainty, it is generally a good idea to have the record length match the length of the data being written. If the length of the data being written is greater than the length specified in the `RecordLength` clause of the `FileOpen`function, an exception will be thrown.  
+-   If the length of the data being written is less than the length specified in the `RecordLength` clause of the `FileOpen` function, `FilePut` writes subsequent records on record-length boundaries. The space between the end of one record and the start of the next record is padded with the existing contents of the file buffer. Because the amount of padding data cannot be determined with any certainty, it is generally a good idea to have the record length match the length of the data being written. If the length of the data being written is greater than the length specified in the `RecordLength` clause of the `FileOpen` function, an exception will be thrown.  
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
@@ -2571,7 +2571,7 @@
 ## Random Mode  
  For files opened in `Random` mode, the following rules apply:  
   
--   If the length of the data being written is less than the length specified in the `RecordLength` clause of the `FileOpen` function, `FilePut` writes subsequent records on record-length boundaries. The space between the end of one record and the start of the next record is padded with the existing contents of the file buffer. Because the amount of padding data cannot be determined with any certainty, it is generally a good idea to have the record length match the length of the data being written. If the length of the data being written is greater than the length specified in the `RecordLength` clause of the `FileOpen`function, an exception will be thrown.  
+-   If the length of the data being written is less than the length specified in the `RecordLength` clause of the `FileOpen` function, `FilePut` writes subsequent records on record-length boundaries. The space between the end of one record and the start of the next record is padded with the existing contents of the file buffer. Because the amount of padding data cannot be determined with any certainty, it is generally a good idea to have the record length match the length of the data being written. If the length of the data being written is greater than the length specified in the `RecordLength` clause of the `FileOpen` function, an exception will be thrown.  
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   

@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `MuxLogger`generally functions as follows:  
+ The `MuxLogger` generally functions as follows:  
   
 -   The `MuxLogger` is registered at the beginning of the build manager’s Begin build.  
   
@@ -52,7 +52,7 @@
   
 2.  The `MuxLogger` looks up the success state of the project-finished event for the submission ID and logs a build-finished event to the logger.  
   
-3.  The `MuxLogger`cleans up the event source.  
+3.  The `MuxLogger` cleans up the event source.  
   
      Note that the unregister comes from a thread other than the logging thread and a synchronization issue could occur if unregister is called while events are being logged.  
   

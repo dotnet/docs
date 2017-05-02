@@ -570,7 +570,7 @@
 ## Remarks  
   
 > [!NOTE]
->  For examples and comprehensive usage information about this and other `String`constructor overloads, see the <xref:System.String.%23ctor%2A> constructor summary.  
+>  For examples and comprehensive usage information about this and other `String` constructor overloads, see the <xref:System.String.%23ctor%2A> constructor summary.  
   
  ]]></format>
         </remarks>
@@ -2970,7 +2970,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method concatenates `arg0` and `arg1`by calling the parameterless `ToString` method of `arg0` and `arg1`; it does not add any delimiters.  
+ The method concatenates `arg0` and `arg1` by calling the parameterless `ToString` method of `arg0` and `arg1`; it does not add any delimiters.  
   
  <xref:System.String?displayProperty=fullName> is used in place of any null argument.  
   
@@ -3714,7 +3714,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.String.EndsWith%2A> method compares the `value` parameter to the substring at the end of this string and returns a value that indicates whether they are equal. To be equal, `value` must be a reference to this same string, must be the empty string (""), or must match the end of this string. The type of comparison performed by the <xref:System.String.EndsWith%2A> method depends on the value of the `comparisonType`parameter.  
+ The <xref:System.String.EndsWith%2A> method compares the `value` parameter to the substring at the end of this string and returns a value that indicates whether they are equal. To be equal, `value` must be a reference to this same string, must be the empty string (""), or must match the end of this string. The type of comparison performed by the <xref:System.String.EndsWith%2A> method depends on the value of the `comparisonType` parameter.  
   
    
   
@@ -11118,7 +11118,7 @@ index[,alignment][ :formatString] }
   
 |Exception|Condition|Thrown by|  
 |---------------|---------------|---------------|  
-|<xref:System.ArgumentException>|`value` specifies an array that contains an invalid Unicode character.<br /><br /> -or-<br /><br /> `value`or `value` + `startIndex`specifies an address that is less than 64K.<br /><br /> -or-<br /><br /> A new <xref:System.String> instance could not be initialized from the `value` byte array because `value` does not use the default code page encoding.|All constructors with pointers.|  
+|<xref:System.ArgumentException>|`value` specifies an array that contains an invalid Unicode character.<br /><br /> -or-<br /><br /> `value` or `value` + `startIndex` specifies an address that is less than 64K.<br /><br /> -or-<br /><br /> A new <xref:System.String> instance could not be initialized from the `value` byte array because `value` does not use the default code page encoding.|All constructors with pointers.|  
 |<xref:System.ArgumentNullException>|`value` is null.|<xref:System.String.%23ctor%28System.SByte%2A%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%2CSystem.Text.Encoding%29>|  
 |<xref:System.ArgumentOutOfRangeException>|The current process does not have read access to all the addressed characters.<br /><br /> -or-<br /><br /> `startIndex` or `length` is less than zero, `value` + `startIndex` cause a pointer overflow, or the current process does not have read access to all the addressed characters.<br /><br /> -or-<br /><br /> The length of the new string is too large to allocate.|All constructors with pointers.|  
 |<xref:System.AccessViolationException>|`value`, or `value` + `startIndex` + `length` – 1, specifies an invalid address.|<xref:System.String.%23ctor%28System.SByte%2A%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%2CSystem.Text.Encoding%29>|  

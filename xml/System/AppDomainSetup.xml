@@ -890,7 +890,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method provides a way to replace the configuration information of an application that creates a new application domain. The configuration file information in `value`replaces the configuration file information for the application. For example, when the Example.exe application creates a new application domain, it can replace the configuration information originally obtained from the Example.exe.config file.  
+ The <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method provides a way to replace the configuration information of an application that creates a new application domain. The configuration file information in `value` replaces the configuration file information for the application. For example, when the Example.exe application creates a new application domain, it can replace the configuration information originally obtained from the Example.exe.config file.  
   
 > [!IMPORTANT]
 >  Some consumers of configuration file information do not use the information stored by the <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method. The runtime does not enforce this. To ensure that all configuration file information is replaced in a new application domain, use the <xref:System.AppDomainSetup.ConfigurationFile%2A> property to specify a configuration file. The <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method does affect assembly binding.  

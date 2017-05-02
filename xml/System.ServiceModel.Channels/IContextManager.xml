@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For channels that use <xref:System.ServiceModel.WSHttpContextBinding> with the <xref:System.ServiceModel.SessionMode> value set, the context cannot be retrieved on the client using <xref:System.ServiceModel.Channels.IContextManager> because a new channel that establishes a session is created each time <xref:System.ServiceModel.Channels.IChannelFactory.GetProperty%2A> is called to enforce <xref:System.ServiceModel.SessionMode> semantics on a channel. This means that even though the context is properly propagated back to the client in this case, it cannot be retrieved using <xref:System.ServiceModel.Channels.IContextManager>. You can still retrieve it using <xref:System.ServiceModel.Channels.ContextMessageProperty> as shown in the following code.  
+ For channels that use <xref:System.ServiceModel.WSHttpContextBinding> with the <xref:System.ServiceModel.SessionMode.NotAllowed> value set, the context cannot be retrieved on the client using <xref:System.ServiceModel.Channels.IContextManager> because a new channel that establishes a session is created each time <xref:System.ServiceModel.Channels.IChannelFactory.GetProperty%2A> is called to enforce <xref:System.ServiceModel.SessionMode.NotAllowed> semantics on a channel. This means that even though the context is properly propagated back to the client in this case, it cannot be retrieved using <xref:System.ServiceModel.Channels.IContextManager>. You can still retrieve it using <xref:System.ServiceModel.Channels.ContextMessageProperty> as shown in the following code.  
   
 ```csharp  
 using (new OperationContextScope((IContextChannel)channel))  

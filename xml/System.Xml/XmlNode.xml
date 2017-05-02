@@ -785,12 +785,9 @@ d.</elem>
         <summary>Gets or sets the markup representing only the child nodes of this node.</summary>
         <value>The markup of the child nodes of this node.  
   
- <block subset="none" type="note">  
-<para>  
- <see langword="InnerXml" /> does not return default attributes.  
+ <block subset="none" type="note"><para><see langword="InnerXml" /> does not return default attributes.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1132,136 +1129,71 @@ d.</elem>
   
  The name returned is dependent on the <see cref="P:System.Xml.XmlNode.NodeType" /> of the node:  
   
- <list type="table">  
-<listheader>  
-<term> Type  
+ <list type="table"><listheader><term> Type  
   
- </term>  
-<description> Name  
+ </term><description> Name  
   
- </description>  
-</listheader>  
-<item>  
-<term> Attribute  
+ </description></listheader><item><term> Attribute  
   
- </term>  
-<description> The local name of the attribute.  
+ </term><description> The local name of the attribute.  
   
- </description>  
-</item>  
-<item>  
-<term> CDATA  
+ </description></item><item><term> CDATA  
   
- </term>  
-<description> #cdata-section  
+ </term><description> #cdata-section  
   
- </description>  
-</item>  
-<item>  
-<term> Comment  
+ </description></item><item><term> Comment  
   
- </term>  
-<description> #comment  
+ </term><description> #comment  
   
- </description>  
-</item>  
-<item>  
-<term> Document  
+ </description></item><item><term> Document  
   
- </term>  
-<description> #document  
+ </term><description> #document  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentFragment  
+ </description></item><item><term> DocumentFragment  
   
- </term>  
-<description> #document-fragment  
+ </term><description> #document-fragment  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentType  
+ </description></item><item><term> DocumentType  
   
- </term>  
-<description> The document type name.  
+ </term><description> The document type name.  
   
- </description>  
-</item>  
-<item>  
-<term> Element  
+ </description></item><item><term> Element  
   
- </term>  
-<description> The local name of the element.  
+ </term><description> The local name of the element.  
   
- </description>  
-</item>  
-<item>  
-<term> Entity  
+ </description></item><item><term> Entity  
   
- </term>  
-<description> The name of the entity.  
+ </term><description> The name of the entity.  
   
- </description>  
-</item>  
-<item>  
-<term> EntityReference  
+ </description></item><item><term> EntityReference  
   
- </term>  
-<description> The name of the entity referenced.  
+ </term><description> The name of the entity referenced.  
   
- </description>  
-</item>  
-<item>  
-<term> Notation  
+ </description></item><item><term> Notation  
   
- </term>  
-<description> The notation name.  
+ </term><description> The notation name.  
   
- </description>  
-</item>  
-<item>  
-<term> ProcessingInstruction  
+ </description></item><item><term> ProcessingInstruction  
   
- </term>  
-<description> The target of the processing instruction.  
+ </term><description> The target of the processing instruction.  
   
- </description>  
-</item>  
-<item>  
-<term> Text  
+ </description></item><item><term> Text  
   
- </term>  
-<description> #text  
+ </term><description> #text  
   
- </description>  
-</item>  
-<item>  
-<term> Whitespace  
+ </description></item><item><term> Whitespace  
   
- </term>  
-<description> #whitespace  
+ </term><description> #whitespace  
   
- </description>  
-</item>  
-<item>  
-<term> SignificantWhitespace  
+ </description></item><item><term> SignificantWhitespace  
   
- </term>  
-<description> #significant-whitespace  
+ </term><description> #significant-whitespace  
   
- </description>  
-</item>  
-<item>  
-<term> XmlDeclaration  
+ </description></item><item><term> XmlDeclaration  
   
- </term>  
-<description> #xml-declaration  
+ </term><description> #xml-declaration  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1297,136 +1229,71 @@ d.</elem>
         <summary>Gets the qualified name of the node, when overridden in a derived class.</summary>
         <value>The qualified name of the node. The name returned is dependent on the <see cref="P:System.Xml.XmlNode.NodeType" /> of the node:  
   
- <list type="table">  
-<listheader>  
-<term> Type  
+ <list type="table"><listheader><term> Type  
   
- </term>  
-<description> Name  
+ </term><description> Name  
   
- </description>  
-</listheader>  
-<item>  
-<term> Attribute  
+ </description></listheader><item><term> Attribute  
   
- </term>  
-<description> The qualified name of the attribute.  
+ </term><description> The qualified name of the attribute.  
   
- </description>  
-</item>  
-<item>  
-<term> CDATA  
+ </description></item><item><term> CDATA  
   
- </term>  
-<description> #cdata-section  
+ </term><description> #cdata-section  
   
- </description>  
-</item>  
-<item>  
-<term> Comment  
+ </description></item><item><term> Comment  
   
- </term>  
-<description> #comment  
+ </term><description> #comment  
   
- </description>  
-</item>  
-<item>  
-<term> Document  
+ </description></item><item><term> Document  
   
- </term>  
-<description> #document  
+ </term><description> #document  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentFragment  
+ </description></item><item><term> DocumentFragment  
   
- </term>  
-<description> #document-fragment  
+ </term><description> #document-fragment  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentType  
+ </description></item><item><term> DocumentType  
   
- </term>  
-<description> The document type name.  
+ </term><description> The document type name.  
   
- </description>  
-</item>  
-<item>  
-<term> Element  
+ </description></item><item><term> Element  
   
- </term>  
-<description> The qualified name of the element.  
+ </term><description> The qualified name of the element.  
   
- </description>  
-</item>  
-<item>  
-<term> Entity  
+ </description></item><item><term> Entity  
   
- </term>  
-<description> The name of the entity.  
+ </term><description> The name of the entity.  
   
- </description>  
-</item>  
-<item>  
-<term> EntityReference  
+ </description></item><item><term> EntityReference  
   
- </term>  
-<description> The name of the entity referenced.  
+ </term><description> The name of the entity referenced.  
   
- </description>  
-</item>  
-<item>  
-<term> Notation  
+ </description></item><item><term> Notation  
   
- </term>  
-<description> The notation name.  
+ </term><description> The notation name.  
   
- </description>  
-</item>  
-<item>  
-<term> ProcessingInstruction  
+ </description></item><item><term> ProcessingInstruction  
   
- </term>  
-<description> The target of the processing instruction.  
+ </term><description> The target of the processing instruction.  
   
- </description>  
-</item>  
-<item>  
-<term> Text  
+ </description></item><item><term> Text  
   
- </term>  
-<description> #text  
+ </term><description> #text  
   
- </description>  
-</item>  
-<item>  
-<term> Whitespace  
+ </description></item><item><term> Whitespace  
   
- </term>  
-<description> #whitespace  
+ </term><description> #whitespace  
   
- </description>  
-</item>  
-<item>  
-<term> SignificantWhitespace  
+ </description></item><item><term> SignificantWhitespace  
   
- </term>  
-<description> #significant-whitespace  
+ </term><description> #significant-whitespace  
   
- </description>  
-</item>  
-<item>  
-<term> XmlDeclaration  
+ </description></item><item><term> XmlDeclaration  
   
- </term>  
-<description> #xml-declaration  
+ </term><description> #xml-declaration  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1597,12 +1464,9 @@ d.</elem>
         <summary>Gets the markup containing this node and all its child nodes.</summary>
         <value>The markup containing this node and all its child nodes.  
   
- <block subset="none" type="note">  
-<para>  
- <see langword="OuterXml" /> does not return default attributes.  
+ <block subset="none" type="note"><para><see langword="OuterXml" /> does not return default attributes.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1688,80 +1552,43 @@ d.</elem>
         <summary>Gets the parent of this node (for nodes that can have parents).</summary>
         <value>The <see langword="XmlNode" /> that is the parent of the current node. If a node has just been created and not yet added to the tree, or if it has been removed from the tree, the parent is <see langword="null" />. For all other nodes, the value returned depends on the <see cref="P:System.Xml.XmlNode.NodeType" /> of the node. The following table describes the possible return values for the <see langword="ParentNode" /> property.  
   
- <list type="table">  
-<listheader>  
-<term> NodeType  
+ <list type="table"><listheader><term> NodeType  
   
- </term>  
-<description> Return Value of ParentNode  
+ </term><description> Return Value of ParentNode  
   
- </description>  
-</listheader>  
-<item>  
-<term> Attribute, Document, DocumentFragment, Entity, Notation  
+ </description></listheader><item><term> Attribute, Document, DocumentFragment, Entity, Notation  
   
- </term>  
-<description> Returns <see langword="null" />; these nodes do not have parents.  
+ </term><description> Returns <see langword="null" />; these nodes do not have parents.  
   
- </description>  
-</item>  
-<item>  
-<term> CDATA  
+ </description></item><item><term> CDATA  
   
- </term>  
-<description> Returns the element or entity reference containing the CDATA section.  
+ </term><description> Returns the element or entity reference containing the CDATA section.  
   
- </description>  
-</item>  
-<item>  
-<term> Comment  
+ </description></item><item><term> Comment  
   
- </term>  
-<description> Returns the element, entity reference, document type, or document containing the comment.  
+ </term><description> Returns the element, entity reference, document type, or document containing the comment.  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentType  
+ </description></item><item><term> DocumentType  
   
- </term>  
-<description> Returns the document node.  
+ </term><description> Returns the document node.  
   
- </description>  
-</item>  
-<item>  
-<term> Element  
+ </description></item><item><term> Element  
   
- </term>  
-<description> Returns the parent node of the element. If the element is the root node in the tree, the parent is the document node.  
+ </term><description> Returns the parent node of the element. If the element is the root node in the tree, the parent is the document node.  
   
- </description>  
-</item>  
-<item>  
-<term> EntityReference  
+ </description></item><item><term> EntityReference  
   
- </term>  
-<description> Returns the element, attribute, or entity reference containing the entity reference.  
+ </term><description> Returns the element, attribute, or entity reference containing the entity reference.  
   
- </description>  
-</item>  
-<item>  
-<term> ProcessingInstruction  
+ </description></item><item><term> ProcessingInstruction  
   
- </term>  
-<description> Returns the document, element, document type, or entity reference containing the processing instruction.  
+ </term><description> Returns the document, element, document type, or entity reference containing the processing instruction.  
   
- </description>  
-</item>  
-<item>  
-<term> Text  
+ </description></item><item><term> Text  
   
- </term>  
-<description> Returns the parent element, attribute, or entity reference containing the text node.  
+ </term><description> Returns the parent element, attribute, or entity reference containing the text node.  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1945,7 +1772,7 @@ d.</elem>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has faster performance than the <xref:System.Xml.XmlNode.PreviousSibling%2A> property but you can use it only to get a node of type <xref:System.Xml.XmlNodeType>. To get any other type of node that that precedes this node, use the <xref:System.Xml.XmlNode.PreviousSibling%2A> property.  
+ This property has faster performance than the <xref:System.Xml.XmlNode.PreviousSibling%2A> property but you can use it only to get a node of type <xref:System.Xml.XmlNodeType.Text>. To get any other type of node that that precedes this node, use the <xref:System.Xml.XmlNode.PreviousSibling%2A> property.  
   
  ]]></format>
         </remarks>
@@ -2505,32 +2332,19 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <returns>
           <see langword="true" /> if the feature is implemented in the specified version; otherwise, <see langword="false" />. The following table describes the combinations that return <see langword="true" />.  
   
- <list type="table">  
-<listheader>  
-<term> Feature  
+ <list type="table"><listheader><term> Feature  
   
- </term>  
-<description> Version  
+ </term><description> Version  
   
- </description>  
-</listheader>  
-<item>  
-<term> XML  
+ </description></listheader><item><term> XML  
   
- </term>  
-<description> 1.0  
+ </term><description> 1.0  
   
- </description>  
-</item>  
-<item>  
-<term> XML  
+ </description></item><item><term> XML  
   
- </term>  
-<description> 2.0  
+ </term><description> 2.0  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2625,136 +2439,71 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <summary>Gets or sets the value of the node.</summary>
         <value>The value returned depends on the <see cref="P:System.Xml.XmlNode.NodeType" /> of the node:  
   
- <list type="table">  
-<listheader>  
-<term> Type  
+ <list type="table"><listheader><term> Type  
   
- </term>  
-<description> Value  
+ </term><description> Value  
   
- </description>  
-</listheader>  
-<item>  
-<term> Attribute  
+ </description></listheader><item><term> Attribute  
   
- </term>  
-<description> The value of the attribute.  
+ </term><description> The value of the attribute.  
   
- </description>  
-</item>  
-<item>  
-<term> CDATASection  
+ </description></item><item><term> CDATASection  
   
- </term>  
-<description> The content of the CDATA Section.  
+ </term><description> The content of the CDATA Section.  
   
- </description>  
-</item>  
-<item>  
-<term> Comment  
+ </description></item><item><term> Comment  
   
- </term>  
-<description> The content of the comment.  
+ </term><description> The content of the comment.  
   
- </description>  
-</item>  
-<item>  
-<term> Document  
+ </description></item><item><term> Document  
   
- </term>  
-<description> <see langword="null" />.  
+ </term><description><see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentFragment  
+ </description></item><item><term> DocumentFragment  
   
- </term>  
-<description> <see langword="null" />.  
+ </term><description><see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentType  
+ </description></item><item><term> DocumentType  
   
- </term>  
-<description> <see langword="null" />.  
+ </term><description><see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Element  
+ </description></item><item><term> Element  
   
- </term>  
-<description> <see langword="null" />. You can use the <see cref="P:System.Xml.XmlElement.InnerText" /> or <see cref="P:System.Xml.XmlElement.InnerXml" /> properties to access the value of the element node.  
+ </term><description><see langword="null" />. You can use the <see cref="P:System.Xml.XmlElement.InnerText" /> or <see cref="P:System.Xml.XmlElement.InnerXml" /> properties to access the value of the element node.  
   
- </description>  
-</item>  
-<item>  
-<term> Entity  
+ </description></item><item><term> Entity  
   
- </term>  
-<description> <see langword="null" />.  
+ </term><description><see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> EntityReference  
+ </description></item><item><term> EntityReference  
   
- </term>  
-<description> <see langword="null" />.  
+ </term><description><see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Notation  
+ </description></item><item><term> Notation  
   
- </term>  
-<description> <see langword="null" />.  
+ </term><description><see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> ProcessingInstruction  
+ </description></item><item><term> ProcessingInstruction  
   
- </term>  
-<description> The entire content excluding the target.  
+ </term><description> The entire content excluding the target.  
   
- </description>  
-</item>  
-<item>  
-<term> Text  
+ </description></item><item><term> Text  
   
- </term>  
-<description> The content of the text node.  
+ </term><description> The content of the text node.  
   
- </description>  
-</item>  
-<item>  
-<term> SignificantWhitespace  
+ </description></item><item><term> SignificantWhitespace  
   
- </term>  
-<description> The white space characters. White space can consist of one or more space characters, carriage returns, line feeds, or tabs.  
+ </term><description> The white space characters. White space can consist of one or more space characters, carriage returns, line feeds, or tabs.  
   
- </description>  
-</item>  
-<item>  
-<term> Whitespace  
+ </description></item><item><term> Whitespace  
   
- </term>  
-<description> The white space characters. White space can consist of one or more space characters, carriage returns, line feeds, or tabs.  
+ </term><description> The white space characters. White space can consist of one or more space characters, carriage returns, line feeds, or tabs.  
   
- </description>  
-</item>  
-<item>  
-<term> XmlDeclaration  
+ </description></item><item><term> XmlDeclaration  
   
- </term>  
-<description> The content of the declaration (that is, everything between &lt;?xml and ?&gt;).  
+ </term><description> The content of the declaration (that is, everything between &lt;?xml and ?&gt;).  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

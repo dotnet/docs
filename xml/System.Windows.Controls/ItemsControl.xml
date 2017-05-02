@@ -665,7 +665,7 @@ ListBox that contains multiple types of objects
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ItemsControl>|  
+|Identifier field|<xref:System.Windows.Controls.ItemsControl.HasItemsProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -876,7 +876,7 @@ ListBox that contains multiple types of objects
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ItemsControl>|  
+|Identifier field|<xref:System.Windows.Controls.ItemsControl.IsTextSearchEnabledProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -1410,7 +1410,7 @@ ListBox that contains multiple types of objects
 ## Remarks  
  **Content Model:** This property may be used to add items to an <xref:System.Windows.Controls.ItemsControl>.  
   
- A common scenario is to use an <xref:System.Windows.Controls.ItemsControl> such as a <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, or <xref:System.Windows.Controls.TreeView> to display a data collection, or to bind an <xref:System.Windows.Controls.ItemsControl> to a collection object. To bind an <xref:System.Windows.Controls.ItemsControl> to a collection object, use the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property. Note that the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property supports <xref:System.Windows.Data.BindingMode> binding by default.  
+ A common scenario is to use an <xref:System.Windows.Controls.ItemsControl> such as a <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, or <xref:System.Windows.Controls.TreeView> to display a data collection, or to bind an <xref:System.Windows.Controls.ItemsControl> to a collection object. To bind an <xref:System.Windows.Controls.ItemsControl> to a collection object, use the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property. Note that the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property supports <xref:System.Windows.Data.BindingMode.OneWay> binding by default.  
   
  When the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is set, the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection is made read-only and fixed-size.  
   

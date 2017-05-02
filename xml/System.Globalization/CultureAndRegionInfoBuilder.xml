@@ -1008,33 +1008,7 @@
   
  This method also throws <see cref="T:System.InvalidOperationException" /> if the following properties are not defined:  
   
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CultureEnglishName" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CultureNativeName" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CurrencyEnglishName" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CurrencyNativeName" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ISOCurrencySymbol" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.Parent" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.RegionEnglishName" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.RegionNativeName" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterISOLanguageName" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterISORegionName" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterWindowsLanguageName" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterWindowsRegionName" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.TwoLetterISOLanguageName" />  
-  
- <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.TwoLetterISORegionName" /></exception>
+ <see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CultureEnglishName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CultureNativeName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CurrencyEnglishName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.CurrencyNativeName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ISOCurrencySymbol" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.Parent" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.RegionEnglishName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.RegionNativeName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterISOLanguageName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterISORegionName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterWindowsLanguageName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterWindowsRegionName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.TwoLetterISOLanguageName" /><see cref="P:System.Globalization.CultureAndRegionInfoBuilder.TwoLetterISORegionName" /></exception>
         <exception cref="T:System.ArgumentOutOfRangeException">A <see cref="T:System.Globalization.CultureAndRegionInfoBuilder" /> object property value exceeds its maximum length or value.</exception>
         <exception cref="T:System.UnauthorizedAccessException">User does not have administrative privileges.</exception>
       </Docs>

@@ -1409,12 +1409,12 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="name" /> parameter is an empty string ("").</exception>
         <exception cref="T:System.IO.FileLoadException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  A file that was found could not be loaded.</exception>
         <exception cref="T:System.IO.FileNotFoundException">
@@ -1885,14 +1885,13 @@
         <exception cref="T:System.IO.FileNotFoundException">
           <paramref name="name" /> requires a dependent assembly that could not be found.</exception>
         <exception cref="T:System.IO.FileLoadException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
-</para>  
-</block>  
-  
- <paramref name="name" /> requires a dependent assembly that was found but could not be loaded.  
+</para>
+          </block>
+          <paramref name="name" /> requires a dependent assembly that was found but could not be loaded.  
   
  -or-  
   
@@ -2419,12 +2418,12 @@
         <exception cref="T:System.IO.FileNotFoundException">
           <paramref name="assemblyRef" /> is not found.</exception>
         <exception cref="T:System.IO.FileLoadException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  A file that was found could not be loaded.</exception>
         <exception cref="T:System.BadImageFormatException">

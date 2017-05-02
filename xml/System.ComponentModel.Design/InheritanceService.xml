@@ -191,7 +191,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the component is not inherited, this method returns the value <xref:System.ComponentModel.InheritanceAttribute>. Otherwise, it returns the inheritance attribute for this component.  
+ If the component is not inherited, this method returns the value <xref:System.ComponentModel.InheritanceAttribute.NotInherited>. Otherwise, it returns the inheritance attribute for this component.  
   
  ]]></format>
         </remarks>

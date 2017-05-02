@@ -44,7 +44,7 @@
 ## Remarks  
  The formatted value represents the value as it is displayed in the cell's user interface. The formatted value may be different in absolute value and even data type than the actual value contained in the cell.  
   
- Implementations of this property typically return a value retrieved by calling the <xref:System.Windows.Forms.IDataGridViewEditingCell.GetEditingCellFormattedValue%2A> method and passing in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value.  
+ Implementations of this property typically return a value retrieved by calling the <xref:System.Windows.Forms.IDataGridViewEditingCell.GetEditingCellFormattedValue%2A> method and passing in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.Formatting> value.  
   
  ]]></format>
         </remarks>

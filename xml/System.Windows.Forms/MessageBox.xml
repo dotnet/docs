@@ -173,7 +173,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult.Yes>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
   
  [!code-cpp[MessageBox.Show Variations#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#1)]
  [!code-csharp[MessageBox.Show Variations#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#1)]
@@ -309,7 +309,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult.Yes>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
   
  [!code-cpp[MessageBox.Show Variations#5](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#5)]
  [!code-csharp[MessageBox.Show Variations#5](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#5)]
@@ -359,7 +359,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult.Yes>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
   
  [!code-cpp[MessageBox.Show Variations#3](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#3)]
  [!code-csharp[MessageBox.Show Variations#3](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#3)]
@@ -419,7 +419,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult.Yes>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
   
  [!code-cpp[MessageBox.Show Variations#4](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#4)]
  [!code-csharp[MessageBox.Show Variations#4](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#4)]
@@ -475,7 +475,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. The example uses the <xref:System.Windows.Forms.MessageBoxOptions> member of the <xref:System.Windows.Forms.MessageBoxOptions> enumeration to align the text to the right edge of the dialog box. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. The example uses the <xref:System.Windows.Forms.MessageBoxOptions.RightAlign> member of the <xref:System.Windows.Forms.MessageBoxOptions> enumeration to align the text to the right edge of the dialog box. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult.Yes>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
   
  [!code-cpp[MessageBox.Show Variations#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#2)]
  [!code-csharp[MessageBox.Show Variations#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#2)]
@@ -543,7 +543,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult.Yes>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
   
  [!code-cpp[MessageBox.Show Variations#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#2)]
  [!code-csharp[MessageBox.Show Variations#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#2)]
@@ -758,7 +758,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox>, offering the user the option to cancel the operation. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult.Yes>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
   
  [!code-cpp[MessageBox.Show Variations#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#2)]
  [!code-csharp[MessageBox.Show Variations#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#2)]
@@ -908,7 +908,7 @@
   
  When the user clicks the Help button, the help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
   
- Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
+ Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator.TableOfContents>, <xref:System.Windows.Forms.HelpNavigator.Find>, <xref:System.Windows.Forms.HelpNavigator.Index>, or <xref:System.Windows.Forms.HelpNavigator.Topic>.  
   
  The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
   
@@ -1070,9 +1070,9 @@
   
  When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
   
- Compiled help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
+ Compiled help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator.TableOfContents>, <xref:System.Windows.Forms.HelpNavigator.Find>, <xref:System.Windows.Forms.HelpNavigator.Index>, or <xref:System.Windows.Forms.HelpNavigator.Topic>.  
   
- You can use `param` to provide further refinement of the <xref:System.Windows.Forms.HelpNavigator> command. If the value specified in the `navigator` parameter is <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>, this value should be `null`. If the `navigator` parameter references <xref:System.Windows.Forms.HelpNavigator>, this value should reference an object that contains the numeric value of the topic to display.  
+ You can use `param` to provide further refinement of the <xref:System.Windows.Forms.HelpNavigator.Topic> command. If the value specified in the `navigator` parameter is <xref:System.Windows.Forms.HelpNavigator.TableOfContents>, <xref:System.Windows.Forms.HelpNavigator.Index>, or <xref:System.Windows.Forms.HelpNavigator.Find>, this value should be `null`. If the `navigator` parameter references <xref:System.Windows.Forms.HelpNavigator.Topic>, this value should reference an object that contains the numeric value of the topic to display.  
   
  The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
   
@@ -1234,7 +1234,7 @@
   
  When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
   
- Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
+ Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator.TableOfContents>, <xref:System.Windows.Forms.HelpNavigator.Find>, <xref:System.Windows.Forms.HelpNavigator.Index>, or <xref:System.Windows.Forms.HelpNavigator.Topic>.  
   
  The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
   
@@ -1319,9 +1319,9 @@
   
  When the user clicks the Help button, the Help file specified in the `helpFilePath` parameter is opened and the Help content identified by the `navigator` parameter is displayed. The form that owns the message box (or the active form) also receives the <xref:System.Windows.Forms.Control.HelpRequested> event.  
   
- Compiled help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
+ Compiled help files provide table of contents, index, search, and keyword links in pages. You can use the following values for `navigator`: <xref:System.Windows.Forms.HelpNavigator.TableOfContents>, <xref:System.Windows.Forms.HelpNavigator.Find>, <xref:System.Windows.Forms.HelpNavigator.Index>, or <xref:System.Windows.Forms.HelpNavigator.Topic>.  
   
- You can use `param` to provide further refinement of the <xref:System.Windows.Forms.HelpNavigator> command. If the value specified in the `navigator` parameter is <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>, this value should be `null`. If the `navigator` parameter references <xref:System.Windows.Forms.HelpNavigator>, this value should reference an object that contains the numeric value of the topic to display.  
+ You can use `param` to provide further refinement of the <xref:System.Windows.Forms.HelpNavigator.Topic> command. If the value specified in the `navigator` parameter is <xref:System.Windows.Forms.HelpNavigator.TableOfContents>, <xref:System.Windows.Forms.HelpNavigator.Index>, or <xref:System.Windows.Forms.HelpNavigator.Find>, this value should be `null`. If the `navigator` parameter references <xref:System.Windows.Forms.HelpNavigator.Topic>, this value should reference an object that contains the numeric value of the topic to display.  
   
  The `helpFilePath` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
   

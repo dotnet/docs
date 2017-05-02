@@ -242,7 +242,7 @@
 ## Remarks  
  <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A> must be called before <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext%2A> is called.  
   
- <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A> sets <xref:System.Windows.Controls.ItemContainerGenerator.Status%2A> to <xref:System.Windows.Controls.Primitives.GeneratorStatus>; when the <xref:System.IDisposable> is disposed, the status changes to <xref:System.Windows.Controls.Primitives.GeneratorStatus> or <xref:System.Windows.Controls.Primitives.GeneratorStatus>, as appropriate.  
+ <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A> sets <xref:System.Windows.Controls.ItemContainerGenerator.Status%2A> to <xref:System.Windows.Controls.Primitives.GeneratorStatus.GeneratingContainers>; when the <xref:System.IDisposable> is disposed, the status changes to <xref:System.Windows.Controls.Primitives.GeneratorStatus.ContainersGenerated> or <xref:System.Windows.Controls.Primitives.GeneratorStatus.Error>, as appropriate.  
   
  ]]></format>
         </remarks>

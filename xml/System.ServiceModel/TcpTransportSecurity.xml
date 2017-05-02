@@ -61,17 +61,17 @@
 ## Remarks  
  The return value can be one of the following enumeration members:  
   
--   <xref:System.ServiceModel.HttpClientCredentialType>  
+-   <xref:System.ServiceModel.HttpClientCredentialType.Basic>  
   
--   <xref:System.ServiceModel.HttpClientCredentialType>  
+-   <xref:System.ServiceModel.HttpClientCredentialType.Certificate>  
   
--   <xref:System.ServiceModel.HttpClientCredentialType>  
+-   <xref:System.ServiceModel.HttpClientCredentialType.Digest>  
   
--   <xref:System.ServiceModel.HttpClientCredentialType>  
+-   <xref:System.ServiceModel.HttpClientCredentialType.None>  
   
--   <xref:System.ServiceModel.HttpClientCredentialType>  
+-   <xref:System.ServiceModel.HttpClientCredentialType.Ntlm>  
   
--   <xref:System.ServiceModel.HttpClientCredentialType>  
+-   <xref:System.ServiceModel.HttpClientCredentialType.Windows>  
   
    
   

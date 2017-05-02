@@ -339,12 +339,10 @@
         <value>
           <see langword="true" /> if the associated <see cref="T:System.Configuration.ConfigurationSection" /> object will be saved even if it has not been modified; otherwise, <see langword="false" />. The default is <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  If the configuration file is saved (even if there are no modifications), ASP.NET restarts the application.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -675,7 +673,7 @@
 ## Remarks  
  The <xref:System.Configuration.SectionInformation.AllowOverride%2A> property gets or sets a value that indicates whether resources declared inside a `location` element can be overridden by child configuration files. The <xref:System.Configuration.SectionInformation.OverrideMode%2A> property gets or sets a value that specifies similar behavior, but does so for a specific configuration element or group, and uses one of the <xref:System.Configuration.OverrideMode> enumeration values. The <xref:System.Configuration.SectionInformation.OverrideMode%2A> property enables behavior to be inherited from a parent element.  
   
- You cannot programmatically set both the <xref:System.Configuration.SectionInformation.AllowOverride%2A> and <xref:System.Configuration.SectionInformation.OverrideMode%2A> property. Setting the <xref:System.Configuration.SectionInformation.AllowOverride%2A> property to `true` sets the <xref:System.Configuration.SectionInformation.OverrideMode%2A> property to <xref:System.Configuration.OverrideMode>. Setting the <xref:System.Configuration.SectionInformation.AllowOverride%2A> property to `false` sets the <xref:System.Configuration.SectionInformation.OverrideMode%2A> property to `false`.  
+ You cannot programmatically set both the <xref:System.Configuration.SectionInformation.AllowOverride%2A> and <xref:System.Configuration.SectionInformation.OverrideMode%2A> property. Setting the <xref:System.Configuration.SectionInformation.AllowOverride%2A> property to `true` sets the <xref:System.Configuration.SectionInformation.OverrideMode%2A> property to <xref:System.Configuration.OverrideMode.Inherit>. Setting the <xref:System.Configuration.SectionInformation.AllowOverride%2A> property to `false` sets the <xref:System.Configuration.SectionInformation.OverrideMode%2A> property to `false`.  
   
  ]]></format>
         </remarks>
@@ -701,7 +699,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Configuration.SectionInformation.OverrideModeDefault%2A> property of a configuration section can only be set to the <xref:System.Configuration.OverrideMode> or <xref:System.Configuration.OverrideMode> value of the <xref:System.Configuration.OverrideMode> enumeration. Setting the <xref:System.Configuration.SectionInformation.OverrideModeDefault%2A> property to <xref:System.Configuration.OverrideMode> is equivalent to setting the value to <xref:System.Configuration.OverrideMode>.  
+ The <xref:System.Configuration.SectionInformation.OverrideModeDefault%2A> property of a configuration section can only be set to the <xref:System.Configuration.OverrideMode.Allow> or <xref:System.Configuration.OverrideMode.Deny> value of the <xref:System.Configuration.OverrideMode> enumeration. Setting the <xref:System.Configuration.SectionInformation.OverrideModeDefault%2A> property to <xref:System.Configuration.OverrideMode.Inherit> is equivalent to setting the value to <xref:System.Configuration.OverrideMode.Allow>.  
   
  ]]></format>
         </remarks>
@@ -727,7 +725,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns either <xref:System.Configuration.OverrideMode> or <xref:System.Configuration.OverrideMode>.  
+ This property returns either <xref:System.Configuration.OverrideMode.Deny> or <xref:System.Configuration.OverrideMode.Allow>.  
   
  ]]></format>
         </remarks>

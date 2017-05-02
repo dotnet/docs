@@ -43,7 +43,7 @@
  [!code-csharp[XmlCachingResolver_ex#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlCachingResolver_ex/CS/XmlCachingResolver_ex.cs#1)]
  [!code-vb[XmlCachingResolver_ex#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlCachingResolver_ex/VB/XmlCachingResolver_ex.vb#1)]  
   
- The caching behavior of the `XmlCachingResolver` class is implemented in the `GetEntity` method. This is done by creating new <xref:System.Net.WebRequest> and <xref:System.Net.Cache.HttpRequestCachePolicy> objects. The <xref:System.Net.Cache.HttpRequestCachePolicy> object is created using the <xref:System.Net.Cache.HttpRequestCacheLevel> member of the <xref:System.Net.Cache.HttpRequestCacheLevel> enumeration.  
+ The caching behavior of the `XmlCachingResolver` class is implemented in the `GetEntity` method. This is done by creating new <xref:System.Net.WebRequest> and <xref:System.Net.Cache.HttpRequestCachePolicy> objects. The <xref:System.Net.Cache.HttpRequestCachePolicy> object is created using the <xref:System.Net.Cache.HttpRequestCacheLevel.Default> member of the <xref:System.Net.Cache.HttpRequestCacheLevel> enumeration.  
   
  The <xref:System.Net.WebRequest.CachePolicy%2A> property of the <xref:System.Net.WebRequest> object is set with the <xref:System.Net.Cache.HttpRequestCachePolicy> object.  
   

@@ -254,7 +254,7 @@
 ## Remarks  
  <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImage> with the specified <xref:System.Windows.Xps.Packaging.XpsImageType> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
   
- For example, `imageType` can be <xref:System.Windows.Xps.Packaging.XpsImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType>. to add  a JPEG or PNG <xref:System.Windows.Xps.Packaging.XpsImage>, respectively.  
+ For example, `imageType` can be <xref:System.Windows.Xps.Packaging.XpsImageType.JpegImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType.PngImageType>. to add  a JPEG or PNG <xref:System.Windows.Xps.Packaging.XpsImage>, respectively.  
   
    
   
@@ -363,7 +363,7 @@
 ## Remarks  
  <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImageType> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
   
- For example, `imageType` can be <xref:System.Windows.Xps.Packaging.XpsImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType>. to add  a JPEG or PNG thumbnail image, respectively.  
+ For example, `imageType` can be <xref:System.Windows.Xps.Packaging.XpsImageType.JpegImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType.PngImageType>. to add  a JPEG or PNG thumbnail image, respectively.  
   
  ]]></format>
         </remarks>

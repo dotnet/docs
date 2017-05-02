@@ -415,7 +415,7 @@
   
  An ordinal comparison is a binary comparison of the Unicode scalar value of corresponding <xref:System.Char> objects in each string. The<xref:System.String> class includes a number of methods that can perform an ordinal comparison, including the following:  
   
--   Any overload of the <xref:System.String.Compare%2A>, <xref:System.String.Equals%2A>, <xref:System.String.StartsWith%2A>,  <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>,and <xref:System.String.LastIndexOf%2A> methods that includes a <xref:System.StringComparison> parameter. The method performs an ordinal comparison if you supply a value of <xref:System.StringComparison?displayProperty=fullName> or <xref:System.StringComparison> for this parameter.  
+-   Any overload of the <xref:System.String.Compare%2A>, <xref:System.String.Equals%2A>, <xref:System.String.StartsWith%2A>,  <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>,and <xref:System.String.LastIndexOf%2A> methods that includes a <xref:System.StringComparison> parameter. The method performs an ordinal comparison if you supply a value of <xref:System.StringComparison?displayProperty=fullName> or <xref:System.StringComparison.OrdinalIgnoreCase> for this parameter.  
   
 -   The overloads of the <xref:System.String.CompareOrdinal%2A> method.  
   
@@ -1087,40 +1087,23 @@
         <summary>Compares two specified <see cref="T:System.String" /> objects and returns an integer that indicates their relative position in the sort order.</summary>
         <returns>A 32-bit signed integer that indicates the lexical relationship between the two comparands.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> <paramref name="strA" /> precedes <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> precedes <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <paramref name="strA" /> occurs in the same position as <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> occurs in the same position as <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> <paramref name="strA" /> follows <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> follows <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1210,40 +1193,23 @@
         <summary>Compares two specified <see cref="T:System.String" /> objects, ignoring or honoring their case, and returns an integer that indicates their relative position in the sort order.</summary>
         <returns>A 32-bit signed integer that indicates the lexical relationship between the two comparands.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> <paramref name="strA" /> precedes <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> precedes <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <paramref name="strA" /> occurs in the same position as <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> occurs in the same position as <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> <paramref name="strA" /> follows <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> follows <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1333,40 +1299,23 @@
         <summary>Compares two specified <see cref="T:System.String" /> objects using the specified rules, and returns an integer that indicates their relative position in the sort order.</summary>
         <returns>A 32-bit signed integer that indicates the lexical relationship between the two comparands.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> <paramref name="strA" /> precedes <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> precedes <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <paramref name="strA" /> is in the same position as <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> is in the same position as <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> <paramref name="strA" /> follows <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> follows <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1441,40 +1390,23 @@
         <summary>Compares two specified <see cref="T:System.String" /> objects, ignoring or honoring their case, and using culture-specific information to influence the comparison, and returns an integer that indicates their relative position in the sort order.</summary>
         <returns>A 32-bit signed integer that indicates the lexical relationship between the two comparands.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> <paramref name="strA" /> precedes <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> precedes <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <paramref name="strA" /> occurs in the same position as <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> occurs in the same position as <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> <paramref name="strA" /> follows <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> follows <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1553,40 +1485,23 @@
         <summary>Compares two specified <see cref="T:System.String" /> objects using the specified comparison options and culture-specific information to influence the comparison, and returns an integer that indicates the relationship of the two strings to each other in the sort order.</summary>
         <returns>A 32-bit signed integer that indicates the lexical relationship between <paramref name="strA" /> and <paramref name="strB" />, as shown in the following table  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> <paramref name="strA" /> precedes <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> precedes <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <paramref name="strA" /> occurs in the same position as <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> occurs in the same position as <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> <paramref name="strA" /> follows <paramref name="strB" /> in the sort order.  
+ </term><description><paramref name="strA" /> follows <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1662,40 +1577,23 @@
         <summary>Compares substrings of two specified <see cref="T:System.String" /> objects and returns an integer that indicates their relative position in the sort order.</summary>
         <returns>A 32-bit signed integer indicating the lexical relationship between the two comparands.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The substring in <paramref name="strA" /> precedes the substring in <paramref name="strB" /> in the sort order.  
+ </term><description> The substring in <paramref name="strA" /> precedes the substring in <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> The substrings occur in the same position in the sort order, or <paramref name="length" /> is zero.  
+ </term><description> The substrings occur in the same position in the sort order, or <paramref name="length" /> is zero.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> The substring in <paramref name="strA" /> follows the substring in <paramref name="strB" /> in the sort order.  
+ </term><description> The substring in <paramref name="strA" /> follows the substring in <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1793,40 +1691,23 @@
         <summary>Compares substrings of two specified <see cref="T:System.String" /> objects, ignoring or honoring their case, and returns an integer that indicates their relative position in the sort order.</summary>
         <returns>A 32-bit signed integer that indicates the lexical relationship between the two comparands.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The substring in <paramref name="strA" /> precedes the substring in <paramref name="strB" /> in the sort order.  
+ </term><description> The substring in <paramref name="strA" /> precedes the substring in <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> The substrings occur in the same position in the sort order, or <paramref name="length" /> is zero.  
+ </term><description> The substrings occur in the same position in the sort order, or <paramref name="length" /> is zero.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> The substring in <paramref name="strA" /> follows the substring in <paramref name="strB" /> in the sort order.  
+ </term><description> The substring in <paramref name="strA" /> follows the substring in <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1935,40 +1816,23 @@
         <summary>Compares substrings of two specified <see cref="T:System.String" /> objects using the specified rules, and returns an integer that indicates their relative position in the sort order.</summary>
         <returns>A 32-bit signed integer that indicates the lexical relationship between the two comparands.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The substring in <paramref name="strA" /> precedes the substring in <paramref name="strB" /> in the sort order.  
+ </term><description> The substring in <paramref name="strA" /> precedes the substring in <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> The substrings occur in the same position in the sort order, or the <paramref name="length" /> parameter is zero.  
+ </term><description> The substrings occur in the same position in the sort order, or the <paramref name="length" /> parameter is zero.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> The substring in <paramref name="strA" /> follllows the substring in <paramref name="strB" /> in the sort order.  
+ </term><description> The substring in <paramref name="strA" /> follllows the substring in <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2065,40 +1929,23 @@
         <summary>Compares substrings of two specified <see cref="T:System.String" /> objects, ignoring or honoring their case and using culture-specific information to influence the comparison, and returns an integer that indicates their relative position in the sort order.</summary>
         <returns>An integer that indicates the lexical relationship between the two comparands.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The substring in <paramref name="strA" /> precedes the substring in <paramref name="strB" /> in the sort order.  
+ </term><description> The substring in <paramref name="strA" /> precedes the substring in <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> The substrings occur in the same position in the sort order, or <paramref name="length" /> is zero.  
+ </term><description> The substrings occur in the same position in the sort order, or <paramref name="length" /> is zero.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> The substring in <paramref name="strA" /> follows the substring in <paramref name="strB" /> in the sort order.  
+ </term><description> The substring in <paramref name="strA" /> follows the substring in <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2196,40 +2043,23 @@
         <summary>Compares substrings of two specified <see cref="T:System.String" /> objects using the specified comparison options and culture-specific information to influence the comparison, and returns an integer that indicates the relationship of the two substrings to each other in the sort order.</summary>
         <returns>An integer that indicates the lexical relationship between the two substrings, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The substring in <paramref name="strA" /> precedes the substring in <paramref name="strB" /> in the sort order.  
+ </term><description> The substring in <paramref name="strA" /> precedes the substring in <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> The substrings occur in the same position in the sort order, or <paramref name="length" /> is zero.  
+ </term><description> The substrings occur in the same position in the sort order, or <paramref name="length" /> is zero.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> The substring in <paramref name="strA" /> follows the substring in <paramref name="strB" /> in the sort order.  
+ </term><description> The substring in <paramref name="strA" /> follows the substring in <paramref name="strB" /> in the sort order.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2316,40 +2146,23 @@
         <summary>Compares two specified <see cref="T:System.String" /> objects by evaluating the numeric values of the corresponding <see cref="T:System.Char" /> objects in each string.</summary>
         <returns>An integer that indicates the lexical relationship between the two comparands.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> <paramref name="strA" /> is less than <paramref name="strB" />.  
+ </term><description><paramref name="strA" /> is less than <paramref name="strB" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <paramref name="strA" /> and <paramref name="strB" /> are equal.  
+ </term><description><paramref name="strA" /> and <paramref name="strB" /> are equal.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> <paramref name="strA" /> is greater than <paramref name="strB" />.  
+ </term><description><paramref name="strA" /> is greater than <paramref name="strB" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2416,40 +2229,23 @@
         <summary>Compares substrings of two specified <see cref="T:System.String" /> objects by evaluating the numeric values of the corresponding <see cref="T:System.Char" /> objects in each substring.</summary>
         <returns>A 32-bit signed integer that indicates the lexical relationship between the two comparands.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The substring in <paramref name="strA" /> is less than the substring in <paramref name="strB" />.  
+ </term><description> The substring in <paramref name="strA" /> is less than the substring in <paramref name="strB" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> The substrings are equal, or <paramref name="length" /> is zero.  
+ </term><description> The substrings are equal, or <paramref name="length" /> is zero.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> The substring in <paramref name="strA" /> is greater than the substring in <paramref name="strB" />.  
+ </term><description> The substring in <paramref name="strA" /> is greater than the substring in <paramref name="strB" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2510,44 +2306,27 @@
         <summary>Compares this instance with a specified <see cref="T:System.Object" /> and indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified <see cref="T:System.Object" />.</summary>
         <returns>A 32-bit signed integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the <paramref name="value" /> parameter.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance precedes <paramref name="value" />.  
+ </term><description> This instance precedes <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance has the same position in the sort order as <paramref name="value" />.  
+ </term><description> This instance has the same position in the sort order as <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance follows <paramref name="value" />.  
+ </term><description> This instance follows <paramref name="value" />.  
   
  -or-  
   
  <paramref name="value" /> is <see langword="null" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2616,44 +2395,27 @@
         <summary>Compares this instance with a specified <see cref="T:System.String" /> object and indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified string.</summary>
         <returns>A 32-bit signed integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the <paramref name="strB" /> parameter.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance precedes <paramref name="strB" />.  
+ </term><description> This instance precedes <paramref name="strB" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance has the same position in the sort order as <paramref name="strB" />.  
+ </term><description> This instance has the same position in the sort order as <paramref name="strB" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance follows <paramref name="strB" />.  
+ </term><description> This instance follows <paramref name="strB" />.  
   
  -or-  
   
  <paramref name="strB" /> is <see langword="null" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2915,7 +2677,7 @@
 ## Remarks  
  The method concatenates each object in `values`; it does not add any delimiters.  
   
- An <xref:System.String> string is used in place of any null object in the array.  
+ An <xref:System.String.Empty> string is used in place of any null object in the array.  
   
    
   
@@ -3038,7 +2800,7 @@
 >   
 >  , to concatenate strings.  
   
- An <xref:System.String> string is used in place of any null argument.  
+ An <xref:System.String.Empty> string is used in place of any null argument.  
   
    
   
@@ -3160,7 +2922,7 @@
 >   
 >  , to concatenate strings.  
   
- An <xref:System.String> string is used in place of any null argument.  
+ An <xref:System.String.Empty> string is used in place of any null argument.  
   
    
   
@@ -3293,7 +3055,7 @@
 >   
 >  , to concatenate strings.  
   
- An <xref:System.String> string is used in place of any null object in the array.  
+ An <xref:System.String.Empty> string is used in place of any null object in the array.  
   
    
   
@@ -3353,7 +3115,7 @@
 ## Remarks  
  The method concatenates each object in `values`; it does not add any delimiters.  
   
- An <xref:System.String> string is used in place of any null argument.  
+ An <xref:System.String.Empty> string is used in place of any null argument.  
   
  <xref:System.String.Concat%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> is a convenience method that lets you concatenate each element in an <xref:System.Collections.Generic.IEnumerable%601> collection without first converting the elements to strings. It is particularly useful with Language-Integrated Query (LINQ) query expressions, as the example illustrates. The string representation of each object in the <xref:System.Collections.Generic.IEnumerable%601> collection is derived by calling that object's `ToString` method.  
   
@@ -5631,7 +5393,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Performance Considerations  
  If you are trying to reduce the total amount of memory your application allocates, keep in mind that interning a string has two unwanted side effects. First, the memory allocated for interned <xref:System.String> objects is not likely be released until the common language runtime (CLR) terminates. The reason is that the CLR's reference to the interned <xref:System.String> object can persist after your application, or even your application domain, terminates. Second, to intern a string, you must first create the string. The memory used by the <xref:System.String> object must still be allocated, even though the memory will eventually be garbage collected.  
   
- The .NET Framework version 2.0 introduces the <xref:System.Runtime.CompilerServices.CompilationRelaxations?displayProperty=fullName>enumeration member. The <xref:System.Runtime.CompilerServices.CompilationRelaxations> member marks an assembly as not requiring string-literal interning. You can apply <xref:System.Runtime.CompilerServices.CompilationRelaxations> to an assembly using the <xref:System.Runtime.CompilerServices.CompilationRelaxationsAttribute> attribute. Also, when you use the [Ngen.exe (Native Image Generator)](~/docs/framework/tools/ngen-exe-native-image-generator.md) to compile an assembly in advance of run time, strings are not interned across modules.  
+ The .NET Framework version 2.0 introduces the <xref:System.Runtime.CompilerServices.CompilationRelaxations?displayProperty=fullName>enumeration member. The <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> member marks an assembly as not requiring string-literal interning. You can apply <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> to an assembly using the <xref:System.Runtime.CompilerServices.CompilationRelaxationsAttribute> attribute. Also, when you use the [Ngen.exe (Native Image Generator)](~/docs/framework/tools/ngen-exe-native-image-generator.md) to compile an assembly in advance of run time, strings are not interned across modules.  
   
    
   
@@ -5854,7 +5616,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.String.IsNullOrEmpty%2A> is a convenience method that enables you to simultaneously test whether a <xref:System.String> is `null` or its value is <xref:System.String>. It is equivalent to the following code:  
+ <xref:System.String.IsNullOrEmpty%2A> is a convenience method that enables you to simultaneously test whether a <xref:System.String> is `null` or its value is <xref:System.String.Empty>. It is equivalent to the following code:  
   
  [!code-cpp[System.String.IsNullOrEmpty#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.isnullorempty/cpp/isnullorempty1.cpp#1)]
  [!code-csharp[System.String.IsNullOrEmpty#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.isnullorempty/cs/isnullorempty1.cs#1)]
@@ -7922,7 +7684,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  If this instance does not contain any of the characters in `separator`, the returned array consists of a single element that contains this instance.  
   
- Each element of `separator` defines a separate delimiter character. If two delimiters are adjacent, or a delimiter is found at the beginning or end of this instance, the corresponding element in the returned array contains <xref:System.String>. Here are some examples:  
+ Each element of `separator` defines a separate delimiter character. If two delimiters are adjacent, or a delimiter is found at the beginning or end of this instance, the corresponding element in the returned array contains <xref:System.String.Empty>. Here are some examples:  
   
 |String value|Separator|Returned array|  
 |------------------|---------------|--------------------|  
@@ -8182,9 +7944,9 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  If this instance does not contain any of the characters in `separator`, the returned array consists of a single element that contains this instance.  
   
- If the `options` parameter is <xref:System.StringSplitOptions> and the length of this instance is zero, the method returns an empty array.  
+ If the `options` parameter is <xref:System.StringSplitOptions.RemoveEmptyEntries> and the length of this instance is zero, the method returns an empty array.  
   
- Each element of `separator` defines a separate delimiter that consists of a single character. If the `options` argument is <xref:System.StringSplitOptions>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String?displayProperty=fullName>. For example, if `separator` includes  two elements, "-" and "_", the value of the string instance is "-_aa-\_", and the value of   the `options` argument is <xref:System.StringSplitOptions>, the method returns a string array with the following five elements:  
+ Each element of `separator` defines a separate delimiter that consists of a single character. If the `options` argument is <xref:System.StringSplitOptions.None>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String?displayProperty=fullName>. For example, if `separator` includes  two elements, "-" and "_", the value of the string instance is "-_aa-\_", and the value of   the `options` argument is <xref:System.StringSplitOptions.None>, the method returns a string array with the following five elements:  
   
 1.  <xref:System.String.Empty?displayProperty=fullName>, which represents the empty string that precedes the "-" character at index 0.  
   
@@ -8284,9 +8046,9 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  If this instance does not contain any of the strings in `separator`, the returned array consists of a single element that contains this instance.  
   
- If the `options` parameter is <xref:System.StringSplitOptions> and the length of this instance is zero, the method returns an empty array.  
+ If the `options` parameter is <xref:System.StringSplitOptions.RemoveEmptyEntries> and the length of this instance is zero, the method returns an empty array.  
   
- Each element of `separator` defines a separate delimiter that consists of one or more characters. If the `options` argument is <xref:System.StringSplitOptions>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String?displayProperty=fullName>. For example, if `separator` includes  two elements, "-" and "_", the value of the string instance is "-_aa-\_", and the value of   the `options` argument is <xref:System.StringSplitOptions>, the method returns a sting array with the following five elements:  
+ Each element of `separator` defines a separate delimiter that consists of one or more characters. If the `options` argument is <xref:System.StringSplitOptions.None>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String?displayProperty=fullName>. For example, if `separator` includes  two elements, "-" and "_", the value of the string instance is "-_aa-\_", and the value of   the `options` argument is <xref:System.StringSplitOptions.None>, the method returns a sting array with the following five elements:  
   
 1.  <xref:System.String.Empty?displayProperty=fullName>, which represents the empty string that precedes the "-" substring at index 0.  
   
@@ -8404,9 +8166,9 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-csharp[System.String.Split#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/split3.cs#3)]
  [!code-vb[System.String.Split#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/split3.vb#3)]  
   
- If the `count` parameter is zero, or the `options` parameter is <xref:System.StringSplitOptions> and the length of this instance is zero, an empty array is returned.  
+ If the `count` parameter is zero, or the `options` parameter is <xref:System.StringSplitOptions.RemoveEmptyEntries> and the length of this instance is zero, an empty array is returned.  
   
- Each element of `separator` defines a separate delimiter character. If the `options` parameter is <xref:System.StringSplitOptions>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String.Empty>.  
+ Each element of `separator` defines a separate delimiter character. If the `options` parameter is <xref:System.StringSplitOptions.None>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String.Empty>.  
   
  If there are more than `count` substrings in this instance, the first `count` minus 1 substrings are returned in the first `count` minus 1 elements of the return value, and the remaining characters in this instance are returned in the last element of the return value.  
   
@@ -8493,9 +8255,9 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-csharp[System.String.Split#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/split3.cs#4)]
  [!code-vb[System.String.Split#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/split3.vb#4)]  
   
- If the `count` parameter is zero, or the `options` parameter is <xref:System.StringSplitOptions> and the length of this instance is zero, an empty array is returned.  
+ If the `count` parameter is zero, or the `options` parameter is <xref:System.StringSplitOptions.RemoveEmptyEntries> and the length of this instance is zero, an empty array is returned.  
   
- Each element of `separator` defines a separate delimiter that consists of one or more characters. If the `options` parameter is <xref:System.StringSplitOptions>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String.Empty>.  
+ Each element of `separator` defines a separate delimiter that consists of one or more characters. If the `options` parameter is <xref:System.StringSplitOptions.None>, and two delimiters are adjacent or a delimiter is found at the beginning or end of this instance, the corresponding array element contains <xref:System.String.Empty>.  
   
  If there are more than `count` substrings in this instance, the first `count` minus 1 substrings are returned in the first `count` minus 1 elements of the return value, and the remaining characters in this instance are returned in the last element of the return value.  
   
@@ -10237,7 +9999,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 > [!NOTE]
 >  If the <xref:System.String.Trim%2A> method removes any characters from the current instance, this method does not modify the value of the current instance. Instead, it returns a new string in which all leading and trailing white space characters found in the current instance are removed.  
   
- If the current string equals <xref:System.String> or all the characters in the current instance consist of white-space characters, the method returns <xref:System.String>.  
+ If the current string equals <xref:System.String.Empty> or all the characters in the current instance consist of white-space characters, the method returns <xref:System.String.Empty>.  
   
  White-space characters are defined by the Unicode standard. The <xref:System.String.Trim> method removes any leading and trailing characters that produce a return value of `true` when they are passed to the <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> method.  
   
@@ -10303,7 +10065,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 > [!NOTE]
 >  If the <xref:System.String.Trim%2A> method removes any characters from the current instance, this method does not modify the value of the current instance. Instead, it returns a new string in which all leading and trailing `trimChars` characters found in the current instance are removed.  
   
- If the current string equals <xref:System.String> or all the characters in the current instance consist of characters in the `trimChars` array, the method returns <xref:System.String>.  
+ If the current string equals <xref:System.String.Empty> or all the characters in the current instance consist of characters in the `trimChars` array, the method returns <xref:System.String.Empty>.  
   
  If `trimChars` is `null` or an empty array, this method removes any leading or trailing characters that result in the method returning `true` when they are passed to the <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> method,  
   

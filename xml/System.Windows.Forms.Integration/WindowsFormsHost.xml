@@ -988,7 +988,7 @@
 ## Remarks  
  When a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element receives a TAB command from the <xref:System.Windows.Interop.IKeyboardInputSink.TabInto%2A> method, the first eligible control in <xref:System.Windows.Forms.Integration.WindowsFormsHost.Child%2A> receives focus.  
   
- The first control is specified by the `request` parameter. When `request` is <xref:System.Windows.Input.FocusNavigationDirection>, the behavior is similar to pressing the TAB key. When `request` is <xref:System.Windows.Input.FocusNavigationDirection>, the behavior is similar to pressing SHIFT+TAB.  
+ The first control is specified by the `request` parameter. When `request` is <xref:System.Windows.Input.FocusNavigationDirection.Next>, the behavior is similar to pressing the TAB key. When `request` is <xref:System.Windows.Input.FocusNavigationDirection.Previous>, the behavior is similar to pressing SHIFT+TAB.  
   
  ]]></format>
         </remarks>

@@ -266,7 +266,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Before opening the channel factory, checks that it is not <xref:System.ServiceModel.CommunicationState>, <xref:System.ServiceModel.CommunicationState>, or <xref:System.ServiceModel.CommunicationState>.  
+ Before opening the channel factory, checks that it is not <xref:System.ServiceModel.CommunicationState.Closed>, <xref:System.ServiceModel.CommunicationState.Closing>, or <xref:System.ServiceModel.CommunicationState.Opened>.  
   
  ]]></format>
         </remarks>

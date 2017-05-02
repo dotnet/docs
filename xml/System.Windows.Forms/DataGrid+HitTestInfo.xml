@@ -154,7 +154,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Other parts of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>, such as the <xref:System.Windows.Forms.DataGrid.HitTestType>, can return useful information. If the part of the grid has no function (such as the gray area behind a sparsely populated grid table), the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Nowhere> field is returned.  
+ Other parts of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>, such as the <xref:System.Windows.Forms.DataGrid.HitTestType.Caption>, can return useful information. If the part of the grid has no function (such as the gray area behind a sparsely populated grid table), the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Nowhere> field is returned.  
   
    
   
@@ -188,7 +188,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the coordinate is not a cell, the property returns -1. If the coordinate is a <xref:System.Windows.Forms.DataGrid.HitTestType>, the property returns the row number of the header, but the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Column%2A> property will return -1.  
+ If the coordinate is not a cell, the property returns -1. If the coordinate is a <xref:System.Windows.Forms.DataGrid.HitTestType.RowHeader>, the property returns the row number of the header, but the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Column%2A> property will return -1.  
   
    
   

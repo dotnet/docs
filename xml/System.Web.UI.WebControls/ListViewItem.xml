@@ -31,9 +31,9 @@
   
 |Item type|Description|  
 |---------------|-----------------|  
-|<xref:System.Web.UI.WebControls.ListViewItemType>|A data item in the <xref:System.Web.UI.WebControls.ListView> control.|  
-|<xref:System.Web.UI.WebControls.ListViewItemType>|An insert item in the <xref:System.Web.UI.WebControls.ListView> control.|  
-|<xref:System.Web.UI.WebControls.ListViewItemType>|An empty item in the <xref:System.Web.UI.WebControls.ListView> control. The empty item is displayed when the <xref:System.Web.UI.WebControls.ListView> control does not have any records to display, or when a group in the <xref:System.Web.UI.WebControls.ListView> control does not have any more records to display.|  
+|<xref:System.Web.UI.WebControls.ListViewItemType.DataItem>|A data item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.ListViewItemType.InsertItem>|An insert item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.ListViewItemType.EmptyItem>|An empty item in the <xref:System.Web.UI.WebControls.ListView> control. The empty item is displayed when the <xref:System.Web.UI.WebControls.ListView> control does not have any records to display, or when a group in the <xref:System.Web.UI.WebControls.ListView> control does not have any more records to display.|  
   
  To determine the type of a <xref:System.Web.UI.WebControls.ListViewItem> object, use the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property.  
   
@@ -164,9 +164,9 @@
   
 |Item type|Description|  
 |---------------|-----------------|  
-|<xref:System.Web.UI.WebControls.ListViewItemType>|A data item in the <xref:System.Web.UI.WebControls.ListView> control.|  
-|<xref:System.Web.UI.WebControls.ListViewItemType>|An insert item in the <xref:System.Web.UI.WebControls.ListView> control.|  
-|<xref:System.Web.UI.WebControls.ListViewItemType>|An empty item in the <xref:System.Web.UI.WebControls.ListView> control. The empty item is displayed when the <xref:System.Web.UI.WebControls.ListView> control does not have any records to display, or when a group in the <xref:System.Web.UI.WebControls.ListView> control does not have any more records to display.|  
+|<xref:System.Web.UI.WebControls.ListViewItemType.DataItem>|A data item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.ListViewItemType.InsertItem>|An insert item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.ListViewItemType.EmptyItem>|An empty item in the <xref:System.Web.UI.WebControls.ListView> control. The empty item is displayed when the <xref:System.Web.UI.WebControls.ListView> control does not have any records to display, or when a group in the <xref:System.Web.UI.WebControls.ListView> control does not have any more records to display.|  
   
  You typically use this property to determine an item's type before you perform an operation.  
   

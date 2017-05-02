@@ -24,7 +24,7 @@
   
  The Machine.config file defines a default <xref:System.Web.Security.SqlMembershipProvider> instance named `AspNetSqlMembershipProvider` that connects to the default SQL Server Express instance on the local machine. You can use this instance of the provider if you installed SQL Server Express with the default instance name, or you can define your own instance in the Web.config file for your ASP.NET application.  
   
- If you set the `passwordCompatMode` attribute to <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode>, the application can use the hashing and encryption membership options that were added in ASP.NET 4. However, if the `passwordCompatMode` attribute is set to <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode>, only the hashing and encryption membership options from the ASP.NET 2.0, ASP.NET 3.5, and ASP.NET 3.5 SP1 can be used. The default value is <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode>. For more information, see <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode>.  
+ If you set the `passwordCompatMode` attribute to <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode.Framework40>, the application can use the hashing and encryption membership options that were added in ASP.NET 4. However, if the `passwordCompatMode` attribute is set to <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode.Framework20>, only the hashing and encryption membership options from the ASP.NET 2.0, ASP.NET 3.5, and ASP.NET 3.5 SP1 can be used. The default value is <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode.Framework20>. For more information, see <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode>.  
   
    
   
@@ -500,7 +500,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Password reset allows the membership provider to replace the current password for a user name with a new, randomly generated password. This is especially useful when the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat>, as users cannot retrieve hashed password values.  
+ Password reset allows the membership provider to replace the current password for a user name with a new, randomly generated password. This is especially useful when the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, as users cannot retrieve hashed password values.  
   
    
   
@@ -546,9 +546,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat>, a user will not be able to retrieve his or her existing password from the database. The <xref:System.Web.Security.MembershipPasswordFormat> password format provides one-way encoding of password values. Passwords are hashed with a randomly generated salt value and compared to values stored in the database for authentication. Hashed values cannot be unencoded to retrieve the original password value.  
+ If the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, a user will not be able to retrieve his or her existing password from the database. The <xref:System.Web.Security.MembershipPasswordFormat.Hashed> password format provides one-way encoding of password values. Passwords are hashed with a randomly generated salt value and compared to values stored in the database for authentication. Hashed values cannot be unencoded to retrieve the original password value.  
   
- If the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat>, and <xref:System.Web.Security.SqlMembershipProvider.EnablePasswordRetrieval%2A> is set to `true`, a <xref:System.Configuration.Provider.ProviderException> is thrown when the provider is initialized.  
+ If the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, and <xref:System.Web.Security.SqlMembershipProvider.EnablePasswordRetrieval%2A> is set to `true`, a <xref:System.Configuration.Provider.ProviderException> is thrown when the provider is initialized.  
   
    
   
@@ -877,7 +877,7 @@
   
  You can call the <xref:System.Web.Security.SqlMembershipProvider.GetPassword%2A> method directly by first obtaining a reference to the <xref:System.Web.Security.SqlMembershipProvider> instance through the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class.  
   
- If the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat>, the <xref:System.Web.Security.SqlMembershipProvider.GetPassword%2A> method cannot retrieve the password. Hashed passwords are encrypted one-way and cannot be decrypted. If the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat>, and <xref:System.Web.Security.SqlMembershipProvider.EnablePasswordRetrieval%2A> is set to `true`, a <xref:System.Configuration.Provider.ProviderException> is thrown when the provider is initialized.  
+ If the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, the <xref:System.Web.Security.SqlMembershipProvider.GetPassword%2A> method cannot retrieve the password. Hashed passwords are encrypted one-way and cannot be decrypted. If the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, and <xref:System.Web.Security.SqlMembershipProvider.EnablePasswordRetrieval%2A> is set to `true`, a <xref:System.Configuration.Provider.ProviderException> is thrown when the provider is initialized.  
   
  Leading and trailing spaces are trimmed from all parameter values.  
   

@@ -188,7 +188,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A> method uses the <xref:System.Data.IsolationLevel> transaction isolation level. To specify a different isolation level, call <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A>. This value might be interpreted differently by different underlying providers. If you want your application to be portable across multiple providers, it should explicitly specify the transaction isolation level by calling <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A>.  
+ The <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A> method uses the <xref:System.Data.IsolationLevel.Unspecified> transaction isolation level. To specify a different isolation level, call <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A>. This value might be interpreted differently by different underlying providers. If you want your application to be portable across multiple providers, it should explicitly specify the transaction isolation level by calling <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A>.  
   
  At any particular moment there can be no more than one active transaction that was created through <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A>. An attempt to call any of the <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A> overloads on an <xref:System.Data.EntityClient.EntityConnection> that already has a current transaction results in an <xref:System.InvalidOperationException>.  
   

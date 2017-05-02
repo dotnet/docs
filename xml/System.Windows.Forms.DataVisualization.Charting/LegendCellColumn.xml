@@ -236,7 +236,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is only applicable when the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType>, and a `string` value is defined for the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn.Text%2A> property. You can use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn.Font%2A> property to set font properties of the legend cell column.  
+ This property is only applicable when the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType.Text>, and a `string` value is defined for the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn.Text%2A> property. You can use the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumn.Font%2A> property to set font properties of the legend cell column.  
   
  If you attempt to change the properties of this <xref:System.Drawing.Font> object at run time, a compilation error will occur. To set font properties at run time, you must create a new <xref:System.Drawing.Font> object.  
   
@@ -274,7 +274,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType>.  
+ This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType.Text>.  
   
  ]]></format>
         </remarks>
@@ -585,7 +585,7 @@
 ## Remarks  
  The size of the series symbol is measured as a percentage of the legend font size.  
   
- This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType>.  
+ This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType.SeriesSymbol>.  
   
  ]]></format>
         </remarks>
@@ -643,7 +643,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType>.  
+ This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType> is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnType.Text>.  
   
  ]]></format>
         </remarks>

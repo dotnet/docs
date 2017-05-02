@@ -88,7 +88,7 @@
 |--------------|-----------|  
 |<xref:System.Windows.Forms.ErrorProvider.Icon%2A>|An icon that consists of an exclamation point in a circle with a red background|  
 |<xref:System.Windows.Forms.ErrorProvider.BlinkRate%2A>|250|  
-|<xref:System.Windows.Forms.ErrorProvider.BlinkStyle%2A>|<xref:System.Windows.Forms.ErrorBlinkStyle>|  
+|<xref:System.Windows.Forms.ErrorProvider.BlinkStyle%2A>|<xref:System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError>|  
   
  ]]></format>
         </remarks>
@@ -201,7 +201,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The error icon flashes at the specified rate. A value of zero sets <xref:System.Windows.Forms.ErrorProvider.BlinkStyle%2A> to <xref:System.Windows.Forms.ErrorBlinkStyle>.  
+ The error icon flashes at the specified rate. A value of zero sets <xref:System.Windows.Forms.ErrorProvider.BlinkStyle%2A> to <xref:System.Windows.Forms.ErrorBlinkStyle.NeverBlink>.  
   
    
   
@@ -241,7 +241,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The error icon flashes in the manner specified by the assigned <xref:System.Windows.Forms.ErrorBlinkStyle> when an error occurs. Setting the <xref:System.Windows.Forms.ErrorProvider.BlinkRate%2A> to zero sets the <xref:System.Windows.Forms.ErrorProvider.BlinkStyle%2A> to <xref:System.Windows.Forms.ErrorBlinkStyle>.  
+ The error icon flashes in the manner specified by the assigned <xref:System.Windows.Forms.ErrorBlinkStyle> when an error occurs. Setting the <xref:System.Windows.Forms.ErrorProvider.BlinkRate%2A> to zero sets the <xref:System.Windows.Forms.ErrorProvider.BlinkStyle%2A> to <xref:System.Windows.Forms.ErrorBlinkStyle.NeverBlink>.  
   
    
   

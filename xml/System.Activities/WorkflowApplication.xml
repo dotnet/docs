@@ -2727,7 +2727,7 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a workflow becomes idle and can be persisted, both <xref:System.Activities.WorkflowApplication.Idle%2A> and <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> are invoked, in that order. The <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> handler returns one of the <xref:System.Activities.PersistableIdleAction> enumeration values of <xref:System.Activities.PersistableIdleAction>, <xref:System.Activities.PersistableIdleAction>, or <xref:System.Activities.PersistableIdleAction>.  
+ When a workflow becomes idle and can be persisted, both <xref:System.Activities.WorkflowApplication.Idle%2A> and <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> are invoked, in that order. The <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> handler returns one of the <xref:System.Activities.PersistableIdleAction> enumeration values of <xref:System.Activities.PersistableIdleAction.None>, <xref:System.Activities.PersistableIdleAction.Persist>, or <xref:System.Activities.PersistableIdleAction.Unload>.  
   
    
   

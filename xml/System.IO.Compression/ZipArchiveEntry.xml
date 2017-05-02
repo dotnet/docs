@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property cannot be retrieved when the mode is set to <xref:System.IO.Compression.ZipArchiveMode>, or the mode is set to <xref:System.IO.Compression.ZipArchiveMode> and the entry has been opened.  
+ This property cannot be retrieved when the mode is set to <xref:System.IO.Compression.ZipArchiveMode.Create>, or the mode is set to <xref:System.IO.Compression.ZipArchiveMode.Update> and the entry has been opened.  
   
    
   
@@ -260,7 +260,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property cannot be retrieved when the mode is set to <xref:System.IO.Compression.ZipArchiveMode>, or the mode is set to <xref:System.IO.Compression.ZipArchiveMode> and the entry has been opened.  
+ This property cannot be retrieved when the mode is set to <xref:System.IO.Compression.ZipArchiveMode.Create>, or the mode is set to <xref:System.IO.Compression.ZipArchiveMode.Update> and the entry has been opened.  
   
    
   

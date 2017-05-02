@@ -242,7 +242,7 @@
  You must supply a `PathName` the first time that you call the `Dir` function. To retrieve the next item, you can make subsequent calls to the `Dir` function without parameters.  
   
 > [!IMPORTANT]
->  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess> and <xref:System.Security.Permissions.FileIOPermissionAccess>flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery>flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
  The `Attributes` argument enumeration values are as follows:  
   
@@ -303,7 +303,7 @@
  You must supply a `PathName` the first time that you call the `Dir` function. To retrieve the next item, you can make subsequent calls to the `Dir` function with no parameters.  
   
 > [!IMPORTANT]
->  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess> and <xref:System.Security.Permissions.FileIOPermissionAccess>flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery>flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
  The `Attributes` argument enumeration values are as follows:  
   
@@ -393,56 +393,21 @@
         <summary>Returns an enumeration representing the file mode for files opened using the <see langword="FileOpen" /> function. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than the <see langword="FileAttr " />function. See <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo(System.String)" /> for more information.</summary>
         <returns>The following enumeration values indicate the file access mode:  
   
- <list type="table">  
-<item>  
-<term> Value  
+ <list type="table"><item><term> Value  
   
- </term>  
-<description> Mode  
+ </term><description> Mode  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> <see langword="OpenMode.Input" />  
+ </term><description><see langword="OpenMode.Input" /></description></item><item><term> 2  
   
- </description>  
-</item>  
-<item>  
-<term> 2  
+ </term><description><see langword="OpenMode.Output" /></description></item><item><term> 4  
   
- </term>  
-<description> <see langword="OpenMode.Output" />  
+ </term><description><see langword="OpenMode.Random" /></description></item><item><term> 8  
   
- </description>  
-</item>  
-<item>  
-<term> 4  
+ </term><description><see langword="OpenMode.Append" /></description></item><item><term> 32  
   
- </term>  
-<description> <see langword="OpenMode.Random" />  
-  
- </description>  
-</item>  
-<item>  
-<term> 8  
-  
- </term>  
-<description> <see langword="OpenMode.Append" />  
-  
- </description>  
-</item>  
-<item>  
-<term> 32  
-  
- </term>  
-<description> <see langword="OpenMode.Binary" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </term><description><see langword="OpenMode.Binary" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3112,103 +3077,30 @@
         <summary>Returns a <see langword="FileAttribute" /> value that represents the attributes of a file, directory, or folder. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileAttribute" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
         <returns>The value returned by <see langword="GetAttr" /> is the sum of the following enumeration values:  
   
- <list type="table">  
-<item>  
-<term> Value  
+ <list type="table"><item><term> Value  
   
- </term>  
-<description> Constant  
+ </term><description> Constant  
   
- </description>  
-<description> Description  
+ </description><description> Description  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="Normal" />  
+ </description></item><item><term><see langword="Normal" /></term><description><see langword="vbNormal" /></description><description> Normal.  
   
- </term>  
-<description> <see langword="vbNormal" />  
+ </description></item><item><term><see langword="ReadOnly" /></term><description><see langword="vbReadOnly" /></description><description> Read-only.  
   
- </description>  
-<description> Normal.  
+ </description></item><item><term><see langword="Hidden" /></term><description><see langword="vbHidden" /></description><description> Hidden.  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="ReadOnly" />  
+ </description></item><item><term><see langword="System" /></term><description><see langword="vbSystem" /></description><description> System file.  
   
- </term>  
-<description> <see langword="vbReadOnly" />  
+ </description></item><item><term><see langword="Directory" /></term><description><see langword="vbDirectory" /></description><description> Directory or folder.  
   
- </description>  
-<description> Read-only.  
+ </description></item><item><term><see langword="Archive" /></term><description><see langword="vbArchive" /></description><description> File has changed since last backup.  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="Hidden" />  
+ </description></item><item><term><see langword="Alias" /></term><description><see langword="vbAlias" /></description><description> File has a different name.  
   
- </term>  
-<description> <see langword="vbHidden" />  
-  
- </description>  
-<description> Hidden.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="System" />  
-  
- </term>  
-<description> <see langword="vbSystem" />  
-  
- </description>  
-<description> System file.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="Directory" />  
-  
- </term>  
-<description> <see langword="vbDirectory" />  
-  
- </description>  
-<description> Directory or folder.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="Archive" />  
-  
- </term>  
-<description> <see langword="vbArchive" />  
-  
- </description>  
-<description> File has changed since last backup.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="Alias" />  
-  
- </term>  
-<description> <see langword="vbAlias" />  
-  
- </description>  
-<description> File has a different name.  
-  
- </description>  
-</item>  
-</list>  
-  
- <block subset="none" type="note">  
-<para>  
+ </description></item></list><block subset="none" type="note"><para>  
  These enumerations are specified by the Visual Basic language. The names can be used anywhere in your code in place of the actual values.  
   
-</para>  
-</block></returns>
+</para></block></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

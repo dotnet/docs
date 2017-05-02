@@ -50,7 +50,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor sets the <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> property to <xref:System.Windows.Forms.SizeType> and the <xref:System.Windows.Forms.ColumnStyle.Width%2A> property to 0.  
+ This constructor sets the <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> property to <xref:System.Windows.Forms.SizeType.AutoSize> and the <xref:System.Windows.Forms.ColumnStyle.Width%2A> property to 0.  
   
  ]]></format>
         </remarks>
@@ -133,9 +133,9 @@
   
 |`sizeType` value|`width` interpretation|  
 |----------------------|----------------------------|  
-|<xref:System.Windows.Forms.SizeType>|The preferred column width in pixels (fractional portion ignored).|  
-|<xref:System.Windows.Forms.SizeType>|Not applicable—the width parameter is ignored.|  
-|<xref:System.Windows.Forms.SizeType>|The preferred column width as a percentage of the containing table.|  
+|<xref:System.Windows.Forms.SizeType.Absolute>|The preferred column width in pixels (fractional portion ignored).|  
+|<xref:System.Windows.Forms.SizeType.AutoSize>|Not applicable—the width parameter is ignored.|  
+|<xref:System.Windows.Forms.SizeType.Percent>|The preferred column width as a percentage of the containing table.|  
   
  ]]></format>
         </remarks>

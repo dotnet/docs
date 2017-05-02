@@ -38,7 +38,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Date and time in WMI is represented in DMTF datetime format. This format is explained in WMI SDK documentation. A DMTF datetime string has an UTC offset which this datetime string represents. During conversion to <xref:System.DateTime>, the UTC offset is used to convert the date to the current time zone. According to DMTF format, a particular field can be represented by the character '*'. This will be converted to the <xref:System.DateTime> value of this field that can be represented in <xref:System.DateTime>.  
+ Date and time in WMI is represented in DMTF datetime format. This format is explained in WMI SDK documentation. A DMTF datetime string has an UTC offset which this datetime string represents. During conversion to <xref:System.DateTime>, the UTC offset is used to convert the date to the current time zone. According to DMTF format, a particular field can be represented by the character '*'. This will be converted to the <xref:System.DateTime.MinValue> value of this field that can be represented in <xref:System.DateTime>.  
   
 ## .NET Framework Security  
  Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
@@ -158,7 +158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Time interval in WMI is represented in DMTF format. This format is explained in WMI SDK documentation. If the DMTF time interval value is more than that of <xref:System.TimeSpan> then <xref:System.ArgumentOutOfRangeException> is thrown.  
+ Time interval in WMI is represented in DMTF format. This format is explained in WMI SDK documentation. If the DMTF time interval value is more than that of <xref:System.TimeSpan.MaxValue> then <xref:System.ArgumentOutOfRangeException> is thrown.  
   
 ## .NET Framework Security  
  Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  

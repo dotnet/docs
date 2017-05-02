@@ -292,13 +292,7 @@
         <exception cref="T:System.InvalidOperationException">The stream is closed. This can occur because the <see cref="M:System.IO.Ports.SerialPort.Open" /> method has not been called or the <see cref="M:System.IO.Ports.SerialPort.Close" /> method has been called.</exception>
         <exception cref="T:System.NotSupportedException">The stream is in a .NET Compact Framework application and one of the following methods was called:  
   
- <see cref="M:System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />  
-  
- <see cref="M:System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />  
-  
- <see cref="M:System.IO.Stream.EndRead(System.IAsyncResult)" />  
-  
- <see cref="M:System.IO.Stream.EndWrite(System.IAsyncResult)" />  
+ <see cref="M:System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /><see cref="M:System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /><see cref="M:System.IO.Stream.EndRead(System.IAsyncResult)" /><see cref="M:System.IO.Stream.EndWrite(System.IAsyncResult)" />  
   
  The .NET Compact Framework does not support the asynchronous model with base streams.</exception>
       </Docs>
@@ -1065,7 +1059,7 @@
 ## Remarks  
  When handshaking is used, the device connected to the <xref:System.IO.Ports.SerialPort> object is instructed to stop sending data when there is at least (<xref:System.IO.Ports.SerialPort.ReadBufferSize%2A>-1024) bytes in the buffer. The device is instructed to start sending data again when there are 1024 or fewer bytes in the buffer. If the device is sending data in blocks that are larger than 1024 bytes, this may cause the buffer to overflow.  
   
- If the <xref:System.IO.Ports.SerialPort.Handshake%2A> property is set to <xref:System.IO.Ports.Handshake> and <xref:System.IO.Ports.SerialPort.CtsHolding%2A> is set to `false`, the XOff character will not be sent. If <xref:System.IO.Ports.SerialPort.CtsHolding%2A> is then set to `true`, more data must be sent before the XOff character will be sent.  
+ If the <xref:System.IO.Ports.SerialPort.Handshake%2A> property is set to <xref:System.IO.Ports.Handshake.RequestToSendXOnXOff> and <xref:System.IO.Ports.SerialPort.CtsHolding%2A> is set to `false`, the XOff character will not be sent. If <xref:System.IO.Ports.SerialPort.CtsHolding%2A> is then set to `true`, more data must be sent before the XOff character will be sent.  
   
    
   
@@ -1743,7 +1737,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The read time-out value was originally set at 500 milliseconds in the Win32 Communications API. This property allows you to set this value. The time-out can be set to any value greater than zero, or set to <xref:System.IO.Ports.SerialPort>, in which case no time-out occurs. <xref:System.IO.Ports.SerialPort.InfiniteTimeout> is the default.  
+ The read time-out value was originally set at 500 milliseconds in the Win32 Communications API. This property allows you to set this value. The time-out can be set to any value greater than zero, or set to <xref:System.IO.Ports.SerialPort.InfiniteTimeout>, in which case no time-out occurs. <xref:System.IO.Ports.SerialPort.InfiniteTimeout> is the default.  
   
 > [!NOTE]
 >  Users of the unmanaged `COMMTIMEOUTS` structure might expect to set the time-out value to zero to suppress time-outs. To suppress time-outs with the <xref:System.IO.Ports.SerialPort.ReadTimeout%2A> property, however, you must specify <xref:System.IO.Ports.SerialPort.InfiniteTimeout>.  
@@ -1840,7 +1834,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.Ports.SerialPort.DataReceived> event is also raised if an <xref:System.IO.Ports.SerialData> character is received, regardless of the number of bytes in the internal input buffer and the value of the <xref:System.IO.Ports.SerialPort.ReceivedBytesThreshold%2A> property.  
+ The <xref:System.IO.Ports.SerialPort.DataReceived> event is also raised if an <xref:System.IO.Ports.SerialData.Eof> character is received, regardless of the number of bytes in the internal input buffer and the value of the <xref:System.IO.Ports.SerialPort.ReceivedBytesThreshold%2A> property.  
   
  ]]></format>
         </remarks>
@@ -1920,7 +1914,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value for <xref:System.IO.Ports.SerialPort.StopBits%2A> is <xref:System.IO.Ports.StopBits>.  
+ The default value for <xref:System.IO.Ports.SerialPort.StopBits%2A> is <xref:System.IO.Ports.StopBits.One>.  
   
  The <xref:System.IO.Ports.StopBits?displayProperty=fullName> value is not supported.  
   
@@ -1973,7 +1967,7 @@
 ## Remarks  
  Use this method when you want to write a string as output to a serial port.  
   
- If there are too many bytes in the output buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
+ If there are too many bytes in the output buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake.XOnXOff> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
   
  By default, <xref:System.IO.Ports.SerialPort> uses <xref:System.Text.ASCIIEncoding> to encode the characters. <xref:System.Text.ASCIIEncoding> encodes all characters greater than 127 as (char)63 or '?'. To support additional characters in that range, set <xref:System.IO.Ports.SerialPort.Encoding%2A> to <xref:System.Text.UTF8Encoding>, <xref:System.Text.UTF32Encoding>, or <xref:System.Text.UnicodeEncoding>.  
   
@@ -2013,7 +2007,7 @@
 ## Remarks  
  Use this method when you want to write to a byte buffer to create output to a serial port.  
   
- If there are too many bytes in the output buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
+ If there are too many bytes in the output buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake.XOnXOff> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
   
  By default, <xref:System.IO.Ports.SerialPort> uses <xref:System.Text.ASCIIEncoding> to encode the characters. <xref:System.Text.ASCIIEncoding> encodes all characters greater than 127 as (char)63 or '?'. To support additional characters in that range, set <xref:System.IO.Ports.SerialPort.Encoding%2A> to <xref:System.Text.UTF8Encoding>, <xref:System.Text.UTF32Encoding>, or <xref:System.Text.UnicodeEncoding>.  
   
@@ -2055,7 +2049,7 @@
 ## Remarks  
  Use this method when you want to write to a character buffer to create output to a serial port.  
   
- If there are too many bytes in the output buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
+ If there are too many bytes in the output buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake.XOnXOff> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
   
  By default, <xref:System.IO.Ports.SerialPort> uses <xref:System.Text.ASCIIEncoding> to encode the characters. <xref:System.Text.ASCIIEncoding> encodes all characters greater than 127 as (char)63 or '?'. To support additional characters in that range, set <xref:System.IO.Ports.SerialPort.Encoding%2A> to <xref:System.Text.UTF8Encoding>, <xref:System.Text.UTF32Encoding>, or <xref:System.Text.UnicodeEncoding>.  
   
@@ -2130,7 +2124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there are too many bytes in the input buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
+ If there are too many bytes in the input buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake.XOnXOff> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
   
  The written output includes the <xref:System.IO.Ports.SerialPort.NewLine%2A> string.  
   
@@ -2180,7 +2174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The write time-out value was originally set at 500 milliseconds in the Win32 Communications API. This property allows you to set this value. The time-out can be set to any value greater than zero, or set to <xref:System.IO.Ports.SerialPort.InfiniteTimeout>, in which case no time-out occurs. <xref:System.IO.Ports.SerialPort> is the default.  
+ The write time-out value was originally set at 500 milliseconds in the Win32 Communications API. This property allows you to set this value. The time-out can be set to any value greater than zero, or set to <xref:System.IO.Ports.SerialPort.InfiniteTimeout>, in which case no time-out occurs. <xref:System.IO.Ports.SerialPort.InfiniteTimeout> is the default.  
   
 > [!NOTE]
 >  Users of the unmanaged `COMMTIMEOUTS` structure might expect to set the time-out value to zero to suppress time-outs. To suppress time-outs with the <xref:System.IO.Ports.SerialPort.WriteTimeout%2A> property, however, you must specify <xref:System.IO.Ports.SerialPort.InfiniteTimeout>.  

@@ -34,7 +34,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Shell.JumpItem.CustomCategory%2A> property is `null` or <xref:System.String>, the item is added to the **Tasks** category. If a value is specified, the item is added to a category that uses the specified name. Items in custom categories can be pinned to the Jump List by the user. When an item is pinned, it moves to an automatic category called **Pinned**. The user can also remove items from the Jump List.  
+ If the <xref:System.Windows.Shell.JumpItem.CustomCategory%2A> property is `null` or <xref:System.String.Empty>, the item is added to the **Tasks** category. If a value is specified, the item is added to a category that uses the specified name. Items in custom categories can be pinned to the Jump List by the user. When an item is pinned, it moves to an automatic category called **Pinned**. The user can also remove items from the Jump List.  
   
  ]]></format>
         </remarks>

@@ -171,7 +171,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Note that this property returns `true` even if the associated animation is <xref:System.Windows.Media.Animation.ClockState> or <xref:System.Windows.Media.Animation.ClockState>.  
+ Note that this property returns `true` even if the associated animation is <xref:System.Windows.Media.Animation.ClockState.Stopped> or <xref:System.Windows.Media.Animation.ClockState.Filling>.  
   
  ]]></format>
         </remarks>

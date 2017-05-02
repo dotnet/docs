@@ -25,7 +25,7 @@
   
  By default, empty cells display a default error graphic. To prevent this graphic from appearing for cell values equal to `null` or <xref:System.DBNull.Value?displayProperty=fullName>, set the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A?displayProperty=fullName> property of the cell style object returned by the <xref:System.Windows.Forms.DataGridViewImageColumn.DefaultCellStyle%2A> property to `null` before adding rows to the control. This does not affect the row for new records, however. To prevent the error graphic from appearing in the row for new records when the control <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A> property value is `true`, you must also either explicitly set the cell value to `null` in a handler for the control <xref:System.Windows.Forms.DataGridView.RowsAdded> event or set the column <xref:System.Windows.Forms.DataGridViewImageColumn.CellTemplate%2A> property to an instance of a <xref:System.Windows.Forms.DataGridViewImageCell>-derived type with an overridden <xref:System.Windows.Forms.DataGridViewImageCell.DefaultNewRowValue%2A> property that returns `null`.  
   
- The default sort mode for this column type is <xref:System.Windows.Forms.DataGridViewColumnSortMode>.  
+ The default sort mode for this column type is <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable>.  
   
    
   

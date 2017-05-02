@@ -458,15 +458,15 @@
 ## Remarks  
  This method supports the following <xref:System.Security.Cryptography.X509Certificates.X509ContentType> types:  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pfx>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedStore>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs7>  
   
  ]]></format>
         </remarks>
@@ -610,17 +610,17 @@
 ## Remarks  
  This method imports a certificate in the form of a byte array into a <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection> object. This method supports the following <xref:System.Security.Cryptography.X509Certificates.X509ContentType> types:  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pfx>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedStore>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs7>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Authenticode>  
   
  ]]></format>
         </remarks>
@@ -665,17 +665,17 @@
 ## Remarks  
  This method supports the following <xref:System.Security.Cryptography.X509Certificates.X509ContentType> types:  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pfx>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedStore>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs7>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Authenticode>  
   
  ]]></format>
         </remarks>
@@ -726,15 +726,15 @@
   
  This method imports a certificate byte array into a collection of certificates. This method supports the following <xref:System.Security.Cryptography.X509Certificates.X509ContentType> types:  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pfx>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedStore>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs7>  
   
  ]]></format>
         </remarks>
@@ -787,17 +787,17 @@
   
  This method supports the following <xref:System.Security.Cryptography.X509Certificates.X509ContentType> types:  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pfx>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedStore>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs7>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Authenticode>  
   
  ]]></format>
         </remarks>

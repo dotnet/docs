@@ -109,40 +109,23 @@
         <summary>Compares the current <see cref="T:System.ValueTuple`2" /> instance to a specified <see cref="T:System.ValueTuple`2" /> instance.</summary>
         <returns>A signed integer that indicates the relative position of this instance and                      <paramref name="other" /> in the sort order, as shown in the following able.  
   
- <list type="table">  
-<listheader>  
-<term> Vaue  
+ <list type="table"><listheader><term> Vaue  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> A negative integer  
+ </description></listheader><item><term> A negative integer  
   
- </term>  
-<description> This instance precedes                                      <paramref name="other" />.  
+ </term><description> This instance precedes                                      <paramref name="other" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance and                                      <paramref name="other" /> have the same position in the sort order.  
+ </term><description> This instance and                                      <paramref name="other" /> have the same position in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> A positive integer  
+ </description></item><item><term> A positive integer  
   
- </term>  
-<description> This instance follows                                      <paramref name="other" />.  
+ </term><description> This instance follows                                      <paramref name="other" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,40 +304,23 @@
         <summary>Compares the current <see cref="T:System.ValueTuple`2" /> instance to a specified object by using a specified comparer and returns an integer that indicates whether the current object is before, after, or in the same position as the specified object in the sort order.</summary>
         <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following able.  
   
- <list type="table">  
-<listheader>  
-<term> Vaue  
+ <list type="table"><listheader><term> Vaue  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> A negative integer  
+ </description></listheader><item><term> A negative integer  
   
- </term>  
-<description> This instance precedes <paramref name="other" />.  
+ </term><description> This instance precedes <paramref name="other" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance and <paramref name="other" /> have the same position in the sort order.  
+ </term><description> This instance and <paramref name="other" /> have the same position in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> A positive integer  
+ </description></item><item><term> A positive integer  
   
- </term>  
-<description> This instance follows <paramref name="other" />.  
+ </term><description> This instance follows <paramref name="other" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -440,40 +406,23 @@
         <summary>Compares the current <see cref="T:System.ValueTuple`2" /> instance to a specified object by using a specified comparer and returns an integer that indicates whether the current object is before, after, or in the same position as the specified object in the sort order.</summary>
         <returns>A signed integer that indicates the relative position of this instance and <paramref name="obj" /> in the sort order, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> A negative integer  
+ </description></listheader><item><term> A negative integer  
   
- </term>  
-<description> This instance precedes <paramref name="other" />.  
+ </term><description> This instance precedes <paramref name="other" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance and <paramref name="other" /> have the same position in the sort order.  
+ </term><description> This instance and <paramref name="other" /> have the same position in the sort order.  
   
- </description>  
-</item>  
-<item>  
-<term> A positive integer  
+ </description></item><item><term> A positive integer  
   
- </term>  
-<description> This instance follows <paramref name="other" />.  
+ </term><description> This instance follows <paramref name="other" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,7 +451,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this method takes the form (*Item1*, *Item2*, where *Item1* and *Item2* represent the values of the <xref:System.ValueTuple%602> and <xref:System.ValueTuple%602> fields. If any of the field values is `null`, it is represented as <xref:System.String.Empty?displayProperty=fullName>.  
+ The string returned by this method takes the form (*Item1*, *Item2*, where *Item1* and *Item2* represent the values of the <xref:System.ValueTuple%602.Item1> and <xref:System.ValueTuple%602.Item2> fields. If any of the field values is `null`, it is represented as <xref:System.String.Empty?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>

@@ -228,7 +228,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.AccessibleNavigation> value to get the first child accessible object of the <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject>, and use <xref:System.Windows.Forms.AccessibleNavigation> to get the last child. The <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.Navigate%2A> method will return `null` for all other values of the <xref:System.Windows.Forms.AccessibleNavigation> enumeration.  
+ Use the <xref:System.Windows.Forms.AccessibleNavigation.FirstChild> value to get the first child accessible object of the <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject>, and use <xref:System.Windows.Forms.AccessibleNavigation.LastChild> to get the last child. The <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject.Navigate%2A> method will return `null` for all other values of the <xref:System.Windows.Forms.AccessibleNavigation> enumeration.  
   
  ]]></format>
         </remarks>

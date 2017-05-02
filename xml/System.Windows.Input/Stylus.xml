@@ -555,7 +555,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%29> method to ensure that `element` receives stylus events even when the cursor goes out of the elements' bounds. To release the stylus, call <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%2CSystem.Windows.Input.CaptureMode%29> with the <xref:System.Windows.Input.CaptureMode> set to <xref:System.Windows.Input.CaptureMode>.  
+ Use the <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%29> method to ensure that `element` receives stylus events even when the cursor goes out of the elements' bounds. To release the stylus, call <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%2CSystem.Windows.Input.CaptureMode%29> with the <xref:System.Windows.Input.CaptureMode> set to <xref:System.Windows.Input.CaptureMode.None>.  
   
  The <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%29> method returns `false` if `element` is not visible or enabled.  
   
@@ -597,7 +597,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%2CSystem.Windows.Input.CaptureMode%29> method to ensure that `element` receives stylus events even when the cursor goes out of the elements' bounds. To release the stylus, call <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%2CSystem.Windows.Input.CaptureMode%29> with the <xref:System.Windows.Input.CaptureMode> set to <xref:System.Windows.Input.CaptureMode>.  
+ Use the <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%2CSystem.Windows.Input.CaptureMode%29> method to ensure that `element` receives stylus events even when the cursor goes out of the elements' bounds. To release the stylus, call <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%2CSystem.Windows.Input.CaptureMode%29> with the <xref:System.Windows.Input.CaptureMode> set to <xref:System.Windows.Input.CaptureMode.None>.  
   
  The <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%2CSystem.Windows.Input.CaptureMode%29> method returns `false` if `element` is not visible or enabled.  
   

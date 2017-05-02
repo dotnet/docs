@@ -255,7 +255,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Security.Principal.SecurityIdentifier%29?displayProperty=fullName> method. The <xref:System.Security.Principal.WellKnownSidType> enumeration value is used to determine whether the current principal is an administrator. For the full code example, see the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Int32%29?displayProperty=fullName> method.  
+ The following code example demonstrates the use of the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Security.Principal.SecurityIdentifier%29?displayProperty=fullName> method. The <xref:System.Security.Principal.WellKnownSidType.BuiltinAdministratorsSid> enumeration value is used to determine whether the current principal is an administrator. For the full code example, see the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Int32%29?displayProperty=fullName> method.  
   
  [!code-csharp[System.Security.Principal.WindowsBuiltInRole Example#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CS/source.cs#5)]
  [!code-vb[System.Security.Principal.WindowsBuiltInRole Example#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/VB/source.vb#5)]  
@@ -306,7 +306,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Security.Principal.WindowsBuiltInRole> enumeration is used to determine whether the current principal is an <xref:System.Security.Principal.WindowsBuiltInRole>. For the full code example, see the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Int32%29?displayProperty=fullName> method.  
+ The following example uses the <xref:System.Security.Principal.WindowsBuiltInRole> enumeration is used to determine whether the current principal is an <xref:System.Security.Principal.WindowsBuiltInRole.Administrator>. For the full code example, see the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Int32%29?displayProperty=fullName> method.  
   
  [!code-csharp[System.Security.Principal.WindowsBuiltInRole Example#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CS/source.cs#4)]
  [!code-vb[System.Security.Principal.WindowsBuiltInRole Example#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/VB/source.vb#4)]  

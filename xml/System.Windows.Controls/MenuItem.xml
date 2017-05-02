@@ -184,7 +184,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.ClickEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
   
@@ -327,7 +327,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.CommandParameterProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -631,7 +631,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.IsCheckableProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -696,7 +696,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.IsCheckedProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>|  
   
    
@@ -782,7 +782,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.IsHighlightedProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -872,7 +872,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.IsPressedProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -944,7 +944,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.IsSubmenuOpenProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
    
@@ -1802,7 +1802,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.StaysOpenOnClickProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -2106,7 +2106,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.UncheckedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
   

@@ -155,7 +155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you use the <xref:System.Windows.Forms.OSFeature.IsPresent%2A> method to determine if the operating system supports the specific feature or metric identified by `enumValue`. Based upon the value returned from <xref:System.Windows.Forms.OSFeature.IsPresent%2A>, you would perform conditional actions in your code. For example, if calling this method with a parameter value of <xref:System.Windows.Forms.SystemParameter> returns `true`, you could create owner-drawn menus in your application in a flat style.  
+ Typically, you use the <xref:System.Windows.Forms.OSFeature.IsPresent%2A> method to determine if the operating system supports the specific feature or metric identified by `enumValue`. Based upon the value returned from <xref:System.Windows.Forms.OSFeature.IsPresent%2A>, you would perform conditional actions in your code. For example, if calling this method with a parameter value of <xref:System.Windows.Forms.SystemParameter.FlatMenu> returns `true`, you could create owner-drawn menus in your application in a flat style.  
   
  Accessing some system features or metrics can raise exceptions if they are not available on a specific operating system version. In this case, first use the corresponding <xref:System.Windows.Forms.SystemParameter> enumeration value, along with <xref:System.Windows.Forms.OSFeature.IsPresent%2A>, to determine if the metric is supported. For example, call <xref:System.Windows.Forms.OSFeature.IsPresent%2A> with <xref:System.Windows.Forms.SystemInformation.CaretWidth%2A> before getting the <xref:System.Windows.Forms.SystemInformation.CaretWidth%2A?displayProperty=fullName> property value.  
   

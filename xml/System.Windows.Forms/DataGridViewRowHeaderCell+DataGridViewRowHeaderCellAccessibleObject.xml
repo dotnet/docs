@@ -106,7 +106,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject.DoDefaultAction%2A> method selects the row if the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=fullName> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode> or <xref:System.Windows.Forms.DataGridViewSelectionMode>.  
+ The <xref:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject.DoDefaultAction%2A> method selects the row if the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=fullName> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect>.  
   
  ]]></format>
         </remarks>
@@ -165,9 +165,9 @@
   
 |Parameter value|Description|  
 |---------------------|-----------------|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The first <xref:System.Windows.Forms.DataGridViewCell> in the row, not including the <xref:System.Windows.Forms.DataGridViewRowHeaderCell>. <xref:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject.Navigate%2A> returns the <xref:System.Windows.Forms.DataGridViewRowHeaderCell> below the current row if the <xref:System.Windows.Forms.DataGridView> has no other columns.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The <xref:System.Windows.Forms.DataGridViewRowHeaderCell> above the current row. <xref:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject.Navigate%2A> returns `null` if the current row is the first row.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The <xref:System.Windows.Forms.DataGridViewRowHeaderCell> below the current row. <xref:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject.Navigate%2A> returns `null` if the current row is the last row.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Next>|The first <xref:System.Windows.Forms.DataGridViewCell> in the row, not including the <xref:System.Windows.Forms.DataGridViewRowHeaderCell>. <xref:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject.Navigate%2A> returns the <xref:System.Windows.Forms.DataGridViewRowHeaderCell> below the current row if the <xref:System.Windows.Forms.DataGridView> has no other columns.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Up>|The <xref:System.Windows.Forms.DataGridViewRowHeaderCell> above the current row. <xref:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject.Navigate%2A> returns `null` if the current row is the first row.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Down>|The <xref:System.Windows.Forms.DataGridViewRowHeaderCell> below the current row. <xref:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject.Navigate%2A> returns `null` if the current row is the last row.|  
 |All other <xref:System.Windows.Forms.AccessibleNavigation> values|`null`.|  
   
  ]]></format>
@@ -238,9 +238,9 @@
   
 |Parameter value|Action|  
 |---------------------|------------|  
-|<xref:System.Windows.Forms.AccessibleSelection>|Moves input focus to the <xref:System.Windows.Forms.DataGridView> control.|  
-|<xref:System.Windows.Forms.AccessibleSelection> or <xref:System.Windows.Forms.AccessibleSelection>|If the <xref:System.Windows.Forms.DataGridView> control that contains the owning cell has a <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property value of <xref:System.Windows.Forms.DataGridViewSelectionMode> or <xref:System.Windows.Forms.DataGridViewSelectionMode>, the row containing the cell is selected.|  
-|<xref:System.Windows.Forms.AccessibleSelection>|If the row containing the cell is selected, the selection is canceled.|  
+|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus>|Moves input focus to the <xref:System.Windows.Forms.DataGridView> control.|  
+|<xref:System.Windows.Forms.AccessibleSelection.TakeSelection> or <xref:System.Windows.Forms.AccessibleSelection.AddSelection>|If the <xref:System.Windows.Forms.DataGridView> control that contains the owning cell has a <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property value of <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect>, the row containing the cell is selected.|  
+|<xref:System.Windows.Forms.AccessibleSelection.RemoveSelection>|If the row containing the cell is selected, the selection is canceled.|  
 |All other <xref:System.Windows.Forms.AccessibleSelection> values|No action is taken.|  
   
  ]]></format>
@@ -268,7 +268,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value always includes the <xref:System.Windows.Forms.AccessibleStates> value. It also includes the <xref:System.Windows.Forms.AccessibleStates> value if the associated cell is selected and the <xref:System.Windows.Forms.AccessibleStates> value if the cell is not currently displayed.  
+ The return value always includes the <xref:System.Windows.Forms.AccessibleStates.Selectable> value. It also includes the <xref:System.Windows.Forms.AccessibleStates.Selected> value if the associated cell is selected and the <xref:System.Windows.Forms.AccessibleStates.Offscreen> value if the cell is not currently displayed.  
   
  ]]></format>
         </remarks>

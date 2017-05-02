@@ -41,24 +41,15 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Data.ITableMappingCollection" /> interface, you should implement the following constructor:  
   
- <list type="table">  
-<listheader>  
-<term> Item  
+ <list type="table"><listheader><term> Item  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> PrvTableMappingCollection()  
+ </description></listheader><item><term> PrvTableMappingCollection()  
   
- </term>  
-<description> Creates an empty PrvTableMappingCollection class.  
+ </term><description> Creates an empty PrvTableMappingCollection class.  
   
- </description>  
-</item>  
-</list></para>
+ </description></item></list></para>
     </block>
   </Docs>
   <Members>

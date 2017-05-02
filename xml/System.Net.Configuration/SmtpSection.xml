@@ -86,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Valid values for this property are <xref:System.Net.Mail.SmtpDeliveryMethod>, <xref:System.Net.Mail.SmtpDeliveryMethod>, and <xref:System.Net.Mail.SmtpDeliveryMethod>. These values have configurable sub-items and have a corresponding section in the `System.Net` configuration file. All the sections are camel-cased, to allow the users to match the delivery method with their corresponding section names.  
+ Valid values for this property are <xref:System.Net.Mail.SmtpDeliveryMethod.Network>, <xref:System.Net.Mail.SmtpDeliveryMethod.PickupDirectoryFromIis>, and <xref:System.Net.Mail.SmtpDeliveryMethod.SpecifiedPickupDirectory>. These values have configurable sub-items and have a corresponding section in the `System.Net` configuration file. All the sections are camel-cased, to allow the users to match the delivery method with their corresponding section names.  
   
  ]]></format>
         </remarks>

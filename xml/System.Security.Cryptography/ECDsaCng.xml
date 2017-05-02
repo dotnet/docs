@@ -513,7 +513,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `parameters` contains only <xref:System.Security.Cryptography.ECParameters>, only a public key is imported. If `parameters` also contains <xref:System.Security.Cryptography.ECParameters>, a full key pair is imported. The <xref:System.Security.Cryptography.ECParameters> field specifies the type of the curve to import.  
+ If `parameters` contains only <xref:System.Security.Cryptography.ECParameters.Q>, only a public key is imported. If `parameters` also contains <xref:System.Security.Cryptography.ECParameters.D>, a full key pair is imported. The <xref:System.Security.Cryptography.ECParameters.Curve> field specifies the type of the curve to import.  
   
  ]]></format>
         </remarks>

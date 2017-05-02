@@ -83,9 +83,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.FillRule> enumeration value determines the "insideness" of a point on the shape. It draws a ray from the point to infinity in any direction and counts the number of path segments from the specified shape that the ray crosses. If the number is odd, the point is inside; if it is even, the point is outside.  
+ The <xref:System.Windows.Media.FillRule.EvenOdd> enumeration value determines the "insideness" of a point on the shape. It draws a ray from the point to infinity in any direction and counts the number of path segments from the specified shape that the ray crosses. If the number is odd, the point is inside; if it is even, the point is outside.  
   
- The <xref:System.Windows.Media.FillRule> enumeration value determines the "insideness" of a point on the shape. It draws a ray from the point to infinity in any direction and then examines the places where a segment of the shape crosses the ray. Starting with a count of zero, it adds one each time a Segment crosses the ray from left to right and subtracts one each time a path segment crosses the ray from right to left. After it counts the crossings, if the result is zero, the point is outside the path. Otherwise, it is inside.  
+ The <xref:System.Windows.Media.FillRule.Nonzero> enumeration value determines the "insideness" of a point on the shape. It draws a ray from the point to infinity in any direction and then examines the places where a segment of the shape crosses the ray. Starting with a count of zero, it adds one each time a Segment crosses the ray from left to right and subtracts one each time a path segment crosses the ray from right to left. After it counts the crossings, if the result is zero, the point is outside the path. Otherwise, it is inside.  
   
  ![Fill rule illustration](~/add/media/ref-mil-fillrule-stars.PNG "Fill rule illustration")  
 FillRule Example  

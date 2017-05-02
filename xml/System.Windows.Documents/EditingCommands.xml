@@ -75,7 +75,7 @@
 |<xref:System.Windows.Documents.EditingCommands.ToggleSuperscript%2A>|`Ctrl`+`Shift+OemPlus`|  
 |<xref:System.Windows.Documents.EditingCommands.ToggleUnderline%2A>|`Ctrl`+`U`|  
   
- Caret movement commands and selection expanding commands share a common set of default key gestures, the general difference being the addition of the <xref:System.Windows.Input.ModifierKeys> key to differentiate selection commands from caret movement commands.  For example, the <xref:System.Windows.Documents.EditingCommands.MoveLeftByCharacter%2A> command has a default key gesture of <xref:System.Windows.Input.Key>, and the corresponding <xref:System.Windows.Documents.EditingCommands.SelectLeftByCharacter%2A> command has a default key gesture of <xref:System.Windows.Input.ModifierKeys>+<xref:System.Windows.Input.Key>.  
+ Caret movement commands and selection expanding commands share a common set of default key gestures, the general difference being the addition of the <xref:System.Windows.Input.ModifierKeys.Shift> key to differentiate selection commands from caret movement commands.  For example, the <xref:System.Windows.Documents.EditingCommands.MoveLeftByCharacter%2A> command has a default key gesture of <xref:System.Windows.Input.Key.Left>, and the corresponding <xref:System.Windows.Documents.EditingCommands.SelectLeftByCharacter%2A> command has a default key gesture of <xref:System.Windows.Input.ModifierKeys.Shift>+<xref:System.Windows.Input.Key.Left>.  
   
  In general, the command definitions provided by the <xref:System.Windows.Documents.EditingCommands> class do not make use of command parameters (the `parameter` parameter expected by the <xref:System.Windows.Input.ICommand.Execute%2A> method).  
   

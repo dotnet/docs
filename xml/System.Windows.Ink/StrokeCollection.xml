@@ -634,7 +634,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method returns an <xref:System.Windows.Ink.IncrementalStrokeHitTester> that considers a <xref:System.Windows.Ink.Stroke> to be "hit" when the eraser path intersects it. This is useful for implementing features, such as the ability to erase part of a <xref:System.Windows.Ink.Stroke>. The <xref:System.Windows.Controls.InkCanvas> uses an <xref:System.Windows.Ink.IncrementalStrokeHitTester> when the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode>.  
+ The <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method returns an <xref:System.Windows.Ink.IncrementalStrokeHitTester> that considers a <xref:System.Windows.Ink.Stroke> to be "hit" when the eraser path intersects it. This is useful for implementing features, such as the ability to erase part of a <xref:System.Windows.Ink.Stroke>. The <xref:System.Windows.Controls.InkCanvas> uses an <xref:System.Windows.Ink.IncrementalStrokeHitTester> when the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByPoint>.  
   
    
   

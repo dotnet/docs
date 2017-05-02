@@ -131,9 +131,9 @@
 ## Remarks  
  Use the <xref:System.Security.Cryptography.CspParameters.%23ctor%2A> constructor to specify a provider type by passing a numeric value that represents that provider.  The numeric values that represent the default provider types are defined in the WinCrypt.h header file:  
   
--   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1`to the `dwTypeIn` parameter.  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1` to the `dwTypeIn` parameter.  
   
--   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13`to the `dwTypeIn` parameter.  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13` to the `dwTypeIn` parameter.  
   
  For information about other provider type values, see the <xref:System.Security.Cryptography.CspParameters.ProviderType> field.  For more information about the default provider types and their behaviors, see the Microsoft Cryptography API (CAPI) documentation in the MSDN library.  
   
@@ -184,9 +184,9 @@
   
  Specify a provider type by passing a numeric value that represents the desired provider type.  The numeric values that represent the default provider types are defined in the WinCrypt.h header file:  
   
--   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1`to the `dwTypeIn` parameter.  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1` to the `dwTypeIn` parameter.  
   
--   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13`to the `dwTypeIn` parameter.  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13` to the `dwTypeIn` parameter.  
   
  For information about other provider type values, see the <xref:System.Security.Cryptography.CspParameters.ProviderType> field.  For more information about the default provider types and their behaviors, see the Microsoft Cryptography API (CAPI) documentation in the MSDN library.  
   
@@ -241,9 +241,9 @@
   
  Specify a provider type by passing a numeric value that represents the desired provider type.  The numeric values that represent the default provider types are defined in the WinCrypt.h header file:  
   
--   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1`to the `dwTypeIn` parameter.  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1` to the `dwTypeIn` parameter.  
   
--   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13`to the `dwTypeIn` parameter.  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13` to the `dwTypeIn` parameter.  
   
  For information about other provider type values, see the <xref:System.Security.Cryptography.CspParameters.ProviderType> field.  For more information about the default provider types and their behaviors, see the Microsoft Cryptography API (CAPI) documentation in the MSDN library.  
   
@@ -283,9 +283,9 @@
   
  Specify a provider type by passing a numeric value that represents the desired provider type.  The numeric values that represent the default provider types are defined in the WinCrypt.h header file:  
   
--   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1`to the `dwTypeIn` parameter.  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1` to the `dwTypeIn` parameter.  
   
--   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13`to the `dwTypeIn` parameter.  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13` to the `dwTypeIn` parameter.  
   
  For information about other provider type values, see the <xref:System.Security.Cryptography.CspParameters.ProviderType> field.  For more information about the default provider types and their behaviors, see the Microsoft Cryptography API (CAPI) documentation in the MSDN library.  
   
@@ -325,9 +325,9 @@
   
  Specify a provider type by passing a numeric value that represents the desired provider type.  The numeric values that represent the default provider types are defined in the WinCrypt.h header file:  
   
--   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1`to the `dwTypeIn` parameter.  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1` to the `dwTypeIn` parameter.  
   
--   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13`to the `dwTypeIn` parameter.  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13` to the `dwTypeIn` parameter.  
   
  For information about other provider type values, see the <xref:System.Security.Cryptography.CspParameters.ProviderType> field.  For more information about the default provider types and their behaviors, see the Microsoft Cryptography API (CAPI) documentation in the MSDN library.  
   

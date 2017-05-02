@@ -25,7 +25,7 @@ public class MyExpressionBuilder : ExpressionBuilder
     {
         return GetEvalData(entry.Expression, target.GetType(), entry.Name);
     }
-    // </Snippet3
+    // </Snippet3>
 
     // <Snippet4>
     public override CodeExpression GetCodeExpression(BoundPropertyEntry entry, 

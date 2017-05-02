@@ -29,7 +29,7 @@
 ## Remarks  
  Several classes, such as <xref:System.Xml.XmlDocument> and <xref:System.Xml.XmlReader>, use the `XmlNameTable` class internally to store attribute and element names. When an element or attribute name occurs multiple times in an XML document, it is stored only once in the `XmlNameTable`.  
   
- The names are stored as common language runtime (CLR) object types. This enables you to do object comparisons on these strings rather than a more expensive string comparison. These string objects are referred to as  `atomized``strings`.  
+ The names are stored as common language runtime (CLR) object types. This enables you to do object comparisons on these strings rather than a more expensive string comparison. These string objects are referred to as "atomized strings".  
   
  `XmlNameTable` is implemented in the <xref:System.Xml.NameTable> class.  
   

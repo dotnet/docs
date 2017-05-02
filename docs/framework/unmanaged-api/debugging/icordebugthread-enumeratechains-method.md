@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumerateChains method [.NET Framework debugging]"
   - "ICorDebugThread::EnumerateChains method [.NET Framework debugging]"
 ms.assetid: ec00bc21-117e-4acd-9301-2cfafd5be8d3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

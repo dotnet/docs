@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataAssemblyEmit::DefineAssembly method [.NET Framework metadata]"
   - "DefineAssembly method [.NET Framework metadata]"
 ms.assetid: a0637d66-74bf-4f2d-8137-9ff838bccece
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"

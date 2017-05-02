@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedScope::GetChildren method [.NET Framework debugging]"
   - "GetChildren method [.NET Framework debugging]"
 ms.assetid: 0bed524e-cc48-4bf0-b9fa-25d665e63ddb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

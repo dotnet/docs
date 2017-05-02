@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::COMClassicVTableDestroyed method [.NET Framework profiling]"
   - "COMClassicVTableDestroyed method [.NET Framework profiling]"
 ms.assetid: 29da20ca-bf39-4356-8099-d9c3ac3423a9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

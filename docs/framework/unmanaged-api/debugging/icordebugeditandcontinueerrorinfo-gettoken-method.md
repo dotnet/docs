@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetToken method, ICorDebugEditAndContinueErrorInfo interface [.NET Framework debugging]"
   - "ICorDebugEditAndContinueErrorInfo::GetToken method [.NET Framework debugging]"
 ms.assetid: 590647c5-499f-44c3-b56c-0e1945088d3a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

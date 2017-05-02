@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ECustomDumpFlavor enumeration [.NET Framework hosting]"
 ms.assetid: b39b3320-fac7-41f1-9a03-ab6fb0cd89c7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameGetBlob function [.NET Framework strong naming]"
 ms.assetid: 15d09166-be00-4696-913f-2c1fbc7ac2e1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

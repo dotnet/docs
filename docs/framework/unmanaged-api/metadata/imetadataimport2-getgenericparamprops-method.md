@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport2::GetGenericParamProps method [.NET Framework metadata]"
   - "GetGenericParamProps method [.NET Framework metadata]"
 ms.assetid: dbb21e67-712b-49e7-a27c-a1e73ffd46c5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

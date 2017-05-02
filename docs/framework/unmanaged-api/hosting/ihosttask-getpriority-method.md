@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetPriority method [.NET Framework hosting]"
   - "IHostTask::GetPriority method [.NET Framework hosting]"
 ms.assetid: 4b463cd6-77c1-4f9a-8518-346ad8fc4b70
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

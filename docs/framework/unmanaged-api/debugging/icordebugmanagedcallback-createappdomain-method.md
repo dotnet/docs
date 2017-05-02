@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateAppDomain method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::CreateAppDomain method [.NET Framework debugging]"
 ms.assetid: 48d410d7-6749-4125-a8fd-f9562c7088e9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

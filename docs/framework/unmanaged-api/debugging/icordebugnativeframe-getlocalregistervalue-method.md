@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetLocalRegisterValue method [.NET Framework debugging]"
   - "ICorDebugNativeFrame::GetLocalRegisterValue method [.NET Framework debugging]"
 ms.assetid: 5ccb74f3-f891-430c-b70a-e370624edde2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

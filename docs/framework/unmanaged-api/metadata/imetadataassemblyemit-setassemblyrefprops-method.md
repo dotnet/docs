@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetAssemblyRefProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetAssemblyRefProps method [.NET Framework metadata]"
 ms.assetid: 70a32bf3-9051-4f96-ae87-11356d06a073
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

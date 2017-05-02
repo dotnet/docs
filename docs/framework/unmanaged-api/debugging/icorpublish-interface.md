@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorPublish interface [.NET Framework debugging]"
 ms.assetid: 87c4fcb2-7703-4a2e-afb6-42973381b960
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

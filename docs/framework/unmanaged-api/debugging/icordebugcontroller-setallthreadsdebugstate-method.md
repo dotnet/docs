@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetAllThreadsDebugState method [.NET Framework debugging]"
   - "ICorDebugController::SetAllThreadsDebugState method [.NET Framework debugging]"
 ms.assetid: bdda4bd7-4743-4d58-a22b-8067e967db95
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

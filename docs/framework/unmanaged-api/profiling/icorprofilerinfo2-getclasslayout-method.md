@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo2::GetClassLayout method [.NET Framework profiling]"
   - "GetClassLayout method, ICorProfilerInfo2 interface [.NET Framework profiling]"
 ms.assetid: a3a36987-5666-4e2f-95b5-d0cb246502ec
+topic_type: 
+  - "apiref"
 caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "INotifySink2::OnSyncCallEnter method [.NET Framework debugging]"
   - "OnSyncCallEnter method [.NET Framework debugging]"
 ms.assetid: e33265be-c25d-4145-ad02-c3e89d6f26c1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COINITICOR enumeration [.NET Framework metadata]"
 ms.assetid: 67fefd89-28d6-4588-84ea-dc7a5870e014
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

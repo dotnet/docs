@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CLRDataCreateInstance function [.NET Framework debugging]"
 ms.assetid: 440bad90-5a88-45e7-9157-4596801d8d19
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

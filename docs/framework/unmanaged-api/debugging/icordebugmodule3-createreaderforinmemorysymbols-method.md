@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateReaderForInMemorySymbols method, ICorDebugModule3 interface [.NET Framework debugging]"
   - "ICorDebugModule3::CreateReaderForInMemorySymbols method [.NET Framework debugging]"
 ms.assetid: af317171-d66d-4114-89eb-063554c74940
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

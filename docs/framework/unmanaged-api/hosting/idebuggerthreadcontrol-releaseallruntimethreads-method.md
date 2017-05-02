@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ReleaseAllRuntimeThreads method [.NET Framework hosting]"
   - "IDebuggerThreadControl::ReleaseAllRuntimeThreads method [.NET Framework hosting]"
 ms.assetid: 1a2995ff-5f02-4b49-84dc-3a5f9cfd7d55
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

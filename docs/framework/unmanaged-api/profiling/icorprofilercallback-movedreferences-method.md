@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "MovedReferences method [.NET Framework profiling]"
   - "ICorProfilerCallback::MovedReferences method [.NET Framework profiling]"
 ms.assetid: 996c71ae-0676-4616-a085-84ebf507649d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 26
 author: "mairaw"
 ms.author: "mairaw"

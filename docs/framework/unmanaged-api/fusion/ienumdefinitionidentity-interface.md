@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IEnumDefinitionIdentity interface [.NET Framework fusion]"
 ms.assetid: 8263e75d-251b-4abc-8a1a-c62884142232
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

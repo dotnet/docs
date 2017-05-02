@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetScopeFromOffset method [.NET Framework debugging]"
   - "ISymUnmanagedMethod::GetScopeFromOffset method [.NET Framework debugging]"
 ms.assetid: d14cf210-81f8-46e1-8b19-6ddec0ba8b11
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

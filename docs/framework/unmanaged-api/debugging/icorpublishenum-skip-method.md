@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorPublishEnum::Skip method [.NET Framework debugging]"
   - "Skip method, ICorDebugEnum interface [.NET Framework debugging]"
 ms.assetid: 1680ec06-4ab0-447e-93ad-cdb8693fde5c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

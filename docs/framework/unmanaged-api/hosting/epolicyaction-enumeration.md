@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EPolicyAction enumeration [.NET Framework hosting]"
 ms.assetid: 72dd76ba-239e-45ac-9ded-318fb07d6c6d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

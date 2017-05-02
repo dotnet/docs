@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CREATE_ASM_NAME_OBJ_FLAGS enumeration [.NET Framework fusion]"
 ms.assetid: a5ed2fd0-c7d2-4603-aaca-5d0caad92675
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

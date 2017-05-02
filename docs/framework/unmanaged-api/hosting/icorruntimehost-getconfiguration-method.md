@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorRuntimeHost::GetConfiguration method [.NET Framework hosting]"
   - "GetConfiguration method [.NET Framework hosting]"
 ms.assetid: c431617a-b055-44a0-8730-48b7a86d9610
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

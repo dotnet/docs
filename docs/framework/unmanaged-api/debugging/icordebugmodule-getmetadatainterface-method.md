@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModule::GetMetaDatainterface method [.NET Framework debugging]"
   - "GetMetaDatainterface method [.NET Framework debugging]"
 ms.assetid: 30d906f2-cf35-4fa9-9d4c-0c31b58c9f3a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

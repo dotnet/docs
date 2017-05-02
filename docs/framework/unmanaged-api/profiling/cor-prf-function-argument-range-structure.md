@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_FUNCTION_ARGUMENT_RANGE structure [.NET Framework profiling'"
 ms.assetid: 9f469eac-ac66-419b-8668-fe705bc1a51f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetCLRTask method [.NET Framework hosting]"
   - "IHostTask::SetCLRTask method [.NET Framework hosting]"
 ms.assetid: e9d39c80-41a1-49e7-bb5e-ea3433bfb5d7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DefineImportType method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineImportType method [.NET Framework metadata]"
 ms.assetid: 37fd27af-8062-4904-ace4-51bb78ec600a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

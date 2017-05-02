@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_FUNCTION structure [.NET Framework profiling]"
 ms.assetid: 8bb5acf5-cf4b-4ccb-93f1-46db1f3f8bf3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

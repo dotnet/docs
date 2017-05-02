@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CloseAssembly method"
 ms.assetid: f66a43bc-a5c5-4190-acbe-63fd27640634
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetPermissionSetProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetPermissionSetProps method [.NET Framework metadata]"
 ms.assetid: 9855f0e4-12c0-4d3d-ab5d-d6bc52d25eae
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetModuleFromScope method [.NET Framework metadata]"
   - "IMetaDataImport::GetModuleFromScope method [.NET Framework metadata]"
 ms.assetid: add68d3f-45fd-4bef-af94-eb5273f26b11
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

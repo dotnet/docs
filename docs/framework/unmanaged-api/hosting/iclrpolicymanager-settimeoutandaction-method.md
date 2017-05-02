@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRPolicyManager::SetTimeoutAndAction method [.NET Framework hosting]"
   - "SetTimeoutAndAction method [.NET Framework hosting]"
 ms.assetid: 60454f91-d855-4ddf-bb6d-60a02f5eabab
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

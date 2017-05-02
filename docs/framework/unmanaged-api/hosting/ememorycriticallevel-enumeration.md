@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EMemoryCriticalLevel enumeration [.NET Framework hosting]"
 ms.assetid: 2ca8a7a2-7b54-4ba3-8e73-277c7df485f3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

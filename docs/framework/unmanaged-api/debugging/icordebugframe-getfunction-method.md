@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetFunction method, ICorDebugFrame interface [.NET Framework debugging]"
   - "ICorDebugFrame::GetFunction method [.NET Framework debugging]"
 ms.assetid: 879d2311-0ff1-4616-a8b3-959ea5868b2e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

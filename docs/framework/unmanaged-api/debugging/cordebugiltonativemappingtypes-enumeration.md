@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugIIToNativeMappingTypes enumeration [.NET Framework debugging]"
 ms.assetid: c35e2919-42c3-4ba0-ae28-443c35f66f93
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

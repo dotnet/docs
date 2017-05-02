@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugAppDomain interface [.NET Framework debugging]"
 ms.assetid: be7ae711-1217-4a44-be40-166e29641b77
+topic_type: 
+  - "apiref"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModule::GetAssembly method [.NET Framework debugging]"
   - "GetAssembly method [.NET Framework debugging]"
 ms.assetid: 989762c4-3d15-4485-b8ee-69e0fa8ec895
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

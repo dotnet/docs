@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess5::GetArrayLayout method [.NET Framework debugging]"
   - "GetArrayLayout method, ICorDebugProcess5 interface [.NET Framework debugging]"
 ms.assetid: 9a7393b9-9735-43c6-8616-afb103c432fd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

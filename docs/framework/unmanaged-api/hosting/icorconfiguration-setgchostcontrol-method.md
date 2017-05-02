@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorConfiguration::SetGCHostControl method [.NET Framework hosting]"
   - "SetGCHostControl method [.NET Framework hosting]"
 ms.assetid: bca6bd79-e288-475a-aa46-6bf81541d966
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

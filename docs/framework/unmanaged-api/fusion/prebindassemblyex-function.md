@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "PreBindAssemblyEx function [.NET Framework fusion]"
 ms.assetid: bd285233-a4a2-4b52-bbca-0025a60e4864
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

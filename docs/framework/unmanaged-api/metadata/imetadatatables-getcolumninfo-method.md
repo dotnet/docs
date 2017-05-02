@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataTables::GetColumnInfo method [.NET Framework metadata]"
   - "GetColumnInfo method [.NET Framework metadata]"
 ms.assetid: 68c160ea-ae7d-4750-985d-a038b2c8e7d9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

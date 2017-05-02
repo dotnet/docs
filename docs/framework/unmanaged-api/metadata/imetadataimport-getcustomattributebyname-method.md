@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::GetCustomAttributeByName method [.NET Framework metadata]"
   - "GetCustomAttributeByName method [.NET Framework metadata]"
 ms.assetid: 909aa530-2e3b-4d0a-a38a-a2750e535d7d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

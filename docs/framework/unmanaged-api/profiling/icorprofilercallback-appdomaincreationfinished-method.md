@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "AppDomainCreationFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::AppDomainCreationFinished method [.NET Framework profiling]"
 ms.assetid: dbab7d90-d515-4dc9-8195-294d5d04bab6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

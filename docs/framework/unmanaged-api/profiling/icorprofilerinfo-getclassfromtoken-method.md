@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo::GetClassFromToken method [.NET Framework profiling]"
   - "GetClassFromToken method, ICorProfilerInfo interface [.NET Framework profiling]"
 ms.assetid: 0afc1197-2a5b-424f-8b82-9cb59a7e00db
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

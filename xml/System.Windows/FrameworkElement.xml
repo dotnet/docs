@@ -4572,7 +4572,7 @@
  When you use layout rounding and <xref:System.Windows.GridUnitType> sizing, the layout system creates small variations in the column or row measurements to avoid subpixel rendering. For example, if a grid has a total width of 100 with 3 columns each of size <xref:System.Windows.GridUnitType>, instead of creating three columns that have an equal width of 33.3, the layout system creates 2 columns that have a width of 33 and one that has a width of 34.  
   
 > [!NOTE]
->  In .NET 4.6 changes were made to layout rounding to reduce instances of clipping in controls with borders. By default, this feature is enabled if your Target Framework is .NET Framework 4.6 or higher. Applications that target earlier versions of the framework can opt in into the new behavior by adding the following setting to an app.config file: `<runtime>``<AppContextSwitchOverrides      value="Switch.MS.Internal.DoNotApplyLayoutRoundingToMarginsAndBorderThickness=false"/>``</runtime>` The setting only takes effect when the application is running on the .NET Framework 4.6.  
+>  In .NET 4.6 changes were made to layout rounding to reduce instances of clipping in controls with borders. By default, this feature is enabled if your Target Framework is .NET Framework 4.6 or higher. Applications that target earlier versions of the framework can opt in into the new behavior by adding the following setting to an app.config file: `<runtime><AppContextSwitchOverrides value="Switch.MS.Internal.DoNotApplyLayoutRoundingToMarginsAndBorderThickness=false"/></runtime>` The setting only takes effect when the application is running on the .NET Framework 4.6.  
   
    
   

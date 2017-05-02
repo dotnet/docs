@@ -112,7 +112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method examines all the resources for the current culture used in the development environment. It attempts to find a resource with a key in the format of `objectName``.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
+ This method examines all the resources for the current culture used in the development environment. It attempts to find a resource with a key in the format of `objectName.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
   
  ]]></format>
         </remarks>
@@ -153,7 +153,7 @@
 ## Remarks  
  This method examines all the resources for the provided culture. If `culture` is `null`, the current culture is assumed.  
   
- The <xref:System.ComponentModel.ComponentResourceManager.ApplyResources%2A> method attempts to find a resource with a key in the format of `objectName``.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
+ The <xref:System.ComponentModel.ComponentResourceManager.ApplyResources%2A> method attempts to find a resource with a key in the format of `objectName.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
   
  ]]></format>
         </remarks>

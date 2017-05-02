@@ -386,7 +386,7 @@ when reading it the first time. These methods must be understood
 outside of the context of the single calling location.
 
 For those designs, *local functions* enable you to declare methods
-inside the context of another method. This makes it easier for readers
+inside the context of another method or inside constructor. This makes it easier for readers
 of the class to see that the local method is only called from the context
 in which is it declared.
 

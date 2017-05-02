@@ -18,7 +18,7 @@ The .NET Platform Guide provides a large amount of information about the .NET Pl
 
 ## New to .NET
 
-If you're new to .NET, check out the [Getting Started](getting-started.md) article.
+If you're new to .NET, check out the [Get Started](get-started.md) article.
 
 If you prefer to have a guided tour through major features of .NET, check out the [Tour of .NET](tour.md).
 
@@ -26,7 +26,7 @@ You can also read about [.NET Architectural Components](components.md) to get an
 
 ## New to .NET Core
 
-If you're new to .NET Core, check out [Getting Started with .NET Core](../core/getting-started.md).
+If you're new to .NET Core, check out [Get Started with .NET Core](../core/get-started.md).
 
 ## New to .NET Standard
 

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRAssemblyIdentityManager.GetProbingAssembliesFromReference"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference method [.NET Framework hosting]"
   - "GetProbingAssembliesFromReference method [.NET Framework hosting]"
 ms.assetid: aec05744-e8d4-44c6-b4a8-e583229ac34e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

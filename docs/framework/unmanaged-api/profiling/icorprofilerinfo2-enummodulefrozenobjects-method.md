@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo2.EnumModuleFrozenObjects"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::EnumModuleFrozenObjects"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumModuleFrozenObjects method [.NET Framework profiling]"
   - "ICorProfilerInfo2::EnumModuleFrozenObjects method [.NET Framework profiling]"
 ms.assetid: 920b6483-7064-4d64-8613-fcc38ccf9b1e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

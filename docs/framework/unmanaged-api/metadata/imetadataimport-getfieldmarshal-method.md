@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.GetFieldMarshal"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetFieldMarshal"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetFieldMarshal method [.NET Framework metadata]"
   - "IMetaDataImport::GetFieldMarshal method [.NET Framework metadata]"
 ms.assetid: 4e2d88c6-8a3a-4fbe-900b-b4f4c06bf6bf
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

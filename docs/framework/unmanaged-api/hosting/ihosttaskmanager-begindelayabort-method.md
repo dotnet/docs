@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostTaskManager.BeginDelayAbort"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostTaskManager::BeginDelayAbort"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "BeginDelayAbort method [.NET Framework hosting]"
   - "IHostTaskManager::BeginDelayAbort method [.NET Framework hosting]"
 ms.assetid: 75f42a8b-ed68-4718-a030-a179cfba7d72
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

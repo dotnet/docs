@@ -2,18 +2,19 @@
 title: "ICorDebugNativeFrame2::IsChild Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugNativeFrame2.IsChild Method"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame2::IsChild"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IsChild method [.NET Framework debugging]"
   - "ICorDebugNativeFrame2::IsChild method [.NET Framework debugging]"
 ms.assetid: 9e2aae09-49cb-4fbd-81e5-e29cd864a88b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRRuntimeHost.SetHostControl"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::SetHostControl"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetHostControl method [.NET Framework hosting]"
   - "ICLRRuntimeHost::SetHostControl method [.NET Framework hosting]"
 ms.assetid: 6136be87-e631-4756-81ed-74b66581bad4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

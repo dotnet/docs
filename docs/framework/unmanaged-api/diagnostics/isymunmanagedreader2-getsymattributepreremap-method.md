@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedReader2.GetSymAttributePreRemap"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader2::GetSymAttributePreRemap"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetSymAttributePreRemap method [.NET Framework debugging]"
   - "ISymUnmanagedReader2::GetSymAttributePreRemap method [.NET Framework debugging]"
 ms.assetid: 7580d546-a709-40c5-ad02-aa70d774fd0b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

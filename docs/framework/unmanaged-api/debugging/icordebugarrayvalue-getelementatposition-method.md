@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugArrayValue.GetElementAtPosition"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetElementAtPosition"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetElementAtPosition method [.NET Framework debugging]"
   - "ICorDebugArrayValue::GetElementAtPosition method [.NET Framework debugging]"
 ms.assetid: 6fd5eaa4-1997-4910-82f5-3887480db764
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

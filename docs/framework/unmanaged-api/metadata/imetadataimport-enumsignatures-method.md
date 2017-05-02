@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.EnumSignatures"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumSignatures"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumSignatures method [.NET Framework metadata]"
   - "IMetaDataImport::EnumSignatures method [.NET Framework metadata]"
 ms.assetid: d0d65060-6f90-42a2-95cf-6ffb04352996
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

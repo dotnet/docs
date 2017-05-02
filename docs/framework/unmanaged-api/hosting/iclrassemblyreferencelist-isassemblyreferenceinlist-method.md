@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRAssemblyReferenceList.IsAssemblyReferenceInList"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyReferenceList::IsAssemblyReferenceInList"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRAssemblyReferenceList::IsAssemblyReferenceInList method [.NET Framework hosting]"
   - "IsAssemblyReferenceInList method [.NET Framework hosting]"
 ms.assetid: 8a570813-21be-407e-92a6-7ae8de3bc728
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

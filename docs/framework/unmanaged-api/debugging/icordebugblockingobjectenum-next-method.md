@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugBlockingObjectEnum.Next Method"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugBlockingObjectEnum::Next"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Next method, ICorDebugBlockingObjectEnum interface [.NET Framework debugging]"
   - "ICorDebugBlockingObjectEnum::Next method [.NET Framework debugging]"
 ms.assetid: 0121753f-ebea-48d0-aeb2-ed7fda76dc60
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

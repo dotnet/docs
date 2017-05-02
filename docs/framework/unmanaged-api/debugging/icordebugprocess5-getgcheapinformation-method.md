@@ -2,18 +2,19 @@
 title: "ICorDebugProcess5::GetGCHeapInformation Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugProcess5.GetGCHeapInformation"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::GetGCHeapInformation"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess5::GetGCHeapInformation method [.NET Framework debugging]"
   - "GetGCHeapInformation method, ICorDebugProcess5 interface [.NET Framework debugging]"
 ms.assetid: b9538ceb-230a-4079-9cb2-903dbf5c1848
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

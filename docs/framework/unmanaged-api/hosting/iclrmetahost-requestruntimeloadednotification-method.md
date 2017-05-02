@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRMetaHost.RequestRuntimeLoadedNotification"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRMetaHost::RequestRuntimeLoadedNotification"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "RequestRuntimeLoadedNotification method [.NET Framework hosting]"
   - "ICLRMetaHost::RequestRuntimeLoadedNotification method [.NET Framework hosting]"
 ms.assetid: 0d5ccc4d-0193-41f5-af54-45d7b70d5321
+topic_type: 
+  - "apiref"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

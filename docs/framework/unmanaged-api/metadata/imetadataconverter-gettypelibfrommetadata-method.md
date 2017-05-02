@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataConverter.GetTypeLibFromMetaData"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataConverter::GetTypeLibFromMetaData"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetTypeLibFromMetaData method [.NET Framework metadata]"
   - "IMetaDataConverter::GetTypeLibFromMetaData method [.NET Framework metadata]"
 ms.assetid: 90eab7b3-1fae-4af4-8bce-f7bc0e188a99
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

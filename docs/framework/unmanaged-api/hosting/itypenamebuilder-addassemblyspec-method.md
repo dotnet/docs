@@ -2,18 +2,19 @@
 title: "ITypeNameBuilder::AddAssemblySpec Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ITypeNameBuilder.AddAssemblySpec"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AddAssemblySpec"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameBuilder::AddAssemblySpec method [.NET Framework hosting]"
   - "AddAssemblySpec method [.NET Framework hosting]"
 ms.assetid: 4723e553-10c6-4828-aff8-bc62385163b8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

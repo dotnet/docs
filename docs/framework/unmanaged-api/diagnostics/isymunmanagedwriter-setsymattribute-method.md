@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedWriter.SetSymAttribute"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::SetSymAttribute"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetSymAttribute method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::SetSymAttribute method [.NET Framework debugging]"
 ms.assetid: 64d9b80e-b883-4539-89c7-03573185a1eb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

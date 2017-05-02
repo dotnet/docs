@@ -2,18 +2,19 @@
 title: "ICorPublish::EnumProcesses Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorPublish.EnumProcesses"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorPublish::EnumProcesses"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorPublish::EnumProcesses method [.NET Framework debugging]"
   - "EnumProcesses method [.NET Framework debugging]"
 ms.assetid: 4ae765f0-93b2-4b6f-aea1-7b0cf44e04a7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

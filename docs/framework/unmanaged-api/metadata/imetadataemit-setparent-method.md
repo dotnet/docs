@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.SetParent"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetParent"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetParent method [.NET Framework metadata]"
   - "IMetaDataEmit::SetParent method [.NET Framework metadata]"
 ms.assetid: 02a02ff7-ae0e-4692-a20e-372405f23052
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

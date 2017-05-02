@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugChain.EnumerateFrames"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugChain::EnumerateFrames method"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumerateFrames method [.NET Framework debugging]"
   - "ICorDebugChain::EnumerateFrames method [.NET Framework debugging]"
 ms.assetid: 9fcefa98-750d-4168-8915-8173a43accf2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

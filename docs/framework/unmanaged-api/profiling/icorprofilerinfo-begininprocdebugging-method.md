@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo.BeginInprocDebugging"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::BeginInprocDebugging"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "BeginInprocDebugging method [.NET Framework profiling]"
   - "ICorProfilerInfo::BeginInprocDebugging method [.NET Framework profiling]"
 ms.assetid: c5c82c69-99f8-4447-aee0-42cca0a5eb5c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

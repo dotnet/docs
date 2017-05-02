@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostTaskManager.EndDelayAbort"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostTaskManager::EndDelayAbort"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EndDelayAbort method [.NET Framework hosting]"
   - "IHostTaskManager::EndDelayAbort method [.NET Framework hosting]"
 ms.assetid: 6e02facb-2504-4356-9af5-0cee1f8436a7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

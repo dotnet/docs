@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataAssemblyEmit.SetAssemblyProps"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::SetAssemblyProps"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetAssemblyProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetAssemblyProps method [.NET Framework metadata]"
 ms.assetid: 91b633d7-9e75-43c3-a8d2-2144984e5f9e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IGCThreadControl.SuspensionStarting"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "SuspensionStarting"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IGCThreadControl::SuspensionStarting method [.NET Framework hosting]"
   - "SuspensionStarting method, IGCThreadControl interface [.NET Framework hosting]"
 ms.assetid: 0af312af-98e9-415e-b182-42e80a1aee51
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

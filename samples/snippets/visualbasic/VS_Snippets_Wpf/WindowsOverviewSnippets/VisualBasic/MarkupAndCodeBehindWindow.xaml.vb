@@ -1,6 +1,6 @@
 '<SnippetMarkupAndCodeBehindWindowCODEBEHIND>
 
-Imports System.Windows ' Window
+Imports System.Windows
 
 Namespace SDKSample
 	Partial Public Class MarkupAndCodeBehindWindow

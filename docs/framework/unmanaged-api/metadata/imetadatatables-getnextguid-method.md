@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataTables.GetNextGuid"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetNextGuid"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetNextGuid method [.NET Framework metadata]"
   - "IMetaDataTables::GetNextGuid method [.NET Framework metadata]"
 ms.assetid: 68f6ea4d-9112-4d6b-93d9-e34f1e2f2496
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

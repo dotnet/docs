@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IAppDomainBinding.OnAppDomain"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "OnAppDomain"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IAppDomainBinding::OnAppDomain method [.NET Framework hosting]"
   - "OnAppDomain method [.NET Framework hosting]"
 ms.assetid: b419dcc9-e8aa-484b-af0d-0f40358edb99
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

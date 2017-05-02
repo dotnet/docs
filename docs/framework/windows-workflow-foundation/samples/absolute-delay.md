@@ -2,7 +2,7 @@
 title: "Absolute Delay | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -36,10 +36,10 @@ The main scenario for this sample is to delay until a specified <xref:System.Dat
   
 6.  XAML-only workflow  
   
- This sample demonstrates how to create a custom activity which takes in a <xref:System.DateTime> and uses durable timers to register the delay duration. When using durable timers, you must use a <xref:System.Activities.NativeActivity> to create a bookmark, as you will need to register this bookmark with the timer extension. In this sample, when the durable timer expires, the `OnTimerExpired` method will be called. Make sure that you are adding the timer extension in the <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> event to ensure you are providing the runtime with this information. The only other implementation detail is that you will need to implement logic to convert from <xref:System.DateTime> to <xref:Sysem.TimeSpan>, as durable timers only take in a <xref:System.DateTime>. Do note that there is a small lapse in accuracy by doing  
+ This sample demonstrates how to create a custom activity which takes in a <xref:System.DateTime> and uses durable timers to register the delay duration. When using durable timers, you must use a <xref:System.Activities.NativeActivity> to create a bookmark, as you will need to register this bookmark with the timer extension. In this sample, when the durable timer expires, the `OnTimerExpired` method will be called. Make sure that you are adding the timer extension in the <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> event to ensure you are providing the runtime with this information. The only other implementation detail is that you will need to implement logic to convert from <xref:System.DateTime> to <xref:System.TimeSpan>, as durable timers only take in a <xref:System.DateTime>. Do note that there is a small lapse in accuracy by doing  
   
 > [!NOTE]
->  There is a small loss of accuracy by converting from <xref:System.DateTime> to <xref:Sysem.TimeSpan>.  
+>  There is a small loss of accuracy by converting from <xref:System.DateTime> to <xref:System.TimeSpan>.  
   
  This sample also demonstrates how to turn on persistence for a <xref:System.Activities.WorkflowApplication>. For this particular sample, we will be using durable timers in which the workflow data will be unloaded into the persistence database during the idle time while waiting for timer to expire. This implementation can also be used for other persistence actions. This sample shows how to set up the persistence connection string with SQL Server, and how to create the instance store in order to persist the data for workflow instances. Logic is provided on how to resume the workflow once an event is raised which makes the workflow instance runnable.  
   

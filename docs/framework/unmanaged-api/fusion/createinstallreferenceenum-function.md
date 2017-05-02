@@ -9,13 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CreateInstallReferenceEnum"
-apilocation: 
+api_location: 
   - "fusion.dll"
   - "clr.dll"
   - "mscorwks.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "CreateInstallReference"
 dev_langs: 
@@ -23,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CreateInstallReference function [.NET Framework fusion]"
 ms.assetid: 80dbbbf8-54fc-4894-b74a-0179d3201083
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

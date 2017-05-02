@@ -1034,12 +1034,12 @@
         <param name="offset">The location in <c>buffer</c> to begin storing the data to.</param>
         <param name="size">The number of bytes to read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
         <summary>Reads data from the <see cref="T:System.Net.Sockets.NetworkStream" />.</summary>
-        <returns>The number of bytes read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</returns>
+        <returns>The number of bytes read from the <see cref="T:System.Net.Sockets.NetworkStream" />, or 0 if the socket is closed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method reads data into the `buffer` parameter and returns the number of bytes successfully read. If no data is available for reading, the <xref:System.Net.Sockets.NetworkStream.Read%2A> method returns 0. The <xref:System.Net.Sockets.NetworkStream.Read%2A> operation reads as much data as is available, up to the number of bytes specified by the `size` parameter. If the remote host shuts down the connection, and all available data has been received, the <xref:System.Net.Sockets.NetworkStream.Read%2A> method completes immediately and return zero bytes.  
+ This method reads data into the `buffer` parameter and returns the number of bytes successfully read. If the socket is closed, the <xref:System.Net.Sockets.NetworkStream.Read%2A> method returns 0. The <xref:System.Net.Sockets.NetworkStream.Read%2A> operation reads as much data as is available, up to the number of bytes specified by the `size` parameter. If the remote host shuts down the connection, and all available data has been received, the <xref:System.Net.Sockets.NetworkStream.Read%2A> method completes immediately and return zero bytes.  
   
 > [!NOTE]
 >  Check to see if the <xref:System.Net.Sockets.NetworkStream> is readable by calling the <xref:System.Net.Sockets.NetworkStream.CanRead%2A> property. If you attempt to read from a <xref:System.Net.Sockets.NetworkStream> that is not readable, you will get an <xref:System.IO.IOException>.  

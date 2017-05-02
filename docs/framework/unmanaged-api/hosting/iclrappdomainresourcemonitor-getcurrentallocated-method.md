@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRAppDomainResourceMonitor.GetCurrentAllocated"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentAllocated"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetCurrentAllocated method [.NET Framework hosting]"
   - "ICLRAppDomainResourceMonitor::GetCurrentAllocated method [.NET Framework hosting]"
 ms.assetid: 7bab209c-efd4-44c2-af30-61abab0ae2fc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

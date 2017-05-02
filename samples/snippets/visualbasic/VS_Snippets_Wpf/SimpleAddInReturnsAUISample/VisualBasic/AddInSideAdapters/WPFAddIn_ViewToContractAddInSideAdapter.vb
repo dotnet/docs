@@ -1,11 +1,11 @@
 ﻿'<SnippetAddInSideAdapterCode>
 
-Imports System.AddIn.Contract ' INativeHandleContract
-Imports System.AddIn.Pipeline ' AddInAdapterAttribute, FrameworkElementAdapters, ContractBase
-Imports System.Windows ' FrameworkElement
+Imports System.AddIn.Contract
+Imports System.AddIn.Pipeline
+Imports System.Windows
 
-Imports AddInViews ' IWPFAddInView
-Imports Contracts ' IWPFAddInContract
+Imports AddInViews
+Imports Contracts
 
 Namespace AddInSideAdapters
 	''' <summary>

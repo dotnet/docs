@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugInternalFrame2.GetFrameAddress Method"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugInternalFrame2::GetFrameAddress"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetFrameAddress method [.NET Framework debugging]"
   - "ICorDebugInternalFrame2::GetFrameAddress method [.NET Framework debugging]"
 ms.assetid: 4ee8d058-ffc8-4967-9133-a5adfef4e518
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

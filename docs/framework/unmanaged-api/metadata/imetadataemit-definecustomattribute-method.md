@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.DefineCustomAttribute"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineCustomAttribute"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "DefineCustomAttribute method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineCustomAttribute method [.NET Framework metadata]"
 ms.assetid: 7dd14854-b756-4401-b167-88ca576dc8f0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

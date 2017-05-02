@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.ObjectAllocated"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ObjectAllocated"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ObjectAllocated method [.NET Framework profiling]"
   - "ICorProfilerCallback::ObjectAllocated method [.NET Framework profiling]"
 ms.assetid: eb412622-77cc-4abd-a2cd-c910fe8edd54
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

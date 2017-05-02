@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICeeGen.AddSectionReloc"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICeeGen::AddSectionReloc"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "AddSectionReloc method [.NET Framework metadata]"
   - "ICeeGen::AddSectionReloc method [.NET Framework metadata]"
 ms.assetid: b500a260-1d57-4953-95e1-c27063f7c8da
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

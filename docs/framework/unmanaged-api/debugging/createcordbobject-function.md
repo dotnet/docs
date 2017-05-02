@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CreateCoredbObject"
-apilocation: 
+api_location: 
   - "mscordbi_macx86.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CreateCordbObject"
 dev_langs: 
@@ -23,6 +24,8 @@ helpviewer_keywords:
   - "CreateCordbObject function"
   - "Silverlight, remote debugging"
 ms.assetid: b259821d-4fa7-464d-85cf-304dfffc8089
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

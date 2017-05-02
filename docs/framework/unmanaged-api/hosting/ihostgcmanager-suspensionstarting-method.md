@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostGCManager.SuspensionStarting"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostGCManager::SuspensionStarting"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SuspensionStarting method, IHostGCManager interface [.NET Framework hosting]"
   - "IHostGCManager::SuspensionStarting method [.NET Framework hosting]"
 ms.assetid: c381f524-94cf-4fa2-9298-50f847a03431
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

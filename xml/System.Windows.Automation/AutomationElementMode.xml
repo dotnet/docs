@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Contains values that specify the type of reference to use when returning [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements. These values are used in the <see cref="P:System.Windows.Automation.CacheRequest.AutomationElementMode" /> property.</summary>
+    <summary>Contains values that specify the type of reference to use when returning UI Automation elements. These values are used in the <see cref="P:System.Windows.Automation.CacheRequest.AutomationElementMode" /> property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

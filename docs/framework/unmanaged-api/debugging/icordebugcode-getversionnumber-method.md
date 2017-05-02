@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugCode.GetVersionNumber"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugCode::GetVersionNumber"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetVersionNumber method, ICorDebugCode interface [.NET Framework debugging]"
   - "ICorDebugCode::GetVersionNumber method [.NET Framework debugging]"
 ms.assetid: c8e02518-679f-4e9f-8a28-ba4a89a3876f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRStrongName.GetHashFromFileW"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::GetHashFromFileW"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetHashFromFileW method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::GetHashFromFileW method [.NET Framework hosting]"
 ms.assetid: c6ff45fc-905d-4c6e-b00c-97c6c7c55d99
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugFunction.GetClass"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugFunction::GetClass"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetClass method, ICorDebugFunction interface [.NET Framework debugging]"
   - "ICorDebugFunction::GetClass method [.NET Framework debugging]"
 ms.assetid: 27967230-144f-40d3-9e23-961d0241abd9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

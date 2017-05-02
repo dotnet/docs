@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo3.RequestProfilerDetach Method"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::RequestProfilerDetach"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "RequestProfilerDetach method [.NET Framework profiling]"
   - "ICorProfilerInfo3::RequestProfilerDetach method [.NET Framework profiling]"
 ms.assetid: ea102e62-0454-4477-bcf3-126773acd184
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorThreadpool.CorUnregisterWait"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorUnregisterWait"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CorUnregisterWait method [.NET Framework hosting]"
   - "ICorThreadpool::CorUnregisterWait method [.NET Framework hosting]"
 ms.assetid: 42c933f1-30a8-4011-bdea-e117f3c3265e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

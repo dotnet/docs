@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugClass.GetToken"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugClass::GetToken"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetToken method, ICorDebugClass interface [.NET Framework debugging]"
   - "ICorDebugClass::GetToken method [.NET Framework debugging]"
 ms.assetid: ee5c848a-eac4-4462-b07a-07ccd76a75df
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

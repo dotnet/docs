@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "INotifySink2.OnSyncCallReturn"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "INotifySink2::OnSyncCallReturn"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "OnSyncCallReturn method [.NET Framework debugging]"
   - "INotifySink2::OnSyncCallReturn method [.NET Framework debugging]"
 ms.assetid: c1bda761-6292-4750-a14b-7d5db8f33456
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

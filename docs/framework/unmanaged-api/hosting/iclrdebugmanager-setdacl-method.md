@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDebugManager.SetDacl"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDebugManager::SetDacl"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetDacl method [.NET Framework hosting]"
   - "ICLRDebugManager::SetDacl method [.NET Framework hosting]"
 ms.assetid: 52f4af3f-e02b-4c20-9fd9-e8e4f4d6fc31
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

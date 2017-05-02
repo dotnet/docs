@@ -2,18 +2,19 @@
 title: "ICorDebugProcess::ReadMemory Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugProcess.ReadMemory"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess::ReadMemory"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ReadMemory method [.NET Framework debugging]"
   - "ICorDebugProcess::ReadMemory method [.NET Framework debugging]"
 ms.assetid: 28e4b2f6-9589-445c-be24-24a3306795e7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

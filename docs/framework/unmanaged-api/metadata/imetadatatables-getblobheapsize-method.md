@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataTables.GetBlobHeapSize"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetBlobHeapSize"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetBlobHeapSize method [.NET Framework metadata]"
   - "IMetaDataTables::GetBlobHeapSize method [.NET Framework metadata]"
 ms.assetid: 6330a9ee-8cd5-4299-86f1-b4de2c701a0d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

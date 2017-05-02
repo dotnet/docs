@@ -2,18 +2,19 @@
 title: "ICorDebugVariableHome::GetSlotIndex Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "ICorDebugVariableHome.GetSlotIndex"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugVariableHome::GetSlotIndex"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugVariableHome::GetSlotIndex method [.NET Framework debugging]"
   - "GetSlotIndex method, ICorDebugVariableHome interface [.NET Framework debugging]"
 ms.assetid: 966da50d-5665-4fff-bf7b-1c72bbadd9a4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

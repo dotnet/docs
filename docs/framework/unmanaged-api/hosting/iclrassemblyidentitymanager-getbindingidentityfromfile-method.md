@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRAssemblyIdentityManager.GetBindingIdentityFromFile"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::GetBindingIdentityFromFile"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetBindingIdentityFromFile method [.NET Framework hosting]"
   - "ICLRAssemblyIdentityManager::GetBindingIdentifyFromFile method [.NET Framework hosting]"
 ms.assetid: 7797562d-7b4c-4bd9-8b93-f35e0e2869e4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

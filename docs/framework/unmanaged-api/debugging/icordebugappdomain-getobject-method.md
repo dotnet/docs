@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugAppDomain.GetObject"
-apilocation: 
+api_location: 
   - "corguids.lib"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::GetObject"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugAppDomain::GetObject method [.NET Framework debugging]"
   - "GetObject method, ICorDebugAppDomain interface [.NET Framework debugging]"
 ms.assetid: 78232e6f-ae18-4cfa-a6cd-e79471cf9d76
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostIoCompletionManager.GetMinThreads"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::GetMinThreads"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetMinThreads method, IHostIoCompletionManager interface [.NET Framework hosting]"
   - "IHostIoCompletionManager::GetMinThreads method [.NET Framework hosting]"
 ms.assetid: d7a7f733-677d-481c-b3d5-444fcc502b8e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

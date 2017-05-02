@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRSyncManager.GetMonitorOwner"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRSyncManager::GetMonitorOwner"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRSyncManager::GetMonitorOwner method [.NET Framework hosting]"
   - "GetMonitorOwner method [.NET Framework hosting]"
 ms.assetid: 840983a4-396d-47b4-86a0-d35f9b437cdb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

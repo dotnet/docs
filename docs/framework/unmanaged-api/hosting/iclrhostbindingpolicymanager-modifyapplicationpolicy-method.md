@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRHostBindingPolicyManager.ModifyApplicationPolicy"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRHostBindingPolicyManager::ModifyApplicationPolicy"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRHostBindingPolicyManager::ModifyApplicationPolicy method [.NET Framework hosting]"
   - "ModifyApplicationPolicy method [.NET Framework hosting]"
 ms.assetid: d82d633e-cce6-427c-8b02-8227e34e12ba
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

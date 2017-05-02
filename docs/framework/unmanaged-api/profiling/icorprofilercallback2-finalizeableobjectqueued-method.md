@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback2.FinalizeableObjectQueued"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback2::FinalizeableObjectQueued"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "FinalizeableObjectQueued method [.NET Framework profiling]"
   - "ICorProfilerCallback2::FinalizeableObjectQueued method [.NET Framework profiling]"
 ms.assetid: 92d76893-683c-475d-9996-5bff03cdb10f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

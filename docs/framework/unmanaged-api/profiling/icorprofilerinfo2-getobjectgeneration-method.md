@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo2.GetObjectGeneration"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetObjectGeneration"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetObjectGeneration method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetObjectGeneration method [.NET Framework profiling]"
 ms.assetid: b0d25f76-0bd5-4aa6-96cf-bfec0e1de28b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

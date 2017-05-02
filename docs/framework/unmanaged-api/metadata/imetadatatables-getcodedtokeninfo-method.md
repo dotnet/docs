@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataTables.GetCodedTokenInfo"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetCodedTokenInfo"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetCodedTokenInfo method [.NET Framework metadata]"
   - "IMetaDataTables::GetCodedTokenInfo method [.NET Framework metadata]"
 ms.assetid: 31214d3a-715e-49af-92b3-0fd11e4f218a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

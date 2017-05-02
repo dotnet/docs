@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorRuntimeHost.CreateDomain"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CreateDomain"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CreateDomain method [.NET Framework hosting]"
   - "ICorRuntimeHost::CreateDomain method [.NET Framework hosting]"
 ms.assetid: b96c5ef3-a9df-4c7c-9952-432d3272cb5c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

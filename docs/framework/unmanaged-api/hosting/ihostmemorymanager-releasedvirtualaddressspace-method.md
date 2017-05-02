@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostMemoryManager.ReleasedVirtualAddressSpace"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMemoryManager::ReleasedVirtualAddressSpace"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ReleasedVirtualAddressSpace method [.NET Framework hosting]"
   - "IHostMemoryManager::ReleasedVirtualAddressSpace method [.NET Framework hosting]"
 ms.assetid: d1876601-6ab9-48e1-8ebd-184af1d0cd76
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

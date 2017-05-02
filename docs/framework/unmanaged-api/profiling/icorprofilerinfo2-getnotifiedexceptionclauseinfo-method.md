@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo2.GetNotifiedExceptionClauseInfo"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetNotifiedExceptionClauseInfo"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo2::GetNotifiedExceptionCaluseInfo method [.NET Framework profiling]"
   - "GetNotifiedExceptionCaluseInfo method [.NET Framework profiling]"
 ms.assetid: f9594a7e-cb0c-4c48-accb-29f762aa0c21
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

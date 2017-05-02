@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICeeGen.GetIMapTokenIface"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICeeGen::GetIMapTokenIface"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetIMapTokenIface method [.NET Framework metadata]"
   - "ICeeGen::GetIMapTokenIface method [.NET Framework metadata]"
 ms.assetid: 847a5531-c37d-49cd-8844-9e54b5d86cf7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

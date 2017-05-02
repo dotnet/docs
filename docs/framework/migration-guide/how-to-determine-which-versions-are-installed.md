@@ -2,7 +2,7 @@
 title: "How to: Determine Which .NET Framework Versions Are Installed | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net-framework"
+ms.prod: ".net-framework-4.6"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -90,7 +90,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |On Windows 10 systems: 393295<br /><br /> On all other OS versions: 393297|[!INCLUDE[net_v46](../../../includes/net-v46-md.md)]|  
     |On Windows 10 November Update systems: 394254<br /><br /> On all other OS versions: 394271|[!INCLUDE[net_v461](../../../includes/net-v461-md.md)]|  
     |On Windows 10 Anniversary Update: 394802<br /><br /> On all other OS versions: 394806|[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]| 
-    |On Windows 10 Creators Update: 460798 | .NET Framework 4.7 |  
+    |On Windows 10 Creators Update: 460798<br/><br/> On all other OS versions: 460805 | .NET Framework 4.7 |  
   
 <a name="net_c"></a>   
 #### To find .NET Framework versions by querying the registry in code (.NET Framework 1-4)  
@@ -110,14 +110,12 @@ Users can install and run multiple versions of the .NET Framework on their compu
      The example produces output that's similar to the following:  
   
     ```  
-  
     v2.0.50727  2.0.50727.4016  SP2  
     v3.0  3.0.30729.4037  SP2  
     v3.5  3.5.30729.01  SP1  
     v4  
       Client  4.0.30319  
       Full  4.0.30319  
-  
     ```  
   
 <a name="net_d"></a>   
@@ -139,7 +137,8 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |[!INCLUDE[net_v461](../../../includes/net-v461-md.md)] installed on all other Windows OS versions|394271|  
     |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] installed on Windows 10 Anniversary Update|394802|  
     |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] installed on all other Windows OS versions|394806|
-    |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|  
+    |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|
+    |.NET Framework 4.7 installed on all other Windows OS versions|460805|  
   
      The following example checks the `Release` value in the registry to determine whether the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or a later version of the .NET Framework is installed.  
   

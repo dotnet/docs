@@ -2,18 +2,19 @@
 title: "ITypeNameFactory::ParseTypeName Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ITypeNameFactory.ParseTypeName"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ParseTypeName"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameFactory::ParseTypeName method [.NET Framework hosting]"
   - "ParseTypeName method [.NET Framework hosting]"
 ms.assetid: 13c9f063-371c-4911-a5e7-e1e0b88ae382
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

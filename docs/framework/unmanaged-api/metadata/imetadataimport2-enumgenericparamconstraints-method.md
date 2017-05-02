@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport2.EnumGenericParamConstraints"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport2::EnumGenericParamConstraints"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumGenericParamConstraints method [.NET Framework metadata]"
   - "IMetaDataImport2::EnumGenericParamConstraints method [.NET Framework metadata]"
 ms.assetid: 8a7d4e40-28fe-4e14-b801-4049880130e7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

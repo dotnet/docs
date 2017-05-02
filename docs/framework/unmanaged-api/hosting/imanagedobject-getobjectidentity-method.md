@@ -2,18 +2,19 @@
 title: "IManagedObject::GetObjectIdentity Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IManagedObject.GetObjectIdentity"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetObjectIdentity"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetObjectIdentity method [.NET Framework hosting]"
   - "IManagedObject::GetObjectIdentity method [.NET Framework hosting]"
 ms.assetid: b862ff3e-e480-4cdf-84e2-e1013334a467
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

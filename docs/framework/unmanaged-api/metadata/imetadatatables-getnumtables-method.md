@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataTables.GetNumTables"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetNumTables"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetNumTables method [.NET Framework metadata]"
   - "IMetaDataTables::GetNumTables method [.NET Framework metadata]"
 ms.assetid: 8196f2a3-bbf2-45d3-a6cd-74502c356644
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

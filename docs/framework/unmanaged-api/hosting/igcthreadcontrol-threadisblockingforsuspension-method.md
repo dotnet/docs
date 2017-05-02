@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IGCThreadControl.ThreadIsBlockingForSuspension"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ThreadIsBlockingForSuspension"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IGCThreadControl::ThreadIsBlockingForSuspension method [.NET Framework hosting]"
   - "ThreadIsBlockingForSuspension method [.NET Framework hosting]"
 ms.assetid: ed5b5b58-7db7-46b5-9e2c-278db7159cee
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorThreadpool.CorGetAvailableThreads"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorGetAvailableThreads"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CorGetAvailableThreads method [.NET Framework hosting]"
   - "ICorThreadpool::CorGetAvailableThreads method [.NET Framework hosting]"
 ms.assetid: 0b09b750-0b86-4ba4-9621-041857cfe8ba
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

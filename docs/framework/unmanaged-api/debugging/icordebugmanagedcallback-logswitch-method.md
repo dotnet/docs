@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugManagedCallback.LogSwitch"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::LogSwitch"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "LogSwitch method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::LogSwitch method [.NET Framework debugging]"
 ms.assetid: 0ac59d27-783f-4a87-b7a8-baa3ccc54582
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugManagedCallback2.CreateConnection"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::CreateConnection"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CreateConnection method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::CreateConnection method [.NET Framework debugging]"
 ms.assetid: 49e647be-9d63-4250-9d11-704e2a400d1b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

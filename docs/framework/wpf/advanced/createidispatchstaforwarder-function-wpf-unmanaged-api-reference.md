@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "CreateIDispatchSTAForwarder"
-apilocation: 
+api_location: 
   - "PresentationHost_v0400.dll"
 ms.assetid: 57a02dfa-f091-4ace-9c06-1f4ab52b3527
 caps.latest.revision: 3

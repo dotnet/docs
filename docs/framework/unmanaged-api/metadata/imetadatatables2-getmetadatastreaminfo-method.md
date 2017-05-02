@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataTables2.GetMetaDataStreamInfo"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables2::GetMetaDataStreamInfo"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetMetaDataStreamInfo method [.NET Framework metadata]"
   - "IMetaDataTables2::GetMetaDataStreamInfo method [.NET Framework metadata]"
 ms.assetid: 8b280627-cc74-4789-95da-1fefc966de05
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

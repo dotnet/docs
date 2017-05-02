@@ -2,18 +2,19 @@
 title: "ICorDebugProcess5::GetTypeForTypeID Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugProcess5.GetTypeForTypeID"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::GetTypeForTypeID"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetTypeForTypeID method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::GetTypeForTypeID method [.NET Framework debugging]"
 ms.assetid: e0eed5a8-fa6d-4818-bd00-7babcea30325
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

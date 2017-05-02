@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLROnEventManager.UnregisterActionOnEvent"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLROnEventManager::UnregisterActionOnEvent"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "UnRegisterActionOnEvent method [.NET Framework hosting]"
   - "ICLROnEventManager::UnRegisterActionOnEvent method [.NET Framework hosting]"
 ms.assetid: 4c02ec37-cdf0-46b2-890e-235092741236
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IAssemblyEnum.Reset"
-apilocation: 
+api_location: 
   - "fusion.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyEnum::Reset"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IAssemblyEnum::Reset method [.NET Framework fusion]"
   - "Reset method, IAssemblyEnum interface [.NET Framework fusion]"
 ms.assetid: e08308d2-7397-4616-b7a6-f81b7686fed6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

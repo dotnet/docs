@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorThreadpool.CorCallOrQueueUserWorkItem"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CorCallOrQueueUserWorkItem"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorThreadpool::CorCallOrQueueUserWorkItem method [.NET Framework hosting]"
   - "CorCallOrQueueUserWorkItem method [.NET Framework hosting]"
 ms.assetid: a2081223-84ca-4331-a8d3-9352f422f3e7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

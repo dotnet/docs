@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedScope.GetParent"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetParent"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetParent method [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetParent method [.NET Framework debugging]"
 ms.assetid: c7963c87-6ec5-49b3-a5cd-e0fe0c43f9b4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

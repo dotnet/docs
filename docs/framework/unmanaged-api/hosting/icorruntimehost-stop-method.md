@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorRuntimeHost.Stop"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::Stop"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Stop method, ICorRuntimeHost interface [.NET Framework hosting]"
   - "ICorRuntimeHost::Stop method [.NET Framework hosting]"
 ms.assetid: 46a0d450-b516-4bef-8b71-8d3bf265cbed
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

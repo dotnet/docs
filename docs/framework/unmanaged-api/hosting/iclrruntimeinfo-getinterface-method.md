@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRRuntimeInfo.GetInterface"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::GetInterface"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetInterface method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::GetInterface method [.NET Framework hosting]"
 ms.assetid: cc7b0e5b-48c3-4509-8ebb-611ddb1f7ec2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

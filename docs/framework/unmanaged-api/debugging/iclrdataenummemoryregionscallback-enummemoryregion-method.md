@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDataEnumMemoryRegionsCallback.EnumMemoryRegion"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDataEnumMemoryRegionsCallback::EnumMemoryRegion"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumMemoryRegion method [.NET Framework debugging]"
   - "ICLRDataEnumMemoryRegionsCallback::EnumMemoryRegion method [.NET Framework debugging]"
 ms.assetid: 9bb93fab-57e8-4f9a-9ef3-1794504fa896
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

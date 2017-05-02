@@ -2,18 +2,19 @@
 title: "ICorDebugProcess3::SetEnableCustomNotification Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugProcess3.SetEnableCustomNotification Method"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess3::SetEnableCustomNotification"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess3::SetEnableCustomNotification method [.NET Framework debugging]"
   - "SetEnableCustomNotification method [.NET Framework debugging]"
 ms.assetid: afd88ee9-2589-4461-a75a-9b6fe55a2525
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

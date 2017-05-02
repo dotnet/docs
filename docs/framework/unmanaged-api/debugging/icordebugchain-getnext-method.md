@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugChain.GetNext"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugChain::GetNext"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetNext method [.NET Framework debugging]"
   - "ICorDebugChain::GetNext method [.NET Framework debugging]"
 ms.assetid: 8d9744a5-e08b-4ab2-9855-5c22711cc1e6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

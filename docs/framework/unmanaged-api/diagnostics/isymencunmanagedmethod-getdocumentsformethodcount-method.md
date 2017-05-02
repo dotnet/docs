@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymENCUnmanagedMethod.GetDocumentsForMethodCount"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymENCUnmanagedMethod::GetDocumentsForMethodCount"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetDocumentsForMethodCount method [.NET Framework debugging]"
   - "ISymENCUnmanagedMethod::GetDocumentsForMethodCount method [.NET Framework debugging]"
 ms.assetid: cc1a823a-3ff3-4a33-b641-96edc93d2b17
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

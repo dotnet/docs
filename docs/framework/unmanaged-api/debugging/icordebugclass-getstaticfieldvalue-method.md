@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugClass.GetStaticFieldValue"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugClass::GetStaticFieldValue"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetStaticFieldValue method, ICorDebugClass interface [.NET Framework debugging]"
   - "ICorDebugClass::GetStaticFieldValue method [.NET Framework debugging]"
 ms.assetid: 56e718b4-fabd-418b-a5b3-3cc33c745683
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

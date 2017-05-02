@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.EnumFields"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumFields"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumFields method [.NET Framework metadata]"
   - "IMetaDataImport::EnumFields method [.NET Framework metadata]"
 ms.assetid: 1d23247e-c58c-45db-afd8-83aa89cde18e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

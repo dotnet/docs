@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugILFrame.GetArgument"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::GetArgument"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetArgument method [.NET Framework debugging]"
   - "ICorDebugILFrame::GetArgument method [.NET Framework debugging]"
 ms.assetid: 4e2fd423-f643-4c27-ba5f-41b5ebc3b416
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

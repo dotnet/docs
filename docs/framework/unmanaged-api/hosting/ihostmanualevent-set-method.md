@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostManualEvent.Set"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostManualEvent::Set"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Set method, IHostManualEvent interface [.NET Framework hosting]"
   - "IHostManualEvent::Set method [.NET Framework hosting]"
 ms.assetid: e930c174-f71d-4faa-bb59-f0fb3df4d77b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

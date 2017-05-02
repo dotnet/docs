@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.Initialize"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::Initialize"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Initialize method, ICorProfilerCallback interface [.NET Framework profiling]"
   - "ICorProfilerCallback::Initialize method [.NET Framework profiling]"
 ms.assetid: dc5fab2a-4b45-4b12-8727-b89c9915f23e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "AssemblyAttributesGoHereM"
-apilocation: 
+api_location: 
   - "alink.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AssemblyAttributesGoHereM"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "AssemblyAttributesGoHereM type"
   - "Alink API, AssemblyAttributesGoHereM type"
 ms.assetid: caaa8ba9-b4bb-4dd6-934d-57e436b2f3e5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

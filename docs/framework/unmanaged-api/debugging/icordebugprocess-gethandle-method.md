@@ -2,18 +2,19 @@
 title: "ICorDebugProcess::GetHandle Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugProcess.GetHandle"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess::GetHandle"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetHandle method, ICorDebugProcess interface [.NET Framework debugging]"
   - "ICorDebugProcess::GetHandle method [.NET Framework debugging]"
 ms.assetid: e7d3ecf5-09d2-4d94-abb6-ff3483deebb6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

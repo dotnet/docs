@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.JITInlining"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::JITInlining"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "JITInlining method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITInlining method [.NET Framework profiling]"
 ms.assetid: c2f45801-dd38-4b78-b6b7-64397dc73f83
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

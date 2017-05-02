@@ -2,7 +2,7 @@
 title: "Using the NetHttpBinding | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,7 +55,7 @@ manager: "erikre"
   </system.serviceModel>  
 ```  
   
- The following code snippet shows how to add the <xref:System.ServiceModel.NetHtttpBinding> in code.  
+ The following code snippet shows how to add the <xref:System.ServiceModel.NetHttpBinding> in code.  
   
 ```csharp  
 ServiceHost svchost = new ServiceHost(typeof(Service1), baseAddress);  

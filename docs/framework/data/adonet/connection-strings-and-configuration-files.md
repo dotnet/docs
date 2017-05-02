@@ -156,7 +156,7 @@ Embedding connection strings in your application's code can lead to security vul
 > [!NOTE]
 >  The connection string can only be decrypted on the computer on which it was encrypted.  
   
- The code uses the <xref:System.Configuration.ConfigurationManager.OpenExeConfiguration%2A> method to open the **app.config** file for editing, and the <xref:System.Configuration.ConfigurationManager.GetSection%2A> method returns the **connectionStrings** section. The code then checks the <xref:System.Configuration.SectionInformation.IsProtected%2A> property, calling the <xref:System.Configuration.SectionInformation.ProtectSection%2A> to encrypt the section if it is not encrypted. The <xref:System.Configuration.SectionInformation.UnProtectSection%2A> method is invoked to decrypt the section. The <xref:System.Configuration.Configuration.Save%2A> method completes the operation and saves the changes.  
+ The code uses the <xref:System.Configuration.ConfigurationManager.OpenExeConfiguration%2A> method to open the **app.config** file for editing, and the <xref:System.Configuration.ConfigurationManager.GetSection%2A> method returns the **connectionStrings** section. The code then checks the <xref:System.Configuration.SectionInformation.IsProtected%2A> property, calling the <xref:System.Configuration.SectionInformation.ProtectSection%2A> to encrypt the section if it is not encrypted. The <xref:System.Configuration.SectionInformation.UnprotectSection%2A> method is invoked to decrypt the section. The <xref:System.Configuration.Configuration.Save%2A> method completes the operation and saves the changes.  
   
 > [!NOTE]
 >  You must set a reference to `System.Configuration.dll` in your project for the code to run.  

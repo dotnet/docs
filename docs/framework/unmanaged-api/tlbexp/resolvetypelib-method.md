@@ -9,9 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ResolveTypeLib"
-apilocation: 
+api_location: 
   - "tlbref.dll"
 f1_keywords: 
   - "ResolveTypeLib"
@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "ITypeLibResolver::ResolveTypeLib method [.NET Framework]"
   - "ResolveTypeLib method [.NET Framework]"
 ms.assetid: 95d2aa0d-8eeb-4a9f-a216-5249f7e2c167
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

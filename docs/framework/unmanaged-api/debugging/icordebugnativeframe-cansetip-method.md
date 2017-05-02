@@ -2,18 +2,19 @@
 title: "ICorDebugNativeFrame::CanSetIP Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugNativeFrame.CanSetIP"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame::CanSetIP"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugNativeFrame::CanSetIP method [.NET Framework debugging]"
   - "CanSetIP method, ICorDebugNativeFrame interface [.NET Framework debugging]"
 ms.assetid: 13258ac6-f4e4-4f66-8fc3-f1244417a3c3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

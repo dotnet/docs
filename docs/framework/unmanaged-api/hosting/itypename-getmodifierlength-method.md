@@ -2,18 +2,19 @@
 title: "ITypeName::GetModifierLength Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ITypeName.GetModifierLength"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetModifierLength"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ITypeName::GetModifierLength method [.NET Framework hosting]"
   - "GetModifierLength method [.NET Framework hosting]"
 ms.assetid: ac45f261-03f9-4728-b5d7-dd7cbb05f9e6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

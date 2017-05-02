@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostMemoryManager.VirtualFree"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMemoryManager::VirtualFree"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostMemoryManager::VirtualFree method [.NET Framework hosting]"
   - "VirtualFree method [.NET Framework hosting]"
 ms.assetid: 1a436e89-eb28-4d15-bcf1-a072f86dbd99
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

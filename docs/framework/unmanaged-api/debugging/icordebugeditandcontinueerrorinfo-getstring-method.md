@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugEditAndContinueErrorInfo.GetString"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueErrorInfo::GetString"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugEditAndContinueErrorInfo::GetString method [.NET Framework debugging]"
   - "GetString method, ICorDebugEditAndContinueErrorInfo interface [.NET Framework debugging]"
 ms.assetid: 85e2108b-ff03-4a15-ac5c-1eb5d84f38ca
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

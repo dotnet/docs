@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> is an HTTP module which is used to secure an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] application by enforcing  federated authentication settings on incoming requests. The <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> is the main module that WIF offers out of the box for handling claims-based identity access in [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] applications.  
+    <summary>The <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> is an HTTP module which is used to secure an ASP.NET application by enforcing  federated authentication settings on incoming requests. The <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> is the main module that WIF offers out of the box for handling claims-based identity access in ASP.NET applications.  
   
  The <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> raises several events, which allows ASP.NET developers to change the default behavior and control the details of how authentication and claims processing take place. The <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> functionality is divided into task-specific methods.</summary>
     <remarks>

@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataAssemblyImport.EnumExportedTypes"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::EnumExportedTypes"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumExportedTypes method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::EnumExportedTypes method [.NET Framework metadata]"
 ms.assetid: e5912ed8-e4ce-438b-8ea3-d9e4c288d109
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

@@ -19,7 +19,7 @@ ms.assetid: 1e8e4122-8110-4b48-afce-afffb6737776
 
 ## Synopsis
 
-`dotnet store -m|--manifest -r|--runtime -f|--framework --framework-version -c|--configuration [--output] [--working-dir] [--preserve-working-dir] [--skip-optimization] [-v|--verbosity] [-h|--help]`
+`dotnet store -m|--manifest -r|--runtime -f|--framework [--framework-version] [--output] [--working-dir] [--skip-optimization] [--skip-symbols] [-v|--verbosity] [-h|--help]`
 
 ## Description
 
@@ -49,7 +49,7 @@ The framework to target, for example `netcoreapp2.0`. This parameter is mandator
 
 `--framework-version <FRAMEWORK_VERSION>`
 
-The Microsoft.NETCore.App package version that will be used to run the assemblies.
+The .NET Core version to use. This enables finer tuning to a specific version beyond the one that is part of `-f|--framework`, for example: `2.0.0-preview1-1234`.
 
 `-o|--output <OUTPUT_PATH>`
 
@@ -57,15 +57,15 @@ Specify the path to the runtime package store. If not specified, it will default
 
 `--working-dir <WORKING_DIRECTORY>`
 
-The working directory used by the command to execute.
-
-`--preserve-working-dir`
-
-If specified, the working directory is preserved after the command finished executing.
+The working directory used by the command to execute. If not specified, it will work under the obj subdirectory of the current directory.
 
 `--skip-optimization`
 
 Skips the optimization phase.
+
+`--skip-symbols`
+
+Skips symbol generation.
 
 `-v|--verbosity <LEVEL>`
 

@@ -1,35 +1,62 @@
 ---
 uid: System.Text.EncoderReplacementFallback
----
-
----
-uid: System.Text.EncoderReplacementFallback.DefaultString
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Text.EncoderReplacementFallback.CreateFallbackBuffer
----
-
----
-uid: System.Text.EncoderReplacementFallback.#ctor
----
-
----
-uid: System.Text.EncoderReplacementFallback.MaxCharCount
----
-
----
-uid: System.Text.EncoderReplacementFallback.#ctor
----
-
----
-uid: System.Text.EncoderReplacementFallback.#ctor(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Text.EncoderReplacementFallback.GetHashCode
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Text.EncoderReplacementFallback.MaxCharCount
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Text.EncoderReplacementFallback.DefaultString
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Text.EncoderReplacementFallback.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Text.EncoderReplacementFallback.#ctor(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Text.EncoderReplacementFallback.Equals(System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Text.EncoderReplacementFallback.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

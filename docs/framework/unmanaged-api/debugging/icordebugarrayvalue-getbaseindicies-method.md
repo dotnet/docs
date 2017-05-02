@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugArrayValue::GetBaseIndicies method [.NET Framework debugging]"
   - "GetBaseIndicies method [.NET Framework debugging]"
 ms.assetid: 868b339b-acdb-4fe0-91c7-b85f4fba99eb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

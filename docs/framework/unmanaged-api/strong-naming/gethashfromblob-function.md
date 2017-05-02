@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetHashFromBlob function [.NET Framework strong naming]"
 ms.assetid: b712d862-f2d0-4b55-87d4-65bbeadef982
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

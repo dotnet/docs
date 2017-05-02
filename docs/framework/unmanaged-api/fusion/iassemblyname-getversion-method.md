@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IAssemblyName::GetVersion method [.NET Framework fusion]"
   - "GetVersion method, IAssemblyName interface [.NET Framework fusion]"
 ms.assetid: 42230928-2c33-41fd-9519-d96efef6c7af
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CeeSectionRelocType enumeration [.NET Framework metadata]"
 ms.assetid: 124656f6-0dad-4ceb-9043-d3869ab65cde
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

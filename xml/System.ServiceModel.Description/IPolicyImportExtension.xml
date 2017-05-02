@@ -50,9 +50,7 @@
   
  The following code example shows the client application configuration file to load the custom policy importer when the <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=fullName> is invoked.  
   
- <!-- TODO: review snippet reference [!code[CustomPolicySample#7](~/samples/snippets/common/VS_Snippets_CFX/custompolicysample/common/client.exe.config#7)]  -->
- <!-- TODO: review snippet reference [!code-csharp[CustomPolicySample#7](~/samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/client.exe.config#7)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomPolicySample#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/custompolicysample/vb/client.exe.config#7)]  -->  
+ [!code-xml[CustomPolicySample#7](~/samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/client.exe.config#7)]   
   
  The following code example shows the use of the <xref:System.ServiceModel.Description.MetadataResolver> to download and resolve metadata into description objects.  
   
@@ -111,9 +109,7 @@
   
  The following code example shows the client application configuration file to load the custom policy importer when the <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=fullName> is invoked.  
   
- <!-- TODO: review snippet reference [!code[CustomPolicySample#7](~/samples/snippets/common/VS_Snippets_CFX/custompolicysample/common/client.exe.config#7)]  -->
- <!-- TODO: review snippet reference [!code-csharp[CustomPolicySample#7](~/samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/client.exe.config#7)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomPolicySample#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/custompolicysample/vb/client.exe.config#7)]  -->  
+ [!code-xml[CustomPolicySample#7](~/samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/client.exe.config#7)]   
   
  The following code example shows the use of the <xref:System.ServiceModel.Description.MetadataResolver> to download and resolve metadata into description objects.  
   

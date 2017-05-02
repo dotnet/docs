@@ -2,7 +2,7 @@
 title: "ICorPublish::GetProcess Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorPublish::GetProcess method [.NET Framework debugging]"
   - "GetProcess method, ICorPublish interface [.NET Framework debugging]"
 ms.assetid: c5143805-2eb7-45b8-85ed-c8fb34df1084
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

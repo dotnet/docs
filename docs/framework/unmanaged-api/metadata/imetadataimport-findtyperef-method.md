@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::FindTypeRef method [.NET Framework metadata]"
   - "FindTypeRef method [.NET Framework metadata]"
 ms.assetid: 1b2bbf3f-943e-412e-b66c-e802431b055c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

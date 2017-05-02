@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameCompareAssemblies function [.NET Framework strong naming]"
 ms.assetid: 763f2375-efc6-4219-8806-a3b0567ef72b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

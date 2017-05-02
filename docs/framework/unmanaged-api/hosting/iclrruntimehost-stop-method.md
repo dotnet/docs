@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRRuntimeHost::Stop method [.NET Framework hosting]"
   - "Stop method, ICLRRuntimeHost interface [.NET Framework hosting]"
 ms.assetid: b8fd7daf-8f8d-4ad7-92ae-019db244cec1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

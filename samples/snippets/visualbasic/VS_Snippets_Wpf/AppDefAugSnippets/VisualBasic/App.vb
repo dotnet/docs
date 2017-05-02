@@ -1,8 +1,8 @@
 '<SnippetAppDefAugCODE1>
 
 Imports Microsoft.VisualBasic
-Imports System ' STAThread
-Imports System.Windows ' Application
+Imports System
+Imports System.Windows
 
 Namespace SDKSample
 	Public Class App

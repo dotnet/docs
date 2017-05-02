@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameTokenFromAssemblyEx function [.NET Framework strong naming]"
 ms.assetid: 67a8a9f2-dee3-44b2-a1c0-f307a3bdf90f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Breaking Changes in Visual Studio 2015 | Microsoft Docs"
+title: "Visual Basic Breaking Changes in Visual Studio | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -34,7 +34,9 @@ translation.priority.mt:
   - "pt-br"
   - "tr-tr"
 ---
-# Visual Basic Breaking Changes in Visual Studio 2015
+# Visual Basic Breaking Changes in Visual Studio
+For the latest documentation on Visual Studio 2017, see [Visual Studio 2017 Documentation](http://docs.microsoft.com/visualstudio/).
+
 No changes in Visual Basic in Visual Studio 2015 will prevent an application that was created in Visual Basic in Visual Studio 2013 from compiling or change the run-time behavior of such an application.  
   
 ## See Also  

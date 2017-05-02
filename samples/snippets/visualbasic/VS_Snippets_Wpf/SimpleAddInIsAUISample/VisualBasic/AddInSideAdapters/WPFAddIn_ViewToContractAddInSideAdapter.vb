@@ -1,12 +1,12 @@
 ﻿'<SnippetAddInSideAdapterCode>
 
-Imports System ' IntPtr
-Imports System.AddIn.Contract ' INativeHandleContract
-Imports System.AddIn.Pipeline ' AddInAdapterAttribute, FrameworkElementAdapters, ContractBase
+Imports System
+Imports System.AddIn.Contract
+Imports System.AddIn.Pipeline
 Imports System.Security.Permissions
 
-Imports AddInViews ' WPFAddInView
-Imports Contracts ' IWPFAddInContract
+Imports AddInViews
+Imports Contracts
 
 Namespace AddInSideAdapters
 	''' <summary>

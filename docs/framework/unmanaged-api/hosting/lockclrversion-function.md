@@ -2,7 +2,7 @@
 title: "LockClrVersion Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "LockClrVersion function [.NET Framework hosting]"
 ms.assetid: 1318ee37-c43b-40eb-bbe8-88fc46453d74
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

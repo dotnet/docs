@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetSignature method, ISymUnmanagedConstant interface [.NET Framework debugging]"
   - "ISymUnmanagedConstant::GetSignature method [.NET Framework debugging]"
 ms.assetid: 3eb41151-a228-43e3-ba8f-e6dd3ceb8542
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

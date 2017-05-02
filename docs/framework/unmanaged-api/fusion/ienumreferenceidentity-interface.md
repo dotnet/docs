@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IEnumReferenceIdentity interface [.NET Framework fusion]"
 ms.assetid: a17b3155-7216-4e16-8c9f-abce21f549e7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

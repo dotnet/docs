@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::GetInterfaceImplProps method [.NET Framework metadata]"
   - "GetInterfaceImpProps method [.NET Framework metadata]"
 ms.assetid: be3f5985-b1e4-4036-8602-c16e8508d4af
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

@@ -1,6 +1,6 @@
 //<snippet25>
 using System;
-using System.Runtime.InteropServices;     // For StructLayout, DllImport
+using System.Runtime.InteropServices;
 
 [StructLayout(LayoutKind.Sequential)]
 public class SystemTime

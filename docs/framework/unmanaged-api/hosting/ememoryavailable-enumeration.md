@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EMemoryAvailable enumeration [.NET Framework hosting]"
 ms.assetid: 38e72a06-dbed-473b-a59b-7e0b3ea4f2af
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

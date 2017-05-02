@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostSemaphore::Wait method [.NET Framework hosting]"
   - "Wait method, IHostSemaphore interface [.NET Framework hosting]"
 ms.assetid: 0da962a3-ce55-44dd-ab7a-14ad7105af4a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

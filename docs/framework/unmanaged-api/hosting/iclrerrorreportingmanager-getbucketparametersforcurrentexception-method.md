@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRErrorReportingManager::GetBucketParametersForCurrentException method [.NET Framework hosting]"
   - "GetBucketParametersForCurrentException method [.NET Framework hosting]"
 ms.assetid: a13ec8a6-8e18-4acb-8054-77f5b1a0e0b9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

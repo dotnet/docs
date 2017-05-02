@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRAppDomainResourceMonitor::GetCurrentCpuTime method [.NET Framework hosting]"
   - "GetCurrentCpuTime method [.NET Framework hosting]"
 ms.assetid: ebc9cc33-fcd6-4cae-9ecb-ea21c51874e6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

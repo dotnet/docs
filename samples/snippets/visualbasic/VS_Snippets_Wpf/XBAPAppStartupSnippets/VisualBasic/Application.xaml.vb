@@ -1,8 +1,8 @@
 '<SnippetStartupXBAPCODEBEHIND>
 
-Imports System ' Uri, UriKind, EventArgs, Console
-Imports System.Windows ' Application, StartupEventArgs
-Imports System.Windows.Navigation ' NavigationWindow
+Imports System
+Imports System.Windows
+Imports System.Windows.Navigation
 
 Namespace SDKSample
 	Partial Public Class App

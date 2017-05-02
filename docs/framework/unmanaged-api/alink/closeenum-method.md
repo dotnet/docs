@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CloseEnum method"
 ms.assetid: aa4a091e-13fe-4264-91de-e12f1c767c87
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

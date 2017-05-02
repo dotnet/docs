@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetUserEntryPoint method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetUserEntryPoint method [.NET Framework debugging]"
 ms.assetid: 3fd3a34c-d176-46e9-9996-fb1646cff9b0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

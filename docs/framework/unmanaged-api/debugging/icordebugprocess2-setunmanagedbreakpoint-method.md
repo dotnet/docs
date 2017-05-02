@@ -2,7 +2,7 @@
 title: "ICorDebugProcess2::SetUnmanagedBreakpoint Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess2::SetUnmanagedBreakpoint method [.NET Framework debugging]"
   - "SetUnmanagedBreakpoint method [.NET Framework debugging]"
 ms.assetid: 93829d15-d942-4e2d-b7a4-dfc9d7fb96be
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

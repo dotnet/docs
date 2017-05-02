@@ -1,6 +1,6 @@
 ﻿'<SnippetShowUnactivatedCODEBEHIND>
 
-Imports System.Windows ' Window
+Imports System.Windows
 
 Namespace WindowShowActivatedSnippets
     Partial Public Class AWindow

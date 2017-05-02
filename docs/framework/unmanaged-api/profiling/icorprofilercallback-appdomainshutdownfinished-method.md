@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "AppDomainShutdownFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::AppDomainShutdownFinished method [.NET Framework profiling]"
 ms.assetid: 52794819-0a59-4bb1-a265-0f158cd5cd65
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

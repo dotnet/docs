@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorPinvokeMap enumeration [.NET Framework metadata]"
 ms.assetid: f14f986e-f6ce-42bc-aa23-18150c46d28c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

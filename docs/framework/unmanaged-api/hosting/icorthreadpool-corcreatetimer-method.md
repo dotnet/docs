@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CorCreateTimer method [.NET Framework hosting]"
   - "ICorThreadpool::CorCreateTimer method [.NET Framework hosting]"
 ms.assetid: 0d56ef25-30f1-4499-8a1f-76e7654ec614
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

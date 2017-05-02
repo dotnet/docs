@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumMemberRefs method [.NET Framework metadata]"
   - "IMetaDataImport::EnumMemberRefs method [.NET Framework metadata]"
 ms.assetid: e97c97a6-6e4f-41f5-9af1-9b3cf3bdbd6b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

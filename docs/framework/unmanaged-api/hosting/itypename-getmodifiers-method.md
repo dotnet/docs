@@ -2,7 +2,7 @@
 title: "ITypeName::GetModifiers Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeName::GetModifiers method [.NET Framework hosting]"
   - "GetModifiers method [.NET Framework hosting]"
 ms.assetid: 75508c55-3e09-4135-80da-cc811003fa82
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

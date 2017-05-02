@@ -2,7 +2,7 @@
 title: "ICorDebugModule::GetBaseAddress Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetBaseAddress method [.NET Framework debugging]"
   - "ICorDebugModule::GetBaseAddress method [.NET Framework debugging]"
 ms.assetid: 26a82815-1982-4eb7-92d1-5c3d318d5be4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

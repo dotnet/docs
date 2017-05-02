@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "FunctionEnter3WithInfo function [.NET Framework profiling]"
 ms.assetid: 277c3344-d0cb-431e-beae-eb1eeeba8eea
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

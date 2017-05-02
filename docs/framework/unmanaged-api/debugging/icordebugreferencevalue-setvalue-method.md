@@ -2,7 +2,7 @@
 title: "ICorDebugReferenceValue::SetValue Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetValue method, ICorDebugReferenceValue interface [.NET Framework debugging]"
   - "ICorDebugReferenceValue::SetValue method [.NET Framework debugging]"
 ms.assetid: 3d3f6eec-d772-401f-a028-1a2ecdc31e95
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

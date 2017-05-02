@@ -2,7 +2,7 @@
 title: "ICorDebugStringValue::GetLength Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugStringValue::GetLength method [.NET Framework debugging]"
   - "GetLength method [.NET Framework debugging]"
 ms.assetid: a1ebfc69-46a6-4225-8788-b7cfb2f15e1d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

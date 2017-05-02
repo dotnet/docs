@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorLocalRefPreservation enumeration [.NET Framework metadata]"
 ms.assetid: 44757163-1228-4213-a4c4-d4de503cc75d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

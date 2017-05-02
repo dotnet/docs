@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IApartmentCallback interface [.NET Framework hosting]"
 ms.assetid: 57c33c58-bf0b-4533-b569-e6a682d02cba
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

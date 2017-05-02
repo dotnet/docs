@@ -1,6 +1,6 @@
 //<SnippetHandleDispatcherUnhandledExceptionCODEBEHIND1>
-using System.Windows; // Application
-using System.Windows.Threading; // DispatcherUnhandledExceptionEventArgs
+using System.Windows;
+using System.Windows.Threading;
 
 namespace SDKSample
 {

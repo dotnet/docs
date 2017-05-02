@@ -2,7 +2,7 @@
 title: "ICorDebugProcess5::GetTypeLayout Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess5::GetTypeLayout method [.NET Framework debugging]"
   - "GetTypeLayout method, ICorDebugProcess5 interface [.NET Framework debugging]"
 ms.assetid: bd62f5d1-e874-41f1-81e5-a29a7572c15d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetUnmanagedHandler method [.NET Framework debugging]"
   - "ICorDebug::SetUnmanagedHandler method [.NET Framework debugging]"
 ms.assetid: 6b546be4-f86d-4536-8cfc-1d08e5066eb6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

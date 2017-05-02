@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedWriter interface [.NET Framework debugging]"
 ms.assetid: 7d6733ec-f081-4166-bc17-de09e16dc304
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

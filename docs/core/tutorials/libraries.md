@@ -20,7 +20,7 @@ This article covers how to write libraries for .NET using cross-platform CLI too
 
 You need [the .NET Core SDK and CLI](https://www.microsoft.com/net/core) installed on your machine.
 
-For the sections of this document dealing with .NET Framework versions or Portable Class Libraries (PCL), you need the [.NET Framework](http://getdotnet.azurewebsites.net/) installed on a Windows machine.  
+For the sections of this document dealing with .NET Framework versions, you need the [.NET Framework](http://getdotnet.azurewebsites.net/) installed on a Windows machine.  
 
 Additionally, if you wish to support older .NET Framework targets, you need to install targeting/developer packs for older framework versions from the [.NET target platforms page](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html).  Refer to this table:
 
@@ -84,7 +84,7 @@ If you want to reach the maximum number of developers and projects, use the .NET
 .NET Framework 4.6   --> net46
 .NET Framework 4.6.1 --> net461
 .NET Framework 4.6.2 --> net462
-.NET Framework 4.6.3 --> net463
+.NET Framework 4.7 --> net47
 ```
 
 You then insert this TFM into the `TargetFramework` section of your project file.  For example, here's how you would write a library which targets the .NET Framework 4.0:

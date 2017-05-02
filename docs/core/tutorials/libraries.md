@@ -4,7 +4,7 @@ description: Developing Libraries with Cross Platform Tools
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
-ms.date: 03/23/2017
+ms.date: 05/01/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli

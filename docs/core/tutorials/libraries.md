@@ -233,6 +233,8 @@ Each of these contain the `.dll` files for each target.
 
 It's important to be able to test across platforms.  You can use either [xUnit](http://xunit.github.io/) or MSTest out of the box.  Both either are perfectly suitable for unit testing your library on .NET Core.  How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution).  The following example assumes that test and source directories live in the same top-level directory.
 
+> [!INFO] This uses some [.NET CLI commands](../tools/index.md).  See [dotnet new](../tools/dotnet-new.md) and [dotnet sln](../tools/dotnet-sln.md) for more information.
+
 1. Set up your solution.  You can do so with the following commands:
 
 ```bash
@@ -303,7 +305,7 @@ open AwesomeLibrary.FSharp
 ...
 
 let doWork data = async {
-    let! result = AwesomeLibrary.AsyncConvert data
+    let! result = AwesomeLibrary.AsyncConvert data // Uses an F# async function rather than C# async method
     // do something with result
 }
 ```

@@ -1,5 +1,5 @@
 ---
-uid: System.Linq
+uid: System.Collections.Immutable
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

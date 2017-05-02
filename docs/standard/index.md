@@ -1,10 +1,10 @@
 ---
-title: About .NET
+title: .NET Platform Guide
 description: Learn about the .NET Platform.
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: ronpet
-ms.date: 05/01/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard

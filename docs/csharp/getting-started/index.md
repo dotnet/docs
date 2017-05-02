@@ -1,18 +1,18 @@
 ---
-title: Getting Started | C# Guide
-description: Simple tutorials that let you quickly build an application using C# and .NET Core.
-keywords: C#, Getting Started, Acquisition, Install
+
+title: Get Started | C# Guide
+description: Get Started with C#
+keywords: C#, Get Started, Acquisition, Install
 author: rpetrusha
 ms.author: ronpet
-ms.date: 04/17/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: b77c7263-7cbf-4729-9626-8fbc3f5f14d9
 ---
-
-# Getting started with C#
+# Get started with C# #
 
 This section provides short, simple tutorials that let you quickly build an application using C# and .NET Core. There are getting started topics for Visual Studio 2017 and Visual Studio Code. You can build either a simple Hello World application or, if you have Visual Studio 2017, a simple class library that can be used by other applications.
 
@@ -28,7 +28,7 @@ The following topics are available:
 
    A class library lets you define types and type members that can be called from another application. This topic lets you create a class library with a single method that determines whether a string begins with an uppercase character. Once you've finished building the library, you can develop a [unit test](testing-library-with-visual-studio.md) to ensure that it works as expected, and then you can make it available to [applications that want to consume it](consuming-library-with-visual-studio.md).
 
-* [Getting started with Visual Studio Code](with-visual-studio-code.md)
+- [Get started with Visual Studio Code](with-visual-studio-code.md)
 
    Visual Studio Code is a free code editor optimized for building and debugging modern web and cloud applications. It supports IntelliSense and is available for Linux, macOS, and Windows.
 

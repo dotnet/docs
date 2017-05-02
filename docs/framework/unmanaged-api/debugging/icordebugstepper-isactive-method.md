@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsActive method, ICorDebugStepper interface [.NET Framework debugging]"
   - "ICorDebugStepper::IsActive method [.NET Framework debugging]"
 ms.assetid: 8b35e7a9-b40e-40a9-8d8e-b82e823fc575
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

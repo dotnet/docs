@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRHostBindingPolicyManager::ModifyApplicationPolicy method [.NET Framework hosting]"
   - "ModifyApplicationPolicy method [.NET Framework hosting]"
 ms.assetid: d82d633e-cce6-427c-8b02-8227e34e12ba
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

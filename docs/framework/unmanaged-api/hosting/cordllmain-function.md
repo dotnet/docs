@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "_CorDllMain function [.NET Framework hosting]"
 ms.assetid: bc7b51cf-39d3-48ec-a5cb-2f179fbefff8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"

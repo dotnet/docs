@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugAppDomain::Attach method [.NET Framework debugging]"
   - "Attach method [.NET Framework debugging]"
 ms.assetid: 0358b84a-4236-4c34-945b-4babff7df570
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

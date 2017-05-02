@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugIntercept enumeration [.NET Framework debugging]"
 ms.assetid: 3d5b642e-7ef2-428b-a5ae-509c35ed461a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

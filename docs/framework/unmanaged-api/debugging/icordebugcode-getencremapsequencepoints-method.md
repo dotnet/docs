@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetEnCRemapSequencePoints method [.NET Framework debugging]"
   - "ICorDebugCode::GetEnCRemapSequencePoints method [.NET Framework debugging]"
 ms.assetid: 8463a98a-de4a-418e-beb0-9611885ae6b0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

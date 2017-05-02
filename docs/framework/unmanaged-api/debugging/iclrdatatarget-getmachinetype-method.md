@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRDataTarget::GetMachineType method [.NET Framework debugging]"
   - "GetMachineType method [.NET Framework debugging]"
 ms.assetid: 5f1f9c61-3e3b-48b2-b111-a4395f7623a7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

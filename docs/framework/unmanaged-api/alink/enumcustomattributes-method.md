@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EnumCustomAttributes method"
 ms.assetid: 08dff60c-f01b-4050-8865-ea3f95361c9f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

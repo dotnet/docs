@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "COMClassicVTableCreated method [.NET Framework profiling]"
   - "ICorProfilerCallback::COMClassicVTableCreated method [.NET Framework profiling]"
 ms.assetid: 6e1834ab-c359-498a-b10b-984ae23cdda4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

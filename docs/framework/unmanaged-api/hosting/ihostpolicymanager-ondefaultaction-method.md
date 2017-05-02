@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "OnDefaultAction method [.NET Framework hosting]"
   - "IHostPolicyManager::OnDefaultAction method [.NET Framework hosting]"
 ms.assetid: 071e73bd-4795-470f-9373-cfaef553b7f2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

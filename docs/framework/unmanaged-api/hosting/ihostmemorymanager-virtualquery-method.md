@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostMemoryManager::VirtualQuery method [.NET Framework hosting]"
   - "VirtualQuery method [.NET Framework hosting]"
 ms.assetid: 757af1e6-b9e8-49e7-b5db-342be3aa205f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

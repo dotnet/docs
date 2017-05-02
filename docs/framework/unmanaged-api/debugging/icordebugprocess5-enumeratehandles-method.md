@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumerateHandles method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::EnumerateHandles method [.NET Framework debugging]"
 ms.assetid: 7d7fa796-0dc6-4ee8-9d56-40166246d91d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

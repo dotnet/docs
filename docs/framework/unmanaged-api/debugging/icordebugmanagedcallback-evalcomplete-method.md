@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugManagedCallback::EvalComplete method [.NET Framework debugging]"
   - "EvalComplete method [.NET Framework debugging]"
 ms.assetid: f74ab4eb-cd1b-407c-a66d-8ec0d85647f3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

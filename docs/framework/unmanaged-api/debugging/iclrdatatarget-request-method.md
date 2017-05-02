@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRDataTarget::Request method [.NET Framework debugging]"
   - "Request method [.NET Framework debugging]"
 ms.assetid: 4723bd1c-eddb-4ed2-897a-010024a47e01
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

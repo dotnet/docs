@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostCrst interface [.NET Framework hosting]"
 ms.assetid: ac298ebd-0815-47e4-a823-30b31baab903
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

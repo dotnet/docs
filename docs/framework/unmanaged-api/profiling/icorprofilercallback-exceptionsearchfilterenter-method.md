@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ExceptionSearchFilterEnter method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionSearchFilterEnter method [.NET Framework profiling]"
 ms.assetid: acc239ce-3eef-418c-b1df-c5a6dd8e8a4c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

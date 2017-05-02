@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IAssemblyCache interface [.NET Framework fusion]"
 ms.assetid: 71ea170f-872d-4fc5-81b6-27da1dec9b19
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

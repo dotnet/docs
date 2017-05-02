@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedENCUpdate::GetLocalVariableCount method [.NET Framework debugging]"
   - "GetLocalVariableCount method [.NET Framework debugging]"
 ms.assetid: 9777d8bb-4abc-4be8-aa7c-34f853eceb9c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

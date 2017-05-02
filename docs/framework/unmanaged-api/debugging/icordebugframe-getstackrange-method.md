@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetStackRange method, ICorDebugFrame interface [.NET Framework debugging]"
   - "ICorDebugFrame::GetStackRange method [.NET Framework debugging]"
 ms.assetid: fab037cb-fda6-40fb-9367-921e435dd5a0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

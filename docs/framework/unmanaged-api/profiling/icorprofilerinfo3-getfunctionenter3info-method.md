@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetFunctionEnter3Info method [.NET Framework profiling]"
   - "ICorProfilerInfo3::GetFunctionEnter3Info method [.NET Framework profiling]"
 ms.assetid: 542c7c65-dd56-4651-b76f-5db2465e4a15
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ClassLoadFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::ClassLoadFinished method [.NET Framework profiling]"
 ms.assetid: 3dd80fbe-d62d-4d4d-acf8-5b7d0efe607e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

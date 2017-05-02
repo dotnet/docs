@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataValidate::ValidateMetaData method [.NET Framework metadata]"
   - "ValidateMetaData method [.NET Framework metadata]"
 ms.assetid: e5ceed11-0f54-4097-8302-883284dddbc1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

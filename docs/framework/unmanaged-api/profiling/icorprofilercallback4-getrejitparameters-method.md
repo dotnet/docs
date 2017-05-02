@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback4::GetReJITParameters method [.NET Framework profiling]"
   - "GetReJITParameters method, ICorProfilerCallback4 interface [.NET Framework profiling]"
 ms.assetid: 0e9bfe07-9f20-498c-b568-9017c8f6056c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

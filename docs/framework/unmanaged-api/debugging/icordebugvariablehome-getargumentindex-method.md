@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugVariableHome::GetArgumentiIndex method [.NET Framework debugging]"
   - "GetArgumentIndex method, ICorDebugVariableHome interface [.NET Framework debugging]"
 ms.assetid: e86fcc72-388d-4009-ab21-8f9c3323e9a3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

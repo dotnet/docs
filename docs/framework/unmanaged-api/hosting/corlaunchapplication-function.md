@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorLaunchApplication function [.NET Framework hosting]"
 ms.assetid: 71f362a9-8fe2-47ce-9302-05a645cf3d7d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

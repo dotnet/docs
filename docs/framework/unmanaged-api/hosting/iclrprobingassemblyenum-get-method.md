@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Get method, ICLRProbingAssemblyEnum interface [.NET Framework hosting]"
   - "ICLRProbingAssemblyEnum::Get method [.NET Framework hosting]"
 ms.assetid: fdb67a77-782f-44cf-a8a1-b75999b0f3c8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

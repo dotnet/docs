@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::GetTypeRefProps method [.NET Framework metadata]"
   - "GetTypeRefProps method [.NET Framework metadata]"
 ms.assetid: 01837955-ce1e-4068-b338-fd473bd77d1d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

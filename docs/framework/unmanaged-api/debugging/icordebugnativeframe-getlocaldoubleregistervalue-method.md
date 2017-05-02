@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugNativeFrame::GetLocalDoubleRegisterValue method [.NET Framework debugging]"
   - "GetLocalDoubleRegisterValue method [.NET Framework debugging]"
 ms.assetid: 1f838215-ac8a-434f-8ce6-03021d3098d9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

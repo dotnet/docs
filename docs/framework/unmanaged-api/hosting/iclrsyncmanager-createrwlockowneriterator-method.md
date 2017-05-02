@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRSyncManager::CreateRWLockOwnerIterator method [.NET Framework hosting]"
   - "CreateRWLockOwnerIterator method [.NET Framework hosting]"
 ms.assetid: b5535b87-9439-424e-b9b3-7d6fafb9819e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

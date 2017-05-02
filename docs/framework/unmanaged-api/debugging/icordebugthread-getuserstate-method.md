@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetUserState method, ICorDebugThread interface [.NET Framework debugging]"
   - "ICorDebugThread::GetUserState method [.NET Framework debugging]"
 ms.assetid: ae0cfd73-8ead-4d36-9310-dccaac9db0bd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostIoCompletionManager::SetCLRIoCompletionManager method [.NET Framework hosting]"
   - "SetCLRIoCompletionManager method [.NET Framework hosting]"
 ms.assetid: 4254bb01-3a14-4f34-a3be-60ff1f5072b5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

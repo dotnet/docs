@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostTask::Join method [.NET Framework hosting]"
   - "Join method, IHostTask interface [.NET Framework hosting]"
 ms.assetid: 2cffcc52-19e0-4ced-a440-fc7375078ac9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

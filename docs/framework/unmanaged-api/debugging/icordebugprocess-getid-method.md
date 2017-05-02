@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetID method, ICorDebugProcess interface [.NET Framework debugging]"
   - "ICorDebugProcess::GetID method [.NET Framework debugging]"
 ms.assetid: b0ba8453-fa7e-4c14-93e5-335409cd4a47
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

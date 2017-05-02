@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostIoCompletionManager::SetMaxThreads method [.NET Framework hosting]"
   - "SetMaxThreads method, IHostIoCompletionManager interface [.NET Framework hosting]"
 ms.assetid: ebad4f40-d9f1-4dc6-9b27-a89c9eb3926f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

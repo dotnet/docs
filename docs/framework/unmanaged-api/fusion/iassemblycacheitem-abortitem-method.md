@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "AbortItem method [.NET Framework fusion]"
   - "IAssemblyCacheItem::AbortItem method [.NET Framework fusion]"
 ms.assetid: be9f47f1-f532-4603-a192-a73cb7a0c4b2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

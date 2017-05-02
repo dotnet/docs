@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "JITCachedFunctionSearchFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITCachedFunctionSearchFinished method [.NET Framework profiling]"
 ms.assetid: 3c325c82-cddd-4b00-b3da-e450c36abf62
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

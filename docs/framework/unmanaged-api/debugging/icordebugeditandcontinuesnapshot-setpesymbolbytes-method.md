@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetPESymbolBytes method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueSnapshot::SetPESymbolBytes method [.NET Framework debugging]"
 ms.assetid: ec00fbdd-6451-4888-ac6f-08e1e2d9b2fd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

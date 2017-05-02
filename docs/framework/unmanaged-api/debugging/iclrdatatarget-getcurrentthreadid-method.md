@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetCurrentThreadID method, ICLRDataTarget interface [.NET Framework debugging]"
   - "ICLRDataTarget::GetCurrentThreadID method [.NET Framework debugging]"
 ms.assetid: dc9a0a6c-d592-4fb7-86ed-62684da3b0e1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

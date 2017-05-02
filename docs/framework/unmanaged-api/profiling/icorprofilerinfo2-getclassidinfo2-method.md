@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetClassIDInfo2 method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetClassIDInfo2 method [.NET Framework profiling]"
 ms.assetid: 0141d582-d066-4d49-8d1f-ae82129a1960
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread2::GetTaskID method [.NET Framework debugging]"
   - "GetTaskID method [.NET Framework debugging]"
 ms.assetid: 6ba3c6ee-4ba1-4c98-bf1e-8531acd3da09
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

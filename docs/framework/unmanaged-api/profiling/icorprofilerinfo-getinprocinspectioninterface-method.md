@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetInprocInspectionInterface method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetInprocInspectionInterface method [.NET Framework profiling]"
 ms.assetid: 22a92d1d-8849-4af6-8304-ecc53dd1d289
+topic_type: 
+  - "apiref"
 caps.latest.revision: 19
 author: "mairaw"
 ms.author: "mairaw"

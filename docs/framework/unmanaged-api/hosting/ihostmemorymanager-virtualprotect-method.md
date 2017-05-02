@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostMemoryManager::VirtualProtect method [.NET Framework hosting]"
   - "VirtualProtect method [.NET Framework hosting]"
 ms.assetid: 13be0299-df0d-4951-aabf-0676a30b385f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

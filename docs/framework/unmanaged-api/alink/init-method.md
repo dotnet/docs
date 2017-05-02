@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Init method"
 ms.assetid: e48b5c64-049f-4f93-ad87-d07ae9cd5845
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

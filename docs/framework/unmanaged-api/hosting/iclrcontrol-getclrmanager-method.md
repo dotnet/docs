@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetCLRManager method [.NET Framework hosting]"
   - "ICLRControl::GetCLRManager method [.NET Framework hosting]"
 ms.assetid: 8a11bfa4-cbb0-4082-82b5-f9fba66c93f5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

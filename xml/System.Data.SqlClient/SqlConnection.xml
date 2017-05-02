@@ -1040,7 +1040,7 @@ End Module
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can set the amount of time a connection waits to time out by using the `Connect``Timeout` or `Connection Timeout` keywords in the connection string. A value of 0 indicates no limit, and should be avoided in a <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> because an attempt to connect waits indefinitely.  
+ You can set the amount of time a connection waits to time out by using the `Connect Timeout` or `Connection Timeout` keywords in the connection string. A value of 0 indicates no limit, and should be avoided in a <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> because an attempt to connect waits indefinitely.  
   
    
   

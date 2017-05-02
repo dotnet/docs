@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateTask method, IHostTaskManager interface [.NET Framework hosting]"
   - "IHostTaskManager::CreateTask method [.NET Framework hosting]"
 ms.assetid: a6f8ad36-61e1-42b0-9db2-add575646d18
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

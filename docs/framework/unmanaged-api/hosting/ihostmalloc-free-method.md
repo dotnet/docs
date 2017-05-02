@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostMAlloc::Free method [.NET Framework hosting]"
   - "Free method, IHostMAlloc interface [.NET Framework hosting]"
 ms.assetid: c89abf5b-1120-4437-8b57-4a99fb3ae7f9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -26,7 +26,7 @@ Alternatively, if you prefer to get a thematic overview of F# and some of its di
 
 If you know how to program, but you're new to F#, begin with the [Tour of F#](tour.md) to get an overview of the language.
 
-It's also recommended that you go through the [Introduction to Functional Progamming](introduction-to-functional-programming/index.md) to learn Functional Programming concepts which are essential to working with F#.
+It's also recommended that you go through the [Functions as First-Class Values](introduction-to-functional-programming/functions-as-first-class-values.md)<!--[Introduction to Functional Progamming](introduction-to-functional-programming/index.md)--> to learn Functional Programming concepts which are essential to working with F#.
 
 The [Tutorials](tutorials/index.md) also have step-by-step guides for various skill levels and features of the language.
 
@@ -45,7 +45,7 @@ To learn more and get involved, check out [fsharp.org](http://fsharp.org).
 ## Documentation
 
 * [Tutorials](tutorials/index.md)
-* [Introduction to Functional Programming](introduction-to-functional-programming/index.md)
+* [Functions as First-Class Values](introduction-to-functional-programming/functions-as-first-class-values.md)<!--[Introduction to Functional Programming](introduction-to-functional-programming/index.md)-->
 * [Language Reference](language-reference/index.md)
 * [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference)
 

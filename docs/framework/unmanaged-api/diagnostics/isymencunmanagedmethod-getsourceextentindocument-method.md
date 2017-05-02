@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetSourceExtentInDocument method [.NET Framework debugging]"
   - "ISymENCUnmanagedMethod::GetSourceExtentInDocument method [.NET Framework debugging]"
 ms.assetid: 9c5566ab-4ec7-4b61-9753-839bb90ae78c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

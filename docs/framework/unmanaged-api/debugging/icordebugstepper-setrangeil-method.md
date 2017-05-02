@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetRangeIL method [.NET Framework debugging]"
   - "ICorDebugStepper::SetRangeIL method [.NET Framework debugging]"
 ms.assetid: a20c95f0-6da7-4b41-b27f-584211cebb92
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

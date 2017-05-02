@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugVariableHomeEnum interface [.NET Framework debugging]"
 ms.assetid: c312ae6d-c8dc-48d6-9f1e-ead515c88fdf
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

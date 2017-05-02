@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRErrorReportingManager::BeginCustomDump method [.NET Framework hosting]"
   - "BeginCustomDump method"
 ms.assetid: 93424a87-ba13-4fa1-b4dc-69d44437b7ae
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataTables::GetString method [.NET Framework metadata]"
   - "GetString method, IMetaDataTables interface [.NET Framework metadata]"
 ms.assetid: 895c35cf-b95d-4e3b-93b5-cfc1cf9044fc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

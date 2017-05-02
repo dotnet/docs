@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo2::SetEnterLeaveFunctionHooks2 method [.NET Framework profiling]"
   - "SetEnterLeaveFunctionHooks2 method [.NET Framework profiling]"
 ms.assetid: 3c26b3e7-f72b-48a5-bf8c-edc122523a4b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

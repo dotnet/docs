@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetAttributes method [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetAttributes method [.NET Framework debugging]"
 ms.assetid: 80f168af-a6a6-4c8f-b9e6-8a82dc834ed5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

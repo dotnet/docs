@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRMemoryNotificationCallback interface [.NET Framework hosting]"
 ms.assetid: 873639e2-4837-4568-83b3-4493e67e4174
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

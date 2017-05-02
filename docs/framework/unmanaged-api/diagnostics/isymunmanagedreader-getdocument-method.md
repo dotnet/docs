@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedReader::GetDocument method [.NET Framework debugging]"
   - "GetDocument method [.NET Framework debugging]"
 ms.assetid: bb203853-6a6d-4027-b9e9-603a7f28b9d3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

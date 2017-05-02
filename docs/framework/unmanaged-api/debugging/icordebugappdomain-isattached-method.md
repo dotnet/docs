@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsAttached method [.NET Framework debugging]"
   - "ICorDebugAppDomain::IsAttached method [.NET Framework debugging]"
 ms.assetid: af0c67c7-f53e-47c9-b84b-be50bd04903e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

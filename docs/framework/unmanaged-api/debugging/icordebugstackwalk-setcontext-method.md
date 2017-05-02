@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetContext method [.NET Framework debugging]"
   - "ICorDebugStackWalk::SetContext method [.NET Framework debugging]"
 ms.assetid: bac0b156-31a3-4e7f-be4d-ab21789c81f1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

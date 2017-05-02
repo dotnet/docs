@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_GC_GENERATION_FLAGS enumeration [.NET Framework profiling]"
 ms.assetid: d6ece160-26ad-4d39-abd7-05acd6f78c48
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

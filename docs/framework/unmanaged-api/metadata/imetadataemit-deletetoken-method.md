@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DeleteToken method [.NET Framework metadata]"
   - "IMetaDataEmit::DeleteToken method [.NET Framework metadata]"
 ms.assetid: a4926d0a-261b-46b1-9994-82633661a64b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

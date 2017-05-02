@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetValue method, ICorDebugValueBreakpoint interface [.NET Framework debugging]"
   - "ICorDebugValueBreakpoint::GetValue method [.NET Framework debugging]"
 ms.assetid: 52a73654-bc47-48b6-b2b1-a4456b10140c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -158,7 +158,7 @@
 > [!IMPORTANT]
 >  This type or member is not available in the Internet security zone.  
 >   
->  This method can be overridden, but not by this signature. See <xref:System.Windows.Interop.HwndHost.Dispose%28System.Boolean%29> for the overridable signature. This parameterless signature is the one required by the interface contract, and it effectively calls the active <xref:System.Windows.Interop.HwndHost.Dispose%28System.Boolean%29> implementation with `disposing``true`.  
+>  This method can be overridden, but not by this signature. See <xref:System.Windows.Interop.HwndHost.Dispose%28System.Boolean%29> for the overridable signature. This parameterless signature is the one required by the interface contract, and it effectively calls the active <xref:System.Windows.Interop.HwndHost.Dispose%28System.Boolean%29> implementation with `disposing` being `true`.  
   
  ]]></format>
         </remarks>

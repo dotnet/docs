@@ -8,6 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: a6907ffe-7920-4813-984f-6001d9e44756
+redirect_url: /dotnet/articles/csharp/getting-started/index
 ---
 
 # 🔧 Getting started with C# interactive

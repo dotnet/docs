@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugStepper interface [.NET Framework debugging]"
 ms.assetid: ed8364eb-f01b-46f6-b5e3-5dda9cae2dfe
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

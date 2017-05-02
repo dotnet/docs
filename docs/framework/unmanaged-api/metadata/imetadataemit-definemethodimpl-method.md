@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DefineMethodImpl method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineMethodImpl method [.NET Framework metadata]"
 ms.assetid: 9dcc8b3d-33ee-4c7c-8d6f-322c57b94a0f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

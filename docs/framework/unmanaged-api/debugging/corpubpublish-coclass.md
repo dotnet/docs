@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorpubPublish coclass [.NET Framework debugging]"
 ms.assetid: 191015da-f54a-4bac-a28a-1de7ab3c3428
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

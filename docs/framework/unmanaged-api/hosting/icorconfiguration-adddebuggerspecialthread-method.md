@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "AddDebuggerSpecialThread method [.NET Framework hosting]"
   - "ICorConfiguration::AddDebuggerSpecialThread method [.NET Framework hosting]"
 ms.assetid: 1f1e3239-438e-4be9-a3bb-7d0722d3a76d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

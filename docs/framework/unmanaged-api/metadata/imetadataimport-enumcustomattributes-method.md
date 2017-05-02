@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumCustomAttributes method [.NET Framework metadata]"
   - "IMetaDataImport::EnumCustomAttributes method [.NET Framework metadata]"
 ms.assetid: 798513a0-68b1-4d04-bc5b-782a4445ea68
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

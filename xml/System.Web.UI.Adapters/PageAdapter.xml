@@ -567,7 +567,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent%2A> method writes a postback event as a scriptless hyperlink, including the possibly chunked <xref:System.Web.HttpUtility.UrlEncode%2A> view state, `__EVENTTARGET``=target`, `__EVENTARGUMENT``=argument`, `__PREVIOUSPAGE=``currentFilePath` parameters, and an `accessKey="``accessKey``"` attribute.  
+ The <xref:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent%2A> method writes a postback event as a scriptless hyperlink, including the possibly chunked <xref:System.Web.HttpUtility.UrlEncode%2A> view state, `__EVENTTARGET=target`, `__EVENTARGUMENT=argument`, `__PREVIOUSPAGE=currentFilePath` parameters, and an `accessKey="accessKey"` attribute.  
   
  View state is encrypted if the `enableViewStateMac` attribute of the [pages Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/4123bb66-3fe4-4d62-b70e-33758656b458) configuration element is set to `true`.  
   
@@ -615,7 +615,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent%2A> method writes a postback event as a scriptless hyperlink, including the possibly chunked <xref:System.Web.HttpUtility.UrlEncode%2A> view state, `__EVENTTARGET``=``target`, `__EVENTARGUMENT``=``argument`, `__PREVIOUSPAGE`=`currentFilePath` parameters, and an `accessKey`="`accessKey`" attribute.  
+ The <xref:System.Web.UI.Adapters.PageAdapter.RenderPostBackEvent%2A> method writes a postback event as a scriptless hyperlink, including the possibly chunked <xref:System.Web.HttpUtility.UrlEncode%2A> view state, `__EVENTTARGET=target`, `__EVENTARGUMENT=argument`, `__PREVIOUSPAGE=currentFilePath` parameters, and an `accessKey="accessKey"` attribute.  
   
  ]]></format>
         </remarks>

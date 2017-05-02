@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataAssemblyEmit::SetFileProps method [.NET Framework metadata]"
   - "SetFileProps method [.NET Framework metadata]"
 ms.assetid: 85667d38-611c-45a9-938d-930ac7a7b681
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

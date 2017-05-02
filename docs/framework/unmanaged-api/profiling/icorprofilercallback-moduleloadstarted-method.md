@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ModuleLoadStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::ModuleLoadStarted method [.NET Framework profiling]"
 ms.assetid: 9cd2fe75-408a-400f-a6b1-9979624a2fe2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetMemberRefProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetMemberRefProps method [.NET Framework metadata]"
 ms.assetid: 0ea73055-ece0-4151-a094-414c88ef8941
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

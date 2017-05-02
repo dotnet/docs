@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetVersionString method, IMetaDataImport2 interface [.NET Framework metadata]"
   - "IMetaDataImport2::GetVersionString method [.NET Framework metadata]"
 ms.assetid: 308183ee-fd44-4432-9d86-ef00d181b49b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

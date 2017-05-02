@@ -24,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CreateICeeFileGen function [.NET Framework hosting]"
 ms.assetid: e36e1fd8-8456-4359-bdc3-3ec1765f041f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

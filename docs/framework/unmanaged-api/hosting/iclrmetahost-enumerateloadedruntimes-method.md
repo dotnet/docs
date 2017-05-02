@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumerateLoadedRuntimes method [.NET Framework hosting]"
   - "ICLRMetaHost::EnumerateLoadedRuntimes method [.NET Framework hosting]"
 ms.assetid: 22fc0a3f-dce4-4766-9a3c-9fab15f4b4ca
+topic_type: 
+  - "apiref"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

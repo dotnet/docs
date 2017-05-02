@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_GC_REFERENCE structure [.NET Framework debugging]"
 ms.assetid: 162e8179-0cd4-4110-8f06-5f387698bd62
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter::GetDebugInfo method [.NET Framework debugging]"
   - "GetDebugInfo method [.NET Framework debugging]"
 ms.assetid: dd31c210-6829-45eb-927e-cc53932638b7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

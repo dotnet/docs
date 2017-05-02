@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter::SetUserEntryPoint method [.NET Framework debugging]"
   - "SetUserEntryPoint method [.NET Framework debugging]"
 ms.assetid: d4dcc575-3ac8-4453-9be1-2b24f47363d7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

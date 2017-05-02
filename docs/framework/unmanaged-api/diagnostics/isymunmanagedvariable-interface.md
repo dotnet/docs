@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedVariable interface [.NET Framework debugging]"
 ms.assetid: 704c69ba-77bc-40d7-8c0c-400061686321
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

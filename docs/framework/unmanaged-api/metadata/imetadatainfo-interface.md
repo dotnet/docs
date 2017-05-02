@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IMetaDataInfo interface [.NET Framework metadata]"
 ms.assetid: 137cb264-64de-46ac-bc6e-2a7db97e8abe
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

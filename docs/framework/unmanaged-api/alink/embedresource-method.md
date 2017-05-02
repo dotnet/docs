@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EmbedResource method"
 ms.assetid: 667bd954-6dc6-4020-a3cb-0e8224179993
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

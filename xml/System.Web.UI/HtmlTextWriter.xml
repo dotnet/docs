@@ -4228,7 +4228,7 @@ alert('Hello');
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlTextWriter.WriteUrlEncodedString%2A> method encodes characters that could be considered URL delimiters (dependent on the setting of `argument`) into strings of the form `%``xx`, if the ASCII code is less than 128; otherwise, `%u``xxxx`, where `x` is a hexadecimal digit.  
+ The <xref:System.Web.UI.HtmlTextWriter.WriteUrlEncodedString%2A> method encodes characters that could be considered URL delimiters (dependent on the setting of `argument`) into strings of the form `%xx`, if the ASCII code is less than 128; otherwise, `%uxxxx`, where `x` is a hexadecimal digit.  
   
  The <xref:System.Web.UI.HtmlTextWriter.WriteEncodedUrl%2A> and <xref:System.Web.UI.HtmlTextWriter.WriteEncodedUrlParameter%2A> methods use the <xref:System.Web.UI.HtmlTextWriter.WriteUrlEncodedString%2A> method as a utility method.  
   

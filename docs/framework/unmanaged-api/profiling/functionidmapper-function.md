@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "FunctionIDMapper function [.NET Framework profiling]"
 ms.assetid: b8205b60-1893-4303-8cff-7ac5a00892aa
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

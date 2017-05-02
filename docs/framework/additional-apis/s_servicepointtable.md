@@ -17,7 +17,7 @@ author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# ServicePointManager.s_ServicePointTable Field
+# ServicePointManager.s\_ServicePointTable Field
 
 `ServicePointManager.s_ServicePointTable` is a <xref:System.​Collections.​Hashtable> that contains the list of active HTTP connections (<xref:System.​Net.​Service​Point>s) in the <xref:System.​App​Domain>. 
 

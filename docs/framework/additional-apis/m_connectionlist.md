@@ -17,7 +17,7 @@ author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# ConnectionGroup.m_ConnectionList Field
+# ConnectionGroup.m\_ConnectionList Field
 
 `ConnectionGroup.m_ConnectionList` is an <xref:System.​Collections.​Array​List> of connection objects that serves the same URI and share the same values for some other properties like expiration and authentication.
 

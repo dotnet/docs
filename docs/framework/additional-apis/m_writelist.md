@@ -17,7 +17,7 @@ author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# Connection.m_WriteList Field
+# Connection.m\_WriteList Field
 
 `Connection.m_WriteList` is an <xref:System.​Collections.​Array​List> of <xref:System.Net.HttpWebRequest> objects that are queued up to be sent over HTTP.
 

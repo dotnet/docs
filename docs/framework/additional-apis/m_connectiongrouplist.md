@@ -17,7 +17,7 @@ author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# ServicePoint.m_ConnectionGroupList Field
+# ServicePoint.m\_ConnectionGroupList Field
 
 `ServicePoint.m_ConnectionGroupList` is a <xref:System.​Collections.​Hashtable> of connection groups, each holding a connection for the <xref:System.​Net.​Service​Point>'s URI.
 

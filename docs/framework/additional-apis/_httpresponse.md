@@ -17,7 +17,7 @@ author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# HttpWebRequest._HttpResponse Field
+# HttpWebRequest.\_HttpResponse Field
 
 `HttpWebRequest._HttpResponse` is an <xref:System.Net.HttpWebResponse> containing HTTP response details from an HTTP request. It can be `null` until an HTTP response is received.
 

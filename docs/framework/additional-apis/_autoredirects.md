@@ -17,7 +17,7 @@ author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# HttpWebRequest._AutoRedirects Field
+# HttpWebRequest.\_AutoRedirects Field
 
 `HttpWebRequest._AutoRedirects` is an <xref:System.Int32> that reflects the number of redirects made for this <xref:System.Net.HttpWebRequest>.
 

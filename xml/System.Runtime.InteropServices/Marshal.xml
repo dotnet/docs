@@ -7212,7 +7212,7 @@
   
  The overall pattern for using <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> is as follows:  
   
-1.  On the first call to the <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A>method after a memory block has been allocated, `fDeleteOld`must be`false`, because there are no contents to clear.  
+1.  On the first call to the <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> method after a memory block has been allocated, `fDeleteOld`must be `false`, because there are no contents to clear.  
   
     > [!IMPORTANT]
     >  Specify `true` for `fDeleteOld` only if the block contains valid data.  

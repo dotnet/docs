@@ -1,7 +1,7 @@
 //<SnippetCallApplicationGetContentStreamCODEBEHIND1>
-using System; // Uri
-using System.IO; // Stream
-using System.Windows.Resources; // StreamResourceInfo
+using System;
+using System.IO;
+using System.Windows.Resources;
 //</SnippetCallApplicationGetContentStreamCODEBEHIND1>
 using System.Windows;
 using System.Windows.Controls;

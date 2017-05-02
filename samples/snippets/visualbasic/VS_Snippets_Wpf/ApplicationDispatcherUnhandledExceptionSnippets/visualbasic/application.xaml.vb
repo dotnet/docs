@@ -1,8 +1,8 @@
 '<SnippetHandleDispatcherUnhandledExceptionCODEBEHIND1>
 
 Imports Microsoft.VisualBasic
-Imports System.Windows ' Application
-Imports System.Windows.Threading ' DispatcherUnhandledExceptionEventArgs
+Imports System.Windows
+Imports System.Windows.Threading
 
 Namespace SDKSample
 	Partial Public Class App

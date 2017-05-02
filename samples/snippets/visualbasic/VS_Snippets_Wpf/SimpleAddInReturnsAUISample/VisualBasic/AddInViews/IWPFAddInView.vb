@@ -1,7 +1,7 @@
 ﻿'<SnippetAddInViewCode>
 
-Imports System.AddIn.Pipeline ' AddInBaseAttribute
-Imports System.Windows ' FrameworkElement
+Imports System.AddIn.Pipeline
+Imports System.Windows
 
 Namespace AddInViews
 	''' <summary>

@@ -1,6 +1,6 @@
 //<SnippetAppDefAugCODE1>
-using System; // STAThread
-using System.Windows; // Application
+using System;
+using System.Windows;
 
 namespace SDKSample
 {

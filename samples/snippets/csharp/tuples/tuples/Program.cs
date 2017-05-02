@@ -55,10 +55,8 @@ namespace tuples
             #endregion
 
             #region 04_VariableAssignment
-            // unnamed to named:
             unnamed = named;
 
-            // named to unnamed:
             named = unnamed;
             // 'named' still has fields that can be referred to
             // as 'answer', and 'message':
@@ -72,6 +70,10 @@ namespace tuples
             // The field names are not assigned. 'named' still has 
             // fields that can be referred to as 'answer' and 'message':
             Console.WriteLine($"{named.Answer}, {named.Message}");
+
+            // With implicit conversions:
+            // int can be implicitly converted to long
+            (long, string) conversion = named;
             #endregion
 
         }

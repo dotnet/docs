@@ -1,10 +1,10 @@
 namespace Microsoft.Samples.PerFrameAnimations
 {
     using System;
-    using System.Windows; //uielement
-    using System.Windows.Media; //visual operations
-    using System.Windows.Media.Animation; //animation effect stuff
-    using System.Windows.Controls; //Canvas
+    using System.Windows;
+    using System.Windows.Media;
+    using System.Windows.Media.Animation;
+    using System.Windows.Controls;
     using System.Collections.Generic;
     using System.Windows.Input;
     using System.Security.Permissions;

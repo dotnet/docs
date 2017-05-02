@@ -87,6 +87,25 @@ public class Person
 }
 ```
 
+When a property implementation is a single expression, you can
+use *expression bodied members* for the getter or setter:
+
+```csharp
+public class Person
+{
+    public string FirstName
+    {
+        get => firstName;
+        set => firstName = value;
+    }
+    private string firstName;
+    // remaining implementation removed from listing
+}
+```
+
+This simplified syntax will be used where applicable throughout this
+topic.
+
 The property definition shown above is a read-write property. Notice
 the keyword `value` in the set accessor. The `set` accessor always has
 a single parameter named `value`. The `get` accessor must return a value
@@ -114,7 +133,7 @@ public class Person
 {
     public string FirstName
     {
-        get { return firstName; }
+        get => firstName;
         set
         {
             if (string.IsNullOrWhiteSpace(value))
@@ -276,7 +295,7 @@ public class Person
     private string firstName;
     public string FirstName
     {
-        get { return firstName; }
+        get => firstName;
         set
         {
             firstName = value;
@@ -287,7 +306,7 @@ public class Person
     private string lastName;
     public string LastName
     {
-        get { return lastName; }
+        get => lastName;
         set
         {
             lastName = value;
@@ -331,7 +350,7 @@ public class Person : INotifyPropertyChanged
 {
     public string FirstName
     {
-        get { return firstName; }
+        get => firstName;
         set
         {
             if (string.IsNullOrWhiteSpace(value))

@@ -1,10 +1,10 @@
-﻿using System; // Environment
-using System.Collections.ObjectModel; // Collection<T>
-using System.AddIn.Contract; // INativeHandleContract
-using System.AddIn.Hosting; // AddInStore, AddInToken, AddInSecurityLevel, AddInController
-using System.Windows; // Window, RoutedEventArgs
+﻿using System;
+using System.Collections.ObjectModel;
+using System.AddIn.Contract;
+using System.AddIn.Hosting;
+using System.Windows;
 
-using HostViews; // IWPFAddInHostView
+using HostViews;
 
 namespace Host
 {

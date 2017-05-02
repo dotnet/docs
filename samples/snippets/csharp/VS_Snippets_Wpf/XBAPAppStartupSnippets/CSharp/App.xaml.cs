@@ -1,7 +1,7 @@
 //<SnippetStartupXBAPCODEBEHIND>
-using System; // Uri, UriKind, EventArgs, Console
-using System.Windows; // Application, StartupEventArgs
-using System.Windows.Navigation; // NavigationWindow
+using System;
+using System.Windows;
+using System.Windows.Navigation;
 
 namespace SDKSample
 {

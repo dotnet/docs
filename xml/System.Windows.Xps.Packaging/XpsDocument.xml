@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a <see cref="T:System.IO.Packaging.Package" /> that holds the content of an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.</summary>
+    <summary>Provides a <see cref="T:System.IO.Packaging.Package" /> that holds the content of an XPS document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -326,7 +326,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the core <see cref="T:System.IO.Packaging.PackageProperties" /> of the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.</summary>
-        <value>The core properties of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> <see cref="T:System.IO.Packaging.Package" />.</value>
+        <value>The core properties of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /><see cref="T:System.IO.Packaging.Package" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

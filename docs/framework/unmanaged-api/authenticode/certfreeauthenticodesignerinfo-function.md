@@ -9,11 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CertFreeAuthenticodeSignerInfo"
-apilocation: 
+api_location: 
   - "clr.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 dev_langs: 
   - "C++"
 ms.assetid: 8029633c-b6e4-4665-a7c2-89607c3247ef

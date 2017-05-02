@@ -7,7 +7,7 @@ Imports System.Windows.Documents
 Imports System.Windows.Media
 Imports System.Windows.Navigation
 Imports System.Windows.Shapes
-Imports System.Windows.Media.Animation 'Clocks and Timelines
+Imports System.Windows.Media.Animation
 
 Namespace Microsoft.Samples.PerFrameAnimations
 	''' <summary>

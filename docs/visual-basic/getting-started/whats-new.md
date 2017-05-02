@@ -43,12 +43,12 @@ This topic lists key feature names for each version of Visual Basic, with detail
 ## Current Version
 
 Visual Basic / Visual Studio .NET 2017   
-For new features, see [Visual Basic 2017](visual-basic-2017)
+For new features, see [Visual Basic 2017](#visual-basic-2017)
 
 ## Previous versions
 
 Visual Basic / Visual Studio .NET 2015   
-For new features, see [Visual Basic 14](visual-basic-14)
+For new features, see [Visual Basic 14](#visual-basic-14)
 
 Visual Basic / Visual Studio .NET 2013  
 Technology previews of the .NET Compiler Platform (“Roslyn”)

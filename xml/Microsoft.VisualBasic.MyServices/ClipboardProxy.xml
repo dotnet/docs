@@ -247,7 +247,7 @@ My.Computer.Clipboard.Clear()
    
   
 ## Examples  
- This example determines if there is a file drop list on the Clipboard and adds the list to the `ListBox``lstFiles` if they exist.  
+ This example determines if there is a file drop list on the Clipboard and adds the list to the `ListBox.lstFiles` if they exist.  
   
  [!code-vb[VbRefClipbd#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#12)]  
   
@@ -599,7 +599,7 @@ My.Computer.Clipboard.Clear()
    
   
 ## Examples  
- This example determines if there is a file drop list on the Clipboard and adds the list to the `ListBox``lstFiles` if they exist.  
+ This example determines if there is a file drop list on the Clipboard and adds the list to the `ListBox.lstFiles` if they exist.  
   
  [!code-vb[VbRefClipbd#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#9)]  
   
@@ -912,7 +912,7 @@ My.Computer.Clipboard.Clear()
    
   
 ## Examples  
- This example writes the `DataObject``dataChunk` to the Clipboard in the custom format `specialFormat`.  
+ This example writes the `DataObject.dataChunk` to the Clipboard in the custom format `specialFormat`.  
   
  [!code-vb[VbVbcnMyClipboard#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#7)]  
   

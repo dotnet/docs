@@ -1362,9 +1362,9 @@ static class Program
   
  Call <xref:System.Windows.Forms.Application.SetUnhandledExceptionMode%2A> before you instantiate the main form of your application using the <xref:System.Windows.Forms.Application.Run%2A> method.  
   
- When `threadScope` is `true`, the thread exception mode is set. The thread exception mode overrides the application exception mode if `mode` is not set to <xref:System.Windows.Forms.UnhandledExceptionMode>.  
+ When `threadScope` is `true`, the thread exception mode is set. The thread exception mode overrides the application exception mode if `mode` is not set to <xref:System.Windows.Forms.UnhandledExceptionMode.Automatic>.  
   
- When `threadScope` is `false`, the application exception mode is set. The application exception mode is used for all threads that have the <xref:System.Windows.Forms.UnhandledExceptionMode> mode. Setting the application exception mode does not affect the setting of the current thread.  
+ When `threadScope` is `false`, the application exception mode is set. The application exception mode is used for all threads that have the <xref:System.Windows.Forms.UnhandledExceptionMode.Automatic> mode. Setting the application exception mode does not affect the setting of the current thread.  
   
  To catch exceptions that occur in threads not created and owned by Windows Forms, use the <xref:System.AppDomain.UnhandledException> event handler.  
   

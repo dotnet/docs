@@ -18,7 +18,7 @@ Namespace Microsoft.Syndication.Samples
         Shared Sub Main(ByVal args As String())
             'Create an extensible object (in this case, SyndicationFeed). Other extensible types (SyndicationItem,
             'SyndicationCategory, SyndicationPerson, SyndicationLink) follow the same pattern.
-            ' </Snippet0>
+            ' <Snippet0>
             Dim feed As New SyndicationFeed()
 
             'Attribute extensions are stored in a dictionary indexed by XmlQualifiedName

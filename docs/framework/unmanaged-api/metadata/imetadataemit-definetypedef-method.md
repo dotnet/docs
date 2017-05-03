@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::DefineTypeDef method [.NET Framework metadata]"
   - "DefineTypeDef method [.NET Framework metadata]"
 ms.assetid: dd11c485-be95-4b97-9cd8-68679a4fb432
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"

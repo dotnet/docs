@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugManagedCallback3 interface [.NET Framework debugging]"
 ms.assetid: a95389d3-cf2e-47a4-9805-61426acc6b65
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

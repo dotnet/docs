@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetSourceStartEnd method [.NET Framework debugging]"
   - "ISymUnmanagedMethod::GetSourceStartEnd method [.NET Framework debugging]"
 ms.assetid: 2a420900-01f1-4461-8777-3a34a6dc1426
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

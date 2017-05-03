@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ImportTypes method"
 ms.assetid: 351d4b4c-c939-486d-9471-51914a55f471
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

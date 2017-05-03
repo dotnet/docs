@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "FunctionLeave2 function [.NET Framework profiling]"
 ms.assetid: 8cdac941-8b94-4497-b874-4e571785f3fe
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

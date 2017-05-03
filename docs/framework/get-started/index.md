@@ -2,7 +2,7 @@
 title: "Getting Started with the .NET Framework | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
+ms.prod: ".net-framework-4.6"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -63,7 +63,7 @@ The .NET Framework is a runtime execution environment that manages applications 
   
  To develop .NET Framework applications or components, do the following:  
   
-1.  If it is not preinstalled on your operating system, install the version of the .NET Framework that your application will target. The most recent production version is the .NET Framework 4.7, which is preinstalled on Windows 10 Creators Update, but is not available on earlier versions of the Windows operating system. For .NET Framework system requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md). For information on installing other versions of the .NET Framework, see [Installation Guide](../../../docs/framework/install/guide-for-developers.md). There are additional .NET Framework packages that are released out of band. For information about these packages, see [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md).  
+1.  If it is not preinstalled on your operating system, install the version of the .NET Framework that your application will target. The most recent production version is the .NET Framework 4.7, which is preinstalled on Windows 10 Creative Update and is available for download on earlier versions of the Windows operating system. For .NET Framework system requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md). For information on installing other versions of the .NET Framework, see [Installation Guide](../../../docs/framework/install/guide-for-developers.md). There are additional .NET Framework packages that are released out of band. For information about these packages, see [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md).  
   
 2.  Select the .NET Framework language or languages that you will use to develop your applications. A number of languages are available, including Visual Basic, C#, Visual F#, and C++ from Microsoft. (A programming language that allows you to develop applications for the .NET Framework adheres to the [Common Language Infrastructure (CLI) specification](http://go.microsoft.com/fwlink/?LinkId=199862).)  
   

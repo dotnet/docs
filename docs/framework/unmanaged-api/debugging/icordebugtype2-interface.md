@@ -20,6 +20,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "ICorDebugType2 interface"
 ms.assetid: 376fb03f-f1ef-4107-baa4-4d9d55884862
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

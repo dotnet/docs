@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRRuntimeHost::ExecuteInDefaultAppDomain method [.NET Framework hosting]"
   - "ExecuteInDefaultAppDomain method [.NET Framework hosting]"
 ms.assetid: 30b5cf9a-a762-4bd4-be12-d6c1442b78b1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

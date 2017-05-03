@@ -4351,7 +4351,7 @@ value Mod 2 = 0
 > [!NOTE]
 >  Unlike the bitwise left-shift operation with integer primitives, the <xref:System.Numerics.BigInteger.op_LeftShift%2A> method preserves the sign of the original <xref:System.Numerics.BigInteger> value.  
   
- Languages that do not support custom operators can perform a bitwise left-shift operation by multiplying `value` by `BigInteger.Pow(2,``shift``)`. The following example shows that the results are identical to the results of using this operator.  
+ Languages that do not support custom operators can perform a bitwise left-shift operation by multiplying `value` by `BigInteger.Pow(2, shift)`. The following example shows that the results are identical to the results of using this operator.  
   
  [!code-csharp[System.Numerics.BigInteger.Operators#30](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#30)]
  [!code-vb[System.Numerics.BigInteger.Operators#30](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#30)]  
@@ -5064,7 +5064,7 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#47](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/RightShift1.cs#47)]
  [!code-vb[System.Numerics.BigInteger.Operators#47](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#47)]  
   
- Languages that do not support custom operators can perform a bitwise right-shift operation by dividing `value` by `BigInteger.Pow(2,``shift``)` and subtracting 1 times `shift` for negative values. The following example shows that the results are identical to the results of using this operator.  
+ Languages that do not support custom operators can perform a bitwise right-shift operation by dividing `value` by `BigInteger.Pow(2, shift)` and subtracting 1 times `shift` for negative values. The following example shows that the results are identical to the results of using this operator.  
   
  [!code-csharp[System.Numerics.BigInteger.Operators#48](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/RightShift1.cs#48)]
  [!code-vb[System.Numerics.BigInteger.Operators#48](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#48)]  

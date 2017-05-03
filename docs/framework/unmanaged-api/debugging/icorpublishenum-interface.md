@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorPublishEnum interface [.NET Framework debugging]"
 ms.assetid: 76a136b5-e444-417a-8ade-f1596d597dc7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

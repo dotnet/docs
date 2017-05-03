@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugModuleEnum interface [.NET Framework debugging]"
 ms.assetid: 2fb93cd6-6d47-4fdc-a9a0-047726fd03a1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

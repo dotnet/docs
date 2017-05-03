@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread::GetCurrentException method [.NET Framework debugging]"
   - "GetCurrentException method [.NET Framework debugging]"
 ms.assetid: 331ed465-a195-4359-8584-b82c6098b29b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

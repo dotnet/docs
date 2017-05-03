@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugValue::GetType method [.NET Framework debugging]"
   - "GetType method, ICorDebugValue interface [.NET Framework debugging]"
 ms.assetid: 41e2d503-e1f1-407b-abe0-6a29adb3e0d1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

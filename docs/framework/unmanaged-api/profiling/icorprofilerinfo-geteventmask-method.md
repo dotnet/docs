@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetEventMask method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetEventMask method [.NET Framework profiling]"
 ms.assetid: ec34cc13-45a3-4695-abc3-b3347d4e6fc2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

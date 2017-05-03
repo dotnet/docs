@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRMetaHost::ExitProcess method [.NET Framework hosting]"
   - "ExitProcess method, ICLRMetaHost interface [.NET Framework hosting]"
 ms.assetid: b4df98cc-4e4e-407b-b8f4-e0076afef3a4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

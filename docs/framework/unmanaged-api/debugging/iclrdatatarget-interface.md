@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRDataTarget interface [.NET Framework debugging]"
 ms.assetid: e2f05155-9bef-4e11-b703-7f05890665ca
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

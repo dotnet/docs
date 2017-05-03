@@ -49,7 +49,7 @@
 ## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
  When you create a Windows Metadata library (.winmd file), the <xref:System.ObsoleteAttribute> is exported as both the <xref:System.ObsoleteAttribute> attribute and the [Windows.Foundation.Metadata.DeprecatedAttribute](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.deprecatedattribute.aspx) attribute if only the <xref:System.ObsoleteAttribute> is present in source code. The <xref:System.ObsoleteAttribute> is transformed to the `DeprecatedAttribute` as follows:  
   
--   If the `message` and `error` arguments are both present, `message` is assigned to the `DeprecatedAttribute``message` argument. An error value of `true` maps to [DeprecationType.Remove](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.deprecationtype.aspx), and an `error` value of `false` maps to [DeprecationType.Deprecate](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.deprecationtype.aspx).  
+-   If the `message` and `error` arguments are both present, `message` is assigned to the `DeprecatedAttribute` `message` argument. An error value of `true` maps to [DeprecationType.Remove](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.deprecationtype.aspx), and an `error` value of `false` maps to [DeprecationType.Deprecate](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.deprecationtype.aspx).  
   
 -   If the `message` argument is not supplied in the <xref:System.ObsoleteAttribute>, its default value in the `DeprecatedAttribute` is "*element_name* is deprecated", where *element_name* is the name of the target program element to which the attribute is applied.  
   

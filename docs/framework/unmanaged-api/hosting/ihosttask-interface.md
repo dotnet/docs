@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostTask interface [.NET Framework hosting]"
 ms.assetid: a71dbbd5-64b8-47eb-9f03-8e8c85fbe2bc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

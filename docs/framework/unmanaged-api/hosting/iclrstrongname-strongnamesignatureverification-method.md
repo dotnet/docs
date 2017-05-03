@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameSignatureVerification method [.NET Framework hosting]"
   - "StrongNameSignatureVerification method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: 734dc4d1-0a76-4736-b5ac-cb4253b3dd49
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

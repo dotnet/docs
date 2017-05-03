@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugManagedCallback::ExitAppDomain method [.NET Framework debugging]"
   - "ExitAppDomain method [.NET Framework debugging]"
 ms.assetid: d815486e-b3bd-4fe8-ba28-02abdb4d67ba
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

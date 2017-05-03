@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMapToken::Map method [.NET Framework metadata]"
   - "Map method [.NET Framework metadata]"
 ms.assetid: b9b4bf2f-1098-43d6-9619-a99b4bda1940
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

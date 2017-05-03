@@ -1,8 +1,8 @@
 ﻿//<SnippetAddInCodeBehind>
-using System.AddIn; // AddInAttribute
-using System.Windows; // MessageBox, RoutedEventArgs
+using System.AddIn;
+using System.Windows;
 
-using AddInViews; // WPFAddInView
+using AddInViews;
 
 namespace WPFAddIn1
 {

@@ -1,9 +1,9 @@
-﻿Imports System ' Environment
-Imports System.Collections.ObjectModel ' Collection<T>
-Imports System.AddIn.Hosting ' AddInStore, AddInToken, AddInSecurityLevel, AddInController
-Imports System.Windows ' Window, FrameworkElement, RoutedEventArgs
+﻿Imports System
+Imports System.Collections.ObjectModel
+Imports System.AddIn.Hosting
+Imports System.Windows
 
-Imports HostViews ' IWPFAddInHostView
+Imports HostViews
 
 Namespace Host
 	Partial Public Class MainWindow

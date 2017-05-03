@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "HandleCreated method [.NET Framework profiling]"
   - "ICorProfilerCallback2::HandleCreated method [.NET Framework profiling]"
 ms.assetid: 6bbb7786-7c38-490f-9834-91aa2795c355
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

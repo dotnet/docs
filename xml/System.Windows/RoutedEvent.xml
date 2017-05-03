@@ -78,7 +78,7 @@
    
   
 ## Examples  
- The following example adds the current class as another owner of an event defined in a different class. Here, `AnotherEditContainer` is the current class, and the `EditStateChangedEvent`<xref:System.Windows.RoutedEvent> field is defined as a member of that class. The `MyEditContainer` class originally defined the event, registering it with the identically named `EditStateChangedEvent`identifier.  
+ The following example adds the current class as another owner of an event defined in a different class. Here, `AnotherEditContainer` is the current class, and the `EditStateChangedEvent` <xref:System.Windows.RoutedEvent> field is defined as a member of that class. The `MyEditContainer` class originally defined the event, registering it with the identically named `EditStateChangedEvent` identifier.  
   
  [!code-csharp[ClassHandling#RoutedEventAddOwner](~/samples/snippets/csharp/VS_Snippets_Wpf/ClassHandling/CSharp/SDKSampleLibrary/class1.cs#routedeventaddowner)]
  [!code-vb[ClassHandling#RoutedEventAddOwner](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClassHandling/visualbasic/sdksamplelibrary/class1.vb#routedeventaddowner)]  

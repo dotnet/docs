@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetFrame method [.NET Framework debugging]"
   - "ICorDebugStackWalk::GetFrame method [.NET Framework debugging]"
 ms.assetid: 4083b505-5b59-44fb-8c5d-129db6a96c10
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

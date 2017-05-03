@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorParamAttr enumeration [.NET Framework metadata]"
 ms.assetid: a7ff90ad-dad8-48e8-917d-4aa9a118cbc8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

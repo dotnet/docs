@@ -136,7 +136,7 @@
    
   
 ## Examples  
- The following example illustrates the use of <xref:System.IComparable.CompareTo%2A> to compare a `Temperature` object implementing <xref:System.IComparable> with another object. The `Temperature`object implements <xref:System.IComparable.CompareTo%2A> by simply wrapping a call to the <xref:System.Int32.CompareTo%2A?displayProperty=fullName> method.  
+ The following example illustrates the use of <xref:System.IComparable.CompareTo%2A> to compare a `Temperature` object implementing <xref:System.IComparable> with another object. The `Temperature` object implements <xref:System.IComparable.CompareTo%2A> by simply wrapping a call to the <xref:System.Int32.CompareTo%2A?displayProperty=fullName> method.  
   
  [!code-cpp[IComparable Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/IComparable Example/CPP/source.cpp#1)]
  [!code-csharp[IComparable Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/IComparable Example/CS/source.cs#1)]

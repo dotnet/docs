@@ -74,9 +74,9 @@ Enhance your application to prompt the user for their name and display it along 
 
 You've created and run your application. To develop a professional application, take some additional steps to make your application ready for release:
 
-* For information on debugging your application, see [Debugging the Hello World Application](debugging-with-visual-studio-2017.md)
+- For information on debugging your application, see [Debugging the Hello World Application](debugging-with-visual-studio.md)
 
-* For information on publishing a distributable version of your application, see [Publishing the Hello World application](publishing-with-visual-studio-2017.md).
+- For information on developing a publishing a distributable version of your application, see [Publishing the Hello World application](publishing-with-visual-studio.md).
 
 ## Related topics
 

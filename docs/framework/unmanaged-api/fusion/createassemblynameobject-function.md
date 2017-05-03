@@ -24,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CreateAssemblyNameObject function [.NET Framework fusion]"
 ms.assetid: 55c8b41e-fbe4-4ae0-aa29-68fbb2311691
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

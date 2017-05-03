@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugExceptionCallbackType enumeration [.NET Framework debugging]"
 ms.assetid: 4d946ad4-3c19-42cb-bec9-8633325ba769
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -1,4 +1,4 @@
-Imports System.Windows.Xps.Packaging ' XpsDocument
+Imports System.Windows.Xps.Packaging
 Imports System.IO
 
 Namespace SDKSample

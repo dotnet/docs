@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateStream method [.NET Framework fusion]"
   - "IAsssemblyCacheItem::CreateStream method [.NET Framework fusion]"
 ms.assetid: 697ab0f4-470c-4baa-a415-4a975c42d0d5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

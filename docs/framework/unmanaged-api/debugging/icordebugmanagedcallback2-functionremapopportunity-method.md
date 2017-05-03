@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "FunctionRemapOpportunity method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::FunctionRemapOpportunity method [.NET Framework debugging]"
 ms.assetid: 0d6471bc-ad9b-4b1d-a307-c10443918863
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

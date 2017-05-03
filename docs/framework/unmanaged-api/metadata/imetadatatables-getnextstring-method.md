@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataTables::GetNextString method [.NET Framework metadata]"
   - "GetNextString method [.NET Framework metadata]"
 ms.assetid: d9720428-c353-4f07-a7e8-899e106a1b37
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

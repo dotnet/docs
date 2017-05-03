@@ -102,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `typeName` parameter references a generic type, it must follow the syntax conventions for generic types. For example, the reflection signature for a <xref:System.Collections.Generic.Dictionary%602> type, where `K` is a string and `V` is a <xref:System.Collections.Generic.List%601> of integers, is represented by reflection as the following (with the assembly information removed): `System.Collections.Generic.Dictionary`2[[System.String], [System.Collections.Generic.List`1[[System.Int32]]]]`.  
+ If the `typeName` parameter references a generic type, it must follow the syntax conventions for generic types. For example, the reflection signature for a <xref:System.Collections.Generic.Dictionary%602> type, where `K` is a string and `V` is a <xref:System.Collections.Generic.List%601> of integers, is represented by reflection as the following (with the assembly information removed): ``System.Collections.Generic.Dictionary`2[[System.String], [System.Collections.Generic.List`1[[System.Int32]]]]``.  
   
 > [!NOTE]
 >  You must use square brackets ([]) and not the C# angle brackets (<>) to delimit generic parameters.  
@@ -311,7 +311,7 @@
  This property contains the name of the type unless it is an array type, in which case it is the array element type.  
   
 > [!NOTE]
->  The name of the property may be misleading. This property contains just the type name with any array adornments or generic type arguments removed, not the base or parent type as might be expected. For example, the <xref:System.CodeDom.CodeTypeReference.BaseType%2A> value for `System.Collections.Generic.Dictionary`2[[System.String], [System.Collections.Generic.List`1[[System.Int32]]]]` is `System.Collections.Generic.Dictionary`2`.  
+>  The name of the property may be misleading. This property contains just the type name with any array adornments or generic type arguments removed, not the base or parent type as might be expected. For example, the <xref:System.CodeDom.CodeTypeReference.BaseType%2A> value for ``System.Collections.Generic.Dictionary`2[[System.String], [System.Collections.Generic.List`1[[System.Int32]]]]`` is ``System.Collections.Generic.Dictionary`2``.  
   
 ## Representation of Generic Types  
  The information in this section is intended for CodeDom provider developers and only applies to CLS-compliant languages. The return value can contain generic types. Generic types are formatted with the name of the type followed by a grave accent ("`") followed by a count of the generic type arguments. The generic type arguments can be found in the <xref:System.CodeDom.CodeTypeReferenceCollection> returned by the <xref:System.CodeDom.CodeTypeReference.TypeArguments%2A> property. The values returned by <xref:System.CodeDom.CodeTypeReference.BaseType%2A> and the associated <xref:System.CodeDom.CodeTypeReference.TypeArguments%2A> contain the same content as the value of the type returned by reflection.  
@@ -342,7 +342,7 @@ System.Collections.Generic.Dictionary`2[[System.String], [System.Collections.Gen
     System.Collections.Generic.List`1  
     ```  
   
--   The <xref:System.CodeDom.CodeTypeReference.TypeArguments%2A> property in the <xref:System.CodeDom.CodeTypeReference> object for `System.Collections.Generic.List`1` returns the following:  
+-   The <xref:System.CodeDom.CodeTypeReference.TypeArguments%2A> property in the <xref:System.CodeDom.CodeTypeReference> object for ``System.Collections.Generic.List`1`` returns the following:  
   
     ```  
     System.Int32  

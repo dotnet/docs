@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo::GetThreadInfo method [.NET Framework profiling]"
   - "GetThreadInfo method [.NET Framework profiling]"
 ms.assetid: fc994fef-65c9-432a-84cb-66c8141147e7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

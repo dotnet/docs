@@ -1,9 +1,7 @@
 //<SnippetUserControlCODEBEHIND1>
-using System; // EventArgs
-using System.Windows; // DependencyObject, DependencyPropertyChangedEventArgs,
-                      // FrameworkPropertyMetadata, PropertyChangedCallback, 
-                      // RoutedPropertyChangedEventArgs
-using System.Windows.Controls; // UserControl
+using System;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace SDKSample
 {

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostIoCompletionManager::Bind method [.NET Framework hosting]"
   - "Bind method [.NET Framework hosting]"
 ms.assetid: acd74cb5-7e22-4a07-83c3-82288e1abd9f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

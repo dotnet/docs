@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetHashFromHandle function [.NET Framework strong naming]"
 ms.assetid: 9e00337f-b307-4602-9bc3-965a8dbf02cd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

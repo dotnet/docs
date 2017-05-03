@@ -244,7 +244,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to create an <xref:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter> in order to update the [metadata](GTMT) associated with a [bitmap](GTMT) image.  
+ The following code example demonstrates how to create an <xref:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter> in order to update the metadata associated with a bitmap image.  
   
  [!code-cpp[bitmapmetadata#SetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#setquery)]
  [!code-csharp[bitmapmetadata#SetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#setquery)]

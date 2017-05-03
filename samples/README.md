@@ -28,11 +28,11 @@ the project respectively.
 Multi-project samples have instructions in their root directory in
 a `README.md` file.  
 
-Except where noted, all samples will build from the command line, on
+Except where noted, all samples build from the command line on
 any platform supported by .NET Core. There are a few samples that are
-specific to Visual Studio, and will require Visual Studio 2015 Update 3
-or a newer version. In addition, some samples show platform specific features,
-and will require a specific platform.
+specific to Visual Studio and require Visual Studio 2017 or later. In 
+addition, some samples show platform specific features and will require 
+a specific platform.
 
 ## Creating new samples
 

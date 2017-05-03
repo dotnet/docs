@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugType::GetBase method [.NET Framework debugging]"
   - "GetBase method [.NET Framework debugging]"
 ms.assetid: f24e1af9-c220-4f79-ae62-4153ec17ea81
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

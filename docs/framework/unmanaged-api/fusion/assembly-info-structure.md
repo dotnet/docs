@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ASSEMBLY_INFO structure [.NET Framework fusion]"
 ms.assetid: b3cbb47c-457f-4083-8895-49562ca99ab8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

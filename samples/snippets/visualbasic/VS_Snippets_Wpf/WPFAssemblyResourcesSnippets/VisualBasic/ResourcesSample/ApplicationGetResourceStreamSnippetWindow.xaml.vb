@@ -1,8 +1,8 @@
 '<SnippetCallApplicationGetResourceStreamCODEBEHIND1>
 
-Imports System ' Uri
-Imports System.IO ' Stream
-Imports System.Windows.Resources ' StreamResourceInfo
+Imports System
+Imports System.IO
+Imports System.Windows.Resources
 '</SnippetCallApplicationGetResourceStreamCODEBEHIND1>
 Imports System.Windows
 Imports System.Windows.Controls

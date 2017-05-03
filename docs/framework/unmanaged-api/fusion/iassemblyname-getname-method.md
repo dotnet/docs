@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetName method, IAssemblyName interface [.NET Framework debugging]"
   - "IAssemblyName::GetName method [.NET Framework fusion]"
 ms.assetid: 1dee9781-1cf3-48a9-a376-d18ea1f73280
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

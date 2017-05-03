@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter::Initialize method [.NET Framework debugging]"
   - "Initialize method, ISymUnmanagedWriter interface [.NET Framework debugging]"
 ms.assetid: e0ebd793-3764-4df0-8f12-0e95f60b9eae
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

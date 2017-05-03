@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Clone method, ICorPublishEnum interface [.NET Framework debugging]"
   - "ICorPublishEnum::Clone method [.NET Framework debugging]"
 ms.assetid: c9a26ea3-b8eb-4b8e-854f-9a2ca26b3b39
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

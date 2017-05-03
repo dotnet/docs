@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "RootReferences2 method [.NET Framework profiling]"
   - "ICorProfilerCallback2::RootReferences2 method [.NET Framework profiling]"
 ms.assetid: 55a2f907-d216-42eb-8f2f-e5d59c2eebd6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

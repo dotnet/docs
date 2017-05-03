@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IMetaDataAssemblyImport interface [.NET Framework metadata]"
 ms.assetid: 29c6fba5-4cea-417d-b484-7ed22ebff1c9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

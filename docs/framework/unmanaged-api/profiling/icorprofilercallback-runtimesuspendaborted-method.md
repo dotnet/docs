@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::RuntimeSuspendAborted method [.NET Framework profiling]"
   - "RuntimeSuspendAborted method [.NET Framework profiling]"
 ms.assetid: 5a8a4277-345b-448b-a028-fc8cff9998aa
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::GetTokenFromSig method [.NET Framework metadata]"
   - "GetTokenFromSig method [.NET Framework metadata]"
 ms.assetid: 50a58a83-6287-40a4-b315-47823cea0a5c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

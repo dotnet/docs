@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateAlloc method [.NET Framework hosting]"
   - "IHostMemoryManager::CreateMAlloc method [.NET Framework hosting]"
 ms.assetid: 9ee6e052-bef7-4350-9e4f-edfffd99ad6f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

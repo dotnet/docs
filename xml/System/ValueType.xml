@@ -171,7 +171,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ValueType.GetHashCode%2A> method applies to types derived from <xref:System.ValueType>. One or more fields of the derived type is used to calculate the return value. If you call the derived type's `GetHashCode`method, the return value is not likely to be suitable for use as a key in a hash table. Additionally, if the value of one or more of those fields changes, the return value might become unsuitable for use as a key in a hash table. In either case, consider writing your own implementation of the <xref:System.ValueType.GetHashCode%2A> method that more closely represents the concept of a hash code for the type.  
+ The <xref:System.ValueType.GetHashCode%2A> method applies to types derived from <xref:System.ValueType>. One or more fields of the derived type is used to calculate the return value. If you call the derived type's `GetHashCode` method, the return value is not likely to be suitable for use as a key in a hash table. Additionally, if the value of one or more of those fields changes, the return value might become unsuitable for use as a key in a hash table. In either case, consider writing your own implementation of the <xref:System.ValueType.GetHashCode%2A> method that more closely represents the concept of a hash code for the type.  
   
  For more information, see <xref:System.Object.GetHashCode%2A?displayProperty=fullName>, and <xref:System.Collections.Hashtable?displayProperty=fullName>.  
   

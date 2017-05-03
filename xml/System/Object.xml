@@ -320,7 +320,7 @@
 ## Remarks  
  The static <xref:System.Object.Equals%28System.Object%2CSystem.Object%29> method indicates whether two objects, `objA` and  `objB`, are equal. It also enables you to test objects whose value is **null** for equality. It compares `objA` and `objB` for equality as follows:  
   
--   It determines whether the two objects represent the same object reference. If they do, the method returns `true`. This test is equivalent to calling the <xref:System.Object.ReferenceEquals%2A> method. In addition, if both `objA` and `objB`are **null**, the method returns `true`.  
+-   It determines whether the two objects represent the same object reference. If they do, the method returns `true`. This test is equivalent to calling the <xref:System.Object.ReferenceEquals%2A> method. In addition, if both `objA` and `objB` are **null**, the method returns `true`.  
   
 -   It determines whether either `objA` or `objB` is **null**. If so, it returns `false`.  
   

@@ -77,7 +77,7 @@
  The following example uses the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A> to print to the screen.  
   
  [!code-csharp[X509ClientCertificateAuthentication#7](~/samples/snippets/csharp/VS_Snippets_CFX/x509clientcertificateauthentication/cs/source.cs#7)]
- <!-- TODO: review snippet reference [!code-vb[X509ClientCertificateAuthentication#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/x509clientcertificateauthentication/vb/source.vb#7)]  -->  
+ [!code-vb[X509ClientCertificateAuthentication#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/x509clientcertificateauthentication/vb/source.vb#7)]   
   
  The property can also be set in a configuration file.  
   

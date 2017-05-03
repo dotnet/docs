@@ -138,7 +138,7 @@ FillRule Example
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], use a space-delimited list of comma-separated x-coordinate and y-coordinate pairs to set this attribute. Use simple notation, that is, `x`1`,y`1 `x`2`,y`2 ... `x`n`,y`n.  
+ In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], use a space-delimited list of comma-separated x-coordinate and y-coordinate pairs to set this attribute. Use simple notation, that is, `x1,y1 x2,y2 ... xn,yn`.  
   
 <a name="dependencyPropertyInfo_Points"></a>   
 ## Dependency Property Information  

@@ -670,7 +670,7 @@
 > [!NOTE]
 >  The calls to the <xref:System.Array.Sort%60%601%28%60%600%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> and <xref:System.Array.BinarySearch%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> generic methods do not look any different from calls to their nongeneric counterparts, because Visual Basic, C#, and C++ infer the type of the generic type parameter from the type of the first argument. If you use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the Microsoft intermediate language (MSIL), you can see that the generic methods are being called.  
   
- The <xref:System.Array.BinarySearch%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> generic method overload is then used to search for two strings, one that is not in the array and one that is. The array and the return value of the <xref:System.Array.BinarySearch%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> method are passed to the `ShowWhere` generic method, which displays the index value if the string is found, and otherwise the elements the search string would fall between if it were in the array. The index is negative if the string is not n the array, so the `ShowWhere`method takes the bitwise complement (the ~ operator in C# and Visual C++, `Xor` -1 in Visual Basic) to obtain the index of the first element in the list that is larger than the search string.  
+ The <xref:System.Array.BinarySearch%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> generic method overload is then used to search for two strings, one that is not in the array and one that is. The array and the return value of the <xref:System.Array.BinarySearch%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> method are passed to the `ShowWhere` generic method, which displays the index value if the string is found, and otherwise the elements the search string would fall between if it were in the array. The index is negative if the string is not n the array, so the `ShowWhere` method takes the bitwise complement (the ~ operator in C# and Visual C++, `Xor` -1 in Visual Basic) to obtain the index of the first element in the list that is larger than the search string.  
   
  [!code-cpp[Array_SortSearchComparer#1](~/samples/snippets/cpp/VS_Snippets_CLR/Array_SortSearchComparer/cpp/source.cpp#1)]
  [!code-csharp[Array_SortSearchComparer#1](~/samples/snippets/csharp/VS_Snippets_CLR/Array_SortSearchComparer/cs/source.cs#1)]
@@ -2306,7 +2306,7 @@
  [!code-csharp[System.Array.Exists#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.array.exists/cs/exists1.cs#1)]
  [!code-vb[System.Array.Exists#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.array.exists/vb/exists1.vb#1)]  
   
- You can also use a lambda expression rather than explicitly define a method whose signature corresponds to that of the delegate. The following example replaces the `StringSearcher`class and its `StartsWith` method with a lambda expression.  
+ You can also use a lambda expression rather than explicitly define a method whose signature corresponds to that of the delegate. The following example replaces the `StringSearcher` class and its `StartsWith` method with a lambda expression.  
   
  [!code-csharp[System.Array.Exists#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.array.exists/cs/exists2.cs#2)]
  [!code-vb[System.Array.Exists#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.array.exists/vb/exists2.vb#2)]  
@@ -3930,7 +3930,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method searches a one-dimensional array from the element at index `startIndex`to the last element. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `Equals` method of every element until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method, that override is called.  
+ This method searches a one-dimensional array from the element at index `startIndex` to the last element. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `Equals` method of every element until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method, that override is called.  
   
  Because most arrays have a lower bound of zero, this method generally returns –1 if `value` isn’t found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=fullName>(0x80000000) and `value` isn’t found, this method returns <xref:System.Int32.MaxValue?displayProperty=fullName> (0x7FFFFFFF).  
   
@@ -4009,7 +4009,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method searches the elements of a one-dimensional arrayfrom `startIndex`to `startIndex` plus `count` minus 1, if `count` is greater than 0. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `Equals` method of every element until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%2A?displayProperty=fullName> method, that override is called.  
+ This method searches the elements of a one-dimensional arrayfrom `startIndex` to `startIndex` plus `count` minus 1, if `count` is greater than 0. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `Equals` method of every element until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%2A?displayProperty=fullName> method, that override is called.  
   
  Becausemost arrays have a lower bound of zero, this method generally returns –1 when `value` isn’t found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=fullName> (0x80000000) and `value` isn’t found, this method returns <xref:System.Int32.MaxValue?displayProperty=fullName> (0x7FFFFFFF).  
   

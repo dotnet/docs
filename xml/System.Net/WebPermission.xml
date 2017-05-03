@@ -176,7 +176,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes a <xref:System.Net.WebPermission> and grants its target permission to either make a remote host connection or accept a remote host connection using the URI described by the `uriRegex`parameter.  
+ This constructor initializes a <xref:System.Net.WebPermission> and grants its target permission to either make a remote host connection or accept a remote host connection using the URI described by the `uriRegex` parameter.  
   
 > [!NOTE]
 >  It is recommended that you create `uriRegex` using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>, <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>, and <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> flags.  

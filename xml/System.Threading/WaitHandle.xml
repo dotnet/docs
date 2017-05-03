@@ -611,7 +611,7 @@
 > [!NOTE]
 >  The <xref:System.Threading.WaitHandle.WaitAll%2A> method is not supported on threads that have <xref:System.STAThreadAttribute>.  
   
- Calling this method overload is equivalent to calling the <xref:System.Threading.WaitHandle.WaitAll%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> method overload and specifying -1 (or <xref:System.Threading.Timeout.Infinite?displayProperty=fullName>) for `millisecondsTimeout`and `true` for `exitContext`.  
+ Calling this method overload is equivalent to calling the <xref:System.Threading.WaitHandle.WaitAll%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> method overload and specifying -1 (or <xref:System.Threading.Timeout.Infinite?displayProperty=fullName>) for `millisecondsTimeout` and `true` for `exitContext`.  
   
    
   
@@ -1041,7 +1041,7 @@
   
  This method returns when any handle is signaled. If more than one object becomes signaled during the call, the return value is the array index of the signaled object with the smallest index value of all the signaled objects. On some implementations, if more that 64 handles are passed, a <xref:System.NotSupportedException> is thrown.  
   
- Calling this method overload is equivalent to calling the <xref:System.Threading.WaitHandle.WaitAny%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> method overload and specifying -1 (or <xref:System.Threading.Timeout.Infinite?displayProperty=fullName>) for `millisecondsTimeout`and `true` for `exitContext`.  
+ Calling this method overload is equivalent to calling the <xref:System.Threading.WaitHandle.WaitAny%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> method overload and specifying -1 (or <xref:System.Threading.Timeout.Infinite?displayProperty=fullName>) for `millisecondsTimeout` and `true` for `exitContext`.  
   
    
   

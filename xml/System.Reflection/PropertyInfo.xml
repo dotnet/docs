@@ -379,7 +379,6 @@
 ## Examples  
  The following example retrieves the accessors of the `ClassWithProperty.Caption` property and displays information about them. It also calls the <xref:System.Reflection.MethodBase.Invoke%2A> method of the setter to set the property value and of the getter to retrieve the property value.  
   
- <!-- TODO: review snippet reference [!code-cpp[Classic PropertyInfo.GetAccessors1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetAccessors1 Example/CPP/source.cpp#1)]  -->
  [!code-csharp[Classic PropertyInfo.GetAccessors1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PropertyInfo.GetAccessors1 Example/CS/source.cs#1)]
  [!code-vb[Classic PropertyInfo.GetAccessors1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PropertyInfo.GetAccessors1 Example/VB/source.vb#1)]  
   

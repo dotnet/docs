@@ -3054,7 +3054,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the interface constraints and any interfaces inherited from class or interface constraints.  
   
 > [!NOTE]
->  For generic interfaces, the `name` parameter is the mangled name, ending with a grave accent (\`) and the number of type parameters. This is true for both generic interface definitions and constructed generic interfaces. For example, to find `IExample<T>` (`IExample(Of T)` in Visual Basic) or `IExample<string>` (`IExample(Of String)` in Visual Basic), search for `"IExample`1"`.  
+>  For generic interfaces, the `name` parameter is the mangled name, ending with a grave accent (\`) and the number of type parameters. This is true for both generic interface definitions and constructed generic interfaces. For example, to find `IExample<T>` (`IExample(Of T)` in Visual Basic) or `IExample<string>` (`IExample(Of String)` in Visual Basic), search for ``"IExample`1"``.  
   
    
   
@@ -7605,7 +7605,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although the default binder does not process <xref:System.Globalization.CultureInfo> (the `culture`parameter), you can use the abstract <xref:System.Reflection.Binder?displayProperty=fullName> class to write a custom binder that does process `culture`.  
+ Although the default binder does not process <xref:System.Globalization.CultureInfo> (the `culture` parameter), you can use the abstract <xref:System.Reflection.Binder?displayProperty=fullName> class to write a custom binder that does process `culture`.  
   
 > [!NOTE]
 >  You cannot use <xref:System.Type.InvokeMember%2A> to invoke a generic method.  
@@ -10066,7 +10066,7 @@ GetType(Array).IsAssignableFrom(type)
    
   
 ## Examples  
- The following example creates a class named `Class1`and a derived class named `DerivedC1`. It calls the <xref:System.Type.IsSubclassOf%2A> method to show that `DerivedC1` is a subclass of `Class1`.  
+ The following example creates a class named `Class1` and a derived class named `DerivedC1`. It calls the <xref:System.Type.IsSubclassOf%2A> method to show that `DerivedC1` is a subclass of `Class1`.  
   
  [!code-csharp[TestIsSubclassOf#1](~/samples/snippets/csharp/VS_Snippets_CLR/TestIsSubclassOf/CS/testissubclassof.cs#1)]
  [!code-vb[TestIsSubclassOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TestIsSubclassOf/VB/testissubclassof.vb#1)]  

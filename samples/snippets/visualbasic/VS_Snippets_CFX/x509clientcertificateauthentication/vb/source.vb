@@ -167,7 +167,7 @@ Public Class Test
             Case Else
                 Console.WriteLine("Default")
         End Select
-        '<snippet7>
+        '</snippet7>
     End Sub
 End Class
 

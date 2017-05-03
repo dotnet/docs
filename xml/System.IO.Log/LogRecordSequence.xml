@@ -1429,13 +1429,13 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- This example shows how to use <xref:System.IO.Log.LogRecordSequence.Dispose%2A> to release resource:  
+ This example shows how to use <xref:System.IO.Log.LogRecordSequence.Dispose%2A> to release resources:  
   
  [!code-csharp[S_UELogRecordSequence#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#11)]
  [!code-vb[S_UELogRecordSequence#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#11)]  
   
- <!-- TODO: review snippet reference [!code-csharp[S_UELogRecordSequence#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#12)]  -->
- <!-- TODO: review snippet reference [!code-vb[S_UELogRecordSequence#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#12)]  -->  
+ [!code-csharp[S_UELogRecordSequence#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#12)] 
+ [!code-vb[S_UELogRecordSequence#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#12)]   
   
  ]]></format>
         </remarks>

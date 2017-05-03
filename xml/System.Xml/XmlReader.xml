@@ -181,7 +181,7 @@
 |<xref:System.Xml.XmlReader.GetAttribute%2A> method or <xref:System.Xml.XmlReader.Item%2A> property|Get the value of a specified attribute.|  
 |<xref:System.Xml.XmlReader.IsDefault%2A> property|Check whether the current node is an attribute that was generated from the default value defined in the DTD or schema.|  
 |<xref:System.Xml.XmlReader.MoveToElement%2A> method|Move to the element that owns the current attribute. Use this method to return to an element after navigating through its attributes.|  
-|<xref:System.Xml.XmlReader.ReadAttributeValue%2A> method|Parse the attribute value into one or more `Text`, `EntityReference`, or `EndEntity`nodes.|  
+|<xref:System.Xml.XmlReader.ReadAttributeValue%2A> method|Parse the attribute value into one or more `Text`, `EntityReference`, or `EndEntity` nodes.|  
   
  Any of the general <xref:System.Xml.XmlReader> methods and properties can also be used to process attributes. For example, after the <xref:System.Xml.XmlReader> is positioned on an attribute, the <xref:System.Xml.XmlReader.Name%2A> and <xref:System.Xml.XmlReader.Value%2A> properties reflect the values of the attribute. You can also use any of the content `Read` methods to get the value of the attribute.  
   

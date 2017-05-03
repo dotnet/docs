@@ -110,8 +110,17 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the type of decompression method used by the handler for automatic decompression of the HTTP content response.</summary>
-        <value>The automatic decompression method used by the handler. The default value is <see cref="F:System.Net.DecompressionMethods.None" />.</value>
-        <remarks>To be added.</remarks>
+        <value>The automatic decompression method used by the handler.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks  
+For the .NET Framework 4.x <xref:System.Net.Http> binary in the Global Assembly Cache (GAC), the default value is <xref:System.Net.DecompressionMethods.None>. However, the .NET Core default is <xref:System.Net.DecompressionMethods.GZip> and <xref:System.Net.DecompressionMethods.Deflate>.
+
+The [`System.Net.Http` NuGet package (v4.1.0 and later)](https://www.nuget.org/packages/System.Net.Http/) carries the .NET Core implementation of <xref:System.Net.Http>. When the NuGet package (v4.1.0 and later) is used on the .NET Framework (Desktop), the default matches the .NET Core implementation of <xref:System.Net.DecompressionMethods.GZip> and <xref:System.Net.DecompressionMethods.Deflate>.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckCertificateRevocationList">

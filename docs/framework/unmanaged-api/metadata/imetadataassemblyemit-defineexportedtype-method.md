@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataAssemblyEmit::DefineExportedType method [.NET Framework metadata]"
   - "DefineExportedType method [.NET Framework metadata]"
 ms.assetid: fad01d7a-3178-4c8c-9f0a-4641e3701c9b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

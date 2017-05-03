@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PUB_ENUMPROCESS enumeration [.NET Framework debugging]"
 ms.assetid: 5d3ada6e-feea-47da-a7ed-b664107c137f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

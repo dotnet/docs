@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StackOverflowType enumeration [.NET Framework hosting]"
 ms.assetid: dab648ad-972b-479c-b129-b4c1dcbd932e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

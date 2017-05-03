@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetModuleRefProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetModuleRefProps method [.NET Framework metadata]"
 ms.assetid: b558e766-4c11-4628-ae47-b4e0a1800168
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumGenericParamConstraints method [.NET Framework metadata]"
   - "IMetaDataImport2::EnumGenericParamConstraints method [.NET Framework metadata]"
 ms.assetid: 8a7d4e40-28fe-4e14-b801-4049880130e7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

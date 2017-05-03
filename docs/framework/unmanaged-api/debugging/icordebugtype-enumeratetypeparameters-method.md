@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumerateTypeParameters method, ICorDebugType interface [.NET Framework debugging]"
   - "ICorDebugType::EnumerateTypeParameters method [.NET Framework debugging]"
 ms.assetid: 1ee1f6e6-1bd7-4ebb-83b8-ff9a08ca03de
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetGlobalVariables method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetGlobalVariables method [.NET Framework debugging]"
 ms.assetid: a2dd5098-3e58-4be5-b7a2-e4160b3b505a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

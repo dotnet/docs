@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRAppDomainResourceMonitor interface [.NET Framework hosting]"
 ms.assetid: 72fa83a1-8997-41d7-b355-ab177a24a303
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

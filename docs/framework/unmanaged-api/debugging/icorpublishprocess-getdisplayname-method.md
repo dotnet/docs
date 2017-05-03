@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorPublishProcess::GetDisplayName method [.NET Framework debugging]"
   - "GetDisplayName method, ICorPublishProcess interface [.NET Framework debugging]"
 ms.assetid: 7c0af9e9-a73f-41aa-a685-b21c439e059d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostIoCompletionManager interface [.NET Framework hosting]"
 ms.assetid: c28d1983-83f7-46e2-990f-dbb9dc07c818
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

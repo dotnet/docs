@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerFunctionEnum::Reset method [.NET Framework profiling]"
   - "Reset method, ICorProfilerFunctionEnum interface [.NET Framework profiling]"
 ms.assetid: 80046b2e-55b7-40a2-9adf-cf2763ee59c8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

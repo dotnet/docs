@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedVariable::GetEndOffset method [.NET Framework debugging]"
   - "GetEndOffset method, ISymUnmanagedVariable interface [.NET Framework debugging]"
 ms.assetid: e5d777c5-d450-4c0f-999c-b3953ee22cfb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

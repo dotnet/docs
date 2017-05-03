@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorProfilerThreadEnum interface [.NET Framework profiling]"
 ms.assetid: 1e35031b-e095-4c14-9644-8deeb3081e0b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

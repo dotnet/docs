@@ -181,7 +181,7 @@
 > [!NOTE]
 >  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
- <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl=``http://www.w3.org/1999/XSL/Transform`.  
+ <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl="http://www.w3.org/1999/XSL/Transform"`.  
   
  This method loads the XSLT style sheet, including any style sheets referenced in `xsl:include` and `xsl:import` elements. External resources are resolved using an <xref:System.Xml.XmlUrlResolver> with no user credentials. If the style sheet(s) are located on a network resource which requires authentication, use the overload that takes an <xref:System.Xml.XmlResolver> as one of its arguments and specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
   

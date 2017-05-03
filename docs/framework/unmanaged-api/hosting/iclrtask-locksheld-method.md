@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "LocksHeld method [.NET Framework hosting]"
   - "ICLRTask::LocksHeld method [.NET Framework hosting]"
 ms.assetid: e88a4dc3-02cc-4703-a474-292b71c40657
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

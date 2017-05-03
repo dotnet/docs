@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CountEnum method [.NET Framework metadata]"
   - "IMetaDataImport::CountEnum method [.NET Framework metadata]"
 ms.assetid: d1de53ad-9435-4b5f-9df7-07f21210e5b5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

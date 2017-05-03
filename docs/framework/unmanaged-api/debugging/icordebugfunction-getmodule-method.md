@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugFunction::GetModule method [.NET Framework debugging]"
   - "GetModule method, ICorDebugFunction interface [.NET Framework debugging]"
 ms.assetid: 5031a5d3-2564-412a-9007-e36d4631308a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

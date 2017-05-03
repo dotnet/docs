@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetGCStartupLimits method, IGCHost interface [.NET Framework hosting]"
   - "IGCHost::SetGCStartupLimits method [.NET Framework hosting]"
 ms.assetid: cae53926-82ac-4d1d-b297-0bde0bd1bebb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

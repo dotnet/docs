@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IDENTITY_ATTRIBUTE_BLOB structure [.NET Framework fusion]"
 ms.assetid: af14ae5f-d226-47dd-ba90-8fc6e6605d4d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::ClassLoadStarted method [.NET Framework profiling]"
   - "ClassLoadStarted method [.NET Framework profiling]"
 ms.assetid: 9f728de8-45c2-45a5-ac4a-45660bd36ecf
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

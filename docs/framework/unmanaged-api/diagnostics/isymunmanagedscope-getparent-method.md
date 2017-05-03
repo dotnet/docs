@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetParent method [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetParent method [.NET Framework debugging]"
 ms.assetid: c7963c87-6ec5-49b3-a5cd-e0fe0c43f9b4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

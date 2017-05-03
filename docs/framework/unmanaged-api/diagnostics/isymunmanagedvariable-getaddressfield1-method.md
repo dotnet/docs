@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetAddressField1 method [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetAddressField1 method [.NET Framework debugging]"
 ms.assetid: 25788ed1-0ce3-4b97-96fc-88f8997812a3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

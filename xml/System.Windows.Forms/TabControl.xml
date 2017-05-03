@@ -952,7 +952,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the <xref:System.Windows.Forms.TabControl.GetTabRect%2A> method to get a `Rectangle` that represents the `tabPage1` tab area. The `myTabRect``Rectangle` is drawn by the <xref:System.Windows.Forms.TabControl.DrawItem> event.  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the <xref:System.Windows.Forms.TabControl.GetTabRect%2A> method to get a `Rectangle` that represents the `tabPage1` tab area. The `myTabRect` `Rectangle` is drawn by the <xref:System.Windows.Forms.TabControl.DrawItem> event.  
   
  Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces with this example.  
   

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ModuleUnloadStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::ModuleUnloadStarted method [.NET Framework profiling]"
 ms.assetid: 2debcaab-6005-4245-afdb-4268bb7e74bd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

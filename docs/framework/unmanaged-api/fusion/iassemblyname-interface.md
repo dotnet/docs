@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IAssemblyName interface [.NET Framework fusion]"
 ms.assetid: f7f8e605-6b67-4151-936f-f04ecd671d90
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

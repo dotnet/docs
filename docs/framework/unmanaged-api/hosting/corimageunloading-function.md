@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "_CorImageUnloading function [.NET Framework hosting]"
 ms.assetid: b4367214-6dac-4280-aa11-fd487ff30bc4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

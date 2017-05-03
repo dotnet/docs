@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostTask::Start method [.NET Framework hosting]"
   - "Start method, IHostTask interface [.NET Framework hosting]"
 ms.assetid: b18742b0-d8c4-401c-ae89-e6eccdaa81d0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo3::GetStringLayout2 method [.NET Framework profiling]"
   - "GetStringLayout2 method [.NET Framework profiling]"
 ms.assetid: 1a268496-ee51-4d84-8700-ee56fd0c499d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

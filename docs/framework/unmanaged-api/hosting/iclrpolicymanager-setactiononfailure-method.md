@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetActionOnFailure method [.NET Framework hosting]"
   - "ICLRPolicyManager::SetActionOnFailure method [.NET Framework hosting]"
 ms.assetid: 4664033f-db97-4388-b988-2ec470796e58
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

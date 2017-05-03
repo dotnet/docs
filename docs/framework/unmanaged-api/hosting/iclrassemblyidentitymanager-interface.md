@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRAssemblyIdentityManager interface [.NET Framework hosting]"
 ms.assetid: 6a81c6fe-cc22-4062-ae27-d6eeee03a7b9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

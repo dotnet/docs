@@ -325,7 +325,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.BaseCompareValidator.Convert%28System.String%2CSystem.Web.UI.WebControls.ValidationDataType%2CSystem.Boolean%2CSystem.Object%40%29> method is used to convert text into an object of the specified data type. Although the method returns `true` or `false` to indicate whether the conversion was successful, the converted value is stored in the `value``out` parameter.  
+ The <xref:System.Web.UI.WebControls.BaseCompareValidator.Convert%28System.String%2CSystem.Web.UI.WebControls.ValidationDataType%2CSystem.Boolean%2CSystem.Object%40%29> method is used to convert text into an object of the specified data type. Although the method returns `true` or `false` to indicate whether the conversion was successful, the converted value is stored in the `value` `out` parameter.  
   
 > [!NOTE]
 >  If the conversion is unsuccessful, the `value` parameter is set to `null`.  

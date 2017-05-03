@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostControl::SetAppDomainManager method [.NET Framework hosting]"
   - "SetAppDomainManager method [.NET Framework hosting]"
 ms.assetid: 6562bbe7-0d67-4c50-a958-3a18cf680375
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::GetSaveSize method [.NET Framework metadata]"
   - "GetSaveSize method [.NET Framework metadata]"
 ms.assetid: 8aea2e2c-23a3-4cda-9a06-e19f97383830
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

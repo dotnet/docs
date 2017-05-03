@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataAssemblyImport::EnumManifestResources method [.NET Framework metadata]"
   - "EnumManifestResources method [.NET Framework metadata]"
 ms.assetid: 9543b111-5705-40c9-935c-a3ffc7a581aa
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

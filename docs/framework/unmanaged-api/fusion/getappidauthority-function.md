@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetAppIdAuthority function [.NET Framework fusion]"
 ms.assetid: 9f968dad-0d09-47fb-bebc-94c39a0d16ad
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

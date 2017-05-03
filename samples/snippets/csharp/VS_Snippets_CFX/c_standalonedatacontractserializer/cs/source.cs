@@ -29,10 +29,10 @@ namespace ServiceModel.Samples
         {
             //<snippet2>
             DataContractSerializer dcs = new DataContractSerializer(typeof(Person));
-            //This can now be used to serialize/deserialize Person but not PurchaseOrder.
+            // This can now be used to serialize/deserialize Person but not PurchaseOrder.
             //</snippet2>
         }
-        //</snippet3>
+        //<snippet3>
         [DataContract]
         public class LibraryPatron
         {
@@ -42,26 +42,26 @@ namespace ServiceModel.Samples
         [DataContract]
         public class LibraryItem
         {
-            //code not shown…
+            // Code not shown.
         }
 
         [DataContract]
         public class Book : LibraryItem
         {
-            //code not shown…
+            // Code not shown.
         }
 
         [DataContract]
         public class Newspaper : LibraryItem
         {
-            //code not shown…
+            // Code not shown.
         }
         //</snippet3>
 
         private void Run2()
         {
             //<snippet4>
-            //Create a serializer for the inherited types using the knownType parameter.
+            // Create a serializer for the inherited types using the knownType parameter.
             Type[] knownTypes = new Type[] { typeof(Book), typeof(Newspaper) };
             DataContractSerializer dcs =
             new DataContractSerializer(typeof(LibraryPatron), knownTypes);
@@ -135,7 +135,7 @@ namespace ServiceModel.Samples
             private void Run()
             {
                 //<snippet7>
-                //Construct a purchase order:
+                // Construct a purchase order:
                 Address adr = new Address();
                 adr.street = "123 Main St.";
                 PurchaseOrder po = new PurchaseOrder();

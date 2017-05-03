@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IApartmentCallback::DoCallback method [.NET Framework hosting]"
   - "DoCallback method [.NET Framework hosting]"
 ms.assetid: 8edad30c-30ff-4bee-813c-75525a82fc93
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

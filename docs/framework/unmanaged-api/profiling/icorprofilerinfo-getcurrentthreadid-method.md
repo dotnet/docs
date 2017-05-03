@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetCurrentThreadID method, ICorProfilerInfo interface [.NET Framework profiling]"
   - "ICorProfilerInfo::GetCurrentThreadID method [.NET Framework profiling]"
 ms.assetid: 39bbdb30-6a7a-4202-8da3-67ae9a0ab3a8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

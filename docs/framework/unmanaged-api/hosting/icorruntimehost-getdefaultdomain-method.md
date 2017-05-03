@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorRuntimeHost::GetDefaultDomain method [.NET Framework hosting]"
   - "GetDefaultDomain method [.NET Framework hosting]"
 ms.assetid: 5e17a6fc-f335-4aae-9bb0-c3e1271a9426
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

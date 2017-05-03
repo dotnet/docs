@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetAppDomainManagerType method, ICLRControl interface [.NET Framework hosting]"
   - "ICLRControl::SetAppDomainManagerType method [.NET Framework hosting]"
 ms.assetid: ec57828b-2aad-496d-a35a-e45d4bd7fe77
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

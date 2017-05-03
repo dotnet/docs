@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetPublicKeyToken method"
 ms.assetid: 4a16374c-94b0-47b0-9fed-88c2b0cdccd4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

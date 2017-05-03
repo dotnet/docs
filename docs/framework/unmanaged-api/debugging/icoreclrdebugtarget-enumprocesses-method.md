@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "ICorClrDebugTarget::EnumProcesses method [Silverlight debugging]"
   - "Silverlight, remote debugging"
 ms.assetid: e00fd477-4f49-43d3-bd0e-3094824b1136
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

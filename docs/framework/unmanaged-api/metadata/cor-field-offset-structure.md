@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_FIELD_OFFSET structure [.NET Framework metadata]"
 ms.assetid: cced5298-277f-4a5a-8ecf-a0050c1096ea
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

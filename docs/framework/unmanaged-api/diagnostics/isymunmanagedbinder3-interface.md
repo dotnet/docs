@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedBinder3 interface [.NET Framework debugging]"
 ms.assetid: 37527a84-4b03-4f08-8135-94d898599089
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

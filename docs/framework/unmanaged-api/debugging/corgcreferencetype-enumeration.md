@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorGCReferenceType"
 ms.assetid: d9f16439-5a36-4474-8ffd-4f0b2c2bb686
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

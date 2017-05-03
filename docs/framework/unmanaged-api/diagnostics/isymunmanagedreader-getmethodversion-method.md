@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetMethodVersion method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetMethodVersion method [.NET Framework debugging]"
 ms.assetid: d6f9ac84-302a-4f5e-b990-e76f4269fceb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

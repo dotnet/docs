@@ -78,12 +78,12 @@ Namespace Samples
             ' Return the created binding
             Return b
         End Function
-        '<snippet2>
+        '</snippet2>
         ' It is a good practice to create a private constructor for a class that only 
         ' defines static methods.
         Private Sub New()
         End Sub
 
     End Class
-    '<snippet0>
+    '</snippet0>
 End Namespace

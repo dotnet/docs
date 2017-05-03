@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameTokenFromAssembly method [.NET Framework hosting]"
   - "StrongNameTokenFromAssembly method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: fc725afb-b66b-4015-aa44-1c0d1304197f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -95,7 +95,7 @@ Namespace UEMsmqMessage
 
             ' <Snippet21>
             message.TimeToReachQueue = New TimeSpan(0, 10, 0)
-            ' <Snippet21>
+            ' </Snippet21>
         End Sub
     End Class
 End Namespace

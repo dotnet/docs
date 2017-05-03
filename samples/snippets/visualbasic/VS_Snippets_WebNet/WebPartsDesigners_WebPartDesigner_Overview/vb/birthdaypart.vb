@@ -1,4 +1,5 @@
-'<snippet1><snippet2>
+' <Snippet1>
+' <Snippet2>
 Imports System.Security.Permissions
 Imports System.Web
 Imports System.Web.UI.WebControls
@@ -63,7 +64,8 @@ Namespace Samples.AspNet.VB.Controls
         End Sub
     End Class
 
-    '</snippet2><snippet3>
+    ' </Snippet2>
+    ' <Snippet3>
     Public Class BirthdayPartDesigner
         Inherits WebPartDesigner
         Public Overrides Sub Initialize(component As IComponent)
@@ -108,4 +110,5 @@ Namespace Samples.AspNet.VB.Controls
         End Function
     End Class
 End Namespace
-'</snippet3></snippet1>
+' </Snippet3>
+' </Snippet1>

@@ -77,15 +77,15 @@ namespace ServiceDescriptionSnippet
             ServiceDescription sd2 = new ServiceDescription(endpoints);
             // </Snippet2>
 
-            //// <Snippet3>
-            //// Iterate through the list of behaviors in the ServiceDescription
+            // <Snippet3>
+            // Iterate through the list of behaviors in the ServiceDescription
             ServiceDescription svcDesc = serviceHost.Description;
             KeyedByTypeCollection<IServiceBehavior> sbCol = svcDesc.Behaviors;
             foreach (IServiceBehavior behavior in sbCol)
             {
                 Console.WriteLine("Behavior: {0}", behavior.ToString());
             }
-            //</Snippet3>
+            // </Snippet3>
 
             // <Snippet4>
             // svcDesc is a ServiceDescription.

@@ -1,4 +1,4 @@
- ' <snippet10>
+' <Snippet10>
 Imports System
 Imports System.Windows
 Imports System.Windows.Controls
@@ -8,12 +8,12 @@ Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
 Imports System.Windows.Shapes
 
-' <snippet20>
+' <Snippet20>
 Imports System.Drawing
 Imports System.Drawing.Drawing2D
 Imports System.Windows.Forms
 Imports System.Windows.Forms.Integration
-' </snippet20>
+' </Snippet20>
 
 ' <summary>
 ' Interaction logic for Window1.xaml
@@ -27,7 +27,7 @@ Class Window1
     End Sub
     
     
-    ' <snippet11>
+    ' <Snippet11>
     ' The WindowLoaded method handles the Loaded event.
     ' It enables Windows Forms visual styles, creates 
     ' a Windows Forms checkbox control, and assigns the
@@ -71,9 +71,9 @@ Class Window1
         wfHost.Background = New ImageBrush()
 
     End Sub
-    ' </snippet11>
+    ' </Snippet11>
 
-    ' <snippet12>
+    ' <Snippet12>
     ' The ReplaceFlowDirectionMapping method replaces the
     ' default mapping for the FlowDirection property.
     Private Sub ReplaceFlowDirectionMapping()
@@ -124,17 +124,17 @@ Class Window1
         System.Windows.FlowDirection.LeftToRight)
 
     End Sub
-    ' </snippet12>
+    ' </Snippet12>
 
-    ' <snippet13>
+    ' <Snippet13>
     ' The RemoveCursorMapping method deletes the default
     ' mapping for the Cursor property.
     Private Sub RemoveCursorMapping()
         wfHost.PropertyMap.Remove("Cursor")
     End Sub
-    ' </snippet13>
+    ' </Snippet13>
 
-    ' <snippet14>
+    ' <Snippet14>
     ' The AddClipMapping method adds a custom mapping 
     ' for the Clip property.
     Private Sub AddClipMapping()
@@ -191,9 +191,9 @@ Class Window1
         Return New [Region](path)
     
     End Function
-    ' </snippet14>
+    ' </Snippet14>
 
-    ' <snippet15>
+    ' <Snippet15>
     ' The ExtendBackgroundMapping method adds a property
     ' translator if a mapping already exists.
     Private Sub ExtendBackgroundMapping() 
@@ -222,7 +222,7 @@ Class Window1
         End If
     
     End Sub
-    ' </snippet15>
+    ' </Snippet15>
 End Class
 
-' </snippet10>
+' </Snippet10>

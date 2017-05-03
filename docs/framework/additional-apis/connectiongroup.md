@@ -1,5 +1,5 @@
 ---
-title: "ConnectionGroup Class | Microsoft Docs"
+title: "ConnectionGroup class | Microsoft Docs"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
@@ -17,9 +17,16 @@ author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# ConnectionGroup Class
+
+# ConnectionGroup class
 
 The `ConnectionGroup` class groups a list of connections within the <xref:System.​Net.​Service​Point> context and is used to maintain context for network resources (for example, proxies and separate clients).
+
+## Syntax
+  
+```csharp  
+internal class ConnectionGroup
+```
 
 > [!WARNING]
 > The `ConnectionGroup` class is internal and not meant to be used directly in your code.

@@ -1,5 +1,5 @@
 ---
-title: "ConnectionGroup.m_ConnectionList Field | Microsoft Docs"
+title: "ConnectionGroup.m_ConnectionList field | Microsoft Docs"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
@@ -17,9 +17,16 @@ author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# ConnectionGroup.m\_ConnectionList Field
+
+# ConnectionGroup.m\_ConnectionList field
 
 `ConnectionGroup.m_ConnectionList` is an <xref:System.​Collections.​Array​List> of connection objects that serves the same URI and share the same values for some other properties like expiration and authentication.
+
+## Syntax
+  
+```csharp  
+private ArrayList m_ConnectionList
+```
 
 > [!WARNING]
 > The `ConnectionGroup.m_ConnectionList` field is private and not meant to be used directly in your code.

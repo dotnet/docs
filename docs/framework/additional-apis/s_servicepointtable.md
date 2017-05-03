@@ -1,5 +1,5 @@
 ---
-title: "ServicePointManager.s_ServicePointTable Field | Microsoft Docs"
+title: "ServicePointManager.s_ServicePointTable field | Microsoft Docs"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
@@ -17,9 +17,16 @@ author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# ServicePointManager.s\_ServicePointTable Field
 
-`ServicePointManager.s_ServicePointTable` is a <xref:System.​Collections.​Hashtable> that contains the list of active HTTP connections (<xref:System.​Net.​Service​Point>s) in the <xref:System.​App​Domain>. 
+# ServicePointManager.s\_ServicePointTable field
+
+`ServicePointManager.s_ServicePointTable` is a <xref:System.​Collections.​Hashtable> that contains the list of active HTTP connections (<xref:System.​Net.​Service​Point>s) in the <xref:System.​App​Domain>.
+
+## Syntax
+  
+```csharp  
+private static Hashtable s_ServicePointTable
+```
 
 > [!WARNING]
 > The `ServicePointManager.s_ServicePointTable` field is private and not meant to be used directly in your code.

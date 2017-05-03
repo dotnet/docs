@@ -1,5 +1,5 @@
 ---
-title: "Connection.m_WriteList Field | Microsoft Docs"
+title: "Connection.m_WriteList field | Microsoft Docs"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
@@ -17,9 +17,16 @@ author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# Connection.m\_WriteList Field
+
+# Connection.m\_WriteList field
 
 `Connection.m_WriteList` is an <xref:System.​Collections.​Array​List> of <xref:System.Net.HttpWebRequest> objects that are queued up to be sent over HTTP.
+
+## Syntax
+  
+```csharp  
+private ArrayList m_WriteList
+```
 
 > [!WARNING]
 > The `Connection.m_WriteList` field is private and not meant to be used directly in your code.

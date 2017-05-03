@@ -1,5 +1,5 @@
 ---
-title: "Connection Class | Microsoft Docs"
+title: "Connection class | Microsoft Docs"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
@@ -17,9 +17,16 @@ author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# Connection Class
+
+# Connection class
 
 The `Connection` class parses server responses, queue requests, and pipeline requests.
+
+## Syntax
+  
+```csharp  
+internal class Connection : PooledStream
+```
 
 > [!WARNING]
 > The `Connection` class is internal and not meant to be used directly in your code.

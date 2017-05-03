@@ -1,5 +1,5 @@
 ---
-title: "HttpWebRequest._AutoRedirects Field | Microsoft Docs"
+title: "HttpWebRequest._AutoRedirects field | Microsoft Docs"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
@@ -17,9 +17,16 @@ author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# HttpWebRequest.\_AutoRedirects Field
+
+# HttpWebRequest.\_AutoRedirects field
 
 `HttpWebRequest._AutoRedirects` is an <xref:System.Int32> that reflects the number of redirects made for this <xref:System.Net.HttpWebRequest>.
+
+## Syntax  
+  
+```csharp  
+private int _AutoRedirects
+```
 
 > [!WARNING]
 > The `HttpWebRequest._AutoRedirects` field is internal and not meant to be used directly in your code.

@@ -105,7 +105,7 @@ Here, you create a shared access policy on a share, and then use that policy to 
 
 [!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L78-L94)]
 
-For more information about creating and using shared access signatures, see [Using Shared Access Signatures (SAS)](https://azure.microsoft.com/en-gb/documentation/articles/storage-dotnet-shared-access-signature-part-1/) and [Create and use a SAS with Blob storage](https://azure.microsoft.com/en-gb/documentation/articles/storage-dotnet-shared-access-signature-part-2/).
+For more information about creating and using shared access signatures, see [Using Shared Access Signatures (SAS)](/azure/storage/storage-dotnet-shared-access-signature-part-1) and [Create and use a SAS with Blob storage](/azure/storage/storage-dotnet-shared-access-signature-part-2).
 
 ### Copy files
 
@@ -139,19 +139,19 @@ See these links for more information about Azure File storage.
 
 ### Conceptual articles and videos
 
-- [Azure Files Storage: a frictionless cloud SMB file system for Windows and Linux](https://azure.microsoft.com/documentation/videos/azurecon-2015-azure-files-storage-a-frictionless-cloud-smb-file-system-for-windows-and-linux/)
-- [How to use Azure File Storage with Linux](https://azure.microsoft.com/en-gb/documentation/articles/storage-how-to-use-files-linux/)
+- [Azure Files Storage: a frictionless cloud SMB file system for Windows and Linux](https://azure.microsoft.com/resources/videos/azurecon-2015-azure-files-storage-a-frictionless-cloud-smb-file-system-for-windows-and-linux/)
+- [How to use Azure File Storage with Linux](/azure/storage/storage-how-to-use-files-linux)
 
 ### Tooling support for File storage
 
-- [Using Azure PowerShell with Azure Storage](https://azure.microsoft.com/en-gb/documentation/articles/storage-powershell-guide-full/)
-- [How to use AzCopy with Microsoft Azure Storage](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/)
-- [Using the Azure CLI with Azure Storage](https://azure.microsoft.com/en-gb/documentation/articles/storage-azure-cli/#create-and-manage-file-shares)
+- [Using Azure PowerShell with Azure Storage](/azure/storage/storage-powershell-guide-full)
+- [How to use AzCopy with Microsoft Azure Storage](/azure/storage/storage-use-azcopy)
+- [Using the Azure CLI with Azure Storage](/azure/storage/storage-azure-cli#create-and-manage-file-shares)
 
 ### Reference
 
 - [Storage Client Library for .NET reference](https://msdn.microsoft.com/library/azure/mt347887.aspx)
-- [File Service REST API reference](http://msdn.microsoft.com/library/azure/dn167006.aspx)
+- [File Service REST API reference](/rest/api/storageservices/fileservices/File-Service-REST-API)
 
 ### Blog posts
 

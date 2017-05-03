@@ -2,7 +2,7 @@
 title: "Troubleshooting Blocked .NET Framework Installations and Uninstallations | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,7 +34,7 @@ When you run the [web or offline installer](../../../docs/framework/install/guid
 |----------------------|--------------------------------------------------|  
 |Uninstalling the Microsoft .NET Framework may cause some applications to cease to function.|In general, you should not uninstall any versions of the .NET Framework that are installed on your computer, because an application you use may depend on a specific version of the .NET Framework. For more information, see [The .NET Framework for users](../../../docs/framework/get-started/index.md#ForUsers) in the *Getting Started* guide.|  
 |.NET Framework 4.5*.x*/4.6*.x*/4.7 (ENU) or a later version is already installed on this computer.|No action necessary.<br /><br /> To determine which versions of the .NET Framework are installed on a system, see [How to: Determine Which .NET Framework Versions Are Installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md).|  
-|The .NET Framework 4.5*.x*/4.6*.x*/4.7 (*language*) requires the .NET Framework 4.5*.x*/4.6*.x*. Please install the .NET Framework 4.5*.x*/4.6*.x* from the Download Center and rerun Setup.|You must install the English version of the specified .NET Framework release before installing a language pack. For more information, see the section on [To install language packs](../../../docs/framework/install/guide-for-developers.md#standalone_language_packs) in the installation guide.|  
+|The .NET Framework 4.5*.x*/4.6*.x*/4.7 (*language*) requires the .NET Framework 4.5*.x*/4.6*.x*. Please install the .NET Framework 4.5*.x*/4.6*.x* from the Download Center and rerun Setup.|You must install the English version of the specified .NET Framework release before installing a language pack. For more information, see the section on [To install language packs](../../../docs/framework/install/guide-for-developers.md#to-install-language-packs) in the installation guide.|  
 |Cannot install the .NET Framework 4.5*.x*/4.6*.x*/4.7. Other applications on your computer are not compatible with this program.<br /><br /> -or-<br /><br /> Other applications on your computer are not compatible with this program.|The most likely cause of this message is that a preview or RC version of the .NET Framework was installed. Uninstall the preview or RC version and rerun Setup.|  
 |.NET Framework 4.5*.x*/4.6*.x*/4.7 cannot be uninstalled using this package. To uninstall .NET Framework 4.5*.x*/4.6*.x* from your computer, go to **Control Panel**, choose **Programs and Features**, choose **View installed updates**, select Update for Microsoft Windows (KB2828152) and then choose **Uninstall**.|The package you are installing doesn't uninstall preview or RC releases of the .NET Framework.<br /><br /> Uninstall the preview or RC release from Control Panel.|  
 |Cannot uninstall the .NET Framework 4.5*.x*/4.6*.x*/4.7. Other applications on your computer are dependent on this program.|In general, you shouldn't uninstall any versions of the .NET Framework from your computer, because an application you use may depend on a specific version of the .NET Framework. For more information, see [The .NET Framework for users](../../../docs/framework/get-started/index.md#ForUsers) in the *Getting Started* guide.|  

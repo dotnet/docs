@@ -1,5 +1,7 @@
 # [Migration Guide](index.md)
 ## [Application Compatibility](application-compatibility.md)
+### [Runtime Changes](runtime/index.md)
+### [Retargeting Changes](retargeting/index.md)
 ### [Application Compatibility in 4.5](application-compatibility-in-the-net-framework-4-5.md)
 ### [Application Compatibility in 4.5.1](application-compatibility-in-the-net-framework-4-5-1.md)
 #### [Runtime Changes](runtime-changes-in-the-net-framework-4-5-1.md)

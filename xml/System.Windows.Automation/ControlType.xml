@@ -139,7 +139,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Automation.ControlType.Custom> control type indicates a control that is not identified as one of the predefined control types (such as <xref:System.Windows.Automation.ControlType> or <xref:System.Windows.Automation.ControlType>).  
+ The <xref:System.Windows.Automation.ControlType.Custom> control type indicates a control that is not identified as one of the predefined control types (such as <xref:System.Windows.Automation.ControlType.Button> or <xref:System.Windows.Automation.ControlType.Calendar>).  
   
  Control developers should check the other control types before designating their control as a <xref:System.Windows.Automation.ControlType.Custom> control type to be sure that their control does not provide the same functionality as one of the defined control types.  
   
@@ -167,7 +167,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the cells contain only text, the control type should be <xref:System.Windows.Automation.ControlType>.  
+ When the cells contain only text, the control type should be <xref:System.Windows.Automation.ControlType.Table>.  
   
  ]]></format>
         </remarks>
@@ -469,13 +469,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.List> is a control type that contains <xref:System.Windows.Automation.ControlType> and (perhaps) <xref:System.Windows.Automation.ControlType> control types.  
+ A <xref:System.Windows.Automation.ControlType.List> is a control type that contains <xref:System.Windows.Automation.ControlType.ListItem> and (perhaps) <xref:System.Windows.Automation.ControlType.Group> control types.  
   
  A <xref:System.Windows.Automation.ControlType.List> control can be used as a standalone control or as a subcontrol in another control type. For example, a combo box has a <xref:System.Windows.Automation.ControlType.List> control that contains choices that appear when the drop-down button is clicked. When used as a subcontrol, a <xref:System.Windows.Automation.ControlType.List> is only in the control view of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree (not in content view).  
   
  When used as a subcontrol, a <xref:System.Windows.Automation.ControlType.List> does not have a `Name` property assigned.  
   
- A <xref:System.Windows.Automation.ControlType.List> can contain <xref:System.Windows.Automation.ControlType> controls.  
+ A <xref:System.Windows.Automation.ControlType.List> can contain <xref:System.Windows.Automation.ControlType.DataItem> controls.  
   
  ]]></format>
         </remarks>
@@ -499,7 +499,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType> can also be a child of a list control.  
+ A <xref:System.Windows.Automation.ControlType.Header> can also be a child of a list control.  
   
  ]]></format>
         </remarks>
@@ -628,7 +628,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.MenuItem> is a child of a <xref:System.Windows.Automation.ControlType> or <xref:System.Windows.Automation.ControlType> control.  
+ A <xref:System.Windows.Automation.ControlType.MenuItem> is a child of a <xref:System.Windows.Automation.ControlType.Menu> or <xref:System.Windows.Automation.ControlType.MenuBar> control.  
   
  ]]></format>
         </remarks>
@@ -652,7 +652,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Pane> is used to visually separate content within a <xref:System.Windows.Automation.ControlType>. The user typically navigates between panes by pressing TAB, F6, or CTRL+TAB, depending on the context.  
+ A <xref:System.Windows.Automation.ControlType.Pane> is used to visually separate content within a <xref:System.Windows.Automation.ControlType.Window>. The user typically navigates between panes by pressing TAB, F6, or CTRL+TAB, depending on the context.  
   
  ]]></format>
         </remarks>
@@ -753,7 +753,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Slider> control type consists of a set of buttons associated with an <xref:System.Windows.Automation.ControlType> control that enable a user to select from a set of items or set a numerical value from within a range.  
+ A <xref:System.Windows.Automation.ControlType.Slider> control type consists of a set of buttons associated with an <xref:System.Windows.Automation.ControlType.Edit> control that enable a user to select from a set of items or set a numerical value from within a range.  
   
  ]]></format>
         </remarks>
@@ -818,7 +818,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Automation.ControlType.StatusBar> control types are generally subcontrols of <xref:System.Windows.Automation.ControlType> control type [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements.  
+ <xref:System.Windows.Automation.ControlType.StatusBar> control types are generally subcontrols of <xref:System.Windows.Automation.ControlType.Window> control type [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements.  
   
  ]]></format>
         </remarks>
@@ -842,7 +842,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Tab> is a control type that contains at least one <xref:System.Windows.Automation.ControlType> child control.  
+ A <xref:System.Windows.Automation.ControlType.Tab> is a control type that contains at least one <xref:System.Windows.Automation.ControlType.TabItem> child control.  
   
  ]]></format>
         </remarks>
@@ -883,7 +883,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Table> control type is similar to a <xref:System.Windows.Automation.ControlType> but contains only text. Tables can also contain <xref:System.Windows.Automation.ControlType> control types.  
+ A <xref:System.Windows.Automation.ControlType.Table> control type is similar to a <xref:System.Windows.Automation.ControlType.DataGrid> but contains only text. Tables can also contain <xref:System.Windows.Automation.ControlType.Header> control types.  
   
  ]]></format>
         </remarks>
@@ -907,7 +907,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Text> control can be used as a standalone control, such as an <xref:System.Windows.Automation.ControlType> control, or as a subcomponent, such as the area of a <xref:System.Windows.Automation.ControlType> where a user can type in a value.  
+ A <xref:System.Windows.Automation.ControlType.Text> control can be used as a standalone control, such as an <xref:System.Windows.Automation.ControlType.Edit> control, or as a subcomponent, such as the area of a <xref:System.Windows.Automation.ControlType.ComboBox> where a user can type in a value.  
   
  ]]></format>
         </remarks>
@@ -931,7 +931,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Thumb> control is used as a subcontrol in a <xref:System.Windows.Automation.ControlType> control type. As a subcontrol, a <xref:System.Windows.Automation.ControlType.Thumb> does not have a <xref:System.Windows.Automation.AutomationElement.NameProperty>.  
+ A <xref:System.Windows.Automation.ControlType.Thumb> control is used as a subcontrol in a <xref:System.Windows.Automation.ControlType.ScrollBar> control type. As a subcontrol, a <xref:System.Windows.Automation.ControlType.Thumb> does not have a <xref:System.Windows.Automation.AutomationElement.NameProperty>.  
   
  ]]></format>
         </remarks>
@@ -1006,7 +1006,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Tree> control type is a container for a hierarchical arrangement of <xref:System.Windows.Automation.ControlType> or <xref:System.Windows.Automation.ControlType> control types.  
+ A <xref:System.Windows.Automation.ControlType.Tree> control type is a container for a hierarchical arrangement of <xref:System.Windows.Automation.ControlType.TreeItem> or <xref:System.Windows.Automation.ControlType.DataItem> control types.  
   
  Each node of a tree can contain other nodes.  A node that contains child nodes can be displayed as expanded or collapsed.  
   
@@ -1032,7 +1032,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.TreeItem> control type can be used only as a subcontrol of a <xref:System.Windows.Automation.ControlType> control.  
+ A <xref:System.Windows.Automation.ControlType.TreeItem> control type can be used only as a subcontrol of a <xref:System.Windows.Automation.ControlType.Tree> control.  
   
  ]]></format>
         </remarks>

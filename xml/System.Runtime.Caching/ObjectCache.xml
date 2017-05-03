@@ -33,12 +33,9 @@
     <block subset="none" type="overrides">
       <para>Because the <see cref="T:System.Runtime.Caching.ObjectCache" /> type represents only common cache functions, there is no requirement for how an <see cref="T:System.Runtime.Caching.ObjectCache" /> instance must be instantiated and obtained. In addition, there is no requirement that concrete implementations of the <see cref="T:System.Runtime.Caching.ObjectCache" /> class must be singletons.  
   
- <block subset="none" type="note">  
-<para>  
- <see cref="T:System.Runtime.Caching.MemoryCache" /> is not a singleton, but you should create only a few or potentially only one <see cref="T:System.Runtime.Caching.MemoryCache" /> instance and code that caches items should use those instances.  
+ <block subset="none" type="note"><para><see cref="T:System.Runtime.Caching.MemoryCache" /> is not a singleton, but you should create only a few or potentially only one <see cref="T:System.Runtime.Caching.MemoryCache" /> instance and code that caches items should use those instances.  
   
-</para>  
-</block>  
+</para></block>  
   
  When you inherit from the <see cref="T:System.Runtime.Caching.ObjectCache" /> class, you must override its methods.</para>
     </block>

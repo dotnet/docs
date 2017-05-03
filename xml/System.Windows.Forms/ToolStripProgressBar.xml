@@ -661,7 +661,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripProgressBar.RightToLeftLayout%2A> property to control the layout of international applications in which the language is written from right to left. When the <xref:System.Windows.Forms.ToolStripProgressBar.RightToLeftLayout%2A> property is `true`, and the <xref:System.Windows.Forms.RightToLeft> property is set to <xref:System.Windows.Forms.RightToLeft>, mirroring will be enabled on the Windows form and control placement and text will be from right to left.  
+ Use the <xref:System.Windows.Forms.ToolStripProgressBar.RightToLeftLayout%2A> property to control the layout of international applications in which the language is written from right to left. When the <xref:System.Windows.Forms.ToolStripProgressBar.RightToLeftLayout%2A> property is `true`, and the <xref:System.Windows.Forms.RightToLeft> property is set to <xref:System.Windows.Forms.RightToLeft.Yes>, mirroring will be enabled on the Windows form and control placement and text will be from right to left.  
   
  ]]></format>
         </remarks>

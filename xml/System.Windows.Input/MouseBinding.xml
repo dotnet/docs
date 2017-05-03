@@ -248,7 +248,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike a <xref:System.Windows.Input.KeyGesture>, a <xref:System.Windows.Input.MouseGesture> does not need to be associated with a modifier key.  So a <xref:System.Windows.Input.MouseAction> by itself, such as <xref:System.Windows.Input.MouseAction>, can be a valid <xref:System.Windows.Input.MouseGesture>.  
+ Unlike a <xref:System.Windows.Input.KeyGesture>, a <xref:System.Windows.Input.MouseGesture> does not need to be associated with a modifier key.  So a <xref:System.Windows.Input.MouseAction> by itself, such as <xref:System.Windows.Input.MouseAction.MiddleClick>, can be a valid <xref:System.Windows.Input.MouseGesture>.  
   
    
   

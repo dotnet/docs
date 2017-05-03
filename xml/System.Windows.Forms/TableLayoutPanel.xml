@@ -76,7 +76,7 @@
   
  The docking behavior of child controls is the same as other container controls.  
   
- The anchoring behavior of child controls in a <xref:System.Windows.Forms.TableLayoutPanel> differs from the behavior in other container controls. If the value of the child control's <xref:System.Windows.Forms.Control.Anchor%2A> property is set to <xref:System.Windows.Forms.AnchorStyles> or <xref:System.Windows.Forms.AnchorStyles>, the control will be placed against the left or right border of the cell, at a distance that is the sum of the control's <xref:System.Windows.Forms.Control.Margin%2A> property and the panel's <xref:System.Windows.Forms.Control.Padding%2A> property. If both the <xref:System.Windows.Forms.AnchorStyles> and <xref:System.Windows.Forms.AnchorStyles> values are set, the control will be sized to the width of the cell, with the <xref:System.Windows.Forms.Control.Margin%2A> and <xref:System.Windows.Forms.Control.Padding%2A> values taken into account. The behavior for <xref:System.Windows.Forms.AnchorStyles> and <xref:System.Windows.Forms.AnchorStyles> anchoring is analogous. For more information, see [How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](~/docs/framework/winforms/controls/how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md).  
+ The anchoring behavior of child controls in a <xref:System.Windows.Forms.TableLayoutPanel> differs from the behavior in other container controls. If the value of the child control's <xref:System.Windows.Forms.Control.Anchor%2A> property is set to <xref:System.Windows.Forms.AnchorStyles.Left> or <xref:System.Windows.Forms.AnchorStyles.Right>, the control will be placed against the left or right border of the cell, at a distance that is the sum of the control's <xref:System.Windows.Forms.Control.Margin%2A> property and the panel's <xref:System.Windows.Forms.Control.Padding%2A> property. If both the <xref:System.Windows.Forms.AnchorStyles.Left> and <xref:System.Windows.Forms.AnchorStyles.Right> values are set, the control will be sized to the width of the cell, with the <xref:System.Windows.Forms.Control.Margin%2A> and <xref:System.Windows.Forms.Control.Padding%2A> values taken into account. The behavior for <xref:System.Windows.Forms.AnchorStyles.Top> and <xref:System.Windows.Forms.AnchorStyles.Bottom> anchoring is analogous. For more information, see [How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](~/docs/framework/winforms/controls/how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md).  
   
  If you need a child control to mimic the default anchoring behavior in other container controls, you can adjust the <xref:System.Windows.Forms.Control.Margin%2A> and <xref:System.Windows.Forms.Control.Padding%2A> properties to maintain a constant distance between the control's border and the cell's border.  
   
@@ -305,11 +305,11 @@
   
  When the <xref:System.Windows.Forms.TableLayoutPanel> control arranges its columns, it assigns priorities to each <xref:System.Windows.Forms.ColumnStyle> in the following order:  
   
-1.  Columns with <xref:System.Windows.Forms.ColumnStyle> set to <xref:System.Windows.Forms.SizeType> are considered first, and their fixed widths are allocated.  
+1.  Columns with <xref:System.Windows.Forms.ColumnStyle> set to <xref:System.Windows.Forms.SizeType.Absolute> are considered first, and their fixed widths are allocated.  
   
-2.  Columns with <xref:System.Windows.Forms.ColumnStyle> set to <xref:System.Windows.Forms.SizeType> are sized to their contents.  
+2.  Columns with <xref:System.Windows.Forms.ColumnStyle> set to <xref:System.Windows.Forms.SizeType.AutoSize> are sized to their contents.  
   
-3.  Remaining space is divided among columns with <xref:System.Windows.Forms.ColumnStyle> set to <xref:System.Windows.Forms.SizeType>.  
+3.  Remaining space is divided among columns with <xref:System.Windows.Forms.ColumnStyle> set to <xref:System.Windows.Forms.SizeType.Percent>.  
   
    
   
@@ -781,7 +781,7 @@
  By default, the <xref:System.Windows.Forms.TableLayoutPanel> control expands downward by adding rows.  
   
 > [!NOTE]
->  If an attempt is made to add a control to a full <xref:System.Windows.Forms.TableLayoutPanel> control, and the value of <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> is <xref:System.Windows.Forms.TableLayoutPanelGrowStyle>, then an <xref:System.ArgumentException> is thrown.  
+>  If an attempt is made to add a control to a full <xref:System.Windows.Forms.TableLayoutPanel> control, and the value of <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> is <xref:System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize>, then an <xref:System.ArgumentException> is thrown.  
   
    
   
@@ -1001,11 +1001,11 @@
   
  When the <xref:System.Windows.Forms.TableLayoutPanel> control arranges its rows, it assigns priorities to each <xref:System.Windows.Forms.RowStyle> in the following order:  
   
-1.  Rows with <xref:System.Windows.Forms.RowStyle> set to <xref:System.Windows.Forms.SizeType> are considered first, and their fixed heights are allocated.  
+1.  Rows with <xref:System.Windows.Forms.RowStyle> set to <xref:System.Windows.Forms.SizeType.Absolute> are considered first, and their fixed heights are allocated.  
   
-2.  Rows with <xref:System.Windows.Forms.RowStyle> set to <xref:System.Windows.Forms.SizeType> are sized to their contents.  
+2.  Rows with <xref:System.Windows.Forms.RowStyle> set to <xref:System.Windows.Forms.SizeType.AutoSize> are sized to their contents.  
   
-3.  Remaining space is divided among rows with <xref:System.Windows.Forms.RowStyle> set to <xref:System.Windows.Forms.SizeType>.  
+3.  Remaining space is divided among rows with <xref:System.Windows.Forms.RowStyle> set to <xref:System.Windows.Forms.SizeType.Percent>.  
   
    
   

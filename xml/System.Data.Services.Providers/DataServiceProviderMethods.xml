@@ -36,40 +36,42 @@
         <param name="right">The second parameter value.</param>
         <summary>Returns comparison information for Boolean parameters in an operation expression.</summary>
         <returns>
-          <list type="table">  
-<listheader>  
-<term> Value  
+          <list type="table">
+            <listheader>
+              <term> Value  
   
- </term>  
-<description> Condition  
+ </term>
+              <description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description>
+            </listheader>
+            <item>
+              <term> -1  
   
- </term>  
-<description> <paramref name="left" /> is less than <paramref name="right" />.  
+ </term>
+              <description>
+                <paramref name="left" /> is less than <paramref name="right" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description>
+            </item>
+            <item>
+              <term> 0  
   
- </term>  
-<description> x equals y.  
+ </term>
+              <description> x equals y.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description>
+            </item>
+            <item>
+              <term> 1  
   
- </term>  
-<description> <paramref name="left" /> is greater than <paramref name="right" />.  
+ </term>
+              <description>
+                <paramref name="left" /> is greater than <paramref name="right" />.  
   
- </description>  
-</item>  
-</list>
+ </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -102,40 +104,42 @@
         <param name="right">The second parameter value.</param>
         <summary>Returns comparison information for GUID parameters in an operation expression.</summary>
         <returns>
-          <list type="table">  
-<listheader>  
-<term> Value  
+          <list type="table">
+            <listheader>
+              <term> Value  
   
- </term>  
-<description> Condition  
+ </term>
+              <description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description>
+            </listheader>
+            <item>
+              <term> -1  
   
- </term>  
-<description> <paramref name="left" /> is less than <paramref name="right" />.  
+ </term>
+              <description>
+                <paramref name="left" /> is less than <paramref name="right" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description>
+            </item>
+            <item>
+              <term> 0  
   
- </term>  
-<description> x equals y.  
+ </term>
+              <description> x equals y.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description>
+            </item>
+            <item>
+              <term> 1  
   
- </term>  
-<description> <paramref name="left" /> is greater than <paramref name="right" />.  
+ </term>
+              <description>
+                <paramref name="left" /> is greater than <paramref name="right" />.  
   
- </description>  
-</item>  
-</list>
+ </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -168,40 +172,42 @@
         <param name="right">The second parameter value.</param>
         <summary>Returns comparison information for nullable Boolean parameters in an operation expression.</summary>
         <returns>
-          <list type="table">  
-<listheader>  
-<term> Value  
+          <list type="table">
+            <listheader>
+              <term> Value  
   
- </term>  
-<description> Condition  
+ </term>
+              <description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description>
+            </listheader>
+            <item>
+              <term> -1  
   
- </term>  
-<description> <paramref name="left" /> is less than <paramref name="right" />.  
+ </term>
+              <description>
+                <paramref name="left" /> is less than <paramref name="right" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description>
+            </item>
+            <item>
+              <term> 0  
   
- </term>  
-<description> x equals y.  
+ </term>
+              <description> x equals y.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description>
+            </item>
+            <item>
+              <term> 1  
   
- </term>  
-<description> <paramref name="left" /> is greater than <paramref name="right" />.  
+ </term>
+              <description>
+                <paramref name="left" /> is greater than <paramref name="right" />.  
   
- </description>  
-</item>  
-</list>
+ </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -234,40 +240,42 @@
         <param name="right">The second parameter value.</param>
         <summary>Returns comparison information for nullable GUID parameters in an operation expression.</summary>
         <returns>
-          <list type="table">  
-<listheader>  
-<term> Value  
+          <list type="table">
+            <listheader>
+              <term> Value  
   
- </term>  
-<description> Condition  
+ </term>
+              <description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description>
+            </listheader>
+            <item>
+              <term> -1  
   
- </term>  
-<description> <paramref name="left" /> is less than <paramref name="right" />.  
+ </term>
+              <description>
+                <paramref name="left" /> is less than <paramref name="right" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description>
+            </item>
+            <item>
+              <term> 0  
   
- </term>  
-<description> x equals y.  
+ </term>
+              <description> x equals y.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description>
+            </item>
+            <item>
+              <term> 1  
   
- </term>  
-<description> <paramref name="left" /> is greater than <paramref name="right" />.  
+ </term>
+              <description>
+                <paramref name="left" /> is greater than <paramref name="right" />.  
   
- </description>  
-</item>  
-</list>
+ </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -300,40 +308,42 @@
         <param name="right">The second parameter value.</param>
         <summary>Returns comparison information for string parameters in an operation expression.</summary>
         <returns>
-          <list type="table">  
-<listheader>  
-<term> Value  
+          <list type="table">
+            <listheader>
+              <term> Value  
   
- </term>  
-<description> Condition  
+ </term>
+              <description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description>
+            </listheader>
+            <item>
+              <term> -1  
   
- </term>  
-<description> <paramref name="left" /> is less than <paramref name="right" />.  
+ </term>
+              <description>
+                <paramref name="left" /> is less than <paramref name="right" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description>
+            </item>
+            <item>
+              <term> 0  
   
- </term>  
-<description> x equals y.  
+ </term>
+              <description> x equals y.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description>
+            </item>
+            <item>
+              <term> 1  
   
- </term>  
-<description> <paramref name="left" /> is greater than <paramref name="right" />.  
+ </term>
+              <description>
+                <paramref name="left" /> is greater than <paramref name="right" />.  
   
- </description>  
-</item>  
-</list>
+ </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

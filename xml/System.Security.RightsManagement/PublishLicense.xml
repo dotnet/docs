@@ -165,7 +165,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.RightsManagement.PublishLicense.DecryptUnsignedPublishLicense%2A> method allows the license owner and users who were granted <xref:System.Security.RightsManagement.ContentRight> to extract the original information that was encrypted when the <xref:System.Security.RightsManagement.PublishLicense> was created.  
+ The <xref:System.Security.RightsManagement.PublishLicense.DecryptUnsignedPublishLicense%2A> method allows the license owner and users who were granted <xref:System.Security.RightsManagement.ContentRight.ViewRightsData> to extract the original information that was encrypted when the <xref:System.Security.RightsManagement.PublishLicense> was created.  
   
  ]]></format>
         </remarks>

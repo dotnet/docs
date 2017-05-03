@@ -45,7 +45,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is the default constructor for the <xref:System.Windows.Forms.TableLayoutStyle> class. It effectively sets the <xref:System.Windows.Forms.SizeType> property to <xref:System.Windows.Forms.SizeType>.  
+ This is the default constructor for the <xref:System.Windows.Forms.TableLayoutStyle> class. It effectively sets the <xref:System.Windows.Forms.SizeType> property to <xref:System.Windows.Forms.SizeType.AutoSize>.  
   
  ]]></format>
         </remarks>
@@ -77,11 +77,11 @@
 ## Remarks  
  The table layout engine sizes a row or column in one of the following ways:  
   
--   In an absolute number of pixels (<xref:System.Windows.Forms.SizeType>).  
+-   In an absolute number of pixels (<xref:System.Windows.Forms.SizeType.Absolute>).  
   
--   As a percentage of the parent container (<xref:System.Windows.Forms.SizeType>).  
+-   As a percentage of the parent container (<xref:System.Windows.Forms.SizeType.Percent>).  
   
--   To share equal space with its peers (<xref:System.Windows.Forms.SizeType>).  
+-   To share equal space with its peers (<xref:System.Windows.Forms.SizeType.AutoSize>).  
   
  ]]></format>
         </remarks>

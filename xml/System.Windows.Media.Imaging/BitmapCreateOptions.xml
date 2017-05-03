@@ -29,7 +29,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to instantiate a <xref:System.Windows.Media.Imaging.BitmapImage> and specify <xref:System.Windows.Media.Imaging.BitmapCreateOptions>.  
+ The following code example demonstrates how to instantiate a <xref:System.Windows.Media.Imaging.BitmapImage> and specify <xref:System.Windows.Media.Imaging.BitmapCreateOptions.IgnoreImageCache>.  
   
  [!code-csharp[bitmapimageprops#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
  [!code-vb[bitmapimageprops#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  

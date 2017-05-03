@@ -88,7 +88,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> belongs to a column with a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode>, this property returns the string "Press to sort column". If the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control has a value of <xref:System.Windows.Forms.DataGridViewSelectionMode> or <xref:System.Windows.Forms.DataGridViewSelectionMode>, this property returns the string "Press to select column". If neither of these conditions is present or the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> does not currently belong to a column, this property returns <xref:System.String.Empty>.  
+ If the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> belongs to a column with a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic>, this property returns the string "Press to sort column". If the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control has a value of <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect>, this property returns the string "Press to select column". If neither of these conditions is present or the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> does not currently belong to a column, this property returns <xref:System.String.Empty>.  
   
  ]]></format>
         </remarks>
@@ -172,15 +172,15 @@
   
 |Parameter value|Description|  
 |---------------------|-----------------|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> to the right of the current header cell.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> to the left of the current header cell.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> after the current header cell.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> before the current header cell.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The first <xref:System.Windows.Forms.DataGridViewColumnHeaderCell>. <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.Navigate%2A> returns the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell> if the <xref:System.Windows.Forms.DataGridView.RowHeadersVisible%2A> property is `true`.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The last <xref:System.Windows.Forms.DataGridViewColumnHeaderCell>.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Right>|The <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> to the right of the current header cell.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Left>|The <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> to the left of the current header cell.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Next>|The <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> after the current header cell.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Previous>|The <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> before the current header cell.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.FirstChild>|The first <xref:System.Windows.Forms.DataGridViewColumnHeaderCell>. <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.Navigate%2A> returns the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell> if the <xref:System.Windows.Forms.DataGridView.RowHeadersVisible%2A> property is `true`.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.LastChild>|The last <xref:System.Windows.Forms.DataGridViewColumnHeaderCell>.|  
   
 > [!NOTE]
->  The direction that the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.Navigate%2A> method moves when you specify <xref:System.Windows.Forms.AccessibleNavigation> or <xref:System.Windows.Forms.AccessibleNavigation> depends on whether the <xref:System.Windows.Forms.DataGridView> has right-to-left support enabled. For example, if right-to-left support is enabled, <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.Navigate%2A> will return the same accessible object when you specify <xref:System.Windows.Forms.AccessibleNavigation> or <xref:System.Windows.Forms.AccessibleNavigation>. If right-to-left support is not enabled, <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.Navigate%2A> will return the same object when you specify <xref:System.Windows.Forms.AccessibleNavigation> or <xref:System.Windows.Forms.AccessibleNavigation>.  
+>  The direction that the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.Navigate%2A> method moves when you specify <xref:System.Windows.Forms.AccessibleNavigation.Next> or <xref:System.Windows.Forms.AccessibleNavigation.Previous> depends on whether the <xref:System.Windows.Forms.DataGridView> has right-to-left support enabled. For example, if right-to-left support is enabled, <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.Navigate%2A> will return the same accessible object when you specify <xref:System.Windows.Forms.AccessibleNavigation.Next> or <xref:System.Windows.Forms.AccessibleNavigation.Left>. If right-to-left support is not enabled, <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.Navigate%2A> will return the same object when you specify <xref:System.Windows.Forms.AccessibleNavigation.Next> or <xref:System.Windows.Forms.AccessibleNavigation.Right>.  
   
  ]]></format>
         </remarks>
@@ -249,8 +249,8 @@
   
 |Parameter value|Action|  
 |---------------------|------------|  
-|<xref:System.Windows.Forms.AccessibleSelection>|If the <xref:System.Windows.Forms.DataGridView> control that contains the owning cell has a <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property value of <xref:System.Windows.Forms.DataGridViewSelectionMode> or <xref:System.Windows.Forms.DataGridViewSelectionMode>, the column containing the cell is selected.|  
-|<xref:System.Windows.Forms.AccessibleSelection>|If the column containing the cell is selected, the selection is canceled.|  
+|<xref:System.Windows.Forms.AccessibleSelection.TakeSelection>|If the <xref:System.Windows.Forms.DataGridView> control that contains the owning cell has a <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property value of <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect>, the column containing the cell is selected.|  
+|<xref:System.Windows.Forms.AccessibleSelection.RemoveSelection>|If the column containing the cell is selected, the selection is canceled.|  
 |All other <xref:System.Windows.Forms.AccessibleSelection> values|No action is taken.|  
   
  ]]></format>
@@ -277,7 +277,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.State%2A> property value always includes the <xref:System.Windows.Forms.AccessibleStates> value. The <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.State%2A> includes the <xref:System.Windows.Forms.AccessibleStates> value if the <xref:System.Windows.Forms.DataGridViewColumn> that contains the cell is selected. The <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.State%2A> includes the <xref:System.Windows.Forms.AccessibleStates> value if the owning cell is not currently displayed.  
+ The <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.State%2A> property value always includes the <xref:System.Windows.Forms.AccessibleStates.Selectable> value. The <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject.State%2A> includes the <xref:System.Windows.Forms.AccessibleStates.Selected> value if the <xref:System.Windows.Forms.DataGridViewColumn> that contains the cell is selected. The <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.State%2A> includes the <xref:System.Windows.Forms.AccessibleStates.Offscreen> value if the owning cell is not currently displayed.  
   
  ]]></format>
         </remarks>

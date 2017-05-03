@@ -399,7 +399,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the curve has a name, the <xref:System.Security.Cryptography.ECParameters> property contains named curve parameters; otherwise, it will contain explicit parameters.  
+ If the curve has a name, the <xref:System.Security.Cryptography.ECParameters.Curve> property contains named curve parameters; otherwise, it will contain explicit parameters.  
   
  ]]></format>
         </remarks>

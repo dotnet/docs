@@ -1352,63 +1352,24 @@
         <summary>Gets or sets the target window or frame in which to display the Web page content that is associated with a node to which the <see cref="T:System.Web.UI.WebControls.TreeNodeBinding" /> object is applied.</summary>
         <value>The target window or frame in which to display the linked Web page content. Values must begin with a letter in the range of A through Z (case insensitive), except for certain special values that begin with an underscore, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Target value  
+ <list type="table"><listheader><term> Target value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="_blank" />  
+ </description></listheader><item><term><see langword="_blank" /></term><description> Renders the content in a new window without frames.  
   
- </term>  
-<description> Renders the content in a new window without frames.  
+ </description></item><item><term><see langword="_parent" /></term><description> Renders the content in the immediate frameset parent.  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="_parent" />  
+ </description></item><item><term><see langword="_search" /></term><description> Renders the content in the search pane.  
   
- </term>  
-<description> Renders the content in the immediate frameset parent.  
+ </description></item><item><term><see langword="_self" /></term><description> Renders the content in the frame with focus.  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="_search" />  
+ </description></item><item><term><see langword="_top" /></term><description> Renders the content in the full window without frames.  
   
- </term>  
-<description> Renders the content in the search pane.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="_self" />  
-  
- </term>  
-<description> Renders the content in the frame with focus.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="_top" />  
-  
- </term>  
-<description> Renders the content in the full window without frames.  
-  
- </description>  
-</item>  
-</list>  
-  
- <block subset="none" type="note">  
-<para>  
+ </description></item></list><block subset="none" type="note"><para>  
  Check your browser documentation to determine if the <see langword="_search" /> value is supported.  For example, Microsoft Internet Explorer version 5.0 and later supports the <see langword="_search" /> target value.  
   
-</para>  
-</block>  
+</para></block>  
   
  The default is an empty string (""), which refreshes the window or frame with focus.</value>
         <remarks>

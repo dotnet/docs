@@ -181,12 +181,12 @@
   
  You are encouraged to use the cookieless mode only if you need to support clients that lack cookie support.  
   
- Session state also supports two additional options: <xref:System.Web.HttpCookieMode> and <xref:System.Web.HttpCookieMode>. The former enables the session-state module to determine what mode (cookie or cookieless) is used on a per-client basis based on the browser capabilities.  The <xref:System.Web.HttpCookieMode> option performs a handshake with the browser to verify whether a cookie may be stored, and therefore requires an additional request to make the determination. If you need to support cookieless clients, strongly consider using <xref:System.Web.HttpCookieMode> to generate cookieless URLs only for clients that require them.  
+ Session state also supports two additional options: <xref:System.Web.HttpCookieMode.UseDeviceProfile> and <xref:System.Web.HttpCookieMode.AutoDetect>. The former enables the session-state module to determine what mode (cookie or cookieless) is used on a per-client basis based on the browser capabilities.  The <xref:System.Web.HttpCookieMode.AutoDetect> option performs a handshake with the browser to verify whether a cookie may be stored, and therefore requires an additional request to make the determination. If you need to support cookieless clients, strongly consider using <xref:System.Web.HttpCookieMode.UseDeviceProfile> to generate cookieless URLs only for clients that require them.  
   
 > [!NOTE]
 >  With UP.Browser 4.1 or UP.Browser 3.2, <xref:System.Web.HttpResponse.Redirect%2A> always behaves as if the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsRedirectWithCookie%2A> property of the <xref:System.Web.HttpBrowserCapabilities> object is `false`, unless the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> property in the <xref:System.Web.Configuration.SystemWebSectionGroup.SessionState%2A> section of Web.config has been explicitly set to `true`.  
 >   
->  In ASP.NET version 1.1, the options for this setting were `true` or `false`, but with ASP.NET 2.0, the choices are expanded, and <xref:System.Web.HttpCookieMode> is now the default setting. If your Web application has the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> property set to a Boolean value, then <xref:System.Web.HttpResponse.Redirect%2A> should work as expected for these browsers.  
+>  In ASP.NET version 1.1, the options for this setting were `true` or `false`, but with ASP.NET 2.0, the choices are expanded, and <xref:System.Web.HttpCookieMode.AutoDetect> is now the default setting. If your Web application has the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> property set to a Boolean value, then <xref:System.Web.HttpResponse.Redirect%2A> should work as expected for these browsers.  
   
    
   
@@ -262,7 +262,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The provider is only used when the session-state mode is set to <xref:System.Web.SessionState.SessionStateMode>.  
+ The provider is only used when the session-state mode is set to <xref:System.Web.SessionState.SessionStateMode.Custom>.  
   
    
   
@@ -600,10 +600,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This `sqlConnectionString` attribute is required when <xref:System.Web.Configuration.SessionStateSection.Mode%2A> is set to <xref:System.Web.SessionState.SessionStateMode>.  
+ This `sqlConnectionString` attribute is required when <xref:System.Web.Configuration.SessionStateSection.Mode%2A> is set to <xref:System.Web.SessionState.SessionStateMode.SQLServer>.  
   
 > [!NOTE]
->  To use the <xref:System.Web.SessionState.SessionStateMode> session state mode, you must run the InstallSqlState.sql SQL script (which is installed in [*drive*:]\WINDOWS\Microsoft.NET\Framework\\*VersionNumber* as part of the default .NET Framework installation) on the computer running SQL Server that will store the session state. This creates a database called ASPState with new stored procedures and creates new ASPStateTempApplications and ASPStateTempSessions tables in the TempDB database.  
+>  To use the <xref:System.Web.SessionState.SessionStateMode.SQLServer> session state mode, you must run the InstallSqlState.sql SQL script (which is installed in [*drive*:]\WINDOWS\Microsoft.NET\Framework\\*VersionNumber* as part of the default .NET Framework installation) on the computer running SQL Server that will store the session state. This creates a database called ASPState with new stored procedures and creates new ASPStateTempApplications and ASPStateTempSessions tables in the TempDB database.  
   
    
   
@@ -641,7 +641,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property specifies the server name and the port when the session state is stored remotely. The `stateConnectionString` attribute is required when the <xref:System.Web.Configuration.SessionStateSection.Mode%2A> is set to <xref:System.Web.SessionState.SessionStateMode>.  
+ This property specifies the server name and the port when the session state is stored remotely. The `stateConnectionString` attribute is required when the <xref:System.Web.Configuration.SessionStateSection.Mode%2A> is set to <xref:System.Web.SessionState.SessionStateMode.StateServer>.  
   
 > [!NOTE]
 >  Make sure the ASP.NET state service is running on the remote server that stores the session-state information. This service is installed with ASP.NET and is located by default at [*drive*:]\WINDOWS\Microsoft.NET\Framework\\*VersionNumber*\aspnet_state.exe.  
@@ -685,7 +685,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This `sessionStateSection` attribute is required when the <xref:System.Web.Configuration.SessionStateSection.Mode%2A> property is set to <xref:System.Web.SessionState.SessionStateMode>.  
+ This `sessionStateSection` attribute is required when the <xref:System.Web.Configuration.SessionStateSection.Mode%2A> property is set to <xref:System.Web.SessionState.SessionStateMode.StateServer>.  
   
    
   

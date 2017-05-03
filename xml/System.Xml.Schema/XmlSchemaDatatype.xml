@@ -302,10 +302,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- W3C XML Schema list types such as xs:ENTITIES, xs:NMTOKENS and xs:IDREFS are not represented by the <xref:System.Xml.Schema.XmlTypeCode> enumeration. Instead they are represented by the <xref:System.Xml.Schema.XmlTypeCode> values for the xs:ENTITY, xs:NMTOKEN and xs:IDREF types with the <xref:System.Xml.Schema.XmlSchemaDatatype.Variety%2A> property of the <xref:System.Xml.Schema.XmlSchemaDatatype> object set to <xref:System.Xml.Schema.XmlSchemaDatatypeVariety>.  
+ W3C XML Schema list types such as xs:ENTITIES, xs:NMTOKENS and xs:IDREFS are not represented by the <xref:System.Xml.Schema.XmlTypeCode> enumeration. Instead they are represented by the <xref:System.Xml.Schema.XmlTypeCode> values for the xs:ENTITY, xs:NMTOKEN and xs:IDREF types with the <xref:System.Xml.Schema.XmlSchemaDatatype.Variety%2A> property of the <xref:System.Xml.Schema.XmlSchemaDatatype> object set to <xref:System.Xml.Schema.XmlSchemaDatatypeVariety.List>.  
   
 > [!NOTE]
->  Both the xs:anySimpleType and xs:anyType types are not represented by <xref:System.Xml.Schema.XmlTypeCode> enumeration. These are represented in an <xref:System.Xml.Schema.XmlSchemaDatatype> object with an <xref:System.Xml.Schema.XmlTypeCode> whose value is <xref:System.Xml.Schema.XmlTypeCode> for xs:anySimpleType or <xref:System.Xml.Schema.XmlTypeCode> for xs:anyType.  
+>  Both the xs:anySimpleType and xs:anyType types are not represented by <xref:System.Xml.Schema.XmlTypeCode> enumeration. These are represented in an <xref:System.Xml.Schema.XmlSchemaDatatype> object with an <xref:System.Xml.Schema.XmlTypeCode> whose value is <xref:System.Xml.Schema.XmlTypeCode.UntypedAtomic> for xs:anySimpleType or <xref:System.Xml.Schema.XmlTypeCode.Item> for xs:anyType.  
   
    
   

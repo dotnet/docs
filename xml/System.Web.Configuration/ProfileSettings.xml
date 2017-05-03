@@ -235,7 +235,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property must have a value greater than zero. The value can be made infinite by setting it to <xref:System.Int32>. Invalid values may cause an exception to be thrown when the configuration section is saved.  
+ This property must have a value greater than zero. The value can be made infinite by setting it to <xref:System.Int32.MaxValue>. Invalid values may cause an exception to be thrown when the configuration section is saved.  
   
  This property specifies the maximum number of times an event of the same type will be raised. For example if the value is `10`, the event will be raised 10 times and ignored thereafter.  
   
@@ -278,9 +278,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property must have a value greater than zero. The value can be made infinite by setting it to <xref:System.Int32>. Invalid values may cause an exception to be thrown when the configuration section is saved.  
+ This property must have a value greater than zero. The value can be made infinite by setting it to <xref:System.Int32.MaxValue>. Invalid values may cause an exception to be thrown when the configuration section is saved.  
   
- This property specifies the minimum number of times an event occurs before an event is raised to the provider. For example, a value of `5` means that ASP.NET will not raise an event to the provider until the fifth instance of the event occurs. If the value is infinite (<xref:System.Int32>), then no event will be raised to the provider.  
+ This property specifies the minimum number of times an event occurs before an event is raised to the provider. For example, a value of `5` means that ASP.NET will not raise an event to the provider until the fifth instance of the event occurs. If the value is infinite (<xref:System.Int32.MaxValue>), then no event will be raised to the provider.  
   
    
   

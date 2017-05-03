@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property of the owning <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell> has been set, this property returns <xref:System.String.Empty>. Otherwise, this property returns "Top Left Header Cell" if the <xref:System.Windows.Forms.Control.RightToLeft%2A> property of the <xref:System.Windows.Forms.DataGridView> control is <xref:System.Windows.Forms.RightToLeft>, and "Top Right Header Cell" otherwise.  
+ If the <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property of the owning <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell> has been set, this property returns <xref:System.String.Empty>. Otherwise, this property returns "Top Left Header Cell" if the <xref:System.Windows.Forms.Control.RightToLeft%2A> property of the <xref:System.Windows.Forms.DataGridView> control is <xref:System.Windows.Forms.RightToLeft.No>, and "Top Right Header Cell" otherwise.  
   
  ]]></format>
         </remarks>
@@ -161,7 +161,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you specify the <xref:System.Windows.Forms.AccessibleNavigation> value for `navigationDirection`, the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.Navigate%2A> method returns an <xref:System.Windows.Forms.AccessibleObject> that represents the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> for the first column. <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.Navigate%2A> returns the same object if you specify <xref:System.Windows.Forms.AccessibleNavigation> or <xref:System.Windows.Forms.AccessibleNavigation> when right-to-left support is enabled. All other <xref:System.Windows.Forms.AccessibleNavigation> values return `null`.  
+ When you specify the <xref:System.Windows.Forms.AccessibleNavigation.Next> value for `navigationDirection`, the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.Navigate%2A> method returns an <xref:System.Windows.Forms.AccessibleObject> that represents the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell> for the first column. <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.Navigate%2A> returns the same object if you specify <xref:System.Windows.Forms.AccessibleNavigation.Right> or <xref:System.Windows.Forms.AccessibleNavigation.Left> when right-to-left support is enabled. All other <xref:System.Windows.Forms.AccessibleNavigation> values return `null`.  
   
  ]]></format>
         </remarks>
@@ -194,9 +194,9 @@
   
 |Parameter value|Action|  
 |---------------------|------------|  
-|<xref:System.Windows.Forms.AccessibleSelection>|Sets input focus to the <xref:System.Windows.Forms.DataGridView> control. If the control contains any visible cells, sets focus to the cell in the first row and column.|  
-|<xref:System.Windows.Forms.AccessibleSelection>|If the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property value is `true`, selects all cells in the control.|  
-|<xref:System.Windows.Forms.AccessibleSelection>|If the `flags` value does not contain the <xref:System.Windows.Forms.AccessibleSelection> value, clears the selection in the control.|  
+|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus>|Sets input focus to the <xref:System.Windows.Forms.DataGridView> control. If the control contains any visible cells, sets focus to the cell in the first row and column.|  
+|<xref:System.Windows.Forms.AccessibleSelection.AddSelection>|If the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property value is `true`, selects all cells in the control.|  
+|<xref:System.Windows.Forms.AccessibleSelection.RemoveSelection>|If the `flags` value does not contain the <xref:System.Windows.Forms.AccessibleSelection.AddSelection> value, clears the selection in the control.|  
 |All other <xref:System.Windows.Forms.AccessibleSelection> values|No action is taken.|  
   
  ]]></format>
@@ -224,7 +224,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.State%2A> property value always includes the <xref:System.Windows.Forms.AccessibleStates> value. The <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.State%2A> value includes the <xref:System.Windows.Forms.AccessibleStates> value if all visible cells in the control are selected. The <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.State%2A> value includes the <xref:System.Windows.Forms.AccessibleStates> value if the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell> is hidden.  
+ The <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.State%2A> property value always includes the <xref:System.Windows.Forms.AccessibleStates.Selectable> value. The <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.State%2A> value includes the <xref:System.Windows.Forms.AccessibleStates.Selected> value if all visible cells in the control are selected. The <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.State%2A> value includes the <xref:System.Windows.Forms.AccessibleStates.Offscreen> value if the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell> is hidden.  
   
  ]]></format>
         </remarks>

@@ -64,7 +64,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
    
   
@@ -114,7 +114,7 @@
   
  Before this event can be raised, the current user of the remote peer must subscribe to the collaboration events of the remote peer. Subscription is accomplished via the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> method.  
   
- This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -149,7 +149,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -185,7 +185,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -217,7 +217,7 @@
 ## Remarks  
  This event is raised when the <xref:System.Net.PeerToPeer.Collaboration.ContactManager.CreateContactAsync%2A> method has completed. It is also raised if the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> operation completes in error or is cancelled.  
   
- This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -246,7 +246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
    
   
@@ -288,7 +288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
    
   
@@ -358,7 +358,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -398,7 +398,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
    
   
@@ -439,7 +439,7 @@
 ## Remarks  
  Unless specified, the default value for this property is `null`.  
   
- Using this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ Using this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -473,7 +473,7 @@
 ## Remarks  
  The associated callback provides a reference to the new <xref:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName%2A>.  
   
- This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -508,7 +508,7 @@
 ## Remarks  
  Before this event can be raised, the current user of the remote peer must subscribe to the collaboration events of the host peer. Subscription is accomplished via the PeerContact <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> methods.  
   
- This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -543,7 +543,7 @@
 ## Remarks  
  Before this event can be raised, the current user of the remote peer must subscribe to the collaboration events of the host peer. Subscription is accomplished via the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> method.  
   
- This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -578,7 +578,7 @@
 ## Remarks  
  Since subscriptions are per user and not per process or per application domain, another application running on the host may also cause this event to be raised.  
   
- This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ This event requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -651,7 +651,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>

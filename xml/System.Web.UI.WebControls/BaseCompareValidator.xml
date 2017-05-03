@@ -524,7 +524,7 @@
  Use the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property to specify the data type used for comparison. The <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property is used differently by the various comparison validation controls.  
   
 > [!IMPORTANT]
->  When the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property is set to <xref:System.Web.UI.WebControls.ValidationDataType> and the current calendar type is non-Gregorian, the validator performs server-side validation only. The validator client script supports only Gregorian calendars.  
+>  When the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property is set to <xref:System.Web.UI.WebControls.ValidationDataType.Date> and the current calendar type is non-Gregorian, the validator performs server-side validation only. The validator client script supports only Gregorian calendars.  
   
  For example, in the <xref:System.Web.UI.WebControls.RangeValidator> control, all values being compared (the upper bound, lower bound, and value of the input control) are converted to the specified data type before any comparison is performed. However, if you use a <xref:System.Web.UI.WebControls.CompareValidator> control and set its <xref:System.Web.UI.WebControls.CompareValidator.Operator%2A> property to `ValidationCompareOperator.DataTypeCheck`, only the value of the input control is converted to the specified data type.  
   

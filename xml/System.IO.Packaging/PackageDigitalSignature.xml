@@ -55,9 +55,9 @@
   
 |||  
 |-|-|  
-|<xref:System.IO.Packaging.CertificateEmbeddingOption>|In its own certificate <xref:System.IO.Packaging.PackagePart> in the package.<br /><br /> The X.509 certificate can be obtained through the <xref:System.IO.Packaging.PackageDigitalSignature.Signer%2A> property.|  
-|<xref:System.IO.Packaging.CertificateEmbeddingOption>|Within the content of the <xref:System.IO.Packaging.PackageDigitalSignature.SignaturePart%2A> in the package.<br /><br /> The X.509 certificate can be obtained through the <xref:System.IO.Packaging.PackageDigitalSignature.Signer%2A> property.|  
-|<xref:System.IO.Packaging.CertificateEmbeddingOption>|External to the package in a location known by both the application that creates the signature and the application that later uses the signature for validation.|  
+|<xref:System.IO.Packaging.CertificateEmbeddingOption.InCertificatePart>|In its own certificate <xref:System.IO.Packaging.PackagePart> in the package.<br /><br /> The X.509 certificate can be obtained through the <xref:System.IO.Packaging.PackageDigitalSignature.Signer%2A> property.|  
+|<xref:System.IO.Packaging.CertificateEmbeddingOption.InSignaturePart>|Within the content of the <xref:System.IO.Packaging.PackageDigitalSignature.SignaturePart%2A> in the package.<br /><br /> The X.509 certificate can be obtained through the <xref:System.IO.Packaging.PackageDigitalSignature.Signer%2A> property.|  
+|<xref:System.IO.Packaging.CertificateEmbeddingOption.NotEmbedded>|External to the package in a location known by both the application that creates the signature and the application that later uses the signature for validation.|  
   
  ]]></format>
         </remarks>
@@ -234,9 +234,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.IO.Packaging.PackageDigitalSignature.Signer%2A> returns the X.509 certificate of the signer when the digital certificate is stored within the package (that is, when <xref:System.IO.Packaging.PackageDigitalSignature.CertificateEmbeddingOption%2A> is <xref:System.IO.Packaging.CertificateEmbeddingOption> or <xref:System.IO.Packaging.CertificateEmbeddingOption>).  
+ <xref:System.IO.Packaging.PackageDigitalSignature.Signer%2A> returns the X.509 certificate of the signer when the digital certificate is stored within the package (that is, when <xref:System.IO.Packaging.PackageDigitalSignature.CertificateEmbeddingOption%2A> is <xref:System.IO.Packaging.CertificateEmbeddingOption.InCertificatePart> or <xref:System.IO.Packaging.CertificateEmbeddingOption.InSignaturePart>).  
   
- <xref:System.IO.Packaging.PackageDigitalSignature.Signer%2A> returns `null` when the X.509 certificate is not stored in the package (that is, when <xref:System.IO.Packaging.PackageDigitalSignature.CertificateEmbeddingOption%2A> is <xref:System.IO.Packaging.CertificateEmbeddingOption>).  
+ <xref:System.IO.Packaging.PackageDigitalSignature.Signer%2A> returns `null` when the X.509 certificate is not stored in the package (that is, when <xref:System.IO.Packaging.PackageDigitalSignature.CertificateEmbeddingOption%2A> is <xref:System.IO.Packaging.CertificateEmbeddingOption.NotEmbedded>).  
   
  ]]></format>
         </remarks>

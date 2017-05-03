@@ -479,9 +479,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To support <xref:System.Windows.Data.BindingMode> and <xref:System.Windows.Data.BindingMode> bindings, the underlying data must implement <xref:System.ComponentModel.INotifyPropertyChanged>. For details, see [How to: Implement Property Change Notification](~/docs/framework/wpf/data/how-to-implement-property-change-notification.md).  
+ To support <xref:System.Windows.Data.BindingMode.OneWay> and <xref:System.Windows.Data.BindingMode.TwoWay> bindings, the underlying data must implement <xref:System.ComponentModel.INotifyPropertyChanged>. For details, see [How to: Implement Property Change Notification](~/docs/framework/wpf/data/how-to-implement-property-change-notification.md).  
   
- For <xref:System.Windows.Data.BindingMode> or <xref:System.Windows.Data.BindingMode> bindings, you can control the target-to-source updates by setting the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property. For more information, see <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A>.  
+ For <xref:System.Windows.Data.BindingMode.TwoWay> or <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings, you can control the target-to-source updates by setting the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property. For more information, see <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A>.  
   
  For more information on the different binding modes, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
@@ -1036,9 +1036,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Bindings that are <xref:System.Windows.Data.BindingMode> or <xref:System.Windows.Data.BindingMode> listen for changes in the target property and propagate them back to the source. This is known as updating the source. Usually, these updates happen whenever the target property changes. This is fine for check boxes and other simple controls, but it is usually not appropriate for text fields. Updating after every keystroke can diminish performance and it denies the user the usual opportunity to backspace and fix typing errors before committing to the new value. Therefore, the default <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value of the <xref:System.Windows.Controls.TextBox.Text%2A> property is <xref:System.Windows.Data.UpdateSourceTrigger> and not <xref:System.Windows.Data.UpdateSourceTrigger>.  
+ Bindings that are <xref:System.Windows.Data.BindingMode.TwoWay> or <xref:System.Windows.Data.BindingMode.OneWayToSource> listen for changes in the target property and propagate them back to the source. This is known as updating the source. Usually, these updates happen whenever the target property changes. This is fine for check boxes and other simple controls, but it is usually not appropriate for text fields. Updating after every keystroke can diminish performance and it denies the user the usual opportunity to backspace and fix typing errors before committing to the new value. Therefore, the default <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value of the <xref:System.Windows.Controls.TextBox.Text%2A> property is <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus> and not <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged>.  
   
- If you set the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value to <xref:System.Windows.Data.UpdateSourceTrigger>, you must call the <xref:System.Windows.Data.BindingExpression.UpdateSource%2A> method or the changes will not propagate back to the source.  
+ If you set the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value to <xref:System.Windows.Data.UpdateSourceTrigger.Explicit>, you must call the <xref:System.Windows.Data.BindingExpression.UpdateSource%2A> method or the changes will not propagate back to the source.  
   
  ]]></format>
         </remarks>

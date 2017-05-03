@@ -1994,7 +1994,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  False  
   
- Because the <xref:System.Type.GetConstructors%2A> overload uses only <xref:System.Reflection.BindingFlags> and <xref:System.Reflection.BindingFlags>, the static constructor is neither counted by the `for` expression nor evaluated by `IsStatic`.  
+ Because the <xref:System.Type.GetConstructors%2A> overload uses only <xref:System.Reflection.BindingFlags.Public> and <xref:System.Reflection.BindingFlags.Instance>, the static constructor is neither counted by the `for` expression nor evaluated by `IsStatic`.  
   
  To find static constructors, use the <xref:System.Type.GetConstructors%2A> overload, and pass it the combination (logical OR) of <xref:System.Reflection.BindingFlags?displayProperty=fullName>, <xref:System.Reflection.BindingFlags?displayProperty=fullName>, <xref:System.Reflection.BindingFlags?displayProperty=fullName>, <xref:System.Reflection.BindingFlags?displayProperty=fullName>, as shown in the following code example:  
   
@@ -5685,12 +5685,12 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <exception cref="T:System.TypeLoadException">
           <paramref name="typeName" /> represents an array of <see cref="T:System.TypedReference" />.</exception>
         <exception cref="T:System.IO.FileLoadException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The assembly or one of its dependencies was found, but could not be loaded.</exception>
         <exception cref="T:System.BadImageFormatException">The assembly or one of its dependencies is not valid.  
@@ -5894,12 +5894,12 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <exception cref="T:System.IO.FileNotFoundException">
           <paramref name="throwOnError" /> is <see langword="true" /> and the assembly or one of its dependencies was not found.</exception>
         <exception cref="T:System.IO.FileLoadException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The assembly or one of its dependencies was found, but could not be loaded.</exception>
         <exception cref="T:System.BadImageFormatException">The assembly or one of its dependencies is not valid.  
@@ -8009,7 +8009,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.TypeAttributes> selects the string format attributes. The string format attributes enhance interoperability by defining how strings should be interpreted.  
+ The <xref:System.Reflection.TypeAttributes.StringFormatMask> selects the string format attributes. The string format attributes enhance interoperability by defining how strings should be interpreted.  
   
  If the current <xref:System.Type> represents a generic type, this property pertains to the generic type definition from which the type was constructed. For example, if the current <xref:System.Type> represents `MyGenericType<int>` (`MyGenericType(Of Integer)` in Visual Basic), the value of this property is determined by `MyGenericType<T>`.  
   
@@ -8233,7 +8233,7 @@ GetType(Array).IsAssignableFrom(type)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.TypeAttributes> selects the string format attributes. The string format attributes enhance interoperability by defining how strings should be interpreted.  
+ The <xref:System.Reflection.TypeAttributes.StringFormatMask> selects the string format attributes. The string format attributes enhance interoperability by defining how strings should be interpreted.  
   
  If the current <xref:System.Type> represents a constructed generic type, this property applies to the generic type definition from which the type was constructed. For example, if the current <xref:System.Type> represents `MyGenericType<int>` (`MyGenericType(Of Integer)` in Visual Basic), the value of this property is determined by `MyGenericType<T>`.  
   
@@ -9053,7 +9053,7 @@ GetType(Array).IsAssignableFrom(type)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.TypeAttributes> distinguishes a type declaration as class, interface or value type.  
+ The <xref:System.Reflection.TypeAttributes.ClassSemanticsMask> distinguishes a type declaration as class, interface or value type.  
   
  If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this property always returns `false`.  
   
@@ -9234,7 +9234,7 @@ GetType(Array).IsAssignableFrom(type)
  The <xref:System.Type.IsNested%2A> property returns `true` for all nested types, regardless of visibility. To test for nesting and visibility at the same time, use the related properties <xref:System.Type.IsNestedAssembly%2A>, <xref:System.Type.IsNestedFamily%2A>, <xref:System.Type.IsNestedFamANDAssem%2A>, <xref:System.Type.IsNestedFamORAssem%2A>, <xref:System.Type.IsNestedPrivate%2A>, or <xref:System.Type.IsNestedPublic%2A>.  
   
 > [!NOTE]
->  The <xref:System.Reflection.TypeAttributes> enumeration member selects the visibility attributes for a type.  
+>  The <xref:System.Reflection.TypeAttributes.VisibilityMask> enumeration member selects the visibility attributes for a type.  
   
    
   
@@ -10102,7 +10102,7 @@ GetType(Array).IsAssignableFrom(type)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.TypeAttributes> is used to select the string format attributes. The string format attributes enhance interoperability by defining how strings should be interpreted.  
+ The <xref:System.Reflection.TypeAttributes.StringFormatMask> is used to select the string format attributes. The string format attributes enhance interoperability by defining how strings should be interpreted.  
   
  If the current <xref:System.Type> represents a constructed generic type, this property applies to the generic type definition from which the type was constructed. For example, if the current <xref:System.Type> represents `MyGenericType<int>` (`MyGenericType(Of Integer)` in Visual Basic), the value of this property is determined by `MyGenericType<T>`.  
   

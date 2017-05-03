@@ -330,7 +330,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The defined field will have the field attributes <xref:System.Reflection.FieldAttributes>, <xref:System.Reflection.FieldAttributes>, and <xref:System.Reflection.FieldAttributes> set.  
+ The defined field will have the field attributes <xref:System.Reflection.FieldAttributes.Public>, <xref:System.Reflection.FieldAttributes.Static>, and <xref:System.Reflection.FieldAttributes.Literal> set.  
   
 > [!NOTE]
 >  In the .NET Framework versions 1.0 and 1.1, it is necessary to define enumerations using <xref:System.Reflection.Emit.TypeBuilder> because <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements are of type <xref:System.Int32> instead of the enumeration type. In the .NET Framework version 2.0, <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements have the correct type.  

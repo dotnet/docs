@@ -20,7 +20,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.DataSourceCacheExpiry> enumeration declaratively. In this example, a <xref:System.Web.UI.WebControls.SqlDataSource> control is used to display data in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.SqlDataSource> control has caching enabled and its <xref:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy%2A> set to Sliding, to cache data as long as there is activity.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.DataSourceCacheExpiry.Absolute> enumeration declaratively. In this example, a <xref:System.Web.UI.WebControls.SqlDataSource> control is used to display data in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.SqlDataSource> control has caching enabled and its <xref:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy%2A> set to Sliding, to cache data as long as there is activity.  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_19sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_19sql/CS/sql19cs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_19sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_19sql/VB/sql19vb.aspx#1)]  -->  

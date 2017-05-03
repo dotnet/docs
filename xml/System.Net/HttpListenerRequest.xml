@@ -1024,7 +1024,7 @@
   
  An application could use the <xref:System.Net.TransportContext> property to perform custom authentication using calls to the native Win32 [AcceptSecurityContext](http://go.microsoft.com/fwlink/?LinkId=147021) function.  
   
- If an application attempts to retrieve the channel binding token (CBT) from this <xref:System.Net.HttpListenerRequest.TransportContext%2A> property using the <xref:System.Net.TransportContext.GetChannelBinding%2A> method and the <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind> is not <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind>, then the <xref:System.Net.HttpListenerRequest> will throw <xref:System.NotSupportedException>. The <xref:System.Net.HttpListenerRequest> overrides the <xref:System.Net.TransportContext.GetChannelBinding%2A> method with an internal implementation.  
+ If an application attempts to retrieve the channel binding token (CBT) from this <xref:System.Net.HttpListenerRequest.TransportContext%2A> property using the <xref:System.Net.TransportContext.GetChannelBinding%2A> method and the <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind> is not <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Endpoint>, then the <xref:System.Net.HttpListenerRequest> will throw <xref:System.NotSupportedException>. The <xref:System.Net.HttpListenerRequest> overrides the <xref:System.Net.TransportContext.GetChannelBinding%2A> method with an internal implementation.  
   
  ]]></format>
         </remarks>
@@ -1156,7 +1156,7 @@
 ## Remarks  
  If a client has followed a hyperlink to the requested URI, its request might contain a `Referrer` header that identifies the URI of the resource that contained the hyperlink.  
   
- Clients can falsify or choose not to present a <xref:System.Net.HttpRequestHeader> header. Therefore, while the <xref:System.Net.HttpListenerRequest.UrlReferrer%2A> property can be useful for identifying basic trends in Web traffic; you should not use it as part of an authorization scheme to control access to data.  
+ Clients can falsify or choose not to present a <xref:System.Net.HttpRequestHeader.Referer> header. Therefore, while the <xref:System.Net.HttpListenerRequest.UrlReferrer%2A> property can be useful for identifying basic trends in Web traffic; you should not use it as part of an authorization scheme to control access to data.  
   
  For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
   

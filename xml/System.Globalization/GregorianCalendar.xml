@@ -91,7 +91,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default <xref:System.Globalization.GregorianCalendarTypes> value is <xref:System.Globalization.GregorianCalendarTypes>. If the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=fullName> property of the <xref:System.Globalization.CultureInfo> is set to a <xref:System.Globalization.GregorianCalendar> that is created with this constructor, the dates and times are localized in the language associated with the <xref:System.Globalization.CultureInfo>.  
+ The default <xref:System.Globalization.GregorianCalendarTypes> value is <xref:System.Globalization.GregorianCalendarTypes.Localized>. If the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=fullName> property of the <xref:System.Globalization.CultureInfo> is set to a <xref:System.Globalization.GregorianCalendar> that is created with this constructor, the dates and times are localized in the language associated with the <xref:System.Globalization.CultureInfo>.  
   
    
   

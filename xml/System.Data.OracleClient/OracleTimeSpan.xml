@@ -180,40 +180,23 @@
         <summary>Compares this <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure to the supplied object and returns an indication of their relative values.</summary>
         <returns>A signed number indicating the relative values of the instance of the <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure and the object.  
   
- <list type="table">  
-<listheader>  
-<term> Return Value  
+ <list type="table"><listheader><term> Return Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance is less than the object.  
+ </term><description> This instance is less than the object.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance is the same as the object.  
+ </term><description> This instance is the same as the object.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance is greater than the object, or the object is a null reference (<see langword="Nothing" /> in Visual Basic).  
+ </term><description> This instance is greater than the object, or the object is a null reference (<see langword="Nothing" /> in Visual Basic).  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -707,9 +707,9 @@
   
 |File access|Permission|  
 |-----------------|----------------|  
-|Read|<xref:System.Security.Permissions.FileIOPermissionAccess>|  
-|Write|<xref:System.Security.Permissions.FileIOPermissionAccess>|  
-|ReadWrite|<xref:System.Security.Permissions.FileIOPermissionAccess> and <xref:System.Security.Permissions.FileIOPermissionAccess>|  
+|Read|<xref:System.Security.Permissions.FileIOPermissionAccess.Read>|  
+|Write|<xref:System.Security.Permissions.FileIOPermissionAccess.Write>|  
+|ReadWrite|<xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.Write>|  
   
  For more information about CAS, see [Code Access Security and ADO.NET](~/docs/framework/data/adonet/code-access-security.md).  
   

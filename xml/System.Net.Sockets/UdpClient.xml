@@ -231,7 +231,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `family` parameter determines whether the listener uses an IP version 4 address (IPv4) or an IP version 6 (IPv6) address. To use an IPv4 address, pass the <xref:System.Net.Sockets.AddressFamily> value. To use an IPv6 address, pass the <xref:System.Net.Sockets.AddressFamily> value. Passing any other value will cause the method to throw an <xref:System.ArgumentException>.  
+ The `family` parameter determines whether the listener uses an IP version 4 address (IPv4) or an IP version 6 (IPv6) address. To use an IPv4 address, pass the <xref:System.Net.Sockets.AddressFamily.InterNetwork> value. To use an IPv6 address, pass the <xref:System.Net.Sockets.AddressFamily.InterNetworkV6> value. Passing any other value will cause the method to throw an <xref:System.ArgumentException>.  
   
  If this constructor is used, the <xref:System.Net.Sockets.UdpClient> instance is set with the address family specified by the `family` parameter  that cannot be changed or overwritten by a connect method call with a different address family.  
   
@@ -279,7 +279,7 @@
 ## Remarks  
  This constructor creates an underlying <xref:System.Net.Sockets.Socket> and binds it to the port number from which you intend to communicate.  
   
- The `family` parameter determines whether the listener uses an IP version 4 address (IPv4) or an IP version 6 (IPv6) address. To use an IPv4 address, pass the <xref:System.Net.Sockets.AddressFamily> value. To use an IPv6 address, pass the <xref:System.Net.Sockets.AddressFamily> value. Passing any other value will cause the method to throw an <xref:System.ArgumentException>.  
+ The `family` parameter determines whether the listener uses an IP version 4 address (IPv4) or an IP version 6 (IPv6) address. To use an IPv4 address, pass the <xref:System.Net.Sockets.AddressFamily.InterNetwork> value. To use an IPv6 address, pass the <xref:System.Net.Sockets.AddressFamily.InterNetworkV6> value. Passing any other value will cause the method to throw an <xref:System.ArgumentException>.  
   
  If this constructor is used, the <xref:System.Net.Sockets.UdpClient> instance is set with the address family specified by the `family` parameter  that cannot be changed or overwritten by a connect method call with a different address family.  
   
@@ -417,9 +417,9 @@
 ## Remarks  
  The <xref:System.Net.Sockets.UdpClient.AllowNatTraversal%2A> method is used to enable or disable NAT traversal for a <xref:System.Net.Sockets.UdpClient> instance. NAT traversal may be provided using Teredo, 6to4, or an ISATAP tunnel.  
   
- When the `allowed` parameter is false, the <xref:System.Net.Sockets.SocketOptionName> option on the associated socket is set to <xref:System.Net.Sockets.IPProtectionLevel>. This explicitly disables NAT traversal for a <xref:System.Net.Sockets.UdpClient> instance.  
+ When the `allowed` parameter is false, the <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel> option on the associated socket is set to <xref:System.Net.Sockets.IPProtectionLevel.EdgeRestricted>. This explicitly disables NAT traversal for a <xref:System.Net.Sockets.UdpClient> instance.  
   
- When the `allowed` parameter is true, the <xref:System.Net.Sockets.SocketOptionName> option on the associated socket is set to <xref:System.Net.Sockets.IPProtectionLevel>. This may allow NAT traversal for a <xref:System.Net.Sockets.UdpClient> depending on firewall rules in place on the system.  
+ When the `allowed` parameter is true, the <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel> option on the associated socket is set to <xref:System.Net.Sockets.IPProtectionLevel.Unrestricted>. This may allow NAT traversal for a <xref:System.Net.Sockets.UdpClient> depending on firewall rules in place on the system.  
   
  A Teredo address is an IPv6 address with the prefix of 2001::/32. Teredo addresses can be returned through normal DNS name resolution or enumerated as an IPv6 address assigned to a local interface.  
   

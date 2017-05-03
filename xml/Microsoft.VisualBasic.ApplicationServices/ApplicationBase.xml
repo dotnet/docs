@@ -84,7 +84,7 @@
  Use the `My.Application.ChangeUICulture` method to change the culture that the current thread uses for retrieving culture-specific resources.  
   
 > [!IMPORTANT]
->  The `My.Application.ChangeCulture` method requires a <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag> set. Manipulating threads is dangerous because of the security state associated with threads. Therefore, this permission should be given only as necessary to trustworthy code. You cannot change a thread's culture in semi-trusted code.  
+>  The `My.Application.ChangeCulture` method requires a <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlThread> set. Manipulating threads is dangerous because of the security state associated with threads. Therefore, this permission should be given only as necessary to trustworthy code. You cannot change a thread's culture in semi-trusted code.  
   
 ## Availability by Project Type  
   

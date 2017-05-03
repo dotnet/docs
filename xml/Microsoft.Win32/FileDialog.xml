@@ -306,7 +306,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:Microsoft.Win32.FileDialog.Filter%2A> is either `null` or <xref:System.String>, all files are displayed, and folders are always displayed.  
+ If <xref:Microsoft.Win32.FileDialog.Filter%2A> is either `null` or <xref:System.String.Empty>, all files are displayed, and folders are always displayed.  
   
  You can specify a subset of file types to be displayed by setting the <xref:Microsoft.Win32.FileDialog.Filter%2A> property. Each file type can represent a specific type of file, such as the following:  
   
@@ -490,7 +490,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there is no initial directory set, this property will contain <xref:System.String> rather than a null string.  
+ If there is no initial directory set, this property will contain <xref:System.String.Empty> rather than a null string.  
   
  ]]></format>
         </remarks>
@@ -726,7 +726,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:Microsoft.Win32.FileDialog.Title%2A> is null or <xref:System.String>, a default, localized value is used, such as "Save As" or "Open".  
+ If <xref:Microsoft.Win32.FileDialog.Title%2A> is null or <xref:System.String.Empty>, a default, localized value is used, such as "Save As" or "Open".  
   
  ]]></format>
         </remarks>

@@ -278,7 +278,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained in the specified permission.  For example, a permission for <xref:System.Security.Permissions.DataProtectionPermissionFlags> access is a subset of a permission for <xref:System.Security.Permissions.DataProtectionPermissionFlags> access.  
+ The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained in the specified permission.  For example, a permission for <xref:System.Security.Permissions.DataProtectionPermissionFlags.ProtectData> access is a subset of a permission for <xref:System.Security.Permissions.DataProtectionPermissionFlags.AllFlags> access.  
   
    
   

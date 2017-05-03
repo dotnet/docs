@@ -50,9 +50,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultBodyStyle%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle> value.  
+ Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultBodyStyle%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle.WrappedRequest> value.  
   
- Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingRequestFormat%2A> and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingResponseFormat%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle> value.  
+ Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingRequestFormat%2A> and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingResponseFormat%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle.WrappedRequest> value.  
   
  ]]></format>
         </remarks>
@@ -209,7 +209,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Web.WebMessageBodyStyle> value is the only <xref:System.ServiceModel.Web.WebMessageBodyStyle> supported and setting any other value results in a <xref:System.NotSupportedException> being thrown.  
+ The <xref:System.ServiceModel.Web.WebMessageBodyStyle.WrappedRequest> value is the only <xref:System.ServiceModel.Web.WebMessageBodyStyle> supported and setting any other value results in a <xref:System.NotSupportedException> being thrown.  
   
  ]]></format>
         </remarks>

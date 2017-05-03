@@ -38,7 +38,7 @@
   
  Unlike the <xref:System.Windows.Forms.ComboBox> control, the <xref:System.Windows.Forms.DataGridViewComboBoxCell> does not have <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> properties. Instead, selecting a value from a drop-down list sets the cell <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property.  
   
- The default sort mode for this column type is <xref:System.Windows.Forms.DataGridViewColumnSortMode>.  
+ The default sort mode for this column type is <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable>.  
   
    
   
@@ -317,7 +317,7 @@
   
  The behavior and appearance of the drop-down arrow in the cells is indicated by the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.FlatStyle%2A> property.  
   
- To enable cell highlighting when the mouse pointer is over a cell, you must set the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayStyle%2A> property to <xref:System.Windows.Forms.DataGridViewComboBoxDisplayStyle> and the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.FlatStyle%2A> property to <xref:System.Windows.Forms.FlatStyle>.  
+ To enable cell highlighting when the mouse pointer is over a cell, you must set the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayStyle%2A> property to <xref:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox> and the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.FlatStyle%2A> property to <xref:System.Windows.Forms.FlatStyle.Popup>.  
   
  Getting or setting this property gets or sets the <xref:System.Windows.Forms.DataGridViewComboBoxCell.DisplayStyle%2A> property of the object returned by the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.CellTemplate%2A> property. Setting this property also sets the <xref:System.Windows.Forms.DataGridViewComboBoxCell.DisplayStyle%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
   
@@ -438,7 +438,7 @@
 </appSettings>  
 ```  
   
- To enable cell highlighting when the mouse pointer is over a cell, you must set the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayStyle%2A> property to <xref:System.Windows.Forms.DataGridViewComboBoxDisplayStyle> and the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.FlatStyle%2A> property to <xref:System.Windows.Forms.FlatStyle>.  
+ To enable cell highlighting when the mouse pointer is over a cell, you must set the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayStyle%2A> property to <xref:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox> and the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.FlatStyle%2A> property to <xref:System.Windows.Forms.FlatStyle.Popup>.  
   
  Getting or setting this property gets or sets the <xref:System.Windows.Forms.DataGridViewComboBoxCell.FlatStyle%2A> property of the object returned by the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.CellTemplate%2A> property. Setting this property also sets the <xref:System.Windows.Forms.DataGridViewComboBoxCell.FlatStyle%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
   

@@ -65,9 +65,9 @@
   
  Controls contained in a <xref:System.Windows.Forms.TabPage> are not created until the tab page is shown, and any data bindings in these controls are not activated until the tab page is shown.  
   
- When visual styles are enabled, and the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to a value other than <xref:System.Windows.Forms.TabAlignment>, the tab contents might not render correctly. To work around this issue, you can paint the tab contents yourself using owner drawing. For more information, see [How to: Display Side-Aligned Tabs with TabControl](~/docs/framework/winforms/controls/how-to-display-side-aligned-tabs-with-tabcontrol.md).  
+ When visual styles are enabled, and the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to a value other than <xref:System.Windows.Forms.TabAlignment.Top>, the tab contents might not render correctly. To work around this issue, you can paint the tab contents yourself using owner drawing. For more information, see [How to: Display Side-Aligned Tabs with TabControl](~/docs/framework/winforms/controls/how-to-display-side-aligned-tabs-with-tabcontrol.md).  
   
- When the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to a value other than <xref:System.Windows.Forms.TabAlignment> and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property is set to a value other than <xref:System.Windows.Forms.TabAppearance>, the tab page contents might not render correctly.  
+ When the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to a value other than <xref:System.Windows.Forms.TabAlignment.Top> and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property is set to a value other than <xref:System.Windows.Forms.TabAppearance.Normal>, the tab page contents might not render correctly.  
   
    
   
@@ -140,14 +140,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to <xref:System.Windows.Forms.TabAlignment> or <xref:System.Windows.Forms.TabAlignment>, the <xref:System.Windows.Forms.TabControl.Multiline%2A> property is automatically set to `true`.  
+ When the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to <xref:System.Windows.Forms.TabAlignment.Left> or <xref:System.Windows.Forms.TabAlignment.Right>, the <xref:System.Windows.Forms.TabControl.Multiline%2A> property is automatically set to `true`.  
   
- When you set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to <xref:System.Windows.Forms.TabAppearance>, it only appears as such when the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to <xref:System.Windows.Forms.TabAlignment>. Otherwise, the <xref:System.Windows.Forms.TabControl.Appearance%2A> property displays as if set to the <xref:System.Windows.Forms.TabAppearance> value.  
+ When you set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to <xref:System.Windows.Forms.TabAppearance.FlatButtons>, it only appears as such when the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to <xref:System.Windows.Forms.TabAlignment.Top>. Otherwise, the <xref:System.Windows.Forms.TabControl.Appearance%2A> property displays as if set to the <xref:System.Windows.Forms.TabAppearance.Buttons> value.  
   
- When you set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to <xref:System.Windows.Forms.TabAppearance>, you must also set the <xref:System.Windows.Forms.TabControl.Alignment%2A> property to <xref:System.Windows.Forms.TabAlignment> so that the buttons display correctly.  
+ When you set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to <xref:System.Windows.Forms.TabAppearance.Buttons>, you must also set the <xref:System.Windows.Forms.TabControl.Alignment%2A> property to <xref:System.Windows.Forms.TabAlignment.Top> so that the buttons display correctly.  
   
 > [!NOTE]
->  When you set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to `Buttons`, you must also set the <xref:System.Windows.Forms.TabControl.Alignment%2A> property to `Top` so that the tab page contents display correctly. Additionally, when visual styles are enabled, and the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to a value other than <xref:System.Windows.Forms.TabAlignment>, the tab contents may not render correctly.  
+>  When you set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to `Buttons`, you must also set the <xref:System.Windows.Forms.TabControl.Alignment%2A> property to `Top` so that the tab page contents display correctly. Additionally, when visual styles are enabled, and the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to a value other than <xref:System.Windows.Forms.TabAlignment.Top>, the tab contents may not render correctly.  
   
    
   
@@ -740,7 +740,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you set the <xref:System.Windows.Forms.TabControl.DrawMode%2A> property to <xref:System.Windows.Forms.TabDrawMode>, the <xref:System.Windows.Forms.TabControl> raises the <xref:System.Windows.Forms.TabControl.DrawItem> event whenever it needs to paint one of its tabs. To customize the appearance of the tabs, provide your own painting code in a handler for the <xref:System.Windows.Forms.TabControl.DrawItem> event.  
+ When you set the <xref:System.Windows.Forms.TabControl.DrawMode%2A> property to <xref:System.Windows.Forms.TabDrawMode.OwnerDrawFixed>, the <xref:System.Windows.Forms.TabControl> raises the <xref:System.Windows.Forms.TabControl.DrawItem> event whenever it needs to paint one of its tabs. To customize the appearance of the tabs, provide your own painting code in a handler for the <xref:System.Windows.Forms.TabControl.DrawItem> event.  
   
  The <xref:System.Windows.Forms.TabControl> does not support variable tab sizes with owner drawing.  
   
@@ -785,7 +785,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you set the <xref:System.Windows.Forms.TabControl.DrawMode%2A> property to <xref:System.Windows.Forms.TabDrawMode>, the <xref:System.Windows.Forms.TabControl> raises the <xref:System.Windows.Forms.TabControl.DrawItem> event whenever it needs to paint one of its tabs. To customize the appearance of the tabs, provide your own painting code in a handler for the <xref:System.Windows.Forms.TabControl.DrawItem> event.  
+ When you set the <xref:System.Windows.Forms.TabControl.DrawMode%2A> property to <xref:System.Windows.Forms.TabDrawMode.OwnerDrawFixed>, the <xref:System.Windows.Forms.TabControl> raises the <xref:System.Windows.Forms.TabControl.DrawItem> event whenever it needs to paint one of its tabs. To customize the appearance of the tabs, provide your own painting code in a handler for the <xref:System.Windows.Forms.TabControl.DrawItem> event.  
   
  The <xref:System.Windows.Forms.TabControl> does not support variable tab sizes with owner drawing.  
   
@@ -1136,7 +1136,7 @@
    
   
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. To define the dimensions of the tabs, set the <xref:System.Windows.Forms.TabControl.ItemSize%2A> property equal to a <xref:System.Drawing.Size> structure. In this example, <xref:System.Drawing.Size> defines the tabs 90 pixels wide and 50 pixels high. You cannot change the width of the tabs unless the <xref:System.Windows.Forms.TabControl.SizeMode%2A> property is set to the <xref:System.Windows.Forms.TabSizeMode> value.  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. To define the dimensions of the tabs, set the <xref:System.Windows.Forms.TabControl.ItemSize%2A> property equal to a <xref:System.Drawing.Size> structure. In this example, <xref:System.Drawing.Size> defines the tabs 90 pixels wide and 50 pixels high. You cannot change the width of the tabs unless the <xref:System.Windows.Forms.TabControl.SizeMode%2A> property is set to the <xref:System.Windows.Forms.TabSizeMode.Fixed> value.  
   
  Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
@@ -1440,10 +1440,10 @@
   
 |Key|Description|  
 |---------|-----------------|  
-|<xref:System.Windows.Forms.Keys> + <xref:System.Windows.Forms.Keys>|Selects the next <xref:System.Windows.Forms.TabPage>.|  
-|<xref:System.Windows.Forms.Keys> + <xref:System.Windows.Forms.Keys> + <xref:System.Windows.Forms.Keys>|Selects the previous <xref:System.Windows.Forms.TabPage>.|  
-|<xref:System.Windows.Forms.Keys> + <xref:System.Windows.Forms.Keys>|Selects the next <xref:System.Windows.Forms.TabPage>.|  
-|<xref:System.Windows.Forms.Keys> + <xref:System.Windows.Forms.Keys>|Selects the previous <xref:System.Windows.Forms.TabPage>.|  
+|<xref:System.Windows.Forms.Keys.Control> + <xref:System.Windows.Forms.Keys.Tab>|Selects the next <xref:System.Windows.Forms.TabPage>.|  
+|<xref:System.Windows.Forms.Keys.Control> + <xref:System.Windows.Forms.Keys.Shift> + <xref:System.Windows.Forms.Keys.Tab>|Selects the previous <xref:System.Windows.Forms.TabPage>.|  
+|<xref:System.Windows.Forms.Keys.Control> + <xref:System.Windows.Forms.Keys.PageDown>|Selects the next <xref:System.Windows.Forms.TabPage>.|  
+|<xref:System.Windows.Forms.Keys.Control> + <xref:System.Windows.Forms.Keys.PageUp>|Selects the previous <xref:System.Windows.Forms.TabPage>.|  
   
  ]]></format>
         </remarks>

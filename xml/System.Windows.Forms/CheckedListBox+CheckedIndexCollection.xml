@@ -26,11 +26,11 @@
   
 |Index|Item|Check State|  
 |-----------|----------|-----------------|  
-|0|object 1|<xref:System.Windows.Forms.CheckState>|  
-|1|object 2|<xref:System.Windows.Forms.CheckState>|  
-|2|object 3|<xref:System.Windows.Forms.CheckState>|  
-|3|object 4|<xref:System.Windows.Forms.CheckState>|  
-|4|object 5|<xref:System.Windows.Forms.CheckState>|  
+|0|object 1|<xref:System.Windows.Forms.CheckState.Unchecked>|  
+|1|object 2|<xref:System.Windows.Forms.CheckState.Checked>|  
+|2|object 3|<xref:System.Windows.Forms.CheckState.Unchecked>|  
+|3|object 4|<xref:System.Windows.Forms.CheckState.Indeterminate>|  
+|4|object 5|<xref:System.Windows.Forms.CheckState.Checked>|  
   
  Based on the previous example, the following table shows the indexed collection of indexes of checked items.  
   

@@ -413,8 +413,8 @@
   
 |Edge mode value|Description|  
 |---------------------|-----------------|  
-|<xref:System.Windows.Media.EdgeMode>|Render edges of non-text primitives as aliased edges.|  
-|<xref:System.Windows.Media.EdgeMode>|No edge mode is specified. Do not change the current edge mode that is applied to non-text primitives.|  
+|<xref:System.Windows.Media.EdgeMode.Aliased>|Render edges of non-text primitives as aliased edges.|  
+|<xref:System.Windows.Media.EdgeMode.Unspecified>|No edge mode is specified. Do not change the current edge mode that is applied to non-text primitives.|  
   
  ]]></format>
         </remarks>

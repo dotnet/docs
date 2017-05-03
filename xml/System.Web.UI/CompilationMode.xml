@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.CompilationMode> enumeration values indicate whether a page or control should be compiled at run time. When no compilation mode is specified, the default value is Always. Setting a page to never compile using the Never attribute will increase performance by disqualifying the specified page in the compilation process. To define a page-specific <xref:System.Web.UI.CompilationMode> attribute that specifies an .aspx, .ascx or .master file should not be compiled at the page level, you can use a directive like the following:  
+ The <xref:System.Web.UI.CompilationMode> enumeration values indicate whether a page or control should be compiled at run time. When no compilation mode is specified, the default value is Always. Setting a page to never compile using the Never attribute will increase performance by disqualifying the specified page in the compilation process. To define a page-specific <xref:System.Web.UI.CompilationMode.Always> attribute that specifies an .aspx, .ascx or .master file should not be compiled at the page level, you can use a directive like the following:  
   
  `<%@ page compilationMode="never" %>`  
   

@@ -129,7 +129,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.GCHandleType> handles are opaque, which means that you cannot resolve the address of the object it contains through the handle.  
+ <xref:System.Runtime.InteropServices.GCHandleType.Normal> handles are opaque, which means that you cannot resolve the address of the object it contains through the handle.  
   
    
   
@@ -394,7 +394,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property when using <xref:System.Runtime.InteropServices.GCHandleType> handles to determine if the <xref:System.Runtime.InteropServices.GCHandle> is still available. When the garbage collector collects the object, the <xref:System.Runtime.InteropServices.GCHandleType> handle can still be resurrected in the finalizer. In that case, the handle is not allocated (it is lost when the garbage collector attempts to collect the object), even though the target object is valid.  
+ Use this property when using <xref:System.Runtime.InteropServices.GCHandleType.Weak> handles to determine if the <xref:System.Runtime.InteropServices.GCHandle> is still available. When the garbage collector collects the object, the <xref:System.Runtime.InteropServices.GCHandleType.Weak> handle can still be resurrected in the finalizer. In that case, the handle is not allocated (it is lost when the garbage collector attempts to collect the object), even though the target object is valid.  
   
  ]]></format>
         </remarks>

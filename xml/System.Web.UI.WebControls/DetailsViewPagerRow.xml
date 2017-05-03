@@ -47,7 +47,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DetailsViewPagerRow.%23ctor%2A> constructor calls the base class constructor, <xref:System.Web.UI.WebControls.DetailsViewRow.%23ctor%2A>, with the specified parameters. For a <xref:System.Web.UI.WebControls.DetailsViewPagerRow> control in a <xref:System.Web.UI.WebControls.DetailsView> control, the call is made with `rowIndex` equal to -1, `rowType` equal to <xref:System.Web.UI.WebControls.DataControlRowType>, and `rowState` equal to <xref:System.Web.UI.WebControls.DataControlRowState>.  
+ The <xref:System.Web.UI.WebControls.DetailsViewPagerRow.%23ctor%2A> constructor calls the base class constructor, <xref:System.Web.UI.WebControls.DetailsViewRow.%23ctor%2A>, with the specified parameters. For a <xref:System.Web.UI.WebControls.DetailsViewPagerRow> control in a <xref:System.Web.UI.WebControls.DetailsView> control, the call is made with `rowIndex` equal to -1, `rowType` equal to <xref:System.Web.UI.WebControls.DataControlRowType.Pager>, and `rowState` equal to <xref:System.Web.UI.WebControls.DataControlRowState.Normal>.  
   
  ]]></format>
         </remarks>

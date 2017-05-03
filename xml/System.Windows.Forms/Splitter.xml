@@ -427,7 +427,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.Splitter.Dock%2A> property to define how a control is automatically resized as its parent control is resized. You can only set the <xref:System.Windows.Forms.Splitter.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>, <xref:System.Windows.Forms.DockStyle>, <xref:System.Windows.Forms.DockStyle>, or <xref:System.Windows.Forms.DockStyle>. The <xref:System.Windows.Forms.Splitter> control enables the user to resize the docked control that is immediately before it in the docking order. Therefore, to enable the user to resize a docked control, dock the control to an edge of a container, and then dock a <xref:System.Windows.Forms.Splitter> control to the same side of that container. For more information, see the example in the <xref:System.Windows.Forms.Splitter> class.  
+ Use the <xref:System.Windows.Forms.Splitter.Dock%2A> property to define how a control is automatically resized as its parent control is resized. You can only set the <xref:System.Windows.Forms.Splitter.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Top>, <xref:System.Windows.Forms.DockStyle.Bottom>, <xref:System.Windows.Forms.DockStyle.Left>, or <xref:System.Windows.Forms.DockStyle.Right>. The <xref:System.Windows.Forms.Splitter> control enables the user to resize the docked control that is immediately before it in the docking order. Therefore, to enable the user to resize a docked control, dock the control to an edge of a container, and then dock a <xref:System.Windows.Forms.Splitter> control to the same side of that container. For more information, see the example in the <xref:System.Windows.Forms.Splitter> class.  
   
  ]]></format>
         </remarks>

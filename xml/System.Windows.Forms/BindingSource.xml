@@ -2575,7 +2575,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the underlying list is not an <xref:System.ComponentModel.IBindingList>, the <xref:System.Windows.Forms.BindingSource.SortDirection%2A> property will always return <xref:System.ComponentModel.ListSortDirection>.  
+ If the underlying list is not an <xref:System.ComponentModel.IBindingList>, the <xref:System.Windows.Forms.BindingSource.SortDirection%2A> property will always return <xref:System.ComponentModel.ListSortDirection.Ascending>.  
   
  ]]></format>
         </remarks>

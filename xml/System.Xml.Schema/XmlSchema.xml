@@ -112,9 +112,9 @@
   
 |<xref:System.Xml.Schema.XmlSchemaForm> Value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
-|<xref:System.Xml.Schema.XmlSchemaForm>|The attribute form is not specified in schema.|  
-|<xref:System.Xml.Schema.XmlSchemaForm>|Attributes from the target namespace must be qualified with the namespace prefix.|  
-|<xref:System.Xml.Schema.XmlSchemaForm>|Attributes from the target namespace are not required to be qualified with the namespace prefix.|  
+|<xref:System.Xml.Schema.XmlSchemaForm.None>|The attribute form is not specified in schema.|  
+|<xref:System.Xml.Schema.XmlSchemaForm.Qualified>|Attributes from the target namespace must be qualified with the namespace prefix.|  
+|<xref:System.Xml.Schema.XmlSchemaForm.Unqualified>|Attributes from the target namespace are not required to be qualified with the namespace prefix.|  
   
  This value is the global default for all attributes declared in the target namespace. Individual attributes can override this setting for the local scope using the `form` attribute.  
   
@@ -350,9 +350,9 @@
   
 |<xref:System.Xml.Schema.XmlSchemaForm> Value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
-|<xref:System.Xml.Schema.XmlSchemaForm>|The element form is not specified in the schema.|  
-|<xref:System.Xml.Schema.XmlSchemaForm>|Elements from the target namespace must be qualified with the namespace prefix.|  
-|<xref:System.Xml.Schema.XmlSchemaForm>|Elements from the target namespace are not required to be qualified with the namespace prefix.|  
+|<xref:System.Xml.Schema.XmlSchemaForm.None>|The element form is not specified in the schema.|  
+|<xref:System.Xml.Schema.XmlSchemaForm.Qualified>|Elements from the target namespace must be qualified with the namespace prefix.|  
+|<xref:System.Xml.Schema.XmlSchemaForm.Unqualified>|Elements from the target namespace are not required to be qualified with the namespace prefix.|  
   
  This value is the global default for all elements declared in the target namespace. Individual elements can override this setting for the local scope by using the `form` attribute.  
   

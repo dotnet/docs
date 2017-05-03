@@ -25,7 +25,7 @@
   
  By setting the <xref:System.Web.Compilation.BuildProviderAppliesToAttribute> attribute, you can limit a <xref:System.Web.Compilation.BuildProvider> object to certain reserved ASP.NET directories, such as \App_Code.  
   
- If you do not apply a <xref:System.Web.Compilation.BuildProviderAppliesToAttribute> attribute to a <xref:System.Web.Compilation.BuildProvider> class, the default is <xref:System.Web.Compilation.BuildProviderAppliesTo>.  
+ If you do not apply a <xref:System.Web.Compilation.BuildProviderAppliesToAttribute> attribute to a <xref:System.Web.Compilation.BuildProvider> class, the default is <xref:System.Web.Compilation.BuildProviderAppliesTo.All>.  
   
  ]]></format>
     </remarks>

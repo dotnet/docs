@@ -79,7 +79,7 @@
   
 <a name="wizard_steps"></a>   
 ## Wizard Steps  
- Each of the steps in the <xref:System.Web.UI.WebControls.Wizard> control has a <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A> property that determines the kind of navigation functionality that the step has. If you do not specify a value for the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A> property, the default value is <xref:System.Web.UI.WebControls.WizardStepType>. The following table lists the available settings for the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A> property and the resulting behavior of the step.  
+ Each of the steps in the <xref:System.Web.UI.WebControls.Wizard> control has a <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A> property that determines the kind of navigation functionality that the step has. If you do not specify a value for the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A> property, the default value is <xref:System.Web.UI.WebControls.WizardStepType.Auto>. The following table lists the available settings for the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A> property and the resulting behavior of the step.  
   
  `WizardStepType.Auto`  
  The navigation UI that is rendered for the step is determined by the order in which the step is declared.  
@@ -578,7 +578,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Wizard.CancelButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType>, use the <xref:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl%2A> property to specify the image to display for the **Cancel** button.  
+ When the <xref:System.Web.UI.WebControls.Wizard.CancelButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType.Image>, use the <xref:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl%2A> property to specify the image to display for the **Cancel** button.  
   
  ]]></format>
         </remarks>
@@ -651,13 +651,13 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.CancelButtonText%2A> property contains the text that is displayed for the **Cancel** button on the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.CancelButtonType%2A> property, the <xref:System.Web.UI.WebControls.Wizard.CancelButtonText%2A> property can appear as text on a button, as text displayed as an alternative to an image, or as the text of a link. The following table lists the <xref:System.Web.UI.WebControls.Wizard.CancelButtonType%2A> values and their respective effects on the **Cancel** button text.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Button>  
  Text appears on the button.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Image>  
  Text appears as alternative text for the image.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as a link.  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
@@ -1154,7 +1154,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType> field, use the <xref:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl%2A> property to specify the image to display for the **Finish** button.  
+ When the <xref:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType.Image> field, use the <xref:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl%2A> property to specify the image to display for the **Finish** button.  
   
  ]]></format>
         </remarks>
@@ -1227,13 +1227,13 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText%2A> property contains the text that is displayed for the **Finish** button on the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType%2A> property, the <xref:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText%2A> property can appear as text on a button, as text displayed as an alternative to an image in browsers that do not render images, or as the text of a link. The following table lists the field values for the <xref:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType%2A> property and the respective effect of each on the **Finish** button text.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Button>  
  Text appears on the button.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Image>  
  Text appears as alternative text for the image.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as link text.  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
@@ -1339,7 +1339,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate%2A> property to specify the custom content that is displayed for the navigation area on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. Define the content by creating a template that specifies how the navigation area is rendered on the <xref:System.Web.UI.WebControls.WizardStepType> step.  
+ Use the <xref:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate%2A> property to specify the custom content that is displayed for the navigation area on the <xref:System.Web.UI.WebControls.WizardStepType.Finish> step of the <xref:System.Web.UI.WebControls.Wizard> control. Define the content by creating a template that specifies how the navigation area is rendered on the <xref:System.Web.UI.WebControls.WizardStepType.Finish> step.  
   
  The custom content for the template is contained within the <xref:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate%2A> object. You can add custom content to the <xref:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate%2A> object either by using template-editing mode in design view or by defining the <xref:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate%2A> object inline using `FinishNavigationTemplate` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
   
@@ -1351,7 +1351,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate%2A> property to create a custom template for the navigation area of the <xref:System.Web.UI.WebControls.WizardStepType> step for the <xref:System.Web.UI.WebControls.Wizard> control.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate%2A> property to create a custom template for the navigation area of the <xref:System.Web.UI.WebControls.WizardStepType.Finish> step for the <xref:System.Web.UI.WebControls.Wizard> control.  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
@@ -1417,7 +1417,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType> field, use the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl%2A> property to specify the image to display for the **Previous** button on the <xref:System.Web.UI.WebControls.WizardStepType> step.  
+ When the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType.Image> field, use the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl%2A> property to specify the image to display for the **Previous** button on the <xref:System.Web.UI.WebControls.WizardStepType.Finish> step.  
   
  ]]></format>
         </remarks>
@@ -1456,7 +1456,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle%2A> property defines the appearance for the **Previous** button on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. The <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle%2A> property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
+ The <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle%2A> property defines the appearance for the **Previous** button on the <xref:System.Web.UI.WebControls.WizardStepType.Finish> step of the <xref:System.Web.UI.WebControls.Wizard> control. The <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle%2A> property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
   
  Common settings include custom background color, text color, and font properties. The style settings for the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle%2A> property are merged with the style settings for the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property. Any setting that is applied in the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle%2A> property overrides the corresponding setting in the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property.  
   
@@ -1488,15 +1488,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText%2A> property contains the text that is displayed for the **Previous** button on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType%2A> property, the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText%2A> property can appear as text on a button, as text displayed as an alternative to an image in browsers that do not render images, or as the text of a link. The following table lists the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType%2A> property field values and the respective effects on the **Previous** button text.  
+ The <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText%2A> property contains the text that is displayed for the **Previous** button on the <xref:System.Web.UI.WebControls.WizardStepType.Finish> step of the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType%2A> property, the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText%2A> property can appear as text on a button, as text displayed as an alternative to an image in browsers that do not render images, or as the text of a link. The following table lists the <xref:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType%2A> property field values and the respective effects on the **Previous** button text.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Button>  
  Text appears on the button.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Image>  
  Text appears as alternative text for the image.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as a link.  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
@@ -2942,7 +2942,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Wizard.StartNavigationTemplate%2A> property to specify the custom content that is displayed for the navigation area on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. Define the content by creating a template that specifies how the navigation area is rendered on the <xref:System.Web.UI.WebControls.WizardStepType> step.  
+ Use the <xref:System.Web.UI.WebControls.Wizard.StartNavigationTemplate%2A> property to specify the custom content that is displayed for the navigation area on the <xref:System.Web.UI.WebControls.WizardStepType.Start> step of the <xref:System.Web.UI.WebControls.Wizard> control. Define the content by creating a template that specifies how the navigation area is rendered on the <xref:System.Web.UI.WebControls.WizardStepType.Start> step.  
   
  The custom content for the template is contained within the <xref:System.Web.UI.WebControls.Wizard.StartNavigationTemplate%2A> object. You can add custom content to the <xref:System.Web.UI.WebControls.Wizard.StartNavigationTemplate%2A> object either by using template-editing mode in design view or by defining the <xref:System.Web.UI.WebControls.Wizard.StartNavigationTemplate%2A> object inline using `StartNavigationTemplate` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
   
@@ -3009,7 +3009,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType> field, use the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl%2A> property to specify the image to display for the **Next** button.  
+ When the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType.Image> field, use the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl%2A> property to specify the image to display for the **Next** button.  
   
  ]]></format>
         </remarks>
@@ -3048,7 +3048,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Wizard.StartNextButtonStyle%2A> property defines the appearance for the **Next** button on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. The <xref:System.Web.UI.WebControls.Wizard.StartNextButtonStyle%2A> property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
+ The <xref:System.Web.UI.WebControls.Wizard.StartNextButtonStyle%2A> property defines the appearance for the **Next** button on the <xref:System.Web.UI.WebControls.WizardStepType.Start> step of the <xref:System.Web.UI.WebControls.Wizard> control. The <xref:System.Web.UI.WebControls.Wizard.StartNextButtonStyle%2A> property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
   
  Common settings include custom background color, text color, and font properties. The style settings for the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonStyle%2A> property are merged with the style settings for the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property. Any setting that is applied in the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonStyle%2A> property overrides the corresponding setting in the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property.  
   
@@ -3080,15 +3080,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Wizard.StartNextButtonText%2A> property contains the text that is displayed for the **Next** button on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonType%2A> property, the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonText%2A> property can appear as text on a button, as text displayed as an alternative to an image in browsers that do not render images, or as the text of a link. The following table lists the field values for the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonType%2A> property and the respective effect of each on the **Next** button text.  
+ The <xref:System.Web.UI.WebControls.Wizard.StartNextButtonText%2A> property contains the text that is displayed for the **Next** button on the <xref:System.Web.UI.WebControls.WizardStepType.Start> step of the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonType%2A> property, the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonText%2A> property can appear as text on a button, as text displayed as an alternative to an image in browsers that do not render images, or as the text of a link. The following table lists the field values for the <xref:System.Web.UI.WebControls.Wizard.StartNextButtonType%2A> property and the respective effect of each on the **Next** button text.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Button>  
  Text appears on the button.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Image>  
  Text appears as alternative text for the image.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as a link.  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
@@ -3153,7 +3153,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Wizard.StartNavigationTemplate%2A> property to specify the custom content that is displayed for the navigation area on the <xref:System.Web.UI.WebControls.WizardStepType> step of the <xref:System.Web.UI.WebControls.Wizard> control. Define the content by creating a template that specifies how the navigation area is rendered on the <xref:System.Web.UI.WebControls.WizardStepType> step.  
+ Use the <xref:System.Web.UI.WebControls.Wizard.StartNavigationTemplate%2A> property to specify the custom content that is displayed for the navigation area on the <xref:System.Web.UI.WebControls.WizardStepType.Step> step of the <xref:System.Web.UI.WebControls.Wizard> control. Define the content by creating a template that specifies how the navigation area is rendered on the <xref:System.Web.UI.WebControls.WizardStepType.Step> step.  
   
  The custom content for the template is contained within the <xref:System.Web.UI.WebControls.Wizard.StepNavigationTemplate%2A> object. You can add custom content to the <xref:System.Web.UI.WebControls.Wizard.StepNavigationTemplate%2A> object either by using template-editing mode in design view or by defining the <xref:System.Web.UI.WebControls.Wizard.StepNavigationTemplate%2A> object inline using `StepNavigationTemplate` tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).  
   
@@ -3220,7 +3220,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Wizard.StepNextButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType> field, use the <xref:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl%2A> property to specify the image to display for the **Next** button.  
+ When the <xref:System.Web.UI.WebControls.Wizard.StepNextButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType.Image> field, use the <xref:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl%2A> property to specify the image to display for the **Next** button.  
   
  ]]></format>
         </remarks>
@@ -3293,13 +3293,13 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.StepNextButtonText%2A> property contains the text that is displayed for the **Next** button on the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.StepNextButtonType%2A> property, the <xref:System.Web.UI.WebControls.Wizard.StepNextButtonText%2A> property can appear as text on a button, as text displayed as an alternative to an image, or as the text of a link. The following table lists the field values for the <xref:System.Web.UI.WebControls.Wizard.StepNextButtonType%2A> property and the respective effect of each on the **Next** button text.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Button>  
  Text appears on the button.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Image>  
  Text appears as alternative text for the image.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as a link.  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
@@ -3385,7 +3385,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType> field, use the <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl%2A> property to specify the image to display for the **Previous** button.  
+ When the <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonType%2A> property is set to the <xref:System.Web.UI.WebControls.ButtonType.Image> field, use the <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl%2A> property to specify the image to display for the **Previous** button.  
   
  ]]></format>
         </remarks>
@@ -3424,7 +3424,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle%2A> property defines the appearance of the **Previous** button on a <xref:System.Web.UI.WebControls.WizardStepType> step for the <xref:System.Web.UI.WebControls.Wizard> control. The <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle%2A> property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
+ The <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle%2A> property defines the appearance of the **Previous** button on a <xref:System.Web.UI.WebControls.WizardStepType.Step> step for the <xref:System.Web.UI.WebControls.Wizard> control. The <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle%2A> property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object that it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `CancelButtonStyle-ForeColor`). You can set a property programmatically in the form `Property.Subproperty` (for example, `CancelButtonStyle.ForeColor`).  
   
  Common settings include custom background color, text color, and font properties. The style settings for the <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle%2A> property are merged with the style settings for the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property. Any setting that is applied in the <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle%2A> property overrides the corresponding setting in the <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A> property.  
   
@@ -3458,13 +3458,13 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonText%2A> property contains the text that is displayed for the **Previous** button on the <xref:System.Web.UI.WebControls.Wizard> control. Depending on the value of the <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonType%2A> property, the <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonText%2A> property can appear as text on a button, as text displayed as an alternative to an image in browsers that do not render images, or as the text of a link. The following table lists the field values for the <xref:System.Web.UI.WebControls.Wizard.StepPreviousButtonType%2A> property and the respective effect of each on the **Previous** button text.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Button>  
  Text appears on the button.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Image>  
  Text appears as alternative text for the image.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as a link.  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  

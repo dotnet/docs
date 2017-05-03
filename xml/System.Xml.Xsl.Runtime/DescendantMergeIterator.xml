@@ -77,7 +77,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Xsl.Runtime.DescendantMergeIterator.Current%2A> property gets modified when <xref:System.Xml.Xsl.Runtime.DescendantMergeIterator.MoveNext%2A> method sets the <xref:System.Xml.Xsl.Runtime.DescendantMergeIterator.Current%2A> property to the next node and returns <xref:System.Xml.Xsl.Runtime.IteratorResult>; otherwise, the <xref:System.Xml.Xsl.Runtime.DescendantMergeIterator.Current%2A> property remains unchanged.  
+ The <xref:System.Xml.Xsl.Runtime.DescendantMergeIterator.Current%2A> property gets modified when <xref:System.Xml.Xsl.Runtime.DescendantMergeIterator.MoveNext%2A> method sets the <xref:System.Xml.Xsl.Runtime.DescendantMergeIterator.Current%2A> property to the next node and returns <xref:System.Xml.Xsl.Runtime.IteratorResult.HaveCurrentNode>; otherwise, the <xref:System.Xml.Xsl.Runtime.DescendantMergeIterator.Current%2A> property remains unchanged.  
   
  ]]></format>
         </remarks>

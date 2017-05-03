@@ -65,11 +65,11 @@
   
  Valid values are the following:  
   
--   <xref:System.Net.Security.ProtectionLevel>  
+-   <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>  
   
--   <xref:System.Net.Security.ProtectionLevel>  
+-   <xref:System.Net.Security.ProtectionLevel.None>  
   
--   <xref:System.Net.Security.ProtectionLevel>  
+-   <xref:System.Net.Security.ProtectionLevel.Sign>  
   
  ]]></format>
         </remarks>

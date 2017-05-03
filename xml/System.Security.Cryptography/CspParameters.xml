@@ -84,7 +84,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This form of <xref:System.Security.Cryptography.CspParameters.%23ctor%2A> initializes the <xref:System.Security.Cryptography.CspParameters> field to a value of `24`, which specifies the PROV_RSA_AES provider.  This default provider is compatible with the <xref:System.Security.Cryptography.Aes> algorithm.  
+ This form of <xref:System.Security.Cryptography.CspParameters.%23ctor%2A> initializes the <xref:System.Security.Cryptography.CspParameters.ProviderType> field to a value of `24`, which specifies the PROV_RSA_AES provider.  This default provider is compatible with the <xref:System.Security.Cryptography.Aes> algorithm.  
   
  For information about other provider types, see the <xref:System.Security.Cryptography.CspParameters.ProviderType> field.  
   
@@ -462,9 +462,9 @@
 ## Remarks  
  The <xref:System.Security.Cryptography.CspParameters.KeyNumber> field initializes the <xref:System.Security.Cryptography.CspKeyContainerInfo.KeyNumber%2A> property when you initialize a <xref:System.Security.Cryptography.CspKeyContainerInfo> object with a <xref:System.Security.Cryptography.CspParameters> object.  
   
- An exchange key is an asymmetric key pair used to encrypt session keys so that they can be safely stored and exchanged with other users.  You can use the <xref:System.Security.Cryptography.KeyNumber> value (`1`) to specify an exchange key.  This value corresponds to the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
+ An exchange key is an asymmetric key pair used to encrypt session keys so that they can be safely stored and exchanged with other users.  You can use the <xref:System.Security.Cryptography.KeyNumber.Exchange> value (`1`) to specify an exchange key.  This value corresponds to the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
   
- A signature key is an asymmetric key pair used for authenticating digitally signed messages or files.  You can use the <xref:System.Security.Cryptography.KeyNumber> value (`2`) to specify a signature key.  This value corresponds to the `AT_SIGNATURE` value used in CAPI.  
+ A signature key is an asymmetric key pair used for authenticating digitally signed messages or files.  You can use the <xref:System.Security.Cryptography.KeyNumber.Signature> value (`2`) to specify a signature key.  This value corresponds to the `AT_SIGNATURE` value used in CAPI.  
   
  By default, the <xref:System.Security.Cryptography.CspParameters.KeyNumber> field specifies an exchange key.  
   

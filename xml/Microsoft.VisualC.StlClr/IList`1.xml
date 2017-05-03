@@ -80,7 +80,7 @@
       <Docs>
         <param name="_First">The beginning position of the range of elements to insert into the container.</param>
         <param name="_Last">The first position beyond the range of elements to insert into the container.</param>
-        <summary>Replaces the controlled sequence with the sequence <c>[</c><paramref name="_First" /><c>,</c> <paramref name="_Last" /><c>)</c>.</summary>
+        <summary>Replaces the controlled sequence with the sequence <c>[</c><paramref name="_First" /><c>,</c><paramref name="_Last" /><c>)</c>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

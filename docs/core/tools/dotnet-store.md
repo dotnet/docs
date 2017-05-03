@@ -65,7 +65,7 @@ Skips the optimization phase.
 
 `--skip-symbols`
 
-Skips symbol generation.
+Skips symbol generation. Currently, symbols can only be generated on Windows and Linux.
 
 `-v|--verbosity <LEVEL>`
 

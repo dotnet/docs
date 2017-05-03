@@ -270,7 +270,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines the alignment of the background image for strip lines; it is only applied when the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageWrapMode%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode>.  
+ This property determines the alignment of the background image for strip lines; it is only applied when the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageWrapMode%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Unscaled>.  
   
  For more information about available alignments, see the <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle> enumeration topic.  
   
@@ -356,7 +356,7 @@
   
  For more information concerning the available wrapping modes, see the <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode> enumeration topic.  
   
- If the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageWrapMode%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode>, the location where the image is drawn will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageAlignment%2A> property setting.  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageWrapMode%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Unscaled>, the location where the image is drawn will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageAlignment%2A> property setting.  
   
  This property is not applicable if <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> is set to a value of 0.0.  
   
@@ -725,7 +725,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, this property is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>; the actual value of this property is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.IntervalType%2A> property.  
+ By default, this property is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto>; the actual value of this property is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.IntervalType%2A> property.  
   
  ]]></format>
         </remarks>
@@ -761,7 +761,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Interval types can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>, in which case the type depends on: the X-value or Y-value types of the plotted <xref:System.Windows.Forms.DataVisualization.Charting.DataPoint> objects—depending on which axis the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine> objects belong to—and the axis scale.  
+ Interval types can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto>, in which case the type depends on: the X-value or Y-value types of the plotted <xref:System.Windows.Forms.DataVisualization.Charting.DataPoint> objects—depending on which axis the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine> objects belong to—and the axis scale.  
   
  The <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.Interval%2A> property determines how often a strip or line is drawn.  
   
@@ -870,9 +870,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines the units used for the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property. For example, to set a strip line to represent "one week", you could set this property to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> and set the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property to one (1.0).  
+ This property determines the units used for the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property. For example, to set a strip line to represent "one week", you could set this property to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Weeks> and set the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property to one (1.0).  
   
- You can change the value of this property from <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> to a <xref:System.DateTime> value when the relevant axis scale uses a <xref:System.DateTime> value.  
+ You can change the value of this property from <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto> to a <xref:System.DateTime> value when the relevant axis scale uses a <xref:System.DateTime> value.  
   
  ]]></format>
         </remarks>
@@ -1002,7 +1002,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property is set to a value of <xref:System.Windows.Forms.DataVisualization.Charting.TextOrientation>, the text is oriented based on the chart type. For all X-Y chart types other than Bar, X-axis strip line text is oriented horizontally from left to right on the bottom of the strip line. For Bar charts, X-axis strip line text is oriented vertically from top to bottom to the right of the strip line.  
+ When this property is set to a value of <xref:System.Windows.Forms.DataVisualization.Charting.TextOrientation.Auto>, the text is oriented based on the chart type. For all X-Y chart types other than Bar, X-axis strip line text is oriented horizontally from left to right on the bottom of the strip line. For Bar charts, X-axis strip line text is oriented vertically from top to bottom to the right of the strip line.  
   
  ]]></format>
         </remarks>

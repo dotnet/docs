@@ -37,24 +37,15 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Data.IDataParameterCollection" /> interface, you should implement the following constructor.  
   
- <list type="table">  
-<listheader>  
-<term> Item  
+ <list type="table"><listheader><term> Item  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> PrvParameterCollection()  
+ </description></listheader><item><term> PrvParameterCollection()  
   
- </term>  
-<description> Creates an empty PrvParameterCollection class.  
+ </term><description> Creates an empty PrvParameterCollection class.  
   
- </description>  
-</item>  
-</list></para>
+ </description></item></list></para>
     </block>
   </Docs>
   <Members>

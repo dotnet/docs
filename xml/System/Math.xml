@@ -133,7 +133,7 @@
 ## Remarks  
  The absolute value of a <xref:System.Double> is its numeric value without its sign. For example, the absolute value of both 1.2e03 and -1.2e03 is 1.2e03.  
   
- If `value` is equal to <xref:System.Double> or <xref:System.Double>, the return value is <xref:System.Double>. If `value` is equal to <xref:System.Double>, the return value is <xref:System.Double>.  
+ If `value` is equal to <xref:System.Double.NegativeInfinity> or <xref:System.Double.PositiveInfinity>, the return value is <xref:System.Double.PositiveInfinity>. If `value` is equal to <xref:System.Double.NaN>, the return value is <xref:System.Double.NaN>.  
   
    
   
@@ -393,7 +393,7 @@
 ## Remarks  
  The absolute value of a <xref:System.Single> is its numeric value without its sign. For example, the absolute value of both 1.2e-03 and -1.2e03 is 1.2e03.  
   
- If `value` is equal to <xref:System.Single> or <xref:System.Single>, the return value is <xref:System.Single>. If `value` is equal to <xref:System.Single>, the return value is <xref:System.Single>.  
+ If `value` is equal to <xref:System.Single.NegativeInfinity> or <xref:System.Single.PositiveInfinity>, the return value is <xref:System.Single.PositiveInfinity>. If `value` is equal to <xref:System.Single.NaN>, the return value is <xref:System.Single.NaN>.  
   
    
   
@@ -1318,56 +1318,17 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns the natural (base <see langword="e" />) logarithm of a specified number.</summary>
         <returns>One of the values in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> <paramref name="d" /> parameter  
+ <list type="table"><listheader><term><paramref name="d" /> parameter  
   
- </term>  
-<description> Return value  
+ </term><description> Return value  
   
- </description>  
-</listheader>  
-<item>  
-<term> Positive  
+ </description></listheader><item><term> Positive  
   
- </term>  
-<description> The natural logarithm of <paramref name="d" />; that is, ln <paramref name="d" />, or log e<paramref name="d" />  
+ </term><description> The natural logarithm of <paramref name="d" />; that is, ln <paramref name="d" />, or log e<paramref name="d" /></description></item><item><term> Zero  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </term><description><see cref="F:System.Double.NegativeInfinity" /></description></item><item><term> Negative  
   
- </term>  
-<description> <see cref="F:System.Double.NegativeInfinity" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Negative  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Equal to <see cref="F:System.Double.NaN" />  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Equal to <see cref="F:System.Double.PositiveInfinity" />  
-  
- </term>  
-<description> <see cref="F:System.Double.PositiveInfinity" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equal to <see cref="F:System.Double.NaN" /></term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equal to <see cref="F:System.Double.PositiveInfinity" /></term><description><see cref="F:System.Double.PositiveInfinity" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1419,173 +1380,93 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns the logarithm of a specified number in a specified base.</summary>
         <returns>One of the values in the following table. (+Infinity denotes <see cref="F:System.Double.PositiveInfinity" />, -Infinity denotes <see cref="F:System.Double.NegativeInfinity" />, and NaN denotes <see cref="F:System.Double.NaN" />.)  
   
- <list type="table">  
-<listheader>  
-<term> <paramref name="a" />  
+ <list type="table"><listheader><term><paramref name="a" /></term><description><paramref name="newBase" /></description><description> Return value  
   
- </term>  
-<description> <paramref name="newBase" />  
+ </description></listheader><item><term><paramref name="a" />&gt; 0  
   
- </description>  
-<description> Return value  
+ </term><description> (0 &lt;<paramref name="newBase" />&lt; 1) -or-(<paramref name="newBase" />&gt; 1)  
   
- </description>  
-</listheader>  
-<item>  
-<term> <paramref name="a" />&gt; 0  
+ </description><description> lognewBase(a)  
   
- </term>  
-<description> (0 &lt;<paramref name="newBase" />&lt; 1) -or-(<paramref name="newBase" />&gt; 1)  
+ </description></item><item><term><paramref name="a" />&lt; 0  
   
- </description>  
-<description> lognewBase(a)  
+ </term><description> (any value)  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" />&lt; 0  
+ </description><description> NaN  
   
- </term>  
-<description> (any value)  
+ </description></item><item><term> (any value)  
   
- </description>  
-<description> NaN  
+ </term><description><paramref name="newBase" />&lt; 0  
   
- </description>  
-</item>  
-<item>  
-<term> (any value)  
+ </description><description> NaN  
   
- </term>  
-<description> <paramref name="newBase" />&lt; 0  
+ </description></item><item><term><paramref name="a" /> != 1  
   
- </description>  
-<description> NaN  
+ </term><description><paramref name="newBase" /> = 0  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> != 1  
+ </description><description> NaN  
   
- </term>  
-<description> <paramref name="newBase" /> = 0  
+ </description></item><item><term><paramref name="a" /> != 1  
   
- </description>  
-<description> NaN  
+ </term><description><paramref name="newBase" /> = +Infinity  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> != 1  
+ </description><description> NaN  
   
- </term>  
-<description> <paramref name="newBase" /> = +Infinity  
+ </description></item><item><term><paramref name="a" /> = NaN  
   
- </description>  
-<description> NaN  
+ </term><description> (any value)  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> = NaN  
+ </description><description> NaN  
   
- </term>  
-<description> (any value)  
+ </description></item><item><term> (any value)  
   
- </description>  
-<description> NaN  
+ </term><description><paramref name="newBase" /> = NaN  
   
- </description>  
-</item>  
-<item>  
-<term> (any value)  
+ </description><description> NaN  
   
- </term>  
-<description> <paramref name="newBase" /> = NaN  
+ </description></item><item><term> (any value)  
   
- </description>  
-<description> NaN  
+ </term><description><paramref name="newBase" /> = 1  
   
- </description>  
-</item>  
-<item>  
-<term> (any value)  
+ </description><description> NaN  
   
- </term>  
-<description> <paramref name="newBase" /> = 1  
+ </description></item><item><term><paramref name="a" /> = 0  
   
- </description>  
-<description> NaN  
+ </term><description> 0 &lt;<paramref name="newBase" />&lt; 1  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> = 0  
+ </description><description> +Infinity  
   
- </term>  
-<description> 0 &lt;<paramref name="newBase" />&lt; 1  
+ </description></item><item><term><paramref name="a" /> = 0  
   
- </description>  
-<description> +Infinity  
+ </term><description><paramref name="newBase" />&gt; 1  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> = 0  
+ </description><description> -Infinity  
   
- </term>  
-<description> <paramref name="newBase" />&gt; 1  
+ </description></item><item><term><paramref name="a" /> =  +Infinity  
   
- </description>  
-<description> -Infinity  
+ </term><description> 0 &lt;<paramref name="newBase" />&lt; 1  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> =  +Infinity  
+ </description><description> -Infinity  
   
- </term>  
-<description> 0 &lt;<paramref name="newBase" />&lt; 1  
+ </description></item><item><term><paramref name="a" /> =  +Infinity  
   
- </description>  
-<description> -Infinity  
+ </term><description><paramref name="newBase" />&gt; 1  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> =  +Infinity  
+ </description><description> +Infinity  
   
- </term>  
-<description> <paramref name="newBase" />&gt; 1  
+ </description></item><item><term><paramref name="a" /> = 1  
   
- </description>  
-<description> +Infinity  
+ </term><description><paramref name="newBase" /> = 0  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> = 1  
+ </description><description> 0  
   
- </term>  
-<description> <paramref name="newBase" /> = 0  
+ </description></item><item><term><paramref name="a" /> = 1  
   
- </description>  
-<description> 0  
+ </term><description><paramref name="newBase" /> = +Infinity  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> = 1  
+ </description><description> 0  
   
- </term>  
-<description> <paramref name="newBase" /> = +Infinity  
-  
- </description>  
-<description> 0  
-  
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1636,56 +1517,19 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns the base 10 logarithm of a specified number.</summary>
         <returns>One of the values in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> <paramref name="d" /> parameter  
+ <list type="table"><listheader><term><paramref name="d" /> parameter  
   
- </term>  
-<description> Return value  
+ </term><description> Return value  
   
- </description>  
-</listheader>  
-<item>  
-<term> Positive  
+ </description></listheader><item><term> Positive  
   
- </term>  
-<description> The base 10 log of <paramref name="d" />; that is, log 10<paramref name="d" />.  
+ </term><description> The base 10 log of <paramref name="d" />; that is, log 10<paramref name="d" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <see cref="F:System.Double.NegativeInfinity" />  
+ </term><description><see cref="F:System.Double.NegativeInfinity" /></description></item><item><term> Negative  
   
- </description>  
-</item>  
-<item>  
-<term> Negative  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Equal to <see cref="F:System.Double.NaN" />  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Equal to <see cref="F:System.Double.PositiveInfinity" />  
-  
- </term>  
-<description> <see cref="F:System.Double.PositiveInfinity" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equal to <see cref="F:System.Double.NaN" /></term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equal to <see cref="F:System.Double.PositiveInfinity" /></term><description><see cref="F:System.Double.PositiveInfinity" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3401,40 +3245,23 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns an integer that indicates the sign of a decimal number.</summary>
         <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description></listheader><item><term> -1  
   
- </term>  
-<description> <paramref name="value" /> is less than zero.  
+ </term><description><paramref name="value" /> is less than zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description></item><item><term> 0  
   
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
+ </term><description><paramref name="value" /> is equal to zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
+ </term><description><paramref name="value" /> is greater than zero.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3480,40 +3307,23 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns an integer that indicates the sign of a double-precision floating-point number.</summary>
         <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description></listheader><item><term> -1  
   
- </term>  
-<description> <paramref name="value" /> is less than zero.  
+ </term><description><paramref name="value" /> is less than zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description></item><item><term> 0  
   
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
+ </term><description><paramref name="value" /> is equal to zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
+ </term><description><paramref name="value" /> is greater than zero.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3561,40 +3371,23 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns an integer that indicates the sign of a 16-bit signed integer.</summary>
         <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description></listheader><item><term> -1  
   
- </term>  
-<description> <paramref name="value" /> is less than zero.  
+ </term><description><paramref name="value" /> is less than zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description></item><item><term> 0  
   
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
+ </term><description><paramref name="value" /> is equal to zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
+ </term><description><paramref name="value" /> is greater than zero.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3640,40 +3433,23 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns an integer that indicates the sign of a 32-bit signed integer.</summary>
         <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description></listheader><item><term> -1  
   
- </term>  
-<description> <paramref name="value" /> is less than zero.  
+ </term><description><paramref name="value" /> is less than zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description></item><item><term> 0  
   
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
+ </term><description><paramref name="value" /> is equal to zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
+ </term><description><paramref name="value" /> is greater than zero.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3719,40 +3495,23 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns an integer that indicates the sign of a 64-bit signed integer.</summary>
         <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description></listheader><item><term> -1  
   
- </term>  
-<description> <paramref name="value" /> is less than zero.  
+ </term><description><paramref name="value" /> is less than zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description></item><item><term> 0  
   
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
+ </term><description><paramref name="value" /> is equal to zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
+ </term><description><paramref name="value" /> is greater than zero.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3803,40 +3562,23 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns an integer that indicates the sign of an 8-bit signed integer.</summary>
         <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description></listheader><item><term> -1  
   
- </term>  
-<description> <paramref name="value" /> is less than zero.  
+ </term><description><paramref name="value" /> is less than zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description></item><item><term> 0  
   
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
+ </term><description><paramref name="value" /> is equal to zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
+ </term><description><paramref name="value" /> is greater than zero.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3882,40 +3624,23 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns an integer that indicates the sign of a single-precision floating-point number.</summary>
         <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description></listheader><item><term> -1  
   
- </term>  
-<description> <paramref name="value" /> is less than zero.  
+ </term><description><paramref name="value" /> is less than zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description></item><item><term> 0  
   
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
+ </term><description><paramref name="value" /> is equal to zero.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
+ </term><description><paramref name="value" /> is greater than zero.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4081,48 +3806,17 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns the square root of a specified number.</summary>
         <returns>One of the values in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> <paramref name="d" /> parameter  
+ <list type="table"><listheader><term><paramref name="d" /> parameter  
   
- </term>  
-<description> Return value  
+ </term><description> Return value  
   
- </description>  
-</listheader>  
-<item>  
-<term> Zero or positive  
+ </description></listheader><item><term> Zero or positive  
   
- </term>  
-<description> The positive square root of <paramref name="d" />.  
+ </term><description> The positive square root of <paramref name="d" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Negative  
+ </description></item><item><term> Negative  
   
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Equals <see cref="F:System.Double.NaN" />  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Equals <see cref="F:System.Double.PositiveInfinity" />  
-  
- </term>  
-<description> <see cref="F:System.Double.PositiveInfinity" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equals <see cref="F:System.Double.NaN" /></term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equals <see cref="F:System.Double.PositiveInfinity" /></term><description><see cref="F:System.Double.PositiveInfinity" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4323,40 +4017,9 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Calculates the integral part of a specified double-precision floating-point number.</summary>
         <returns>The integral part of <paramref name="d" />; that is, the number that remains after any fractional digits have been discarded, or one of the values listed in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> <paramref name="d" />  
+ <list type="table"><listheader><term><paramref name="d" /></term><description> Return value  
   
- </term>  
-<description> Return value  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="F:System.Double.NaN" />  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="F:System.Double.NegativeInfinity" />  
-  
- </term>  
-<description> <see cref="F:System.Double.NegativeInfinity" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="F:System.Double.PositiveInfinity" />  
-  
- </term>  
-<description> <see cref="F:System.Double.PositiveInfinity" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </description></listheader><item><term><see cref="F:System.Double.NaN" /></term><description><see cref="F:System.Double.NaN" /></description></item><item><term><see cref="F:System.Double.NegativeInfinity" /></term><description><see cref="F:System.Double.NegativeInfinity" /></description></item><item><term><see cref="F:System.Double.PositiveInfinity" /></term><description><see cref="F:System.Double.PositiveInfinity" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4565,10 +4228,10 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
   
 |Overload|Rounding convention|  
 |--------------|-------------------------|  
-|<xref:System.Math.Round%28System.Decimal%29>|<xref:System.MidpointRounding>|  
-|<xref:System.Math.Round%28System.Double%29>|<xref:System.MidpointRounding>|  
-|<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%29>|<xref:System.MidpointRounding>|  
-|<xref:System.Math.Round%28System.Double%2CSystem.Int32%29>|<xref:System.MidpointRounding>|  
+|<xref:System.Math.Round%28System.Decimal%29>|<xref:System.MidpointRounding.ToEven>|  
+|<xref:System.Math.Round%28System.Double%29>|<xref:System.MidpointRounding.ToEven>|  
+|<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%29>|<xref:System.MidpointRounding.ToEven>|  
+|<xref:System.Math.Round%28System.Double%2CSystem.Int32%29>|<xref:System.MidpointRounding.ToEven>|  
 |<xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29>|Determined by `mode` parameter.|  
 |<xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
 |<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
@@ -4613,7 +4276,7 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
   
 <a name="Round1_Example"></a>   
 ## Math.Round(Decimal) example  
- The following example demonstrates the <xref:System.Math.Round%28System.Decimal%29> method. Note that the <xref:System.Decimal> value of 4.5 rounds to 4 rather than 5, because this overload uses the default <xref:System.MidpointRounding> convention.  
+ The following example demonstrates the <xref:System.Math.Round%28System.Decimal%29> method. Note that the <xref:System.Decimal> value of 4.5 rounds to 4 rather than 5, because this overload uses the default <xref:System.MidpointRounding.ToEven> convention.  
   
  [!code-csharp[System.Math.Round#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/rounddecimal1.cs#6)]
  [!code-vb[System.Math.Round#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/rounddecimal1.vb#6)]  
@@ -4643,14 +4306,14 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
   
 <a name="Round5_Example"></a>   
 ## Math.Round(Decimal, MidpointRounding) example  
- The following example displays values returned by the <xref:System.Math.Round%28System.Decimal%29> method, the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>, and the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>.  
+ The following example displays values returned by the <xref:System.Math.Round%28System.Decimal%29> method, the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.ToEven>, and the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.AwayFromZero>.  
   
  [!code-csharp[System.Math.Round.Overload#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/midpoint1.cs#5)]
  [!code-vb[System.Math.Round.Overload#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/midpoint1.vb#5)]  
   
 <a name="Round6_Example"></a>   
 ## Math.Round(Double, MidpointRounding) example  
- The following example displays values returned by the <xref:System.Math.Round%28System.Double%29> method, the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>, and the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>.  
+ The following example displays values returned by the <xref:System.Math.Round%28System.Double%29> method, the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.ToEven>, and the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.AwayFromZero>.  
   
  [!code-csharp[System.Math.Round.Overload#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/midpoint2.cs#6)]
  [!code-vb[System.Math.Round.Overload#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/midpoint2.vb#6)]  

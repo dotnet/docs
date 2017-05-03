@@ -36,7 +36,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `percentComplete` should be 0.0 when `asyncContentState` is <xref:System.Windows.Automation.AsyncContentLoadedState> and 100.0 when it is <xref:System.Windows.Automation.AsyncContentLoadedState>.  
+ `percentComplete` should be 0.0 when `asyncContentState` is <xref:System.Windows.Automation.AsyncContentLoadedState.Beginning> and 100.0 when it is <xref:System.Windows.Automation.AsyncContentLoadedState.Completed>.  
   
  ]]></format>
         </remarks>

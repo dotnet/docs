@@ -155,7 +155,7 @@
 ## Remarks  
  A dependent transaction is a transaction whose outcome depends on the outcome of the transaction from which it was cloned.  
   
- The `cloneoption` parameter controls what kind of dependent transaction to create. If a dependent transaction is created with <xref:System.Transactions.DependentCloneOption>, it blocks the commit process of the transaction until the transaction times out, or <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the <xref:System.Transactions.DependentTransaction>. If it is created with <xref:System.Transactions.DependentCloneOption>, it automatically aborts the transaction if <xref:System.Transactions.CommittableTransaction.Commit%2A> is called before <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the <xref:System.Transactions.DependentTransaction>.  
+ The `cloneoption` parameter controls what kind of dependent transaction to create. If a dependent transaction is created with <xref:System.Transactions.DependentCloneOption.BlockCommitUntilComplete>, it blocks the commit process of the transaction until the transaction times out, or <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the <xref:System.Transactions.DependentTransaction>. If it is created with <xref:System.Transactions.DependentCloneOption.RollbackIfNotComplete>, it automatically aborts the transaction if <xref:System.Transactions.CommittableTransaction.Commit%2A> is called before <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the <xref:System.Transactions.DependentTransaction>.  
   
    
   
@@ -331,11 +331,11 @@
 ## Remarks  
  Enlistments in a transaction are volatile; that is, they do not survive the failure of the participant. In addition, this method only suggests the transaction manager to escalate control, but the escalation itself is not guaranteed. If escalation fails, the user is not notified and the transaction is rolled back.  
   
- The parameter `promotableSinglePhaseNotification` is used to communicate to the transaction manager the outcome of attempting to commit the resource manager's internal transaction.  If inconsistent data is reported, the transaction manager throws an exception. If an <xref:System.Transactions.TransactionStatus> outcome is reported, the transaction manager looks for the outcome notification in its own internal enlistment and ignores the reported response.  
+ The parameter `promotableSinglePhaseNotification` is used to communicate to the transaction manager the outcome of attempting to commit the resource manager's internal transaction.  If inconsistent data is reported, the transaction manager throws an exception. If an <xref:System.Transactions.TransactionStatus.InDoubt> outcome is reported, the transaction manager looks for the outcome notification in its own internal enlistment and ignores the reported response.  
   
  For more information on enlistments and escalation of a transaction, please see [Transaction Management Escalation](http://msdn.microsoft.com/en-us/5b87ae58-8ccf-4b9b-9715-41e4aade89b7). For more information on PSPE, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](http://msdn.microsoft.com/en-us/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
   
- **Note** This method uses <xref:System.Security.Permissions.SecurityAction> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
+ **Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
   
  ]]></format>
         </remarks>
@@ -861,7 +861,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can register for this event instead of using a volatile enlistment to get outcome information for transactions. The parameter passed to the <xref:System.Transactions.TransactionCompletedEventHandler> delegate is a <xref:System.Transactions.Transaction> instance. You can then query the <xref:System.Transactions.Transaction.TransactionInformation%2A> property of the specific instance to get an instance of <xref:System.Transactions.TransactionInformation>, whose <xref:System.Transactions.TransactionInformation.Status%2A> property contains the status of a transaction with either the <xref:System.Transactions.TransactionStatus> or <xref:System.Transactions.TransactionStatus> value.  
+ You can register for this event instead of using a volatile enlistment to get outcome information for transactions. The parameter passed to the <xref:System.Transactions.TransactionCompletedEventHandler> delegate is a <xref:System.Transactions.Transaction> instance. You can then query the <xref:System.Transactions.Transaction.TransactionInformation%2A> property of the specific instance to get an instance of <xref:System.Transactions.TransactionInformation>, whose <xref:System.Transactions.TransactionInformation.Status%2A> property contains the status of a transaction with either the <xref:System.Transactions.TransactionStatus.Committed> or <xref:System.Transactions.TransactionStatus.Aborted> value.  
   
  **Caution** Signing up for this event negatively affects the performance of the transaction it is attached to.  
   
@@ -931,7 +931,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- **Note** This method uses <xref:System.Security.Permissions.SecurityAction> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
+ **Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
   
  ]]></format>
         </remarks>

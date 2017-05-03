@@ -1718,7 +1718,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The line terminator is defined by the <xref:System.IO.TextWriter> field.  
+ The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   

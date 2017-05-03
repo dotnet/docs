@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The methods contained in the <xref:System.Windows.Forms.ControlPaint> class enable you to draw your own controls or elements of controls. You can control the drawing of your own controls if the <xref:System.Windows.Forms.ControlStyles> bit is set to `true` for the control. You can get or set the style bits by calling the <xref:System.Windows.Forms.Control.GetStyle%2A> or <xref:System.Windows.Forms.Control.SetStyle%2A> methods. You can set multiple style bits for any control. The <xref:System.Windows.Forms.ControlStyles> enumeration members can be combined with bitwise operations.  
+ The methods contained in the <xref:System.Windows.Forms.ControlPaint> class enable you to draw your own controls or elements of controls. You can control the drawing of your own controls if the <xref:System.Windows.Forms.ControlStyles.UserPaint> bit is set to `true` for the control. You can get or set the style bits by calling the <xref:System.Windows.Forms.Control.GetStyle%2A> or <xref:System.Windows.Forms.Control.SetStyle%2A> methods. You can set multiple style bits for any control. The <xref:System.Windows.Forms.ControlStyles> enumeration members can be combined with bitwise operations.  
   
    
   
@@ -1098,7 +1098,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
+ When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph.Checkmark> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
   
  ]]></format>
         </remarks>
@@ -1134,7 +1134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
+ When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph.Checkmark> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
   
  ]]></format>
         </remarks>
@@ -1172,7 +1172,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to true, you call the <xref:System.Windows.Forms.MenuGlyph> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
+ When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to true, you call the <xref:System.Windows.Forms.MenuGlyph.Checkmark> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
   
  ]]></format>
         </remarks>
@@ -1214,7 +1214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
+ When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph.Checkmark> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
   
  ]]></format>
         </remarks>

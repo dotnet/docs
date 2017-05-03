@@ -337,7 +337,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An `AssemblyFormat` instance can have two styles: <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle> or <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle>. Specifying `Simple` allows types in one version to be loaded and deserialized from an instance serialized from a different version.  
+ An `AssemblyFormat` instance can have two styles: <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Full> or <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Simple>. Specifying `Simple` allows types in one version to be loaded and deserialized from an instance serialized from a different version.  
   
  ]]></format>
         </remarks>

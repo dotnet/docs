@@ -253,7 +253,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Paragraph>|  
+|Identifier field|<xref:System.Windows.Documents.Paragraph.MinOrphanLinesProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
   
  ]]></format>
@@ -304,7 +304,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Paragraph>|  
+|Identifier field|<xref:System.Windows.Documents.Paragraph.MinWidowLinesProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
   
  ]]></format>
@@ -476,7 +476,7 @@
  *double*  
  <xref:System.Double>  
   
- A string representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ A string representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A `double` value as described above, (except `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  

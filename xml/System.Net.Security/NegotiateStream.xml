@@ -187,7 +187,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -240,7 +240,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -295,7 +295,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
   
@@ -357,7 +357,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
   
@@ -418,7 +418,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
   
@@ -475,7 +475,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -530,7 +530,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -587,7 +587,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
   
@@ -651,7 +651,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
   
@@ -714,7 +714,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
   
@@ -769,7 +769,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, and the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -818,9 +818,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, and the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -936,7 +936,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -994,7 +994,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, and the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -1043,9 +1043,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, and the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -1161,7 +1161,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -1221,7 +1221,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, and the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
   
@@ -1422,7 +1422,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
   
@@ -1494,7 +1494,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
   
@@ -1555,7 +1555,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -1609,9 +1609,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -1670,7 +1670,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that, the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that, the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
   
@@ -1739,9 +1739,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that, the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that, the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never>.  
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
   
@@ -2453,7 +2453,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You must successfully authenticate before calling this method. Clients specify the impersonation level when they request authentication by calling one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> methods. If you authenticate without specifying a <xref:System.Security.Principal.TokenImpersonationLevel> , <xref:System.Security.Principal.TokenImpersonationLevel> is used.  
+ You must successfully authenticate before calling this method. Clients specify the impersonation level when they request authentication by calling one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> methods. If you authenticate without specifying a <xref:System.Security.Principal.TokenImpersonationLevel> , <xref:System.Security.Principal.TokenImpersonationLevel.Identification> is used.  
   
    
   

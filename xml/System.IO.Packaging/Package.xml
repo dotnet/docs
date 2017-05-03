@@ -254,7 +254,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the default <xref:System.IO.Packaging.ZipPackage> derived class, the <xref:System.IO.Packaging.Package.CreatePart%2A> method only supports two `compressionOption` values, <xref:System.IO.Packaging.CompressionOption> or <xref:System.IO.Packaging.CompressionOption> compression.  Other <xref:System.IO.Packaging.CompressionOption> values of <xref:System.IO.Packaging.CompressionOption>, <xref:System.IO.Packaging.CompressionOption>, or <xref:System.IO.Packaging.CompressionOption> use <xref:System.IO.Packaging.CompressionOption> compression.  
+ For the default <xref:System.IO.Packaging.ZipPackage> derived class, the <xref:System.IO.Packaging.Package.CreatePart%2A> method only supports two `compressionOption` values, <xref:System.IO.Packaging.CompressionOption.NotCompressed> or <xref:System.IO.Packaging.CompressionOption.Normal> compression.  Other <xref:System.IO.Packaging.CompressionOption> values of <xref:System.IO.Packaging.CompressionOption.Maximum>, <xref:System.IO.Packaging.CompressionOption.Fast>, or <xref:System.IO.Packaging.CompressionOption.SuperFast> use <xref:System.IO.Packaging.CompressionOption.Normal> compression.  
   
  <xref:System.IO.Packaging.Package.CreatePart%2A> creates an empty <xref:System.IO.Stream> for the new part.  The <xref:System.IO.Packaging.PackagePart.GetStream%2A?displayProperty=fullName> method can be used to obtain a reference to the stream instance associated with the part.  
   
@@ -319,7 +319,7 @@
   
  By default, a <xref:System.IO.Packaging.ZipPackage> derived class implementation of the abstract <xref:System.IO.Packaging.Package> class is provided and used.  In the default operation, <xref:System.IO.Packaging.Package.CreatePart%2A> internally calls <xref:System.IO.Packaging.Package.CreatePartCore%2A> of the <xref:System.IO.Packaging.ZipPackage> class to create a new part in a ZIP file.  
   
- For the default <xref:System.IO.Packaging.ZipPackage> derived class, the <xref:System.IO.Packaging.Package.CreatePartCore%2A> method only supports two `compressionOption` values, <xref:System.IO.Packaging.CompressionOption> or <xref:System.IO.Packaging.CompressionOption> compression.  Other <xref:System.IO.Packaging.CompressionOption> values of <xref:System.IO.Packaging.CompressionOption>, <xref:System.IO.Packaging.CompressionOption>, or <xref:System.IO.Packaging.CompressionOption> use <xref:System.IO.Packaging.CompressionOption> compression.  
+ For the default <xref:System.IO.Packaging.ZipPackage> derived class, the <xref:System.IO.Packaging.Package.CreatePartCore%2A> method only supports two `compressionOption` values, <xref:System.IO.Packaging.CompressionOption.NotCompressed> or <xref:System.IO.Packaging.CompressionOption.Normal> compression.  Other <xref:System.IO.Packaging.CompressionOption> values of <xref:System.IO.Packaging.CompressionOption.Maximum>, <xref:System.IO.Packaging.CompressionOption.Fast>, or <xref:System.IO.Packaging.CompressionOption.SuperFast> use <xref:System.IO.Packaging.CompressionOption.Normal> compression.  
   
  For more information about the package model and package parts, see Chapter 1 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
   
@@ -373,9 +373,9 @@
   
  The target of a relationship cannot be another relationship.  
   
- If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode>, `targetUri` must be a relative URI that is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The internal relative URI can be either an absolute path that starts with a forward slash ("/") character such as "/page1.xaml" or "/images/picture4.jpg", or a relative path such as "../imagespicture1.jpg" that resolves against the package root ("/") as the base URI.  
+ If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.Internal>, `targetUri` must be a relative URI that is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The internal relative URI can be either an absolute path that starts with a forward slash ("/") character such as "/page1.xaml" or "/images/picture4.jpg", or a relative path such as "../imagespicture1.jpg" that resolves against the package root ("/") as the base URI.  
   
- If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode>, `targetUri` can be either an absolute or relative URI formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  "http://www.microsoft.com/page2.xml" is an example of an absolute URI that references an external target resource "page2.xml".  "images/picture1.jpg" is an example of a relative URI that also references an external target resource "1.jpg" but which resolves against the URI of the package itself.  
+ If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.External>, `targetUri` can be either an absolute or relative URI formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  "http://www.microsoft.com/page2.xml" is an example of an absolute URI that references an external target resource "page2.xml".  "images/picture1.jpg" is an example of a relative URI that also references an external target resource "1.jpg" but which resolves against the URI of the package itself.  
   
  `relationshipType` must be a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] that is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The following table shows the package-level `relationshipType` URIs defined by the Open Packaging Conventions (OPC) specification.  
   
@@ -456,9 +456,9 @@
   
  If `id` is specified as `null` a unique ID will be automatically generated.  An `id` specified by an empty string is not valid.  
   
- If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode>, `targetUri` must be a relative URI that is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The internal relative URI can be either an absolute path that starts with a forward slash ("/") character such as "/page1.xaml" or "/images/picture4.jpg", or a relative path such as "../imagespicture1.jpg" that resolves against the package root ("/") as the base URI.  
+ If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.Internal>, `targetUri` must be a relative URI that is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The internal relative URI can be either an absolute path that starts with a forward slash ("/") character such as "/page1.xaml" or "/images/picture4.jpg", or a relative path such as "../imagespicture1.jpg" that resolves against the package root ("/") as the base URI.  
   
- If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode>, `targetUri` can be either an absolute or relative URI formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  "http://www.microsoft.com/page2.xml" is an example of an absolute URI that references an external target resource "page2.xml".  "images/picture1.jpg" is an example of a relative URI that also references an external target resource "1.jpg" but which resolves against the URI of the package itself.  
+ If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.External>, `targetUri` can be either an absolute or relative URI formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  "http://www.microsoft.com/page2.xml" is an example of an absolute URI that references an external target resource "page2.xml".  "images/picture1.jpg" is an example of a relative URI that also references an external target resource "1.jpg" but which resolves against the URI of the package itself.  
   
  `relationshipType` must be a URI that is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The following table shows the package-level `relationshipType` URIs defined by the Open Packaging Conventions (OPC) specification.  
   
@@ -1164,7 +1164,7 @@
 ## Remarks  
  <xref:System.IO.Packaging.ZipPackage> is the default package type that is used by the <xref:System.IO.Packaging.Package.Open%2A> method.  
   
- This <xref:System.IO.Packaging.Package.Open%2A> method opens the package with default attributes <xref:System.IO.FileMode>, <xref:System.IO.FileAccess>, and <xref:System.IO.FileShare> (to specify different attributes use one of the other Open method overloads).  
+ This <xref:System.IO.Packaging.Package.Open%2A> method opens the package with default attributes <xref:System.IO.FileMode.OpenOrCreate>, <xref:System.IO.FileAccess.ReadWrite>, and <xref:System.IO.FileShare.None> (to specify different attributes use one of the other Open method overloads).  
   
  For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
   
@@ -1255,7 +1255,7 @@
 ## Remarks  
  <xref:System.IO.Packaging.ZipPackage> is the default package type that is used by the <xref:System.IO.Packaging.Package.Open%2A> method.  
   
- This <xref:System.IO.Packaging.Package.Open%2A> method opens the package with default attributes <xref:System.IO.FileAccess> and <xref:System.IO.FileShare> (to specify different attributes use one of the other Open method overloads).  
+ This <xref:System.IO.Packaging.Package.Open%2A> method opens the package with default attributes <xref:System.IO.FileAccess.ReadWrite> and <xref:System.IO.FileShare.None> (to specify different attributes use one of the other Open method overloads).  
   
  For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
   
@@ -1350,7 +1350,7 @@
 ## Remarks  
  <xref:System.IO.Packaging.ZipPackage> is the default package type that is used by the <xref:System.IO.Packaging.Package.Open%2A> method.  
   
- This <xref:System.IO.Packaging.Package.Open%2A> method opens the package with a default <xref:System.IO.FileShare> attribute (to specify a different attribute use the <xref:System.IO.Packaging.Package.Open%2A> method overload).  
+ This <xref:System.IO.Packaging.Package.Open%2A> method opens the package with a default <xref:System.IO.FileShare.None> attribute (to specify a different attribute use the <xref:System.IO.Packaging.Package.Open%2A> method overload).  
   
  For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
   

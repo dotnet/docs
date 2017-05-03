@@ -163,7 +163,7 @@ h1 {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlLink.Render%2A> method renders a <xref:System.Web.UI.HtmlTextWriter> closing bracket (/>) if the ASP.NET application is configured to render XHTML-compliant markup. By default, ASP.NET pages and controls render markup that is compatible with the XHTML 1.1 standard. For more information on configuring an ASP.NET Web site for non-XHTML rendering, see [NIB: How to: Configure XHTML Rendering in ASP.NET Web Sites](http://msdn.microsoft.com/en-us/42483a54-f1ae-44e1-88e6-4370f8690149).  
+ The <xref:System.Web.UI.HtmlControls.HtmlLink.Render%2A> method renders a <xref:System.Web.UI.HtmlTextWriter.SelfClosingTagEnd> closing bracket (/>) if the ASP.NET application is configured to render XHTML-compliant markup. By default, ASP.NET pages and controls render markup that is compatible with the XHTML 1.1 standard. For more information on configuring an ASP.NET Web site for non-XHTML rendering, see [NIB: How to: Configure XHTML Rendering in ASP.NET Web Sites](http://msdn.microsoft.com/en-us/42483a54-f1ae-44e1-88e6-4370f8690149).  
   
  ]]></format>
         </remarks>

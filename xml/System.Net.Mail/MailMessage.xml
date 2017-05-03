@@ -484,7 +484,7 @@
 ## Remarks  
  The value specified for the <xref:System.Net.Mail.MailMessage.BodyEncoding%2A> property sets the character set field in the Content-Type header. The default character set is `"us-ascii"`.  
   
- If you set the <xref:System.Net.Mail.MailMessage.BodyEncoding%2A> property to <xref:System.Text.Encoding.UTF8%2A>, <xref:System.Text.Encoding.Unicode%2A>, or <xref:System.Text.Encoding.UTF32%2A>, the Framework selects a <xref:System.Net.Mime.TransferEncoding> of <xref:System.Net.Mime.TransferEncoding> for this <xref:System.Net.Mail.MailMessage>.  
+ If you set the <xref:System.Net.Mail.MailMessage.BodyEncoding%2A> property to <xref:System.Text.Encoding.UTF8%2A>, <xref:System.Text.Encoding.Unicode%2A>, or <xref:System.Text.Encoding.UTF32%2A>, the Framework selects a <xref:System.Net.Mime.TransferEncoding> of <xref:System.Net.Mime.TransferEncoding.Base64> for this <xref:System.Net.Mail.MailMessage>.  
   
    
   
@@ -820,7 +820,7 @@
 ## Remarks  
  The value of the <xref:System.Net.Mail.MailMessage.HeadersEncoding%2A> property defaults to <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName>.  
   
- SMTP messages consist of headers and body parts. The IETF RFCs for SMTP restrict the header and body part names to be ASCII. However, the IETF RFCs allow header and body part values to contain Unicode characters. In any particular value, if non-ASCII characters exist, then the value is encoded using a combination of character encoding (UTF8 or Shift-JIS, for example) followed by byte encoding (<xref:System.Net.Mime.TransferEncoding> or <xref:System.Net.Mime.TransferEncoding> for example). The result is usually that only ASCII characters are in the network transmission stream.  
+ SMTP messages consist of headers and body parts. The IETF RFCs for SMTP restrict the header and body part names to be ASCII. However, the IETF RFCs allow header and body part values to contain Unicode characters. In any particular value, if non-ASCII characters exist, then the value is encoded using a combination of character encoding (UTF8 or Shift-JIS, for example) followed by byte encoding (<xref:System.Net.Mime.TransferEncoding.Base64> or <xref:System.Net.Mime.TransferEncoding.QuotedPrintable> for example). The result is usually that only ASCII characters are in the network transmission stream.  
   
  ]]></format>
         </remarks>

@@ -54,7 +54,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Message Queuing (MSMQ) can authenticate messages that are sent to message queues that require authentication, or messages can explicitly request authentication. The default authentication mode is <xref:System.ServiceModel.MsmqAuthenticationMode>.  
+ Message Queuing (MSMQ) can authenticate messages that are sent to message queues that require authentication, or messages can explicitly request authentication. The default authentication mode is <xref:System.ServiceModel.MsmqAuthenticationMode.WindowsDomain>.  
   
  ]]></format>
         </remarks>
@@ -84,7 +84,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Message Queuing (MSMQ) can encrypt messages on the wire when transferring messages between message queue managers. The default encryption algorithm is <xref:System.ServiceModel.MsmqEncryptionAlgorithm>.  
+ Message Queuing (MSMQ) can encrypt messages on the wire when transferring messages between message queue managers. The default encryption algorithm is <xref:System.ServiceModel.MsmqEncryptionAlgorithm.RC4Stream>.  
   
  ]]></format>
         </remarks>
@@ -114,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default protection level is <xref:System.Net.Security.ProtectionLevel>.  
+ The default protection level is <xref:System.Net.Security.ProtectionLevel.Sign>.  
   
  ]]></format>
         </remarks>

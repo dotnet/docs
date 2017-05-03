@@ -1983,7 +1983,7 @@
   
  Null values will be returned as an empty (zero bytes) <xref:System.IO.Stream>.  
   
- <xref:System.Data.SqlClient.SqlDataReader.GetBytes%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A> when <xref:System.Data.CommandBehavior> is in effect.  
+ <xref:System.Data.SqlClient.SqlDataReader.GetBytes%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A> when <xref:System.Data.CommandBehavior.SequentialAccess> is in effect.  
   
  <xref:System.Data.SqlClient.SqlException> exceptions raised from <xref:System.IO.Stream> are thrown as <xref:System.IO.IOException> exceptions; check the inner exception for the <xref:System.Data.SqlClient.SqlException>.  
   
@@ -2007,7 +2007,7 @@
   
 -   WriteTimeout  
   
- When the connection property `ContextConnection=true`, <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A> only supports synchronous data retrieval for both sequential (<xref:System.Data.CommandBehavior>) and non-sequential (<xref:System.Data.CommandBehavior>) access.  
+ When the connection property `ContextConnection=true`, <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A> only supports synchronous data retrieval for both sequential (<xref:System.Data.CommandBehavior.SequentialAccess>) and non-sequential (<xref:System.Data.CommandBehavior.Default>) access.  
   
  For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
@@ -2111,9 +2111,9 @@
   
  Null values will be returned as an empty (zero bytes) <xref:System.IO.TextReader>.  
   
- <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> when <xref:System.Data.CommandBehavior> is in effect.  
+ <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> when <xref:System.Data.CommandBehavior.SequentialAccess> is in effect.  
   
- When the connection property `ContextConnection=true`, <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> only supports synchronous data retrieval for both sequential (<xref:System.Data.CommandBehavior>) and non-sequential (<xref:System.Data.CommandBehavior>) access.  
+ When the connection property `ContextConnection=true`, <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> only supports synchronous data retrieval for both sequential (<xref:System.Data.CommandBehavior.SequentialAccess>) and non-sequential (<xref:System.Data.CommandBehavior.Default>) access.  
   
  For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
@@ -2309,7 +2309,7 @@
   
  <xref:System.Data.SqlClient.SqlException> exceptions raised from <xref:System.Xml.XmlReader> are thrown as <xref:System.Xml.XmlException> exceptions; check the inner exception for the <xref:System.Data.SqlClient.SqlException>.  
   
- <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader%2A> when <xref:System.Data.CommandBehavior> is in effect.  
+ <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader%2A> when <xref:System.Data.CommandBehavior.SequentialAccess> is in effect.  
   
  For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   

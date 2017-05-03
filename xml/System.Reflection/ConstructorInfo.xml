@@ -244,12 +244,12 @@
   
  The constructor is a class initializer.</exception>
         <exception cref="T:System.MethodAccessException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.MemberAccessException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The constructor is private or protected, and the caller lacks <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="parameters" /> array does not contain values that match the types accepted by this constructor.</exception>
@@ -357,7 +357,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes> only when a given member is a constructor.  
+ This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes.Constructor> only when a given member is a constructor.  
   
    
   

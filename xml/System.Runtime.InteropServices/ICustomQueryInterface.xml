@@ -37,7 +37,7 @@
   
  Developers can provide custom implementations for all interfaces (except for `IUnknown`) if they define and implement a valid corresponding interface.  
   
- A valid user-defined interface has a v-table layout that matches the unmanaged COM interface exactly, and its <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> is <xref:System.Runtime.InteropServices.ComInterfaceType>.  
+ A valid user-defined interface has a v-table layout that matches the unmanaged COM interface exactly, and its <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> is <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown>.  
   
  ]]></format>
     </remarks>

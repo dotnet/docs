@@ -40,7 +40,7 @@
   
  These calling convention identifiers are used by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], the [!INCLUDE[wince](~/includes/wince-md.md)] platform, and by Automation.  
   
- For additional information about <xref:System.Runtime.InteropServices.ComTypes.CALLCONV>, see the MSDN Library.  
+ For additional information about <xref:System.Runtime.InteropServices.ComTypes.CALLCONV.CC_CDECL>, see the MSDN Library.  
   
  The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
   

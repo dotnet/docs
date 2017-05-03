@@ -1312,52 +1312,19 @@
   
  Exceptions  
   
- <list type="table">  
-<listheader>  
-<term> Exception type  
+ <list type="table"><listheader><term> Exception type  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="T:System.SystemException" />  
+ </description></listheader><item><term><see cref="T:System.SystemException" /></term><description> The directory could not be found or modified.  
   
- </term>  
-<description> The directory could not be found or modified.  
+ </description></item><item><term><see cref="T:System.UnauthorizedAccessException" /></term><description> The current process does not have access to open the directory.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.UnauthorizedAccessException" />  
+ </description></item><item><term><see cref="T:System.IO.IOException" /></term><description> An I/O error occurred while opening the directory.  
   
- </term>  
-<description> The current process does not have access to open the directory.  
+ </description></item><item><term><see cref="T:System.PlatformNotSupportedException" /></term><description> The current operating system is not Microsoft Windows 2000 or later.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.IO.IOException" />  
-  
- </term>  
-<description> An I/O error occurred while opening the directory.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.PlatformNotSupportedException" />  
-  
- </term>  
-<description> The current operating system is not Microsoft Windows 2000 or later.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.UnauthorizedAccessException" />  
-  
- </term>  
-<description> The directory is read-only.  
+ </description></item><item><term><see cref="T:System.UnauthorizedAccessException" /></term><description> The directory is read-only.  
   
  -or-  
   
@@ -1367,9 +1334,7 @@
   
  The caller does not have the required permission.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

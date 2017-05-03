@@ -847,7 +847,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A get operation for a Windows-based application, in which a console does not exist, returns <xref:System.ConsoleColor>.  
+ A get operation for a Windows-based application, in which a console does not exist, returns <xref:System.ConsoleColor.Gray>.  
   
    
   
@@ -1699,14 +1699,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Console.Read%2A> method blocks its return while you type input characters; it terminates when you press the <xref:System.ConsoleKey> key. Pressing Enter appends a platform-dependent line termination sequence to your input (for example, Windows appends a carriage return-linefeed sequence). Subsequent calls to the <xref:System.Console.Read%2A> method retrieve your input one character at a time. After the final character is retrieved, <xref:System.Console.Read%2A> blocks its return again and the cycle repeats.  
+ The <xref:System.Console.Read%2A> method blocks its return while you type input characters; it terminates when you press the <xref:System.ConsoleKey.Enter> key. Pressing Enter appends a platform-dependent line termination sequence to your input (for example, Windows appends a carriage return-linefeed sequence). Subsequent calls to the <xref:System.Console.Read%2A> method retrieve your input one character at a time. After the final character is retrieved, <xref:System.Console.Read%2A> blocks its return again and the cycle repeats.  
   
 > [!IMPORTANT]
 >  The <xref:System.Console.ReadLine%2A> method, or the <xref:System.Console.KeyAvailable%2A> property and <xref:System.Console.ReadKey%2A> method are preferable to using the <xref:System.Console.Read%2A> method.  
   
  Note that the method does not return -1 unless you perform one of the following actions:  
   
--   Simultaneously press the <xref:System.ConsoleModifiers> modifier key and <xref:System.ConsoleKey> console key (Ctrl+Z), which signals the end-of-file condition.  
+-   Simultaneously press the <xref:System.ConsoleModifiers.Control> modifier key and <xref:System.ConsoleKey.Z> console key (Ctrl+Z), which signals the end-of-file condition.  
   
 -   Press an equivalent key that signals the end-of-file condition, such as the F6 function key in Windows.  
   

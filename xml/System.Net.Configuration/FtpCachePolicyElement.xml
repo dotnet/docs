@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Applications typically use <xref:System.Net.Cache.RequestCacheLevel> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request.  
+ Applications typically use <xref:System.Net.Cache.RequestCacheLevel.Default> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request.  
   
  ]]></format>
         </remarks>

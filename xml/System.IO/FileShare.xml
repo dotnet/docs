@@ -36,7 +36,7 @@
   
  A typical use of this enumeration is to define whether two processes can simultaneously read from the same file. For example, if a file is opened and Read is specified, other users can open the file for reading but not for writing.  
   
- A <xref:System.IO.FileShare> parameter is specified in some of the constructors for <xref:System.IO.FileStream>, <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>, and in some of the `Open` methods of <xref:System.IO.File> and <xref:System.IO.FileInfo> to control how a file is opened.  
+ A <xref:System.IO.FileShare.Read> parameter is specified in some of the constructors for <xref:System.IO.FileStream>, <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>, and in some of the `Open` methods of <xref:System.IO.File> and <xref:System.IO.FileInfo> to control how a file is opened.  
   
    
   

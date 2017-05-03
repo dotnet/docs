@@ -419,14 +419,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload sets the default value for the postback type to <xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>. If the `mapToSoftKey` parameter is set to `true`, the text of the `softkeyLabel` parameter is displayed. The following table shows the postback types used for the `postBackType` argument.  
+ This overload sets the default value for the postback type to <xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Normal>. If the `mapToSoftKey` parameter is set to `true`, the text of the `softkeyLabel` parameter is displayed. The following table shows the postback types used for the `postBackType` argument.  
   
 |Type|Description|  
 |----------|-----------------|  
-|<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>|The postback contains a name and an encoded argument.|  
-|<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>|The postback contains the control used to submit the form, typically an _EVENTTARGET and a command.|  
-|<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>|The postback contains a name and a variable reference.|  
-|<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType>|The postback contains a name and an argument.|  
+|<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Normal>|The postback contains a name and an encoded argument.|  
+|<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Submit>|The postback contains the control used to submit the form, typically an _EVENTTARGET and a command.|  
+|<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Variable>|The postback contains a name and a variable reference.|  
+|<xref:System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Raw>|The postback contains a name and an argument.|  
   
  ]]></format>
         </remarks>

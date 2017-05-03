@@ -155,7 +155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default merge option is <xref:System.Data.Objects.MergeOption> for tracked objects or <xref:System.Data.Objects.MergeOption> when the object is not tracked in the <xref:System.Data.Objects.ObjectStateManager>. To specify a merge option other than <xref:System.Data.Objects.MergeOption>, call the `Load` method on the <xref:System.Data.Objects.DataClasses.EntityCollection%601> or the <xref:System.Data.Objects.DataClasses.EntityReference%601> that takes a specific <xref:System.Data.Objects.MergeOption> parameter.  
+ The default merge option is <xref:System.Data.Objects.MergeOption.AppendOnly> for tracked objects or <xref:System.Data.Objects.MergeOption.NoTracking> when the object is not tracked in the <xref:System.Data.Objects.ObjectStateManager>. To specify a merge option other than <xref:System.Data.Objects.MergeOption.AppendOnly>, call the `Load` method on the <xref:System.Data.Objects.DataClasses.EntityCollection%601> or the <xref:System.Data.Objects.DataClasses.EntityReference%601> that takes a specific <xref:System.Data.Objects.MergeOption> parameter.  
   
  Calling the <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> method sets the <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> flag to `true`.  
   
@@ -202,7 +202,7 @@
   
  The <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> method loads related objects from the data source whether or not <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> is `true`.  
   
- The default merge option is <xref:System.Data.Objects.MergeOption> for tracked objects or <xref:System.Data.Objects.MergeOption> when the object is not tracked in the <xref:System.Data.Objects.ObjectStateManager>.  
+ The default merge option is <xref:System.Data.Objects.MergeOption.AppendOnly> for tracked objects or <xref:System.Data.Objects.MergeOption.NoTracking> when the object is not tracked in the <xref:System.Data.Objects.ObjectStateManager>.  
   
  ]]></format>
         </remarks>
@@ -456,7 +456,7 @@
 ## Remarks  
  If the related end already has some entities attached to it, the existing entities will be merged with the new entity. The new entity is not assumed to be the complete set of related entity objects.  
   
- The source entity object and all entity objects passed in must be in an <xref:System.Data.EntityState> or <xref:System.Data.EntityState> state. Deleted elements are allowed only when the state manager is already tracking the relationship instance.  
+ The source entity object and all entity objects passed in must be in an <xref:System.Data.EntityState.Unchanged> or <xref:System.Data.EntityState.Modified> state. Deleted elements are allowed only when the state manager is already tracking the relationship instance.  
   
  ]]></format>
         </remarks>

@@ -107,9 +107,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When an object is attached to the object context, either as the result of a query or by calling <xref:System.Data.Objects.ObjectContext.Attach%2A>, the <xref:System.Data.EntityState> becomes <xref:System.Data.EntityState>.  
+ When an object is attached to the object context, either as the result of a query or by calling <xref:System.Data.Objects.ObjectContext.Attach%2A>, the <xref:System.Data.EntityState> becomes <xref:System.Data.EntityState.Unchanged>.  
   
- When an object is detached from the object context, it returns to the <xref:System.Data.EntityState> state.  
+ When an object is detached from the object context, it returns to the <xref:System.Data.EntityState.Detached> state.  
   
  ]]></format>
         </remarks>

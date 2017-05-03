@@ -138,7 +138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `mode` parameter pertains to the source file on disk. You can use only the <xref:System.IO.FileMode> enumeration value to create the memory-mapped file from the source file on disk.  
+ The `mode` parameter pertains to the source file on disk. You can use only the <xref:System.IO.FileMode.Open> enumeration value to create the memory-mapped file from the source file on disk.  
   
  ]]></format>
         </remarks>
@@ -205,7 +205,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `mode` parameter pertains to the source file on disk. You can use only the <xref:System.IO.FileMode> enumeration value to create the memory-mapped file from the source file on disk.  
+ The `mode` parameter pertains to the source file on disk. You can use only the <xref:System.IO.FileMode.Open> enumeration value to create the memory-mapped file from the source file on disk.  
   
  ]]></format>
         </remarks>

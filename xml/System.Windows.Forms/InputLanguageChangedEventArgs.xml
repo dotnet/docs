@@ -100,176 +100,91 @@
         <summary>Gets the character set associated with the new input language.</summary>
         <value>An 8-bit unsigned integer that corresponds to the character set, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Character Set  
+ <list type="table"><listheader><term> Character Set  
   
- </term>  
-<description> Value  
+ </term><description> Value  
   
- </description>  
-</listheader>  
-<item>  
-<term> ANSI_CHARSET  
+ </description></listheader><item><term> ANSI_CHARSET  
   
- </term>  
-<description> 0  
+ </term><description> 0  
   
- </description>  
-</item>  
-<item>  
-<term> DEFAULT_CHARSET  
+ </description></item><item><term> DEFAULT_CHARSET  
   
- </term>  
-<description> 1  
+ </term><description> 1  
   
- </description>  
-</item>  
-<item>  
-<term> SYMBOL_CHARSET  
+ </description></item><item><term> SYMBOL_CHARSET  
   
- </term>  
-<description> 2  
+ </term><description> 2  
   
- </description>  
-</item>  
-<item>  
-<term> MAC_CHARSET  
+ </description></item><item><term> MAC_CHARSET  
   
- </term>  
-<description> 77  
+ </term><description> 77  
   
- </description>  
-</item>  
-<item>  
-<term> SHIFTJI_CHARSET  
+ </description></item><item><term> SHIFTJI_CHARSET  
   
- </term>  
-<description> 128  
+ </term><description> 128  
   
- </description>  
-</item>  
-<item>  
-<term> HANGEUL_CHARSET  
+ </description></item><item><term> HANGEUL_CHARSET  
   
- </term>  
-<description> 129  
+ </term><description> 129  
   
- </description>  
-</item>  
-<item>  
-<term> HANGUL_CHARSET  
+ </description></item><item><term> HANGUL_CHARSET  
   
- </term>  
-<description> 129  
+ </term><description> 129  
   
- </description>  
-</item>  
-<item>  
-<term> JOHAB_CHARSET  
+ </description></item><item><term> JOHAB_CHARSET  
   
- </term>  
-<description> 130  
+ </term><description> 130  
   
- </description>  
-</item>  
-<item>  
-<term> GB2312_CHARSET  
+ </description></item><item><term> GB2312_CHARSET  
   
- </term>  
-<description> 134  
+ </term><description> 134  
   
- </description>  
-</item>  
-<item>  
-<term> CHINESEBIG5_CHARSET  
+ </description></item><item><term> CHINESEBIG5_CHARSET  
   
- </term>  
-<description> 136  
+ </term><description> 136  
   
- </description>  
-</item>  
-<item>  
-<term> GREEK_CHARSET  
+ </description></item><item><term> GREEK_CHARSET  
   
- </term>  
-<description> 161  
+ </term><description> 161  
   
- </description>  
-</item>  
-<item>  
-<term> TURKISH_CHARSET  
+ </description></item><item><term> TURKISH_CHARSET  
   
- </term>  
-<description> 162  
+ </term><description> 162  
   
- </description>  
-</item>  
-<item>  
-<term> VIETNAMESE_CHARSET  
+ </description></item><item><term> VIETNAMESE_CHARSET  
   
- </term>  
-<description> 163  
+ </term><description> 163  
   
- </description>  
-</item>  
-<item>  
-<term> HEBREW_CHARSET  
+ </description></item><item><term> HEBREW_CHARSET  
   
- </term>  
-<description> 177  
+ </term><description> 177  
   
- </description>  
-</item>  
-<item>  
-<term> ARABIC_CHARSET  
+ </description></item><item><term> ARABIC_CHARSET  
   
- </term>  
-<description> 178  
+ </term><description> 178  
   
- </description>  
-</item>  
-<item>  
-<term> BALTIC_CHARSET  
+ </description></item><item><term> BALTIC_CHARSET  
   
- </term>  
-<description> 186  
+ </term><description> 186  
   
- </description>  
-</item>  
-<item>  
-<term> RUSSIAN_CHARSET  
+ </description></item><item><term> RUSSIAN_CHARSET  
   
- </term>  
-<description> 204  
+ </term><description> 204  
   
- </description>  
-</item>  
-<item>  
-<term> THAI_CHARSET  
+ </description></item><item><term> THAI_CHARSET  
   
- </term>  
-<description> 222  
+ </term><description> 222  
   
- </description>  
-</item>  
-<item>  
-<term> EASTEUROPE_CHARSET  
+ </description></item><item><term> EASTEUROPE_CHARSET  
   
- </term>  
-<description> 238  
+ </term><description> 238  
   
- </description>  
-</item>  
-<item>  
-<term> OEM_CHARSET  
+ </description></item><item><term> OEM_CHARSET  
   
- </term>  
-<description> 255  
+ </term><description> 255  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

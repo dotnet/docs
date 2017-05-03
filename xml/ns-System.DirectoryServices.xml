@@ -31,7 +31,7 @@
   
  A search of the Active Directory Domain Services hierarchy through <xref:System.DirectoryServices.DirectorySearcher> returns instances of <xref:System.DirectoryServices.SearchResult>, which are contained in an instance of the <xref:System.DirectoryServices.SearchResultCollection> class.  
   
- Note: Many of the classes, methods, and properties in the <xref:System.DirectoryServices> namespace use the <xref:System.Security.Permissions.SecurityAction> code access security option. This means that the code access security demand only occurs during just-in-time compilation and that the demand is performed only on the calling assembly and not up the entire call stack. Because of this, callers should not pass objects that are created from this namespace at runtime to code that is not trusted.  
+ Note: Many of the classes, methods, and properties in the <xref:System.DirectoryServices> namespace use the <xref:System.Security.Permissions.SecurityAction.LinkDemand> code access security option. This means that the code access security demand only occurs during just-in-time compilation and that the demand is performed only on the calling assembly and not up the entire call stack. Because of this, callers should not pass objects that are created from this namespace at runtime to code that is not trusted.  
   
  ]]></format>
     </remarks>

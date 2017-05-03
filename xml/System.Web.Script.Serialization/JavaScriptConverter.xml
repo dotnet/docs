@@ -41,9 +41,7 @@
   
 -   <see cref="M:System.Web.Script.Serialization.JavaScriptConverter.Serialize(System.Object,System.Web.Script.Serialization.JavaScriptSerializer)" />  
   
--   <see cref="P:System.Web.Script.Serialization.JavaScriptConverter.SupportedTypes" />  
-  
- <see cref="T:System.Web.Script.Serialization.JavaScriptSerializer" /> provides the <see cref="M:System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType``1(System.Object)" /> method that will be used by implementers of <see cref="T:System.Web.Script.Serialization.JavaScriptConverter" />. Converter code must be able to take a value that is contained in the dictionary that the serializer passes to it, and then convert that value into an object of type <paramref name="T" />. Rather than re-implementing the custom conversion code to accomplish this, you can call the <see cref="M:System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType``1(System.Object)" /> method.</para>
+-   <see cref="P:System.Web.Script.Serialization.JavaScriptConverter.SupportedTypes" /><see cref="T:System.Web.Script.Serialization.JavaScriptSerializer" /> provides the <see cref="M:System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType``1(System.Object)" /> method that will be used by implementers of <see cref="T:System.Web.Script.Serialization.JavaScriptConverter" />. Converter code must be able to take a value that is contained in the dictionary that the serializer passes to it, and then convert that value into an object of type <paramref name="T" />. Rather than re-implementing the custom conversion code to accomplish this, you can call the <see cref="M:System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType``1(System.Object)" /> method.</para>
     </block>
   </Docs>
   <Members>

@@ -393,7 +393,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is `null`, the new <xref:System.Text.StringBuilder> will contain the empty string (that is, it contains <xref:System.String>).  
+ If `value` is `null`, the new <xref:System.Text.StringBuilder> will contain the empty string (that is, it contains <xref:System.String.Empty>).  
   
    
   

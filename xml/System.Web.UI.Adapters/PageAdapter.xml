@@ -257,7 +257,7 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.PageAdapter" /> class, you can override the <see cref="M:System.Web.UI.Adapters.PageAdapter.GetPostBackFormReference(System.String)" /> method if the markup for the browser supported by the adapter requires a different format for the postback form reference. For example, the HTML 3.2 standard used by PocketPC browsers requires the following format:  
   
- <c>document.</c> <paramref name="formID" /></para>
+ <c>document.</c><paramref name="formID" /></para>
         </block>
       </Docs>
     </Member>

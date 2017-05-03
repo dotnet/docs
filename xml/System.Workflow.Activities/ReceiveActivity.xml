@@ -539,7 +539,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Workflow.Activities.ReceiveActivity> property is an attached dependency property defined by the <xref:System.Workflow.Activities.ReceiveActivity> activity. This dependency property is attached to the root workflow that contains the <xref:System.Workflow.Activities.ReceiveActivity> activity using the <xref:System.Workflow.Activities.ReceiveActivity.SetWorkflowServiceAttributes%2A> method call at design time.  
+ The <xref:System.Workflow.Activities.ReceiveActivity.WorkflowServiceAttributesProperty> property is an attached dependency property defined by the <xref:System.Workflow.Activities.ReceiveActivity> activity. This dependency property is attached to the root workflow that contains the <xref:System.Workflow.Activities.ReceiveActivity> activity using the <xref:System.Workflow.Activities.ReceiveActivity.SetWorkflowServiceAttributes%2A> method call at design time.  
   
  The <xref:System.Workflow.Activities.ReceiveActivity.WorkflowServiceAttributesProperty> property is used for defining service-level behavior attributes that are applied to the workflow service when it starts. These cannot be modified at runtime.  
   
@@ -819,9 +819,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Workflow.Activities.ReceiveActivity> property is an attached dependency property defined by the <xref:System.Workflow.Activities.ReceiveActivity> activity. This dependency property is attached to the root workflow that contains the <xref:System.Workflow.Activities.ReceiveActivity> activity using the <xref:System.Workflow.Activities.ReceiveActivity.SetWorkflowServiceAttributes%2A> method call at design time.  
+ The <xref:System.Workflow.Activities.ReceiveActivity.WorkflowServiceAttributesProperty> property is an attached dependency property defined by the <xref:System.Workflow.Activities.ReceiveActivity> activity. This dependency property is attached to the root workflow that contains the <xref:System.Workflow.Activities.ReceiveActivity> activity using the <xref:System.Workflow.Activities.ReceiveActivity.SetWorkflowServiceAttributes%2A> method call at design time.  
   
- The <xref:System.Workflow.Activities.ReceiveActivity> property is used for defining service-level behavior attributes that are applied to the workflow service when it starts. These cannot be modified at runtime.  
+ The <xref:System.Workflow.Activities.ReceiveActivity.WorkflowServiceAttributesProperty> property is used for defining service-level behavior attributes that are applied to the workflow service when it starts. These cannot be modified at runtime.  
   
 > [!NOTE]
 >  If the current workflow starts another workflow using a <xref:System.Workflow.Activities.InvokeWorkflowActivity> activity, the invoked workflow does not inherit the invoking workflow's service attributes.  

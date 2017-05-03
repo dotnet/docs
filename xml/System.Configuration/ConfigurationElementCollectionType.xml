@@ -17,7 +17,7 @@
 ## Remarks  
  This enumeration contains all the possible return values for the <xref:System.Configuration.ConfigurationElementCollection.CollectionType%2A> property. It is used by the configuration system during run time to correctly merge configuration settings. It is also used when creating a custom class that extends <xref:System.Configuration.ConfigurationElementCollection>.  
   
- By default, the type of a <xref:System.Configuration.ConfigurationElementCollection> object is AddRemoveClearMap. If a BasicMap is required, override the <xref:System.Configuration.ConfigurationElementCollectionType> property when extending <xref:System.Configuration.ConfigurationElementCollection>.  
+ By default, the type of a <xref:System.Configuration.ConfigurationElementCollection> object is AddRemoveClearMap. If a BasicMap is required, override the <xref:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap> property when extending <xref:System.Configuration.ConfigurationElementCollectionType.BasicMap>.  
   
  ]]></format>
     </remarks>

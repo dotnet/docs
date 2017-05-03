@@ -91,7 +91,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A message may have a delivery status of <xref:System.ServiceModel.Channels.DeliveryStatus> or <xref:System.ServiceModel.Channels.DeliveryStatus>. A message has a delivery status of <xref:System.ServiceModel.Channels.DeliveryStatus> unless Message Queuing (MSMQ) can determine that it was not delivered, in which case its delivery status becomes <xref:System.ServiceModel.Channels.DeliveryStatus>.  
+ A message may have a delivery status of <xref:System.ServiceModel.Channels.DeliveryStatus.InDoubt> or <xref:System.ServiceModel.Channels.DeliveryStatus.NotDelivered>. A message has a delivery status of <xref:System.ServiceModel.Channels.DeliveryStatus.InDoubt> unless Message Queuing (MSMQ) can determine that it was not delivered, in which case its delivery status becomes <xref:System.ServiceModel.Channels.DeliveryStatus.NotDelivered>.  
   
  An example of an in-doubt message is a message that has expired. Message Queuing cannot determine whether the message was delivered to the application after it expired.  
   

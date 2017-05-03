@@ -59,12 +59,10 @@
         <summary>Gets the service's metadata at runtime.</summary>
         <value>A <see cref="T:System.ServiceModel.Description.MetadataSet" /> object that contains the service's metadata at runtime.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  Changes in the returned collection are reflected in subsequent requests for the service metadata.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

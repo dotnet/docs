@@ -56,7 +56,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, transport security is used to secure communication (that is, the value of <xref:System.ServiceModel.SecurityMode> is set to <xref:System.ServiceModel.SecurityMode>) and reliable sessions are disabled (that is <xref:System.ServiceModel.OptionalReliableSession.Enabled%2A> is `false`).  
+ By default, transport security is used to secure communication (that is, the value of <xref:System.ServiceModel.SecurityMode> is set to <xref:System.ServiceModel.SecurityMode.Transport>) and reliable sessions are disabled (that is <xref:System.ServiceModel.OptionalReliableSession.Enabled%2A> is `false`).  
   
    
   

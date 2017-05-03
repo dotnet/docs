@@ -159,7 +159,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this property is not set, or is set to `null` or <xref:System.String>, the associated <xref:System.ServiceModel.PeerNode> listens on all global addresses (both IPv4 and IPv6) configured for the local machine.  
+ If this property is not set, or is set to `null` or <xref:System.String.Empty>, the associated <xref:System.ServiceModel.PeerNode> listens on all global addresses (both IPv4 and IPv6) configured for the local machine.  
   
  If a valid unicast IP address is specified for this property, then the associated <xref:System.ServiceModel.PeerNode> object listens on that address. IPv4 and IPv6 wildcard addresses are not considered valid.  
   

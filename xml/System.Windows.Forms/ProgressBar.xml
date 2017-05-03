@@ -603,7 +603,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ProgressBar.Increment%2A> method enables you to increment the value of the progress bar by a specific amount. This method of incrementing the progress bar is similar to using the <xref:System.Windows.Forms.ProgressBar.Step%2A> property with the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method. The <xref:System.Windows.Forms.ProgressBar.Value%2A> property specifies the current position of the <xref:System.Windows.Forms.ProgressBar>. If, after calling the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is greater than the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property remains at the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property. If, after calling the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method with a negative value specified in the `value` parameter, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is less than the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property remains at the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property.  
   
- Because a <xref:System.Windows.Forms.ProgressBar> object whose style is set to <xref:System.Windows.Forms.ProgressBarStyle> displays a continuously scrolling bar instead of its <xref:System.Windows.Forms.ProgressBar.Value%2A>, calling <xref:System.Windows.Forms.ProgressBar.Increment%2A> is unnecessary and will raise an <xref:System.InvalidOperationException>.  
+ Because a <xref:System.Windows.Forms.ProgressBar> object whose style is set to <xref:System.Windows.Forms.ProgressBarStyle.Marquee> displays a continuously scrolling bar instead of its <xref:System.Windows.Forms.ProgressBar.Value%2A>, calling <xref:System.Windows.Forms.ProgressBar.Increment%2A> is unnecessary and will raise an <xref:System.InvalidOperationException>.  
   
    
   
@@ -1178,7 +1178,7 @@
   
  The <xref:System.Windows.Forms.ProgressBar.Value%2A> property specifies the current position of the <xref:System.Windows.Forms.ProgressBar>. If, after calling the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is greater than the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property remains at the value of the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property. If, after calling the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method with a negative value specified in <xref:System.Windows.Forms.ProgressBar.Step%2A>, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is less than the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property remains at the value of the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property.  
   
- Because a <xref:System.Windows.Forms.ProgressBar> object whose style is set to <xref:System.Windows.Forms.ProgressBarStyle> displays a continuously scrolling bar instead of its <xref:System.Windows.Forms.ProgressBar.Value%2A>, calling <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> is unnecessary and will raise an <xref:System.InvalidOperationException>.  
+ Because a <xref:System.Windows.Forms.ProgressBar> object whose style is set to <xref:System.Windows.Forms.ProgressBarStyle.Marquee> displays a continuously scrolling bar instead of its <xref:System.Windows.Forms.ProgressBar.Value%2A>, calling <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> is unnecessary and will raise an <xref:System.InvalidOperationException>.  
   
    
   
@@ -1362,7 +1362,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the marquee style when you need to indicate progress is being made, without indicating the quantity of progress. The <xref:System.Windows.Forms.ProgressBarStyle> style is honored only when visual styles are enabled. The <xref:System.Windows.Forms.ProgressBarStyle> style is honored when visual styles are not enabled.  
+ You can use the marquee style when you need to indicate progress is being made, without indicating the quantity of progress. The <xref:System.Windows.Forms.ProgressBarStyle.Marquee> style is honored only when visual styles are enabled. The <xref:System.Windows.Forms.ProgressBarStyle.Continuous> style is honored when visual styles are not enabled.  
   
  ]]></format>
         </remarks>

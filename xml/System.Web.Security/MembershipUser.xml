@@ -364,7 +364,7 @@
 ## Remarks  
  <xref:System.Web.Security.MembershipUser.GetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.GetPassword%2A?displayProperty=fullName> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to retrieve the password for the membership from the membership data store.  
   
- If <xref:System.Web.Security.Membership.EnablePasswordRetrieval%2A> is `false`, the membership provider will return an exception. If the provider supports passwords with a <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> of <xref:System.Web.Security.MembershipPasswordFormat>, you will be unable to retrieve the password for the membership user and should consider making use of the <xref:System.Web.Security.MembershipUser.ResetPassword%2A> method when a user has forgotten his or her password.  
+ If <xref:System.Web.Security.Membership.EnablePasswordRetrieval%2A> is `false`, the membership provider will return an exception. If the provider supports passwords with a <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> of <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, you will be unable to retrieve the password for the membership user and should consider making use of the <xref:System.Web.Security.MembershipUser.ResetPassword%2A> method when a user has forgotten his or her password.  
   
 > [!NOTE]
 >  A <xref:System.Configuration.ConfigurationException> will be thrown if `enablePasswordRetrieval` is set to `true` and `passwordFormat` is set to `Hashed` in the Web.config file for the ASP.NET application.  
@@ -415,7 +415,7 @@
 ## Remarks  
  <xref:System.Web.Security.MembershipUser.GetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.GetPassword%2A?displayProperty=fullName> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to retrieve the password for the membership user from the membership data store. If a password answer is required and an incorrect password answer is supplied, a <xref:System.Web.Security.MembershipPasswordException> is thrown by the membership provider.  
   
- If <xref:System.Web.Security.Membership.EnablePasswordRetrieval%2A> is `false`, the membership provider will return an exception. If the provider supports passwords with a <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> of <xref:System.Web.Security.MembershipPasswordFormat>, you will be unable to retrieve the password for the membership user and should consider making use of the <xref:System.Web.Security.MembershipUser.ResetPassword%2A> method when a user has forgotten his or her password.  
+ If <xref:System.Web.Security.Membership.EnablePasswordRetrieval%2A> is `false`, the membership provider will return an exception. If the provider supports passwords with a <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> of <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, you will be unable to retrieve the password for the membership user and should consider making use of the <xref:System.Web.Security.MembershipUser.ResetPassword%2A> method when a user has forgotten his or her password.  
   
 > [!NOTE]
 >  A <xref:System.Configuration.ConfigurationException> will be thrown if `enablePasswordRetrieval` is set to `true` and `passwordFormat` is set to `Hashed` in the Web.config file for the ASP.NET application.  
@@ -759,7 +759,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.MembershipUser.ProviderUserKey%2A> property exposes the identifier from the membership data source typed as `object`. The type of the identifier depends on the <xref:System.Web.Security.MembershipProvider> or the <xref:System.Web.Security.MembershipUser>. In the case of the <xref:System.Web.Security.SqlMembershipProvider>, the <xref:System.Web.Security.MembershipUser.ProviderUserKey%2A> can be cast as a <xref:System.Guid>, since the <xref:System.Web.Security.SqlMembershipProvider> stores the user identifier as a <xref:System.Data.SqlDbType>.  
+ The <xref:System.Web.Security.MembershipUser.ProviderUserKey%2A> property exposes the identifier from the membership data source typed as `object`. The type of the identifier depends on the <xref:System.Web.Security.MembershipProvider> or the <xref:System.Web.Security.MembershipUser>. In the case of the <xref:System.Web.Security.SqlMembershipProvider>, the <xref:System.Web.Security.MembershipUser.ProviderUserKey%2A> can be cast as a <xref:System.Guid>, since the <xref:System.Web.Security.SqlMembershipProvider> stores the user identifier as a <xref:System.Data.SqlDbType.UniqueIdentifier>.  
   
  ]]></format>
         </remarks>

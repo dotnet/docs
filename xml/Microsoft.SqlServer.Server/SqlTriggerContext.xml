@@ -24,7 +24,7 @@
    
   
 ## Examples  
- The following example shows a <xref:Microsoft.SqlServer.Server.SqlTriggerContext> object being used to determine if an <xref:Microsoft.SqlServer.Server.TriggerAction> action occurred. If a row was inserted into the `user`'s table, the user name and real name are retrieved from the inserted row and then added to the **UserNameAudit** table.  
+ The following example shows a <xref:Microsoft.SqlServer.Server.SqlTriggerContext> object being used to determine if an <xref:Microsoft.SqlServer.Server.TriggerAction.Insert> action occurred. If a row was inserted into the `user`'s table, the user name and real name are retrieved from the inserted row and then added to the **UserNameAudit** table.  
   
  [!code-csharp[DataWorks SqlTriggerContext Sample#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlTriggerContext Sample/CS/source.cs#1)]
  [!code-vb[DataWorks SqlTriggerContext Sample#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlTriggerContext Sample/VB/source.vb#1)]  
@@ -130,7 +130,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows an auditing trigger. If an <xref:Microsoft.SqlServer.Server.TriggerAction> or <xref:Microsoft.SqlServer.Server.TriggerAction> action occurred, the affected rows are retrieved from the INSERTED and DELETED tables.  
+ The following example shows an auditing trigger. If an <xref:Microsoft.SqlServer.Server.TriggerAction.Insert> or <xref:Microsoft.SqlServer.Server.TriggerAction.Delete> action occurred, the affected rows are retrieved from the INSERTED and DELETED tables.  
   
  [!code-csharp[DataWorks SqlTriggerContext Sample#2](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlTriggerContext Sample/CS/source.cs#2)]
  [!code-vb[DataWorks SqlTriggerContext Sample#2](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlTriggerContext Sample/VB/source.vb#2)]  

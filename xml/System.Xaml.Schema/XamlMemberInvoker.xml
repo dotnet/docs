@@ -184,7 +184,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation returns <xref:System.Xaml.Schema.ShouldSerializeResult> if the XAML member itself is <xref:System.Xaml.XamlMember.IsUnknown%2A>, or if no CLR-reflection relevant `ShouldSerialize` method is found on the underlying member through default reflection.  
+ The default implementation returns <xref:System.Xaml.Schema.ShouldSerializeResult.Default> if the XAML member itself is <xref:System.Xaml.XamlMember.IsUnknown%2A>, or if no CLR-reflection relevant `ShouldSerialize` method is found on the underlying member through default reflection.  
   
  ]]></format>
         </remarks>

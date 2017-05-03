@@ -17,7 +17,7 @@
 ## Remarks  
  Text objects are always displayed by using anti aliasing, and are not affected by setting the edge mode value. The default value for non-text drawing primitives, such as <xref:System.Windows.Shapes.Ellipse> and <xref:System.Windows.Shapes.Polygon>, is Unspecified.  
   
- When you set the edge mode value of a visual object, all the child drawing primitives of that visual object are set to the same <xref:System.Windows.Media.EdgeMode> value.  
+ When you set the edge mode value of a visual object, all the child drawing primitives of that visual object are set to the same <xref:System.Windows.Media.EdgeMode.Unspecified> value.  
   
    
   

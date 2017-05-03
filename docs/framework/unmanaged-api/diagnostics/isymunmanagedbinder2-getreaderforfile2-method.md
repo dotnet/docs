@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedBinder2::GetReaderForFile2 method [.NET Framework debugging]"
   - "GetReaderForFile2 method [.NET Framework debugging]"
 ms.assetid: dd92dcaf-403c-464d-a254-21594985dddd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

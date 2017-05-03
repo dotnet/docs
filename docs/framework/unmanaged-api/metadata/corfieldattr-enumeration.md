@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorFieldAttr enumeration [.NET Framework metadata]"
 ms.assetid: 6ae2c4be-212c-4e74-9288-40a11dc26522
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

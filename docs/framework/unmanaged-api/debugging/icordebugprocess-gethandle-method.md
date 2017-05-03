@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetHandle method, ICorDebugProcess interface [.NET Framework debugging]"
   - "ICorDebugProcess::GetHandle method [.NET Framework debugging]"
 ms.assetid: e7d3ecf5-09d2-4d94-abb6-ff3483deebb6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ExitTask method [.NET Framework hosting]"
   - "ICLRTask::ExitTask method [.NET Framework hosting]"
 ms.assetid: 746c85a6-4b33-4f72-a2e9-379fdf2e96af
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

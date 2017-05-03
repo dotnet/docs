@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess2::SetUnmanagedBreakpoint method [.NET Framework debugging]"
   - "SetUnmanagedBreakpoint method [.NET Framework debugging]"
 ms.assetid: 93829d15-d942-4e2d-b7a4-dfc9d7fb96be
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

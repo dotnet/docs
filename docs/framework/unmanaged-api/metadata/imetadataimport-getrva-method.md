@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetRVA method [.NET Framework metadata]"
   - "IMetaDataImport::GetRVA method [.NET Framework metadata]"
 ms.assetid: ea422217-988b-4acd-b2db-c55357938275
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

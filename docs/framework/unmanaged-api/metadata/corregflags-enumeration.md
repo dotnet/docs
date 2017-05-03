@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorRegFlags enumeration [.NET Framework metadata]"
 ms.assetid: 8d3080ee-39fe-4c57-8950-51323632d045
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugBlockingObject structure [.NET Framework debugging]"
 ms.assetid: 5944edd1-0914-4efa-aba0-d5a277c38b1a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

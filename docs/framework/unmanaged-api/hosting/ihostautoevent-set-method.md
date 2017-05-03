@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Set method, IHostAutoEvent interface [.NET Framework hosting]"
   - "IHostAutoEvent::Set method [.NET Framework hosting]"
 ms.assetid: 46becf3e-bc0e-4338-85c0-9ab0df76a1d0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

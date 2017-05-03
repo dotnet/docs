@@ -1545,7 +1545,7 @@
 ## Remarks  
  <xref:System.Runtime.InteropServices.Marshal.CreateWrapperOfType%60%602%28%60%600%29> converts a COM object of type `T` to the `TWrapper` COM class type. The input COM object, represented by parameter `o`, is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW).  
   
- Both the `T`generic type parameter and the `o` parameter must be classes whose signatures are attributed with the <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=fullName> attribute. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool applies this attribute for you when it imports a type library. If you create the RCW manually in source code, you should apply this attribute to the managed signature that represents the original coclass to signify its COM origins.  
+ Both the `T` generic type parameter and the `o` parameter must be classes whose signatures are attributed with the <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=fullName> attribute. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool applies this attribute for you when it imports a type library. If you create the RCW manually in source code, you should apply this attribute to the managed signature that represents the original coclass to signify its COM origins.  
   
  Tlbimp.exe imports a COM [coclass](http://msdn.microsoft.com/en-us/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Because`T` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the `coclass` interface.  
   
@@ -7212,7 +7212,7 @@
   
  The overall pattern for using <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> is as follows:  
   
-1.  On the first call to the <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A>method after a memory block has been allocated, `fDeleteOld`must be`false`, because there are no contents to clear.  
+1.  On the first call to the <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> method after a memory block has been allocated, `fDeleteOld` must be `false`, because there are no contents to clear.  
   
     > [!IMPORTANT]
     >  Specify `true` for `fDeleteOld` only if the block contains valid data.  

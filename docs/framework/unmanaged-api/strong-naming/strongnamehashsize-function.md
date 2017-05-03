@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameHashSize function [.NET Framework strong naming]"
 ms.assetid: 738c98d7-a60c-45fe-a296-220af05e6991
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

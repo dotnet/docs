@@ -8,6 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: abed9e00-2ddc-468e-9cca-d033bd6a7e36
+redirect_url: /dotnet/articles/csharp/index
 ---
 
 # 🔧 Using C# Interactive with Visual Studio

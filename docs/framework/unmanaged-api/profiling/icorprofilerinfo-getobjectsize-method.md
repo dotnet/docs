@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetObjectSize method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetObjectSize method [.NET Framework profiling]"
 ms.assetid: 9f02e763-73f7-42cb-a41c-f78499d9482c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

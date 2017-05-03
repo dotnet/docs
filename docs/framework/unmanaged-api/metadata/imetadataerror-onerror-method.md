@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataError::OnError method [.NET Framework metadata]"
   - "OnError method, IMetaDataError interface [.NET Framework metadata]"
 ms.assetid: c1e744b8-a6fb-4d9c-a971-8babc875d8f0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

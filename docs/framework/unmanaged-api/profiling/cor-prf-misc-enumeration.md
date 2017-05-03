@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_MISC enumeration [.NET Framework profiling]"
 ms.assetid: 619bb5de-e309-48b6-a3af-32d935a0ff46
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

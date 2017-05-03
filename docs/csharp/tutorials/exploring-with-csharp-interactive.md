@@ -8,6 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 13b5c1b7-d3f1-4c96-910c-4890162866c1
+redirect_url: /dotnet/articles/csharp/tutorials/index
 ---
 
 # 🔧 Using C# Interactive to explore and experiment

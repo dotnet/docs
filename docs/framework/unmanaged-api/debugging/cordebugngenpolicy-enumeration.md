@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugNgenPolicy enumeration [.NET Framework debugging]"
 ms.assetid: edb4e4d2-3166-44d4-8b17-bf302f7ea093
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "RemotingClientInvocationFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::RemotingClientInvocationFinished method [.NET Framework profiling]"
 ms.assetid: ea4b283b-1210-4f41-a7a2-c398b1adde4e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

@@ -361,7 +361,7 @@
 > [!IMPORTANT]
 >  The `DateWithTimeZone` structure is used in the next two examples, which serialize and deserialize an array of `DateWithTimeZone` objects. To run the examples, first create a class library that contains the `DateWithTimeZone` structure, and then add a reference to it when you compile each example.  
   
- By using the `DateWithTimeZone` structure , you can then persist date and time along with time zone information. The following example uses the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> class to serialize an array of `DateWithTimeZone`objects.  
+ By using the `DateWithTimeZone` structure , you can then persist date and time along with time zone information. The following example uses the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> class to serialize an array of `DateWithTimeZone` objects.  
   
  [!code-csharp[System.DateTime.Persist#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.persist/cs/persist7.cs#7)]
  [!code-vb[System.DateTime.Persist#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.persist/vb/persist7.vb#7)]  
@@ -1293,7 +1293,7 @@
 ## Remarks  
  This method does not change the value of this <xref:System.DateTime>. Instead, it returns a new <xref:System.DateTime> whose value is the result of this operation.  
   
- The fractional part of `value`is the fractional part of a day. For example, 4.5 is equivalent to 4 days, 12 hours, 0 minutes, 0 seconds, 0 milliseconds, and 0 ticks.  
+ The fractional part of `value` is the fractional part of a day. For example, 4.5 is equivalent to 4 days, 12 hours, 0 minutes, 0 seconds, 0 milliseconds, and 0 ticks.  
   
  The `value` parameter is rounded to the nearest millisecond.  
   
@@ -2862,7 +2862,7 @@ July, 2009
  Each element of the return value is formatted using culture-specific information supplied by `provider`.  
   
 > [!IMPORTANT]
->  Because this method uses culture-sensitive data, you should not assume that multiple calls to the method will return identical data unless `provider` is a <xref:System.Globalization.CultureInfo> object that represents the invariant culture. The data returned by this method can change if the user overrides the individual cultural settings of `provider`or if an update occurs to the system's cultural data for `provider`.  
+>  Because this method uses culture-sensitive data, you should not assume that multiple calls to the method will return identical data unless `provider` is a <xref:System.Globalization.CultureInfo> object that represents the invariant culture. The data returned by this method can change if the user overrides the individual cultural settings of `provider` or if an update occurs to the system's cultural data for `provider`.  
   
    
   
@@ -6114,7 +6114,7 @@ juillet 2009
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can contain either a single format specifier character (see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md)) or a custom format pattern (see [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md)). If `format`is `null` or an empty string (""), the standard format specifier, "G", is used.  
+ The `format` parameter can contain either a single format specifier character (see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md)) or a custom format pattern (see [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md)). If `format` is `null` or an empty string (""), the standard format specifier, "G", is used.  
   
  The `provider` parameter defines the pattern that corresponds to the standard format specifiers, as well as the symbols and names of date and time components. The `provider` parameter can be any of the following:  
   

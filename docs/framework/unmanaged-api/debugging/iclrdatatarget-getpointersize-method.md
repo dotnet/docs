@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetPointerSize method [.NET Framework debugging]"
   - "ICLRDataTarget::GetPointerSize method [.NET Framework debugging]"
 ms.assetid: 51d9f4a4-81a7-4527-8537-5212bdb05c70
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

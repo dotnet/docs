@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRRuntimeInfo::LoadLibrary method [.NET Framework hosting]"
   - "LoadLibrary method [.NET Framework hosting]"
 ms.assetid: 4517ada3-4417-4ac5-a150-73da7a87c686
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CALL_ID structure [.NET Framework debugging]"
 ms.assetid: bfd46324-afec-4782-9c18-586d81fb4740
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

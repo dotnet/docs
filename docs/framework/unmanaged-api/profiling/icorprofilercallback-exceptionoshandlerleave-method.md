@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ExceptionOSHandlerLeave method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionOSHandlerLeave method [.NET Framework profiling]"
 ms.assetid: 4d164676-0ee9-4f67-a8ea-cb474db09053
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

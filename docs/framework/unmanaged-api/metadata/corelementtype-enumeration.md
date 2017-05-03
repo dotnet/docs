@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorElementType enumeration [.NET Framework metadata]"
 ms.assetid: c3809c8f-1737-4f0f-9442-0c01ee689871
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

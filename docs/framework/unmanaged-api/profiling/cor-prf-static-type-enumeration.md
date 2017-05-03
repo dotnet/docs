@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_STATIC_TYPE enumeration [.NET Framework profiling]"
 ms.assetid: 441d7809-5b65-41a5-ba64-2910a8008315
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

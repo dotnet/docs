@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IInstallReferenceItem::GetReference method [.NET Framework fusion]"
   - "GetReference method [.NET Framework fusion]"
 ms.assetid: 8960332f-c98a-405a-ba92-7003de0c1187
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

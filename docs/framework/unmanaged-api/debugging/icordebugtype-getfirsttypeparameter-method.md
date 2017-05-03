@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugType::GetFirstTypeParameter method [.NET Framework debugging]"
   - "GetFirstTypeParameter method [.NET Framework debugging]"
 ms.assetid: 35bb594f-af6a-4349-83fe-e98702674e03
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

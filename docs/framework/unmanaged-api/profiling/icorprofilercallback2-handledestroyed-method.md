@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback2::HandleDestroyed method [.NET Framework profiling]"
   - "HandleDestroyed method [.NET Framework profiling]"
 ms.assetid: ab4f4bbd-40c7-4667-bfde-60cd73803110
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

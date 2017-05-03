@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ASSEMBLYMETADATA structure [.NET Framework metadata]"
 ms.assetid: 1af98e57-9145-4d35-bb78-77d1da7c91a5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

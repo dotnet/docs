@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "OpenScopeOnMemory method [.NET Framework metadata]"
   - "IMetaDataDispenser::OpenScopeOnMemory method [.NET Framework metadata]"
 ms.assetid: 14218249-bdec-48ae-b5fc-9f57f7ca8501
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

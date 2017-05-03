@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugStackWalk interface [.NET Framework debugging]"
 ms.assetid: 16d695e8-975d-431b-8421-e9e6c3e3f476
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

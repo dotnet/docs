@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorThreadSafetyOptions enumeration [.NET Framework metadata]"
 ms.assetid: dae07d9b-df51-488c-b17e-52d6e48217bd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

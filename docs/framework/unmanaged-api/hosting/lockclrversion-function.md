@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "LockClrVersion function [.NET Framework hosting]"
 ms.assetid: 1318ee37-c43b-40eb-bbe8-88fc46453d74
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

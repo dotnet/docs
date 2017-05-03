@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRGCManager::Collect method [.NET Framework hosting]"
   - "Collect method, ICLRGCManager interface [.NET Framework hosting]"
 ms.assetid: 0c6cbbea-c27c-4695-bda3-17c1910d8ddb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

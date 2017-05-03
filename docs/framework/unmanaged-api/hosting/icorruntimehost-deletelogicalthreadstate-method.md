@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorRuntimeHost::DeleteLogicalThreadState method [.NET Framework hosting]"
   - "DeleteLogicalThreadState method [.NET Framework hosting]"
 ms.assetid: 34ffc4a6-6553-43df-9b43-779effb67e2c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

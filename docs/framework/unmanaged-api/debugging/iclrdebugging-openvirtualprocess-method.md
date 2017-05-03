@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "OpenVirtualProcess method [.NET Framework debugging]"
   - "ICLRDebugging::OpenVirtualProcess method [.NET Framework debugging]"
 ms.assetid: e8ab7c41-d508-4ed9-8a31-ead072b5a314
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

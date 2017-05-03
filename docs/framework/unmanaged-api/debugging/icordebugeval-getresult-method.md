@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugEval::GetResult method [.NET Framework debugging]"
   - "GetResult method [.NET Framework debugging]"
 ms.assetid: 50dbb9af-58a1-41f4-b56d-3da20011884f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

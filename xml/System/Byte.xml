@@ -59,7 +59,7 @@
      [!code-csharp[System.Byte.Instantiation#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.byte.instantiation/cs/byteinstantiation1.cs#1)]
      [!code-vb[System.Byte.Instantiation#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.byte.instantiation/vb/byteinstantiate1.vb#1)]  
   
--   You can assign a non-byte numeric value to a byte. This is a narrowing conversion, so it requires a cast operator in C# and a conversion method in Visual Basic if `Option``Strict` is on. If the non-byte value is a <xref:System.Single>, <xref:System.Double>, or <xref:System.Decimal> value that includes a fractional component, the handling of its fractional part depends on the compiler performing the conversion. The following example assigns several numeric values to <xref:System.Byte> variables.  
+-   You can assign a non-byte numeric value to a byte. This is a narrowing conversion, so it requires a cast operator in C# and a conversion method in Visual Basic if `Option Strict` is on. If the non-byte value is a <xref:System.Single>, <xref:System.Double>, or <xref:System.Decimal> value that includes a fractional component, the handling of its fractional part depends on the compiler performing the conversion. The following example assigns several numeric values to <xref:System.Byte> variables.  
   
      [!code-csharp[System.Byte.Instantiation#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.byte.instantiation/cs/byteinstantiation1.cs#2)]
      [!code-vb[System.Byte.Instantiation#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.byte.instantiation/vb/byteinstantiate1.vb#2)]  

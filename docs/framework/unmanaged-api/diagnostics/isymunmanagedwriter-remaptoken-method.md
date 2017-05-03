@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter::RemapToken method [.NET Framework debugging]"
   - "RemapToken method [.NET Framework debugging]"
 ms.assetid: bca92682-ee1e-467f-8fb0-d8d4617f82fe
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

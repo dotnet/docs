@@ -35,8 +35,8 @@
   
  The following code example shows how to replace the default mapping for the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property on a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#12)]  -->
- <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#12)]  -->  
+ [!code-csharp[PropertyMappingWithWfh#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfhSample/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#12)] 
+ [!code-vb[PropertyMappingWithWfh#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfhSample/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#12)]   
   
  ]]></format>
     </remarks>
@@ -117,13 +117,13 @@
 ## Examples  
  The following code example shows how to add a mapping for the <xref:System.Windows.Forms.Control.Margin%2A> property to an <xref:System.Windows.Forms.Integration.ElementHost> control.  
   
- [!code-csharp[PropertyMappingWithElementHost#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#12)]
+ [!code-csharp[PropertyMappingWithElementHost#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#12)] 
  [!code-vb[PropertyMappingWithElementHost#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#12)]  
   
  The following code example shows how to add a mapping for the <xref:System.Windows.UIElement.Clip%2A> property to a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#14](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#14)]  -->
- <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#14)]  -->  
+ [!code-csharp[PropertyMappingWithWfh#14](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfhSample/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#14)] 
+ [!code-vb[PropertyMappingWithWfh#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfhSample/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#14)]   
   
  ]]></format>
         </remarks>
@@ -272,8 +272,8 @@
   
  The following code example shows how to retrieve the <xref:System.Windows.Forms.Integration.PropertyTranslator> delegate for the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#15](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#15)]  -->
- <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#15)]  -->  
+ [!code-csharp[PropertyMappingWithWfh#15](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfhSample/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#15)] 
+ [!code-vb[PropertyMappingWithWfh#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfhSample/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#15)]   
   
  ]]></format>
         </remarks>
@@ -353,8 +353,8 @@
   
  The following code example shows how to add a mapping for the <xref:System.Windows.FrameworkElement.Cursor%2A> property to a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#13](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#13)]  -->
- <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#13)]  -->  
+ [!code-csharp[PropertyMappingWithWfh#13](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfhSample/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#13)] 
+ [!code-vb[PropertyMappingWithWfh#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfhSample/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#13)]   
   
  ]]></format>
         </remarks>

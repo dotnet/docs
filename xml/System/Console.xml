@@ -854,7 +854,7 @@
 ## Examples  
  The following example checks whether the console's background color is black and, if it is, it changes the background color to red and the foreground color to black.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.ConsoleColor#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.consolecolor/cs/Example2.cs#2)]  -->
+ [!code-csharp[System.ConsoleColor#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.consolecolor/cs/Example2.cs#2)] 
  [!code-vb[System.ConsoleColor#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.consolecolor/vb/Example2.vb#2)]  
   
  The following example saves the values of the <xref:System.ConsoleColor> enumeration to an array and stores the current values of the <xref:System.Console.BackgroundColor%2A> and <xref:System.Console.ForegroundColor%2A> properties to variables. It then changes the foreground color to each color in the <xref:System.ConsoleColor> enumeration except to the color that matches the current background, and it changes the background color to each color in the <xref:System.ConsoleColor> enumeration except to the color that matches the current foreground. (If the foreground color is the same as the background color, the text isn't visible.) Finally, it calls the <xref:System.Console.ResetColor%2A> method to restore the original console colors.  
@@ -3310,8 +3310,8 @@
 ## Examples  
  The following example uses the `WriteLine` method to demonstrate the standard formatting specifiers for numbers, dates, and enumerations.  
   
- <!-- TODO: review snippet reference [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)]  -->
- [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)]
+ [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)] 
+ [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)] 
  [!code-vb[console.writelineFmt1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.writelineFmt1/vb/wl.vb#1)]  
   
  The following example illustrates the use of the <xref:System.Console.Write%2A> method.  
@@ -3522,7 +3522,7 @@
 ## Examples  
  The following example uses the `WriteLine` method to demonstrate the standard formatting specifiers for numbers, dates, and enumerations.  
   
- <!-- TODO: review snippet reference [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)]  -->
+ [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)] 
  [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)]
  [!code-vb[console.writelineFmt1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.writelineFmt1/vb/wl.vb#1)]  
   
@@ -3601,7 +3601,7 @@
 ## Examples  
  The following example uses the `WriteLine` method to demonstrate the standard formatting specifiers for numbers, dates, and enumerations.  
   
- <!-- TODO: review snippet reference [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)]  -->
+ [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)] 
  [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)]
  [!code-vb[console.writelineFmt1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.writelineFmt1/vb/wl.vb#1)]  
   
@@ -4118,7 +4118,6 @@
 ## Examples  
  The following example uses the <xref:System.Console.WriteLine%28System.Object%29> method to display each value in an object array to the console.  
   
- <!-- TODO: review snippet reference [!code-cpp[System.Console.WriteLine#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Console.WriteLine/CPP/con_writeline.cpp#3)]  -->
  [!code-cpp[System.Console.WriteLine#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Console.WriteLine/CPP/writeline_obj1.cpp#3)]
  [!code-csharp[System.Console.WriteLine#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Console.WriteLine/CS/writeline_obj1.cs#3)]
  [!code-vb[System.Console.WriteLine#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Console.WriteLine/VB/writeline_obj1.vb#3)]  
@@ -4475,7 +4474,7 @@
 ## Examples  
  The following example demonstrates the standard formatting specifiers for numbers, dates, and enumerations.  
   
- <!-- TODO: review snippet reference [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)]  -->
+ [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)] 
  [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)]
  [!code-vb[console.writelineFmt1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.writelineFmt1/vb/wl.vb#1)]  
   
@@ -4607,7 +4606,7 @@
 ## Examples  
  The following example demonstrates the standard formatting specifiers for numbers, dates, and enumerations.  
   
- <!-- TODO: review snippet reference [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)]  -->
+ [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)] 
  [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)]
  [!code-vb[console.writelineFmt1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.writelineFmt1/vb/wl.vb#1)]  
   
@@ -4687,7 +4686,7 @@
 ## Examples  
  The following example demonstrates the standard formatting specifiers for numbers, dates, and enumerations.  
   
- <!-- TODO: review snippet reference [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)]  -->
+ [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)] 
  [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)]
  [!code-vb[console.writelineFmt1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.writelineFmt1/vb/wl.vb#1)]  
   

@@ -2,6 +2,7 @@
 title: "What&#39;s New in Windows Identity Foundation 4.5 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::DefineProperty method [.NET Framework metadata]"
   - "DefineProperty method [.NET Framework metadata]"
 ms.assetid: 5c4c1dc2-d40d-4173-bbe6-7058fb21c98f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

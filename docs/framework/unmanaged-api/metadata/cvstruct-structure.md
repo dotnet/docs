@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CVStruct structure [.NET Framework metadata]"
 ms.assetid: e9e4e497-d5fb-464b-991c-3bdd824664fd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

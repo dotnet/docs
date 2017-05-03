@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateProcessEx method, ICorDebugRemote interface [.NET Framework debugging]"
   - "ICorDebugRemote::CreateProcessEx method [.NET Framework debugging]"
 ms.assetid: 41af93c7-e448-4251-8d4d-413d38c635f2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

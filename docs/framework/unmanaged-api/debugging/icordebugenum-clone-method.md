@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Clone method, ICorDebugEnum interface [.NET Framework debugging]"
   - "ICorDebugEnum::Clone method [.NET Framework debugging]"
 ms.assetid: 57eefaf3-75cf-4496-bc94-88c0706861b7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

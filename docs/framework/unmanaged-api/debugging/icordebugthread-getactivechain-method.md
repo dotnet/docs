@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread::GetActiveChain method [.NET Framework debugging]"
   - "GetActiveChain method [.NET Framework debugging]"
 ms.assetid: f50de1f7-40ef-4949-b542-1d9a61f7bfef
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

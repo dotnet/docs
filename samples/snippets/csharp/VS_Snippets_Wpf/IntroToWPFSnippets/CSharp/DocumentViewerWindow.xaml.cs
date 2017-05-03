@@ -1,6 +1,6 @@
-using System.IO; // FileAccess
-using System.Windows; // Window
-using System.Windows.Xps.Packaging; // XpsDocument
+using System.IO;
+using System.Windows;
+using System.Windows.Xps.Packaging;
 
 namespace SDKSample
 {

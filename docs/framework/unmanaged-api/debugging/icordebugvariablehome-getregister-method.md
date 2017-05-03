@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugVariableHome::GetRegister method [.NET Framework debugging]"
   - "GetRegister method, ICorDebugVariableHome interface [.NET Framework debugging]"
 ms.assetid: a5eecd7b-b04c-4266-bff2-7c8771d519a8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -3398,7 +3398,7 @@
 ## Remarks  
  This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method.`Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
   
- When the `disposing`parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.Control> references. This method invokes the `Dispose()` method of each referenced object.  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.Control> references. This method invokes the `Dispose()` method of each referenced object.  
   
  ]]></format>
         </remarks>
@@ -5322,7 +5322,7 @@ MyControl.Font = New Font(MyControl.Font, _
   
  The example also demonstrates using custom cursors for the drag-and-drop operation. The example requires that two cursor files, `3dwarro.cur` and `3dwno.cur`, exist in the application directory, for the custom drag and no-drop cursors, respectively. The custom cursors will be used if the `UseCustomCursorsCheck`<xref:System.Windows.Forms.CheckBox> is checked. The custom cursors are set in the <xref:System.Windows.Forms.Control.GiveFeedback> event handler.  
   
- The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based on state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox`where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to `None` in <xref:System.Windows.Forms.DragDropEffects>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
+ The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based on state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to `None` in <xref:System.Windows.Forms.DragDropEffects>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
   
  The data to drop for the right `ListBox` is determined in the <xref:System.Windows.Forms.Control.DragDrop> event handler and the `String` value is added at the appropriate place in the `ListBox`. If the drag operation moves outside the bounds of the form, then the drag-and-drop operation is canceled in the <xref:System.Windows.Forms.Control.QueryContinueDrag> event handler.  
   
@@ -10408,7 +10408,7 @@ MyControl.Font = New Font(MyControl.Font, _
    
   
 ## Examples  
- The following code example is an event-raising method that is executed when the <xref:System.Windows.Forms.Control.Text%2A> property value changes. The <xref:System.Windows.Forms.Control> class has several methods with the name pattern `On`*PropertyName*`Changed`that raise the corresponding *PropertyName*`Changed` event when the *PropertyName* value changes (*PropertyName* represents the name of the corresponding property).  
+ The following code example is an event-raising method that is executed when the <xref:System.Windows.Forms.Control.Text%2A> property value changes. The <xref:System.Windows.Forms.Control> class has several methods with the name pattern `On`*PropertyName*`Changed` that raise the corresponding *PropertyName*`Changed` event when the *PropertyName* value changes (*PropertyName* represents the name of the corresponding property).  
   
  The following code example changes the <xref:System.Windows.Forms.Control.ForeColor%2A> of a <xref:System.Windows.Forms.TextBox> derived class displaying currency data. The example converts the text to a decimal number and changes the <xref:System.Windows.Forms.Control.ForeColor%2A> to <xref:System.Drawing.Color.Red%2A?displayProperty=fullName> if the number is negative and to <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> if the number is positive. This example requires that you have a class that derives from the <xref:System.Windows.Forms.TextBox> class.  
   
@@ -10457,7 +10457,7 @@ MyControl.Font = New Font(MyControl.Font, _
    
   
 ## Examples  
- The following code example is an event-raising method that is executed when the <xref:System.Windows.Forms.Control.Text%2A> property value changes. The <xref:System.Windows.Forms.Control> class has several methods with the name pattern `On`*PropertyName*`Changed`that raise the corresponding *PropertyName*`Changed` event when the *PropertyName* value changes (*PropertyName* represents the name of the corresponding property).  
+ The following code example is an event-raising method that is executed when the <xref:System.Windows.Forms.Control.Text%2A> property value changes. The <xref:System.Windows.Forms.Control> class has several methods with the name pattern `On`*PropertyName*`Changed` that raise the corresponding *PropertyName*`Changed` event when the *PropertyName* value changes (*PropertyName* represents the name of the corresponding property).  
   
  The following code example changes the <xref:System.Windows.Forms.Control.ForeColor%2A> of a <xref:System.Windows.Forms.TextBox> derived class displaying currency data. The example converts the text to a decimal number and changes the <xref:System.Windows.Forms.Control.ForeColor%2A> to <xref:System.Drawing.Color.Red%2A?displayProperty=fullName> if the number is negative and to <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> if the number is positive. This example requires that you have a class that derives from the <xref:System.Windows.Forms.TextBox> class.  
   
@@ -12001,7 +12001,7 @@ MyControl.Font = New Font(MyControl.Font, _
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called during message preprocessing to handle dialog characters, such as TAB, RETURN, ESC, and arrow keys. This method is called only if the <xref:System.Windows.Forms.Control.IsInputKey%2A> method indicates that the control is not processing the key. The <xref:System.Windows.Forms.Control.ProcessDialogKey%2A> simply sends the character to the parent's <xref:System.Windows.Forms.Control.ProcessDialogKey%2A> method, or returns `false`if the control has no parent. The <xref:System.Windows.Forms.Form> class overrides this method to perform actual processing of dialog keys. This method is only called when the control is hosted in a Windows Forms application or as an ActiveX control.  
+ This method is called during message preprocessing to handle dialog characters, such as TAB, RETURN, ESC, and arrow keys. This method is called only if the <xref:System.Windows.Forms.Control.IsInputKey%2A> method indicates that the control is not processing the key. The <xref:System.Windows.Forms.Control.ProcessDialogKey%2A> simply sends the character to the parent's <xref:System.Windows.Forms.Control.ProcessDialogKey%2A> method, or returns `false` if the control has no parent. The <xref:System.Windows.Forms.Form> class overrides this method to perform actual processing of dialog keys. This method is only called when the control is hosted in a Windows Forms application or as an ActiveX control.  
   
  ]]></format>
         </remarks>

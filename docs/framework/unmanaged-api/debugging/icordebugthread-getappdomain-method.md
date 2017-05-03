@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetAppDomain method, ICorDebugThread interface [.NET Framework debugging]"
   - "ICorDebugThread::GetAppDomain method [.NET Framework debugging]"
 ms.assetid: 415b3d34-8b35-4b60-a318-140646cc83f8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

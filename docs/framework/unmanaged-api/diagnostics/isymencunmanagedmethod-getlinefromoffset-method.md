@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetLineFromOffset method [.NET Framework debugging]"
   - "ISymENCUnmanagedMethod::GetLineFromOffset method [.NET Framework debugging]"
 ms.assetid: cc09bad2-fb34-4d13-a521-6ec7b1a1d915
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

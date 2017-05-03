@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerFunctionEnum::GetCount method [.NET Framework profiling]"
   - "GetCount method, ICorProfilerFunctionEnum interface [.NET Framework profiling]"
 ms.assetid: 62ec65e3-3e9d-400b-ae61-d24b8963995b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

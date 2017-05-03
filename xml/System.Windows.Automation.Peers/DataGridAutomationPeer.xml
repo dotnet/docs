@@ -235,7 +235,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the [UI Automation provider](GTMT) allows more than one child element to be selected concurrently.</summary>
+        <summary>Gets a value that specifies whether the UI Automation provider allows more than one child element to be selected concurrently.</summary>
         <value>
           <see langword="true" /> if multiple selection is allowed; otherwise <see langword="false" />.</value>
         <remarks>
@@ -287,7 +287,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the [UI Automation provider](GTMT) requires at least one child element to be selected.</summary>
+        <summary>Gets a value that specifies whether the UI Automation provider requires at least one child element to be selected.</summary>
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>

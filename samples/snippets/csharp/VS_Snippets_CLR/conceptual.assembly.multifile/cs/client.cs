@@ -1,6 +1,6 @@
 //<snippet3>
 using System;
-using myStringer; //The namespace created in Stringer.netmodule.
+using myStringer;
 
 class MainClientApp
 {

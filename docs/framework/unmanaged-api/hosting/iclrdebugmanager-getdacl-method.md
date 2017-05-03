@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetDacl method [.NET Framework hosting]"
   - "ICLRDebugManager::GetDacl method [.NET Framework hosting]"
 ms.assetid: 7115e920-aaff-440a-824e-39497139c6f6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -7,6 +7,7 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 4d823e71-19ac-4419-953e-b47aa58f5538
+redirect_url: /dotnet/articles/core/porting/index
 ---
 
 # 🔧 Porting to .NET Core - NuGet packages

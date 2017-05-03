@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ApplyChanges method [.NET Framework debugging]"
   - "ICorDebugModule2::ApplyChanges method [.NET Framework debugging]"
 ms.assetid: 96fa3406-6a6f-41a1-88c6-d9bc5d1a16d1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

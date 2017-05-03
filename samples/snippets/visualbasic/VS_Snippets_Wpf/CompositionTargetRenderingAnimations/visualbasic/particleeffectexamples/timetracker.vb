@@ -1,8 +1,8 @@
 Imports Microsoft.VisualBasic
 Imports System
-Imports System.Windows 'uielement
-Imports System.Windows.Media 'visual operations
-Imports System.Windows.Media.Animation 'animation effect stuff
+Imports System.Windows
+Imports System.Windows.Media
+Imports System.Windows.Media.Animation
 
 Namespace Microsoft.Samples.PerFrameAnimations
 

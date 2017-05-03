@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SimpleContext structure [.NET Framework debugging]"
   - "StackTrace_SimpleContext structure [.NET Framework debugging]"
 ms.assetid: d4cef11f-a8ca-49bc-a1b8-6631f9e28f3e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

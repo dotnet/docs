@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Stop method, ICorDebugController interface [.NET Framework debugging]"
   - "ICorDebugController::Stop method [.NET Framework debugging]"
 ms.assetid: c34e79be-a7fb-479e-8dec-d126a4c330e5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -1,9 +1,9 @@
 //<SnippetDetectPermsGracefulCODE1>
-using System.IO; // File, FileStream, StreamWriter
-using System.IO.IsolatedStorage; // IsolatedStorageFile
-using System.Security; // CodeAccesPermission
-using System.Security.Permissions; // FileIOPermission, FileIOPermissionAccess
-using System.Windows; // MessageBox
+using System.IO;
+using System.IO.IsolatedStorage;
+using System.Security;
+using System.Security.Permissions;
+using System.Windows;
 
 namespace SDKSample
 {

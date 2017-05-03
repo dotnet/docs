@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "AddSzArray method [.NET Framework hosting]"
   - "ITypeNameBuilder::AddSzArray method [.NET Framework hosting]"
 ms.assetid: a6a46296-af14-4c53-9744-f7a1e3f3028a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread::SetDebugState method [.NET Framework debugging]"
   - "SetDebugState method [.NET Framework debugging]"
 ms.assetid: 6382bdf6-d488-4952-b653-cb09b6e1c6c2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

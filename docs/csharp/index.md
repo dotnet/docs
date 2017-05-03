@@ -20,10 +20,10 @@ The C# guide provides a wealth of information about the C# language. This site h
     - Start with our [tutorials](tutorials/index.md) section. These tutorials show you how to create C# programs from scratch. The tutorials provide a step-by-step process to create programs. You'll learn the language concepts, and how to build C# programs on your own. If you prefer reading overview information first, try our [tour of the C# language](tour-of-csharp/index.md). It explains the concepts of the C# language. After reading this, you'll have a basic understanding of the language, and be ready to try the tutorials, or build something on your own.
 
 * For developers new to C#: 
-    - If you've done development before, but are new to C#, read the [tour of the C# language](tour-of-csharp/index.md). You will learn the basic syntax and structure for the language, and you can use the language tour to contrast C# with other languages you've used. You can also browse the [tutorials](tutorials/index.md) to try basic C# programs. Or, check out the [C# Concepts](concepts.md) to learn the features of the C# language in depth.
+    - If you've done development before, but are new to C#, read the [tour of the C# language](tour-of-csharp/index.md). You will learn the basic syntax and structure for the language, and you can use the language tour to contrast C# with other languages you've used. You can also browse the [tutorials](tutorials/index.md) to try basic C# programs.
 
 * Experienced C# developers:
-    - If you've used C# before, you should start by reading what's in the latest version of the language. Check out [What's new in C#](whats-new/index.md) for the new features in the current version. Then, explore the [C# Concepts](concepts.md) where you want more depth.
+    - If you've used C# before, you should start by reading what's in the latest version of the language. Check out [What's new in C#](whats-new/index.md) for the new features in the current version.
  
 ## How the C# guide is organized
 
@@ -41,14 +41,11 @@ There are seven sections in the C# Guide. You can read them in order, or jump di
 * [Latest Features](whats-new/index.md):
     - Learn about new features in the language. Learn about new tools like C# Interactive (C#'s REPL), and the .NET Compiler Platform SDK. You'll learn how the language is evolving. You'll see how the new tools can make you more productive in exploring the language, and automating tasks. 
 
-* [C# Interactive](interactive/index.md):
+<!--* [C# Interactive](interactive/index.md):
     - C# Interactive is a Read-Eval-Print Loop (REPL) that you can use to interactively explore the language. It can also be used to explore different libraries and frameworks by trying different actions using an interactive approach. In this section you'll learn how to install and start C# interactive, and how to explore APIs with it. You'll also learn how to use C# interactive to export tested classes for later use.  
-
-* [C# Concepts](concepts.md):
-    - Learn the concepts that are most useful to C# programmers. This section contains several end to end scenarios that show you different techniques for C# development. It focuses on the language, but the nature of the end to end scenarios are that this section also includes several programs that demonstrate different frameworks and libraries that are part of the .NET ecosystem.
-
-* [.NET Compiler Platform SDK](roslyn/index.md):
+-->
+<!--* [.NET Compiler Platform SDK](roslyn/index.md):
     - The .NET Compiler Platform SDK enables you to write components that analyze code, and suggest or make improvements to that code. In this section, you'll learn how the APIs are organized, and how you can create code that enables rules and practices for your team. You'll also see samples, end to end scenarios, and links to other libraries with more examples using these APIs.
-
+-->
 * [Language Reference](language-reference/index.md):
     - This section contains the reference material on the C# language. This material will help you understand the syntax and semantics of C#. 

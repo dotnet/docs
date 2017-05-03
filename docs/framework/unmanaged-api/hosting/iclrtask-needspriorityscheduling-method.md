@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRTask::NeedsPriorityScheduling method [.NET Framework hosting]"
   - "NeedsPriorityScheduling method [.NET Framework hosting]"
 ms.assetid: 9c9db3f3-26bf-4317-88de-5eb926a22a1d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

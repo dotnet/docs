@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorNotificationForTokenMovement enumeration [.NET Framework metadata]"
 ms.assetid: 1edd1670-976a-4fc8-bef7-7c41e60ad989
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

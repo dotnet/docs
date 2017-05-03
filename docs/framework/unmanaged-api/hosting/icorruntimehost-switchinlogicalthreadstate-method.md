@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorRuntimeHost::SwitchInLogicalThreadState method [.NET Framework hosting]"
   - "SwitchInLogicalThreadState method [.NET Framework hosting]"
 ms.assetid: 7df1e492-8014-43ea-80d1-a4743e9b1c17
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModule2::SetJITCompilerFlags method [.NET Framework debugging]"
   - "SetJITCompilerFlags method [.NET Framework debugging]"
 ms.assetid: ea574c84-c622-4589-9a14-b55771af5e06
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

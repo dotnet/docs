@@ -750,7 +750,7 @@ public void CreateOleDbParameter()
   
  Setting this property to a value other than the value in the database depends on the implementation of the data provider and may return an error code, truncate, or round data.  
   
- When using SQL Server Native Client 10 (or later), to bind a parameter whose type is `Decimal`, `Numeric,``VarNumeric, DBDate`, or `DBTimeStamp`, you must manually specify an appropriate scale value.  
+ When using SQL Server Native Client 10 (or later), to bind a parameter whose type is `Decimal`, `Numeric`, `VarNumeric`, `DBDate`, or `DBTimeStamp`, you must manually specify an appropriate scale value.  
   
 > [!NOTE]
 >  Use of this property to coerce data passed to the database is not supported. To round, truncate, or otherwise coerce data before passing it to the database, use the <xref:System.Math> class that is part of the `System` namespace prior to assigning a value to the parameter's `Value` property.  

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugObjectValue::SetFromManagedCopy method [.NET Framework debugging]"
   - "SetFromManagedCopy method [.NET Framework debugging]"
 ms.assetid: 2cee9108-a58d-48a8-b7d4-6beb6da3f4bb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -100,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In Visual Basic 6.0, the `MouseIcon` property of a form or control could be used to load a custom `MousePointer` (cursor). In some cases, the image for the `MouseIcon` was stored as a `stdOle``IPicture`; this function is used by the upgrade tool to convert a <xref:System.Windows.Forms.Cursor> to a `stdOle``IPicture`.  
+ In Visual Basic 6.0, the `MouseIcon` property of a form or control could be used to load a custom `MousePointer` (cursor). In some cases, the image for the `MouseIcon` was stored as a `stdOle.IPicture`; this function is used by the upgrade tool to convert a <xref:System.Windows.Forms.Cursor> to a `stdOle.IPicture`.  
   
  To convert a <xref:System.Windows.Forms.Cursor> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], use the <xref:System.Windows.Forms.AxHost.GetIPictureFromCursor%2A> method of the <xref:System.Windows.Forms.AxHost> class.  
   

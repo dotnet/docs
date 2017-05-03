@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::AssemblyUnloadStarted method [.NET Framework profiling]"
   - "AssemblyUnloadStarted method [.NET Framework profiling]"
 ms.assetid: 6e47b7e5-0335-4dd3-8c42-d3c07d62b102
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

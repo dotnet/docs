@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetStaticFieldValue method, ICorDebugClass interface [.NET Framework debugging]"
   - "ICorDebugClass::GetStaticFieldValue method [.NET Framework debugging]"
 ms.assetid: 56e718b4-fabd-418b-a5b3-3cc33c745683
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

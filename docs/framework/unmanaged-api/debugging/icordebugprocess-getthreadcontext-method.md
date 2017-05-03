@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess::GetThreadContext method [.NET Framework debugging]"
   - "GetThreadContext method, ICorDebugProcess interface [.NET Framework debugging]"
 ms.assetid: 5b132ef1-8d4b-4525-89b3-54123596c194
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

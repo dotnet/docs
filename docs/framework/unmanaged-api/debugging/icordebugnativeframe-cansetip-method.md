@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugNativeFrame::CanSetIP method [.NET Framework debugging]"
   - "CanSetIP method, ICorDebugNativeFrame interface [.NET Framework debugging]"
 ms.assetid: 13258ac6-f4e4-4f66-8fc3-f1244417a3c3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

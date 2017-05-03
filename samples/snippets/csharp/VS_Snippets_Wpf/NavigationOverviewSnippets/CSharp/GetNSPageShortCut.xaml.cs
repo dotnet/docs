@@ -1,7 +1,7 @@
-using System.Windows; // RoutedEventArgs
-using System.Windows.Controls; // Page
+using System.Windows;
+using System.Windows.Controls;
 //<SnippetGetNSShortcutCODEBEHIND1>
-using System.Windows.Navigation; // NavigationServce
+using System.Windows.Navigation;
 //</SnippetGetNSShortcutCODEBEHIND1>
 
 namespace SDKSample

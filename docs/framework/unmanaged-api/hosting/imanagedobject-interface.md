@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IManagedObject interface [.NET Framework hosting]"
 ms.assetid: 1fbbf572-6d28-41a5-82fb-579ac90bfcf5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

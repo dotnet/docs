@@ -95,7 +95,7 @@ namespace UEMsmqMessage
 
             // <Snippet21>
             message.TimeToReachQueue = new TimeSpan(0,10,0);
-            // <Snippet21>
+            // </Snippet21>
         }
     }
 }

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess5::EnableNGENPolicy method [.NET Framework debugging]"
   - "EnableNGENPolicy method, ICorDebugProcess5 interface [.NET Framework debugging]"
 ms.assetid: 3b8e15ca-3c72-4685-a937-da4c739cb9e9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

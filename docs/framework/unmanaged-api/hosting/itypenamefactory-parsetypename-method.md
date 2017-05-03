@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameFactory::ParseTypeName method [.NET Framework hosting]"
   - "ParseTypeName method [.NET Framework hosting]"
 ms.assetid: 13c9f063-371c-4911-a5e7-e1e0b88ae382
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

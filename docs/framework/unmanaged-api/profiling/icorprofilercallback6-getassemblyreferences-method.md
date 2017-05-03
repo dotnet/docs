@@ -19,6 +19,8 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 8b391afb-d79f-41bd-94ce-43ce62c6b5fc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

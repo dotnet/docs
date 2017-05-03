@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetMethodProps method [.NET Framework metadata]"
   - "IMetaDataEmit::SetMethodProps method [.NET Framework metadata]"
 ms.assetid: e0c6ac12-22ea-43f5-b799-8cda0faf3336
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

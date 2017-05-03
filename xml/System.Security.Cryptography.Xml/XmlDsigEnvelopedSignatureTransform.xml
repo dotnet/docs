@@ -16,9 +16,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform> class removes the <`Signatur`e> element from an XML document before the digest is computed. With this transform, you can sign and verify all elements of an XML document except the XML digital signature elements.  
+ The <xref:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform> class removes the `<Signature>` element from an XML document before the digest is computed. With this transform, you can sign and verify all elements of an XML document except the XML digital signature elements.  
   
- Although you can create and insert a signature into an XML document, verifying the modified document using the embedded signature will fail because the document now has additional elements.  This transform removes the <`Signatur`e> element and allows you to verify the document using its original form.  
+ Although you can create and insert a signature into an XML document, verifying the modified document using the embedded signature will fail because the document now has additional elements.  This transform removes the `<Signature>` element and allows you to verify the document using its original form.  
   
  Use the <xref:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform> class whenever you create an enveloped signature.  
   

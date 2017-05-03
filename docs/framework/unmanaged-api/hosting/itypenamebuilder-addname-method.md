@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameBuilder::AddName method [.NET Framework hosting]"
   - "AddName method [.NET Framework hosting]"
 ms.assetid: be2f6e55-f46d-49aa-b477-80fd7e4515f7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

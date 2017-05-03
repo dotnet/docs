@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::DefineEvent method [.NET Framework metadata]"
   - "DefineEvent method [.NET Framework metadata]"
 ms.assetid: cf064bac-9a9f-41c5-9e1d-108ff7af3afe
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::RemotingServerReceivingMessage method [.NET Framework profiling]"
   - "RemotingServerReceivingMessage method [.NET Framework profiling]"
 ms.assetid: 5604d21f-e6b7-490e-b469-42122a7568e1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

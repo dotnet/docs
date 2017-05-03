@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::DeletePinvokeMap method [.NET Framework metadata]"
   - "DeletePinvokeMap method [.NET Framework metadata]"
 ms.assetid: 3c4f6b54-5ce7-4a2a-83e1-6dec16441f50
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

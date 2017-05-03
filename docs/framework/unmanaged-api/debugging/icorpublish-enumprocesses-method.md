@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorPublish::EnumProcesses method [.NET Framework debugging]"
   - "EnumProcesses method [.NET Framework debugging]"
 ms.assetid: 4ae765f0-93b2-4b6f-aea1-7b0cf44e04a7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

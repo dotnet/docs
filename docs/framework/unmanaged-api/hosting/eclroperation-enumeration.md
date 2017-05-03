@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EClrOperation enumeration [.NET Framework hosting]"
 ms.assetid: 5aef6808-5aac-4b2f-a2c7-fee1575c55ed
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

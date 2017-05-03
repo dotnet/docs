@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetRoDataRVA method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueSnapshot::GetRoDataRVA method [.NET Framework debugging]"
 ms.assetid: efc32294-292b-419a-9d6e-24251322a85a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

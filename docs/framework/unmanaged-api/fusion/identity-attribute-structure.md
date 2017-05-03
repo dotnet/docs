@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IDENTITY_ATTRIBUTE structure [.NET Framework fusion]"
 ms.assetid: 1ee7c434-9681-4fa8-badd-652cb1a9742b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRDebugManager interface [.NET Framework hosting]"
 ms.assetid: e835062c-c7d6-4945-8a44-2de7ebf3928e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

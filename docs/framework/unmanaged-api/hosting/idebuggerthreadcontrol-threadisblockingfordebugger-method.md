@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ThreadIsBlockingForDebugger method [.NET Framework hosting]"
   - "IDebuggerThreadControl::ThreadIsBlockingForDebugger method [.NET Framework hosting]"
 ms.assetid: d4d7cb2d-69da-48b3-879a-1a8a68c9bfa8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetValue method, ISymUnmanagedConstant interface [.NET Framework debugging]"
   - "ISymUnmanagedConstant::GetValue method [.NET Framework debugging]"
 ms.assetid: 0036fc10-e768-47a8-b9cf-bf47faf8d194
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

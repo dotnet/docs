@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_GC_ROOT_KIND enumeration [.NET Framework profiling]"
 ms.assetid: b9fb1c03-417f-41d4-aed4-02cb4ade8def
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

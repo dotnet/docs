@@ -1,7 +1,7 @@
 '<SnippetHandlingSessionEndingCODEBEHIND>
 
 Imports Microsoft.VisualBasic
-Imports System.Windows ' Application, SessionEndingCancelEventArgs, MessageBox, MessageBoxResult, MessageBoxButton
+Imports System.Windows
 
 Namespace SDKSample
 	Partial Public Class App

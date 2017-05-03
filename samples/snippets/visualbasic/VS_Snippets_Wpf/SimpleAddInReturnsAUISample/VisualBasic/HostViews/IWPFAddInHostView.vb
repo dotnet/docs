@@ -1,6 +1,6 @@
 ﻿'<SnippetHostViewCode>
 
-Imports System.Windows ' FrameworkElement
+Imports System.Windows
 
 Namespace HostViews
 	''' <summary>

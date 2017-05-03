@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::FindMember method [.NET Framework metadata]"
   - "FindMember method [.NET Framework metadata]"
 ms.assetid: ad32fb84-c2b6-41cd-888d-787ff3a90449
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostTaskManager::ReverseEnterRuntime method [.NET Framework hosting]"
   - "ReverseEnterRuntime method [.NET Framework hosting]"
 ms.assetid: b1e26bff-d3ea-436e-9867-29720df999f4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

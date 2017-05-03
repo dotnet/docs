@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DefineSequencePoints method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::DefineSequencePoints method [.NET Framework debugging]"
 ms.assetid: 64202baf-be6b-40ba-8162-8cc6c0c9b8e1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

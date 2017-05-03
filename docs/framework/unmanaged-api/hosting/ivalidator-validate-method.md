@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IValidator::Validate method [.NET Framework hosting]"
   - "Validate method, IValidator interface [.NET Framework hosting]"
 ms.assetid: 7d68666a-fb73-4455-bebd-908d49a16abc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

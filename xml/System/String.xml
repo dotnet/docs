@@ -529,6 +529,235 @@
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.String" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this section:  
+  
+ [Overloaded constructor syntax](#Syntax)   
+ [Parameters](#Params)   
+ [Exceptions](#Exceptions)   
+ [Which method do I call?](#Tasks)   
+ [Creating strings](#Creating_Strings)   
+ [Handling repetitive strings](#Repetitive)   
+ Examples of instantiating strings:   
+ [Using string assignment](#Ctor1_Example)  
+ [Using a character array](#Ctor2_Example)  
+ [Using a portion of a character array and repeating a single character](#Ctor3_Example)  
+ [Using a pointer to a character array](#Ctor4_Example)  
+ [Using  a pointer and a range of an array](#Ctor5_Example)  
+ [Using a pointer to a signed byte array](#Ctor6_Example)  
+[Version information](#Versions)  
+  
+<a name="Syntax"></a>   
+## Overloaded constructor syntax  
+ String constructors fall into two categories: those without pointer parameters, and those with pointer parameters. The constructors that use pointers are not CLS-compliant. In addition, Visual Basic does not support the use of pointers, and C# requires code that uses pointers to run in an unsafe context. For more information, see [unsafe](~/docs/csharp/language-reference/keywords/unsafe.md).  
+  
+ For additional guidance on choosing an overload, see [Which method do I call?](#Tasks)  
+  
+ `String(Char[]`  `value` `)`  
+ Initializes the new instance to the value indicated by an array of Unicode characters. This constructor copies Unicode characters([example](#Ctor2_Example)).  
+  
+ `String(Char[]`  `value` `, Int32`  `startIndex` `, Int32`  `length` `)`  
+ Initializes the new instance to the value indicated by an array of Unicode characters, a starting character position within that array, and a length ([example](#Ctor3_Example)).  
+  
+ `String(Char`  `c` `, Int32`  `count` `)`  
+ Initializes the new instance to the value indicated by a specified Unicode character repeated a specified number of times ([example](#Ctor3_Example)).  
+  
+ `String(char*`  `value` `)`  
+ **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of Unicode characters that is terminated by a null character (U+0000 or '\0'). ([example](#Ctor4_Example)).  
+  
+ Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
+  
+ `String(char*`  `value` `, Int32`  `startIndex` `, Int32`  `length` `)`  
+ **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of Unicode characters, a starting character position within that array, and a length. The constructor copies the Unicode characters from `value` starting at index `startIndex` and ending at index `startIndex` + `length` – 1 ([example](#Ctor5_Example)).  
+  
+ Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
+  
+ `String(SByte*`  `value` `)`  
+ **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers. The array is assumed to represent a string encoded using the current system code page (that is, the encoding specified by <xref:System.Text.Encoding.Default%2A?displayProperty=fullName>). The constructor processes characters from `value` starting from the location specified by the pointer until a null character (0x00) is reached ([example](#Ctor6_Example)).  
+  
+ Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
+  
+ `String(SByte*`  `value` `, Int32`  `startIndex` `, Int32`  `length` `)`  
+ **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers, a starting position within that array, and a length.  The array is assumed to represent a string encoded using the current system code page (that is, the encoding specified by <xref:System.Text.Encoding.Default%2A?displayProperty=fullName>). The constructor processes characters from value starting at `startIndex` and ending at `startIndex` + `length` – 1 ([example](#Ctor6_Example)).  
+  
+ Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
+  
+ `String(SByte*`  `value` `, Int32`  `startIndex` `, Int32`  `length` `, Encoding`  `enc` `)`  
+ **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers, a starting position within that array, a length, and an <xref:System.Text.Encoding> object.  
+  
+ Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
+  
+<a name="Params"></a>   
+## Parameters  
+ Here is a complete list of parameters used by <xref:System.String>constructors that do not include a pointer parameter. For the parameters used by each overload, see the overload syntax above.  
+  
+|Parameter|Type|Description|  
+|---------------|----------|-----------------|  
+|`value`|<xref:System.Char>[]|An array of Unicode characters.|  
+|`c`|<xref:System.Char>|A Unicode character.|  
+|`startIndex`|<xref:System.Int32>|The starting position in `value` of the first character in the new string.<br /><br /> Default value: 0|  
+|`length`|<xref:System.Int32>|The number of characters in `value` to include in the new string.<br /><br /> Default value: <xref:System.Array.Length%2A?displayProperty=fullName>|  
+|`count`|<xref:System.Int32>|The number of times the character `c` is repeated in the new string. If `count` is zero, the value of the new object is <xref:System.String.Empty?displayProperty=fullName>.|  
+  
+ Here is a complete list of parameters used by <xref:System.String>constructors that include a pointer parameter. For the parameters used by each overload, see the overload syntax above.  
+  
+|Parameter|Type|Description|  
+|---------------|----------|-----------------|  
+|`value`|<xref:System.Char>*<br /><br /> -or-<br /><br /> <xref:System.SByte>\*|A pointer to a null-terminated array of Unicode characters or an array of 8-bit signed integers. If `value` is `null` or an empty array, the value of the new string is <xref:System.String.Empty?displayProperty=fullName>.|  
+|`startIndex`|<xref:System.Int32>|The index of the array element that defines the first character in the new string.<br /><br /> Default value: 0|  
+|`length`|<xref:System.Int32>|The number of array elements to use to create the new string. If length is zero, the constructor creates a string whose value is <xref:System.String.Empty?displayProperty=fullName>.<br /><br /> Default value: <xref:System.Array.Length%2A?displayProperty=fullName>|  
+|`enc`|<xref:System.Text.Encoding>|An object that specifies how the `value` array is encoded.<br /><br /> Default value: <xref:System.Text.Encoding.Default%2A?displayProperty=fullName>, or the system's current ANSI code page|  
+  
+<a name="Exceptions"></a>   
+## Exceptions  
+ Here's a list of exceptions thrown by constructors that do not include pointer parameters.  
+  
+|Exception|Condition|Thrown by|  
+|---------------|---------------|---------------|  
+|<xref:System.ArgumentNullException>|`value` is `null`.|<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29>|  
+|<xref:System.ArgumentOutOfRangeException>|`startIndex`,`length`, or `count` is less than zero.<br /><br /> -or-<br /><br /> The sum of `startIndex` and `length` is greater than the number of elements in `value`.<br /><br /> -or-<br /><br /> `count` is less than zero.|<xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29>|  
+  
+ Here's a list of exceptions thrown by constructors that include pointer parameters.  
+  
+|Exception|Condition|Thrown by|  
+|---------------|---------------|---------------|  
+|<xref:System.ArgumentException>|`value` specifies an array that contains an invalid Unicode character.<br /><br /> -or-<br /><br /> `value` or `value` + `startIndex` specifies an address that is less than 64K.<br /><br /> -or-<br /><br /> A new <xref:System.String> instance could not be initialized from the `value` byte array because `value` does not use the default code page encoding.|All constructors with pointers.|  
+|<xref:System.ArgumentNullException>|`value` is null.|<xref:System.String.%23ctor%28System.SByte%2A%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%2CSystem.Text.Encoding%29>|  
+|<xref:System.ArgumentOutOfRangeException>|The current process does not have read access to all the addressed characters.<br /><br /> -or-<br /><br /> `startIndex` or `length` is less than zero, `value` + `startIndex` cause a pointer overflow, or the current process does not have read access to all the addressed characters.<br /><br /> -or-<br /><br /> The length of the new string is too large to allocate.|All constructors with pointers.|  
+|<xref:System.AccessViolationException>|`value`, or `value` + `startIndex` + `length` – 1, specifies an invalid address.|<xref:System.String.%23ctor%28System.SByte%2A%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%2CSystem.Text.Encoding%29>|  
+  
+<a name="Tasks"></a>   
+## Which method do I call?  
+  
+|To|Call or use|  
+|--------|-----------------|  
+|Create a string.|Assignment from a string literal or an existing string ([example](#Ctor1_Example))|  
+|Create a string from an entire character array.|<xref:System.String.%23ctor%28System.Char%5B%5D%29> ([example](#Ctor2_Example))|  
+|Createa string from a portion of a character array.|<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> ([example](#Ctor3_Example))|  
+|Create a string that repeats the same character multiple times.|<xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29> ([example](#Ctor3_Example))|  
+|Create a string from a pointer to a Unicode or wide character array.|<xref:System.String.%23ctor%28System.Char%2A%29>|  
+|Create a string from a portion of a Unicode or wide character array by using its pointer.|<xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29>|  
+|Create a string from a C++ `char` array.|<xref:System.String.%23ctor%28System.SByte%2A%29>, <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29><br /><br /> -or-<br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%2CSystem.Text.Encoding%29>|  
+|Create a string from ASCII characters.|<xref:System.Text.ASCIIEncoding.GetString%2A?displayProperty=fullName>|  
+  
+<a name="Creating_Strings"></a>   
+## Creating strings  
+ The most commonly used technique for creating strings programmatically is simple assignment, as illustrated in [this example](#Ctor1_Example). The <xref:System.String> class also includes four types of constructor overloads that let you create strings from the following values:  
+  
+-   From a character array (an array of UTF-16-encoded characters). You can create a new <xref:System.String> object from the characters in the entire array or a portion of it. The <xref:System.String.%23ctor%28System.Char%5B%5D%29> constructor copies all the characters in the array to the new string. The <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor copies the characters from index `startIndex` to index `startIndex` + `length` – 1 to the new string. If `length` is zero, the value of the new string is <xref:System.String.Empty?displayProperty=fullName>.  
+  
+     If your code repeatedly instantiates strings that have the same value, you can improve application performance by using an alternate means of creating strings. For more information, see [Handling repetitive strings](#Repetitive).  
+  
+-   From a single character that is duplicated zero, one, or more times, by using the <xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29> constructor. If `count` is zero, the value of the new string is <xref:System.String.Empty?displayProperty=fullName>.  
+  
+-   From a pointer to a null-terminated character array, by using the <xref:System.String.%23ctor%28System.Char%2A%29> or <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> constructor. Either the entire array or a specified range can be used to initialize the string. The constructor copies a sequence of Unicode characters starting from the specified pointer or from the specified pointer plus `startIndex` and continuing to the end of the array or for `length` characters. If `value` is a null pointer or `length` is zero, the constructor creates a string whose value is <xref:System.String.Empty?displayProperty=fullName>. If the copy operation proceeds to the end of the array and the array is not null-terminated, the constructor behavior is system-dependent. Such a condition might cause an access violation.  
+  
+     If the array contains any embedded null characters (U+0000 or '\0') and the <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> overload is called, the string instance contains `length` characters including any embedded nulls. The following example shows what happens when a pointer to an array of 10 elements that includes two null characters is passed to the <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> method. Because the address is the beginning of the array and all elements in the array are to be added to the string, the constructor instantiates a string with ten characters, including two embedded nulls. On the other hand, if the same array is passed to the <xref:System.String.%23ctor%28System.Char%2A%29> constructor, the result is a four-character string that does not include the first null character.  
+  
+     [!code-cpp[System.String.ctor#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/chptrctor_null.cpp#5)]
+     [!code-csharp[System.String.ctor#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.ctor/cs/chptrctor_null.cs#5)]  
+  
+     The array must contain Unicode characters. In C++, this means that the character array must be defined either as the managed <xref:System.Char>[] type or the unmanaged`wchar_t`[] type.  
+  
+     If the <xref:System.String.%23ctor%28System.Char%2A%29> overload is called and the array is not null-terminated, or if the <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> overload is called and `startIndex` + `length`-1 includes a range that it outside the memory allocated for the sequence of characters, the behavior of the constructor is system-dependent, and an access violation may occur. In addition, on the Intel Itanium processor, calls to the<xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29>constructor may throw a <xref:System.DataMisalignedException> exception. If this occurs, call the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> instead.  
+  
+-   From a pointer to a signed byte array. Either the entire array or a specified range can be used to initialize the string. The sequence of bytes can be interpreted by using the default code page encoding, or an encoding can be specified in the constructor call. If the constructor tries to instantiate a string from an entire array that is not null-terminated, or if the range of the array from `value` + `startIndex` to `value` + `startIndex` + `length` -1 is outside of the memory allocated for the array, the behavior of this constructor is system-dependent, and an access violation may occur.  
+  
+     The three constructors that include a signed byte array as a parameter are designed primarily to convert a C++ `char` array to a string, as shown in this example:  
+  
+     [!code-cpp[System.String.Ctor#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/sbyte_ctor1.cpp#4)]  
+  
+     If the array contains any null characters ('\0') or bytes whose value is 0 and the <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29> overload is called, the string instance contains `length` characters including any embedded nulls. The following example shows what happens when a pointer to an array of 10 elements that includes two null characters is passed to the <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29> method. Because the address is the beginning of the array and all elements in the array are to be added to the string, the constructor instantiates a string with ten characters, including two embedded nulls. On the other hand, if the same array is passed to the <xref:System.String.%23ctor%28System.SByte%2A%29> constructor, the result is a four-character string that does not include the first null character.  
+  
+     [!code-cpp[System.String.ctor#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/ptrctor_null.cpp#6)]
+     [!code-csharp[System.String.ctor#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.ctor/cs/ptrctor_null.cs#6)]  
+  
+     Because the <xref:System.String.%23ctor%28System.SByte%2A%29> and <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29> constructors interpret `value` by using the default ANSI code page, calling these constructors with identical byte arrays may create strings that have different values on different systems.  
+  
+<a name="Repetitive"></a>   
+## Handling repetitive strings  
+ Apps that parse or decode streams of text often use the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor or the <xref:System.Text.StringBuilder.Append%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to convert sequences of characters into a string. Repeatedly creating new strings with the same value instead of creating and reusing one string wastes memory. If you are likely to create the same string value repeatedly by calling the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor, even if you do not know in advance what those identical string values may be, you can use a lookup table instead.  
+  
+ For example, suppose you read and parse a stream of characters from a file that contains XML tags and attributes. When you parse the stream, you repeatedly encounter certain tokens (that is, sequences of characters that have a symbolic meaning). Tokens equivalent to the strings "0", "1", "true", and "false" are likely to occur frequently in an XML stream.  
+  
+ Instead of converting each token into a new string, you can create a <xref:System.Xml.NameTable?displayProperty=fullName> object to hold commonly occurring strings. The <xref:System.Xml.NameTable> object improves performance, because it retrieves stored strings without allocating temporary memory. When you encounter a token, use the <xref:System.Xml.NameTable.Get%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to retrieve the token from the table. If the token exists, the method returns the corresponding string. If the token does not exist, use the <xref:System.Xml.NameTable.Add%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to insert the token into the table and to get the corresponding string.  
+  
+<a name="Ctor1_Example"></a>   
+## Example 1: Using string assignment  
+ The following example creates a new string by assigning it a string literal. It creates a second string by assigning the value of the first string to it. These are the two most common ways to instantiate a new <xref:System.String> object.  
+  
+ [!code-cpp[System.String.ctor#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/assignment.cpp#1)]
+ [!code-csharp[System.String.ctor#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.ctor/cs/ctor1.cs#1)]
+ [!code-vb[System.String.ctor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.ctor/vb/ctor1.vb#1)]  
+  
+<a name="Ctor2_Example"></a>   
+## Example 2: Using a character array  
+ The following example demonstrates how to create a new <xref:System.String> object from a character array.  
+  
+ [!code-cpp[stringexample1#1](~/samples/snippets/cpp/VS_Snippets_CLR/stringexample1/CPP/source.cpp#1)]
+ [!code-csharp[stringexample1#1](~/samples/snippets/csharp/VS_Snippets_CLR/stringexample1/CS/source.cs#1)]
+ [!code-vb[stringexample1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/stringexample1/VB/source.vb#1)]  
+  
+<a name="Ctor3_Example"></a>   
+## Example 3: Using a portion of a character array and repeating a single character  
+ The following example demonstrates how to create a new <xref:System.String> object from a portion of a character array, and how to create a new <xref:System.String> object that contains multiple occurrences of a single character.  
+  
+ [!code-cpp[stringexample1#3](~/samples/snippets/cpp/VS_Snippets_CLR/stringexample1/CPP/source.cpp#3)]
+ [!code-csharp[stringexample1#3](~/samples/snippets/csharp/VS_Snippets_CLR/stringexample1/CS/source.cs#3)]
+ [!code-vb[stringexample1#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/stringexample1/VB/source.vb#3)]  
+  
+<a name="Ctor4_Example"></a>   
+## Example 4: Using a pointer to a character array  
+ The following example demonstrates how to create a new <xref:System.String> object from a pointer to an array of characters. The C# example must be compiled by using the `/unsafe` compiler switch.  
+  
+ [!code-cpp[System.String.Ctor#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/char1_ctor.cpp#2)]
+ [!code-csharp[System.String.Ctor#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.ctor/cs/ctor2.cs#2)]  
+  
+<a name="Ctor5_Example"></a>   
+## Example 5: Instantiating a string from a pointer and a range of an array  
+ The following example examines the elements of a character array for either a period or an exclamation point. If one is found, it instantiates a string from the characters in the array that precede the punctuation symbol. If not, it instantiates a string with the entire contents of the array. The C# example must be compiled using the `/unsafe` compiler switch.  
+  
+ [!code-cpp[System.String.Ctor#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/char2_ctor.cpp#3)]
+ [!code-csharp[System.String.Ctor#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.ctor/cs/char2_ctor.cs#3)]  
+  
+<a name="Ctor6_Example"></a>   
+## Example 6: Instantiating a string from a pointer to a signed byte array  
+ The following example demonstrates how you can create an instance of the <xref:System.String> class with the <xref:System.String.%23ctor%28System.SByte%2A%29> constructor.  
+  
+ [!code-cpp[stringexample1#2](~/samples/snippets/cpp/VS_Snippets_CLR/stringexample1/CPP/source.cpp#2)]
+ [!code-csharp[stringexample1#2](~/samples/snippets/csharp/VS_Snippets_CLR/stringexample1/CS/source.cs#2)]  
+  
+<a name="Versions"></a>   
+## Version information  
+ .NET Framework  
+ All overloads are supported in: 4.5, 4, 3.5, 3.0, 2.0, 1.1, 1.0  
+  
+ .NET Framework Client Profile  
+ All overloads are supported in: 4, 3.5 SP1  
+  
+ Portable Class Library  
+ All overloads without an <xref:System.SByte>`*` parameter are supported  
+  
+ .NET for Windows Store apps  
+ All overloads without an <xref:System.SByte>`*` parameter are supported in: Windows 8  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public String (char* value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char* value) cil managed" />
@@ -1053,6 +1282,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Compare">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two specified <see cref="T:System.String" /> objects and returns an integer that indicates their relative position in the sort order.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All overloads of the <xref:System.String.Compare%2A>method return a 32-bit signed integer indicating the lexical relationship between the two comparands.  
+  
+|Value|Condition|  
+|-----------|---------------|  
+|Less than zero|The first substring precedes the second substring in the sort order.|  
+|Zero|The substrings occur in the same position in the sort order, or `length` is zero.|  
+|Greater than zero|The first substring follows the second substring in the sort order.|  
+  
+> [!WARNING]
+>  Whenever possible, you should call an overload of the <xref:System.String.Compare%2A> method that includes a <xref:System.StringComparison> parameter. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Compare">
       <MemberSignature Language="C#" Value="public static int Compare (string strA, string strB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(string strA, string strB) cil managed" />
@@ -2281,6 +2539,24 @@
  <paramref name="indexA" />, <paramref name="indexB" />, or <paramref name="length" /> is negative.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance with a specified object or <see cref="T:System.String" /> and returns an integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified object or <see cref="T:System.String" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Both overloads of the<xref:System.String.CompareTo%2A> method perform culture-sensitive and case-sensitive comparison. You cannot use this method to perform culture-insensitive or ordinal comparisons. For code clarity, we recommend that you avoid the <xref:System.String.CompareTo%2A> method and call the <xref:System.String.Compare%2A> method instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CompareTo">
       <MemberSignature Language="C#" Value="public int CompareTo (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object value) cil managed" />
@@ -3836,6 +4112,422 @@
           <paramref name="comparisonType" /> is not a <see cref="T:System.StringComparison" /> value.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Format">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of objects to strings based on the formats specified and inserts them into another string.  
+  
+ If you are new to the <see cref="Overload:System.String.Format" /> method, see the[Getting started with the String.Format method](#Starting) section for a quick overview.  
+  
+ See the [Remarks](#Format_Syntax) section for complete documentation for all <see cref="Overload:System.String.Format" /> overloads.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this section:  
+  
+ [Getting started with the String.Format method](#Starting)   
+ [Overloaded method syntax](#Format_Syntax)   
+ [Parameters](#Format_Params)   
+ [Return value](#Format_Returns)   
+ [Exceptions](#Format_Exceptions)   
+ [Which method do I call?](#FTaskList)   
+ [The Format method in brief](#Format_Brief)   
+ [The Format item](#FormatItem)   
+ [How arguments are formatted](#HowFormatted)   
+ [Format items that have the same index](#SameIndex)   
+ [Formatting and culture](#Format_Culture)   
+ [Custom formatting operations](#Format_Custom)   
+ Examples:   
+ [Formatting a single argument](#Format1_Example)  
+ [Formatting two arguments](#Format2_Example)  
+ [Formatting three arguments](#Format3_Example)  
+ [Formatting more than three arguments](#Format4_Example)  
+ [Culture-sensitive formatting](#Format5_Example)  
+ [A custom formatting operation](#Format6_Example)  
+ [An intercept provider and Roman numeral formatter](#Format7_Example)  
+[Version information](#Format_Versions)  
+[String.Format Q & A](#QA)  
+  
+<a name="Starting"></a>   
+## Getting started with the String.Format method  
+ Use <xref:System.String.Format%2A?displayProperty=fullName> if you need to insert the value of an object, variable, or expression into another string. For example, you can insert the value of a <xref:System.Decimal> value into a string to display it to the user as a single string:  
+  
+ [!code-cpp[System.String.Format#35](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting2.cpp#35)]
+ [!code-csharp[System.String.Format#35](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting2.cs#35)]
+ [!code-vb[System.String.Format#35](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting2.vb#35)]  
+  
+ And you can control that value's formatting:  
+  
+ [!code-cpp[System.String.Format#36](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting2.cpp#36)]
+ [!code-csharp[System.String.Format#36](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting2.cs#36)]
+ [!code-vb[System.String.Format#36](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting2.vb#36)]  
+  
+ Besides formatting, you can also control alignment and spacing.  
+  
+ Inserting a string  
+ <xref:System.String.Format%2A?displayProperty=fullName> starts with a format string, followed by one or more objects or expressions that will be converted to strings and inserted at a specified place in the format string. For example:  
+  
+ [!code-cpp[System.String.Format#30](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#30)]
+ [!code-csharp[System.String.Format#30](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#30)]
+ [!code-vb[System.String.Format#30](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#30)]  
+  
+ The `{0}` in the format string is a format item. `0` is the index of the object whose string value will be inserted at that position. (Indexes start at 0.) If the object to be inserted is not a string, its `ToString` method is called to convert it to one before inserting it in the result string.  
+  
+ Here's another example that uses two format items and two objects in the object list:  
+  
+ [!code-cpp[System.String.Format#31](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#31)]
+ [!code-csharp[System.String.Format#31](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#31)]
+ [!code-vb[System.String.Format#31](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#31)]  
+  
+ You can have as many format items and as many objects in the object list as you want, as long as the index of every format item has a matching object in the object list. You also don't have to worry about which overload you call; the compiler will select the appropriate one for you.  
+  
+ Controlling formatting  
+ You can follow the index in a format item with a format string to control how an object is formatted. For example, `{0:d}` applies the "d" format string to the first object in the object list. Here is an example with a single object and two format items:  
+  
+ [!code-cpp[System.String.Format#32](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#32)]
+ [!code-csharp[System.String.Format#32](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#32)]
+ [!code-vb[System.String.Format#32](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#32)]  
+  
+ A number of types support format strings, including all numeric types (both                                          [standard](~/docs/standard/base-types/standard-numeric-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-numeric-format-strings.md) format strings), all dates and times (both                                          [standard](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-date-and-time-format-strings.md) format strings) and time intervals (both                                          [standard](~/docs/standard/base-types/standard-timespan-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-timespan-format-strings.md) format strings), all enumeration types                                          [enumeration types](~/docs/standard/base-types/enumeration-format-strings.md), and                                          [GUIDs](https://msdn.microsoft.com/library/97af8hh4.aspx). You can also add support for format strings to your own types.  
+  
+ Controlling spacing  
+ You can define the width of the string that is inserted into the result string by using syntax such as `{0,12}`, which inserts a 12-character string. In this case, the string representation of the first object is right-aligned in the 12-character field.  (If the string representation of the first object is more than 12 characters in length, though, the preferred field width is ignored, and the entire string is inserted into the result string.)  
+  
+ The following example defines a 6-character field to hold the string "Year" and some year strings, as well as an 15-character field to hold the string "Population" and some population data. Note that the characters are right-aligned in the field.  
+  
+ [!code-cpp[System.String.Format#33](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#33)]
+ [!code-csharp[System.String.Format#33](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#33)]
+ [!code-vb[System.String.Format#33](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#33)]  
+  
+ Controlling alignment  
+ By default, strings are right-aligned within their field if you specify a field width. To left-align strings in a field, you preface the field width with a negative sign, such as `{0,-12}` to define a 12-character right-aligned field.  
+  
+ The following example is similar to the previous one, except that it left-aligns both labels and data.  
+  
+ [!code-cpp[System.String.Format#34](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#34)]
+ [!code-csharp[System.String.Format#34](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#34)]
+ [!code-vb[System.String.Format#34](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#34)]  
+  
+ <xref:System.String.Format%2A?displayProperty=fullName> makes use of the composite formatting feature. For more information, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
+  
+<a name="Format_Syntax"></a>   
+## Overloaded method syntax  
+ For additional guidance on choosing an overload, see [Which method do I call?](#FTaskList)  
+  
+ `String String.Format(String`  `format` `, Object`  `arg0` `)`  
+ Replaces the format items with the string representation of a specified object ([example](#Format1_Example)).  
+  
+ `String String.Format(String`  `format` `, Object`  `arg0` `, Object`  `arg1` `)`  
+ Replaces the format items with the string representation of two specified objects ([example](#Format2_Example)).  
+  
+ `String String.Format(String`  `format` `, Object`  `arg0` `, Object`  `arg1` `, Object`  `arg2` `)`  
+ Replaces the format items with the string representation of three specified objects ([example](#Format3_Example)).  
+  
+ `String String.Format(String`  `format` `, params Object[]`  `args` `)`  
+ Replaces the format items with the string representations of corresponding objects in a specified array ([example](#Format4_Example)).  
+  
+ `String String.Format(IFormatProvider`  `provider` `, String`  `format` `, params Object[]`  `args` `)`  
+ Replaces the format items with the string representation of corresponding objects in a specified array, and uses the specified culture-specific formatting information ([example](#Format5_Example)) or custom formatting information ([example](#Format6_Example)).  
+  
+<a name="Format_Params"></a>   
+## Parameters  
+ This is a complete list of parameters for the <xref:System.String.Format%2A> method; see the overload syntax above for the parameters used by each overload. Only the `format` parameter is used by all overloads.  
+  
+|Parameter|Type|Description|  
+|---------------|----------|-----------------|  
+|`format`|<xref:System.String>|A composite format string that includes one or more format items (see [The format item](#FormatItem)).|  
+|`arg0`|<xref:System.String>|The first or only object to format.|  
+|`arg1`|<xref:System.String>|The second object to format.|  
+|`arg2`|<xref:System.String>|The third object to format.|  
+|`args`|<xref:System.String>[]|Zero or more objects to format, supplied either in a comma-delimited list or as an array.|  
+|`provider`|<xref:System.IFormatProvider>|An object that supplies custom or culture-specific formatting information.|  
+  
+<a name="Format_Returns"></a>   
+## Return value  
+ Type: <xref:System.String>  
+A copy of `format` in which the format items have been replaced by the string representations of the corresponding arguments.  
+  
+<a name="Format_Exceptions"></a>   
+## Exceptions  
+  
+|Exception|Condition|Thrown by|  
+|---------------|---------------|---------------|  
+|<xref:System.ArgumentNullException>|`format` is `null`.|All overloads.|  
+|<xref:System.FormatException>|`format` is invalid.<br /><br /> -or-<br /><br /> The index of a format item is less than zero, or greater than or equal to the number of arguments in the arguments list.|All overloads.|  
+  
+<a name="FTaskList"></a>   
+## Which method do I call?  
+  
+|To|Call|  
+|--------|----------|  
+|Format one or more objects by using the conventions of the current culture.|Except for the overloads that include a `provider` parameter, the remaining<xref:System.String.Format%2A> overloads include a <xref:System.String> parameter followed by one or more object parameters. Because of this, you do not have to determine which <xref:System.String.Format%2A> overload you intend to call. Your language compiler will select the appropriate overload from among the overloads that don't have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler will call the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method.|  
+|Format one or more objects by using the conventions of a specific culture.|Each<xref:System.String.Format%2A>overload that begins with a `provider` parameter is followed by a <xref:System.String> parameter and one or more object parameters. Because of this, you do not have to determine which specific <xref:System.String.Format%2A> overload you intend to call. Your language compiler will select the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler will call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method.|  
+|Perform a custom formatting operation either with an <xref:System.ICustomFormatter> implementation or an <xref:System.IFormattable> implementation.|Any of the four overloads with a `provider` parameter. compiler will select the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list.|  
+  
+<a name="Format_Brief"></a>   
+## The Format method in brief  
+ Each overload of the <xref:System.String.Format%2A> method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to include zero-based indexed placeholders, called format items, in a composite format string. At run time, each format item is replaced with the string representation of the corresponding argument in a parameter list. If the value of the argument is                  `null`, the format item is replaced with <xref:System.String.Empty?displayProperty=fullName>. For example, the following call to the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%2CSystem.Object%29> method includes a format string with three format items, {0}, {1}, and {2}, and an argument list with three items.  
+  
+ [!code-cpp[System.String.Format#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatoverload1.cpp#8)]
+ [!code-csharp[System.String.Format#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload1.cs#8)]
+ [!code-vb[System.String.Format#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatoverload1.vb#8)]  
+  
+<a name="FormatItem"></a>   
+## The format item  
+ A format item has this syntax:  
+  
+```  
+  
+{  
+index[,alignment][ :formatString] }  
+```  
+  
+ Brackets denote optional elements. The opening and closing braces are required. (To include a literal opening or closing brace in the format string, see the "Escaping Braces" section in the [Composite Formatting](~/docs/standard/base-types/composite-formatting.md) article.)  
+  
+ For example, a format item to format a currency value might appears like this:  
+  
+ [!code-cpp[System.String.Format#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatsyntax1.cpp#12)]
+ [!code-csharp[System.String.Format#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatsyntax1.cs#12)]  
+  
+ A format item has the following elements:  
+  
+ *index*  
+ The zero-based index of the argument whose string representation is to be included at this position in the string. If this argument is `null`, an empty string will be included at this position in the string.  
+  
+ *alignment*  
+ Optional. A signed integer that indicates the total length of the field into which the argument is inserted and whether it is right-aligned (a positive integer) or left-aligned (a negative integer). If you omit *alignment*, the string representation of the corresponding argument is inserted in a field with no leading or trailing spaces.  
+  
+ If the value of *alignment* is less than the length of the argument to be inserted, *alignment* is ignored and the length of the string representation of the argument is used as the field width.  
+  
+ *formatString*  
+ Optional. A string that specifies the format of the corresponding argument's result string. If you omit *formatString*, the corresponding argument's parameterless `ToString` method is called to produce its string representation. If you specify *formatString*, the argument referenced by the format item must implement the <xref:System.IFormattable> interface. Types that support format strings include:  
+  
+-   All integral and floating-point types. (See                                                  [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and                                                  [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).)  
+  
+-   <xref:System.DateTime> and <xref:System.DateTimeOffset>. (See                                                 [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and                                                  [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).)  
+  
+-   All enumeration types. (See [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).)  
+  
+-   <xref:System.TimeSpan> values. (See                                                  [Standard TimeSpan Format Strings](~/docs/standard/base-types/standard-timespan-format-strings.md) and                                                  [Custom TimeSpan Format Strings](~/docs/standard/base-types/custom-timespan-format-strings.md).)  
+  
+-   GUIDs. (See the <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> method.)  
+  
+ However, note that any custom type can implement <xref:System.IFormattable> or extend an existing type's <xref:System.IFormattable> implementation.  
+  
+ The following example uses the `alignment` and `formatString` arguments to produce formatted output.  
+  
+ [!code-cpp[System.String.Format#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatoverload2.cpp#9)]
+ [!code-csharp[System.String.Format#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload2.cs#9)]
+ [!code-vb[System.String.Format#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatoverload2.vb#9)]  
+  
+<a name="HowFormatted"></a>   
+## How arguments are formatted  
+ Format items are processed sequentially from the beginning of the string. Each format item has an index that corresponds to an object in the method's argument list. The <xref:System.String.Format%2A> method retrieves the argument and derives its string representation as follows:  
+  
+-   If the argument is `null`, the method inserts <xref:System.String.Empty?displayProperty=fullName> into the result string.  
+  
+-   If you call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload and the `provider` parameter implements the <xref:System.ICustomFormatter> interface, the argument is passed to the `provider` object's <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> method. If the format item includes a *formatString* argument, it is passed as the first argument to the method. If the <xref:System.ICustomFormatter> implementation is able to provide formatting services, it returns the string representation of the argument; otherwise, it returns `null` and the next step executes.  
+  
+-   If the argument implements the <xref:System.IFormattable> interface, its <xref:System.IFormattable.ToString%2A?displayProperty=fullName> implementation is called.  
+  
+-   The argument's parameterless `ToString` method, which is either overridden or inherited from the <xref:System.Object> class, is called.  
+  
+ For an example that intercepts calls to the <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> method and allows you to see what information the <xref:System.String.Format%2A> method passes to a formatting method for each format item in a composite format string, see [Example 7: An intercept provider and Roman numeral formatter](#Format7_Example).  
+  
+<a name="SameIndex"></a>   
+## Format items that have the same index  
+ The <xref:System.String.Format%2A> method throws a <xref:System.FormatException> exception if the index of an index item is greater than or equal to the number of arguments in the argument list. However, `format` can include more format items than there are arguments, as long as multiple format items have the same index. In the call to the <xref:System.String.Format%28System.String%2CSystem.Object%29> method in following example, the argument list has a single argument, but the format string includes two format items: one displays the decimal value of a number, and the other displays its hexadecimal value.  
+  
+ [!code-csharp[System.String.Format2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format2/cs/Example1.cs#1)]
+ [!code-vb[System.String.Format2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format2/vb/Example1.vb#1)]  
+  
+<a name="Format_Culture"></a>   
+## Formatting and culture  
+ Generally, objects in the argument list are converted to their string representations by using the conventions of the current culture, which is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property. You can control this behavior by calling one of the overloads of <xref:System.String.Format%2A> that includes a `provider` parameter. The `provider` parameter is an <xref:System.IFormatProvider> implementation that supplies custom and culture-specific formatting information that is used to moderate the formatting process.  
+  
+ The <xref:System.IFormatProvider> interface has a single member, <xref:System.IFormatProvider.GetFormat%2A>, which is responsible for returning the object that provides formatting information. The .NET Framework has three <xref:System.IFormatProvider> implementations that provide culture-specific formatting:  
+  
+-   <xref:System.Globalization.CultureInfo>. Its <xref:System.Globalization.CultureInfo.GetFormat%2A> method returns a culture-specific <xref:System.Globalization.NumberFormatInfo> object for formatting numeric values and a culture-specific <xref:System.Globalization.DateTimeFormatInfo> object for formatting date and time values.  
+  
+-   <xref:System.Globalization.DateTimeFormatInfo>, which is used for culture-specific formatting of date and time values. Its <xref:System.Globalization.DateTimeFormatInfo.GetFormat%2A> method returns itself.  
+  
+-   <xref:System.Globalization.NumberFormatInfo>, which is used for culture-specific formatting of numeric values. Its <xref:System.Globalization.NumberFormatInfo.GetFormat%2A> property returns itself.  
+  
+<a name="Format_Custom"></a>   
+## Custom formatting operations  
+ You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a  `provider` parameter <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the<xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its   <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.  
+  
+ For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example 6: A custom formatting operation](#Format6_Example). For an example that converts unsigned bytes to Roman numerals, see [Example 7: An intercept provider and Roman numeral formatter](#Format7_Example).  
+  
+<a name="Format1_Example"></a>   
+## Example 1: Formatting a single argument  
+ The following example uses the <xref:System.String.Format%28System.String%2CSystem.Object%29> method to embed an individual's age in the middle of a string.  
+  
+ [!code-cpp[System.String.Format#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format7.cpp#7)]
+ [!code-csharp[System.String.Format#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format7.cs#7)]
+ [!code-vb[System.String.Format#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format7.vb#7)]  
+  
+<a name="Format2_Example"></a>   
+## Example 2: Formatting two arguments  
+ This example uses the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%29> method to display time and temperature data stored in a generic <xref:System.Collections.Generic.Dictionary%602> object. Note that the format string has three format items, although there are only two objects to format. This is because the first object in the list (a date and time value) is used by two format items: The first format item displays the time, and the second displays the date.  
+  
+ [!code-cpp[System.String.Format#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatexample4.cpp#6)]
+ [!code-csharp[System.String.Format#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatexample4.cs#6)]
+ [!code-vb[System.String.Format#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatexample4.vb#6)]  
+  
+<a name="Format3_Example"></a>   
+## Example 3: Formatting three arguments  
+ This example uses the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%2CSystem.Object%29> method to create a string that illustrates the result of a Boolean `And` operation with two integer values. Note that the format string includes six format items, but the method has only three items in its parameter list, because each item is formatted in two different ways.  
+  
+ [!code-cpp[System.String.Format#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format4.cpp#4)]
+ [!code-csharp[System.String.Format#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format4.cs#4)]
+ [!code-vb[System.String.Format#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format4.vb#4)]  
+  
+<a name="Format4_Example"></a>   
+## Example 4: Formatting more than three arguments  
+ This example creates a string that contains data on the high and low temperature on a particular date. The composite format string has five format items in the C# example and six in the Visual Basic example. Two of the format items define the width of their corresponding value's string representation, and the first format item also includes a standard date and time format string.  
+  
+ [!code-cpp[System.String.Format#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format5.cpp#5)]
+ [!code-csharp[System.String.Format#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format5.cs#5)]
+ [!code-vb[System.String.Format#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format5.vb#5)]  
+  
+ You can also pass the objects to be formatted as an array rather than a an argument list.  
+  
+ [!code-cpp[System.String.Format#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format_paramarray1.cpp#10)]
+ [!code-csharp[System.String.Format#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format_paramarray1.cs#10)]
+ [!code-vb[System.String.Format#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format_paramarray1.vb#10)]  
+  
+<a name="Format5_Example"></a>   
+## Example 5: Culture-sensitive formatting  
+ This example uses the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method to display the string representation of some date and time values and numeric values by using several different cultures.  
+  
+ [!code-csharp[System.String.Format2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format2/cs/Example2.cs#2)]
+ [!code-vb[System.String.Format2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format2/vb/Example2.vb#2)]  
+  
+<a name="Format6_Example"></a>   
+## Example 6: A custom formatting operation  
+ This example defines a format provider that formats an integer value as a customer account number in the form x-xxxxx-xx.  
+  
+ [!code-cpp[System.String.Format#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatexample2.cpp#2)]
+ [!code-csharp[System.String.Format#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/FormatExample2.cs#2)]
+ [!code-vb[System.String.Format#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/FormatExample2.vb#2)]  
+  
+<a name="Format7_Example"></a>   
+## Example 7: An intercept provider and Roman numeral formatter  
+ This example defines a custom format provider that implements the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces to do two things:  
+  
+-   It displays the parameters passed to its <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> implementation. This enables us to see what parameters the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method is passing to the custom formatting implementation for each object that it tries to format. This can be useful when you're debugging your application.  
+  
+-   If the object to be formatted is an unsigned byte value that is to be formatted by using the "R" standard format string, the custom formatter formats the numeric value as a Roman numeral.  
+  
+ [!code-cpp[System.String.Format#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/interceptor2.cpp#11)]
+ [!code-csharp[System.String.Format#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/interceptor2.cs#11)]
+ [!code-vb[System.String.Format#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/interceptor2.vb#11)]  
+  
+<a name="Format_Versions"></a>   
+## Version information  
+ .NET Framework  
+ All overloads are supported in: 4.5, 4, 3.5, 3.0, 2.0, 1.1, 1.0  
+  
+ .NET Framework Client Profile  
+ All overloads are supported in: 4, 3.5 SP1  
+  
+ Portable Class Library  
+ Only <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> and <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> are supported  
+  
+ .NET for Windows Store apps  
+ Only <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> and <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> are supported in Windows 8  
+  
+<a name="QA"></a>   
+## String.Format Q & A  
+  
+### Where can I find a list of the predefined format strings that can be used with format items?  
+  
+-   For all integral and floating-point types, see                                                  [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and                                                  [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+  
+-   For date and time values, see                                                  [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and                                                  [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
+  
+-   For enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
+  
+-   For <xref:System.TimeSpan> values, see  [Standard TimeSpan Format Strings](~/docs/standard/base-types/standard-timespan-format-strings.md) and [Custom TimeSpan Format Strings](~/docs/standard/base-types/custom-timespan-format-strings.md).  
+  
+-   For <xref:System.Guid> values, see the Remarks section of the <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> reference page.  
+  
+### How do I control the alignment of the result strings that replace format items?  
+ The general syntax of a format item is:  
+  
+```  
+{index[,alignment][: formatString]}  
+```  
+  
+ where *alignment* is a signed integer that defines the field width. If this value is negative, text in the field is left-aligned. If it is positive, text is right-aligned.  
+  
+### How do I control the number of digits after the decimal separator?  
+ All [standard numeric format strings](~/docs/standard/base-types/standard-numeric-format-strings.md) except "D" (which is used with integers only), "G", "R", and "X" allow a precision specifier that defines the number of decimal digits in the result string. The following example uses standard numeric format strings to control the number of decimal digits in the result string.  
+  
+ [!code-csharp[System.String.Format#26](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa26.cs#26)]
+ [!code-vb[System.String.Format#26](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa26.vb#26)]  
+  
+ If you're using a [custom numeric format string](~/docs/standard/base-types/custom-numeric-format-strings.md), use the "0" format specifier to control the number of decimal digits in the result string, as the following example shows.  
+  
+ [!code-csharp[System.String.Format#27](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa27.cs#27)]
+ [!code-vb[System.String.Format#27](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa27.vb#27)]  
+  
+### How do I control the number of integral digits?  
+ By default, formatting operations only display non-zero integral digits. If you are formatting integers, you can use a precision specifier with the "D" and "X" standard format strings to control the number of digits.  
+  
+ [!code-csharp[System.String.Format#29](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa29.cs#29)]
+ [!code-vb[System.String.Format#29](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa29.vb#29)]  
+  
+ You can pad an integer or floating-point number with leading zeros to produce a result string with a specified number of integral digits by using the "0" [custom numeric format specifier](~/docs/standard/base-types/custom-numeric-format-strings.md), as the following example shows.  
+  
+ [!code-csharp[System.String.Format#28](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa28.cs#28)]
+ [!code-vb[System.String.Format#28](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa28.vb#28)]  
+  
+### How many items can I include in the format list?  
+ There is no practical limit. The second parameter of the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method is tagged with the <xref:System.ParamArrayAttribute> attribute, which allows you to include either a delimited list or an object array as your format list.  
+  
+### How do I include literal braces ("{" and "}") in the result string?  
+ For example, how do you prevent the following method call from throwing a <xref:System.FormatException> exception?  
+  
+ [!code-csharp[System.String.Format#23](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#23)]
+ [!code-vb[System.String.Format#23](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa3.vb#23)]  
+  
+ A single opening or closing brace is always interpreted as the beginning or end of a format item. To be interpreted literally, it must be escaped. You escape a brace by adding another brace ("{{" and "}}" instead of "{" and "}"), as in the following method call:  
+  
+ [!code-csharp[System.String.Format#24](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#24)]
+ [!code-vb[System.String.Format#24](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa3.vb#24)]  
+  
+ However, even escaped braces are easily misinterpreted. We recommend that you include braces in the format list and use format items to insert them in the result string, as the following example shows.  
+  
+ [!code-csharp[System.String.Format#25](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#25)]
+ [!code-vb[System.String.Format#25](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa3.vb#25)]  
+  
+### Why does my call to the String.Format method throw a FormatException?  
+ The most common cause of the exception is that the index of a format item doesn't correspond to an object in the format list. Usually this indicates that you've misnumbered the indexes of format items or you've forgotten to include an object in the format list. Occasionally, the exception is the result of a typo; for example, a typical mistake is to mistype "[" (the left bracket) instead of "{" (the left brace).  
+  
+### If the Format(System.IFormatProvider,System.String,System.Object[]) method supports parameter arrays, why does my code throw an exception when I use an array?  
+ For example, the following code throws a <xref:System.FormatException> exception:  
+  
+ [!code-csharp[System.String.Format#21](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa1.cs#21)]
+ [!code-vb[System.String.Format#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa1.vb#21)]  
+  
+ This is a problem of compiler overload resolution. Because the compiler cannot convert an array of integers to an object array, it treats the integer array as a single argument, so it calls the <xref:System.String.Format%28System.String%2CSystem.Object%29> method. The exception is thrown because there are four format items but only a single item in the format list.  
+  
+ Because neither Visual Basic nor C# can convert an integer array to an object array, you have to perform the conversion yourself before calling the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method. The following example provides one implementation.  
+  
+ [!code-csharp[System.String.Format#22](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa2.cs#22)]
+ [!code-vb[System.String.Format#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa2.vb#22)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Format">
       <MemberSignature Language="C#" Value="public static string Format (string format, object arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Format(string format, object arg0) cil managed" />
@@ -7636,6 +8328,106 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <paramref name="oldValue" /> is the empty string ("").</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Split">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string array that contains the substrings in this instance that are delimited by elements of a specified string or Unicode character array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.String.Split%2A> is used to break a delimited string into substrings. You can use either a character array to specify zero, one, or multiple delimiting characters (the <xref:System.String.Split%28System.Char%5B%5D%29> method), or you can use a character array to specify zero, one, or multiple delimiting strings. Overloads of the <xref:System.String.Split%2A> method allow you to limit the number of substrings returned by the method (the <xref:System.String.Split%28System.Char%5B%5D%2CSystem.Int32%29> method), to determine whether empty strings are included in the returned substrings (the <xref:System.String.Split%28System.Char%5B%5D%2CSystem.StringSplitOptions%29> and <xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29> methods, or to do both (the <xref:System.String.Split%28System.Char%5B%5D%2CSystem.Int32%2CSystem.StringSplitOptions%29> and <xref:System.String.Split%28System.String%5B%5D%2CSystem.Int32%2CSystem.StringSplitOptions%29> methods).  
+  
+> [!IMPORTANT]
+>  For more detailed information on the <xref:System.String.Split%2A> method, as well as for examples that call each overload, see the documentation for the individual overloads of <xref:System.String.Split%2A>.  
+  
+ The <xref:System.String.Split%2A> method is not always the best way to break a delimited string into substrings. If you don't want to extract all of the substrings of a delimited string, or if you want to parse a string based on a pattern instead of a set of delimiter characters, consider the following alternatives.  
+  
+## Regular expressions  
+ If your strings conform to a fixed pattern, you can use a regular expression to extract and handle their elements. For example, if strings take the form "*number* *operand* *number*" you can use a [regular expression](~/docs/standard/base-types/regular-expressions.md) to extract and handle the string's elements. Here's an example:  
+  
+ [!code-csharp[System.String.Split#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt1.cs#8)]
+ [!code-vb[System.String.Split#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt1.vb#8)]  
+  
+ The regular expression pattern `(\d+)\s+([-+*/])\s+(\d+)` is defined like this:  
+  
+|Pattern|Description|  
+|-------------|-----------------|  
+|`(\d+)`|Match one or more decimal digits. This is the first capturing group.|  
+|`\s+`|Match one or more whitespace characters.|  
+|`([-+*/])`|Match an arithmetic operator sign (+, -, *, or /). This is the second capturing group.|  
+|`\s+`|Match one or more whitespace characters.|  
+|`(\d+)`|Match one or more decimal digits. This is the third capturing group.|  
+  
+ You can also use a regular expression to extract substrings from a string based on a pattern rather than a fixed set of characters. This is a common scenario when either of these conditions occurs:  
+  
+-   One or more of the delimiter characters does not always serve as a delimiter in the <xref:System.String> instance.  
+  
+-   The sequence and number of delimiter characters is variable or unknown.  
+  
+ For example, the <xref:System.String.Split%2A> method cannot be used to split the following string, because the number of `\n` (in C#) or `vbCrLf` (in Visual Basic) characters is variable, and they do not always serve as delimiters.  
+  
+```  
+  
+[This is captured\ntext.]\n\n[\n[This is more captured text.]\n]  
+\n[Some more captured text:\n   Option1\n   Option2][Terse text.]  
+  
+```  
+  
+ A regular expression can split this string easily, as the following example shows.  
+  
+ [!code-csharp[System.String.Split#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt2.cs#9)]
+ [!code-vb[System.String.Split#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt2.vb#9)]  
+  
+ The regular expression pattern `\[([^\[\]]+)\]` is defined like this:  
+  
+|Pattern|Description|  
+|-------------|-----------------|  
+|`\[`|Match an opening bracket.|  
+|`([^\[\]]+)`|Match any character that is not an opening or a closing bracket one or more times. This is the first capturing group.|  
+|`\]`|Match a closing bracket.|  
+  
+ The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> method is almost identical to <xref:System.String.Split%2A?displayProperty=fullName>, except that it splits a string based on a regular expression pattern instead of a fixed character set. For example, the following example uses the <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> method to split a string that contains substrings delimited by various combinations of hyphens and other characters.  
+  
+ [!code-csharp[System.String.Split#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt3.cs#10)]
+ [!code-vb[System.String.Split#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt3.vb#10)]  
+  
+ The regular expression pattern `\s-\s?[+*]?\s?-\s` is defined like this:  
+  
+|Pattern|Description|  
+|-------------|-----------------|  
+|`\s-`|Match a whitespace character followed by a hyphen.|  
+|`\s?`|Match zero or one whitespace character.|  
+|`[+*]?`|Match zero or one occurrence of either the + or * character.|  
+|`\s?`|Match zero or one whitespace character.|  
+|`-\s`|Match a hyphen followed by a whitespace character.|  
+  
+## Search methods and the Substring method  
+ If you aren't interested in all of the substrings in a string, you might prefer to work with one of the string comparison methods that returns the index at which the match begins. You can then call the <xref:System.String.Substring%2A> method to extract the substring that you want. The string comparison methods include:  
+  
+-   <xref:System.String.IndexOf%2A>, which returns the zero-based index of the first occurrence of a character or string in a string instance.  
+  
+-   <xref:System.String.IndexOfAny%2A>, which returns the zero-based index in the current string instance of the first occurrence of any character in a character array.  
+  
+-   <xref:System.String.LastIndexOf%2A>, which returns the zero-based index of the last occurrence of a character or string in a string instance.  
+  
+-   <xref:System.String.LastIndexOfAny%2A>, which returns a zero-based index in the current string instance of the last occurrence of any character in a character array.  
+  
+ The following example uses the <xref:System.String.IndexOf%2A> method to find the periods in a string. It then uses the <xref:System.String.Substring%2A> method to return full sentences.  
+  
+ [!code-csharp[System.String.Split#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt4.cs#11)]
+ [!code-vb[System.String.Split#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt4.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Split">
       <MemberSignature Language="C#" Value="public string[] Split (char[] separator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(char[] separator) cil managed" />
@@ -10212,797 +11004,5 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Compare">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares two specified <see cref="T:System.String" /> objects and returns an integer that indicates their relative position in the sort order.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All overloads of the <xref:System.String.Compare%2A>method return a 32-bit signed integer indicating the lexical relationship between the two comparands.  
-  
-|Value|Condition|  
-|-----------|---------------|  
-|Less than zero|The first substring precedes the second substring in the sort order.|  
-|Zero|The substrings occur in the same position in the sort order, or `length` is zero.|  
-|Greater than zero|The first substring follows the second substring in the sort order.|  
-  
-> [!WARNING]
->  Whenever possible, you should call an overload of the <xref:System.String.Compare%2A> method that includes a <xref:System.StringComparison> parameter. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Format">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the value of objects to strings based on the formats specified and inserts them into another string.  
-  
- If you are new to the <see cref="Overload:System.String.Format" /> method, see the[Getting started with the String.Format method](#Starting) section for a quick overview.  
-  
- See the [Remarks](#Format_Syntax) section for complete documentation for all <see cref="Overload:System.String.Format" /> overloads.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this section:  
-  
- [Getting started with the String.Format method](#Starting)   
- [Overloaded method syntax](#Format_Syntax)   
- [Parameters](#Format_Params)   
- [Return value](#Format_Returns)   
- [Exceptions](#Format_Exceptions)   
- [Which method do I call?](#FTaskList)   
- [The Format method in brief](#Format_Brief)   
- [The Format item](#FormatItem)   
- [How arguments are formatted](#HowFormatted)   
- [Format items that have the same index](#SameIndex)   
- [Formatting and culture](#Format_Culture)   
- [Custom formatting operations](#Format_Custom)   
- Examples:   
- [Formatting a single argument](#Format1_Example)  
- [Formatting two arguments](#Format2_Example)  
- [Formatting three arguments](#Format3_Example)  
- [Formatting more than three arguments](#Format4_Example)  
- [Culture-sensitive formatting](#Format5_Example)  
- [A custom formatting operation](#Format6_Example)  
- [An intercept provider and Roman numeral formatter](#Format7_Example)  
-[Version information](#Format_Versions)  
-[String.Format Q & A](#QA)  
-  
-<a name="Starting"></a>   
-## Getting started with the String.Format method  
- Use <xref:System.String.Format%2A?displayProperty=fullName> if you need to insert the value of an object, variable, or expression into another string. For example, you can insert the value of a <xref:System.Decimal> value into a string to display it to the user as a single string:  
-  
- [!code-cpp[System.String.Format#35](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting2.cpp#35)]
- [!code-csharp[System.String.Format#35](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting2.cs#35)]
- [!code-vb[System.String.Format#35](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting2.vb#35)]  
-  
- And you can control that value's formatting:  
-  
- [!code-cpp[System.String.Format#36](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting2.cpp#36)]
- [!code-csharp[System.String.Format#36](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting2.cs#36)]
- [!code-vb[System.String.Format#36](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting2.vb#36)]  
-  
- Besides formatting, you can also control alignment and spacing.  
-  
- Inserting a string  
- <xref:System.String.Format%2A?displayProperty=fullName> starts with a format string, followed by one or more objects or expressions that will be converted to strings and inserted at a specified place in the format string. For example:  
-  
- [!code-cpp[System.String.Format#30](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#30)]
- [!code-csharp[System.String.Format#30](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#30)]
- [!code-vb[System.String.Format#30](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#30)]  
-  
- The `{0}` in the format string is a format item. `0` is the index of the object whose string value will be inserted at that position. (Indexes start at 0.) If the object to be inserted is not a string, its `ToString` method is called to convert it to one before inserting it in the result string.  
-  
- Here's another example that uses two format items and two objects in the object list:  
-  
- [!code-cpp[System.String.Format#31](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#31)]
- [!code-csharp[System.String.Format#31](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#31)]
- [!code-vb[System.String.Format#31](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#31)]  
-  
- You can have as many format items and as many objects in the object list as you want, as long as the index of every format item has a matching object in the object list. You also don't have to worry about which overload you call; the compiler will select the appropriate one for you.  
-  
- Controlling formatting  
- You can follow the index in a format item with a format string to control how an object is formatted. For example, `{0:d}` applies the "d" format string to the first object in the object list. Here is an example with a single object and two format items:  
-  
- [!code-cpp[System.String.Format#32](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#32)]
- [!code-csharp[System.String.Format#32](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#32)]
- [!code-vb[System.String.Format#32](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#32)]  
-  
- A number of types support format strings, including all numeric types (both                                          [standard](~/docs/standard/base-types/standard-numeric-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-numeric-format-strings.md) format strings), all dates and times (both                                          [standard](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-date-and-time-format-strings.md) format strings) and time intervals (both                                          [standard](~/docs/standard/base-types/standard-timespan-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-timespan-format-strings.md) format strings), all enumeration types                                          [enumeration types](~/docs/standard/base-types/enumeration-format-strings.md), and                                          [GUIDs](https://msdn.microsoft.com/library/97af8hh4.aspx). You can also add support for format strings to your own types.  
-  
- Controlling spacing  
- You can define the width of the string that is inserted into the result string by using syntax such as `{0,12}`, which inserts a 12-character string. In this case, the string representation of the first object is right-aligned in the 12-character field.  (If the string representation of the first object is more than 12 characters in length, though, the preferred field width is ignored, and the entire string is inserted into the result string.)  
-  
- The following example defines a 6-character field to hold the string "Year" and some year strings, as well as an 15-character field to hold the string "Population" and some population data. Note that the characters are right-aligned in the field.  
-  
- [!code-cpp[System.String.Format#33](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#33)]
- [!code-csharp[System.String.Format#33](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#33)]
- [!code-vb[System.String.Format#33](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#33)]  
-  
- Controlling alignment  
- By default, strings are right-aligned within their field if you specify a field width. To left-align strings in a field, you preface the field width with a negative sign, such as `{0,-12}` to define a 12-character right-aligned field.  
-  
- The following example is similar to the previous one, except that it left-aligns both labels and data.  
-  
- [!code-cpp[System.String.Format#34](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#34)]
- [!code-csharp[System.String.Format#34](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#34)]
- [!code-vb[System.String.Format#34](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#34)]  
-  
- <xref:System.String.Format%2A?displayProperty=fullName> makes use of the composite formatting feature. For more information, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
-  
-<a name="Format_Syntax"></a>   
-## Overloaded method syntax  
- For additional guidance on choosing an overload, see [Which method do I call?](#FTaskList)  
-  
- `String String.Format(String`  `format` `, Object`  `arg0` `)`  
- Replaces the format items with the string representation of a specified object ([example](#Format1_Example)).  
-  
- `String String.Format(String`  `format` `, Object`  `arg0` `, Object`  `arg1` `)`  
- Replaces the format items with the string representation of two specified objects ([example](#Format2_Example)).  
-  
- `String String.Format(String`  `format` `, Object`  `arg0` `, Object`  `arg1` `, Object`  `arg2` `)`  
- Replaces the format items with the string representation of three specified objects ([example](#Format3_Example)).  
-  
- `String String.Format(String`  `format` `, params Object[]`  `args` `)`  
- Replaces the format items with the string representations of corresponding objects in a specified array ([example](#Format4_Example)).  
-  
- `String String.Format(IFormatProvider`  `provider` `, String`  `format` `, params Object[]`  `args` `)`  
- Replaces the format items with the string representation of corresponding objects in a specified array, and uses the specified culture-specific formatting information ([example](#Format5_Example)) or custom formatting information ([example](#Format6_Example)).  
-  
-<a name="Format_Params"></a>   
-## Parameters  
- This is a complete list of parameters for the <xref:System.String.Format%2A> method; see the overload syntax above for the parameters used by each overload. Only the `format` parameter is used by all overloads.  
-  
-|Parameter|Type|Description|  
-|---------------|----------|-----------------|  
-|`format`|<xref:System.String>|A composite format string that includes one or more format items (see [The format item](#FormatItem)).|  
-|`arg0`|<xref:System.String>|The first or only object to format.|  
-|`arg1`|<xref:System.String>|The second object to format.|  
-|`arg2`|<xref:System.String>|The third object to format.|  
-|`args`|<xref:System.String>[]|Zero or more objects to format, supplied either in a comma-delimited list or as an array.|  
-|`provider`|<xref:System.IFormatProvider>|An object that supplies custom or culture-specific formatting information.|  
-  
-<a name="Format_Returns"></a>   
-## Return value  
- Type: <xref:System.String>  
-A copy of `format` in which the format items have been replaced by the string representations of the corresponding arguments.  
-  
-<a name="Format_Exceptions"></a>   
-## Exceptions  
-  
-|Exception|Condition|Thrown by|  
-|---------------|---------------|---------------|  
-|<xref:System.ArgumentNullException>|`format` is `null`.|All overloads.|  
-|<xref:System.FormatException>|`format` is invalid.<br /><br /> -or-<br /><br /> The index of a format item is less than zero, or greater than or equal to the number of arguments in the arguments list.|All overloads.|  
-  
-<a name="FTaskList"></a>   
-## Which method do I call?  
-  
-|To|Call|  
-|--------|----------|  
-|Format one or more objects by using the conventions of the current culture.|Except for the overloads that include a `provider` parameter, the remaining<xref:System.String.Format%2A> overloads include a <xref:System.String> parameter followed by one or more object parameters. Because of this, you do not have to determine which <xref:System.String.Format%2A> overload you intend to call. Your language compiler will select the appropriate overload from among the overloads that don't have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler will call the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method.|  
-|Format one or more objects by using the conventions of a specific culture.|Each<xref:System.String.Format%2A>overload that begins with a `provider` parameter is followed by a <xref:System.String> parameter and one or more object parameters. Because of this, you do not have to determine which specific <xref:System.String.Format%2A> overload you intend to call. Your language compiler will select the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler will call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method.|  
-|Perform a custom formatting operation either with an <xref:System.ICustomFormatter> implementation or an <xref:System.IFormattable> implementation.|Any of the four overloads with a `provider` parameter. compiler will select the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list.|  
-  
-<a name="Format_Brief"></a>   
-## The Format method in brief  
- Each overload of the <xref:System.String.Format%2A> method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to include zero-based indexed placeholders, called format items, in a composite format string. At run time, each format item is replaced with the string representation of the corresponding argument in a parameter list. If the value of the argument is                  `null`, the format item is replaced with <xref:System.String.Empty?displayProperty=fullName>. For example, the following call to the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%2CSystem.Object%29> method includes a format string with three format items, {0}, {1}, and {2}, and an argument list with three items.  
-  
- [!code-cpp[System.String.Format#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatoverload1.cpp#8)]
- [!code-csharp[System.String.Format#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload1.cs#8)]
- [!code-vb[System.String.Format#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatoverload1.vb#8)]  
-  
-<a name="FormatItem"></a>   
-## The format item  
- A format item has this syntax:  
-  
-```  
-  
-{  
-index[,alignment][ :formatString] }  
-```  
-  
- Brackets denote optional elements. The opening and closing braces are required. (To include a literal opening or closing brace in the format string, see the "Escaping Braces" section in the [Composite Formatting](~/docs/standard/base-types/composite-formatting.md) article.)  
-  
- For example, a format item to format a currency value might appears like this:  
-  
- [!code-cpp[System.String.Format#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatsyntax1.cpp#12)]
- [!code-csharp[System.String.Format#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatsyntax1.cs#12)]  
-  
- A format item has the following elements:  
-  
- *index*  
- The zero-based index of the argument whose string representation is to be included at this position in the string. If this argument is `null`, an empty string will be included at this position in the string.  
-  
- *alignment*  
- Optional. A signed integer that indicates the total length of the field into which the argument is inserted and whether it is right-aligned (a positive integer) or left-aligned (a negative integer). If you omit *alignment*, the string representation of the corresponding argument is inserted in a field with no leading or trailing spaces.  
-  
- If the value of *alignment* is less than the length of the argument to be inserted, *alignment* is ignored and the length of the string representation of the argument is used as the field width.  
-  
- *formatString*  
- Optional. A string that specifies the format of the corresponding argument's result string. If you omit *formatString*, the corresponding argument's parameterless `ToString` method is called to produce its string representation. If you specify *formatString*, the argument referenced by the format item must implement the <xref:System.IFormattable> interface. Types that support format strings include:  
-  
--   All integral and floating-point types. (See                                                  [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and                                                  [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).)  
-  
--   <xref:System.DateTime> and <xref:System.DateTimeOffset>. (See                                                 [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and                                                  [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).)  
-  
--   All enumeration types. (See [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).)  
-  
--   <xref:System.TimeSpan> values. (See                                                  [Standard TimeSpan Format Strings](~/docs/standard/base-types/standard-timespan-format-strings.md) and                                                  [Custom TimeSpan Format Strings](~/docs/standard/base-types/custom-timespan-format-strings.md).)  
-  
--   GUIDs. (See the <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> method.)  
-  
- However, note that any custom type can implement <xref:System.IFormattable> or extend an existing type's <xref:System.IFormattable> implementation.  
-  
- The following example uses the `alignment` and `formatString` arguments to produce formatted output.  
-  
- [!code-cpp[System.String.Format#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatoverload2.cpp#9)]
- [!code-csharp[System.String.Format#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload2.cs#9)]
- [!code-vb[System.String.Format#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatoverload2.vb#9)]  
-  
-<a name="HowFormatted"></a>   
-## How arguments are formatted  
- Format items are processed sequentially from the beginning of the string. Each format item has an index that corresponds to an object in the method's argument list. The <xref:System.String.Format%2A> method retrieves the argument and derives its string representation as follows:  
-  
--   If the argument is `null`, the method inserts <xref:System.String.Empty?displayProperty=fullName> into the result string.  
-  
--   If you call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload and the `provider` parameter implements the <xref:System.ICustomFormatter> interface, the argument is passed to the `provider` object's <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> method. If the format item includes a *formatString* argument, it is passed as the first argument to the method. If the <xref:System.ICustomFormatter> implementation is able to provide formatting services, it returns the string representation of the argument; otherwise, it returns `null` and the next step executes.  
-  
--   If the argument implements the <xref:System.IFormattable> interface, its <xref:System.IFormattable.ToString%2A?displayProperty=fullName> implementation is called.  
-  
--   The argument's parameterless `ToString` method, which is either overridden or inherited from the <xref:System.Object> class, is called.  
-  
- For an example that intercepts calls to the <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> method and allows you to see what information the <xref:System.String.Format%2A> method passes to a formatting method for each format item in a composite format string, see [Example 7: An intercept provider and Roman numeral formatter](#Format7_Example).  
-  
-<a name="SameIndex"></a>   
-## Format items that have the same index  
- The <xref:System.String.Format%2A> method throws a <xref:System.FormatException> exception if the index of an index item is greater than or equal to the number of arguments in the argument list. However, `format` can include more format items than there are arguments, as long as multiple format items have the same index. In the call to the <xref:System.String.Format%28System.String%2CSystem.Object%29> method in following example, the argument list has a single argument, but the format string includes two format items: one displays the decimal value of a number, and the other displays its hexadecimal value.  
-  
- [!code-csharp[System.String.Format2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format2/cs/Example1.cs#1)]
- [!code-vb[System.String.Format2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format2/vb/Example1.vb#1)]  
-  
-<a name="Format_Culture"></a>   
-## Formatting and culture  
- Generally, objects in the argument list are converted to their string representations by using the conventions of the current culture, which is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property. You can control this behavior by calling one of the overloads of <xref:System.String.Format%2A> that includes a `provider` parameter. The `provider` parameter is an <xref:System.IFormatProvider> implementation that supplies custom and culture-specific formatting information that is used to moderate the formatting process.  
-  
- The <xref:System.IFormatProvider> interface has a single member, <xref:System.IFormatProvider.GetFormat%2A>, which is responsible for returning the object that provides formatting information. The .NET Framework has three <xref:System.IFormatProvider> implementations that provide culture-specific formatting:  
-  
--   <xref:System.Globalization.CultureInfo>. Its <xref:System.Globalization.CultureInfo.GetFormat%2A> method returns a culture-specific <xref:System.Globalization.NumberFormatInfo> object for formatting numeric values and a culture-specific <xref:System.Globalization.DateTimeFormatInfo> object for formatting date and time values.  
-  
--   <xref:System.Globalization.DateTimeFormatInfo>, which is used for culture-specific formatting of date and time values. Its <xref:System.Globalization.DateTimeFormatInfo.GetFormat%2A> method returns itself.  
-  
--   <xref:System.Globalization.NumberFormatInfo>, which is used for culture-specific formatting of numeric values. Its <xref:System.Globalization.NumberFormatInfo.GetFormat%2A> property returns itself.  
-  
-<a name="Format_Custom"></a>   
-## Custom formatting operations  
- You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a  `provider` parameter <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the<xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its   <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.  
-  
- For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example 6: A custom formatting operation](#Format6_Example). For an example that converts unsigned bytes to Roman numerals, see [Example 7: An intercept provider and Roman numeral formatter](#Format7_Example).  
-  
-<a name="Format1_Example"></a>   
-## Example 1: Formatting a single argument  
- The following example uses the <xref:System.String.Format%28System.String%2CSystem.Object%29> method to embed an individual's age in the middle of a string.  
-  
- [!code-cpp[System.String.Format#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format7.cpp#7)]
- [!code-csharp[System.String.Format#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format7.cs#7)]
- [!code-vb[System.String.Format#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format7.vb#7)]  
-  
-<a name="Format2_Example"></a>   
-## Example 2: Formatting two arguments  
- This example uses the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%29> method to display time and temperature data stored in a generic <xref:System.Collections.Generic.Dictionary%602> object. Note that the format string has three format items, although there are only two objects to format. This is because the first object in the list (a date and time value) is used by two format items: The first format item displays the time, and the second displays the date.  
-  
- [!code-cpp[System.String.Format#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatexample4.cpp#6)]
- [!code-csharp[System.String.Format#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatexample4.cs#6)]
- [!code-vb[System.String.Format#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatexample4.vb#6)]  
-  
-<a name="Format3_Example"></a>   
-## Example 3: Formatting three arguments  
- This example uses the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%2CSystem.Object%29> method to create a string that illustrates the result of a Boolean `And` operation with two integer values. Note that the format string includes six format items, but the method has only three items in its parameter list, because each item is formatted in two different ways.  
-  
- [!code-cpp[System.String.Format#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format4.cpp#4)]
- [!code-csharp[System.String.Format#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format4.cs#4)]
- [!code-vb[System.String.Format#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format4.vb#4)]  
-  
-<a name="Format4_Example"></a>   
-## Example 4: Formatting more than three arguments  
- This example creates a string that contains data on the high and low temperature on a particular date. The composite format string has five format items in the C# example and six in the Visual Basic example. Two of the format items define the width of their corresponding value's string representation, and the first format item also includes a standard date and time format string.  
-  
- [!code-cpp[System.String.Format#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format5.cpp#5)]
- [!code-csharp[System.String.Format#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format5.cs#5)]
- [!code-vb[System.String.Format#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format5.vb#5)]  
-  
- You can also pass the objects to be formatted as an array rather than a an argument list.  
-  
- [!code-cpp[System.String.Format#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format_paramarray1.cpp#10)]
- [!code-csharp[System.String.Format#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format_paramarray1.cs#10)]
- [!code-vb[System.String.Format#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format_paramarray1.vb#10)]  
-  
-<a name="Format5_Example"></a>   
-## Example 5: Culture-sensitive formatting  
- This example uses the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method to display the string representation of some date and time values and numeric values by using several different cultures.  
-  
- [!code-csharp[System.String.Format2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format2/cs/Example2.cs#2)]
- [!code-vb[System.String.Format2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format2/vb/Example2.vb#2)]  
-  
-<a name="Format6_Example"></a>   
-## Example 6: A custom formatting operation  
- This example defines a format provider that formats an integer value as a customer account number in the form x-xxxxx-xx.  
-  
- [!code-cpp[System.String.Format#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatexample2.cpp#2)]
- [!code-csharp[System.String.Format#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/FormatExample2.cs#2)]
- [!code-vb[System.String.Format#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/FormatExample2.vb#2)]  
-  
-<a name="Format7_Example"></a>   
-## Example 7: An intercept provider and Roman numeral formatter  
- This example defines a custom format provider that implements the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces to do two things:  
-  
--   It displays the parameters passed to its <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> implementation. This enables us to see what parameters the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method is passing to the custom formatting implementation for each object that it tries to format. This can be useful when you're debugging your application.  
-  
--   If the object to be formatted is an unsigned byte value that is to be formatted by using the "R" standard format string, the custom formatter formats the numeric value as a Roman numeral.  
-  
- [!code-cpp[System.String.Format#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/interceptor2.cpp#11)]
- [!code-csharp[System.String.Format#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/interceptor2.cs#11)]
- [!code-vb[System.String.Format#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/interceptor2.vb#11)]  
-  
-<a name="Format_Versions"></a>   
-## Version information  
- .NET Framework  
- All overloads are supported in: 4.5, 4, 3.5, 3.0, 2.0, 1.1, 1.0  
-  
- .NET Framework Client Profile  
- All overloads are supported in: 4, 3.5 SP1  
-  
- Portable Class Library  
- Only <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> and <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> are supported  
-  
- .NET for Windows Store apps  
- Only <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> and <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> are supported in Windows 8  
-  
-<a name="QA"></a>   
-## String.Format Q & A  
-  
-### Where can I find a list of the predefined format strings that can be used with format items?  
-  
--   For all integral and floating-point types, see                                                  [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and                                                  [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
-  
--   For date and time values, see                                                  [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and                                                  [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
-  
--   For enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
-  
--   For <xref:System.TimeSpan> values, see  [Standard TimeSpan Format Strings](~/docs/standard/base-types/standard-timespan-format-strings.md) and [Custom TimeSpan Format Strings](~/docs/standard/base-types/custom-timespan-format-strings.md).  
-  
--   For <xref:System.Guid> values, see the Remarks section of the <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> reference page.  
-  
-### How do I control the alignment of the result strings that replace format items?  
- The general syntax of a format item is:  
-  
-```  
-{index[,alignment][: formatString]}  
-```  
-  
- where *alignment* is a signed integer that defines the field width. If this value is negative, text in the field is left-aligned. If it is positive, text is right-aligned.  
-  
-### How do I control the number of digits after the decimal separator?  
- All [standard numeric format strings](~/docs/standard/base-types/standard-numeric-format-strings.md) except "D" (which is used with integers only), "G", "R", and "X" allow a precision specifier that defines the number of decimal digits in the result string. The following example uses standard numeric format strings to control the number of decimal digits in the result string.  
-  
- [!code-csharp[System.String.Format#26](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa26.cs#26)]
- [!code-vb[System.String.Format#26](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa26.vb#26)]  
-  
- If you're using a [custom numeric format string](~/docs/standard/base-types/custom-numeric-format-strings.md), use the "0" format specifier to control the number of decimal digits in the result string, as the following example shows.  
-  
- [!code-csharp[System.String.Format#27](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa27.cs#27)]
- [!code-vb[System.String.Format#27](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa27.vb#27)]  
-  
-### How do I control the number of integral digits?  
- By default, formatting operations only display non-zero integral digits. If you are formatting integers, you can use a precision specifier with the "D" and "X" standard format strings to control the number of digits.  
-  
- [!code-csharp[System.String.Format#29](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa29.cs#29)]
- [!code-vb[System.String.Format#29](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa29.vb#29)]  
-  
- You can pad an integer or floating-point number with leading zeros to produce a result string with a specified number of integral digits by using the "0" [custom numeric format specifier](~/docs/standard/base-types/custom-numeric-format-strings.md), as the following example shows.  
-  
- [!code-csharp[System.String.Format#28](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa28.cs#28)]
- [!code-vb[System.String.Format#28](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa28.vb#28)]  
-  
-### How many items can I include in the format list?  
- There is no practical limit. The second parameter of the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method is tagged with the <xref:System.ParamArrayAttribute> attribute, which allows you to include either a delimited list or an object array as your format list.  
-  
-### How do I include literal braces ("{" and "}") in the result string?  
- For example, how do you prevent the following method call from throwing a <xref:System.FormatException> exception?  
-  
- [!code-csharp[System.String.Format#23](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#23)]
- [!code-vb[System.String.Format#23](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa3.vb#23)]  
-  
- A single opening or closing brace is always interpreted as the beginning or end of a format item. To be interpreted literally, it must be escaped. You escape a brace by adding another brace ("{{" and "}}" instead of "{" and "}"), as in the following method call:  
-  
- [!code-csharp[System.String.Format#24](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#24)]
- [!code-vb[System.String.Format#24](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa3.vb#24)]  
-  
- However, even escaped braces are easily misinterpreted. We recommend that you include braces in the format list and use format items to insert them in the result string, as the following example shows.  
-  
- [!code-csharp[System.String.Format#25](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#25)]
- [!code-vb[System.String.Format#25](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa3.vb#25)]  
-  
-### Why does my call to the String.Format method throw a FormatException?  
- The most common cause of the exception is that the index of a format item doesn't correspond to an object in the format list. Usually this indicates that you've misnumbered the indexes of format items or you've forgotten to include an object in the format list. Occasionally, the exception is the result of a typo; for example, a typical mistake is to mistype "[" (the left bracket) instead of "{" (the left brace).  
-  
-### If the Format(System.IFormatProvider,System.String,System.Object[]) method supports parameter arrays, why does my code throw an exception when I use an array?  
- For example, the following code throws a <xref:System.FormatException> exception:  
-  
- [!code-csharp[System.String.Format#21](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa1.cs#21)]
- [!code-vb[System.String.Format#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa1.vb#21)]  
-  
- This is a problem of compiler overload resolution. Because the compiler cannot convert an array of integers to an object array, it treats the integer array as a single argument, so it calls the <xref:System.String.Format%28System.String%2CSystem.Object%29> method. The exception is thrown because there are four format items but only a single item in the format list.  
-  
- Because neither Visual Basic nor C# can convert an integer array to an object array, you have to perform the conversion yourself before calling the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method. The following example provides one implementation.  
-  
- [!code-csharp[System.String.Format#22](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa2.cs#22)]
- [!code-vb[System.String.Format#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa2.vb#22)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Split">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a string array that contains the substrings in this instance that are delimited by elements of a specified string or Unicode character array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.String.Split%2A> is used to break a delimited string into substrings. You can use either a character array to specify zero, one, or multiple delimiting characters (the <xref:System.String.Split%28System.Char%5B%5D%29> method), or you can use a character array to specify zero, one, or multiple delimiting strings. Overloads of the <xref:System.String.Split%2A> method allow you to limit the number of substrings returned by the method (the <xref:System.String.Split%28System.Char%5B%5D%2CSystem.Int32%29> method), to determine whether empty strings are included in the returned substrings (the <xref:System.String.Split%28System.Char%5B%5D%2CSystem.StringSplitOptions%29> and <xref:System.String.Split%28System.String%5B%5D%2CSystem.StringSplitOptions%29> methods, or to do both (the <xref:System.String.Split%28System.Char%5B%5D%2CSystem.Int32%2CSystem.StringSplitOptions%29> and <xref:System.String.Split%28System.String%5B%5D%2CSystem.Int32%2CSystem.StringSplitOptions%29> methods).  
-  
-> [!IMPORTANT]
->  For more detailed information on the <xref:System.String.Split%2A> method, as well as for examples that call each overload, see the documentation for the individual overloads of <xref:System.String.Split%2A>.  
-  
- The <xref:System.String.Split%2A> method is not always the best way to break a delimited string into substrings. If you don't want to extract all of the substrings of a delimited string, or if you want to parse a string based on a pattern instead of a set of delimiter characters, consider the following alternatives.  
-  
-## Regular expressions  
- If your strings conform to a fixed pattern, you can use a regular expression to extract and handle their elements. For example, if strings take the form "*number* *operand* *number*" you can use a [regular expression](~/docs/standard/base-types/regular-expressions.md) to extract and handle the string's elements. Here's an example:  
-  
- [!code-csharp[System.String.Split#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt1.cs#8)]
- [!code-vb[System.String.Split#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt1.vb#8)]  
-  
- The regular expression pattern `(\d+)\s+([-+*/])\s+(\d+)` is defined like this:  
-  
-|Pattern|Description|  
-|-------------|-----------------|  
-|`(\d+)`|Match one or more decimal digits. This is the first capturing group.|  
-|`\s+`|Match one or more whitespace characters.|  
-|`([-+*/])`|Match an arithmetic operator sign (+, -, *, or /). This is the second capturing group.|  
-|`\s+`|Match one or more whitespace characters.|  
-|`(\d+)`|Match one or more decimal digits. This is the third capturing group.|  
-  
- You can also use a regular expression to extract substrings from a string based on a pattern rather than a fixed set of characters. This is a common scenario when either of these conditions occurs:  
-  
--   One or more of the delimiter characters does not always serve as a delimiter in the <xref:System.String> instance.  
-  
--   The sequence and number of delimiter characters is variable or unknown.  
-  
- For example, the <xref:System.String.Split%2A> method cannot be used to split the following string, because the number of `\n` (in C#) or `vbCrLf` (in Visual Basic) characters is variable, and they do not always serve as delimiters.  
-  
-```  
-  
-[This is captured\ntext.]\n\n[\n[This is more captured text.]\n]  
-\n[Some more captured text:\n   Option1\n   Option2][Terse text.]  
-  
-```  
-  
- A regular expression can split this string easily, as the following example shows.  
-  
- [!code-csharp[System.String.Split#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt2.cs#9)]
- [!code-vb[System.String.Split#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt2.vb#9)]  
-  
- The regular expression pattern `\[([^\[\]]+)\]` is defined like this:  
-  
-|Pattern|Description|  
-|-------------|-----------------|  
-|`\[`|Match an opening bracket.|  
-|`([^\[\]]+)`|Match any character that is not an opening or a closing bracket one or more times. This is the first capturing group.|  
-|`\]`|Match a closing bracket.|  
-  
- The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> method is almost identical to <xref:System.String.Split%2A?displayProperty=fullName>, except that it splits a string based on a regular expression pattern instead of a fixed character set. For example, the following example uses the <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> method to split a string that contains substrings delimited by various combinations of hyphens and other characters.  
-  
- [!code-csharp[System.String.Split#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt3.cs#10)]
- [!code-vb[System.String.Split#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt3.vb#10)]  
-  
- The regular expression pattern `\s-\s?[+*]?\s?-\s` is defined like this:  
-  
-|Pattern|Description|  
-|-------------|-----------------|  
-|`\s-`|Match a whitespace character followed by a hyphen.|  
-|`\s?`|Match zero or one whitespace character.|  
-|`[+*]?`|Match zero or one occurrence of either the + or * character.|  
-|`\s?`|Match zero or one whitespace character.|  
-|`-\s`|Match a hyphen followed by a whitespace character.|  
-  
-## Search methods and the Substring method  
- If you aren't interested in all of the substrings in a string, you might prefer to work with one of the string comparison methods that returns the index at which the match begins. You can then call the <xref:System.String.Substring%2A> method to extract the substring that you want. The string comparison methods include:  
-  
--   <xref:System.String.IndexOf%2A>, which returns the zero-based index of the first occurrence of a character or string in a string instance.  
-  
--   <xref:System.String.IndexOfAny%2A>, which returns the zero-based index in the current string instance of the first occurrence of any character in a character array.  
-  
--   <xref:System.String.LastIndexOf%2A>, which returns the zero-based index of the last occurrence of a character or string in a string instance.  
-  
--   <xref:System.String.LastIndexOfAny%2A>, which returns a zero-based index in the current string instance of the last occurrence of any character in a character array.  
-  
- The following example uses the <xref:System.String.IndexOf%2A> method to find the periods in a string. It then uses the <xref:System.String.Substring%2A> method to return full sentences.  
-  
- [!code-csharp[System.String.Split#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt4.cs#11)]
- [!code-vb[System.String.Split#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt4.vb#11)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CompareTo">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares this instance with a specified object or <see cref="T:System.String" /> and returns an integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified object or <see cref="T:System.String" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Both overloads of the<xref:System.String.CompareTo%2A> method perform culture-sensitive and case-sensitive comparison. You cannot use this method to perform culture-insensitive or ordinal comparisons. For code clarity, we recommend that you avoid the <xref:System.String.CompareTo%2A> method and call the <xref:System.String.Compare%2A> method instead.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.String" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this section:  
-  
- [Overloaded constructor syntax](#Syntax)   
- [Parameters](#Params)   
- [Exceptions](#Exceptions)   
- [Which method do I call?](#Tasks)   
- [Creating strings](#Creating_Strings)   
- [Handling repetitive strings](#Repetitive)   
- Examples of instantiating strings:   
- [Using string assignment](#Ctor1_Example)  
- [Using a character array](#Ctor2_Example)  
- [Using a portion of a character array and repeating a single character](#Ctor3_Example)  
- [Using a pointer to a character array](#Ctor4_Example)  
- [Using  a pointer and a range of an array](#Ctor5_Example)  
- [Using a pointer to a signed byte array](#Ctor6_Example)  
-[Version information](#Versions)  
-  
-<a name="Syntax"></a>   
-## Overloaded constructor syntax  
- String constructors fall into two categories: those without pointer parameters, and those with pointer parameters. The constructors that use pointers are not CLS-compliant. In addition, Visual Basic does not support the use of pointers, and C# requires code that uses pointers to run in an unsafe context. For more information, see [unsafe](~/docs/csharp/language-reference/keywords/unsafe.md).  
-  
- For additional guidance on choosing an overload, see [Which method do I call?](#Tasks)  
-  
- `String(Char[]`  `value` `)`  
- Initializes the new instance to the value indicated by an array of Unicode characters. This constructor copies Unicode characters([example](#Ctor2_Example)).  
-  
- `String(Char[]`  `value` `, Int32`  `startIndex` `, Int32`  `length` `)`  
- Initializes the new instance to the value indicated by an array of Unicode characters, a starting character position within that array, and a length ([example](#Ctor3_Example)).  
-  
- `String(Char`  `c` `, Int32`  `count` `)`  
- Initializes the new instance to the value indicated by a specified Unicode character repeated a specified number of times ([example](#Ctor3_Example)).  
-  
- `String(char*`  `value` `)`  
- **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of Unicode characters that is terminated by a null character (U+0000 or '\0'). ([example](#Ctor4_Example)).  
-  
- Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
-  
- `String(char*`  `value` `, Int32`  `startIndex` `, Int32`  `length` `)`  
- **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of Unicode characters, a starting character position within that array, and a length. The constructor copies the Unicode characters from `value` starting at index `startIndex` and ending at index `startIndex` + `length` – 1 ([example](#Ctor5_Example)).  
-  
- Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
-  
- `String(SByte*`  `value` `)`  
- **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers. The array is assumed to represent a string encoded using the current system code page (that is, the encoding specified by <xref:System.Text.Encoding.Default%2A?displayProperty=fullName>). The constructor processes characters from `value` starting from the location specified by the pointer until a null character (0x00) is reached ([example](#Ctor6_Example)).  
-  
- Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
-  
- `String(SByte*`  `value` `, Int32`  `startIndex` `, Int32`  `length` `)`  
- **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers, a starting position within that array, and a length.  The array is assumed to represent a string encoded using the current system code page (that is, the encoding specified by <xref:System.Text.Encoding.Default%2A?displayProperty=fullName>). The constructor processes characters from value starting at `startIndex` and ending at `startIndex` + `length` – 1 ([example](#Ctor6_Example)).  
-  
- Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
-  
- `String(SByte*`  `value` `, Int32`  `startIndex` `, Int32`  `length` `, Encoding`  `enc` `)`  
- **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers, a starting position within that array, a length, and an <xref:System.Text.Encoding> object.  
-  
- Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
-  
-<a name="Params"></a>   
-## Parameters  
- Here is a complete list of parameters used by <xref:System.String>constructors that do not include a pointer parameter. For the parameters used by each overload, see the overload syntax above.  
-  
-|Parameter|Type|Description|  
-|---------------|----------|-----------------|  
-|`value`|<xref:System.Char>[]|An array of Unicode characters.|  
-|`c`|<xref:System.Char>|A Unicode character.|  
-|`startIndex`|<xref:System.Int32>|The starting position in `value` of the first character in the new string.<br /><br /> Default value: 0|  
-|`length`|<xref:System.Int32>|The number of characters in `value` to include in the new string.<br /><br /> Default value: <xref:System.Array.Length%2A?displayProperty=fullName>|  
-|`count`|<xref:System.Int32>|The number of times the character `c` is repeated in the new string. If `count` is zero, the value of the new object is <xref:System.String.Empty?displayProperty=fullName>.|  
-  
- Here is a complete list of parameters used by <xref:System.String>constructors that include a pointer parameter. For the parameters used by each overload, see the overload syntax above.  
-  
-|Parameter|Type|Description|  
-|---------------|----------|-----------------|  
-|`value`|<xref:System.Char>*<br /><br /> -or-<br /><br /> <xref:System.SByte>\*|A pointer to a null-terminated array of Unicode characters or an array of 8-bit signed integers. If `value` is `null` or an empty array, the value of the new string is <xref:System.String.Empty?displayProperty=fullName>.|  
-|`startIndex`|<xref:System.Int32>|The index of the array element that defines the first character in the new string.<br /><br /> Default value: 0|  
-|`length`|<xref:System.Int32>|The number of array elements to use to create the new string. If length is zero, the constructor creates a string whose value is <xref:System.String.Empty?displayProperty=fullName>.<br /><br /> Default value: <xref:System.Array.Length%2A?displayProperty=fullName>|  
-|`enc`|<xref:System.Text.Encoding>|An object that specifies how the `value` array is encoded.<br /><br /> Default value: <xref:System.Text.Encoding.Default%2A?displayProperty=fullName>, or the system's current ANSI code page|  
-  
-<a name="Exceptions"></a>   
-## Exceptions  
- Here's a list of exceptions thrown by constructors that do not include pointer parameters.  
-  
-|Exception|Condition|Thrown by|  
-|---------------|---------------|---------------|  
-|<xref:System.ArgumentNullException>|`value` is `null`.|<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29>|  
-|<xref:System.ArgumentOutOfRangeException>|`startIndex`,`length`, or `count` is less than zero.<br /><br /> -or-<br /><br /> The sum of `startIndex` and `length` is greater than the number of elements in `value`.<br /><br /> -or-<br /><br /> `count` is less than zero.|<xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29>|  
-  
- Here's a list of exceptions thrown by constructors that include pointer parameters.  
-  
-|Exception|Condition|Thrown by|  
-|---------------|---------------|---------------|  
-|<xref:System.ArgumentException>|`value` specifies an array that contains an invalid Unicode character.<br /><br /> -or-<br /><br /> `value` or `value` + `startIndex` specifies an address that is less than 64K.<br /><br /> -or-<br /><br /> A new <xref:System.String> instance could not be initialized from the `value` byte array because `value` does not use the default code page encoding.|All constructors with pointers.|  
-|<xref:System.ArgumentNullException>|`value` is null.|<xref:System.String.%23ctor%28System.SByte%2A%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%2CSystem.Text.Encoding%29>|  
-|<xref:System.ArgumentOutOfRangeException>|The current process does not have read access to all the addressed characters.<br /><br /> -or-<br /><br /> `startIndex` or `length` is less than zero, `value` + `startIndex` cause a pointer overflow, or the current process does not have read access to all the addressed characters.<br /><br /> -or-<br /><br /> The length of the new string is too large to allocate.|All constructors with pointers.|  
-|<xref:System.AccessViolationException>|`value`, or `value` + `startIndex` + `length` – 1, specifies an invalid address.|<xref:System.String.%23ctor%28System.SByte%2A%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%2CSystem.Text.Encoding%29>|  
-  
-<a name="Tasks"></a>   
-## Which method do I call?  
-  
-|To|Call or use|  
-|--------|-----------------|  
-|Create a string.|Assignment from a string literal or an existing string ([example](#Ctor1_Example))|  
-|Create a string from an entire character array.|<xref:System.String.%23ctor%28System.Char%5B%5D%29> ([example](#Ctor2_Example))|  
-|Createa string from a portion of a character array.|<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> ([example](#Ctor3_Example))|  
-|Create a string that repeats the same character multiple times.|<xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29> ([example](#Ctor3_Example))|  
-|Create a string from a pointer to a Unicode or wide character array.|<xref:System.String.%23ctor%28System.Char%2A%29>|  
-|Create a string from a portion of a Unicode or wide character array by using its pointer.|<xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29>|  
-|Create a string from a C++ `char` array.|<xref:System.String.%23ctor%28System.SByte%2A%29>, <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29><br /><br /> -or-<br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%2CSystem.Text.Encoding%29>|  
-|Create a string from ASCII characters.|<xref:System.Text.ASCIIEncoding.GetString%2A?displayProperty=fullName>|  
-  
-<a name="Creating_Strings"></a>   
-## Creating strings  
- The most commonly used technique for creating strings programmatically is simple assignment, as illustrated in [this example](#Ctor1_Example). The <xref:System.String> class also includes four types of constructor overloads that let you create strings from the following values:  
-  
--   From a character array (an array of UTF-16-encoded characters). You can create a new <xref:System.String> object from the characters in the entire array or a portion of it. The <xref:System.String.%23ctor%28System.Char%5B%5D%29> constructor copies all the characters in the array to the new string. The <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor copies the characters from index `startIndex` to index `startIndex` + `length` – 1 to the new string. If `length` is zero, the value of the new string is <xref:System.String.Empty?displayProperty=fullName>.  
-  
-     If your code repeatedly instantiates strings that have the same value, you can improve application performance by using an alternate means of creating strings. For more information, see [Handling repetitive strings](#Repetitive).  
-  
--   From a single character that is duplicated zero, one, or more times, by using the <xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29> constructor. If `count` is zero, the value of the new string is <xref:System.String.Empty?displayProperty=fullName>.  
-  
--   From a pointer to a null-terminated character array, by using the <xref:System.String.%23ctor%28System.Char%2A%29> or <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> constructor. Either the entire array or a specified range can be used to initialize the string. The constructor copies a sequence of Unicode characters starting from the specified pointer or from the specified pointer plus `startIndex` and continuing to the end of the array or for `length` characters. If `value` is a null pointer or `length` is zero, the constructor creates a string whose value is <xref:System.String.Empty?displayProperty=fullName>. If the copy operation proceeds to the end of the array and the array is not null-terminated, the constructor behavior is system-dependent. Such a condition might cause an access violation.  
-  
-     If the array contains any embedded null characters (U+0000 or '\0') and the <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> overload is called, the string instance contains `length` characters including any embedded nulls. The following example shows what happens when a pointer to an array of 10 elements that includes two null characters is passed to the <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> method. Because the address is the beginning of the array and all elements in the array are to be added to the string, the constructor instantiates a string with ten characters, including two embedded nulls. On the other hand, if the same array is passed to the <xref:System.String.%23ctor%28System.Char%2A%29> constructor, the result is a four-character string that does not include the first null character.  
-  
-     [!code-cpp[System.String.ctor#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/chptrctor_null.cpp#5)]
-     [!code-csharp[System.String.ctor#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.ctor/cs/chptrctor_null.cs#5)]  
-  
-     The array must contain Unicode characters. In C++, this means that the character array must be defined either as the managed <xref:System.Char>[] type or the unmanaged`wchar_t`[] type.  
-  
-     If the <xref:System.String.%23ctor%28System.Char%2A%29> overload is called and the array is not null-terminated, or if the <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> overload is called and `startIndex` + `length`-1 includes a range that it outside the memory allocated for the sequence of characters, the behavior of the constructor is system-dependent, and an access violation may occur. In addition, on the Intel Itanium processor, calls to the<xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29>constructor may throw a <xref:System.DataMisalignedException> exception. If this occurs, call the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> instead.  
-  
--   From a pointer to a signed byte array. Either the entire array or a specified range can be used to initialize the string. The sequence of bytes can be interpreted by using the default code page encoding, or an encoding can be specified in the constructor call. If the constructor tries to instantiate a string from an entire array that is not null-terminated, or if the range of the array from `value` + `startIndex` to `value` + `startIndex` + `length` -1 is outside of the memory allocated for the array, the behavior of this constructor is system-dependent, and an access violation may occur.  
-  
-     The three constructors that include a signed byte array as a parameter are designed primarily to convert a C++ `char` array to a string, as shown in this example:  
-  
-     [!code-cpp[System.String.Ctor#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/sbyte_ctor1.cpp#4)]  
-  
-     If the array contains any null characters ('\0') or bytes whose value is 0 and the <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29> overload is called, the string instance contains `length` characters including any embedded nulls. The following example shows what happens when a pointer to an array of 10 elements that includes two null characters is passed to the <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29> method. Because the address is the beginning of the array and all elements in the array are to be added to the string, the constructor instantiates a string with ten characters, including two embedded nulls. On the other hand, if the same array is passed to the <xref:System.String.%23ctor%28System.SByte%2A%29> constructor, the result is a four-character string that does not include the first null character.  
-  
-     [!code-cpp[System.String.ctor#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/ptrctor_null.cpp#6)]
-     [!code-csharp[System.String.ctor#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.ctor/cs/ptrctor_null.cs#6)]  
-  
-     Because the <xref:System.String.%23ctor%28System.SByte%2A%29> and <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29> constructors interpret `value` by using the default ANSI code page, calling these constructors with identical byte arrays may create strings that have different values on different systems.  
-  
-<a name="Repetitive"></a>   
-## Handling repetitive strings  
- Apps that parse or decode streams of text often use the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor or the <xref:System.Text.StringBuilder.Append%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to convert sequences of characters into a string. Repeatedly creating new strings with the same value instead of creating and reusing one string wastes memory. If you are likely to create the same string value repeatedly by calling the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor, even if you do not know in advance what those identical string values may be, you can use a lookup table instead.  
-  
- For example, suppose you read and parse a stream of characters from a file that contains XML tags and attributes. When you parse the stream, you repeatedly encounter certain tokens (that is, sequences of characters that have a symbolic meaning). Tokens equivalent to the strings "0", "1", "true", and "false" are likely to occur frequently in an XML stream.  
-  
- Instead of converting each token into a new string, you can create a <xref:System.Xml.NameTable?displayProperty=fullName> object to hold commonly occurring strings. The <xref:System.Xml.NameTable> object improves performance, because it retrieves stored strings without allocating temporary memory. When you encounter a token, use the <xref:System.Xml.NameTable.Get%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to retrieve the token from the table. If the token exists, the method returns the corresponding string. If the token does not exist, use the <xref:System.Xml.NameTable.Add%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to insert the token into the table and to get the corresponding string.  
-  
-<a name="Ctor1_Example"></a>   
-## Example 1: Using string assignment  
- The following example creates a new string by assigning it a string literal. It creates a second string by assigning the value of the first string to it. These are the two most common ways to instantiate a new <xref:System.String> object.  
-  
- [!code-cpp[System.String.ctor#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/assignment.cpp#1)]
- [!code-csharp[System.String.ctor#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.ctor/cs/ctor1.cs#1)]
- [!code-vb[System.String.ctor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.ctor/vb/ctor1.vb#1)]  
-  
-<a name="Ctor2_Example"></a>   
-## Example 2: Using a character array  
- The following example demonstrates how to create a new <xref:System.String> object from a character array.  
-  
- [!code-cpp[stringexample1#1](~/samples/snippets/cpp/VS_Snippets_CLR/stringexample1/CPP/source.cpp#1)]
- [!code-csharp[stringexample1#1](~/samples/snippets/csharp/VS_Snippets_CLR/stringexample1/CS/source.cs#1)]
- [!code-vb[stringexample1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/stringexample1/VB/source.vb#1)]  
-  
-<a name="Ctor3_Example"></a>   
-## Example 3: Using a portion of a character array and repeating a single character  
- The following example demonstrates how to create a new <xref:System.String> object from a portion of a character array, and how to create a new <xref:System.String> object that contains multiple occurrences of a single character.  
-  
- [!code-cpp[stringexample1#3](~/samples/snippets/cpp/VS_Snippets_CLR/stringexample1/CPP/source.cpp#3)]
- [!code-csharp[stringexample1#3](~/samples/snippets/csharp/VS_Snippets_CLR/stringexample1/CS/source.cs#3)]
- [!code-vb[stringexample1#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/stringexample1/VB/source.vb#3)]  
-  
-<a name="Ctor4_Example"></a>   
-## Example 4: Using a pointer to a character array  
- The following example demonstrates how to create a new <xref:System.String> object from a pointer to an array of characters. The C# example must be compiled by using the `/unsafe` compiler switch.  
-  
- [!code-cpp[System.String.Ctor#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/char1_ctor.cpp#2)]
- [!code-csharp[System.String.Ctor#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.ctor/cs/ctor2.cs#2)]  
-  
-<a name="Ctor5_Example"></a>   
-## Example 5: Instantiating a string from a pointer and a range of an array  
- The following example examines the elements of a character array for either a period or an exclamation point. If one is found, it instantiates a string from the characters in the array that precede the punctuation symbol. If not, it instantiates a string with the entire contents of the array. The C# example must be compiled using the `/unsafe` compiler switch.  
-  
- [!code-cpp[System.String.Ctor#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/char2_ctor.cpp#3)]
- [!code-csharp[System.String.Ctor#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.ctor/cs/char2_ctor.cs#3)]  
-  
-<a name="Ctor6_Example"></a>   
-## Example 6: Instantiating a string from a pointer to a signed byte array  
- The following example demonstrates how you can create an instance of the <xref:System.String> class with the <xref:System.String.%23ctor%28System.SByte%2A%29> constructor.  
-  
- [!code-cpp[stringexample1#2](~/samples/snippets/cpp/VS_Snippets_CLR/stringexample1/CPP/source.cpp#2)]
- [!code-csharp[stringexample1#2](~/samples/snippets/csharp/VS_Snippets_CLR/stringexample1/CS/source.cs#2)]  
-  
-<a name="Versions"></a>   
-## Version information  
- .NET Framework  
- All overloads are supported in: 4.5, 4, 3.5, 3.0, 2.0, 1.1, 1.0  
-  
- .NET Framework Client Profile  
- All overloads are supported in: 4, 3.5 SP1  
-  
- Portable Class Library  
- All overloads without an <xref:System.SByte>`*` parameter are supported  
-  
- .NET for Windows Store apps  
- All overloads without an <xref:System.SByte>`*` parameter are supported in: Windows 8  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

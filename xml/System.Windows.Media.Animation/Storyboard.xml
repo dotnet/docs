@@ -54,6 +54,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Begin">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates the set of animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Begin">
       <MemberSignature Language="C#" Value="public void Begin ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin() cil managed" />
@@ -670,6 +687,25 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCurrentGlobalSpeed">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the <see cref="P:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed" /> of the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A clock's <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed%2A> speed is the rate at which its time is currently progressing, compared to real-world time.  
+  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCurrentGlobalSpeed">
       <MemberSignature Language="C#" Value="public double GetCurrentGlobalSpeed ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetCurrentGlobalSpeed() cil managed" />
@@ -2361,41 +2397,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Begin">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initiates the set of animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCurrentGlobalSpeed">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the <see cref="P:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed" /> of the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A clock's <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed%2A> speed is the rate at which its time is currently progressing, compared to real-world time.  
-  
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

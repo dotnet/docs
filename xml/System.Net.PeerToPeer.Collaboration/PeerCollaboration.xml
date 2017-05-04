@@ -131,6 +131,32 @@
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">Unable to complete <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.DeleteObject(System.Net.PeerToPeer.Collaboration.PeerObject)" /> operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetLocalRegisteredApplications">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> objects that are registered on the local machine.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The caller required to sign in to the peer collaboration infrastructure via the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or prior to the use of this method.  
+  
+ Access to this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+  
+   
+  
+## Examples  
+ The following example code illustrates how to retrieve a collection of applications registered with the Collaboration infrastructure:  
+  
+ [!code-csharp[NCLPNRPContacts#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetLocalRegisteredApplications">
       <MemberSignature Language="C#" Value="public static System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetLocalRegisteredApplications ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetLocalRegisteredApplications() cil managed" />
@@ -734,31 +760,5 @@
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The  <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.UnregisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)" /> operation could not be completed.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetLocalRegisteredApplications">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a collection of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> objects that are registered on the local machine.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The caller required to sign in to the peer collaboration infrastructure via the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or prior to the use of this method.  
-  
- Access to this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
-  
-   
-  
-## Examples  
- The following example code illustrates how to retrieve a collection of applications registered with the Collaboration infrastructure:  
-  
- [!code-csharp[NCLPNRPContacts#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#5)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

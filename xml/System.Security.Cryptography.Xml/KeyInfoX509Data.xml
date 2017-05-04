@@ -200,6 +200,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddSubjectKeyId">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a subject key identifier (SKI) to the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Subject key identifiers (SKIs) are a shorthand way to identify certificates that contain a certain public key.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddSubjectKeyId">
       <MemberSignature Language="C#" Value="public void AddSubjectKeyId (byte[] subjectKeyId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSubjectKeyId(unsigned int8[] subjectKeyId) cil managed" />
@@ -457,22 +474,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddSubjectKeyId">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a subject key identifier (SKI) to the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Subject key identifiers (SKIs) are a shorthand way to identify certificates that contain a certain public key.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

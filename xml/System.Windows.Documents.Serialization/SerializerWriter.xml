@@ -73,6 +73,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateVisualsCollator">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns a <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" /> that writes collated <see cref="T:System.Windows.Media.Visual" /> elements to the serialization <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A> method.  
+  
+ [!code-csharp[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createandwritetovisualscollator)]
+ [!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createandwritetovisualscollator)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateVisualsCollator">
       <MemberSignature Language="C#" Value="public abstract System.Windows.Documents.Serialization.SerializerWriterCollator CreateVisualsCollator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Documents.Serialization.SerializerWriterCollator CreateVisualsCollator() cil managed" />
@@ -156,6 +176,30 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, synchronously writes content to the serialization <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
+  
+   
+  
+## Examples  
+ The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.Write%2A> method to serialize a flow document to an output file.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public abstract void Write (System.Windows.Documents.DocumentPaginator documentPaginator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(class System.Windows.Documents.DocumentPaginator documentPaginator) cil managed" />
@@ -561,6 +605,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, asynchronously writes content to the serialization <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteAsync">
       <MemberSignature Language="C#" Value="public abstract void WriteAsync (System.Windows.Documents.DocumentPaginator documentPaginator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteAsync(class System.Windows.Documents.DocumentPaginator documentPaginator) cil managed" />
@@ -1351,66 +1412,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateVisualsCollator">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, returns a <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" /> that writes collated <see cref="T:System.Windows.Media.Visual" /> elements to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A> method.  
-  
- [!code-csharp[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createandwritetovisualscollator)]
- [!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createandwritetovisualscollator)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteAsync">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, asynchronously writes content to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, synchronously writes content to the serialization <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
-  
-   
-  
-## Examples  
- The following example shows the use of the <xref:System.Windows.Documents.Serialization.SerializerWriter.Write%2A> method to serialize a flow document to an output file.  
-  
- [!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

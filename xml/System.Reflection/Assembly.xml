@@ -3376,6 +3376,26 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to provide evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadWithPartialName">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an assembly from the application directory or from the global assembly cache using a partial name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The overloads of the <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName> method are obsolete and have been retained for backward compatibility. The non-obsolete alternative is <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LoadWithPartialName">
       <MemberSignature Language="C#" Value="public static System.Reflection.Assembly LoadWithPartialName (string partialName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Assembly LoadWithPartialName(string partialName) cil managed" />
@@ -4107,25 +4127,5 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="LoadWithPartialName">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads an assembly from the application directory or from the global assembly cache using a partial name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  The overloads of the <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName> method are obsolete and have been retained for backward compatibility. The non-obsolete alternative is <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

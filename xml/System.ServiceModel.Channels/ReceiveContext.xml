@@ -37,6 +37,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Abandon">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes the state machine to transition to the abandoned state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> may hang when there is an ambient transaction and <xref:System.ServiceModel.Channels.ReceiveContext.Complete%2A> is called and afterwards the transaction is rolled back. If <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> is called prior to the transaction rollback completing, a race condition will exist, causing the call to <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> to hang. This can be illustrated by the following pseudo-code example  
+  
+```  
+using (TransactionScope ts = new TransactionScope())   
+{  
+   try  
+   {  
+       rc.Complete();  
+      ...  
+   }  
+   Catch (Exception)   
+   {  
+      rc.Abandon()  
+   }  
+}  
+  
+```  
+  
+ This is not the recommended pattern for working with T:System.ServiceModel.Channels.RecieveContext. Instead the try/catch block should be placed outside of the transaction scope.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Abandon">
       <MemberSignature Language="C#" Value="public virtual void Abandon (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abandon(valuetype System.TimeSpan timeout) cil managed" />
@@ -568,40 +603,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Abandon">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Causes the state machine to transition to the abandoned state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> may hang when there is an ambient transaction and <xref:System.ServiceModel.Channels.ReceiveContext.Complete%2A> is called and afterwards the transaction is rolled back. If <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> is called prior to the transaction rollback completing, a race condition will exist, causing the call to <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> to hang. This can be illustrated by the following pseudo-code example  
-  
-```  
-using (TransactionScope ts = new TransactionScope())   
-{  
-   try  
-   {  
-       rc.Complete();  
-      ...  
-   }  
-   Catch (Exception)   
-   {  
-      rc.Abandon()  
-   }  
-}  
-  
-```  
-  
- This is not the recommended pattern for working with T:System.ServiceModel.Channels.RecieveContext. Instead the try/catch block should be placed outside of the transaction scope.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

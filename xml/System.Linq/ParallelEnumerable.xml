@@ -544,6 +544,23 @@
  if <paramref name="source" /> is not one of AsParallel, ParallelEnumerable.Range, or ParallelEnumerable.Repeat.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AsParallel">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enables parallelization of a query.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method binds the query to PLINQ. For more information, see [Parallel LINQ (PLINQ)](~/docs/standard/parallel-programming/parallel-linq-plinq.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AsParallel">
       <MemberSignature Language="C#" Value="public static System.Linq.ParallelQuery AsParallel (this System.Collections.IEnumerable source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.ParallelQuery AsParallel(class System.Collections.IEnumerable source) cil managed" />
@@ -8840,22 +8857,5 @@
         <exception cref="T:System.AggregateException">One or more exceptions occurred during the evaluation of the query.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AsParallel">
-      <AssemblyInfo>
-        <AssemblyName>System.Linq.Parallel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Enables parallelization of a query.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method binds the query to PLINQ. For more information, see [Parallel LINQ (PLINQ)](~/docs/standard/parallel-programming/parallel-linq-plinq.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

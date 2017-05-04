@@ -253,6 +253,23 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeriveKeyMaterial">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Derives the key material that is generated from the secret agreement between two parties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Elliptic Curve Diffie-Hellman (ECDH) algorithm accepts the private key and the other party’s public key as input, and produces the secret agreement as output. The key derivation function (KDF) then takes the secret agreement and produces the key material as output.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DeriveKeyMaterial">
       <MemberSignature Language="C#" Value="public byte[] DeriveKeyMaterial (System.Security.Cryptography.CngKey otherPartyPublicKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] DeriveKeyMaterial(class System.Security.Cryptography.CngKey otherPartyPublicKey) cil managed" />
@@ -361,6 +378,23 @@
  All other cryptographic errors.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeriveSecretAgreementHandle">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a handle to the secret agreement generated between two parties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.ECDiffieHellmanCng.DeriveSecretAgreementHandle%2A> method overloads are for advanced users who need a handle to the raw secret agreement instead of the key material. The secret agreement handle can be used in platform invoke calls to perform any work that is not wrapped by the <xref:System.Security.Cryptography.ECDiffieHellmanCng> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DeriveSecretAgreementHandle">
       <MemberSignature Language="C#" Value="public Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle DeriveSecretAgreementHandle (System.Security.Cryptography.CngKey otherPartyPublicKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle DeriveSecretAgreementHandle(class System.Security.Cryptography.CngKey otherPartyPublicKey) cil managed" />
@@ -929,39 +963,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="DeriveKeyMaterial">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Derives the key material that is generated from the secret agreement between two parties.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Elliptic Curve Diffie-Hellman (ECDH) algorithm accepts the private key and the other party’s public key as input, and produces the secret agreement as output. The key derivation function (KDF) then takes the secret agreement and produces the key material as output.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DeriveSecretAgreementHandle">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a handle to the secret agreement generated between two parties.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Security.Cryptography.ECDiffieHellmanCng.DeriveSecretAgreementHandle%2A> method overloads are for advanced users who need a handle to the raw secret agreement instead of the key material. The secret agreement handle can be used in platform invoke calls to perform any work that is not wrapped by the <xref:System.Security.Cryptography.ECDiffieHellmanCng> class.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

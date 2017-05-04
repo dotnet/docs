@@ -1901,6 +1901,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Paste">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Pastes the contents of the Clipboard to the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.InkCanvas> can support Clipboard data in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/includes/tlasharptla-isf-md.md)], and text format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Paste">
       <MemberSignature Language="C#" Value="public void Paste ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Paste() cil managed" />
@@ -2082,6 +2099,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Select">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects a set of ink <see cref="T:System.Windows.Ink.Stroke" /> objects and/or <see cref="T:System.Windows.FrameworkElement" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Controls.InkCanvas> can contain <xref:System.Windows.Ink.Stroke> objects, which are created in response to user stylus input, and <xref:System.Windows.FrameworkElement> objects, such as <xref:System.Windows.Controls.Image> and <xref:System.Windows.Controls.Button> objects.  
+  
+ Selected strokes will be displayed with an adorner around them for ease of recognition and manipulation. <xref:System.Windows.FrameworkElement> objects will not display differently when selected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Select">
       <MemberSignature Language="C#" Value="public void Select (System.Collections.Generic.IEnumerable&lt;System.Windows.UIElement&gt; selectedElements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Select(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.UIElement&gt; selectedElements) cil managed" />
@@ -2944,41 +2980,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Select">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Selects a set of ink <see cref="T:System.Windows.Ink.Stroke" /> objects and/or <see cref="T:System.Windows.FrameworkElement" /> objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Controls.InkCanvas> can contain <xref:System.Windows.Ink.Stroke> objects, which are created in response to user stylus input, and <xref:System.Windows.FrameworkElement> objects, such as <xref:System.Windows.Controls.Image> and <xref:System.Windows.Controls.Button> objects.  
-  
- Selected strokes will be displayed with an adorner around them for ease of recognition and manipulation. <xref:System.Windows.FrameworkElement> objects will not display differently when selected.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Paste">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Pastes the contents of the Clipboard to the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.InkCanvas> can support Clipboard data in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/includes/tlasharptla-isf-md.md)], and text format.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

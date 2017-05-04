@@ -564,6 +564,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetBuffer">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs />
+    </MemberGroup>
     <Member MemberName="SetBuffer">
       <MemberSignature Language="C#" Value="public void SetBuffer (int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBuffer(int32 offset, int32 count) cil managed" />
@@ -737,12 +744,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetBuffer">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs />
-    </MemberGroup>
   </Members>
 </Type>

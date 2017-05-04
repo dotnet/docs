@@ -15,6 +15,23 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="DateDiffDay">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of day boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `day` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DateDiffDay">
       <MemberSignature Language="C#" Value="public static int DateDiffDay (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffDay(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
@@ -139,6 +156,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateDiffHour">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of hour boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `hour` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DateDiffHour">
       <MemberSignature Language="C#" Value="public static int DateDiffHour (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffHour(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
@@ -263,6 +297,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateDiffMicrosecond">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of microsecond boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `millisecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DateDiffMicrosecond">
       <MemberSignature Language="C#" Value="public static int DateDiffMicrosecond (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffMicrosecond(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
@@ -387,6 +438,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateDiffMillisecond">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of millisecond boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `millisecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DateDiffMillisecond">
       <MemberSignature Language="C#" Value="public static int DateDiffMillisecond (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffMillisecond(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
@@ -511,6 +579,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateDiffMinute">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of minute boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `minute` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DateDiffMinute">
       <MemberSignature Language="C#" Value="public static int DateDiffMinute (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffMinute(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
@@ -635,6 +720,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateDiffMonth">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of month boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `month` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DateDiffMonth">
       <MemberSignature Language="C#" Value="public static int DateDiffMonth (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffMonth(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
@@ -883,6 +985,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateDiffSecond">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of second boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `second` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DateDiffSecond">
       <MemberSignature Language="C#" Value="public static int DateDiffSecond (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffSecond(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
@@ -1007,6 +1126,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateDiffYear">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of year boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `year` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DateDiffYear">
       <MemberSignature Language="C#" Value="public static int DateDiffYear (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffYear(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
@@ -1131,6 +1267,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Like">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a specific character string matches a specified pattern. This method is currently only supported in LINQ to SQL queries.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `LIKE` functionality cannot be exposed through translation of existing common language runtime (CLR) and .NET Framework constructs, and is unsupported outside of a LINQ to SQL context. The use of this method outside of LINQ to SQL will always throw an exception of type <xref:System.NotSupportedException>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Like">
       <MemberSignature Language="C#" Value="public static bool Like (string matchExpression, string pattern);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Like(string matchExpression, string pattern) cil managed" />
@@ -1197,158 +1350,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="DateDiffMinute">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Counts the number of minute boundaries between two specified dates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `minute` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DateDiffSecond">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Counts the number of second boundaries between two specified dates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `second` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DateDiffMonth">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Counts the number of month boundaries between two specified dates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `month` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Like">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether a specific character string matches a specified pattern. This method is currently only supported in LINQ to SQL queries.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `LIKE` functionality cannot be exposed through translation of existing common language runtime (CLR) and .NET Framework constructs, and is unsupported outside of a LINQ to SQL context. The use of this method outside of LINQ to SQL will always throw an exception of type <xref:System.NotSupportedException>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DateDiffHour">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Counts the number of hour boundaries between two specified dates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `hour` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DateDiffDay">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Counts the number of day boundaries between two specified dates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `day` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DateDiffYear">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Counts the number of year boundaries between two specified dates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `year` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DateDiffMillisecond">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Counts the number of millisecond boundaries between two specified dates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `millisecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DateDiffMicrosecond">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Counts the number of microsecond boundaries between two specified dates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `millisecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

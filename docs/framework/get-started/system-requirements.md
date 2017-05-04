@@ -91,6 +91,6 @@ The tables in this topic provide the hardware, operating system, and software re
 -   On 64-bit operating systems, the .NET Framework supports both WOW64 (32-bit processing on a 64-bit machine) and native 64-bit processing.  
   
 ## See Also  
- [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)   
+ [Installation guide](../../../docs/framework/install/index.md)   
  [Getting Started](../../../docs/framework/get-started/index.md)   
  [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)

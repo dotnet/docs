@@ -20,13 +20,13 @@ manager: "wpickett"
 # What's new in the .NET Framework
 <a name="introduction"></a> This article summarizes key new features and improvements in the following versions of the .NET Framework:
 
- [.NET Framework 4.7](#v47) 
- [.NET Framework 4.6.2](#v462) 
- [.NET Framework 4.6.1](#v461) 
- [.NET 2015 and .NET Framework 4.6](#v46) 
- [.NET Framework 4.5.2](#v452) 
- [.NET Framework 4.5.1](#v451) 
- [.NET Framework 4.5](#core)
+ [.NET Framework 4.7](#v47)   
+ [.NET Framework 4.6.2](#v462)   
+ [.NET Framework 4.6.1](#v461)   
+ [.NET 2015 and .NET Framework 4.6](#v46)   
+ [.NET Framework 4.5.2](#v452)   
+ [.NET Framework 4.5.1](#v451)   
+ [.NET Framework 4.5](#core)   
 
  This article does not provide comprehensive information about each new feature and is subject to change. For general information about the .NET Framework, see [Getting Started](../../../docs/framework/get-started/index.md). For supported platforms, see [System Requirements](~/docs/framework/get-started/system-requirements.md). For download links and installation instructions, see [Installation Guide](../../../docs/framework/install/guide-for-developers.md).
 

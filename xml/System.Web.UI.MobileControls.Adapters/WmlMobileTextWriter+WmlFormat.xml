@@ -43,7 +43,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor looks first to the given style for the values of <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Bold%2A><xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Italic%2A> and <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Size%2A>. If any of the corresponding properties of the `style` are <xref:System.Web.UI.MobileControls.BooleanOption>, this constructor looks to the corresponding properties of the `currentFormat` parameter.  
+ This constructor looks first to the given style for the values of <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Bold%2A><xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Italic%2A> and <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Size%2A>. If any of the corresponding properties of the `style` are <xref:System.Web.UI.MobileControls.BooleanOption.NotSet>, this constructor looks to the corresponding properties of the `currentFormat` parameter.  
   
  ]]></format>
         </remarks>
@@ -174,7 +174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Must be of type <xref:System.Web.UI.MobileControls.FontSize>. The default value is <xref:System.Web.UI.MobileControls.FontSize>.  
+ Must be of type <xref:System.Web.UI.MobileControls.FontSize>. The default value is <xref:System.Web.UI.MobileControls.FontSize.NotSet>.  
   
  ]]></format>
         </remarks>

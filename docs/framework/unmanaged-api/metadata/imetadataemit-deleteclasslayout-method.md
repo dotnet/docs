@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DeleteClassLayout method [.NET Framework metadata]"
   - "IMetaDataEmit::DeleteClassLayout method [.NET Framework metadata]"
 ms.assetid: 65a4ad49-fa49-4b36-8ed1-76dd6a185ab4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

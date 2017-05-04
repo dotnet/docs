@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "InitializeForAttach method [.NET Framework profiling]"
   - "ICorProfilerCallback3::InitializeForAttach method [.NET Framework profiling]"
 ms.assetid: bed097b3-6d52-46c9-bee7-ac7910b6fc3f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

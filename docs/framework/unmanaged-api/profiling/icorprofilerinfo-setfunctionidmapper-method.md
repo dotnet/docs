@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo::SetFunctionIDMapper method [.NET Framework profiling]"
   - "SetFunctionIDMapper method [.NET Framework profiling]"
 ms.assetid: 1a6e5dae-d366-4497-9c02-7b5b1f43f9ec
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

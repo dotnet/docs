@@ -109,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.FileWebRequest.Abort%2A> method cancels a request to a resource. After a request is canceled, calling the <xref:System.Net.FileWebRequest.GetResponse%2A>, <xref:System.Net.FileWebRequest.BeginGetResponse%2A>, <xref:System.Net.FileWebRequest.EndGetResponse%2A>, <xref:System.Net.FileWebRequest.GetRequestStream%2A>, <xref:System.Net.FileWebRequest.BeginGetRequestStream%2A>, or <xref:System.Net.FileWebRequest.EndGetRequestStream%2A> method causes a <xref:System.Net.WebException> with the <xref:System.Net.WebException.Status%2A> property set to <xref:System.Net.WebExceptionStatus>.  
+ The <xref:System.Net.FileWebRequest.Abort%2A> method cancels a request to a resource. After a request is canceled, calling the <xref:System.Net.FileWebRequest.GetResponse%2A>, <xref:System.Net.FileWebRequest.BeginGetResponse%2A>, <xref:System.Net.FileWebRequest.EndGetResponse%2A>, <xref:System.Net.FileWebRequest.GetRequestStream%2A>, <xref:System.Net.FileWebRequest.BeginGetRequestStream%2A>, or <xref:System.Net.FileWebRequest.EndGetRequestStream%2A> method causes a <xref:System.Net.WebException> with the <xref:System.Net.WebException.Status%2A> property set to <xref:System.Net.WebExceptionStatus.RequestCanceled>.  
   
  **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   

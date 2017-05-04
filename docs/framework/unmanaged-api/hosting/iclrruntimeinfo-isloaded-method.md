@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsLoaded method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::IsLoaded method [.NET Framework hosting]"
 ms.assetid: fdc5a3a7-71ff-4025-99a1-59e4ee0bfe1b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -21,7 +21,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Presents [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] content in a [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] window.</summary>
+    <summary>Presents Windows Presentation Foundation (WPF) content in a Win32 window.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -350,7 +350,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The native behavior of <xref:System.Windows.Interop.HwndSource> is to automatically resize content and the window region based on changes reported through the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] layout system. The window does not resize if it is currently minimized or if <xref:System.Windows.Interop.HwndSource.SizeToContent%2A> is set to <xref:System.Windows.SizeToContent>.  
+ The native behavior of <xref:System.Windows.Interop.HwndSource> is to automatically resize content and the window region based on changes reported through the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] layout system. The window does not resize if it is currently minimized or if <xref:System.Windows.Interop.HwndSource.SizeToContent%2A> is set to <xref:System.Windows.SizeToContent.Manual>.  
   
  ]]></format>
         </remarks>

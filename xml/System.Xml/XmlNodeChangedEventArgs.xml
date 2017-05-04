@@ -107,47 +107,26 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <summary>Gets a value indicating what type of node change event is occurring.</summary>
         <value>An <see langword="XmlNodeChangedAction" /> value describing the node change event.  
   
- <list type="table">  
-<listheader>  
-<term> XmlNodeChangedAction Value  
+ <list type="table"><listheader><term> XmlNodeChangedAction Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Insert  
+ </description></listheader><item><term> Insert  
   
- </term>  
-<description> A node has been or will be inserted.  
+ </term><description> A node has been or will be inserted.  
   
- </description>  
-</item>  
-<item>  
-<term> Remove  
+ </description></item><item><term> Remove  
   
- </term>  
-<description> A node has been or will be removed.  
+ </term><description> A node has been or will be removed.  
   
- </description>  
-</item>  
-<item>  
-<term> Change  
+ </description></item><item><term> Change  
   
- </term>  
-<description> A node has been or will be changed.  
+ </term><description> A node has been or will be changed.  
   
- </description>  
-</item>  
-</list>  
-  
- <block subset="none" type="note">  
-<para>  
+ </description></item></list><block subset="none" type="note"><para>  
  The <see langword="Action" /> value does not differentiate between when the event occurred (before or after). You can create separate event handlers to handle both instances.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,12 +155,10 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <summary>Gets the value of the <see cref="P:System.Xml.XmlNode.ParentNode" /> after the operation completes.</summary>
         <value>The value of the <see langword="ParentNode" /> after the operation completes. This property returns <see langword="null" /> if the node is being removed.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  For attribute nodes this property returns the <see cref="P:System.Xml.XmlAttribute.OwnerElement" />.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,12 +243,10 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <summary>Gets the value of the <see cref="P:System.Xml.XmlNode.ParentNode" /> before the operation began.</summary>
         <value>The value of the <see langword="ParentNode" /> before the operation began. This property returns <see langword="null" /> if the node did not have a parent.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  For attribute nodes this property returns the <see cref="P:System.Xml.XmlAttribute.OwnerElement" />.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

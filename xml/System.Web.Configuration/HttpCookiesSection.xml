@@ -23,7 +23,7 @@
  One objective of the `httpCookies` element is to support the use of `HttpOnly` cookies. `HttpOnly` cookies (cookies with the `HttpOnly` attribute) were introduced in Internet Explorer 6 to help mitigate the risk of cross-site scripting. The `HttpOnly` attribute prevents cookies from being accessed through client-side script. Any information contained in an `HttpOnly` cookie is less likely to be disclosed to a hacker or a malicious Web site. For more information, search MSDN (msdn.microsoft.com) for "HttpOnly."  
   
 > [!NOTE]
->  The <xref:System.Web.Configuration.HttpCookiesSection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition>.  
+>  The <xref:System.Web.Configuration.HttpCookiesSection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition.Everywhere>.  
   
    
   

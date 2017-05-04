@@ -19,7 +19,7 @@
  The <xref:System.Web.Configuration.HttpHandlersSection> class provides a way to programmatically access and modify the `httpHandlers` section of a configuration file. This type is part of a group that includes the <xref:System.Web.Configuration.HttpHandlerAction> and the <xref:System.Web.Configuration.HttpHandlerActionCollection> types.  
   
 > [!NOTE]
->  The <xref:System.Web.Configuration.HttpHandlersSection> can read and write information from and to the related section of the configuration file according to the <xref:System.Configuration.SectionInformation.AllowDefinition%2A> section property whose value is <xref:System.Configuration.ConfigurationAllowDefinition>.  
+>  The <xref:System.Web.Configuration.HttpHandlersSection> can read and write information from and to the related section of the configuration file according to the <xref:System.Configuration.SectionInformation.AllowDefinition%2A> section property whose value is <xref:System.Configuration.ConfigurationAllowDefinition.Everywhere>.  
   
    
   

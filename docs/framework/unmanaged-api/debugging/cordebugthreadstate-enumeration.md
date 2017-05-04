@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugThreadState enumeration [.NET Framework debugging]"
 ms.assetid: a3ccdf18-4ec6-494d-9024-48e5c8c724f5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

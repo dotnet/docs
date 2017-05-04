@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "INotifySink2::OnSyncCallExit method [.NET Framework debugging]"
   - "OnSyncCallExit method [.NET Framework debugging]"
 ms.assetid: d9d7600e-a8f5-443a-96de-67d26e130f2d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

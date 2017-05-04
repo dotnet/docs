@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Enter method [.NET Framework hosting]"
   - "IHostCrst::Enter method [.NET Framework hosting]"
 ms.assetid: 100dd7eb-7053-4295-9bb3-32ba47f6ec79
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

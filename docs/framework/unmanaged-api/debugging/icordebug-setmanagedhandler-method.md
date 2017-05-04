@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebug::SetManagedHandler method [.NET Framework debugging]"
   - "SetManagedHandler method [.NET Framework debugging]"
 ms.assetid: d079131b-685b-4869-95be-826b88d28bd2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

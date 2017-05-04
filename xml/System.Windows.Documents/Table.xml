@@ -122,7 +122,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than **0.0** but smaller than <xref:System.Double>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than **0.0** but smaller than <xref:System.Double.PositiveInfinity>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  

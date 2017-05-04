@@ -2,7 +2,7 @@
 title: "ICorDebugValue2::GetExactType Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugValue2::GetExactType method [.NET Framework debugging]"
   - "GetExactType method [.NET Framework debugging]"
 ms.assetid: 8e9aae1b-d1b7-4b6e-b577-6faf36dcec85
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

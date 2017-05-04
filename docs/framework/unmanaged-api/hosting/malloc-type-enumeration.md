@@ -2,7 +2,7 @@
 title: "MALLOC_TYPE Enumeration | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "MALLOC_TYPE Enumeration"
 ms.assetid: c02476f9-23a2-4af7-9282-aa9c42c7429b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

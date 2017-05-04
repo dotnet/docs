@@ -151,7 +151,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.Configuration.GlobalizationSection.EnableClientBasedCulture%2A> property is enabled, the <xref:System.Web.Configuration.GlobalizationSection.Culture%2A> and <xref:System.Web.Configuration.GlobalizationSection.UICulture%2A> properties are based on the <xref:System.Net.HttpRequestHeader> header field value that is sent by the client browser. If the <xref:System.Net.HttpRequestHeader> header value cannot be mapped to a specific culture, the <xref:System.Web.Configuration.GlobalizationSection.Culture%2A> and <xref:System.Web.Configuration.GlobalizationSection.UICulture%2A> values are used. The default value is `false`.  
+ When the <xref:System.Web.Configuration.GlobalizationSection.EnableClientBasedCulture%2A> property is enabled, the <xref:System.Web.Configuration.GlobalizationSection.Culture%2A> and <xref:System.Web.Configuration.GlobalizationSection.UICulture%2A> properties are based on the <xref:System.Net.HttpRequestHeader.AcceptLanguage> header field value that is sent by the client browser. If the <xref:System.Net.HttpRequestHeader.AcceptLanguage> header value cannot be mapped to a specific culture, the <xref:System.Web.Configuration.GlobalizationSection.Culture%2A> and <xref:System.Web.Configuration.GlobalizationSection.UICulture%2A> values are used. The default value is `false`.  
   
    
   
@@ -286,7 +286,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.GlobalizationSection.RequestEncoding%2A> property specifies the assumed encoding of each incoming HTTP request, including posted data and query-string data. If the request comes with a request header containing a <xref:System.Net.HttpRequestHeader> field, the <xref:System.Net.HttpRequestHeader> field of the request header overrides the <xref:System.Web.Configuration.GlobalizationSection.RequestEncoding%2A> of the configuration.  
+ The <xref:System.Web.Configuration.GlobalizationSection.RequestEncoding%2A> property specifies the assumed encoding of each incoming HTTP request, including posted data and query-string data. If the request comes with a request header containing a <xref:System.Net.HttpRequestHeader.ContentType> field, the <xref:System.Net.HttpRequestHeader.AcceptCharset> field of the request header overrides the <xref:System.Web.Configuration.GlobalizationSection.RequestEncoding%2A> of the configuration.  
   
  The default encoding is UTF-8, specified in the `globalization` section of the Machine.config file that was created when the .NET Framework was installed. If the <xref:System.Web.Configuration.GlobalizationSection.RequestEncoding%2A> property is not specified in the Machine.config or Web.config file, encoding defaults to the `Regional Options` locale setting on the computer. For single-server applications, the <xref:System.Web.Configuration.GlobalizationSection.RequestEncoding%2A> and <xref:System.Web.Configuration.GlobalizationSection.ResponseEncoding%2A> properties should be the same. When using multiple server applications where the default server encodings are different, you can use local Web.config files to vary the <xref:System.Web.Configuration.GlobalizationSection.RequestEncoding%2A> and <xref:System.Web.Configuration.GlobalizationSection.ResponseEncoding%2A> properties.  
   

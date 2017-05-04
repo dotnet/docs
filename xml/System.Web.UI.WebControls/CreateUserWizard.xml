@@ -945,7 +945,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType>, use the <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonImageUrl%2A> property to specify the image to display for the **Continue** button.  
+ When the <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType.Image>, use the <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonImageUrl%2A> property to specify the image to display for the **Continue** button.  
   
  ]]></format>
         </remarks>
@@ -1040,13 +1040,13 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonText%2A> property contains the text displayed for the <xref:System.Web.UI.WebControls.CreateUserWizard> control's **Continue** button. Depending on the value of the <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType%2A> property, the <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonText%2A> property can appear as text on a button, as text displayed as an alternative to an image, or as the text of a link. The following table lists <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType%2A> property values and their respective effects on the **Continue** button's text caption.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Button>  
  Text appears on the button.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Image>  
  Text appears as alternative text for the image.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as a link.  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
@@ -1114,7 +1114,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueDestinationPageUrl%2A> property contains the URL of the Web page that the user will see after successfully completing registration on your site. By setting the <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueDestinationPageUrl%2A> property, you can control the first page that newly registered users see.  
   
- When the <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueDestinationPageUrl%2A> property is <xref:System.String> and the user clicks the **Continue** button, the page is refreshed and any values on the form are cleared.  
+ When the <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueDestinationPageUrl%2A> property is <xref:System.String.Empty> and the user clicks the **Continue** button, the page is refreshed and any values on the form are cleared.  
   
  This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
@@ -1239,7 +1239,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType>, use the <xref:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonImageUrl%2A> property to specify the image to display for the **Create User** button.  
+ When the <xref:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType.Image>, use the <xref:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonImageUrl%2A> property to specify the image to display for the **Create User** button.  
   
  ]]></format>
         </remarks>
@@ -1334,13 +1334,13 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonText%2A> property contains the text displayed for the <xref:System.Web.UI.WebControls.CreateUserWizard> control's **Create User** button. Depending on the value of the <xref:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType%2A> property, the <xref:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonText%2A> property can appear as text on a button, as text displayed as an alternative to an image, or as the text of a link. The following table lists <xref:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType%2A> property values and their respective effects on the **Create User** button's text caption.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Button>  
  Text appears on the button.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Image>  
  Text appears as alternative text for the image.  
   
- <xref:System.Web.UI.WebControls.ButtonType>  
+ <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as a link.  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  

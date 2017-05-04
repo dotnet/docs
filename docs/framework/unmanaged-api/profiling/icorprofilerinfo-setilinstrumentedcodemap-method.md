@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo::SetILInstrumentedCodeMap method [.NET Framework profiling]"
   - "SetILInstrumentedCodeMap method [.NET Framework profiling]"
 ms.assetid: bce1dcf8-b4ec-4e73-a917-f2df1ad49c8a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

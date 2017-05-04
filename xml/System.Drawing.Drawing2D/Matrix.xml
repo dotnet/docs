@@ -402,7 +402,7 @@ Matrix myMatrix = new Matrix(3, 5, 1, 2, 2, 4);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the specified order is <xref:System.Drawing.Drawing2D.MatrixOrder>, this <xref:System.Drawing.Drawing2D.Matrix> is multiplied by the specified matrix in a prepended order. If the specified order is <xref:System.Drawing.Drawing2D.MatrixOrder>, this <xref:System.Drawing.Drawing2D.Matrix> is multiplied by the specified matrix in an appended order.  
+ If the specified order is <xref:System.Drawing.Drawing2D.MatrixOrder.Prepend>, this <xref:System.Drawing.Drawing2D.Matrix> is multiplied by the specified matrix in a prepended order. If the specified order is <xref:System.Drawing.Drawing2D.MatrixOrder.Append>, this <xref:System.Drawing.Drawing2D.Matrix> is multiplied by the specified matrix in an appended order.  
   
    
   

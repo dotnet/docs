@@ -2,7 +2,7 @@
 title: "ICorDebugObjectValue::IsValueClass Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugObjectValue::IsValueClass method [.NET Framework debugging]"
   - "IsValueClass method [.NET Framework debugging]"
 ms.assetid: 13d89a4a-5d9d-4a79-9600-5e2a98c3d166
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -25,6 +25,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CoEEShutDownCOM function [.NET Framework hosting]"
 ms.assetid: b634cae2-632f-4737-9be4-92d0652844d7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

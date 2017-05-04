@@ -1,8 +1,8 @@
 '<SnippetDetectActivationStateCODEBEHIND>
 
 Imports Microsoft.VisualBasic
-Imports System ' EventArgs
-Imports System.Windows ' Application
+Imports System
+Imports System.Windows
 
 Namespace SDKSample
 	Partial Public Class App

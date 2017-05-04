@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo2::DoStackSnapshot method [.NET Framework profiling]"
   - "DoStackSnapshot method [.NET Framework profiling]"
 ms.assetid: 287b11e9-7c52-4a13-ba97-751203fa97f4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"

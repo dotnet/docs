@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRGCManager2::SetGCStartupLimitsEx method [.NET Framework hosting]"
   - "SetGCStartupLimitsEx method, ICLRGCManager2 interface [.NET Framework hosting]"
 ms.assetid: 6c3a08a9-5d65-48d4-8bbf-2a86ed7d356a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

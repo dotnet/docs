@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorOpenFlags enumeration [.NET Framework metadata]"
 ms.assetid: e27a83b5-2698-4996-9032-1e0fed8b91ca
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

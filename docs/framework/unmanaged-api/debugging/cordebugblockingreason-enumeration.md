@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugBlockingReason enumeration [.NET Framework debugging]"
 ms.assetid: a6ac2531-ddfe-46fd-88fe-8b1eabe0b255
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

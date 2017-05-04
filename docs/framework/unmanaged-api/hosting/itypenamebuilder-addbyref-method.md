@@ -2,7 +2,7 @@
 title: "ITypeNameBuilder::AddByRef Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameBuilder::AddByRef method [.NET Framework hosting]"
   - "AddByRef method [.NET Framework hosting]"
 ms.assetid: 3f1b6bc4-6efb-4b90-8be0-b1ba8d856ca0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

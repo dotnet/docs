@@ -522,32 +522,19 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.Reflection.PropertyInfo.GetSetMethod(System.Boolean)" /> method.</summary>
         <returns>One of the values in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> A <see cref="T:System.Reflection.MethodInfo" /> object representing the <see langword="Set" /> method for this property.  
+ </description></listheader><item><term> A <see cref="T:System.Reflection.MethodInfo" /> object representing the <see langword="Set" /> method for this property.  
   
- </term>  
-<description> The <see langword="set" /> accessor is public.  
+ </term><description> The <see langword="set" /> accessor is public.  
   
  -or-  
   
  The <paramref name="nonPublic" /> parameter is <see langword="true" /> and the <see langword="set" /> accessor is non-public.  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="null" />  
-  
- </term>  
-<description> The <paramref name="nonPublic" /> parameter is <see langword="true" />, but the property is read-only.  
+ </description></item><item><term><see langword="null" /></term><description> The <paramref name="nonPublic" /> parameter is <see langword="true" />, but the property is read-only.  
   
  -or-  
   
@@ -557,9 +544,7 @@
   
  There is no <see langword="set" /> accessor.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

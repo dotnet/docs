@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetModuleProps method [.NET Framework metadata]"
   - "IMetaDataEmit::SetModuleProps method [.NET Framework metadata]"
 ms.assetid: b74d7629-5f46-458f-8d67-2456a1e7030c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,7 +2,7 @@
 title: "ICorDebugStepper Interface1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugStepper interface [.NET Framework debugging]"
 ms.assetid: ed8364eb-f01b-46f6-b5e3-5dda9cae2dfe
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

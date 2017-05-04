@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ExitProcess method, ICorDebugManagedCallback interface [.NET Framework debugging]"
   - "ICorDebugManagedCallback::ExitProcess method [.NET Framework debugging]"
 ms.assetid: 63a7d47a-0d54-4e29-9767-9f09feaa38b7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

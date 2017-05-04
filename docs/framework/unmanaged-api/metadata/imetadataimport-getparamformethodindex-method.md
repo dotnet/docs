@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::GetParamForMethodIndex method [.NET Framework metadata]"
   - "GetParamForMethodIndex method [.NET Framework metadata]"
 ms.assetid: ec3bfa95-1920-4511-932e-3ff23d76fcb8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

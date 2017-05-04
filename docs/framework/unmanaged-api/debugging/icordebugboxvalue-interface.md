@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugBoxValue interface [.NET Framework debugging]"
 ms.assetid: 3d3ae7e2-97d4-46de-a2c3-cb78f3490f9d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

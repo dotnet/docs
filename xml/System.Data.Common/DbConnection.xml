@@ -755,7 +755,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After calling <xref:System.Data.Common.DbConnection.OpenAsync%2A>, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState> until the returned <xref:System.Threading.Tasks.Task> is completed. Then, if the connection was successful, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState>. If the connection fails, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState>.  
+ After calling <xref:System.Data.Common.DbConnection.OpenAsync%2A>, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState.Connecting> until the returned <xref:System.Threading.Tasks.Task> is completed. Then, if the connection was successful, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState.Open>. If the connection fails, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState.Closed>.  
   
  A call to <xref:System.Data.Common.DbConnection.Close%2A> will attempt to cancel or close the corresponding <xref:System.Data.Common.DbConnection.OpenAsync%2A> call.  
   
@@ -801,7 +801,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After calling <xref:System.Data.Common.DbConnection.OpenAsync%2A>, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState> until the returned <xref:System.Threading.Tasks.Task> is completed. Then, if the connection was successful, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState>. If the connection fails, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState>.  
+ After calling <xref:System.Data.Common.DbConnection.OpenAsync%2A>, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState.Connecting> until the returned <xref:System.Threading.Tasks.Task> is completed. Then, if the connection was successful, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState.Open>. If the connection fails, <xref:System.Data.Common.DbConnection.State%2A> must return <xref:System.Data.ConnectionState.Closed>.  
   
  A call to <xref:System.Data.Common.DbConnection.Close%2A> will attempt to cancel or close the corresponding <xref:System.Data.Common.DbConnection.OpenAsync%2A> call.  
   

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugAssembly2::IsFullyTrusted method [.NET Framework debugging]"
   - "IsFullyTrusted method [.NET Framework debugging]"
 ms.assetid: 26cbd27d-12bf-444a-8197-ccd14d37dda3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

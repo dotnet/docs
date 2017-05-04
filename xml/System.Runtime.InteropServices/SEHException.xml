@@ -35,7 +35,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.InteropServices.SEHException> class handles SEH errors that are thrown from unmanaged code, but that have not been mapped to another .NET Framework exception. The <xref:System.Runtime.InteropServices.SEHException> class also corresponds to the `HRESULT``E_FAIL` (0x80004005).  
+ The <xref:System.Runtime.InteropServices.SEHException> class handles SEH errors that are thrown from unmanaged code, but that have not been mapped to another .NET Framework exception. The <xref:System.Runtime.InteropServices.SEHException> class also corresponds to the `HRESULT` `E_FAIL` (0x80004005).  
   
  The .NET Framework often encounters unmanaged SEH exceptions that are automatically mapped to managed equivalents. There are two common unmanaged SEH exceptions:  
   

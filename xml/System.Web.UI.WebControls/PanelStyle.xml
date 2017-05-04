@@ -167,7 +167,7 @@
 |`LeftToRight`|Child controls that include text are displayed from left to right.|  
 |`RightToLeft`|Child controls that include text are displayed from right to left.|  
   
- If you specify <xref:System.Web.UI.WebControls.ContentDirection>, child controls that include text display from left to right. If you specify <xref:System.Web.UI.WebControls.ContentDirection>, child controls that include text display right to left. Use <xref:System.Web.UI.WebControls.ContentDirection> to display text for languages that are written from right to left, such as Arabic or Hebrew.  
+ If you specify <xref:System.Web.UI.WebControls.ContentDirection.LeftToRight>, child controls that include text display from left to right. If you specify <xref:System.Web.UI.WebControls.ContentDirection.RightToLeft>, child controls that include text display right to left. Use <xref:System.Web.UI.WebControls.ContentDirection.RightToLeft> to display text for languages that are written from right to left, such as Arabic or Hebrew.  
   
    
   
@@ -218,7 +218,7 @@
 |`Right`|The contents of the panel are right-aligned.|  
   
 > [!NOTE]
->  . If the <xref:System.Web.UI.WebControls.PanelStyle.HorizontalAlign%2A> property is set to <xref:System.Web.UI.WebControls.HorizontalAlign> but the property is set in the control that contains the panel control, the setting is inherited from the containing control.  
+>  . If the <xref:System.Web.UI.WebControls.PanelStyle.HorizontalAlign%2A> property is set to <xref:System.Web.UI.WebControls.HorizontalAlign.NotSet> but the property is set in the control that contains the panel control, the setting is inherited from the containing control.  
   
    
   
@@ -362,7 +362,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.PanelStyle.Wrap%2A> property indicates whether the content wraps within the panel. When the <xref:System.Web.UI.WebControls.PanelStyle.Wrap%2A> property is set to `false` and the <xref:System.Web.UI.WebControls.PanelStyle.ScrollBars%2A> property is set to <xref:System.Web.UI.WebControls.ScrollBars>, if the content of the panel is longer than what will fit in the panel, the content of the panel will appear on one line with a horizontal scroll bar. When the <xref:System.Web.UI.WebControls.PanelStyle.Wrap%2A> property is set to `false` and the <xref:System.Web.UI.WebControls.PanelStyle.ScrollBars%2A> property is set to <xref:System.Web.UI.WebControls.ScrollBars>, the panel will extend and if necessary the Web page will have a horizontal scroll bar.  
+ The <xref:System.Web.UI.WebControls.PanelStyle.Wrap%2A> property indicates whether the content wraps within the panel. When the <xref:System.Web.UI.WebControls.PanelStyle.Wrap%2A> property is set to `false` and the <xref:System.Web.UI.WebControls.PanelStyle.ScrollBars%2A> property is set to <xref:System.Web.UI.WebControls.ScrollBars.Auto>, if the content of the panel is longer than what will fit in the panel, the content of the panel will appear on one line with a horizontal scroll bar. When the <xref:System.Web.UI.WebControls.PanelStyle.Wrap%2A> property is set to `false` and the <xref:System.Web.UI.WebControls.PanelStyle.ScrollBars%2A> property is set to <xref:System.Web.UI.WebControls.ScrollBars.None>, the panel will extend and if necessary the Web page will have a horizontal scroll bar.  
   
    
   

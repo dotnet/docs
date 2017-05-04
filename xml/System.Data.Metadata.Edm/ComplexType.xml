@@ -23,7 +23,7 @@
 ## Examples  
  The following code sample gets a metadata workspace from the connection and uses that metadata workspace to retrieve information about the properties of the complex types in the specified model. Note that the metadata workspace is a runtime service component that provides support for retrieving metadata.  
   
- The code sample uses a <xref:System.Data.Metadata.Edm.DataSpace> to specify the model. The <xref:System.Data.Metadata.Edm.DataSpace> represents the default name for the conceptual model. The code sample uses the CustomerComplexAddr model that is provided in [How to: Define a Model with Complex Types (Entity Framework)](http://msdn.microsoft.com/en-us/b13b24d5-05d1-4746-b0d2-5472796240c6) topic. For an example of the application config file, see [Implementing Complex Type (EDM)](http://msdn.microsoft.com/en-us/82f7fc69-808c-40ff-a23f-ee3fb8dbd9e2) topic.  
+ The code sample uses a <xref:System.Data.Metadata.Edm.DataSpace.CSpace> to specify the model. The <xref:System.Data.Metadata.Edm.DataSpace.CSpace> represents the default name for the conceptual model. The code sample uses the CustomerComplexAddr model that is provided in [How to: Define a Model with Complex Types (Entity Framework)](http://msdn.microsoft.com/en-us/b13b24d5-05d1-4746-b0d2-5472796240c6) topic. For an example of the application config file, see [Implementing Complex Type (EDM)](http://msdn.microsoft.com/en-us/82f7fc69-808c-40ff-a23f-ee3fb8dbd9e2) topic.  
   
 ```csharp  
 using System;  

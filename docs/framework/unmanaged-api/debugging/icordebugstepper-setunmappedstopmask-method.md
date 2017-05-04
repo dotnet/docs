@@ -2,7 +2,7 @@
 title: "ICorDebugStepper::SetUnmappedStopMask Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugStepper::SetUnmappedStopMask method [.NET Framework debugging]"
   - "SetUnmappedStopMask method [.NET Framework debugging]"
 ms.assetid: b1211981-e90c-4e05-8def-fa18d85ad9ab
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

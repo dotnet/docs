@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a configuration element that specifies the throttling mechanism of [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. This class cannot be inherited.</summary>
+    <summary>Represents a configuration element that specifies the throttling mechanism of Windows Communication Foundation (WCF). This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -115,7 +115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calls in excess of the limit are queued. Setting this value to 0 is equivalent to setting it to <xref:System.Int32>.  
+ Calls in excess of the limit are queued. Setting this value to 0 is equivalent to setting it to <xref:System.Int32.MaxValue>.  
   
  ]]></format>
         </remarks>
@@ -181,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The service accepts connections in excess of the limit. However, only the channels below the limit are active and messages are only read from active channels. Setting this property to 0 is equivalent to setting it to <xref:System.Int32>.  
+ The service accepts connections in excess of the limit. However, only the channels below the limit are active and messages are only read from active channels. Setting this property to 0 is equivalent to setting it to <xref:System.Int32.MaxValue>.  
   
  ]]></format>
         </remarks>

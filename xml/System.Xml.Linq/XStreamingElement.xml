@@ -1036,9 +1036,9 @@ NewRoot
 ## Remarks  
  The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space will not be preserved.  
   
- If you want to control white space, use the overload of <xref:System.Xml.Linq.XStreamingElement.Save%2A> that takes <xref:System.Xml.Linq.SaveOptions> as a parameter. Use the <xref:System.Xml.Linq.SaveOptions> option to save unindented XML. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
+ If you want to control white space, use the overload of <xref:System.Xml.Linq.XStreamingElement.Save%2A> that takes <xref:System.Xml.Linq.SaveOptions> as a parameter. Use the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> option to save unindented XML. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
   
- Use <xref:System.Xml.Linq.SaveOptions> option if you want to remove duplicate namespace declarations.  
+ Use <xref:System.Xml.Linq.SaveOptions.OmitDuplicateNamespaces> option if you want to remove duplicate namespace declarations.  
   
  ]]></format>
         </remarks>
@@ -1367,11 +1367,11 @@ Console.WriteLine(sb.ToString())
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default the `options` are set to <xref:System.Xml.Linq.SaveOptions>. This option will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented.  
+ By default the `options` are set to <xref:System.Xml.Linq.SaveOptions.None>. This option will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented.  
   
- If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
+ If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
   
- Use <xref:System.Xml.Linq.SaveOptions> option if you want to remove duplicate namespace declarations.  
+ Use <xref:System.Xml.Linq.SaveOptions.OmitDuplicateNamespaces> option if you want to remove duplicate namespace declarations.  
   
  ]]></format>
         </remarks>
@@ -1411,9 +1411,9 @@ Console.WriteLine(sb.ToString())
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
+ If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
   
- If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
+ If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
   
  For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
@@ -1518,9 +1518,9 @@ Console.WriteLine(sb.ToString())
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
+ If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
   
- If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
+ If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
   
  For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   

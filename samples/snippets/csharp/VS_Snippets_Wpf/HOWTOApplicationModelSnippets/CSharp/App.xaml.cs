@@ -1,8 +1,8 @@
 //<SnippetPersistRestoreAppScopePropertiesCODEBEHIND1>
 //<SnippetPersistAppScopePropertiesCODEBEHIND1>
-using System.Windows; // Application, StartupEventArgs
-using System.IO; // StreamReader, FileMode
-using System.IO.IsolatedStorage; // IsolatedStorageFile, IsolatedStorageFileStream
+using System.Windows;
+using System.IO;
+using System.IO.IsolatedStorage;
 
 namespace SDKSample
 {

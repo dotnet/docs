@@ -204,7 +204,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example uses the <xref:System.Net.IPEndPoint.AddressFamily%2A> property to return the <xref:System.Net.Sockets.AddressFamily> to which the <xref:System.Net.IPEndPoint> belongs. In this case it is the <xref:System.Net.Sockets.AddressFamily><xref:System.Net.Sockets.AddressFamily>.  
+ The following example uses the <xref:System.Net.IPEndPoint.AddressFamily%2A> property to return the <xref:System.Net.Sockets.AddressFamily> to which the <xref:System.Net.IPEndPoint> belongs. In this case it is the <xref:System.Net.Sockets.AddressFamily.InterNetwork><xref:System.Net.Sockets.AddressFamily>.  
   
  [!code-cpp[System.Net.IPEndPoint#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp#3)]
  [!code-csharp[System.Net.IPEndPoint#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPEndPoint/CS/ipendpoint.cs#3)]

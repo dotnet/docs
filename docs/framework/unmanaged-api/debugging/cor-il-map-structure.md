@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_IL_MAP structure [.NET Framework debugging]"
 ms.assetid: 534ebc17-963d-4b26-8375-8cd940281db3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

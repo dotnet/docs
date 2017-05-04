@@ -85,9 +85,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Specify the `validFrom` parameter with <xref:System.DateTime>.<xref:System.DateTime> if there is no start date and time limitation.  
+ Specify the `validFrom` parameter with <xref:System.DateTime>.<xref:System.DateTime.MinValue> if there is no start date and time limitation.  
   
- Specify the `validUntil` parameter with <xref:System.DateTime>.<xref:System.DateTime> if there is no end date and time limitation.  
+ Specify the `validUntil` parameter with <xref:System.DateTime>.<xref:System.DateTime.MaxValue> if there is no end date and time limitation.  
   
  ]]></format>
         </remarks>

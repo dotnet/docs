@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRHostBindingPolicyManager interface [.NET Framework hosting]"
 ms.assetid: f9da168b-366b-4b2b-bdb9-330b6bad5a6b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

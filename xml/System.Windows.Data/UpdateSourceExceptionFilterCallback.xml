@@ -22,42 +22,23 @@
     <summary>Represents the method that handles exceptions that are thrown during the update of the binding source value. This must be used with the <see cref="T:System.Windows.Controls.ExceptionValidationRule" />.</summary>
     <returns>An object that is typically one of the following:  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="null" />  
+ </description></listheader><item><term><see langword="null" /></term><description> To ignore any exceptions. The default behavior (if there is no <see cref="T:System.Windows.Data.UpdateSourceExceptionFilterCallback" />) is to create a <see cref="T:System.Windows.Controls.ValidationError" /> with the exception and adds it to the <see cref="P:System.Windows.Controls.Validation.Errors" /> collection of the bound element.  
   
- </term>  
-<description> To ignore any exceptions. The default behavior (if there is no <see cref="T:System.Windows.Data.UpdateSourceExceptionFilterCallback" />) is to create a <see cref="T:System.Windows.Controls.ValidationError" /> with the exception and adds it to the <see cref="P:System.Windows.Controls.Validation.Errors" /> collection of the bound element.  
+ </description></item><item><term> Any object  
   
- </description>  
-</item>  
-<item>  
-<term> Any object  
-  
- </term>  
-<description> To create a <see cref="T:System.Windows.Controls.ValidationError" /> object with the <see cref="P:System.Windows.Controls.ValidationError.ErrorContent" /> set to that object.  
+ </term><description> To create a <see cref="T:System.Windows.Controls.ValidationError" /> object with the <see cref="P:System.Windows.Controls.ValidationError.ErrorContent" /> set to that object.  
   
  The <see cref="T:System.Windows.Controls.ValidationError" /> object is added to <see cref="P:System.Windows.Controls.Validation.Errors" /> collection of the bound element.  
   
- </description>  
-</item>  
-<item>  
-<term> A <see cref="T:System.Windows.Controls.ValidationError" /> object  
+ </description></item><item><term> A <see cref="T:System.Windows.Controls.ValidationError" /> object  
   
- </term>  
-<description> To set the <see cref="T:System.Windows.Data.BindingExpression" /> or <see cref="T:System.Windows.Data.MultiBindingExpression" /> object as the <see cref="P:System.Windows.Controls.ValidationError.BindingInError" />. The <see cref="T:System.Windows.Controls.ValidationError" /> object is added to <see cref="P:System.Windows.Controls.Validation.Errors" /> collection of the bound element.  
+ </term><description> To set the <see cref="T:System.Windows.Data.BindingExpression" /> or <see cref="T:System.Windows.Data.MultiBindingExpression" /> object as the <see cref="P:System.Windows.Controls.ValidationError.BindingInError" />. The <see cref="T:System.Windows.Controls.ValidationError" /> object is added to <see cref="P:System.Windows.Controls.Validation.Errors" /> collection of the bound element.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

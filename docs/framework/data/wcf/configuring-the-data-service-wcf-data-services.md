@@ -24,7 +24,8 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can create
   
  The behaviors of the data service are defined by the members of the <xref:System.Data.Services.DataServiceConfiguration> class, and by members of the <xref:System.Data.Services.DataServiceBehavior> class, which is accessed from the <xref:System.Data.Services.DataServiceConfiguration.DataServiceBehavior%2A> property of the <xref:System.Data.Services.DataServiceConfiguration> class. The <xref:System.Data.Services.DataServiceConfiguration> class is supplied to the `InitializeService` method that is implemented by the data service, as in the following implementation of a Northwind data service:  
   
-<!-- TODO: review snippet reference  [!CODE [Astoria NorthwindService#DataServiceConfigComplete](Astoria NorthwindService#DataServiceConfigComplete)]  -->  
+[!code-csharp[Astoria Northwind Service#DataServiceConfigComplete](../../../../samples/snippets/csharp/VS_Snippets_Misc/Astoria Northwind Service/cs/northwind.svc.cs#dataserviceconfigcomplete)]  
+[!code-vb[Astoria Northwind Service#DataServiceConfigComplete](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/Astoria Northwind Service/vb/northwind.svc.vb#dataserviceconfigcomplete)]  
   
 ## Data Service Configuration Settings  
  The <xref:System.Data.Services.DataServiceConfiguration> class enables you to specify the following data service behaviors:  

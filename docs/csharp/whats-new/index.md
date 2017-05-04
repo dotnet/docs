@@ -21,22 +21,21 @@ ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
 * [C# 6](csharp-6.md):
     - This page describes the features that were added in C# 6. These features are available in Visual Studio 2015 for Windows developers, and on .NET Core 1.0 for developers exploring C# on macOS and Linux.
 
-* [C# Interactive](../interactive/index.md): 
+<!--* [C# Interactive](../interactive/index.md): 
     - This page describes C# Interactive, an interactive Read Eval Print Loop (REPL) that you can use to explore the C# language. You can use it to write code interactively and see it execute immediately, without any compile or build step.
-
+-->
 * [Cross Platform Support](../../core/index.md):
     - C#, through .NET Core support, runs on multiple platforms. If you are interested in trying C# on macOS, or on one of the many support Linux distributions, learn more about .NET Core.
-
+<!--
 - [.NET Compiler Platform SDK](../roslyn/index.md):
     - The .NET Compiler Platform SDK enables you to write code that performs static analysis on C# code. You can use these APIs to find potential errors, or bad practices, suggest fixes, and even implement those fixes.
-
-
+-->
   
 ## Previous Versions
 The following lists key features that were introduced in previous versions of the C# language and Visual Studio .NET.  
   
  * Visual Studio .NET 2013: 
-     - This version of Visual Studio included bug fixes, performance improvements, and technology previews of .NET Compiler Platform (“Roslyn”) which became the [.NET Compiler Platform SDK](../roslyn/index.md).
+     - This version of Visual Studio included bug fixes, performance improvements, and technology previews of .NET Compiler Platform (“Roslyn”) which became the .NET Compiler Platform SDK<!--Link to ../roslyn/index.md-->.
 
  * C# 5, Visual Studio .NET 2012: 
      - `Async` / `await`, and [caller information](../programming-guide/concepts/caller-information.md) attributes.

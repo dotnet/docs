@@ -128,7 +128,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Net.NetworkInformation.NetworkInformationPermission> created with <xref:System.Security.Permissions.PermissionState?displayProperty=fullName> is given <xref:System.Net.NetworkInformation.NetworkInformationAccess> &#124; <xref:System.Net.NetworkInformation.NetworkInformationAccess> access. A <xref:System.Net.NetworkInformation.NetworkInformationPermission> created with <xref:System.Security.Permissions.PermissionState?displayProperty=fullName> is given <xref:System.Net.NetworkInformation.NetworkInformationAccess> access.  
+ A <xref:System.Net.NetworkInformation.NetworkInformationPermission> created with <xref:System.Security.Permissions.PermissionState?displayProperty=fullName> is given <xref:System.Net.NetworkInformation.NetworkInformationAccess.Ping> &#124; <xref:System.Net.NetworkInformation.NetworkInformationAccess.Read> access. A <xref:System.Net.NetworkInformation.NetworkInformationPermission> created with <xref:System.Security.Permissions.PermissionState?displayProperty=fullName> is given <xref:System.Net.NetworkInformation.NetworkInformationAccess.None> access.  
   
    
   

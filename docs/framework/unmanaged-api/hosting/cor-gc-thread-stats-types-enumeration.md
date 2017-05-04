@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_GC_THREAD_STATS_TYPES enumeration [.NET Framework hosting]"
 ms.assetid: aa227704-0ab1-4b08-aee2-1f439762162e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

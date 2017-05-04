@@ -375,7 +375,7 @@
    
   
 ## Examples  
- The following example creates a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that checks for the <xref:System.Windows.Ink.ApplicationGesture> gesture. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> calls <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUp%2A> to subscribe to the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A> method, which is called from the application UI thread. The relationship between <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDown%2A> and on <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDownProcessed%2A> is identical.  
+ The following example creates a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that checks for the <xref:System.Windows.Ink.ApplicationGesture.Down> gesture. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> calls <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUp%2A> to subscribe to the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A> method, which is called from the application UI thread. The relationship between <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDown%2A> and on <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDownProcessed%2A> is identical.  
   
  [!code-csharp[StylusPluginSamples#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusPluginSamples/CSharp/RecognizerPlugin.cs#12)]
  [!code-vb[StylusPluginSamples#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusPluginSamples/VisualBasic/RecognizerPlugin.vb#12)]  
@@ -522,7 +522,7 @@
    
   
 ## Examples  
- The following example creates a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that checks for the <xref:System.Windows.Ink.ApplicationGesture> gesture. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> calls <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUp%2A> to subscribe to the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A> method, which is called from the application UI thread. The relationship between <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMove%2A> and on <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMoveProcessed%2A> is identical.  
+ The following example creates a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that checks for the <xref:System.Windows.Ink.ApplicationGesture.Down> gesture. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> calls <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUp%2A> to subscribe to the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A> method, which is called from the application UI thread. The relationship between <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMove%2A> and on <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMoveProcessed%2A> is identical.  
   
  [!code-csharp[StylusPluginSamples#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusPluginSamples/CSharp/RecognizerPlugin.cs#12)]
  [!code-vb[StylusPluginSamples#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusPluginSamples/VisualBasic/RecognizerPlugin.vb#12)]  
@@ -597,7 +597,7 @@
    
   
 ## Examples  
- The following example creates a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that checks for the <xref:System.Windows.Ink.ApplicationGesture> gesture. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> checks for the gesture in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A> method, which is called from the application UI thread.  
+ The following example creates a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that checks for the <xref:System.Windows.Ink.ApplicationGesture.Down> gesture. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> checks for the gesture in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A> method, which is called from the application UI thread.  
   
  [!code-csharp[StylusPluginSamples#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusPluginSamples/CSharp/RecognizerPlugin.cs#12)]
  [!code-vb[StylusPluginSamples#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusPluginSamples/VisualBasic/RecognizerPlugin.vb#12)]  

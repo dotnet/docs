@@ -97,7 +97,7 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
  The following code example shows how to customize this constructor.  
   
 > [!NOTE]
->  The value you use to define your event code or identifier must be greater than <xref:System.Web.Management.WebEventCodes>.  
+>  The value you use to define your event code or identifier must be greater than <xref:System.Web.Management.WebEventCodes.WebExtendedBase>.  
   
  [!code-csharp[System.Web.Management.WebRequestEvent#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/CS/WebRequestEvent.cs#2)]
  [!code-vb[System.Web.Management.WebRequestEvent#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/VB/WebRequestEvent.vb#2)]  
@@ -139,7 +139,7 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
  The following code example shows how to customize this constructor.  
   
 > [!NOTE]
->  The value you use to define your event code or identifier must be greater than <xref:System.Web.Management.WebEventCodes>  
+>  The value you use to define your event code or identifier must be greater than <xref:System.Web.Management.WebEventCodes.WebExtendedBase>  
   
  [!code-csharp[System.Web.Management.WebRequestEvent#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/CS/WebRequestEvent.cs#3)]
  [!code-vb[System.Web.Management.WebRequestEvent#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/VB/WebRequestEvent.vb#3)]  

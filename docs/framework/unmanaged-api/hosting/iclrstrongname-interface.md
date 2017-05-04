@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: 2fac66fd-6b3b-4dbd-8baf-86038bd85526
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

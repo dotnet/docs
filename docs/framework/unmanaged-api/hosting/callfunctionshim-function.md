@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CallfunctionShim function [.NET Framework hosting]"
 ms.assetid: 37118465-ddf3-41f0-bf27-335b72777e63
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

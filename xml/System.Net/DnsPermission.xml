@@ -45,7 +45,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `state` is <xref:System.Security.Permissions.PermissionState>, the <xref:System.Net.DnsPermission> instance passes all demands. If `state` contains any other value, the <xref:System.Net.DnsPermission> instance fails all demands.  
+ If `state` is <xref:System.Security.Permissions.PermissionState.Unrestricted>, the <xref:System.Net.DnsPermission> instance passes all demands. If `state` contains any other value, the <xref:System.Net.DnsPermission> instance fails all demands.  
   
    
   

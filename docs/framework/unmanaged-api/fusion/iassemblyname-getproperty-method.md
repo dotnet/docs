@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IAssemblyName::GetProperty method [.NET Framework fusion]"
   - "GetProperty method [.NET Framework fusion]"
 ms.assetid: e59fda62-77d5-4e37-89cb-ce7ae4627975
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

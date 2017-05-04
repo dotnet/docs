@@ -2,7 +2,7 @@
 title: "ICorDebugUnmanagedCallback::DebugEvent Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DebugEvent method [.NET Framework debugging]"
   - "ICorDebugUnmanagedCallback::DebugEvent method [.NET Framework debugging]"
 ms.assetid: be9cab04-65ec-44d5-a39a-f90709fdd043
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

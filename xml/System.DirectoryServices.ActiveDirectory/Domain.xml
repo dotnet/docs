@@ -812,10 +812,10 @@
   
 |Current mode|Mode can be raised to|  
 |------------------|---------------------------|  
-|<xref:System.DirectoryServices.ActiveDirectory.DomainMode>|<xref:System.DirectoryServices.ActiveDirectory.DomainMode><br /><br /> <xref:System.DirectoryServices.ActiveDirectory.DomainMode><br /><br /> <xref:System.DirectoryServices.ActiveDirectory.DomainMode>|  
-|<xref:System.DirectoryServices.ActiveDirectory.DomainMode>|<xref:System.DirectoryServices.ActiveDirectory.DomainMode>|  
-|<xref:System.DirectoryServices.ActiveDirectory.DomainMode>|<xref:System.DirectoryServices.ActiveDirectory.DomainMode>|  
-|<xref:System.DirectoryServices.ActiveDirectory.DomainMode>|None|  
+|<xref:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2000MixedDomain>|<xref:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2000NativeDomain><br /><br /> <xref:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2003InterimDomain><br /><br /> <xref:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2003Domain>|  
+|<xref:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2000NativeDomain>|<xref:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2003Domain>|  
+|<xref:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2003InterimDomain>|<xref:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2003Domain>|  
+|<xref:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2003Domain>|None|  
   
  ]]></format>
         </remarks>

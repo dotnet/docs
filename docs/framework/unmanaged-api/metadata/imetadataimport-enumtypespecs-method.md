@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumTypeSpecs method [.NET Framework metadata]"
   - "IMetaDataImport::EnumTypeSpecs method [.NET Framework metadata]"
 ms.assetid: 75331c7b-988b-436c-9eb9-a270d37b4f06
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "FunctionRemapComplete method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::FunctionRemapComplete method [.NET Framework debugging]"
 ms.assetid: 5396c4c3-4ec3-4e3a-a38d-d65b21f0a2fc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

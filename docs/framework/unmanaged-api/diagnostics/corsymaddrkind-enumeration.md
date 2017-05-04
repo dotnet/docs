@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorSymAddrKind enumeration [.NET Framework debugging]"
 ms.assetid: 3ef841c2-cade-42ee-ba34-2ef91d6d0879
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

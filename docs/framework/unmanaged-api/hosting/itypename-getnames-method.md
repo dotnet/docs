@@ -2,7 +2,7 @@
 title: "ITypeName::GetNames Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeName::GetNames method [.NET Framework hosting]"
   - "GetNames method [.NET Framework hosting]"
 ms.assetid: e2a3637b-d1e9-4d93-9e9b-0555fbff793d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

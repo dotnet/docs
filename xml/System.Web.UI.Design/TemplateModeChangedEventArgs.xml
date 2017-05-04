@@ -76,7 +76,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.TemplateModeChangedEventArgs.NewTemplateGroup%2A> property specifies a new template group when you enter template editing mode. <xref:System.Web.UI.Design.TemplateModeChangedEventArgs.NewTemplateGroup%2A> is `null`for events that are raised when you exit template editing mode.  
+ The <xref:System.Web.UI.Design.TemplateModeChangedEventArgs.NewTemplateGroup%2A> property specifies a new template group when you enter template editing mode. <xref:System.Web.UI.Design.TemplateModeChangedEventArgs.NewTemplateGroup%2A> is `null` for events that are raised when you exit template editing mode.  
   
  ]]></format>
         </remarks>

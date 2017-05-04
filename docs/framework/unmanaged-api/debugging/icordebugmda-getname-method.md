@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugMDA::GetName method [.NET Framework debugging]"
   - "GetName method, ICorDebugMDA interface [.NET Framework debugging]"
 ms.assetid: 885bf5e8-00b7-4cd7-9d8d-e720d47918c4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

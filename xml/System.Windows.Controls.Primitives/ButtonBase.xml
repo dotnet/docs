@@ -606,7 +606,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation marks the <xref:System.Windows.UIElement.KeyDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is not set to <xref:System.Windows.Controls.ClickMode> and one of the following cases are true:  
+ This implementation marks the <xref:System.Windows.UIElement.KeyDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is not set to <xref:System.Windows.Controls.ClickMode.Hover> and one of the following cases are true:  
   
 -   The user presses the SPACEBAR.  
   
@@ -726,7 +726,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is set to <xref:System.Windows.Controls.ClickMode>, this implementation marks the <xref:System.Windows.UIElement.MouseEnter> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` and raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+ When <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is set to <xref:System.Windows.Controls.ClickMode.Hover>, this implementation marks the <xref:System.Windows.UIElement.MouseEnter> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` and raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
  ]]></format>
         </remarks>
@@ -757,7 +757,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation marks the <xref:System.Windows.UIElement.MouseLeave> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is set to <xref:System.Windows.Controls.ClickMode>.  
+ This implementation marks the <xref:System.Windows.UIElement.MouseLeave> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is set to <xref:System.Windows.Controls.ClickMode.Hover>.  
   
  ]]></format>
         </remarks>
@@ -788,9 +788,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation marks the <xref:System.Windows.UIElement.MouseLeftButtonDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is not set to <xref:System.Windows.Controls.ClickMode>. To respond to the <xref:System.Windows.UIElement.MouseLeftButtonDown> event, attach an event handler to the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> event, or call <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
+ This implementation marks the <xref:System.Windows.UIElement.MouseLeftButtonDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is not set to <xref:System.Windows.Controls.ClickMode.Hover>. To respond to the <xref:System.Windows.UIElement.MouseLeftButtonDown> event, attach an event handler to the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> event, or call <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
   
- When <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is set to <xref:System.Windows.Controls.ClickMode>, this method raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+ When <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is set to <xref:System.Windows.Controls.ClickMode.Press>, this method raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
  ]]></format>
         </remarks>
@@ -821,9 +821,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation marks the <xref:System.Windows.UIElement.MouseLeftButtonUp> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is not set to <xref:System.Windows.Controls.ClickMode>. To respond to the <xref:System.Windows.UIElement.MouseLeftButtonUp> event, attach an event handler to the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> event, or call <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
+ This implementation marks the <xref:System.Windows.UIElement.MouseLeftButtonUp> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is not set to <xref:System.Windows.Controls.ClickMode.Hover>. To respond to the <xref:System.Windows.UIElement.MouseLeftButtonUp> event, attach an event handler to the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> event, or call <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
   
- When <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is set to <xref:System.Windows.Controls.ClickMode> is <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is `true`, this method raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+ When <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is set to <xref:System.Windows.Controls.ClickMode.Release> is <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is `true`, this method raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
  ]]></format>
         </remarks>
@@ -854,7 +854,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation marks the <xref:System.Windows.UIElement.MouseMove> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is not set to <xref:System.Windows.Controls.ClickMode> and <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is `true`. To respond to the <xref:System.Windows.UIElement.MouseMove> event, attach an event handler to the <xref:System.Windows.ContentElement.PreviewMouseMove> event, or call <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
+ This implementation marks the <xref:System.Windows.UIElement.MouseMove> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is not set to <xref:System.Windows.Controls.ClickMode.Hover> and <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is `true`. To respond to the <xref:System.Windows.UIElement.MouseMove> event, attach an event handler to the <xref:System.Windows.ContentElement.PreviewMouseMove> event, or call <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
   
  ]]></format>
         </remarks>

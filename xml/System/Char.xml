@@ -170,40 +170,23 @@
         <summary>Compares this instance to a specified <see cref="T:System.Char" /> object and indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified <see cref="T:System.Char" /> object.</summary>
         <returns>A signed number indicating the position of this instance in the sort order in relation to the <paramref name="value" /> parameter.  
   
- <list type="table">  
-<listheader>  
-<term> Return Value  
+ <list type="table"><listheader><term> Return Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance precedes <paramref name="value" />.  
+ </term><description> This instance precedes <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance has the same position in the sort order as <paramref name="value" />.  
+ </term><description> This instance has the same position in the sort order as <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance follows <paramref name="value" />.  
+ </term><description> This instance follows <paramref name="value" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -256,44 +239,27 @@
         <summary>Compares this instance to a specified object and indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified <see cref="T:System.Object" />.</summary>
         <returns>A signed number indicating the position of this instance in the sort order in relation to the <paramref name="value" /> parameter.  
   
- <list type="table">  
-<listheader>  
-<term> Return Value  
+ <list type="table"><listheader><term> Return Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance precedes <paramref name="value" />.  
+ </term><description> This instance precedes <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance has the same position in the sort order as <paramref name="value" />.  
+ </term><description> This instance has the same position in the sort order as <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance follows <paramref name="value" />.  
+ </term><description> This instance follows <paramref name="value" />.  
   
  -or-  
   
  <paramref name="value" /> is <see langword="null" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2566,11 +2532,11 @@
 ## Remarks  
  White space characters are the following Unicode characters:  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.SpaceSeparator> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which consists solely of the LINE SEPARATOR character (U+2028).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.LineSeparator> category, which consists solely of the LINE SEPARATOR character (U+2028).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
   
 -   The characters CHARACTER TABULATION (U+0009), LINE FEED (U+000A), LINE TABULATION (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), and NEXT LINE (U+0085).  
   
@@ -2629,11 +2595,11 @@
   
  White space characters are the following Unicode characters:  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.SpaceSeparator> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which consists solely of the LINE SEPARATOR character (U+2028).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.LineSeparator> category, which consists solely of the LINE SEPARATOR character (U+2028).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
   
 -   The characters CHARACTER TABULATION (U+0009), LINE FEED (U+000A), LINE TABULATION (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), and NEXT LINE (U+0085).  
   
@@ -4012,11 +3978,11 @@
 ## Remarks  
  White space characters are the following Unicode characters:  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which includes the characters SPACE (U+0020), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.SpaceSeparator> category, which includes the characters SPACE (U+0020), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which consists solely of the LINE SEPARATOR character (U+2028).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.LineSeparator> category, which consists solely of the LINE SEPARATOR character (U+2028).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
   
 -   The characters CHARACTER TABULATION (U+0009), LINE FEED (U+000A), LINE TABULATION (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), NEXT LINE (U+0085), and NO-BREAK SPACE (U+00A0).  
   

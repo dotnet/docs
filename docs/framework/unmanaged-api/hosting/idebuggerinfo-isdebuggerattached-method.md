@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IDebuggerInfo::IsDebuggerAttached method [.NET Framework hosting]"
   - "IsDebuggerAttached method, IDebuggerInfo interface [.NET Framework hosting]"
 ms.assetid: 6e21872f-602f-411a-a423-bff5cdf27000
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

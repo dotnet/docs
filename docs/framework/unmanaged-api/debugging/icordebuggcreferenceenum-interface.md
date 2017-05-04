@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugGCReferenceEnum interface [.NET Framework debugging]"
 ms.assetid: 5f3c91c9-c035-454f-96cc-011cab1ea06b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

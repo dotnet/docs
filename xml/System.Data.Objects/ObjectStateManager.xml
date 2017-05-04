@@ -87,13 +87,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling the <xref:System.Data.Objects.ObjectStateManager.ChangeObjectState%2A> method to change the state of an object to <xref:System.Data.EntityState> does not cause related objects in a constrained relationship to be deleted.  
+ Calling the <xref:System.Data.Objects.ObjectStateManager.ChangeObjectState%2A> method to change the state of an object to <xref:System.Data.EntityState.Deleted> does not cause related objects in a constrained relationship to be deleted.  
   
  Changing the state of an object does not affect related objects in the object graph.  
   
- When you change the <xref:System.Data.EntityState> of an entity object entry to <xref:System.Data.EntityState>, all the properties of the object are marked as modified, regardless of the current or original values.  
+ When you change the <xref:System.Data.EntityState> of an entity object entry to <xref:System.Data.EntityState.Modified>, all the properties of the object are marked as modified, regardless of the current or original values.  
   
- When the <xref:System.Data.EntityState> of an entity object entry is changed to <xref:System.Data.EntityState>, <xref:System.Data.EntityState>, or <xref:System.Data.EntityState>, the relationship entries for the object are also updated.  
+ When the <xref:System.Data.EntityState> of an entity object entry is changed to <xref:System.Data.EntityState.Added>, <xref:System.Data.EntityState.Deleted>, or <xref:System.Data.EntityState.Detached>, the relationship entries for the object are also updated.  
   
  ]]></format>
         </remarks>
@@ -550,7 +550,7 @@
 ## Remarks  
  The <xref:System.Data.Objects.ObjectStateManager.GetRelationshipManager%2A> method is used to obtain the <xref:System.Data.Objects.DataClasses.RelationshipManager> for objects that are persistence ignorant. When objects implement <xref:System.Data.Objects.DataClasses.IEntityWithRelationships> or inherit from <xref:System.Data.Objects.DataClasses.EntityObject>, the <xref:System.Data.Objects.DataClasses.RelationshipManager> is accessed from the <xref:System.Data.Objects.DataClasses.IEntityWithRelationships.RelationshipManager%2A> property.  
   
- The <xref:System.Data.Objects.DataClasses.RelationshipManager> cannot be returned when the object is in a <xref:System.Data.EntityState> state.  
+ The <xref:System.Data.Objects.DataClasses.RelationshipManager> cannot be returned when the object is in a <xref:System.Data.EntityState.Detached> state.  
   
  Calling the <xref:System.Data.Objects.ObjectStateManager.TryGetRelationshipManager%2A> method is the same as calling the <xref:System.Data.Objects.ObjectStateManager.GetRelationshipManager%2A> method, except that this method returns `false` instead of raising an exception.  
   

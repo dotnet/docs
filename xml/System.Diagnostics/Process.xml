@@ -193,10 +193,10 @@
   
 |BasePriority|PriorityClass|  
 |------------------|-------------------|  
-|4|<xref:System.Diagnostics.ProcessPriorityClass>|  
-|8|<xref:System.Diagnostics.ProcessPriorityClass>|  
-|13|<xref:System.Diagnostics.ProcessPriorityClass>|  
-|24|<xref:System.Diagnostics.ProcessPriorityClass>|  
+|4|<xref:System.Diagnostics.ProcessPriorityClass.Idle>|  
+|8|<xref:System.Diagnostics.ProcessPriorityClass.Normal>|  
+|13|<xref:System.Diagnostics.ProcessPriorityClass.High>|  
+|24|<xref:System.Diagnostics.ProcessPriorityClass.RealTime>|  
   
    
   
@@ -2873,7 +2873,7 @@ process.BeginOutputReadLine();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a thread runs in a process for which the priority class has one of the dynamic priority enumeration values (<xref:System.Diagnostics.ProcessPriorityClass>, <xref:System.Diagnostics.ProcessPriorityClass>, or <xref:System.Diagnostics.ProcessPriorityClass>), the system temporarily boosts the thread's priority when it is taken out of a wait state. This action prevents other processes from interrupting the processing of the current thread. The <xref:System.Diagnostics.Process.PriorityBoostEnabled%2A> setting affects all the existing threads and any threads subsequently created by the process. To restore normal behavior, set the <xref:System.Diagnostics.Process.PriorityBoostEnabled%2A> property to `false`.  
+ When a thread runs in a process for which the priority class has one of the dynamic priority enumeration values (<xref:System.Diagnostics.ProcessPriorityClass.Normal>, <xref:System.Diagnostics.ProcessPriorityClass.High>, or <xref:System.Diagnostics.ProcessPriorityClass.RealTime>), the system temporarily boosts the thread's priority when it is taken out of a wait state. This action prevents other processes from interrupting the processing of the current thread. The <xref:System.Diagnostics.Process.PriorityBoostEnabled%2A> setting affects all the existing threads and any threads subsequently created by the process. To restore normal behavior, set the <xref:System.Diagnostics.Process.PriorityBoostEnabled%2A> property to `false`.  
   
 > [!NOTE]
 >  Boosting the priority too high can drain resources from essential operating system and network functions, causing problems with other operating system tasks.  
@@ -2927,7 +2927,7 @@ process.BeginOutputReadLine();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A process priority class encompasses a range of thread priority levels. Threads with different priorities that are running in the process run relative to the priority class of the process. Win32 uses four priority classes with seven base priority levels per class. These process priority classes are captured in the <xref:System.Diagnostics.ProcessPriorityClass> enumeration, which lets you set the process priority to <xref:System.Diagnostics.ProcessPriorityClass>, <xref:System.Diagnostics.ProcessPriorityClass>, <xref:System.Diagnostics.ProcessPriorityClass>, <xref:System.Diagnostics.ProcessPriorityClass>, <xref:System.Diagnostics.ProcessPriorityClass>, or <xref:System.Diagnostics.ProcessPriorityClass>. Based on the time elapsed or other boosts, the base priority level can be changed by the operating system when a process needs to be put ahead of others for access to the processor. In addition, you can set the <xref:System.Diagnostics.Process.PriorityBoostEnabled%2A> to temporarily boost the priority level of threads that have been taken out of the wait state. The priority is reset when the process returns to the wait state.  
+ A process priority class encompasses a range of thread priority levels. Threads with different priorities that are running in the process run relative to the priority class of the process. Win32 uses four priority classes with seven base priority levels per class. These process priority classes are captured in the <xref:System.Diagnostics.ProcessPriorityClass> enumeration, which lets you set the process priority to <xref:System.Diagnostics.ProcessPriorityClass.Idle>, <xref:System.Diagnostics.ProcessPriorityClass.Normal>, <xref:System.Diagnostics.ProcessPriorityClass.High>, <xref:System.Diagnostics.ProcessPriorityClass.AboveNormal>, <xref:System.Diagnostics.ProcessPriorityClass.BelowNormal>, or <xref:System.Diagnostics.ProcessPriorityClass.RealTime>. Based on the time elapsed or other boosts, the base priority level can be changed by the operating system when a process needs to be put ahead of others for access to the processor. In addition, you can set the <xref:System.Diagnostics.Process.PriorityBoostEnabled%2A> to temporarily boost the priority level of threads that have been taken out of the wait state. The priority is reset when the process returns to the wait state.  
   
  The <xref:System.Diagnostics.Process.BasePriority%2A> property lets you view the starting priority that is assigned to a process. However, because it is read-only, you cannot use the <xref:System.Diagnostics.Process.BasePriority%2A> property to set the priority of a process. To change the priority, use the <xref:System.Diagnostics.Process.PriorityClass%2A> property, which gets or sets the overall priority category for the process.  
   
@@ -2935,10 +2935,10 @@ process.BeginOutputReadLine();
   
 |BasePriority|PriorityClass|  
 |------------------|-------------------|  
-|4|<xref:System.Diagnostics.ProcessPriorityClass>|  
-|8|<xref:System.Diagnostics.ProcessPriorityClass>|  
-|13|<xref:System.Diagnostics.ProcessPriorityClass>|  
-|24|<xref:System.Diagnostics.ProcessPriorityClass>|  
+|4|<xref:System.Diagnostics.ProcessPriorityClass.Idle>|  
+|8|<xref:System.Diagnostics.ProcessPriorityClass.Normal>|  
+|13|<xref:System.Diagnostics.ProcessPriorityClass.High>|  
+|24|<xref:System.Diagnostics.ProcessPriorityClass.RealTime>|  
   
    
   
@@ -3818,7 +3818,7 @@ p.WaitForExit();
   
  You can start a ClickOnce application by specifying the location (for example, a Web address) from which you originally installed the application. Do not start a ClickOnce application by specifying its installed location on your hard drive.  
   
- If the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> and <xref:System.Diagnostics.ProcessStartInfo.Password%2A> properties of the <xref:System.Diagnostics.Process.StartInfo%2A> instance are set, the unmanaged `CreateProcessWithLogonW` function is called, which starts the process in a new window even if the <xref:System.Diagnostics.ProcessStartInfo.CreateNoWindow%2A> property value is `true` or the <xref:System.Diagnostics.ProcessStartInfo.WindowStyle%2A> property value is <xref:System.Diagnostics.ProcessWindowStyle>.  
+ If the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> and <xref:System.Diagnostics.ProcessStartInfo.Password%2A> properties of the <xref:System.Diagnostics.Process.StartInfo%2A> instance are set, the unmanaged `CreateProcessWithLogonW` function is called, which starts the process in a new window even if the <xref:System.Diagnostics.ProcessStartInfo.CreateNoWindow%2A> property value is `true` or the <xref:System.Diagnostics.ProcessStartInfo.WindowStyle%2A> property value is <xref:System.Diagnostics.ProcessWindowStyle.Hidden>.  
   
  Unlike the other overloads, the overload of <xref:System.Diagnostics.Process.Start%2A> that has no parameters is not a `static` member. Use that overload when you have already created a <xref:System.Diagnostics.Process> instance, specified start information (including the file name), and want to start a process resource and associate it with the existing <xref:System.Diagnostics.Process> instance. Use one of the `static` overloads when you want to create a new <xref:System.Diagnostics.Process> component rather than start a process for an existing component. Both this overload and the overload that has no parameters allow you to specify the start information for the process resource by using a <xref:System.Diagnostics.ProcessStartInfo> instance.  
   
@@ -4190,7 +4190,7 @@ p.WaitForExit();
   
  If the file name involves a nonexecutable file, such as a .doc file, you can include a verb specifying what action to take on the file. For example, you could set the <xref:System.Diagnostics.ProcessStartInfo.Verb%2A> to "Print" for a file ending in the .doc extension. The file name specified in the <xref:System.Diagnostics.ProcessStartInfo.FileName%2A> property does not need to have an extension if you manually enter a value for the <xref:System.Diagnostics.ProcessStartInfo.Verb%2A> property. However, if you use the <xref:System.Diagnostics.ProcessStartInfo.Verbs%2A> property to determine what verbs are available, you must include the extension.  
   
- You can change the parameters specified in the <xref:System.Diagnostics.Process.StartInfo%2A> property up to the time that you call the <xref:System.Diagnostics.Process.Start%2A> method on the process. After you start the process, changing the <xref:System.Diagnostics.Process.StartInfo%2A> values does not affect or restart the associated process. If you call the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29> method with the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A?displayProperty=fullName> and <xref:System.Diagnostics.ProcessStartInfo.Password%2A?displayProperty=fullName> properties set, the unmanaged `CreateProcessWithLogonW` function is called, which starts the process in a new window even if the <xref:System.Diagnostics.ProcessStartInfo.CreateNoWindow%2A> property value is `true` or the <xref:System.Diagnostics.ProcessStartInfo.WindowStyle%2A> property value is <xref:System.Diagnostics.ProcessWindowStyle>.  
+ You can change the parameters specified in the <xref:System.Diagnostics.Process.StartInfo%2A> property up to the time that you call the <xref:System.Diagnostics.Process.Start%2A> method on the process. After you start the process, changing the <xref:System.Diagnostics.Process.StartInfo%2A> values does not affect or restart the associated process. If you call the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29> method with the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A?displayProperty=fullName> and <xref:System.Diagnostics.ProcessStartInfo.Password%2A?displayProperty=fullName> properties set, the unmanaged `CreateProcessWithLogonW` function is called, which starts the process in a new window even if the <xref:System.Diagnostics.ProcessStartInfo.CreateNoWindow%2A> property value is `true` or the <xref:System.Diagnostics.ProcessStartInfo.WindowStyle%2A> property value is <xref:System.Diagnostics.ProcessWindowStyle.Hidden>.  
   
  If you did not use the <xref:System.Diagnostics.Process.Start%2A> method to start a process, the <xref:System.Diagnostics.Process.StartInfo%2A> property does not reflect the parameters used to start the process. For example, if you use <xref:System.Diagnostics.Process.GetProcesses%2A> to get an array of processes running on the computer, the <xref:System.Diagnostics.Process.StartInfo%2A> property of each <xref:System.Diagnostics.Process> does not contain the original file name or arguments used to start the process.  
   

@@ -155,7 +155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although the <xref:System.Web.Services.Protocols.SoapClientMessage.MethodInfo%2A> property can be accessed during any stage, the method information is only available during <xref:System.Web.Services.Protocols.SoapMessageStage> and <xref:System.Web.Services.Protocols.SoapMessageStage>.  
+ Although the <xref:System.Web.Services.Protocols.SoapClientMessage.MethodInfo%2A> property can be accessed during any stage, the method information is only available during <xref:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize> and <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize>.  
   
    
   

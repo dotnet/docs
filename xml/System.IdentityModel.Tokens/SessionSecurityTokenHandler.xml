@@ -720,7 +720,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="token" /> <see langword="null" />.</exception>
+          <paramref name="token" />
+          <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="token" /> is not assignable from <see cref="T:System.IdentityModel.Tokens.SessionSecurityToken" />.</exception>
       </Docs>

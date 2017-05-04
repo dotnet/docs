@@ -40,9 +40,9 @@
 ## Remarks  
  The new instance property values are set to their defaults:  
   
--   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>.  
+-   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode.Never>.  
   
--   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.ReferenceStyle%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle>.  
+-   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.ReferenceStyle%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle.Internal>.  
   
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.RequireDerivedKeys%2A> is set to `true`.  
   
@@ -69,7 +69,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The new instance property values are set to the corresponding values in `other`. <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>.  
+ The new instance property values are set to the corresponding values in `other`. <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode.Never>.  
   
  ]]></format>
         </remarks>
@@ -187,7 +187,7 @@
   
 -   <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicToken%2A> = `true`.  
   
--   <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType%2A> = <xref:System.IdentityModel.Tokens.SecurityKeyType>.  
+-   <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType%2A> = <xref:System.IdentityModel.Tokens.SecurityKeyType.AsymmetricKey>.  
   
  ]]></format>
         </remarks>

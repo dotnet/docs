@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugClass interface [.NET Framework debugging]"
 ms.assetid: 03a6facb-f12f-49be-9839-e73b9c791cd5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

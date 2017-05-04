@@ -2,7 +2,7 @@
 title: "WAIT_OPTION Enumeration | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "WAIT_OPTION enumeration [.NET Framework hosting]"
 ms.assetid: 962fc293-8ded-4b3b-90ce-2c21a4f1b244
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

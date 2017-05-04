@@ -226,7 +226,7 @@
   
 -   Text: A string is specified using the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.Text%2A> property, and will be displayed in the legend cell.  
   
--   SeriesSymbol: A series symbol is defined by the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> property in the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> class. It will be displayed for the legend cell. Recall that a series symbol is a visual indicator—a line, rectangle or marker. When <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle>, all marker attributes of the custom item apply to the cell.  
+-   SeriesSymbol: A series symbol is defined by the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> property in the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> class. It will be displayed for the legend cell. Recall that a series symbol is a visual indicator—a line, rectangle or marker. When <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle%2A> is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendImageStyle.Marker>, all marker attributes of the custom item apply to the cell.  
   
 -   Image: An image is defined using the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.Image%2A> property and will be displayed in the legend cell.  
   
@@ -318,7 +318,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.CellType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
+ This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.CellType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType.Text>.  
   
  ]]></format>
         </remarks>
@@ -353,7 +353,7 @@
 ## Remarks  
  The image name should be a URL.  
   
- This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.CellType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
+ This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.CellType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType.Image>.  
   
  ]]></format>
         </remarks>
@@ -388,7 +388,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.ImageSize%2A> property is used to explicitly set the width and height of the legend cell image.  
   
- This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.CellType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
+ This property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.CellType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType.Image>.  
   
  ]]></format>
         </remarks>
@@ -424,7 +424,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.ImageTransparentColor%2A> property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.CellType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.ImageTransparentColor%2A> property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.CellType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType.Image>.  
   
  ]]></format>
         </remarks>
@@ -570,7 +570,7 @@
 ## Remarks  
  The size of the series symbol is measured as a percentage of the legend font size.  
   
- The <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.SeriesSymbolSize%2A> property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.CellType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.SeriesSymbolSize%2A> property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.CellType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType.SeriesSymbol>.  
   
  ]]></format>
         </remarks>
@@ -600,7 +600,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.Text%2A> property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.CellType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType>.  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.Text%2A> property is only applicable if the <xref:System.Windows.Forms.DataVisualization.Charting.LegendCell.CellType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.LegendCellType.Text>.  
   
  ]]></format>
         </remarks>

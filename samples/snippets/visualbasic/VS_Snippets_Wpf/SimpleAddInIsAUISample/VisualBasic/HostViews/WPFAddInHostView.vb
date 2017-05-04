@@ -1,6 +1,6 @@
 ﻿'<SnippetHostViewCode>
 
-Imports System.Windows.Controls ' UserControl
+Imports System.Windows.Controls
 
 Namespace HostViews
 	''' <summary>

@@ -768,7 +768,7 @@ count = command.ExecuteOracleScalar();
    
   
 ## Examples  
- The following example creates an <xref:System.Data.OracleClient.OracleCommand>, and then executes it by passing a string that is an SQL SELECT statement, and a string to use to connect to the database. <xref:System.Data.CommandBehavior> is then set to <xref:System.Data.CommandBehavior>.  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand>, and then executes it by passing a string that is an SQL SELECT statement, and a string to use to connect to the database. <xref:System.Data.CommandBehavior> is then set to <xref:System.Data.CommandBehavior.CloseConnection>.  
   
  [!code-csharp[Classic WebData OracleCommand.ExecuteReader2#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.ExecuteReader2/CS/mysample.cs#1)]
  [!code-vb[Classic WebData OracleCommand.ExecuteReader2#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.ExecuteReader2/VB/mysample.vb#1)]  

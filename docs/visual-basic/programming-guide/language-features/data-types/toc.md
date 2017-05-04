@@ -23,5 +23,6 @@
 ### [Structure Variables](structure-variables.md)
 ### [Structures and Other Programming Elements](structures-and-other-programming-elements.md)
 ### [Structures and Classes](structures-and-classes.md)
+## [Tuples](tuples.md)
 ## [Efficient Use of Data Types](efficient-use-of-data-types.md)
 ## [Troubleshooting Data Types](troubleshooting-data-types.md)

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostAssemblyManager::GetAssemblyStore method [.NET Framework hosting]"
   - "GetAssemblyStore method [.NET Framework hosting]"
 ms.assetid: d0f74593-9bb1-4a11-8096-e29734b20698
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

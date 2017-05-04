@@ -1,7 +1,7 @@
 '<SnippetPersistRestoreAppScopePropertiesCODEBEHIND1>
 '<SnippetPersistAppScopePropertiesCODEBEHIND1>
-Imports System.IO ' StreamReader, FileMode
-Imports System.IO.IsolatedStorage ' IsolatedStorageFile, IsolatedStorageFileStream
+Imports System.IO
+Imports System.IO.IsolatedStorage
 
 Namespace SDKSample
 	Partial Public Class App

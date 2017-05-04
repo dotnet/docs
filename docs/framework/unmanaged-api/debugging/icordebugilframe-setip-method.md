@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetIP method, ICorDebugILFrame interface [.NET Framework debugging]"
   - "ICorDebugILFrame::SetIP method [.NET Framework debugging]"
 ms.assetid: 23f38dc1-85e4-4263-9235-2d05bbb6a833
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

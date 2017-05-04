@@ -97,24 +97,24 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The following table shows integer value for each <xref:System.Drawing.Printing.PaperSourceKind> member. Anything larger than 256 maps to <xref:System.Drawing.Printing.PaperSourceKind> in the <xref:System.Drawing.Printing.PaperSourceKind> enumeration, but the <xref:System.Drawing.Printing.PaperSource.RawKind%2A> property returns the actual integer value.  
+ The following table shows integer value for each <xref:System.Drawing.Printing.PaperSourceKind> member. Anything larger than 256 maps to <xref:System.Drawing.Printing.PaperSourceKind.Custom> in the <xref:System.Drawing.Printing.PaperSourceKind> enumeration, but the <xref:System.Drawing.Printing.PaperSource.RawKind%2A> property returns the actual integer value.  
   
 |Integer value|PaperSourceKind member|  
 |-------------------|----------------------------|  
-|1|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|2|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|3|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|4|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|5|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|6|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|7|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|8|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|9|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|10|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|11|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|14|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|15|<xref:System.Drawing.Printing.PaperSourceKind>|  
-|256 or larger|<xref:System.Drawing.Printing.PaperSourceKind>|  
+|1|<xref:System.Drawing.Printing.PaperSourceKind.Upper>|  
+|2|<xref:System.Drawing.Printing.PaperSourceKind.Lower>|  
+|3|<xref:System.Drawing.Printing.PaperSourceKind.Middle>|  
+|4|<xref:System.Drawing.Printing.PaperSourceKind.Manual>|  
+|5|<xref:System.Drawing.Printing.PaperSourceKind.Envelope>|  
+|6|<xref:System.Drawing.Printing.PaperSourceKind.ManualFeed>|  
+|7|<xref:System.Drawing.Printing.PaperSourceKind.AutomaticFeed>|  
+|8|<xref:System.Drawing.Printing.PaperSourceKind.TractorFeed>|  
+|9|<xref:System.Drawing.Printing.PaperSourceKind.SmallFormat>|  
+|10|<xref:System.Drawing.Printing.PaperSourceKind.LargeFormat>|  
+|11|<xref:System.Drawing.Printing.PaperSourceKind.LargeCapacity>|  
+|14|<xref:System.Drawing.Printing.PaperSourceKind.Cassette>|  
+|15|<xref:System.Drawing.Printing.PaperSourceKind.FormSource>|  
+|256 or larger|<xref:System.Drawing.Printing.PaperSourceKind.Custom>|  
   
  ]]></format>
         </remarks>

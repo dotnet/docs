@@ -753,7 +753,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to open an existing X.509 store. Note that you must have additional permissions, specified by <xref:System.Security.Permissions.StorePermissionFlags>, to enumerate the certificates in the store. You can create a new store by passing a store name that does not exist to the class constructor, and then using any of the <xref:System.Security.Cryptography.X509Certificates.OpenFlags> flags except <xref:System.Security.Cryptography.X509Certificates.OpenFlags>.  
+ Use this method to open an existing X.509 store. Note that you must have additional permissions, specified by <xref:System.Security.Permissions.StorePermissionFlags>, to enumerate the certificates in the store. You can create a new store by passing a store name that does not exist to the class constructor, and then using any of the <xref:System.Security.Cryptography.X509Certificates.OpenFlags> flags except <xref:System.Security.Cryptography.X509Certificates.OpenFlags.OpenExistingOnly>.  
   
    
   

@@ -2,7 +2,7 @@
 title: "ITypeNameBuilder::AddSzArray Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "AddSzArray method [.NET Framework hosting]"
   - "ITypeNameBuilder::AddSzArray method [.NET Framework hosting]"
 ms.assetid: a6a46296-af14-4c53-9744-f7a1e3f3028a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

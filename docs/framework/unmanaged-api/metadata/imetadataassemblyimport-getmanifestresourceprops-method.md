@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetManifestResourceProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::GetManifestResourceProps method [.NET Framework metadata]"
 ms.assetid: 00be4789-ac63-4397-b2ec-1629a5c5a585
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

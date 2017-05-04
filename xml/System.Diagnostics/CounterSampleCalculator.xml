@@ -40,15 +40,15 @@
 ## Remarks  
  The <xref:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue%28System.Diagnostics.CounterSample%29> method overload returns meaningful results only for performance counters of the following <xref:System.Diagnostics.PerformanceCounterType>:  
   
--   <xref:System.Diagnostics.PerformanceCounterType>  
+-   <xref:System.Diagnostics.PerformanceCounterType.RawFraction>  
   
--   <xref:System.Diagnostics.PerformanceCounterType>  
+-   <xref:System.Diagnostics.PerformanceCounterType.NumberOfItems32>  
   
--   <xref:System.Diagnostics.PerformanceCounterType>  
+-   <xref:System.Diagnostics.PerformanceCounterType.NumberOfItemsHEX32>  
   
--   <xref:System.Diagnostics.PerformanceCounterType>  
+-   <xref:System.Diagnostics.PerformanceCounterType.NumberOfItems64>  
   
--   <xref:System.Diagnostics.PerformanceCounterType>  
+-   <xref:System.Diagnostics.PerformanceCounterType.NumberOfItemsHEX64>  
   
  For other counter types, this overload always returns a value of 0 (zero).  
   

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorThreadpool interface [.NET Framework hosting]"
 ms.assetid: 18485a27-cae3-4c6a-baa8-f7df601122d5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

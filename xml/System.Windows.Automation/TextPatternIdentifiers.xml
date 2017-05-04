@@ -50,7 +50,7 @@
   
  Values for this attribute are of type <xref:System.Windows.Automation.Text.AnimationStyle>.  
   
- The default value is <xref:System.Windows.Automation.Text.AnimationStyle>.  
+ The default value is <xref:System.Windows.Automation.Text.AnimationStyle.None>.  
   
  ]]></format>
         </remarks>
@@ -106,7 +106,7 @@
   
  Values for this attribute are of type <xref:System.Windows.Automation.Text.BulletStyle>.  
   
- The default value is <xref:System.Windows.Automation.Text.BulletStyle>.  
+ The default value is <xref:System.Windows.Automation.Text.BulletStyle.None>.  
   
  ]]></format>
         </remarks>
@@ -134,7 +134,7 @@
   
  Values for this attribute are of type <xref:System.Windows.Automation.Text.CapStyle>.  
   
- The default value is <xref:System.Windows.Automation.Text.CapStyle>.  
+ The default value is <xref:System.Windows.Automation.Text.CapStyle.None>.  
   
  ]]></format>
         </remarks>
@@ -321,7 +321,7 @@
   
  <xref:System.Windows.Automation.Text.HorizontalTextAlignment>  
   
- The default value is <xref:System.Windows.Automation.Text.HorizontalTextAlignment>  
+ The default value is <xref:System.Windows.Automation.Text.HorizontalTextAlignment.Left>  
   
  ]]></format>
         </remarks>
@@ -345,7 +345,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The first-line indentation (specified as a <xref:System.Drawing.GraphicsUnit> unit type value) applied to the paragraph(s) associated with the calling text range.  
+ The first-line indentation (specified as a <xref:System.Drawing.GraphicsUnit.Point> unit type value) applied to the paragraph(s) associated with the calling text range.  
   
  This identifier is used by UI Automation providers. UI Automation client applications should use the equivalent field in <xref:System.Windows.Automation.TextPattern>.  
   
@@ -375,7 +375,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The leading indentation (specified as a <xref:System.Drawing.GraphicsUnit> unit type value) applied to the paragraph(s) associated with the calling text range.  
+ The leading indentation (specified as a <xref:System.Drawing.GraphicsUnit.Point> unit type value) applied to the paragraph(s) associated with the calling text range.  
   
  This identifier is used by UI Automation providers. UI Automation client applications should use the equivalent field in <xref:System.Windows.Automation.TextPattern>.  
   
@@ -405,7 +405,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The trailing indentation (specified as a <xref:System.Drawing.GraphicsUnit> unit type value) applied to the paragraph(s) associated with the calling text range.  
+ The trailing indentation (specified as a <xref:System.Drawing.GraphicsUnit.Point> unit type value) applied to the paragraph(s) associated with the calling text range.  
   
  This identifier is used by UI Automation providers. UI Automation client applications should use the equivalent field in <xref:System.Windows.Automation.TextPattern>.  
   
@@ -732,7 +732,7 @@
   
  Values for this attribute are of type <xref:System.Windows.Automation.Text.OutlineStyles>.  
   
- The default value is <xref:System.Windows.Automation.Text.OutlineStyles>.  
+ The default value is <xref:System.Windows.Automation.Text.OutlineStyles.None>.  
   
  ]]></format>
         </remarks>
@@ -788,7 +788,7 @@
   
  Values for this attribute are of type <xref:System.Windows.Automation.Text.TextDecorationLineStyle>.  
   
- The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle>.  
+ The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle.None>.  
   
  ]]></format>
         </remarks>
@@ -868,7 +868,7 @@
   
  Values for this attribute are of type <xref:System.Windows.Automation.Text.TextDecorationLineStyle>.  
   
- The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle>.  
+ The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle.None>.  
   
  ]]></format>
         </remarks>
@@ -892,7 +892,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The collection of tab stops has each tab stop specified as a <xref:System.Drawing.GraphicsUnit> unit type value.  
+ The collection of tab stops has each tab stop specified as a <xref:System.Drawing.GraphicsUnit.Point> unit type value.  
   
  This identifier is used by UI Automation providers. UI Automation client applications should use the equivalent field in <xref:System.Windows.Automation.TextPattern>.  
   
@@ -957,7 +957,7 @@
   
  Values for this attribute are of type <xref:System.Windows.Automation.Text.FlowDirections>.  
   
- The default value is the bitwise combination of the following values: <xref:System.Windows.Automation.Text.FlowDirections> `|` <xref:System.Windows.Automation.Text.FlowDirections> `|` <xref:System.Windows.Automation.Text.FlowDirections>.  
+ The default value is the bitwise combination of the following values: <xref:System.Windows.Automation.Text.FlowDirections.Vertical> `|` <xref:System.Windows.Automation.Text.FlowDirections.RightToLeft> `|` <xref:System.Windows.Automation.Text.FlowDirections.BottomToTop>.  
   
  ]]></format>
         </remarks>
@@ -1042,7 +1042,7 @@
   
  Values for this attribute are of type <xref:System.Windows.Automation.Text.TextDecorationLineStyle>.  
   
- The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle>.  
+ The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle.None>.  
   
  ]]></format>
         </remarks>

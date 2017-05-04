@@ -101,7 +101,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The newly created <xref:System.Windows.Forms.ToolBarButton> has no <xref:System.Drawing.Image> assigned to it. The button's default style is <xref:System.Windows.Forms.ToolBarButtonStyle>. The `text` parameter is assigned to the <xref:System.Windows.Forms.ToolBarButton.Text%2A> property and is displayed on the new toolbar button control.  
+ The newly created <xref:System.Windows.Forms.ToolBarButton> has no <xref:System.Drawing.Image> assigned to it. The button's default style is <xref:System.Windows.Forms.ToolBarButtonStyle.PushButton>. The `text` parameter is assigned to the <xref:System.Windows.Forms.ToolBarButton.Text%2A> property and is displayed on the new toolbar button control.  
   
    
   
@@ -512,7 +512,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the button <xref:System.Windows.Forms.ToolBarButton.Style%2A> is set to <xref:System.Windows.Forms.ToolBarButtonStyle> you can specify a <xref:System.Windows.Forms.MenuItem> to be displayed when the drop-down button is pressed. If the style is set to `ToolBarButtonStyle.Separator`, the toolbar button appears as a button separator and not as a button. The `ToolBarButtonStyle.ToggleButton` style causes the toolbar button to act like a toggle button; it can be in an on or off state.  
+ If the button <xref:System.Windows.Forms.ToolBarButton.Style%2A> is set to <xref:System.Windows.Forms.ToolBarButtonStyle.DropDownButton> you can specify a <xref:System.Windows.Forms.MenuItem> to be displayed when the drop-down button is pressed. If the style is set to `ToolBarButtonStyle.Separator`, the toolbar button appears as a button separator and not as a button. The `ToolBarButtonStyle.ToggleButton` style causes the toolbar button to act like a toggle button; it can be in an on or off state.  
   
    
   

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugInternalFrame2 interface [.NET Framework debugging]"
 ms.assetid: d4755569-85b8-4ff4-bf50-0e608e76429f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

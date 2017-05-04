@@ -84,7 +84,7 @@ TrackingProfile profile = new TrackingProfile()
 > [!NOTE]
 >  CustomTrackingRecords emitted from activity implementation are not filtered out by the implementationVisibility setting.  
   
- The `implementationVisibility` functionality is specified as <xref:System.Activities.Tracking.ImplementationVisibility> on the tracking profile in code as follows:  
+ The `implementationVisibility` functionality is specified as <xref:System.Activities.Tracking.ImplementationVisibility.RootScope> on the tracking profile in code as follows:  
   
 ```  
 TrackingProfile sampleTrackingProfile = new TrackingProfile()  
@@ -95,7 +95,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
 ```  
   
- The `implementationVisibility` functionality is specified as <xref:System.Activities.Tracking.ImplementationVisibility> on the tracking profile in a configuration file as follows:  
+ The `implementationVisibility` functionality is specified as <xref:System.Activities.Tracking.ImplementationVisibility.All> on the tracking profile in a configuration file as follows:  
   
 ```  
 <tracking>  

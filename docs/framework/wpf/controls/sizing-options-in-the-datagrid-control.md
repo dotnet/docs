@@ -64,11 +64,11 @@ Various options are available to control how the <xref:System.Windows.Controls.D
   
 |Name|Description|  
 |----------|-----------------|  
-|<xref:System.Windows.Controls.DataGridLengthUnitType>|The default automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of both cells and column headers.|  
-|<xref:System.Windows.Controls.DataGridLengthUnitType>|The cell-based automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of cells in the column, not including column headers.|  
-|<xref:System.Windows.Controls.DataGridLengthUnitType>|The header-based automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of column headers only.|  
-|<xref:System.Windows.Controls.DataGridLengthUnitType>|The pixel-based sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the numeric value provided.|  
-|<xref:System.Windows.Controls.DataGridLengthUnitType>|The star sizing mode is used to distribute available space by weighted proportions.<br /><br /> In XAML, star values are expressed as n* where n represents a numeric value. 1\* is equivalent to \*. For example, if two columns in a <xref:System.Windows.Controls.DataGrid> had widths of \* and 2\*, the first column would receive one portion of the available space and the second column would receive two portions of the available space.|  
+|<xref:System.Windows.Controls.DataGridLengthUnitType.Auto>|The default automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of both cells and column headers.|  
+|<xref:System.Windows.Controls.DataGridLengthUnitType.SizeToCells>|The cell-based automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of cells in the column, not including column headers.|  
+|<xref:System.Windows.Controls.DataGridLengthUnitType.SizeToHeader>|The header-based automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of column headers only.|  
+|<xref:System.Windows.Controls.DataGridLengthUnitType.Pixel>|The pixel-based sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the numeric value provided.|  
+|<xref:System.Windows.Controls.DataGridLengthUnitType.Star>|The star sizing mode is used to distribute available space by weighted proportions.<br /><br /> In XAML, star values are expressed as n* where n represents a numeric value. 1\* is equivalent to \*. For example, if two columns in a <xref:System.Windows.Controls.DataGrid> had widths of \* and 2\*, the first column would receive one portion of the available space and the second column would receive two portions of the available space.|  
   
  The <xref:System.Windows.Controls.DataGridLengthConverter> class can be used to convert data between numeric or string values and <xref:System.Windows.Controls.DataGridLength> values.  
   

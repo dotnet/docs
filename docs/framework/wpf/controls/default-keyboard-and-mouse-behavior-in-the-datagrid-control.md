@@ -54,10 +54,10 @@ This topic describes how users can interact with the <xref:System.Windows.Contro
 |BACKSPACE|Deletes the character before the cursor when editing a cell.|  
 |DELETE|Deletes the character after the cursor when editing a cell.|  
 |CTRL+ENTER|Commits any changes to the current cell without moving the focus.|  
-|CTRL+A|If <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is set to <xref:System.Windows.Controls.DataGridSelectionMode>, selects all rows in the <xref:System.Windows.Controls.DataGrid>.|  
+|CTRL+A|If <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is set to <xref:System.Windows.Controls.DataGridSelectionMode.Extended>, selects all rows in the <xref:System.Windows.Controls.DataGrid>.|  
   
 ## Selection Keys  
- If the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> property is set to <xref:System.Windows.Controls.DataGridSelectionMode>, the navigation behavior does not change, but navigating with the keyboard while pressing SHIFT (including CTRL+SHIFT) will modify a multi-row selection. Before navigation starts, the control marks the current row as an anchor row. When you navigate while pressing SHIFT, the selection includes all rows between the anchor row and the current row.  
+ If the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> property is set to <xref:System.Windows.Controls.DataGridSelectionMode.Extended>, the navigation behavior does not change, but navigating with the keyboard while pressing SHIFT (including CTRL+SHIFT) will modify a multi-row selection. Before navigation starts, the control marks the current row as an anchor row. When you navigate while pressing SHIFT, the selection includes all rows between the anchor row and the current row.  
   
  The following selection keys modify multi-row selection.  
   
@@ -88,13 +88,13 @@ This topic describes how users can interact with the <xref:System.Windows.Contro
 |Drag a column header separator|If the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=fullName> property is `true` and the <xref:System.Windows.Controls.DataGridColumn.CanUserResize%2A?displayProperty=fullName> property is `true` for the current column, resizes the column.|  
 |Double-click a column header separator|If the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=fullName> property is `true` and the <xref:System.Windows.Controls.DataGridColumn.CanUserResize%2A?displayProperty=fullName> property is `true` for the current column, auto-sizes the column using the <xref:System.Windows.Controls.DataGridLength.Auto%2A> sizing mode.|  
 |Click a column header cell|If the <xref:System.Windows.Controls.DataGrid.CanUserSortColumns%2A?displayProperty=fullName> property is `true` and the <xref:System.Windows.Controls.DataGridColumn.CanUserSort%2A?displayProperty=fullName> property is `true` for the current column, sorts the column.<br /><br /> Clicking the header of a column that is already sorted will reverse the sort direction of that column.<br /><br /> Pressing the SHIFT key while clicking multiple column headers will sort by multiple columns in the order clicked.|  
-|CTRL+click a row|If <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is set to <xref:System.Windows.Controls.DataGridSelectionMode>, modifies a non-contiguous multi-row selection.<br /><br /> If the row is already selected, deselects the row.|  
-|SHIFT+click a row|If <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is set to <xref:System.Windows.Controls.DataGridSelectionMode>, modifies a contiguous multi-row selection.|  
+|CTRL+click a row|If <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is set to <xref:System.Windows.Controls.DataGridSelectionMode.Extended>, modifies a non-contiguous multi-row selection.<br /><br /> If the row is already selected, deselects the row.|  
+|SHIFT+click a row|If <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is set to <xref:System.Windows.Controls.DataGridSelectionMode.Extended>, modifies a contiguous multi-row selection.|  
 |Click a row group header|Expands or collapses the group.|  
-|Click the Select All button at the top left corner of the <xref:System.Windows.Controls.DataGrid>|If <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is set to <xref:System.Windows.Controls.DataGridSelectionMode>, selects all rows in the <xref:System.Windows.Controls.DataGrid>.|  
+|Click the Select All button at the top left corner of the <xref:System.Windows.Controls.DataGrid>|If <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is set to <xref:System.Windows.Controls.DataGridSelectionMode.Extended>, selects all rows in the <xref:System.Windows.Controls.DataGrid>.|  
   
 ## Mouse Selection  
- If the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> property is set to <xref:System.Windows.Controls.DataGridSelectionMode>, clicking a row while pressing CTRL or SHIFT will modify a multi-row selection.  
+ If the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> property is set to <xref:System.Windows.Controls.DataGridSelectionMode.Extended>, clicking a row while pressing CTRL or SHIFT will modify a multi-row selection.  
   
  When you click a row while pressing CTRL, the row will change its selection state while all other rows retain their current selection state. Do this to select non-adjacent rows.  
   

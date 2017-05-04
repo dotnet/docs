@@ -37,13 +37,13 @@ Several of the protected operations for which the .NET Framework provides permis
 |Permission|Potential risk|  
 |----------------|--------------------|  
 |<xref:System.Security.Permissions.SecurityPermission>||  
-|<xref:System.Security.Permissions.SecurityPermissionFlag>|Allows managed code to call into unmanaged code, which is often dangerous.|  
-|<xref:System.Security.Permissions.SecurityPermissionFlag>|Without verification, the code can do anything.|  
-|<xref:System.Security.Permissions.SecurityPermissionFlag>|Invalidated evidence can fool security policy.|  
-|<xref:System.Security.Permissions.SecurityPermissionFlag>|The ability to modify security policy can disable security.|  
-|<xref:System.Security.Permissions.SecurityPermissionFlag>|The use of serialization can circumvent accessibility mechanisms. For details, see [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md).|  
-|<xref:System.Security.Permissions.SecurityPermissionFlag>|The ability to set the current principal can trick role-based security.|  
-|<xref:System.Security.Permissions.SecurityPermissionFlag>|Manipulation of threads is dangerous because of the security state associated with threads.|  
+|<xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode>|Allows managed code to call into unmanaged code, which is often dangerous.|  
+|<xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification>|Without verification, the code can do anything.|  
+|<xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence>|Invalidated evidence can fool security policy.|  
+|<xref:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy>|The ability to modify security policy can disable security.|  
+|<xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter>|The use of serialization can circumvent accessibility mechanisms. For details, see [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md).|  
+|<xref:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal>|The ability to set the current principal can trick role-based security.|  
+|<xref:System.Security.Permissions.SecurityPermissionFlag.ControlThread>|Manipulation of threads is dangerous because of the security state associated with threads.|  
 |<xref:System.Security.Permissions.ReflectionPermission>||  
 |<xref:System.MemberAccessException>|Can use private members to defeat accessibility mechanisms.|  
   

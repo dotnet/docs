@@ -21,7 +21,7 @@ The Multiple Contracts sample demonstrates how to implement more than one contra
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
- The service class implements both the `ICalculator` and `ICalculatorSession` contracts. Because one of the contracts requires a session, the service uses the <xref:System.ServiceModel.InstanceContextMode> instance mode to maintain the state over the lifetime of the session.  
+ The service class implements both the `ICalculator` and `ICalculatorSession` contracts. Because one of the contracts requires a session, the service uses the <xref:System.ServiceModel.InstanceContextMode.PerSession> instance mode to maintain the state over the lifetime of the session.  
   
  The service configuration has been modified to define two endpoints to expose each contract. The `ICalculator` endpoint is exposed at the base address using a `basicHttpBinding`. The `ICalculatorSession` endpoint is exposed at the baseaddress/session using a `wsHttpBinding` with the `bindingConfiguration` attribute set to `BindingWithSession`, as shown in the following sample configuration.  
   

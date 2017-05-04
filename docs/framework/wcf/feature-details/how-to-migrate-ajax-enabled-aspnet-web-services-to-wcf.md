@@ -93,7 +93,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
     { … }  
     ```  
   
-7.  Add the <xref:System.ServiceModel.Web.WebInvokeAttribute> to the `HelloWorld` operation and set the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> property to return <xref:System.ServiceModel.Web.WebMessageFormat>. Note that, if not set, the default return type is <xref:System.ServiceModel.Web.WebMessageFormat>.  
+7.  Add the <xref:System.ServiceModel.Web.WebInvokeAttribute> to the `HelloWorld` operation and set the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> property to return <xref:System.ServiceModel.Web.WebMessageFormat.Xml>. Note that, if not set, the default return type is <xref:System.ServiceModel.Web.WebMessageFormat.Json>.  
   
     ```  
     [OperationContract]  

@@ -81,7 +81,7 @@ The <xref:System.Xml.XmlDocument> class does not validate the XML in the Documen
 > [!NOTE]
 >  The XML data is loaded into the DOM despite schema validation errors unless your <xref:System.Xml.Schema.ValidationEventHandler> raises an exception to stop the process.  
 >   
->  Schema validation warnings are not reported unless the <xref:System.Xml.Schema.XmlSchemaValidationFlags> flag is specified to the <xref:System.Xml.XmlReaderSettings> object.  
+>  Schema validation warnings are not reported unless the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ReportValidationWarnings> flag is specified to the <xref:System.Xml.XmlReaderSettings> object.  
   
  For examples illustrating the <xref:System.Xml.Schema.ValidationEventHandler>, see "Validating an XML Document As It Is Loaded into the DOM" and "Validating an XML Document in the DOM" above.  
   

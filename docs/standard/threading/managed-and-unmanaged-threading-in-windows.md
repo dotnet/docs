@@ -58,7 +58,7 @@ Management of all threads is done through the <xref:System.Threading.Thread> cla
   
  Managed objects that are exposed to COM behave as if they had aggregated the free-threaded marshaler. In other words, they can be called from any COM apartment in a free-threaded manner. The only managed objects that do not exhibit this free-threaded behavior are those objects that derive from <xref:System.EnterpriseServices.ServicedComponent>or <xref:System.Runtime.InteropServices.StandardOleMarshalObject>.  
   
- In the managed world, there is no support for the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> unless you use contexts and context-bound managed instances. If you are using Enterprise Services, then your object must derive from <xref:System.EnterpriseServices> (which is itself derived from <xref:System.ContextBoundObject>).  
+ In the managed world, there is no support for the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> unless you use contexts and context-bound managed instances. If you are using Enterprise Services, then your object must derive from <xref:System.EnterpriseServices.ServicedComponent> (which is itself derived from <xref:System.ContextBoundObject>).  
   
  When managed code calls out to COM objects, it always follows COM rules. In other words, it calls through COM apartment proxies and COM+ 1.0 context wrappers as dictated by OLE32.  
   

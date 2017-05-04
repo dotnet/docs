@@ -108,7 +108,7 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUD
 ## Reading Messages  
  The primary way to read a message body is to call <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A>. You get back an <xref:System.Xml.XmlDictionaryReader> that you can use to read the message body. Note that the <xref:System.ServiceModel.Channels.Message> transitions to the Read state as soon as <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> is called, and not when you use the returned XML reader.  
   
- The <xref:System.ServiceModel.Channels.Message.GetBody%2A> method also enables you to access the message body as a typed object. Internally, this method uses `GetReaderAtBodyContents`, and so it also transitions the message state to the <xref:System.ServiceModel.Channels.MessageState> state (see the <xref:System.ServiceModel.Channels.Message.State%2A> property).  
+ The <xref:System.ServiceModel.Channels.Message.GetBody%2A> method also enables you to access the message body as a typed object. Internally, this method uses `GetReaderAtBodyContents`, and so it also transitions the message state to the <xref:System.ServiceModel.Channels.MessageState.Read> state (see the <xref:System.ServiceModel.Channels.Message.State%2A> property).  
   
  It is good practice to check the <xref:System.ServiceModel.Channels.Message.IsEmpty%2A> property, in which case the message body is empty and <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> throws an <xref:System.InvalidOperationException>. Also, if it is a received message (for example, the reply), you may also want to check <xref:System.ServiceModel.Channels.Message.IsFault%2A>, which indicates whether the message contains a fault.  
   

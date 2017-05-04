@@ -86,12 +86,12 @@ manager: "wpickett"
   
 |StringComparison member|Description|  
 |-----------------------------|-----------------|  
-|<xref:System.StringComparison>|Performs a case-sensitive comparison using the current culture.|  
-|<xref:System.StringComparison>|Performs a case-insensitive comparison using the current culture.|  
-|<xref:System.StringComparison>|Performs a case-sensitive comparison using the invariant culture.|  
-|<xref:System.StringComparison>|Performs a case-insensitive comparison using the invariant culture.|  
-|<xref:System.StringComparison>|Performs an ordinal comparison.|  
-|<xref:System.StringComparison>|Performs a case-insensitive ordinal comparison.|  
+|<xref:System.StringComparison.CurrentCulture>|Performs a case-sensitive comparison using the current culture.|  
+|<xref:System.StringComparison.CurrentCultureIgnoreCase>|Performs a case-insensitive comparison using the current culture.|  
+|<xref:System.StringComparison.InvariantCulture>|Performs a case-sensitive comparison using the invariant culture.|  
+|<xref:System.StringComparison.InvariantCultureIgnoreCase>|Performs a case-insensitive comparison using the invariant culture.|  
+|<xref:System.StringComparison.Ordinal>|Performs an ordinal comparison.|  
+|<xref:System.StringComparison.OrdinalIgnoreCase>|Performs a case-insensitive ordinal comparison.|  
   
  For example, the <xref:System.String.IndexOf%2A> method, which returns the index of a substring in a <xref:System.String> object that matches either a character or a string, has nine overloads:  
   
@@ -234,10 +234,10 @@ manager: "wpickett"
   
 |Data|Behavior|Corresponding System.StringComparison<br /><br /> value|  
 |----------|--------------|-----------------------------------------------------|  
-|Case-sensitive internal identifiers.<br /><br /> Case-sensitive identifiers in standards such as XML and HTTP.<br /><br /> Case-sensitive security-related settings.|A non-linguistic identifier, where bytes match exactly.|<xref:System.StringComparison>|  
-|Case-insensitive internal identifiers.<br /><br /> Case-insensitive identifiers in standards such as XML and HTTP.<br /><br /> File paths.<br /><br /> Registry keys and values.<br /><br /> Environment variables.<br /><br /> Resource identifiers (for example, handle names).<br /><br /> Case-insensitive security-related settings.|A non-linguistic identifier, where case is irrelevant; especially data stored in most Windows system services.|<xref:System.StringComparison>|  
-|Some persisted, linguistically relevant data.<br /><br /> Display of linguistic data that requires a fixed sort order.|Culturally agnostic data that still is linguistically relevant.|<xref:System.StringComparison><br /><br /> -or-<br /><br /> <xref:System.StringComparison>|  
-|Data displayed to the user.<br /><br /> Most user input.|Data that requires local linguistic customs.|<xref:System.StringComparison><br /><br /> -or-<br /><br /> <xref:System.StringComparison>|  
+|Case-sensitive internal identifiers.<br /><br /> Case-sensitive identifiers in standards such as XML and HTTP.<br /><br /> Case-sensitive security-related settings.|A non-linguistic identifier, where bytes match exactly.|<xref:System.StringComparison.Ordinal>|  
+|Case-insensitive internal identifiers.<br /><br /> Case-insensitive identifiers in standards such as XML and HTTP.<br /><br /> File paths.<br /><br /> Registry keys and values.<br /><br /> Environment variables.<br /><br /> Resource identifiers (for example, handle names).<br /><br /> Case-insensitive security-related settings.|A non-linguistic identifier, where case is irrelevant; especially data stored in most Windows system services.|<xref:System.StringComparison.OrdinalIgnoreCase>|  
+|Some persisted, linguistically relevant data.<br /><br /> Display of linguistic data that requires a fixed sort order.|Culturally agnostic data that still is linguistically relevant.|<xref:System.StringComparison.InvariantCulture><br /><br /> -or-<br /><br /> <xref:System.StringComparison.InvariantCultureIgnoreCase>|  
+|Data displayed to the user.<br /><br /> Most user input.|Data that requires local linguistic customs.|<xref:System.StringComparison.CurrentCulture><br /><br /> -or-<br /><br /> <xref:System.StringComparison.CurrentCultureIgnoreCase>|  
   
  [Back to top](#top)  
   

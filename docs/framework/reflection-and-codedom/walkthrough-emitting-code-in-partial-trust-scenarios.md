@@ -28,7 +28,7 @@ manager: "wpickett"
 Reflection emit uses the same API set in full or partial trust, but some features require special permissions in partially trusted code. In addition, reflection emit has a feature, anonymously hosted dynamic methods, that is designed to be used with partial trust and by security-transparent assemblies.  
   
 > [!NOTE]
->  Before [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)], emitting code required <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. This permission is included by default in the `FullTrust` and `Intranet` named permission sets, but not in the `Internet` permission set. Therefore, a library could be used from partial trust only if it had the <xref:System.Security.SecurityCriticalAttribute> attribute and also executed an <xref:System.Security.PermissionSet.Assert%2A> method for <xref:System.Security.Permissions.ReflectionPermissionFlag>. Such libraries require careful security review because coding errors could result in security holes. The [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] allows code to be emitted in partial trust scenarios without issuing any security demands, because generating code is not inherently a privileged operation. That is, the generated code has no more permissions than the assembly that emits it. This enables libraries that emit code to be security-transparent and removes the need to assert <xref:System.Security.Permissions.ReflectionPermissionFlag>, so that writing a secure library does not require such a thorough security review.  
+>  Before [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)], emitting code required <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. This permission is included by default in the `FullTrust` and `Intranet` named permission sets, but not in the `Internet` permission set. Therefore, a library could be used from partial trust only if it had the <xref:System.Security.SecurityCriticalAttribute> attribute and also executed an <xref:System.Security.PermissionSet.Assert%2A> method for <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>. Such libraries require careful security review because coding errors could result in security holes. The [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] allows code to be emitted in partial trust scenarios without issuing any security demands, because generating code is not inherently a privileged operation. That is, the generated code has no more permissions than the assembly that emits it. This enables libraries that emit code to be security-transparent and removes the need to assert <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>, so that writing a secure library does not require such a thorough security review.  
   
  This walkthrough illustrates the following tasks:  
   
@@ -56,7 +56,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
 ### Creating Sandboxed Application Domains  
  To create an application domain in which your assemblies run with partial trust, you must specify the set of permissions to be granted to the assemblies by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method overload to create the application domain. The easiest way to specify the grant set is to retrieve a named permission set from security policy.  
   
- The following procedure creates a sandboxed application domain that runs your code with partial trust, to test scenarios in which emitted code can access only public members of public types. A subsequent procedure shows how to add <xref:System.Security.Permissions.ReflectionPermissionFlag>, to test scenarios in which emitted code can access nonpublic types and members in assemblies that are granted equal or lesser permissions.  
+ The following procedure creates a sandboxed application domain that runs your code with partial trust, to test scenarios in which emitted code can access only public members of public types. A subsequent procedure shows how to add <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess>, to test scenarios in which emitted code can access nonpublic types and members in assemblies that are granted equal or lesser permissions.  
   
 ##### To create an application domain with partial trust  
   
@@ -90,7 +90,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
   
 ##### To create an application domain with partial trust plus RMA  
   
-1.  Create a new <xref:System.Security.Permissions.ReflectionPermission> object with the <xref:System.Security.Permissions.ReflectionPermissionFlag> (RMA) flag, and use the <xref:System.Security.PermissionSet.SetPermission%2A?displayProperty=fullName> method to add the permission to the grant set.  
+1.  Create a new <xref:System.Security.Permissions.ReflectionPermission> object with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> (RMA) flag, and use the <xref:System.Security.PermissionSet.SetPermission%2A?displayProperty=fullName> method to add the permission to the grant set.  
   
      [!code-csharp[HowToEmitCodeInPartialTrust#7](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#7)]
      [!code-vb[HowToEmitCodeInPartialTrust#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#7)]  
@@ -186,7 +186,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
 ## Example  
   
 ### Description  
- The following code example demonstrates the use of the <xref:System.Security.Permissions.ReflectionPermissionFlag> flag to allow anonymously hosted dynamic methods to skip JIT visibility checks, but only when the target member is at an equal or lower level of trust than the assembly that emits the code.  
+ The following code example demonstrates the use of the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> flag to allow anonymously hosted dynamic methods to skip JIT visibility checks, but only when the target member is at an equal or lower level of trust than the assembly that emits the code.  
   
  The example defines a `Worker` class that can be marshaled across application domain boundaries. The class has two `AccessPrivateMethod` method overloads that emit and execute dynamic methods. The first overload emits a dynamic method that calls the private `PrivateMethod` method of the `Worker` class, and it can emit the dynamic method with or without JIT visibility checks. The second overload emits a dynamic method that accesses an `internal` property (`Friend` property in Visual Basic) of the <xref:System.String> class.  
   

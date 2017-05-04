@@ -57,12 +57,12 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:Syst
   
 4.  Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Anchor%2A> property to `None`. The <xref:System.Windows.Forms.Button> control is resized and centered in the cell.  
   
-5.  Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>. The <xref:System.Windows.Forms.Button> control moves to align with the left border of the cell. The <xref:System.Windows.Forms.Button> control retains its width, but its height is resized to fill the cell vertically.  
+5.  Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Left>. The <xref:System.Windows.Forms.Button> control moves to align with the left border of the cell. The <xref:System.Windows.Forms.Button> control retains its width, but its height is resized to fill the cell vertically.  
   
     > [!NOTE]
     >  This is the same behavior that occurs in other container controls.  
   
-6.  Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>. The <xref:System.Windows.Forms.Button> control is resized to fill the cell.  
+6.  Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>. The <xref:System.Windows.Forms.Button> control is resized to fill the cell.  
   
 ## Example  
  The following illustration shows five buttons anchored in five separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  

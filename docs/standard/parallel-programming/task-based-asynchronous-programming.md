@@ -93,14 +93,14 @@ The Task Parallel Library (TPL) is based on the concept of a *task*, which repre
   
 |<xref:System.Threading.Tasks.TaskCreationOptions> parameter value|Description|  
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
-|<xref:System.Threading.Tasks.TaskCreationOptions>|The default when no option is specified. The scheduler uses its default heuristics to schedule the task.|  
-|<xref:System.Threading.Tasks.TaskCreationOptions>|Specifies that the task should be scheduled so that tasks created sooner will be more likely to be executed sooner, and tasks created later will be more likely to execute later.|  
-|<xref:System.Threading.Tasks.TaskCreationOptions>|Specifies that the task represents a long-running operation.|  
-|<xref:System.Threading.Tasks.TaskCreationOptions>|Specifies that a task should be created as an attached child of the current task, if one exists. For more information, see [Attached and Detached Child Tasks](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md).|  
-|<xref:System.Threading.Tasks.TaskCreationOptions>|Specifies that if an inner task specifies the `AttachedToParent` option, that task will not become an attached child task.|  
-|<xref:System.Threading.Tasks.TaskCreationOptions>|Specifies that the task scheduler for tasks created by calling methods like <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> or <xref:System.Threading.Tasks.Task%601.ContinueWith%2A?displayProperty=fullName> from within a particular task is the default scheduler instead of the scheduler on which this task is running.|  
+|<xref:System.Threading.Tasks.TaskCreationOptions.None>|The default when no option is specified. The scheduler uses its default heuristics to schedule the task.|  
+|<xref:System.Threading.Tasks.TaskCreationOptions.PreferFairness>|Specifies that the task should be scheduled so that tasks created sooner will be more likely to be executed sooner, and tasks created later will be more likely to execute later.|  
+|<xref:System.Threading.Tasks.TaskCreationOptions.LongRunning>|Specifies that the task represents a long-running operation.|  
+|<xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent>|Specifies that a task should be created as an attached child of the current task, if one exists. For more information, see [Attached and Detached Child Tasks](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md).|  
+|<xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach>|Specifies that if an inner task specifies the `AttachedToParent` option, that task will not become an attached child task.|  
+|<xref:System.Threading.Tasks.TaskCreationOptions.HideScheduler>|Specifies that the task scheduler for tasks created by calling methods like <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> or <xref:System.Threading.Tasks.Task%601.ContinueWith%2A?displayProperty=fullName> from within a particular task is the default scheduler instead of the scheduler on which this task is running.|  
   
- The options may be combined by using a bitwise **OR** operation. The following example shows a task that has the <xref:System.Threading.Tasks.TaskCreationOptions> and <xref:System.Threading.Tasks.TaskContinuationOptions> option.  
+ The options may be combined by using a bitwise **OR** operation. The following example shows a task that has the <xref:System.Threading.Tasks.TaskCreationOptions.LongRunning> and <xref:System.Threading.Tasks.TaskContinuationOptions.PreferFairness> option.  
   
  [!code-csharp[TPL_TaskIntro#03](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/taskintro.cs#03)]
  [!code-vb[TPL_TaskIntro#03](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/tpl_intro.vb#03)]  
@@ -142,7 +142,7 @@ The Task Parallel Library (TPL) is based on the concept of a *task*, which repre
  For more information, see [Chaining Tasks by Using Continuation Tasks](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md).  
   
 ## Creating detached child tasks  
- When user code that is running in a task creates a new task and does not specify the <xref:System.Threading.Tasks.TaskCreationOptions> option, the new task is not synchronized with the parent task in any special way. This type of non-synchronized task is called a *detached nested task* or *detached child task*. The following example shows a task that creates one detached child task.  
+ When user code that is running in a task creates a new task and does not specify the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent> option, the new task is not synchronized with the parent task in any special way. This type of non-synchronized task is called a *detached nested task* or *detached child task*. The following example shows a task that creates one detached child task.  
   
  [!code-csharp[TPL_TaskIntro#07](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/taskintro.cs#07)]
  [!code-vb[TPL_TaskIntro#07](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/tpl_intro.vb#07)]  
@@ -150,7 +150,7 @@ The Task Parallel Library (TPL) is based on the concept of a *task*, which repre
  Note that the parent task does not wait for the detached child task to finish.  
   
 ## Creating child tasks  
- When user code that is running in a task creates a task with the <xref:System.Threading.Tasks.TaskCreationOptions> option, the new task is known as a *attached child task* of the parent task. You can use the <xref:System.Threading.Tasks.TaskCreationOptions> option to express structured task parallelism, because the parent task implicitly waits for all attached child tasks to finish. The following example shows a parent task that creates ten attached child tasks. Note that although the example calls the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName> method to wait for the parent task to finish, it does not have to explicitly wait for the attached child tasks to complete.  
+ When user code that is running in a task creates a task with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent> option, the new task is known as a *attached child task* of the parent task. You can use the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent> option to express structured task parallelism, because the parent task implicitly waits for all attached child tasks to finish. The following example shows a parent task that creates ten attached child tasks. Note that although the example calls the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName> method to wait for the parent task to finish, it does not have to explicitly wait for the attached child tasks to complete.  
   
  [!code-csharp[TPL_TaskIntro#8](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/child1.cs#8)]
  [!code-vb[TPL_TaskIntro#8](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/child1.vb#8)]  

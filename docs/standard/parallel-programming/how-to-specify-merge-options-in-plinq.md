@@ -28,7 +28,7 @@ This example shows how to specify the merge options that will apply to all subse
  [!code-csharp[PLINQ#23](../../../samples/snippets/csharp/VS_Snippets_Misc/plinq/cs/plinqsamples.cs#23)]
  [!code-vb[PLINQ#23](../../../samples/snippets/visualbasic/VS_Snippets_Misc/plinq/vb/plinq2_vb.vb#23)]  
   
- In cases where the <xref:System.Linq.ParallelMergeOptions> option incurs an undesirable latency before the first element is yielded, try the <xref:System.Linq.ParallelMergeOptions> option to yield result elements faster and more smoothly.  
+ In cases where the <xref:System.Linq.ParallelMergeOptions.AutoBuffered> option incurs an undesirable latency before the first element is yielded, try the <xref:System.Linq.ParallelMergeOptions.NotBuffered> option to yield result elements faster and more smoothly.  
   
 ## See Also  
  <xref:System.Linq.ParallelMergeOptions>   

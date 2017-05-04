@@ -64,7 +64,7 @@ The <xref:System.Windows.Forms.DataGridView> control is designed to provide maxi
   
     -   For rows and columns, use the `DisplayedCells` or `DisplayedCellsExceptHeaders` field of the <xref:System.Windows.Forms.DataGridViewAutoSizeRowsMode>, <xref:System.Windows.Forms.DataGridViewAutoSizeColumnsMode>, and <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode> enumerations.  
   
-    -   For row headers, use the <xref:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode> or <xref:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode> field of the <xref:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode> enumeration.  
+    -   For row headers, use the <xref:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders> or <xref:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader> field of the <xref:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode> enumeration.  
   
 -   For maximum scalability, turn off automatic sizing and use programmatic resizing.  
   
@@ -131,11 +131,11 @@ The <xref:System.Windows.Forms.DataGridView> control is designed to provide maxi
   
 -   Do not handle the <xref:System.Windows.Forms.DataGridViewRowCollection.CollectionChanged?displayProperty=fullName> or <xref:System.Windows.Forms.DataGridView.RowStateChanged?displayProperty=fullName> events. These events cause rows to become unshared. Also, do not call the <xref:System.Windows.Forms.DataGridViewRowCollection.OnCollectionChanged%2A?displayProperty=fullName> or <xref:System.Windows.Forms.DataGridView.OnRowStateChanged%2A?displayProperty=fullName> methods, which raise these events.  
   
--   Do not access the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A?displayProperty=fullName> collection when the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=fullName> property value is <xref:System.Windows.Forms.DataGridViewSelectionMode>, <xref:System.Windows.Forms.DataGridViewSelectionMode>, <xref:System.Windows.Forms.DataGridViewSelectionMode>, or <xref:System.Windows.Forms.DataGridViewSelectionMode>. This causes all selected rows to become unshared.  
+-   Do not access the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A?displayProperty=fullName> collection when the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=fullName> property value is <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect>, <xref:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect>, <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect>, or <xref:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect>. This causes all selected rows to become unshared.  
   
 -   Do not call the <xref:System.Windows.Forms.DataGridView.AreAllCellsSelected%2A?displayProperty=fullName> method. This method can cause rows to become unshared.  
   
--   Do not call the <xref:System.Windows.Forms.DataGridView.SelectAll%2A?displayProperty=fullName> method when the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=fullName> property value is <xref:System.Windows.Forms.DataGridViewSelectionMode>. This causes all rows to become unshared.  
+-   Do not call the <xref:System.Windows.Forms.DataGridView.SelectAll%2A?displayProperty=fullName> method when the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=fullName> property value is <xref:System.Windows.Forms.DataGridViewSelectionMode.CellSelect>. This causes all rows to become unshared.  
   
 -   Do not set the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> or <xref:System.Windows.Forms.DataGridViewCell.Selected%2A> property of a cell to `false` when the corresponding property in its column is set to `true`. This causes all rows to become unshared.  
   

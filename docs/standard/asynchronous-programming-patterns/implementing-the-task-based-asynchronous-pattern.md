@@ -69,13 +69,13 @@ You can implement the Task-based Asynchronous Pattern (TAP) in three ways: by us
  [!code-csharp[Conceptual.TAP_Patterns#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.tap_patterns/cs/patterns1.cs#3)]
  [!code-vb[Conceptual.TAP_Patterns#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.tap_patterns/vb/patterns1.vb#3)]  
   
- Compute-bound tasks end in a <xref:System.Threading.Tasks.TaskStatus> state if at least one of the following conditions is true:  
+ Compute-bound tasks end in a <xref:System.Threading.Tasks.TaskStatus.Canceled> state if at least one of the following conditions is true:  
   
--   A cancellation request arrives through the <xref:System.Threading.CancellationToken> object, which is provided as an argument to the creation method (for example, `StartNew` or `Run`) before the task transitions to the <xref:System.Threading.Tasks.TaskStatus> state.  
+-   A cancellation request arrives through the <xref:System.Threading.CancellationToken> object, which is provided as an argument to the creation method (for example, `StartNew` or `Run`) before the task transitions to the <xref:System.Threading.Tasks.TaskStatus.Running> state.  
   
 -   An <xref:System.OperationCanceledException> exception goes unhandled within the body of such a task, that exception contains the same <xref:System.Threading.CancellationToken> that is passed to the task, and that token shows that cancellation is requested.  
   
- If another exception goes unhandled within the body of the task, the task ends in the <xref:System.Threading.Tasks.TaskStatus> state, and any attempts to wait on the task or access its result causes an exception to be thrown.  
+ If another exception goes unhandled within the body of the task, the task ends in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, and any attempts to wait on the task or access its result causes an exception to be thrown.  
   
 ### I/O-bound Tasks  
  To create a task that should not be directly backed by a thread for the entirety of its execution, use the <xref:System.Threading.Tasks.TaskCompletionSource%601> type. This type exposes a <xref:System.Threading.Tasks.TaskCompletionSource%601.Task%2A> property that returns an associated <xref:System.Threading.Tasks.Task%601> instance. The life cycle of this task is controlled by <xref:System.Threading.Tasks.TaskCompletionSource%601> methods such as <xref:System.Threading.Tasks.TaskCompletionSource%601.SetResult%2A>, <xref:System.Threading.Tasks.TaskCompletionSource%601.SetException%2A>, <xref:System.Threading.Tasks.TaskCompletionSource%601.SetCanceled%2A>, and their `TrySet` variants.  

@@ -30,9 +30,9 @@ Securing a service with both transport and message credentials uses the best of 
   
 1.  Use the HttpCfg.exe tool to bind an SSL certificate to a port on the machine. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
   
-2.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class and set the <xref:System.ServiceModel.WSHttpSecurity.Mode%2A> property to <xref:System.ServiceModel.SecurityMode>.  
+2.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class and set the <xref:System.ServiceModel.WSHttpSecurity.Mode%2A> property to <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>.  
   
-3.  Set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A> property to an appropriate value. ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md).) The following code uses the <xref:System.ServiceModel.MessageCredentialType> value.  
+3.  Set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A> property to an appropriate value. ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md).) The following code uses the <xref:System.ServiceModel.MessageCredentialType.Certificate> value.  
   
 4.  Create an instance of the <xref:System.Uri> class with an appropriate base address. Note that the address must use the "HTTPS" scheme and must contain the actual name of the machine and the port number that the SSL certificate is bound to. (Alternatively, you can set the base address in configuration.)  
   
@@ -45,9 +45,9 @@ Securing a service with both transport and message credentials uses the best of 
   
 ### To use the NetTcpBinding with a certificate for transport security (in code)  
   
-1.  Create an instance of the <xref:System.ServiceModel.NetTcpBinding> class and set the <xref:System.ServiceModel.NetTcpSecurity.Mode%2A> property to <xref:System.ServiceModel.SecurityMode>.  
+1.  Create an instance of the <xref:System.ServiceModel.NetTcpBinding> class and set the <xref:System.ServiceModel.NetTcpSecurity.Mode%2A> property to <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>.  
   
-2.  Set the <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType%2A> to an appropriate value. The following code uses the <xref:System.ServiceModel.MessageCredentialType> value.  
+2.  Set the <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType%2A> to an appropriate value. The following code uses the <xref:System.ServiceModel.MessageCredentialType.Certificate> value.  
   
 3.  Create an instance of the <xref:System.Uri> class with an appropriate base address. Note that the address must use the "net.tcp" scheme. (Alternatively, you can set the base address in configuration.)  
   
@@ -64,11 +64,11 @@ Securing a service with both transport and message credentials uses the best of 
   
 ### To use the NetTcpBinding with Windows for transport security (in code)  
   
-1.  Create an instance of the <xref:System.ServiceModel.NetTcpBinding> class and set the <xref:System.ServiceModel.NetTcpSecurity.Mode%2A> property to <xref:System.ServiceModel.SecurityMode>.  
+1.  Create an instance of the <xref:System.ServiceModel.NetTcpBinding> class and set the <xref:System.ServiceModel.NetTcpSecurity.Mode%2A> property to <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>.  
   
-2.  Set the transport security to use Windows by setting the <xref:System.ServiceModel.TcpTransportSecurity.ClientCredentialType%2A> to <xref:System.ServiceModel.TcpClientCredentialType>. (Note that this is the default.)  
+2.  Set the transport security to use Windows by setting the <xref:System.ServiceModel.TcpTransportSecurity.ClientCredentialType%2A> to <xref:System.ServiceModel.TcpClientCredentialType.Windows>. (Note that this is the default.)  
   
-3.  Set the <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType%2A> to an appropriate value. The following code uses the <xref:System.ServiceModel.MessageCredentialType> value.  
+3.  Set the <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType%2A> to an appropriate value. The following code uses the <xref:System.ServiceModel.MessageCredentialType.Certificate> value.  
   
 4.  Create an instance of the <xref:System.Uri> class with an appropriate base address. Note that the address must use the "net.tcp" scheme. (Alternatively, you can set the base address in configuration.)  
   

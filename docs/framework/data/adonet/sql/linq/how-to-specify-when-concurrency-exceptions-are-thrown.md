@@ -20,9 +20,9 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], a <xref:
   
  Before you submit your changes to the database, you can specify when concurrency exceptions should be thrown:  
   
--   Throw the exception at the first failure (<xref:System.Data.Linq.ConflictMode>).  
+-   Throw the exception at the first failure (<xref:System.Data.Linq.ConflictMode.FailOnFirstConflict>).  
   
--   Finish all update tries, accumulate all failures, and report the accumulated failures in the exception (<xref:System.Data.Linq.ConflictMode>).  
+-   Finish all update tries, accumulate all failures, and report the accumulated failures in the exception (<xref:System.Data.Linq.ConflictMode.ContinueOnConflict>).  
   
  When thrown, the <xref:System.Data.Linq.ChangeConflictException> exception provides access to a <xref:System.Data.Linq.ChangeConflictCollection> collection. This collection provides details for each conflict (mapped to a single failed update try), including access to the <xref:System.Data.Linq.ObjectChangeConflict.MemberConflicts%2A> collection. Each member conflict maps to a single member in the update that failed the concurrency check.  
   

@@ -36,10 +36,10 @@ A cache policy defines rules that are used to determine whether a request can be
 |Class name|Description|  
 |----------------|-----------------|  
 |<xref:System.Net.Cache.HttpRequestCachePolicy>|Represents location-based and time-based cache policies for resources requested using <xref:System.Net.HttpWebRequest> objects.|  
-|<xref:System.Net.Cache.RequestCachePolicy>|Represents location-based cache policies or the <xref:System.Net.Cache.RequestCacheLevel> time-based cache policy for resources requested using <xref:System.Net.WebRequest> objects.|  
+|<xref:System.Net.Cache.RequestCachePolicy>|Represents location-based cache policies or the <xref:System.Net.Cache.RequestCacheLevel.Default> time-based cache policy for resources requested using <xref:System.Net.WebRequest> objects.|  
 |<xref:System.Net.Cache.HttpCacheAgeControl>|Specifies values used to create time-based <xref:System.Net.Cache.HttpRequestCachePolicy> objects.|  
 |<xref:System.Net.Cache.HttpRequestCacheLevel>|Specifies values used to create location-based and time-based <xref:System.Net.Cache.HttpRequestCachePolicy> objects.|  
-|<xref:System.Net.Cache.RequestCacheLevel>|Specifies values used to create location-based or the <xref:System.Net.Cache.RequestCacheLevel> time-based <xref:System.Net.Cache.RequestCachePolicy> objects.|  
+|<xref:System.Net.Cache.RequestCacheLevel>|Specifies values used to create location-based or the <xref:System.Net.Cache.RequestCacheLevel.Default> time-based <xref:System.Net.Cache.RequestCachePolicy> objects.|  
   
  You can define a cache policy for all requests made by your application or for individual requests. When you specify both an application-level cache policy and a request-level cache policy, the request-level policy is used. You can specify an application-level cache policy programmatically or by using the application or machine configuration files. For more information, see [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
   

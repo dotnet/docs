@@ -21,7 +21,7 @@ User-defined types (UDTs) allow a developer to extend the server's scalar type s
 > [!NOTE]
 >  You must install the .NET Framework 3.5 SP1 (or later) to take advantage of the enhanced SqlClient support for large UDTs.  
   
- Previously, UDTs were restricted to a maximum size of 8 kilobytes. In SQL Server 2008, this restriction has been removed for UDTs that have a format of <xref:Microsoft.SqlServer.Server.Format>.  
+ Previously, UDTs were restricted to a maximum size of 8 kilobytes. In SQL Server 2008, this restriction has been removed for UDTs that have a format of <xref:Microsoft.SqlServer.Server.Format.UserDefined>.  
   
  For the complete documentation for user-defined types, see the version of SQL Server Books Online for the version of SQL Server you are using.  
   

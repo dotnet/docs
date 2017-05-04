@@ -54,8 +54,8 @@ Your custom controls will sometimes expose a collection as a property. This walk
     |Property|Change to|  
     |--------------|---------------|  
     |**Multiline**|`true`|  
-    |**Dock**|<xref:System.Windows.Forms.DockStyle>|  
-    |**ScrollBars**|<xref:System.Windows.Forms.ScrollBars>|  
+    |**Dock**|<xref:System.Windows.Forms.DockStyle.Fill>|  
+    |**ScrollBars**|<xref:System.Windows.Forms.ScrollBars.Vertical>|  
     |**ReadOnly**|`true`|  
   
 6.  In the **Code Editor**, declare a string array field named `stringsValue` in `SerializationDemoControl`.  
@@ -121,7 +121,7 @@ Your custom controls will sometimes expose a collection as a property. This walk
             "yellow"};  
     ```  
   
-6.  In the **Code Editor**, change the value of the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> on the `Strings` property to <xref:System.ComponentModel.DesignerSerializationVisibility>.  
+6.  In the **Code Editor**, change the value of the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> on the `Strings` property to <xref:System.ComponentModel.DesignerSerializationVisibility.Hidden>.  
   
 7.  [Visual Basic]  
   

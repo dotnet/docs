@@ -285,7 +285,7 @@ ngen /? | /help
   
 <a name="DependencyHint"></a>   
 ### Specifying a binding hint for a dependency  
- Apply the <xref:System.Runtime.CompilerServices.DependencyAttribute> to an assembly to indicate the likelihood that a specified dependency will be loaded. <xref:System.Runtime.CompilerServices.LoadHint?displayProperty=fullName> indicates that hard binding is appropriate, <xref:System.Runtime.CompilerServices.LoadHint> indicates that the default for the dependency should be used, and <xref:System.Runtime.CompilerServices.LoadHint> indicates that hard binding is not appropriate.  
+ Apply the <xref:System.Runtime.CompilerServices.DependencyAttribute> to an assembly to indicate the likelihood that a specified dependency will be loaded. <xref:System.Runtime.CompilerServices.LoadHint?displayProperty=fullName> indicates that hard binding is appropriate, <xref:System.Runtime.CompilerServices.LoadHint.Default> indicates that the default for the dependency should be used, and <xref:System.Runtime.CompilerServices.LoadHint.Sometimes> indicates that hard binding is not appropriate.  
   
  The following code shows the attributes for an assembly that has two dependencies. The first dependency (Assembly1) is an appropriate candidate for hard binding, and the second (Assembly2) is not.  
   

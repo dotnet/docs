@@ -90,7 +90,7 @@ By using a stateful security context token (SCT) in a secure session, the sessio
     ```  
   
 ## Example  
- The following code example creates a custom binding that uses the <xref:System.ServiceModel.Configuration.AuthenticationMode> authentication mode to bootstrap a secure session.  
+ The following code example creates a custom binding that uses the <xref:System.ServiceModel.Configuration.AuthenticationMode.MutualCertificate> authentication mode to bootstrap a secure session.  
   
  [!code-csharp[c_CreateStatefulSCT#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_createstatefulsct/cs/secureservice.cs#2)]
  [!code-vb[c_CreateStatefulSCT#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_createstatefulsct/vb/secureservice.vb#2)]  

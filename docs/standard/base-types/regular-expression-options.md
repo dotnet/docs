@@ -25,16 +25,16 @@ manager: "wpickett"
   
 |RegexOptions member|Inline character|Effect|  
 |-------------------------|----------------------|------------|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|Not available|Use default behavior. For more information, see [Default Options](#Default).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|`i`|Use case-insensitive matching. For more information, see [Case-Insensitive Matching](#Case).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|`m`|Use multiline mode, where `^` and `$` match the beginning and end of each line (instead of the beginning and end of the input string). For more information, see [Multiline Mode](#Multiline).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|`s`|Use single-line mode, where the period (.) matches every character (instead of every character except `\n`). For more information, see [Singleline Mode](#Singleline).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|`n`|Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form `(?<`*name*`>` *subexpression*`)`. For more information, see [Explicit Captures Only](#Explicit).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|Not available|Compile the regular expression to an assembly. For more information, see [Compiled Regular Expressions](#Compiled).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|`x`|Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see [Ignore Whitespace](#Whitespace).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|Not available|Change the search direction. Search moves from right to left instead of from left to right. For more information, see [Right-to-Left Mode](#RightToLeft).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|Not available|Enable ECMAScript-compliant behavior for the expression. For more information, see [ECMAScript Matching Behavior](#ECMAScript).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|Not available|Ignore cultural differences in language. For more information, see [Comparison Using the Invariant Culture](#Invariant).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.None>|Not available|Use default behavior. For more information, see [Default Options](#Default).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase>|`i`|Use case-insensitive matching. For more information, see [Case-Insensitive Matching](#Case).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.Multiline>|`m`|Use multiline mode, where `^` and `$` match the beginning and end of each line (instead of the beginning and end of the input string). For more information, see [Multiline Mode](#Multiline).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.Singleline>|`s`|Use single-line mode, where the period (.) matches every character (instead of every character except `\n`). For more information, see [Singleline Mode](#Singleline).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture>|`n`|Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form `(?<`*name*`>` *subexpression*`)`. For more information, see [Explicit Captures Only](#Explicit).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.Compiled>|Not available|Compile the regular expression to an assembly. For more information, see [Compiled Regular Expressions](#Compiled).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace>|`x`|Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see [Ignore Whitespace](#Whitespace).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.RightToLeft>|Not available|Change the search direction. Search moves from right to left instead of from left to right. For more information, see [Right-to-Left Mode](#RightToLeft).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.ECMAScript>|Not available|Enable ECMAScript-compliant behavior for the expression. For more information, see [ECMAScript Matching Behavior](#ECMAScript).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant>|Not available|Ignore cultural differences in language. For more information, see [Comparison Using the Invariant Culture](#Invariant).|  
   
 ## Specifying the Options  
  You can specify options for regular expressions in one of three ways:  
@@ -135,9 +135,9 @@ manager: "wpickett"
   
 <a name="Case"></a>   
 ## Case-Insensitive Matching  
- The <xref:System.Text.RegularExpressions.RegexOptions> option, or the `i` inline option, provides case-insensitive matching. By default, the casing conventions of the current culture are used.  
+ The <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase> option, or the `i` inline option, provides case-insensitive matching. By default, the casing conventions of the current culture are used.  
   
- The following example defines a regular expression pattern, `\bthe\w*\b`, that matches all words starting with "the". Because the first call to the <xref:System.Text.RegularExpressions.Regex.Match%2A> method uses the default case-sensitive comparison, the output indicates that the string "The" that begins the sentence is not matched. It is matched when the <xref:System.Text.RegularExpressions.Regex.Match%2A> method is called with options set to <xref:System.Text.RegularExpressions.RegexOptions>.  
+ The following example defines a regular expression pattern, `\bthe\w*\b`, that matches all words starting with "the". Because the first call to the <xref:System.Text.RegularExpressions.Regex.Match%2A> method uses the default case-sensitive comparison, the output indicates that the string "The" that begins the sentence is not matched. It is matched when the <xref:System.Text.RegularExpressions.Regex.Match%2A> method is called with options set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase>.  
   
  [!code-csharp[Conceptual.Regex.Language.Options#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/case1.cs#1)]
  [!code-vb[Conceptual.Regex.Language.Options#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/case1.vb#1)]  

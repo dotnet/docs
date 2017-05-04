@@ -79,7 +79,7 @@ If the method call comes from a finalizer (that is, if *disposing* is `false`), 
 If you implement the dispose pattern for a base class, you must provide the following:  
   
 > [!IMPORTANT]
-> You should implement this pattern for all base classes that implement <xref:System.IDisposable> and are not `sealed` (`NotInheritable` in Visual Basic).  
+> You should implement this pattern for all base classes that implement <xref:System.IDisposable.Dispose> and are not `sealed` (`NotInheritable` in Visual Basic).  
   
 * A <xref:System.IDisposable.Dispose%2A> implementation that calls the `Dispose(Boolean)` method.  
   

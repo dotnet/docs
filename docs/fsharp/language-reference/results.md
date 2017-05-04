@@ -36,10 +36,9 @@ The `Result` type is typically used in monadic error-handling, which is often re
 
 ```fsharp
 // Define a simple type which has fields that can be validated
-type Request = {
-    Name: string
-    Email: string
-}
+type Request = 
+    { Name: string
+      Email: string }
 
 // Define some logic for what defines a valid name.
 //
@@ -60,22 +59,22 @@ let validateEmail req =
     | s when s.EndsWith("bananas.com") -> Error "No email from bananas.com is allowed."
     | _ -> OK req
 
-let validateRequest req =
-    req 
-    |> validateName
-    |> Result.bind validateEmail // If `validateName` failed, it would short-circuit to the error case in Result.bind.                      
+let validateRequest reqResult =
+    reqResult 
+    |> Result.bind validateName
+    |> Result.bind validateEmail
 
 let test() = 
     // Now, create a Request and pattern match on the result.
     let req1 = { Name = "Phillip"; Email = "phillip@contoso.biz" }
-    let res1 = validateRequest req1
+    let res1 = validateRequest (OK req1)
     match res1 with
     | Ok req -> printfn "My request was valid! Name: %s Email %s" req1.Name req1.Email
     | Error e -> printfn "Error: %s" e
     // Prints " "My request was valid!  Name: Phillip Email: phillip@consoto.biz"
 
     let req2 = { Name = "Phillip"; Email = "phillip@bananas.biz" }
-    let res2 = validateRequest req1
+    let res2 = validateRequest (OK req2)
     match res2 with
     | Ok req -> printfn "My request was valid! Name: %s Email %s" req1.Name req1.Email
     | Error e -> printfn "Error: %s" e

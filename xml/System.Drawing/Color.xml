@@ -1,6 +1,6 @@
 <Type Name="Color" FullName="System.Drawing.Color">
   <TypeSignature Language="C#" Value="public struct Color" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Color extends System.ValueType" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Color extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Color" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
@@ -14,6 +14,17 @@
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Editor("System.Drawing.Design.ColorEditor, System.Drawing.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{NameAndARGBValue}")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents an ARGB (alpha, red, green, blue) color.</summary>
     <remarks>

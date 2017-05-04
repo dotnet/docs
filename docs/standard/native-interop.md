@@ -125,7 +125,7 @@ namespace ConsoleApplication1 {
         // Import user32.dll (containing the function we need) and define
         // the method corresponding to the native function.
         [DllImport("user32.dll")]
-        static extern int EnumWindows(EnumWC hWnd, IntPtr lParam);
+        static extern int EnumWindows(EnumWC lpEnumFunc, IntPtr lParam);
 
         // Define the implementation of the delegate; here, we simply output the window handle.
         static bool OutputWindow(IntPtr hwnd, IntPtr lParam) {

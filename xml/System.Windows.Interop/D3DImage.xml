@@ -160,9 +160,7 @@
   
  <paramref name="dirtyRect.Y" /> &lt; 0  
   
- <paramref name="dirtyRect.Width" /> &lt; 0 or <paramref name="dirtyRect.Width" /> &gt; <see cref="P:System.Windows.Interop.D3DImage.PixelWidth" />  
-  
- <paramref name="dirtyRect.Height" /> &lt; 0 or <paramref name="dirtyRect.Height" /> &gt; <see cref="P:System.Windows.Interop.D3DImage.PixelHeight" /></exception>
+ <paramref name="dirtyRect.Width" /> &lt; 0 or <paramref name="dirtyRect.Width" /> &gt; <see cref="P:System.Windows.Interop.D3DImage.PixelWidth" /><paramref name="dirtyRect.Height" /> &lt; 0 or <paramref name="dirtyRect.Height" /> &gt; <see cref="P:System.Windows.Interop.D3DImage.PixelHeight" /></exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>

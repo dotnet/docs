@@ -114,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.MenuItemCollectionEditor.GetEditStyle%2A> method always returns the  <xref:System.Drawing.Design.UITypeEditorEditStyle> value, which indicates that the user interface for the editor is a modal dialog box.  
+ The <xref:System.Web.UI.Design.WebControls.MenuItemCollectionEditor.GetEditStyle%2A> method always returns the  <xref:System.Drawing.Design.UITypeEditorEditStyle.Modal> value, which indicates that the user interface for the editor is a modal dialog box.  
   
  The `context` parameter is not used.  
   

@@ -99,7 +99,7 @@ Example of the appearance of digits in different cultures
 ## Remarks  
  The default value of the <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> property is `null`, which is interpreted as the "en-us" (United States English) culture.  
   
- If <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> is not set to <xref:System.Windows.Media.NumberCultureSource>, this property is ignored.  
+ If <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> is not set to <xref:System.Windows.Media.NumberCultureSource.Override>, this property is ignored.  
   
  This reference page represents two identically named but not entirely equivalent usages for the <xref:System.Windows.Media.NumberSubstitution.CultureOverride%2A> property:  
   
@@ -167,7 +167,7 @@ Example of the appearance of digits in different cultures
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value of the <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> property is <xref:System.Windows.Media.NumberCultureSource>, which is the culture of the text run.  
+ The default value of the <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> property is <xref:System.Windows.Media.NumberCultureSource.Text>, which is the culture of the text run.  
   
  This reference page represents two identically named but not entirely equivalent usages for the <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> property:  
   
@@ -435,7 +435,7 @@ Example of the appearance of digits in different cultures
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value of the <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> property is <xref:System.Windows.Media.NumberSubstitutionMethod>, which specifies that the substitution method should be determined based on the number culture's <xref:System.Globalization.NumberFormatInfo.DigitSubstitution%2A> property value.  
+ The default value of the <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> property is <xref:System.Windows.Media.NumberSubstitutionMethod.AsCulture>, which specifies that the substitution method should be determined based on the number culture's <xref:System.Globalization.NumberFormatInfo.DigitSubstitution%2A> property value.  
   
  This reference page represents two identically named but not entirely equivalent usages for the <xref:System.Windows.Media.NumberSubstitution.Substitution%2A> property:  
   

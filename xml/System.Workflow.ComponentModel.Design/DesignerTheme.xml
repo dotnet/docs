@@ -255,9 +255,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Classes that inherit from <xref:System.Workflow.ComponentModel.Design.DesignerTheme> use this method to make necessary changes when the <xref:System.Workflow.ComponentModel.Design.AmbientProperty> enumeration value changes from <xref:System.Workflow.ComponentModel.Design.AmbientProperty> to <xref:System.Workflow.ComponentModel.Design.AmbientProperty> or <xref:System.Workflow.ComponentModel.Design.AmbientProperty> to <xref:System.Workflow.ComponentModel.Design.AmbientProperty>.  
+ Classes that inherit from <xref:System.Workflow.ComponentModel.Design.DesignerTheme> use this method to make necessary changes when the <xref:System.Workflow.ComponentModel.Design.AmbientProperty> enumeration value changes from <xref:System.Workflow.ComponentModel.Design.AmbientProperty.DesignerSize> to <xref:System.Workflow.ComponentModel.Design.AmbientProperty.OperatingSystemSetting> or <xref:System.Workflow.ComponentModel.Design.AmbientProperty.OperatingSystemSetting> to <xref:System.Workflow.ComponentModel.Design.AmbientProperty.DesignerSize>.  
   
- The <xref:System.Workflow.ComponentModel.Design.AmbientProperty> enumeration determines where a designer theme obtains its ambient property settings. If the <xref:System.Workflow.ComponentModel.Design.AmbientProperty> value is set, the designer theme class obtains its ambient settings from the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.AmbientTheme%2A> property. If the <xref:System.Workflow.ComponentModel.Design.AmbientProperty> value is set, the designer theme class obtains its ambient settings from the operating system on which the designer is installed.  
+ The <xref:System.Workflow.ComponentModel.Design.AmbientProperty> enumeration determines where a designer theme obtains its ambient property settings. If the <xref:System.Workflow.ComponentModel.Design.AmbientProperty.DesignerSize> value is set, the designer theme class obtains its ambient settings from the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.AmbientTheme%2A> property. If the <xref:System.Workflow.ComponentModel.Design.AmbientProperty.OperatingSystemSetting> value is set, the designer theme class obtains its ambient settings from the operating system on which the designer is installed.  
   
  ]]></format>
         </remarks>

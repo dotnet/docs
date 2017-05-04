@@ -648,28 +648,17 @@
         <summary>Gets or sets the specified wrapping mode for the style. The default value is <see cref="F:System.Web.UI.MobileControls.Wrapping.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>An enumerated value that specifies the wrapping mode for the style.  
   
- <list type="table">  
-<listheader>  
-<term> Exception type  
+ <list type="table"><listheader><term> Exception type  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="T:System.Exception" />  
-  
- </term>  
-<description> The <see cref="P:System.Web.UI.MobileControls.StyleSheet.Wrapping" /> property was accessed at run time.  
+ </description></listheader><item><term><see cref="T:System.Exception" /></term><description> The <see cref="P:System.Web.UI.MobileControls.StyleSheet.Wrapping" /> property was accessed at run time.  
   
  -or-  
   
  An attempt was made to set the property.  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

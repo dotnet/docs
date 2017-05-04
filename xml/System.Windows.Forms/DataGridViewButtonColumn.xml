@@ -25,7 +25,7 @@
   
  To display the same button text for every cell, set the <xref:System.Windows.Forms.DataGridViewButtonColumn.UseColumnTextForButtonValue%2A> property to `true` and set the <xref:System.Windows.Forms.DataGridViewButtonColumn.Text%2A> property to the desired button text.  
   
- The default sort mode for this column type is <xref:System.Windows.Forms.DataGridViewColumnSortMode>.  
+ The default sort mode for this column type is <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable>.  
   
  To respond to user button clicks, handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> or <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=fullName> event. In the event handler, you can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A?displayProperty=fullName> property to determine whether the click occurred in the button column. You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A?displayProperty=fullName> property to determine whether the click occurred in a button cell and not on the column header.  
   
@@ -174,7 +174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default <xref:System.Windows.Forms.DataGridViewCellStyle> returned by this property has an initial <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property value of <xref:System.Windows.Forms.DataGridViewContentAlignment>. This value overrides the value specified in the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control, but may be overridden by other cell style properties. For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
+ The default <xref:System.Windows.Forms.DataGridViewCellStyle> returned by this property has an initial <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property value of <xref:System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter>. This value overrides the value specified in the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control, but may be overridden by other cell style properties. For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
 > [!NOTE]
 >  When visual styles are enabled, the buttons in a button column are painted using a <xref:System.Windows.Forms.ButtonRenderer> and cell styles specified through properties such as <xref:System.Windows.Forms.DataGridViewButtonColumn.DefaultCellStyle%2A> have no effect.  

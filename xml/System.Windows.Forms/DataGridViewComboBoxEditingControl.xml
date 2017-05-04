@@ -230,7 +230,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control calls this method to determine whether to handle an input key or let the editing control handle it.  
   
- This method returns `true` if `keyData` includes the <xref:System.Windows.Forms.Keys> or <xref:System.Windows.Forms.Keys> values or if the drop-down list is displayed and `keyData` includes the <xref:System.Windows.Forms.Keys> or <xref:System.Windows.Forms.Keys> values. This method also returns `true` if `dataGridViewWantsInputKey` is `false`. Otherwise, this method returns `false`.  
+ This method returns `true` if `keyData` includes the <xref:System.Windows.Forms.Keys.Up> or <xref:System.Windows.Forms.Keys.Down> values or if the drop-down list is displayed and `keyData` includes the <xref:System.Windows.Forms.Keys.Escape> or <xref:System.Windows.Forms.Keys.Enter> values. This method also returns `true` if `dataGridViewWantsInputKey` is `false`. Otherwise, this method returns `false`.  
   
  ]]></format>
         </remarks>

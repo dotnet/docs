@@ -44,7 +44,7 @@ Example of a TextBox
 > [!IMPORTANT]
 >  <xref:System.Windows.Controls.TextBox> has built-in handling for the bubbling  <xref:System.Windows.UIElement.MouseUp> and <xref:System.Windows.UIElement.MouseDown> events. Consequently, custom event handlers that listen for <xref:System.Windows.UIElement.MouseUp> or <xref:System.Windows.UIElement.MouseDown> events from a <xref:System.Windows.Controls.TextBox> will not be called. If you need to respond to these events, listen for the tunneling <xref:System.Windows.UIElement.PreviewMouseUp> and <xref:System.Windows.UIElement.PreviewMouseDown> events instead, or register the handlers with the <xref:System.Windows.EventSetter.HandledEventsToo%2A> argument (this latter option is only available through code). Do not mark the event handled unless you deliberately want to disable <xref:System.Windows.Controls.TextBox> native handling of these events, and be aware that this has notable effects on the control's [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
   
- Scrollbars are not visible on a <xref:System.Windows.Controls.TextBox> by default. To make scrollbars visible, set the <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility%2A> and <xref:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility%2A> properties to <xref:System.Windows.Controls.ScrollBarVisibility> or <xref:System.Windows.Controls.ScrollBarVisibility>.  
+ Scrollbars are not visible on a <xref:System.Windows.Controls.TextBox> by default. To make scrollbars visible, set the <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility%2A> and <xref:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility%2A> properties to <xref:System.Windows.Controls.ScrollBarVisibility.Visible> or <xref:System.Windows.Controls.ScrollBarVisibility.Auto>.  
   
  Usually the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect whenever the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. See [How to: Detect When Text in a TextBox Has Changed](~/docs/framework/wpf/controls/how-to-detect-when-text-in-a-textbox-has-changed.md) for an example.  
   
@@ -1342,7 +1342,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting the <xref:System.Windows.Controls.TextBox.TextWrapping%2A> attribute to <xref:System.Windows.TextWrapping> causes entered text to wrap to a new line when the edge of the <xref:System.Windows.Controls.TextBox> control is reached, automatically expanding the height of the <xref:System.Windows.Controls.TextBox> control to include room for a new line, if necessary.  
+ Setting the <xref:System.Windows.Controls.TextBox.TextWrapping%2A> attribute to <xref:System.Windows.TextWrapping.Wrap> causes entered text to wrap to a new line when the edge of the <xref:System.Windows.Controls.TextBox> control is reached, automatically expanding the height of the <xref:System.Windows.Controls.TextBox> control to include room for a new line, if necessary.  
   
 <a name="dependencyPropertyInfo_TextWrapping"></a>   
 ## Dependency Property Information  

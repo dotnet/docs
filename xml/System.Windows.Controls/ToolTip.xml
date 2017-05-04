@@ -167,7 +167,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.ToolTip.Placement%2A> property must be set to <xref:System.Windows.Controls.Primitives.PlacementMode> for the callback delegate to be used.  
+ The <xref:System.Windows.Controls.ToolTip.Placement%2A> property must be set to <xref:System.Windows.Controls.Primitives.PlacementMode.Custom> for the callback delegate to be used.  
   
  The <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback> delegate returns an array of possible points that are defined with respect to the <xref:System.Windows.Controls.ToolTip.PlacementTarget%2A>. When the <xref:System.Windows.Controls.ToolTip> is displayed, a point is chosen that maximizes the amount of the <xref:System.Windows.Controls.ToolTip> window that is visible.  
   
@@ -380,8 +380,8 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ToolTip>|  
-|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadataOptions>|  
+|Identifier field|<xref:System.Windows.Controls.ToolTip.IsOpenProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadataOptions.BindsTwoWayByDefault>|  
   
  ]]></format>
         </remarks>

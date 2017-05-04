@@ -380,7 +380,7 @@
 |<xref:System.Security.SecurityException.PermitOnlySetInstance%2A>|The permission, permission set, or permission set collection specified by `permitOnly`.|  
 |<xref:System.Security.SecurityException.FailedAssemblyInfo%2A>|`null`.|  
 |<xref:System.Security.SecurityException.Method%2A>|The <xref:System.Reflection.MethodInfo> specified by `method`.|  
-|<xref:System.Security.SecurityException.Zone%2A>|<xref:System.Security.SecurityZone>.|  
+|<xref:System.Security.SecurityException.Zone%2A>|<xref:System.Security.SecurityZone.NoZone>.|  
 |<xref:System.Security.SecurityException.Url%2A>|An empty string.|  
   
    
@@ -478,17 +478,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.SecurityException.Action%2A> property contains the security action that caused the security check failure. Many of the security actions can cause a security exception to be thrown. For example, a demand on a permission set checks that all callers on the call stack have the necessary permissions in the permission set. If any caller on the call stack lacks a required permission, the security check fails. Alternatively, a method in the call chain can modify the outcome of the stack walk by placing a stack walk modifier, such as <xref:System.Security.Permissions.SecurityAction> or <xref:System.Security.Permissions.SecurityAction>, on the stack to limit the allowed permissions. For example, a method on the call stack might deny all of its callers a set of permissions named PSET1, such that any demand for a permission that is part of PSET1 fails for those callers. The <xref:System.Security.SecurityException.Action%2A> property contains the security action that caused the exception to be thrown.  
+ The <xref:System.Security.SecurityException.Action%2A> property contains the security action that caused the security check failure. Many of the security actions can cause a security exception to be thrown. For example, a demand on a permission set checks that all callers on the call stack have the necessary permissions in the permission set. If any caller on the call stack lacks a required permission, the security check fails. Alternatively, a method in the call chain can modify the outcome of the stack walk by placing a stack walk modifier, such as <xref:System.Security.Permissions.SecurityAction.Deny> or <xref:System.Security.Permissions.SecurityAction.PermitOnly>, on the stack to limit the allowed permissions. For example, a method on the call stack might deny all of its callers a set of permissions named PSET1, such that any demand for a permission that is part of PSET1 fails for those callers. The <xref:System.Security.SecurityException.Action%2A> property contains the security action that caused the exception to be thrown.  
   
  <xref:System.Security.Permissions.SecurityAction> is an enumeration in the <xref:System.Security.Permissions.SecurityAction> namespace that provides the security action value for the <xref:System.Security.SecurityException.Action%2A> property. Typically this property contains one of the values shown in the following table.  
   
 |Security action|Description|  
 |---------------------|-----------------|  
-|<xref:System.Security.Permissions.SecurityAction>|A full stack walk failed due to a demand made against the assembly identified by the <xref:System.Security.SecurityException.FailedAssemblyInfo%2A> property.|  
-|<xref:System.Security.Permissions.SecurityAction>|A link demand against the assembly identified by the <xref:System.Security.SecurityException.FailedAssemblyInfo%2A> property failed.|  
-|<xref:System.Security.Permissions.SecurityAction>|An assembly identified by the <xref:System.Security.SecurityException.FailedAssemblyInfo%2A> property failed to meet an inheritance demand.|  
-|<xref:System.Security.Permissions.SecurityAction>|A demanded permission did not match any permission in the <xref:System.Security.Permissions.SecurityAction> permission set. The method that placed the <xref:System.Security.Permissions.SecurityAction> on the call stack is identified by the <xref:System.Security.SecurityException.Method%2A> property.|  
-|<xref:System.Security.Permissions.SecurityAction>|A demanded permission matched a permission in the deny permission set on the call stack. The method that placed the <xref:System.Security.Permissions.SecurityAction> on the call stack is identified by the <xref:System.Security.SecurityException.Method%2A> property.|  
+|<xref:System.Security.Permissions.SecurityAction.Demand>|A full stack walk failed due to a demand made against the assembly identified by the <xref:System.Security.SecurityException.FailedAssemblyInfo%2A> property.|  
+|<xref:System.Security.Permissions.SecurityAction.LinkDemand>|A link demand against the assembly identified by the <xref:System.Security.SecurityException.FailedAssemblyInfo%2A> property failed.|  
+|<xref:System.Security.Permissions.SecurityAction.InheritanceDemand>|An assembly identified by the <xref:System.Security.SecurityException.FailedAssemblyInfo%2A> property failed to meet an inheritance demand.|  
+|<xref:System.Security.Permissions.SecurityAction.PermitOnly>|A demanded permission did not match any permission in the <xref:System.Security.Permissions.SecurityAction.PermitOnly> permission set. The method that placed the <xref:System.Security.Permissions.SecurityAction.PermitOnly> on the call stack is identified by the <xref:System.Security.SecurityException.Method%2A> property.|  
+|<xref:System.Security.Permissions.SecurityAction.Deny>|A demanded permission matched a permission in the deny permission set on the call stack. The method that placed the <xref:System.Security.Permissions.SecurityAction.Deny> on the call stack is identified by the <xref:System.Security.SecurityException.Method%2A> property.|  
   
  ]]></format>
         </remarks>
@@ -607,7 +607,7 @@
  This property contains an <xref:System.Reflection.AssemblyName> object that identifies the assembly that caused the security check to fail.  
   
 > [!NOTE]
->  This property is not populated when a security exception occurs in a <xref:System.Security.Permissions.SecurityAction> or <xref:System.Security.Permissions.SecurityAction> stack frame, because the assembly issuing the <xref:System.Security.Permissions.SecurityAction> or <xref:System.Security.Permissions.SecurityAction> security action is not the assembly that failed the stack walk. In these cases, the security exception is created with a constructor that does not require an assembly name, granted set information, or refused set information.  
+>  This property is not populated when a security exception occurs in a <xref:System.Security.Permissions.SecurityAction.Deny> or <xref:System.Security.Permissions.SecurityAction.PermitOnly> stack frame, because the assembly issuing the <xref:System.Security.Permissions.SecurityAction.Deny> or <xref:System.Security.Permissions.SecurityAction.PermitOnly> security action is not the assembly that failed the stack walk. In these cases, the security exception is created with a constructor that does not require an assembly name, granted set information, or refused set information.  
   
    
   
@@ -760,7 +760,7 @@
   
 -   Information about the method that the failed assembly was executing when the security check that triggered the exception occurred.  
   
--   Information about the method that placed either a <xref:System.Security.Permissions.SecurityAction> or <xref:System.Security.Permissions.SecurityAction> security action on the call stack, in the case of a failure due to a <xref:System.Security.Permissions.SecurityAction> or <xref:System.Security.Permissions.SecurityAction>.  
+-   Information about the method that placed either a <xref:System.Security.Permissions.SecurityAction.PermitOnly> or <xref:System.Security.Permissions.SecurityAction.Deny> security action on the call stack, in the case of a failure due to a <xref:System.Security.Permissions.SecurityAction.PermitOnly> or <xref:System.Security.Permissions.SecurityAction.Deny>.  
   
 -   `null`, in the case of a failure that is impossible to attribute to a specific method.  
   

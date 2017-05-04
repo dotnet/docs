@@ -122,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Controls.Calendar.DisplayMode%2A> of a calendar is <xref:System.Windows.Controls.CalendarMode>, it might display days that are not in that month. For example, a calendar that shows March 2009 also displays the days February 22 through February 28 and April 1 through April 4. Because those dates are not in the month of March, the <xref:System.Windows.Controls.Primitives.CalendarButton.IsInactive%2A> property is set to `true` for the buttons that represent those days.  
+ When the <xref:System.Windows.Controls.Calendar.DisplayMode%2A> of a calendar is <xref:System.Windows.Controls.CalendarMode.Month>, it might display days that are not in that month. For example, a calendar that shows March 2009 also displays the days February 22 through February 28 and April 1 through April 4. Because those dates are not in the month of March, the <xref:System.Windows.Controls.Primitives.CalendarButton.IsInactive%2A> property is set to `true` for the buttons that represent those days.  
   
  ]]></format>
         </remarks>

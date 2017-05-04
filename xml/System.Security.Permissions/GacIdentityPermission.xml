@@ -50,7 +50,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates a <xref:System.Security.Permissions.GacIdentityPermission> with a <xref:System.Security.Permissions.PermissionState> value of <xref:System.Security.Permissions.PermissionState>.  
+ This constructor creates a <xref:System.Security.Permissions.GacIdentityPermission> with a <xref:System.Security.Permissions.PermissionState> value of <xref:System.Security.Permissions.PermissionState.None>.  
   
    
   
@@ -87,7 +87,7 @@
 ## Remarks  
   
 > [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, identity permissions cannot have an <xref:System.Security.Permissions.PermissionState> permission state value. Starting with the .NET Framework version 2.0, identity permissions can have any permission state value. This means that in 2.0 and later versions, identity permissions have the same behavior as permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface.  
+>  In the .NET Framework versions 1.0 and 1.1, identity permissions cannot have an <xref:System.Security.Permissions.PermissionState.Unrestricted> permission state value. Starting with the .NET Framework version 2.0, identity permissions can have any permission state value. This means that in 2.0 and later versions, identity permissions have the same behavior as permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface.  
   
    
   

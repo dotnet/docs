@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides support for the behavior that enables [!INCLUDE[indigo1](~/includes/indigo1-md.md)] endpoints to receive HTTP requests from a browser-based ASP.NET AJAX client. This class cannot be inherited.</summary>
+    <summary>Provides support for the behavior that enables Windows Communication Foundation (WCF) endpoints to receive HTTP requests from a browser-based ASP.NET AJAX client. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -50,9 +50,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultBodyStyle%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle> value.  
+ Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultBodyStyle%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle.WrappedRequest> value.  
   
- Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingRequestFormat%2A> and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingResponseFormat%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle> value.  
+ Sets the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingRequestFormat%2A> and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingResponseFormat%2A> to the <xref:System.ServiceModel.Web.WebMessageBodyStyle.WrappedRequest> value.  
   
  ]]></format>
         </remarks>
@@ -209,7 +209,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Web.WebMessageBodyStyle> value is the only <xref:System.ServiceModel.Web.WebMessageBodyStyle> supported and setting any other value results in a <xref:System.NotSupportedException> being thrown.  
+ The <xref:System.ServiceModel.Web.WebMessageBodyStyle.WrappedRequest> value is the only <xref:System.ServiceModel.Web.WebMessageBodyStyle> supported and setting any other value results in a <xref:System.NotSupportedException> being thrown.  
   
  ]]></format>
         </remarks>

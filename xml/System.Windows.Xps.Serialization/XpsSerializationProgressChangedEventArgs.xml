@@ -40,7 +40,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When `writingLevel` is <xref:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel>, `pageNumber` is the number of pages. When `writingLevel` is <xref:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel>, `pageNumber` is the number of fixed documents.  
+ When `writingLevel` is <xref:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedPageWritingProgress>, `pageNumber` is the number of pages. When `writingLevel` is <xref:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedDocumentWritingProgress>, `pageNumber` is the number of fixed documents.  
   
  ]]></format>
         </remarks>
@@ -65,7 +65,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel%2A> is <xref:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel>, then <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.PageNumber%2A> is the number of pages. When <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel%2A> is <xref:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel>, then <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.PageNumber%2A> is the number of fixed documents.  
+ When <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel%2A> is <xref:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedPageWritingProgress>, then <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.PageNumber%2A> is the number of pages. When <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel%2A> is <xref:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedDocumentWritingProgress>, then <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.PageNumber%2A> is the number of fixed documents.  
   
  ]]></format>
         </remarks>

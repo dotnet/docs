@@ -782,7 +782,7 @@ myDataTable.Rows[0][0] = newValue;
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.DataColumn.DateTimeMode%2A> cannot be modified after rows are added to a <xref:System.Data.DataColumn>, except for modifying from <xref:System.Data.DataSetDateTime> and <xref:System.Data.DataSetDateTime> or vice-versa. The modification from `UnspecifiedLocal` to `Unspecified` and vice-versa is allowed as the difference between these two options is only during serialization and does not affect the storage.  
+ The <xref:System.Data.DataColumn.DateTimeMode%2A> cannot be modified after rows are added to a <xref:System.Data.DataColumn>, except for modifying from <xref:System.Data.DataSetDateTime.Unspecified> and <xref:System.Data.DataSetDateTime.UnspecifiedLocal> or vice-versa. The modification from `UnspecifiedLocal` to `Unspecified` and vice-versa is allowed as the difference between these two options is only during serialization and does not affect the storage.  
   
  ]]></format>
         </remarks>

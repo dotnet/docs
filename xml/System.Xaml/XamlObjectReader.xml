@@ -214,7 +214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns a non-null result only if the <xref:System.Xaml.XamlObjectReader.NodeType%2A> property of the current reader position is <xref:System.Xaml.XamlNodeType>. It does not infer a namespace that is based on the context of other node types, such as an object in that namespace.  
+ This property returns a non-null result only if the <xref:System.Xaml.XamlObjectReader.NodeType%2A> property of the current reader position is <xref:System.Xaml.XamlNodeType.NamespaceDeclaration>. It does not infer a namespace that is based on the context of other node types, such as an object in that namespace.  
   
  ]]></format>
         </remarks>
@@ -316,7 +316,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns a non-null result only if the <xref:System.Xaml.XamlObjectReader.NodeType%2A> property of the current reader position is <xref:System.Xaml.XamlNodeType>.  
+ This property returns a non-null result only if the <xref:System.Xaml.XamlObjectReader.NodeType%2A> property of the current reader position is <xref:System.Xaml.XamlNodeType.StartObject>.  
   
  ]]></format>
         </remarks>

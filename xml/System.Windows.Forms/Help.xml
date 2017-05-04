@@ -157,7 +157,7 @@
 ## Remarks  
  The `url` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
   
- Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for the `navigator` parameter: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
+ Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for the `navigator` parameter: <xref:System.Windows.Forms.HelpNavigator.TableOfContents>, <xref:System.Windows.Forms.HelpNavigator.Find>, <xref:System.Windows.Forms.HelpNavigator.Index>, or <xref:System.Windows.Forms.HelpNavigator.Topic>.  
   
    
   
@@ -202,7 +202,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Compiled Help files provide table-of-contents, index, search, and keyword links in pages. You can use the `param` parameter to provide additional refinement of the <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator> command. If the value specified in the `command` parameter is <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>, this value should be an `empty string`. If the `command` parameter references <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>, this value should be a string that contains the topic name, or the keyword or numeric identifier of the topic to display.  
+ Compiled Help files provide table-of-contents, index, search, and keyword links in pages. You can use the `param` parameter to provide additional refinement of the <xref:System.Windows.Forms.HelpNavigator.Topic>, <xref:System.Windows.Forms.HelpNavigator.TopicId>, <xref:System.Windows.Forms.HelpNavigator.KeywordIndex>, or <xref:System.Windows.Forms.HelpNavigator.AssociateIndex> command. If the value specified in the `command` parameter is <xref:System.Windows.Forms.HelpNavigator.TableOfContents>, <xref:System.Windows.Forms.HelpNavigator.Index>, or <xref:System.Windows.Forms.HelpNavigator.Find>, this value should be an `empty string`. If the `command` parameter references <xref:System.Windows.Forms.HelpNavigator.Topic>, <xref:System.Windows.Forms.HelpNavigator.TopicId>, <xref:System.Windows.Forms.HelpNavigator.KeywordIndex>, or <xref:System.Windows.Forms.HelpNavigator.AssociateIndex>, this value should be a string that contains the topic name, or the keyword or numeric identifier of the topic to display.  
   
  The `url` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
   

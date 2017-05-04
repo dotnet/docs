@@ -373,7 +373,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.RadioButtonList.HasFooter%2A> property is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class. Footers are not supported when the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout> or <xref:System.Web.UI.WebControls.RepeatLayout>.  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.HasFooter%2A> property is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class. Footers are not supported when the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout.UnorderedList> or <xref:System.Web.UI.WebControls.RepeatLayout.OrderedList>.  
   
  ]]></format>
         </remarks>
@@ -399,7 +399,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.RadioButtonList.HasHeader%2A> property is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class. Headers are not supported when the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout> or <xref:System.Web.UI.WebControls.RepeatLayout>.  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.HasHeader%2A> property is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class. Headers are not supported when the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout.UnorderedList> or <xref:System.Web.UI.WebControls.RepeatLayout.OrderedList>.  
   
  ]]></format>
         </remarks>
@@ -425,7 +425,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.RadioButtonList.HasSeparators%2A> property is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class. Separators are not supported when the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout> or <xref:System.Web.UI.WebControls.RepeatLayout>.  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.HasSeparators%2A> property is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class. Separators are not supported when the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout.UnorderedList> or <xref:System.Web.UI.WebControls.RepeatLayout.OrderedList>.  
   
  ]]></format>
         </remarks>
@@ -646,7 +646,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout>, you can use this property to specify the number of columns that display items in the <xref:System.Web.UI.WebControls.RadioButtonList> control. If this property is not set, the <xref:System.Web.UI.WebControls.RadioButtonList> control displays all items in the list in a single column.  
+ When the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout.Table>, you can use this property to specify the number of columns that display items in the <xref:System.Web.UI.WebControls.RadioButtonList> control. If this property is not set, the <xref:System.Web.UI.WebControls.RadioButtonList> control displays all items in the list in a single column.  
   
    
   
@@ -690,7 +690,7 @@
 > [!NOTE]
 >  The number of columns that are displayed is always determined by the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatColumns%2A> property.  
   
- If this property is set to `RepeatDirection.Vertical` and if the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout>, the first column is filled from top to bottom, then the next column, and so on until all items are rendered. For example, if <xref:System.Web.UI.WebControls.RadioButtonList.RepeatColumns%2A> is set to 3, the items of the <xref:System.Web.UI.WebControls.RadioButtonList> control are displayed in three columns. A nine-item list would appear as follows.  
+ If this property is set to `RepeatDirection.Vertical` and if the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout.Table>, the first column is filled from top to bottom, then the next column, and so on until all items are rendered. For example, if <xref:System.Web.UI.WebControls.RadioButtonList.RepeatColumns%2A> is set to 3, the items of the <xref:System.Web.UI.WebControls.RadioButtonList> control are displayed in three columns. A nine-item list would appear as follows.  
   
 ||||  
 |-|-|-|  
@@ -698,7 +698,7 @@
 |2|5|8|  
 |3|6|9|  
   
- If this property is set to `RepeatDirection.Horizontal` and if the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout>, the items in the list are displayed in rows loaded left to right, then top to bottom, until all items are rendered. For example, if <xref:System.Web.UI.WebControls.RadioButtonList.RepeatColumns%2A> is set to 3, the items of the <xref:System.Web.UI.WebControls.RadioButtonList> control are displayed in rows of three items. A nine-item list would appear as follows.  
+ If this property is set to `RepeatDirection.Horizontal` and if the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout.Table>, the items in the list are displayed in rows loaded left to right, then top to bottom, until all items are rendered. For example, if <xref:System.Web.UI.WebControls.RadioButtonList.RepeatColumns%2A> is set to 3, the items of the <xref:System.Web.UI.WebControls.RadioButtonList> control are displayed in rows of three items. A nine-item list would appear as follows.  
   
 ||||  
 |-|-|-|  
@@ -773,7 +773,7 @@
  For information about the available options, see the <xref:System.Web.UI.WebControls.RepeatLayout> enumeration.  
   
 > [!NOTE]
->  Two options are new as  of ASP.NET 4: <xref:System.Web.UI.WebControls.RepeatLayout> and <xref:System.Web.UI.WebControls.RepeatLayout>.  
+>  Two options are new as  of ASP.NET 4: <xref:System.Web.UI.WebControls.RepeatLayout.OrderedList> and <xref:System.Web.UI.WebControls.RepeatLayout.UnorderedList>.  
   
  Some <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> settings do not allow horizontal layout. For more information, see the <xref:System.Web.UI.WebControls.RepeatLayout> enumeration.  
   

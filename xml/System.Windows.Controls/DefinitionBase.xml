@@ -39,7 +39,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Columns and rows that participate in size-sharing do not respect <xref:System.Windows.GridUnitType> sizing. In the size-sharing scenario, <xref:System.Windows.GridUnitType> sizing is treated as <xref:System.Windows.GridUnitType>.  
+ Columns and rows that participate in size-sharing do not respect <xref:System.Windows.GridUnitType.Star> sizing. In the size-sharing scenario, <xref:System.Windows.GridUnitType.Star> sizing is treated as <xref:System.Windows.GridUnitType.Auto>.  
   
  <xref:System.Windows.Controls.Grid> size-sharing does not work if you set <xref:System.Windows.Controls.Grid.IsSharedSizeScope%2A> to `true` within a resource template and you define <xref:System.Windows.Controls.DefinitionBase.SharedSizeGroup%2A> as outside that template.  
   

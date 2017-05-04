@@ -134,9 +134,9 @@
   
 |<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> Value|<xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> Object|  
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Exception>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Suspended>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Terminated>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs>|  
   
  This property is set by the runtime tracking infrastructure.  
   

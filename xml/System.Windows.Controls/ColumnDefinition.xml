@@ -279,7 +279,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default <xref:System.Windows.GridUnitType> is <xref:System.Windows.GridUnitType>.  
+ The default <xref:System.Windows.GridUnitType> is <xref:System.Windows.GridUnitType.Star>.  
   
  When you add or remove rows or columns, the <xref:System.Windows.Controls.ColumnDefinition.ActualWidth%2A> for all <xref:System.Windows.Controls.ColumnDefinition> elements and the <xref:System.Windows.Controls.RowDefinition.ActualHeight%2A> of all <xref:System.Windows.Controls.RowDefinition> elements becomes zero until <xref:System.Windows.UIElement.Measure%2A> is called.  
   

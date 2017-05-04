@@ -639,9 +639,9 @@ def
   
  Sometimes the <xref:System.Xml.XmlReader> has the base URI, and sometimes it does not. For instance, when loading from a file, the <xref:System.Xml.XmlReader> knows the base URI, but when reading from an <xref:System.Xml.XmlReader> that was created because of calling the <xref:System.Xml.Linq.XElement.Parse%2A> method, there is no possibility of the <xref:System.Xml.XmlReader> reporting a base URI; the XML was in a string.  
   
- If, when parsing or loading the XML, you specify <xref:System.Xml.Linq.LoadOptions>, LINQ to XML will request the base URI for each node as the <xref:System.Xml.XmlReader> returns the node. If the reader has the base URI, LINQ to XML will save the information with the LINQ to XML node. This property returns that information. If the underlying <xref:System.Xml.XmlReader> does not have the base URI, then this property will return an empty string.  
+ If, when parsing or loading the XML, you specify <xref:System.Xml.Linq.LoadOptions.SetBaseUri>, LINQ to XML will request the base URI for each node as the <xref:System.Xml.XmlReader> returns the node. If the reader has the base URI, LINQ to XML will save the information with the LINQ to XML node. This property returns that information. If the underlying <xref:System.Xml.XmlReader> does not have the base URI, then this property will return an empty string.  
   
- Setting <xref:System.Xml.Linq.LoadOptions> when loading an XML tree will result in slower parsing.  
+ Setting <xref:System.Xml.Linq.LoadOptions.SetBaseUri> when loading an XML tree will result in slower parsing.  
   
  When setting the base URI for an XML tree, LINQ to XML puts an annotation on the root of the tree. This property is a computed property, and navigates up the tree to find the base URI.  
   

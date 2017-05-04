@@ -2241,7 +2241,7 @@
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> event is raised when a node is expanded in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
 > [!NOTE]
->  If the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property for a node is set to <xref:System.Web.UI.WebControls.TreeNodeSelectAction> or <xref:System.Web.UI.WebControls.TreeNodeSelectAction>, the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> event is also raised when that node is clicked in the <xref:System.Web.UI.WebControls.TreeView> control.  
+>  If the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property for a node is set to <xref:System.Web.UI.WebControls.TreeNodeSelectAction.Expand> or <xref:System.Web.UI.WebControls.TreeNodeSelectAction.SelectExpand>, the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> event is also raised when that node is clicked in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
  Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -2758,10 +2758,10 @@
   
 |Selection action|Description|  
 |----------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Toggles the node between expanded and collapsed. Raises the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> or <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event, as appropriate.|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Raises no events when a node is selected.|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Raises the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> event when a node is selected.|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Raises both the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> and <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> events when a node is selected. Nodes are only expanded, never collapsed.|  
+|<xref:System.Web.UI.WebControls.TreeNodeSelectAction.Expand>|Toggles the node between expanded and collapsed. Raises the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> or <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event, as appropriate.|  
+|<xref:System.Web.UI.WebControls.TreeNodeSelectAction.None>|Raises no events when a node is selected.|  
+|<xref:System.Web.UI.WebControls.TreeNodeSelectAction.Select>|Raises the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> event when a node is selected.|  
+|<xref:System.Web.UI.WebControls.TreeNodeSelectAction.SelectExpand>|Raises both the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> and <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> events when a node is selected. Nodes are only expanded, never collapsed.|  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A> is not rendered for a node with its <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property set to `TreeNodeSelectAction.None`.  
@@ -2802,10 +2802,10 @@
   
 |Selection action|Description|  
 |----------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Toggles the node between expanded and collapsed. Raises the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> or <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event, as appropriate.|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Raises no events when a node is selected.|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Raises the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> event when a node is selected.|  
-|<xref:System.Web.UI.WebControls.TreeNodeSelectAction>|Raises both the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> and <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> events when a node is selected. Nodes are only expanded, never collapsed.|  
+|<xref:System.Web.UI.WebControls.TreeNodeSelectAction.Expand>|Toggles the node between expanded and collapsed. Raises the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> or <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event, as appropriate.|  
+|<xref:System.Web.UI.WebControls.TreeNodeSelectAction.None>|Raises no events when a node is selected.|  
+|<xref:System.Web.UI.WebControls.TreeNodeSelectAction.Select>|Raises the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> event when a node is selected.|  
+|<xref:System.Web.UI.WebControls.TreeNodeSelectAction.SelectExpand>|Raises both the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> and <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> events when a node is selected. Nodes are only expanded, never collapsed.|  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A> is not rendered for a node with its <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property set to `TreeNodeSelectAction.None`.  
@@ -3382,63 +3382,24 @@
         <summary>Gets or sets the target window or frame in which to display the Web page content that is associated with a node.</summary>
         <value>The target window or frame in which to display the linked Web page content. Values must begin with a letter in the range of A through Z (case insensitive), except for certain special values that begin with an underscore, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Target value  
+ <list type="table"><listheader><term> Target value  
   
- </term>  
-<description> Renders the content in  
+ </term><description> Renders the content in  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="_blank" />  
+ </description></listheader><item><term><see langword="_blank" /></term><description> A new window without frames.  
   
- </term>  
-<description> A new window without frames.  
+ </description></item><item><term><see langword="_parent" /></term><description> The immediate frameset parent.  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="_parent" />  
+ </description></item><item><term><see langword="_search" /></term><description> The search pane.  
   
- </term>  
-<description> The immediate frameset parent.  
+ </description></item><item><term><see langword="_self" /></term><description> The frame with focus.  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="_search" />  
+ </description></item><item><term><see langword="_top" /></term><description> The full window without frames.  
   
- </term>  
-<description> The search pane.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="_self" />  
-  
- </term>  
-<description> The frame with focus.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="_top" />  
-  
- </term>  
-<description> The full window without frames.  
-  
- </description>  
-</item>  
-</list>  
-  
- <block subset="none" type="note">  
-<para>  
+ </description></item></list><block subset="none" type="note"><para>  
  Check your browser documentation to determine if the <see langword="_search" /> value is supported.  For example, Microsoft Internet Explorer 5.0 and later supports the <see langword="_search" /> target value.  
   
-</para>  
-</block>  
+</para></block>  
   
  The default is an empty string (""), which refreshes the window or frame with focus.</value>
         <remarks>

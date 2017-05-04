@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
   
  ]]></format>
         </remarks>
@@ -118,7 +118,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%29> constructor is initialized with the specified `name` and default values for its other properties. The <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%29> constructor is initialized with the specified `name` and default values for its other properties. The <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
   
    
   
@@ -186,7 +186,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.Data.DbType%29> constructor is initialized with the specified `name` and `dbType` parameters, and with default values for other properties. The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.Data.DbType%29> constructor is initialized with the specified `name` and `dbType` parameters, and with default values for other properties. The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
   
  ]]></format>
         </remarks>
@@ -213,7 +213,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.TypeCode%29> constructor is initialized with the specified `name` and `type` parameters, and default values for other properties. The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.TypeCode%29> constructor is initialized with the specified `name` and `type` parameters, and default values for other properties. The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
   
    
   
@@ -250,7 +250,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property of the <xref:System.Web.UI.WebControls.Parameter> instance is initialized to <xref:System.Data.ParameterDirection>.  
+ The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property of the <xref:System.Web.UI.WebControls.Parameter> instance is initialized to <xref:System.Data.ParameterDirection.Input>.  
   
  ]]></format>
         </remarks>
@@ -279,7 +279,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.TypeCode%2CSystem.String%29> constructor is initialized with the specified `name` parameter and `type` parameter, and assigned a <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property value. The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection>.  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.TypeCode%2CSystem.String%29> constructor is initialized with the specified `name` parameter and `type` parameter, and assigned a <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property value. The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>.  
   
    
   
@@ -352,7 +352,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns an <xref:System.TypeCode> instance if no equivalent for the <xref:System.Data.DbType> value is found. Database types without equivalent types include <xref:System.Data.DbType>, <xref:System.Data.DbType>, and <xref:System.Data.DbType>.  
+ This method returns an <xref:System.TypeCode.Object> instance if no equivalent for the <xref:System.Data.DbType> value is found. Database types without equivalent types include <xref:System.Data.DbType.Guid>, <xref:System.Data.DbType.Binary>, and <xref:System.Data.DbType.DateTimeOffset>.  
   
  ]]></format>
         </remarks>
@@ -412,7 +412,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns an <xref:System.Data.DbType> instance if no equivalent is found. Types without equivalent database types include <xref:System.TypeCode> and <xref:System.TypeCode>.  
+ This method returns an <xref:System.Data.DbType.Object> instance if no equivalent is found. Types without equivalent database types include <xref:System.TypeCode.DBNull> and <xref:System.TypeCode.Empty>.  
   
  ]]></format>
         </remarks>
@@ -519,7 +519,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is currently not used by the <xref:System.Web.UI.WebControls.Parameter> class and is reserved for future use.  
   
- The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property describes the direction of the flow of data between the value that a <xref:System.Web.UI.WebControls.Parameter> instance is bound to and the <xref:System.Web.UI.WebControls.Parameter> object itself. The default value for the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property, <xref:System.Data.ParameterDirection>, describes the most common scenario where the flow of data is always in one direction: from the value to which the <xref:System.Web.UI.WebControls.Parameter> object is bound to the <xref:System.Web.UI.WebControls.Parameter> object. Any changes made to the underlying value are reflected by the <xref:System.Web.UI.WebControls.Parameter> object, but any changes to the <xref:System.Web.UI.WebControls.Parameter> object are not reflected by the underlying data. You can set the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property to <xref:System.Data.ParameterDirection> or <xref:System.Data.ParameterDirection> when working with output parameters, or <xref:System.Data.ParameterDirection> when working with a return value from a stored procedure.  
+ The <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property describes the direction of the flow of data between the value that a <xref:System.Web.UI.WebControls.Parameter> instance is bound to and the <xref:System.Web.UI.WebControls.Parameter> object itself. The default value for the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property, <xref:System.Data.ParameterDirection.Input>, describes the most common scenario where the flow of data is always in one direction: from the value to which the <xref:System.Web.UI.WebControls.Parameter> object is bound to the <xref:System.Web.UI.WebControls.Parameter> object. Any changes made to the underlying value are reflected by the <xref:System.Web.UI.WebControls.Parameter> object, but any changes to the <xref:System.Web.UI.WebControls.Parameter> object are not reflected by the underlying data. You can set the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property to <xref:System.Data.ParameterDirection.InputOutput> or <xref:System.Data.ParameterDirection.Output> when working with output parameters, or <xref:System.Data.ParameterDirection.ReturnValue> when working with a return value from a stored procedure.  
   
  If the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property of the parameter is changed, the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method is called.  
   
@@ -594,7 +594,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Parameter.DbType%2A> property must not already have been set, or must be set to <xref:System.Data.DbType>. This method is intended for use only when the CLR type is set but the <xref:System.Web.UI.WebControls.Parameter.DbType%2A> property is not.  
+ The <xref:System.Web.UI.WebControls.Parameter.DbType%2A> property must not already have been set, or must be set to <xref:System.Data.DbType.Object>. This method is intended for use only when the CLR type is set but the <xref:System.Web.UI.WebControls.Parameter.DbType%2A> property is not.  
   
  ]]></format>
         </remarks>

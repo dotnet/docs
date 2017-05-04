@@ -1040,7 +1040,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `contentType` parameter accepts only the following values of the <xref:System.Security.Cryptography.X509Certificates.X509ContentType> enumeration: <xref:System.Security.Cryptography.X509Certificates.X509ContentType>, <xref:System.Security.Cryptography.X509Certificates.X509ContentType>, and <xref:System.Security.Cryptography.X509Certificates.X509ContentType>.  Passing any other value causes a <xref:System.Security.Cryptography.CryptographicException> to be thrown.  
+ The `contentType` parameter accepts only the following values of the <xref:System.Security.Cryptography.X509Certificates.X509ContentType> enumeration: <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>, <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>, and <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs12>.  Passing any other value causes a <xref:System.Security.Cryptography.CryptographicException> to be thrown.  
   
    
   
@@ -1091,7 +1091,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `contentType` parameter accepts only the following values of the <xref:System.Security.Cryptography.X509Certificates.X509ContentType> enumeration: <xref:System.Security.Cryptography.X509Certificates.X509ContentType>, <xref:System.Security.Cryptography.X509Certificates.X509ContentType>, and <xref:System.Security.Cryptography.X509Certificates.X509ContentType>.  Passing any other value causes a <xref:System.Security.Cryptography.CryptographicException> to be thrown.  
+ The `contentType` parameter accepts only the following values of the <xref:System.Security.Cryptography.X509Certificates.X509ContentType> enumeration: <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>, <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>, and <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs12>.  Passing any other value causes a <xref:System.Security.Cryptography.CryptographicException> to be thrown.  
   
 > [!IMPORTANT]
 >  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening the assembly in a text editor such as Notepad.exe.  
@@ -1146,7 +1146,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `contentType` parameter accepts only the following values of the <xref:System.Security.Cryptography.X509Certificates.X509ContentType> enumeration: <xref:System.Security.Cryptography.X509Certificates.X509ContentType>, <xref:System.Security.Cryptography.X509Certificates.X509ContentType>, and <xref:System.Security.Cryptography.X509Certificates.X509ContentType>.  Passing any other value causes a <xref:System.Security.Cryptography.CryptographicException> to be thrown.  
+ The `contentType` parameter accepts only the following values of the <xref:System.Security.Cryptography.X509Certificates.X509ContentType> enumeration: <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>, <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>, and <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs12>.  Passing any other value causes a <xref:System.Security.Cryptography.CryptographicException> to be thrown.  
   
 > [!IMPORTANT]
 >  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening the assembly in a text editor such as Notepad.exe.  

@@ -80,7 +80,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method indicates the column to the left of the double-clicked divider if the <xref:System.Windows.Forms.DataGridView> has a <xref:System.Windows.Forms.Control.RightToLeft%2A> property value of <xref:System.Windows.Forms.RightToLeft>; otherwise, it indicates the column to the right of the double-clicked divider.  
+ This method indicates the column to the left of the double-clicked divider if the <xref:System.Windows.Forms.DataGridView> has a <xref:System.Windows.Forms.Control.RightToLeft%2A> property value of <xref:System.Windows.Forms.RightToLeft.No>; otherwise, it indicates the column to the right of the double-clicked divider.  
   
  The index is the zero-based index of the column in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> collection.  
   

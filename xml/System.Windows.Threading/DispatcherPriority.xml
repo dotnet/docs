@@ -17,9 +17,9 @@
 ## Remarks  
  There is no specific system state or "idleness" corresponding to ApplicationIdle and ContextIdle in the current version of [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  Both are still valid priorities; therefore, an operation with a priority of ContextIdle has a higher priority than an operation with a priority of SystemIdle.  
   
- The <xref:System.Windows.Threading.Dispatcher> does not throttle the execution of an operation if it exceeds a certain percentage of the CPU.  One way to throttle a process it to use a timer.  
+ The <xref:System.Windows.Threading.DispatcherPriority.ApplicationIdle> does not throttle the execution of an operation if it exceeds a certain percentage of the CPU.  One way to throttle a process it to use a timer.  
   
- If an operation is posted using <xref:System.Windows.Threading.Dispatcher.Invoke%2A> on its own <xref:System.Windows.Threading.Dispatcher> at a priority of Send, the operation bypasses the queue and is immediately executed.  
+ If an operation is posted using <xref:System.Windows.Threading.Dispatcher.Invoke%2A> on its own <xref:System.Windows.Threading.DispatcherPriority.ContextIdle> at a priority of Send, the operation bypasses the queue and is immediately executed.  
   
 <a name="xamlTextUsage_DispatcherPriority"></a>   
 ## XAML Text Usage  

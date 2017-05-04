@@ -79,9 +79,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `authenticationMode` parameter is the <xref:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode> enumeration value, then this constructor attempts to set the current thread's <xref:System.Threading.Thread.CurrentPrincipal%2A> property to the <xref:System.Security.Principal.WindowsPrincipal> for the current user.  
+ If the `authenticationMode` parameter is the <xref:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows> enumeration value, then this constructor attempts to set the current thread's <xref:System.Threading.Thread.CurrentPrincipal%2A> property to the <xref:System.Security.Principal.WindowsPrincipal> for the current user.  
   
- If the `authenticationMode` parameter is the <xref:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode> enumeration value, then this constructor leaves the current thread's <xref:System.Threading.Thread.CurrentPrincipal%2A> property unchanged.  
+ If the `authenticationMode` parameter is the <xref:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.ApplicationDefined> enumeration value, then this constructor leaves the current thread's <xref:System.Threading.Thread.CurrentPrincipal%2A> property unchanged.  
   
  ]]></format>
         </remarks>

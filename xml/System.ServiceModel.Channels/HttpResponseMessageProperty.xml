@@ -63,7 +63,7 @@
 ## Remarks  
  This constructor initializes the object as follows:  
   
--   <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusCode%2A> = <xref:System.Net.HttpStatusCode>.  
+-   <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusCode%2A> = <xref:System.Net.HttpStatusCode.OK>.  
   
 -   <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusDescription%2A> is set to `null`.  
   

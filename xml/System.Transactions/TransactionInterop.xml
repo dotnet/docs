@@ -51,7 +51,7 @@
   
  However, you should also note that the whereabouts of remote transaction managers are encapsulated in all the propagation tokens, making them bigger than the corresponding transaction cookies from the Export/Import model.  
   
- **Note** This type uses <xref:System.Security.Permissions.SecurityAction> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
+ **Note** This type uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
   
  ]]></format>
     </remarks>

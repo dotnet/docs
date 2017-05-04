@@ -484,12 +484,10 @@
         <value>
           <see langword="true" /> if the browser can support cookies; otherwise, <see langword="false" />. The default is <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This property does not indicate whether cookies are currently enabled in the browser, only whether the browser can support cookies.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -896,12 +894,10 @@
         <value>
           <see langword="true" /> if the browser supports Java; otherwise, <see langword="false" />. The default is <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This property does not indicate whether Java is currently enabled in the browser, only whether the browser can support Java.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2253,12 +2249,10 @@
         <value>
           <see langword="true" /> if the browser supports VBScript; otherwise, <see langword="false" />. The default is <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This property does not indicate whether VBScript is currently enabled in the browser, only whether the browser can support VBScript.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

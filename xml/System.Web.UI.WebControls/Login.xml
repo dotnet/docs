@@ -259,13 +259,13 @@
 |<xref:System.Web.UI.WebControls.Login.FailureAction%2A>|`true`|  
 |<xref:System.Web.UI.WebControls.Login.FailureText%2A>|"Your login attempt has failed. Please try again."|  
 |<xref:System.Web.UI.WebControls.Login.MembershipProvider%2A>|"Default"|  
-|<xref:System.Web.UI.WebControls.Login.Orientation%2A>|<xref:System.Web.UI.WebControls.Orientation>|  
+|<xref:System.Web.UI.WebControls.Login.Orientation%2A>|<xref:System.Web.UI.WebControls.Orientation.Vertical>|  
 |<xref:System.Web.UI.WebControls.Login.PasswordLabelText%2A>|"Password:"|  
 |<xref:System.Web.UI.WebControls.Login.PasswordRequiredErrorMessage%2A>|"Password."|  
 |<xref:System.Web.UI.WebControls.Login.RememberMeSet%2A>|`false`|  
 |<xref:System.Web.UI.WebControls.Login.RememberMeText%2A>|"Remember me next time."|  
 |<xref:System.Web.UI.WebControls.Login.LoginButtonText%2A>|"Login"|  
-|<xref:System.Web.UI.WebControls.Login.TextLayout%2A>|<xref:System.Web.UI.WebControls.LoginTextLayout>|  
+|<xref:System.Web.UI.WebControls.Login.TextLayout%2A>|<xref:System.Web.UI.WebControls.LoginTextLayout.TextOnLeft>|  
 |<xref:System.Web.UI.WebControls.Login.TitleText%2A>|"Login"|  
 |<xref:System.Web.UI.WebControls.Login.UserNameLabelText%2A>|"User Name:"|  
 |<xref:System.Web.UI.WebControls.Login.UserNameRequiredErrorMessage%2A>|"User Name."|  
@@ -720,7 +720,7 @@
   
  The default behavior reloads the page and displays the contents of the <xref:System.Web.UI.WebControls.Login.FailureText%2A> property to alert the user that the login attempt failed.  
   
- When <xref:System.Web.UI.WebControls.Login.FailureAction%2A> is set to <xref:System.Web.UI.WebControls.LoginFailureAction>, the user is redirected to the login page defined in the Web.config file.  
+ When <xref:System.Web.UI.WebControls.Login.FailureAction%2A> is set to <xref:System.Web.UI.WebControls.LoginFailureAction.RedirectToLoginPage>, the user is redirected to the login page defined in the Web.config file.  
   
  This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
@@ -1510,7 +1510,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Login.LoginButtonImageUrl%2A> property contains the URL of the image rendered as the <xref:System.Web.UI.WebControls.Login> control login button when the <xref:System.Web.UI.WebControls.Login.LoginButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType>.  
+ The <xref:System.Web.UI.WebControls.Login.LoginButtonImageUrl%2A> property contains the URL of the image rendered as the <xref:System.Web.UI.WebControls.Login> control login button when the <xref:System.Web.UI.WebControls.Login.LoginButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType.Image>.  
   
  The <xref:System.Web.UI.WebControls.Login.LoginButtonText%2A> property is used as the alternative text for the image in browsers that do not display images.  
   
@@ -1631,9 +1631,9 @@
   
 |<xref:System.Web.UI.WebControls.Login.LoginButtonType%2A> setting|How the <xref:System.Web.UI.WebControls.Login.LoginButtonText%2A> property is used.|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
-|<xref:System.Web.UI.WebControls.ButtonType>|As the button's `Text` property.|  
-|<xref:System.Web.UI.WebControls.ButtonType>|As alternative text for the image.|  
-|<xref:System.Web.UI.WebControls.ButtonType>|As link text.|  
+|<xref:System.Web.UI.WebControls.ButtonType.Button>|As the button's `Text` property.|  
+|<xref:System.Web.UI.WebControls.ButtonType.Image>|As alternative text for the image.|  
+|<xref:System.Web.UI.WebControls.ButtonType.Link>|As link text.|  
   
  The default text for the control is localized based on the server's current locale.  
   
@@ -1682,11 +1682,11 @@
   
 |<xref:System.Web.UI.WebControls.Login.LoginButtonType%2A> setting|Type of button rendered|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|  
-|<xref:System.Web.UI.WebControls.ButtonType>|An HTML button with the text specified in the <xref:System.Web.UI.WebControls.Login.LoginButtonText%2A> property.|  
-|<xref:System.Web.UI.WebControls.ButtonType>|An image. The URL of the image is specified in the <xref:System.Web.UI.WebControls.Login.LoginButtonImageUrl%2A> property. The string specified in the <xref:System.Web.UI.WebControls.Login.LoginButtonText%2A> property is used as alternate text for the image.|  
-|<xref:System.Web.UI.WebControls.ButtonType>|An HTML link with the text specified in the <xref:System.Web.UI.WebControls.Login.LoginButtonText%2A> property.|  
+|<xref:System.Web.UI.WebControls.ButtonType.Button>|An HTML button with the text specified in the <xref:System.Web.UI.WebControls.Login.LoginButtonText%2A> property.|  
+|<xref:System.Web.UI.WebControls.ButtonType.Image>|An image. The URL of the image is specified in the <xref:System.Web.UI.WebControls.Login.LoginButtonImageUrl%2A> property. The string specified in the <xref:System.Web.UI.WebControls.Login.LoginButtonText%2A> property is used as alternate text for the image.|  
+|<xref:System.Web.UI.WebControls.ButtonType.Link>|An HTML link with the text specified in the <xref:System.Web.UI.WebControls.Login.LoginButtonText%2A> property.|  
   
- When the <xref:System.Web.UI.WebControls.Login.LoginButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType> or <xref:System.Web.UI.WebControls.ButtonType>, the content of the <xref:System.Web.UI.WebControls.Login.LoginButtonImageUrl%2A> property is ignored.  
+ When the <xref:System.Web.UI.WebControls.Login.LoginButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType.Button> or <xref:System.Web.UI.WebControls.ButtonType.Link>, the content of the <xref:System.Web.UI.WebControls.Login.LoginButtonImageUrl%2A> property is ignored.  
   
    
   
@@ -2634,8 +2634,8 @@
   
 |LoginTextLayout value|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.LoginTextLayout>|Places labels to the left of the associated text entry fields.|  
-|<xref:System.Web.UI.WebControls.LoginTextLayout>|Places labels above the associated text entry fields.|  
+|<xref:System.Web.UI.WebControls.LoginTextLayout.TextOnLeft>|Places labels to the left of the associated text entry fields.|  
+|<xref:System.Web.UI.WebControls.LoginTextLayout.TextOnTop>|Places labels above the associated text entry fields.|  
   
    
   

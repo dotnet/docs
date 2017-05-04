@@ -402,7 +402,7 @@
   
  In addition, temporary keys have no <xref:System.Data.Metadata.Edm.EntitySet> or key values, but permanent keys do.  
   
- When the <xref:System.Data.Objects.ObjectStateEntry.AcceptChanges%2A> method is called on an entity's <xref:System.Data.Objects.ObjectStateEntry> and the entity transitions from the <xref:System.Data.EntityState> state to <xref:System.Data.EntityState> state, the [!INCLUDE[adonet_ef](~/includes/adonet-ef-md.md)] automatically computes a new permanent key for the entity and synchronizes all temporary key references.  
+ When the <xref:System.Data.Objects.ObjectStateEntry.AcceptChanges%2A> method is called on an entity's <xref:System.Data.Objects.ObjectStateEntry> and the entity transitions from the <xref:System.Data.EntityState.Added> state to <xref:System.Data.EntityState.Unchanged> state, the [!INCLUDE[adonet_ef](~/includes/adonet-ef-md.md)] automatically computes a new permanent key for the entity and synchronizes all temporary key references.  
   
  ]]></format>
         </remarks>
@@ -426,7 +426,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A read-only entity identifies an entity that is valid in every way, except that it is not associated with an actual entity set. This can occur as part of the result of an [!INCLUDE[esql](~/includes/esql-md.md)] query that constructs and returns an entity instance specified within the text of the query (as opposed to an entity that was retrieved from a database table). An entity that does not have an entity set cannot be persisted to the database until it is associated with some entity set. Therefore, the object materializer will treat this kind of entity as if the <xref:System.Data.Objects.MergeOption> merge option was specified, regardless of the actual merge option that was specified. An entity object will be created, but its identity will not be resolved and it will not be added to the state manager as part of the materialization process.  
+ A read-only entity identifies an entity that is valid in every way, except that it is not associated with an actual entity set. This can occur as part of the result of an [!INCLUDE[esql](~/includes/esql-md.md)] query that constructs and returns an entity instance specified within the text of the query (as opposed to an entity that was retrieved from a database table). An entity that does not have an entity set cannot be persisted to the database until it is associated with some entity set. Therefore, the object materializer will treat this kind of entity as if the <xref:System.Data.Objects.MergeOption.NoTracking> merge option was specified, regardless of the actual merge option that was specified. An entity object will be created, but its identity will not be resolved and it will not be added to the state manager as part of the materialization process.  
   
  ]]></format>
         </remarks>

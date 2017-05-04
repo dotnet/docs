@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Exposes <see cref="T:System.Windows.Controls.FlowDocumentScrollViewer" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.FlowDocumentScrollViewer" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -117,9 +117,9 @@
   
 |The value of `patternInterface`|The return value|  
 |-------------------------------------|----------------------|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|The <xref:System.Windows.Automation.Peers.ScrollViewerAutomationPeer> for this <xref:System.Windows.Automation.Peers.FlowDocumentScrollViewerAutomationPeer>.|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|An object that implements the <xref:System.Windows.Automation.Provider.ITextProvider> interface.|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|An object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface.Scroll>|The <xref:System.Windows.Automation.Peers.ScrollViewerAutomationPeer> for this <xref:System.Windows.Automation.Peers.FlowDocumentScrollViewerAutomationPeer>.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface.Text>|An object that implements the <xref:System.Windows.Automation.Provider.ITextProvider> interface.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput>|An object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.|  
   
  ]]></format>
         </remarks>

@@ -21,7 +21,7 @@
  This type is part of a group that includes the <xref:System.Web.Configuration.AuthorizationRule>, the <xref:System.Web.Configuration.AuthorizationRuleCollection>, and the <xref:System.Web.Configuration.AuthorizationRuleAction> types.  
   
 > [!NOTE]
->  The <xref:System.Web.Configuration.AuthorizationSection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition>.  
+>  The <xref:System.Web.Configuration.AuthorizationSection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition.Everywhere>.  
   
    
   

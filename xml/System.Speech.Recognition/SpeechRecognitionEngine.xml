@@ -1109,7 +1109,7 @@ namespace SpeechRecognitionApp
 ## Remarks  
  The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated.  
   
- The recognizers that ship with Vista and Windows 7 ignore case and character width when applying grammar rules to the input phrase. For more information about this type of comparison, see the <xref:System.Globalization.CompareOptions> enumeration values <xref:System.Globalization.CompareOptions> and <xref:System.Globalization.CompareOptions>. The recognizers also ignore new lines and extra white space and treat punctuation as literal input.  
+ The recognizers that ship with Vista and Windows 7 ignore case and character width when applying grammar rules to the input phrase. For more information about this type of comparison, see the <xref:System.Globalization.CompareOptions> enumeration values <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> and <xref:System.Globalization.CompareOptions.IgnoreWidth>. The recognizers also ignore new lines and extra white space and treat punctuation as literal input.  
   
    
   
@@ -1329,7 +1329,7 @@ namespace Sre_EmulateRecognize
 ## Remarks  
  The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated.  
   
- The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizer always ignores the character width and never ignores the Kana type. The recognizer also ignores new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
+ The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> or <xref:System.Globalization.CompareOptions.IgnoreCase> value is present. The recognizer always ignores the character width and never ignores the Kana type. The recognizer also ignores new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
   
  ]]></format>
         </remarks>
@@ -1369,7 +1369,7 @@ namespace Sre_EmulateRecognize
 ## Remarks  
  The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated.  
   
- The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizer always ignores the character width and never ignores the Kana type. The recognizer also ignores new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
+ The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> or <xref:System.Globalization.CompareOptions.IgnoreCase> value is present. The recognizer always ignores the character width and never ignores the Kana type. The recognizer also ignores new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
   
  ]]></format>
         </remarks>
@@ -1406,7 +1406,7 @@ namespace Sre_EmulateRecognize
 ## Remarks  
  The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. When the recognizer completes the asynchronous recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event.  
   
- The recognizers that ship with Vista and Windows 7 ignore case and character width when applying grammar rules to the input phrase. For more information about this type of comparison, see the <xref:System.Globalization.CompareOptions> enumeration values <xref:System.Globalization.CompareOptions> and <xref:System.Globalization.CompareOptions>. The recognizers also ignore new lines and extra white space and treat punctuation as literal input.  
+ The recognizers that ship with Vista and Windows 7 ignore case and character width when applying grammar rules to the input phrase. For more information about this type of comparison, see the <xref:System.Globalization.CompareOptions> enumeration values <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> and <xref:System.Globalization.CompareOptions.IgnoreWidth>. The recognizers also ignore new lines and extra white space and treat punctuation as literal input.  
   
    
   
@@ -1666,7 +1666,7 @@ namespace SreEmulateRecognizeAsync
 ## Remarks  
  The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. When the recognizer completes the asynchronous recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event.  
   
- The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treat punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
+ The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> or <xref:System.Globalization.CompareOptions.IgnoreCase> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treat punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
   
  ]]></format>
         </remarks>
@@ -1705,7 +1705,7 @@ namespace SreEmulateRecognizeAsync
 ## Remarks  
  The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. When the recognizer completes the asynchronous recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event.  
   
- The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treat punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
+ The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> or <xref:System.Globalization.CompareOptions.IgnoreCase> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treat punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
   
  ]]></format>
         </remarks>
@@ -3050,7 +3050,7 @@ namespace AsynchronousRecognition
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `mode` is <xref:System.Speech.Recognition.RecognizeMode>, the recognizer continues performing asynchronous recognition operations until the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncCancel%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncStop%2A> method is called.  
+ If `mode` is <xref:System.Speech.Recognition.RecognizeMode.Multiple>, the recognizer continues performing asynchronous recognition operations until the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncCancel%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncStop%2A> method is called.  
   
  During a call to this method, the recognizer can raise the following events:  
   

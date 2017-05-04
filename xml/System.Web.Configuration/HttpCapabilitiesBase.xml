@@ -3285,7 +3285,7 @@ CACHE-CONTROL: NO-CACHE
 ## Remarks  
  With UP.Browser 4.1 or UP.Browser 3.2, the <xref:System.Web.HttpResponse.Redirect%2A> method behaves as if the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsRedirectWithCookie%2A> property of the <xref:System.Web.HttpBrowserCapabilities> object is `false`, unless the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> property in the <xref:System.Web.Configuration.SystemWebSectionGroup.SessionState%2A> section of Web.config has been explicitly set to `true`.  
   
- In ASP.NET 1.1, the options for this setting were `true` or `false`, but with ASP.NET 2.0, the choices are expanded, and <xref:System.Web.HttpCookieMode> is now the default setting. If your Web application has the `cookieless` attribute of the `<sessionState>` section in the Web.config file set to a Boolean value, <xref:System.Web.HttpResponse.Redirect%2A> should work as expected for these browsers.  
+ In ASP.NET 1.1, the options for this setting were `true` or `false`, but with ASP.NET 2.0, the choices are expanded, and <xref:System.Web.HttpCookieMode.AutoDetect> is now the default setting. If your Web application has the `cookieless` attribute of the `<sessionState>` section in the Web.config file set to a Boolean value, <xref:System.Web.HttpResponse.Redirect%2A> should work as expected for these browsers.  
   
    
   

@@ -816,7 +816,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns `false` if the <xref:System.Web.UI.Page.UnobtrusiveValidationMode%2A> property value is <xref:System.Web.UI.UnobtrusiveValidationMode>; otherwise this property returns `true` .  
+ This property returns `false` if the <xref:System.Web.UI.Page.UnobtrusiveValidationMode%2A> property value is <xref:System.Web.UI.UnobtrusiveValidationMode.None>; otherwise this property returns `true` .  
   
  ]]></format>
         </remarks>

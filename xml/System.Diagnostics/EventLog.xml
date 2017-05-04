@@ -55,12 +55,12 @@
  This requirement is because all event logs, including Security logs, must be searched to determine whether the event source is unique. Starting with Windows Vista, users do not have permission to access the Security log; therefore, a <xref:System.Security.SecurityException> is thrown.  
   
 > [!IMPORTANT]
->  Creating or deleting an event source requires synchronization of the underlying code by using a named mutex. If a highly privileged application locks the named mutex, trying to create or delete an event source causes the application to stop responding until the lock is released. To help prevent this problem, never grant <xref:System.Security.Permissions.SecurityPermissionFlag> permission to untrusted code. In addition, <xref:System.Security.Permissions.SecurityPermissionFlag> permission potentially allows other permissions to be bypassed and should only be granted to highly trusted code.  
+>  Creating or deleting an event source requires synchronization of the underlying code by using a named mutex. If a highly privileged application locks the named mutex, trying to create or delete an event source causes the application to stop responding until the lock is released. To help prevent this problem, never grant <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> permission to untrusted code. In addition, <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> permission potentially allows other permissions to be bypassed and should only be granted to highly trusted code.  
   
  Applications and services should write to the Application log or to a custom log. Device drivers should write to the System log. If you do not explicitly set the <xref:System.Diagnostics.EventLog.Log%2A> property, the event log defaults to the Application log.  
   
 > [!NOTE]
->  There is nothing to protect an application from writing as any registered source.  If an application is granted <xref:System.Diagnostics.EventLogPermissionAccess> permission, it can write events for any valid source registered on the computer.  
+>  There is nothing to protect an application from writing as any registered source.  If an application is granted <xref:System.Diagnostics.EventLogPermissionAccess.Write> permission, it can write events for any valid source registered on the computer.  
   
  Use the <xref:System.Diagnostics.EventLog.WriteEvent%2A> and <xref:System.Diagnostics.EventLog.WriteEntry%2A> methods to write events to an event log. You must specify an event source to write events; you must create and configure the event source before writing the first entry with the source.  
   
@@ -1115,7 +1115,7 @@ SVC_UPDATE.EXE
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
   
  When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Diagnostics.EventLog> references. This method invokes the `Dispose()` method of each referenced object.  
   
@@ -1813,9 +1813,9 @@ SVC_UPDATE.EXE
 ## Remarks  
  Use the <xref:System.Diagnostics.EventLog.MinimumRetentionDays%2A> property to examine the current setting for an event log. Use <xref:System.Diagnostics.EventLog.ModifyOverflowPolicy%2A> to change the minimum number of days that each entry in the event log must be retained.  
   
- The <xref:System.Diagnostics.EventLog.MinimumRetentionDays%2A> value depends on the configured overflow behavior of the event log. If the <xref:System.Diagnostics.OverflowAction> property for an event log is set to <xref:System.Diagnostics.OverflowAction>, then the <xref:System.Diagnostics.EventLog.MinimumRetentionDays%2A> value is 0. If the <xref:System.Diagnostics.OverflowAction> property for an event log is set to <xref:System.Diagnostics.OverflowAction>, then the <xref:System.Diagnostics.EventLog.MinimumRetentionDays%2A> value is -1. If the <xref:System.Diagnostics.OverflowAction> property for an event log is set to <xref:System.Diagnostics.OverflowAction>, then the <xref:System.Diagnostics.EventLog.MinimumRetentionDays%2A> value is greater than zero, and represents the number of days to retain event log entries when the event log is full.  
+ The <xref:System.Diagnostics.EventLog.MinimumRetentionDays%2A> value depends on the configured overflow behavior of the event log. If the <xref:System.Diagnostics.OverflowAction> property for an event log is set to <xref:System.Diagnostics.OverflowAction.OverwriteAsNeeded>, then the <xref:System.Diagnostics.EventLog.MinimumRetentionDays%2A> value is 0. If the <xref:System.Diagnostics.OverflowAction> property for an event log is set to <xref:System.Diagnostics.OverflowAction.DoNotOverwrite>, then the <xref:System.Diagnostics.EventLog.MinimumRetentionDays%2A> value is -1. If the <xref:System.Diagnostics.OverflowAction> property for an event log is set to <xref:System.Diagnostics.OverflowAction.OverwriteOlder>, then the <xref:System.Diagnostics.EventLog.MinimumRetentionDays%2A> value is greater than zero, and represents the number of days to retain event log entries when the event log is full.  
   
- The overflow behavior only occurs when an event log reaches its size limit. When an <xref:System.Diagnostics.EventLog> has its <xref:System.Diagnostics.EventLog.OverflowAction%2A> set to <xref:System.Diagnostics.OverflowAction>, and the event log reaches its maximum size, then new entries are written only if they can replace entries whose age exceeds the <xref:System.Diagnostics.EventLog.MinimumRetentionDays%2A> period. Retaining event entries for a minimum period is appropriate when the event log is archived regularly. Otherwise, you risk losing new entries when the event log reaches its limit. To avoid losing new event information, set the minimum retention days for events based on your archive schedule for a particular event log.  
+ The overflow behavior only occurs when an event log reaches its size limit. When an <xref:System.Diagnostics.EventLog> has its <xref:System.Diagnostics.EventLog.OverflowAction%2A> set to <xref:System.Diagnostics.OverflowAction.OverwriteOlder>, and the event log reaches its maximum size, then new entries are written only if they can replace entries whose age exceeds the <xref:System.Diagnostics.EventLog.MinimumRetentionDays%2A> period. Retaining event entries for a minimum period is appropriate when the event log is archived regularly. Otherwise, you risk losing new entries when the event log reaches its limit. To avoid losing new event information, set the minimum retention days for events based on your archive schedule for a particular event log.  
   
    
   
@@ -1873,14 +1873,14 @@ SVC_UPDATE.EXE
 > [!NOTE]
 >  This property represents a configuration setting for the event log represented by this instance. When the event log reaches its maximum size, this property specifies how the operating system handles new entries written by all event sources registered for the event log.  
   
- Set the `action` parameter to <xref:System.Diagnostics.OverflowAction> to indicate that a new entry overwrites the oldest entry when the <xref:System.Diagnostics.EventLog> reaches its maximum size. If the `action` parameter is set to <xref:System.Diagnostics.OverflowAction>, the `retentionDays` parameter value is ignored.  
+ Set the `action` parameter to <xref:System.Diagnostics.OverflowAction.OverwriteAsNeeded> to indicate that a new entry overwrites the oldest entry when the <xref:System.Diagnostics.EventLog> reaches its maximum size. If the `action` parameter is set to <xref:System.Diagnostics.OverflowAction.OverwriteAsNeeded>, the `retentionDays` parameter value is ignored.  
   
- Set the `action` parameter to <xref:System.Diagnostics.OverflowAction> to indicate that each new entry overwrites older entries when the <xref:System.Diagnostics.EventLog> reaches its maximum size. Specify the number of days that events must be retained in the log using the `retentionDays` parameter. Events written within the retention range are not overwritten by new entries.  
+ Set the `action` parameter to <xref:System.Diagnostics.OverflowAction.OverwriteOlder> to indicate that each new entry overwrites older entries when the <xref:System.Diagnostics.EventLog> reaches its maximum size. Specify the number of days that events must be retained in the log using the `retentionDays` parameter. Events written within the retention range are not overwritten by new entries.  
   
- Set the `action` parameter to <xref:System.Diagnostics.OverflowAction> to discard new events when the maximum log size is reached. If the `action` parameter is set to <xref:System.Diagnostics.OverflowAction>, the `retentionDays` parameter value is ignored.  
+ Set the `action` parameter to <xref:System.Diagnostics.OverflowAction.DoNotOverwrite> to discard new events when the maximum log size is reached. If the `action` parameter is set to <xref:System.Diagnostics.OverflowAction.DoNotOverwrite>, the `retentionDays` parameter value is ignored.  
   
 > [!CAUTION]
->  Setting the overflow policy to <xref:System.Diagnostics.OverflowAction> specifies that new entries are discarded when the event log is full. If you use this setting, ensure the event log is regularly archived and cleared to avoid reaching its maximum size limit.  
+>  Setting the overflow policy to <xref:System.Diagnostics.OverflowAction.DoNotOverwrite> specifies that new entries are discarded when the event log is full. If you use this setting, ensure the event log is regularly archived and cleared to avoid reaching its maximum size limit.  
   
    
   
@@ -2242,7 +2242,7 @@ SVC_UPDATE.EXE
 >  Starting with Windows Vista, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
   
 > [!NOTE]
->  A service that is executing under the <xref:System.ServiceProcess.ServiceAccount> account does not have the privileges required to execute this method. The solution is to check whether the event source exists in the <xref:System.ServiceProcess.ServiceInstaller>, and if it does not exist, to create the source in the installer.  
+>  A service that is executing under the <xref:System.ServiceProcess.ServiceAccount.LocalSystem> account does not have the privileges required to execute this method. The solution is to check whether the event source exists in the <xref:System.ServiceProcess.ServiceInstaller>, and if it does not exist, to create the source in the installer.  
   
  Because you cannot give a new source the name of an existing source on the same computer, use this method before attempting to call <xref:System.Diagnostics.EventLog.CreateEventSource%2A> to ensure that a source with the name specified by `source` does not already exist on the local computer. The `source` parameter is not case-sensitive.  
   
@@ -2305,7 +2305,7 @@ SVC_UPDATE.EXE
 >  Starting with Windows Vista, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
   
 > [!NOTE]
->  A service that is executing under the <xref:System.ServiceProcess.ServiceAccount> account does not have the privileges required to execute this method. The solution is to check whether the event source exists in the <xref:System.ServiceProcess.ServiceInstaller>, and if it does not exist, to create the source in the installer.  
+>  A service that is executing under the <xref:System.ServiceProcess.ServiceAccount.LocalSystem> account does not have the privileges required to execute this method. The solution is to check whether the event source exists in the <xref:System.ServiceProcess.ServiceInstaller>, and if it does not exist, to create the source in the installer.  
   
  Because you cannot give a new source the name of an existing source on the same computer, use this method before attempting to call <xref:System.Diagnostics.EventLog.CreateEventSource%2A> to ensure that a source with the name specified by `source` does not already exist on the computer. The `source` and `machineName` parameters are not case sensitive.  
   

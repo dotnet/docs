@@ -85,7 +85,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In mutual authentication, both the client and server present credentials to establish their identity. The <xref:System.Net.Security.AuthenticationLevel> and <xref:System.Net.Security.AuthenticationLevel> values are relevant for Kerberos authentication. Kerberos authentication can be supported directly, or can be used if the Negotiate security protocol is used to select the actual security protocol. For more information about authentication protocols, see [Internet Authentication](~/docs/framework/network-programming/internet-authentication.md).  
+ In mutual authentication, both the client and server present credentials to establish their identity. The <xref:System.Net.Security.AuthenticationLevel.MutualAuthRequired> and <xref:System.Net.Security.AuthenticationLevel.MutualAuthRequested> values are relevant for Kerberos authentication. Kerberos authentication can be supported directly, or can be used if the Negotiate security protocol is used to select the actual security protocol. For more information about authentication protocols, see [Internet Authentication](~/docs/framework/network-programming/internet-authentication.md).  
   
  ]]></format>
         </remarks>

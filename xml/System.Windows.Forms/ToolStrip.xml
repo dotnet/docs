@@ -66,7 +66,7 @@
   
  Use the <xref:System.Windows.Forms.ToolStripControlHost> class to host any other Windows Forms control in a <xref:System.Windows.Forms.ToolStrip>.  
   
- By default, the <xref:System.Windows.Forms.ToolStrip> is double buffered, taking advantage of the <xref:System.Windows.Forms.ControlStyles> setting.  
+ By default, the <xref:System.Windows.Forms.ToolStrip> is double buffered, taking advantage of the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> setting.  
   
  Although <xref:System.Windows.Forms.ToolStrip> replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control of previous versions, <xref:System.Windows.Forms.ToolBar> is retained for both backward compatibility and future use if you choose.  
   
@@ -469,9 +469,9 @@
   
 -   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.None>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
   
    
   
@@ -1272,7 +1272,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStrip.Dock%2A> property to define how a <xref:System.Windows.Forms.ToolStrip> is automatically resized as its parent control is resized. For example, setting <xref:System.Windows.Forms.ToolStrip.Dock%2A> to <xref:System.Windows.Forms.DockStyle> causes the <xref:System.Windows.Forms.ToolStrip> to align itself with the left edges of its parent control and to resize as the parent control is resized. Controls are docked in their z-order, which is the visual layering of controls on a form along the form's z-axis (depth).  
+ Use the <xref:System.Windows.Forms.ToolStrip.Dock%2A> property to define how a <xref:System.Windows.Forms.ToolStrip> is automatically resized as its parent control is resized. For example, setting <xref:System.Windows.Forms.ToolStrip.Dock%2A> to <xref:System.Windows.Forms.DockStyle.Left> causes the <xref:System.Windows.Forms.ToolStrip> to align itself with the left edges of its parent control and to resize as the parent control is resized. Controls are docked in their z-order, which is the visual layering of controls on a form along the form's z-axis (depth).  
   
  A control can be docked to one edge of its parent container or can be docked to all edges and fill the parent container.  
   
@@ -1663,7 +1663,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In a stack layout, make a <xref:System.Windows.Forms.ToolStrip> movable by putting it in a <xref:System.Windows.Forms.ToolStripPanel> and ensuring that its <xref:System.Windows.Forms.ToolStrip.GripStyle%2A> is set to <xref:System.Windows.Forms.ToolStripGripStyle>.  
+ In a stack layout, make a <xref:System.Windows.Forms.ToolStrip> movable by putting it in a <xref:System.Windows.Forms.ToolStripPanel> and ensuring that its <xref:System.Windows.Forms.ToolStrip.GripStyle%2A> is set to <xref:System.Windows.Forms.ToolStripGripStyle.Visible>.  
   
  ]]></format>
         </remarks>
@@ -1773,9 +1773,9 @@
   
 -   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.None>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
   
  ]]></format>
         </remarks>
@@ -1805,7 +1805,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripItemImageScaling> property to control the default size of an image. Use <xref:System.Windows.Forms.ToolStripItemImageScaling> to make the size of the image on a <xref:System.Windows.Forms.ToolStripItem> to automatically adjust to fit on a <xref:System.Windows.Forms.ToolStrip> while retaining the original image proportions.  
+ Use the <xref:System.Windows.Forms.ToolStripItemImageScaling> property to control the default size of an image. Use <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit> to make the size of the image on a <xref:System.Windows.Forms.ToolStripItem> to automatically adjust to fit on a <xref:System.Windows.Forms.ToolStrip> while retaining the original image proportions.  
   
  The <xref:System.Windows.Forms.ToolStripItem.Image%2A>, <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A>, <xref:System.Windows.Forms.ToolStripItem.ImageIndex%2A>, <xref:System.Windows.Forms.ToolStripItem.ImageKey%2A>, and <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> properties pertain to various aspects of image handling. Use images in <xref:System.Windows.Forms.ToolStrip> controls by setting these properties directly or by setting the run-time–only <xref:System.Windows.Forms.ToolStrip.ImageList%2A> property.  
   
@@ -1813,9 +1813,9 @@
   
 -   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.None>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
   
    
   
@@ -2098,7 +2098,7 @@
 ## Remarks  
  When items do not fit within the <xref:System.Windows.Forms.ToolStrip>, an overflow button automatically appears. The <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property setting determines whether an item appears in the overflow area always, as needed, or never.  
   
- Inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property in the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip>, the overflow <xref:System.Windows.Forms.ToolStrip>, or if it is not currently showing at all. The typical reasons why an item is not displayed are that the item did not fit on the main <xref:System.Windows.Forms.ToolStrip> and its <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property was set to <xref:System.Windows.Forms.ToolStripItemOverflow>.  
+ Inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property in the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip>, the overflow <xref:System.Windows.Forms.ToolStrip>, or if it is not currently showing at all. The typical reasons why an item is not displayed are that the item did not fit on the main <xref:System.Windows.Forms.ToolStrip> and its <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property was set to <xref:System.Windows.Forms.ToolStripItemOverflow.Never>.  
   
  For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -2187,7 +2187,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The sizing grip will not be displayed unless you also set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to one of the overflow values. If the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property is set to <xref:System.Windows.Forms.ToolStripLayoutStyle> or <xref:System.Windows.Forms.ToolStripLayoutStyle>, the sizing grip will not be displayed.  
+ The sizing grip will not be displayed unless you also set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to one of the overflow values. If the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property is set to <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> or <xref:System.Windows.Forms.ToolStripLayoutStyle.Table>, the sizing grip will not be displayed.  
   
    
   

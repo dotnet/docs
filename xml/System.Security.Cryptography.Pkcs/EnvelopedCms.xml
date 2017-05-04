@@ -60,7 +60,7 @@
 |<xref:System.Security.Cryptography.Pkcs.EnvelopedCms.ContentInfo%2A>|1.2.840.113549.1.7.1 (data)Length: zero|  
 |<xref:System.Security.Cryptography.Pkcs.EnvelopedCms.ContentEncryptionAlgorithm%2A>|1.2.840.113549.3.7 (RSA_DES_EDE3_CBC)|  
   
- The default <xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType> for recipients is <xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType>.  
+ The default <xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType> for recipients is <xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType.IssuerAndSerialNumber>.  
   
  ]]></format>
         </remarks>

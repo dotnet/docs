@@ -16,13 +16,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.RSAKeyValue> class represents the <`RSAKeyValue`> element of an XML signature defined by the XML digital signature specification. The <`RSAKeyValue`> element is the subelement of the <`KeyInfo`> element (represented by the <xref:System.Security.Cryptography.Xml.KeyInfo> class) that describes an <xref:System.Security.Cryptography.RSA> public key. The <`RSAKeyValue`> element contains the public key that corresponds to the private key used to digitally sign a document. A recipient of the document uses the public key to validate the XML signature.  
+ The <xref:System.Security.Cryptography.Xml.RSAKeyValue> class represents the `<RSAKeyValue>` element of an XML signature defined by the XML digital signature specification. The `<RSAKeyValue>` element is the subelement of the `<KeyInfo>` element (represented by the <xref:System.Security.Cryptography.Xml.KeyInfo> class) that describes an <xref:System.Security.Cryptography.RSA> public key. The `<RSAKeyValue>` element contains the public key that corresponds to the private key used to digitally sign a document. A recipient of the document uses the public key to validate the XML signature.  
   
  Use the <xref:System.Security.Cryptography.Xml.RSAKeyValue> class whenever you want to add a public key to your XML digital signature.  
   
  If a key is not explicitly supplied to the constructor, a new <xref:System.Security.Cryptography.RSA> key pair is randomly generated.  
   
- For more information about the <`RSAKeyValue`> element, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<RSAKeyValue>` element, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
   
    
   
@@ -138,7 +138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.RSAKeyValue.Key%2A> property represents the public key to add to an XML digital signature using the <`Modulus`> subelement and the <`Exponen`t> subelement of the <`RSAKeyValue`> element.  
+ The <xref:System.Security.Cryptography.Xml.RSAKeyValue.Key%2A> property represents the public key to add to an XML digital signature using the `<Modulus>` subelement and the `<Exponent>` subelement of the `<RSAKeyValue>` element.  
   
  For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
   

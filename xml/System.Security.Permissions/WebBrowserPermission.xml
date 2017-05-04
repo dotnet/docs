@@ -45,7 +45,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the value of the <xref:System.Security.Permissions.WebBrowserPermission.Level%2A> property is set to <xref:System.Security.Permissions.WebBrowserPermissionLevel>.  
+ By default, the value of the <xref:System.Security.Permissions.WebBrowserPermission.Level%2A> property is set to <xref:System.Security.Permissions.WebBrowserPermissionLevel.Safe>.  
   
  ]]></format>
         </remarks>
@@ -70,7 +70,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `state` is set to <xref:System.Security.Permissions.PermissionState>, the value of the <xref:System.Security.Permissions.WebBrowserPermission.Level%2A> property is set to <xref:System.Security.Permissions.WebBrowserPermissionLevel>. If `state` is set to <xref:System.Security.Permissions.PermissionState>, the value of the <xref:System.Security.Permissions.WebBrowserPermission.Level%2A> property is set to <xref:System.Security.Permissions.WebBrowserPermissionLevel>.  
+ If `state` is set to <xref:System.Security.Permissions.PermissionState.Unrestricted>, the value of the <xref:System.Security.Permissions.WebBrowserPermission.Level%2A> property is set to <xref:System.Security.Permissions.WebBrowserPermissionLevel.Unrestricted>. If `state` is set to <xref:System.Security.Permissions.PermissionState.None>, the value of the <xref:System.Security.Permissions.WebBrowserPermission.Level%2A> property is set to <xref:System.Security.Permissions.WebBrowserPermissionLevel.None>.  
   
    
   

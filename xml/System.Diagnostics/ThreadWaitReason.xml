@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The thread wait reason is only valid when the <xref:System.Diagnostics.ThreadState> is <xref:System.Diagnostics.ThreadState>.  
+ The thread wait reason is only valid when the <xref:System.Diagnostics.ThreadState> is <xref:System.Diagnostics.ThreadState.Wait>.  
   
  ]]></format>
     </remarks>

@@ -44,7 +44,7 @@
    
   
 ## Examples  
- The following example illustrates the use of the <xref:System.Xml.Serialization.CodeGenerationOptions> enumeration to specify the behavior of a <xref:System.Web.Services.Description.ServiceDescriptionImporter> object.  
+ The following example illustrates the use of the <xref:System.Xml.Serialization.CodeGenerationOptions.GenerateProperties> enumeration to specify the behavior of a <xref:System.Web.Services.Description.ServiceDescriptionImporter> object.  
   
  [!code-cpp[WebServices_Description_Importer#4](~/samples/snippets/cpp/VS_Snippets_Remoting/WebServices_Description_Importer/CPP/import.cpp#4)]
  [!code-csharp[WebServices_Description_Importer#4](~/samples/snippets/csharp/VS_Snippets_Remoting/WebServices_Description_Importer/CS/import.cs#4)]  

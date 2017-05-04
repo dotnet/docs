@@ -37,7 +37,7 @@
 >  Adding a trace listener to the <xref:System.Diagnostics.Trace.Listeners%2A> collection can cause an exception to be thrown while tracing, if a resource used by the trace listener is not available. The conditions and the exception thrown depend on the trace listener and cannot be enumerated in this topic. It may be useful to place calls to the <xref:System.Diagnostics.Trace> methods in `try`/`catch` blocks to detect and handle any exceptions from trace listeners.  
   
 > [!NOTE]
->  If you add trace listeners to partially trusted code, you will get a <xref:System.Security.SecurityException> exception, because adding trace listeners requires <xref:System.Security.Permissions.SecurityPermissionFlag> permission. To trace partially trusted code that is running in a sandbox in Visual Studio, do not add trace listeners. Instead, view the <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> messages in the **Output** window.  
+>  If you add trace listeners to partially trusted code, you will get a <xref:System.Security.SecurityException> exception, because adding trace listeners requires <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> permission. To trace partially trusted code that is running in a sandbox in Visual Studio, do not add trace listeners. Instead, view the <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> messages in the **Output** window.  
   
  The <xref:System.Diagnostics.Trace> class provides properties to get or set the level of <xref:System.Diagnostics.Trace.Indent%2A>, the <xref:System.Diagnostics.Trace.IndentSize%2A>, and whether to <xref:System.Diagnostics.Trace.AutoFlush%2A> after each write.  
   
@@ -874,7 +874,7 @@ End of list of errors
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Diagnostics.Trace.TraceError%2A> calls the `TraceEvent` method for each trace listener, with the trace event type <xref:System.Diagnostics.TraceEventType>, passing the informative message as the message string.  
+ <xref:System.Diagnostics.Trace.TraceError%2A> calls the `TraceEvent` method for each trace listener, with the trace event type <xref:System.Diagnostics.TraceEventType.Error>, passing the informative message as the message string.  
   
  ]]></format>
         </remarks>
@@ -924,7 +924,7 @@ End of list of errors
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Diagnostics.Trace.TraceError%2A> calls the `TraceEvent` methods in the trace listeners with the trace event type <xref:System.Diagnostics.TraceEventType>, passing the message content as an object array with formatting information. See the <xref:System.String.Format%2A> method for more information about the `format` and `args` parameters.  
+ <xref:System.Diagnostics.Trace.TraceError%2A> calls the `TraceEvent` methods in the trace listeners with the trace event type <xref:System.Diagnostics.TraceEventType.Error>, passing the message content as an object array with formatting information. See the <xref:System.String.Format%2A> method for more information about the `format` and `args` parameters.  
   
  ]]></format>
         </remarks>
@@ -966,7 +966,7 @@ End of list of errors
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Diagnostics.Trace.TraceInformation%2A> calls the `TraceEvent` method for each trace listener, with the trace event type <xref:System.Diagnostics.TraceEventType>, passing the informative message as the message string.  
+ <xref:System.Diagnostics.Trace.TraceInformation%2A> calls the `TraceEvent` method for each trace listener, with the trace event type <xref:System.Diagnostics.TraceEventType.Information>, passing the informative message as the message string.  
   
  ]]></format>
         </remarks>
@@ -1016,7 +1016,7 @@ End of list of errors
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Diagnostics.Trace.TraceInformation%2A> calls the `TraceEvent` methods in the trace listeners with the trace event type <xref:System.Diagnostics.TraceEventType>, passing the message content as an object array with formatting information. See the <xref:System.String.Format%2A> method for more information about the `format` and `args` parameters.  
+ <xref:System.Diagnostics.Trace.TraceInformation%2A> calls the `TraceEvent` methods in the trace listeners with the trace event type <xref:System.Diagnostics.TraceEventType.Information>, passing the message content as an object array with formatting information. See the <xref:System.String.Format%2A> method for more information about the `format` and `args` parameters.  
   
  ]]></format>
         </remarks>
@@ -1058,7 +1058,7 @@ End of list of errors
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Diagnostics.Trace.TraceWarning%2A> calls the `TraceEvent` method for each trace listener with the trace event type <xref:System.Diagnostics.TraceEventType>, passing the informative message as the message string.  
+ <xref:System.Diagnostics.Trace.TraceWarning%2A> calls the `TraceEvent` method for each trace listener with the trace event type <xref:System.Diagnostics.TraceEventType.Warning>, passing the informative message as the message string.  
   
  ]]></format>
         </remarks>
@@ -1108,7 +1108,7 @@ End of list of errors
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Diagnostics.Trace.TraceWarning%2A> calls the `TraceEvent` methods in the trace listeners with the trace event type <xref:System.Diagnostics.TraceEventType>, passing the message content as an object array with formatting information. See the <xref:System.String.Format%2A> method for more information about the `format` and `args` parameters.  
+ <xref:System.Diagnostics.Trace.TraceWarning%2A> calls the `TraceEvent` methods in the trace listeners with the trace event type <xref:System.Diagnostics.TraceEventType.Warning>, passing the message content as an object array with formatting information. See the <xref:System.String.Format%2A> method for more information about the `format` and `args` parameters.  
   
  ]]></format>
         </remarks>

@@ -28,7 +28,7 @@
   
  You can use one of the constructors of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> class to reference an <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object or a `rule` element if the following is true:  
   
--   The <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object is in the containing grammar and the value of its <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Scope%2A> property is <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleScope> or <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleScope>.  
+-   The <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object is in the containing grammar and the value of its <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Scope%2A> property is <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleScope.Public> or <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleScope.Private>.  
   
 -   The `rule` element is in an external grammar and the value of its `scope` attribute is `public`.  
   

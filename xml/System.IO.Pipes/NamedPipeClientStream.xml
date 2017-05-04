@@ -35,7 +35,7 @@
    
   
 ## Examples  
- The following example demonstrates a way to send a string from a parent process to a child process on the same computer using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process. The <xref:System.IO.Pipes.NamedPipeServerStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>. The server then waits for a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process to connect to it. In this example, both processes are on the same computer and the <xref:System.IO.Pipes.NamedPipeClientStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>. The parent process then sends a user-supplied string to the child process. The string is displayed to the console.  
+ The following example demonstrates a way to send a string from a parent process to a child process on the same computer using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process. The <xref:System.IO.Pipes.NamedPipeServerStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.Out>. The server then waits for a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process to connect to it. In this example, both processes are on the same computer and the <xref:System.IO.Pipes.NamedPipeClientStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.In>. The parent process then sends a user-supplied string to the child process. The string is displayed to the console.  
   
  This example is for the client process, which connects to the server process. For the entire code sample, including the code for both the pipe client and server, see [How to: Use Named Pipes for Network Interprocess Communication](~/docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md).  
   
@@ -78,13 +78,13 @@
   
 -   A default server name of ".".  
   
--   A default <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>.  
+-   A default <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.InOut>.  
   
--   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
+-   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions.None>.  
   
--   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel>.  
+-   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel.None>.  
   
--   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+-   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability.None>.  
   
  ]]></format>
         </remarks>
@@ -129,13 +129,13 @@
 ## Remarks  
  This constructor uses the following default values:  
   
--   A default <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>.  
+-   A default <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.InOut>.  
   
--   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
+-   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions.None>.  
   
--   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel>.  
+-   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel.None>.  
   
--   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+-   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability.None>.  
   
  ]]></format>
         </remarks>
@@ -182,11 +182,11 @@
 ## Remarks  
  This constructor uses the following default values:  
   
--   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
+-   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions.None>.  
   
--   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel>.  
+-   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel.None>.  
   
--   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+-   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability.None>.  
   
    
   
@@ -290,9 +290,9 @@
 ## Remarks  
  This constructor uses the following default values:  
   
--   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel>.  
+-   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel.None>.  
   
--   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+-   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability.None>.  
   
  ]]></format>
         </remarks>
@@ -349,7 +349,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor uses a default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+ This constructor uses a default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability.None>.  
   
  ]]></format>
         </remarks>
@@ -404,7 +404,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The pipe direction for this constructor is determined by the `desiredAccessRights` parameter. If the `desiredAccessRights` value is <xref:System.IO.Pipes.PipeAccessRights>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection>. If the value of `desiredAccessRights` is <xref:System.IO.Pipes.PipeAccessRights>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection>. If the value of `desiredAccessRights` includes both <xref:System.IO.Pipes.PipeAccessRights> and <xref:System.IO.Pipes.PipeAccessRights>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection>.  
+ The pipe direction for this constructor is determined by the `desiredAccessRights` parameter. If the `desiredAccessRights` value is <xref:System.IO.Pipes.PipeAccessRights.ReadData>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection.In>. If the value of `desiredAccessRights` is <xref:System.IO.Pipes.PipeAccessRights.WriteData>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection.Out>. If the value of `desiredAccessRights` includes both <xref:System.IO.Pipes.PipeAccessRights.ReadData> and <xref:System.IO.Pipes.PipeAccessRights.WriteData>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection.InOut>.  
   
  ]]></format>
         </remarks>

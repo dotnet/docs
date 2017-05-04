@@ -131,7 +131,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is the absolute maximum value allowed by the .NET Framework. Its value is defined by the <xref:System.TimeSpan> field.  
+ This is the absolute maximum value allowed by the .NET Framework. Its value is defined by the <xref:System.TimeSpan.MaxValue> field.  
   
  ]]></format>
         </remarks>
@@ -190,7 +190,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is the absolute minimum value allowed by the .NET Framework. Its value is defined by the <xref:System.TimeSpan> field.  
+ This is the absolute minimum value allowed by the .NET Framework. Its value is defined by the <xref:System.TimeSpan.MinValue> field.  
   
  ]]></format>
         </remarks>

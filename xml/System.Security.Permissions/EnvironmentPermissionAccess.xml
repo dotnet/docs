@@ -27,7 +27,7 @@
  This enumeration is used by <xref:System.Security.Permissions.EnvironmentPermission>.  
   
 > [!NOTE]
->  Although NoAccess and AllAccess appear in <xref:System.Security.Permissions.EnvironmentPermissionAccess>, they are not valid for use as the parameter for <xref:System.Security.Permissions.EnvironmentPermission.GetPathList%2A> because they describe no environment variable access types or all environment variable access types, respectively, and <xref:System.Security.Permissions.EnvironmentPermission.GetPathList%2A> expects a single environment variable access type.  
+>  Although NoAccess and AllAccess appear in <xref:System.Security.Permissions.EnvironmentPermissionAccess.NoAccess>, they are not valid for use as the parameter for <xref:System.Security.Permissions.EnvironmentPermission.GetPathList%2A> because they describe no environment variable access types or all environment variable access types, respectively, and <xref:System.Security.Permissions.EnvironmentPermission.GetPathList%2A> expects a single environment variable access type.  
   
  ]]></format>
     </remarks>

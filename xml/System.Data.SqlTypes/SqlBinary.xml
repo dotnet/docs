@@ -135,44 +135,27 @@
         <summary>Compares this <see cref="T:System.Data.SqlTypes.SqlBinary" /> object to the supplied <see cref="T:System.Data.SqlTypes.SqlBinary" /> object and returns an indication of their relative values.</summary>
         <returns>A signed number that indicates the relative values of this <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure and the object.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The value of this <see cref="T:System.Data.SqlTypes.SqlBinary" /> object is less than the object.  
+ </term><description> The value of this <see cref="T:System.Data.SqlTypes.SqlBinary" /> object is less than the object.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This <see cref="T:System.Data.SqlTypes.SqlBinary" /> object is the same as object.  
+ </term><description> This <see cref="T:System.Data.SqlTypes.SqlBinary" /> object is the same as object.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This <see cref="T:System.Data.SqlTypes.SqlBinary" /> object is greater than object.  
+ </term><description> This <see cref="T:System.Data.SqlTypes.SqlBinary" /> object is greater than object.  
   
  -or-  
   
  The object is a null reference.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,44 +188,27 @@
         <summary>Compares this <see cref="T:System.Data.SqlTypes.SqlBinary" /> object to the supplied object and returns an indication of their relative values.</summary>
         <returns>A signed number that indicates the relative values of this <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure and the object.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The value of this <see cref="T:System.Data.SqlTypes.SqlBinary" /> object is less than the object.  
+ </term><description> The value of this <see cref="T:System.Data.SqlTypes.SqlBinary" /> object is less than the object.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This <see cref="T:System.Data.SqlTypes.SqlBinary" /> object is the same as object.  
+ </term><description> This <see cref="T:System.Data.SqlTypes.SqlBinary" /> object is the same as object.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This <see cref="T:System.Data.SqlTypes.SqlBinary" /> object is greater than object.  
+ </term><description> This <see cref="T:System.Data.SqlTypes.SqlBinary" /> object is greater than object.  
   
  -or-  
   
  The object is a null reference.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

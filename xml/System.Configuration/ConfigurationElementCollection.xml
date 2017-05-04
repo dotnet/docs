@@ -582,7 +582,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The type will be either a <xref:System.Configuration.ConfigurationElementCollectionType> or an <xref:System.Configuration.ConfigurationElementCollectionType> field. For more information, see <xref:System.Configuration.ConfigurationElementCollectionType>.  
+ The type will be either a <xref:System.Configuration.ConfigurationElementCollectionType.BasicMap> or an <xref:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap> field. For more information, see <xref:System.Configuration.ConfigurationElementCollectionType>.  
   
    
   
@@ -1214,7 +1214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you add a duplicate element, an exception is thrown if the <xref:System.Configuration.ConfigurationElementCollection.CollectionType%2A> value of the element is either <xref:System.Configuration.ConfigurationElementCollectionType> or <xref:System.Configuration.ConfigurationElementCollectionType>.  
+ When you add a duplicate element, an exception is thrown if the <xref:System.Configuration.ConfigurationElementCollection.CollectionType%2A> value of the element is either <xref:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap> or <xref:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMapAlternate>.  
   
  Note that elements with identical keys and values are not considered duplicates, and are accepted silently. Only elements with identical keys but different values are considered duplicates. For more information, see the Remarks section for the <xref:System.Configuration.ConfigurationElementCollection.BaseAdd%2A> method.  
   
@@ -1250,7 +1250,7 @@
 ## Remarks  
  The <xref:System.Configuration.ConfigurationElementCollection.Unmerge%2A> method reverses the effect of merging configuration information from different levels of the configuration hierarchy. This allows configuration set at the current hierarchy level to be differentiated from that set at parent levels, before serialization.  
   
- <xref:System.Configuration.ConfigurationElementCollection.Unmerge%2A> is called by the system on a new temporary element to compare the parent object and the source object. Based on the <xref:System.Configuration.ConfigurationSaveMode> value, it then sets the temporary object to contain the data that needs to be serialized. For details about save modes, see <xref:System.Configuration.ConfigurationSaveMode>.  
+ <xref:System.Configuration.ConfigurationElementCollection.Unmerge%2A> is called by the system on a new temporary element to compare the parent object and the source object. Based on the <xref:System.Configuration.ConfigurationSaveMode> value, it then sets the temporary object to contain the data that needs to be serialized. For details about save modes, see <xref:System.Configuration.ConfigurationSaveMode.Minimal>.  
   
  ]]></format>
         </remarks>

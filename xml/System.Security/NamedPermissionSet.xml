@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using this constructor creates a named permission set with no permissions but with an <xref:System.Security.Permissions.PermissionState> permission state. A named permission set in an unrestricted state effectively contains all permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface. The named permission set will contain all built-in permissions as well as all custom user-defined permissions that implement <xref:System.Security.Permissions.IUnrestrictedPermission>. All permissions will have the equivalent of an `Unrestricted` permission state. Permissions that do not implement <xref:System.Security.Permissions.IUnrestrictedPermission> will be empty instances.  
+ Using this constructor creates a named permission set with no permissions but with an <xref:System.Security.Permissions.PermissionState.Unrestricted> permission state. A named permission set in an unrestricted state effectively contains all permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface. The named permission set will contain all built-in permissions as well as all custom user-defined permissions that implement <xref:System.Security.Permissions.IUnrestrictedPermission>. All permissions will have the equivalent of an `Unrestricted` permission state. Permissions that do not implement <xref:System.Security.Permissions.IUnrestrictedPermission> will be empty instances.  
   
  ]]></format>
         </remarks>

@@ -598,7 +598,7 @@
 ## Remarks  
  This method reverses the effect of merging configuration information from different levels of the configuration hierarchy. This allows configuration set at the current hierarchy level to be differentiated from that set at parent levels, before serialization.  
   
- This method is called by the system on a new temporary element to compare the parent object and the source object. Based on the `saveMode` value, it then sets the temporary object to contain the data that must be serialized. [!INCLUDE[crabout](~/includes/crabout-md.md)] save modes, see <xref:System.Configuration.ConfigurationSaveMode>.  
+ This method is called by the system on a new temporary element to compare the parent object and the source object. Based on the `saveMode` value, it then sets the temporary object to contain the data that must be serialized. [!INCLUDE[crabout](~/includes/crabout-md.md)] save modes, see <xref:System.Configuration.ConfigurationSaveMode.Minimal>.  
   
  ]]></format>
         </remarks>

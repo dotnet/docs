@@ -718,7 +718,7 @@ namespace SampleRecognition
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The recognizers that ship with Vista and Windows 7 ignore case and character width when applying grammar rules to the input phrase. For more information about this type of comparison, see the <xref:System.Globalization.CompareOptions> enumeration values <xref:System.Globalization.CompareOptions> and <xref:System.Globalization.CompareOptions>. The recognizers also ignore new lines and extra white space and treat punctuation as literal input.  
+ The recognizers that ship with Vista and Windows 7 ignore case and character width when applying grammar rules to the input phrase. For more information about this type of comparison, see the <xref:System.Globalization.CompareOptions> enumeration values <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> and <xref:System.Globalization.CompareOptions.IgnoreWidth>. The recognizers also ignore new lines and extra white space and treat punctuation as literal input.  
   
    
   
@@ -814,7 +814,7 @@ namespace SharedRecognizer
 ## Remarks  
  This method creates a <xref:System.Speech.Recognition.RecognitionResult> object using the information provided in the `wordUnits` parameter.  
   
- The recognizer uses the `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
+ The recognizer uses the `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> or <xref:System.Globalization.CompareOptions.IgnoreCase> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
   
  ]]></format>
         </remarks>
@@ -845,7 +845,7 @@ namespace SharedRecognizer
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The recognizer uses the `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
+ The recognizer uses the `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> or <xref:System.Globalization.CompareOptions.IgnoreCase> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
   
  ]]></format>
         </remarks>
@@ -873,7 +873,7 @@ namespace SharedRecognizer
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The recognizers that ship with Vista and Windows 7 ignore case and character width when applying grammar rules to the input phrase. For more information about this type of comparison, see the <xref:System.Globalization.CompareOptions> enumeration values <xref:System.Globalization.CompareOptions> and <xref:System.Globalization.CompareOptions>. The recognizers also ignore new lines and extra white space and treat punctuation as literal input.  
+ The recognizers that ship with Vista and Windows 7 ignore case and character width when applying grammar rules to the input phrase. For more information about this type of comparison, see the <xref:System.Globalization.CompareOptions> enumeration values <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> and <xref:System.Globalization.CompareOptions.IgnoreWidth>. The recognizers also ignore new lines and extra white space and treat punctuation as literal input.  
   
    
   
@@ -1001,7 +1001,7 @@ namespace SharedRecognizer
 ## Remarks  
  This method creates a <xref:System.Speech.Recognition.RecognitionResult> object using the information provided in the `wordUnits` parameter.  
   
- The recognizer uses the `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
+ The recognizer uses the `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> or <xref:System.Globalization.CompareOptions.IgnoreCase> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
   
  ]]></format>
         </remarks>
@@ -1031,7 +1031,7 @@ namespace SharedRecognizer
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The recognizer uses the `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
+ The recognizer uses the `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> or <xref:System.Globalization.CompareOptions.IgnoreCase> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
   
  ]]></format>
         </remarks>
@@ -2379,7 +2379,7 @@ namespace SampleRecognition
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The shared recognizer raises this event when the state of Windows Speech Recognition changes to the <xref:System.Speech.Recognition.RecognizerState> or <xref:System.Speech.Recognition.RecognizerState> state.  
+ The shared recognizer raises this event when the state of Windows Speech Recognition changes to the <xref:System.Speech.Recognition.RecognizerState.Listening> or <xref:System.Speech.Recognition.RecognizerState.Stopped> state.  
   
  To get the state of the shared recognizer at the time of the event, use the <xref:System.Speech.Recognition.StateChangedEventArgs.RecognizerState%2A> property of the associated <xref:System.Speech.Recognition.StateChangedEventArgs>. To get the current state of the shared recognizer, use the recognizer's <xref:System.Speech.Recognition.SpeechRecognizer.State%2A> property.  
   

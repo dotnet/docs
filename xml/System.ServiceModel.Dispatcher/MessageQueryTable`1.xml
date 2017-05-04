@@ -135,9 +135,8 @@
         <param name="item">The key of the object to locate.</param>
         <summary>Determines whether the collection contains a specific item formatted as a key/value structure.</summary>
         <returns>
-          <see cref="T:System.Boolean" />  
-  
- <see langword="true" /> if the item is found in the collection; otherwise, <see langword="false" />.</returns>
+          <see cref="T:System.Boolean" />
+          <see langword="true" /> if the item is found in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,9 +159,8 @@
         <param name="key">The key to locate.</param>
         <summary>Determines whether the collection contains an element with the specified key.</summary>
         <returns>
-          <see cref="T:System.Boolean" />  
-  
- <see langword="true" /> if the collection contains an element with the key; otherwise, <see langword="false" />.</returns>
+          <see cref="T:System.Boolean" />
+          <see langword="true" /> if the collection contains an element with the key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,9 +300,8 @@
       <Docs>
         <summary>Gets a value that indicates whether the table is read-only.</summary>
         <value>
-          <see cref="T:System.Boolean" />  
-  
- <see langword="false" /> for all tables.</value>
+          <see cref="T:System.Boolean" />
+          <see langword="false" /> for all tables.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,9 +367,8 @@
         <param name="item">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> object to remove from the collection.</param>
         <summary>Removes the first occurrence of the specified object from the collection.</summary>
         <returns>
-          <see cref="T:System.Boolean" />  
-  
- <see langword="true" /> if the item was successfully removed from the collection; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the item is not found in the collection.</returns>
+          <see cref="T:System.Boolean" />
+          <see langword="true" /> if the item was successfully removed from the collection; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the item is not found in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,9 +391,8 @@
         <param name="key">The key of the element to remove.</param>
         <summary>Removes the item associated with the specified key from the collection.</summary>
         <returns>
-          <see cref="T:System.Boolean" />  
-  
- <see langword="true" /> if the item was found and removed; <see langword="false" /> if the item was not found.</returns>
+          <see cref="T:System.Boolean" />
+          <see langword="true" /> if the item was found and removed; <see langword="false" /> if the item was not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -444,9 +439,8 @@
         <param name="value">The value associated with the query.</param>
         <summary>Checks whether a matching query is stored in the table.</summary>
         <returns>
-          <see cref="T:System.Boolean" />  
-  
- <see langword="true" /> if there is a matching query in the table (the value associated with the query is found in the <see langword="out" /><paramref name="value" /> parameter); otherwise, <see langword="false" />.</returns>
+          <see cref="T:System.Boolean" />
+          <see langword="true" /> if there is a matching query in the table (the value associated with the query is found in the <see langword="out" /><paramref name="value" /> parameter); otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

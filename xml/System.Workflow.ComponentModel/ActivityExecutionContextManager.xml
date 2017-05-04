@@ -51,7 +51,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The workflow runtime enables this operation to succeed only if the activity in the execution context being completed is in the `Closed` state. The `forcePersist``Boolean` parameter indicates whether the completed execution context should be persisted so that it is available for retrieval at a later time (for example, for compensation to run).  
+ The workflow runtime enables this operation to succeed only if the activity in the execution context being completed is in the `Closed` state. The `forcePersist` `Boolean` parameter indicates whether the completed execution context should be persisted so that it is available for retrieval at a later time (for example, for compensation to run).  
   
  The overload of <xref:System.Workflow.ComponentModel.ActivityExecutionContextManager.CompleteExecutionContext%2A> that does not have the `forcePersist` parameter effectively uses a value of `false`, so that by default, completed execution contexts are not persisted.  
   
@@ -88,7 +88,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The workflow runtime enables this operation to succeed only if the activity in the execution context being completed is in the `Closed` state. The `forcePersist``Boolean` parameter indicates whether the completed execution context should be persisted so that it is available for retrieval at a later time (for example, for compensation to run).  
+ The workflow runtime enables this operation to succeed only if the activity in the execution context being completed is in the `Closed` state. The `forcePersist` `Boolean` parameter indicates whether the completed execution context should be persisted so that it is available for retrieval at a later time (for example, for compensation to run).  
   
  The overload of <xref:System.Workflow.ComponentModel.ActivityExecutionContextManager.CompleteExecutionContext%2A> that does not have the `forcePersist` parameter effectively uses a value of `false`, so that by default, completed execution contexts are not persisted.  
   

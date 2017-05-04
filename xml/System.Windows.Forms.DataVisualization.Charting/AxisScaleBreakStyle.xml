@@ -297,7 +297,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.StartFromZero%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.StartFromZero>, the chart will automatically calculate whether to start the Y-axis scale minimum from the lowest value in the series or from zero.  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.StartFromZero%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.StartFromZero.Auto>, the chart will automatically calculate whether to start the Y-axis scale minimum from the lowest value in the series or from zero.  
   
  ]]></format>
         </remarks>

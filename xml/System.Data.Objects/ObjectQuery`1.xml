@@ -232,7 +232,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default merge option for object queries is <xref:System.Data.Objects.MergeOption>. For more information, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
+ The default merge option for object queries is <xref:System.Data.Objects.MergeOption.AppendOnly>. For more information, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
   
    
   

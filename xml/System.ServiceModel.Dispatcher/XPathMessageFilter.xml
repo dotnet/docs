@@ -438,7 +438,7 @@
 ## Remarks  
  Some filters can be extremely expensive to evaluate or are very long running. Because filters operate on XML documents, the best way to set computational limits is to specify the maximum number of nodes that should be looked at during a filter evaluation.  
   
- The quota is initially set to <xref:System.Int32>.  
+ The quota is initially set to <xref:System.Int32.MaxValue>.  
   
  ]]></format>
         </remarks>

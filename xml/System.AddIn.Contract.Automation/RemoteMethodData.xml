@@ -42,13 +42,13 @@
 ## Remarks  
  The value of this field is a bitwise combination of the following <xref:System.Reflection.MethodAttributes> values if this <xref:System.AddIn.Contract.Automation.RemoteMethodData> describes a method of a COM object:  
   
--   <xref:System.Reflection.MethodAttributes>  
+-   <xref:System.Reflection.MethodAttributes.Public>  
   
--   <xref:System.Reflection.MethodAttributes>  
+-   <xref:System.Reflection.MethodAttributes.Virtual>  
   
--   <xref:System.Reflection.MethodAttributes>  
+-   <xref:System.Reflection.MethodAttributes.NewSlot>  
   
--   <xref:System.Reflection.MethodAttributes>  
+-   <xref:System.Reflection.MethodAttributes.HideBySig>  
   
  ]]></format>
         </remarks>

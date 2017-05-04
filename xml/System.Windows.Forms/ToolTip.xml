@@ -505,7 +505,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ToolTip.Hide%2A> method hides the ToolTip for the specified <xref:System.Windows.Forms.Control> if it is currently being displayed. It does not disable or otherwise prevent the same ToolTip from being displayed in the future. To instead disable all ToolTip windows associated with the current <xref:System.Windows.Forms.ToolTip.ToolTipTitle%2A> component, set the <xref:System.Windows.Forms.ToolTip.Active%2A> property to `false`.  
   
- Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Hide%2A> can hide the tip independent of user action.  
+ Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Hide%2A> can hide the tip independent of user action.  
   
  ]]></format>
         </remarks>
@@ -799,7 +799,7 @@
 ## Remarks  
  The version of the <xref:System.Windows.Forms.ToolTip.Show%2A> method displays the ToolTip for the specified control modally; that is, the ToolTip will be displayed until the <xref:System.Windows.Forms.ToolTip.Hide%2A> method is called, or until the parent form is minimized, hidden, or closed. The ToolTip is positioned in the center of the associated control.  
   
- Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Show%2A> can control the display and location of a ToolTip independent of user action.  
+ Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Show%2A> can control the display and location of a ToolTip independent of user action.  
   
  ]]></format>
         </remarks>
@@ -835,7 +835,7 @@
 ## Remarks  
  The `pt` parameter can specify a position outside the bounds of the associated control, its parent form, or even the desktop. The version of the <xref:System.Windows.Forms.ToolTip.Show%2A> method displays the ToolTip for the specified control modally; that is, the ToolTip will be displayed until the <xref:System.Windows.Forms.ToolTip.Hide%2A> method is called, or until the parent form is minimized, hidden, or dismissed.  
   
- Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Show%2A> can control the display and location of a ToolTip independent of user action.  
+ Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Show%2A> can control the display and location of a ToolTip independent of user action.  
   
  ]]></format>
         </remarks>
@@ -871,7 +871,7 @@
 ## Remarks  
  The ToolTip is positioned in the center of the associated control represented by the `win` parameter. To display the ToolTip modally, call the <xref:System.Windows.Forms.ToolTip.Show%28System.String%2CSystem.Windows.Forms.IWin32Window%29> overloaded version of this method instead.  
   
- Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Show%2A> can control the display and location of a ToolTip independent of user action.  
+ Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Show%2A> can control the display and location of a ToolTip independent of user action.  
   
  ]]></format>
         </remarks>
@@ -911,7 +911,7 @@
 ## Remarks  
  The `pt` parameter can specify a position outside the bounds of the associated control, its parent form, or even the desktop.  The ToolTip is positioned in the center of the associated control. To display the ToolTip modally, call the <xref:System.Windows.Forms.ToolTip.Show%28System.String%2CSystem.Windows.Forms.IWin32Window%2CSystem.Drawing.Point%29> overloaded version of this method instead.  
   
- Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Show%2A> can control the display and location of a ToolTip independent of user action.  
+ Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Show%2A> can control the display and location of a ToolTip independent of user action.  
   
  ]]></format>
         </remarks>
@@ -951,7 +951,7 @@
 ## Remarks  
  This version of the overloaded <xref:System.Windows.Forms.ToolTip.Show%2A> method operates identically to the <xref:System.Windows.Forms.ToolTip.Show%28System.String%2CSystem.Windows.Forms.IWin32Window%2CSystem.Drawing.Point%29> version, except that the offset is specified as separate x- and y-coordinates instead of a <xref:System.Drawing.Point>.  
   
- Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Show%2A> can control the display and location of a ToolTip independent of user action.  
+ Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Show%2A> can control the display and location of a ToolTip independent of user action.  
   
  ]]></format>
         </remarks>
@@ -990,7 +990,7 @@
 ## Remarks  
  This version of the overloaded <xref:System.Windows.Forms.ToolTip.Show%2A> method operates identically to the <xref:System.Windows.Forms.ToolTip.Show%28System.String%2CSystem.Windows.Forms.IWin32Window%2CSystem.Drawing.Point%2CSystem.Int32%29> version, except that the offset is specified as separate x and y coordinates instead of a <xref:System.Drawing.Point>. To display the ToolTip modally, call the <xref:System.Windows.Forms.ToolTip.Show%28System.String%2CSystem.Windows.Forms.IWin32Window%2CSystem.Int32%2CSystem.Int32%29> overloaded version of this method instead.  
   
- Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Show%2A> can control the display and location of a ToolTip independent of user action.  
+ Applications running in partial trust must assert the <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> permission to use this method, as <xref:System.Windows.Forms.ToolTip.Show%2A> can control the display and location of a ToolTip independent of user action.  
   
  ]]></format>
         </remarks>

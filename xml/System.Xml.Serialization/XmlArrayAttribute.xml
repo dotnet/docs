@@ -372,7 +372,7 @@ attributeFormDefault="unqualified"... >
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Xml.Serialization.CodeGenerationOptions> enumeration to instruct the <xref:System.Web.Services.Description.ServiceDescriptionImporter> to generate code that sets the <xref:System.Xml.Serialization.XmlElementAttribute.Order%2A> property.  
+ Use the <xref:System.Xml.Serialization.CodeGenerationOptions.GenerateOrder> enumeration to instruct the <xref:System.Web.Services.Description.ServiceDescriptionImporter> to generate code that sets the <xref:System.Xml.Serialization.XmlElementAttribute.Order%2A> property.  
   
 > [!IMPORTANT]
 >  Once the <xref:System.Xml.Serialization.XmlElementAttribute.Order%2A> property has been used on one public property or field in a type, it must be applied to all public properties and fields for that type and all inherited types.  

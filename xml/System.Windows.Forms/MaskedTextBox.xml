@@ -76,9 +76,9 @@
 |`AllowPrompt` property|<xref:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput%2A>|  
 |`AutoTab` property|None|  
 |`ClipMode` property|<xref:System.Windows.Forms.MaskedTextBox.CutCopyMaskFormat%2A>|  
-|`ClipText` property|<xref:System.Windows.Forms.MaskedTextBox.Text%2A> (when <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> is set to <xref:System.Windows.Forms.MaskFormat>)|  
+|`ClipText` property|<xref:System.Windows.Forms.MaskedTextBox.Text%2A> (when <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> is set to <xref:System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals>)|  
 |`Format` property|None|  
-|`FormattedText` property|<xref:System.Windows.Forms.MaskedTextBox.Text%2A> (when <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> is set to <xref:System.Windows.Forms.MaskFormat>)|  
+|`FormattedText` property|<xref:System.Windows.Forms.MaskedTextBox.Text%2A> (when <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> is set to <xref:System.Windows.Forms.MaskFormat.IncludePromptAndLiterals>)|  
 |`Mask` property|<xref:System.Windows.Forms.MaskedTextBox.Mask%2A>|  
 |`PromptChar` property|<xref:System.Windows.Forms.MaskedTextBox.PromptChar%2A>|  
 |`PromptInclude` property|<xref:System.Windows.Forms.MaskedTextBox.ResetOnPrompt%2A>|  
@@ -826,7 +826,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A> takes into account both the value of the <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> property and the state of the user's keyboard. If <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> is set to either <xref:System.Windows.Forms.InsertKeyMode> or <xref:System.Windows.Forms.InsertKeyMode>, <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A> will return `false` or `true`, respectively. If <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> is set to <xref:System.Windows.Forms.InsertKeyMode>, it will return the state of the INSERT key.  
+ <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A> takes into account both the value of the <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> property and the state of the user's keyboard. If <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> is set to either <xref:System.Windows.Forms.InsertKeyMode.Insert> or <xref:System.Windows.Forms.InsertKeyMode.Overwrite>, <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A> will return `false` or `true`, respectively. If <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> is set to <xref:System.Windows.Forms.InsertKeyMode.Default>, it will return the state of the INSERT key.  
   
  When <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A> is `false`, <xref:System.Windows.Forms.MaskedTextBox> will reject as invalid any character entry that would result in a violation anywhere in the mask. In explanation, if inserting a character would cause a character to be shifted over into a mask position where it would not be valid, the character insertion will be rejected.  
   
@@ -2061,7 +2061,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Windows.Forms.MaskedTextBox.TextAlign%2A> property to align the displayed text within a <xref:System.Windows.Forms.MaskedTextBox> to match the layout of visual elements on your form. For example, if your controls are all located on the right side of the form, you can set the <xref:System.Windows.Forms.MaskedTextBox.TextAlign%2A> property to <xref:System.Windows.Forms.HorizontalAlignment>, and the text will be aligned with the right side of the control instead of the default left alignment.  
+ You can use the <xref:System.Windows.Forms.MaskedTextBox.TextAlign%2A> property to align the displayed text within a <xref:System.Windows.Forms.MaskedTextBox> to match the layout of visual elements on your form. For example, if your controls are all located on the right side of the form, you can set the <xref:System.Windows.Forms.MaskedTextBox.TextAlign%2A> property to <xref:System.Windows.Forms.HorizontalAlignment.Right>, and the text will be aligned with the right side of the control instead of the default left alignment.  
   
  ]]></format>
         </remarks>

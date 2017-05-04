@@ -100,7 +100,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ToolBarTray>|  
+|Identifier field|<xref:System.Windows.Controls.ToolBarTray.BackgroundProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
   
    
@@ -212,7 +212,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ToolBarTray>|  
+|Identifier field|<xref:System.Windows.Controls.ToolBarTray.IsLockedProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
   
    
@@ -329,7 +329,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ToolBarTray>|  
+|Identifier field|<xref:System.Windows.Controls.ToolBarTray.OrientationProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
   
    

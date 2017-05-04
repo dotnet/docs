@@ -1666,25 +1666,25 @@
   
 |Calendar|CalendarWeekRule value|Gregorian date (M/dd/yyyy)|Date in calendar (M/dd/yyyy)|  
 |--------------|----------------------------|------------------------------------|--------------------------------------|  
-|<xref:System.Globalization.ChineseLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|2/19/1901 to 2/25/1901|1/1/1901 to 1/7/1901|  
-|<xref:System.Globalization.ChineseLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|2/19/1901 to 2/22/1901|1/01/1901 to 1/04/1901|  
-|<xref:System.Globalization.HebrewCalendar>|<xref:System.Globalization.CalendarWeekRule>|9/17/1583|1/01/5344|  
-|<xref:System.Globalization.HebrewCalendar>|<xref:System.Globalization.CalendarWeekRule>|9/17/1583 to 9/23/1583|1/01/5344 to 1/07/5344|  
-|<xref:System.Globalization.HebrewCalendar>|<xref:System.Globalization.CalendarWeekRule>|9/17/1583 to 9/20/1583|1/01/5344 to 1/04/5344|  
-|<xref:System.Globalization.HijriCalendar>|<xref:System.Globalization.CalendarWeekRule>|7/18/0622 to 7/24/0622|1/01/0001 to 1/07/0001|  
-|<xref:System.Globalization.HijriCalendar>|<xref:System.Globalization.CalendarWeekRule>|7/18/0622 to 7/21/0622|1/01/0001 to 1/04/0001|  
-|<xref:System.Globalization.JapaneseLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|1/28/1960 to 2/03/1960|1/01/35 to 1/07/0035|  
-|<xref:System.Globalization.JapaneseLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|1/28/1960 to 1/31/1960|1/01/0035 to 1/04/0035|  
-|<xref:System.Globalization.JulianCalendar>|<xref:System.Globalization.CalendarWeekRule>|1/01/0001 to 1/05/0001|1/03/0001 to 1/07/0001|  
-|<xref:System.Globalization.JulianCalendar>|<xref:System.Globalization.CalendarWeekRule>|1/01/0001 to 1/02/0001|1/03/0001 to 1/04/0001|  
-|<xref:System.Globalization.KoreanLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|2/14/0918 to 2/20/0918|1/01/0918 to 1/07/0918|  
-|<xref:System.Globalization.KoreanLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|2/14/0918 to 2/17/0918|1/01/0918 to 1/04/0918|  
-|<xref:System.Globalization.PersianCalendar>|<xref:System.Globalization.CalendarWeekRule>|3/21/0622 to 3/27/0622|1/01/0001 to 1/07/0001|  
-|<xref:System.Globalization.PersianCalendar>|<xref:System.Globalization.CalendarWeekRule>|3/21/0622 to 3/24/0622|1/01/0001 to 1/04/0001|  
-|<xref:System.Globalization.TaiwanLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|2/18/1912 to 2/24/1912|1/01/0001 to 1/07/0001|  
-|<xref:System.Globalization.TaiwanLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|2/18/1912 to 2/21/1912|1/01/0001 to 1/04/0001|  
-|<xref:System.Globalization.UmAlQuraCalendar>|<xref:System.Globalization.CalendarWeekRule>|4/30/1900 to 5/06/1900|1/01/1318 to 1/07/1318|  
-|<xref:System.Globalization.UmAlQuraCalendar>|<xref:System.Globalization.CalendarWeekRule>|4/30/1900 to 5/03/1900|1/01/1318 to 1/04/1318|  
+|<xref:System.Globalization.ChineseLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFullWeek>|2/19/1901 to 2/25/1901|1/1/1901 to 1/7/1901|  
+|<xref:System.Globalization.ChineseLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFourDayWeek>|2/19/1901 to 2/22/1901|1/01/1901 to 1/04/1901|  
+|<xref:System.Globalization.HebrewCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstDay>|9/17/1583|1/01/5344|  
+|<xref:System.Globalization.HebrewCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFullWeek>|9/17/1583 to 9/23/1583|1/01/5344 to 1/07/5344|  
+|<xref:System.Globalization.HebrewCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFourDayWeek>|9/17/1583 to 9/20/1583|1/01/5344 to 1/04/5344|  
+|<xref:System.Globalization.HijriCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFullWeek>|7/18/0622 to 7/24/0622|1/01/0001 to 1/07/0001|  
+|<xref:System.Globalization.HijriCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFourDayWeek>|7/18/0622 to 7/21/0622|1/01/0001 to 1/04/0001|  
+|<xref:System.Globalization.JapaneseLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFullWeek>|1/28/1960 to 2/03/1960|1/01/35 to 1/07/0035|  
+|<xref:System.Globalization.JapaneseLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFourDayWeek>|1/28/1960 to 1/31/1960|1/01/0035 to 1/04/0035|  
+|<xref:System.Globalization.JulianCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFullWeek>|1/01/0001 to 1/05/0001|1/03/0001 to 1/07/0001|  
+|<xref:System.Globalization.JulianCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFourDayWeek>|1/01/0001 to 1/02/0001|1/03/0001 to 1/04/0001|  
+|<xref:System.Globalization.KoreanLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFullWeek>|2/14/0918 to 2/20/0918|1/01/0918 to 1/07/0918|  
+|<xref:System.Globalization.KoreanLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFourDayWeek>|2/14/0918 to 2/17/0918|1/01/0918 to 1/04/0918|  
+|<xref:System.Globalization.PersianCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFullWeek>|3/21/0622 to 3/27/0622|1/01/0001 to 1/07/0001|  
+|<xref:System.Globalization.PersianCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFourDayWeek>|3/21/0622 to 3/24/0622|1/01/0001 to 1/04/0001|  
+|<xref:System.Globalization.TaiwanLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFullWeek>|2/18/1912 to 2/24/1912|1/01/0001 to 1/07/0001|  
+|<xref:System.Globalization.TaiwanLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFourDayWeek>|2/18/1912 to 2/21/1912|1/01/0001 to 1/04/0001|  
+|<xref:System.Globalization.UmAlQuraCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFullWeek>|4/30/1900 to 5/06/1900|1/01/1318 to 1/07/1318|  
+|<xref:System.Globalization.UmAlQuraCalendar>|<xref:System.Globalization.CalendarWeekRule.FirstFourDayWeek>|4/30/1900 to 5/03/1900|1/01/1318 to 1/04/1318|  
   
    
   

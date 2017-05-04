@@ -2097,7 +2097,7 @@
 ## Remarks  
  When you set the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> property, the appearance of the property sort buttons on the grid changes to reflect the current state of the property. Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort?displayProperty=fullName> causes the properties to be displayed in the order they were retrieved.  
   
- Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to both <xref:System.Windows.Forms.PropertySort> and <xref:System.Windows.Forms.PropertySort> is the same as setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort> alone. The categorized view is always shown as alphabetical.  
+ Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to both <xref:System.Windows.Forms.PropertySort.Alphabetical> and <xref:System.Windows.Forms.PropertySort.Categorized> is the same as setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort.Categorized> alone. The categorized view is always shown as alphabetical.  
   
 > [!NOTE]
 >  To do custom sorting, implement <xref:System.ComponentModel.ICustomTypeDescriptor> on the component to return the properties in the desired order.  

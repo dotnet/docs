@@ -34,7 +34,7 @@
 ## Remarks  
  Use the <xref:System.Linq.Expressions.Expression.MemberInit%2A> factory methods to create a <xref:System.Linq.Expressions.MemberInitExpression>.  
   
- The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.MemberInitExpression> is <xref:System.Linq.Expressions.ExpressionType>.  
+ The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.MemberInitExpression> is <xref:System.Linq.Expressions.ExpressionType.MemberInit>.  
   
    
   

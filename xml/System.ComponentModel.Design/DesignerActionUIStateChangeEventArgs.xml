@@ -68,7 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the panel is being hidden through a call to the <xref:System.ComponentModel.Design.DesignerActionUIService.HideUI%2A> method, this property has a value of <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType>. If the panel is being shown through a call to <xref:System.ComponentModel.Design.DesignerActionUIService.ShowUI%2A>, this property has a value of <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType>.  
+ If the panel is being hidden through a call to the <xref:System.ComponentModel.Design.DesignerActionUIService.HideUI%2A> method, this property has a value of <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType.Hide>. If the panel is being shown through a call to <xref:System.ComponentModel.Design.DesignerActionUIService.ShowUI%2A>, this property has a value of <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType.Show>.  
   
  ]]></format>
         </remarks>

@@ -225,7 +225,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.RequestElementName%2A> defines the XML element used to wrap the parameters beneath the `Body` element of the SOAP request when <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ParameterStyle%2A> is <xref:System.Web.Services.Protocols.SoapParameterStyle>. This is reflected in the XSD schema representing the SOAP request to the XML Web service method within the service description for an XML Web service.  
+ The <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.RequestElementName%2A> defines the XML element used to wrap the parameters beneath the `Body` element of the SOAP request when <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ParameterStyle%2A> is <xref:System.Web.Services.Protocols.SoapParameterStyle.Wrapped>. This is reflected in the XSD schema representing the SOAP request to the XML Web service method within the service description for an XML Web service.  
   
    
   
@@ -291,7 +291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ResponseElementName%2A> defines the XML element used to wrap the parameters beneath the `Body` element of the SOAP response when <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ParameterStyle%2A> is <xref:System.Web.Services.Protocols.SoapParameterStyle>. This is reflected in the XSD schema representing the SOAP response to the XML Web service method within the XML Web service's service description.  
+ The <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ResponseElementName%2A> defines the XML element used to wrap the parameters beneath the `Body` element of the SOAP response when <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ParameterStyle%2A> is <xref:System.Web.Services.Protocols.SoapParameterStyle.Wrapped>. This is reflected in the XSD schema representing the SOAP response to the XML Web service method within the XML Web service's service description.  
   
    
   
@@ -357,7 +357,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The Web Services Description Language (WSDL) defines two methods for formatting parameters: <xref:System.Web.Services.Description.SoapBindingUse> and <xref:System.Web.Services.Description.SoapBindingUse>. <xref:System.Web.Services.Description.SoapBindingUse> refers to formatting parameters using SOAP encoding, as outlined in the SOAP specification in section 5. <xref:System.Web.Services.Description.SoapBindingUse> refers to formatting the parameters using a pre-defined XSD schema for each parameter.  
+ The Web Services Description Language (WSDL) defines two methods for formatting parameters: <xref:System.Web.Services.Description.SoapBindingUse.Encoded> and <xref:System.Web.Services.Description.SoapBindingUse.Literal>. <xref:System.Web.Services.Description.SoapBindingUse.Encoded> refers to formatting parameters using SOAP encoding, as outlined in the SOAP specification in section 5. <xref:System.Web.Services.Description.SoapBindingUse.Literal> refers to formatting the parameters using a pre-defined XSD schema for each parameter.  
   
  For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952).  
   

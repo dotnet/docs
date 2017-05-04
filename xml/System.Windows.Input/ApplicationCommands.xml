@@ -42,30 +42,17 @@
         <summary>Gets the value that represents the Cancel Print command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> No gesture defined.  
+ </term><description> No gesture defined.  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Cancel Print  
+ </term><description> Cancel Print  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -101,30 +88,17 @@
         <summary>Gets the value that represents the Close command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> No gesture defined.  
+ </term><description> No gesture defined.  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Close  
+ </term><description> Close  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -160,40 +134,23 @@
         <summary>Gets the value that represents the Context Menu command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Shift+F10  
+ </term><description> Shift+F10  
   
  Apps  
   
- </description>  
-</item>  
-<item>  
-<term> Mouse Gesture  
+ </description></item><item><term> Mouse Gesture  
   
- </term>  
-<description> A Mouse Gesture is not attached to this command, but most applications follow the convention of using the Right Click gesture to invoke the context menu.  
+ </term><description> A Mouse Gesture is not attached to this command, but most applications follow the convention of using the Right Click gesture to invoke the context menu.  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Context Menu  
+ </term><description> Context Menu  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -229,32 +186,19 @@
         <summary>Gets the value that represents the Copy command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl+C  
+ </term><description> Ctrl+C  
   
  Ctrl+Insert  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Copy  
+ </term><description> Copy  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -290,30 +234,17 @@
         <summary>Gets the value that represents the Correction List command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> No gesture defined.  
+ </term><description> No gesture defined.  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Correction List  
+ </term><description> Correction List  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -351,32 +282,19 @@
         <summary>Gets the value that represents the Cut command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl+X  
+ </term><description> Ctrl+X  
   
  Shift+Delete  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Cut  
+ </term><description> Cut  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -412,30 +330,17 @@
         <summary>Gets the value that represents the Delete command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Del  
+ </term><description> Del  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Delete  
+ </term><description> Delete  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -471,30 +376,17 @@
         <summary>Gets the value that represents the Find command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl+F  
+ </term><description> Ctrl+F  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Find  
+ </term><description> Find  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -530,30 +422,17 @@
         <summary>Gets the value that represents the Help command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> F1  
+ </term><description> F1  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Help  
+ </term><description> Help  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -589,30 +468,17 @@
         <summary>Gets the value that represents the New command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl+N  
+ </term><description> Ctrl+N  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> New  
+ </term><description> New  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -682,30 +548,17 @@
         <summary>Gets the value that represents the Open command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl+O  
+ </term><description> Ctrl+O  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Open  
+ </term><description> Open  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -741,32 +594,19 @@
         <summary>Gets the value that represents the Paste command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl+V  
+ </term><description> Ctrl+V  
   
  Shift+Insert  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Paste  
+ </term><description> Paste  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -802,30 +642,17 @@
         <summary>Gets the value that represents the Print command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl+P  
+ </term><description> Ctrl+P  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Print  
+ </term><description> Print  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -861,30 +688,17 @@
         <summary>Gets the value that represents the Print Preview command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl+F2  
+ </term><description> Ctrl+F2  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Print Preview  
+ </term><description> Print Preview  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -920,30 +734,17 @@
         <summary>Gets the value that represents the Properties command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> F4  
+ </term><description> F4  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Properties  
+ </term><description> Properties  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -979,30 +780,17 @@
         <summary>Gets the value that represents the Redo command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl+Y  
+ </term><description> Ctrl+Y  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Redo  
+ </term><description> Redo  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1038,30 +826,17 @@
         <summary>Gets the value that represents the Replace command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl+H  
+ </term><description> Ctrl+H  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Replace  
+ </term><description> Replace  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1097,30 +872,17 @@
         <summary>Gets the value that represents the Save command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl+S  
+ </term><description> Ctrl+S  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Save  
+ </term><description> Save  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1156,30 +918,17 @@
         <summary>Gets the value that represents the Save As command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> No gesture defined.  
+ </term><description> No gesture defined.  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Save As  
+ </term><description> Save As  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1215,30 +964,17 @@
         <summary>Gets the value that represents the Select All command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl+A  
+ </term><description> Ctrl+A  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Select All  
+ </term><description> Select All  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1274,30 +1010,17 @@
         <summary>Gets the value that represents the Stop command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Esc  
+ </term><description> Esc  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Stop  
+ </term><description> Stop  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1333,30 +1056,17 @@
         <summary>Gets the value that represents the Undo command.</summary>
         <value>The command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> Ctrl-Z  
+ </term><description> Ctrl-Z  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Undo  
+ </term><description> Undo  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

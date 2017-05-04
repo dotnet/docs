@@ -30,7 +30,7 @@
   
 -   Be displayed inside or outside the plotted chart areas.  
   
--   Use a predefined <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle> such as <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle> or <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle>.  
+-   Use a predefined <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle> such as <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle.Embed> or <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle.Shadow>.  
   
 -   Use hatching, gradient colors and background images.  
   
@@ -368,7 +368,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is used when the <xref:System.Windows.Forms.DataVisualization.Charting.Title.BackImageWrapMode%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode>.  
+ This property is used when the <xref:System.Windows.Forms.DataVisualization.Charting.Title.BackImageWrapMode%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Unscaled>.  
   
  ]]></format>
         </remarks>
@@ -452,7 +452,7 @@
   
  For more information about the available wrapping modes, see the <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode> enumeration topic.  
   
- If the <xref:System.Windows.Forms.DataVisualization.Charting.Title.BackImageWrapMode%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode>, the location where the image is drawn is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Title.BackImageAlignment%2A> property setting.  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.Title.BackImageWrapMode%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Unscaled>, the location where the image is drawn is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Title.BackImageAlignment%2A> property setting.  
   
  ]]></format>
         </remarks>
@@ -1110,7 +1110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- There are five possible styles for title text: <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle>, <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle>, <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle>, <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle>, and <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle>. Refer to the table below for a summary of these styles:  
+ There are five possible styles for title text: <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle.Default>, <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle.Shadow>, <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle.Emboss>, <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle.Embed>, and <xref:System.Windows.Forms.DataVisualization.Charting.TextStyle.Frame>. Refer to the table below for a summary of these styles:  
   
 |Style|Description|  
 |-----------|-----------------|  

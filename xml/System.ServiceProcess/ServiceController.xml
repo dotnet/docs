@@ -484,7 +484,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
   
  When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.ServiceProcess.ServiceController> references. This method invokes the `Dispose()` method of each referenced object.  
   
@@ -1020,7 +1020,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to check whether the Alerter service is stopped. If the service is stopped, the example starts the service and waits until the service status is set to <xref:System.ServiceProcess.ServiceControllerStatus>.  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to check whether the Alerter service is stopped. If the service is stopped, the example starts the service and waits until the service status is set to <xref:System.ServiceProcess.ServiceControllerStatus.Running>.  
   
  [!code-cpp[ServiceController#1](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#1)]
  [!code-csharp[ServiceController#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#1)]
@@ -1234,7 +1234,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.ServiceProcess.ServiceController> class to check whether the Alerter service is stopped. If the service is stopped, the example starts the service and waits until the service status is set to <xref:System.ServiceProcess.ServiceControllerStatus>.  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to check whether the Alerter service is stopped. If the service is stopped, the example starts the service and waits until the service status is set to <xref:System.ServiceProcess.ServiceControllerStatus.Running>.  
   
  [!code-cpp[ServiceController#1](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#1)]
  [!code-csharp[ServiceController#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#1)]

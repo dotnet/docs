@@ -633,7 +633,7 @@
   
  Pausing a <xref:System.Windows.Media.Animation.Clock> does not change its <xref:System.Windows.Media.Animation.Clock.CurrentState%2A>. To be notified when a clock becomes paused, use the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> event.  
   
- Although this event occurs when the <xref:System.Windows.Media.Animation.ClockState> becomes invalid, that doesn't necessarily mean the <xref:System.Windows.Media.Animation.ClockState> changed: a <xref:System.Windows.Media.Animation.Clock> that switches from <xref:System.Windows.Media.Animation.ClockState> to <xref:System.Windows.Media.Animation.ClockState> and then back to <xref:System.Windows.Media.Animation.ClockState> in the same tick will cause this event to fire, but its <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> property won't actually change.  
+ Although this event occurs when the <xref:System.Windows.Media.Animation.ClockState> becomes invalid, that doesn't necessarily mean the <xref:System.Windows.Media.Animation.ClockState> changed: a <xref:System.Windows.Media.Animation.Clock> that switches from <xref:System.Windows.Media.Animation.ClockState.Active> to <xref:System.Windows.Media.Animation.ClockState.Filling> and then back to <xref:System.Windows.Media.Animation.ClockState.Active> in the same tick will cause this event to fire, but its <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> property won't actually change.  
   
  The <xref:System.Object> parameter of the <xref:System.EventHandler> event handler is the  <xref:System.Windows.Media.Animation.Clock> that was created for this timeline.  
   
@@ -879,13 +879,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set an animations <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property to <xref:System.Windows.Media.Animation.FillBehavior> when you want the animation to hold its value after it reaches the end of its active period. An animation that has reached the end of its active period that has a <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> setting of <xref:System.Windows.Media.Animation.FillBehavior> is said to be in its fill period. When you don't want an animation to hold its value after it reaches the end of its active period, set its  
+ Set an animations <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property to <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd> when you want the animation to hold its value after it reaches the end of its active period. An animation that has reached the end of its active period that has a <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> setting of <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd> is said to be in its fill period. When you don't want an animation to hold its value after it reaches the end of its active period, set its  
   
- <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property to <xref:System.Windows.Media.Animation.FillBehavior>.  
+ <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property to <xref:System.Windows.Media.Animation.FillBehavior.Stop>.  
   
  Because an animation in its fill period continues to override its target property's value, attempting to set the target property's value through other means might appear to have no effect. For an example showing how to set a property value after it has been animated, see [How to: Set a Property After Animating It with a Storyboard](~/docs/framework/wpf/graphics-multimedia/how-to-set-a-property-after-animating-it-with-a-storyboard.md).  
   
- A child timeline stops playing and filling when its parent timeline stops; if you want a child timeline to fill, make sure its parent timeline has a <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> of <xref:System.Windows.Media.Animation.FillBehavior>.  
+ A child timeline stops playing and filling when its parent timeline stops; if you want a child timeline to fill, make sure its parent timeline has a <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> of <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>.  
   
 <a name="dependencyPropertyInfo_FillBehavior"></a>   
 ## Dependency Property Information  

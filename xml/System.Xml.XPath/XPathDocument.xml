@@ -211,7 +211,7 @@
   
 ## Remarks  
   
--   The <xref:System.Xml.XmlSpace> object passed as a parameter specifies whether to preserve white space. <xref:System.Xml.XmlSpace> preserves only significant white space; <xref:System.Xml.XmlSpace> preserves all white space. By default, the <xref:System.Xml.XmlSpace> object is set to <xref:System.Xml.XmlSpace>.  
+-   The <xref:System.Xml.XmlSpace> object passed as a parameter specifies whether to preserve white space. <xref:System.Xml.XmlSpace.Default> preserves only significant white space; <xref:System.Xml.XmlSpace.Preserve> preserves all white space. By default, the <xref:System.Xml.XmlSpace> object is set to <xref:System.Xml.XmlSpace.Default>.  
   
 -   The functionality of the <xref:System.Xml.XPath.XPathDocument.%23ctor%2A> constructor is identical to that of the <xref:System.Xml.XPath.XPathDocument.%23ctor%2A> constructor, except for the white space handling options described.  
   
@@ -252,7 +252,7 @@
   
 ## Remarks  
   
--   The <xref:System.Xml.XmlSpace> object passed as a parameter specifies whether to preserve white space. <xref:System.Xml.XmlSpace> preserves only significant white space; <xref:System.Xml.XmlSpace> preserves all white space. By default, the <xref:System.Xml.XmlSpace> object is set to <xref:System.Xml.XmlSpace>.  
+-   The <xref:System.Xml.XmlSpace> object passed as a parameter specifies whether to preserve white space. <xref:System.Xml.XmlSpace.Default> preserves only significant white space; <xref:System.Xml.XmlSpace.Preserve> preserves all white space. By default, the <xref:System.Xml.XmlSpace> object is set to <xref:System.Xml.XmlSpace.Default>.  
   
 -   The functionality of the <xref:System.Xml.XPath.XPathDocument.%23ctor%2A> constructor is identical to that of the <xref:System.Xml.XPath.XPathDocument.%23ctor%2A> constructor, except for the white space handling options described.  
   

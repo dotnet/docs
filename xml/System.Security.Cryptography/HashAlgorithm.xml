@@ -351,136 +351,41 @@
       <Docs>
         <param name="hashName">The hash algorithm implementation to use. The following table shows the valid values for the <c>hashName</c> parameter and the algorithms they map to.  
   
- <list type="table">  
-<listheader>  
-<term> Parameter value  
+ <list type="table"><listheader><term> Parameter value  
   
- </term>  
-<description> Implements  
+ </term><description> Implements  
   
- </description>  
-</listheader>  
-<item>  
-<term> SHA  
+ </description></listheader><item><term> SHA  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" />  
+ </term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> SHA1  
   
- </description>  
-</item>  
-<item>  
-<term> SHA1  
+ </term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.SHA1  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" />  
+ </term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.HashAlgorithm  
   
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.SHA1  
+ </term><description><see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" /></description></item><item><term> MD5  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" />  
+ </term><description><see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" /></description></item><item><term> System.Security.Cryptography.MD5  
   
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.HashAlgorithm  
+ </term><description><see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" /></description></item><item><term> SHA256  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA1CryptoServiceProvider" />  
+ </term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> SHA-256  
   
- </description>  
-</item>  
-<item>  
-<term> MD5  
+ </term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> System.Security.Cryptography.SHA256  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" />  
+ </term><description><see cref="T:System.Security.Cryptography.SHA256Managed" /></description></item><item><term> SHA384  
   
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.MD5  
+ </term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> SHA-384  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.MD5CryptoServiceProvider" />  
+ </term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> System.Security.Cryptography.SHA384  
   
- </description>  
-</item>  
-<item>  
-<term> SHA256  
+ </term><description><see cref="T:System.Security.Cryptography.SHA384Managed" /></description></item><item><term> SHA512  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA256Managed" />  
+ </term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item><item><term> SHA-512  
   
- </description>  
-</item>  
-<item>  
-<term> SHA-256  
+ </term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item><item><term> System.Security.Cryptography.SHA512  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA256Managed" />  
-  
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.SHA256  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA256Managed" />  
-  
- </description>  
-</item>  
-<item>  
-<term> SHA384  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA384Managed" />  
-  
- </description>  
-</item>  
-<item>  
-<term> SHA-384  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA384Managed" />  
-  
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.SHA384  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA384Managed" />  
-  
- </description>  
-</item>  
-<item>  
-<term> SHA512  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA512Managed" />  
-  
- </description>  
-</item>  
-<item>  
-<term> SHA-512  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA512Managed" />  
-  
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.SHA512  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.SHA512Managed" />  
-  
- </description>  
-</item>  
-</list></param>
+ </term><description><see cref="T:System.Security.Cryptography.SHA512Managed" /></description></item></list></param>
         <summary>Creates an instance of the specified implementation of a hash algorithm.</summary>
         <returns>A new instance of the specified hash algorithm, or <see langword="null" /> if <paramref name="hashName" /> is not a valid hash algorithm.</returns>
         <remarks>To be added.</remarks>

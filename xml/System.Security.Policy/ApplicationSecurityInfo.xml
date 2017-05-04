@@ -134,7 +134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the property has not been set, the get accessor returns a <xref:System.Security.PermissionSet> with a permission state of <xref:System.Security.Permissions.PermissionState>.  
+ If the property has not been set, the get accessor returns a <xref:System.Security.PermissionSet> with a permission state of <xref:System.Security.Permissions.PermissionState.None>.  
   
  ]]></format>
         </remarks>

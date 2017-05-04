@@ -235,19 +235,19 @@
   
 |TrackingWorkflowEvent value|WorkflowStatus value|  
 |---------------------------------|--------------------------|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Aborted>|<xref:System.Workflow.Runtime.WorkflowStatus.Running>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Changed>|<xref:System.Workflow.Runtime.WorkflowStatus.Running>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Completed>|<xref:System.Workflow.Runtime.WorkflowStatus.Completed>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Created>|<xref:System.Workflow.Runtime.WorkflowStatus.Created>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Exception>|<xref:System.Workflow.Runtime.WorkflowStatus.Running>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Idle>|<xref:System.Workflow.Runtime.WorkflowStatus.Running>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Loaded>|<xref:System.Workflow.Runtime.WorkflowStatus.Running>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Persisted>|<xref:System.Workflow.Runtime.WorkflowStatus.Running>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Resumed>|<xref:System.Workflow.Runtime.WorkflowStatus.Running>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Started>|<xref:System.Workflow.Runtime.WorkflowStatus.Running>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Suspended>|<xref:System.Workflow.Runtime.WorkflowStatus.Suspended>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Terminated>|<xref:System.Workflow.Runtime.WorkflowStatus.Terminated>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Unloaded>|<xref:System.Workflow.Runtime.WorkflowStatus.Running>|  
   
  If <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> is null (`Nothing`), the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned will not be constrained by status; in other words, a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> object will be returned for any workflow instance that matches the parameters specified by the other properties of <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions>.  
   

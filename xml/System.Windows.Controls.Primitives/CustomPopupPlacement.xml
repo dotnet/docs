@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Controls.Primitives.CustomPopupPlacement> structure defines a location for a <xref:System.Windows.Controls.Primitives.Popup> control with respect to its parent, and defines how the <xref:System.Windows.Controls.Primitives.Popup> moves to become more visible when it is obscured by a screen boundary.  
   
- A <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback?displayProperty=fullName> delegate returns an array of these structures as custom placement options for a <xref:System.Windows.Controls.Primitives.Popup> when the <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode>.  
+ A <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback?displayProperty=fullName> delegate returns an array of these structures as custom placement options for a <xref:System.Windows.Controls.Primitives.Popup> when the <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode.Custom>.  
   
  ]]></format>
     </remarks>

@@ -108,7 +108,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting the <xref:System.Windows.Forms.TreeNode.Checked%2A> property from within a <xref:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.BeforeCheck> or `AfterCheck` event handler causes the event to be raised multiple times and can result in unexpected behavior. To prevent the event from being raised multiple times, add logic to your event handler that only executes your recursive code if the `Action` property of the <xref:System.Windows.Forms.TreeViewEventArgs> is not set to <xref:System.Windows.Forms.TreeViewAction>.  
+ Setting the <xref:System.Windows.Forms.TreeNode.Checked%2A> property from within a <xref:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.BeforeCheck> or `AfterCheck` event handler causes the event to be raised multiple times and can result in unexpected behavior. To prevent the event from being raised multiple times, add logic to your event handler that only executes your recursive code if the `Action` property of the <xref:System.Windows.Forms.TreeViewEventArgs> is not set to <xref:System.Windows.Forms.TreeViewAction.Unknown>.  
   
  For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   

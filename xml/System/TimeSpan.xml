@@ -424,40 +424,23 @@
         <summary>Compares two <see cref="T:System.TimeSpan" /> values and returns an integer that indicates whether the first value is shorter than, equal to, or longer than the second value.</summary>
         <returns>One of the following values.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description></listheader><item><term> -1  
   
- </term>  
-<description> <paramref name="t1" /> is shorter than <paramref name="t2" />.  
+ </term><description><paramref name="t1" /> is shorter than <paramref name="t2" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description></item><item><term> 0  
   
- </term>  
-<description> <paramref name="t1" /> is equal to <paramref name="t2" />.  
+ </term><description><paramref name="t1" /> is equal to <paramref name="t2" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> <paramref name="t1" /> is longer than <paramref name="t2" />.  
+ </term><description><paramref name="t1" /> is longer than <paramref name="t2" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -496,44 +479,27 @@
         <summary>Compares this instance to a specified object and returns an integer that indicates whether this instance is shorter than, equal to, or longer than the specified object.</summary>
         <returns>One of the following values.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description></listheader><item><term> -1  
   
- </term>  
-<description> This instance is shorter than <paramref name="value" />.  
+ </term><description> This instance is shorter than <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description></item><item><term> 0  
   
- </term>  
-<description> This instance is equal to <paramref name="value" />.  
+ </term><description> This instance is equal to <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> This instance is longer than <paramref name="value" />.  
+ </term><description> This instance is longer than <paramref name="value" />.  
   
  -or-  
   
  <paramref name="value" /> is <see langword="null" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -589,40 +555,23 @@
         <summary>Compares this instance to a specified <see cref="T:System.TimeSpan" /> object and returns an integer that indicates whether this instance is shorter than, equal to, or longer than the <see cref="T:System.TimeSpan" /> object.</summary>
         <returns>A signed number indicating the relative values of this instance and <paramref name="value" />.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> A negative integer  
+ </description></listheader><item><term> A negative integer  
   
- </term>  
-<description> This instance is shorter than <paramref name="value" />.  
+ </term><description> This instance is shorter than <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance is equal to <paramref name="value" />.  
+ </term><description> This instance is equal to <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> A positive integer  
+ </description></item><item><term> A positive integer  
   
- </term>  
-<description> This instance is longer than <paramref name="value" />.  
+ </term><description> This instance is longer than <paramref name="value" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

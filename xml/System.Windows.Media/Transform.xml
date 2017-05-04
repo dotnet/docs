@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines functionality that enables transformations in a [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] plane. Transformations include rotation (<see cref="T:System.Windows.Media.RotateTransform" />), scale (<see cref="T:System.Windows.Media.ScaleTransform" />), skew (<see cref="T:System.Windows.Media.SkewTransform" />), and translation (<see cref="T:System.Windows.Media.TranslateTransform" />). This class hierarchy differs from the <see cref="T:System.Windows.Media.Matrix" /> structure because it is a class and it supports animation and enumeration semantics.</summary>
+    <summary>Defines functionality that enables transformations in a 2-D plane. Transformations include rotation (<see cref="T:System.Windows.Media.RotateTransform" />), scale (<see cref="T:System.Windows.Media.ScaleTransform" />), skew (<see cref="T:System.Windows.Media.SkewTransform" />), and translation (<see cref="T:System.Windows.Media.TranslateTransform" />). This class hierarchy differs from the <see cref="T:System.Windows.Media.Matrix" /> structure because it is a class and it supports animation and enumeration semantics.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

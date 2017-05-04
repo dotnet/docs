@@ -56,40 +56,23 @@
         <summary>Compare two <see cref="T:System.ServiceModel.Configuration.XPathMessageFilterElement" /> instances.</summary>
         <returns>The following table shows the possible values.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description></listheader><item><term> -1  
   
- </term>  
-<description> <paramref name="x" /> is less than <paramref name="y" />.  
+ </term><description><paramref name="x" /> is less than <paramref name="y" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description></item><item><term> 0  
   
- </term>  
-<description> <paramref name="x" /> is equal to <paramref name="y" />.  
+ </term><description><paramref name="x" /> is equal to <paramref name="y" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> <paramref name="x" /> is greater than <paramref name="y" />.  
+ </term><description><paramref name="x" /> is greater than <paramref name="y" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The XPath filter specified by <paramref name="x" /> or <paramref name="y" /> cannot be parsed.</exception>
         <exception cref="T:System.IndexOutOfRangeException">The XPath namespace prefix specified by <paramref name="x" /> or <paramref name="y" />.cannot be found.</exception>

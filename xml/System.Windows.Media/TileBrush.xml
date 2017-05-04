@@ -98,9 +98,9 @@ Components of a TileBrush with a TileMode of Tile
 ## Remarks  
  The <xref:System.Windows.Media.TileBrush.AlignmentX%2A> and <xref:System.Windows.Media.TileBrush.AlignmentY%2A> properties of a <xref:System.Windows.Media.TileBrush> are used when either of the following conditions is true:  
   
--   The <xref:System.Windows.Media.TileBrush.Stretch%2A> property is <xref:System.Windows.Media.Stretch> or <xref:System.Windows.Media.Stretch> and the <xref:System.Windows.Media.TileBrush.Viewbox%2A> and <xref:System.Windows.Media.TileBrush.Viewport%2A> have different aspect ratios.  
+-   The <xref:System.Windows.Media.TileBrush.Stretch%2A> property is <xref:System.Windows.Media.Stretch.Uniform> or <xref:System.Windows.Media.Stretch.UniformToFill> and the <xref:System.Windows.Media.TileBrush.Viewbox%2A> and <xref:System.Windows.Media.TileBrush.Viewport%2A> have different aspect ratios.  
   
--   The <xref:System.Windows.Media.TileBrush.Stretch%2A> property is <xref:System.Windows.Media.Stretch> and the <xref:System.Windows.Media.TileBrush.Viewbox%2A> and <xref:System.Windows.Media.TileBrush.Viewport%2A> are different sizes.  
+-   The <xref:System.Windows.Media.TileBrush.Stretch%2A> property is <xref:System.Windows.Media.Stretch.None> and the <xref:System.Windows.Media.TileBrush.Viewbox%2A> and <xref:System.Windows.Media.TileBrush.Viewport%2A> are different sizes.  
   
  Note that you specify the dimensions of <xref:System.Windows.Media.TileBrush> content by using the <xref:System.Windows.Media.TileBrush.Viewbox%2A> property; you specify the position and size of the <xref:System.Windows.Media.TileBrush> base tile by using the <xref:System.Windows.Media.TileBrush.Viewport%2A> property.  
   
@@ -154,9 +154,9 @@ Components of a TileBrush with a TileMode of Tile
 ## Remarks  
  The <xref:System.Windows.Media.TileBrush.AlignmentX%2A> and <xref:System.Windows.Media.TileBrush.AlignmentY%2A> properties of a <xref:System.Windows.Media.TileBrush> are used when either of the following conditions are true:  
   
--   The <xref:System.Windows.Media.TileBrush.Stretch%2A> property is <xref:System.Windows.Media.Stretch> or <xref:System.Windows.Media.Stretch> and the <xref:System.Windows.Media.TileBrush.Viewbox%2A> and <xref:System.Windows.Media.TileBrush.Viewport%2A> have different aspect ratios.  
+-   The <xref:System.Windows.Media.TileBrush.Stretch%2A> property is <xref:System.Windows.Media.Stretch.Uniform> or <xref:System.Windows.Media.Stretch.UniformToFill> and the <xref:System.Windows.Media.TileBrush.Viewbox%2A> and <xref:System.Windows.Media.TileBrush.Viewport%2A> have different aspect ratios.  
   
--   The <xref:System.Windows.Media.TileBrush.Stretch%2A> property is <xref:System.Windows.Media.Stretch> and the <xref:System.Windows.Media.TileBrush.Viewbox%2A> and <xref:System.Windows.Media.TileBrush.Viewport%2A> are different sizes.  
+-   The <xref:System.Windows.Media.TileBrush.Stretch%2A> property is <xref:System.Windows.Media.Stretch.None> and the <xref:System.Windows.Media.TileBrush.Viewbox%2A> and <xref:System.Windows.Media.TileBrush.Viewport%2A> are different sizes.  
   
  Note that you specify the dimensions of <xref:System.Windows.Media.TileBrush> content by using the <xref:System.Windows.Media.TileBrush.Viewbox%2A> property; you specify the position and size of the <xref:System.Windows.Media.TileBrush> base tile by using the <xref:System.Windows.Media.TileBrush.Viewport%2A> property.  
   
@@ -289,13 +289,13 @@ Components of a TileBrush with a TileMode of Tile
 ## Remarks  
  The <xref:System.Windows.Media.TileBrush.Stretch%2A> property accepts the following values, which the <xref:System.Windows.Media.Stretch> enumeration defines:  
   
--   <xref:System.Windows.Media.Stretch>: The <xref:System.Windows.Media.TileBrush> content does not stretch to fill the tile.  
+-   <xref:System.Windows.Media.Stretch.None>: The <xref:System.Windows.Media.TileBrush> content does not stretch to fill the tile.  
   
--   <xref:System.Windows.Media.Stretch>: The <xref:System.Windows.Media.TileBrush> content is scaled to fit the tile dimensions. However, the aspect ratio of the content is preserved.  
+-   <xref:System.Windows.Media.Stretch.Uniform>: The <xref:System.Windows.Media.TileBrush> content is scaled to fit the tile dimensions. However, the aspect ratio of the content is preserved.  
   
--   <xref:System.Windows.Media.Stretch>: The <xref:System.Windows.Media.TileBrush> content is scaled so that it completely fills the output area but preserves its original aspect ratio.  
+-   <xref:System.Windows.Media.Stretch.UniformToFill>: The <xref:System.Windows.Media.TileBrush> content is scaled so that it completely fills the output area but preserves its original aspect ratio.  
   
--   <xref:System.Windows.Media.Stretch>: The <xref:System.Windows.Media.TileBrush> content is scaled to fit the tile. Because the content's height and width are scaled independently, the original aspect ratio of the content might not be preserved. That is, the <xref:System.Windows.Media.TileBrush> content might be distorted in order to completely fill the output tile.  
+-   <xref:System.Windows.Media.Stretch.Fill>: The <xref:System.Windows.Media.TileBrush> content is scaled to fit the tile. Because the content's height and width are scaled independently, the original aspect ratio of the content might not be preserved. That is, the <xref:System.Windows.Media.TileBrush> content might be distorted in order to completely fill the output tile.  
   
  The following image illustrates the different <xref:System.Windows.Media.TileBrush.Stretch%2A> settings.  
   
@@ -422,7 +422,7 @@ TileBrush components
   
  ![Components of a tiled TileBrush](~/add/media/graphicsmm-tiledprojection.png "Components of a tiled TileBrush")  
   
- The <xref:System.Windows.Media.TileBrush.ViewboxUnits%2A> property determines whether the <xref:System.Windows.Media.TileBrush.Viewbox%2A> value is interpreted as a relative or absolute value. By default, the <xref:System.Windows.Media.TileBrush.ViewboxUnits%2A> property is set to <xref:System.Windows.Media.BrushMappingMode>.  
+ The <xref:System.Windows.Media.TileBrush.ViewboxUnits%2A> property determines whether the <xref:System.Windows.Media.TileBrush.Viewbox%2A> value is interpreted as a relative or absolute value. By default, the <xref:System.Windows.Media.TileBrush.ViewboxUnits%2A> property is set to <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox>.  
   
 ## Viewbox Clipping  
  <xref:System.Windows.Media.TileBrush> contents are never clipped to the <xref:System.Windows.Media.TileBrush.Viewbox%2A>. However, <xref:System.Windows.Media.TileBrush> contents *are* clipped to the edges of the <xref:System.Windows.Media.TileBrush.Viewport%2A>, which sets the values for the base tile.  
@@ -452,13 +452,13 @@ Beginning sample image (100 by 100 device independent pixels)
   
  The following illustration shows the output of a <xref:System.Windows.Media.TileBrush> that uses a <xref:System.Windows.Media.TileBrush.Viewbox%2A> of 0.0,0.0, 0.25,0.5. Other relevant property values include the following:  
   
--   <xref:System.Windows.Media.TileBrush.ViewboxUnits%2A>: <xref:System.Windows.Media.BrushMappingMode> (default)  
+-   <xref:System.Windows.Media.TileBrush.ViewboxUnits%2A>: <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox> (default)  
   
 -   <xref:System.Windows.Media.TileBrush.Viewport%2A>: 0,0,1,1  
   
--   <xref:System.Windows.Media.TileBrush.ViewportUnits%2A>: <xref:System.Windows.Media.BrushMappingMode>  
+-   <xref:System.Windows.Media.TileBrush.ViewportUnits%2A>: <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox>  
   
--   <xref:System.Windows.Media.TileBrush.AlignmentX%2A>, <xref:System.Windows.Media.TileBrush.AlignmentY%2A>: <xref:System.Windows.Media.AlignmentX>  
+-   <xref:System.Windows.Media.TileBrush.AlignmentX%2A>, <xref:System.Windows.Media.TileBrush.AlignmentY%2A>: <xref:System.Windows.Media.AlignmentX.Center>  
   
  This illustration shows several different <xref:System.Windows.Media.TileBrush.Stretch%2A> property settings. The <xref:System.Windows.Media.TileBrush.Stretch%2A> property determines how a <xref:System.Windows.Media.TileBrush> stretches its <xref:System.Windows.Media.TileBrush.Viewbox%2A> to fill its <xref:System.Windows.Media.TileBrush.Viewport%2A>.  
   
@@ -470,7 +470,7 @@ TileBrush with a relative Viewbox of 0.0,0.0, 0.25,0.5
  ![TileBrush with a Viewbox of 0.5,0.25 0.25,0.5](~/add/media/graphicsmm-05-0-025-05-viewbox.png "TileBrush with a Viewbox of 0.5,0.25 0.25,0.5")  
 Similar TileBrush but with a different Viewbox setting  
   
- The next illustration shows the same <xref:System.Windows.Media.TileBrush> but with a relative <xref:System.Windows.Media.TileBrush.Viewport%2A> value of 0.0,0.0, 0.5,0.5 and a <xref:System.Windows.Media.TileBrush.TileMode%2A> of <xref:System.Windows.Media.TileMode>.  
+ The next illustration shows the same <xref:System.Windows.Media.TileBrush> but with a relative <xref:System.Windows.Media.TileBrush.Viewport%2A> value of 0.0,0.0, 0.5,0.5 and a <xref:System.Windows.Media.TileBrush.TileMode%2A> of <xref:System.Windows.Media.TileMode.Tile>.  
   
  ![TiledTileBrush with a Viewbox of 0.5,0.25 0.25,0.5](~/add/media/graphicsmm-05-0-025-05-viewbox-tiled.png "TiledTileBrush with a Viewbox of 0.5,0.25 0.25,0.5")  
 Similar TileBrush but with tiling and a different Viewport setting  
@@ -522,7 +522,7 @@ Similar TileBrush but with tiling and a different Viewport setting
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A value of <xref:System.Windows.Media.BrushMappingMode> indicates that the <xref:System.Windows.Media.TileBrush.ViewboxUnits%2A> are relative to the bounding box of the content. Note that a value of <xref:System.Windows.Media.BrushMappingMode> specifies device independent pixels instead of device pixels, which are device dependent. Therefore, when a value of <xref:System.Windows.Media.BrushMappingMode> applies, each pixel represents 1/96th of an inch.  
+ A value of <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox> indicates that the <xref:System.Windows.Media.TileBrush.ViewboxUnits%2A> are relative to the bounding box of the content. Note that a value of <xref:System.Windows.Media.BrushMappingMode.Absolute> specifies device independent pixels instead of device pixels, which are device dependent. Therefore, when a value of <xref:System.Windows.Media.BrushMappingMode.Absolute> applies, each pixel represents 1/96th of an inch.  
   
  You must remember this pixel distinction when you specify the <xref:System.Windows.Media.TileBrush.Viewbox%2A> of an <xref:System.Windows.Media.ImageBrush> that has a <xref:System.Windows.Media.Imaging.BitmapImage> as its source. For example, when you use the standard pixel as a measure, a 300 by 300 pixel image is only one inch in width if the image resolution is 300 dots per inch. However, when you want to set an absolute value, you must set the <xref:System.Windows.Media.TileBrush.Viewbox%2A> to (0, 0, 96, 96) in order to include the whole image.  
   
@@ -586,7 +586,7 @@ Components of a TileBrush with a TileMode of Tile
   
  The <xref:System.Windows.Media.TileBrush.Viewport%2A> property determines the size and position of the tiles in a <xref:System.Windows.Media.TileBrush>. By default, a <xref:System.Windows.Media.TileBrush> has a single tile that fills the whole output area. The <xref:System.Windows.Media.TileBrush.Stretch%2A> property controls how the <xref:System.Windows.Media.TileBrush> content fits into that tile. You can override this default behavior and specify the tile size by using the <xref:System.Windows.Media.TileBrush.Viewport%2A> property.  
   
- Use the <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to specify whether the <xref:System.Windows.Media.TileBrush.Viewport%2A> uses absolute or relative coordinates. If the coordinates are relative, they are relative to the size of the output area. The point (0,0) represents the upper-left corner of the output area, and (1,1) represents the lower-right corner of the output area. To specify that the <xref:System.Windows.Media.TileBrush.Viewport%2A> property uses absolute coordinates, set the <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to <xref:System.Windows.Media.BrushMappingMode>.  
+ Use the <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to specify whether the <xref:System.Windows.Media.TileBrush.Viewport%2A> uses absolute or relative coordinates. If the coordinates are relative, they are relative to the size of the output area. The point (0,0) represents the upper-left corner of the output area, and (1,1) represents the lower-right corner of the output area. To specify that the <xref:System.Windows.Media.TileBrush.Viewport%2A> property uses absolute coordinates, set the <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to <xref:System.Windows.Media.BrushMappingMode.Absolute>.  
   
  The following illustration shows the difference in output when you set the <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property of a <xref:System.Windows.Media.TileBrush> to either relative or absolute.  
   
@@ -643,7 +643,7 @@ Relative and absolute ViewportUnits
 ## Remarks  
  The <xref:System.Windows.Media.TileBrush.Viewport%2A> property determines the size and position of the tiles in a <xref:System.Windows.Media.TileBrush>. By default, a <xref:System.Windows.Media.TileBrush> has a single tile that fills the whole output area. The <xref:System.Windows.Media.TileBrush.Stretch%2A> property controls how the <xref:System.Windows.Media.TileBrush> content fits into that tile. You can override this default behavior and specify the tile size by using the <xref:System.Windows.Media.TileBrush.Viewport%2A> property.  
   
- Use the <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to specify whether the <xref:System.Windows.Media.TileBrush.Viewport%2A> uses absolute or relative coordinates. If the coordinates are relative, they are relative to the size of the output area. The point (0,0) represents the upper-left corner of the output area, and (1,1) represents the lower-right corner of the output area. To specify that the <xref:System.Windows.Media.TileBrush.Viewport%2A> property uses absolute coordinates, set the <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to <xref:System.Windows.Media.BrushMappingMode>.  
+ Use the <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to specify whether the <xref:System.Windows.Media.TileBrush.Viewport%2A> uses absolute or relative coordinates. If the coordinates are relative, they are relative to the size of the output area. The point (0,0) represents the upper-left corner of the output area, and (1,1) represents the lower-right corner of the output area. To specify that the <xref:System.Windows.Media.TileBrush.Viewport%2A> property uses absolute coordinates, set the <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to <xref:System.Windows.Media.BrushMappingMode.Absolute>.  
   
  The following illustration shows the difference in output when you set the <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property of a <xref:System.Windows.Media.TileBrush> to either relative or absolute.  
   

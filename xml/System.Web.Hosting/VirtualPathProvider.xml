@@ -154,14 +154,10 @@
   
 -   <see cref="M:System.Web.Hosting.VirtualPathProvider.DirectoryExists(System.String)" />  
   
--   <see cref="M:System.Web.Hosting.VirtualPathProvider.GetDirectory(System.String)" />  
-  
- <block subset="none" type="note">  
-<para>  
+-   <see cref="M:System.Web.Hosting.VirtualPathProvider.GetDirectory(System.String)" /><block subset="none" type="note"><para>  
  If your virtual file system will contain themes for the Web site (by creating a virtual <c>App_Themes</c> directory), your custom <see cref="T:System.Web.Hosting.VirtualPathProvider" /> class must support directories.  
   
-</para>  
-</block>  
+</para></block>  
   
  A custom <see cref="T:System.Web.Hosting.VirtualPathProvider" /> class works with classes derived from the <see cref="T:System.Web.Hosting.VirtualFile" /> and <see cref="T:System.Web.Hosting.VirtualDirectory" /> classes. You should implement derived classes from these types to provide file and directory information from your virtual file system. For an example of a custom <see cref="T:System.Web.Hosting.VirtualFile" /> implementation, see the Example section of the <see cref="T:System.Web.Hosting.VirtualFile" /> class overview topic. For an example of a custom <see cref="T:System.Web.Hosting.VirtualDirectory" /> implementation, see the Example section of the <see cref="T:System.Web.Hosting.VirtualDirectory" /> class overview topic.</para>
     </block>

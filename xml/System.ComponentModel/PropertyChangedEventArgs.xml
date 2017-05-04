@@ -63,7 +63,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An <xref:System.String> value or `null` for the `propertyName` parameter indicates that all of the properties have changed.  
+ An <xref:System.String.Empty> value or `null` for the `propertyName` parameter indicates that all of the properties have changed.  
   
  ]]></format>
         </remarks>
@@ -98,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An <xref:System.String> value or `null` for the `propertyName` parameter indicates that all of the properties have changed.  
+ An <xref:System.String.Empty> value or `null` for the `propertyName` parameter indicates that all of the properties have changed.  
   
  ]]></format>
         </remarks>

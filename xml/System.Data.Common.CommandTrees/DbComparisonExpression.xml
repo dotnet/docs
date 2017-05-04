@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Common.CommandTrees.DbComparisonExpression> class requires that its arguments have a common result type. This result type must be equality comparable for <xref:System.Data.Common.CommandTrees.DbExpressionKind> and <xref:System.Data.Common.CommandTrees.DbExpressionKind>; order comparable for <xref:System.Data.Common.CommandTrees.DbExpressionKind> and <xref:System.Data.Common.CommandTrees.DbExpressionKind>; and both for <xref:System.Data.Common.CommandTrees.DbExpressionKind> and <xref:System.Data.Common.CommandTrees.DbExpressionKind>.  
+ The <xref:System.Data.Common.CommandTrees.DbComparisonExpression> class requires that its arguments have a common result type. This result type must be equality comparable for <xref:System.Data.Common.CommandTrees.DbExpressionKind.Equals> and <xref:System.Data.Common.CommandTrees.DbExpressionKind.NotEquals>; order comparable for <xref:System.Data.Common.CommandTrees.DbExpressionKind.GreaterThan> and <xref:System.Data.Common.CommandTrees.DbExpressionKind.LessThan>; and both for <xref:System.Data.Common.CommandTrees.DbExpressionKind.GreaterThanOrEquals> and <xref:System.Data.Common.CommandTrees.DbExpressionKind.LessThanOrEquals>.  
   
  ]]></format>
     </remarks>

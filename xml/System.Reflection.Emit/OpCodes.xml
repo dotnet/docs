@@ -2514,11 +2514,11 @@
   
  The `constrained` prefix supports IL generators that create generic code. Normally the `callvirt` instruction is not valid on value types. Instead it is required that IL compilers effectively perform the 'this' transformation outlined above at compile time, depending on the type of `ptr` and the method being called. However, when `ptr` is a generic type that is unknown at compile time, it is not possible to make this transformation at compile time.  
   
- The `constrained`opcode allows IL compilers to make a call to a virtual function in a uniform way independent of whether `ptr` is a value type or a reference type. Although it is intended for the case where `thisType` is a generic type variable, the `constrained` prefix also works for nongeneric types and can reduce the complexity of generating virtual calls in languages that hide the distinction between value types and reference types.  
+ The `constrained` opcode allows IL compilers to make a call to a virtual function in a uniform way independent of whether `ptr` is a value type or a reference type. Although it is intended for the case where `thisType` is a generic type variable, the `constrained` prefix also works for nongeneric types and can reduce the complexity of generating virtual calls in languages that hide the distinction between value types and reference types.  
   
  Using the `constrained` prefix also avoids potential versioning problems with value types. If the `constrained` prefix is not used, different IL must be emitted depending on whether or not a value type overrides a method of System.Object. For example, if a value type `V` overrides the Object.ToString() method, a `call` `V.ToString()` instruction is emitted; if it does not, a `box` instruction and a `callvirt` `Object.ToString()` instruction are emitted. A versioning problem can arise in the former case if the override is later removed, and in the latter case if an override is later added.  
   
- The `constrained` prefix can also be used for invocation of interface methods on value types, because the value type method implementing the interface method can be changed using a `MethodImpl`. If the `constrained`prefix is not used, the compiler is forced to choose which of the value type's methods to bind to at compile time. Using the `constrained` prefix allows the MSIL to bind to the method that implements the interface method at run time, rather than at compile time.  
+ The `constrained` prefix can also be used for invocation of interface methods on value types, because the value type method implementing the interface method can be changed using a `MethodImpl`. If the `constrained` prefix is not used, the compiler is forced to choose which of the value type's methods to bind to at compile time. Using the `constrained` prefix allows the MSIL to bind to the method that implements the interface method at run time, rather than at compile time.  
   
  The following <xref:System.Reflection.Emit.ILGenerator.Emit%2A> method overload can use the `constrained` opcode:  
   
@@ -3736,7 +3736,7 @@
   
  The `conv.ovf.u4` opcode converts the `value` on top of the stack to the type specified in the opcode, and places that converted value on the top of the stack. If the value is too large or too small to be represented by the target type, an exception is thrown.  
   
- Conversions from floating-point numbers to integer values truncate the number toward zero. Note that integer values of less than 4 bytes are extended to `int32` when they are loaded onto the evaluation stack (unless `conv.ovf.i` or `conv.ovf.u`are used, in which case the result is also `native int`).  
+ Conversions from floating-point numbers to integer values truncate the number toward zero. Note that integer values of less than 4 bytes are extended to `int32` when they are loaded onto the evaluation stack (unless `conv.ovf.i` or `conv.ovf.u` are used, in which case the result is also `native int`).  
   
  <xref:System.OverflowException> is thrown if the result can not be represented in the result type.  
   
@@ -12157,7 +12157,7 @@ callvirt m
   
  While the alignment for a `cpblk` instruction would logically require two numbers (one for the source and one for the destination), there is no noticeable impact on performance if only the lower number is specified.  
   
- The `unaligned` and `volatile` prefixes can be combined in either order. They must immediately precede a `ldind`, `stind`, `ldfld`, `stfld`, `ldobj`, `stobj`, `initblk`, or `cpblk`instruction. Only the <xref:System.Reflection.Emit.OpCodes.Volatile> prefix is allowed for the <xref:System.Reflection.Emit.OpCodes.Ldsfld> and <xref:System.Reflection.Emit.OpCodes.Stsfld> instructions.  
+ The `unaligned` and `volatile` prefixes can be combined in either order. They must immediately precede a `ldind`, `stind`, `ldfld`, `stfld`, `ldobj`, `stobj`, `initblk`, or `cpblk` instruction. Only the <xref:System.Reflection.Emit.OpCodes.Volatile> prefix is allowed for the <xref:System.Reflection.Emit.OpCodes.Ldsfld> and <xref:System.Reflection.Emit.OpCodes.Stsfld> instructions.  
   
  The following <xref:System.Reflection.Emit.ILGenerator.Emit%2A> method overloads can use the `unaligned` opcode:  
   

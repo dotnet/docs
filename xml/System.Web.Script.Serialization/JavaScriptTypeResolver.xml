@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.Script.Serialization.JavaScriptTypeResolver.ResolveTypeId%2A> method returns either `null` or <xref:System.String>, then the type resolver does not support the type.  
+ If the <xref:System.Web.Script.Serialization.JavaScriptTypeResolver.ResolveTypeId%2A> method returns either `null` or <xref:System.String.Empty>, then the type resolver does not support the type.  
   
  ]]></format>
         </remarks>

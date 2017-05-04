@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.AddAttributesToRender%2A> method adds the <xref:System.Web.UI.HtmlTextWriterAttribute> or <xref:System.Web.UI.HtmlTextWriterAttribute> attributes if the respective <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope%2A> or <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.AbbreviatedText%2A> properties are set.  
+ The <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.AddAttributesToRender%2A> method adds the <xref:System.Web.UI.HtmlTextWriterAttribute.Scope> or <xref:System.Web.UI.HtmlTextWriterAttribute.Abbr> attributes if the respective <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope%2A> or <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.AbbreviatedText%2A> properties are set.  
   
  ]]></format>
         </remarks>
@@ -129,7 +129,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope%2A> property is rendered as an HTML `scope` attribute by the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell> object. Although the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope%2A> property is initialized to <xref:System.Web.UI.WebControls.TableHeaderScope>, you should set it to either <xref:System.Web.UI.WebControls.TableHeaderScope> or <xref:System.Web.UI.WebControls.TableHeaderScope>, depending on the cells that the header represents.  
+ The value of the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope%2A> property is rendered as an HTML `scope` attribute by the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell> object. Although the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope%2A> property is initialized to <xref:System.Web.UI.WebControls.TableHeaderScope.NotSet>, you should set it to either <xref:System.Web.UI.WebControls.TableHeaderScope.Column> or <xref:System.Web.UI.WebControls.TableHeaderScope.Row>, depending on the cells that the header represents.  
   
  The value of the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope%2A> property is stored in view state.  
   

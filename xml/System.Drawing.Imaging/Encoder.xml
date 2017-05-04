@@ -75,7 +75,7 @@
 ## Remarks  
  The image encoders that are built into [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] receive parameters that belong to several categories. The following table lists all the categories and the GUID associated with each category.  
   
- <xref:System.Drawing.Imaging.Encoder>  
+ <xref:System.Drawing.Imaging.Encoder.ChrominanceTable>  
  f2e455dc-09b3-4316-8260-676ada32481c  
   
  <xref:System.Drawing.Imaging.Encoder.ColorDepth>  
@@ -735,7 +735,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Imaging.Encoder> category specifies the level of compression for an image. When used to construct an <xref:System.Drawing.Imaging.EncoderParameter>, the range of useful values for the quality category is from 0 to 100. The lower the number specified, the higher the compression and therefore the lower the quality of the image. Zero would give you the lowest quality image and 100 the highest.  
+ The <xref:System.Drawing.Imaging.Encoder.Quality> category specifies the level of compression for an image. When used to construct an <xref:System.Drawing.Imaging.EncoderParameter>, the range of useful values for the quality category is from 0 to 100. The lower the number specified, the higher the compression and therefore the lower the quality of the image. Zero would give you the lowest quality image and 100 the highest.  
   
  When you pass a parameter to an image encoder, the parameter is encapsulated in an <xref:System.Drawing.Imaging.EncoderParameter> object. One of the fields of the <xref:System.Drawing.Imaging.EncoderParameter> object is a GUID that specifies the category of the parameter. Use the static fields of the <xref:System.Drawing.Imaging.Encoder> class to retrieve an <xref:System.Drawing.Imaging.Encoder> that contains parameters of the desired category.  
   

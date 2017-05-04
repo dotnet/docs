@@ -83,7 +83,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.GridViewColumnHeader>|  
+|Identifier field|<xref:System.Windows.Controls.GridViewColumnHeader.ColumnProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -154,7 +154,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method sets the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> of the <xref:System.Windows.Controls.GridViewColumnHeader> and updates the floating version of the header when the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> property is set to <xref:System.Windows.Controls.GridViewColumnHeaderRole>.  
+ This method sets the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> of the <xref:System.Windows.Controls.GridViewColumnHeader> and updates the floating version of the header when the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> property is set to <xref:System.Windows.Controls.GridViewColumnHeaderRole.Floating>.  
   
  ]]></format>
         </remarks>
@@ -423,7 +423,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.GridViewHeaderRowPresenter> class performs layout for the column headers in a <xref:System.Windows.Controls.GridView> and places an additional column header at the end to add space. A <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> value of <xref:System.Windows.Controls.GridViewColumnHeaderRole> identifies this column header in the <xref:System.Windows.Controls.GridView>. A <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> value of <xref:System.Windows.Controls.GridViewColumnHeaderRole> identifies a column that is currently the object of a drag-and-drop operation.  
+ The <xref:System.Windows.Controls.GridViewHeaderRowPresenter> class performs layout for the column headers in a <xref:System.Windows.Controls.GridView> and places an additional column header at the end to add space. A <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> value of <xref:System.Windows.Controls.GridViewColumnHeaderRole.Padding> identifies this column header in the <xref:System.Windows.Controls.GridView>. A <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> value of <xref:System.Windows.Controls.GridViewColumnHeaderRole.Floating> identifies a column that is currently the object of a drag-and-drop operation.  
   
 <a name="dependencyPropertyInfo_Role"></a>   
 ## Dependency Property Information  

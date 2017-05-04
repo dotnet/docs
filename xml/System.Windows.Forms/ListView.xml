@@ -38,9 +38,9 @@
 ## Remarks  
  A <xref:System.Windows.Forms.ListView> control allows you to display a list of items with item text and, optionally, an icon to identify the type of item. For example, the Windows Explorer list of files is similar in appearance to a <xref:System.Windows.Forms.ListView> control. It displays a list of the files and folders currently selected in the tree. Each file and folder displays an icon associated with it to help identify the type of file or folder. The <xref:System.Windows.Forms.ListViewItem> class represents an item within a <xref:System.Windows.Forms.ListView> control. The items that are displayed in the list can be shown in one of five different views. Items can be displayed as large icons, as small icons, or as small icons in a vertical list. Items can also have subitems which contain information that is related to the parent item. The details view allows you to display the item and its subitems in a grid with column headers that identify the information being displayed in a subitem. The tile view, which has limited availability as described below, allows you to display the item and its subitems as a tile that contains a large icon next to the textual information. <xref:System.Windows.Forms.ListView> supports single or multiple selection. The multiple selection feature lets the user select from a list of items in a way similar to a <xref:System.Windows.Forms.ListBox> control. Additionally, the user can activate selected items to perform a task. For example, you could use a <xref:System.Windows.Forms.ListView> control to display a list of files that the application can then open and utilize. The user can select the files to open and then double-click them to activate the items and open the files in the application. The <xref:System.Windows.Forms.ListView> can also display check boxes, using the <xref:System.Windows.Forms.ListView.CheckBoxes%2A> property, to allow the user to check the items that they want to perform an action on. You can use the <xref:System.Windows.Forms.ListView> control in a variety of ways. The control can be used to display information from an application, a database, or a text file. The <xref:System.Windows.Forms.ListView> can also be used to obtain information from the user, such as selecting a set of files to process.  
   
- <xref:System.Windows.Forms.ListView> provides a large number of properties that provide flexibility in appearance and behavior. The <xref:System.Windows.Forms.ListView.View%2A> property allows you to change the way in which items are displayed. The <xref:System.Windows.Forms.ListView.LargeImageList%2A>, <xref:System.Windows.Forms.ListView.SmallImageList%2A>, and <xref:System.Windows.Forms.ListView.StateImageList%2A> properties allow you to specify the <xref:System.Windows.Forms.ImageList> objects that contain the images displayed for items and, in the case of the <xref:System.Windows.Forms.ListView.StateImageList%2A>, the check boxes that are displayed when the <xref:System.Windows.Forms.ListView.CheckBoxes%2A> property is set to `true`. To determine which items are checked, you can use the <xref:System.Windows.Forms.ListView.CheckedItems%2A> property to access the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> collection. The <xref:System.Windows.Forms.ListView.Columns%2A> property allows access to the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>, which stores the column headers that are displayed when the <xref:System.Windows.Forms.ListView.View%2A> property of the control is set to <xref:System.Windows.Forms.View>. Items are added and removed from the <xref:System.Windows.Forms.ListView> through the <xref:System.Windows.Forms.ListView.Items%2A> property. The <xref:System.Windows.Forms.ListView.Items%2A> property allows you to access the <xref:System.Windows.Forms.ListView.ListViewItemCollection> of the control, which provides methods for manipulating the items in the control. If you want to allow the user to edit the text of an item, you can use the <xref:System.Windows.Forms.ListView.LabelEdit%2A> property. When your control contains a large number of items, it is often easier for the user to see them in a sorted list. You can use the <xref:System.Windows.Forms.ListView.Sorting%2A> property to sort the items alphabetically. You can also completely customize the appearance of a <xref:System.Windows.Forms.ListView> control. To do this, set the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property to `true` and handle one or more of the following events: <xref:System.Windows.Forms.ListView.DrawItem>, <xref:System.Windows.Forms.ListView.DrawSubItem>, <xref:System.Windows.Forms.ListView.DrawColumnHeader>.  
+ <xref:System.Windows.Forms.ListView> provides a large number of properties that provide flexibility in appearance and behavior. The <xref:System.Windows.Forms.ListView.View%2A> property allows you to change the way in which items are displayed. The <xref:System.Windows.Forms.ListView.LargeImageList%2A>, <xref:System.Windows.Forms.ListView.SmallImageList%2A>, and <xref:System.Windows.Forms.ListView.StateImageList%2A> properties allow you to specify the <xref:System.Windows.Forms.ImageList> objects that contain the images displayed for items and, in the case of the <xref:System.Windows.Forms.ListView.StateImageList%2A>, the check boxes that are displayed when the <xref:System.Windows.Forms.ListView.CheckBoxes%2A> property is set to `true`. To determine which items are checked, you can use the <xref:System.Windows.Forms.ListView.CheckedItems%2A> property to access the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> collection. The <xref:System.Windows.Forms.ListView.Columns%2A> property allows access to the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>, which stores the column headers that are displayed when the <xref:System.Windows.Forms.ListView.View%2A> property of the control is set to <xref:System.Windows.Forms.View.Details>. Items are added and removed from the <xref:System.Windows.Forms.ListView> through the <xref:System.Windows.Forms.ListView.Items%2A> property. The <xref:System.Windows.Forms.ListView.Items%2A> property allows you to access the <xref:System.Windows.Forms.ListView.ListViewItemCollection> of the control, which provides methods for manipulating the items in the control. If you want to allow the user to edit the text of an item, you can use the <xref:System.Windows.Forms.ListView.LabelEdit%2A> property. When your control contains a large number of items, it is often easier for the user to see them in a sorted list. You can use the <xref:System.Windows.Forms.ListView.Sorting%2A> property to sort the items alphabetically. You can also completely customize the appearance of a <xref:System.Windows.Forms.ListView> control. To do this, set the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property to `true` and handle one or more of the following events: <xref:System.Windows.Forms.ListView.DrawItem>, <xref:System.Windows.Forms.ListView.DrawSubItem>, <xref:System.Windows.Forms.ListView.DrawColumnHeader>.  
   
- Many of the properties of the <xref:System.Windows.Forms.ListView> control are used when the <xref:System.Windows.Forms.ListView.View%2A> property of the control is set to <xref:System.Windows.Forms.View>. The <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A> property allows the user of your <xref:System.Windows.Forms.ListView> control to reconfigure the order of columns at run time. The <xref:System.Windows.Forms.ListView.FullRowSelect%2A> property allows an item and its subitems to be selected instead of just the item. To display gridlines in the details view to identify the boundaries of items and subitems in the <xref:System.Windows.Forms.ListView>, you can use the <xref:System.Windows.Forms.ListView.GridLines%2A> property. The <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property allows you to specify the type of column headers to display.  
+ Many of the properties of the <xref:System.Windows.Forms.ListView> control are used when the <xref:System.Windows.Forms.ListView.View%2A> property of the control is set to <xref:System.Windows.Forms.View.Details>. The <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A> property allows the user of your <xref:System.Windows.Forms.ListView> control to reconfigure the order of columns at run time. The <xref:System.Windows.Forms.ListView.FullRowSelect%2A> property allows an item and its subitems to be selected instead of just the item. To display gridlines in the details view to identify the boundaries of items and subitems in the <xref:System.Windows.Forms.ListView>, you can use the <xref:System.Windows.Forms.ListView.GridLines%2A> property. The <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property allows you to specify the type of column headers to display.  
   
  A <xref:System.Windows.Forms.ListView> control can operate in virtual mode, where <xref:System.Windows.Forms.ListViewItem> objects are generated dynamically instead of being stored in the <xref:System.Windows.Forms.ListView.Items%2A> collection. This can be useful for dealing with very large lists or lists whose contents frequently change. To enable Virtual mode, set the <xref:System.Windows.Forms.ListView.VirtualMode%2A> property to `true` and handle the <xref:System.Windows.Forms.ListView.RetrieveVirtualItem>, <xref:System.Windows.Forms.ListView.CacheVirtualItems>, and <xref:System.Windows.Forms.ListView.SearchForVirtualItem> events.  
   
@@ -67,17 +67,17 @@
   
 |ListView member|View|  
 |---------------------|----------|  
-|<xref:System.Windows.Forms.ListView.Alignment%2A> property|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.AutoArrange%2A> property|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.AutoResizeColumn%2A> method|<xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.Columns%2A> property|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.DrawSubItem> event|<xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.FindItemWithText%2A> method|<xref:System.Windows.Forms.View>, <xref:System.Windows.Forms.View>, or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.FindNearestItem%2A> method|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.GetItemAt%2A> method|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.Groups%2A> property|All views except <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.HeaderStyle%2A> property|<xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.InsertionMark%2A> property|<xref:System.Windows.Forms.View>, <xref:System.Windows.Forms.View>, or <xref:System.Windows.Forms.View>|  
+|<xref:System.Windows.Forms.ListView.Alignment%2A> property|<xref:System.Windows.Forms.View.SmallIcon> or <xref:System.Windows.Forms.View.LargeIcon>|  
+|<xref:System.Windows.Forms.ListView.AutoArrange%2A> property|<xref:System.Windows.Forms.View.SmallIcon> or <xref:System.Windows.Forms.View.LargeIcon>|  
+|<xref:System.Windows.Forms.ListView.AutoResizeColumn%2A> method|<xref:System.Windows.Forms.View.Details>|  
+|<xref:System.Windows.Forms.ListView.Columns%2A> property|<xref:System.Windows.Forms.View.Details> or <xref:System.Windows.Forms.View.Tile>|  
+|<xref:System.Windows.Forms.ListView.DrawSubItem> event|<xref:System.Windows.Forms.View.Details>|  
+|<xref:System.Windows.Forms.ListView.FindItemWithText%2A> method|<xref:System.Windows.Forms.View.Details>, <xref:System.Windows.Forms.View.List>, or <xref:System.Windows.Forms.View.Tile>|  
+|<xref:System.Windows.Forms.ListView.FindNearestItem%2A> method|<xref:System.Windows.Forms.View.SmallIcon> or <xref:System.Windows.Forms.View.LargeIcon>|  
+|<xref:System.Windows.Forms.ListView.GetItemAt%2A> method|<xref:System.Windows.Forms.View.Details> or <xref:System.Windows.Forms.View.Tile>|  
+|<xref:System.Windows.Forms.ListView.Groups%2A> property|All views except <xref:System.Windows.Forms.View.List>|  
+|<xref:System.Windows.Forms.ListView.HeaderStyle%2A> property|<xref:System.Windows.Forms.View.Details>|  
+|<xref:System.Windows.Forms.ListView.InsertionMark%2A> property|<xref:System.Windows.Forms.View.LargeIcon>, <xref:System.Windows.Forms.View.SmallIcon>, or <xref:System.Windows.Forms.View.Tile>|  
   
    
   
@@ -174,10 +174,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.Activation%2A> property allows you to specify how the user will activate an item in the <xref:System.Windows.Forms.ListView> control. Activating an item in a <xref:System.Windows.Forms.ListView> differs from just selecting an item. When an item is activated, an action is typically performed in an event handler for the <xref:System.Windows.Forms.ListView.ItemActivate> event. For example, when an item is activated you might open a file or display a dialog box that allows the item to be edited. Typically, an item is double-clicked by the user to activate it. If the <xref:System.Windows.Forms.ListView.Activation%2A> property is set to <xref:System.Windows.Forms.ItemActivation>, clicking the item one time activates it. Setting the <xref:System.Windows.Forms.ListView.Activation%2A> property to <xref:System.Windows.Forms.ItemActivation> differs from the standard double-click because the two clicks can have any duration between them.  
+ The <xref:System.Windows.Forms.ListView.Activation%2A> property allows you to specify how the user will activate an item in the <xref:System.Windows.Forms.ListView> control. Activating an item in a <xref:System.Windows.Forms.ListView> differs from just selecting an item. When an item is activated, an action is typically performed in an event handler for the <xref:System.Windows.Forms.ListView.ItemActivate> event. For example, when an item is activated you might open a file or display a dialog box that allows the item to be edited. Typically, an item is double-clicked by the user to activate it. If the <xref:System.Windows.Forms.ListView.Activation%2A> property is set to <xref:System.Windows.Forms.ItemActivation.OneClick>, clicking the item one time activates it. Setting the <xref:System.Windows.Forms.ListView.Activation%2A> property to <xref:System.Windows.Forms.ItemActivation.TwoClick> differs from the standard double-click because the two clicks can have any duration between them.  
   
 > [!NOTE]
->  If the <xref:System.Windows.Forms.ListView.Activation%2A> property is set to <xref:System.Windows.Forms.ItemActivation> or <xref:System.Windows.Forms.ItemActivation>, label editing will not be allowed regardless of the value of the <xref:System.Windows.Forms.ListView.LabelEdit%2A> property.  
+>  If the <xref:System.Windows.Forms.ListView.Activation%2A> property is set to <xref:System.Windows.Forms.ItemActivation.OneClick> or <xref:System.Windows.Forms.ItemActivation.TwoClick>, label editing will not be allowed regardless of the value of the <xref:System.Windows.Forms.ListView.LabelEdit%2A> property.  
   
  ]]></format>
         </remarks>
@@ -253,10 +253,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.Alignment%2A> property only affects alignment when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>.  
+ The <xref:System.Windows.Forms.ListView.Alignment%2A> property only affects alignment when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.LargeIcon> or <xref:System.Windows.Forms.View.SmallIcon>.  
   
 > [!NOTE]
->  This property has no effect with the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>.  
+>  This property has no effect with the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.List>.  
   
  ]]></format>
         </remarks>
@@ -288,7 +288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting the value of the <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A> property has no effect unless the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>. You can use this property to allow users to reposition columns in the control at run time. When the <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A> property is set to `true`, users can position the columns in the control to display the item and its subitems in a way that meets their needs within your application.  
+ Setting the value of the <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A> property has no effect unless the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details>. You can use this property to allow users to reposition columns in the control at run time. When the <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A> property is set to `true`, users can position the columns in the control to display the item and its subitems in a way that meets their needs within your application.  
   
    
   
@@ -338,7 +338,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method is only useful when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>. Calling this version of the <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method arranges the items based on the value of the <xref:System.Windows.Forms.ListView.Alignment%2A> property. To cause the items to be aligned based on a value that differs from that of the <xref:System.Windows.Forms.ListView.Alignment%2A> property, use the other version of the <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method.  
+ The <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method is only useful when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.LargeIcon> or <xref:System.Windows.Forms.View.SmallIcon>. Calling this version of the <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method arranges the items based on the value of the <xref:System.Windows.Forms.ListView.Alignment%2A> property. To cause the items to be aligned based on a value that differs from that of the <xref:System.Windows.Forms.ListView.Alignment%2A> property, use the other version of the <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method.  
   
  ]]></format>
         </remarks>
@@ -366,7 +366,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method is only useful when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>. This version of the <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method arranges the icons in the <xref:System.Windows.Forms.ListView> based on the <xref:System.Windows.Forms.ListViewAlignment> value specified in the `value` parameter. Calling this method does not change the value of the <xref:System.Windows.Forms.ListView.Alignment%2A> property of the control. This method is used to arrange icons on the control using a different value than that of the <xref:System.Windows.Forms.ListView.Alignment%2A> property. To cause the items to be aligned based on the value of the <xref:System.Windows.Forms.ListView.Alignment%2A> property, use the other version of the <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method.  
+ The <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method is only useful when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.LargeIcon> or <xref:System.Windows.Forms.View.SmallIcon>. This version of the <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method arranges the icons in the <xref:System.Windows.Forms.ListView> based on the <xref:System.Windows.Forms.ListViewAlignment> value specified in the `value` parameter. Calling this method does not change the value of the <xref:System.Windows.Forms.ListView.Alignment%2A> property of the control. This method is used to arrange icons on the control using a different value than that of the <xref:System.Windows.Forms.ListView.Alignment%2A> property. To cause the items to be aligned based on the value of the <xref:System.Windows.Forms.ListView.Alignment%2A> property, use the other version of the <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method.  
   
  ]]></format>
         </remarks>
@@ -398,7 +398,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.AutoArrange%2A> property only arranges items in the <xref:System.Windows.Forms.ListView> control when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>. To change the alignment of items in the <xref:System.Windows.Forms.ListView> control, use the <xref:System.Windows.Forms.ListView.Alignment%2A> property. You can use <xref:System.Windows.Forms.ListView.AutoArrange%2A> to ensure that all items in your <xref:System.Windows.Forms.ListView> control are automatically arranged to avoid overlapping at run time.  
+ The <xref:System.Windows.Forms.ListView.AutoArrange%2A> property only arranges items in the <xref:System.Windows.Forms.ListView> control when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.LargeIcon> or <xref:System.Windows.Forms.View.SmallIcon>. To change the alignment of items in the <xref:System.Windows.Forms.ListView> control, use the <xref:System.Windows.Forms.ListView.Alignment%2A> property. You can use <xref:System.Windows.Forms.ListView.AutoArrange%2A> to ensure that all items in your <xref:System.Windows.Forms.ListView> control are automatically arranged to avoid overlapping at run time.  
   
  ]]></format>
         </remarks>
@@ -694,7 +694,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Windows.Forms.ListView.BorderStyle%2A> property to change the border style of the <xref:System.Windows.Forms.ListView> control to match the border style settings of other controls on the form. For example, if none of the other controls on your form displays a border, you can set the <xref:System.Windows.Forms.ListView.BorderStyle%2A> property of the <xref:System.Windows.Forms.ListView> control to <xref:System.Windows.Forms.BorderStyle> to match the other controls.  
+ You can use the <xref:System.Windows.Forms.ListView.BorderStyle%2A> property to change the border style of the <xref:System.Windows.Forms.ListView> control to match the border style settings of other controls on the form. For example, if none of the other controls on your form displays a border, you can set the <xref:System.Windows.Forms.ListView.BorderStyle%2A> property of the <xref:System.Windows.Forms.ListView> control to <xref:System.Windows.Forms.BorderStyle.None> to match the other controls.  
   
  ]]></format>
         </remarks>
@@ -769,7 +769,7 @@
 > [!NOTE]
 >  When you set this property to `true`, the <xref:System.Windows.Forms.ListView.ItemCheck> event occurs.  
 >   
->  Check boxes are not displayed when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>.  
+>  Check boxes are not displayed when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Tile>.  
   
    
   
@@ -937,7 +937,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.ColumnClick> event occurs when the user clicks one of the column headers in a details view of the items in a <xref:System.Windows.Forms.ListView> control (when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>). The <xref:System.Windows.Forms.ListView.ColumnClick> event is typically handled to sort the items in the <xref:System.Windows.Forms.ListView> using the clicked column as the column to sort by.  
+ The <xref:System.Windows.Forms.ListView.ColumnClick> event occurs when the user clicks one of the column headers in a details view of the items in a <xref:System.Windows.Forms.ListView> control (when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details>). The <xref:System.Windows.Forms.ListView.ColumnClick> event is typically handled to sort the items in the <xref:System.Windows.Forms.ListView> using the clicked column as the column to sort by.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -1023,10 +1023,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.Columns%2A> property returns a collection that contains the <xref:System.Windows.Forms.ColumnHeader> objects that are displayed in the <xref:System.Windows.Forms.ListView> control. <xref:System.Windows.Forms.ColumnHeader> objects define the columns that are displayed in the <xref:System.Windows.Forms.ListView> control when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>. Each column is used to display subitem information for each item in the <xref:System.Windows.Forms.ListView>. For more information about how to manipulate the items in the collection, see <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ The <xref:System.Windows.Forms.ListView.Columns%2A> property returns a collection that contains the <xref:System.Windows.Forms.ColumnHeader> objects that are displayed in the <xref:System.Windows.Forms.ListView> control. <xref:System.Windows.Forms.ColumnHeader> objects define the columns that are displayed in the <xref:System.Windows.Forms.ListView> control when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details>. Each column is used to display subitem information for each item in the <xref:System.Windows.Forms.ListView>. For more information about how to manipulate the items in the collection, see <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
   
 > [!NOTE]
->  If your <xref:System.Windows.Forms.ListView> control does not have any column headers specified and you set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View>, the <xref:System.Windows.Forms.ListView> control will not display any items.  
+>  If your <xref:System.Windows.Forms.ListView> control does not have any column headers specified and you set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View.Details>, the <xref:System.Windows.Forms.ListView> control will not display any items.  
   
    
   
@@ -1686,7 +1686,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.FullRowSelect%2A> property has no effect unless the <xref:System.Windows.Forms.ListView.View%2A> property of the <xref:System.Windows.Forms.ListView> control is set to <xref:System.Windows.Forms.View>. The <xref:System.Windows.Forms.ListView.FullRowSelect%2A> property is typically used when a <xref:System.Windows.Forms.ListView> displays items with many subitems and it is important to be able to see selected items when the item text is not visible due to horizontal scrolling of the control's contents.  
+ The <xref:System.Windows.Forms.ListView.FullRowSelect%2A> property has no effect unless the <xref:System.Windows.Forms.ListView.View%2A> property of the <xref:System.Windows.Forms.ListView> control is set to <xref:System.Windows.Forms.View.Details>. The <xref:System.Windows.Forms.ListView.FullRowSelect%2A> property is typically used when a <xref:System.Windows.Forms.ListView> displays items with many subitems and it is important to be able to see selected items when the item text is not visible due to horizontal scrolling of the control's contents.  
   
 > [!NOTE]
 >  When <xref:System.Windows.Forms.ListView.FullRowSelect%2A> is set to `true`, ToolTips for a <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> will not be shown; only the ToolTip for the parent <xref:System.Windows.Forms.ListViewItem> is displayed.  
@@ -1853,7 +1853,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.GridLines%2A> property has no effect unless the <xref:System.Windows.Forms.ListView.View%2A> property of the <xref:System.Windows.Forms.ListView> control is set to <xref:System.Windows.Forms.View>. The <xref:System.Windows.Forms.ListView.GridLines%2A> property allows you to display lines to identify the rows and columns that are displayed in the <xref:System.Windows.Forms.ListView> control when it displays items and their subitems. The grid lines that are displayed do not provide the ability to resize rows and columns as an application such as Microsoft Excel does. Only columns can be resized, if column headers are displayed, by moving the mouse pointer to the right side of the column to resize and then clicking and dragging until the column is the size you want. The grid lines feature is used to provide the user of the control with visible boundaries around items and subitems.  
+ The <xref:System.Windows.Forms.ListView.GridLines%2A> property has no effect unless the <xref:System.Windows.Forms.ListView.View%2A> property of the <xref:System.Windows.Forms.ListView> control is set to <xref:System.Windows.Forms.View.Details>. The <xref:System.Windows.Forms.ListView.GridLines%2A> property allows you to display lines to identify the rows and columns that are displayed in the <xref:System.Windows.Forms.ListView> control when it displays items and their subitems. The grid lines that are displayed do not provide the ability to resize rows and columns as an application such as Microsoft Excel does. Only columns can be resized, if column headers are displayed, by moving the mouse pointer to the right side of the column to resize and then clicking and dragging until the column is the size you want. The grid lines feature is used to provide the user of the control with visible boundaries around items and subitems.  
   
    
   
@@ -1974,7 +1974,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property allows you to specify the type of column headers to display when the <xref:System.Windows.Forms.ListView.View%2A> property of the <xref:System.Windows.Forms.ListView> control is set to <xref:System.Windows.Forms.View> and the <xref:System.Windows.Forms.ListView> control has <xref:System.Windows.Forms.ColumnHeader> objects specified in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>. <xref:System.Windows.Forms.ColumnHeader> objects define the columns that are displayed in the <xref:System.Windows.Forms.ListView> control. Each column is used to display subitem information for each item in the <xref:System.Windows.Forms.ListView>.  
+ The <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property allows you to specify the type of column headers to display when the <xref:System.Windows.Forms.ListView.View%2A> property of the <xref:System.Windows.Forms.ListView> control is set to <xref:System.Windows.Forms.View.Details> and the <xref:System.Windows.Forms.ListView> control has <xref:System.Windows.Forms.ColumnHeader> objects specified in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>. <xref:System.Windows.Forms.ColumnHeader> objects define the columns that are displayed in the <xref:System.Windows.Forms.ListView> control. Each column is used to display subitem information for each item in the <xref:System.Windows.Forms.ListView>.  
   
  The <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property allows you to specify whether the column headers are visible or, if they are visible, whether they will function as clickable buttons. If the <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property is set to <xref:System.Windows.Forms.ColumnHeaderStyle?displayProperty=fullName>, the column headers are not displayed, although the items and subitems of the <xref:System.Windows.Forms.ListView> control are still arranged in columns. If the <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property is set to <xref:System.Windows.Forms.ColumnHeaderStyle?displayProperty=fullName>, the column headers act like buttons that users can click to carry out an action, such as sorting the items in the <xref:System.Windows.Forms.ListView> control using the items in the clicked column as a key. You can implement this behavior in a handler for the <xref:System.Windows.Forms.ListView.ColumnClick> event. If the <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property is set to <xref:System.Windows.Forms.ColumnHeaderStyle?displayProperty=fullName>, the column headers appear, but cannot be clicked.  
   
@@ -2130,7 +2130,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Enabling hot tracking willcause the <xref:System.Windows.Forms.ListView.Activation%2A> property to be set to <xref:System.Windows.Forms.ItemActivation> andthe<xref:System.Windows.Forms.ListView.HoverSelection%2A> property to be set to `true`. In addition, run-time label editing is not allowed when hot tracking is enabled.  
+ Enabling hot tracking willcause the <xref:System.Windows.Forms.ListView.Activation%2A> property to be set to <xref:System.Windows.Forms.ItemActivation.OneClick> andthe<xref:System.Windows.Forms.ListView.HoverSelection%2A> property to be set to `true`. In addition, run-time label editing is not allowed when hot tracking is enabled.  
   
    
   
@@ -2562,7 +2562,7 @@
  When the <xref:System.Windows.Forms.ListView.LabelEdit%2A> property is set to `true`, the user is able to modify the text of an item by clicking the item text to select it and then clicking the item text again to put the label text into edit mode. The user can then modify or replace the item's text label. You can use the <xref:System.Windows.Forms.ListView.BeforeLabelEdit> and <xref:System.Windows.Forms.ListView.AfterLabelEdit> events to perform tasks before and after the user edits an item's text. The text of subitems cannot be modified if this property is set to `true`. To change the text of subitems, you can display a dialog box to users when they double-click a subitem in the control.  
   
 > [!NOTE]
->  If the <xref:System.Windows.Forms.ListView.Activation%2A> property is set to <xref:System.Windows.Forms.ItemActivation> or <xref:System.Windows.Forms.ItemActivation>, label editing will not be allowed regardless of the value of the <xref:System.Windows.Forms.ListView.LabelEdit%2A> property.  
+>  If the <xref:System.Windows.Forms.ListView.Activation%2A> property is set to <xref:System.Windows.Forms.ItemActivation.OneClick> or <xref:System.Windows.Forms.ItemActivation.TwoClick>, label editing will not be allowed regardless of the value of the <xref:System.Windows.Forms.ListView.LabelEdit%2A> property.  
   
    
   
@@ -2621,7 +2621,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Forms.ListView.LabelWrap%2A> property is set to `true`, the item text is wrapped to the next line of text if needed. If the text is longer than two lines of text, the text is shortened. If the user selects the item, all the item text is displayed. If the <xref:System.Windows.Forms.ListView.LabelWrap%2A> property is set to `false`, all item text is displayed on a single line. The entire item text is displayed when the <xref:System.Windows.Forms.ListView.LabelWrap%2A> is set to `false`. This property is only used when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>.  
+ When the <xref:System.Windows.Forms.ListView.LabelWrap%2A> property is set to `true`, the item text is wrapped to the next line of text if needed. If the text is longer than two lines of text, the text is shortened. If the user selects the item, all the item text is displayed. If the <xref:System.Windows.Forms.ListView.LabelWrap%2A> property is set to `false`, all item text is displayed on a single line. The entire item text is displayed when the <xref:System.Windows.Forms.ListView.LabelWrap%2A> is set to `false`. This property is only used when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.LargeIcon> or <xref:System.Windows.Forms.View.SmallIcon>.  
   
  ]]></format>
         </remarks>
@@ -2651,14 +2651,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.LargeImageList%2A> property allows you to specify an <xref:System.Windows.Forms.ImageList> object that contains icons to use when displaying items with large icons (when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>). The <xref:System.Windows.Forms.ListView> control can accept any graphics format that the <xref:System.Windows.Forms.ImageList> control supports when displaying icons. The <xref:System.Windows.Forms.ListView> control is not limited to .ico files. Once an <xref:System.Windows.Forms.ImageList> is assigned to the <xref:System.Windows.Forms.ListView.LargeImageList%2A> property, you can set the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property of each <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView> control to the index position of the appropriate image in the <xref:System.Windows.Forms.ImageList>. The size of the icons for the <xref:System.Windows.Forms.ListView.LargeImageList%2A> is specified by the <xref:System.Windows.Forms.ImageList.ImageSize%2A>.  
+ The <xref:System.Windows.Forms.ListView.LargeImageList%2A> property allows you to specify an <xref:System.Windows.Forms.ImageList> object that contains icons to use when displaying items with large icons (when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.LargeIcon>). The <xref:System.Windows.Forms.ListView> control can accept any graphics format that the <xref:System.Windows.Forms.ImageList> control supports when displaying icons. The <xref:System.Windows.Forms.ListView> control is not limited to .ico files. Once an <xref:System.Windows.Forms.ImageList> is assigned to the <xref:System.Windows.Forms.ListView.LargeImageList%2A> property, you can set the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property of each <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView> control to the index position of the appropriate image in the <xref:System.Windows.Forms.ImageList>. The size of the icons for the <xref:System.Windows.Forms.ListView.LargeImageList%2A> is specified by the <xref:System.Windows.Forms.ImageList.ImageSize%2A>.  
   
  Because only one index can be specified for the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A?displayProperty=fullName> property, the <xref:System.Windows.Forms.ImageList> objects specified in the <xref:System.Windows.Forms.ListView.LargeImageList%2A> and <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties should have the same index positions for the images to display. For example, if the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property of a <xref:System.Windows.Forms.ListViewItem> is set to 0, the images to use for both small and large icons should be at the same index position in the <xref:System.Windows.Forms.ImageList> objects specified in the <xref:System.Windows.Forms.ListView.LargeImageList%2A> and <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties.  
   
 > [!NOTE]
 >  When the images are specified with keys, you still need to place small and large versions of the image at the same index location in their respective image lists. When switching between views, the index location of the image in one list is used to locate the image in the other list, regardless of the key value specified.  
   
- To set the <xref:System.Windows.Forms.ImageList> to use when displaying items with small icons (all view modes other than <xref:System.Windows.Forms.View>), use the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property. If you want to use images to display item state, use the <xref:System.Windows.Forms.ListView.StateImageList%2A> property.  
+ To set the <xref:System.Windows.Forms.ImageList> to use when displaying items with small icons (all view modes other than <xref:System.Windows.Forms.View.LargeIcon>), use the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property. If you want to use images to display item state, use the <xref:System.Windows.Forms.ListView.StateImageList%2A> property.  
   
    
   
@@ -4262,7 +4262,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Any groups assigned to a <xref:System.Windows.Forms.ListView> control appear whenever the <xref:System.Windows.Forms.ListView.View%2A> property is set to a value other than <xref:System.Windows.Forms.View>. The <xref:System.Windows.Forms.ListView> grouping feature lets you create visual groups of logically related <xref:System.Windows.Forms.ListView> items on Windows XP and Windows Server 2003. To enable this feature, your application must call the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method. For more information, see the <xref:System.Windows.Forms.ListView.Groups%2A> property.  
+ Any groups assigned to a <xref:System.Windows.Forms.ListView> control appear whenever the <xref:System.Windows.Forms.ListView.View%2A> property is set to a value other than <xref:System.Windows.Forms.View.List>. The <xref:System.Windows.Forms.ListView> grouping feature lets you create visual groups of logically related <xref:System.Windows.Forms.ListView> items on Windows XP and Windows Server 2003. To enable this feature, your application must call the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method. For more information, see the <xref:System.Windows.Forms.ListView.Groups%2A> property.  
   
  ]]></format>
         </remarks>
@@ -4331,14 +4331,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.SmallImageList%2A> property allows you to specify an <xref:System.Windows.Forms.ImageList> object that contains icons to use when displaying items with small icons (when the <xref:System.Windows.Forms.ListView.View%2A> property is set to any value other than <xref:System.Windows.Forms.View>). The <xref:System.Windows.Forms.ListView> control can accept any graphics format that the <xref:System.Windows.Forms.ImageList> control supports when displaying icons. The <xref:System.Windows.Forms.ListView> control is not limited to .ico files. Once an <xref:System.Windows.Forms.ImageList> is assigned to the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property, you can set the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property of each <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView> control to the index position of the appropriate image in the <xref:System.Windows.Forms.ImageList>. The size of the icons for the <xref:System.Windows.Forms.ListView.SmallImageList%2A> is specified by the <xref:System.Windows.Forms.ImageList.ImageSize%2A> property.  
+ The <xref:System.Windows.Forms.ListView.SmallImageList%2A> property allows you to specify an <xref:System.Windows.Forms.ImageList> object that contains icons to use when displaying items with small icons (when the <xref:System.Windows.Forms.ListView.View%2A> property is set to any value other than <xref:System.Windows.Forms.View.LargeIcon>). The <xref:System.Windows.Forms.ListView> control can accept any graphics format that the <xref:System.Windows.Forms.ImageList> control supports when displaying icons. The <xref:System.Windows.Forms.ListView> control is not limited to .ico files. Once an <xref:System.Windows.Forms.ImageList> is assigned to the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property, you can set the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property of each <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView> control to the index position of the appropriate image in the <xref:System.Windows.Forms.ImageList>. The size of the icons for the <xref:System.Windows.Forms.ListView.SmallImageList%2A> is specified by the <xref:System.Windows.Forms.ImageList.ImageSize%2A> property.  
   
  Because only one index can be specified for the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A?displayProperty=fullName> property, the <xref:System.Windows.Forms.ImageList> objects specified in the <xref:System.Windows.Forms.ListView.LargeImageList%2A> and <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties should have the same index positions for the images to display. For example, if the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property of a <xref:System.Windows.Forms.ListViewItem> is set to 0, the images to use for both small and large icons should be at the same index position in the <xref:System.Windows.Forms.ImageList> objects specified in the <xref:System.Windows.Forms.ListView.LargeImageList%2A> and <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties.  
   
 > [!NOTE]
 >  When the images are specified with keys, you still need to place small and large versions of the image at the same index location in their respective image lists. When switching between views, the index location of the image in one list is used to locate the image in the other list, regardless of the key value specified.  
   
- To set the <xref:System.Windows.Forms.ImageList> to use when displaying items with large icons (when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>), use the <xref:System.Windows.Forms.ListView.LargeImageList%2A> property. If you want to use images to display item state, use the <xref:System.Windows.Forms.ListView.StateImageList%2A> property.  
+ To set the <xref:System.Windows.Forms.ImageList> to use when displaying items with large icons (when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.LargeIcon>), use the <xref:System.Windows.Forms.ListView.LargeImageList%2A> property. If you want to use images to display item state, use the <xref:System.Windows.Forms.ListView.StateImageList%2A> property.  
   
    
   
@@ -4420,7 +4420,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.Sorting%2A> property allows you to specify whether or not items are sorted in the <xref:System.Windows.Forms.ListView> control. By default, no sorting is performed. When the <xref:System.Windows.Forms.ListView.Sorting%2A> property is set to <xref:System.Windows.Forms.SortOrder> or <xref:System.Windows.Forms.SortOrder>, the items in the <xref:System.Windows.Forms.ListView> are sorted automatically in ascending alphabetical order (when the property is set to <xref:System.Windows.Forms.SortOrder>) or descending alphabetical order (when the property is set to <xref:System.Windows.Forms.SortOrder>). You can use this property to automatically sort items that are displayed in your <xref:System.Windows.Forms.ListView> control to make it easier for users to find items when a large number of items are available.  
+ The <xref:System.Windows.Forms.ListView.Sorting%2A> property allows you to specify whether or not items are sorted in the <xref:System.Windows.Forms.ListView> control. By default, no sorting is performed. When the <xref:System.Windows.Forms.ListView.Sorting%2A> property is set to <xref:System.Windows.Forms.SortOrder.Ascending> or <xref:System.Windows.Forms.SortOrder.Descending>, the items in the <xref:System.Windows.Forms.ListView> are sorted automatically in ascending alphabetical order (when the property is set to <xref:System.Windows.Forms.SortOrder.Ascending>) or descending alphabetical order (when the property is set to <xref:System.Windows.Forms.SortOrder.Descending>). You can use this property to automatically sort items that are displayed in your <xref:System.Windows.Forms.ListView> control to make it easier for users to find items when a large number of items are available.  
   
  If you want to perform your own item sorting instead of using the <xref:System.Windows.Forms.ListView.Sorting%2A> property, use the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property in combination with the <xref:System.Windows.Forms.ListView.Sort%2A> method.  
   
@@ -4773,18 +4773,18 @@
   
 |ListView member|View|  
 |---------------------|----------|  
-|<xref:System.Windows.Forms.ListView.Alignment%2A> property|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.AutoArrange%2A> property|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.AutoResizeColumn%2A> method|<xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.CheckBoxes%2A>|All views except <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.Columns%2A> property|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.DrawSubItem> event|<xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.FindItemWithText%2A> method|<xref:System.Windows.Forms.View>, <xref:System.Windows.Forms.View>, or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.FindNearestItem%2A> method|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.GetItemAt%2A> method|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.Groups%2A> property|All views except <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.HeaderStyle%2A> property|<xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.InsertionMark%2A> property|<xref:System.Windows.Forms.View>, <xref:System.Windows.Forms.View>, or <xref:System.Windows.Forms.View>|  
+|<xref:System.Windows.Forms.ListView.Alignment%2A> property|<xref:System.Windows.Forms.View.SmallIcon> or <xref:System.Windows.Forms.View.LargeIcon>|  
+|<xref:System.Windows.Forms.ListView.AutoArrange%2A> property|<xref:System.Windows.Forms.View.SmallIcon> or <xref:System.Windows.Forms.View.LargeIcon>|  
+|<xref:System.Windows.Forms.ListView.AutoResizeColumn%2A> method|<xref:System.Windows.Forms.View.Details>|  
+|<xref:System.Windows.Forms.ListView.CheckBoxes%2A>|All views except <xref:System.Windows.Forms.View.Tile>|  
+|<xref:System.Windows.Forms.ListView.Columns%2A> property|<xref:System.Windows.Forms.View.Details> or <xref:System.Windows.Forms.View.Tile>|  
+|<xref:System.Windows.Forms.ListView.DrawSubItem> event|<xref:System.Windows.Forms.View.Details>|  
+|<xref:System.Windows.Forms.ListView.FindItemWithText%2A> method|<xref:System.Windows.Forms.View.Details>, <xref:System.Windows.Forms.View.List>, or <xref:System.Windows.Forms.View.Tile>|  
+|<xref:System.Windows.Forms.ListView.FindNearestItem%2A> method|<xref:System.Windows.Forms.View.SmallIcon> or <xref:System.Windows.Forms.View.LargeIcon>|  
+|<xref:System.Windows.Forms.ListView.GetItemAt%2A> method|<xref:System.Windows.Forms.View.Details> or <xref:System.Windows.Forms.View.Tile>|  
+|<xref:System.Windows.Forms.ListView.Groups%2A> property|All views except <xref:System.Windows.Forms.View.List>|  
+|<xref:System.Windows.Forms.ListView.HeaderStyle%2A> property|<xref:System.Windows.Forms.View.Details>|  
+|<xref:System.Windows.Forms.ListView.InsertionMark%2A> property|<xref:System.Windows.Forms.View.LargeIcon>, <xref:System.Windows.Forms.View.SmallIcon>, or <xref:System.Windows.Forms.View.Tile>|  
   
  You can use the <xref:System.Windows.Forms.ListView.View%2A> property to provide different views of data in your application, or to lock a specific view to utilize that view's benefits. For example, the <xref:System.Windows.Forms.ListView.View%2A> property is often set to <xref:System.Windows.Forms.View?displayProperty=fullName> because the details view provides a number of viewing options not available in the other views.  
   
@@ -4949,7 +4949,7 @@
   
  You can handle the <xref:System.Windows.Forms.ListView.CacheVirtualItems> event in order to maintain a cache of <xref:System.Windows.Forms.ListViewItem> objects. If the calculation or lookup to create a <xref:System.Windows.Forms.ListViewItem> object is expensive, maintaining a cache can improve performance.  
   
- If the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>, the value will automatically be changed to <xref:System.Windows.Forms.View> when <xref:System.Windows.Forms.ListView.VirtualMode%2A> is set to `true`.  
+ If the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Tile>, the value will automatically be changed to <xref:System.Windows.Forms.View.LargeIcon> when <xref:System.Windows.Forms.ListView.VirtualMode%2A> is set to `true`.  
   
  In virtual mode, the <xref:System.Windows.Forms.ListView.Items%2A> collection is disabled. Attempting to access it results in an <xref:System.InvalidOperationException>. The same is true of the <xref:System.Windows.Forms.ListView.CheckedItems%2A> collection and the <xref:System.Windows.Forms.ListView.SelectedItems%2A> collection. If you want to retrieve the selected or checked items, use the <xref:System.Windows.Forms.ListView.SelectedIndices%2A> and <xref:System.Windows.Forms.ListView.CheckedIndices%2A> collections instead.  
   

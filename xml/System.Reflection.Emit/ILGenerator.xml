@@ -1122,7 +1122,7 @@
 ## Remarks  
  The <xref:System.Reflection.Emit.ILGenerator.EmitCall%2A> method is used to emit calls to `varargs` methods because there is no overload of the <xref:System.Reflection.Emit.ILGenerator.Emit%2A> method that specifies the parameter types of the variable arguments.  
   
- To emit calls to methods that do not use the <xref:System.Reflection.CallingConventions> calling convention, use the <xref:System.Reflection.Emit.ILGenerator.Emit%28System.Reflection.Emit.OpCode%2CSystem.Reflection.MethodInfo%29> method overload.  
+ To emit calls to methods that do not use the <xref:System.Reflection.CallingConventions.VarArgs> calling convention, use the <xref:System.Reflection.Emit.ILGenerator.Emit%28System.Reflection.Emit.OpCode%2CSystem.Reflection.MethodInfo%29> method overload.  
   
 ## Version Information  
  Beginning with the .NET Framework version 2.0, the <xref:System.Reflection.Emit.ILGenerator.EmitCall%2A> method does not throw an exception when optional parameter types are specified for a method that is not `varargs`. <xref:System.InvalidProgramException> is thrown when the call is executed.  

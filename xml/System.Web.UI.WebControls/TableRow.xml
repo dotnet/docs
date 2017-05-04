@@ -350,11 +350,11 @@
   
 |Horizontal Alignment|Description|  
 |--------------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.HorizontalAlign>|The horizontal alignment is not set.|  
-|<xref:System.Web.UI.WebControls.HorizontalAlign>|The contents of the row are left justified.|  
-|<xref:System.Web.UI.WebControls.HorizontalAlign>|The contents of the row are centered.|  
-|<xref:System.Web.UI.WebControls.HorizontalAlign>|The contents of the row are right justified.|  
-|<xref:System.Web.UI.WebControls.HorizontalAlign>|The contents of the row are uniformly spread out and aligned with both the left and right margins.|  
+|<xref:System.Web.UI.WebControls.HorizontalAlign.NotSet>|The horizontal alignment is not set.|  
+|<xref:System.Web.UI.WebControls.HorizontalAlign.Left>|The contents of the row are left justified.|  
+|<xref:System.Web.UI.WebControls.HorizontalAlign.Center>|The contents of the row are centered.|  
+|<xref:System.Web.UI.WebControls.HorizontalAlign.Right>|The contents of the row are right justified.|  
+|<xref:System.Web.UI.WebControls.HorizontalAlign.Justify>|The contents of the row are uniformly spread out and aligned with both the left and right margins.|  
   
    
   
@@ -422,9 +422,9 @@
   
 |Table row section|Displayed as|  
 |-----------------------|------------------|  
-|<xref:System.Web.UI.WebControls.TableRowSection>|The header row.|  
-|<xref:System.Web.UI.WebControls.TableRowSection>|The body of the table.|  
-|<xref:System.Web.UI.WebControls.TableRowSection>|The footer row.|  
+|<xref:System.Web.UI.WebControls.TableRowSection.TableHeader>|The header row.|  
+|<xref:System.Web.UI.WebControls.TableRowSection.TableBody>|The body of the table.|  
+|<xref:System.Web.UI.WebControls.TableRowSection.TableFooter>|The footer row.|  
   
  When using the declarative syntax, the sections must be in the order of header, body, and then footer.  
   
@@ -473,10 +473,10 @@
   
 |Vertical Alignment|Description|  
 |------------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.VerticalAlign>|The vertical alignment is not set.|  
-|<xref:System.Web.UI.WebControls.VerticalAlign>|The contents of the row are aligned with the top of the row.|  
-|<xref:System.Web.UI.WebControls.VerticalAlign>|The contents of the row are aligned with the middle of the row.|  
-|<xref:System.Web.UI.WebControls.VerticalAlign>|The contents of the row are aligned with the bottom of the row.|  
+|<xref:System.Web.UI.WebControls.VerticalAlign.NotSet>|The vertical alignment is not set.|  
+|<xref:System.Web.UI.WebControls.VerticalAlign.Top>|The contents of the row are aligned with the top of the row.|  
+|<xref:System.Web.UI.WebControls.VerticalAlign.Middle>|The contents of the row are aligned with the middle of the row.|  
+|<xref:System.Web.UI.WebControls.VerticalAlign.Bottom>|The contents of the row are aligned with the bottom of the row.|  
   
    
   

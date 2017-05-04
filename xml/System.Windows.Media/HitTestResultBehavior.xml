@@ -22,7 +22,7 @@
    
   
 ## Examples  
- The following example shows how to return a <xref:System.Windows.Media.HitTestResultBehavior> value from a hit test results callback method.  
+ The following example shows how to return a <xref:System.Windows.Media.HitTestResultBehavior.Continue> value from a hit test results callback method.  
   
  [!code-csharp[HitTestingOverview#102](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#102)]
  [!code-vb[HitTestingOverview#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#102)]  

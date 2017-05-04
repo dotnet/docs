@@ -836,7 +836,7 @@
   
  A `fixedWidth` parameter value of `false` calculates the row height based on calculated column widths that will achieve ideal cell height-to-width ratios.  
   
- For cell contents to wrap onto multiple lines, the cell style in effect for the cell must have a <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> property value of <xref:System.Windows.Forms.DataGridViewTriState>.  
+ For cell contents to wrap onto multiple lines, the cell style in effect for the cell must have a <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> property value of <xref:System.Windows.Forms.DataGridViewTriState.True>.  
   
  For more information about automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
@@ -1334,11 +1334,11 @@
 ## Remarks  
  You cannot use this property with a shared row. For more information about shared rows, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
- If the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property is <xref:System.Windows.Forms.DataGridViewTriState>, the user will not be able to manually adjust the row height.  
+ If the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property is <xref:System.Windows.Forms.DataGridViewTriState.False>, the user will not be able to manually adjust the row height.  
   
- By default, the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property value is based on the <xref:System.Windows.Forms.DataGridView.AllowUserToResizeRows%2A?displayProperty=fullName> property value. If you explicitly set <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState> or <xref:System.Windows.Forms.DataGridViewTriState>, however, the control value is ignored. Set <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState> to restore the value-inheritance behavior.  
+ By default, the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property value is based on the <xref:System.Windows.Forms.DataGridView.AllowUserToResizeRows%2A?displayProperty=fullName> property value. If you explicitly set <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState.True> or <xref:System.Windows.Forms.DataGridViewTriState.False>, however, the control value is ignored. Set <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState.NotSet> to restore the value-inheritance behavior.  
   
- Because <xref:System.Windows.Forms.DataGridViewTriState> restores the value inheritance, the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property will never return a <xref:System.Windows.Forms.DataGridViewTriState> value unless the row has not been added to a <xref:System.Windows.Forms.DataGridView> control. If you need to determine whether the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property value of a row is inherited or has been specified explicitly, check its <xref:System.Windows.Forms.DataGridViewElement.State%2A> property. If the <xref:System.Windows.Forms.DataGridViewElement.State%2A> value includes the <xref:System.Windows.Forms.DataGridViewElementStates> flag, the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property value is not inherited.  
+ Because <xref:System.Windows.Forms.DataGridViewTriState.NotSet> restores the value inheritance, the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property will never return a <xref:System.Windows.Forms.DataGridViewTriState.NotSet> value unless the row has not been added to a <xref:System.Windows.Forms.DataGridView> control. If you need to determine whether the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property value of a row is inherited or has been specified explicitly, check its <xref:System.Windows.Forms.DataGridViewElement.State%2A> property. If the <xref:System.Windows.Forms.DataGridViewElement.State%2A> value includes the <xref:System.Windows.Forms.DataGridViewElementStates.ResizableSet> flag, the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property value is not inherited.  
   
    
   

@@ -59,7 +59,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value of the <xref:System.Security.Permissions.WebBrowserPermissionAttribute.Level%2A> property is <xref:System.Security.Permissions.WebBrowserPermissionLevel>.  
+ The default value of the <xref:System.Security.Permissions.WebBrowserPermissionAttribute.Level%2A> property is <xref:System.Security.Permissions.WebBrowserPermissionLevel.None>.  
   
 ## XAML Attribute Usage  
  Members of this class are either not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], or cannot be used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
@@ -126,7 +126,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value is <xref:System.Security.Permissions.WebBrowserPermissionLevel>.  
+ The default value is <xref:System.Security.Permissions.WebBrowserPermissionLevel.None>.  
   
 ## XAML Attribute Usage  
  Members of this class are either not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], or cannot be used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  

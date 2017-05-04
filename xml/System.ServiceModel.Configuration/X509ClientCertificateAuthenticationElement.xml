@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A> property is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode>, you must set the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CustomCertificateValidator%2A> property to a custom validator that inherits from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class.  
+ If the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A> property is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom>, you must set the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CustomCertificateValidator%2A> property to a custom validator that inherits from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class.  
   
  For more information, see [How to: Create a Service that Employs a Custom Certificate Validator](~/docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
   
@@ -218,7 +218,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The system verifies that the client certificate has not been revoked by looking it up in the revoked certificate list. This check can be performed either by checking online or against a cached revocation list. Revocation checking can be turned off by setting this property to <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode>.  
+ The system verifies that the client certificate has not been revoked by looking it up in the revoked certificate list. This check can be performed either by checking online or against a cached revocation list. Revocation checking can be turned off by setting this property to <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.NoCheck>.  
   
  ]]></format>
         </remarks>

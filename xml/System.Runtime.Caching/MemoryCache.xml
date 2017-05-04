@@ -496,17 +496,17 @@ private void btnGet_Click(object sender, EventArgs e)
 ## Remarks  
  The capabilities of a cache implementation are a combination of the following values:  
   
--   <xref:System.Runtime.Caching.DefaultCacheCapabilities>  
+-   <xref:System.Runtime.Caching.DefaultCacheCapabilities.InMemoryProvider>  
   
--   <xref:System.Runtime.Caching.DefaultCacheCapabilities>  
+-   <xref:System.Runtime.Caching.DefaultCacheCapabilities.CacheEntryChangeMonitors>  
   
--   <xref:System.Runtime.Caching.DefaultCacheCapabilities>  
+-   <xref:System.Runtime.Caching.DefaultCacheCapabilities.AbsoluteExpirations>  
   
--   <xref:System.Runtime.Caching.DefaultCacheCapabilities>  
+-   <xref:System.Runtime.Caching.DefaultCacheCapabilities.SlidingExpirations>  
   
--   <xref:System.Runtime.Caching.DefaultCacheCapabilities>  
+-   <xref:System.Runtime.Caching.DefaultCacheCapabilities.CacheEntryUpdateCallback>  
   
--   <xref:System.Runtime.Caching.DefaultCacheCapabilities>  
+-   <xref:System.Runtime.Caching.DefaultCacheCapabilities.CacheEntryRemovedCallback>  
   
  ]]></format>
         </remarks>
@@ -545,7 +545,7 @@ private void btnGet_Click(object sender, EventArgs e)
   
 5.  Callback objects that provide notification of changes for those monitors are called.  
   
-6.  Any <xref:System.Web.Caching.CacheItemRemovedCallback> instances that are registered with entries in the cache are called. The removal reason that is passed to the callbacks is <xref:System.Runtime.Caching.CacheEntryRemovedReason>.  
+6.  Any <xref:System.Web.Caching.CacheItemRemovedCallback> instances that are registered with entries in the cache are called. The removal reason that is passed to the callbacks is <xref:System.Runtime.Caching.CacheEntryRemovedReason.CacheSpecificEviction>.  
   
  ]]></format>
         </remarks>
@@ -862,7 +862,7 @@ private void btnGet_Click(object sender, EventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the entry specified by `key` exists in the cache, removing the item triggers any associated change monitors. If the removed item was associated with a <xref:System.Web.Caching.CacheItemUpdateCallback> object or a <xref:System.Web.Caching.CacheItemRemovedCallback> object, the reason passed to the callback is <xref:System.Runtime.Caching.CacheEntryRemovedReason>.  
+ If the entry specified by `key` exists in the cache, removing the item triggers any associated change monitors. If the removed item was associated with a <xref:System.Web.Caching.CacheItemUpdateCallback> object or a <xref:System.Web.Caching.CacheItemRemovedCallback> object, the reason passed to the callback is <xref:System.Runtime.Caching.CacheEntryRemovedReason.Removed>.  
   
  ]]></format>
         </remarks>
@@ -984,7 +984,7 @@ private void btnGet_Click(object sender, EventArgs e)
   
  The `absoluteExpiration` parameter indicates when the entry should be removed from the cache.  
   
- Removing an entry triggers any associated change monitors. If the removed item was associated with a <xref:System.Web.Caching.CacheItemUpdateCallback> object or <xref:System.Web.Caching.CacheItemRemovedCallback> object, the reason for removal that is passed to the callbacks is contained in the <xref:System.Runtime.Caching.CacheEntryRemovedReason> property.  
+ Removing an entry triggers any associated change monitors. If the removed item was associated with a <xref:System.Web.Caching.CacheItemUpdateCallback> object or <xref:System.Web.Caching.CacheItemRemovedCallback> object, the reason for removal that is passed to the callbacks is contained in the <xref:System.Runtime.Caching.CacheEntryRemovedReason.Removed> property.  
   
  ]]></format>
         </remarks>
@@ -1042,7 +1042,7 @@ private void btnGet_Click(object sender, EventArgs e)
 ## Remarks  
  Like other <xref:System.Runtime.Caching.MemoryCache.Set%2A> method overloads, the <xref:System.Runtime.Caching.MemoryCache.Set%2A> method always puts a cache value in the cache, regardless whether a matching entry already exists. If the specified entry does not exist in the cache, a new cache entry is inserted. If the specified entry exists, it is updated.  
   
- Removing an entry triggers any associated change monitors. If the removed item was associated with a <xref:System.Web.Caching.CacheItemUpdateCallback> object or <xref:System.Web.Caching.CacheItemRemovedCallback> object, the reason for removal that is passed to the callbacks is contained in the <xref:System.Runtime.Caching.CacheEntryRemovedReason> property.  
+ Removing an entry triggers any associated change monitors. If the removed item was associated with a <xref:System.Web.Caching.CacheItemUpdateCallback> object or <xref:System.Web.Caching.CacheItemRemovedCallback> object, the reason for removal that is passed to the callbacks is contained in the <xref:System.Runtime.Caching.CacheEntryRemovedReason.Removed> property.  
   
  ]]></format>
         </remarks>
@@ -1125,9 +1125,9 @@ private void btnGet_Click(object sender, EventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Caching.MemoryCache.Trim%2A> property first removes entries that have exceeded either an absolute or sliding expiration. Any callbacks that are registered for items that are removed will be passed a removed reason of <xref:System.Web.Caching.CacheItemRemovedReason>.  
+ The <xref:System.Runtime.Caching.MemoryCache.Trim%2A> property first removes entries that have exceeded either an absolute or sliding expiration. Any callbacks that are registered for items that are removed will be passed a removed reason of <xref:System.Web.Caching.CacheItemRemovedReason.Expired>.  
   
- If removing expired entries is insufficient to reach the specified trim percentage, additional entries will be removed from the cache based on a least-recently used (LRU) algorithm until the requested trim percentage is reached. Any callbacks that are registered for items that are removed this way will be passed a remove reason of <xref:System.Runtime.Caching.CacheEntryRemovedReason>.  
+ If removing expired entries is insufficient to reach the specified trim percentage, additional entries will be removed from the cache based on a least-recently used (LRU) algorithm until the requested trim percentage is reached. Any callbacks that are registered for items that are removed this way will be passed a remove reason of <xref:System.Runtime.Caching.CacheEntryRemovedReason.Evicted>.  
   
  ]]></format>
         </remarks>

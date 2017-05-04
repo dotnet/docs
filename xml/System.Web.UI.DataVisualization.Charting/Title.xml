@@ -33,7 +33,7 @@
   
 -   Be displayed inside or outside the plotted chart areas.  
   
--   Use a predefined <xref:System.Web.UI.DataVisualization.Charting.TextStyle> such as <xref:System.Web.UI.DataVisualization.Charting.TextStyle> or <xref:System.Web.UI.DataVisualization.Charting.TextStyle>.  
+-   Use a predefined <xref:System.Web.UI.DataVisualization.Charting.TextStyle> such as <xref:System.Web.UI.DataVisualization.Charting.TextStyle.Embed> or <xref:System.Web.UI.DataVisualization.Charting.TextStyle.Shadow>.  
   
 -   Use hatching, gradient colors and background images.  
   
@@ -389,7 +389,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is used when the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode>.  
+ This property is used when the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode.Unscaled>.  
   
  ]]></format>
         </remarks>
@@ -479,7 +479,7 @@
   
  For more information about the available wrapping modes, see the <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode> enumeration topic.  
   
- If the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode>, the location where the image is drawn is determined by the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageAlignment%2A> property setting.  
+ If the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode.Unscaled>, the location where the image is drawn is determined by the <xref:System.Web.UI.DataVisualization.Charting.Title.BackImageAlignment%2A> property setting.  
   
  ]]></format>
         </remarks>
@@ -954,7 +954,7 @@
   
  Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. Its default value is `true`.  
   
- **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType>. It is possible to create an image map when using binary streaming, but another technique must be used.  
+ **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used.  
   
  Special keywords may be used when setting this property; each keyword will be replaced with some type of data from the applicable chart element. Refer to the following table for a listing of all available keywords:  
   
@@ -1267,7 +1267,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- There are five possible styles for title text: <xref:System.Web.UI.DataVisualization.Charting.TextStyle>, <xref:System.Web.UI.DataVisualization.Charting.TextStyle>, <xref:System.Web.UI.DataVisualization.Charting.TextStyle>, <xref:System.Web.UI.DataVisualization.Charting.TextStyle>, and <xref:System.Web.UI.DataVisualization.Charting.TextStyle>. Refer to the table below for a summary of these styles:  
+ There are five possible styles for title text: <xref:System.Web.UI.DataVisualization.Charting.TextStyle.Default>, <xref:System.Web.UI.DataVisualization.Charting.TextStyle.Shadow>, <xref:System.Web.UI.DataVisualization.Charting.TextStyle.Emboss>, <xref:System.Web.UI.DataVisualization.Charting.TextStyle.Embed>, and <xref:System.Web.UI.DataVisualization.Charting.TextStyle.Frame>. Refer to the table below for a summary of these styles:  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -1315,7 +1315,7 @@
   
  Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
   
- **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType>. It is possible to create an image map when using binary streaming, but another technique must be used.  
+ **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used.  
   
  ]]></format>
         </remarks>
@@ -1358,7 +1358,7 @@
   
  Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
   
- **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType>. It is possible to create an image map when using binary streaming, but another technique must be used.  
+ **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used.  
   
  Attributes of the map area(s), for example, TARGET=_Blank, can be specified by using the <xref:System.Web.UI.DataVisualization.Charting.Title.MapAreaAttributes%2A> property.  
   

@@ -18,7 +18,7 @@
 ## Remarks  
  This class is used by the <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutions%2A?displayProperty=fullName> and <xref:System.Drawing.Printing.PageSettings.PrinterResolution%2A?displayProperty=fullName> properties to get the printer resolutions that are available on the printer and to set the printing resolution for a page, respectively.  
   
- Use the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> property to determine whether the printer resolution type is the <xref:System.Drawing.Printing.PrinterResolutionKind> value <xref:System.Drawing.Printing.PrinterResolutionKind>. If so, use the <xref:System.Drawing.Printing.PrinterResolution.X%2A> and <xref:System.Drawing.Printing.PrinterResolution.Y%2A> properties to determine the printer resolution in the horizontal and vertical directions, respectively.  
+ Use the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> property to determine whether the printer resolution type is the <xref:System.Drawing.Printing.PrinterResolutionKind> value <xref:System.Drawing.Printing.PrinterResolutionKind.Custom>. If so, use the <xref:System.Drawing.Printing.PrinterResolution.X%2A> and <xref:System.Drawing.Printing.PrinterResolution.Y%2A> properties to determine the printer resolution in the horizontal and vertical directions, respectively.  
   
  For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
   
@@ -55,7 +55,7 @@
   
 |Property|Initial Value|  
 |--------------|-------------------|  
-|<xref:System.Drawing.Printing.PrinterResolution.Kind%2A>|<xref:System.Drawing.Printing.PrinterResolutionKind>|  
+|<xref:System.Drawing.Printing.PrinterResolution.Kind%2A>|<xref:System.Drawing.Printing.PrinterResolutionKind.Custom>|  
   
  ]]></format>
         </remarks>
@@ -118,7 +118,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `dmPrintQuality` is a member of the `DEVMODE` (device mode) structure, which defines constants that map to printer quality settings. The <xref:System.Drawing.Printing.PrinterResolution.X%2A> property contains the value `DMRES_HIGH` if <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> is set to <xref:System.Drawing.Printing.PrinterResolutionKind>, `DMRES_MEDIUM` if <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> is set to <xref:System.Drawing.Printing.PrinterResolutionKind>, `DMRES_LOW` if <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> is set to <xref:System.Drawing.Printing.PrinterResolutionKind>, and `DMRES_DRAFT` if <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> is set to <xref:System.Drawing.Printing.PrinterResolutionKind>.  
+ `dmPrintQuality` is a member of the `DEVMODE` (device mode) structure, which defines constants that map to printer quality settings. The <xref:System.Drawing.Printing.PrinterResolution.X%2A> property contains the value `DMRES_HIGH` if <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> is set to <xref:System.Drawing.Printing.PrinterResolutionKind.High>, `DMRES_MEDIUM` if <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> is set to <xref:System.Drawing.Printing.PrinterResolutionKind.Medium>, `DMRES_LOW` if <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> is set to <xref:System.Drawing.Printing.PrinterResolutionKind.Low>, and `DMRES_DRAFT` if <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> is set to <xref:System.Drawing.Printing.PrinterResolutionKind.Draft>.  
   
  For more information about the `DEVMODE` structure, see the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
   
@@ -145,7 +145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> property is not set to <xref:System.Drawing.Printing.PrinterResolutionKind>, the default value of the <xref:System.Drawing.Printing.PrinterResolution.Y%2A> property is -1.  
+ If the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A> property is not set to <xref:System.Drawing.Printing.PrinterResolutionKind.Custom>, the default value of the <xref:System.Drawing.Printing.PrinterResolution.Y%2A> property is -1.  
   
  ]]></format>
         </remarks>

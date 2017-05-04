@@ -1070,7 +1070,7 @@ End Function
   
 -   Long string columns, which are columns whose <xref:System.Web.DynamicData.MetaColumn.IsLongString%2A> property is set to `true` and whose `containerType` parameter is `true`.  
   
--   Child columns whose <xref:System.Web.UI.WebControls.DataBoundControlMode> value is set to <xref:System.Web.UI.WebControls.DataBoundControlMode>.  
+-   Child columns whose <xref:System.Web.UI.WebControls.DataBoundControlMode> value is set to <xref:System.Web.UI.WebControls.DataBoundControlMode.Insert>.  
   
  ]]></format>
         </remarks>

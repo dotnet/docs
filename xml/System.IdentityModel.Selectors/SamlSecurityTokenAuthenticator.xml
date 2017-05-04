@@ -81,7 +81,7 @@
 ## Remarks  
  Use the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A> property in a federated application that utilizes a security token service (STS) that issues <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens. When the STS issues the security token, it can specify the URI of the Web services for which the security token is intended by adding a <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> to the security token. That allows the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> for the recipient Web service to verify that the issued security token is intended for this Web service by specifying that this check should happen by doing the following:  
   
--   Set the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A> property to <xref:System.IdentityModel.Selectors.AudienceUriMode> or <xref:System.IdentityModel.Selectors.AudienceUriMode>.  
+-   Set the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A> property to <xref:System.IdentityModel.Selectors.AudienceUriMode.Always> or <xref:System.IdentityModel.Selectors.AudienceUriMode.BearerKeyOnly>.  
   
 -   Specify the set of valid URIs, by adding the URIs to the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A> collection.  
   
@@ -112,12 +112,12 @@
 ## Remarks  
  Use the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A> property in a federated application that utilizes a security token service (STS) that issues <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens. When the STS issues the security token, it can specify the URI of the Web services for which the security token is intended by adding a <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> to the security token. That allows the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> for the recipient Web service to verify that the issued security token is intended for this Web service by specifying that this check should happen by doing the following:  
   
--   Set the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A> property to <xref:System.IdentityModel.Selectors.AudienceUriMode> or <xref:System.IdentityModel.Selectors.AudienceUriMode>.  
+-   Set the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A> property to <xref:System.IdentityModel.Selectors.AudienceUriMode.Always> or <xref:System.IdentityModel.Selectors.AudienceUriMode.BearerKeyOnly>.  
   
 -   Specify the set of valid URIs, by adding the URIs to the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A> collection.  
   
 > [!NOTE]
->  When the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A> property is set to <xref:System.IdentityModel.Selectors.AudienceUriMode>, an incoming non-endorsing <xref:System.IdentityModel.Tokens.SamlSecurityToken> must contain a <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> and the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.Audiences%2A> collection must contain a URI that matches one of the valid URIs specified in the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A> collection. A non-endorsing or bearer token is a security token that is included in the message and not used to sign any part of the message.  
+>  When the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A> property is set to <xref:System.IdentityModel.Selectors.AudienceUriMode.BearerKeyOnly>, an incoming non-endorsing <xref:System.IdentityModel.Tokens.SamlSecurityToken> must contain a <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> and the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.Audiences%2A> collection must contain a URI that matches one of the valid URIs specified in the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A> collection. A non-endorsing or bearer token is a security token that is included in the message and not used to sign any part of the message.  
   
 -   Optionally, override the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateAudienceRestriction%2A> method to specify the validation algorithm to use for the allowed URI.  
   
@@ -274,7 +274,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateAudienceRestriction%2A> method is called by the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateTokenCore%2A> method when the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A> property is set to <xref:System.IdentityModel.Selectors.AudienceUriMode> or <xref:System.IdentityModel.Selectors.AudienceUriMode>.  
+ The <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateAudienceRestriction%2A> method is called by the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateTokenCore%2A> method when the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A> property is set to <xref:System.IdentityModel.Selectors.AudienceUriMode.Always> or <xref:System.IdentityModel.Selectors.AudienceUriMode.BearerKeyOnly>.  
   
  ]]></format>
         </remarks>

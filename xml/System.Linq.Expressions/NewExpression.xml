@@ -38,7 +38,7 @@
 ## Remarks  
  Use the <xref:System.Linq.Expressions.Expression.New%2A> factory methods to create a <xref:System.Linq.Expressions.NewExpression>.  
   
- The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.NewExpression> object is <xref:System.Linq.Expressions.ExpressionType>.  
+ The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.NewExpression> object is <xref:System.Linq.Expressions.ExpressionType.New>.  
   
    
   
@@ -86,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This default implementation for <xref:System.Linq.Expressions.ExpressionType> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
+ This default implementation for <xref:System.Linq.Expressions.ExpressionType.Extension> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
   
  ]]></format>
         </remarks>

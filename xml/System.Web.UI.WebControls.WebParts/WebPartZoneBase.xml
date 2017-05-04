@@ -935,7 +935,7 @@
 ## Remarks  
  The export verb referenced by the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.ExportVerb%2A> property appears in the verbs drop-down menu within the title bar of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control in a zone. The verb appears in the verbs menu in all page display modes.  
   
- To enable users to export a definition file for a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, you must also set the <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property on a control to something other than its default value, which is <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode>.  
+ To enable users to export a definition file for a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, you must also set the <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property on a control to something other than its default value, which is <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode.None>.  
   
    
   
@@ -1183,15 +1183,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> property concerns how Web Parts controls are laid out in a zone. With the default <xref:System.Web.UI.WebControls.Orientation> orientation, the controls are rendered in a top-to-bottom arrangement, according to the <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> value of each control. With a <xref:System.Web.UI.WebControls.Orientation> orientation, the controls are arranged side by side, subject to the width of the zone.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> property concerns how Web Parts controls are laid out in a zone. With the default <xref:System.Web.UI.WebControls.Orientation.Vertical> orientation, the controls are rendered in a top-to-bottom arrangement, according to the <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> value of each control. With a <xref:System.Web.UI.WebControls.Orientation.Horizontal> orientation, the controls are arranged side by side, subject to the width of the zone.  
   
  Internet Explorer can affect the height of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and the height of the zone that contains it. Internet Explorer renders web pages either in compatibility mode (backward compatible with previous browser versions), or in standards mode (determined by the presence of a `DOCTYPE` declaration in the page). For information about these modes, see the DHTML [compatMode](http://go.microsoft.com/fwlink/?LinkId=57175) property. When Internet Explorer renders a page in standards mode, in some scenarios it does not resize cells in tables, even when a cell's HTML markup is `<td height="100%">`. As a result, <xref:System.Web.UI.WebControls.WebParts.WebPart> controls and their containing zone are rendered so that the controls do not stretch to the full height of the zone.  
   
  This type of rendering occurs in two cases.  
   
--   When a zone's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> property is set to <xref:System.Web.UI.WebControls.Orientation>, and you explicitly set the height on the zone. To enable controls to fill the full height of the zone, do not specify the height of a horizontal zone.  
+-   When a zone's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> property is set to <xref:System.Web.UI.WebControls.Orientation.Vertical>, and you explicitly set the height on the zone. To enable controls to fill the full height of the zone, do not specify the height of a horizontal zone.  
   
--   When a zone's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> property is set to <xref:System.Web.UI.WebControls.Orientation>, and you do not explicitly set the height of the zone (or of the contained controls). To enable controls to fill the full height of the zone, set the height of the zone or of the controls in a vertical zone.  
+-   When a zone's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> property is set to <xref:System.Web.UI.WebControls.Orientation.Horizontal>, and you do not explicitly set the height of the zone (or of the contained controls). To enable controls to fill the full height of the zone, set the height of the zone or of the controls in a vertical zone.  
   
  The code example in this topic demonstrates normal usage of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> property.  For a code example that demonstrates the height-related rendering issue and how to work around it, see the <xref:System.Web.UI.WebControls.WebParts.WebPart.Height%2A> property.  
   
@@ -1544,7 +1544,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupStyle%2A> property enables you to set style attributes for the drop-down verbs menu that appears on each <xref:System.Web.UI.WebControls.WebParts.WebPart> control in a zone. While the object itself is read-only, you can still set values for the underlying attributes. You can set style attributes for the entire menu, such as its border color, style, and width; font details; height and width; background color; cell padding and spacing; shadow color (if shadowing is enabled in the user's operating system); and gridlines.  
   
- The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupStyle%2A> property applies only when the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode>, which is the default.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupStyle%2A> property applies only when the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode.Menu>, which is the default.  
   
  ]]></format>
         </remarks>
@@ -1743,7 +1743,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeWebPart%2A> method is called when a user clicks the minimize verb on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The method sets the <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeState%2A> property value for the selected <xref:System.Web.UI.WebControls.WebParts.WebPart> control to <xref:System.Web.UI.WebControls.WebParts.PartChromeState>. A minimized <xref:System.Web.UI.WebControls.WebParts.WebPart> control collapses within its zone and hides its contents, and only its title bar remains visible.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeWebPart%2A> method is called when a user clicks the minimize verb on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The method sets the <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeState%2A> property value for the selected <xref:System.Web.UI.WebControls.WebParts.WebPart> control to <xref:System.Web.UI.WebControls.WebParts.PartChromeState.Minimized>. A minimized <xref:System.Web.UI.WebControls.WebParts.WebPart> control collapses within its zone and hides its contents, and only its title bar remains visible.  
   
  The method should only be used by derived <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones such as <xref:System.Web.UI.WebControls.WebParts.WebPartZone>.  
   
@@ -2046,7 +2046,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a zone's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange%2A> property is set to `true`, and a <xref:System.Web.UI.WebControls.WebParts.WebPart> control in that zone has its <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeState%2A> property set to <xref:System.Web.UI.WebControls.WebParts.PartChromeState>, invoking the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreWebPart%2A> method returns the control to <xref:System.Web.UI.WebControls.WebParts.PartChromeState> state, which means normal size and appearance.  
+ If a zone's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange%2A> property is set to `true`, and a <xref:System.Web.UI.WebControls.WebParts.WebPart> control in that zone has its <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeState%2A> property set to <xref:System.Web.UI.WebControls.WebParts.PartChromeState.Minimized>, invoking the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreWebPart%2A> method returns the control to <xref:System.Web.UI.WebControls.WebParts.PartChromeState.Normal> state, which means normal size and appearance.  
   
  Typically, the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreWebPart%2A> method is invoked when a user clicks the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreVerb%2A> verb.  
   
@@ -2216,7 +2216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbButtonType%2A> property applies only when the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode>, which results in the standard verbs being rendered directly in the title bar of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control in the zone. The type of button on the title bar can be a button, an image, or a hyperlink.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbButtonType%2A> property applies only when the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode.TitleBar>, which results in the standard verbs being rendered directly in the title bar of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control in the zone. The type of button on the title bar can be a button, an image, or a hyperlink.  
   
  ]]></format>
         </remarks>
@@ -2256,7 +2256,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbStyle%2A> property enables you to retrieve a style object with style attributes for the verbs in the title bars of all <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a zone. The property applies only when verbs are actually rendered in the title bar, such as when the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode>.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbStyle%2A> property enables you to retrieve a style object with style attributes for the verbs in the title bars of all <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a zone. The property applies only when verbs are actually rendered in the title bar, such as when the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode.TitleBar>.  
   
  Although the object referenced by the property is read-only, you can still change the underlying style attributes for the verbs in the title bar.  
   
@@ -2323,7 +2323,7 @@
   
  The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.VerbButtonType%2A> property applies to verbs that exist only at the zone level, as opposed to verbs that exist in each of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a zone. For example, when you switch a page into catalog mode or edit mode, there are zone-level verbs in the footers of the zones that apply only to actions at the level of the entire zone. The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.VerbButtonType%2A> property is applied when the Web Parts page is accessed with an older ("down-level") browser.  
   
- You must assign a value to the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.ImageUrl%2A> property for each specific verb to cause an image to appear for that verb in its zone. If you do not provide the URL to an image, the verb's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.VerbButtonType%2A> property defaults to <xref:System.Web.UI.WebControls.ButtonType>.  
+ You must assign a value to the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.ImageUrl%2A> property for each specific verb to cause an image to appear for that verb in its zone. If you do not provide the URL to an image, the verb's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.VerbButtonType%2A> property defaults to <xref:System.Web.UI.WebControls.ButtonType.Link>.  
   
  This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   

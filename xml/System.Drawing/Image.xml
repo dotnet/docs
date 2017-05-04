@@ -202,7 +202,7 @@
 |`ImageFlagsReadOnly`|65536|  
 |`ImageFlagsCaching`|131072|  
   
- For example, if the <xref:System.Drawing.Image.Flags%2A> property for an image returned 77960, the <xref:System.Drawing.Imaging.ImageFlags> for the image would be <xref:System.Drawing.Imaging.ImageFlags>, <xref:System.Drawing.Imaging.ImageFlags>, <xref:System.Drawing.Imaging.ImageFlags>, <xref:System.Drawing.Imaging.ImageFlags>, and <xref:System.Drawing.Imaging.ImageFlags>.  
+ For example, if the <xref:System.Drawing.Image.Flags%2A> property for an image returned 77960, the <xref:System.Drawing.Imaging.ImageFlags> for the image would be <xref:System.Drawing.Imaging.ImageFlags.ReadOnly>, <xref:System.Drawing.Imaging.ImageFlags.HasRealDpi>, <xref:System.Drawing.Imaging.ImageFlags.HasRealPixelSize>, <xref:System.Drawing.Imaging.ImageFlags.ColorSpaceYcbcr>, and <xref:System.Drawing.Imaging.ImageFlags.PartiallyScalable>.  
   
  ]]></format>
         </remarks>

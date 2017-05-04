@@ -372,9 +372,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.Services.Description.ServiceDescriptionImporter.Style%2A> property is set to <xref:System.Web.Services.Description.ServiceDescriptionImportStyle>, the <xref:System.Web.Services.Description.ServiceDescriptionImporter> generates client proxy classes that provide the functionality of the described Web services by calling them.  
+ If the <xref:System.Web.Services.Description.ServiceDescriptionImporter.Style%2A> property is set to <xref:System.Web.Services.Description.ServiceDescriptionImportStyle.Client>, the <xref:System.Web.Services.Description.ServiceDescriptionImporter> generates client proxy classes that provide the functionality of the described Web services by calling them.  
   
- If the <xref:System.Web.Services.Description.ServiceDescriptionImporter.Style%2A> property is set to <xref:System.Web.Services.Description.ServiceDescriptionImportStyle>, the <xref:System.Web.Services.Description.ServiceDescriptionImporter> instance generates abstract classes that represent the functionality of the described XML Web services without implementing them. You can then implement them by writing classes that inherit from these abstract classes and implement the relevant methods.  
+ If the <xref:System.Web.Services.Description.ServiceDescriptionImporter.Style%2A> property is set to <xref:System.Web.Services.Description.ServiceDescriptionImportStyle.Server>, the <xref:System.Web.Services.Description.ServiceDescriptionImporter> instance generates abstract classes that represent the functionality of the described XML Web services without implementing them. You can then implement them by writing classes that inherit from these abstract classes and implement the relevant methods.  
   
    
   

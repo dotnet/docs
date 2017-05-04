@@ -1313,7 +1313,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because the body of a <xref:System.ServiceModel.Channels.Message> object is a stream, it can only be read or written once. This is enforced by maintaining the current state of the <xref:System.ServiceModel.Channels.Message> object. A <xref:System.ServiceModel.Channels.Message> object can be read, written, or copied when in the <xref:System.ServiceModel.Channels.MessageState> state. Other states are <xref:System.ServiceModel.Channels.MessageState>, <xref:System.ServiceModel.Channels.MessageState> and <xref:System.ServiceModel.Channels.MessageState>, which means that the respective action has been performed already once.  
+ Because the body of a <xref:System.ServiceModel.Channels.Message> object is a stream, it can only be read or written once. This is enforced by maintaining the current state of the <xref:System.ServiceModel.Channels.Message> object. A <xref:System.ServiceModel.Channels.Message> object can be read, written, or copied when in the <xref:System.ServiceModel.Channels.MessageState.Created> state. Other states are <xref:System.ServiceModel.Channels.MessageState.Read>, <xref:System.ServiceModel.Channels.MessageState.Written> and <xref:System.ServiceModel.Channels.MessageState.Copied>, which means that the respective action has been performed already once.  
   
  ]]></format>
         </remarks>

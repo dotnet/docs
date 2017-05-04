@@ -154,7 +154,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a <xref:System.Drawing.Design.UITypeEditor> does not override and implement this method, <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A> will return <xref:System.Drawing.Design.UITypeEditorEditStyle> by default.  
+ If a <xref:System.Drawing.Design.UITypeEditor> does not override and implement this method, <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A> will return <xref:System.Drawing.Design.UITypeEditorEditStyle.None> by default.  
   
  ]]></format>
         </remarks>

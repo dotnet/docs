@@ -228,40 +228,23 @@
         <summary>Compares this instance to a specified <see cref="T:System.Boolean" /> object and returns an integer that indicates their relationship to one another.</summary>
         <returns>A signed integer that indicates the relative values of this instance and <paramref name="value" />.  
   
- <list type="table">  
-<listheader>  
-<term> Return Value  
+ <list type="table"><listheader><term> Return Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance is <see langword="false" /> and <paramref name="value" /> is <see langword="true" />.  
+ </term><description> This instance is <see langword="false" /> and <paramref name="value" /> is <see langword="true" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance and <paramref name="value" /> are equal (either both are <see langword="true" /> or both are <see langword="false" />).  
+ </term><description> This instance and <paramref name="value" /> are equal (either both are <see langword="true" /> or both are <see langword="false" />).  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance is <see langword="true" /> and <paramref name="value" /> is <see langword="false" />.  
+ </term><description> This instance is <see langword="true" /> and <paramref name="value" /> is <see langword="false" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -312,44 +295,27 @@
         <summary>Compares this instance to a specified object and returns an integer that indicates their relationship to one another.</summary>
         <returns>A signed integer that indicates the relative order of this instance and <paramref name="obj" />.  
   
- <list type="table">  
-<listheader>  
-<term> Return Value  
+ <list type="table"><listheader><term> Return Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance is <see langword="false" /> and <paramref name="obj" /> is <see langword="true" />.  
+ </term><description> This instance is <see langword="false" /> and <paramref name="obj" /> is <see langword="true" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance and <paramref name="obj" /> are equal (either both are <see langword="true" /> or both are <see langword="false" />).  
+ </term><description> This instance and <paramref name="obj" /> are equal (either both are <see langword="true" /> or both are <see langword="false" />).  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance is <see langword="true" /> and <paramref name="obj" /> is <see langword="false" />.  
+ </term><description> This instance is <see langword="true" /> and <paramref name="obj" /> is <see langword="false" />.  
   
  -or-  
   
  <paramref name="obj" /> is <see langword="null" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -584,7 +550,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `value` parameter, optionally preceded or trailed by white space, must contain either <xref:System.Boolean> or <xref:System.Boolean>; otherwise, an exception is thrown. The comparison is case-insensitive.  
+ The `value` parameter, optionally preceded or trailed by white space, must contain either <xref:System.Boolean.TrueString> or <xref:System.Boolean.FalseString>; otherwise, an exception is thrown. The comparison is case-insensitive.  
   
    
   

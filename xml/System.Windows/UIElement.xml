@@ -1433,7 +1433,7 @@ Image with an Elliptical Clip Region
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.UIElement>|  
+|Identifier field|<xref:System.Windows.UIElement.EffectProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -12335,9 +12335,9 @@ Image with an Elliptical Clip Region
 ## Remarks  
  Setting this property affects the value of <xref:System.Windows.UIElement.IsVisible%2A>, which in turn may raise the <xref:System.Windows.UIElement.IsVisibleChanged> event. However, <xref:System.Windows.UIElement.IsVisible%2A> has other factors that influence it, for instance the visibility settings of parents that contain it.  
   
- Elements where <xref:System.Windows.UIElement.Visibility%2A> is not <xref:System.Windows.Visibility> do not participate in input events (or commands), do not influence either the Measure or Arrange passes of layout, are not in a tab sequence, and will not be reported in hit testing.  
+ Elements where <xref:System.Windows.UIElement.Visibility%2A> is not <xref:System.Windows.Visibility.Visible> do not participate in input events (or commands), do not influence either the Measure or Arrange passes of layout, are not in a tab sequence, and will not be reported in hit testing.  
   
- When inherited by <xref:System.Windows.Window> or its derived classes, <xref:System.Windows.Window> redefines the default value of this property to be <xref:System.Windows.Visibility>. This has the effect of not running the Measure pass of layout on an initially created <xref:System.Windows.Window>, and <xref:System.Windows.UIElement.RenderSize%2A> returns (0,0). For details, see <xref:System.Windows.Window>. <xref:System.Windows.Controls.Primitives.Popup> also redefines the default value to be <xref:System.Windows.Visibility>, with similar resulting behavior for <xref:System.Windows.Controls.Primitives.Popup> and its derived classes.  
+ When inherited by <xref:System.Windows.Window> or its derived classes, <xref:System.Windows.Window> redefines the default value of this property to be <xref:System.Windows.Visibility.Collapsed>. This has the effect of not running the Measure pass of layout on an initially created <xref:System.Windows.Window>, and <xref:System.Windows.UIElement.RenderSize%2A> returns (0,0). For details, see <xref:System.Windows.Window>. <xref:System.Windows.Controls.Primitives.Popup> also redefines the default value to be <xref:System.Windows.Visibility.Collapsed>, with similar resulting behavior for <xref:System.Windows.Controls.Primitives.Popup> and its derived classes.  
   
 <a name="dependencyPropertyInfo_Visibility"></a>   
 ## Dependency Property Information  

@@ -2,7 +2,7 @@
 title: ".NET Framework Versions and Dependencies | Microsoft Docs"
 ms.custom: ""
 ms.date: "05/02/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

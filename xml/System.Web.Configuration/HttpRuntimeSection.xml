@@ -184,7 +184,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property must to be set before <xref:System.Web.RequestNotification>is set in the ASP.NET pipeline.  
+ This property must to be set before <xref:System.Web.RequestNotification.ExecuteRequestHandler>is set in the ASP.NET pipeline.  
   
  ]]></format>
         </remarks>

@@ -665,7 +665,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType%2A> property acts like a default property for the Web Parts controls in a zone. If a Web Parts control has its <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeType%2A> property set, that property overrides the effect of the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType%2A> property at run time. If the control's <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeType%2A> property is not set, or is set to <xref:System.Web.UI.WebControls.WebParts.PartChromeType>, the value of the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType%2A> property determines what kind of border the control has.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType%2A> property acts like a default property for the Web Parts controls in a zone. If a Web Parts control has its <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeType%2A> property set, that property overrides the effect of the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType%2A> property at run time. If the control's <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeType%2A> property is not set, or is set to <xref:System.Web.UI.WebControls.WebParts.PartChromeType.Default>, the value of the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType%2A> property determines what kind of border the control has.  
   
  ]]></format>
         </remarks>

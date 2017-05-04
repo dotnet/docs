@@ -96,7 +96,7 @@ Various typographic qualities of two different glyph characters
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs.BidiLevelProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
  ]]></format>
@@ -196,7 +196,7 @@ Various typographic qualities of two different glyph characters
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs.DeviceFontNameProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
  ]]></format>
@@ -245,7 +245,7 @@ Various typographic qualities of two different glyph characters
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs.FillProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -299,7 +299,7 @@ Various typographic qualities of two different glyph characters
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs.FontRenderingEmSizeProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
  ]]></format>
@@ -348,7 +348,7 @@ Various typographic qualities of two different glyph characters
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs.FontUriProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
  ]]></format>
@@ -412,7 +412,7 @@ Various typographic qualities of two different glyph characters
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs.IndicesProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
  ]]></format>
@@ -462,7 +462,7 @@ Various typographic qualities of two different glyph characters
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs.IsSidewaysProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
  ]]></format>
@@ -559,7 +559,7 @@ Various typographic qualities of two different glyph characters
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs.OriginXProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
  ]]></format>
@@ -613,7 +613,7 @@ Various typographic qualities of two different glyph characters
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs.OriginYProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
  ]]></format>
@@ -662,7 +662,7 @@ Various typographic qualities of two different glyph characters
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs.StyleSimulationsProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
  ]]></format>
@@ -755,7 +755,7 @@ Various typographic qualities of two different glyph characters
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Glyphs>|  
+|Identifier field|<xref:System.Windows.Documents.Glyphs.UnicodeStringProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
  ]]></format>

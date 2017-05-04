@@ -214,7 +214,7 @@
   
  The `capacity` parameter indicates the amount of total memory available. This value can describe a region that is longer than the length specified, or indicate a region that can be appended to. Any attempt to write beyond this value will fail.  
   
- The `access` parameter sets the <xref:System.IO.UnmanagedMemoryStream.CanRead%2A>, and <xref:System.IO.UnmanagedMemoryStream.CanWrite%2A> properties. Note that specifying <xref:System.IO.FileAccess> does not guarantee that the stream will be writable. The access parameters allow the implementer to create an object whose implementation can match the actual stream that is exposed.  
+ The `access` parameter sets the <xref:System.IO.UnmanagedMemoryStream.CanRead%2A>, and <xref:System.IO.UnmanagedMemoryStream.CanWrite%2A> properties. Note that specifying <xref:System.IO.FileAccess.Write> does not guarantee that the stream will be writable. The access parameters allow the implementer to create an object whose implementation can match the actual stream that is exposed.  
   
    
   

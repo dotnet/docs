@@ -87,7 +87,7 @@
 ## IDisposable and the inheritance hierarchy  
  A base class with subclasses that should be disposable must implement <xref:System.IDisposable> as follows. You should use this pattern whenever you implement <xref:System.IDisposable> on any type that isn't `sealed` (`NotInheritable` in Visual Basic).  
   
--   It should provide one public, non-virtual <xref:System.IDisposable.Dispose> method and a protected virtual `Dispose(Boolean` `disposing``)` method.  
+-   It should provide one public, non-virtual <xref:System.IDisposable.Dispose> method and a protected virtual `Dispose(Boolean disposing)` method.  
   
 -   The <xref:System.IDisposable.Dispose> method must call `Dispose(true)` and should suppress finalization for performance.  
   

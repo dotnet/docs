@@ -1956,7 +1956,7 @@
  A maximize button automatically becomes a restore button when a window is maximized. Minimizing or restoring a window automatically changes the restore button back to a maximize button.  
   
 > [!NOTE]
->  Maximizing a form at run time generates a <xref:System.Windows.Forms.Control.Resize> event. The <xref:System.Windows.Forms.PrintPreviewDialog.WindowState%2A> property reflects the current state of the window. If you set the <xref:System.Windows.Forms.PrintPreviewDialog.WindowState%2A> property to <xref:System.Windows.Forms.FormWindowState>, the form is maximized independently of whatever settings are in effect for the <xref:System.Windows.Forms.PrintPreviewDialog.MaximizeBox%2A> and <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> properties  
+>  Maximizing a form at run time generates a <xref:System.Windows.Forms.Control.Resize> event. The <xref:System.Windows.Forms.PrintPreviewDialog.WindowState%2A> property reflects the current state of the window. If you set the <xref:System.Windows.Forms.PrintPreviewDialog.WindowState%2A> property to <xref:System.Windows.Forms.FormWindowState.Maximized>, the form is maximized independently of whatever settings are in effect for the <xref:System.Windows.Forms.PrintPreviewDialog.MaximizeBox%2A> and <xref:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle%2A> properties  
   
  ]]></format>
         </remarks>

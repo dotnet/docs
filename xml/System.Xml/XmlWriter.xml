@@ -94,13 +94,13 @@
   
 -   The <xref:System.Xml.XmlWriterSettings.CheckCharacters%2A> property instructs the XML writer to check characters and throw an <xref:System.Xml.XmlException> exception if any characters are outside the legal range, as defined by the W3C.  
   
--   The <xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A> property configures the XML writer to check that the stream being written complies with the rules for a well-formed XML 1.0 document or document fragment, as defined by the W3C. The three conformance levels are described in the following table. The default is <xref:System.Xml.ConformanceLevel>. For details, see the <xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A?displayProperty=fullName> property and the <xref:System.Xml.ConformanceLevel?displayProperty=fullName> enumeration.  
+-   The <xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A> property configures the XML writer to check that the stream being written complies with the rules for a well-formed XML 1.0 document or document fragment, as defined by the W3C. The three conformance levels are described in the following table. The default is <xref:System.Xml.ConformanceLevel.Document>. For details, see the <xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A?displayProperty=fullName> property and the <xref:System.Xml.ConformanceLevel?displayProperty=fullName> enumeration.  
   
     |Level|Description|  
     |-----------|-----------------|  
-    |<xref:System.Xml.ConformanceLevel>|The XML output conforms to the rules for a well-formed XML 1.0 document and can be processed by any conforming processor.|  
-    |<xref:System.Xml.ConformanceLevel>|The XML output conforms to the rules for a well-formed XML 1.0 document fragment.|  
-    |<xref:System.Xml.ConformanceLevel>|The XML writer determines which level of conformation checking to apply (document or fragment) based on the incoming data.|  
+    |<xref:System.Xml.ConformanceLevel.Document>|The XML output conforms to the rules for a well-formed XML 1.0 document and can be processed by any conforming processor.|  
+    |<xref:System.Xml.ConformanceLevel.Fragment>|The XML output conforms to the rules for a well-formed XML 1.0 document fragment.|  
+    |<xref:System.Xml.ConformanceLevel.Auto>|The XML writer determines which level of conformation checking to apply (document or fragment) based on the incoming data.|  
   
 <a name="writing_elements"></a>   
 ## Writing elements  
@@ -316,7 +316,7 @@ async Task TestWriter(Stream stream)
 |<xref:System.Xml.XmlWriterSettings.Encoding%2A>|<xref:System.Text.Encoding.UTF8?displayProperty=fullName>|  
 |<xref:System.Xml.XmlWriterSettings.Indent%2A>|`false`|  
 |<xref:System.Xml.XmlWriterSettings.IndentChars%2A>|Two spaces|  
-|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling> (no removal)|  
+|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling.Default> (no removal)|  
 |<xref:System.Xml.XmlWriterSettings.NewLineChars%2A>|`\r\n` (carriage return, new line)|  
 |<xref:System.Xml.XmlWriterSettings.NewLineHandling%2A>|<xref:System.Xml.NewLineHandling?displayProperty=fullName>|  
 |<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A>|`false`|  
@@ -385,7 +385,7 @@ async Task TestWriter(Stream stream)
 |<xref:System.Xml.XmlWriterSettings.Encoding%2A>|<xref:System.Text.Encoding.UTF8?displayProperty=fullName>|  
 |<xref:System.Xml.XmlWriterSettings.Indent%2A>|`false`|  
 |<xref:System.Xml.XmlWriterSettings.IndentChars%2A>|Two spaces|  
-|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling> (no removal)|  
+|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling.Default> (no removal)|  
 |<xref:System.Xml.XmlWriterSettings.NewLineChars%2A>|`\r\n` (carriage return, new line)|  
 |<xref:System.Xml.XmlWriterSettings.NewLineHandling%2A>|<xref:System.Xml.NewLineHandling?displayProperty=fullName>|  
 |<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A>|`false`|  
@@ -446,7 +446,7 @@ async Task TestWriter(Stream stream)
 |<xref:System.Xml.XmlWriterSettings.Encoding%2A>|<xref:System.Text.Encoding.UTF8?displayProperty=fullName>|  
 |<xref:System.Xml.XmlWriterSettings.Indent%2A>|`false`|  
 |<xref:System.Xml.XmlWriterSettings.IndentChars%2A>|Two spaces|  
-|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling> (no removal)|  
+|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling.Default> (no removal)|  
 |<xref:System.Xml.XmlWriterSettings.NewLineChars%2A>|`\r\n` (carriage return, new line)|  
 |<xref:System.Xml.XmlWriterSettings.NewLineHandling%2A>|<xref:System.Xml.NewLineHandling?displayProperty=fullName>|  
 |<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A>|`false`|  
@@ -513,7 +513,7 @@ async Task TestWriter(Stream stream)
 |<xref:System.Xml.XmlWriterSettings.Encoding%2A>|<xref:System.Text.Encoding.UTF8?displayProperty=fullName>|  
 |<xref:System.Xml.XmlWriterSettings.Indent%2A>|`false`|  
 |<xref:System.Xml.XmlWriterSettings.IndentChars%2A>|Two spaces|  
-|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling> (no removal)|  
+|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling.Default> (no removal)|  
 |<xref:System.Xml.XmlWriterSettings.NewLineChars%2A>|`\r\n` (carriage return, new line)|  
 |<xref:System.Xml.XmlWriterSettings.NewLineHandling%2A>|<xref:System.Xml.NewLineHandling?displayProperty=fullName>|  
 |<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A>|`false`|  
@@ -574,7 +574,7 @@ async Task TestWriter(Stream stream)
 |<xref:System.Xml.XmlWriterSettings.Encoding%2A>|<xref:System.Text.Encoding.UTF8?displayProperty=fullName>|  
 |<xref:System.Xml.XmlWriterSettings.Indent%2A>|`false`|  
 |<xref:System.Xml.XmlWriterSettings.IndentChars%2A>|Two spaces|  
-|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling> (no removal)|  
+|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling.Default> (no removal)|  
 |<xref:System.Xml.XmlWriterSettings.NewLineChars%2A>|`\r\n` (carriage return, new line)|  
 |<xref:System.Xml.XmlWriterSettings.NewLineHandling%2A>|<xref:System.Xml.NewLineHandling?displayProperty=fullName>|  
 |<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A>|`false`|  
@@ -5045,40 +5045,17 @@ test&lt;item&gt;test
         <summary>When overridden in a derived class, gets an <see cref="T:System.Xml.XmlSpace" /> representing the current <see langword="xml:space" /> scope.</summary>
         <value>An <see langword="XmlSpace" /> representing the current <see langword="xml:space" /> scope.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="None" />  
+ </description></listheader><item><term><see langword="None" /></term><description> This is the default if no <see langword="xml:space" /> scope exists.  
   
- </term>  
-<description> This is the default if no <see langword="xml:space" /> scope exists.  
+ </description></item><item><term><see langword="Default" /></term><description> The current scope is <see langword="xml:space" />="default".  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="Default" />  
+ </description></item><item><term><see langword="Preserve" /></term><description> The current scope is <see langword="xml:space" />="preserve".  
   
- </term>  
-<description> The current scope is <see langword="xml:space" />="default".  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="Preserve" />  
-  
- </term>  
-<description> The current scope is <see langword="xml:space" />="preserve".  
-  
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5243,7 +5220,7 @@ test&lt;item&gt;test
 |<xref:System.Xml.XmlWriterSettings.Encoding%2A>|<xref:System.Text.Encoding.UTF8?displayProperty=fullName>|  
 |<xref:System.Xml.XmlWriterSettings.Indent%2A>|`false`|  
 |<xref:System.Xml.XmlWriterSettings.IndentChars%2A>|Two spaces|  
-|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling> (no removal)|  
+|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling.Default> (no removal)|  
 |<xref:System.Xml.XmlWriterSettings.NewLineChars%2A>|`\r\n` (carriage return, new line)|  
 |<xref:System.Xml.XmlWriterSettings.NewLineHandling%2A>|<xref:System.Xml.NewLineHandling?displayProperty=fullName>|  
 |<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A>|`false`|  

@@ -61,7 +61,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode> is an enumeration that contains the following values: <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode> and <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode>. The default value is <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode>.  
+ <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode> is an enumeration that contains the following values: <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode.None> and <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode.Transport>. The default value is <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode.Transport>.  
   
  ]]></format>
         </remarks>

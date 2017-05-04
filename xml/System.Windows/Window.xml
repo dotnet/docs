@@ -224,7 +224,7 @@
 ## Remarks  
  When the <xref:System.Windows.Controls.Control.Background%2A> property of a window is set to a transparent color, using <xref:System.Windows.Media.Brushes.Transparent%2A> for example, the window remains opaque. This means that the desktop and any running applications "beneath" the window cannot be seen. To enable this type of transparency, <xref:System.Windows.Window.AllowsTransparency%2A> must be set to `true`.  
   
- <xref:System.Windows.Window.AllowsTransparency%2A> exists to facilitate the creation of non-rectangular windows, and, consequently, when <xref:System.Windows.Window.AllowsTransparency%2A> is set to `true`, a window's <xref:System.Windows.Window.WindowStyle%2A> property must be set to <xref:System.Windows.WindowStyle>.  
+ <xref:System.Windows.Window.AllowsTransparency%2A> exists to facilitate the creation of non-rectangular windows, and, consequently, when <xref:System.Windows.Window.AllowsTransparency%2A> is set to `true`, a window's <xref:System.Windows.Window.WindowStyle%2A> property must be set to <xref:System.Windows.WindowStyle.None>.  
   
 <a name="dependencyPropertyInfo_WindowAllowsTransparency"></a>   
 ## Dependency Property Information  
@@ -279,10 +279,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Window.ArrangeOverride%2A> is not called when the <xref:System.Windows.UIElement.Visibility%2A> property has a value of <xref:System.Windows.Visibility>. If the value of the <xref:System.Windows.UIElement.Visibility%2A> property is either <xref:System.Windows.Visibility> or <xref:System.Windows.Visibility>, <xref:System.Windows.Window.ArrangeOverride%2A> is called.  
+ <xref:System.Windows.Window.ArrangeOverride%2A> is not called when the <xref:System.Windows.UIElement.Visibility%2A> property has a value of <xref:System.Windows.Visibility.Collapsed>. If the value of the <xref:System.Windows.UIElement.Visibility%2A> property is either <xref:System.Windows.Visibility.Hidden> or <xref:System.Windows.Visibility.Visible>, <xref:System.Windows.Window.ArrangeOverride%2A> is called.  
   
 > [!NOTE]
->  When either <xref:System.Windows.Window.Show%2A> or <xref:System.Windows.Window.ShowDialog%2A> are called, the <xref:System.Windows.UIElement.Visibility%2A> property of a <xref:System.Windows.Window> is set to <xref:System.Windows.Visibility>.  
+>  When either <xref:System.Windows.Window.Show%2A> or <xref:System.Windows.Window.ShowDialog%2A> are called, the <xref:System.Windows.UIElement.Visibility%2A> property of a <xref:System.Windows.Window> is set to <xref:System.Windows.Visibility.Visible>.  
   
  ]]></format>
         </remarks>
@@ -697,7 +697,7 @@
 ## Remarks  
  A window is not closed when it is hidden, and neither the <xref:System.Windows.Window.Closing> nor <xref:System.Windows.Window.Closed> event is raised. Instead, the window's <xref:System.Windows.UIElement.Visibility%2A> property is set to <xref:System.Windows.Visibility?displayProperty=fullName>.  
   
- If a window is the application's <xref:System.Windows.Application.MainWindow%2A> and the application's <xref:System.Windows.Application.ShutdownMode%2A> is <xref:System.Windows.ShutdownMode>, the application does not shut down. Likewise, the application does not shut down if a window is the only window and the application's shutdown mode is <xref:System.Windows.ShutdownMode>.  
+ If a window is the application's <xref:System.Windows.Application.MainWindow%2A> and the application's <xref:System.Windows.Application.ShutdownMode%2A> is <xref:System.Windows.ShutdownMode.OnMainWindowClose>, the application does not shut down. Likewise, the application does not shut down if a window is the only window and the application's shutdown mode is <xref:System.Windows.ShutdownMode.OnLastWindowClose>.  
   
  If you want to show and hide a window multiple times during the lifetime of an application, and you don't want to re-instantiate the window each time you show it, you can handle the <xref:System.Windows.Window.Closing> event, cancel it, and call the <xref:System.Windows.Window.Hide%2A> method. Then, you can call <xref:System.Windows.Window.Show%2A> on the same instance to re-open it.  
   
@@ -987,10 +987,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Window.MeasureOverride%2A> is not called when the <xref:System.Windows.UIElement.Visibility%2A> property has a value of <xref:System.Windows.Visibility>. If the value of the <xref:System.Windows.UIElement.Visibility%2A> property is either <xref:System.Windows.Visibility> or <xref:System.Windows.Visibility>, <xref:System.Windows.Window.MeasureOverride%2A> is called.  
+ <xref:System.Windows.Window.MeasureOverride%2A> is not called when the <xref:System.Windows.UIElement.Visibility%2A> property has a value of <xref:System.Windows.Visibility.Collapsed>. If the value of the <xref:System.Windows.UIElement.Visibility%2A> property is either <xref:System.Windows.Visibility.Hidden> or <xref:System.Windows.Visibility.Visible>, <xref:System.Windows.Window.MeasureOverride%2A> is called.  
   
 > [!NOTE]
->  When either <xref:System.Windows.Window.Show%2A> or <xref:System.Windows.Window.ShowDialog%2A> are called, the <xref:System.Windows.UIElement.Visibility%2A> property of a <xref:System.Windows.Window> is set to <xref:System.Windows.Visibility>.  
+>  When either <xref:System.Windows.Window.Show%2A> or <xref:System.Windows.Window.ShowDialog%2A> are called, the <xref:System.Windows.UIElement.Visibility%2A> property of a <xref:System.Windows.Window> is set to <xref:System.Windows.Visibility.Visible>.  
   
  ]]></format>
         </remarks>
@@ -1507,7 +1507,7 @@
   
 -   **CanResize**. The user has the full ability to resize the window, using the Minimize and Maximize boxes, and a draggable outline around the window. The Minimize and Maximize boxes are shown and enabled. (Default).  
   
--   **CanResizeWithGrip**. This option has the same functionality as <xref:System.Windows.ResizeMode>, but adds a "resize grip" to the lower right corner of the window.  
+-   **CanResizeWithGrip**. This option has the same functionality as <xref:System.Windows.ResizeMode.CanResize>, but adds a "resize grip" to the lower right corner of the window.  
   
 > [!NOTE]
 >  You cannot set or get this property when a window is hosted in a browser.  
@@ -1613,7 +1613,7 @@
   
  A window that is opened by calling <xref:System.Windows.Window.Show%2A> does not automatically have a relationship with the window that opened it; specifically, the opened window does not know which window opened it. This relationship can be established using the <xref:System.Windows.Window.Owner%2A> property and managed using the <xref:System.Windows.Window.OwnedWindows%2A> property.  
   
- Calling <xref:System.Windows.Window.Show%2A> achieves the same end result as setting <xref:System.Windows.UIElement.Visibility%2A> property of the <xref:System.Windows.Window> object to <xref:System.Windows.Visibility>. However, there is a difference between the two from a timing perspective.  
+ Calling <xref:System.Windows.Window.Show%2A> achieves the same end result as setting <xref:System.Windows.UIElement.Visibility%2A> property of the <xref:System.Windows.Window> object to <xref:System.Windows.Visibility.Visible>. However, there is a difference between the two from a timing perspective.  
   
  Calling <xref:System.Windows.Window.Show%2A> is a synchronous operation that returns only after the <xref:System.Windows.FrameworkElement.Loaded> event on the child window has been raised:  
   
@@ -1838,19 +1838,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Windows.Window.SizeToContent%2A> is set to <xref:System.Windows.SizeToContent>, setting either <xref:System.Windows.FrameworkElement.Height%2A> or <xref:System.Windows.FrameworkElement.Width%2A> has no effect; both properties can be set, but the values they are set with are not applied to the window.  
+ When <xref:System.Windows.Window.SizeToContent%2A> is set to <xref:System.Windows.SizeToContent.WidthAndHeight>, setting either <xref:System.Windows.FrameworkElement.Height%2A> or <xref:System.Windows.FrameworkElement.Width%2A> has no effect; both properties can be set, but the values they are set with are not applied to the window.  
   
- When <xref:System.Windows.Window.SizeToContent%2A> is set to <xref:System.Windows.SizeToContent>, setting <xref:System.Windows.FrameworkElement.Height%2A> does not change the height of the window.  
+ When <xref:System.Windows.Window.SizeToContent%2A> is set to <xref:System.Windows.SizeToContent.Height>, setting <xref:System.Windows.FrameworkElement.Height%2A> does not change the height of the window.  
   
- When <xref:System.Windows.Window.SizeToContent%2A> is set to <xref:System.Windows.SizeToContent>, setting <xref:System.Windows.FrameworkElement.Width%2A> does not change the width of the window.  
+ When <xref:System.Windows.Window.SizeToContent%2A> is set to <xref:System.Windows.SizeToContent.Width>, setting <xref:System.Windows.FrameworkElement.Width%2A> does not change the width of the window.  
   
- If <xref:System.Windows.Window.SizeToContent%2A> has a value other than <xref:System.Windows.SizeToContent>:  
+ If <xref:System.Windows.Window.SizeToContent%2A> has a value other than <xref:System.Windows.SizeToContent.Manual>:  
   
--   <xref:System.Windows.Window.SizeToContent%2A> is automatically set to <xref:System.Windows.SizeToContent> if a user resizes the window by using the resize grip or dragging the border.  
+-   <xref:System.Windows.Window.SizeToContent%2A> is automatically set to <xref:System.Windows.SizeToContent.Manual> if a user resizes the window by using the resize grip or dragging the border.  
   
 -   If the size of the content changes in a way that causes the window to resize itself, <xref:System.Windows.FrameworkElement.SizeChanged> is raised.  
   
- If a window is transparent (see <xref:System.Windows.Window.AllowsTransparency%2A>), you should consider setting <xref:System.Windows.Window.SizeToContent%2A> to <xref:System.Windows.SizeToContent> to ensure the window is no larger than its visible content.  
+ If a window is transparent (see <xref:System.Windows.Window.AllowsTransparency%2A>), you should consider setting <xref:System.Windows.Window.SizeToContent%2A> to <xref:System.Windows.SizeToContent.WidthAndHeight> to ensure the window is no larger than its visible content.  
   
 > [!NOTE]
 >  You cannot set or get this property when a window is hosted in a browser.  
@@ -2165,16 +2165,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting <xref:System.Windows.WindowStartupLocation> to <xref:System.Windows.WindowStartupLocation> causes a window to be positioned according to its <xref:System.Windows.Window.Left%2A> and <xref:System.Windows.Window.Top%2A> property values. If either the <xref:System.Windows.Window.Left%2A> or <xref:System.Windows.Window.Top%2A> properties aren't specified, their values are determined by [!INCLUDE[TLA2#tla_mswin](~/includes/tla2sharptla-mswin-md.md)].  
+ Setting <xref:System.Windows.WindowStartupLocation> to <xref:System.Windows.WindowStartupLocation.Manual> causes a window to be positioned according to its <xref:System.Windows.Window.Left%2A> and <xref:System.Windows.Window.Top%2A> property values. If either the <xref:System.Windows.Window.Left%2A> or <xref:System.Windows.Window.Top%2A> properties aren't specified, their values are determined by [!INCLUDE[TLA2#tla_mswin](~/includes/tla2sharptla-mswin-md.md)].  
   
- Setting <xref:System.Windows.WindowStartupLocation> causes a window to be positioned in the center of the screen that contains the mouse cursor.  
+ Setting <xref:System.Windows.WindowStartupLocation.CenterScreen> causes a window to be positioned in the center of the screen that contains the mouse cursor.  
   
- Setting <xref:System.Windows.WindowStartupLocation> to <xref:System.Windows.WindowStartupLocation> causes a window to be positioned in the center of its owner window (see <xref:System.Windows.Window.Owner%2A>), if specified. The owner window can be either another WPF window or a non-WPF window.  
+ Setting <xref:System.Windows.WindowStartupLocation> to <xref:System.Windows.WindowStartupLocation.CenterOwner> causes a window to be positioned in the center of its owner window (see <xref:System.Windows.Window.Owner%2A>), if specified. The owner window can be either another WPF window or a non-WPF window.  
   
 > [!NOTE]
 >  For more information about WPF windows with non-WPF windows, see [WPF and Win32 Interoperation](~/docs/framework/wpf/advanced/wpf-and-win32-interoperation.md) and <xref:System.Windows.Interop.WindowInteropHelper>.  
   
- If an owner window is not specified, the position of the window is determined in the same way as if <xref:System.Windows.WindowStartupLocation> is set to <xref:System.Windows.WindowStartupLocation>.  
+ If an owner window is not specified, the position of the window is determined in the same way as if <xref:System.Windows.WindowStartupLocation> is set to <xref:System.Windows.WindowStartupLocation.Manual>.  
   
 > [!NOTE]
 >  You cannot set or get the value of this property when a window is hosted in a browser.  
@@ -2257,7 +2257,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Window.WindowStyle%2A> can be one of the <xref:System.Windows.WindowStyle> enumeration values, including <xref:System.Windows.WindowStyle>, <xref:System.Windows.WindowStyle>, <xref:System.Windows.WindowStyle> (default), and <xref:System.Windows.WindowStyle>.  
+ <xref:System.Windows.Window.WindowStyle%2A> can be one of the <xref:System.Windows.WindowStyle> enumeration values, including <xref:System.Windows.WindowStyle.None>, <xref:System.Windows.WindowStyle.ToolWindow>, <xref:System.Windows.WindowStyle.SingleBorderWindow> (default), and <xref:System.Windows.WindowStyle.ThreeDBorderWindow>.  
   
  The following figure shows the window styles on [!INCLUDE[TLA#tla_longhorn](~/includes/tlasharptla-longhorn-md.md)] (Windows Vista Aero theme, with transparent glass enabled):  
   

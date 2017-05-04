@@ -777,7 +777,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property is set to <xref:System.Web.Configuration.ProfileGuidedOptimizationsFlags>, the ASP.NET compilation system enables optimizations that are intended to speed up ASP.NET startup performance at the expense of increased CPU utilization. The default setting for this property is <xref:System.Web.Configuration.ProfileGuidedOptimizationsFlags>.  
+ When this property is set to <xref:System.Web.Configuration.ProfileGuidedOptimizationsFlags.All>, the ASP.NET compilation system enables optimizations that are intended to speed up ASP.NET startup performance at the expense of increased CPU utilization. The default setting for this property is <xref:System.Web.Configuration.ProfileGuidedOptimizationsFlags.All>.  
   
  ]]></format>
         </remarks>

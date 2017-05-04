@@ -87,7 +87,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default <xref:System.Windows.GridUnitType> is <xref:System.Windows.GridUnitType>.  
+ The default <xref:System.Windows.GridUnitType> is <xref:System.Windows.GridUnitType.Star>.  
   
  When you use these values in the same code example, the <xref:System.Windows.Controls.RowDefinition.MinHeight%2A> value takes precedence over the <xref:System.Windows.Controls.RowDefinition.MaxHeight%2A> value, which in turn takes precedence over the <xref:System.Windows.Controls.RowDefinition.Height%2A> value.  
   

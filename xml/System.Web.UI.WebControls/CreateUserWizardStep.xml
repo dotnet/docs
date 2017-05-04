@@ -166,7 +166,7 @@
  The <xref:System.Web.UI.WebControls.CreateUserWizardStep.StepType%2A> property determines which of the <xref:System.Web.UI.WebControls.Wizard> control's navigation buttons are displayed on the <xref:System.Web.UI.WebControls.CreateUserWizardStep> control. For more information, see the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A?displayProperty=fullName> property.  
   
 > [!CAUTION]
->  If you attempt to change the <xref:System.Web.UI.WebControls.CreateUserWizardStep.StepType%2A> property to any value other than the <xref:System.Web.UI.WebControls.WizardStepType> value of the <xref:System.Web.UI.WebControls.WizardStepType> enumeration, an <xref:System.InvalidOperationException> will be thrown.  
+>  If you attempt to change the <xref:System.Web.UI.WebControls.CreateUserWizardStep.StepType%2A> property to any value other than the <xref:System.Web.UI.WebControls.WizardStepType.Auto> value of the <xref:System.Web.UI.WebControls.WizardStepType> enumeration, an <xref:System.InvalidOperationException> will be thrown.  
   
  This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   

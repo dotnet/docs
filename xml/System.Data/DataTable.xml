@@ -2327,7 +2327,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
  When used for string comparisons, the <xref:System.Globalization.CultureInfo> affects sorting, comparisons, and filtering.  
   
 > [!NOTE]
->  In columns that contain expressions, the <xref:System.StringComparison> is used. The <xref:System.StringComparison> is ignored.  
+>  In columns that contain expressions, the <xref:System.StringComparison.InvariantCulture> is used. The <xref:System.StringComparison.CurrentCulture> is ignored.  
   
    
   

@@ -221,7 +221,7 @@
   
 -   If `X`.IsSubsetOf(`Y`) and `Y`.IsSubsetOf(`Z`) both return `true`, `X`.IsSubsetOf(`Z`) returns `true`.  
   
- If `X` represents an empty <xref:System.Security.IPermission> object with a permission state of <xref:System.Security.Permissions.PermissionState> and `Y` represents an <xref:System.Security.IPermission> object that is `null`, `X`.IsSubsetOf(`Y`) returns `true`. If `Z` is also an empty permission, the compound set operation `X`.Union(Z).IsSubsetOf(Y) also returns `true` because the union of two empty permissions is an empty permission.  
+ If `X` represents an empty <xref:System.Security.IPermission> object with a permission state of <xref:System.Security.Permissions.PermissionState.None> and `Y` represents an <xref:System.Security.IPermission> object that is `null`, `X`.IsSubsetOf(`Y`) returns `true`. If `Z` is also an empty permission, the compound set operation `X`.Union(Z).IsSubsetOf(Y) also returns `true` because the union of two empty permissions is an empty permission.  
   
    
   

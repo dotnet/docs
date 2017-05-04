@@ -693,7 +693,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you set the <xref:System.Windows.Forms.TabControl.DrawMode%2A> property to <xref:System.Windows.Forms.TabDrawMode>, the <xref:System.Windows.Forms.TabControl> raises the `DrawItem` event whenever it needs to paint one of its tabs. To customize the appearance of the tabs, provide your own painting code in a handler for the `DrawItem` event.  
+ When you set the <xref:System.Windows.Forms.TabControl.DrawMode%2A> property to <xref:System.Windows.Forms.TabDrawMode.OwnerDrawFixed>, the <xref:System.Windows.Forms.TabControl> raises the `DrawItem` event whenever it needs to paint one of its tabs. To customize the appearance of the tabs, provide your own painting code in a handler for the `DrawItem` event.  
   
  The <xref:System.Windows.Forms.TabControl> does not support variable tab sizes with owner drawing.  
   

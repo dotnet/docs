@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.FlowDirection> specifies the direction of content flow for text and user interface (UI) elements, and can be either <xref:System.Windows.FlowDirection> or <xref:System.Windows.FlowDirection>.  
+ <xref:System.Windows.FlowDirection> specifies the direction of content flow for text and user interface (UI) elements, and can be either <xref:System.Windows.FlowDirection.LeftToRight> or <xref:System.Windows.FlowDirection.RightToLeft>.  
   
  This value is ignored unless the <xref:System.Windows.Media.TextFormatting.TextModifier.HasDirectionalEmbedding%2A> property returns `true`.  
   

@@ -31,7 +31,7 @@
  <xref:System.CodeDom.CodeTypeDelegate> should not be used for enumeration, interface, or type declaration. Instead, use <xref:System.CodeDom.CodeTypeDeclaration> for those.  
   
 > [!NOTE]
->  Not all languages support the declaration of delegates. Call the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag to determine if it is supported in a particular language.  
+>  Not all languages support the declaration of delegates. Call the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the <xref:System.CodeDom.Compiler.GeneratorSupport.DeclareDelegates> flag to determine if it is supported in a particular language.  
   
    
   

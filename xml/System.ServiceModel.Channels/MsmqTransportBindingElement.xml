@@ -284,7 +284,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Message Queuing (MSMQ) does not support Active Directory addressing when using SOAP Reliable Messaging Protocol (SRMP), so do not set <xref:System.ServiceModel.Channels.MsmqTransportBindingElement.QueueTransferProtocol%2A> to <xref:System.ServiceModel.QueueTransferProtocol> or <xref:System.ServiceModel.QueueTransferProtocol> when <xref:System.ServiceModel.Channels.MsmqTransportBindingElement.UseActiveDirectory%2A> is set to `true`.  
+ Message Queuing (MSMQ) does not support Active Directory addressing when using SOAP Reliable Messaging Protocol (SRMP), so do not set <xref:System.ServiceModel.Channels.MsmqTransportBindingElement.QueueTransferProtocol%2A> to <xref:System.ServiceModel.QueueTransferProtocol.Srmp> or <xref:System.ServiceModel.QueueTransferProtocol.Srmp> when <xref:System.ServiceModel.Channels.MsmqTransportBindingElement.UseActiveDirectory%2A> is set to `true`.  
   
    
   

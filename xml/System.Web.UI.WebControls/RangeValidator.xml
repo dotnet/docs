@@ -28,7 +28,7 @@
  The <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=fullName> property is used to specify the data type of the values to compare. The values to compare are converted to this data type before the validation operation is performed.  
   
 > [!NOTE]
->  When the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property is set to <xref:System.Web.UI.WebControls.ValidationDataType> and the current calendar type is non-Gregorian, the validator performs server-side validation only. The validator client script supports only Gregorian calendars.  
+>  When the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property is set to <xref:System.Web.UI.WebControls.ValidationDataType.Date> and the current calendar type is non-Gregorian, the validator performs server-side validation only. The validator client script supports only Gregorian calendars.  
   
  The following table lists the different data types that can be compared.  
   

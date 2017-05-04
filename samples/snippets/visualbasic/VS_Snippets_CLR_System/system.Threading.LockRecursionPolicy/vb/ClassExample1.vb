@@ -5,7 +5,7 @@ Option Strict On
 Imports System.Collections.Generic
 Imports System.Threading
 Imports System.Threading.Tasks
-' <Snippet11>
+' </Snippet11>
 
 ' <Snippet12>
 Public Class SynchronizedCache

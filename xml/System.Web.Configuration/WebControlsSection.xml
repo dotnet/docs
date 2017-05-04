@@ -19,7 +19,7 @@
  The <xref:System.Web.Configuration.WebControlsSection> class provides a way to programmatically access and modify the `webControls` section of a configuration file.  
   
 > [!NOTE]
->  ASP.NET provides a shared location for the client script files, where they can be accessed from multiple pages and across applications.  The <xref:System.Web.Configuration.WebControlsSection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition>.  
+>  ASP.NET provides a shared location for the client script files, where they can be accessed from multiple pages and across applications.  The <xref:System.Web.Configuration.WebControlsSection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition.Everywhere>.  
   
    
   

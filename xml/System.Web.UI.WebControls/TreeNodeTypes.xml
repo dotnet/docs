@@ -31,7 +31,7 @@
  The <xref:System.Web.UI.WebControls.TreeNodeTypes> enumeration is a flag enumeration, which allows you to combine values through bitwise operations. For example, to represent the parent and leaf nodes, you can perform a bitwise `OR` operation on the Parent and Leaf values.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A> property uses the <xref:System.Web.UI.WebControls.TreeNodeTypes> enumeration to represent the node types that display check boxes in the <xref:System.Web.UI.WebControls.TreeView> control. When it is set to a value other than the None value, check boxes are displayed next to the specified node type, which allows users to select multiple items from the <xref:System.Web.UI.WebControls.TreeView> control.  
+>  The <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A> property uses the <xref:System.Web.UI.WebControls.TreeNodeTypes.Leaf> enumeration to represent the node types that display check boxes in the <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A> control. When it is set to a value other than the None value, check boxes are displayed next to the specified node type, which allows users to select multiple items from the <xref:System.Web.UI.WebControls.TreeView> control.  
   
    
   

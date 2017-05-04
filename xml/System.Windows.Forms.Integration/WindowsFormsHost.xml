@@ -857,8 +857,8 @@
 ## Examples  
  The following code example shows how to add a mapping for the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property to a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#12)]  -->
- <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#12)]  -->  
+ [!code-csharp[PropertyMappingWithWfh#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfhSample/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#12)] 
+ [!code-vb[PropertyMappingWithWfh#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfhSample/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#12)]   
   
  ]]></format>
         </remarks>
@@ -988,7 +988,7 @@
 ## Remarks  
  When a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element receives a TAB command from the <xref:System.Windows.Interop.IKeyboardInputSink.TabInto%2A> method, the first eligible control in <xref:System.Windows.Forms.Integration.WindowsFormsHost.Child%2A> receives focus.  
   
- The first control is specified by the `request` parameter. When `request` is <xref:System.Windows.Input.FocusNavigationDirection>, the behavior is similar to pressing the TAB key. When `request` is <xref:System.Windows.Input.FocusNavigationDirection>, the behavior is similar to pressing SHIFT+TAB.  
+ The first control is specified by the `request` parameter. When `request` is <xref:System.Windows.Input.FocusNavigationDirection.Next>, the behavior is similar to pressing the TAB key. When `request` is <xref:System.Windows.Input.FocusNavigationDirection.Previous>, the behavior is similar to pressing SHIFT+TAB.  
   
  ]]></format>
         </remarks>

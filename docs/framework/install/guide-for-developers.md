@@ -2,7 +2,7 @@
 title: "Install the .NET Framework for developers | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/28/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,13 +24,13 @@ manager: "wpickett"
 # Install the .NET Framework for developers
 
 .NET is an integral part of many applications running on Windows and provides common functionality for those applications to run. For developers, the .NET Framework provides a comprehensive and consistent programming model for building applications that have visually stunning user experiences and seamless and secure communication.  
-  
+
 This article provides links for installing the .NET Framework 4.5, its point releases (4.5.1, 4.5.2), the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], its point releases (4.6.1, 4.6.2), and the .NET Framework 4.7 on your computer. If you're a developer, you can also use these links to download and redistribute the .NET Framework with your apps.
- 
+
 Note that installing a new version of the .NET Framework doesn't always replace a previous version. For more information about versions of the .NET Framework and how to determine which versions are installed on a computer, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md) and [How to: Determine Which .NET Framework Versions Are Installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md). All of the .NET Framework versions listed in the following table are in-place updates to the .NET Framework 4. In other words, if you install a later version, such as the .NET Framework 4.6, you do not first have to install the previous versions, such as the .NET Framework 4.5, 4.5.1, or 4.5.2. Similarly, if you install a later version, such as the .NET Framework 4.6, you do not first have to uninstall the previous versions, such as the .NET Framework 4.5, 4.5.1, or 4.5.2. 
- 
+
 The fact that later .NET Framework 4.x versions are in-place updates to earlier versions means that you *cannot* install an earlier version listed in the table if a later version is already installed. For example, you cannot install the .NET Framework 4.6 on a Windows 10 November Update system, since the .NET Framework 4.6.1 is preinstalled on it.    
-  
+
 > [!NOTE]
 > For information on the .NET Framework 3.5, see [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](~/docs/framework/install/dotnet-35-windows-10.md).  
   
@@ -38,14 +38,14 @@ Use the following table for quick links, or read further for details. To view th
   
 |.NET Framework version|Developer installation|Redistributable installation|Platform support|  
 |----------------------------|----------------------------|----------------------------------|----------------------|  
-|**4.7**|[NET Framework 4.7 Dev Pack](http://go.microsoft.com/fwlink/?LinkId=825319)|[Download page for 4.7 web installer](http://go.microsoft.com/fwlink/?LinkId=825299)<br /><br /> [Download page for 4.7 offline installer](http://go.microsoft.com/fwlink/?LinkId=825303)|Included in: <br/>Windows 10 Creators Update<br /><br /> You can install on:<br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](../Topic/.NET%20Framework%20System%20Requirements.md))||
-|**4.6.2**|[NET Framework 4.6.2 Dev Pack](http://go.microsoft.com/fwlink/?LinkId=780617)|[Download page for 4.6.2 web installer](http://go.microsoft.com/fwlink/?LinkId=780597)<br /><br /> [Download page for 4.6.2 offline installer](http://go.microsoft.com/fwlink/?LinkId=780601)|Included in: <br /> Windows 10 Anniversary Edition<br /><br /> You can install on:<br /> Windows 10 <br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|  
-|**4.6.1**|[NET Framework 4.6.1 Dev Pack](http://go.microsoft.com/fwlink/?LinkId=690706)|[Download page for 4.6.1 web installer](http://go.microsoft.com/fwlink/?LinkId=671729)<br /><br /> [Download page for 4.6.1 offline installer](http://go.microsoft.com/fwlink/?LinkId=671744)|You can install on:<br /> Windows 10 <br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|  
+|**4.7**|[NET Framework 4.7 Dev Pack](http://go.microsoft.com/fwlink/?LinkId=825319)|[Download page for 4.7 web installer](http://go.microsoft.com/fwlink/?LinkId=825299)<br /><br /> [Download page for 4.7 offline installer](http://go.microsoft.com/fwlink/?LinkId=825303)|Included in: <br/>Windows 10 Creators Update<br /><br /> You can install on:<br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))||
+|**4.6.2**|[NET Framework 4.6.2 Dev Pack](http://go.microsoft.com/fwlink/?LinkId=780617)|[Download page for 4.6.2 web installer](http://go.microsoft.com/fwlink/?LinkId=780597)<br /><br /> [Download page for 4.6.2 offline installer](http://go.microsoft.com/fwlink/?LinkId=780601)|Included in: <br /> Windows 10 Anniversary Edition<br /><br /> You can install on:<br /> Windows 10 <br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|
+|**4.6.1**|[NET Framework 4.6.1 Dev Pack](http://go.microsoft.com/fwlink/?LinkId=690706)|[Download page for 4.6.1 web installer](http://go.microsoft.com/fwlink/?LinkId=671729)<br /><br /> [Download page for 4.6.1 offline installer](http://go.microsoft.com/fwlink/?LinkId=671744)|You can install on:<br /> Windows 10 <br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|
 |**4.6**|Included in [!INCLUDE[vs_dev14](../../../includes/vs-dev14-md.md)]. For more information, see [Welcome to Visual Studio 2015](http://msdn.microsoft.com/library/dd831853\(v=vs.140\).aspx).<br /><br /> [Microsoft .NET Framework 4.6 targeting pack](http://go.microsoft.com/fwlink/?LinkId=528261)|[Download page for 4.6 web installer](http://go.microsoft.com/fwlink/?LinkId=528259)<br /><br /> [Download page for 4.6 offline installer](http://go.microsoft.com/fwlink/?LinkId=528233)|Included in: <br /> Windows 10 <br />[!INCLUDE[vs_dev14](../../../includes/vs-dev14-md.md)]<br /><br /> You can also install on:<br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|  
 |**4.5.2**|[Microsoft .NET Framework 4.5.2 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=397702)<br /><br /> For use with [Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkID=325532), Visual Studio 2012, or other IDEs|[Download page for 4.5.2 web installer](http://go.microsoft.com/fwlink/p/?LinkId=397703)<br /><br /> [Download page for 4.5.2 offline installer](http://go.microsoft.com/fwlink/p/?LinkId=397706)|You can install on:<br /> Windows 8.1 and earlier<br /> Windows Server 2012 R2 and earlier<br /> (for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|  
 |**4.5.1**|[Microsoft .NET Framework 4.5.1 Developer Pack](http://go.microsoft.com/fwlink/?LinkId=324213)<br /><br /> For use with Visual Studio 2012 or other IDEs|[Download page for 4.5.1 web installer](http://go.microsoft.com/fwlink/p/?LinkId=310158)<br /><br /> [Download page for 4.5.1 offline installer](http://go.microsoft.com/fwlink/p/?LinkId=310159)|Included in:<br /> [!INCLUDE[win81](../../../includes/win81-md.md)]<br /> Windows Server 2012 R2<br /> [Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkID=325532)<br /><br /> You can also install on:<br /> [!INCLUDE[win8](../../../includes/win8-md.md)] and earlier<br /> [!INCLUDE[winserver8](../../../includes/winserver8-md.md)] and earlier<br />(for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|  
 |**4.5**|Included in Visual Studio 2012<br /><br /> Also available as part of the [Windows 8 SDK](http://msdn.microsoft.com/windows/hardware/hh852363)|[Download page for 4.5 web installer](http://go.microsoft.com/fwlink/p/?LinkId=245484)|Included in: <br /> [!INCLUDE[win8](../../../includes/win8-md.md)]<br /> [!INCLUDE[winserver8](../../../includes/winserver8-md.md)]<br /> Visual Studio 2012<br /><br /> You can also install on:<br /> Windows 7 and earlier<br /> Windows Server 2008 SP2 and earlier<br />(for a full list, see [system requirements](~/docs/framework/get-started/system-requirements.md))|  
-  
+
 You can install the **Dev Pack** for a specific version of the .NET Framework, if one is available, on all supported platforms.  
   
 You can install the **Web or Offline installer** on:  
@@ -56,7 +56,7 @@ You can install the **Web or Offline installer** on:
   
 For a full list, see [System Requirements](~/docs/framework/get-started/system-requirements.md).  
   
-For a general introduction to the .NET Framework for both users and developers, see [Getting Started](http://msdn.microsoft.com/library/c693fd34-88fe-4d90-b332-19eeadf3b7e7). For information about deploying the .NET Framework with your app, see the [deployment guide](~/docs/framework/deployment/deployment-guide-for-developers.md). To read about the architecture and key features of the .NET Framework, see the [overview](~/docs/framework/get-started/overview.md).  
+For a general introduction to the .NET Framework for both users and developers, see [Getting Started with the .NET Framework](~/docs/framework/get-started/index.md). For information about deploying the .NET Framework with your app, see the [deployment guide](~/docs/framework/deployment/deployment-guide-for-developers.md). To read about the architecture and key features of the .NET Framework, see the [overview](~/docs/framework/get-started/overview.md).  
   
 <a name="choices"></a>   
 ## Installation choices
@@ -209,7 +209,7 @@ The following table lists the supported languages.
   
 - For changes that affect the deployment of the .NET Framework with your app, see [Reducing System Restarts During .NET Framework 4.5 Installations](~/docs/framework/deployment/reducing-system-restarts.md).  
   
-- For information about migrating your app from the .NET Framework 4 to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases, see the [migration guide](Migration%20Guide%20to%20the%20.NET%20Framework%204.7,%204.6,%20and%204.5.md). 
+- For information about migrating your app from the .NET Framework 4 to the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or one of its point releases, see the [migration guide](~/docs/framework/migration-guide/index.md). 
 
 - See the [.NET Framework Reference Source](http://referencesource.microsoft.com/) to browse through the .NET Framework source code online. The reference source is also available on [Github](https://github.com/Microsoft/referencesource). You can [download the reference source](http://referencesource.microsoft.com/download.html) for offline viewing and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](http://blogs.msdn.com/b/dotnet/archive/2014/02/24/a-new-look-for-net-reference-source.aspx).  
   
@@ -219,4 +219,3 @@ The following table lists the supported languages.
 [Deployment Guide for Administrators](~/docs/framework/deployment/guide-for-administrators.md)   
 [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](~/docs/framework/install/dotnet-35-windows-10.md)   
 [Troubleshoot Blocked .NET Framework Installations and Uninstallations](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)
-

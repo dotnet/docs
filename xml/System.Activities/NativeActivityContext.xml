@@ -232,7 +232,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Bookmark options include <xref:System.Activities.BookmarkOptions>, <xref:System.Activities.BookmarkOptions> and <xref:System.Activities.BookmarkOptions>.  
+ Bookmark options include <xref:System.Activities.BookmarkOptions.MultipleResume>, <xref:System.Activities.BookmarkOptions.NonBlocking> and <xref:System.Activities.BookmarkOptions.None>.  
   
  Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
   

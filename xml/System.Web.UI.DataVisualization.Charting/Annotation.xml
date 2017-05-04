@@ -806,7 +806,7 @@
 ## Remarks  
  If the chart area name is specified, an annotation will only be drawn inside the plotting area of the chart area specified. All parts of the annotation outside of the plotting area will be clipped.  
   
- To disable chart area clipping, set the property to <xref:System.String>.  
+ To disable chart area clipping, set the property to <xref:System.String.Empty>.  
   
  ]]></format>
         </remarks>

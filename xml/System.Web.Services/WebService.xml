@@ -238,7 +238,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the SOAP protocol was not used to communicate with the XML Web service, such as HTTP-GET or HTTP-POST, the value of the <xref:System.Web.Services.WebService.SoapVersion%2A> property is <xref:System.Web.Services.Protocols.SoapProtocolVersion>.  
+ If the SOAP protocol was not used to communicate with the XML Web service, such as HTTP-GET or HTTP-POST, the value of the <xref:System.Web.Services.WebService.SoapVersion%2A> property is <xref:System.Web.Services.Protocols.SoapProtocolVersion.Default>.  
   
  For XML Web services that do not derive from the <xref:System.Web.Services.WebService> class, the version of the SOAP protocol used to make the SOAP request to the XML Web service can be also be accessed using the "WebServiceSoapVersion" entry of the <xref:System.Web.HttpContext.Items%2A?displayProperty=fullName> property. That entry is of type <xref:System.Web.Services.Protocols.SoapProtocolVersion>.  
   

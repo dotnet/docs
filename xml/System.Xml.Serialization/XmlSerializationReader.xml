@@ -1113,7 +1113,7 @@
 ## Remarks  
  The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
   
- An attribute name indicates an XML namespace if it takes the form `xmlns:``key`, where "key" is the namespace name.  
+ An attribute name indicates an XML namespace if it takes the form `xmlns:key`, where "key" is the namespace name.  
   
  ]]></format>
         </remarks>

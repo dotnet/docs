@@ -228,7 +228,7 @@
 > [!CAUTION]
 >  Many of these flags are powerful and permit access to stores that should be granted only to highly trusted code.  
   
- The most powerful of the flags are <xref:System.Security.Permissions.StorePermissionFlags>, <xref:System.Security.Permissions.StorePermissionFlags>, <xref:System.Security.Permissions.StorePermissionFlags>, and <xref:System.Security.Permissions.StorePermissionFlags>. For specific threats posed by the use of these flags, see individual flag descriptions.  
+ The most powerful of the flags are <xref:System.Security.Permissions.StorePermissionFlags.AddToStore>, <xref:System.Security.Permissions.StorePermissionFlags.CreateStore>, <xref:System.Security.Permissions.StorePermissionFlags.DeleteStore>, and <xref:System.Security.Permissions.StorePermissionFlags.AllFlags>. For specific threats posed by the use of these flags, see individual flag descriptions.  
   
  ]]></format>
         </remarks>

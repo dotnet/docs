@@ -116,7 +116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property applies only if <xref:System.Windows.Data.Binding.Mode%2A> property of the parent <xref:System.Windows.Data.Binding> is set to <xref:System.Windows.Data.BindingMode> or <xref:System.Windows.Data.BindingMode>.  
+ This property applies only if <xref:System.Windows.Data.Binding.Mode%2A> property of the parent <xref:System.Windows.Data.Binding> is set to <xref:System.Windows.Data.BindingMode.TwoWay> or <xref:System.Windows.Data.BindingMode.OneWayToSource>.  
   
  ]]></format>
         </remarks>
@@ -294,7 +294,7 @@
 ## Remarks  
  The <xref:System.Windows.Data.BindingExpressionBase.ValidateWithoutUpdate%2A> method enables you to run validation rules on a binding without updating the source of the binding. This is useful when you want to validate user input and update the source at different times in an application.  
   
- For example, suppose you have a form to update a data source that contains a submit button. You want to provide feedback to the user if an invalid value is entered before the user attempts to submit the form. You can check the validity of a field by setting the binding's <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property to <xref:System.Windows.Data.UpdateSourceTrigger> and calling <xref:System.Windows.Data.BindingExpressionBase.ValidateWithoutUpdate%2A> when the <xref:System.Windows.Controls.TextBox> loses focus.  
+ For example, suppose you have a form to update a data source that contains a submit button. You want to provide feedback to the user if an invalid value is entered before the user attempts to submit the form. You can check the validity of a field by setting the binding's <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property to <xref:System.Windows.Data.UpdateSourceTrigger.Explicit> and calling <xref:System.Windows.Data.BindingExpressionBase.ValidateWithoutUpdate%2A> when the <xref:System.Windows.Controls.TextBox> loses focus.  
   
    
   

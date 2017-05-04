@@ -37,8 +37,7 @@
 ## Examples  
  The following example defines a <xref:System.Windows.Style> that will be applied to every <xref:System.Windows.Controls.TextBlock> element. This <xref:System.Windows.Style> applies values to several <xref:System.Windows.Controls.TextBlock> properties with the use of <xref:System.Windows.Setter>s.  
   
- [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#1)]  -->  
+ [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
   
  The following example shows a named <xref:System.Windows.Style> available to <xref:System.Windows.Controls.Button> controls. The <xref:System.Windows.Style> defines a <xref:System.Windows.Trigger> element that changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is `true`.  
   
@@ -144,13 +143,11 @@
 ## Examples  
  The following example defines a style that will be applied to every <xref:System.Windows.Controls.TextBlock> element.  
   
- [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#1)]  -->  
+ [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
   
  The following example shows a style declaration that will affect the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Controls.Control>. Note that property name in this example is qualified with the name of the class (<xref:System.Windows.Controls.Control>) because the <xref:System.Windows.Style> does not specify a <xref:System.Windows.Style.TargetType%2A>.  
   
- [!code-xml[StyleOvw01#StyleSimple](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#stylesimple)]
- <!-- TODO: review snippet reference [!code-xml[StyleOvw01#StyleSimple](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleOvw01/XAML/Page1.xaml#stylesimple)]  -->  
+ [!code-xml[StyleOvw01#StyleSimple](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#stylesimple)]   
   
  ]]></format>
         </remarks>
@@ -375,8 +372,7 @@
 ## Examples  
  The following example defines a <xref:System.Windows.Style> that will be applied to every <xref:System.Windows.Controls.TextBlock> element. For the complete example, see [Introduction to Styling and Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160010).  
   
- [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#1)]  -->  
+ [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
   
  The following example defines a <xref:System.Windows.Style> with <xref:System.Windows.Setter>s that reference system resources.  
   

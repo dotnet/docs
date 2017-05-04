@@ -243,8 +243,7 @@
 ## Remarks  
  In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], you can use a special abbreviated syntax to describe the path.  
   
- <!-- TODO: review snippet reference [!code-xml[PathAnimationGallery_snip#DoubleAnimationUsingPathAttributeSyntaxExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snip/CS/doubleanimationusingpathattributesyntaxexample.xaml#doubleanimationusingpathattributesyntaxexample)]  -->
- <!-- TODO: review snippet reference [!code-xml[PathAnimationGallery_snip#DoubleAnimationUsingPathAttributeSyntaxExample](~/samples/snippets/xaml/VS_Snippets_Wpf/PathAnimationGallery_snip/xaml/doubleanimationusingpathattributesyntaxexample.xaml#doubleanimationusingpathattributesyntaxexample)]  -->  
+ [!code-xml[PathAnimationGallery_snippet#DoubleAnimationUsingPathAttributeSyntaxExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snippet/CS/doubleanimationusingpathattributesyntaxexample.xaml#doubleanimationusingpathattributesyntaxexample)] 
   
  For more information about <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometry%2A> markup syntax, see [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md). For more examples of creating a path using markup or code, see <xref:System.Windows.Media.PathGeometry>.  
   

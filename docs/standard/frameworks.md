@@ -4,7 +4,7 @@ description: Information surrounding target frameworks for .NET Core application
 keywords: .NET, .NET Core, framework, TFM
 author: richlander
 ms.author: mairaw
-ms.date: 04/27/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -55,7 +55,7 @@ The following table defines the set of frameworks that you can use, how they're 
 | :-------------------: | :------------: | :----------------------------: | :------------------------------------: | :-------------------: | :---------: |
 | .NET Standard         | 1.6.1          | .NETStandard,Version=1.6       | netstandard1.6                         | N/A                   | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) |
 | .NET Core Application | 1.1.1          | .NETCoreApp,Version=1.1        | netcoreapp1.1                          | 1.6                   | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) |
-| .NET Framework        | 4.6.2          | .NETFramework,Version=4.6.2    | net462                                 | 1.5                   | N/A |
+| .NET Framework        | 4.7            | .NETFramework,Version=4.7      | net47                                  | 1.5                   | N/A |
 
 ## Supported frameworks
 
@@ -83,6 +83,7 @@ A framework is typically referenced by a short target framework moniker or *TFM*
 |                            |              | net46                                        |
 |                            |              | net461                                       |
 |                            |              | net462                                       |
+|                            |              | net47                                        |
 | Windows Store              | netcore      | netcore [netcore45]                          |
 |                            |              | netcore45 [win, win8]                        |
 |                            |              | netcore451 [win81]                           |

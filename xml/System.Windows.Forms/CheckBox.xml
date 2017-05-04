@@ -83,7 +83,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, when a new <xref:System.Windows.Forms.CheckBox> is instantiated, <xref:System.Windows.Forms.CheckBox.AutoCheck%2A> is set to `true`, <xref:System.Windows.Forms.CheckBox.Checked%2A> is set to `false`, and <xref:System.Windows.Forms.CheckBox.Appearance%2A> is set to <xref:System.Windows.Forms.Appearance>.  
+ By default, when a new <xref:System.Windows.Forms.CheckBox> is instantiated, <xref:System.Windows.Forms.CheckBox.AutoCheck%2A> is set to `true`, <xref:System.Windows.Forms.CheckBox.Checked%2A> is set to `false`, and <xref:System.Windows.Forms.CheckBox.Appearance%2A> is set to <xref:System.Windows.Forms.Appearance.Normal>.  
   
    
   
@@ -125,7 +125,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Windows.Forms.CheckBox.Appearance%2A> value is set to <xref:System.Windows.Forms.Appearance>, the <xref:System.Windows.Forms.CheckBox> has a typical appearance. If the value is set to `Button`, the <xref:System.Windows.Forms.CheckBox> appears like a toggle button, which can be toggled to an up or down state.  
+ If <xref:System.Windows.Forms.CheckBox.Appearance%2A> value is set to <xref:System.Windows.Forms.Appearance.Normal>, the <xref:System.Windows.Forms.CheckBox> has a typical appearance. If the value is set to `Button`, the <xref:System.Windows.Forms.CheckBox> appears like a toggle button, which can be toggled to an up or down state.  
   
    
   
@@ -287,12 +287,10 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.CheckBox" /> is in the checked state; otherwise, <see langword="false" />. The default value is <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  If the <see cref="P:System.Windows.Forms.CheckBox.ThreeState" /> property is set to <see langword="true" />, the <see cref="P:System.Windows.Forms.CheckBox.Checked" /> property will return <see langword="true" /> for either a <see langword="Checked" /> or <see langword="Indeterminate" /><see cref="P:System.Windows.Forms.CheckBox.CheckState" />.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -540,7 +538,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Windows.Forms.ControlStyles> and <xref:System.Windows.Forms.ControlStyles> enumerations are set to false for the <xref:System.Windows.Forms.CheckBox> control, and the <xref:System.Windows.Forms.CheckBox.DoubleClick> event is not raised.  
+ By default, the <xref:System.Windows.Forms.ControlStyles.StandardClick> and <xref:System.Windows.Forms.ControlStyles.StandardDoubleClick> enumerations are set to false for the <xref:System.Windows.Forms.CheckBox> control, and the <xref:System.Windows.Forms.CheckBox.DoubleClick> event is not raised.  
   
  This event is not relevant to this class.  
   
@@ -703,7 +701,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.CheckBox.OnClick%2A> method changes the <xref:System.Windows.Forms.CheckBox.CheckState%2A> property. If the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `true`, subsequent clicks of the <xref:System.Windows.Forms.CheckBox> will result in <xref:System.Windows.Forms.CheckBox.OnClick%2A> cycling through all the values of the <xref:System.Windows.Forms.CheckBox.CheckState%2A> enumeration. Otherwise, <xref:System.Windows.Forms.CheckBox.OnClick%2A> switches between <xref:System.Windows.Forms.CheckState> and <xref:System.Windows.Forms.CheckState>.  
+ The <xref:System.Windows.Forms.CheckBox.OnClick%2A> method changes the <xref:System.Windows.Forms.CheckBox.CheckState%2A> property. If the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `true`, subsequent clicks of the <xref:System.Windows.Forms.CheckBox> will result in <xref:System.Windows.Forms.CheckBox.OnClick%2A> cycling through all the values of the <xref:System.Windows.Forms.CheckBox.CheckState%2A> enumeration. Otherwise, <xref:System.Windows.Forms.CheckBox.OnClick%2A> switches between <xref:System.Windows.Forms.CheckState.Checked> and <xref:System.Windows.Forms.CheckState.Unchecked>.  
   
  Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   

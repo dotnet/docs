@@ -2,7 +2,7 @@
 title: "ICoreClrDebugTarget Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "ICorClrDebugTarget interface"
   - "Silverlight, remote debugging"
 ms.assetid: 7cfaee76-e284-4a66-a431-8e33f0f60038
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -2,7 +2,7 @@
 title: "IHostTaskManager::SwitchToTask Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostTaskManager::SwitchToTask method [.NET Framework hosting]"
   - "SwitchToTask method [.NET Framework hosting]"
 ms.assetid: 35d0c27e-4b14-49ce-810d-7ab2120177e8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

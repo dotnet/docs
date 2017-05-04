@@ -869,12 +869,12 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataVisualization.Charting.Series.XValueType%2A> property determines the type of data stored by the series.  
   
- Set this property to <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType> to allow the X-value to be entered as a <xref:System.DateTime> value, and not as a <xref:System.Double>. Date and time values are internally stored by .NET Framework as <xref:System.Double> values. The same holds true for the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.ToPosition%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.FromPosition%2A> properties of <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> objects.  
+ Set this property to <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime> to allow the X-value to be entered as a <xref:System.DateTime> value, and not as a <xref:System.Double>. Date and time values are internally stored by .NET Framework as <xref:System.Double> values. The same holds true for the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.ToPosition%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.FromPosition%2A> properties of <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> objects.  
   
  The `IntervalType` property found in axis label, tick mark, and grid classes determines the interval type.  
   
 > [!NOTE]
->  To correctly apply a <xref:System.DateTime> format to axis labels that are generated from data point X-values, using the <xref:System.Windows.Forms.DataVisualization.Charting.LabelStyle.Format%2A> property, this property must be set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType>.  
+>  To correctly apply a <xref:System.DateTime> format to axis labels that are generated from data point X-values, using the <xref:System.Windows.Forms.DataVisualization.Charting.LabelStyle.Format%2A> property, this property must be set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime>.  
   
  This property can also be used to determine the data type to which the X-values are bound.  
   
@@ -1023,13 +1023,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.Series.YValueType%2A> property determines the type of data stored by the series. The value of this property is normally set to either <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType> or <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType>.  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Series.YValueType%2A> property determines the type of data stored by the series. The value of this property is normally set to either <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType.Auto> or <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime>.  
   
  The `IntervalType` property found in axis label, tick mark, and grid classes determines the interval type.  
   
  This property can also be used to determine the data type to which the Y-values are bound.  
   
- It is possible to plot date expressions as the values of data points, though this is rarely done. If you set this property to <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType>, the Y-value can then entered as a <xref:System.DateTime> value, and not as a <xref:System.Double>. Date and time values are internally stored by .NET Framework as <xref:System.Double> values.  
+ It is possible to plot date expressions as the values of data points, though this is rarely done. If you set this property to <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime>, the Y-value can then entered as a <xref:System.DateTime> value, and not as a <xref:System.Double>. Date and time values are internally stored by .NET Framework as <xref:System.Double> values.  
   
  ]]></format>
         </remarks>

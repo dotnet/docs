@@ -1365,7 +1365,9 @@
           <see langword="true" /> if this geometry value relates to <paramref name="other" /> according to the specified intersection pattern matrix; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="other" /> <paramref name="matrix" /></exception>
+          <paramref name="other" />
+          <paramref name="matrix" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialEquals">

@@ -1,5 +1,5 @@
-using System.Windows; // Application, RoutedEventArgs
-using System.Windows.Controls; // Page
+using System.Windows;
+using System.Windows.Controls;
 
 namespace SDKSample
 {

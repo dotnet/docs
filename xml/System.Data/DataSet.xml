@@ -438,12 +438,10 @@
         <summary>Copies both the structure and data for this <see cref="T:System.Data.DataSet" />.</summary>
         <returns>A new <see cref="T:System.Data.DataSet" /> with the same structure (table schemas, relations, and constraints) and data as this <see cref="T:System.Data.DataSet" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  If these classes have been subclassed, the copy will also be of the same subclasses.  
   
-</para>  
-</block></returns>
+</para></block></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1032,7 +1030,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method is identical to calling <xref:System.Data.DataSet.WriteXml%2A> with <xref:System.Data.XmlWriteMode> set to <xref:System.Data.XmlWriteMode>.  
+ Calling this method is identical to calling <xref:System.Data.DataSet.WriteXml%2A> with <xref:System.Data.XmlWriteMode> set to <xref:System.Data.XmlWriteMode.IgnoreSchema>.  
   
  <xref:System.Data.DataSet.GetXml%2A> returns XML as a string, and therefore requires more overhead than <xref:System.Data.DataSet.WriteXml%2A> to write XML to a file.  
   
@@ -1989,7 +1987,7 @@ class Program {
  By default, setting the <xref:System.Data.DataSet.Locale%2A> for a <xref:System.Data.DataSet> also sets the <xref:System.Data.DataSet.Locale%2A> for each <xref:System.Data.DataTable> object in that `DataSet` to the same value.  
   
 > [!NOTE]
->  In columns that contain expressions, the <xref:System.StringComparison> is used. The <xref:System.StringComparison> is ignored.  
+>  In columns that contain expressions, the <xref:System.StringComparison.InvariantCulture> is used. The <xref:System.StringComparison.CurrentCulture> is ignored.  
   
    
   
@@ -3588,15 +3586,15 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Data.DataSet> serializes its schema and instance data by default in Web services and remoting scenarios. Setting the <xref:System.Data.DataSet.SchemaSerializationMode%2A> property of a typed `DataSet` to <xref:System.Data.SchemaSerializationMode> causes schema information to be excluded from the serialization payload.  
+ A <xref:System.Data.DataSet> serializes its schema and instance data by default in Web services and remoting scenarios. Setting the <xref:System.Data.DataSet.SchemaSerializationMode%2A> property of a typed `DataSet` to <xref:System.Data.SchemaSerializationMode.ExcludeSchema> causes schema information to be excluded from the serialization payload.  
   
- <xref:System.Data.SchemaSerializationMode> is supported only for a typed `DataSet`. For an un-typed `DataSet` this property can only be set to <xref:System.Data.SchemaSerializationMode>.  
+ <xref:System.Data.SchemaSerializationMode.ExcludeSchema> is supported only for a typed `DataSet`. For an un-typed `DataSet` this property can only be set to <xref:System.Data.SchemaSerializationMode.IncludeSchema>.  
   
- <xref:System.Data.SchemaSerializationMode> should only be used in cases where the schema information of the underlying typed `DataTables`, `DataRelations` and `Constraints` has not been modified. If modifications have occurred, complete schema information should be serialized with <xref:System.Data.SchemaSerializationMode>.  
+ <xref:System.Data.SchemaSerializationMode.ExcludeSchema> should only be used in cases where the schema information of the underlying typed `DataTables`, `DataRelations` and `Constraints` has not been modified. If modifications have occurred, complete schema information should be serialized with <xref:System.Data.SchemaSerializationMode.IncludeSchema>.  
   
- <xref:System.Data.SchemaSerializationMode> is supported in version 2.0 of the .NET Framework or later.  
+ <xref:System.Data.SchemaSerializationMode.ExcludeSchema> is supported in version 2.0 of the .NET Framework or later.  
   
- When <xref:System.Data.SchemaSerializationMode> is set, only the top level runtime properties present on the <xref:System.Data.DataSet> are serialized. In addition, they are serialized only if they happen to be different from the default values. None of the `Tables`, `Relations` or `Constraints` are serialized. The serialized runtime properties include <xref:System.Data.DataSet.DataSetName%2A>, <xref:System.Data.DataSet.Namespace%2A>, <xref:System.Data.DataSet.Prefix%2A>, <xref:System.Data.DataSet.Locale%2A>, <xref:System.Data.DataSet.EnforceConstraints%2A>, and <xref:System.Data.DataSet.CaseSensitive%2A>. These properties are serialized to make sure that overall runtime data integrity is preserved.  
+ When <xref:System.Data.SchemaSerializationMode.ExcludeSchema> is set, only the top level runtime properties present on the <xref:System.Data.DataSet> are serialized. In addition, they are serialized only if they happen to be different from the default values. None of the `Tables`, `Relations` or `Constraints` are serialized. The serialized runtime properties include <xref:System.Data.DataSet.DataSetName%2A>, <xref:System.Data.DataSet.Namespace%2A>, <xref:System.Data.DataSet.Prefix%2A>, <xref:System.Data.DataSet.Locale%2A>, <xref:System.Data.DataSet.EnforceConstraints%2A>, and <xref:System.Data.DataSet.CaseSensitive%2A>. These properties are serialized to make sure that overall runtime data integrity is preserved.  
   
  ]]></format>
         </remarks>

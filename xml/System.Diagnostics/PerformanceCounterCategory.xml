@@ -18,7 +18,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Creating or deleting a performance counter requires synchronization of the underlying code by using a named mutex. If a highly privileged application locks the named mutex, attempts to create or delete a performance counter causes the application to stop responding until the lock is released. To help avoid this problem, never grant <xref:System.Security.Permissions.SecurityPermissionFlag> permission to untrusted code. In addition, <xref:System.Security.Permissions.SecurityPermissionFlag> permission potentially allows other permissions to be bypassed and should only be granted to highly trusted code.  
+>  Creating or deleting a performance counter requires synchronization of the underlying code by using a named mutex. If a highly privileged application locks the named mutex, attempts to create or delete a performance counter causes the application to stop responding until the lock is released. To help avoid this problem, never grant <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> permission to untrusted code. In addition, <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> permission potentially allows other permissions to be bypassed and should only be granted to highly trusted code.  
   
  The <xref:System.Diagnostics.PerformanceCounterCategory> instance's <xref:System.Diagnostics.PerformanceCounterCategory.CategoryName%2A> property is displayed in the Performance Object field of the Performance Viewer application's Add Counter dialog box.  
   
@@ -234,7 +234,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.PerformanceCounterCategory.CategoryType%2A> property indicates whether the <xref:System.Diagnostics.PerformanceCounterCategory> object can have multiple instances. The possible values are <xref:System.Diagnostics.PerformanceCounterCategoryType>, <xref:System.Diagnostics.PerformanceCounterCategoryType>, or <xref:System.Diagnostics.PerformanceCounterCategoryType>.  
+ The <xref:System.Diagnostics.PerformanceCounterCategory.CategoryType%2A> property indicates whether the <xref:System.Diagnostics.PerformanceCounterCategory> object can have multiple instances. The possible values are <xref:System.Diagnostics.PerformanceCounterCategoryType.MultiInstance>, <xref:System.Diagnostics.PerformanceCounterCategoryType.SingleInstance>, or <xref:System.Diagnostics.PerformanceCounterCategoryType.Unknown>.  
   
  There are two types of performance counter categories: single-instance and multi-instance. By default, a category is single-instance when it is created and becomes multi-instance when another instance is added. Categories are created when an application is set up, and instances are added at run time. In the .NET Framework versions 1.0 and 1.1, it is not necessary to know if a performance counter category is multi-instance or single-instance. In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Diagnostics.PerformanceCounterCategoryType> enumeration is used to indicate whether a performance counter can have multiple instances.  
   

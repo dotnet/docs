@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorSymSearchPolicyAttributes enumeration [.NET Framework debugging]"
 ms.assetid: 03abde84-930a-49d3-bac3-23abb34a0184
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

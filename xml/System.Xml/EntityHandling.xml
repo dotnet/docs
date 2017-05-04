@@ -73,7 +73,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Xml.XmlNodeType> nodes are not returned. The entity text is expanded in place of the entity references.  
+ <xref:System.Xml.XmlNodeType.EntityReference> nodes are not returned. The entity text is expanded in place of the entity references.  
   
  ]]></format>
         </remarks>

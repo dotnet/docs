@@ -1,5 +1,4 @@
 Imports Microsoft.VisualBasic.Interaction
-' Imports System.ComponentModel ' needed for CancelEventArgs of Snippet5 ' removed to try different approach
 Imports System.Diagnostics
 '<Snippet30>
 ' Insert the following line at the beginning of your source file.

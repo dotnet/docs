@@ -205,7 +205,7 @@
   
 -   Header names cannot have non-ASCII chars in them. This validation is performed whether this property is set to `true` or `false`.  
   
- When a protocol violation occurs, a <xref:System.Net.WebException> exception is thrown with the status set to <xref:System.Net.WebExceptionStatus>. If the `UseUnsafeHeaderParsing` property is set to `true`, validation errors are ignored.  
+ When a protocol violation occurs, a <xref:System.Net.WebException> exception is thrown with the status set to <xref:System.Net.WebExceptionStatus.ServerProtocolViolation>. If the `UseUnsafeHeaderParsing` property is set to `true`, validation errors are ignored.  
   
  Setting this property to `true` has security implications, so it should only be done if backward compatibility with a server is required.  
   

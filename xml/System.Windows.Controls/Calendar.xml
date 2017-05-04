@@ -44,19 +44,19 @@
   
 |Key Combination|<xref:System.Windows.Controls.Calendar.DisplayMode%2A>|Action|  
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|------------|  
-|ARROW|<xref:System.Windows.Controls.CalendarMode>|Changes the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> property if the <xref:System.Windows.Controls.Calendar.SelectionMode%2A> property is not set to <xref:System.Windows.Controls.CalendarSelectionMode>.|  
-|ARROW|<xref:System.Windows.Controls.CalendarMode>|Changes the month of the <xref:System.Windows.Controls.Calendar.DisplayDate%2A> property.  Note that the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> does not change.|  
-|ARROW|<xref:System.Windows.Controls.CalendarMode>|Changes the year of the <xref:System.Windows.Controls.Calendar.DisplayDate%2A>.  Note that the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> does not change.|  
-|SHIFT+ARROW|<xref:System.Windows.Controls.CalendarMode>|If <xref:System.Windows.Controls.Calendar.SelectionMode%2A> is not set to <xref:System.Windows.Controls.CalendarSelectionMode> or <xref:System.Windows.Controls.CalendarSelectionMode>, extends the range of selected dates.|  
-|HOME|<xref:System.Windows.Controls.CalendarMode>|Changes the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> to the first day of the current month.|  
-|HOME|<xref:System.Windows.Controls.CalendarMode>|Changes the month of the <xref:System.Windows.Controls.Calendar.DisplayDate%2A> to the first month of the year. The <xref:System.Windows.Controls.Calendar.SelectedDate%2A> does not change.|  
-|HOME|<xref:System.Windows.Controls.CalendarMode>|Changes the year of the <xref:System.Windows.Controls.Calendar.DisplayDate%2A> to the first year of the decade. The <xref:System.Windows.Controls.Calendar.SelectedDate%2A> does not change.|  
-|END|<xref:System.Windows.Controls.CalendarMode>|Changes the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> to the last day of the current month.|  
-|END|<xref:System.Windows.Controls.CalendarMode>|Changes the month of the <xref:System.Windows.Controls.Calendar.DisplayDate%2A> to the last month of the year. The <xref:System.Windows.Controls.Calendar.SelectedDate%2A> does not change.|  
-|END|<xref:System.Windows.Controls.CalendarMode>|Changes the year of the <xref:System.Windows.Controls.Calendar.DisplayDate%2A> to the last year of the decade. The <xref:System.Windows.Controls.Calendar.SelectedDate%2A> does not change.|  
-|CTRL+UP ARROW|Any|Switches to the next larger <xref:System.Windows.Controls.Calendar.DisplayMode%2A>. If <xref:System.Windows.Controls.Calendar.DisplayMode%2A> is already <xref:System.Windows.Controls.CalendarMode>, no action.|  
-|CTRL+DOWN ARROW|Any|Switches to the next smaller <xref:System.Windows.Controls.Calendar.DisplayMode%2A>. If <xref:System.Windows.Controls.Calendar.DisplayMode%2A> is already <xref:System.Windows.Controls.CalendarMode>, no action.|  
-|SPACEBAR or ENTER|<xref:System.Windows.Controls.CalendarMode> or <xref:System.Windows.Controls.CalendarMode>|Switches <xref:System.Windows.Controls.Calendar.DisplayMode%2A> to the <xref:System.Windows.Controls.CalendarMode> or <xref:System.Windows.Controls.CalendarMode> represented by focused item.|  
+|ARROW|<xref:System.Windows.Controls.CalendarMode.Month>|Changes the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> property if the <xref:System.Windows.Controls.Calendar.SelectionMode%2A> property is not set to <xref:System.Windows.Controls.CalendarSelectionMode.None>.|  
+|ARROW|<xref:System.Windows.Controls.CalendarMode.Year>|Changes the month of the <xref:System.Windows.Controls.Calendar.DisplayDate%2A> property.  Note that the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> does not change.|  
+|ARROW|<xref:System.Windows.Controls.CalendarMode.Decade>|Changes the year of the <xref:System.Windows.Controls.Calendar.DisplayDate%2A>.  Note that the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> does not change.|  
+|SHIFT+ARROW|<xref:System.Windows.Controls.CalendarMode.Month>|If <xref:System.Windows.Controls.Calendar.SelectionMode%2A> is not set to <xref:System.Windows.Controls.CalendarSelectionMode.SingleDate> or <xref:System.Windows.Controls.CalendarSelectionMode.None>, extends the range of selected dates.|  
+|HOME|<xref:System.Windows.Controls.CalendarMode.Month>|Changes the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> to the first day of the current month.|  
+|HOME|<xref:System.Windows.Controls.CalendarMode.Year>|Changes the month of the <xref:System.Windows.Controls.Calendar.DisplayDate%2A> to the first month of the year. The <xref:System.Windows.Controls.Calendar.SelectedDate%2A> does not change.|  
+|HOME|<xref:System.Windows.Controls.CalendarMode.Decade>|Changes the year of the <xref:System.Windows.Controls.Calendar.DisplayDate%2A> to the first year of the decade. The <xref:System.Windows.Controls.Calendar.SelectedDate%2A> does not change.|  
+|END|<xref:System.Windows.Controls.CalendarMode.Month>|Changes the <xref:System.Windows.Controls.Calendar.SelectedDate%2A> to the last day of the current month.|  
+|END|<xref:System.Windows.Controls.CalendarMode.Year>|Changes the month of the <xref:System.Windows.Controls.Calendar.DisplayDate%2A> to the last month of the year. The <xref:System.Windows.Controls.Calendar.SelectedDate%2A> does not change.|  
+|END|<xref:System.Windows.Controls.CalendarMode.Decade>|Changes the year of the <xref:System.Windows.Controls.Calendar.DisplayDate%2A> to the last year of the decade. The <xref:System.Windows.Controls.Calendar.SelectedDate%2A> does not change.|  
+|CTRL+UP ARROW|Any|Switches to the next larger <xref:System.Windows.Controls.Calendar.DisplayMode%2A>. If <xref:System.Windows.Controls.Calendar.DisplayMode%2A> is already <xref:System.Windows.Controls.CalendarMode.Decade>, no action.|  
+|CTRL+DOWN ARROW|Any|Switches to the next smaller <xref:System.Windows.Controls.Calendar.DisplayMode%2A>. If <xref:System.Windows.Controls.Calendar.DisplayMode%2A> is already <xref:System.Windows.Controls.CalendarMode.Month>, no action.|  
+|SPACEBAR or ENTER|<xref:System.Windows.Controls.CalendarMode.Year> or <xref:System.Windows.Controls.CalendarMode.Decade>|Switches <xref:System.Windows.Controls.Calendar.DisplayMode%2A> to the <xref:System.Windows.Controls.CalendarMode.Month> or <xref:System.Windows.Controls.CalendarMode.Year> represented by focused item.|  
   
 ## Customizing the Calendar Control  
  To apply the same property settings to multiple <xref:System.Windows.Controls.Calendar> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Calendar>, see [Calendar Styles and Templates](~/docs/framework/wpf/controls/calendar-styles-and-templates.md).  
@@ -649,7 +649,7 @@ Calendar with dates that cannot be selected
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Calendar>|  
+|Identifier field|<xref:System.Windows.Controls.Calendar.DisplayModeProperty>|  
 |Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
    
@@ -762,7 +762,7 @@ Calendar with dates that cannot be selected
    
   
 ## Examples  
- The following example sets the <xref:System.Windows.Controls.Calendar.FirstDayOfWeek%2A> property to <xref:System.DayOfWeek>.  
+ The following example sets the <xref:System.Windows.Controls.Calendar.FirstDayOfWeek%2A> property to <xref:System.DayOfWeek.Monday>.  
   
  [!code-xml[CalendarSnippets#8](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#8)]  
   
@@ -1097,7 +1097,7 @@ Calendar with dates that cannot be selected
 |Identifier field|<xref:System.Windows.Controls.Calendar.SelectedDateProperty>|  
 |Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
- Use this property when <xref:System.Windows.Controls.Calendar.SelectionMode%2A> is set to <xref:System.Windows.Controls.CalendarSelectionMode>. In other modes, this property will always be the first date in <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.  
+ Use this property when <xref:System.Windows.Controls.Calendar.SelectionMode%2A> is set to <xref:System.Windows.Controls.CalendarSelectionMode.SingleDate>. In other modes, this property will always be the first date in <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.  
   
 <a name="xamlAttributeUsage_SelectedDate"></a>   
 ## XAML Attribute Usage  
@@ -1170,10 +1170,10 @@ Calendar with dates that cannot be selected
   
 |CalendarSelectionMode|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Windows.Controls.CalendarSelectionMode>|No selections are allowed. <xref:System.Windows.Controls.Calendar.SelectedDate%2A> cannot be set and no values can be added to <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.|  
-|<xref:System.Windows.Controls.CalendarSelectionMode>|Only a single date can be selected, either by setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A> or the first value in <xref:System.Windows.Controls.Calendar.SelectedDates%2A>. <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> cannot be used.|  
-|<xref:System.Windows.Controls.CalendarSelectionMode>|A single range of dates can be selected. Setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A>, adding a date individually to <xref:System.Windows.Controls.Calendar.SelectedDates%2A>, or using <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> will clear all previous values from <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.|  
-|<xref:System.Windows.Controls.CalendarSelectionMode>|Multiple non-contiguous ranges of dates can be selected. Adding a date individually to <xref:System.Windows.Controls.Calendar.SelectedDates%2A> or using <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> will not clear <xref:System.Windows.Controls.Calendar.SelectedDates%2A>. Setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A> will still clear <xref:System.Windows.Controls.Calendar.SelectedDates%2A>, but additional dates or ranges can then be added. Adding a range that includes some dates that are already selected or overlaps with another range results in the union of the ranges and does not cause an exception.|  
+|<xref:System.Windows.Controls.CalendarSelectionMode.None>|No selections are allowed. <xref:System.Windows.Controls.Calendar.SelectedDate%2A> cannot be set and no values can be added to <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.|  
+|<xref:System.Windows.Controls.CalendarSelectionMode.SingleDate>|Only a single date can be selected, either by setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A> or the first value in <xref:System.Windows.Controls.Calendar.SelectedDates%2A>. <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> cannot be used.|  
+|<xref:System.Windows.Controls.CalendarSelectionMode.SingleRange>|A single range of dates can be selected. Setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A>, adding a date individually to <xref:System.Windows.Controls.Calendar.SelectedDates%2A>, or using <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> will clear all previous values from <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.|  
+|<xref:System.Windows.Controls.CalendarSelectionMode.MultipleRange>|Multiple non-contiguous ranges of dates can be selected. Adding a date individually to <xref:System.Windows.Controls.Calendar.SelectedDates%2A> or using <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> will not clear <xref:System.Windows.Controls.Calendar.SelectedDates%2A>. Setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A> will still clear <xref:System.Windows.Controls.Calendar.SelectedDates%2A>, but additional dates or ranges can then be added. Adding a range that includes some dates that are already selected or overlaps with another range results in the union of the ranges and does not cause an exception.|  
   
 <a name="xamlPropertyElementUsage_SelectedDates"></a>   
 ## XAML Property Element Usage  

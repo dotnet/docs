@@ -283,7 +283,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.TableLayoutSettings.GrowStyle%2A> property determines how the layout engine should add a new cell to a full table. This property can be set to <xref:System.Windows.Forms.TableLayoutPanelGrowStyle> to indicate that rows should be added, <xref:System.Windows.Forms.TableLayoutPanelGrowStyle> to indicate that columns should be added, or <xref:System.Windows.Forms.TableLayoutPanelGrowStyle> to disallow expansion.  
+ The <xref:System.Windows.Forms.TableLayoutSettings.GrowStyle%2A> property determines how the layout engine should add a new cell to a full table. This property can be set to <xref:System.Windows.Forms.TableLayoutPanelGrowStyle.AddRows> to indicate that rows should be added, <xref:System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns> to indicate that columns should be added, or <xref:System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize> to disallow expansion.  
   
  ]]></format>
         </remarks>

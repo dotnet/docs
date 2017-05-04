@@ -40,30 +40,17 @@
         <summary>Gets the value that represents the <see langword="Browse Back" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> ALT+LEFT  
+ </term><description> ALT+LEFT  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Back  
+ </term><description> Back  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -109,30 +96,17 @@
         <summary>Gets the value that represents the <see langword="Browse Forward" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> ALT+RIGHT  
+ </term><description> ALT+RIGHT  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Forward  
+ </term><description> Forward  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -178,30 +152,17 @@
         <summary>Gets the value that represents the <see langword="Browse Home" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> ALT+HOME  
+ </term><description> ALT+HOME  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Home  
+ </term><description> Home  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -250,30 +211,17 @@
         <summary>Gets the value that represents the <see langword="Browse Stop" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> ALT+ESC  
+ </term><description> ALT+ESC  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Stop  
+ </term><description> Stop  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -319,30 +267,17 @@
         <summary>Gets the value that represents the <see langword="Decrease Zoom" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> N/A  
+ </term><description> N/A  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Decrease Zoom  
+ </term><description> Decrease Zoom  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -389,30 +324,17 @@
         <summary>Gets the value that represents the <see langword="Favorites" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> CTRL+I  
+ </term><description> CTRL+I  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Favorites  
+ </term><description> Favorites  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -460,30 +382,17 @@
         <summary>Gets the value that represents the <see langword="First Page" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> N/A  
+ </term><description> N/A  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> First Page  
+ </term><description> First Page  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -530,30 +439,17 @@
         <summary>Gets the value that represents the <see langword="Go To Page" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> N/A  
+ </term><description> N/A  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Go To Page  
+ </term><description> Go To Page  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -600,30 +496,17 @@
         <summary>Gets the value that represents the <see langword="Increase Zoom" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> N/A  
+ </term><description> N/A  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Increase Zoom  
+ </term><description> Increase Zoom  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -670,30 +553,17 @@
         <summary>Gets the value that represents the <see langword="Last Page" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> N/A  
+ </term><description> N/A  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Last Page  
+ </term><description> Last Page  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -740,30 +610,17 @@
         <summary>Gets the value that represents the <see langword="Navigate Journal" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> N/A  
+ </term><description> N/A  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Navigation Journal  
+ </term><description> Navigation Journal  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -809,30 +666,17 @@
         <summary>Gets the value that represents the <see langword="Next Page" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> N/A  
+ </term><description> N/A  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Next Page  
+ </term><description> Next Page  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -879,30 +723,17 @@
         <summary>Gets the value that represents the <see langword="Previous Page" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> N/A  
+ </term><description> N/A  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Previous Page  
+ </term><description> Previous Page  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -949,30 +780,17 @@
         <summary>Gets the value that represents the <see langword="Refresh" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> F5  
+ </term><description> F5  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Refresh  
+ </term><description> Refresh  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1018,30 +836,17 @@
         <summary>Gets the value that represents the <see langword="Search" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> F3  
+ </term><description> F3  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Search  
+ </term><description> Search  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1091,30 +896,17 @@
         <summary>Gets the value that represents the <see langword="Zoom" /> command.</summary>
         <value>The routed [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] command.  
   
- <list type="table">  
-<listheader>  
-<term> Default Values  
+ <list type="table"><listheader><term> Default Values  
   
- </term>  
-<description></description>  
-</listheader>  
-<item>  
-<term> Key Gesture  
+ </term><description></description></listheader><item><term> Key Gesture  
   
- </term>  
-<description> N/A  
+ </term><description> N/A  
   
- </description>  
-</item>  
-<item>  
-<term> UI Text  
+ </description></item><item><term> UI Text  
   
- </term>  
-<description> Zoom  
+ </term><description> Zoom  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

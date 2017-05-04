@@ -210,7 +210,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission. For example, a permission for <xref:System.Security.Permissions.FileDialogPermissionAccess> access is a subset of a permission for <xref:System.Security.Permissions.FileDialogPermissionAccess> access.  
+ The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission. For example, a permission for <xref:System.Security.Permissions.FileDialogPermissionAccess.Open> access is a subset of a permission for <xref:System.Security.Permissions.FileDialogPermissionAccess.OpenSave> access.  
   
  ]]></format>
         </remarks>

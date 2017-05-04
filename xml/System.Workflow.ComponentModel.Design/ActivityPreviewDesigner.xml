@@ -282,7 +282,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Since users can only navigate horizontally in the preview pane of the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>, <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.GetNextSelectableObject%2A> only recognizes <xref:System.Workflow.ComponentModel.Design.DesignerNavigationDirection> and <xref:System.Workflow.ComponentModel.Design.DesignerNavigationDirection>.  
+ Since users can only navigate horizontally in the preview pane of the <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner>, <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.GetNextSelectableObject%2A> only recognizes <xref:System.Workflow.ComponentModel.Design.DesignerNavigationDirection.Left> and <xref:System.Workflow.ComponentModel.Design.DesignerNavigationDirection.Right>.  
   
  ]]></format>
         </remarks>

@@ -19,7 +19,7 @@
  The <xref:System.Web.Configuration.CustomErrorsSection> class provides a way to programmatically access and modify the `customErrors` section of a configuration file. This type is part of a group that includes the <xref:System.Web.Configuration.CustomErrorCollection>, <xref:System.Web.Configuration.CustomErrorsMode>, and <xref:System.Web.Configuration.CustomError> types.  
   
 > [!NOTE]
->  The <xref:System.Web.Configuration.CustomErrorsSection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition>.  
+>  The <xref:System.Web.Configuration.CustomErrorsSection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition.Everywhere>.  
   
    
   
@@ -275,7 +275,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.Configuration.CustomErrorsSection.RedirectMode%2A> property is set to <xref:System.Web.Configuration.CustomErrorsRedirectMode>, the user is redirected to the error page and the original URL is changed to the URL of the error page. If the <xref:System.Web.Configuration.CustomErrorsSection.RedirectMode%2A> property is set to <xref:System.Web.Configuration.CustomErrorsRedirectMode>, the user is sent to error page and the original URL in the browser is not changed.  
+ If the <xref:System.Web.Configuration.CustomErrorsSection.RedirectMode%2A> property is set to <xref:System.Web.Configuration.CustomErrorsRedirectMode.ResponseRedirect>, the user is redirected to the error page and the original URL is changed to the URL of the error page. If the <xref:System.Web.Configuration.CustomErrorsSection.RedirectMode%2A> property is set to <xref:System.Web.Configuration.CustomErrorsRedirectMode.ResponseRewrite>, the user is sent to error page and the original URL in the browser is not changed.  
   
  ]]></format>
         </remarks>

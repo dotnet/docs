@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_CODE_INFO structure [.NET Framework profiling]"
 ms.assetid: cf30e27c-1f7e-43a2-ba1e-01e4137301db
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

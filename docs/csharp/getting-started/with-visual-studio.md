@@ -78,12 +78,12 @@ Let's enhance our application to prompt the user for his or her name and then di
 
 You've now created and run your simple application. To develop a professional application, there are still some additional steps that you can take to make your application ready for release:
 
-- For information on debugging your application, see [Debugging the Hello World Application](debugging-with-visual-studio-2017.md)
+- For information on debugging your application, see [Debugging the Hello World Application](debugging-with-visual-studio.md)
 
-- For information on developing a publishing a distributable version of your application, see [Publishing the Hello World application](publishing-with-visual-studio-2017.md).
+- For information on developing a publishing a distributable version of your application, see [Publishing the Hello World application](publishing-with-visual-studio.md).
 
 ## Related topics ##
 
-Instead of a console application, you can also build a class library with .NET Core and Visual Studio 2017. For a step-by-step introduction, see [Building a class library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio-2017.md).
+Instead of a console application, you can also build a class library with .NET Core and Visual Studio 2017. For a step-by-step introduction, see [Building a class library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio.md).
 
 You can also develop a .NET Core console app on Mac, Linux, and Windows by using Visual Studio Code, a freely downloadable code editor. For a step-by-step tutorial, see [Getting Started with Visual Studio Code](with-visual-studio-code.md).

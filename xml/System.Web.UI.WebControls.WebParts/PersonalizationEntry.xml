@@ -43,7 +43,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Note that the custom state information contained in the `value` parameter must have an associated scope as specified in the `scope` parameter. Entries in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> must explicitly indicate whether a piece of custom data is considered personalizable in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> or <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
+ Note that the custom state information contained in the `value` parameter must have an associated scope as specified in the `scope` parameter. Entries in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> must explicitly indicate whether a piece of custom data is considered personalizable in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> or <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope.  
   
  In this constructor, the value for the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> property defaults to `false`.  
   

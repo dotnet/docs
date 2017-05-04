@@ -48,8 +48,8 @@
 |--------------|-------------------|  
 |OuterTableImplied|`false`|  
 |RepeatColumns|`0`|  
-|RepeatDirection|<xref:System.Web.UI.WebControls.RepeatDirection>|  
-|RepeatLayout|<xref:System.Web.UI.WebControls.RepeatLayout>|  
+|RepeatDirection|<xref:System.Web.UI.WebControls.RepeatDirection.Vertical>|  
+|RepeatLayout|<xref:System.Web.UI.WebControls.RepeatLayout.Table>|  
   
  ]]></format>
         </remarks>
@@ -248,7 +248,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatLayout%2A> property to specify whether the items are displayed in a table. If this property is set to <xref:System.Web.UI.WebControls.RepeatLayout>, the items in the list are displayed in a table. If this property is set to <xref:System.Web.UI.WebControls.RepeatLayout>, the items in the list are displayed without a table structure.  
+ Use the <xref:System.Web.UI.WebControls.RepeatInfo.RepeatLayout%2A> property to specify whether the items are displayed in a table. If this property is set to <xref:System.Web.UI.WebControls.RepeatLayout.Table>, the items in the list are displayed in a table. If this property is set to <xref:System.Web.UI.WebControls.RepeatLayout.Flow>, the items in the list are displayed without a table structure.  
   
  ]]></format>
         </remarks>

@@ -337,7 +337,7 @@
 ## Remarks  
  The *effective value* is the value of the property that is returned by the property system to any caller that is requesting the value. The effective value is the result of the property system having evaluated all the possible inputs that participate in the property system value precedence. This includes coercion and animation. For more information, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
   
- This method will never return <xref:System.Windows.DependencyProperty>. The <xref:System.Windows.DependencyProperty> is a sentinel value for the property system that is used in various capacities internally and occasionally also exposed through coercion callbacks.  
+ This method will never return <xref:System.Windows.DependencyProperty.UnsetValue>. The <xref:System.Windows.DependencyProperty.UnsetValue> is a sentinel value for the property system that is used in various capacities internally and occasionally also exposed through coercion callbacks.  
   
  If you are not sure what the property's type should be, you can query the identifier of the requested dependency property to determine whether there is a more specific <xref:System.Windows.DependencyProperty.PropertyType%2A> that the return value can be converted to.  
   

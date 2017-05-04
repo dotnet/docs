@@ -15,11 +15,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically synthetic speech engine output volume as defined by the members of <xref:System.Speech.Synthesis.TtsEngine.ProsodyVolume> correspond to a percent of the maximum possible output loudness. For instance Loud corresponds to approximately 80% of the maximum volume.  However, any specific synthetic speech engine implementations may choose how to render audio output for a given value of <xref:System.Speech.Synthesis.TtsEngine.ProsodyVolume>.  
+ Typically synthetic speech engine output volume as defined by the members of <xref:System.Speech.Synthesis.TtsEngine.ProsodyVolume> correspond to a percent of the maximum possible output loudness. For instance Loud corresponds to approximately 80% of the maximum volume.  However, any specific synthetic speech engine implementations may choose how to render audio output for a given value of <xref:System.Speech.Synthesis.TtsEngine.ProsodyVolume.Loud>.  
   
- The current base volume setting for a custom synthetic speech engine is obtained as a <xref:System.Speech.Synthesis.TtsEngine.ProsodyVolume> value through the <xref:System.Speech.Synthesis.TtsEngine.ITtsEngineSite.Volume%2A> property on the <xref:System.Speech.Synthesis.TtsEngine.ITtsEngineSite> site supplied to that engine. <xref:System.Speech.Synthesis.TtsEngine.ProsodyVolume>.  
+ The current base volume setting for a custom synthetic speech engine is obtained as a <xref:System.Speech.Synthesis.TtsEngine.ProsodyVolume> value through the <xref:System.Speech.Synthesis.TtsEngine.ITtsEngineSite.Volume%2A> property on the <xref:System.Speech.Synthesis.TtsEngine.ITtsEngineSite.Volume%2A> site supplied to that engine. <xref:System.Speech.Synthesis.TtsEngine.ProsodyVolume>.  
   
- Fine tuning and modulation of output volume is managed on the basis of particular <xref:System.Speech.Synthesis.TtsEngine.TextFragment> objects, using members of <xref:System.Speech.Synthesis.TtsEngine.ProsodyVolume> to set the <xref:System.Speech.Synthesis.TtsEngine.Prosody.Volume%2A> property on instances of <xref:System.Speech.Synthesis.TtsEngine.Prosody> used in creating or modifying the <xref:System.Speech.Synthesis.TtsEngine.FragmentState> object for the instance of <xref:System.Speech.Synthesis.TtsEngine.TextFragment>.  
+ Fine tuning and modulation of output volume is managed on the basis of particular <xref:System.Speech.Synthesis.TtsEngine.TextFragment> objects, using members of <xref:System.Speech.Synthesis.TtsEngine.ProsodyVolume> to set the <xref:System.Speech.Synthesis.TtsEngine.Prosody.Volume%2A> property on instances of <xref:System.Speech.Synthesis.TtsEngine.Prosody.Volume%2A> used in creating or modifying the <xref:System.Speech.Synthesis.TtsEngine.FragmentState> object for the instance of <xref:System.Speech.Synthesis.TtsEngine.TextFragment>.  
   
  ]]></format>
     </remarks>

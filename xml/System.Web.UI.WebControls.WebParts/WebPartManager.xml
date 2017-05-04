@@ -174,7 +174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.%23ctor%2A> constructor initializes several important variables used by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. One assignment that directly impacts all Web Parts pages is the fact that the default page display mode is set to browse mode (<xref:System.Web.UI.WebControls.WebParts.WebPartManager>).  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.%23ctor%2A> constructor initializes several important variables used by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. One assignment that directly impacts all Web Parts pages is the fact that the default page display mode is set to browse mode (<xref:System.Web.UI.WebControls.WebParts.WebPartManager.BrowseDisplayMode>).  
   
  ]]></format>
         </remarks>
@@ -2054,7 +2054,7 @@
 ## Examples  
  The following code example demonstrates the declarative use of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ExportSensitiveDataWarning%2A> property.  
   
- The code for the following Web page uses a standard <xref:System.Web.UI.WebControls.BulletedList> control and places it in a zone. The control will be wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control at run time, which enables it to act as a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control. To make the control exportable, an `ExportMode` attribute is added to the `<asp:bulletedlist>` element, and the attribute value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode>, which means that both sensitive and non-sensitive data can be exported. Note also that in the `<asp:webpartmanager>` element, the `ExportSensitiveDataWarning` attribute is assigned a custom value.  
+ The code for the following Web page uses a standard <xref:System.Web.UI.WebControls.BulletedList> control and places it in a zone. The control will be wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control at run time, which enables it to act as a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control. To make the control exportable, an `ExportMode` attribute is added to the `<asp:bulletedlist>` element, and the attribute value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode.All>, which means that both sensitive and non-sensitive data can be exported. Note also that in the `<asp:webpartmanager>` element, the `ExportSensitiveDataWarning` attribute is assigned a custom value.  
   
  Note that for the code example to work, there is a setting you must add in the Web.config file to enable exporting Web Parts description files. Ensure that you have a Web.config file in the same directory as the Web page for this code example. Within the `<system.web>` section, make sure there is a `<webParts>` element with an `enableExport` attribute set to `true`, as in the following markup.  
   
@@ -2101,7 +2101,7 @@
   
  Properties on `webPart` are not exported by default. To enable export of a property, you must mark it with the `[Personalizable]` attribute in the source code. You can also optionally mark an exportable property as containing sensitive data, by setting the `isSensitive` parameter of the `[Personalizable]` attribute to `true`. By default, `isSensitive` is `false`. Developers can set the parameter to `true` to indicate that the data is sensitive.  
   
- To enable `webPart` to be exported, a developer sets its <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property value to either <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode> (which includes all personalizable and sensitive properties), or to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode>, which exports everything except for sensitive properties.  
+ To enable `webPart` to be exported, a developer sets its <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property value to either <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode.All> (which includes all personalizable and sensitive properties), or to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode.NonSensitiveData>, which exports everything except for sensitive properties.  
   
 > [!IMPORTANT]
 >  Allowing users to export data from controls, and to import data into other controls, entails some security risks. Developers should use the approach discussed above to protect sensitive data, and if they want to avoid the risk of exposing data altogether, they should not enable export on `webPart` at all. For details on Web Parts security issues, see [Securing Web Parts Pages](http://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2).  

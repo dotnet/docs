@@ -45,7 +45,7 @@ namespace MyMultiplexLog
 					FileShare.ReadWrite);
 		// </Snippet11>
 
-		// <snippet13>
+		// <Snippet13>
 		// Start Appending in two streams with interleaving appends.
 
 				SequenceNumber previous1 = SequenceNumber.Invalid;
@@ -90,7 +90,7 @@ namespace MyMultiplexLog
 					previous2,
 					previous2,
 					RecordAppendOptions.ForceFlush);
-		// </snippet13>
+		// </Snippet13>
 				
 		// Read the log records from stream1 and stream2.
 
@@ -122,7 +122,7 @@ namespace MyMultiplexLog
 		// Cleanup...
 				sequence1.Dispose();
 				sequence2.Dispose();
-				// <Snippet12>
+				// </Snippet12>
 
 				LogStore.Delete(myLog);
 

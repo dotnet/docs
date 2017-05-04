@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateSemaphore method [.NET Framework hosting]"
   - "IHostSyncManager::CreateSemaphore method [.NET Framework hosting]"
 ms.assetid: 37679e94-5ff9-4173-8fa5-457febeb89bf
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

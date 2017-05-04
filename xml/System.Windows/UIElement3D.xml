@@ -10587,7 +10587,7 @@
 ## Remarks  
  Setting this property affects the value of <xref:System.Windows.UIElement3D.IsVisible%2A>, which in turn may raise the <xref:System.Windows.UIElement3D.IsVisibleChanged> event. However, <xref:System.Windows.UIElement3D.IsVisible%2A> has other factors that influence it, for instance the visibility settings of parents that contain it.  
   
- Elements where <xref:System.Windows.UIElement3D.Visibility%2A> is not <xref:System.Windows.Visibility> do not participate in input events (or commands) and are not reported in hit testing.  
+ Elements where <xref:System.Windows.UIElement3D.Visibility%2A> is not <xref:System.Windows.Visibility.Visible> do not participate in input events (or commands) and are not reported in hit testing.  
   
  <xref:System.Windows.UIElement3D.Visibility%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   

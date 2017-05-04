@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Input.MouseGestureConverter> class only converts an instance of <xref:System.Windows.Input.MouseGesture> to and from a <xref:System.String>.  
   
- The <xref:System.Windows.Input.MouseGestureConverter> converts to and from a <xref:System.String> using the "+" character as the delimiter between the modifier keys and the mouse action.  For example, the string `Control+RightClick` would be converted into a <xref:System.Windows.Input.MouseGesture> with a <xref:System.Windows.Input.MouseGesture.Modifiers%2A> property equal to <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.MouseGesture.MouseAction%2A> property equal to <xref:System.Windows.Input.MouseAction>.  
+ The <xref:System.Windows.Input.MouseGestureConverter> converts to and from a <xref:System.String> using the "+" character as the delimiter between the modifier keys and the mouse action.  For example, the string `Control+RightClick` would be converted into a <xref:System.Windows.Input.MouseGesture> with a <xref:System.Windows.Input.MouseGesture.Modifiers%2A> property equal to <xref:System.Windows.Input.ModifierKeys.Control> and <xref:System.Windows.Input.MouseGesture.MouseAction%2A> property equal to <xref:System.Windows.Input.MouseAction.RightClick>.  
   
 <a name="xamlTextUsage_MouseGestureConverter"></a>   
 ## XAML Text Usage  
@@ -118,7 +118,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Input.MouseGestureConverter> converts to and from a <xref:System.String> using the "+" key as the delimiter between the modifier keys and the mouse action.  For example, the string `Control+RightClick` would be converted into a <xref:System.Windows.Input.MouseGesture> with a <xref:System.Windows.Input.MouseGesture.Modifiers%2A> property equal to <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.MouseGesture.MouseAction%2A> property equal to <xref:System.Windows.Input.MouseAction>.  
+ The <xref:System.Windows.Input.MouseGestureConverter> converts to and from a <xref:System.String> using the "+" key as the delimiter between the modifier keys and the mouse action.  For example, the string `Control+RightClick` would be converted into a <xref:System.Windows.Input.MouseGesture> with a <xref:System.Windows.Input.MouseGesture.Modifiers%2A> property equal to <xref:System.Windows.Input.ModifierKeys.Control> and <xref:System.Windows.Input.MouseGesture.MouseAction%2A> property equal to <xref:System.Windows.Input.MouseAction.RightClick>.  
   
  ]]></format>
         </remarks>
@@ -157,7 +157,7 @@
 ## Remarks  
  `destinationType` must be <xref:System.String>.  
   
- The <xref:System.Windows.Input.MouseGestureConverter> converts to and from a <xref:System.String> using the "+" key as the delimiter between the modifier keys and the mouse action.  For example, a <xref:System.Windows.Input.MouseGesture> with a <xref:System.Windows.Input.MouseGesture.Modifiers%2A> property equal to <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.MouseGesture.MouseAction%2A> property equal to <xref:System.Windows.Input.MouseAction> converts to the string `Control+RightClick`.  
+ The <xref:System.Windows.Input.MouseGestureConverter> converts to and from a <xref:System.String> using the "+" key as the delimiter between the modifier keys and the mouse action.  For example, a <xref:System.Windows.Input.MouseGesture> with a <xref:System.Windows.Input.MouseGesture.Modifiers%2A> property equal to <xref:System.Windows.Input.ModifierKeys.Control> and <xref:System.Windows.Input.MouseGesture.MouseAction%2A> property equal to <xref:System.Windows.Input.MouseAction.RightClick> converts to the string `Control+RightClick`.  
   
  ]]></format>
         </remarks>

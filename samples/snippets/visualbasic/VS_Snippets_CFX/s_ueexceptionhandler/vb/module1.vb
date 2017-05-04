@@ -5,7 +5,7 @@
 
 
 Imports System
-Imports System.ServiceModel.Dispatcher ' ExceptionHandler
+Imports System.ServiceModel.Dispatcher
 
 Namespace CS
 	Public Class MyExceptionHandler

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IAppDomainSetup interface [.NET Framework hosting]"
 ms.assetid: 1844da85-c031-40bf-bea4-1a3d12a36c8c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

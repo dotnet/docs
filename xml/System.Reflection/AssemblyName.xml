@@ -223,12 +223,12 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
         <exception cref="T:System.ArgumentException">
           <paramref name="assemblyName" /> is a zero length string.</exception>
         <exception cref="T:System.IO.FileLoadException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The referenced assembly could not be found, or could not be loaded.</exception>
       </Docs>

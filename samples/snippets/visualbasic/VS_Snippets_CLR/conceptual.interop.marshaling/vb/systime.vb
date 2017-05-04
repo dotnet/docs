@@ -1,8 +1,6 @@
 '<snippet25>
 Imports System
-Imports System.Runtime.InteropServices     ' For StructLayout,
-                                           '  and DllImport
-
+Imports System.Runtime.InteropServices
 
 ' Declares a class member for each structure element.
 <StructLayout(LayoutKind.Sequential)> _

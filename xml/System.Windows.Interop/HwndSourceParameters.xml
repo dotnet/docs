@@ -440,7 +440,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- WPF automatically tries to restore focus to the window unless <xref:System.Windows.Interop.HwndSourceParameters.RestoreFocusMode%2A> is set to <xref:System.Windows.Input.RestoreFocusMode>.  
+ WPF automatically tries to restore focus to the window unless <xref:System.Windows.Interop.HwndSourceParameters.RestoreFocusMode%2A> is set to <xref:System.Windows.Input.RestoreFocusMode.None>.  
   
  ]]></format>
         </remarks>

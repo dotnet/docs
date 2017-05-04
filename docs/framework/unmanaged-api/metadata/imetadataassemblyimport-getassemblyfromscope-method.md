@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataAssemblyImport::GetAssemblyFromScope method [.NET Framework metadata]"
   - "GetAssemblyFromScope method [.NET Framework metadata]"
 ms.assetid: 0b437f70-561d-48c7-abe0-0cb9ace10c08
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

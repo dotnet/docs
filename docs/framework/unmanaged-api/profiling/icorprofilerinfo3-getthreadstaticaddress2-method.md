@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo3::GetThreadStaticAddress2 method [.NET Framework profiling]"
   - "GetThreadStaticAddress2 method [.NET Framework profiling]"
 ms.assetid: a9608861-ae64-4467-8a73-be05ad34beac
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

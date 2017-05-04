@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> allows you to set the default encoding style for XML Web service methods within an XML Web service to `RPC` method encoding and <xref:System.Web.Services.Description.SoapBindingUse> parameter encoding.  
+ The <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> allows you to set the default encoding style for XML Web service methods within an XML Web service to `RPC` method encoding and <xref:System.Web.Services.Description.SoapBindingUse.Encoded> parameter encoding.  
   
  Web Services Description Language (WSDL) defines two styles for how an XML Web service method, or operation, can be encoded in a SOAP request or a SOAP response: `RPC` and `Document`. The `RPC` style refers to encoding the XML Web service method according to section 7 of the SOAP specification for using SOAP for RPC. This style specifies that all parameters are encapsulated within a single element named after the XML Web service method, and that each element within that element represents a parameter named after its respective parameter name.  
   
@@ -112,7 +112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value of this property is <xref:System.Web.Services.Description.SoapBindingUse>.  
+ The default value of this property is <xref:System.Web.Services.Description.SoapBindingUse.Default>.  
   
  ]]></format>
         </remarks>

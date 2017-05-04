@@ -91,11 +91,11 @@
 ## Remarks  
  The enumeration member returned specifies which general type of security is to be applied.  
   
- The allowed values are <xref:System.ServiceModel.WSFederationHttpSecurityMode> and <xref:System.ServiceModel.WSFederationHttpSecurityMode>.  
+ The allowed values are <xref:System.ServiceModel.WSFederationHttpSecurityMode.Message> and <xref:System.ServiceModel.WSFederationHttpSecurityMode.TransportWithMessageCredential>.  
   
- In the <xref:System.ServiceModel.WSFederationHttpSecurityMode> security mode, the message is sent over HTTP and SOAP message security is used to protect the message. Client authentication is performed based on the issued token obtained from the security token service. Server authentication is based on the server's certificate.  
+ In the <xref:System.ServiceModel.WSFederationHttpSecurityMode.Message> security mode, the message is sent over HTTP and SOAP message security is used to protect the message. Client authentication is performed based on the issued token obtained from the security token service. Server authentication is based on the server's certificate.  
   
- In the <xref:System.ServiceModel.WSFederationHttpSecurityMode> security mode, the message is sent over HTTPS. Client authentication is performed by including the issued token obtained from the security token service in the SOAP message. Server authentication, based on the server's certificate, is performed as part of the HTTPS connection setup.  
+ In the <xref:System.ServiceModel.WSFederationHttpSecurityMode.TransportWithMessageCredential> security mode, the message is sent over HTTPS. Client authentication is performed by including the issued token obtained from the security token service in the SOAP message. Server authentication, based on the server's certificate, is performed as part of the HTTPS connection setup.  
   
    
   

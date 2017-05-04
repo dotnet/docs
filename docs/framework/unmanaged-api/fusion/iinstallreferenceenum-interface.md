@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IInstallReferenceEnum interface [.NET Framework fusion]"
 ms.assetid: 2863b33b-a541-462c-bbe8-702a2832898e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

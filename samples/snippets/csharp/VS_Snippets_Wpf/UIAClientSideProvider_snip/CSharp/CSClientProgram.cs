@@ -3,7 +3,7 @@
 using System;
 using System.Windows.Automation;
 using System.Reflection;
-using System.Runtime.InteropServices;    // for DllImport
+using System.Runtime.InteropServices;
 using System.IO;
 
 

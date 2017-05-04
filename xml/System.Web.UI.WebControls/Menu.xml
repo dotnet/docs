@@ -2523,7 +2523,7 @@
   
 -   If the value of the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property is `4.0` or greater, the <xref:System.Web.UI.WebControls.Menu> control uses HTML `listitem` elements and CSS styles.  
   
- This property is provided for backward compatibility. If the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property indicates that you want controls to generate HTML that is compatible with ASP.NET 4 or later, but you want the <xref:System.Web.UI.WebControls.Menu> control to be an exception that uses earlier behavior, you can set this property to <xref:System.Web.UI.WebControls.MenuRenderingMode>. For example, if you have a Web page that displays text from right to left you might want to set this property to <xref:System.Web.UI.WebControls.MenuRenderingMode> because some browsers do not display the <xref:System.Web.UI.WebControls.MenuRenderingMode> mode markup properly for right-to-left text.  
+ This property is provided for backward compatibility. If the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property indicates that you want controls to generate HTML that is compatible with ASP.NET 4 or later, but you want the <xref:System.Web.UI.WebControls.Menu> control to be an exception that uses earlier behavior, you can set this property to <xref:System.Web.UI.WebControls.MenuRenderingMode.Table>. For example, if you have a Web page that displays text from right to left you might want to set this property to <xref:System.Web.UI.WebControls.MenuRenderingMode.Table> because some browsers do not display the <xref:System.Web.UI.WebControls.MenuRenderingMode.List> mode markup properly for right-to-left text.  
   
  ]]></format>
         </remarks>

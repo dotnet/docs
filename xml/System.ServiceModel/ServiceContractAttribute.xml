@@ -343,7 +343,7 @@
 ## Remarks  
  Use the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property to require bindings that support sessions between endpoints. A session is a way of correlating a set of messages exchanged between two or more endpoints. If your service supports channel sessions, you can then use the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property to specify the relationship between instances your service contract implementation and the channel session. If a binding does not support sessions, an exception is thrown.  
   
- For example, if the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property is set to <xref:System.ServiceModel.SessionMode?displayProperty=fullName> and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property is set to <xref:System.ServiceModel.InstanceContextMode>, clients can use the same connection to make repeated calls to the same service object.  
+ For example, if the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property is set to <xref:System.ServiceModel.SessionMode?displayProperty=fullName> and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property is set to <xref:System.ServiceModel.InstanceContextMode.PerSession>, clients can use the same connection to make repeated calls to the same service object.  
   
  For more information about sessions and service instances, see [Using Sessions](~/docs/framework/wcf/using-sessions.md) and [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   

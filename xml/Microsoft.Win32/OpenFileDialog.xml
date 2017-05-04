@@ -134,7 +134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The file is opened with read-only permission (<xref:System.IO.FileMode>, <xref:System.IO.FileAccess>, and <xref:System.IO.FileShare>), whether or not the Read Only checkbox is checked in the dialog. Because the file is opened without the ability to overwrite or write to the file, an application can safely load a file while executing within partial trust restrictions.  
+ The file is opened with read-only permission (<xref:System.IO.FileMode.Open>, <xref:System.IO.FileAccess.Read>, and <xref:System.IO.FileShare.Read>), whether or not the Read Only checkbox is checked in the dialog. Because the file is opened without the ability to overwrite or write to the file, an application can safely load a file while executing within partial trust restrictions.  
   
  If more than one file is selected, the first selected file is opened.  
   
@@ -169,7 +169,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each file is opened with read-only permission (<xref:System.IO.FileMode>, <xref:System.IO.FileAccess>, and <xref:System.IO.FileShare>), whether or not the Read Only checkbox is checked in the dialog. Because each file is opened without the ability to overwrite or write to the file, an application can safely load one or more files while executing within partial trust restrictions.  
+ Each file is opened with read-only permission (<xref:System.IO.FileMode.Open>, <xref:System.IO.FileAccess.Read>, and <xref:System.IO.FileShare.Read>), whether or not the Read Only checkbox is checked in the dialog. Because each file is opened without the ability to overwrite or write to the file, an application can safely load one or more files while executing within partial trust restrictions.  
   
  ]]></format>
         </remarks>

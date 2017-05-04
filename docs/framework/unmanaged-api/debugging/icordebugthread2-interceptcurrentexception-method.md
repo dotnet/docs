@@ -2,7 +2,7 @@
 title: "ICorDebugThread2::InterceptCurrentException Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "InterceptCurrentException method [.NET Framework debugging]"
   - "ICorDebugThread2::InterceptCurrentException method [.NET Framework debugging]"
 ms.assetid: 536d2357-1b97-49e0-a10c-c860aed74e6e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

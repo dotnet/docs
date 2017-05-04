@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DefineConstant method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::DefineConstant method [.NET Framework debugging]"
 ms.assetid: 9e986986-2223-4d5f-b040-85d716146924
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

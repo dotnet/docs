@@ -104,7 +104,7 @@
    
   
 ## Examples  
- The following example shows <xref:System.Windows.Automation.TreeWalker> being used to construct a tree view of elements in a subtree. The usage for <xref:System.Windows.Automation.TreeWalker.ContentViewWalker> is identical.  
+ The following example shows <xref:System.Windows.Automation.TreeWalker.ControlViewWalker> being used to construct a tree view of elements in a subtree. The usage for <xref:System.Windows.Automation.TreeWalker.ContentViewWalker> is identical.  
   
  [!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
  [!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
@@ -567,7 +567,7 @@
    
   
 ## Examples  
- The following example shows <xref:System.Windows.Automation.TreeWalker> being used to construct a tree view of elements in a subtree. The usage for <xref:System.Windows.Automation.TreeWalker.RawViewWalker> is identical.  
+ The following example shows <xref:System.Windows.Automation.TreeWalker.ControlViewWalker> being used to construct a tree view of elements in a subtree. The usage for <xref:System.Windows.Automation.TreeWalker.RawViewWalker> is identical.  
   
  [!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
  [!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  

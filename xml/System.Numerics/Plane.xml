@@ -320,7 +320,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Two <xref:System.Numerics.Plane> objects are equal if their <xref:System.Numerics.Plane> and <xref:System.Numerics.Plane> fields are equal.  
+ Two <xref:System.Numerics.Plane> objects are equal if their <xref:System.Numerics.Plane.Normal> and <xref:System.Numerics.Plane.D> fields are equal.  
   
  ]]></format>
         </remarks>
@@ -490,7 +490,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Two <xref:System.Numerics.Plane> objects are equal if their <xref:System.Numerics.Plane> and <xref:System.Numerics.Plane> fields are equal.  
+ Two <xref:System.Numerics.Plane> objects are equal if their <xref:System.Numerics.Plane.Normal> and <xref:System.Numerics.Plane.D> fields are equal.  
   
  The <xref:System.Numerics.Plane.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Numerics.Plane> objects.  
   
@@ -611,7 +611,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `plane` must already be normalized so that its <xref:System.Numerics.Plane> vector is of unit length before this method is called.  
+ `plane` must already be normalized so that its <xref:System.Numerics.Plane.Normal> vector is of unit length before this method is called.  
   
  ]]></format>
         </remarks>
@@ -652,7 +652,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `plane` must already be normalized so that its <xref:System.Numerics.Plane> vector is of unit length before this method is called.  
+ `plane` must already be normalized so that its <xref:System.Numerics.Plane.Normal> vector is of unit length before this method is called.  
   
  ]]></format>
         </remarks>

@@ -364,7 +364,7 @@
         <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the [UI Automation provider](GTMT) that implements <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> and acts as the container for the calling object.</summary>
+        <summary>Gets the UI Automation provider that implements <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> and acts as the container for the calling object.</summary>
         <value>The provider for the <see cref="T:System.Windows.Controls.DataGrid" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -389,7 +389,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the [UI Automation provider](GTMT) allows more than one child element to be selected concurrently.</summary>
+        <summary>Gets a value that indicates whether the UI Automation provider allows more than one child element to be selected concurrently.</summary>
         <value>
           <see langword="true" /> if multiple selection is allowed; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -441,7 +441,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether the [UI Automation provider](GTMT) requires at least one child element to be selected.</summary>
+        <summary>Gets a value that specifies whether the UI Automation provider requires at least one child element to be selected.</summary>
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>

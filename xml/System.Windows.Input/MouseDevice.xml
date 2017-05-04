@@ -74,7 +74,7 @@
 ## Remarks  
  When an element captures the mouse, it receives mouse input whether the cursor is within its borders  
   
- If a <xref:System.Windows.Input.CaptureMode> is not specified, the default <xref:System.Windows.Input.CaptureMode> is <xref:System.Windows.Input.CaptureMode>.  
+ If a <xref:System.Windows.Input.CaptureMode> is not specified, the default <xref:System.Windows.Input.CaptureMode> is <xref:System.Windows.Input.CaptureMode.Element>.  
   
  To release mouse capture, call <xref:System.Windows.Input.MouseDevice.Capture%2A> passing `null` as the element to capture.  
   
@@ -551,7 +551,7 @@
 ## Remarks  
  When an element captures the mouse, it receives mouse input whether or not the cursor is within its borders.  
   
- If a <xref:System.Windows.Input.CaptureMode> is not specified, the default <xref:System.Windows.Input.CaptureMode> is <xref:System.Windows.Input.CaptureMode>.  
+ If a <xref:System.Windows.Input.CaptureMode> is not specified, the default <xref:System.Windows.Input.CaptureMode> is <xref:System.Windows.Input.CaptureMode.Element>.  
   
  To release mouse capture, call <xref:System.Windows.Input.MouseDevice.Capture%2A> passing `null` as the element to capture.  
   

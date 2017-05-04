@@ -1,5 +1,5 @@
 //<SnippetApplicationCODEBEHIND>
-using System.Windows;  // Application
+using System.Windows;
 
 namespace SDKSample
 {

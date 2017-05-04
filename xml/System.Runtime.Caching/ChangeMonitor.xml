@@ -78,12 +78,10 @@
   
     -   The internal implementation of the <see cref="M:System.Runtime.Caching.ChangeMonitor.OnChanged(System.Object)" /> method automatically calls the <see cref="Overload:System.Runtime.Caching.ChangeMonitor.Dispose" /> method after it calls a callback that is registered through <see cref="M:System.Runtime.Caching.ChangeMonitor.NotifyOnChanged(System.Runtime.Caching.OnChangedCallback)" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This automatic call to the dispose method during the event firing only occurs if the initialization of the <see cref="T:System.Runtime.Caching.ChangeMonitor" /> instance was previously completed.  
   
-</para>  
-</block>  
+</para></block>  
   
  When a derived change monitor's constructor calls the <see cref="M:System.Runtime.Caching.ChangeMonitor.InitializationComplete" /> method, if the state of the change monitor has already changed (that is, the state that is monitored already changed when the constructor was still active) then the <see cref="M:System.Runtime.Caching.ChangeMonitor.InitializationComplete" /> method will automatically dispose of the change monitor.  
   

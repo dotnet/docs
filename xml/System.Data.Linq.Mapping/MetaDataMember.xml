@@ -572,7 +572,7 @@
 ## Remarks  
  If the class does not have a version member (<xref:System.Data.Linq.Mapping.MetaDataMember.IsVersion%2A> set to `true`), detection is done by comparing original member values with the current database state.  
   
- The <xref:System.Data.Linq.Mapping.MetaDataMember.UpdateCheck%2A> property determines how LINQ to SQL implements conflict detection under optimistic concurrency. Only those members with this property set to <xref:System.Data.Linq.Mapping.UpdateCheck> or <xref:System.Data.Linq.Mapping.UpdateCheck> are considered during conflict detection.  
+ The <xref:System.Data.Linq.Mapping.MetaDataMember.UpdateCheck%2A> property determines how LINQ to SQL implements conflict detection under optimistic concurrency. Only those members with this property set to <xref:System.Data.Linq.Mapping.UpdateCheck.Always> or <xref:System.Data.Linq.Mapping.UpdateCheck.WhenChanged> are considered during conflict detection.  
   
  ]]></format>
         </remarks>

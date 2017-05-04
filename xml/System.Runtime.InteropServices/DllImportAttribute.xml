@@ -197,7 +197,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You set this field to one of the <xref:System.Runtime.InteropServices.CallingConvention> enumeration members. The default value for the <xref:System.Runtime.InteropServices.DllImportAttribute.CallingConvention> field is <xref:System.Runtime.InteropServices.CallingConvention>, which in turn defaults to <xref:System.Runtime.InteropServices.CallingConvention> convention.  
+ You set this field to one of the <xref:System.Runtime.InteropServices.CallingConvention> enumeration members. The default value for the <xref:System.Runtime.InteropServices.DllImportAttribute.CallingConvention> field is <xref:System.Runtime.InteropServices.CallingConvention.Winapi>, which in turn defaults to <xref:System.Runtime.InteropServices.CallingConvention.StdCall> convention.  
   
  For more information, see Calling Convention in the MSDN library.  
   

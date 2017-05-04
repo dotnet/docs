@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorMethodAttr enumeration [.NET Framework metadata]"
 ms.assetid: 4e0c3521-e54d-43c1-9857-cc76b49b8ffc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

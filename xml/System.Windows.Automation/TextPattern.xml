@@ -46,7 +46,7 @@
   
  UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
   
- Values for this attribute are of type <xref:System.Windows.Automation.Text.AnimationStyle>. The default value is <xref:System.Windows.Automation.Text.AnimationStyle>.  
+ Values for this attribute are of type <xref:System.Windows.Automation.Text.AnimationStyle>. The default value is <xref:System.Windows.Automation.Text.AnimationStyle.None>.  
   
    
   
@@ -126,7 +126,7 @@
   
  UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
   
- Values for this attribute are of type <xref:System.Windows.Automation.Text.BulletStyle>. The default value is <xref:System.Windows.Automation.Text.BulletStyle>.  
+ Values for this attribute are of type <xref:System.Windows.Automation.Text.BulletStyle>. The default value is <xref:System.Windows.Automation.Text.BulletStyle.None>.  
   
    
   
@@ -166,7 +166,7 @@
   
  UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
   
- Values for this attribute are of type <xref:System.Windows.Automation.Text.CapStyle>. The default value is <xref:System.Windows.Automation.Text.CapStyle>.  
+ Values for this attribute are of type <xref:System.Windows.Automation.Text.CapStyle>. The default value is <xref:System.Windows.Automation.Text.CapStyle.None>.  
   
    
   
@@ -528,7 +528,7 @@
   
  UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
   
- Values for this attribute are of type <xref:System.Windows.Automation.Text.HorizontalTextAlignment>. The default value is <xref:System.Windows.Automation.Text.HorizontalTextAlignment>  
+ Values for this attribute are of type <xref:System.Windows.Automation.Text.HorizontalTextAlignment>. The default value is <xref:System.Windows.Automation.Text.HorizontalTextAlignment.Left>  
   
    
   
@@ -1109,7 +1109,7 @@
   
  UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
   
- Values for this attribute are of type <xref:System.Windows.Automation.Text.OutlineStyles>. The default value is <xref:System.Windows.Automation.Text.OutlineStyles>.  
+ Values for this attribute are of type <xref:System.Windows.Automation.Text.OutlineStyles>. The default value is <xref:System.Windows.Automation.Text.OutlineStyles.None>.  
   
    
   
@@ -1189,7 +1189,7 @@
   
  UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
   
- Values for this attribute are of type <xref:System.Windows.Automation.Text.TextDecorationLineStyle>. The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle>.  
+ Values for this attribute are of type <xref:System.Windows.Automation.Text.TextDecorationLineStyle>. The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle.None>.  
   
    
   
@@ -1380,7 +1380,7 @@
   
  UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
   
- Values for this attribute are of type <xref:System.Windows.Automation.Text.TextDecorationLineStyle>. The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle>.  
+ Values for this attribute are of type <xref:System.Windows.Automation.Text.TextDecorationLineStyle>. The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle.None>.  
   
    
   
@@ -1518,7 +1518,7 @@
   
  UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
   
- Values for this attribute are of type <xref:System.Windows.Automation.Text.FlowDirections>. The default value is <xref:System.Windows.Automation.Text.FlowDirections>.  
+ Values for this attribute are of type <xref:System.Windows.Automation.Text.FlowDirections>. The default value is <xref:System.Windows.Automation.Text.FlowDirections.Default>.  
   
    
   
@@ -1633,7 +1633,7 @@
   
  UI Automation clients get the value of the attribute by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue%2A>.  
   
- Values for this attribute are of type <xref:System.Windows.Automation.Text.TextDecorationLineStyle>. The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle>.  
+ Values for this attribute are of type <xref:System.Windows.Automation.Text.TextDecorationLineStyle>. The default value is <xref:System.Windows.Automation.Text.TextDecorationLineStyle.None>.  
   
    
   

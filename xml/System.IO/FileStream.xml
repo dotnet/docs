@@ -237,7 +237,7 @@
   
  `FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
   
- For constructors without a <xref:System.IO.FileAccess> parameter, if the `mode` parameter is set to <xref:System.IO.FileMode>, <xref:System.IO.FileAccess> is the default access. Otherwise, the access is set to <xref:System.IO.FileAccess>.  
+ For constructors without a <xref:System.IO.FileAccess> parameter, if the `mode` parameter is set to <xref:System.IO.FileMode.Append>, <xref:System.IO.FileAccess.Write> is the default access. Otherwise, the access is set to <xref:System.IO.FileAccess.ReadWrite>.  
   
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
@@ -1820,7 +1820,7 @@
 ## Remarks  
  When you call the <xref:System.IO.FileStream.FlushAsync%2A> method, the operating system I/O buffer is also flushed.  
   
- If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
+ If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus.Canceled> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
   
  ]]></format>
         </remarks>
@@ -2259,7 +2259,7 @@
   
  Use the <xref:System.IO.FileStream.CanRead%2A> property to determine whether the current instance supports reading.  
   
- If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
+ If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus.Canceled> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
   
    
   
@@ -2689,7 +2689,7 @@
   
  Use the <xref:System.IO.FileStream.CanWrite%2A> property to determine whether the current instance supports reading.  
   
- If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
+ If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus.Canceled> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
   
    
   

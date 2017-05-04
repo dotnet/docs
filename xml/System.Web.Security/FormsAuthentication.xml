@@ -267,18 +267,18 @@
 ## Remarks  
  The <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property returns a value based on the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> value and the capabilities of the browser.  
   
--   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true`.  
+-   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode.UseCookies>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true`.  
   
--   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
+-   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode.UseUri>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
   
--   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true` if the browser supports cookies and cookies are enabled; otherwise, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
+-   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode.AutoDetect>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true` if the browser supports cookies and cookies are enabled; otherwise, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
   
--   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true` if the <xref:System.Web.HttpRequest.Browser%2A> for the current <xref:System.Web.HttpContext.Request%2A> supports both cookies and redirecting with cookies; otherwise, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
+-   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode.UseDeviceProfile>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true` if the <xref:System.Web.HttpRequest.Browser%2A> for the current <xref:System.Web.HttpContext.Request%2A> supports both cookies and redirecting with cookies; otherwise, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
   
    
   
 ## Examples  
- The following code example sets the `cookieless` attribute to <xref:System.Web.HttpCookieMode> in the Web.config file. This configuration will result in the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property returning `false`.  
+ The following code example sets the `cookieless` attribute to <xref:System.Web.HttpCookieMode.UseUri> in the Web.config file. This configuration will result in the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property returning `false`.  
   
 ```  
 <authentication mode="Forms">  

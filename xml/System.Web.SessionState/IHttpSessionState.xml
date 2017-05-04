@@ -184,12 +184,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property returns a <xref:System.Web.HttpCookieMode> enumeration value that is based on the value of the `cookieless` attribute of the <xref:System.Web.Configuration.SystemWebSectionGroup.SessionState%2A> configuration element. If the `cookieless` attribute is set to `true`, then the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property returns <xref:System.Web.HttpCookieMode>; otherwise, the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property returns <xref:System.Web.HttpCookieMode>.  
+ The <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property returns a <xref:System.Web.HttpCookieMode> enumeration value that is based on the value of the `cookieless` attribute of the <xref:System.Web.Configuration.SystemWebSectionGroup.SessionState%2A> configuration element. If the `cookieless` attribute is set to `true`, then the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property returns <xref:System.Web.HttpCookieMode.UseUri>; otherwise, the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property returns <xref:System.Web.HttpCookieMode.UseCookies>.  
   
    
   
 ## Examples  
- The following code example sets the `cookieless` attribute of the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) element to `true` in the Web.config file to change the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property. For this sample application configuration, the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property would return <xref:System.Web.HttpCookieMode>.  
+ The following code example sets the `cookieless` attribute of the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) element to `true` in the Web.config file to change the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property. For this sample application configuration, the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property would return <xref:System.Web.HttpCookieMode.UseUri>.  
   
 ```  
 <configuration>  

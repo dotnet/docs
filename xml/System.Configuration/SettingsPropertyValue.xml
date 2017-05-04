@@ -192,7 +192,7 @@
 > [!NOTE]
 >  The underlying serializers may throw exceptions during the serialization process.  
   
- The immediate caller code requires the <xref:System.Security.Permissions.SecurityPermissionFlag> permission (one of the permissions available as part of <xref:System.Security.Permissions.SecurityPermission>) to call either the getter or setter for this property.  This permission is enforced with a <xref:System.Security.Permissions.SecurityAction> enumeration value.  
+ The immediate caller code requires the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter> permission (one of the permissions available as part of <xref:System.Security.Permissions.SecurityPermission>) to call either the getter or setter for this property.  This permission is enforced with a <xref:System.Security.Permissions.SecurityAction.LinkDemand> enumeration value.  
   
  ]]></format>
         </remarks>

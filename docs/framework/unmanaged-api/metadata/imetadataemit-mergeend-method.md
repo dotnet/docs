@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "MergeEnd method [.NET Framework metadata]"
   - "IMetaDataEmit::MergeEnd method [.NET Framework metadata]"
 ms.assetid: 2d64315a-1af1-4c60-aedf-f8a781914aea
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

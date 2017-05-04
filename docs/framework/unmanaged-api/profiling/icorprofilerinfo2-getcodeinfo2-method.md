@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo2::GetCodeInfo2 method [.NET Framework profiling]"
   - "GetCodeInfo2 method [.NET Framework profiling]"
 ms.assetid: 532da6ee-7f0a-401b-a61e-fc47ec235d2e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

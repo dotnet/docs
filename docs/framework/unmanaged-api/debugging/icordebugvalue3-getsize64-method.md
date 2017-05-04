@@ -2,7 +2,7 @@
 title: "ICorDebugValue3::GetSize64 Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetSize64 method, ICorDebugValue3 interface [.NET Framework debugging]"
   - "ICorDebugValue3::GetSize64 method [.NET Framework debugging]"
 ms.assetid: fee56a29-3154-4192-958d-71da2ced3740
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "SetManifestFile method"
 ms.assetid: 1b33de4c-19cb-4a36-a93f-8675b2a36d58
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

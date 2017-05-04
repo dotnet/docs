@@ -113,11 +113,11 @@
   
 |The value of `patternInterface`|The return value|  
 |-------------------------------------|----------------------|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|The current <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer>.|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|The <xref:System.Windows.Automation.Peers.TreeViewItemAutomationPeer> that represents the <xref:System.Windows.Controls.TreeViewItem> that contains the data item|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|The current <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer>.|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|The current <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer>.|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|An object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse>|The current <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer>.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface.ItemContainer>|The <xref:System.Windows.Automation.Peers.TreeViewItemAutomationPeer> that represents the <xref:System.Windows.Controls.TreeViewItem> that contains the data item|  
+|<xref:System.Windows.Automation.Peers.PatternInterface.SelectionItem>|The current <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer>.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface.ScrollItem>|The current <xref:System.Windows.Automation.Peers.TreeViewDataItemAutomationPeer>.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput>|An object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.|  
   
  ]]></format>
         </remarks>

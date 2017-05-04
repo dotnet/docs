@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit2::SaveDeltaToStream method [.NET Framework metadata]"
   - "SaveDeltaToStream method [.NET Framework metadata]"
 ms.assetid: ecd786e8-f9a4-4190-a6ef-af18e8c6d654
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

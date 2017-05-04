@@ -191,9 +191,9 @@
   
  Navigation must be supported upward to the parent, downward to the first and last child, and laterally to the next and previous siblings, as applicable.  
   
- Each child node has only one parent and must be placed in the chain of siblings reached from the parent by <xref:System.Windows.Automation.Provider.NavigateDirection> and <xref:System.Windows.Automation.Provider.NavigateDirection>.  
+ Each child node has only one parent and must be placed in the chain of siblings reached from the parent by <xref:System.Windows.Automation.Provider.NavigateDirection.FirstChild> and <xref:System.Windows.Automation.Provider.NavigateDirection.LastChild>.  
   
- Relationships among siblings must be identical in both directions: if A is B's <xref:System.Windows.Automation.Provider.NavigateDirection>, then B is A's <xref:System.Windows.Automation.Provider.NavigateDirection>. A <xref:System.Windows.Automation.Provider.NavigateDirection> has no <xref:System.Windows.Automation.Provider.NavigateDirection>, and a <xref:System.Windows.Automation.Provider.NavigateDirection> has no <xref:System.Windows.Automation.Provider.NavigateDirection>.  
+ Relationships among siblings must be identical in both directions: if A is B's <xref:System.Windows.Automation.Provider.NavigateDirection.PreviousSibling>, then B is A's <xref:System.Windows.Automation.Provider.NavigateDirection.NextSibling>. A <xref:System.Windows.Automation.Provider.NavigateDirection.FirstChild> has no <xref:System.Windows.Automation.Provider.NavigateDirection.PreviousSibling>, and a <xref:System.Windows.Automation.Provider.NavigateDirection.LastChild> has no <xref:System.Windows.Automation.Provider.NavigateDirection.NextSibling>.  
   
  Fragment roots do not enable navigation to a parent or siblings; navigation among fragment roots is handled by the default window providers. Elements in fragments must navigate only to other elements within that fragment.  
   
@@ -233,7 +233,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] framework will ensure that the part of the interface that hosts this fragment is already focused before calling this method. Your implementation should update only its internal focus state; for example, by repainting a list item to show that it has the focus. If you prefer that [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] not focus the parent window, set the <xref:System.Windows.Automation.Provider.ProviderOptions> option in <xref:System.Windows.Automation.Provider.ProviderOptions> for the fragment root.  
+ The [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] framework will ensure that the part of the interface that hosts this fragment is already focused before calling this method. Your implementation should update only its internal focus state; for example, by repainting a list item to show that it has the focus. If you prefer that [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] not focus the parent window, set the <xref:System.Windows.Automation.Provider.ProviderOptions.ProviderOwnsSetFocus> option in <xref:System.Windows.Automation.Provider.ProviderOptions> for the fragment root.  
   
  ]]></format>
         </remarks>

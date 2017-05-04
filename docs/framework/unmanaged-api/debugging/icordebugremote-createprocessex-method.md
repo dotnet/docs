@@ -2,7 +2,7 @@
 title: "ICorDebugRemote::CreateProcessEx Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateProcessEx method, ICorDebugRemote interface [.NET Framework debugging]"
   - "ICorDebugRemote::CreateProcessEx method [.NET Framework debugging]"
 ms.assetid: 41af93c7-e448-4251-8d4d-413d38c635f2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

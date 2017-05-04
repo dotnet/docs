@@ -98,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An exception that is thrown because a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor; or it returns `null`if the <xref:System.Exception.InnerException%2A> property does not provide the inner exception value to the constructor.  
+ An exception that is thrown because a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor; or it returns `null` if the <xref:System.Exception.InnerException%2A> property does not provide the inner exception value to the constructor.  
   
  ]]></format>
         </remarks>

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_MODULE_FLAGS enumeration [.NET Framework profiling]"
 ms.assetid: 7bc3a938-0df1-4739-9ff1-89cff454b704
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

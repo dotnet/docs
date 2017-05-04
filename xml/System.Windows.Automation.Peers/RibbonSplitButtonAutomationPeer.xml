@@ -84,19 +84,19 @@
 ## Remarks  
  If one of the following cases occurs, this method returns an object that supports the specified control pattern.  
   
--   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface> and the <xref:System.Windows.Controls.Ribbon.RibbonSplitButton> that is associated with this <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> can be checked.  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.Toggle> and the <xref:System.Windows.Controls.Ribbon.RibbonSplitButton> that is associated with this <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> can be checked.  
   
--   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface> and the <xref:System.Windows.Controls.Ribbon.RibbonSplitButton> that is associated with this <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> cannot be checked.  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.Invoke> and the <xref:System.Windows.Controls.Ribbon.RibbonSplitButton> that is associated with this <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> cannot be checked.  
   
--   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse>.  
   
--   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.Scroll>.  
   
--   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.Transform>.  
   
--   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.ItemContainer>.  
   
--   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput>.  
   
  ]]></format>
         </remarks>

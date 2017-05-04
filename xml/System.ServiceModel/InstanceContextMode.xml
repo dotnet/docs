@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> manages the association between the channel and the user-defined service objects. Use the <xref:System.ServiceModel.InstanceContextMode> enumeration with the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property to specify the lifetime of the <xref:System.ServiceModel.InstanceContext> object. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] can create a new <xref:System.ServiceModel.InstanceContext> object for every call, every session or specify that the <xref:System.ServiceModel.InstanceContext> object is bound to a single service object. For a working example, see the [Instancing](~/docs/framework/wcf/samples/instancing.md).  
   
- The Single value specifies that a single <xref:System.ServiceModel.InstanceContext> object should be used for the lifetime of the service.  
+ The Single value specifies that a single <xref:System.ServiceModel.InstanceContextMode.Single> object should be used for the lifetime of the service.  
   
 > [!NOTE]
 >  If the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value is set to Single the result is that your service can only process one message at a time unless you also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> value to <xref:System.ServiceModel.ConcurrencyMode>.  

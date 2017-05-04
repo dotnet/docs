@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorTokenType enumeration [.NET Framework metadata]"
 ms.assetid: 93c9a369-225f-4eff-9b78-3fbee4902cf1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

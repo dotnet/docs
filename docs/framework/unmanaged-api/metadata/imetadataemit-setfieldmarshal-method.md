@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetFieldMarshal method [.NET Framework metadata]"
   - "IMetaDataEmit::SetFieldMarshal method [.NET Framework metadata]"
 ms.assetid: be232314-7f69-4855-bfab-63361bd22307
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

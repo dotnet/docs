@@ -67,11 +67,11 @@
 ## Remarks  
  The <xref:System.ServiceModel.AuditLogLocation> is an enumeration with the following members:  
   
--   <xref:System.ServiceModel.AuditLogLocation>: The application log in the operating system Event Log.  
+-   <xref:System.ServiceModel.AuditLogLocation.Application>: The application log in the operating system Event Log.  
   
--   <xref:System.ServiceModel.AuditLogLocation>: The default location, which is determined by the operating system.  
+-   <xref:System.ServiceModel.AuditLogLocation.Default>: The default location, which is determined by the operating system.  
   
--   <xref:System.ServiceModel.AuditLogLocation>: The security log in the event log.  
+-   <xref:System.ServiceModel.AuditLogLocation.Security>: The security log in the event log.  
   
  ]]></format>
         </remarks>
@@ -116,13 +116,13 @@
 ## Remarks  
  The <xref:System.ServiceModel.AuditLevel> is an enumeration with the following members:  
   
--   <xref:System.ServiceModel.AuditLevel>: Only failed security-related events are recorded.  
+-   <xref:System.ServiceModel.AuditLevel.Failure>: Only failed security-related events are recorded.  
   
--   <xref:System.ServiceModel.AuditLevel>: No events are recorded.  
+-   <xref:System.ServiceModel.AuditLevel.None>: No events are recorded.  
   
--   <xref:System.ServiceModel.AuditLevel>: Only successful security-related events are recorded.  
+-   <xref:System.ServiceModel.AuditLevel.Success>: Only successful security-related events are recorded.  
   
--   <xref:System.ServiceModel.AuditLevel>: Both failed and successful security-related events are recorded.  
+-   <xref:System.ServiceModel.AuditLevel.SuccessOrFailure>: Both failed and successful security-related events are recorded.  
   
  ]]></format>
         </remarks>

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetILFunctionBodyAllocator method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetILFunctionBodyAllocator method [.NET Framework profiling]"
 ms.assetid: 5da1bf3d-dddf-4892-b266-578ee54d570b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::UnmanagedToManagedTransition method [.NET Framework profiling]"
   - "UnmanagedToManagedTransition method [.NET Framework profiling]"
 ms.assetid: ade2cc01-9b81-4e09-a5f9-b3b9dda27e96
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

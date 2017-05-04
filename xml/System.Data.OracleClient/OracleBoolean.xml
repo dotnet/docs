@@ -93,85 +93,9 @@
         <summary>Computes the bitwise AND of two specified <see cref="T:System.Data.OracleClient.OracleBoolean" /> structures.</summary>
         <returns>The result of the logical AND operation as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value of <paramref name="x" />  
+ <list type="table"><listheader><term> Value of <paramref name="x" /></term><description> Value of <paramref name="y" /></description><description> Result  
   
- </term>  
-<description> Value of <paramref name="y" />  
-  
- </description>  
-<description> Result  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="true" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="unknown" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </description></listheader><item><term><see langword="true" /></term><description><see langword="true" /></description><description><see langword="true" /></description></item><item><term><see langword="true" /></term><description><see langword="false" /></description><description><see langword="false" /></description></item><item><term><see langword="false" /></term><description><see langword="false" /></description><description><see langword="false" /></description></item><item><term><see langword="true" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item><item><term><see langword="false" /></term><description><see langword="unknown" /></description><description><see langword="false" /></description></item><item><term><see langword="unknown" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,44 +119,27 @@
         <summary>Compares this <see cref="T:System.Data.OracleClient.OracleBoolean" /> structure to a specified object and returns an indication of their relative values.</summary>
         <returns>A signed number indicating the relative values of the instance and value.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> A negative integer  
+ </description></listheader><item><term> A negative integer  
   
- </term>  
-<description> This instance is less than <paramref name="value" />.  
+ </term><description> This instance is less than <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance is equal to <paramref name="value" />.  
+ </term><description> This instance is equal to <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> A positive integer  
+ </description></item><item><term> A positive integer  
   
- </term>  
-<description> This instance is greater than <paramref name="value" />.  
+ </term><description> This instance is greater than <paramref name="value" />.  
   
  -or-  
   
  <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -520,85 +427,9 @@
         <summary>Computes the bitwise AND of two specified <see cref="T:System.Data.OracleClient.OracleBoolean" /> structures.</summary>
         <returns>The result of the logical AND operation as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value of <paramref name="x" />  
+ <list type="table"><listheader><term> Value of <paramref name="x" /></term><description> Value of <paramref name="y" /></description><description> Result  
   
- </term>  
-<description> Value of <paramref name="y" />  
-  
- </description>  
-<description> Result  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="true" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="unknown" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </description></listheader><item><term><see langword="true" /></term><description><see langword="true" /></description><description><see langword="true" /></description></item><item><term><see langword="true" /></term><description><see langword="false" /></description><description><see langword="false" /></description></item><item><term><see langword="false" /></term><description><see langword="false" /></description><description><see langword="false" /></description></item><item><term><see langword="true" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item><item><term><see langword="false" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item><item><term><see langword="unknown" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBoolean.And%28System.Data.OracleClient.OracleBoolean%2CSystem.Data.OracleClient.OracleBoolean%29?displayProperty=fullName>]]></format>
         </remarks>
@@ -626,85 +457,9 @@
         <summary>Computes the bitwise OR of its two <see cref="T:System.Data.OracleClient.OracleBoolean" /> operands.</summary>
         <returns>The result of the bitwise OR operation as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value of <paramref name="x" />  
+ <list type="table"><listheader><term> Value of <paramref name="x" /></term><description> Value of <paramref name="y" /></description><description> Result  
   
- </term>  
-<description> Value of <paramref name="y" />  
-  
- </description>  
-<description> Result  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="true" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="unknown" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </description></listheader><item><term><see langword="true" /></term><description><see langword="true" /></description><description><see langword="true" /></description></item><item><term><see langword="true" /></term><description><see langword="false" /></description><description><see langword="true" /></description></item><item><term><see langword="false" /></term><description><see langword="false" /></description><description><see langword="false" /></description></item><item><term><see langword="true" /></term><description><see langword="unknown" /></description><description><see langword="true" /></description></item><item><term><see langword="false" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item><item><term><see langword="unknown" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBoolean.Or%28System.Data.OracleClient.OracleBoolean%2CSystem.Data.OracleClient.OracleBoolean%29?displayProperty=fullName>]]></format>
         </remarks>
@@ -758,85 +513,9 @@
         <summary>Performs a bitwise exclusive-OR operation on the supplied <see cref="T:System.Data.OracleClient.OracleBoolean" /> parameters.</summary>
         <returns>The results of the bitwise XOR operation as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value of <paramref name="x" />  
+ <list type="table"><listheader><term> Value of <paramref name="x" /></term><description> Value of <paramref name="y" /></description><description> Result  
   
- </term>  
-<description> Value of <paramref name="y" />  
-  
- </description>  
-<description> Result  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="true" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="unknown" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </description></listheader><item><term><see langword="true" /></term><description><see langword="true" /></description><description><see langword="false" /></description></item><item><term><see langword="true" /></term><description><see langword="false" /></description><description><see langword="true" /></description></item><item><term><see langword="false" /></term><description><see langword="false" /></description><description><see langword="false" /></description></item><item><term><see langword="true" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item><item><term><see langword="false" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item><item><term><see langword="unknown" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBoolean.Xor%28System.Data.OracleClient.OracleBoolean%2CSystem.Data.OracleClient.OracleBoolean%29?displayProperty=fullName>]]></format>
         </remarks>
@@ -1074,85 +753,9 @@
         <summary>Performs a bitwise OR operation on the two specified <see cref="T:System.Data.OracleClient.OracleBoolean" /> structures.</summary>
         <returns>The result of the bitwise OR operation as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value of <paramref name="x" />  
+ <list type="table"><listheader><term> Value of <paramref name="x" /></term><description> Value of <paramref name="y" /></description><description> Result  
   
- </term>  
-<description> Value of <paramref name="y" />  
-  
- </description>  
-<description> Result  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="true" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="unknown" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </description></listheader><item><term><see langword="true" /></term><description><see langword="true" /></description><description><see langword="true" /></description></item><item><term><see langword="true" /></term><description><see langword="false" /></description><description><see langword="true" /></description></item><item><term><see langword="false" /></term><description><see langword="false" /></description><description><see langword="false" /></description></item><item><term><see langword="true" /></term><description><see langword="unknown" /></description><description><see langword="true" /></description></item><item><term><see langword="false" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item><item><term><see langword="unknown" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1262,85 +865,9 @@
         <summary>Performs a bitwise exclusive-OR operation on the supplied parameters.</summary>
         <returns>The results of the logical XOR operation as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value of <paramref name="x" />  
+ <list type="table"><listheader><term> Value of <paramref name="x" /></term><description> Value of <paramref name="y" /></description><description> Result  
   
- </term>  
-<description> Value of <paramref name="y" />  
-  
- </description>  
-<description> Result  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="true" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="true" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="false" />  
-  
- </description>  
-<description> <see langword="false" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="true" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="false" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="unknown" />  
-  
- </term>  
-<description> <see langword="unknown" />  
-  
- </description>  
-<description> <see langword="unknown" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </description></listheader><item><term><see langword="true" /></term><description><see langword="true" /></description><description><see langword="false" /></description></item><item><term><see langword="true" /></term><description><see langword="false" /></description><description><see langword="true" /></description></item><item><term><see langword="false" /></term><description><see langword="false" /></description><description><see langword="false" /></description></item><item><term><see langword="true" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item><item><term><see langword="false" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item><item><term><see langword="unknown" /></term><description><see langword="unknown" /></description><description><see langword="unknown" /></description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

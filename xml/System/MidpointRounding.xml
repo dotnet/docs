@@ -53,7 +53,7 @@
    
   
 ## Examples  
- The following code example demonstrates the <xref:System.Math.Round%2A> method in conjunction with the <xref:System.MidpointRounding> enumeration.  
+ The following code example demonstrates the <xref:System.Math.Round%2A> method in conjunction with the <xref:System.MidpointRounding.ToEven> enumeration.  
   
  [!code-cpp[math.midpointrounding#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.midpointrounding/cpp/mpr.cpp#1)]
  [!code-csharp[math.midpointrounding#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.midpointrounding/CS/mpr.cs#1)]

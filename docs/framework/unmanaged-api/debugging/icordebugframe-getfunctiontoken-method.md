@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugFrame::GetFunctionToken method [.NET Framework debugging]"
   - "GetFunctionToken method [.NET Framework debugging]"
 ms.assetid: a46925b3-3bf8-404f-9f30-a86ae41032c1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostMemoryManager::NeedsVirtualAddressSpace method [.NET Framework hosting]"
   - "NeedsVirtualAddressSpace method [.NET Framework hosting]"
 ms.assetid: 71f0eab5-0170-46f8-9f88-1df5abdeb34a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

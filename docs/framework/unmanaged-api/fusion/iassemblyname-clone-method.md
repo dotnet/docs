@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Clone method, IAssemblyName interface [.NET Framework fusion]"
   - "IAssemblyName::Clone method [.NET Framework fusion]"
 ms.assetid: 7b345e08-5e16-4e3d-a044-4e19d0892943
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IGCThreadControl::SuspensionEnding method [.NET Framework hosting]"
   - "SuspensionEnding method, IGCThreadControl interface [.NET Framework hosting]"
 ms.assetid: 70814265-c734-4ddc-9502-fe8b28d2b414
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

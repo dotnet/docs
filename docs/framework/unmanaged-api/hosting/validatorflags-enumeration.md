@@ -2,7 +2,7 @@
 title: "ValidatorFlags Enumeration | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ValidatorFlags enumeration [.NET Framework hosting]"
 ms.assetid: a3f5c266-3fcc-4ad1-aaf5-4cdbe26304ad
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -61,7 +61,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. You can create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking when you create an instance using a constructor that enables you to supply a value of <xref:System.Data.Services.Client.TrackingMode> for <xref:System.Data.Services.Client.TrackingMode>. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
+ By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. You can create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking when you create an instance using a constructor that enables you to supply a value of <xref:System.Data.Services.Client.TrackingMode.None> for <xref:System.Data.Services.Client.TrackingMode>. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
   
  Automatic change tracking begins after items are loaded into the collection.  
   
@@ -91,7 +91,7 @@
 ## Remarks  
  The <xref:System.Collections.Generic.IEnumerable%601> collection of objects supplied for `items` is usually a query that returns the items in the collection. However, any <xref:System.Collections.Generic.IEnumerable%601> collection of the correct type can be supplied.  
   
- By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. You can create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking when you create an instance using a constructor that enables you to supply a value of <xref:System.Data.Services.Client.TrackingMode> for <xref:System.Data.Services.Client.TrackingMode>. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
+ By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. You can create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking when you create an instance using a constructor that enables you to supply a value of <xref:System.Data.Services.Client.TrackingMode.None> for <xref:System.Data.Services.Client.TrackingMode>. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
   
  ]]></format>
         </remarks>
@@ -119,7 +119,7 @@
 ## Remarks  
  Use this constructor to create an empty <xref:System.Data.Services.Client.DataServiceCollection%601> to which entity objects can be added without executing a query against the service or when an <xref:System.Collections.Generic.IEnumerable%601> is not available.  
   
- By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. You can create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking when you create an instance using a constructor that enables you to supply a value of <xref:System.Data.Services.Client.TrackingMode> for <xref:System.Data.Services.Client.TrackingMode>. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
+ By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. You can create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking when you create an instance using a constructor that enables you to supply a value of <xref:System.Data.Services.Client.TrackingMode.None> for <xref:System.Data.Services.Client.TrackingMode>. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
   
  ]]></format>
         </remarks>
@@ -147,7 +147,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. Use this class constructor and supply a value of <xref:System.Data.Services.Client.TrackingMode> for `trackingMode` to create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
+ By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. Use this class constructor and supply a value of <xref:System.Data.Services.Client.TrackingMode.None> for `trackingMode` to create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
   
  The <xref:System.Collections.Generic.IEnumerable%601> collection of objects supplied for `items` is usually a query that returns the items in the collection. However, any <xref:System.Collections.Generic.IEnumerable%601> collection of the correct type can be supplied.  
   
@@ -183,7 +183,7 @@
 ## Remarks  
  Use this constructor to create an empty <xref:System.Data.Services.Client.DataServiceCollection%601> to which entity objects can be added without executing a query against the service or when an <xref:System.Collections.Generic.IEnumerable%601> is not available.  
   
- By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. You can create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking when you create an instance using a constructor that enables you to supply a value of <xref:System.Data.Services.Client.TrackingMode> for <xref:System.Data.Services.Client.TrackingMode>. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
+ By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. You can create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking when you create an instance using a constructor that enables you to supply a value of <xref:System.Data.Services.Client.TrackingMode.None> for <xref:System.Data.Services.Client.TrackingMode>. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
   
  ]]></format>
         </remarks>
@@ -219,7 +219,7 @@
 ## Remarks  
  The `entityChanged` and `collectionChanged` functions are invoked by the <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> events, respectively. The `entityChanged` method takes an <xref:System.Data.Services.Client.EntityCollectionChangedParams> value and the `collectionChanged` method takes a <xref:System.Data.Services.Client.EntityChangedParams> value. Both methods must return a Boolean value that indicates whether the event was handled by the function. When the method returns `true`, the default behavior still occurs.  
   
- By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. You can create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking when you create an instance using a constructor that enables you to supply a value of <xref:System.Data.Services.Client.TrackingMode> for <xref:System.Data.Services.Client.TrackingMode>. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
+ By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. You can create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking when you create an instance using a constructor that enables you to supply a value of <xref:System.Data.Services.Client.TrackingMode.None> for <xref:System.Data.Services.Client.TrackingMode>. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
   
  ]]></format>
         </remarks>
@@ -255,7 +255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. Use this class constructor to supply a value of <xref:System.Data.Services.Client.TrackingMode> for `trackingMode` to create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
+ By default, automatic change tracking is enabled for a <xref:System.Data.Services.Client.DataServiceCollection%601>. Use this class constructor to supply a value of <xref:System.Data.Services.Client.TrackingMode.None> for `trackingMode` to create an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> that uses manual change tracking. When you use manual tracking, you must implement <xref:System.ComponentModel.INotifyPropertyChanged> and <xref:System.Collections.Specialized.INotifyCollectionChanged> and handle the raise events to manually report changes to the <xref:System.Data.Services.Client.DataServiceContext>.  
   
  The <xref:System.Data.Services.Client.DataServiceContext> must be supplied when `items` is not a <xref:System.Data.Services.Client.DataServiceQuery%601> or <xref:System.Data.Services.Client.QueryOperationResponse%601> that has a reference to a <xref:System.Data.Services.Client.DataServiceContext> instance.  
   

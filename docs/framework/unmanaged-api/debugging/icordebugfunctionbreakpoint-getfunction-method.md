@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugFunctionBreakpoint::GetFunction method [.NET Framework debugging]"
   - "GetFunction method, ICorDebugFunctionBreakpoint interface [.NET Framework debugging]"
 ms.assetid: 2a62dae5-dd8a-4696-b817-0e1e586c24a0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

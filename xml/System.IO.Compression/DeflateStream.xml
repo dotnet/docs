@@ -79,7 +79,7 @@
 ## Remarks  
  You use this constructor when you want to specify whether compression efficiency or speed is more important for an instance of the <xref:System.IO.Compression.DeflateStream> class.  
   
- This constructor overload uses the compression mode <xref:System.IO.Compression.CompressionMode>. To set the compression mode to another value, use the <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%29> or <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%2CSystem.Boolean%29> overload.  
+ This constructor overload uses the compression mode <xref:System.IO.Compression.CompressionMode.Compress>. To set the compression mode to another value, use the <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%29> or <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%2CSystem.Boolean%29> overload.  
   
    
   
@@ -133,7 +133,7 @@
   
  Using the <xref:System.IO.Compression.DeflateStream> class to compress a file larger than 4 GB raises an exception.  
   
- By default, the compression level is set to <xref:System.IO.Compression.CompressionLevel> when the compression mode is <xref:System.IO.Compression.CompressionMode>.  
+ By default, the compression level is set to <xref:System.IO.Compression.CompressionLevel.Optimal> when the compression mode is <xref:System.IO.Compression.CompressionMode.Compress>.  
   
    
   
@@ -195,7 +195,7 @@
 ## Remarks  
  You use this constructor when you want to specify whether compression efficiency or speed is more important for an instance of the <xref:System.IO.Compression.DeflateStream> class, and whether to leave the stream object open after disposing the <xref:System.IO.Compression.DeflateStream> object.  
   
- This constructor overload uses the compression mode <xref:System.IO.Compression.CompressionMode>. To set the compression mode to another value, use the <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%29> or <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%2CSystem.Boolean%29> overload.  
+ This constructor overload uses the compression mode <xref:System.IO.Compression.CompressionMode.Compress>. To set the compression mode to another value, use the <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%29> or <xref:System.IO.Compression.DeflateStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%2CSystem.Boolean%29> overload.  
   
    
   
@@ -252,7 +252,7 @@
   
  Using the <xref:System.IO.Compression.DeflateStream> class to compress a file larger than 4 GB raises an exception.  
   
- By default, the compression level is set to <xref:System.IO.Compression.CompressionLevel> when the compression mode is <xref:System.IO.Compression.CompressionMode>.  
+ By default, the compression level is set to <xref:System.IO.Compression.CompressionLevel.Optimal> when the compression mode is <xref:System.IO.Compression.CompressionMode.Compress>.  
   
    
   

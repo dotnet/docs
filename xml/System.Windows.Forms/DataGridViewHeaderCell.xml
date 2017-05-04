@@ -487,7 +487,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseDown%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState> if the cell is clicked with the left mouse button and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseDown%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState.Pushed> if the cell is clicked with the left mouse button and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=fullName> property.  
   
  This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
   
@@ -520,7 +520,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseEnter%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState> if the left mouse button is pressed when the pointer enters the cell and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseEnter%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState.Pushed> if the left mouse button is pressed when the pointer enters the cell and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=fullName> property.  
   
  This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseEnter%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseEnter?displayProperty=fullName> event is raised, but it does not actually raise the event.  
   
@@ -553,7 +553,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseLeave%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState> if it was in another state and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseLeave%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState.Normal> if it was in another state and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=fullName> property.  
   
  This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseLeave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
   
@@ -586,7 +586,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseUp%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState> if the left mouse button was released and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseUp%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState.Normal> if the left mouse button was released and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=fullName> property.  
   
  This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseUp?displayProperty=fullName> event is raised, but it does not actually raise the event.  
   
@@ -691,7 +691,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A row header cell is resizable if the row is resizable or the <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode%2A> property is set to <xref:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode>. A column header cell is resizable if the column is resizable or the <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeMode%2A> property is set to <xref:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode>.  
+ A row header cell is resizable if the row is resizable or the <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode%2A> property is set to <xref:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.EnableResizing>. A column header cell is resizable if the column is resizable or the <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeMode%2A> property is set to <xref:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing>.  
   
  ]]></format>
         </remarks>

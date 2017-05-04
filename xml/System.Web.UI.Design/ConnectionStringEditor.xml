@@ -107,9 +107,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Web.UI.Design.ConnectionStringEditor.GetEditStyle%2A> method of the <xref:System.Web.UI.Design.ConnectionStringEditor> class returns the <xref:System.Drawing.Design.UITypeEditorEditStyle> value. If an <xref:System.ComponentModel.Design.Data.IDataEnvironment> service implementation is supported in the specified context, the <xref:System.Web.UI.Design.ConnectionStringEditor.GetEditStyle%2A> method returns the <xref:System.Drawing.Design.UITypeEditorEditStyle> value.  
+ By default, the <xref:System.Web.UI.Design.ConnectionStringEditor.GetEditStyle%2A> method of the <xref:System.Web.UI.Design.ConnectionStringEditor> class returns the <xref:System.Drawing.Design.UITypeEditorEditStyle.Modal> value. If an <xref:System.ComponentModel.Design.Data.IDataEnvironment> service implementation is supported in the specified context, the <xref:System.Web.UI.Design.ConnectionStringEditor.GetEditStyle%2A> method returns the <xref:System.Drawing.Design.UITypeEditorEditStyle.DropDown> value.  
   
- If the <xref:System.Web.UI.Design.ConnectionStringEditor.GetEditStyle%2A> method is not supported in the specified context, the <xref:System.Web.UI.Design.ConnectionStringEditor.GetEditStyle%2A> method returns the <xref:System.Drawing.Design.UITypeEditorEditStyle> value.  
+ If the <xref:System.Web.UI.Design.ConnectionStringEditor.GetEditStyle%2A> method is not supported in the specified context, the <xref:System.Web.UI.Design.ConnectionStringEditor.GetEditStyle%2A> method returns the <xref:System.Drawing.Design.UITypeEditorEditStyle.None> value.  
   
  ]]></format>
         </remarks>

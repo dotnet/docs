@@ -27,7 +27,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Printing.EnumeratedPrintQueueTypes> enumeration to get a subset of available print queues.  
+ The following example shows how to use the <xref:System.Printing.EnumeratedPrintQueueTypes.PushedMachineConnection> enumeration to get a subset of available print queues.  
   
  [!code-cpp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/cpp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CPP/Program.cpp#listsubsetofprintqueues)]
  [!code-csharp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/csharp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CSharp/Program.cs#listsubsetofprintqueues)]

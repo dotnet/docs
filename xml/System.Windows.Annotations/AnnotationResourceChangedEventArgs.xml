@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Annotations.AnnotationResourceChangedEventArgs> data includes the <xref:System.Windows.Annotations.Annotation> that raised the event, the anchor or cargo resource associated with the event, and the action that was taken - <xref:System.Windows.Annotations.AnnotationAction>, <xref:System.Windows.Annotations.AnnotationAction>, or <xref:System.Windows.Annotations.AnnotationAction>.  
+ The <xref:System.Windows.Annotations.AnnotationResourceChangedEventArgs> data includes the <xref:System.Windows.Annotations.Annotation> that raised the event, the anchor or cargo resource associated with the event, and the action that was taken - <xref:System.Windows.Annotations.AnnotationAction.Added>, <xref:System.Windows.Annotations.AnnotationAction.Removed>, or <xref:System.Windows.Annotations.AnnotationAction.Modified>.  
   
  ]]></format>
     </remarks>
@@ -67,7 +67,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Annotations.AnnotationResourceChangedEventHandler> is called when an <xref:System.Windows.Annotations.Annotation.Anchors%2A> or <xref:System.Windows.Annotations.Annotation.Cargos%2A> resource is <xref:System.Windows.Annotations.AnnotationAction>, <xref:System.Windows.Annotations.AnnotationAction>, or <xref:System.Windows.Annotations.AnnotationAction>.  
+ The <xref:System.Windows.Annotations.AnnotationResourceChangedEventHandler> is called when an <xref:System.Windows.Annotations.Annotation.Anchors%2A> or <xref:System.Windows.Annotations.Annotation.Cargos%2A> resource is <xref:System.Windows.Annotations.AnnotationAction.Added>, <xref:System.Windows.Annotations.AnnotationAction.Removed>, or <xref:System.Windows.Annotations.AnnotationAction.Modified>.  
   
  ]]></format>
         </remarks>

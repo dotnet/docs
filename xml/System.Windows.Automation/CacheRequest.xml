@@ -197,16 +197,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Automation.AutomationElementMode> is the default value, and specifies that returned elements contain a full reference to the underlying [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)]. <xref:System.Windows.Automation.AutomationElementMode> specifies that the returned elements have no reference to the underlying [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], and contain only cached information.  
+ <xref:System.Windows.Automation.AutomationElementMode.Full> is the default value, and specifies that returned elements contain a full reference to the underlying [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)]. <xref:System.Windows.Automation.AutomationElementMode.None> specifies that the returned elements have no reference to the underlying [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], and contain only cached information.  
   
  Certain operations on elements, including <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>, <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A>, and <xref:System.Windows.Automation.AutomationElement.SetFocus%2A>, require a full reference; attempting to perform these on an element that has none results in an <xref:System.InvalidOperationException>.  
   
- Using <xref:System.Windows.Automation.AutomationElementMode> can be more efficient when only properties are needed, as it avoids the overhead involved in setting up full references.  
+ Using <xref:System.Windows.Automation.AutomationElementMode.None> can be more efficient when only properties are needed, as it avoids the overhead involved in setting up full references.  
   
    
   
 ## Examples  
- In the following example, <xref:System.Windows.Automation.CacheRequest.AutomationElementMode%2A> is set to <xref:System.Windows.Automation.AutomationElementMode>, with the result that only cached properties and patterns are available for the retrieved object.  
+ In the following example, <xref:System.Windows.Automation.CacheRequest.AutomationElementMode%2A> is set to <xref:System.Windows.Automation.AutomationElementMode.None>, with the result that only cached properties and patterns are available for the retrieved object.  
   
  [!code-csharp[UIAClient_snip#108](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#108)]
  [!code-vb[UIAClient_snip#108](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#108)]  
@@ -380,7 +380,7 @@
    
   
 ## Examples  
- In the following example, a list box element is obtained from the parent window element while a <xref:System.Windows.Automation.CacheRequest> is active and <xref:System.Windows.Automation.CacheRequest.TreeScope%2A> is <xref:System.Windows.Automation.TreeScope>. The specified properties of the child elements (that is, the list items) are stored in the cache and can be retrieved from the <xref:System.Windows.Automation.AutomationElement.CachedChildren%2A> of the list box.  
+ In the following example, a list box element is obtained from the parent window element while a <xref:System.Windows.Automation.CacheRequest> is active and <xref:System.Windows.Automation.CacheRequest.TreeScope%2A> is <xref:System.Windows.Automation.TreeScope.Children>. The specified properties of the child elements (that is, the list items) are stored in the cache and can be retrieved from the <xref:System.Windows.Automation.AutomationElement.CachedChildren%2A> of the list box.  
   
  [!code-csharp[UIAClient_snip#119](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#119)]
  [!code-vb[UIAClient_snip#119](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#119)]  

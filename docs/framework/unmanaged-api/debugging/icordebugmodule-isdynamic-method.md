@@ -2,7 +2,7 @@
 title: "ICorDebugModule::IsDynamic Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsDynamic method [.NET Framework debugging]"
   - "ICorDebugModule::IsDynamic method [.NET Framework debugging]"
 ms.assetid: 5eefe716-5025-4a4c-970c-c823cdc7bb87
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

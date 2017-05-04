@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDeclSecurity enumeration [.NET Framework metadata]"
 ms.assetid: 864f1267-d267-4696-8df7-1f83f8444d6f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

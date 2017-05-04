@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COUNINITIEE enumeration [.NET Framework metadata]"
 ms.assetid: c42baa79-f469-4330-95a2-baf7f021c2fc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

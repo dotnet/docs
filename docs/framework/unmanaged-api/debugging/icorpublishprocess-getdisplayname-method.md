@@ -2,7 +2,7 @@
 title: "ICorPublishProcess::GetDisplayName Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorPublishProcess::GetDisplayName method [.NET Framework debugging]"
   - "GetDisplayName method, ICorPublishProcess interface [.NET Framework debugging]"
 ms.assetid: 7c0af9e9-a73f-41aa-a685-b21c439e059d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedDocument::GetSourceRange method [.NET Framework debugging]"
   - "GetSourceRange method [.NET Framework debugging]"
 ms.assetid: 20fefee7-1040-41ba-93dc-bd42f68b90c2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

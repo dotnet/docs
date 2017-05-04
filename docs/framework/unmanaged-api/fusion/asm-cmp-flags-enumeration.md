@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ASM_CMP_FLAGS enumeration [.NET Framework fusion]"
 ms.assetid: 4d1e6700-d4be-4fbd-8796-bfb4c07abbc8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

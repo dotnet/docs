@@ -361,7 +361,7 @@
    
   
 ## Examples  
- The following example forces a garbage collection for generation 2 objects with the <xref:System.GCCollectionMode> setting.  
+ The following example forces a garbage collection for generation 2 objects with the <xref:System.GCCollectionMode.Optimized> setting.  
   
  [!code-csharp[System.GC.GCCollectionMode#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.GC.GCCollectionMode/cs/Program.cs#1)]
  [!code-vb[System.GC.GCCollectionMode#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.GC.GCCollectionMode/vb/program.vb#1)]  
@@ -424,8 +424,8 @@
   
 |`mode`|`blocking` is `true`|`blocking` is `false`|  
 |-|-|-|  
-|<xref:System.GCCollectionMode> or <xref:System.GCCollectionMode>|A blocking collection is performed as soon as possible. If a background collection is in progress and `generation` is 0 or 1, the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method immediately triggers a blocking collection and returns when the collection is finished. If a background collection is in progress and `generation` is 2, the method waits until the background collection is finished, triggers a blocking generation 2 collection, and then returns.|A collection is performed as soon as possible. The <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed. If a background collection is already in progress, the method returns immediately.|  
-|<xref:System.GCCollectionMode>|A blocking collection may be performed, depending on the state of the garbage collector and the `generation` parameter. The garbage collector tries to provide optimal performance.|A collection may be performed, depending on the state of the garbage collector. The <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed. The garbage collector tries to provide optimal performance. If a background collection is already in progress, the method returns immediately.|  
+|<xref:System.GCCollectionMode.Forced> or <xref:System.GCCollectionMode.Default>|A blocking collection is performed as soon as possible. If a background collection is in progress and `generation` is 0 or 1, the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method immediately triggers a blocking collection and returns when the collection is finished. If a background collection is in progress and `generation` is 2, the method waits until the background collection is finished, triggers a blocking generation 2 collection, and then returns.|A collection is performed as soon as possible. The <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed. If a background collection is already in progress, the method returns immediately.|  
+|<xref:System.GCCollectionMode.Optimized>|A blocking collection may be performed, depending on the state of the garbage collector and the `generation` parameter. The garbage collector tries to provide optimal performance.|A collection may be performed, depending on the state of the garbage collector. The <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed. The garbage collector tries to provide optimal performance. If a background collection is already in progress, the method returns immediately.|  
   
  If a call to the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method performs a full blocking garbage collection, you can also compact the large object heap by setting the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=fullName> property to <xref:System.Runtime.GCLargeObjectHeapCompactionMode?displayProperty=fullName> before calling the <xref:System.GC.Collect%2A> method.  
   
@@ -1369,7 +1369,7 @@
 ## Remarks  
  Use the <xref:System.GCNotificationStatus> enumeration returned by this method to determine the status of the current garbage collection notification that was registered by using the <xref:System.GC.RegisterForFullGCNotification%2A> method. You can also use the <xref:System.GC.WaitForFullGCComplete%2A> method to determine whether the full garbage collection has completed.  
   
- When the enumeration returns <xref:System.GCNotificationStatus>, you can do tasks such as preventing additional objects from being allocated and inducing a collection yourself with the <xref:System.GC.Collect%2A> method. Note that the notification does not guarantee that a full garbage collection will occur, only that conditions have reached the threshold that are favorable for a full garbage collection to occur.  
+ When the enumeration returns <xref:System.GCNotificationStatus.Succeeded>, you can do tasks such as preventing additional objects from being allocated and inducing a collection yourself with the <xref:System.GC.Collect%2A> method. Note that the notification does not guarantee that a full garbage collection will occur, only that conditions have reached the threshold that are favorable for a full garbage collection to occur.  
   
  This method waits indefinitely for a garbage collection notification to be obtained. If you want to specify a time-out period for the method to return if the notification cannot be obtained, use the <xref:System.GC.WaitForFullGCApproach%28System.Int32%29?displayProperty=fullName> method overload. If you call this method without specifying a time-out, you can call the <xref:System.GC.CancelFullGCNotification%2A> method if you are waiting longer than preferred.  
   
@@ -1378,7 +1378,7 @@
    
   
 ## Examples  
- The following example shows how to use this method to determine whether a full, blocking garbage collection is approaching. Whenever the status of the notification is <xref:System.GCNotificationStatus>, the user method `OnFullGCApproachNotify` is called to perform actions in response to the approaching collection. This code example is part of a larger example provided for [Garbage Collection Notifications](~/docs/standard/garbage-collection/notifications.md) topic.  
+ The following example shows how to use this method to determine whether a full, blocking garbage collection is approaching. Whenever the status of the notification is <xref:System.GCNotificationStatus.Succeeded>, the user method `OnFullGCApproachNotify` is called to perform actions in response to the approaching collection. This code example is part of a larger example provided for [Garbage Collection Notifications](~/docs/standard/garbage-collection/notifications.md) topic.  
   
  [!code-cpp[GCNotification#3](~/samples/snippets/cpp/VS_Snippets_CLR/GCNotification/cpp/program.cpp#3)]
  [!code-csharp[GCNotification#3](~/samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#3)]
@@ -1425,9 +1425,9 @@
 ## Remarks  
  Use the <xref:System.GCNotificationStatus> enumeration returned by this method to determine the status of the current garbage collection notification that was registered by using the <xref:System.GC.RegisterForFullGCNotification%2A> method. You can also use the <xref:System.GC.WaitForFullGCComplete%2A> method to determine whether the full garbage collection has completed.  
   
- Note that this method returns immediately whenever a garbage collection notification status is obtained, regardless of the value specified by `millisecondsTimeout`. If a garbage collection notification status is not obtained before `millisecondsTimeout` times out, this method returns <xref:System.GCNotificationStatus>.  
+ Note that this method returns immediately whenever a garbage collection notification status is obtained, regardless of the value specified by `millisecondsTimeout`. If a garbage collection notification status is not obtained before `millisecondsTimeout` times out, this method returns <xref:System.GCNotificationStatus.NotApplicable>.  
   
- When the enumeration returns <xref:System.GCNotificationStatus>, you can do tasks such as preventing additional objects from being allocated and inducing a collection yourself with the <xref:System.GC.Collect%2A> method. Note that the notification does not guarantee that a full garbage collection will occur, only that conditions have reached the threshold that are favorable for a full garbage collection to occur.  
+ When the enumeration returns <xref:System.GCNotificationStatus.Succeeded>, you can do tasks such as preventing additional objects from being allocated and inducing a collection yourself with the <xref:System.GC.Collect%2A> method. Note that the notification does not guarantee that a full garbage collection will occur, only that conditions have reached the threshold that are favorable for a full garbage collection to occur.  
   
  You can call the <xref:System.GC.CancelFullGCNotification%2A> method when you cannot wait for the time-out period to elapse.  
   
@@ -1473,7 +1473,7 @@
 ## Remarks  
  Use the <xref:System.GCNotificationStatus> enumeration returned by this method to determine the status of the current garbage collection notification that was registered by using the <xref:System.GC.RegisterForFullGCNotification%2A> method. You can also use the <xref:System.GC.WaitForFullGCApproach%2A> method to determine whether a full garbage collection is imminent.  
   
- When the enumeration returns <xref:System.GCNotificationStatus>, you can do tasks such as resuming work and obtaining a collection count with the <xref:System.GC.CollectionCount%2A> property.  
+ When the enumeration returns <xref:System.GCNotificationStatus.Succeeded>, you can do tasks such as resuming work and obtaining a collection count with the <xref:System.GC.CollectionCount%2A> property.  
   
  This method waits indefinitely for a garbage collection notification to be obtained. If you want to specify a time-out period for the method to return if the notification cannot be obtained, use the <xref:System.GC.WaitForFullGCApproach%28System.Int32%29?displayProperty=fullName> method overload. If you call this method without specifying a time-out, you can call the <xref:System.GC.CancelFullGCNotification%2A> method if you are waiting longer than preferred.  
   
@@ -1482,7 +1482,7 @@
    
   
 ## Examples  
- The following example shows how to use this method to determine whether a full garbage collection has completed. Whenever the status of the notification is <xref:System.GCNotificationStatus>, the user method `OnFullGCCompletedNotify` is called to perform actions in response to the completed collection. This code example is part of a larger example provided for [Garbage Collection Notifications](~/docs/standard/garbage-collection/notifications.md) topic.  
+ The following example shows how to use this method to determine whether a full garbage collection has completed. Whenever the status of the notification is <xref:System.GCNotificationStatus.Succeeded>, the user method `OnFullGCCompletedNotify` is called to perform actions in response to the completed collection. This code example is part of a larger example provided for [Garbage Collection Notifications](~/docs/standard/garbage-collection/notifications.md) topic.  
   
  [!code-cpp[GCNotification#4](~/samples/snippets/cpp/VS_Snippets_CLR/GCNotification/cpp/program.cpp#4)]
  [!code-csharp[GCNotification#4](~/samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#4)]
@@ -1529,9 +1529,9 @@
 ## Remarks  
  Use the <xref:System.GCNotificationStatus> enumeration returned by this method to determine the status of the current garbage collection notification that was registered by using the <xref:System.GC.RegisterForFullGCNotification%2A> method. You can also use the <xref:System.GC.WaitForFullGCApproach%2A> method to determine whether a full garbage collection is imminent.  
   
- Note that this method returns immediately whenever a garbage collection notification status is obtained, regardless of the value specified by `millisecondsTimeout`. If a garbage collection notification status is not obtained before `millisecondsTimeout` times out, this method returns <xref:System.GCNotificationStatus>.  
+ Note that this method returns immediately whenever a garbage collection notification status is obtained, regardless of the value specified by `millisecondsTimeout`. If a garbage collection notification status is not obtained before `millisecondsTimeout` times out, this method returns <xref:System.GCNotificationStatus.NotApplicable>.  
   
- When the enumeration returns <xref:System.GCNotificationStatus>, you can do tasks such as resuming work and obtaining a collection count with the <xref:System.GC.CollectionCount%2A> property.  
+ When the enumeration returns <xref:System.GCNotificationStatus.Succeeded>, you can do tasks such as resuming work and obtaining a collection count with the <xref:System.GC.CollectionCount%2A> property.  
   
  You can call the <xref:System.GC.CancelFullGCNotification%2A> method when you cannot wait for the time-out period to elapse.  
   

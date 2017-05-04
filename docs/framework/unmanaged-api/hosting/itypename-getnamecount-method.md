@@ -2,7 +2,7 @@
 title: "ITypeName::GetNameCount Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetNameCount method [.NET Framework hosting]"
   - "ITypeName::GetNameCount method [.NET Framework hosting]"
 ms.assetid: 0beb909a-5095-40e5-909d-9ecc280300b8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -107,12 +107,10 @@
         <returns>
           <see langword="true" /> if the converter supports converting a <see cref="T:System.Web.UI.WebControls.FontUnit" /> object to the destination type; otherwise, <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This method will return true only if the <paramref name="destinationType" /> is <see cref="T:System.String" />. The only type this converter can convert <see cref="T:System.Web.UI.WebControls.FontUnit" /> into is <see cref="T:System.String" />.  
   
-</para>  
-</block></returns>
+</para></block></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

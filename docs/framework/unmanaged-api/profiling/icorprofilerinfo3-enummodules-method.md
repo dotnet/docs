@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo3::EnumModules method [.NET Framework profiling]"
   - "EnumModules method [.NET Framework profiling]"
 ms.assetid: 1bf00b42-69da-4019-91b3-bf88026e83fb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

@@ -286,7 +286,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method checks for the presence of data in the <xref:System.Windows.Forms.TextDataFormat> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method checks for the presence of data in the <xref:System.Windows.Forms.TextDataFormat> format.  
+ This method checks for the presence of data in the <xref:System.Windows.Forms.TextDataFormat.UnicodeText> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method checks for the presence of data in the <xref:System.Windows.Forms.TextDataFormat.Text> format.  
   
  Use this method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
   
@@ -600,7 +600,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns text data in the <xref:System.Windows.Forms.TextDataFormat> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method returns text data in the <xref:System.Windows.Forms.TextDataFormat> format.  
+ This method returns text data in the <xref:System.Windows.Forms.TextDataFormat.UnicodeText> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method returns text data in the <xref:System.Windows.Forms.TextDataFormat.Text> format.  
   
  Use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with this method.  
   
@@ -1090,7 +1090,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method adds text data in the <xref:System.Windows.Forms.TextDataFormat> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method adds text data in the <xref:System.Windows.Forms.TextDataFormat> format.  
+ This method adds text data in the <xref:System.Windows.Forms.TextDataFormat.UnicodeText> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method adds text data in the <xref:System.Windows.Forms.TextDataFormat.Text> format.  
   
  To retrieve text data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
   

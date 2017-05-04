@@ -24,11 +24,11 @@
 ## Remarks  
  This interface is implemented by the <xref:System.Data.DataView> class. Implementation of a method should exhibit the same behavior as the implementation of that method in the <xref:System.Data.DataView> class.  
   
- When you call the <xref:System.ComponentModel.IBindingList.ApplySort%2A> or <xref:System.ComponentModel.IBindingList.RemoveSort%2A> methods, you should raise a <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType> enumeration.  
+ When you call the <xref:System.ComponentModel.IBindingList.ApplySort%2A> or <xref:System.ComponentModel.IBindingList.RemoveSort%2A> methods, you should raise a <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType.Reset> enumeration.  
   
- When you call the <xref:System.ComponentModel.IBindingList.AddNew%2A> method, you should raise a <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType> enumeration carrying the appropriate index. The added row is in a state where pressing the ESC on a <xref:System.Windows.Forms.DataGridView> control can remove the new row. Raising the <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType> enumeration a second time on this row indicates that the item is now a row not in the "new" state.  
+ When you call the <xref:System.ComponentModel.IBindingList.AddNew%2A> method, you should raise a <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType.ItemAdded> enumeration carrying the appropriate index. The added row is in a state where pressing the ESC on a <xref:System.Windows.Forms.DataGridView> control can remove the new row. Raising the <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType.ItemAdded> enumeration a second time on this row indicates that the item is now a row not in the "new" state.  
   
- When you remove an item or call the <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> method on a new row (if that row implements <xref:System.ComponentModel.IEditableObject>), you should raise a <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType> enumeration carrying the appropriate index.  
+ When you remove an item or call the <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> method on a new row (if that row implements <xref:System.ComponentModel.IEditableObject>), you should raise a <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType.ItemDeleted> enumeration carrying the appropriate index.  
   
    
   
@@ -108,7 +108,7 @@
 > [!NOTE]
 >  If the objects in this list implement the <xref:System.ComponentModel.IEditableObject> interface, calling the <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> method should discard an object, not add it to the list, when the object was created using the <xref:System.ComponentModel.IBindingList.AddNew%2A> method. The object should only be added to the list when the <xref:System.ComponentModel.IEditableObject.EndEdit%2A?displayProperty=fullName> method is called. Therefore, you must sychronize the object and the list carefully.  
   
- When this method is called, you should raise a <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType> enumeration carrying the appropriate index. The added row is in a state where hitting Esc on a <xref:System.Windows.Forms.DataGridView> control can remove the new row. Raising the <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType> enumeration a second time on this row indicates that the item is now a normal row (not in new state).  
+ When this method is called, you should raise a <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType.ItemAdded> enumeration carrying the appropriate index. The added row is in a state where hitting Esc on a <xref:System.Windows.Forms.DataGridView> control can remove the new row. Raising the <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType.ItemAdded> enumeration a second time on this row indicates that the item is now a normal row (not in new state).  
   
  ]]></format>
         </remarks>
@@ -418,7 +418,7 @@
 ## Remarks  
  This property is supported if <xref:System.ComponentModel.IBindingList.SupportsSorting%2A> is `true`; otherwise, this property throws a <xref:System.NotSupportedException>.  
   
- When you call this method, you should raise a <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType> enumeration.  
+ When you call this method, you should raise a <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType.Reset> enumeration.  
   
  ]]></format>
         </remarks>

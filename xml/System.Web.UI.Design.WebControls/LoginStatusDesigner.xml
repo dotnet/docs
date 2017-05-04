@@ -31,7 +31,7 @@
   
  The example derives the `MyLoginStatus` control from the <xref:System.Web.UI.WebControls.LoginStatus>. The `MyLoginStatus` is a copy of the <xref:System.Web.UI.WebControls.LoginStatus> control. The example also derives the `MyLoginStatusDesigner` class from <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner>, and then applies a <xref:System.ComponentModel.DesignerAttribute> attribute for the `MyLoginStatusDesigner` on the `MyLoginStatus` control.  
   
- The `MyLoginStatusDesigner` overrides the <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner.GetDesignTimeHtml%2A> method to draw a blue, dashed border around the control to make it more visible, if the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the `MyLoginStatus` is the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> value.  
+ The `MyLoginStatusDesigner` overrides the <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner.GetDesignTimeHtml%2A> method to draw a blue, dashed border around the control to make it more visible, if the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the `MyLoginStatus` is the <xref:System.Web.UI.WebControls.BorderStyle.NotSet> or <xref:System.Web.UI.WebControls.BorderStyle.None> value.  
   
  [!code-csharp[System.Web.UI.Design.WebControls.LoginStatusDesigner#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.LoginStatusDesigner/CS/LoginStatusDesigner.cs#1)]
  [!code-vb[System.Web.UI.Design.WebControls.LoginStatusDesigner#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.LoginStatusDesigner/VB/LoginStatusDesigner.vb#1)]  
@@ -112,7 +112,7 @@
    
   
 ## Examples  
- The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner.GetDesignTimeHtml%2A> method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner> class to change the appearance of a control that is derived from the <xref:System.Web.UI.WebControls.LoginStatus> class at design time. The example draws a blue, dashed border around the control to make its extent more visible, if the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the control is the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> value.  
+ The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner.GetDesignTimeHtml%2A> method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.LoginStatusDesigner> class to change the appearance of a control that is derived from the <xref:System.Web.UI.WebControls.LoginStatus> class at design time. The example draws a blue, dashed border around the control to make its extent more visible, if the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the control is the <xref:System.Web.UI.WebControls.BorderStyle.NotSet> or <xref:System.Web.UI.WebControls.BorderStyle.None> value.  
   
  [!code-csharp[System.Web.UI.Design.WebControls.LoginStatusDesigner#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.LoginStatusDesigner/CS/LoginStatusDesigner.cs#2)]
  [!code-vb[System.Web.UI.Design.WebControls.LoginStatusDesigner#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.LoginStatusDesigner/VB/LoginStatusDesigner.vb#2)]  

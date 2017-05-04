@@ -2,7 +2,7 @@
 title: "ICorPublishProcess::EnumAppDomains Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumAppDomains method [.NET Framework debugging]"
   - "ICorPublishProcess::EnumAppDomains method [.NET Framework debugging]"
 ms.assetid: 7da621fc-e7d0-4c00-9439-5c93619d7414
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

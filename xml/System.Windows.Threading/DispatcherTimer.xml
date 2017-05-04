@@ -61,7 +61,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Threading.DispatcherTimer> runs on the <xref:System.Windows.Threading.Dispatcher> of the current thread at <xref:System.Windows.Threading.DispatcherPriority> priority.  To specify a different <xref:System.Windows.Threading.Dispatcher>, use the following constructor: <xref:System.Windows.Threading.DispatcherTimer.%23ctor%28System.Windows.Threading.DispatcherPriority%2CSystem.Windows.Threading.Dispatcher%29?displayProperty=fullName>.  
+ <xref:System.Windows.Threading.DispatcherTimer> runs on the <xref:System.Windows.Threading.Dispatcher> of the current thread at <xref:System.Windows.Threading.DispatcherPriority.Background> priority.  To specify a different <xref:System.Windows.Threading.Dispatcher>, use the following constructor: <xref:System.Windows.Threading.DispatcherTimer.%23ctor%28System.Windows.Threading.DispatcherPriority%2CSystem.Windows.Threading.Dispatcher%29?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>

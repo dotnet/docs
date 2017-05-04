@@ -2551,7 +2551,7 @@ class AnotherEventSource : EventSource {
   
 1.  Specify the first parameter as a <xref:System.Guid> named `relatedActivityId`.  
   
-2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode> or <xref:System.Diagnostics.Tracing.EventOpcode> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=fullName> property.  
+2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode.Send> or <xref:System.Diagnostics.Tracing.EventOpcode.Receive> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=fullName> property.  
   
 3.  Call <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> passing in the event ID, followed by the related ID GUID, followed by all the parameters the event method is passed, in the same order.  
   
@@ -2622,7 +2622,7 @@ class AnotherEventSource : EventSource {
   
 1.  Specify the first parameter as a <xref:System.Guid> named `relatedActivityId`.  
   
-2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode> or <xref:System.Diagnostics.Tracing.EventOpcode> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=fullName> property.  
+2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode.Send> or <xref:System.Diagnostics.Tracing.EventOpcode.Receive> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=fullName> property.  
   
 3.  Call <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> passing in the event ID, followed by the related ID GUID, followed by all the parameters the event method is passed, in the same order.  
   

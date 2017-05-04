@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetDisplayName method, IAssemblyName interface [.NET Framework fusion]"
   - "IAssemblyName::GetDisplayName method [.NET Framework fusion]"
 ms.assetid: 9a26547a-9a34-4284-a463-78a7d4b496cf
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

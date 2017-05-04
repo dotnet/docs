@@ -87,7 +87,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.Data.IDataEnvironment.BuildQuery%2A> method launches the design environment's UI for editing or creating SQL query strings. If the `initialQueryText` parameter is <xref:System.String>, it indicates the user wants to create a new query. If the `initialQueryText` parameter contains a string, it indicates the user wants to edit the existing query.  
+ The <xref:System.ComponentModel.Design.Data.IDataEnvironment.BuildQuery%2A> method launches the design environment's UI for editing or creating SQL query strings. If the `initialQueryText` parameter is <xref:System.String.Empty>, it indicates the user wants to create a new query. If the `initialQueryText` parameter contains a string, it indicates the user wants to edit the existing query.  
   
  The `mode` parameter indicates the type of query the user wants to build; either select, update, insert, or delete. Your user interface can use the `mode` parameter to configure itself for the type of query desired, limit the user to using SQL statements valid only for the type of query desired, and/or validate the query against the desired type.  
   

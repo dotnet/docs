@@ -1359,7 +1359,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can create an event handler for this event to specify the size an item will be made before it is drawn in the <xref:System.Windows.Forms.ListBox.DrawItem> event. The event is only raised when the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property is set to <xref:System.Windows.Forms.DrawMode>.  
+ You can create an event handler for this event to specify the size an item will be made before it is drawn in the <xref:System.Windows.Forms.ListBox.DrawItem> event. The event is only raised when the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property is set to <xref:System.Windows.Forms.DrawMode.OwnerDrawVariable>.  
   
  The maximum valid height of a <xref:System.Windows.Forms.ListBox> item is 255 pixels. Setting the <xref:System.Windows.Forms.MeasureItemEventArgs.ItemHeight%2A> property of the <xref:System.Windows.Forms.MeasureItemEventArgs> to a value greater than 255 when handling this event may yield unexpected results.  
   
@@ -1368,7 +1368,7 @@
    
   
 ## Examples  
- The following code example demonstrates an owner-drawn <xref:System.Windows.Forms.ListBox> by setting the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to <xref:System.Windows.Forms.DrawMode> and handling the <xref:System.Windows.Forms.ListBox.DrawItem> and <xref:System.Windows.Forms.ListBox.MeasureItem> events. It also demonstrates setting the <xref:System.Windows.Forms.ListBox.BorderStyle%2A> and <xref:System.Windows.Forms.ListBox.ScrollAlwaysVisible%2A> properties and using the <xref:System.Windows.Forms.ListBox.ObjectCollection.AddRange%2A> method.  
+ The following code example demonstrates an owner-drawn <xref:System.Windows.Forms.ListBox> by setting the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to <xref:System.Windows.Forms.DrawMode.OwnerDrawVariable> and handling the <xref:System.Windows.Forms.ListBox.DrawItem> and <xref:System.Windows.Forms.ListBox.MeasureItem> events. It also demonstrates setting the <xref:System.Windows.Forms.ListBox.BorderStyle%2A> and <xref:System.Windows.Forms.ListBox.ScrollAlwaysVisible%2A> properties and using the <xref:System.Windows.Forms.ListBox.ObjectCollection.AddRange%2A> method.  
   
  To run this example, paste it in an empty form that imports the <xref:System.Drawing> namespace and the <xref:System.Windows.Forms> namespace. Call `InitializeOwnerDrawnListBox` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
   
@@ -2401,7 +2401,7 @@
   
  Typically, the parameters that correspond to the bounds not included in the specified parameter are passed in with their current values. For example, the `height`, `width`, or the `x` or `y` properties of the <xref:System.Windows.Forms.Control.Location%2A> property can be passed in with a reference to the current instance of the control. However, all values passed in are honored and applied to the control.  
   
- The `specified` parameter represents the elements of the controls <xref:System.Windows.Forms.Control.Bounds%2A> changed by your application. For example, if you change the <xref:System.Windows.Forms.Control.Size%2A> of the control, the `specified` parameter value is <xref:System.Windows.Forms.BoundsSpecified>. However, if the <xref:System.Windows.Forms.Control.Size%2A> is adjusted in response to the <xref:System.Windows.Forms.Control.Dock%2A> property being set, the `specified` parameter value is <xref:System.Windows.Forms.BoundsSpecified>.  
+ The `specified` parameter represents the elements of the controls <xref:System.Windows.Forms.Control.Bounds%2A> changed by your application. For example, if you change the <xref:System.Windows.Forms.Control.Size%2A> of the control, the `specified` parameter value is <xref:System.Windows.Forms.BoundsSpecified.Size>. However, if the <xref:System.Windows.Forms.Control.Size%2A> is adjusted in response to the <xref:System.Windows.Forms.Control.Dock%2A> property being set, the `specified` parameter value is <xref:System.Windows.Forms.BoundsSpecified.None>.  
   
  ]]></format>
         </remarks>

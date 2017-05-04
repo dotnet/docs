@@ -129,7 +129,7 @@
 > [!NOTE]
 >  Because the <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> method can be called from many different places there are no guarantees made about which thread the method is called on. Do not depend on <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> method being called on the operation thread.  
   
- All <xref:System.ServiceModel.Dispatcher.IErrorHandler> implementations are called. By default (when the return value is `false`), if there is an exception, the dispatcher aborts any session and aborts the <xref:System.ServiceModel.InstanceContext> if the <xref:System.ServiceModel.InstanceContextMode> is anything other than <xref:System.ServiceModel.InstanceContextMode>.  The exception is then considered unhandled and any state is considered corrupt.  
+ All <xref:System.ServiceModel.Dispatcher.IErrorHandler> implementations are called. By default (when the return value is `false`), if there is an exception, the dispatcher aborts any session and aborts the <xref:System.ServiceModel.InstanceContext> if the <xref:System.ServiceModel.InstanceContextMode> is anything other than <xref:System.ServiceModel.InstanceContextMode.Single>.  The exception is then considered unhandled and any state is considered corrupt.  
   
  Return `true` from <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> to prevent this default behavior. If any error handler returns `true` it instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] that it is safe to continue using state associated with the failed request.  
   

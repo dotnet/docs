@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A new <xref:System.ServiceProcess.Design.ServiceInstallerDialog> form has its <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Result%2A> set to <xref:System.ServiceProcess.Design.ServiceInstallerDialogResult>, the <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Username%2A> set to an empty string (""), and the <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Password%2A> set to an empty string.  
+ A new <xref:System.ServiceProcess.Design.ServiceInstallerDialog> form has its <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Result%2A> set to <xref:System.ServiceProcess.Design.ServiceInstallerDialogResult.OK>, the <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Username%2A> set to an empty string (""), and the <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Password%2A> set to an empty string.  
   
  ]]></format>
         </remarks>
@@ -135,7 +135,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use <xref:System.Windows.Forms.Form.ShowDialog%2A> to prompt the user for the service installation account, then check the <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Result%2A> value. If the value is <xref:System.ServiceProcess.Design.ServiceInstallerDialogResult>, verify that the input <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Username%2A> and <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Password%2A> are valid.  
+ Use <xref:System.Windows.Forms.Form.ShowDialog%2A> to prompt the user for the service installation account, then check the <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Result%2A> value. If the value is <xref:System.ServiceProcess.Design.ServiceInstallerDialogResult.OK>, verify that the input <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Username%2A> and <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Password%2A> are valid.  
   
  ]]></format>
         </remarks>

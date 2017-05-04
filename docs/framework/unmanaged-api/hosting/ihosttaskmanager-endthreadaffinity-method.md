@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EndThreadAffinity method [.NET Framework hosting]"
   - "IHostTaskManager::EndThreadAffinity method [.NET Framework hosting]"
 ms.assetid: 7738a904-0cd7-4fde-a3eb-2323a5533157
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

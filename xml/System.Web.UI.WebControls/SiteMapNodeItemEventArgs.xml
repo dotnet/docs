@@ -43,7 +43,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.SiteMapNodeItemEventArgs> using a <xref:System.Web.UI.WebControls.SiteMapNodeItem> that represents a <xref:System.Web.UI.WebControls.SiteMapNodeItemType>, and how to pass the event arguments to the <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.SiteMapPath> class.  
+ The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.SiteMapNodeItemEventArgs> using a <xref:System.Web.UI.WebControls.SiteMapNodeItem> that represents a <xref:System.Web.UI.WebControls.SiteMapNodeItemType.PathSeparator>, and how to pass the event arguments to the <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.SiteMapPath> class.  
   
  [!code-csharp[Urtue.Samples.Alexkr.DropDownNavigationPath_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.DropDownNavigationPath_1/CS/dropdownnavigationpath.cs#3)]
  [!code-vb[Urtue.Samples.Alexkr.DropDownNavigationPath_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.DropDownNavigationPath_1/VB/dropdownnavigationpath.vb#3)]  

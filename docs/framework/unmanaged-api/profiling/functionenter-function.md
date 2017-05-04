@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "FunctionEnter function [.NET Framework profiling]"
 ms.assetid: bf4ffa50-4506-4dd4-aa13-a0457b47ca74
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

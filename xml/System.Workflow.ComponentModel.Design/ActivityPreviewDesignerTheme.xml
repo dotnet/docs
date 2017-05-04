@@ -120,7 +120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.OnAmbientPropertyChanged%2A> checks the value passed to `ambientProperty` and applies the appropriate ambient theme settings based on that value. If the value is <xref:System.Workflow.ComponentModel.Design.AmbientProperty>, it applies the ambient styles provided by the designer. If the value is <xref:System.Workflow.ComponentModel.Design.AmbientProperty>, it applies the ambient styles provided by the operating system.  
+ <xref:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.OnAmbientPropertyChanged%2A> checks the value passed to `ambientProperty` and applies the appropriate ambient theme settings based on that value. If the value is <xref:System.Workflow.ComponentModel.Design.AmbientProperty.DesignerSize>, it applies the ambient styles provided by the designer. If the value is <xref:System.Workflow.ComponentModel.Design.AmbientProperty.OperatingSystemSetting>, it applies the ambient styles provided by the operating system.  
   
  ]]></format>
         </remarks>

@@ -28,7 +28,7 @@
   
  Most arrays can be initialized immediately following declaration. The <xref:System.CodeDom.CodeArrayCreateExpression.Initializers%2A> property can be set to the expression to use to initialize the array.  
   
- A <xref:System.CodeDom.CodeArrayCreateExpression> only directly supports creating single-dimension arrays. If a language allows arrays of arrays, it is possible to create them by nesting a <xref:System.CodeDom.CodeArrayCreateExpression> within a <xref:System.CodeDom.CodeArrayCreateExpression>. Not all languages support arrays of arrays. You can check whether an <xref:System.CodeDom.Compiler.ICodeGenerator> for a language declares support for nested arrays by calling <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag.  
+ A <xref:System.CodeDom.CodeArrayCreateExpression> only directly supports creating single-dimension arrays. If a language allows arrays of arrays, it is possible to create them by nesting a <xref:System.CodeDom.CodeArrayCreateExpression> within a <xref:System.CodeDom.CodeArrayCreateExpression>. Not all languages support arrays of arrays. You can check whether an <xref:System.CodeDom.Compiler.ICodeGenerator> for a language declares support for nested arrays by calling <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> with the <xref:System.CodeDom.Compiler.GeneratorSupport.ArraysOfArrays> flag.  
   
    
   

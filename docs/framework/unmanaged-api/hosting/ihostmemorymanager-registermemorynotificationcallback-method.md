@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostMemoryManager::RegisterMemoryNotificationCallback method [.NET Framework hosting]"
   - "RegisterMemoryNotificationCallback method [.NET Framework hosting]"
 ms.assetid: 65d301f6-4dbb-4b5f-8eff-82540e2b6465
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

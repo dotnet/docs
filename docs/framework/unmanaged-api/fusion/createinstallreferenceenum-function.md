@@ -24,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CreateInstallReference function [.NET Framework fusion]"
 ms.assetid: 80dbbbf8-54fc-4894-b74a-0179d3201083
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

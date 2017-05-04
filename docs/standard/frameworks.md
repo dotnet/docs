@@ -35,7 +35,7 @@ You can refer to a .NET platform or runtime. Both are equally valid.
 
 **Referring to a framework**
 
-You can refer to a framework or targeting of a framework using long- or short-forms of the TFM. Both are equally valid.
+You can refer to a framework or targeting of a framework using long- or short-forms of the Target Framework Moniker (TFM). Both are equally valid.
 
 * `.NETFramework,Version=4.6.2`
 * `net462`
@@ -49,7 +49,7 @@ You can refer to a family of frameworks using long- or short-forms of the framew
 
 ## Latest framework versions
 
-The following table defines the set of frameworks that you can use, how they're referenced, and which version of the [.NET Standard Library](library.md) they implement. These framework versions are the latest stable versions. Pre-release versions aren't shown.
+The following table defines the set of frameworks that you can use, how they're referenced, and which version of the [.NET Standard](library.md) they implement. These framework versions are the latest stable versions. Pre-release versions aren't shown.
 
 | Framework             | Latest Version | Target Framework Moniker (TFM) | Compact Target Framework Moniker (TFM) | .NET Standard Version | Metapackage |
 | :-------------------: | :------------: | :----------------------------: | :------------------------------------: | :-------------------: | :---------: |
@@ -59,7 +59,7 @@ The following table defines the set of frameworks that you can use, how they're 
 
 ## Supported frameworks
 
-A framework is typically referenced by a short target framework moniker or *TFM*. In .NET Standard, this is also generalized to *TxM* to allow a single reference to multiple frameworks. The NuGet clients support the following frameworks. Equivalents are shown within brackets (`[]`).
+A framework is typically referenced by a short TFM. In .NET Standard, this is also generalized to *TxM* to allow a single reference to multiple frameworks. The NuGet clients support the following frameworks. Equivalents are shown within brackets (`[]`).
 
 | Name                       | Abbreviation | TFMs/TxMs                                    |
 | -------------------------- | ------------ | -------------------------------------------- |

@@ -242,6 +242,30 @@
         <exception cref="T:System.InvalidOperationException">The command text is not a valid stored procedure name.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDeleteCommand">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the automatically generated <see cref="T:System.Data.SqlClient.SqlCommand" /> object required to perform deletions on the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application can use the <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.SqlClient.SqlCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.SqlClient.SqlCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.SqlClient.SqlDataAdapter>.  
+  
+ After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A> will still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A>.  
+  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDeleteCommand">
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlCommand GetDeleteCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlCommand GetDeleteCommand() cil managed" />
@@ -319,6 +343,30 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetInsertCommand">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the automatically generated <see cref="T:System.Data.SqlClient.SqlCommand" /> object that is required to perform insertions on the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application can use the <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.SqlClient.SqlCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.SqlClient.SqlCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.SqlClient.SqlDataAdapter>.  
+  
+ After the Transact-SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A> will still be using information from the previous statement, which might not be correct. The Transact-SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A>.  
+  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetInsertCommand">
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlCommand GetInsertCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlCommand GetInsertCommand() cil managed" />
@@ -488,6 +536,30 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetUpdateCommand">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the automatically generated <see cref="T:System.Data.SqlClient.SqlCommand" /> object required to perform updates on the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application can use the <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.SqlClient.SqlCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.SqlClient.SqlCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.SqlClient.SqlDataAdapter>.  
+  
+ After the Transact-SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A> will still be using information from the previous statement, which might not be correct. The Transact-SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A>.  
+  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetUpdateCommand">
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlCommand GetUpdateCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlCommand GetUpdateCommand() cil managed" />
@@ -773,77 +845,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetDeleteCommand">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the automatically generated <see cref="T:System.Data.SqlClient.SqlCommand" /> object required to perform deletions on the database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An application can use the <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.SqlClient.SqlCommand> object to be executed.  
-  
- You can also use <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.SqlClient.SqlCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.SqlClient.SqlDataAdapter>.  
-  
- After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A> will still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A>.  
-  
- For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetInsertCommand">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the automatically generated <see cref="T:System.Data.SqlClient.SqlCommand" /> object that is required to perform insertions on the database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An application can use the <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.SqlClient.SqlCommand> object to be executed.  
-  
- You can also use <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.SqlClient.SqlCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.SqlClient.SqlDataAdapter>.  
-  
- After the Transact-SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A> will still be using information from the previous statement, which might not be correct. The Transact-SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A>.  
-  
- For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetUpdateCommand">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the automatically generated <see cref="T:System.Data.SqlClient.SqlCommand" /> object required to perform updates on the database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An application can use the <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.SqlClient.SqlCommand> object to be executed.  
-  
- You can also use <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.SqlClient.SqlCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.SqlClient.SqlDataAdapter>.  
-  
- After the Transact-SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A> will still be using information from the previous statement, which might not be correct. The Transact-SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A>.  
-  
- For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

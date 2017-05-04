@@ -288,6 +288,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddHistoryPoint">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a history point and adds it to the browser's history stack.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These method overloads enable you to define server state, and optionally the title of the history entry in the browser. When you create a history point, serialized and encrypted data is appended to the URL of the Web page and an entry is included in the browser's history stack. You can use the state data to re-create the page when any subsequent server navigation event is raised. For more information, see [Managing Browser History Using Server Controls](http://msdn.microsoft.com/library/bad617c8-f84c-4d94-8852-60af400810e9).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddHistoryPoint">
       <MemberSignature Language="C#" Value="public void AddHistoryPoint (System.Collections.Specialized.NameValueCollection state, string title);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddHistoryPoint(class System.Collections.Specialized.NameValueCollection state, string title) cil managed" />
@@ -3513,22 +3530,5 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
         <exception cref="T:System.NotImplementedException">A value is assigned to the <see cref="P:System.Web.UI.ScriptManager.Visible" /> property.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddHistoryPoint">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a history point and adds it to the browser's history stack.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These method overloads enable you to define server state, and optionally the title of the history entry in the browser. When you create a history point, serialized and encrypted data is appended to the URL of the Web page and an entry is included in the browser's history stack. You can use the state data to re-create the page when any subsequent server navigation event is raised. For more information, see [Managing Browser History Using Server Controls](http://msdn.microsoft.com/library/bad617c8-f84c-4d94-8852-60af400810e9).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

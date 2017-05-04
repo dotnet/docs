@@ -1927,6 +1927,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the changes the <see cref="T:System.Data.Services.Client.DataServiceContext" /> is tracking to storage.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Data.Services.Client.DataServiceResponse> that contains status, headers, and errors that result from the call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SaveChanges">
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceResponse SaveChanges ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceResponse SaveChanges() cil managed" />
@@ -2414,23 +2432,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SaveChanges">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Saves the changes the <see cref="T:System.Data.Services.Client.DataServiceContext" /> is tracking to storage.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Data.Services.Client.DataServiceResponse> that contains status, headers, and errors that result from the call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

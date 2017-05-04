@@ -644,6 +644,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteToServer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies all rows from a data source to a destination table specified by the <see cref="P:System.Data.SqlClient.SqlBulkCopy.DestinationTableName" /> property of the <see cref="T:System.Data.SqlClient.SqlBulkCopy" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If multiple active result sets (MARS) is disabled, <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> makes the connection busy. If MARS is enabled, you can interleave calls to <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> with other commands in the same connection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteToServer">
       <MemberSignature Language="C#" Value="public void WriteToServer (System.Data.Common.DbDataReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteToServer(class System.Data.Common.DbDataReader reader) cil managed" />
@@ -861,6 +878,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteToServerAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>An asynchronous version of <see cref="Overload:System.Data.SqlClient.SqlBulkCopy.WriteToServer" />, which copies all rows from a data source to a destination table specified by the <see cref="P:System.Data.SqlClient.SqlBulkCopy.DestinationTableName" /> property of the <see cref="T:System.Data.SqlClient.SqlBulkCopy" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If multiple active result sets (MARS) is disabled, <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> makes the connection busy. If MARS is enabled, you can interleave calls to <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> with other commands in the same connection.  
+  
+ The number of rows that are rolled back when one fails depends on several things:  
+  
+-   If <xref:System.Data.SqlClient.SqlBulkCopyOptions.UseInternalTransaction> is specified.  
+  
+-   If you have your own transaction.  
+  
+-   The value of <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A>.  
+  
+ When there is an error while sending data to the server, the current batch (as specified by <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A>) will be rolled back. If <xref:System.Data.SqlClient.SqlBulkCopyOptions.UseInternalTransaction> is not specified and you have your own transaction, the entire transaction will be rolled back (which includes all previous batches as well).  
+  
+ Use <xref:System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied> to know how many rows were copied to the server.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteToServerAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WriteToServerAsync (System.Data.Common.DbDataReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WriteToServerAsync(class System.Data.Common.DbDataReader reader) cil managed" />
@@ -1297,51 +1343,5 @@
         <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] that occurred while opening the connection.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteToServerAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>An asynchronous version of <see cref="Overload:System.Data.SqlClient.SqlBulkCopy.WriteToServer" />, which copies all rows from a data source to a destination table specified by the <see cref="P:System.Data.SqlClient.SqlBulkCopy.DestinationTableName" /> property of the <see cref="T:System.Data.SqlClient.SqlBulkCopy" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If multiple active result sets (MARS) is disabled, <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> makes the connection busy. If MARS is enabled, you can interleave calls to <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> with other commands in the same connection.  
-  
- The number of rows that are rolled back when one fails depends on several things:  
-  
--   If <xref:System.Data.SqlClient.SqlBulkCopyOptions.UseInternalTransaction> is specified.  
-  
--   If you have your own transaction.  
-  
--   The value of <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A>.  
-  
- When there is an error while sending data to the server, the current batch (as specified by <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A>) will be rolled back. If <xref:System.Data.SqlClient.SqlBulkCopyOptions.UseInternalTransaction> is not specified and you have your own transaction, the entire transaction will be rolled back (which includes all previous batches as well).  
-  
- Use <xref:System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied> to know how many rows were copied to the server.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteToServer">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies all rows from a data source to a destination table specified by the <see cref="P:System.Data.SqlClient.SqlBulkCopy.DestinationTableName" /> property of the <see cref="T:System.Data.SqlClient.SqlBulkCopy" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If multiple active result sets (MARS) is disabled, <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> makes the connection busy. If MARS is enabled, you can interleave calls to <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> with other commands in the same connection.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

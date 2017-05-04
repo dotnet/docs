@@ -253,6 +253,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ForceDeclaration">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Forces the associated configuration section to appear in the configuration file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A configuration section is not written in a configuration file when it is inherited from a parent file. If you want the parent section to show in the child configuration file, you must set the <xref:System.Configuration.SectionInformation.ForceDeclaration%2A> to `true`. This makes a configuration file more portable from one computer to another. This also lets you make sure that the section exists even if you do not have control over parent configuration files.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ForceDeclaration">
       <MemberSignature Language="C#" Value="public void ForceDeclaration ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration() cil managed" />
@@ -319,7 +336,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">
-          <paramref name="force" /> is <see langword="true" /> and the associated section cannot be exported to the child configuration file, or it is undeclared.</exception>
+          <paramref name="require" /> is <see langword="true" /> and the associated section cannot be exported to the child configuration file, or it is undeclared.</exception>
       </Docs>
     </Member>
     <Member MemberName="ForceSave">
@@ -998,7 +1015,7 @@ Dim apSection As AppSettingsSection = _
         <summary>Sets the object to an XML representation of the associated configuration section within the configuration file.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="rawXml" /> is <see langword="null" />.</exception>
+          <paramref name="xml" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1069,22 +1086,5 @@ Dim apSection As AppSettingsSection = _
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ForceDeclaration">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Forces the associated configuration section to appear in the configuration file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A configuration section is not written in a configuration file when it is inherited from a parent file. If you want the parent section to show in the child configuration file, you must set the <xref:System.Configuration.SectionInformation.ForceDeclaration%2A> to `true`. This makes a configuration file more portable from one computer to another. This also lets you make sure that the section exists even if you do not have control over parent configuration files.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

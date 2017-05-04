@@ -1,155 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="netstandard-2.0">
-  <Namespace Name="Microsoft.SqlServer.Server">
-    <Type Name="Microsoft.SqlServer.Server.SqlDataRecord" Id="T:Microsoft.SqlServer.Server.SqlDataRecord">
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.#ctor(Microsoft.SqlServer.Server.SqlMetaData[])" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetBoolean(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetByte(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetChar(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetDataTypeName(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetDateTime(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetDateTimeOffset(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetDecimal(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetDouble(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetFieldType(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetFloat(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetGuid(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetInt16(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetInt32(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetInt64(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetName(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetOrdinal(System.String)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlBinary(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlBoolean(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlByte(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlBytes(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlChars(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlDateTime(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlDecimal(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlDouble(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlFieldType(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlGuid(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlInt16(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlInt32(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlInt64(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlMetaData(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlMoney(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlSingle(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlString(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlValue(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlValues(System.Object[])" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlXml(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetString(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetTimeSpan(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetValue(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.GetValues(System.Object[])" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.IsDBNull(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetBoolean(System.Int32,System.Boolean)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetByte(System.Int32,System.Byte)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetChar(System.Int32,System.Char)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetDateTime(System.Int32,System.DateTime)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetDateTimeOffset(System.Int32,System.DateTimeOffset)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetDBNull(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetDecimal(System.Int32,System.Decimal)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetDouble(System.Int32,System.Double)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetFloat(System.Int32,System.Single)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetGuid(System.Int32,System.Guid)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetInt16(System.Int32,System.Int16)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetInt32(System.Int32,System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetInt64(System.Int32,System.Int64)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlBinary(System.Int32,System.Data.SqlTypes.SqlBinary)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlBoolean(System.Int32,System.Data.SqlTypes.SqlBoolean)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlByte(System.Int32,System.Data.SqlTypes.SqlByte)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlBytes(System.Int32,System.Data.SqlTypes.SqlBytes)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlChars(System.Int32,System.Data.SqlTypes.SqlChars)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlDateTime(System.Int32,System.Data.SqlTypes.SqlDateTime)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlDecimal(System.Int32,System.Data.SqlTypes.SqlDecimal)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlDouble(System.Int32,System.Data.SqlTypes.SqlDouble)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlGuid(System.Int32,System.Data.SqlTypes.SqlGuid)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlInt16(System.Int32,System.Data.SqlTypes.SqlInt16)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlInt32(System.Int32,System.Data.SqlTypes.SqlInt32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlInt64(System.Int32,System.Data.SqlTypes.SqlInt64)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlMoney(System.Int32,System.Data.SqlTypes.SqlMoney)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlSingle(System.Int32,System.Data.SqlTypes.SqlSingle)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlString(System.Int32,System.Data.SqlTypes.SqlString)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlXml(System.Int32,System.Data.SqlTypes.SqlXml)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetString(System.Int32,System.String)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetTimeSpan(System.Int32,System.TimeSpan)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetValue(System.Int32,System.Object)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlDataRecord.SetValues(System.Object[])" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlDataRecord.Item(System.Int32)" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlDataRecord.Item(System.String)" />
-    </Type>
-    <Type Name="Microsoft.SqlServer.Server.SqlMetaData" Id="T:Microsoft.SqlServer.Server.SqlMetaData">
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Boolean,System.Boolean,System.Data.SqlClient.SortOrder,System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Byte,System.Byte)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Byte,System.Byte,System.Boolean,System.Boolean,System.Data.SqlClient.SortOrder,System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Int64)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Int64,System.Boolean,System.Boolean,System.Data.SqlClient.SortOrder,System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Int64,System.Byte,System.Byte,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Type)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Int64,System.Byte,System.Byte,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Type,System.Boolean,System.Boolean,System.Data.SqlClient.SortOrder,System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Int64,System.Int64,System.Data.SqlTypes.SqlCompareOptions)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.Int64,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Boolean,System.Boolean,System.Data.SqlClient.SortOrder,System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.String,System.String,System.String)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.#ctor(System.String,System.Data.SqlDbType,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Data.SqlClient.SortOrder,System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Boolean)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Byte)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Byte[])" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Char)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Char[])" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlBinary)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlBoolean)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlByte)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlBytes)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlChars)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlDateTime)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlDecimal)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlDouble)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlGuid)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlInt16)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlInt32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlInt64)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlMoney)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlSingle)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlString)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Data.SqlTypes.SqlXml)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.DateTime)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.DateTimeOffset)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Decimal)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Double)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Guid)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Int16)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Int32)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Int64)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Object)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.Single)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.String)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.Adjust(System.TimeSpan)" />
-      <Member Id="M:Microsoft.SqlServer.Server.SqlMetaData.InferFromValue(System.Object,System.String)" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.CompareOptions" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.IsUniqueKey" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.LocaleId" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.Max" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.MaxLength" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.Name" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.Precision" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.Scale" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.SortOrder" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.SortOrdinal" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.SqlDbType" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.TypeName" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.UseServerDefault" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName" />
-      <Member Id="P:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema" />
-    </Type>
-  </Namespace>
   <Namespace Name="Microsoft.Win32.SafeHandles">
     <Type Name="Microsoft.Win32.SafeHandles.CriticalHandleMinusOneIsInvalid" Id="T:Microsoft.Win32.SafeHandles.CriticalHandleMinusOneIsInvalid">
       <Member Id="M:Microsoft.Win32.SafeHandles.CriticalHandleMinusOneIsInvalid.#ctor" />
@@ -176,23 +26,6 @@
     </Type>
     <Type Name="Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle" Id="T:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle">
       <Member Id="M:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle.ReleaseHandle" />
-    </Type>
-    <Type Name="Microsoft.Win32.SafeHandles.SafeNCryptHandle" Id="T:Microsoft.Win32.SafeHandles.SafeNCryptHandle">
-      <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptHandle.#ctor" />
-      <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptHandle.ReleaseHandle" />
-      <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptHandle.ReleaseNativeHandle" />
-    </Type>
-    <Type Name="Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle" Id="T:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle">
-      <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle.#ctor" />
-      <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle.ReleaseNativeHandle" />
-    </Type>
-    <Type Name="Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle" Id="T:Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle">
-      <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle.#ctor" />
-      <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle.ReleaseNativeHandle" />
-    </Type>
-    <Type Name="Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle" Id="T:Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle">
-      <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle.#ctor" />
-      <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle.ReleaseNativeHandle" />
     </Type>
     <Type Name="Microsoft.Win32.SafeHandles.SafePipeHandle" Id="T:Microsoft.Win32.SafeHandles.SafePipeHandle">
       <Member Id="M:Microsoft.Win32.SafeHandles.SafePipeHandle.#ctor(System.IntPtr,System.Boolean)" />
@@ -347,17 +180,6 @@
       <Member Id="P:System.ApplicationId.ProcessorArchitecture" />
       <Member Id="P:System.ApplicationId.PublicKeyToken" />
       <Member Id="P:System.ApplicationId.Version" />
-    </Type>
-    <Type Name="System.ArgIterator" Id="T:System.ArgIterator">
-      <Member Id="M:System.ArgIterator.#ctor(System.RuntimeArgumentHandle)" />
-      <Member Id="M:System.ArgIterator.#ctor(System.RuntimeArgumentHandle,System.Void*)" />
-      <Member Id="M:System.ArgIterator.End" />
-      <Member Id="M:System.ArgIterator.Equals(System.Object)" />
-      <Member Id="M:System.ArgIterator.GetHashCode" />
-      <Member Id="M:System.ArgIterator.GetNextArg" />
-      <Member Id="M:System.ArgIterator.GetNextArg(System.RuntimeTypeHandle)" />
-      <Member Id="M:System.ArgIterator.GetNextArgType" />
-      <Member Id="M:System.ArgIterator.GetRemainingCount" />
     </Type>
     <Type Name="System.ArgumentException" Id="T:System.ArgumentException">
       <Member Id="M:System.ArgumentException.#ctor" />
@@ -856,7 +678,6 @@
       <Member Id="M:System.Console.Write(System.String,System.Object)" />
       <Member Id="M:System.Console.Write(System.String,System.Object,System.Object)" />
       <Member Id="M:System.Console.Write(System.String,System.Object,System.Object,System.Object)" />
-      <Member Id="M:System.Console.Write(System.String,System.Object,System.Object,System.Object,System.Object)" />
       <Member Id="M:System.Console.Write(System.String,System.Object[])" />
       <Member Id="M:System.Console.Write(System.UInt32)" />
       <Member Id="M:System.Console.Write(System.UInt64)" />
@@ -875,7 +696,6 @@
       <Member Id="M:System.Console.WriteLine(System.String,System.Object)" />
       <Member Id="M:System.Console.WriteLine(System.String,System.Object,System.Object)" />
       <Member Id="M:System.Console.WriteLine(System.String,System.Object,System.Object,System.Object)" />
-      <Member Id="M:System.Console.WriteLine(System.String,System.Object,System.Object,System.Object,System.Object)" />
       <Member Id="M:System.Console.WriteLine(System.String,System.Object[])" />
       <Member Id="M:System.Console.WriteLine(System.UInt32)" />
       <Member Id="M:System.Console.WriteLine(System.UInt64)" />
@@ -2885,7 +2705,6 @@
       <Member Id="M:System.String.Concat(System.Object)" />
       <Member Id="M:System.String.Concat(System.Object,System.Object)" />
       <Member Id="M:System.String.Concat(System.Object,System.Object,System.Object)" />
-      <Member Id="M:System.String.Concat(System.Object,System.Object,System.Object,System.Object)" />
       <Member Id="M:System.String.Concat(System.Object[])" />
       <Member Id="M:System.String.Concat(System.String,System.String)" />
       <Member Id="M:System.String.Concat(System.String,System.String,System.String)" />
@@ -3310,6 +3129,71 @@
       <Member Id="P:System.Tuple`8.Item6" />
       <Member Id="P:System.Tuple`8.Item7" />
       <Member Id="P:System.Tuple`8.Rest" />
+    </Type>
+    <Type Name="System.TupleExtensions" Id="T:System.TupleExtensions">
+      <Member Id="M:System.TupleExtensions.Deconstruct``1(System.Tuple{``0},``0@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``10(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,``9@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``11(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,``9@,``10@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``12(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,``9@,``10@,``11@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``13(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,``9@,``10@,``11@,``12@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``14(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,``9@,``10@,``11@,``12@,``13@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``15(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14}}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,``9@,``10@,``11@,``12@,``13@,``14@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``16(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15}}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,``9@,``10@,``11@,``12@,``13@,``14@,``15@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``17(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16}}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,``9@,``10@,``11@,``12@,``13@,``14@,``15@,``16@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``18(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17}}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,``9@,``10@,``11@,``12@,``13@,``14@,``15@,``16@,``17@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``19(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17,``18}}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,``9@,``10@,``11@,``12@,``13@,``14@,``15@,``16@,``17@,``18@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``2(System.Tuple{``0,``1},``0@,``1@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``20(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17,``18,``19}}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,``9@,``10@,``11@,``12@,``13@,``14@,``15@,``16@,``17@,``18@,``19@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``21(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17,``18,``19,``20}}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,``9@,``10@,``11@,``12@,``13@,``14@,``15@,``16@,``17@,``18@,``19@,``20@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``3(System.Tuple{``0,``1,``2},``0@,``1@,``2@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``4(System.Tuple{``0,``1,``2,``3},``0@,``1@,``2@,``3@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``5(System.Tuple{``0,``1,``2,``3,``4},``0@,``1@,``2@,``3@,``4@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``6(System.Tuple{``0,``1,``2,``3,``4,``5},``0@,``1@,``2@,``3@,``4@,``5@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``7(System.Tuple{``0,``1,``2,``3,``4,``5,``6},``0@,``1@,``2@,``3@,``4@,``5@,``6@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``8(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)" />
+      <Member Id="M:System.TupleExtensions.Deconstruct``9(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8}},``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@)" />
+      <Member Id="M:System.TupleExtensions.ToTuple``1(System.ValueTuple{``0})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``10(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``11(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``12(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``13(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``14(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``15(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14}}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``16(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15}}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``17(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16}}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``18(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16,``17}}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``19(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16,``17,``18}}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``2(System.ValueTuple{``0,``1})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``20(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16,``17,``18,``19}}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``21(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8,``9,``10,``11,``12,``13,System.ValueTuple{``14,``15,``16,``17,``18,``19,``20}}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``3(System.ValueTuple{``0,``1,``2})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``4(System.ValueTuple{``0,``1,``2,``3})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``5(System.ValueTuple{``0,``1,``2,``3,``4})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``6(System.ValueTuple{``0,``1,``2,``3,``4,``5})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``7(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``8(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7}})" />
+      <Member Id="M:System.TupleExtensions.ToTuple``9(System.ValueTuple{``0,``1,``2,``3,``4,``5,``6,System.ValueTuple{``7,``8}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``1(System.Tuple{``0})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``10(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``11(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``12(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``13(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``14(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``15(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14}}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``16(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15}}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``17(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16}}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``18(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17}}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``19(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17,``18}}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``2(System.Tuple{``0,``1})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``20(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17,``18,``19}}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``21(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8,``9,``10,``11,``12,``13,System.Tuple{``14,``15,``16,``17,``18,``19,``20}}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``3(System.Tuple{``0,``1,``2})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``4(System.Tuple{``0,``1,``2,``3})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``5(System.Tuple{``0,``1,``2,``3,``4})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``6(System.Tuple{``0,``1,``2,``3,``4,``5})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``7(System.Tuple{``0,``1,``2,``3,``4,``5,``6})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``8(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7}})" />
+      <Member Id="M:System.TupleExtensions.ToValueTuple``9(System.Tuple{``0,``1,``2,``3,``4,``5,``6,System.Tuple{``7,``8}})" />
     </Type>
     <Type Name="System.Type" Id="T:System.Type">
       <Member Id="F:System.Type.Delimiter" />
@@ -3855,6 +3739,158 @@
       <Member Id="M:System.UriTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <Member Id="M:System.UriTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       <Member Id="M:System.UriTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
+    </Type>
+    <Type Name="System.ValueTuple" Id="T:System.ValueTuple">
+      <Member Id="M:System.ValueTuple.CompareTo(System.ValueTuple)" />
+      <Member Id="M:System.ValueTuple.Create" />
+      <Member Id="M:System.ValueTuple.Create``1(``0)" />
+      <Member Id="M:System.ValueTuple.Create``2(``0,``1)" />
+      <Member Id="M:System.ValueTuple.Create``3(``0,``1,``2)" />
+      <Member Id="M:System.ValueTuple.Create``4(``0,``1,``2,``3)" />
+      <Member Id="M:System.ValueTuple.Create``5(``0,``1,``2,``3,``4)" />
+      <Member Id="M:System.ValueTuple.Create``6(``0,``1,``2,``3,``4,``5)" />
+      <Member Id="M:System.ValueTuple.Create``7(``0,``1,``2,``3,``4,``5,``6)" />
+      <Member Id="M:System.ValueTuple.Create``8(``0,``1,``2,``3,``4,``5,``6,``7)" />
+      <Member Id="M:System.ValueTuple.Equals(System.Object)" />
+      <Member Id="M:System.ValueTuple.Equals(System.ValueTuple)" />
+      <Member Id="M:System.ValueTuple.GetHashCode" />
+      <Member Id="M:System.ValueTuple.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <Member Id="M:System.ValueTuple.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple.System#IComparable#CompareTo(System.Object)" />
+      <Member Id="M:System.ValueTuple.ToString" />
+    </Type>
+    <Type Name="System.ValueTuple`1" Id="T:System.ValueTuple`1">
+      <Member Id="F:System.ValueTuple`1.Item1" />
+      <Member Id="M:System.ValueTuple`1.#ctor(`0)" />
+      <Member Id="M:System.ValueTuple`1.CompareTo(System.ValueTuple{`0})" />
+      <Member Id="M:System.ValueTuple`1.Equals(System.Object)" />
+      <Member Id="M:System.ValueTuple`1.Equals(System.ValueTuple{`0})" />
+      <Member Id="M:System.ValueTuple`1.GetHashCode" />
+      <Member Id="M:System.ValueTuple`1.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <Member Id="M:System.ValueTuple`1.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`1.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`1.System#IComparable#CompareTo(System.Object)" />
+      <Member Id="M:System.ValueTuple`1.ToString" />
+    </Type>
+    <Type Name="System.ValueTuple`2" Id="T:System.ValueTuple`2">
+      <Member Id="F:System.ValueTuple`2.Item1" />
+      <Member Id="F:System.ValueTuple`2.Item2" />
+      <Member Id="M:System.ValueTuple`2.#ctor(`0,`1)" />
+      <Member Id="M:System.ValueTuple`2.CompareTo(System.ValueTuple{`0,`1})" />
+      <Member Id="M:System.ValueTuple`2.Equals(System.Object)" />
+      <Member Id="M:System.ValueTuple`2.Equals(System.ValueTuple{`0,`1})" />
+      <Member Id="M:System.ValueTuple`2.GetHashCode" />
+      <Member Id="M:System.ValueTuple`2.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <Member Id="M:System.ValueTuple`2.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`2.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`2.System#IComparable#CompareTo(System.Object)" />
+      <Member Id="M:System.ValueTuple`2.ToString" />
+    </Type>
+    <Type Name="System.ValueTuple`3" Id="T:System.ValueTuple`3">
+      <Member Id="F:System.ValueTuple`3.Item1" />
+      <Member Id="F:System.ValueTuple`3.Item2" />
+      <Member Id="F:System.ValueTuple`3.Item3" />
+      <Member Id="M:System.ValueTuple`3.#ctor(`0,`1,`2)" />
+      <Member Id="M:System.ValueTuple`3.CompareTo(System.ValueTuple{`0,`1,`2})" />
+      <Member Id="M:System.ValueTuple`3.Equals(System.Object)" />
+      <Member Id="M:System.ValueTuple`3.Equals(System.ValueTuple{`0,`1,`2})" />
+      <Member Id="M:System.ValueTuple`3.GetHashCode" />
+      <Member Id="M:System.ValueTuple`3.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <Member Id="M:System.ValueTuple`3.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`3.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`3.System#IComparable#CompareTo(System.Object)" />
+      <Member Id="M:System.ValueTuple`3.ToString" />
+    </Type>
+    <Type Name="System.ValueTuple`4" Id="T:System.ValueTuple`4">
+      <Member Id="F:System.ValueTuple`4.Item1" />
+      <Member Id="F:System.ValueTuple`4.Item2" />
+      <Member Id="F:System.ValueTuple`4.Item3" />
+      <Member Id="F:System.ValueTuple`4.Item4" />
+      <Member Id="M:System.ValueTuple`4.#ctor(`0,`1,`2,`3)" />
+      <Member Id="M:System.ValueTuple`4.CompareTo(System.ValueTuple{`0,`1,`2,`3})" />
+      <Member Id="M:System.ValueTuple`4.Equals(System.Object)" />
+      <Member Id="M:System.ValueTuple`4.Equals(System.ValueTuple{`0,`1,`2,`3})" />
+      <Member Id="M:System.ValueTuple`4.GetHashCode" />
+      <Member Id="M:System.ValueTuple`4.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <Member Id="M:System.ValueTuple`4.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`4.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`4.System#IComparable#CompareTo(System.Object)" />
+      <Member Id="M:System.ValueTuple`4.ToString" />
+    </Type>
+    <Type Name="System.ValueTuple`5" Id="T:System.ValueTuple`5">
+      <Member Id="F:System.ValueTuple`5.Item1" />
+      <Member Id="F:System.ValueTuple`5.Item2" />
+      <Member Id="F:System.ValueTuple`5.Item3" />
+      <Member Id="F:System.ValueTuple`5.Item4" />
+      <Member Id="F:System.ValueTuple`5.Item5" />
+      <Member Id="M:System.ValueTuple`5.#ctor(`0,`1,`2,`3,`4)" />
+      <Member Id="M:System.ValueTuple`5.CompareTo(System.ValueTuple{`0,`1,`2,`3,`4})" />
+      <Member Id="M:System.ValueTuple`5.Equals(System.Object)" />
+      <Member Id="M:System.ValueTuple`5.Equals(System.ValueTuple{`0,`1,`2,`3,`4})" />
+      <Member Id="M:System.ValueTuple`5.GetHashCode" />
+      <Member Id="M:System.ValueTuple`5.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <Member Id="M:System.ValueTuple`5.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`5.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`5.System#IComparable#CompareTo(System.Object)" />
+      <Member Id="M:System.ValueTuple`5.ToString" />
+    </Type>
+    <Type Name="System.ValueTuple`6" Id="T:System.ValueTuple`6">
+      <Member Id="F:System.ValueTuple`6.Item1" />
+      <Member Id="F:System.ValueTuple`6.Item2" />
+      <Member Id="F:System.ValueTuple`6.Item3" />
+      <Member Id="F:System.ValueTuple`6.Item4" />
+      <Member Id="F:System.ValueTuple`6.Item5" />
+      <Member Id="F:System.ValueTuple`6.Item6" />
+      <Member Id="M:System.ValueTuple`6.#ctor(`0,`1,`2,`3,`4,`5)" />
+      <Member Id="M:System.ValueTuple`6.CompareTo(System.ValueTuple{`0,`1,`2,`3,`4,`5})" />
+      <Member Id="M:System.ValueTuple`6.Equals(System.Object)" />
+      <Member Id="M:System.ValueTuple`6.Equals(System.ValueTuple{`0,`1,`2,`3,`4,`5})" />
+      <Member Id="M:System.ValueTuple`6.GetHashCode" />
+      <Member Id="M:System.ValueTuple`6.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <Member Id="M:System.ValueTuple`6.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`6.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`6.System#IComparable#CompareTo(System.Object)" />
+      <Member Id="M:System.ValueTuple`6.ToString" />
+    </Type>
+    <Type Name="System.ValueTuple`7" Id="T:System.ValueTuple`7">
+      <Member Id="F:System.ValueTuple`7.Item1" />
+      <Member Id="F:System.ValueTuple`7.Item2" />
+      <Member Id="F:System.ValueTuple`7.Item3" />
+      <Member Id="F:System.ValueTuple`7.Item4" />
+      <Member Id="F:System.ValueTuple`7.Item5" />
+      <Member Id="F:System.ValueTuple`7.Item6" />
+      <Member Id="F:System.ValueTuple`7.Item7" />
+      <Member Id="M:System.ValueTuple`7.#ctor(`0,`1,`2,`3,`4,`5,`6)" />
+      <Member Id="M:System.ValueTuple`7.CompareTo(System.ValueTuple{`0,`1,`2,`3,`4,`5,`6})" />
+      <Member Id="M:System.ValueTuple`7.Equals(System.Object)" />
+      <Member Id="M:System.ValueTuple`7.Equals(System.ValueTuple{`0,`1,`2,`3,`4,`5,`6})" />
+      <Member Id="M:System.ValueTuple`7.GetHashCode" />
+      <Member Id="M:System.ValueTuple`7.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <Member Id="M:System.ValueTuple`7.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`7.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`7.System#IComparable#CompareTo(System.Object)" />
+      <Member Id="M:System.ValueTuple`7.ToString" />
+    </Type>
+    <Type Name="System.ValueTuple`8" Id="T:System.ValueTuple`8">
+      <Member Id="F:System.ValueTuple`8.Item1" />
+      <Member Id="F:System.ValueTuple`8.Item2" />
+      <Member Id="F:System.ValueTuple`8.Item3" />
+      <Member Id="F:System.ValueTuple`8.Item4" />
+      <Member Id="F:System.ValueTuple`8.Item5" />
+      <Member Id="F:System.ValueTuple`8.Item6" />
+      <Member Id="F:System.ValueTuple`8.Item7" />
+      <Member Id="F:System.ValueTuple`8.Rest" />
+      <Member Id="M:System.ValueTuple`8.#ctor(`0,`1,`2,`3,`4,`5,`6,`7)" />
+      <Member Id="M:System.ValueTuple`8.CompareTo(System.ValueTuple{`0,`1,`2,`3,`4,`5,`6,`7})" />
+      <Member Id="M:System.ValueTuple`8.Equals(System.Object)" />
+      <Member Id="M:System.ValueTuple`8.Equals(System.ValueTuple{`0,`1,`2,`3,`4,`5,`6,`7})" />
+      <Member Id="M:System.ValueTuple`8.GetHashCode" />
+      <Member Id="M:System.ValueTuple`8.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <Member Id="M:System.ValueTuple`8.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`8.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <Member Id="M:System.ValueTuple`8.System#IComparable#CompareTo(System.Object)" />
+      <Member Id="M:System.ValueTuple`8.ToString" />
     </Type>
     <Type Name="System.ValueType" Id="T:System.ValueType">
       <Member Id="M:System.ValueType.#ctor" />
@@ -9957,382 +9993,6 @@
       <Member Id="F:System.Data.Common.SupportedJoinOperators.RightOuter" />
     </Type>
   </Namespace>
-  <Namespace Name="System.Data.SqlClient">
-    <Type Name="System.Data.SqlClient.ApplicationIntent" Id="T:System.Data.SqlClient.ApplicationIntent">
-      <Member Id="F:System.Data.SqlClient.ApplicationIntent.ReadOnly" />
-      <Member Id="F:System.Data.SqlClient.ApplicationIntent.ReadWrite" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SortOrder" Id="T:System.Data.SqlClient.SortOrder">
-      <Member Id="F:System.Data.SqlClient.SortOrder.Ascending" />
-      <Member Id="F:System.Data.SqlClient.SortOrder.Descending" />
-      <Member Id="F:System.Data.SqlClient.SortOrder.Unspecified" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlBulkCopy" Id="T:System.Data.SqlClient.SqlBulkCopy">
-      <Member Id="E:System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlBulkCopyOptions,System.Data.SqlClient.SqlTransaction)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.String,System.Data.SqlClient.SqlBulkCopyOptions)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopy.Close" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopy.System#IDisposable#Dispose" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.Common.DbDataReader)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader,System.Threading.CancellationToken)" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopy.BatchSize" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopy.BulkCopyTimeout" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopy.ColumnMappings" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopy.DestinationTableName" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopy.EnableStreaming" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopy.NotifyAfter" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlBulkCopyColumnMapping" Id="T:System.Data.SqlClient.SqlBulkCopyColumnMapping">
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor(System.Int32,System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor(System.Int32,System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor(System.String,System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor(System.String,System.String)" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopyColumnMapping.DestinationColumn" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopyColumnMapping.DestinationOrdinal" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopyColumnMapping.SourceColumn" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopyColumnMapping.SourceOrdinal" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlBulkCopyColumnMappingCollection" Id="T:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection">
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Add(System.Data.SqlClient.SqlBulkCopyColumnMapping)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Add(System.Int32,System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Add(System.Int32,System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Add(System.String,System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Add(System.String,System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Clear" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Contains(System.Data.SqlClient.SqlBulkCopyColumnMapping)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.CopyTo(System.Data.SqlClient.SqlBulkCopyColumnMapping[],System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.GetEnumerator" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.IndexOf(System.Data.SqlClient.SqlBulkCopyColumnMapping)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Insert(System.Int32,System.Data.SqlClient.SqlBulkCopyColumnMapping)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Remove(System.Data.SqlClient.SqlBulkCopyColumnMapping)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.RemoveAt(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.System#Collections#IList#Add(System.Object)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.System#Collections#IList#Contains(System.Object)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.System#Collections#IList#IndexOf(System.Object)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
-      <Member Id="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.System#Collections#IList#Remove(System.Object)" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Count" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Item(System.Int32)" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.System#Collections#ICollection#IsSynchronized" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.System#Collections#ICollection#SyncRoot" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.System#Collections#IList#IsFixedSize" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.System#Collections#IList#IsReadOnly" />
-      <Member Id="P:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.System#Collections#IList#Item(System.Int32)" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlBulkCopyOptions" Id="T:System.Data.SqlClient.SqlBulkCopyOptions">
-      <Member Id="F:System.Data.SqlClient.SqlBulkCopyOptions.CheckConstraints" />
-      <Member Id="F:System.Data.SqlClient.SqlBulkCopyOptions.Default" />
-      <Member Id="F:System.Data.SqlClient.SqlBulkCopyOptions.FireTriggers" />
-      <Member Id="F:System.Data.SqlClient.SqlBulkCopyOptions.KeepIdentity" />
-      <Member Id="F:System.Data.SqlClient.SqlBulkCopyOptions.KeepNulls" />
-      <Member Id="F:System.Data.SqlClient.SqlBulkCopyOptions.TableLock" />
-      <Member Id="F:System.Data.SqlClient.SqlBulkCopyOptions.UseInternalTransaction" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlClientFactory" Id="T:System.Data.SqlClient.SqlClientFactory">
-      <Member Id="F:System.Data.SqlClient.SqlClientFactory.Instance" />
-      <Member Id="M:System.Data.SqlClient.SqlClientFactory.CreateCommand" />
-      <Member Id="M:System.Data.SqlClient.SqlClientFactory.CreateConnection" />
-      <Member Id="M:System.Data.SqlClient.SqlClientFactory.CreateConnectionStringBuilder" />
-      <Member Id="M:System.Data.SqlClient.SqlClientFactory.CreateParameter" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlCommand" Id="T:System.Data.SqlClient.SqlCommand">
-      <Member Id="E:System.Data.SqlClient.SqlCommand.StatementCompleted" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.#ctor" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.#ctor(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.Cancel" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.CreateDbParameter" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.CreateParameter" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.Dispose(System.Boolean)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(System.Data.CommandBehavior)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteDbDataReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteNonQuery" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteReader" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteReader(System.Data.CommandBehavior)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Data.CommandBehavior)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteScalar" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteScalarAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteXmlReader" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:System.Data.SqlClient.SqlCommand.Prepare" />
-      <Member Id="P:System.Data.SqlClient.SqlCommand.CommandText" />
-      <Member Id="P:System.Data.SqlClient.SqlCommand.CommandTimeout" />
-      <Member Id="P:System.Data.SqlClient.SqlCommand.CommandType" />
-      <Member Id="P:System.Data.SqlClient.SqlCommand.Connection" />
-      <Member Id="P:System.Data.SqlClient.SqlCommand.DbConnection" />
-      <Member Id="P:System.Data.SqlClient.SqlCommand.DbParameterCollection" />
-      <Member Id="P:System.Data.SqlClient.SqlCommand.DbTransaction" />
-      <Member Id="P:System.Data.SqlClient.SqlCommand.DesignTimeVisible" />
-      <Member Id="P:System.Data.SqlClient.SqlCommand.Parameters" />
-      <Member Id="P:System.Data.SqlClient.SqlCommand.Transaction" />
-      <Member Id="P:System.Data.SqlClient.SqlCommand.UpdatedRowSource" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlConnection" Id="T:System.Data.SqlClient.SqlConnection">
-      <Member Id="E:System.Data.SqlClient.SqlConnection.InfoMessage" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.#ctor" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.#ctor(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.BeginDbTransaction(System.Data.IsolationLevel)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.BeginTransaction" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.BeginTransaction(System.Data.IsolationLevel)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.BeginTransaction(System.Data.IsolationLevel,System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.BeginTransaction(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.ChangeDatabase(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.ClearAllPools" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.ClearPool(System.Data.SqlClient.SqlConnection)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.Close" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.CreateCommand" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.CreateDbCommand" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.Dispose(System.Boolean)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.Open" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.ResetStatistics" />
-      <Member Id="M:System.Data.SqlClient.SqlConnection.RetrieveStatistics" />
-      <Member Id="P:System.Data.SqlClient.SqlConnection.ClientConnectionId" />
-      <Member Id="P:System.Data.SqlClient.SqlConnection.ConnectionString" />
-      <Member Id="P:System.Data.SqlClient.SqlConnection.ConnectionTimeout" />
-      <Member Id="P:System.Data.SqlClient.SqlConnection.Database" />
-      <Member Id="P:System.Data.SqlClient.SqlConnection.DataSource" />
-      <Member Id="P:System.Data.SqlClient.SqlConnection.FireInfoMessageEventOnUserErrors" />
-      <Member Id="P:System.Data.SqlClient.SqlConnection.PacketSize" />
-      <Member Id="P:System.Data.SqlClient.SqlConnection.ServerVersion" />
-      <Member Id="P:System.Data.SqlClient.SqlConnection.State" />
-      <Member Id="P:System.Data.SqlClient.SqlConnection.StatisticsEnabled" />
-      <Member Id="P:System.Data.SqlClient.SqlConnection.WorkstationId" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlConnectionStringBuilder" Id="T:System.Data.SqlClient.SqlConnectionStringBuilder">
-      <Member Id="M:System.Data.SqlClient.SqlConnectionStringBuilder.#ctor" />
-      <Member Id="M:System.Data.SqlClient.SqlConnectionStringBuilder.#ctor(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnectionStringBuilder.Clear" />
-      <Member Id="M:System.Data.SqlClient.SqlConnectionStringBuilder.ContainsKey(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnectionStringBuilder.Remove(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnectionStringBuilder.ShouldSerialize(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlConnectionStringBuilder.TryGetValue(System.String,System.Object@)" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationName" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.ConnectRetryCount" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.ConnectRetryInterval" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.ConnectTimeout" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.CurrentLanguage" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.DataSource" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.Encrypt" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.FailoverPartner" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.InitialCatalog" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.IntegratedSecurity" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.Item(System.String)" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.Keys" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.LoadBalanceTimeout" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.MaxPoolSize" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.MinPoolSize" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.MultipleActiveResultSets" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.PacketSize" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.Password" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.PersistSecurityInfo" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.Pooling" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.Replication" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.TrustServerCertificate" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.TypeSystemVersion" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.UserID" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.Values" />
-      <Member Id="P:System.Data.SqlClient.SqlConnectionStringBuilder.WorkstationID" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlDataReader" Id="T:System.Data.SqlClient.SqlDataReader">
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetBoolean(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetByte(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetChar(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetDataTypeName(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetDateTime(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetDateTimeOffset(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetDecimal(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetDouble(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetEnumerator" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetFieldType(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetFieldValue``1(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetFieldValueAsync``1(System.Int32,System.Threading.CancellationToken)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetFloat(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetGuid(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetInt16(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetInt32(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetInt64(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetName(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetOrdinal(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetProviderSpecificFieldType(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValue(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValues(System.Object[])" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlBinary(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlBoolean(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlByte(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlBytes(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlChars(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlDateTime(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlDecimal(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlDouble(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlGuid(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlInt16(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlInt32(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlInt64(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlMoney(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlSingle(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlString(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlValue(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlValues(System.Object[])" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetSqlXml(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetStream(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetString(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetTextReader(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetTimeSpan(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetValue(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetValues(System.Object[])" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.GetXmlReader(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.IsDBNull(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.IsDBNullAsync(System.Int32,System.Threading.CancellationToken)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.NextResult" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.NextResultAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.Read" />
-      <Member Id="M:System.Data.SqlClient.SqlDataReader.ReadAsync(System.Threading.CancellationToken)" />
-      <Member Id="P:System.Data.SqlClient.SqlDataReader.Connection" />
-      <Member Id="P:System.Data.SqlClient.SqlDataReader.Depth" />
-      <Member Id="P:System.Data.SqlClient.SqlDataReader.FieldCount" />
-      <Member Id="P:System.Data.SqlClient.SqlDataReader.HasRows" />
-      <Member Id="P:System.Data.SqlClient.SqlDataReader.IsClosed" />
-      <Member Id="P:System.Data.SqlClient.SqlDataReader.Item(System.Int32)" />
-      <Member Id="P:System.Data.SqlClient.SqlDataReader.Item(System.String)" />
-      <Member Id="P:System.Data.SqlClient.SqlDataReader.RecordsAffected" />
-      <Member Id="P:System.Data.SqlClient.SqlDataReader.VisibleFieldCount" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlError" Id="T:System.Data.SqlClient.SqlError">
-      <Member Id="M:System.Data.SqlClient.SqlError.ToString" />
-      <Member Id="P:System.Data.SqlClient.SqlError.Class" />
-      <Member Id="P:System.Data.SqlClient.SqlError.LineNumber" />
-      <Member Id="P:System.Data.SqlClient.SqlError.Message" />
-      <Member Id="P:System.Data.SqlClient.SqlError.Number" />
-      <Member Id="P:System.Data.SqlClient.SqlError.Procedure" />
-      <Member Id="P:System.Data.SqlClient.SqlError.Server" />
-      <Member Id="P:System.Data.SqlClient.SqlError.Source" />
-      <Member Id="P:System.Data.SqlClient.SqlError.State" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlErrorCollection" Id="T:System.Data.SqlClient.SqlErrorCollection">
-      <Member Id="M:System.Data.SqlClient.SqlErrorCollection.CopyTo(System.Array,System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlErrorCollection.CopyTo(System.Data.SqlClient.SqlError[],System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlErrorCollection.GetEnumerator" />
-      <Member Id="P:System.Data.SqlClient.SqlErrorCollection.Count" />
-      <Member Id="P:System.Data.SqlClient.SqlErrorCollection.Item(System.Int32)" />
-      <Member Id="P:System.Data.SqlClient.SqlErrorCollection.System#Collections#ICollection#IsSynchronized" />
-      <Member Id="P:System.Data.SqlClient.SqlErrorCollection.System#Collections#ICollection#SyncRoot" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlException" Id="T:System.Data.SqlClient.SqlException">
-      <Member Id="M:System.Data.SqlClient.SqlException.ToString" />
-      <Member Id="P:System.Data.SqlClient.SqlException.Class" />
-      <Member Id="P:System.Data.SqlClient.SqlException.ClientConnectionId" />
-      <Member Id="P:System.Data.SqlClient.SqlException.Errors" />
-      <Member Id="P:System.Data.SqlClient.SqlException.LineNumber" />
-      <Member Id="P:System.Data.SqlClient.SqlException.Number" />
-      <Member Id="P:System.Data.SqlClient.SqlException.Procedure" />
-      <Member Id="P:System.Data.SqlClient.SqlException.Server" />
-      <Member Id="P:System.Data.SqlClient.SqlException.Source" />
-      <Member Id="P:System.Data.SqlClient.SqlException.State" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlInfoMessageEventArgs" Id="T:System.Data.SqlClient.SqlInfoMessageEventArgs">
-      <Member Id="M:System.Data.SqlClient.SqlInfoMessageEventArgs.ToString" />
-      <Member Id="P:System.Data.SqlClient.SqlInfoMessageEventArgs.Errors" />
-      <Member Id="P:System.Data.SqlClient.SqlInfoMessageEventArgs.Message" />
-      <Member Id="P:System.Data.SqlClient.SqlInfoMessageEventArgs.Source" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlInfoMessageEventHandler" Id="T:System.Data.SqlClient.SqlInfoMessageEventHandler" />
-    <Type Name="System.Data.SqlClient.SqlParameter" Id="T:System.Data.SqlClient.SqlParameter">
-      <Member Id="M:System.Data.SqlClient.SqlParameter.#ctor" />
-      <Member Id="M:System.Data.SqlClient.SqlParameter.#ctor(System.String,System.Data.SqlDbType)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameter.#ctor(System.String,System.Data.SqlDbType,System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameter.#ctor(System.String,System.Data.SqlDbType,System.Int32,System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameter.#ctor(System.String,System.Object)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameter.ResetDbType" />
-      <Member Id="M:System.Data.SqlClient.SqlParameter.ResetSqlDbType" />
-      <Member Id="M:System.Data.SqlClient.SqlParameter.ToString" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.CompareInfo" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.DbType" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.Direction" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.IsNullable" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.LocaleId" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.Offset" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.ParameterName" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.Precision" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.Scale" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.Size" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.SourceColumn" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.SourceColumnNullMapping" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.SqlDbType" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.SqlValue" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.TypeName" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.Value" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.XmlSchemaCollectionDatabase" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.XmlSchemaCollectionName" />
-      <Member Id="P:System.Data.SqlClient.SqlParameter.XmlSchemaCollectionOwningSchema" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlParameterCollection" Id="T:System.Data.SqlClient.SqlParameterCollection">
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.Add(System.Data.SqlClient.SqlParameter)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.Add(System.Object)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.Add(System.String,System.Data.SqlDbType)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.Add(System.String,System.Data.SqlDbType,System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.AddRange(System.Array)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.AddRange(System.Data.SqlClient.SqlParameter[])" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String,System.Object)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.Clear" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.Contains(System.Data.SqlClient.SqlParameter)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.Contains(System.Object)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.Contains(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.CopyTo(System.Array,System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.CopyTo(System.Data.SqlClient.SqlParameter[],System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.GetEnumerator" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.GetParameter(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.GetParameter(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.IndexOf(System.Data.SqlClient.SqlParameter)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.IndexOf(System.Object)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.IndexOf(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.Insert(System.Int32,System.Data.SqlClient.SqlParameter)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.Insert(System.Int32,System.Object)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.Remove(System.Data.SqlClient.SqlParameter)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.Remove(System.Object)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.RemoveAt(System.Int32)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.RemoveAt(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.SetParameter(System.Int32,System.Data.Common.DbParameter)" />
-      <Member Id="M:System.Data.SqlClient.SqlParameterCollection.SetParameter(System.String,System.Data.Common.DbParameter)" />
-      <Member Id="P:System.Data.SqlClient.SqlParameterCollection.Count" />
-      <Member Id="P:System.Data.SqlClient.SqlParameterCollection.Item(System.Int32)" />
-      <Member Id="P:System.Data.SqlClient.SqlParameterCollection.Item(System.String)" />
-      <Member Id="P:System.Data.SqlClient.SqlParameterCollection.SyncRoot" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlRowsCopiedEventArgs" Id="T:System.Data.SqlClient.SqlRowsCopiedEventArgs">
-      <Member Id="M:System.Data.SqlClient.SqlRowsCopiedEventArgs.#ctor(System.Int64)" />
-      <Member Id="P:System.Data.SqlClient.SqlRowsCopiedEventArgs.Abort" />
-      <Member Id="P:System.Data.SqlClient.SqlRowsCopiedEventArgs.RowsCopied" />
-    </Type>
-    <Type Name="System.Data.SqlClient.SqlRowsCopiedEventHandler" Id="T:System.Data.SqlClient.SqlRowsCopiedEventHandler" />
-    <Type Name="System.Data.SqlClient.SqlTransaction" Id="T:System.Data.SqlClient.SqlTransaction">
-      <Member Id="M:System.Data.SqlClient.SqlTransaction.Commit" />
-      <Member Id="M:System.Data.SqlClient.SqlTransaction.Dispose(System.Boolean)" />
-      <Member Id="M:System.Data.SqlClient.SqlTransaction.Rollback" />
-      <Member Id="M:System.Data.SqlClient.SqlTransaction.Rollback(System.String)" />
-      <Member Id="M:System.Data.SqlClient.SqlTransaction.Save(System.String)" />
-      <Member Id="P:System.Data.SqlClient.SqlTransaction.Connection" />
-      <Member Id="P:System.Data.SqlClient.SqlTransaction.DbConnection" />
-      <Member Id="P:System.Data.SqlClient.SqlTransaction.IsolationLevel" />
-    </Type>
-  </Namespace>
   <Namespace Name="System.Data.SqlTypes">
     <Type Name="System.Data.SqlTypes.INullable" Id="T:System.Data.SqlTypes.INullable">
       <Member Id="P:System.Data.SqlTypes.INullable.IsNull" />
@@ -12419,7 +12079,6 @@
       <Member Id="M:System.Drawing.Color.FromArgb(System.Int32,System.Drawing.Color)" />
       <Member Id="M:System.Drawing.Color.FromArgb(System.Int32,System.Int32,System.Int32)" />
       <Member Id="M:System.Drawing.Color.FromArgb(System.Int32,System.Int32,System.Int32,System.Int32)" />
-      <Member Id="M:System.Drawing.Color.FromKnownColor(System.Drawing.KnownColor)" />
       <Member Id="M:System.Drawing.Color.FromName(System.String)" />
       <Member Id="M:System.Drawing.Color.GetBrightness" />
       <Member Id="M:System.Drawing.Color.GetHashCode" />
@@ -12428,7 +12087,6 @@
       <Member Id="M:System.Drawing.Color.op_Equality(System.Drawing.Color,System.Drawing.Color)" />
       <Member Id="M:System.Drawing.Color.op_Inequality(System.Drawing.Color,System.Drawing.Color)" />
       <Member Id="M:System.Drawing.Color.ToArgb" />
-      <Member Id="M:System.Drawing.Color.ToKnownColor" />
       <Member Id="M:System.Drawing.Color.ToString" />
       <Member Id="P:System.Drawing.Color.A" />
       <Member Id="P:System.Drawing.Color.AliceBlue" />
@@ -12491,9 +12149,7 @@
       <Member Id="P:System.Drawing.Color.IndianRed" />
       <Member Id="P:System.Drawing.Color.Indigo" />
       <Member Id="P:System.Drawing.Color.IsEmpty" />
-      <Member Id="P:System.Drawing.Color.IsKnownColor" />
       <Member Id="P:System.Drawing.Color.IsNamedColor" />
-      <Member Id="P:System.Drawing.Color.IsSystemColor" />
       <Member Id="P:System.Drawing.Color.Ivory" />
       <Member Id="P:System.Drawing.Color.Khaki" />
       <Member Id="P:System.Drawing.Color.Lavender" />
@@ -12580,182 +12236,6 @@
       <Member Id="P:System.Drawing.Color.WhiteSmoke" />
       <Member Id="P:System.Drawing.Color.Yellow" />
       <Member Id="P:System.Drawing.Color.YellowGreen" />
-    </Type>
-    <Type Name="System.Drawing.KnownColor" Id="T:System.Drawing.KnownColor">
-      <Member Id="F:System.Drawing.KnownColor.ActiveBorder" />
-      <Member Id="F:System.Drawing.KnownColor.ActiveCaption" />
-      <Member Id="F:System.Drawing.KnownColor.ActiveCaptionText" />
-      <Member Id="F:System.Drawing.KnownColor.AliceBlue" />
-      <Member Id="F:System.Drawing.KnownColor.AntiqueWhite" />
-      <Member Id="F:System.Drawing.KnownColor.AppWorkspace" />
-      <Member Id="F:System.Drawing.KnownColor.Aqua" />
-      <Member Id="F:System.Drawing.KnownColor.Aquamarine" />
-      <Member Id="F:System.Drawing.KnownColor.Azure" />
-      <Member Id="F:System.Drawing.KnownColor.Beige" />
-      <Member Id="F:System.Drawing.KnownColor.Bisque" />
-      <Member Id="F:System.Drawing.KnownColor.Black" />
-      <Member Id="F:System.Drawing.KnownColor.BlanchedAlmond" />
-      <Member Id="F:System.Drawing.KnownColor.Blue" />
-      <Member Id="F:System.Drawing.KnownColor.BlueViolet" />
-      <Member Id="F:System.Drawing.KnownColor.Brown" />
-      <Member Id="F:System.Drawing.KnownColor.BurlyWood" />
-      <Member Id="F:System.Drawing.KnownColor.ButtonFace" />
-      <Member Id="F:System.Drawing.KnownColor.ButtonHighlight" />
-      <Member Id="F:System.Drawing.KnownColor.ButtonShadow" />
-      <Member Id="F:System.Drawing.KnownColor.CadetBlue" />
-      <Member Id="F:System.Drawing.KnownColor.Chartreuse" />
-      <Member Id="F:System.Drawing.KnownColor.Chocolate" />
-      <Member Id="F:System.Drawing.KnownColor.Control" />
-      <Member Id="F:System.Drawing.KnownColor.ControlDark" />
-      <Member Id="F:System.Drawing.KnownColor.ControlDarkDark" />
-      <Member Id="F:System.Drawing.KnownColor.ControlLight" />
-      <Member Id="F:System.Drawing.KnownColor.ControlLightLight" />
-      <Member Id="F:System.Drawing.KnownColor.ControlText" />
-      <Member Id="F:System.Drawing.KnownColor.Coral" />
-      <Member Id="F:System.Drawing.KnownColor.CornflowerBlue" />
-      <Member Id="F:System.Drawing.KnownColor.Cornsilk" />
-      <Member Id="F:System.Drawing.KnownColor.Crimson" />
-      <Member Id="F:System.Drawing.KnownColor.Cyan" />
-      <Member Id="F:System.Drawing.KnownColor.DarkBlue" />
-      <Member Id="F:System.Drawing.KnownColor.DarkCyan" />
-      <Member Id="F:System.Drawing.KnownColor.DarkGoldenrod" />
-      <Member Id="F:System.Drawing.KnownColor.DarkGray" />
-      <Member Id="F:System.Drawing.KnownColor.DarkGreen" />
-      <Member Id="F:System.Drawing.KnownColor.DarkKhaki" />
-      <Member Id="F:System.Drawing.KnownColor.DarkMagenta" />
-      <Member Id="F:System.Drawing.KnownColor.DarkOliveGreen" />
-      <Member Id="F:System.Drawing.KnownColor.DarkOrange" />
-      <Member Id="F:System.Drawing.KnownColor.DarkOrchid" />
-      <Member Id="F:System.Drawing.KnownColor.DarkRed" />
-      <Member Id="F:System.Drawing.KnownColor.DarkSalmon" />
-      <Member Id="F:System.Drawing.KnownColor.DarkSeaGreen" />
-      <Member Id="F:System.Drawing.KnownColor.DarkSlateBlue" />
-      <Member Id="F:System.Drawing.KnownColor.DarkSlateGray" />
-      <Member Id="F:System.Drawing.KnownColor.DarkTurquoise" />
-      <Member Id="F:System.Drawing.KnownColor.DarkViolet" />
-      <Member Id="F:System.Drawing.KnownColor.DeepPink" />
-      <Member Id="F:System.Drawing.KnownColor.DeepSkyBlue" />
-      <Member Id="F:System.Drawing.KnownColor.Desktop" />
-      <Member Id="F:System.Drawing.KnownColor.DimGray" />
-      <Member Id="F:System.Drawing.KnownColor.DodgerBlue" />
-      <Member Id="F:System.Drawing.KnownColor.Firebrick" />
-      <Member Id="F:System.Drawing.KnownColor.FloralWhite" />
-      <Member Id="F:System.Drawing.KnownColor.ForestGreen" />
-      <Member Id="F:System.Drawing.KnownColor.Fuchsia" />
-      <Member Id="F:System.Drawing.KnownColor.Gainsboro" />
-      <Member Id="F:System.Drawing.KnownColor.GhostWhite" />
-      <Member Id="F:System.Drawing.KnownColor.Gold" />
-      <Member Id="F:System.Drawing.KnownColor.Goldenrod" />
-      <Member Id="F:System.Drawing.KnownColor.GradientActiveCaption" />
-      <Member Id="F:System.Drawing.KnownColor.GradientInactiveCaption" />
-      <Member Id="F:System.Drawing.KnownColor.Gray" />
-      <Member Id="F:System.Drawing.KnownColor.GrayText" />
-      <Member Id="F:System.Drawing.KnownColor.Green" />
-      <Member Id="F:System.Drawing.KnownColor.GreenYellow" />
-      <Member Id="F:System.Drawing.KnownColor.Highlight" />
-      <Member Id="F:System.Drawing.KnownColor.HighlightText" />
-      <Member Id="F:System.Drawing.KnownColor.Honeydew" />
-      <Member Id="F:System.Drawing.KnownColor.HotPink" />
-      <Member Id="F:System.Drawing.KnownColor.HotTrack" />
-      <Member Id="F:System.Drawing.KnownColor.InactiveBorder" />
-      <Member Id="F:System.Drawing.KnownColor.InactiveCaption" />
-      <Member Id="F:System.Drawing.KnownColor.InactiveCaptionText" />
-      <Member Id="F:System.Drawing.KnownColor.IndianRed" />
-      <Member Id="F:System.Drawing.KnownColor.Indigo" />
-      <Member Id="F:System.Drawing.KnownColor.Info" />
-      <Member Id="F:System.Drawing.KnownColor.InfoText" />
-      <Member Id="F:System.Drawing.KnownColor.Ivory" />
-      <Member Id="F:System.Drawing.KnownColor.Khaki" />
-      <Member Id="F:System.Drawing.KnownColor.Lavender" />
-      <Member Id="F:System.Drawing.KnownColor.LavenderBlush" />
-      <Member Id="F:System.Drawing.KnownColor.LawnGreen" />
-      <Member Id="F:System.Drawing.KnownColor.LemonChiffon" />
-      <Member Id="F:System.Drawing.KnownColor.LightBlue" />
-      <Member Id="F:System.Drawing.KnownColor.LightCoral" />
-      <Member Id="F:System.Drawing.KnownColor.LightCyan" />
-      <Member Id="F:System.Drawing.KnownColor.LightGoldenrodYellow" />
-      <Member Id="F:System.Drawing.KnownColor.LightGray" />
-      <Member Id="F:System.Drawing.KnownColor.LightGreen" />
-      <Member Id="F:System.Drawing.KnownColor.LightPink" />
-      <Member Id="F:System.Drawing.KnownColor.LightSalmon" />
-      <Member Id="F:System.Drawing.KnownColor.LightSeaGreen" />
-      <Member Id="F:System.Drawing.KnownColor.LightSkyBlue" />
-      <Member Id="F:System.Drawing.KnownColor.LightSlateGray" />
-      <Member Id="F:System.Drawing.KnownColor.LightSteelBlue" />
-      <Member Id="F:System.Drawing.KnownColor.LightYellow" />
-      <Member Id="F:System.Drawing.KnownColor.Lime" />
-      <Member Id="F:System.Drawing.KnownColor.LimeGreen" />
-      <Member Id="F:System.Drawing.KnownColor.Linen" />
-      <Member Id="F:System.Drawing.KnownColor.Magenta" />
-      <Member Id="F:System.Drawing.KnownColor.Maroon" />
-      <Member Id="F:System.Drawing.KnownColor.MediumAquamarine" />
-      <Member Id="F:System.Drawing.KnownColor.MediumBlue" />
-      <Member Id="F:System.Drawing.KnownColor.MediumOrchid" />
-      <Member Id="F:System.Drawing.KnownColor.MediumPurple" />
-      <Member Id="F:System.Drawing.KnownColor.MediumSeaGreen" />
-      <Member Id="F:System.Drawing.KnownColor.MediumSlateBlue" />
-      <Member Id="F:System.Drawing.KnownColor.MediumSpringGreen" />
-      <Member Id="F:System.Drawing.KnownColor.MediumTurquoise" />
-      <Member Id="F:System.Drawing.KnownColor.MediumVioletRed" />
-      <Member Id="F:System.Drawing.KnownColor.Menu" />
-      <Member Id="F:System.Drawing.KnownColor.MenuBar" />
-      <Member Id="F:System.Drawing.KnownColor.MenuHighlight" />
-      <Member Id="F:System.Drawing.KnownColor.MenuText" />
-      <Member Id="F:System.Drawing.KnownColor.MidnightBlue" />
-      <Member Id="F:System.Drawing.KnownColor.MintCream" />
-      <Member Id="F:System.Drawing.KnownColor.MistyRose" />
-      <Member Id="F:System.Drawing.KnownColor.Moccasin" />
-      <Member Id="F:System.Drawing.KnownColor.NavajoWhite" />
-      <Member Id="F:System.Drawing.KnownColor.Navy" />
-      <Member Id="F:System.Drawing.KnownColor.OldLace" />
-      <Member Id="F:System.Drawing.KnownColor.Olive" />
-      <Member Id="F:System.Drawing.KnownColor.OliveDrab" />
-      <Member Id="F:System.Drawing.KnownColor.Orange" />
-      <Member Id="F:System.Drawing.KnownColor.OrangeRed" />
-      <Member Id="F:System.Drawing.KnownColor.Orchid" />
-      <Member Id="F:System.Drawing.KnownColor.PaleGoldenrod" />
-      <Member Id="F:System.Drawing.KnownColor.PaleGreen" />
-      <Member Id="F:System.Drawing.KnownColor.PaleTurquoise" />
-      <Member Id="F:System.Drawing.KnownColor.PaleVioletRed" />
-      <Member Id="F:System.Drawing.KnownColor.PapayaWhip" />
-      <Member Id="F:System.Drawing.KnownColor.PeachPuff" />
-      <Member Id="F:System.Drawing.KnownColor.Peru" />
-      <Member Id="F:System.Drawing.KnownColor.Pink" />
-      <Member Id="F:System.Drawing.KnownColor.Plum" />
-      <Member Id="F:System.Drawing.KnownColor.PowderBlue" />
-      <Member Id="F:System.Drawing.KnownColor.Purple" />
-      <Member Id="F:System.Drawing.KnownColor.Red" />
-      <Member Id="F:System.Drawing.KnownColor.RosyBrown" />
-      <Member Id="F:System.Drawing.KnownColor.RoyalBlue" />
-      <Member Id="F:System.Drawing.KnownColor.SaddleBrown" />
-      <Member Id="F:System.Drawing.KnownColor.Salmon" />
-      <Member Id="F:System.Drawing.KnownColor.SandyBrown" />
-      <Member Id="F:System.Drawing.KnownColor.ScrollBar" />
-      <Member Id="F:System.Drawing.KnownColor.SeaGreen" />
-      <Member Id="F:System.Drawing.KnownColor.SeaShell" />
-      <Member Id="F:System.Drawing.KnownColor.Sienna" />
-      <Member Id="F:System.Drawing.KnownColor.Silver" />
-      <Member Id="F:System.Drawing.KnownColor.SkyBlue" />
-      <Member Id="F:System.Drawing.KnownColor.SlateBlue" />
-      <Member Id="F:System.Drawing.KnownColor.SlateGray" />
-      <Member Id="F:System.Drawing.KnownColor.Snow" />
-      <Member Id="F:System.Drawing.KnownColor.SpringGreen" />
-      <Member Id="F:System.Drawing.KnownColor.SteelBlue" />
-      <Member Id="F:System.Drawing.KnownColor.Tan" />
-      <Member Id="F:System.Drawing.KnownColor.Teal" />
-      <Member Id="F:System.Drawing.KnownColor.Thistle" />
-      <Member Id="F:System.Drawing.KnownColor.Tomato" />
-      <Member Id="F:System.Drawing.KnownColor.Transparent" />
-      <Member Id="F:System.Drawing.KnownColor.Turquoise" />
-      <Member Id="F:System.Drawing.KnownColor.Violet" />
-      <Member Id="F:System.Drawing.KnownColor.Wheat" />
-      <Member Id="F:System.Drawing.KnownColor.White" />
-      <Member Id="F:System.Drawing.KnownColor.WhiteSmoke" />
-      <Member Id="F:System.Drawing.KnownColor.Window" />
-      <Member Id="F:System.Drawing.KnownColor.WindowFrame" />
-      <Member Id="F:System.Drawing.KnownColor.WindowText" />
-      <Member Id="F:System.Drawing.KnownColor.Yellow" />
-      <Member Id="F:System.Drawing.KnownColor.YellowGreen" />
     </Type>
     <Type Name="System.Drawing.Point" Id="T:System.Drawing.Point">
       <Member Id="F:System.Drawing.Point.Empty" />
@@ -18401,11 +17881,6 @@
       <Member Id="F:System.Net.Mail.MailPriority.Normal" />
     </Type>
     <Type Name="System.Net.Mail.SendCompletedEventHandler" Id="T:System.Net.Mail.SendCompletedEventHandler" />
-    <Type Name="System.Net.Mail.SmtpAccess" Id="T:System.Net.Mail.SmtpAccess">
-      <Member Id="F:System.Net.Mail.SmtpAccess.Connect" />
-      <Member Id="F:System.Net.Mail.SmtpAccess.ConnectToUnrestrictedPort" />
-      <Member Id="F:System.Net.Mail.SmtpAccess.None" />
-    </Type>
     <Type Name="System.Net.Mail.SmtpClient" Id="T:System.Net.Mail.SmtpClient">
       <Member Id="E:System.Net.Mail.SmtpClient.SendCompleted" />
       <Member Id="M:System.Net.Mail.SmtpClient.#ctor" />
@@ -20215,460 +19690,6 @@
       <Member Id="P:System.Numerics.Complex.Phase" />
       <Member Id="P:System.Numerics.Complex.Real" />
     </Type>
-    <Type Name="System.Numerics.Matrix3x2" Id="T:System.Numerics.Matrix3x2">
-      <Member Id="F:System.Numerics.Matrix3x2.M11" />
-      <Member Id="F:System.Numerics.Matrix3x2.M12" />
-      <Member Id="F:System.Numerics.Matrix3x2.M21" />
-      <Member Id="F:System.Numerics.Matrix3x2.M22" />
-      <Member Id="F:System.Numerics.Matrix3x2.M31" />
-      <Member Id="F:System.Numerics.Matrix3x2.M32" />
-      <Member Id="M:System.Numerics.Matrix3x2.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix3x2.Add(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.CreateRotation(System.Single)" />
-      <Member Id="M:System.Numerics.Matrix3x2.CreateRotation(System.Single,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.CreateScale(System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.CreateScale(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.CreateScale(System.Single)" />
-      <Member Id="M:System.Numerics.Matrix3x2.CreateScale(System.Single,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.CreateScale(System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix3x2.CreateScale(System.Single,System.Single,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.CreateSkew(System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix3x2.CreateSkew(System.Single,System.Single,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.CreateTranslation(System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.CreateTranslation(System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix3x2.Equals(System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.Equals(System.Object)" />
-      <Member Id="M:System.Numerics.Matrix3x2.GetDeterminant" />
-      <Member Id="M:System.Numerics.Matrix3x2.GetHashCode" />
-      <Member Id="M:System.Numerics.Matrix3x2.Invert(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2@)" />
-      <Member Id="M:System.Numerics.Matrix3x2.Lerp(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix3x2.Multiply(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.Multiply(System.Numerics.Matrix3x2,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix3x2.Negate(System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.op_Addition(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.op_Equality(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.op_Inequality(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.op_Multiply(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.op_Multiply(System.Numerics.Matrix3x2,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix3x2.op_Subtraction(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.op_UnaryNegation(System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.Subtract(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Matrix3x2.ToString" />
-      <Member Id="P:System.Numerics.Matrix3x2.Identity" />
-      <Member Id="P:System.Numerics.Matrix3x2.IsIdentity" />
-      <Member Id="P:System.Numerics.Matrix3x2.Translation" />
-    </Type>
-    <Type Name="System.Numerics.Matrix4x4" Id="T:System.Numerics.Matrix4x4">
-      <Member Id="F:System.Numerics.Matrix4x4.M11" />
-      <Member Id="F:System.Numerics.Matrix4x4.M12" />
-      <Member Id="F:System.Numerics.Matrix4x4.M13" />
-      <Member Id="F:System.Numerics.Matrix4x4.M14" />
-      <Member Id="F:System.Numerics.Matrix4x4.M21" />
-      <Member Id="F:System.Numerics.Matrix4x4.M22" />
-      <Member Id="F:System.Numerics.Matrix4x4.M23" />
-      <Member Id="F:System.Numerics.Matrix4x4.M24" />
-      <Member Id="F:System.Numerics.Matrix4x4.M31" />
-      <Member Id="F:System.Numerics.Matrix4x4.M32" />
-      <Member Id="F:System.Numerics.Matrix4x4.M33" />
-      <Member Id="F:System.Numerics.Matrix4x4.M34" />
-      <Member Id="F:System.Numerics.Matrix4x4.M41" />
-      <Member Id="F:System.Numerics.Matrix4x4.M42" />
-      <Member Id="F:System.Numerics.Matrix4x4.M43" />
-      <Member Id="F:System.Numerics.Matrix4x4.M44" />
-      <Member Id="M:System.Numerics.Matrix4x4.#ctor(System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Matrix4x4.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.Add(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateBillboard(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateConstrainedBillboard(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateFromAxisAngle(System.Numerics.Vector3,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateFromQuaternion(System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateFromYawPitchRoll(System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateLookAt(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateOrthographic(System.Single,System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateOrthographicOffCenter(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreatePerspective(System.Single,System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreatePerspectiveFieldOfView(System.Single,System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreatePerspectiveOffCenter(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateReflection(System.Numerics.Plane)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateRotationX(System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateRotationX(System.Single,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateRotationY(System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateRotationY(System.Single,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateRotationZ(System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateRotationZ(System.Single,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateScale(System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateScale(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateScale(System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateScale(System.Single,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateScale(System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateScale(System.Single,System.Single,System.Single,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateShadow(System.Numerics.Vector3,System.Numerics.Plane)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateTranslation(System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateTranslation(System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.CreateWorld(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Matrix4x4.Decompose(System.Numerics.Matrix4x4,System.Numerics.Vector3@,System.Numerics.Quaternion@,System.Numerics.Vector3@)" />
-      <Member Id="M:System.Numerics.Matrix4x4.Equals(System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Matrix4x4.Equals(System.Object)" />
-      <Member Id="M:System.Numerics.Matrix4x4.GetDeterminant" />
-      <Member Id="M:System.Numerics.Matrix4x4.GetHashCode" />
-      <Member Id="M:System.Numerics.Matrix4x4.Invert(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4@)" />
-      <Member Id="M:System.Numerics.Matrix4x4.Lerp(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.Multiply(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Matrix4x4.Multiply(System.Numerics.Matrix4x4,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.Negate(System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Matrix4x4.op_Addition(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Matrix4x4.op_Equality(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Matrix4x4.op_Inequality(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Matrix4x4.op_Multiply(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Matrix4x4.op_Multiply(System.Numerics.Matrix4x4,System.Single)" />
-      <Member Id="M:System.Numerics.Matrix4x4.op_Subtraction(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Matrix4x4.op_UnaryNegation(System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Matrix4x4.Subtract(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Matrix4x4.ToString" />
-      <Member Id="M:System.Numerics.Matrix4x4.Transform(System.Numerics.Matrix4x4,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Matrix4x4.Transpose(System.Numerics.Matrix4x4)" />
-      <Member Id="P:System.Numerics.Matrix4x4.Identity" />
-      <Member Id="P:System.Numerics.Matrix4x4.IsIdentity" />
-      <Member Id="P:System.Numerics.Matrix4x4.Translation" />
-    </Type>
-    <Type Name="System.Numerics.Plane" Id="T:System.Numerics.Plane">
-      <Member Id="F:System.Numerics.Plane.D" />
-      <Member Id="F:System.Numerics.Plane.Normal" />
-      <Member Id="M:System.Numerics.Plane.#ctor(System.Numerics.Vector3,System.Single)" />
-      <Member Id="M:System.Numerics.Plane.#ctor(System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Plane.CreateFromVertices(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Plane.Dot(System.Numerics.Plane,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Plane.DotCoordinate(System.Numerics.Plane,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Plane.DotNormal(System.Numerics.Plane,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Plane.Equals(System.Numerics.Plane)" />
-      <Member Id="M:System.Numerics.Plane.Equals(System.Object)" />
-      <Member Id="M:System.Numerics.Plane.GetHashCode" />
-      <Member Id="M:System.Numerics.Plane.Normalize(System.Numerics.Plane)" />
-      <Member Id="M:System.Numerics.Plane.op_Equality(System.Numerics.Plane,System.Numerics.Plane)" />
-      <Member Id="M:System.Numerics.Plane.op_Inequality(System.Numerics.Plane,System.Numerics.Plane)" />
-      <Member Id="M:System.Numerics.Plane.ToString" />
-      <Member Id="M:System.Numerics.Plane.Transform(System.Numerics.Plane,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Plane.Transform(System.Numerics.Plane,System.Numerics.Quaternion)" />
-    </Type>
-    <Type Name="System.Numerics.Quaternion" Id="T:System.Numerics.Quaternion">
-      <Member Id="F:System.Numerics.Quaternion.W" />
-      <Member Id="F:System.Numerics.Quaternion.X" />
-      <Member Id="F:System.Numerics.Quaternion.Y" />
-      <Member Id="F:System.Numerics.Quaternion.Z" />
-      <Member Id="M:System.Numerics.Quaternion.#ctor(System.Numerics.Vector3,System.Single)" />
-      <Member Id="M:System.Numerics.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Quaternion.Add(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.Concatenate(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.Conjugate(System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.CreateFromAxisAngle(System.Numerics.Vector3,System.Single)" />
-      <Member Id="M:System.Numerics.Quaternion.CreateFromRotationMatrix(System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Quaternion.CreateFromYawPitchRoll(System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Quaternion.Divide(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.Dot(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.Equals(System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.Equals(System.Object)" />
-      <Member Id="M:System.Numerics.Quaternion.GetHashCode" />
-      <Member Id="M:System.Numerics.Quaternion.Inverse(System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.Length" />
-      <Member Id="M:System.Numerics.Quaternion.LengthSquared" />
-      <Member Id="M:System.Numerics.Quaternion.Lerp(System.Numerics.Quaternion,System.Numerics.Quaternion,System.Single)" />
-      <Member Id="M:System.Numerics.Quaternion.Multiply(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.Multiply(System.Numerics.Quaternion,System.Single)" />
-      <Member Id="M:System.Numerics.Quaternion.Negate(System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.Normalize(System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.op_Addition(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.op_Division(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.op_Equality(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.op_Inequality(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.op_Multiply(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.op_Multiply(System.Numerics.Quaternion,System.Single)" />
-      <Member Id="M:System.Numerics.Quaternion.op_Subtraction(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.op_UnaryNegation(System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.Slerp(System.Numerics.Quaternion,System.Numerics.Quaternion,System.Single)" />
-      <Member Id="M:System.Numerics.Quaternion.Subtract(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Quaternion.ToString" />
-      <Member Id="P:System.Numerics.Quaternion.Identity" />
-      <Member Id="P:System.Numerics.Quaternion.IsIdentity" />
-    </Type>
-    <Type Name="System.Numerics.Vector" Id="T:System.Numerics.Vector">
-      <Member Id="M:System.Numerics.Vector.Abs``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.Add``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.AndNot``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.AsVectorByte``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.AsVectorDouble``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.AsVectorInt16``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.AsVectorInt32``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.AsVectorInt64``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.AsVectorSByte``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.AsVectorSingle``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.AsVectorUInt16``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.AsVectorUInt32``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.AsVectorUInt64``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.BitwiseAnd``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.BitwiseOr``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.ConditionalSelect(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})" />
-      <Member Id="M:System.Numerics.Vector.ConditionalSelect(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
-      <Member Id="M:System.Numerics.Vector.ConditionalSelect``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.Divide``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.Dot``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.Equals(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
-      <Member Id="M:System.Numerics.Vector.Equals(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})" />
-      <Member Id="M:System.Numerics.Vector.Equals(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})" />
-      <Member Id="M:System.Numerics.Vector.Equals(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})" />
-      <Member Id="M:System.Numerics.Vector.Equals``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.EqualsAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.EqualsAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThan``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThanAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThanAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThanOrEqual``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThanOrEqualAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.GreaterThanOrEqualAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
-      <Member Id="M:System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})" />
-      <Member Id="M:System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})" />
-      <Member Id="M:System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})" />
-      <Member Id="M:System.Numerics.Vector.LessThan``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.LessThanAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.LessThanAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})" />
-      <Member Id="M:System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})" />
-      <Member Id="M:System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})" />
-      <Member Id="M:System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})" />
-      <Member Id="M:System.Numerics.Vector.LessThanOrEqual``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.LessThanOrEqualAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.LessThanOrEqualAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.Max``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.Min``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.Multiply``1(``0,System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.Multiply``1(System.Numerics.Vector{``0},``0)" />
-      <Member Id="M:System.Numerics.Vector.Multiply``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.Negate``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.OnesComplement``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.SquareRoot``1(System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.Subtract``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="M:System.Numerics.Vector.Xor``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})" />
-      <Member Id="P:System.Numerics.Vector.IsHardwareAccelerated" />
-    </Type>
-    <Type Name="System.Numerics.Vector`1" Id="T:System.Numerics.Vector`1">
-      <Member Id="M:System.Numerics.Vector`1.#ctor(`0)" />
-      <Member Id="M:System.Numerics.Vector`1.#ctor(`0[])" />
-      <Member Id="M:System.Numerics.Vector`1.#ctor(`0[],System.Int32)" />
-      <Member Id="M:System.Numerics.Vector`1.CopyTo(`0[])" />
-      <Member Id="M:System.Numerics.Vector`1.CopyTo(`0[],System.Int32)" />
-      <Member Id="M:System.Numerics.Vector`1.Equals(System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.Equals(System.Object)" />
-      <Member Id="M:System.Numerics.Vector`1.GetHashCode" />
-      <Member Id="M:System.Numerics.Vector`1.op_Addition(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.op_BitwiseAnd(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.op_BitwiseOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.op_Division(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.op_Equality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.op_ExclusiveOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Byte}" />
-      <Member Id="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Double}" />
-      <Member Id="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int16}" />
-      <Member Id="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int32}" />
-      <Member Id="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int64}" />
-      <Member Id="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.SByte}" />
-      <Member Id="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Single}" />
-      <Member Id="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt16}" />
-      <Member Id="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt32}" />
-      <Member Id="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt64}" />
-      <Member Id="M:System.Numerics.Vector`1.op_Inequality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.op_Multiply(`0,System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.op_Multiply(System.Numerics.Vector{`0},`0)" />
-      <Member Id="M:System.Numerics.Vector`1.op_Multiply(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.op_OnesComplement(System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.op_Subtraction(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.op_UnaryNegation(System.Numerics.Vector{`0})" />
-      <Member Id="M:System.Numerics.Vector`1.ToString" />
-      <Member Id="M:System.Numerics.Vector`1.ToString(System.String)" />
-      <Member Id="M:System.Numerics.Vector`1.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="P:System.Numerics.Vector`1.Count" />
-      <Member Id="P:System.Numerics.Vector`1.Item(System.Int32)" />
-      <Member Id="P:System.Numerics.Vector`1.One" />
-      <Member Id="P:System.Numerics.Vector`1.Zero" />
-    </Type>
-    <Type Name="System.Numerics.Vector2" Id="T:System.Numerics.Vector2">
-      <Member Id="F:System.Numerics.Vector2.X" />
-      <Member Id="F:System.Numerics.Vector2.Y" />
-      <Member Id="M:System.Numerics.Vector2.#ctor(System.Single)" />
-      <Member Id="M:System.Numerics.Vector2.#ctor(System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Vector2.Abs(System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Add(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Clamp(System.Numerics.Vector2,System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.CopyTo(System.Single[])" />
-      <Member Id="M:System.Numerics.Vector2.CopyTo(System.Single[],System.Int32)" />
-      <Member Id="M:System.Numerics.Vector2.Distance(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.DistanceSquared(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Divide(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Divide(System.Numerics.Vector2,System.Single)" />
-      <Member Id="M:System.Numerics.Vector2.Dot(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Equals(System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Equals(System.Object)" />
-      <Member Id="M:System.Numerics.Vector2.GetHashCode" />
-      <Member Id="M:System.Numerics.Vector2.Length" />
-      <Member Id="M:System.Numerics.Vector2.LengthSquared" />
-      <Member Id="M:System.Numerics.Vector2.Lerp(System.Numerics.Vector2,System.Numerics.Vector2,System.Single)" />
-      <Member Id="M:System.Numerics.Vector2.Max(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Min(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Multiply(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Multiply(System.Numerics.Vector2,System.Single)" />
-      <Member Id="M:System.Numerics.Vector2.Multiply(System.Single,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Negate(System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Normalize(System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.op_Addition(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.op_Division(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.op_Division(System.Numerics.Vector2,System.Single)" />
-      <Member Id="M:System.Numerics.Vector2.op_Equality(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.op_Inequality(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.op_Multiply(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.op_Multiply(System.Numerics.Vector2,System.Single)" />
-      <Member Id="M:System.Numerics.Vector2.op_Multiply(System.Single,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.op_Subtraction(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.op_UnaryNegation(System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Reflect(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.SquareRoot(System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.Subtract(System.Numerics.Vector2,System.Numerics.Vector2)" />
-      <Member Id="M:System.Numerics.Vector2.ToString" />
-      <Member Id="M:System.Numerics.Vector2.ToString(System.String)" />
-      <Member Id="M:System.Numerics.Vector2.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.Numerics.Vector2.Transform(System.Numerics.Vector2,System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Vector2.Transform(System.Numerics.Vector2,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Vector2.Transform(System.Numerics.Vector2,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Vector2.TransformNormal(System.Numerics.Vector2,System.Numerics.Matrix3x2)" />
-      <Member Id="M:System.Numerics.Vector2.TransformNormal(System.Numerics.Vector2,System.Numerics.Matrix4x4)" />
-      <Member Id="P:System.Numerics.Vector2.One" />
-      <Member Id="P:System.Numerics.Vector2.UnitX" />
-      <Member Id="P:System.Numerics.Vector2.UnitY" />
-      <Member Id="P:System.Numerics.Vector2.Zero" />
-    </Type>
-    <Type Name="System.Numerics.Vector3" Id="T:System.Numerics.Vector3">
-      <Member Id="F:System.Numerics.Vector3.X" />
-      <Member Id="F:System.Numerics.Vector3.Y" />
-      <Member Id="F:System.Numerics.Vector3.Z" />
-      <Member Id="M:System.Numerics.Vector3.#ctor(System.Numerics.Vector2,System.Single)" />
-      <Member Id="M:System.Numerics.Vector3.#ctor(System.Single)" />
-      <Member Id="M:System.Numerics.Vector3.#ctor(System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Vector3.Abs(System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Add(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Clamp(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.CopyTo(System.Single[])" />
-      <Member Id="M:System.Numerics.Vector3.CopyTo(System.Single[],System.Int32)" />
-      <Member Id="M:System.Numerics.Vector3.Cross(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Distance(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.DistanceSquared(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Divide(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Divide(System.Numerics.Vector3,System.Single)" />
-      <Member Id="M:System.Numerics.Vector3.Dot(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Equals(System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Equals(System.Object)" />
-      <Member Id="M:System.Numerics.Vector3.GetHashCode" />
-      <Member Id="M:System.Numerics.Vector3.Length" />
-      <Member Id="M:System.Numerics.Vector3.LengthSquared" />
-      <Member Id="M:System.Numerics.Vector3.Lerp(System.Numerics.Vector3,System.Numerics.Vector3,System.Single)" />
-      <Member Id="M:System.Numerics.Vector3.Max(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Min(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Multiply(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Multiply(System.Numerics.Vector3,System.Single)" />
-      <Member Id="M:System.Numerics.Vector3.Multiply(System.Single,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Negate(System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Normalize(System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.op_Addition(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.op_Division(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.op_Division(System.Numerics.Vector3,System.Single)" />
-      <Member Id="M:System.Numerics.Vector3.op_Equality(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.op_Inequality(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.op_Multiply(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.op_Multiply(System.Numerics.Vector3,System.Single)" />
-      <Member Id="M:System.Numerics.Vector3.op_Multiply(System.Single,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.op_Subtraction(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.op_UnaryNegation(System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Reflect(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.SquareRoot(System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.Subtract(System.Numerics.Vector3,System.Numerics.Vector3)" />
-      <Member Id="M:System.Numerics.Vector3.ToString" />
-      <Member Id="M:System.Numerics.Vector3.ToString(System.String)" />
-      <Member Id="M:System.Numerics.Vector3.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.Numerics.Vector3.Transform(System.Numerics.Vector3,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Vector3.Transform(System.Numerics.Vector3,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Vector3.TransformNormal(System.Numerics.Vector3,System.Numerics.Matrix4x4)" />
-      <Member Id="P:System.Numerics.Vector3.One" />
-      <Member Id="P:System.Numerics.Vector3.UnitX" />
-      <Member Id="P:System.Numerics.Vector3.UnitY" />
-      <Member Id="P:System.Numerics.Vector3.UnitZ" />
-      <Member Id="P:System.Numerics.Vector3.Zero" />
-    </Type>
-    <Type Name="System.Numerics.Vector4" Id="T:System.Numerics.Vector4">
-      <Member Id="F:System.Numerics.Vector4.W" />
-      <Member Id="F:System.Numerics.Vector4.X" />
-      <Member Id="F:System.Numerics.Vector4.Y" />
-      <Member Id="F:System.Numerics.Vector4.Z" />
-      <Member Id="M:System.Numerics.Vector4.#ctor(System.Numerics.Vector2,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Vector4.#ctor(System.Numerics.Vector3,System.Single)" />
-      <Member Id="M:System.Numerics.Vector4.#ctor(System.Single)" />
-      <Member Id="M:System.Numerics.Vector4.#ctor(System.Single,System.Single,System.Single,System.Single)" />
-      <Member Id="M:System.Numerics.Vector4.Abs(System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.Add(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.Clamp(System.Numerics.Vector4,System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.CopyTo(System.Single[])" />
-      <Member Id="M:System.Numerics.Vector4.CopyTo(System.Single[],System.Int32)" />
-      <Member Id="M:System.Numerics.Vector4.Distance(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.DistanceSquared(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.Divide(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.Divide(System.Numerics.Vector4,System.Single)" />
-      <Member Id="M:System.Numerics.Vector4.Dot(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.Equals(System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.Equals(System.Object)" />
-      <Member Id="M:System.Numerics.Vector4.GetHashCode" />
-      <Member Id="M:System.Numerics.Vector4.Length" />
-      <Member Id="M:System.Numerics.Vector4.LengthSquared" />
-      <Member Id="M:System.Numerics.Vector4.Lerp(System.Numerics.Vector4,System.Numerics.Vector4,System.Single)" />
-      <Member Id="M:System.Numerics.Vector4.Max(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.Min(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.Multiply(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.Multiply(System.Numerics.Vector4,System.Single)" />
-      <Member Id="M:System.Numerics.Vector4.Multiply(System.Single,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.Negate(System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.Normalize(System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.op_Addition(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.op_Division(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.op_Division(System.Numerics.Vector4,System.Single)" />
-      <Member Id="M:System.Numerics.Vector4.op_Equality(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.op_Inequality(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.op_Multiply(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.op_Multiply(System.Numerics.Vector4,System.Single)" />
-      <Member Id="M:System.Numerics.Vector4.op_Multiply(System.Single,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.op_Subtraction(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.op_UnaryNegation(System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.SquareRoot(System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.Subtract(System.Numerics.Vector4,System.Numerics.Vector4)" />
-      <Member Id="M:System.Numerics.Vector4.ToString" />
-      <Member Id="M:System.Numerics.Vector4.ToString(System.String)" />
-      <Member Id="M:System.Numerics.Vector4.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.Numerics.Vector4.Transform(System.Numerics.Vector2,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Vector4.Transform(System.Numerics.Vector2,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Vector4.Transform(System.Numerics.Vector3,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Vector4.Transform(System.Numerics.Vector3,System.Numerics.Quaternion)" />
-      <Member Id="M:System.Numerics.Vector4.Transform(System.Numerics.Vector4,System.Numerics.Matrix4x4)" />
-      <Member Id="M:System.Numerics.Vector4.Transform(System.Numerics.Vector4,System.Numerics.Quaternion)" />
-      <Member Id="P:System.Numerics.Vector4.One" />
-      <Member Id="P:System.Numerics.Vector4.UnitW" />
-      <Member Id="P:System.Numerics.Vector4.UnitX" />
-      <Member Id="P:System.Numerics.Vector4.UnitY" />
-      <Member Id="P:System.Numerics.Vector4.UnitZ" />
-      <Member Id="P:System.Numerics.Vector4.Zero" />
-    </Type>
   </Namespace>
   <Namespace Name="System.Reflection">
     <Type Name="System.Reflection.AmbiguousMatchException" Id="T:System.Reflection.AmbiguousMatchException">
@@ -22475,6 +21496,10 @@
       <Member Id="M:System.Runtime.CompilerServices.TaskAwaiter`1.UnsafeOnCompleted(System.Action)" />
       <Member Id="P:System.Runtime.CompilerServices.TaskAwaiter`1.IsCompleted" />
     </Type>
+    <Type Name="System.Runtime.CompilerServices.TupleElementNamesAttribute" Id="T:System.Runtime.CompilerServices.TupleElementNamesAttribute">
+      <Member Id="M:System.Runtime.CompilerServices.TupleElementNamesAttribute.#ctor(System.String[])" />
+      <Member Id="P:System.Runtime.CompilerServices.TupleElementNamesAttribute.TransformNames" />
+    </Type>
     <Type Name="System.Runtime.CompilerServices.TypeForwardedFromAttribute" Id="T:System.Runtime.CompilerServices.TypeForwardedFromAttribute">
       <Member Id="M:System.Runtime.CompilerServices.TypeForwardedFromAttribute.#ctor(System.String)" />
       <Member Id="P:System.Runtime.CompilerServices.TypeForwardedFromAttribute.AssemblyFullName" />
@@ -22532,6 +21557,12 @@
   <Namespace Name="System.Runtime.InteropServices">
     <Type Name="System.Runtime.InteropServices.AllowReversePInvokeCallsAttribute" Id="T:System.Runtime.InteropServices.AllowReversePInvokeCallsAttribute">
       <Member Id="M:System.Runtime.InteropServices.AllowReversePInvokeCallsAttribute.#ctor" />
+    </Type>
+    <Type Name="System.Runtime.InteropServices.Architecture" Id="T:System.Runtime.InteropServices.Architecture">
+      <Member Id="F:System.Runtime.InteropServices.Architecture.Arm" />
+      <Member Id="F:System.Runtime.InteropServices.Architecture.Arm64" />
+      <Member Id="F:System.Runtime.InteropServices.Architecture.X64" />
+      <Member Id="F:System.Runtime.InteropServices.Architecture.X86" />
     </Type>
     <Type Name="System.Runtime.InteropServices.ArrayWithOffset" Id="T:System.Runtime.InteropServices.ArrayWithOffset">
       <Member Id="M:System.Runtime.InteropServices.ArrayWithOffset.#ctor(System.Object,System.Int32)" />
@@ -23004,6 +22035,18 @@
     <Type Name="System.Runtime.InteropServices.OptionalAttribute" Id="T:System.Runtime.InteropServices.OptionalAttribute">
       <Member Id="M:System.Runtime.InteropServices.OptionalAttribute.#ctor" />
     </Type>
+    <Type Name="System.Runtime.InteropServices.OSPlatform" Id="T:System.Runtime.InteropServices.OSPlatform">
+      <Member Id="M:System.Runtime.InteropServices.OSPlatform.Create(System.String)" />
+      <Member Id="M:System.Runtime.InteropServices.OSPlatform.Equals(System.Object)" />
+      <Member Id="M:System.Runtime.InteropServices.OSPlatform.Equals(System.Runtime.InteropServices.OSPlatform)" />
+      <Member Id="M:System.Runtime.InteropServices.OSPlatform.GetHashCode" />
+      <Member Id="M:System.Runtime.InteropServices.OSPlatform.op_Equality(System.Runtime.InteropServices.OSPlatform,System.Runtime.InteropServices.OSPlatform)" />
+      <Member Id="M:System.Runtime.InteropServices.OSPlatform.op_Inequality(System.Runtime.InteropServices.OSPlatform,System.Runtime.InteropServices.OSPlatform)" />
+      <Member Id="M:System.Runtime.InteropServices.OSPlatform.ToString" />
+      <Member Id="P:System.Runtime.InteropServices.OSPlatform.Linux" />
+      <Member Id="P:System.Runtime.InteropServices.OSPlatform.OSX" />
+      <Member Id="P:System.Runtime.InteropServices.OSPlatform.Windows" />
+    </Type>
     <Type Name="System.Runtime.InteropServices.OutAttribute" Id="T:System.Runtime.InteropServices.OutAttribute">
       <Member Id="M:System.Runtime.InteropServices.OutAttribute.#ctor" />
     </Type>
@@ -23026,6 +22069,13 @@
       <Member Id="M:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject(System.Guid,System.Guid)" />
       <Member Id="M:System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion" />
       <Member Id="P:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile" />
+    </Type>
+    <Type Name="System.Runtime.InteropServices.RuntimeInformation" Id="T:System.Runtime.InteropServices.RuntimeInformation">
+      <Member Id="M:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform)" />
+      <Member Id="P:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription" />
+      <Member Id="P:System.Runtime.InteropServices.RuntimeInformation.OSArchitecture" />
+      <Member Id="P:System.Runtime.InteropServices.RuntimeInformation.OSDescription" />
+      <Member Id="P:System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture" />
     </Type>
     <Type Name="System.Runtime.InteropServices.SafeArrayRankMismatchException" Id="T:System.Runtime.InteropServices.SafeArrayRankMismatchException">
       <Member Id="M:System.Runtime.InteropServices.SafeArrayRankMismatchException.#ctor" />
@@ -24690,21 +23740,6 @@
       <Member Id="M:System.Security.Cryptography.Aes.Create" />
       <Member Id="M:System.Security.Cryptography.Aes.Create(System.String)" />
     </Type>
-    <Type Name="System.Security.Cryptography.AesCng" Id="T:System.Security.Cryptography.AesCng">
-      <Member Id="M:System.Security.Cryptography.AesCng.#ctor" />
-      <Member Id="M:System.Security.Cryptography.AesCng.#ctor(System.String)" />
-      <Member Id="M:System.Security.Cryptography.AesCng.#ctor(System.String,System.Security.Cryptography.CngProvider)" />
-      <Member Id="M:System.Security.Cryptography.AesCng.#ctor(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)" />
-      <Member Id="M:System.Security.Cryptography.AesCng.CreateDecryptor" />
-      <Member Id="M:System.Security.Cryptography.AesCng.CreateDecryptor(System.Byte[],System.Byte[])" />
-      <Member Id="M:System.Security.Cryptography.AesCng.CreateEncryptor" />
-      <Member Id="M:System.Security.Cryptography.AesCng.CreateEncryptor(System.Byte[],System.Byte[])" />
-      <Member Id="M:System.Security.Cryptography.AesCng.Dispose(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.AesCng.GenerateIV" />
-      <Member Id="M:System.Security.Cryptography.AesCng.GenerateKey" />
-      <Member Id="P:System.Security.Cryptography.AesCng.Key" />
-      <Member Id="P:System.Security.Cryptography.AesCng.KeySize" />
-    </Type>
     <Type Name="System.Security.Cryptography.AesCryptoServiceProvider" Id="T:System.Security.Cryptography.AesCryptoServiceProvider">
       <Member Id="M:System.Security.Cryptography.AesCryptoServiceProvider.#ctor" />
       <Member Id="M:System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor" />
@@ -24813,184 +23848,6 @@
       <Member Id="F:System.Security.Cryptography.CipherMode.CTS" />
       <Member Id="F:System.Security.Cryptography.CipherMode.ECB" />
       <Member Id="F:System.Security.Cryptography.CipherMode.OFB" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngAlgorithm" Id="T:System.Security.Cryptography.CngAlgorithm">
-      <Member Id="M:System.Security.Cryptography.CngAlgorithm.#ctor(System.String)" />
-      <Member Id="M:System.Security.Cryptography.CngAlgorithm.Equals(System.Object)" />
-      <Member Id="M:System.Security.Cryptography.CngAlgorithm.Equals(System.Security.Cryptography.CngAlgorithm)" />
-      <Member Id="M:System.Security.Cryptography.CngAlgorithm.GetHashCode" />
-      <Member Id="M:System.Security.Cryptography.CngAlgorithm.op_Equality(System.Security.Cryptography.CngAlgorithm,System.Security.Cryptography.CngAlgorithm)" />
-      <Member Id="M:System.Security.Cryptography.CngAlgorithm.op_Inequality(System.Security.Cryptography.CngAlgorithm,System.Security.Cryptography.CngAlgorithm)" />
-      <Member Id="M:System.Security.Cryptography.CngAlgorithm.ToString" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.Algorithm" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.ECDiffieHellman" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.ECDiffieHellmanP256" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.ECDiffieHellmanP384" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.ECDiffieHellmanP521" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.ECDsa" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.ECDsaP256" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.ECDsaP384" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.ECDsaP521" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.MD5" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.Rsa" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.Sha1" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.Sha256" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.Sha384" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithm.Sha512" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngAlgorithmGroup" Id="T:System.Security.Cryptography.CngAlgorithmGroup">
-      <Member Id="M:System.Security.Cryptography.CngAlgorithmGroup.#ctor(System.String)" />
-      <Member Id="M:System.Security.Cryptography.CngAlgorithmGroup.Equals(System.Object)" />
-      <Member Id="M:System.Security.Cryptography.CngAlgorithmGroup.Equals(System.Security.Cryptography.CngAlgorithmGroup)" />
-      <Member Id="M:System.Security.Cryptography.CngAlgorithmGroup.GetHashCode" />
-      <Member Id="M:System.Security.Cryptography.CngAlgorithmGroup.op_Equality(System.Security.Cryptography.CngAlgorithmGroup,System.Security.Cryptography.CngAlgorithmGroup)" />
-      <Member Id="M:System.Security.Cryptography.CngAlgorithmGroup.op_Inequality(System.Security.Cryptography.CngAlgorithmGroup,System.Security.Cryptography.CngAlgorithmGroup)" />
-      <Member Id="M:System.Security.Cryptography.CngAlgorithmGroup.ToString" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithmGroup.AlgorithmGroup" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithmGroup.DiffieHellman" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithmGroup.Dsa" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithmGroup.ECDiffieHellman" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithmGroup.ECDsa" />
-      <Member Id="P:System.Security.Cryptography.CngAlgorithmGroup.Rsa" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngExportPolicies" Id="T:System.Security.Cryptography.CngExportPolicies">
-      <Member Id="F:System.Security.Cryptography.CngExportPolicies.AllowArchiving" />
-      <Member Id="F:System.Security.Cryptography.CngExportPolicies.AllowExport" />
-      <Member Id="F:System.Security.Cryptography.CngExportPolicies.AllowPlaintextArchiving" />
-      <Member Id="F:System.Security.Cryptography.CngExportPolicies.AllowPlaintextExport" />
-      <Member Id="F:System.Security.Cryptography.CngExportPolicies.None" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngKey" Id="T:System.Security.Cryptography.CngKey">
-      <Member Id="M:System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm,System.String)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm,System.String,System.Security.Cryptography.CngKeyCreationParameters)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Delete" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Dispose" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Exists(System.String)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Exists(System.String,System.Security.Cryptography.CngProvider)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Exists(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Export(System.Security.Cryptography.CngKeyBlobFormat)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.GetProperty(System.String,System.Security.Cryptography.CngPropertyOptions)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.HasProperty(System.String,System.Security.Cryptography.CngPropertyOptions)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Import(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Import(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat,System.Security.Cryptography.CngProvider)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Open(Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle,System.Security.Cryptography.CngKeyHandleOpenOptions)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Open(System.String)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Open(System.String,System.Security.Cryptography.CngProvider)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.Open(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)" />
-      <Member Id="M:System.Security.Cryptography.CngKey.SetProperty(System.Security.Cryptography.CngProperty)" />
-      <Member Id="P:System.Security.Cryptography.CngKey.Algorithm" />
-      <Member Id="P:System.Security.Cryptography.CngKey.AlgorithmGroup" />
-      <Member Id="P:System.Security.Cryptography.CngKey.ExportPolicy" />
-      <Member Id="P:System.Security.Cryptography.CngKey.Handle" />
-      <Member Id="P:System.Security.Cryptography.CngKey.IsEphemeral" />
-      <Member Id="P:System.Security.Cryptography.CngKey.IsMachineKey" />
-      <Member Id="P:System.Security.Cryptography.CngKey.KeyName" />
-      <Member Id="P:System.Security.Cryptography.CngKey.KeySize" />
-      <Member Id="P:System.Security.Cryptography.CngKey.KeyUsage" />
-      <Member Id="P:System.Security.Cryptography.CngKey.ParentWindowHandle" />
-      <Member Id="P:System.Security.Cryptography.CngKey.Provider" />
-      <Member Id="P:System.Security.Cryptography.CngKey.ProviderHandle" />
-      <Member Id="P:System.Security.Cryptography.CngKey.UIPolicy" />
-      <Member Id="P:System.Security.Cryptography.CngKey.UniqueName" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngKeyBlobFormat" Id="T:System.Security.Cryptography.CngKeyBlobFormat">
-      <Member Id="M:System.Security.Cryptography.CngKeyBlobFormat.#ctor(System.String)" />
-      <Member Id="M:System.Security.Cryptography.CngKeyBlobFormat.Equals(System.Object)" />
-      <Member Id="M:System.Security.Cryptography.CngKeyBlobFormat.Equals(System.Security.Cryptography.CngKeyBlobFormat)" />
-      <Member Id="M:System.Security.Cryptography.CngKeyBlobFormat.GetHashCode" />
-      <Member Id="M:System.Security.Cryptography.CngKeyBlobFormat.op_Equality(System.Security.Cryptography.CngKeyBlobFormat,System.Security.Cryptography.CngKeyBlobFormat)" />
-      <Member Id="M:System.Security.Cryptography.CngKeyBlobFormat.op_Inequality(System.Security.Cryptography.CngKeyBlobFormat,System.Security.Cryptography.CngKeyBlobFormat)" />
-      <Member Id="M:System.Security.Cryptography.CngKeyBlobFormat.ToString" />
-      <Member Id="P:System.Security.Cryptography.CngKeyBlobFormat.EccFullPrivateBlob" />
-      <Member Id="P:System.Security.Cryptography.CngKeyBlobFormat.EccFullPublicBlob" />
-      <Member Id="P:System.Security.Cryptography.CngKeyBlobFormat.EccPrivateBlob" />
-      <Member Id="P:System.Security.Cryptography.CngKeyBlobFormat.EccPublicBlob" />
-      <Member Id="P:System.Security.Cryptography.CngKeyBlobFormat.Format" />
-      <Member Id="P:System.Security.Cryptography.CngKeyBlobFormat.GenericPrivateBlob" />
-      <Member Id="P:System.Security.Cryptography.CngKeyBlobFormat.GenericPublicBlob" />
-      <Member Id="P:System.Security.Cryptography.CngKeyBlobFormat.OpaqueTransportBlob" />
-      <Member Id="P:System.Security.Cryptography.CngKeyBlobFormat.Pkcs8PrivateBlob" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngKeyCreationOptions" Id="T:System.Security.Cryptography.CngKeyCreationOptions">
-      <Member Id="F:System.Security.Cryptography.CngKeyCreationOptions.MachineKey" />
-      <Member Id="F:System.Security.Cryptography.CngKeyCreationOptions.None" />
-      <Member Id="F:System.Security.Cryptography.CngKeyCreationOptions.OverwriteExistingKey" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngKeyCreationParameters" Id="T:System.Security.Cryptography.CngKeyCreationParameters">
-      <Member Id="M:System.Security.Cryptography.CngKeyCreationParameters.#ctor" />
-      <Member Id="P:System.Security.Cryptography.CngKeyCreationParameters.ExportPolicy" />
-      <Member Id="P:System.Security.Cryptography.CngKeyCreationParameters.KeyCreationOptions" />
-      <Member Id="P:System.Security.Cryptography.CngKeyCreationParameters.KeyUsage" />
-      <Member Id="P:System.Security.Cryptography.CngKeyCreationParameters.Parameters" />
-      <Member Id="P:System.Security.Cryptography.CngKeyCreationParameters.ParentWindowHandle" />
-      <Member Id="P:System.Security.Cryptography.CngKeyCreationParameters.Provider" />
-      <Member Id="P:System.Security.Cryptography.CngKeyCreationParameters.UIPolicy" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngKeyHandleOpenOptions" Id="T:System.Security.Cryptography.CngKeyHandleOpenOptions">
-      <Member Id="F:System.Security.Cryptography.CngKeyHandleOpenOptions.EphemeralKey" />
-      <Member Id="F:System.Security.Cryptography.CngKeyHandleOpenOptions.None" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngKeyOpenOptions" Id="T:System.Security.Cryptography.CngKeyOpenOptions">
-      <Member Id="F:System.Security.Cryptography.CngKeyOpenOptions.MachineKey" />
-      <Member Id="F:System.Security.Cryptography.CngKeyOpenOptions.None" />
-      <Member Id="F:System.Security.Cryptography.CngKeyOpenOptions.Silent" />
-      <Member Id="F:System.Security.Cryptography.CngKeyOpenOptions.UserKey" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngKeyUsages" Id="T:System.Security.Cryptography.CngKeyUsages">
-      <Member Id="F:System.Security.Cryptography.CngKeyUsages.AllUsages" />
-      <Member Id="F:System.Security.Cryptography.CngKeyUsages.Decryption" />
-      <Member Id="F:System.Security.Cryptography.CngKeyUsages.KeyAgreement" />
-      <Member Id="F:System.Security.Cryptography.CngKeyUsages.None" />
-      <Member Id="F:System.Security.Cryptography.CngKeyUsages.Signing" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngProperty" Id="T:System.Security.Cryptography.CngProperty">
-      <Member Id="M:System.Security.Cryptography.CngProperty.#ctor(System.String,System.Byte[],System.Security.Cryptography.CngPropertyOptions)" />
-      <Member Id="M:System.Security.Cryptography.CngProperty.Equals(System.Object)" />
-      <Member Id="M:System.Security.Cryptography.CngProperty.Equals(System.Security.Cryptography.CngProperty)" />
-      <Member Id="M:System.Security.Cryptography.CngProperty.GetHashCode" />
-      <Member Id="M:System.Security.Cryptography.CngProperty.GetValue" />
-      <Member Id="M:System.Security.Cryptography.CngProperty.op_Equality(System.Security.Cryptography.CngProperty,System.Security.Cryptography.CngProperty)" />
-      <Member Id="M:System.Security.Cryptography.CngProperty.op_Inequality(System.Security.Cryptography.CngProperty,System.Security.Cryptography.CngProperty)" />
-      <Member Id="P:System.Security.Cryptography.CngProperty.Name" />
-      <Member Id="P:System.Security.Cryptography.CngProperty.Options" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngPropertyCollection" Id="T:System.Security.Cryptography.CngPropertyCollection">
-      <Member Id="M:System.Security.Cryptography.CngPropertyCollection.#ctor" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngPropertyOptions" Id="T:System.Security.Cryptography.CngPropertyOptions">
-      <Member Id="F:System.Security.Cryptography.CngPropertyOptions.CustomProperty" />
-      <Member Id="F:System.Security.Cryptography.CngPropertyOptions.None" />
-      <Member Id="F:System.Security.Cryptography.CngPropertyOptions.Persist" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngProvider" Id="T:System.Security.Cryptography.CngProvider">
-      <Member Id="M:System.Security.Cryptography.CngProvider.#ctor(System.String)" />
-      <Member Id="M:System.Security.Cryptography.CngProvider.Equals(System.Object)" />
-      <Member Id="M:System.Security.Cryptography.CngProvider.Equals(System.Security.Cryptography.CngProvider)" />
-      <Member Id="M:System.Security.Cryptography.CngProvider.GetHashCode" />
-      <Member Id="M:System.Security.Cryptography.CngProvider.op_Equality(System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngProvider)" />
-      <Member Id="M:System.Security.Cryptography.CngProvider.op_Inequality(System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngProvider)" />
-      <Member Id="M:System.Security.Cryptography.CngProvider.ToString" />
-      <Member Id="P:System.Security.Cryptography.CngProvider.MicrosoftSmartCardKeyStorageProvider" />
-      <Member Id="P:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider" />
-      <Member Id="P:System.Security.Cryptography.CngProvider.Provider" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngUIPolicy" Id="T:System.Security.Cryptography.CngUIPolicy">
-      <Member Id="M:System.Security.Cryptography.CngUIPolicy.#ctor(System.Security.Cryptography.CngUIProtectionLevels)" />
-      <Member Id="M:System.Security.Cryptography.CngUIPolicy.#ctor(System.Security.Cryptography.CngUIProtectionLevels,System.String)" />
-      <Member Id="M:System.Security.Cryptography.CngUIPolicy.#ctor(System.Security.Cryptography.CngUIProtectionLevels,System.String,System.String)" />
-      <Member Id="M:System.Security.Cryptography.CngUIPolicy.#ctor(System.Security.Cryptography.CngUIProtectionLevels,System.String,System.String,System.String)" />
-      <Member Id="M:System.Security.Cryptography.CngUIPolicy.#ctor(System.Security.Cryptography.CngUIProtectionLevels,System.String,System.String,System.String,System.String)" />
-      <Member Id="P:System.Security.Cryptography.CngUIPolicy.CreationTitle" />
-      <Member Id="P:System.Security.Cryptography.CngUIPolicy.Description" />
-      <Member Id="P:System.Security.Cryptography.CngUIPolicy.FriendlyName" />
-      <Member Id="P:System.Security.Cryptography.CngUIPolicy.ProtectionLevel" />
-      <Member Id="P:System.Security.Cryptography.CngUIPolicy.UseContext" />
-    </Type>
-    <Type Name="System.Security.Cryptography.CngUIProtectionLevels" Id="T:System.Security.Cryptography.CngUIProtectionLevels">
-      <Member Id="F:System.Security.Cryptography.CngUIProtectionLevels.ForceHighProtection" />
-      <Member Id="F:System.Security.Cryptography.CngUIProtectionLevels.None" />
-      <Member Id="F:System.Security.Cryptography.CngUIProtectionLevels.ProtectKey" />
     </Type>
     <Type Name="System.Security.Cryptography.CryptoConfig" Id="T:System.Security.Cryptography.CryptoConfig">
       <Member Id="M:System.Security.Cryptography.CryptoConfig.#ctor" />
@@ -25213,24 +24070,6 @@
       <Member Id="M:System.Security.Cryptography.ECDsa.VerifyHash(System.Byte[],System.Byte[])" />
       <Member Id="P:System.Security.Cryptography.ECDsa.KeyExchangeAlgorithm" />
       <Member Id="P:System.Security.Cryptography.ECDsa.SignatureAlgorithm" />
-    </Type>
-    <Type Name="System.Security.Cryptography.ECDsaCng" Id="T:System.Security.Cryptography.ECDsaCng">
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.#ctor" />
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.#ctor(System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.#ctor(System.Security.Cryptography.CngKey)" />
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.#ctor(System.Security.Cryptography.ECCurve)" />
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.Dispose(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.ExportExplicitParameters(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.ExportParameters(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.GenerateKey(System.Security.Cryptography.ECCurve)" />
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.ImportParameters(System.Security.Cryptography.ECParameters)" />
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.SignHash(System.Byte[])" />
-      <Member Id="M:System.Security.Cryptography.ECDsaCng.VerifyHash(System.Byte[],System.Byte[])" />
-      <Member Id="P:System.Security.Cryptography.ECDsaCng.Key" />
-      <Member Id="P:System.Security.Cryptography.ECDsaCng.KeySize" />
-      <Member Id="P:System.Security.Cryptography.ECDsaCng.LegalKeySizes" />
     </Type>
     <Type Name="System.Security.Cryptography.ECParameters" Id="T:System.Security.Cryptography.ECParameters">
       <Member Id="F:System.Security.Cryptography.ECParameters.Curve" />
@@ -25548,21 +24387,6 @@
       <Member Id="P:System.Security.Cryptography.RSA.KeyExchangeAlgorithm" />
       <Member Id="P:System.Security.Cryptography.RSA.SignatureAlgorithm" />
     </Type>
-    <Type Name="System.Security.Cryptography.RSACng" Id="T:System.Security.Cryptography.RSACng">
-      <Member Id="M:System.Security.Cryptography.RSACng.#ctor" />
-      <Member Id="M:System.Security.Cryptography.RSACng.#ctor(System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.RSACng.#ctor(System.Security.Cryptography.CngKey)" />
-      <Member Id="M:System.Security.Cryptography.RSACng.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)" />
-      <Member Id="M:System.Security.Cryptography.RSACng.Dispose(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.RSACng.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)" />
-      <Member Id="M:System.Security.Cryptography.RSACng.ExportParameters(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.RSACng.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
-      <Member Id="M:System.Security.Cryptography.RSACng.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
-      <Member Id="M:System.Security.Cryptography.RSACng.ImportParameters(System.Security.Cryptography.RSAParameters)" />
-      <Member Id="M:System.Security.Cryptography.RSACng.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
-      <Member Id="M:System.Security.Cryptography.RSACng.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
-      <Member Id="P:System.Security.Cryptography.RSACng.Key" />
-    </Type>
     <Type Name="System.Security.Cryptography.RSACryptoServiceProvider" Id="T:System.Security.Cryptography.RSACryptoServiceProvider">
       <Member Id="M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor" />
       <Member Id="M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Int32)" />
@@ -25713,6 +24537,13 @@
       <Member Id="M:System.Security.Cryptography.SHA256.Create" />
       <Member Id="M:System.Security.Cryptography.SHA256.Create(System.String)" />
     </Type>
+    <Type Name="System.Security.Cryptography.SHA256CryptoServiceProvider" Id="T:System.Security.Cryptography.SHA256CryptoServiceProvider">
+      <Member Id="M:System.Security.Cryptography.SHA256CryptoServiceProvider.#ctor" />
+      <Member Id="M:System.Security.Cryptography.SHA256CryptoServiceProvider.Dispose(System.Boolean)" />
+      <Member Id="M:System.Security.Cryptography.SHA256CryptoServiceProvider.HashCore(System.Byte[],System.Int32,System.Int32)" />
+      <Member Id="M:System.Security.Cryptography.SHA256CryptoServiceProvider.HashFinal" />
+      <Member Id="M:System.Security.Cryptography.SHA256CryptoServiceProvider.Initialize" />
+    </Type>
     <Type Name="System.Security.Cryptography.SHA256Managed" Id="T:System.Security.Cryptography.SHA256Managed">
       <Member Id="M:System.Security.Cryptography.SHA256Managed.#ctor" />
       <Member Id="M:System.Security.Cryptography.SHA256Managed.HashCore(System.Byte[],System.Int32,System.Int32)" />
@@ -25724,6 +24555,13 @@
       <Member Id="M:System.Security.Cryptography.SHA384.Create" />
       <Member Id="M:System.Security.Cryptography.SHA384.Create(System.String)" />
     </Type>
+    <Type Name="System.Security.Cryptography.SHA384CryptoServiceProvider" Id="T:System.Security.Cryptography.SHA384CryptoServiceProvider">
+      <Member Id="M:System.Security.Cryptography.SHA384CryptoServiceProvider.#ctor" />
+      <Member Id="M:System.Security.Cryptography.SHA384CryptoServiceProvider.Dispose(System.Boolean)" />
+      <Member Id="M:System.Security.Cryptography.SHA384CryptoServiceProvider.HashCore(System.Byte[],System.Int32,System.Int32)" />
+      <Member Id="M:System.Security.Cryptography.SHA384CryptoServiceProvider.HashFinal" />
+      <Member Id="M:System.Security.Cryptography.SHA384CryptoServiceProvider.Initialize" />
+    </Type>
     <Type Name="System.Security.Cryptography.SHA384Managed" Id="T:System.Security.Cryptography.SHA384Managed">
       <Member Id="M:System.Security.Cryptography.SHA384Managed.#ctor" />
       <Member Id="M:System.Security.Cryptography.SHA384Managed.HashCore(System.Byte[],System.Int32,System.Int32)" />
@@ -25734,6 +24572,13 @@
       <Member Id="M:System.Security.Cryptography.SHA512.#ctor" />
       <Member Id="M:System.Security.Cryptography.SHA512.Create" />
       <Member Id="M:System.Security.Cryptography.SHA512.Create(System.String)" />
+    </Type>
+    <Type Name="System.Security.Cryptography.SHA512CryptoServiceProvider" Id="T:System.Security.Cryptography.SHA512CryptoServiceProvider">
+      <Member Id="M:System.Security.Cryptography.SHA512CryptoServiceProvider.#ctor" />
+      <Member Id="M:System.Security.Cryptography.SHA512CryptoServiceProvider.Dispose(System.Boolean)" />
+      <Member Id="M:System.Security.Cryptography.SHA512CryptoServiceProvider.HashCore(System.Byte[],System.Int32,System.Int32)" />
+      <Member Id="M:System.Security.Cryptography.SHA512CryptoServiceProvider.HashFinal" />
+      <Member Id="M:System.Security.Cryptography.SHA512CryptoServiceProvider.Initialize" />
     </Type>
     <Type Name="System.Security.Cryptography.SHA512Managed" Id="T:System.Security.Cryptography.SHA512Managed">
       <Member Id="M:System.Security.Cryptography.SHA512Managed.#ctor" />
@@ -25804,22 +24649,6 @@
       <Member Id="M:System.Security.Cryptography.TripleDES.Create(System.String)" />
       <Member Id="M:System.Security.Cryptography.TripleDES.IsWeakKey(System.Byte[])" />
       <Member Id="P:System.Security.Cryptography.TripleDES.Key" />
-    </Type>
-    <Type Name="System.Security.Cryptography.TripleDESCng" Id="T:System.Security.Cryptography.TripleDESCng">
-      <Member Id="M:System.Security.Cryptography.TripleDESCng.#ctor" />
-      <Member Id="M:System.Security.Cryptography.TripleDESCng.#ctor(System.String)" />
-      <Member Id="M:System.Security.Cryptography.TripleDESCng.#ctor(System.String,System.Security.Cryptography.CngProvider)" />
-      <Member Id="M:System.Security.Cryptography.TripleDESCng.#ctor(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)" />
-      <Member Id="M:System.Security.Cryptography.TripleDESCng.CreateDecryptor" />
-      <Member Id="M:System.Security.Cryptography.TripleDESCng.CreateDecryptor(System.Byte[],System.Byte[])" />
-      <Member Id="M:System.Security.Cryptography.TripleDESCng.CreateEncryptor" />
-      <Member Id="M:System.Security.Cryptography.TripleDESCng.CreateEncryptor(System.Byte[],System.Byte[])" />
-      <Member Id="M:System.Security.Cryptography.TripleDESCng.Dispose(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.TripleDESCng.GenerateIV" />
-      <Member Id="M:System.Security.Cryptography.TripleDESCng.GenerateKey" />
-      <Member Id="P:System.Security.Cryptography.TripleDESCng.Key" />
-      <Member Id="P:System.Security.Cryptography.TripleDESCng.KeySize" />
-      <Member Id="P:System.Security.Cryptography.TripleDESCng.LegalKeySizes" />
     </Type>
     <Type Name="System.Security.Cryptography.TripleDESCryptoServiceProvider" Id="T:System.Security.Cryptography.TripleDESCryptoServiceProvider">
       <Member Id="M:System.Security.Cryptography.TripleDESCryptoServiceProvider.#ctor" />

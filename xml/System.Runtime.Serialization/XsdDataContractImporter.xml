@@ -83,6 +83,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CanImport">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value that indicates whether the schemas can be transformed into a <see cref="T:System.CodeDom.CodeCompileUnit" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about types that can be imported, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CanImport">
       <MemberSignature Language="C#" Value="public bool CanImport (System.Xml.Schema.XmlSchemaSet schemas);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanImport(class System.Xml.Schema.XmlSchemaSet schemas) cil managed" />
@@ -468,22 +485,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CanImport">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a value that indicates whether the schemas can be transformed into a <see cref="T:System.CodeDom.CodeCompileUnit" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information about types that can be imported, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

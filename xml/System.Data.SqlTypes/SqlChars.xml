@@ -47,6 +47,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlChars" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The maximum length allowed for <xref:System.Data.SqlTypes.SqlChars> is bound by the common language runtime maximum size of an Int32 (2,147,483,647).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlChars ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -796,22 +813,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlChars" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The maximum length allowed for <xref:System.Data.SqlTypes.SqlChars> is bound by the common language runtime maximum size of an Int32 (2,147,483,647).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

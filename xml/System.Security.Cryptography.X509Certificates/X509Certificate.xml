@@ -821,6 +821,26 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to read the file specified by the <paramref name="filename" /> parameter. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the current <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  <xref:System.Security.Cryptography.X509Certificates.X509Certificate> implements the <xref:System.IDisposable> interface starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate> class does not implement this interface, and therefore the `Dispose` method does not exist.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
@@ -2444,25 +2464,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the current <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  <xref:System.Security.Cryptography.X509Certificates.X509Certificate> implements the <xref:System.IDisposable> interface starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate> class does not implement this interface, and therefore the `Dispose` method does not exist.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

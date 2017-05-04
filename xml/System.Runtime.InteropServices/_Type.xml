@@ -179,6 +179,28 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.Equals" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.Equals%2A?displayProperty=fullName> method determines if the underlying system type of the current <xref:System.Type> is the same as the underlying system type of the specified <xref:System.Object> or <xref:System.Type>.  
+  
+ .  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (object other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(object other) cil managed" />
@@ -388,6 +410,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetConstructor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetConstructor" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetConstructor%2A?displayProperty=fullName> method gets a specific constructor of the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetConstructor">
       <MemberSignature Language="C#" Value="public System.Reflection.ConstructorInfo GetConstructor (Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.ConstructorInfo GetConstructor(class System.Type[] types) cil managed" />
@@ -530,6 +572,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetConstructors">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetConstructors" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetConstructors%2A?displayProperty=fullName> method gets the constructors of the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetConstructors">
       <MemberSignature Language="C#" Value="public System.Reflection.ConstructorInfo[] GetConstructors ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.ConstructorInfo[] GetConstructors() cil managed" />
@@ -595,6 +657,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.MemberInfo.GetCustomAttributes" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> method returns all attributes applied to this member.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCustomAttributes">
       <MemberSignature Language="C#" Value="public object[] GetCustomAttributes (bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetCustomAttributes(bool inherit) cil managed" />
@@ -727,6 +809,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEvent">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetEvent" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetEvent%2A?displayProperty=fullName> method gets a specific event declared or inherited by the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetEvent">
       <MemberSignature Language="C#" Value="public System.Reflection.EventInfo GetEvent (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.EventInfo GetEvent(string name) cil managed" />
@@ -805,6 +907,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetEvents" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetEvents%2A?displayProperty=fullName> method gets the events that are declared or inherited by the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetEvents">
       <MemberSignature Language="C#" Value="public System.Reflection.EventInfo[] GetEvents ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.EventInfo[] GetEvents() cil managed" />
@@ -878,6 +1000,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetField">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetField" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetField%2A?displayProperty=fullName> method gets a specific field of the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetField">
       <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo GetField (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo GetField(string name) cil managed" />
@@ -948,6 +1090,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFields">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetFields" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetFields%2A?displayProperty=fullName> method gets a specific field of the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFields">
       <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo[] GetFields ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo[] GetFields() cil managed" />
@@ -1087,6 +1249,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetInterface">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetInterface" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetInterface%2A?displayProperty=fullName> method gets a specific interface implemented or inherited by the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetInterface">
       <MemberSignature Language="C#" Value="public Type GetInterface (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetInterface(string name) cil managed" />
@@ -1223,6 +1405,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMember">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetMember" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetMember%2A?displayProperty=fullName> method gets the specified members of the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMember">
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo[] GetMember (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] GetMember(string name) cil managed" />
@@ -1333,6 +1535,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMembers">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetMembers" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetMembers%2A?displayProperty=fullName> method gets the members (properties, methods, fields, events, and so on) of the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMembers">
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo[] GetMembers ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] GetMembers() cil managed" />
@@ -1406,6 +1628,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMethod">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetMethod" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetMethod%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMethod">
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetMethod (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetMethod(string name) cil managed" />
@@ -1660,6 +1902,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMethods">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetMethods" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetMethods%2A?displayProperty=fullName> method gets the methods of the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMethods">
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo[] GetMethods ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo[] GetMethods() cil managed" />
@@ -1733,6 +1995,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetNestedType">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetNestedType" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetNestedType%2A?displayProperty=fullName> method gets a specific type nested within the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetNestedType">
       <MemberSignature Language="C#" Value="public Type GetNestedType (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetNestedType(string name) cil managed" />
@@ -1803,6 +2085,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetNestedTypes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetNestedTypes" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetNestedTypes%2A?displayProperty=fullName> method gets the types nested within the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetNestedTypes">
       <MemberSignature Language="C#" Value="public Type[] GetNestedTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetNestedTypes() cil managed" />
@@ -1874,6 +2176,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetProperties" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetProperties%2A?displayProperty=fullName> method gets the properties of the current <xref:System.Type>..  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetProperties">
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo[] GetProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo[] GetProperties() cil managed" />
@@ -1947,6 +2269,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProperty">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetProperty" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.GetProperty%2A?displayProperty=fullName> method gets a specific property of the current <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetProperty">
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo GetProperty(string name) cil managed" />
@@ -2416,6 +2758,28 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeMember">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.InvokeMember" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Type.InvokeMember%2A?displayProperty=fullName> method invokes a specific member of the current <xref:System.Type>.  
+  
+ .  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InvokeMember">
       <MemberSignature Language="C#" Value="public object InvokeMember (string name, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, object target, object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeMember(string name, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object target, object[] args) cil managed" />
@@ -3843,369 +4207,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetProperty">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetProperty" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetProperty%2A?displayProperty=fullName> method gets a specific property of the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetNestedTypes">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetNestedTypes" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetNestedTypes%2A?displayProperty=fullName> method gets the types nested within the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetProperties">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetProperties" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetProperties%2A?displayProperty=fullName> method gets the properties of the current <xref:System.Type>..  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetFields">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetFields" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetFields%2A?displayProperty=fullName> method gets a specific field of the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetConstructors">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetConstructors" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetConstructors%2A?displayProperty=fullName> method gets the constructors of the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetMembers">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetMembers" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetMembers%2A?displayProperty=fullName> method gets the members (properties, methods, fields, events, and so on) of the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.Equals" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.Equals%2A?displayProperty=fullName> method determines if the underlying system type of the current <xref:System.Type> is the same as the underlying system type of the specified <xref:System.Object> or <xref:System.Type>.  
-  
- .  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="InvokeMember">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.InvokeMember" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.InvokeMember%2A?displayProperty=fullName> method invokes a specific member of the current <xref:System.Type>.  
-  
- .  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetMember">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetMember" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetMember%2A?displayProperty=fullName> method gets the specified members of the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCustomAttributes">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.MemberInfo.GetCustomAttributes" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> method returns all attributes applied to this member.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetEvents">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetEvents" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetEvents%2A?displayProperty=fullName> method gets the events that are declared or inherited by the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetConstructor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetConstructor" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetConstructor%2A?displayProperty=fullName> method gets a specific constructor of the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetInterface">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetInterface" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetInterface%2A?displayProperty=fullName> method gets a specific interface implemented or inherited by the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetMethod">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetMethod" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetMethod%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetMethods">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetMethods" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetMethods%2A?displayProperty=fullName> method gets the methods of the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetField">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetField" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetField%2A?displayProperty=fullName> method gets a specific field of the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetNestedType">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetNestedType" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetNestedType%2A?displayProperty=fullName> method gets a specific type nested within the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetEvent">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Type.GetEvent" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Type.GetEvent%2A?displayProperty=fullName> method gets a specific event declared or inherited by the current <xref:System.Type>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

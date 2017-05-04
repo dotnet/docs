@@ -238,7 +238,7 @@
         <param name="skiClause">To be added.</param>
         <summary>Returns a value indicating whether the key identifier for this instance is equal to the specified key identifier.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is a <see cref="T:System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause" /> and it has the same unique identifier as the <see cref="P:System.IdentityModel.Tokens.SamlSecurityToken.Id" /> property; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="skiClause" /> is a <see cref="T:System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause" /> and it has the same unique identifier as the <see cref="P:System.IdentityModel.Tokens.SamlSecurityToken.Id" /> property; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

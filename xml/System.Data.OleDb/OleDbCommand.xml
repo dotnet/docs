@@ -906,6 +906,23 @@ Int32 count = (int32) ExecuteScalar();
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.Data.IDbCommand.ExecuteReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.OleDb.OleDbCommand> instance is cast to an <xref:System.Data.IDbCommand> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.Data.IDbCommand.ExecuteReader">
       <MemberSignature Language="C#" Value="System.Data.IDataReader IDbCommand.ExecuteReader ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDataReader System.Data.IDbCommand.ExecuteReader() cil managed" />
@@ -1055,22 +1072,5 @@ Int32 count = (int32) ExecuteScalar();
         <exception cref="T:System.ArgumentException">The value entered was not one of the <see cref="T:System.Data.UpdateRowSource" /> values.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="System.Data.IDbCommand.ExecuteReader">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>For a description of this member, see <see cref="M:System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.OleDb.OleDbCommand> instance is cast to an <xref:System.Data.IDbCommand> interface.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

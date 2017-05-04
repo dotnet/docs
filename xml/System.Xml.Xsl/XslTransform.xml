@@ -150,6 +150,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the XSLT style sheet, including style sheets referenced in <see langword="xsl:include" /> and <see langword="xsl:import" /> elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public void Load (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(string url) cil managed" />
@@ -783,6 +803,26 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for providing evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Transform">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms the XML data using the loaded XSLT style sheet.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Transform">
       <MemberSignature Language="C#" Value="public void Transform (string inputfile, string outputfile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Transform(string inputfile, string outputfile) cil managed" />
@@ -2218,45 +2258,5 @@ Root node is book.
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Load">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads the XSLT style sheet, including style sheets referenced in <see langword="xsl:include" /> and <see langword="xsl:import" /> elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Transform">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Transforms the XML data using the loaded XSLT style sheet.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

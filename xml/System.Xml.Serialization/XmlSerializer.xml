@@ -723,6 +723,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GenerateSerializer">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs />
+    </MemberGroup>
     <Member MemberName="GenerateSerializer">
       <MemberSignature Language="C#" Value="public static System.Reflection.Assembly GenerateSerializer (Type[] types, System.Xml.Serialization.XmlMapping[] mappings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Assembly GenerateSerializer(class System.Type[] types, class System.Xml.Serialization.XmlMapping[] mappings) cil managed" />
@@ -773,6 +780,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetXmlSerializerAssemblyName">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs />
+    </MemberGroup>
     <Member MemberName="GetXmlSerializerAssemblyName">
       <MemberSignature Language="C#" Value="public static string GetXmlSerializerAssemblyName (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlSerializerAssemblyName(class System.Type type) cil managed" />
@@ -1209,20 +1224,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetXmlSerializerAssemblyName">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs />
-    </MemberGroup>
-    <MemberGroup MemberName="GenerateSerializer">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs />
-    </MemberGroup>
   </Members>
 </Type>

@@ -60,6 +60,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateEditorAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.ComponentModel.EditorAttribute" /> to designate that a particular  <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditor" /> be used to change a property value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Windows.DataTemplate> has its <xref:System.Windows.DataContext> set to a <xref:System.Activities.Presentation.PropertyEditing.PropertyValue>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateEditorAttribute">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.EditorAttribute CreateEditorAttribute (System.Activities.Presentation.PropertyEditing.PropertyValueEditor editor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EditorAttribute CreateEditorAttribute(class System.Activities.Presentation.PropertyEditing.PropertyValueEditor editor) cil managed" />
@@ -129,22 +146,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateEditorAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.ComponentModel.EditorAttribute" /> to designate that a particular  <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditor" /> be used to change a property value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This <xref:System.Windows.DataTemplate> has its <xref:System.Windows.DataContext> set to a <xref:System.Activities.Presentation.PropertyEditing.PropertyValue>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

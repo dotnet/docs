@@ -173,6 +173,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetItemContainers">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IList" /> containing all items on the toolbox.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The items in the list must be <xref:System.Drawing.Design.ToolboxItemContainer> objects. If the toolbox implementation is organized in categories, this retrieves a combined list of all categories. The list must be read/write, as new items may be added to it.  
+  
+ When the toolbox service adds a new item, it first calls the <xref:System.Drawing.Design.ToolboxService.CreateItemContainer%2A> method and then adds the new item to the <xref:System.Collections.IList> returned from the <xref:System.Drawing.Design.ToolboxService.GetItemContainers%2A> method.  
+  
+ If a category name is provided, only the items in that category should be returned. If no category is specified, all items should be returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetItemContainers">
       <MemberSignature Language="C#" Value="protected abstract System.Collections.IList GetItemContainers ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.IList GetItemContainers() cil managed" />
@@ -1420,26 +1441,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetItemContainers">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IList" /> containing all items on the toolbox.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The items in the list must be <xref:System.Drawing.Design.ToolboxItemContainer> objects. If the toolbox implementation is organized in categories, this retrieves a combined list of all categories. The list must be read/write, as new items may be added to it.  
-  
- When the toolbox service adds a new item, it first calls the <xref:System.Drawing.Design.ToolboxService.CreateItemContainer%2A> method and then adds the new item to the <xref:System.Collections.IList> returned from the <xref:System.Drawing.Design.ToolboxService.GetItemContainers%2A> method.  
-  
- If a category name is provided, only the items in that category should be returned. If no category is specified, all items should be returned.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

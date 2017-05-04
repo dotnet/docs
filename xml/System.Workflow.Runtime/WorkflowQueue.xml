@@ -288,6 +288,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterForQueueItemAvailable">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a subscriber to the <see cref="E:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the overloaded <xref:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemAvailable%2A> methods to register a subscriber for the <xref:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable> event. The <xref:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable> event is used to notify subscribers that an item has been delivered (in an asynchronous manner) to this <xref:System.Workflow.Runtime.WorkflowQueue>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterForQueueItemAvailable">
       <MemberSignature Language="C#" Value="public void RegisterForQueueItemAvailable (System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForQueueItemAvailable(class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener) cil managed" />
@@ -420,22 +437,5 @@
           <paramref name="eventListener" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="RegisterForQueueItemAvailable">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers a subscriber to the <see cref="E:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable" /> event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the overloaded <xref:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemAvailable%2A> methods to register a subscriber for the <xref:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable> event. The <xref:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable> event is used to notify subscribers that an item has been delivered (in an asynchronous manner) to this <xref:System.Workflow.Runtime.WorkflowQueue>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1433,6 +1433,24 @@ End Module
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns schema information for the data source of this <see cref="T:System.Data.SqlClient.SqlConnection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to retrieve schema information for more than one versioned stored procedure, the schema for the latest one only is returned. For more information on versioned stored procedures, see [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSchema">
       <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchema() cil managed" />
@@ -2255,23 +2273,5 @@ class Program {
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetSchema">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns schema information for the data source of this <see cref="T:System.Data.SqlClient.SqlConnection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you attempt to retrieve schema information for more than one versioned stored procedure, the schema for the latest one only is returned. For more information on versioned stored procedures, see [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] Books Online.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

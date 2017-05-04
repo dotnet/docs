@@ -67,6 +67,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a secure client session for rights management operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to create a secure environment.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Security.RightsManagement.SecureEnvironment Create (string applicationManifest, System.Security.RightsManagement.ContentUser user);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.RightsManagement.SecureEnvironment Create(string applicationManifest, class System.Security.RightsManagement.ContentUser user) cil managed" />
@@ -326,25 +346,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a secure client session for rights management operations.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use this method to create a secure environment.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

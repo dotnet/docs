@@ -68,6 +68,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Deserialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes an object state graph from serialized form.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Deserialize">
       <MemberSignature Language="C#" Value="public object Deserialize (System.IO.Stream inputStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.IO.Stream inputStream) cil managed" />
@@ -421,24 +440,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Deserialize">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Deserializes an object state graph from serialized form.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

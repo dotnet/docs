@@ -51,6 +51,24 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddFixup">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stores an object that contains a callback method to subsequently be called, as necessary, to fill in .NET Framework collections or enumerations that map to SOAP-encoded arrays or SOAP-encoded, multi-referenced elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddFixup">
       <MemberSignature Language="C#" Value="protected void AddFixup (System.Xml.Serialization.XmlSerializationReader.CollectionFixup fixup);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddFixup(class System.Xml.Serialization.XmlSerializationReader/CollectionFixup fixup) cil managed" />
@@ -439,6 +457,24 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateInvalidCastException">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.InvalidCastException" /> that indicates that an explicit reference conversion failed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateInvalidCastException">
       <MemberSignature Language="C#" Value="protected Exception CreateInvalidCastException (Type type, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Exception CreateInvalidCastException(class System.Type type, object value) cil managed" />
@@ -1422,6 +1458,24 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadReferencedElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes an object from a SOAP-encoded <see langword="multiRef" /> element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadReferencedElement">
       <MemberSignature Language="C#" Value="protected object ReadReferencedElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencedElement() cil managed" />
@@ -1538,6 +1592,24 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadReferencingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes an object from an XML element in a SOAP message that contains a reference to a <see langword="multiRef" /> element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadReferencingElement">
       <MemberSignature Language="C#" Value="protected object ReadReferencingElement (out string fixupReference);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement(string fixupReference) cil managed" />
@@ -2049,6 +2121,24 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToByteArrayBase64">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the current value and returns it as a base-64 byte array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToByteArrayBase64">
       <MemberSignature Language="C#" Value="protected byte[] ToByteArrayBase64 (bool isNull);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance unsigned int8[] ToByteArrayBase64(bool isNull) cil managed" />
@@ -2802,95 +2892,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddFixup">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Stores an object that contains a callback method to subsequently be called, as necessary, to fill in .NET Framework collections or enumerations that map to SOAP-encoded arrays or SOAP-encoded, multi-referenced elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadReferencedElement">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Deserializes an object from a SOAP-encoded <see langword="multiRef" /> element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToByteArrayBase64">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads the current value and returns it as a base-64 byte array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadReferencingElement">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Deserializes an object from an XML element in a SOAP message that contains a reference to a <see langword="multiRef" /> element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateInvalidCastException">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an <see cref="T:System.InvalidCastException" /> that indicates that an explicit reference conversion failed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

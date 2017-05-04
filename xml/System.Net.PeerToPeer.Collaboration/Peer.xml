@@ -154,6 +154,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetObjects">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the collection of data objects that were registered by the peer from a local cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class.  This functionality is not exposed on any other type of peer for security reasons.  
+  
+ If no objects are found for the endpoint, a collection of size zero (0) is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetObjects">
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerObjectCollection GetObjects ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerObjectCollection GetObjects() cil managed" />
@@ -654,24 +673,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetObjects">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the collection of data objects that were registered by the peer from a local cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class.  This functionality is not exposed on any other type of peer for security reasons.  
-  
- If no objects are found for the endpoint, a collection of size zero (0) is returned.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

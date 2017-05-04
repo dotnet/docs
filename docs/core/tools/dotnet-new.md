@@ -92,7 +92,7 @@ Each project template may have additional options available. The core templates 
 
 `-f|--framework` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0` or `netcoreapp1.1` (`Default: netcoreapp1.0`)
 
-`-au|--authentication` - The type of authentication to use. Values: `None` or `Individual` (Default: `None`)
+`-au|--auth` - The type of authentication to use. Values: `None` or `Individual` (Default: `None`)
 
 `-uld|--use-local-db` - Specifies whether or not to use LocalDB instead of SQLite. Values: `true` or `false` (Default: `false`)
 

@@ -12,11 +12,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>  
+    <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  LINQ extension method overrides that offer greater efficiency for <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> than the standard LINQ methods  
   
- **NuGet package**: [System.Collections.Immutable](http://go.microsoft.com/fwlink/?LinkId=318047) ([about immutable collections and how to install](../Topic/System.Collections.Immutable.md))</summary>
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,7 +44,7 @@
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The collection to apply the function to.</param>
         <param name="func">A function to be invoked on each element, in a cumulative way.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Applies a function to a sequence of elements in a cumulative way.</summary>
         <returns>The final value after the cumulative function has been applied to all elements.</returns>
@@ -86,7 +86,7 @@
         <param name="immutableArray">The collection to apply the function to.</param>
         <param name="seed">The initial accumulator value.</param>
         <param name="func">A function to be invoked on each element, in a cumulative way.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Applies a function to a sequence of elements in a cumulative way.</summary>
         <returns>The final accumulator value.</returns>
@@ -132,7 +132,7 @@
         <param name="seed">The initial accumulator value.</param>
         <param name="func">A function to be invoked on each element, in a cumulative way.</param>
         <param name="resultSelector">To be added.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Applies a function to a sequence of elements in a cumulative way.</summary>
         <returns>The final accumulator value.</returns>
@@ -170,7 +170,7 @@
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to check for matches.</param>
         <param name="predicate">The predicate.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Gets a value indicating whether all elements in this array match a given condition.</summary>
         <returns>
@@ -200,7 +200,7 @@
       <Docs>
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to check for elements.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Gets a value indicating whether the array contains any elements.</summary>
         <returns>
@@ -230,7 +230,7 @@
       <Docs>
         <typeparam name="T">The type of elements in the array.</typeparam>
         <param name="builder">The builder to check for matches.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns a value indicating whether this collection contains any elements.</summary>
         <returns>
@@ -262,7 +262,7 @@
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to check for elements.</param>
         <param name="predicate">The delegate that defines the condition to match to an element.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Gets a value indicating whether the array contains any elements that match a specified condition.</summary>
         <returns>
@@ -294,7 +294,7 @@
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to find an element in.</param>
         <param name="index">The index for the element to retrieve.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the element at a specified index in the array.</summary>
         <returns>The item at the specified index.</returns>
@@ -325,7 +325,7 @@
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to find an element in.</param>
         <param name="index">The index for the element to retrieve.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the element at a specified index in a sequence or a default value if the index is out of range.</summary>
         <returns>The item at the specified index, or the default value if the index is not found.</returns>
@@ -354,7 +354,7 @@
       <Docs>
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to get an item from.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the first element in an array.</summary>
         <returns>The first item in the array.</returns>
@@ -384,7 +384,7 @@
       <Docs>
         <typeparam name="T">The type of items in the array.</typeparam>
         <param name="builder">The builder to retrieve an item from.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the first element in the collection.</summary>
         <returns>The first item in the list.</returns>
@@ -416,7 +416,7 @@
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to get an item from.</param>
         <param name="predicate">The delegate that defines the conditions of the element to search for.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the first element in a sequence that satisfies a specified condition.</summary>
         <returns>The first item in the list if it meets the condition specified by <paramref name="predicate" />.</returns>
@@ -446,7 +446,7 @@
       <Docs>
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to retrieve items from.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the first element of a sequence, or a default value if the sequence contains no elements.</summary>
         <returns>The first item in the list, if found; otherwise the default value for the item type.</returns>
@@ -475,7 +475,7 @@
       <Docs>
         <typeparam name="T">The type of item in the builder.</typeparam>
         <param name="builder">The builder to retrieve an element from.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the first element in the collection, or the default value if the collection is empty.</summary>
         <returns>The first item in the list, if found; otherwise the default value for the item type.</returns>
@@ -503,12 +503,12 @@
         <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">  
+        <typeparam name="T">[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to retrieve elments from.</param>
         <param name="predicate">The delegate that defines the conditions of the element to search for.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the first element of the sequence that satisfies a condition or a default value if no such element is found.</summary>
         <returns>The first item in the list, if found; otherwise the default value for the item type.</returns>
@@ -537,7 +537,7 @@
       <Docs>
         <typeparam name="T">The type of element contained by the array.</typeparam>
         <param name="immutableArray">The array to retrieve items from.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the last element of the array.</summary>
         <returns>The last element in the array.</returns>
@@ -625,7 +625,7 @@
       <Docs>
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to retrieve items from.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the last element of a sequence, or a default value if the sequence contains no elements.</summary>
         <returns>The last element of a sequence, or a default value if the sequence contains no elements.</returns>
@@ -654,7 +654,7 @@
       <Docs>
         <typeparam name="T">The type of item in the builder.</typeparam>
         <param name="builder">The builder to retrieve an element from.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the last element in the collection, or the default value if the collection is empty.</summary>
         <returns>The last element of a sequence, or a default value if the sequence contains no elements.</returns>
@@ -685,7 +685,7 @@
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to retrieve an element from.</param>
         <param name="predicate">The delegate that defines the conditions of the element to search for.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the last element of a sequence that satisfies a condition or a default value if no such element is found.</summary>
         <returns>The last element of a sequence, or a default value if the sequence contains no elements.</returns>
@@ -718,7 +718,7 @@
         <typeparam name="TResult">The type of the result element.</typeparam>
         <param name="immutableArray">The immutable array to select items from.</param>
         <param name="selector">A transform function to apply to each element.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Projects each element of a sequence into a new form.</summary>
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> whose elements are the result of invoking the transform function on each element of source.</returns>
@@ -792,7 +792,7 @@
         <param name="immutableArray">The array to use for comparison.</param>
         <param name="items">The items to use for comparison.</param>
         <param name="comparer">The comparer to use to check for equality.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Determines whether two sequences are equal according to an equality comparer.</summary>
         <returns>
@@ -832,7 +832,7 @@
         <param name="immutableArray">The array to use for comparison.</param>
         <param name="items">The items to use for comparison.</param>
         <param name="comparer">The comparer to use to check for equality.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Determines whether two sequences are equal according to an equality comparer.</summary>
         <returns>
@@ -872,7 +872,7 @@
         <param name="immutableArray">The array to use for comparison.</param>
         <param name="items">The items to use for comparison.</param>
         <param name="predicate">The comparer to use to check for equality.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Determines whether two sequences are equal according to an equality comparer.</summary>
         <returns>
@@ -902,7 +902,7 @@
       <Docs>
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to retrieve the element from.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the only element of a sequence, and throws an exception if there is not exactly one element in the sequence.</summary>
         <returns>The element in the sequence.</returns>
@@ -933,7 +933,7 @@
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">To be added.</param>
         <param name="predicate">To be added.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the only element of a sequence that satisfies a specified condition, and throws an exception if more than one such element exists.</summary>
         <returns>Returns <see cref="T:System.Boolean" />.</returns>
@@ -962,7 +962,7 @@
       <Docs>
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">To be added.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the only element of the array, or a default value if the sequence is empty; this method throws an exception if there is more than one element in the sequence.</summary>
         <returns>The element in the array, or the default value if the array is empty.</returns>
@@ -993,7 +993,7 @@
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to get the element from.</param>
         <param name="predicate">The condition the element must satisfy.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Returns the only element of a sequence that satisfies a specified condition or a default value if no such element exists; this method throws an exception if more than one element satisfies the condition.</summary>
         <returns>The element if it satisfies the specified condition; otherwise the default element.</returns>
@@ -1022,7 +1022,7 @@
       <Docs>
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">To be added.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Copies the contents of this array to a mutable array.</summary>
         <returns>The newly instantiated array.</returns>
@@ -1055,7 +1055,7 @@
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to create a dictionary from.</param>
         <param name="keySelector">The key selector.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Creates a dictionary based on the contents of this array.</summary>
         <returns>The newly initialized dictionary.</returns>
@@ -1090,7 +1090,7 @@
         <param name="immutableArray">The array to create a dictionary from.</param>
         <param name="keySelector">The key selector.</param>
         <param name="comparer">The comparer to initialize the dictionary with.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Creates a dictionary based on the contents of this array.</summary>
         <returns>The newly initialized dictionary.</returns>
@@ -1127,7 +1127,7 @@
         <param name="immutableArray">The array to create a dictionary from.</param>
         <param name="keySelector">The key selector.</param>
         <param name="elementSelector">The element selector.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Creates a dictionary based on the contents of this array.</summary>
         <returns>The newly initialized dictionary.</returns>
@@ -1166,7 +1166,7 @@
         <param name="keySelector">The key selector.</param>
         <param name="elementSelector">The element selector.</param>
         <param name="comparer">The comparer to initialize the dictionary with.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Creates a dictionary based on the contents of this array.</summary>
         <returns>The newly initialized dictionary.</returns>
@@ -1197,7 +1197,7 @@
         <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">The array to filter.</param>
         <param name="predicate">The condition to use for filtering the array content.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Filters a sequence of values based on a predicate.</summary>
         <returns>Returns <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains elements that meet the condition.</returns>

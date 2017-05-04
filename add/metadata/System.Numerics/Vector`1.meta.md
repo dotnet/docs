@@ -6,6 +6,13 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.SByte}
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
 uid: System.Numerics.Vector`1.CopyTo
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -21,6 +28,20 @@ manager: "wpickett"
 
 ---
 uid: System.Numerics.Vector`1.Equals(System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt16}
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt64}
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -69,6 +90,20 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Double}
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int32}
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
 uid: System.Numerics.Vector`1.Equals
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -97,7 +132,21 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Byte}
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
 uid: System.Numerics.Vector`1.Item(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt32}
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -112,6 +161,13 @@ manager: "wpickett"
 
 ---
 uid: System.Numerics.Vector`1.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Single}
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -181,6 +237,13 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int16}
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
 uid: System.Numerics.Vector`1.Zero
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -196,6 +259,13 @@ manager: "wpickett"
 
 ---
 uid: System.Numerics.Vector`1.CopyTo(`0[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int64}
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

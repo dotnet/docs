@@ -14,7 +14,7 @@
   <Docs>
     <summary>Contains interlocked exchange mechanisms for immutable collections.  
   
- **NuGet package**: [System.Collections.Immutable](http://go.microsoft.com/fwlink/?LinkId=318047) ([about immutable collections and how to install](../Topic/System.Collections.Immutable.md))</summary>
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
     <remarks>To be added.</remarks>
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
@@ -246,7 +246,7 @@
         <param name="location">The destination, whose value is compared with <c>comparand</c> and possibly replaced.</param>
         <param name="value">The value that replaces the destination value if the comparison results in equality.</param>
         <param name="comparand">The value that is compared to the value at <c>location</c>.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Compares two immutable arrays for equality and, if they are equal, replaces one of the arrays.</summary>
         <returns>The original value in <paramref name="location" />.</returns>
@@ -277,7 +277,7 @@
         <typeparam name="T">The type of element stored by the array.</typeparam>
         <param name="location">The array to set to the specified value.</param>
         <param name="value">The value to which the <c>location</c> parameter is set.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Sets an array to the specified array and returns a reference to the original array, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location" />.</returns>
@@ -308,7 +308,7 @@
         <typeparam name="T">The type of element stored by the array.</typeparam>
         <param name="location">The array to set to the specified value.</param>
         <param name="value">The value to which the <c>location</c> parameter is set, if it’s not initialized.</param>
-        <summary>  
+        <summary>[!INCLUDE[net451_preview_disclaimer](../Token/net451_preview_disclaimer_md.md)]  
   
  Sets an array to the specified array if the array has not been initialized.</summary>
         <returns>

@@ -54,7 +54,7 @@
     <typeparam name="T">The type of element stored by the array.</typeparam>
     <summary>Represents an array that is immutable; meaning it cannot be changed once it is created.  
   
- **NuGet package**: [System.Collections.Immutable](http://go.microsoft.com/fwlink/?LinkId=318047) ([about immutable collections and how to install](../Topic/System.Collections.Immutable.md))</summary>
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -217,7 +217,8 @@
       <Parameters />
       <Docs>
         <typeparam name="TOther">To be added.</typeparam>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> struct by casting the underlying             array to an array of type <typeparameter name="TOther"><paramref name="TOther" /></typeparameter>  
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> struct by casting the underlying             array to an array of type <typeparameter name="TOther">  
+<paramref name="TOther" /></typeparameter>  
 .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

@@ -34,7 +34,7 @@
 -   <xref:System.Security.Cryptography.RSACng> performs such operations as signing and verifying signatures by using properties of the <xref:System.Security.Cryptography.RSACng> object, just as <xref:System.Security.Cryptography.ECDsaCng> uses its object properties to control signing and verification operations.  
 
 > [!NOTE]
-> The <xref:System.Security.Cryptography.RSACng> class is a CNG implementation for Windows platforms. In a cross-platform scenario, you should use the platform agnostic <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=fullName> to create an instance of the default implementation for the platform where your code will run.
+> The <xref:System.Security.Cryptography.RSACng> class is an implementation of the RSA algorithm using the Windows CNG libraries and isn't available on operating systems other than Windows. For applications which aren't doing Windows interop, you're encouraged to use <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=fullName> instead of referencing this type directly.
   
  ]]></format>
     </remarks>

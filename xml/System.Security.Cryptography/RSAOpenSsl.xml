@@ -17,7 +17,7 @@
   
 ## Remarks  
 > [!NOTE]
-> The <xref:System.Security.Cryptography.RSAOpenSsl> class is a CNG implementation for Linux and macOS platforms. In a cross-platform scenario, you should use the platform agnostic <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=fullName> to create an instance of the default implementation for the platform where your code will run.
+> The <xref:System.Security.Cryptography.RSAOpenSsl> class is an implementation of the RSA algorithm using OpenSSL. It isn't available on Windows and is only available on other operating systems when OpenSSL is installed. For applications which aren't doing OpenSSL-specific interop, you're encouraged to use <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=fullName> instead of referencing this type directly.
   
  ]]></format>
     </remarks>

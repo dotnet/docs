@@ -1,6 +1,6 @@
 '<SnippetHomePageCODEBEHIND>
 
-Imports System.Windows.Controls ' Page
+Imports System.Windows.Controls
 
 Namespace SDKSample
 	Partial Public Class HomePage

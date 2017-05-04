@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "OSINFO structure [.NET Framework metadata]"
 ms.assetid: fac7b480-7adb-4450-a5e9-690fed81ffae
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

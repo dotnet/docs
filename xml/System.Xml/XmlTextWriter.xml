@@ -515,12 +515,10 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <summary>Gets or sets which character to use for indenting when <see cref="P:System.Xml.XmlTextWriter.Formatting" /> is set to <see langword="Formatting.Indented" />.</summary>
         <value>The character to use for indenting. The default is space.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  The <see langword="XmlTextWriter" /> allows you to set this property to any character. To ensure valid XML, you must specify a valid white space character, 0x9, 0x10, 0x13 or 0x20.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1980,40 +1978,23 @@ test&lt;item&gt;test
         <summary>Gets an <see cref="T:System.Xml.XmlSpace" /> representing the current <see langword="xml:space" /> scope.</summary>
         <value>An <see langword="XmlSpace" /> representing the current <see langword="xml:space" /> scope.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> None  
+ </description></listheader><item><term> None  
   
- </term>  
-<description> This is the default if no <see langword="xml:space" /> scope exists.  
+ </term><description> This is the default if no <see langword="xml:space" /> scope exists.  
   
- </description>  
-</item>  
-<item>  
-<term> Default  
+ </description></item><item><term> Default  
   
- </term>  
-<description> The current scope is <see langword="xml:space" />="default".  
+ </term><description> The current scope is <see langword="xml:space" />="default".  
   
- </description>  
-</item>  
-<item>  
-<term> Preserve  
+ </description></item><item><term> Preserve  
   
- </term>  
-<description> The current scope is <see langword="xml:space" />="preserve".  
+ </term><description> The current scope is <see langword="xml:space" />="preserve".  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

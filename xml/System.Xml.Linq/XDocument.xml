@@ -1036,19 +1036,19 @@ End Using
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the source XML is indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to read all white space in the source XML. Nodes of type <xref:System.Xml.Linq.XText> are created for both significant and insignificant white space.  
+ If the source XML is indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` causes the reader to read all white space in the source XML. Nodes of type <xref:System.Xml.Linq.XText> are created for both significant and insignificant white space.  
   
- If the source XML is indented, not setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to ignore all of the insignificant white space in the source XML. The XML tree is created without any text nodes for insignificant white space.  
+ If the source XML is indented, not setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` causes the reader to ignore all of the insignificant white space in the source XML. The XML tree is created without any text nodes for insignificant white space.  
   
- If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
+ If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
   
  For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
  Use <xref:System.Xml.Linq.XDocument.Parse%2A> to create an <xref:System.Xml.Linq.XElement> from a string that contains XML.  
   
- Setting <xref:System.Xml.Linq.LoadOptions> is not valid when loading from a <xref:System.IO.TextReader>.  
+ Setting <xref:System.Xml.Linq.LoadOptions.SetBaseUri> is not valid when loading from a <xref:System.IO.TextReader>.  
   
- There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions> flag.  
+ There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions.SetLineInfo> flag.  
   
  The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
   
@@ -1162,17 +1162,17 @@ Count of white space nodes (preserving whitespace): 3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the source XML is indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to read all white space in the source XML. Nodes of type <xref:System.Xml.Linq.XText> are created for both significant and insignificant white space.  
+ If the source XML is indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` causes the reader to read all white space in the source XML. Nodes of type <xref:System.Xml.Linq.XText> are created for both significant and insignificant white space.  
   
- If the source XML is indented, not setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to ignore all of the insignificant white space in the source XML. The XML tree is created without any text nodes for insignificant white space.  
+ If the source XML is indented, not setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` causes the reader to ignore all of the insignificant white space in the source XML. The XML tree is created without any text nodes for insignificant white space.  
   
- If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
+ If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
   
  For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
  Use <xref:System.Xml.Linq.XDocument.Parse%2A> to create an <xref:System.Xml.Linq.XDocument> from a string that contains XML.  
   
- There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions> and the <xref:System.Xml.Linq.LoadOptions> flags.  
+ There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions.SetBaseUri> and the <xref:System.Xml.Linq.LoadOptions.SetLineInfo> flags.  
   
  The base URI and the line information are accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the base URI and line information may become meaningless.  
   
@@ -1257,13 +1257,13 @@ nodes if preserving whitespace: 82
   
  Use <xref:System.Xml.Linq.XDocument.Parse%2A> to create an <xref:System.Xml.Linq.XDocument> from a string that contains XML.  
   
- Setting <xref:System.Xml.Linq.LoadOptions> is not valid when loading from a <xref:System.Xml.XmlReader>. The <xref:System.Xml.XmlReader> will be configured to either read whitespace or not. The LINQ to XML tree will be populated with the whitespace nodes that the reader surfaces. This will be the behavior regardless of whether <xref:System.Xml.Linq.LoadOptions> is set or not.  
+ Setting <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> is not valid when loading from a <xref:System.Xml.XmlReader>. The <xref:System.Xml.XmlReader> will be configured to either read whitespace or not. The LINQ to XML tree will be populated with the whitespace nodes that the reader surfaces. This will be the behavior regardless of whether <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> is set or not.  
   
- The <xref:System.Xml.XmlReader> may have a valid base URI or not. If you set <xref:System.Xml.Linq.LoadOptions>, the base URI will be set in the XML tree from the base URI that is reported by the <xref:System.Xml.XmlReader>.  
+ The <xref:System.Xml.XmlReader> may have a valid base URI or not. If you set <xref:System.Xml.Linq.LoadOptions.SetBaseUri>, the base URI will be set in the XML tree from the base URI that is reported by the <xref:System.Xml.XmlReader>.  
   
- The <xref:System.Xml.XmlReader> may have a valid line information or not. If you set <xref:System.Xml.Linq.LoadOptions>, the line information will be set in the XML tree from the line information that is reported by the <xref:System.Xml.XmlReader>.  
+ The <xref:System.Xml.XmlReader> may have a valid line information or not. If you set <xref:System.Xml.Linq.LoadOptions.SetLineInfo>, the line information will be set in the XML tree from the line information that is reported by the <xref:System.Xml.XmlReader>.  
   
- There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions> flag.  
+ There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions.SetLineInfo> flag.  
   
  The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
   
@@ -1541,17 +1541,17 @@ Console.WriteLine(doc)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the source XML is indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to read all white space in the source XML. Nodes of type <xref:System.Xml.Linq.XText> are created for both significant and insignificant white space.  
+ If the source XML is indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` causes the reader to read all white space in the source XML. Nodes of type <xref:System.Xml.Linq.XText> are created for both significant and insignificant white space.  
   
- If the source XML is indented, not setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to ignore all of the insignificant white space in the source XML. The XML tree is created without any text nodes for insignificant white space.  
+ If the source XML is indented, not setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` causes the reader to ignore all of the insignificant white space in the source XML. The XML tree is created without any text nodes for insignificant white space.  
   
- If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
+ If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
   
  For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
- Setting <xref:System.Xml.Linq.LoadOptions> is not valid when parsing from a <xref:System.String>.  
+ Setting <xref:System.Xml.Linq.LoadOptions.SetBaseUri> is not valid when parsing from a <xref:System.String>.  
   
- There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions> flag.  
+ There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions.SetLineInfo> flag.  
   
  The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
   
@@ -1725,9 +1725,9 @@ Pubs
 ## Remarks  
  The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space will not be preserved.  
   
- If you want to control white space, use the overload of <xref:System.Xml.Linq.XDocument.Save%2A> that takes <xref:System.Xml.Linq.SaveOptions> as a parameter. Use the <xref:System.Xml.Linq.SaveOptions> option to save unindented XML. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
+ If you want to control white space, use the overload of <xref:System.Xml.Linq.XDocument.Save%2A> that takes <xref:System.Xml.Linq.SaveOptions> as a parameter. Use the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> option to save unindented XML. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
   
- Use <xref:System.Xml.Linq.SaveOptions> option if you want to remove duplicate namespace declarations.  
+ Use <xref:System.Xml.Linq.SaveOptions.OmitDuplicateNamespaces> option if you want to remove duplicate namespace declarations.  
   
  ]]></format>
         </remarks>
@@ -2005,11 +2005,11 @@ Console.WriteLine(sb.ToString())
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default the `options` are set to <xref:System.Xml.Linq.SaveOptions>. This option will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented.  
+ By default the `options` are set to <xref:System.Xml.Linq.SaveOptions.None>. This option will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented.  
   
- If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
+ If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
   
- Use <xref:System.Xml.Linq.SaveOptions> option if you want to remove duplicate namespace declarations.  
+ Use <xref:System.Xml.Linq.SaveOptions.OmitDuplicateNamespaces> option if you want to remove duplicate namespace declarations.  
   
  ]]></format>
         </remarks>
@@ -2049,9 +2049,9 @@ Console.WriteLine(sb.ToString())
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
+ If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
   
- If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XDocument.Save%2A> methods that do not take `options` as a parameter.  
+ If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XDocument.Save%2A> methods that do not take `options` as a parameter.  
   
  For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
@@ -2146,9 +2146,9 @@ End Using
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
+ If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
   
- If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XDocument.Save%2A> methods that do not take `options` as a parameter.  
+ If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XDocument.Save%2A> methods that do not take `options` as a parameter.  
   
  For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   

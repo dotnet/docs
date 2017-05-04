@@ -2,7 +2,7 @@
 title: "Using AsyncOperationContext in an Activity Sample | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,10 +14,10 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Using AsyncOperationContext in an Activity Sample
-This sample demonstrates how to develop a custom <xref:System.Activities.CodeActivity> that uses <!--zz <xref:System.Activities.AsyncOperationContext>--> `System.Activities.AsyncOperationContext` to perform work asynchronously outside of the workflow.  
+This sample demonstrates how to develop a custom <xref:System.Activities.CodeActivity> that uses <xref:System.Activities.AsyncCodeActivityContext> to perform work asynchronously outside of the workflow.  
   
 ## Sample Details  
- The sample activity uses the <!--zz <xref:System.IO.FileStream.BeginWrite>--> ` xref:System.IO.FileStream.BeginWrite` and <!--zz <xref:System.IO.FileStream.EndWrite> --> `xref:System.IO.FileStream.EndWrite` methods on the <xref:System.IO.FileStream> class to asynchronously write data to a file. The pattern introduced here can be adapted for use with other asynchronous methods. While the asynchronous operation is executing, other activities in the workflow can execute, but the workflow cannot be persisted.  
+ The sample activity uses the <xref:System.IO.FileStream.BeginWrite%2A> and <xref:System.IO.FileStream.EndWrite%2A> methods on the <xref:System.IO.FileStream> class to asynchronously write data to a file. The pattern introduced here can be adapted for use with other asynchronous methods. While the asynchronous operation is executing, other activities in the workflow can execute, but the workflow cannot be persisted.  
   
 #### To set up, build, and run the sample  
   

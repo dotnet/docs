@@ -1,5 +1,5 @@
 //<SnippetPersonClassCODE>
-using System.Windows.Media; // Color
+using System.Windows.Media;
 
 namespace SDKSample
 {

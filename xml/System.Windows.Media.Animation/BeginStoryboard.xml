@@ -81,7 +81,7 @@
 ## Using the Compose HandoffBehavior  
  When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property by using <xref:System.Windows.Media.Animation.HandoffBehavior?displayProperty=fullName>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
   
- To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock:  
+ To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock:  
   
 -   To remove all clocks from a property, use the <xref:System.Windows.Media.Animation.Animatable.ApplyAnimationClock%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationClock%29> or <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationTimeline%29> method of the animated object. Specify the property being animated as the first parameter, and `null` as the second. This will remove all animation clocks from the property.  
   
@@ -155,7 +155,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.Animation.BeginStoryboard>|  
+|Identifier field|<xref:System.Windows.Media.Animation.BeginStoryboard.StoryboardProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>

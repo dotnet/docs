@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "NewObject method [.NET Framework debugging]"
   - "ICorDebugEval::NewObject method [.NET Framework debugging]"
 ms.assetid: ce3025e8-defa-4c5e-8298-f49d71fa5736
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

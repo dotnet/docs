@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Terminate method, ICorDebug interface [.NET Framework debugging]"
   - "ICorDebug::Terminate method [.NET Framework debugging]"
 ms.assetid: fffe5616-0896-4426-ab5e-21869b514883
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

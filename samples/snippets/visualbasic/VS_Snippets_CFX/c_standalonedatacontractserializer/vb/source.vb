@@ -25,7 +25,7 @@ Public Class Test
     Private Sub Run() 
         '<snippet2>
         Dim dcs As New DataContractSerializer(GetType(Person))
-        'This can now be used to serialize/deserialize Person but not PurchaseOrder.
+        ' This can now be used to serialize/deserialize Person but not PurchaseOrder.
         '</snippet2>
     End Sub 
 
@@ -38,25 +38,25 @@ Public Class Test
 
     <DataContract()>  _
     Public Class LibraryItem
-       'code not shown
+       ' Code not shown.
     End Class 'LibraryItem
     
     <DataContract()>  _
     Public Class Book
         Inherits LibraryItem
-        'code not shown
+        ' Code not shown.
     End Class 
     
     <DataContract()>  _
     Public Class Newspaper
         Inherits LibraryItem
-        'code not shown
+        ' Code not shown.
     End Class 
     '</snippet3>
 
     Private Sub Run2() 
         '<snippet4>
-        'Create a serializer for the inherited types using the knownType parameter.
+        ' Create a serializer for the inherited types using the knownType parameter.
         Dim knownTypes() As Type = {GetType(Book), GetType(Newspaper)}
         Dim dcs As New DataContractSerializer(GetType(LibraryPatron), knownTypes)
         ' All types are known after construction.
@@ -123,7 +123,7 @@ Namespace ServiceModelSamples2
         
         Private Sub Run() 
             '<snippet7>
-            'Construct a purchase order:
+            ' Construct a purchase order:
             Dim adr As New Address()
             adr.street = "123 Main St."
             Dim po As New PurchaseOrder()

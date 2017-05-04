@@ -1,6 +1,6 @@
 '<snippet3>
 Imports System
-Imports myStringer 'The namespace created in Stringer.netmodule.
+Imports myStringer
 
 Class MainClientApp
     ' Static method Main is the entry point method.

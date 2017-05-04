@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.ComponentModel.CategoryAttribute> indicates the category to associate the associated property or event with, when listing properties or events in a <xref:System.Windows.Forms.PropertyGrid> control set to <xref:System.Windows.Forms.PropertySort> mode. If a <xref:System.ComponentModel.CategoryAttribute> has not been applied to a property or event, the <xref:System.Windows.Forms.PropertyGrid> associates it with the **Misc** category. A new category can be created for any name by specifying the name of the category in the constructor for the <xref:System.ComponentModel.CategoryAttribute>.  
+ A <xref:System.ComponentModel.CategoryAttribute> indicates the category to associate the associated property or event with, when listing properties or events in a <xref:System.Windows.Forms.PropertyGrid> control set to <xref:System.Windows.Forms.PropertySort.Categorized> mode. If a <xref:System.ComponentModel.CategoryAttribute> has not been applied to a property or event, the <xref:System.Windows.Forms.PropertyGrid> associates it with the **Misc** category. A new category can be created for any name by specifying the name of the category in the constructor for the <xref:System.ComponentModel.CategoryAttribute>.  
   
  The <xref:System.ComponentModel.CategoryAttribute.Category%2A> property indicates the name of the category that the attribute represents. The <xref:System.ComponentModel.CategoryAttribute.Category%2A> property also provides transparent localization of category names.  
   
@@ -58,120 +58,37 @@
   
  The <see cref="T:System.ComponentModel.CategoryAttribute" /> class defines the following common categories:  
   
- <list type="table">  
-<listheader>  
-<term> Category  
+ <list type="table"><listheader><term> Category  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.Action" />  
+ </description></listheader><item><term><see cref="P:System.ComponentModel.CategoryAttribute.Action" /></term><description> Properties related to available actions.  
   
- </term>  
-<description> Properties related to available actions.  
+ </description></item><item><term><see cref="P:System.ComponentModel.CategoryAttribute.Appearance" /></term><description> Properties related to how an entity appears.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.Appearance" />  
+ </description></item><item><term><see cref="P:System.ComponentModel.CategoryAttribute.Behavior" /></term><description> Properties related to how an entity acts.  
   
- </term>  
-<description> Properties related to how an entity appears.  
+ </description></item><item><term><see cref="P:System.ComponentModel.CategoryAttribute.Data" /></term><description> Properties related to data and data source management.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.Behavior" />  
+ </description></item><item><term><see cref="P:System.ComponentModel.CategoryAttribute.Default" /></term><description> Properties that are grouped in a default category.  
   
- </term>  
-<description> Properties related to how an entity acts.  
+ </description></item><item><term><see cref="P:System.ComponentModel.CategoryAttribute.Design" /></term><description> Properties that are available only at design time.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.Data" />  
+ </description></item><item><term><see cref="P:System.ComponentModel.CategoryAttribute.DragDrop" /></term><description> Properties related to drag-and-drop operations.  
   
- </term>  
-<description> Properties related to data and data source management.  
+ </description></item><item><term><see cref="P:System.ComponentModel.CategoryAttribute.Focus" /></term><description> Properties related to focus.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.Default" />  
+ </description></item><item><term><see cref="P:System.ComponentModel.CategoryAttribute.Format" /></term><description> Properties related to formatting.  
   
- </term>  
-<description> Properties that are grouped in a default category.  
+ </description></item><item><term><see cref="P:System.ComponentModel.CategoryAttribute.Key" /></term><description> Properties related to the keyboard.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.Design" />  
+ </description></item><item><term><see cref="P:System.ComponentModel.CategoryAttribute.Layout" /></term><description> Properties related to layout.  
   
- </term>  
-<description> Properties that are available only at design time.  
+ </description></item><item><term><see cref="P:System.ComponentModel.CategoryAttribute.Mouse" /></term><description> Properties related to the mouse.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.DragDrop" />  
+ </description></item><item><term><see cref="P:System.ComponentModel.CategoryAttribute.WindowStyle" /></term><description> Properties related to the window style of top-level forms.  
   
- </term>  
-<description> Properties related to drag-and-drop operations.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.Focus" />  
-  
- </term>  
-<description> Properties related to focus.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.Format" />  
-  
- </term>  
-<description> Properties related to formatting.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.Key" />  
-  
- </term>  
-<description> Properties related to the keyboard.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.Layout" />  
-  
- </term>  
-<description> Properties related to layout.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.Mouse" />  
-  
- </term>  
-<description> Properties related to the mouse.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.ComponentModel.CategoryAttribute.WindowStyle" />  
-  
- </term>  
-<description> Properties related to the window style of top-level forms.  
-  
- </description>  
-</item>  
-</list>  
+ </description></item></list>  
   
  For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).</para>
     </block>

@@ -1,5 +1,5 @@
-﻿using System; // STAThreadAttribute, LoaderOptimization
-using System.Windows; // Application
+﻿using System;
+using System.Windows;
 
 namespace Host
 {

@@ -365,7 +365,7 @@ public void CreateOdbcParameter()
  For a list of the supported data types, see the appropriate <xref:System.Data.Odbc.OdbcParameter.OdbcType%2A> member. For more information, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
   
 > [!NOTE]
->  <xref:System.Data.DbType> is not supported by the Microsoft .NET Framework Data Provider for ODBC.  
+>  <xref:System.Data.DbType.Object> is not supported by the Microsoft .NET Framework Data Provider for ODBC.  
   
    
   

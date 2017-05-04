@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedDispose interface [.NET Framework debugging]"
 ms.assetid: b1d74e83-a200-4d00-8fbd-27918808616d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

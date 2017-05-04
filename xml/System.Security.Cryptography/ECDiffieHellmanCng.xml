@@ -20,9 +20,9 @@
   
 |Key derivation function|Properties|  
 |-----------------------------|----------------|  
-|<xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>|<xref:System.Security.Cryptography.ECDiffieHellmanCng.HashAlgorithm%2A> - The hash algorithm that is used to process the secret agreement.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretPrepend%2A> - An optional byte array to prepend to the secret agreement before hashing it.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretAppend%2A> - An optional byte array to append to the secret agreement before hashing it.|  
-|<xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>|<xref:System.Security.Cryptography.ECDiffieHellmanCng.HashAlgorithm%2A> - The hash algorithm that is used to process the secret agreement.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretPrepend%2A>- An optional byte array to prepend to the secret agreement before hashing it.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretAppend%2A> - An optional byte array to append to the secret agreement before hashing it.|  
-|<xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>|<xref:System.Security.Cryptography.ECDiffieHellmanCng.Label%2A> - The label for key derivation.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.Seed%2A> - The seed for key derivation.|  
+|<xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hash>|<xref:System.Security.Cryptography.ECDiffieHellmanCng.HashAlgorithm%2A> - The hash algorithm that is used to process the secret agreement.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretPrepend%2A> - An optional byte array to prepend to the secret agreement before hashing it.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretAppend%2A> - An optional byte array to append to the secret agreement before hashing it.|  
+|<xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hmac>|<xref:System.Security.Cryptography.ECDiffieHellmanCng.HashAlgorithm%2A> - The hash algorithm that is used to process the secret agreement.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretPrepend%2A>- An optional byte array to prepend to the secret agreement before hashing it.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretAppend%2A> - An optional byte array to append to the secret agreement before hashing it.|  
+|<xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Tls>|<xref:System.Security.Cryptography.ECDiffieHellmanCng.Label%2A> - The label for key derivation.<br /><br /> <xref:System.Security.Cryptography.ECDiffieHellmanCng.Seed%2A> - The seed for key derivation.|  
   
  The result of passing the secret agreement through the key derivation function is a byte array that may be used as key material for your application. The number of bytes of key material generated is dependent on the key derivation function; for example, SHA-256 will generate 256 bits of key material, whereas SHA-512 will generate 512 bits of key material.The basic flow of an ECDH key exchange is as follows:  
   
@@ -607,7 +607,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is used by Cryptography Next Generation (CNG) objects only if the <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> or <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> value is set in the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property.  
+ This property is used by Cryptography Next Generation (CNG) objects only if the <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hash> or <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hmac> value is set in the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property.  
   
  This property accepts the following algorithms: <xref:System.Security.Cryptography.CngAlgorithm.MD5%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha1%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha256%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha384%2A>, and <xref:System.Security.Cryptography.CngAlgorithm.Sha512%2A>.  
   
@@ -639,7 +639,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property applies only when the <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> value is set in the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property, and the <xref:System.Security.Cryptography.ECDiffieHellmanCng.UseSecretAgreementAsHmacKey%2A> property is `false`. By default, the value is `null`.  
+ This property applies only when the <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hmac> value is set in the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property, and the <xref:System.Security.Cryptography.ECDiffieHellmanCng.UseSecretAgreementAsHmacKey%2A> property is `false`. By default, the value is `null`.  
   
  ]]></format>
         </remarks>
@@ -742,7 +742,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> value is set in the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property. By default, it is `null`.  
+ This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Tls> value is set in the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property. By default, it is `null`.  
   
  ]]></format>
         </remarks>
@@ -785,7 +785,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> or <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> key derivation function (KDF) is used. The value is appended to the secret agreement, and the combined value is passed to the KDF to generate the key material. By default, the value is `null`.  
+ This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hash> or <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hmac> key derivation function (KDF) is used. The value is appended to the secret agreement, and the combined value is passed to the KDF to generate the key material. By default, the value is `null`.  
   
  ]]></format>
         </remarks>
@@ -812,9 +812,9 @@
 ## Remarks  
  This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property is set to one of the following values:  
   
--   <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>  
+-   <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hash>  
   
--   <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>  
+-   <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hmac>  
   
  The value is prepended to the secret agreement, and the combined value is passed to the key derivation function (KDF) to generate the key material. By default, the value is `null`.  
   
@@ -841,7 +841,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property is set to <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>. By default, the value is `null`.  
+ This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property is set to <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Tls>. By default, the value is `null`.  
   
  ]]></format>
         </remarks>
@@ -923,7 +923,7 @@
   
 ## Remarks  
   
--   This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property is set to <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction>. By default, the value is `false`.  
+-   This value is used for key derivation if the <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> property is set to <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hmac>. By default, the value is `false`.  
   
  ]]></format>
         </remarks>

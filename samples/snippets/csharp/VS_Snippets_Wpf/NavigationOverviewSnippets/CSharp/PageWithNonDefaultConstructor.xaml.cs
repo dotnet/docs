@@ -1,5 +1,5 @@
 //<SnippetPageWithNonDefaultConstructorCODEBEHIND>
-using System.Windows.Controls; // Page
+using System.Windows.Controls;
 
 namespace SDKSample
 {

@@ -29,9 +29,9 @@
   
 |GridSplitter type|<xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> value|<xref:System.Windows.FrameworkElement.VerticalAlignment%2A> value|  
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
-|Resizes rows|<xref:System.Windows.HorizontalAlignment>|<xref:System.Windows.VerticalAlignment>, <xref:System.Windows.VerticalAlignment>, <xref:System.Windows.VerticalAlignment>|  
-|Resizes columns|<xref:System.Windows.HorizontalAlignment>, <xref:System.Windows.HorizontalAlignment>, <xref:System.Windows.HorizontalAlignment>|<xref:System.Windows.VerticalAlignment>|  
-|If <xref:System.Windows.FrameworkElement.ActualHeight%2A> is greater than or equal to <xref:System.Windows.FrameworkElement.ActualWidth%2A>, this resizes the columns.<br /><br /> If <xref:System.Windows.FrameworkElement.ActualHeight%2A> is less than <xref:System.Windows.FrameworkElement.ActualWidth%2A>, this resizes the rows.|<xref:System.Windows.HorizontalAlignment>|<xref:System.Windows.VerticalAlignment>|  
+|Resizes rows|<xref:System.Windows.HorizontalAlignment.Stretch>|<xref:System.Windows.VerticalAlignment.Top>, <xref:System.Windows.VerticalAlignment.Bottom>, <xref:System.Windows.VerticalAlignment.Center>|  
+|Resizes columns|<xref:System.Windows.HorizontalAlignment.Left>, <xref:System.Windows.HorizontalAlignment.Right>, <xref:System.Windows.HorizontalAlignment.Center>|<xref:System.Windows.VerticalAlignment.Stretch>|  
+|If <xref:System.Windows.FrameworkElement.ActualHeight%2A> is greater than or equal to <xref:System.Windows.FrameworkElement.ActualWidth%2A>, this resizes the columns.<br /><br /> If <xref:System.Windows.FrameworkElement.ActualHeight%2A> is less than <xref:System.Windows.FrameworkElement.ActualWidth%2A>, this resizes the rows.|<xref:System.Windows.HorizontalAlignment.Stretch>|<xref:System.Windows.VerticalAlignment.Stretch>|  
   
  A <xref:System.Windows.Controls.GridSplitter> can overlap a row or column that contains other content, or it can occupy a row or column by itself. For more information about how to define a <xref:System.Windows.Controls.GridSplitter>, see [How to: Resize Rows with a GridSplitter](~/docs/framework/wpf/controls/how-to-resize-rows-with-a-gridsplitter.md) and [How to: Resize Columns with a GridSplitter](~/docs/framework/wpf/controls/how-to-resize-columns-with-a-gridsplitter.md).  
   
@@ -100,7 +100,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.GridSplitter>|  
+|Identifier field|<xref:System.Windows.Controls.GridSplitter.DragIncrementProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -158,7 +158,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.GridSplitter>|  
+|Identifier field|<xref:System.Windows.Controls.GridSplitter.KeyboardIncrementProperty>|  
 |Metadata properties set to `true`|None|  
   
    

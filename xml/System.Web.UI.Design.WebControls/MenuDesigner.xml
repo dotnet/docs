@@ -212,7 +212,7 @@
    
   
 ## Examples  
- The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.MenuDesigner.GetDesignTimeHtml%2A> method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.MenuDesigner> class. The overridden method changes the appearance of a control that is derived from the <xref:System.Web.UI.WebControls.Menu> control at design time. The example draws an orange, dotted border around the control to make its extent more visible, if the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the control is the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> value.  
+ The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.MenuDesigner.GetDesignTimeHtml%2A> method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.MenuDesigner> class. The overridden method changes the appearance of a control that is derived from the <xref:System.Web.UI.WebControls.Menu> control at design time. The example draws an orange, dotted border around the control to make its extent more visible, if the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the control is the <xref:System.Web.UI.WebControls.BorderStyle.NotSet> or <xref:System.Web.UI.WebControls.BorderStyle.None> value.  
   
  [!code-csharp[System.Web.UI.Design.WebControls.MenuDesigner#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.MenuDesigner/CS/MenuDesigner.cs#4)]
  [!code-vb[System.Web.UI.Design.WebControls.MenuDesigner#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.MenuDesigner/VB/MenuDesigner.vb#4)]  

@@ -1148,7 +1148,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Speech.Synthesis.PromptVolume> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume>. The other settings decrease the volume of speech output relative to full volume.  
+ The <xref:System.Speech.Synthesis.PromptVolume.Default> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume.ExtraLoud>. The other settings decrease the volume of speech output relative to full volume.  
   
    
   
@@ -1846,7 +1846,7 @@ namespace SampleSynthesis
   
 > [!NOTE]
 >  -   The speech synthesis engines in Windows do not support the emphasis parameter at this time. Setting values for the emphasis parameter will produce no audible change in the synthesized speech output.  
-> -   The <xref:System.Speech.Synthesis.PromptVolume> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume>. The other settings decrease the volume of speech output relative to full volume.  
+> -   The <xref:System.Speech.Synthesis.PromptVolume.Default> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume.ExtraLoud>. The other settings decrease the volume of speech output relative to full volume.  
   
    
   

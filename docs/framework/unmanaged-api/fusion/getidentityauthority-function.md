@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetIdentityAuthority function [.NET Framework fusion]"
 ms.assetid: 843cd5ab-d2b7-4ff6-86bd-e68c7a91c098
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

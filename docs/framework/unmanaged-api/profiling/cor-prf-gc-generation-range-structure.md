@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_GC_GENERATION_RANGE structure [.NET Framework profiling]"
 ms.assetid: e7e07273-8d10-4a68-807e-59634e3f8c5e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

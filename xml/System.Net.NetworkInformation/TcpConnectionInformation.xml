@@ -137,7 +137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Net.NetworkInformation.TcpConnectionInformation.State%2A> of this connection is <xref:System.Net.NetworkInformation.TcpState>, the remote endpoint is not established, and has all zeros for its IP address.  
+ If the <xref:System.Net.NetworkInformation.TcpConnectionInformation.State%2A> of this connection is <xref:System.Net.NetworkInformation.TcpState.Listen>, the remote endpoint is not established, and has all zeros for its IP address.  
   
  ]]></format>
         </remarks>

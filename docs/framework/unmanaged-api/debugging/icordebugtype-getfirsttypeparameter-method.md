@@ -2,7 +2,7 @@
 title: "ICorDebugType::GetFirstTypeParameter Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugType::GetFirstTypeParameter method [.NET Framework debugging]"
   - "GetFirstTypeParameter method [.NET Framework debugging]"
 ms.assetid: 35bb594f-af6a-4349-83fe-e98702674e03
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

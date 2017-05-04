@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+ The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType.Domain> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
   
  ]]></format>
         </remarks>
@@ -145,7 +145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+ The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType.Domain> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
   
  ]]></format>
         </remarks>
@@ -220,7 +220,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+ The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType.Domain> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
   
  ]]></format>
         </remarks>
@@ -267,7 +267,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+ The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType.Domain> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
   
  ]]></format>
         </remarks>
@@ -300,7 +300,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType>, this property returns the name of the domain controller or application directory instance. When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType>, this property returns the machine name.  
+ When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType.Domain>, this property returns the name of the domain controller or application directory instance. When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType.Machine>, this property returns the machine name.  
   
  ]]></format>
         </remarks>
@@ -325,7 +325,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- All queries are performed under this root, and all inserts are performed into this container. For <xref:System.DirectoryServices.AccountManagement.ContextType> and <xref:System.DirectoryServices.AccountManagement.ContextType> context types, this property is the distinguished name of a container object. For <xref:System.DirectoryServices.AccountManagement.ContextType> context types, this property must be null.  
+ All queries are performed under this root, and all inserts are performed into this container. For <xref:System.DirectoryServices.AccountManagement.ContextType.Domain> and <xref:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory> context types, this property is the distinguished name of a container object. For <xref:System.DirectoryServices.AccountManagement.ContextType.Machine> context types, this property must be null.  
   
  ]]></format>
         </remarks>

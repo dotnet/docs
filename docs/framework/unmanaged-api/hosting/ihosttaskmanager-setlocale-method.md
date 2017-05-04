@@ -2,7 +2,7 @@
 title: "IHostTaskManager::SetLocale Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetLocale method, IHostTaskManager interface [.NET Framework hosting]"
   - "IHostTaskManager::SetLocale method [.NET Framework hosting]"
 ms.assetid: 747ee407-ee8c-484d-9583-25089236d2d1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

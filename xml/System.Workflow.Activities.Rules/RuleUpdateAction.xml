@@ -63,7 +63,7 @@
  To specify that all fields and properties are modified, append "*" to the end of the path. For example, `this/SomeProperty/*` indicates that all fields and properties on `this.SomeProperty` were modified. Therefore, all rules that use any field or property on `this.SomeProperty` would be reevaluated.  
   
 > [!NOTE]
->  If the rule set is run with <xref:System.Workflow.Activities.Rules.RuleSet.ChainingBehavior%2A> set to <xref:System.Workflow.Activities.Rules.RuleChainingBehavior>, this action is ignored.  
+>  If the rule set is run with <xref:System.Workflow.Activities.Rules.RuleSet.ChainingBehavior%2A> set to <xref:System.Workflow.Activities.Rules.RuleChainingBehavior.None>, this action is ignored.  
   
  ]]></format>
         </remarks>
@@ -197,7 +197,7 @@
  To specify that all fields and properties are modified, append "*" to the end of the path. For example, "`this/SomeProperty/*`" indicates that all fields and properties on `this.SomeProperty` have been modified. Therefore, all rules that use any field or property on `this.SomeProperty` would be reevaluated.  
   
 > [!NOTE]
->  If the rule set is run with <xref:System.Workflow.Activities.Rules.RuleSet.ChainingBehavior%2A> set to <xref:System.Workflow.Activities.Rules.RuleChainingBehavior>, this action is ignored.  
+>  If the rule set is run with <xref:System.Workflow.Activities.Rules.RuleSet.ChainingBehavior%2A> set to <xref:System.Workflow.Activities.Rules.RuleChainingBehavior.None>, this action is ignored.  
   
  ]]></format>
         </remarks>

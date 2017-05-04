@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ThreadDestroyed method [.NET Framework profiling]"
   - "ICorProfilerCallback::ThreadDestroyed method [.NET Framework profiling]"
 ms.assetid: 4c2b66fd-0595-40a3-8931-f9c4fff97ac8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

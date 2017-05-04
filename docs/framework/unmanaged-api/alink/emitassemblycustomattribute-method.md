@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EmitAssemblyCustomAttribute method"
 ms.assetid: b72f5409-79af-4fa7-90a7-7630eec170f1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

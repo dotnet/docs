@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates a <xref:System.Threading.Tasks.TaskFactory%601> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+ This constructor creates a <xref:System.Threading.Tasks.TaskFactory%601> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions.None>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions.None>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
   
  ]]></format>
         </remarks>
@@ -128,7 +128,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates a <xref:System.Threading.Tasks.TaskFactory%601> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+ This constructor creates a <xref:System.Threading.Tasks.TaskFactory%601> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions.None>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions.None>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
   
  ]]></format>
         </remarks>
@@ -163,7 +163,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to `scheduler`, unless it's `null`, in which case the property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+ With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions.None>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions.None>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to `scheduler`, unless it's `null`, in which case the property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
   
  ]]></format>
         </remarks>
@@ -356,7 +356,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -407,7 +407,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -461,7 +461,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -516,7 +516,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -578,7 +578,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -632,7 +632,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -690,7 +690,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -749,7 +749,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -806,7 +806,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -856,7 +856,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -914,7 +914,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -973,7 +973,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -1038,7 +1038,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -1096,7 +1096,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -1158,7 +1158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -1221,7 +1221,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>

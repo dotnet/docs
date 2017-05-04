@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo2::GetAppDomainStaticAddress method [.NET Framework profiling]"
   - "GetAppDomainStaticAddress method [.NET Framework profiling]"
 ms.assetid: 2a9e0ea7-a9e2-4817-b1c4-fcf15b215ea9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 22
 author: "mairaw"
 ms.author: "mairaw"

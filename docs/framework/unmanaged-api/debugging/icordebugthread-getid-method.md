@@ -2,7 +2,7 @@
 title: "ICorDebugThread::GetID Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread::GetID method [.NET Framework debugging]"
   - "GetID method, ICorDebugThread interface [.NET Framework debugging]"
 ms.assetid: f1de4584-92df-42f3-9da4-fca03a1c6821
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

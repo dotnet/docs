@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "HasQueuedCallbacks method [.NET Framework debugging]"
   - "ICorDebugController::HasQueuedCallbacks method [.NET Framework debugging]"
 ms.assetid: 0d6a1cd9-370b-4462-adbf-e3980e897ea7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

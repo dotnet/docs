@@ -146,9 +146,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Possible values for this property are <xref:System.Web.UI.WebControls.Expressions.RangeType>, <xref:System.Web.UI.WebControls.Expressions.RangeType>, and <xref:System.Web.UI.WebControls.Expressions.RangeType>.  
+ Possible values for this property are <xref:System.Web.UI.WebControls.Expressions.RangeType.Inclusive>, <xref:System.Web.UI.WebControls.Expressions.RangeType.Exclusive>, and <xref:System.Web.UI.WebControls.Expressions.RangeType.None>.  
   
- When the <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType%2A> is set to <xref:System.Web.UI.WebControls.Expressions.RangeType>, the maximum value of the range is included in the search results. This is equivalent to performing a >= operation. If you set the property to <xref:System.Web.UI.WebControls.Expressions.RangeType> field, it is equivalent to specifying a > or < operation. If you set the property to <xref:System.Web.UI.WebControls.Expressions.RangeType>, no limit is imposed on the range.  
+ When the <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType%2A> is set to <xref:System.Web.UI.WebControls.Expressions.RangeType.Inclusive>, the maximum value of the range is included in the search results. This is equivalent to performing a >= operation. If you set the property to <xref:System.Web.UI.WebControls.Expressions.RangeType.Exclusive> field, it is equivalent to specifying a > or < operation. If you set the property to <xref:System.Web.UI.WebControls.Expressions.RangeType.None>, no limit is imposed on the range.  
   
    
   
@@ -186,9 +186,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Possible values for this property are <xref:System.Web.UI.WebControls.Expressions.RangeType>, <xref:System.Web.UI.WebControls.Expressions.RangeType>, and <xref:System.Web.UI.WebControls.Expressions.RangeType>.  
+ Possible values for this property are <xref:System.Web.UI.WebControls.Expressions.RangeType.Inclusive>, <xref:System.Web.UI.WebControls.Expressions.RangeType.Exclusive>, and <xref:System.Web.UI.WebControls.Expressions.RangeType.None>.  
   
- When the <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MinType%2A> or <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType%2A> property is set to <xref:System.Web.UI.WebControls.Expressions.RangeType>, the minimum and maximum value of the range is included in the search results. This is equivalent to performing a >= or \<= operation. The <xref:System.Web.UI.WebControls.Expressions.RangeType> field is equivalent to the > or < operation and <xref:System.Web.UI.WebControls.Expressions.RangeType> imposes no limit on the range.  
+ When the <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MinType%2A> or <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType%2A> property is set to <xref:System.Web.UI.WebControls.Expressions.RangeType.Inclusive>, the minimum and maximum value of the range is included in the search results. This is equivalent to performing a >= or \<= operation. The <xref:System.Web.UI.WebControls.Expressions.RangeType.Exclusive> field is equivalent to the > or < operation and <xref:System.Web.UI.WebControls.Expressions.RangeType.None> imposes no limit on the range.  
   
    
   

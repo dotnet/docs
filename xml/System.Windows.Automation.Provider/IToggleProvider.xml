@@ -49,7 +49,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A control must cycle through its toggle states in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState>, and (if supported) <xref:System.Windows.Automation.ToggleState>.  
+ A control must cycle through its toggle states in this order: <xref:System.Windows.Automation.ToggleState.On>, <xref:System.Windows.Automation.ToggleState.Off>, and (if supported) <xref:System.Windows.Automation.ToggleState.Indeterminate>.  
   
    
   
@@ -82,7 +82,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A control must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState>, and (if supported) <xref:System.Windows.Automation.ToggleState>.  
+ A control must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState.On>, <xref:System.Windows.Automation.ToggleState.Off>, and (if supported) <xref:System.Windows.Automation.ToggleState.Indeterminate>.  
   
    
   

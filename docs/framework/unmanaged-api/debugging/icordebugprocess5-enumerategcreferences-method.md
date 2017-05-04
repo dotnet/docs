@@ -2,7 +2,7 @@
 title: "ICorDebugProcess5::EnumerateGCReferences Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumerateGCReferences method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::EnumerateGCReferences method [.NET Framework debugging]"
 ms.assetid: 86c397c3-81d8-463e-a248-3cbe06c44d9d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

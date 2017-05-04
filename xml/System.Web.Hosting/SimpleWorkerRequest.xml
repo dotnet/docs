@@ -323,12 +323,10 @@
         <summary>Returns the URL path contained in the header with the query string appended.</summary>
         <returns>The raw URL path of the request header.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  The returned URL is not normalized. Using the URL for access control, or security-sensitive decisions can expose your application to canonicalization security vulnerabilities.  
   
-</para>  
-</block></returns>
+</para></block></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

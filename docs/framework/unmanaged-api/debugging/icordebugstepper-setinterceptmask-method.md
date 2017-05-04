@@ -2,7 +2,7 @@
 title: "ICorDebugStepper::SetInterceptMask Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetInterceptMask method [.NET Framework debugging]"
   - "ICorDebugStepper::SetInterceptMask method [.NET Framework debugging]"
 ms.assetid: 6245e2ae-5cc2-43ff-8cc1-71953d12113a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

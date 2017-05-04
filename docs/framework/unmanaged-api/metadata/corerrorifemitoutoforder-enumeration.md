@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorErrorIfEmitOutOfOrder enumeration [.NET Framework metadata]"
 ms.assetid: 6d758aad-29a7-44fe-9481-bbff5b799a32
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

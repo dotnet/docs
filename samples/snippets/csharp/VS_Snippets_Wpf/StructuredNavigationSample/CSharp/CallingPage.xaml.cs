@@ -2,9 +2,9 @@
 //<SnippetCallingPageDefaultCODEBEHIND1>
 //<SnippetSendDataCODEBEHIND1>
 //<SnippetProcessResultCODEBEHIND1>
-using System.Windows; // RoutedEventArgs, RoutedEventHandler, Visibility
-using System.Windows.Controls; // Page
-using System.Windows.Navigation; // ReturnEventArgs
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Navigation;
 
 namespace StructuredNavigationSample
 {

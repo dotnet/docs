@@ -88,7 +88,7 @@
   
  Tick marks will not be displayed if disabled.  
   
- You can disable tick marks by setting the <xref:System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle%2A> property to <xref:System.Web.UI.DataVisualization.Charting.TickMarkStyle>.  
+ You can disable tick marks by setting the <xref:System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle%2A> property to <xref:System.Web.UI.DataVisualization.Charting.TickMarkStyle.None>.  
   
  ]]></format>
         </remarks>
@@ -127,7 +127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly using <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> at design time, or by assigning a value of <xref:System.Double.NaN> at run time—the actual value of this property is determined by the <xref:System.Web.UI.DataVisualization.Charting.Axis.Interval%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object to which the chart element, such as a grid line or tick mark, belongs.  
+ By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly using <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.NotSet> at design time, or by assigning a value of <xref:System.Double.NaN> at run time—the actual value of this property is determined by the <xref:System.Web.UI.DataVisualization.Charting.Axis.Interval%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object to which the chart element, such as a grid line or tick mark, belongs.  
   
  The interval of minor tick marks and grid lines is never affected by the <xref:System.Web.UI.DataVisualization.Charting.Axis.Interval%2A> property value.  
   
@@ -171,7 +171,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly specifying "Not Set"at design time, or by assigning it a value of <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> at run time—the actual value of this property is determined by the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffset%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object that the chart element, such as a grid line or a tick mark, belongs to.  
+ By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly specifying "Not Set"at design time, or by assigning it a value of <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.NotSet> at run time—the actual value of this property is determined by the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffset%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object that the chart element, such as a grid line or a tick mark, belongs to.  
   
  The interval offset of minor tick marks and grid lines is never affected by the value of the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffset%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object.  
   
@@ -213,11 +213,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly specifying "Not Set" at design time, or by assigning it a value of <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> at run time—the actual value of this property is determined by the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object that the chart element—a grid line or tick mark, for example—belongs to.  
+ By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly specifying "Not Set" at design time, or by assigning it a value of <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.NotSet> at run time—the actual value of this property is determined by the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object that the chart element—a grid line or tick mark, for example—belongs to.  
   
  The interval offset type of minor tick marks and grid lines is never affected by the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property value.  
   
- If this interval offset type is set to <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType>, the <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalType%2A> property will be used.  
+ If this interval offset type is set to <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Auto>, the <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalType%2A> property will be used.  
   
  ]]></format>
         </remarks>
@@ -253,15 +253,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly using "Not Set" at design time, or by assigning it a value of <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> at run time— the actual value of this property is determined by the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object that the chart element—a grid line or tick mark, for example—belongs to.  
+ By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly using "Not Set" at design time, or by assigning it a value of <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.NotSet> at run time— the actual value of this property is determined by the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Axis> object that the chart element—a grid line or tick mark, for example—belongs to.  
   
  The interval type of minor tick marks and grid lines is never affected by the value of the <xref:System.Web.UI.DataVisualization.Charting.Axis.IntervalType%2A> property.  
   
- Interval types can be set to <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType>; the type of interval then depends on either the X-values or Y-values of the plotted <xref:System.Web.UI.DataVisualization.Charting.DataPoint> objects, depending on which axis the applicable elements belong to.  
+ Interval types can be set to <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Auto>; the type of interval then depends on either the X-values or Y-values of the plotted <xref:System.Web.UI.DataVisualization.Charting.DataPoint> objects, depending on which axis the applicable elements belong to.  
   
- Setting the <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalType%2A> property for a value axis will only have an effect if the values of the data points are <xref:System.DateTime> or `double` values. Also, the <xref:System.Web.UI.DataVisualization.Charting.Series.XValueType%2A> or <xref:System.Web.UI.DataVisualization.Charting.Series.YValueType%2A> property of the plotted <xref:System.Web.UI.DataVisualization.Charting.Series> must be set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType> or <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType>.  
+ Setting the <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalType%2A> property for a value axis will only have an effect if the values of the data points are <xref:System.DateTime> or `double` values. Also, the <xref:System.Web.UI.DataVisualization.Charting.Series.XValueType%2A> or <xref:System.Web.UI.DataVisualization.Charting.Series.YValueType%2A> property of the plotted <xref:System.Web.UI.DataVisualization.Charting.Series> must be set to <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType.Auto> or <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime>.  
   
- Setting the <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalType%2A> property for a categorical axis will only have an effect if the <xref:System.Web.UI.DataVisualization.Charting.Series.XValueType%2A> property (or <xref:System.Web.UI.DataVisualization.Charting.Series.YValueType%2A> property, depending on the axis in question) of the plotted <xref:System.Web.UI.DataVisualization.Charting.Series> object is either <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType> or <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType>.  
+ Setting the <xref:System.Web.UI.DataVisualization.Charting.Grid.IntervalType%2A> property for a categorical axis will only have an effect if the <xref:System.Web.UI.DataVisualization.Charting.Series.XValueType%2A> property (or <xref:System.Web.UI.DataVisualization.Charting.Series.YValueType%2A> property, depending on the axis in question) of the plotted <xref:System.Web.UI.DataVisualization.Charting.Series> object is either <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType.Auto> or <xref:System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime>.  
   
 > [!NOTE]
 >  Sunday is considered the first day of the week.  

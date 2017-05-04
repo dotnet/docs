@@ -141,9 +141,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The signature origin restriction is set by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `restrictions` parameter set to exclude the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions> part.  
+ The signature origin restriction is set by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `restrictions` parameter set to exclude the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.SignatureOrigin> part.  
   
- If a document is to be signed by more than one person, the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions> part needs to be excluded from the signature when the document is first signed.  (Exclusions are specified in the `restrictions` parameter of the call to <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A>.)  If the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions> part is not excluded, any additional signatures invalidate the signature of the first signer.  
+ If a document is to be signed by more than one person, the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.SignatureOrigin> part needs to be excluded from the signature when the document is first signed.  (Exclusions are specified in the `restrictions` parameter of the call to <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A>.)  If the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.SignatureOrigin> part is not excluded, any additional signatures invalidate the signature of the first signer.  
   
  For more information on the Core Properties and Signature Origin parts, see Chapter 3 of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
   

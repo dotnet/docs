@@ -927,7 +927,7 @@
 ## Remarks  
  Use the <xref:System.Windows.Forms.Control.BackgroundImageLayout%2A> property to specify the position and behavior of an image you have placed onto a control. <xref:System.Windows.Forms.Control.BackgroundImageLayout%2A> takes effect only if the <xref:System.Windows.Forms.Control.BackgroundImage%2A> property is set.  
   
- You can increase performance for large images if you set <xref:System.Windows.Forms.Control.BackgroundImageLayout%2A> to something other than <xref:System.Windows.Forms.ImageLayout>.  
+ You can increase performance for large images if you set <xref:System.Windows.Forms.Control.BackgroundImageLayout%2A> to something other than <xref:System.Windows.Forms.ImageLayout.Tile>.  
   
  ]]></format>
         </remarks>
@@ -1691,278 +1691,173 @@
   
  The following table lists Windows Forms controls and which event (<see cref="E:System.Windows.Forms.Control.Click" /> or <see cref="E:System.Windows.Forms.Control.DoubleClick" />) is raised in response to the mouse action specified.  
   
- <list type="table">  
-<listheader>  
-<term> Control  
+ <list type="table"><listheader><term> Control  
   
- </term>  
-<description> Left Mouse Click  
+ </term><description> Left Mouse Click  
   
- </description>  
-<description> Left Mouse Double Click  
+ </description><description> Left Mouse Double Click  
   
- </description>  
-<description> Right Mouse Click  
+ </description><description> Right Mouse Click  
   
- </description>  
-<description> Right Mouse Double Click  
+ </description><description> Right Mouse Double Click  
   
- </description>  
-<description> Middle Mouse Click  
+ </description><description> Middle Mouse Click  
   
- </description>  
-<description> Middle Mouse Double Click  
+ </description><description> Middle Mouse Double Click  
   
- </description>  
-<description> XButton1 Mouse Click  
+ </description><description> XButton1 Mouse Click  
   
- </description>  
-<description> XButton1 Mouse Double-Click  
+ </description><description> XButton1 Mouse Double-Click  
   
- </description>  
-<description> XButton2 Mouse Click  
+ </description><description> XButton2 Mouse Click  
   
- </description>  
-<description> XButton2 Mouse Double-Click  
+ </description><description> XButton2 Mouse Double-Click  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="T:System.Windows.Forms.MonthCalendar" />,  
+ </description></listheader><item><term><see cref="T:System.Windows.Forms.MonthCalendar" />,  
   
  <see cref="T:System.Windows.Forms.DateTimePicker" />,  
   
  <see cref="T:System.Windows.Forms.HScrollBar" />,  
   
- <see cref="T:System.Windows.Forms.VScrollBar" />  
+ <see cref="T:System.Windows.Forms.VScrollBar" /></term><description> none  
   
- </term>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.Windows.Forms.Button" />,  
+ </description></item><item><term><see cref="T:System.Windows.Forms.Button" />,  
   
  <see cref="T:System.Windows.Forms.CheckBox" />,  
   
  <see cref="T:System.Windows.Forms.RichTextBox" />,  
   
- <see cref="T:System.Windows.Forms.RadioButton" />  
+ <see cref="T:System.Windows.Forms.RadioButton" /></term><description> Click  
   
- </term>  
-<description> Click  
+ </description><description> Click, Click  
   
- </description>  
-<description> Click, Click  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.Windows.Forms.ListBox" />,  
+ </description></item><item><term><see cref="T:System.Windows.Forms.ListBox" />,  
   
  <see cref="T:System.Windows.Forms.CheckedListBox" />,  
   
- <see cref="T:System.Windows.Forms.ComboBox" />  
+ <see cref="T:System.Windows.Forms.ComboBox" /></term><description> Click  
   
- </term>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.Windows.Forms.TextBox" />,  
+ </description></item><item><term><see cref="T:System.Windows.Forms.TextBox" />,  
   
  <see cref="T:System.Windows.Forms.DomainUpDown" />,  
   
- <see cref="T:System.Windows.Forms.NumericUpDown" />  
+ <see cref="T:System.Windows.Forms.NumericUpDown" /></term><description> Click  
   
- </term>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description></item><item><term> * <see cref="T:System.Windows.Forms.TreeView" />,  
   
- </description>  
-</item>  
-<item>  
-<term> * <see cref="T:System.Windows.Forms.TreeView" />,  
+ \* <see cref="T:System.Windows.Forms.ListView" /></term><description> Click  
   
- \* <see cref="T:System.Windows.Forms.ListView" />  
+ </description><description> Click, DoubleClick  
   
- </term>  
-<description> Click  
+ </description><description> Click  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click  
+ </description><description> none  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description></item><item><term><see cref="T:System.Windows.Forms.ProgressBar" />,  
   
- </description>  
-<description> none  
+ <see cref="T:System.Windows.Forms.TrackBar" /></term><description> Click  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.Windows.Forms.ProgressBar" />,  
+ </description><description> Click, Click  
   
- <see cref="T:System.Windows.Forms.TrackBar" />  
+ </description><description> Click  
   
- </term>  
-<description> Click  
+ </description><description> Click, Click  
   
- </description>  
-<description> Click, Click  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, Click  
   
- </description>  
-<description> Click, Click  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, Click  
   
- </description>  
-<description> Click, Click  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, Click  
   
- </description>  
-<description> Click, Click  
-  
- </description>  
-<description> Click  
-  
- </description>  
-<description> Click, Click  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.Windows.Forms.Form" />,  
+ </description></item><item><term><see cref="T:System.Windows.Forms.Form" />,  
   
  <see cref="T:System.Windows.Forms.DataGrid" />,  
   
@@ -1984,41 +1879,27 @@
   
  <see cref="T:System.Windows.Forms.TabPage" />,  
   
- ** <see cref="T:System.Windows.Forms.TabControl" />  
+ ** <see cref="T:System.Windows.Forms.TabControl" /></term><description> Click  
   
- </term>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
-  
- </description>  
-</item>  
-</list>  
+ </description></item></list>  
   
  \* The mouse pointer must be over a child object (<see cref="T:System.Windows.Forms.TreeNode" /> or <see cref="T:System.Windows.Forms.ListViewItem" />).  
   
@@ -3111,7 +2992,7 @@
 ## Remarks  
  An Input Method Editor (IME) is a program that enables users to enter complex characters and symbols, such as Japanese Kanji characters, by using a standard keyboard.  
   
- As implemented in the <xref:System.Windows.Forms.Control> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> value. The <xref:System.Windows.Forms.ImeMode> value specifies that the IME mode is inherited from the parent control.  
+ As implemented in the <xref:System.Windows.Forms.Control> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> value. The <xref:System.Windows.Forms.ImeMode.Inherit> value specifies that the IME mode is inherited from the parent control.  
   
    
   
@@ -3398,7 +3279,7 @@
 ## Remarks  
  This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method.`Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
   
- When the `disposing`parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.Control> references. This method invokes the `Dispose()` method of each referenced object.  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.Control> references. This method invokes the `Dispose()` method of each referenced object.  
   
  ]]></format>
         </remarks>
@@ -3708,44 +3589,29 @@
   
  The following table lists Windows Forms controls and which event (<see cref="E:System.Windows.Forms.Control.Click" /> or <see cref="E:System.Windows.Forms.Control.DoubleClick" />) is raised in response to the mouse action specified.  
   
- <list type="table">  
-<listheader>  
-<term> Control  
+ <list type="table"><listheader><term> Control  
   
- </term>  
-<description> Left Mouse Click  
+ </term><description> Left Mouse Click  
   
- </description>  
-<description> Left Mouse Double Click  
+ </description><description> Left Mouse Double Click  
   
- </description>  
-<description> Right Mouse Click  
+ </description><description> Right Mouse Click  
   
- </description>  
-<description> Right Mouse Double Click  
+ </description><description> Right Mouse Double Click  
   
- </description>  
-<description> Middle Mouse Click  
+ </description><description> Middle Mouse Click  
   
- </description>  
-<description> Middle Mouse Double Click  
+ </description><description> Middle Mouse Double Click  
   
- </description>  
-<description> XButton1 Mouse Click  
+ </description><description> XButton1 Mouse Click  
   
- </description>  
-<description> XButton1 Mouse Double-Click  
+ </description><description> XButton1 Mouse Double-Click  
   
- </description>  
-<description> XButton2 Mouse Click  
+ </description><description> XButton2 Mouse Click  
   
- </description>  
-<description> XButton2 Mouse Double-Click  
+ </description><description> XButton2 Mouse Double-Click  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="T:System.Windows.Forms.MonthCalendar" />,  
+ </description></listheader><item><term><see cref="T:System.Windows.Forms.MonthCalendar" />,  
   
  <see cref="T:System.Windows.Forms.DateTimePicker" />,  
   
@@ -3753,233 +3619,143 @@
   
  <see cref="T:System.Windows.Forms.HScrollBar" />,  
   
- <see cref="T:System.Windows.Forms.VScrollBar" />  
+ <see cref="T:System.Windows.Forms.VScrollBar" /></term><description> none  
   
- </term>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.Windows.Forms.Button" />,  
+ </description></item><item><term><see cref="T:System.Windows.Forms.Button" />,  
   
  <see cref="T:System.Windows.Forms.CheckBox" />,  
   
- <see cref="T:System.Windows.Forms.RadioButton" />  
+ <see cref="T:System.Windows.Forms.RadioButton" /></term><description> Click  
   
- </term>  
-<description> Click  
+ </description><description> Click, Click  
   
- </description>  
-<description> Click, Click  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.Windows.Forms.ListBox" />,  
+ </description></item><item><term><see cref="T:System.Windows.Forms.ListBox" />,  
   
  <see cref="T:System.Windows.Forms.CheckedListBox" />,  
   
- <see cref="T:System.Windows.Forms.ComboBox" />  
+ <see cref="T:System.Windows.Forms.ComboBox" /></term><description> Click  
   
- </term>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.Windows.Forms.TextBox" />,  
+ </description></item><item><term><see cref="T:System.Windows.Forms.TextBox" />,  
   
  <see cref="T:System.Windows.Forms.DomainUpDown" />,  
   
- <see cref="T:System.Windows.Forms.NumericUpDown" />  
+ <see cref="T:System.Windows.Forms.NumericUpDown" /></term><description> Click  
   
- </term>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description></item><item><term> * <see cref="T:System.Windows.Forms.TreeView" />,  
   
- </description>  
-</item>  
-<item>  
-<term> * <see cref="T:System.Windows.Forms.TreeView" />,  
+ \* <see cref="T:System.Windows.Forms.ListView" /></term><description> Click  
   
- \* <see cref="T:System.Windows.Forms.ListView" />  
+ </description><description> Click, DoubleClick  
   
- </term>  
-<description> Click  
+ </description><description> Click  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click  
+ </description><description> none  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description><description> none  
   
- </description>  
-<description> none  
+ </description></item><item><term><see cref="T:System.Windows.Forms.ProgressBar" />,  
   
- </description>  
-<description> none  
+ <see cref="T:System.Windows.Forms.TrackBar" /></term><description> Click  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.Windows.Forms.ProgressBar" />,  
+ </description><description> Click, Click  
   
- <see cref="T:System.Windows.Forms.TrackBar" />  
+ </description><description> Click  
   
- </term>  
-<description> Click  
+ </description><description> Click, Click  
   
- </description>  
-<description> Click, Click  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, Click  
   
- </description>  
-<description> Click, Click  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, Click  
   
- </description>  
-<description> Click, Click  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, Click  
   
- </description>  
-<description> Click, Click  
-  
- </description>  
-<description> Click  
-  
- </description>  
-<description> Click, Click  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.Windows.Forms.Form" />,  
+ </description></item><item><term><see cref="T:System.Windows.Forms.Form" />,  
   
  <see cref="T:System.Windows.Forms.DataGrid" />,  
   
@@ -4001,41 +3777,27 @@
   
  <see cref="T:System.Windows.Forms.TabPage" />,  
   
- ** <see cref="T:System.Windows.Forms.TabControl" />  
+ ** <see cref="T:System.Windows.Forms.TabControl" /></term><description> Click  
   
- </term>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
+ </description><description> Click  
   
- </description>  
-<description> Click  
+ </description><description> Click, DoubleClick  
   
- </description>  
-<description> Click, DoubleClick  
-  
- </description>  
-</item>  
-</list>  
+ </description></item></list>  
   
  \* The mouse pointer must be over a child object (<see cref="T:System.Windows.Forms.TreeNode" /> or <see cref="T:System.Windows.Forms.ListViewItem" />).  
   
@@ -5322,7 +5084,7 @@ MyControl.Font = New Font(MyControl.Font, _
   
  The example also demonstrates using custom cursors for the drag-and-drop operation. The example requires that two cursor files, `3dwarro.cur` and `3dwno.cur`, exist in the application directory, for the custom drag and no-drop cursors, respectively. The custom cursors will be used if the `UseCustomCursorsCheck`<xref:System.Windows.Forms.CheckBox> is checked. The custom cursors are set in the <xref:System.Windows.Forms.Control.GiveFeedback> event handler.  
   
- The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based on state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox`where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to `None` in <xref:System.Windows.Forms.DragDropEffects>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
+ The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based on state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to `None` in <xref:System.Windows.Forms.DragDropEffects>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
   
  The data to drop for the right `ListBox` is determined in the <xref:System.Windows.Forms.Control.DragDrop> event handler and the `String` value is added at the appropriate place in the `ListBox`. If the drag operation moves outside the bounds of the form, then the drag-and-drop operation is canceled in the <xref:System.Windows.Forms.Control.QueryContinueDrag> event handler.  
   
@@ -5738,7 +5500,7 @@ MyControl.Font = New Font(MyControl.Font, _
 ## Remarks  
  An IME is a program that enables users to enter complex characters and symbols, such as Japanese Kanji characters, using a standard keyboard. The <xref:System.Windows.Forms.Control.ImeMode%2A> property is typically set to <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> for a <xref:System.Windows.Forms.TextBox> control that is intended to only enter numeric values. The <xref:System.Windows.Forms.Control.ImeMode%2A> property value is set to <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> for the <xref:System.Windows.Forms.Form> class.  
   
- Most classes that do not directly support Input Method Editors, or allow direct input from an IME, will set the value of this property to <xref:System.Windows.Forms.ImeMode>.  
+ Most classes that do not directly support Input Method Editors, or allow direct input from an IME, will set the value of this property to <xref:System.Windows.Forms.ImeMode.NoControl>.  
   
 > [!IMPORTANT]
 >  The user can interactively change the <xref:System.Windows.Forms.Control.ImeMode%2A> unless it has been programmatically set to <xref:System.Windows.Forms.ImeMode?displayProperty=fullName>. In this case, the user will not be able to use the IME.  
@@ -10408,7 +10170,7 @@ MyControl.Font = New Font(MyControl.Font, _
    
   
 ## Examples  
- The following code example is an event-raising method that is executed when the <xref:System.Windows.Forms.Control.Text%2A> property value changes. The <xref:System.Windows.Forms.Control> class has several methods with the name pattern `On`*PropertyName*`Changed`that raise the corresponding *PropertyName*`Changed` event when the *PropertyName* value changes (*PropertyName* represents the name of the corresponding property).  
+ The following code example is an event-raising method that is executed when the <xref:System.Windows.Forms.Control.Text%2A> property value changes. The <xref:System.Windows.Forms.Control> class has several methods with the name pattern `On`*PropertyName*`Changed` that raise the corresponding *PropertyName*`Changed` event when the *PropertyName* value changes (*PropertyName* represents the name of the corresponding property).  
   
  The following code example changes the <xref:System.Windows.Forms.Control.ForeColor%2A> of a <xref:System.Windows.Forms.TextBox> derived class displaying currency data. The example converts the text to a decimal number and changes the <xref:System.Windows.Forms.Control.ForeColor%2A> to <xref:System.Drawing.Color.Red%2A?displayProperty=fullName> if the number is negative and to <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> if the number is positive. This example requires that you have a class that derives from the <xref:System.Windows.Forms.TextBox> class.  
   
@@ -10457,7 +10219,7 @@ MyControl.Font = New Font(MyControl.Font, _
    
   
 ## Examples  
- The following code example is an event-raising method that is executed when the <xref:System.Windows.Forms.Control.Text%2A> property value changes. The <xref:System.Windows.Forms.Control> class has several methods with the name pattern `On`*PropertyName*`Changed`that raise the corresponding *PropertyName*`Changed` event when the *PropertyName* value changes (*PropertyName* represents the name of the corresponding property).  
+ The following code example is an event-raising method that is executed when the <xref:System.Windows.Forms.Control.Text%2A> property value changes. The <xref:System.Windows.Forms.Control> class has several methods with the name pattern `On`*PropertyName*`Changed` that raise the corresponding *PropertyName*`Changed` event when the *PropertyName* value changes (*PropertyName* represents the name of the corresponding property).  
   
  The following code example changes the <xref:System.Windows.Forms.Control.ForeColor%2A> of a <xref:System.Windows.Forms.TextBox> derived class displaying currency data. The example converts the text to a decimal number and changes the <xref:System.Windows.Forms.Control.ForeColor%2A> to <xref:System.Drawing.Color.Red%2A?displayProperty=fullName> if the number is negative and to <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> if the number is positive. This example requires that you have a class that derives from the <xref:System.Windows.Forms.TextBox> class.  
   
@@ -12001,7 +11763,7 @@ MyControl.Font = New Font(MyControl.Font, _
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called during message preprocessing to handle dialog characters, such as TAB, RETURN, ESC, and arrow keys. This method is called only if the <xref:System.Windows.Forms.Control.IsInputKey%2A> method indicates that the control is not processing the key. The <xref:System.Windows.Forms.Control.ProcessDialogKey%2A> simply sends the character to the parent's <xref:System.Windows.Forms.Control.ProcessDialogKey%2A> method, or returns `false`if the control has no parent. The <xref:System.Windows.Forms.Form> class overrides this method to perform actual processing of dialog keys. This method is only called when the control is hosted in a Windows Forms application or as an ActiveX control.  
+ This method is called during message preprocessing to handle dialog characters, such as TAB, RETURN, ESC, and arrow keys. This method is called only if the <xref:System.Windows.Forms.Control.IsInputKey%2A> method indicates that the control is not processing the key. The <xref:System.Windows.Forms.Control.ProcessDialogKey%2A> simply sends the character to the parent's <xref:System.Windows.Forms.Control.ProcessDialogKey%2A> method, or returns `false` if the control has no parent. The <xref:System.Windows.Forms.Form> class overrides this method to perform actual processing of dialog keys. This method is only called when the control is hosted in a Windows Forms application or as an ActiveX control.  
   
  ]]></format>
         </remarks>
@@ -14877,12 +14639,10 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <value>
           <see langword="true" /> if the user can give the focus to the control using the TAB key; otherwise, <see langword="false" />. The default is <see langword="true" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This property will always return <see langword="true" /> for an instance of the <see cref="T:System.Windows.Forms.Form" /> class.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

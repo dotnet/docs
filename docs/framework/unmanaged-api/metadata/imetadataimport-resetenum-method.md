@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ResetEnum method [.NET Framework metadata]"
   - "IMetaDataImport::ResetEnum method [.NET Framework metadata]"
 ms.assetid: dda867b5-1050-49ba-b01c-fcc83b7a5617
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

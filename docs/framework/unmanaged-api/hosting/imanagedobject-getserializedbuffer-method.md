@@ -2,7 +2,7 @@
 title: "IManagedObject::GetSerializedBuffer Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IManagedObject::GetSerializedBuffer method [.NET Framework hosting]"
   - "GetSerializedBuffer method [.NET Framework hosting]"
 ms.assetid: c17105bb-b49f-434e-8f9b-77f8c85b9220
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

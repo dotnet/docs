@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Represents an enumeration that specifies three options indicating whether the column in the  store schema definition language (SSDL) (.ssdl) needs a value during insert and update operations. [!INCLUDE[vstecado](~/includes/vstecado-md.md)] reads the value of the column and then stores it in-memory cache.</summary>
+    <summary>Represents an enumeration that specifies three options indicating whether the column in the  store schema definition language (SSDL) (.ssdl) needs a value during insert and update operations. ADO.NET reads the value of the column and then stores it in-memory cache.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

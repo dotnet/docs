@@ -61,7 +61,7 @@
   
  Use this constructor when the <xref:System.IO.Packaging.PackagePart.ContentType%2A> of the part is not immediately known and will be set later when <xref:System.IO.Packaging.Package.CreatePart%2A> is called.  
   
- By default, the <xref:System.IO.Packaging.PackagePart.CompressionOption%2A> property of the part is initialized to <xref:System.IO.Packaging.CompressionOption>.  
+ By default, the <xref:System.IO.Packaging.PackagePart.CompressionOption%2A> property of the part is initialized to <xref:System.IO.Packaging.CompressionOption.NotCompressed>.  
   
  ]]></format>
         </remarks>
@@ -98,7 +98,7 @@
 ## Remarks  
  `partUri` must be valid <xref:System.IO.Packaging.PackagePart> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification and the [Open Packaging Conventions](http://go.microsoft.com/fwlink/?LinkID=71255) specification.  
   
- By default, the <xref:System.IO.Packaging.PackagePart.CompressionOption%2A> property of the part is initialized to <xref:System.IO.Packaging.CompressionOption>.  
+ By default, the <xref:System.IO.Packaging.PackagePart.CompressionOption%2A> property of the part is initialized to <xref:System.IO.Packaging.CompressionOption.NotCompressed>.  
   
  `contentType` must be a [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] type formed in accordance with the [RFC 2616](http://www.w3.org/Protocols/rfc2616/rfc2616.html) *Hypertext Transfer Protocol - HTTP*, Section 3.7.  The following table shows an example of the content [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] types used in [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] documents.  
   
@@ -306,9 +306,9 @@
   
  The target of a relationship cannot be another relationship.  
   
- If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode>, `targetUri` must be a relative URI that is formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification.  The internal relative URI can be either an absolute path that starts with a forward slash ("/") character such as "/page1.xaml" or "/images/picture4.jpg", or a relative path such as "../imagespicture1.jpg" that resolves against the package root ("/") as the base URI.  
+ If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.Internal>, `targetUri` must be a relative URI that is formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification.  The internal relative URI can be either an absolute path that starts with a forward slash ("/") character such as "/page1.xaml" or "/images/picture4.jpg", or a relative path such as "../imagespicture1.jpg" that resolves against the package root ("/") as the base URI.  
   
- If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode>, `targetUri` can be either an absolute or relative URI formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification.  "http://www.microsoft.com/page2.xml" is an example of an absolute URI that references an external target resource "page2.xml".  "images/picture1.jpg" is an example of a relative URI that also references an external target resource "1.jpg" but which resolves against the URI of the package itself.  
+ If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.External>, `targetUri` can be either an absolute or relative URI formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification.  "http://www.microsoft.com/page2.xml" is an example of an absolute URI that references an external target resource "page2.xml".  "images/picture1.jpg" is an example of a relative URI that also references an external target resource "1.jpg" but which resolves against the URI of the package itself.  
   
  `relationshipType` must be a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] that is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification.  Different package types can define different part-level relationship types.  The following table shows the part-level `relationshipType` URIs defined for documents that conform to the *Open XML Paper Specification (XPS)*.  
   
@@ -392,9 +392,9 @@
   
  The target of a relationship cannot be another relationship.  
   
- If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode>, `targetUri` must be a relative URI that is formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification.  The internal relative URI can be either an absolute path that starts with a forward slash ("/") character such as "/page1.xaml" or "/images/picture4.jpg", or a relative path such as "../imagespicture1.jpg" that resolves against the package root ("/") as the base URI.  
+ If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.Internal>, `targetUri` must be a relative URI that is formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification.  The internal relative URI can be either an absolute path that starts with a forward slash ("/") character such as "/page1.xaml" or "/images/picture4.jpg", or a relative path such as "../imagespicture1.jpg" that resolves against the package root ("/") as the base URI.  
   
- If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode>, `targetUri` can be either an absolute or relative URI formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification.  "http://www.microsoft.com/page2.xml" is an example of an absolute URI that references an external target resource "page2.xml".  "images/picture1.jpg" is an example of a relative URI that also references an external target resource "1.jpg" but which resolves against the URI of the package itself.  
+ If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.External>, `targetUri` can be either an absolute or relative URI formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification.  "http://www.microsoft.com/page2.xml" is an example of an absolute URI that references an external target resource "page2.xml".  "images/picture1.jpg" is an example of a relative URI that also references an external target resource "1.jpg" but which resolves against the URI of the package itself.  
   
  `relationshipType` must be a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] that is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification.  Different package types can define different part-level relationship types.  The following table shows the part-level `relationshipType` URIs defined for documents that conform to the *Open XML Paper Specification (XPS)*.  
   
@@ -672,7 +672,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method opens the content stream with <xref:System.IO.FileMode> of <xref:System.IO.FileMode> and <xref:System.IO.FileAccess> permissions that are the same as the parent <xref:System.IO.Packaging.Package>.  
+ This method opens the content stream with <xref:System.IO.FileMode> of <xref:System.IO.FileMode.OpenOrCreate> and <xref:System.IO.FileAccess> permissions that are the same as the parent <xref:System.IO.Packaging.Package>.  
   
  The overload <xref:System.IO.Packaging.PackagePart.GetStream%2A> method allows you to set a specific <xref:System.IO.FileMode>.  
   

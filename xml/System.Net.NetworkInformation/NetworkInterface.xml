@@ -545,19 +545,19 @@
   
  This property only returns a subset of the possible values defined in the <xref:System.Net.NetworkInformation.NetworkInterfaceType> enumeration. The possible values include the following:  
   
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType.Ethernet>  
   
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType.Fddi>  
   
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType.Loopback>  
   
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType.Ppp>  
   
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType.Slip>  
   
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType.TokenRing>  
   
--   <xref:System.Net.NetworkInformation.NetworkInterfaceType>  
+-   <xref:System.Net.NetworkInformation.NetworkInterfaceType.Unknown>  
   
    
   

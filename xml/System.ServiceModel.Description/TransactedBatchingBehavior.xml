@@ -27,11 +27,10 @@
 ## Examples  
  The following example shows how to add the transacted batching behavior to a service in a configuration file.  
   
-  
+ [!code-xml[UETransactedBatchingConfig#0](~/samples/snippets/csharp/VS_Snippets_CFX/uetransactedbatchingcode/common/serviceapp.config#0)] 
   
  The following example shows how to add the transacted batching behavior to a service in code.  
   
- <!-- TODO: review snippet reference [!code-csharp[UETransactedBatchingCode#0](~/samples/snippets/csharp/VS_Snippets_CFX/uetransactedbatchingcode/cs/snippets.cs#0)]  -->
  [!code-csharp[UETransactedBatchingCode#0](~/samples/snippets/csharp/VS_Snippets_CFX/uetransactedbatchingcode/cs/service.cs#0)]  
   
  ]]></format>

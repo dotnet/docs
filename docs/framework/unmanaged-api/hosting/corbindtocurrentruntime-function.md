@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorBindToCurrentRuntime function [.NET Framework hosting]"
 ms.assetid: 6105c13e-d9cd-44d2-a95a-924e042830c7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

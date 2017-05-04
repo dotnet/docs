@@ -2,7 +2,7 @@
 title: "ICorDebugThread2::GetActiveFunctions Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetActiveFunctions method [.NET Framework debugging]"
   - "ICorDebugThread2::GetActiveFunctions method [.NET Framework debugging]"
 ms.assetid: 27fae01a-ecec-423a-973e-24f8de55826c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

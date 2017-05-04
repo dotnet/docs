@@ -40,7 +40,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To determine whether a <xref:System.AddIn.Contract.Automation.RemoteTypeData> describes an array, use the <xref:System.AddIn.Contract.Automation.RemoteTypeData> field.  
+ To determine whether a <xref:System.AddIn.Contract.Automation.RemoteTypeData> describes an array, use the <xref:System.AddIn.Contract.Automation.RemoteTypeData.IsArray> field.  
   
  ]]></format>
         </remarks>
@@ -105,7 +105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this field is <xref:System.Reflection.TypeAttributes> if this <xref:System.AddIn.Contract.Automation.RemoteTypeData> describes the type of a COM object.  
+ The value of this field is <xref:System.Reflection.TypeAttributes.Public> if this <xref:System.AddIn.Contract.Automation.RemoteTypeData> describes the type of a COM object.  
   
  ]]></format>
         </remarks>
@@ -146,7 +146,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To determine whether a <xref:System.AddIn.Contract.Automation.RemoteTypeData> describes an array, use the <xref:System.AddIn.Contract.Automation.RemoteTypeData> field.  
+ To determine whether a <xref:System.AddIn.Contract.Automation.RemoteTypeData> describes an array, use the <xref:System.AddIn.Contract.Automation.RemoteTypeData.IsArray> field.  
   
  ]]></format>
         </remarks>

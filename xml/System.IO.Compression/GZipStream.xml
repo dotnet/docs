@@ -82,7 +82,7 @@
 ## Remarks  
  You use this constructor when you want to specify whether compression efficiency or speed is more important for an instance of the <xref:System.IO.Compression.GZipStream> class.  
   
- This constructor overload uses the compression mode <xref:System.IO.Compression.CompressionMode>. To set the compression mode to another value, use the <xref:System.IO.Compression.GZipStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%29> or <xref:System.IO.Compression.GZipStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%2CSystem.Boolean%29> overload.  
+ This constructor overload uses the compression mode <xref:System.IO.Compression.CompressionMode.Compress>. To set the compression mode to another value, use the <xref:System.IO.Compression.GZipStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%29> or <xref:System.IO.Compression.GZipStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%2CSystem.Boolean%29> overload.  
   
    
   
@@ -134,12 +134,12 @@
   
  If an instance of the <xref:System.IO.Compression.GZipStream> class is created with the `mode` parameter equal to `Compress` and no further action occurs, the stream will appear as a valid, empty compressed file.  
   
- By default, the compression level is set to <xref:System.IO.Compression.CompressionLevel> when the compression mode is <xref:System.IO.Compression.CompressionMode>.  
+ By default, the compression level is set to <xref:System.IO.Compression.CompressionLevel.Optimal> when the compression mode is <xref:System.IO.Compression.CompressionMode.Compress>.  
   
    
   
 ## Examples  
- The following example initializes a new instance of the <xref:System.IO.Compression.GZipStream> class with `mode` set to <xref:System.IO.Compression.CompressionMode>. This example is part of a larger example provided for the <xref:System.IO.Compression.GZipStream> class.  
+ The following example initializes a new instance of the <xref:System.IO.Compression.GZipStream> class with `mode` set to <xref:System.IO.Compression.CompressionMode.Compress>. This example is part of a larger example provided for the <xref:System.IO.Compression.GZipStream> class.  
   
  [!code-csharp[IO.Compression.GZip1#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.Compression.GZip1/CS/gziptest.cs#1)]
  [!code-vb[IO.Compression.GZip1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.Compression.GZip1/VB/gziptest.vb#1)]  
@@ -196,7 +196,7 @@
 ## Remarks  
  You use this constructor when you want to specify whether compression efficiency or speed is more important for an instance of the <xref:System.IO.Compression.GZipStream> class, and whether to leave the stream object open after disposing the <xref:System.IO.Compression.GZipStream> object.  
   
- This constructor overload uses the compression mode <xref:System.IO.Compression.CompressionMode>. To set the compression mode to another value, use the <xref:System.IO.Compression.GZipStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%29> or <xref:System.IO.Compression.GZipStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%2CSystem.Boolean%29> overload.  
+ This constructor overload uses the compression mode <xref:System.IO.Compression.CompressionMode.Compress>. To set the compression mode to another value, use the <xref:System.IO.Compression.GZipStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%29> or <xref:System.IO.Compression.GZipStream.%23ctor%28System.IO.Stream%2CSystem.IO.Compression.CompressionMode%2CSystem.Boolean%29> overload.  
   
    
   
@@ -251,7 +251,7 @@
   
  If an instance of the <xref:System.IO.Compression.GZipStream> class is created with the `mode` parameter equal to `Compress` and no further action occurs, the stream will appear as a valid, empty compressed file.  
   
- By default, the compression level is set to <xref:System.IO.Compression.CompressionLevel> when the compression mode is <xref:System.IO.Compression.CompressionMode>.  
+ By default, the compression level is set to <xref:System.IO.Compression.CompressionLevel.Optimal> when the compression mode is <xref:System.IO.Compression.CompressionMode.Compress>.  
   
  ]]></format>
         </remarks>

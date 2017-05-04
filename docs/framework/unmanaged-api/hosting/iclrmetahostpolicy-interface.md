@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRMetaHostPolicy interface [.NET Framework hosting]"
 ms.assetid: 1bdeccb6-0698-4c97-ad69-eae2b69e59f1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"

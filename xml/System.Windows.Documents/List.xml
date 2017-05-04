@@ -181,7 +181,7 @@
 <a name="xamlValues_MarkerOffset"></a>   
 ## XAML Values  
  *double*  
- String representation of a <xref:System.Double> value equal to or greater than **0.0** but smaller than <xref:System.Double>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than **0.0** but smaller than <xref:System.Double.PositiveInfinity>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, (excepting `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -195,7 +195,7 @@
  `pt` is points; 1pt==(96/72) px  
   
  Auto  
- Causes the marker offset to be determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double>.  
+ Causes the marker offset to be determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double.NaN>.  
   
 <a name="dependencyPropertyInfo_MarkerOffset"></a>   
 ## Dependency Property Information  

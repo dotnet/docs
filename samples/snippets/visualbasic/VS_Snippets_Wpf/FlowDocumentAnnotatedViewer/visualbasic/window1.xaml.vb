@@ -1,13 +1,13 @@
-Imports System ' EventArgs
-Imports System.Collections.Generic ' IList<T>
-Imports System.ComponentModel ' ICollectionView
-Imports System.IO ' Stream, FileStream, FileMode
-Imports System.Windows ' Window
-Imports System.Windows.Annotations ' Annotation, AnnotationService, IAnchorInfo, TextAnchor
-Imports System.Windows.Annotations.Storage ' AnnotationStore, StoreContentChangedEventHandler, StoreContentChangedEventArgs, XmlStreamStore
-Imports System.Windows.Controls ' SelectionChangedEventArgs
-Imports System.Windows.Data ' CollectionViewSource
-Imports System.Windows.Documents ' TextPointer
+Imports System
+Imports System.Collections.Generic
+Imports System.ComponentModel
+Imports System.IO
+Imports System.Windows
+Imports System.Windows.Annotations
+Imports System.Windows.Annotations.Storage
+Imports System.Windows.Controls
+Imports System.Windows.Data
+Imports System.Windows.Documents
 
 Namespace FlowDocumentAnnotatedViewer
 	Partial Public Class MainWindow

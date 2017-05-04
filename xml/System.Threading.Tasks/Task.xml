@@ -2485,7 +2485,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Threading.Tasks.Task.IsCompleted%2A> will return `true` when the task is in one of the three final states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus>.  
+ <xref:System.Threading.Tasks.Task.IsCompleted%2A> will return `true` when the task is in one of the three final states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled>.  
   
 > [!IMPORTANT]
 >  Retrieving the value of the <xref:System.Threading.Tasks.Task.IsCompleted%2A?displayProperty=fullName> property does not block the calling thread until the task has completed.  
@@ -2524,7 +2524,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Threading.Tasks.Task.IsFaulted%2A> is `true`, the task's <xref:System.Threading.Tasks.Task.Status%2A> is equal to <xref:System.Threading.Tasks.TaskStatus>, and its <xref:System.Threading.Tasks.Task.Exception%2A> property will be non-null.  
+ If <xref:System.Threading.Tasks.Task.IsFaulted%2A> is `true`, the task's <xref:System.Threading.Tasks.Task.Status%2A> is equal to <xref:System.Threading.Tasks.TaskStatus.Faulted>, and its <xref:System.Threading.Tasks.Task.Exception%2A> property will be non-null.  
   
 > [!IMPORTANT]
 >  Retrieving the value of the <xref:System.Threading.Tasks.Task.IsFaulted%2A?displayProperty=fullName> property does not block the calling thread until the task has completed.  
@@ -2678,7 +2678,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If cancellation is requested before the task begins execution, the task does not execute. Instead it is set to the <xref:System.Threading.Tasks.TaskStatus> state and throws a <xref:System.Threading.Tasks.TaskCanceledException> exception.  
+ If cancellation is requested before the task begins execution, the task does not execute. Instead it is set to the <xref:System.Threading.Tasks.TaskStatus.Canceled> state and throws a <xref:System.Threading.Tasks.TaskCanceledException> exception.  
   
  The <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29> method is a simpler alternative to the <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> method. It creates a task with the following default values:  
   
@@ -2940,7 +2940,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If cancellation is requested before the task begins execution, the task does not execute. Instead it is set to the <xref:System.Threading.Tasks.TaskStatus> state and throws a <xref:System.Threading.Tasks.TaskCanceledException> exception.  
+ If cancellation is requested before the task begins execution, the task does not execute. Instead it is set to the <xref:System.Threading.Tasks.TaskStatus.Canceled> state and throws a <xref:System.Threading.Tasks.TaskCanceledException> exception.  
   
  The <xref:System.Threading.Tasks.Task.Run%2A> method is a simpler alternative to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method. It creates a task with the following default values:  
   

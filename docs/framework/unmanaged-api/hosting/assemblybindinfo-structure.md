@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "AssemblyBindInfo structure [.NET Framework hosting]"
 ms.assetid: 6fc01e98-c2e7-49de-ab9f-95937cc89017
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

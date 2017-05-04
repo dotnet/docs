@@ -238,7 +238,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property specifies the current automatic scaling mode of this control. Scaling by <xref:System.Windows.Forms.AutoScaleMode> is useful if you want to have a control or form stretch or shrink according to the size of the fonts in the operating system, and should be used when the absolute size of the control or form does not matter. Scaling by <xref:System.Windows.Forms.AutoScaleMode> is useful when you want to size a control or form relative to the screen. For example, you may want to use dots per inch (DPI) scaling on a control displaying a chart or other graphic so that it always occupies a certain percentage of the screen.  
+ The <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property specifies the current automatic scaling mode of this control. Scaling by <xref:System.Windows.Forms.AutoScaleMode.Font> is useful if you want to have a control or form stretch or shrink according to the size of the fonts in the operating system, and should be used when the absolute size of the control or form does not matter. Scaling by <xref:System.Windows.Forms.AutoScaleMode.Dpi> is useful when you want to size a control or form relative to the screen. For example, you may want to use dots per inch (DPI) scaling on a control displaying a chart or other graphic so that it always occupies a certain percentage of the screen.  
   
  For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
   
@@ -433,11 +433,11 @@
   
  The interpretation of the dimension value depends on the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property in the following ways:  
   
--   If the mode is <xref:System.Windows.Forms.AutoScaleMode>, this property represents the resolution of the screen, in dots per inch.  
+-   If the mode is <xref:System.Windows.Forms.AutoScaleMode.Dpi>, this property represents the resolution of the screen, in dots per inch.  
   
--   If the mode is <xref:System.Windows.Forms.AutoScaleMode>, this property represents the average font character size in pixels.  
+-   If the mode is <xref:System.Windows.Forms.AutoScaleMode.Font>, this property represents the average font character size in pixels.  
   
- If the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property is set to <xref:System.Windows.Forms.AutoScaleMode>, <xref:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions%2A> is set equal to <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A>.  
+ If the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property is set to <xref:System.Windows.Forms.AutoScaleMode.None>, <xref:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions%2A> is set equal to <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A>.  
   
  For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
   
@@ -546,7 +546,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Changing the font used by a <xref:System.Windows.Forms.ContainerControl> will cause the layout to be recalculated and reapplied to the contained controls if the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property has a value of <xref:System.Windows.Forms.AutoScaleMode>.  
+ Changing the font used by a <xref:System.Windows.Forms.ContainerControl> will cause the layout to be recalculated and reapplied to the contained controls if the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property has a value of <xref:System.Windows.Forms.AutoScaleMode.Font>.  
   
  Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -985,7 +985,7 @@
   
  If a control is bound to a data source, and the <xref:System.Windows.Forms.Control.Validating> event occurs, it will cause the control to push its current data back to the data source.  
   
- Calling <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A> is equivalent to calling <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A> with a <xref:System.Windows.Forms.ValidationConstraints> of <xref:System.Windows.Forms.ValidationConstraints>.  
+ Calling <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A> is equivalent to calling <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A> with a <xref:System.Windows.Forms.ValidationConstraints> of <xref:System.Windows.Forms.ValidationConstraints.None>.  
   
    
   
@@ -1039,7 +1039,7 @@
   
  If a control is bound to a data source, and the <xref:System.Windows.Forms.Control.Validating> event occurs, it will cause the control to push its current data back to the data source.  
   
- You cannot achieve the opposite effect of a <xref:System.Windows.Forms.ValidationConstraints> parameter by applying a bitwise negation operator. For example, if you supply the negative value of the <xref:System.Windows.Forms.ValidationConstraints> field to <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A>, it will not validate all children that are not visible on the container. Supplying any negative parameter to <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A> will have no effect on the container or its children.  
+ You cannot achieve the opposite effect of a <xref:System.Windows.Forms.ValidationConstraints> parameter by applying a bitwise negation operator. For example, if you supply the negative value of the <xref:System.Windows.Forms.ValidationConstraints.Visible> field to <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A>, it will not validate all children that are not visible on the container. Supplying any negative parameter to <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A> will have no effect on the container or its children.  
   
    
   

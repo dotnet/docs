@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetFunctionLeave3Info method [.NET Framework profiling]"
   - "ICorProfilerInfo3::GetFunctionLeave3Info method [.NET Framework profiling]"
 ms.assetid: df7083d2-fd43-44c7-9ce5-912c25cef0ff
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

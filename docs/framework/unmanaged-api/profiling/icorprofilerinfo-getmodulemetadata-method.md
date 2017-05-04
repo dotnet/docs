@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetModuleMetaData method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetModuleMetaData method [.NET Framework profiling]"
 ms.assetid: 7a439d92-348a-44dd-b60f-cad7cba56379
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

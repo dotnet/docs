@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.BulletedListDisplayMode> enumeration represents the display behaviors that you can apply to the content of the list items in a <xref:System.Web.UI.WebControls.BulletedList> control. The <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property uses these enumeration values to set the display behavior of the list item content in a <xref:System.Web.UI.WebControls.BulletedList> control. For example, if you set the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property to the HyperLink value, the content of each list item in the <xref:System.Web.UI.WebControls.BulletedList> control renders as a hyperlink.  
+ The <xref:System.Web.UI.WebControls.BulletedListDisplayMode> enumeration represents the display behaviors that you can apply to the content of the list items in a <xref:System.Web.UI.WebControls.BulletedList> control. The <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property uses these enumeration values to set the display behavior of the list item content in a <xref:System.Web.UI.WebControls.BulletedList> control. For example, if you set the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property to the HyperLink value, the content of each list item in the <xref:System.Web.UI.WebControls.BulletedListDisplayMode.HyperLink> control renders as a hyperlink.  
   
  The Text value allows you to display the list item content as regular text with no additional functionality.  
   
@@ -26,7 +26,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.BulletedList> control and set the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property. A <xref:System.Web.UI.WebControls.ListBox> control is populated with the <xref:System.Web.UI.WebControls.BulletedListDisplayMode> values. The format of the list item content changes based on the display mode that the user selects from the list box.  
+ The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton> control and set the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property. A <xref:System.Web.UI.WebControls.ListBox> control is populated with the <xref:System.Web.UI.WebControls.BulletedListDisplayMode> values. The format of the list item content changes based on the display mode that the user selects from the list box.  
   
  <!-- TODO: review snippet reference [!code-csharp[BulletedListStylesExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListStylesExample/CS/bulletedliststylescs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[BulletedListStylesExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListStylesExample/VB/bulletedliststylesvb.aspx#1)]  -->  

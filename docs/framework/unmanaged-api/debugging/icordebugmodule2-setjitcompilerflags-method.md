@@ -2,7 +2,7 @@
 title: "ICorDebugModule2::SetJITCompilerFlags Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModule2::SetJITCompilerFlags method [.NET Framework debugging]"
   - "SetJITCompilerFlags method [.NET Framework debugging]"
 ms.assetid: ea574c84-c622-4589-9a14-b55771af5e06
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

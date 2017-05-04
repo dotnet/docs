@@ -221,7 +221,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The defined enum is a derived class of <xref:System.Enum>. The `value__` field has <xref:System.Reflection.FieldAttributes> and <xref:System.Reflection.FieldAttributes> attributes set.  
+ The defined enum is a derived class of <xref:System.Enum>. The `value__` field has <xref:System.Reflection.FieldAttributes.Private> and <xref:System.Reflection.FieldAttributes.SpecialName> attributes set.  
   
  For more information about the built-in integer types that can be specified as the underlying types of enumerations, see [Class Library Overview](~/docs/standard/class-library-overview.md).  
   
@@ -481,7 +481,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Reflection.FieldAttributes> is automatically included in `attributes`.  
+ <xref:System.Reflection.FieldAttributes.Static> is automatically included in `attributes`.  
   
  The data defined by this method is not created until the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method is called.  
   
@@ -1265,7 +1265,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Reflection.FieldAttributes> is automatically included in `attributes`.  
+ <xref:System.Reflection.FieldAttributes.Static> is automatically included in `attributes`.  
   
  The data defined by this method is not created until the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method is called.  
   

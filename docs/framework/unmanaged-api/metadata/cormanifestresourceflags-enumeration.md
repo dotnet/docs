@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorManifestResourceFlags enumeration [.NET Framework metadata]"
 ms.assetid: 1b0306b7-622b-4b57-8edc-3c713bb147ae
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

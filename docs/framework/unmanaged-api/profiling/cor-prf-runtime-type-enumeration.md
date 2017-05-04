@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_RUNTIME_TYPE enumeration [.NET Framework profiling]"
 ms.assetid: 35449514-333f-4918-9c60-7aa198d655d2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

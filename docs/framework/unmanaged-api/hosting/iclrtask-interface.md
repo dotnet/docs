@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRTask interface [.NET Framework hosting]"
 ms.assetid: b3a44df3-578a-4451-b55e-70c8e7695f5e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

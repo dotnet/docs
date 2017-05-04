@@ -2,7 +2,7 @@
 title: "ICorDebugThread::GetActiveFrame Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread::GetActiveFrame method [.NET Framework debugging]"
   - "GetActiveFrame method, ICorDebugThread interface [.NET Framework debugging]"
 ms.assetid: 8d6d3a1a-fef6-4f2f-a22c-3bdd30d70e07
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -1,5 +1,5 @@
-using System; // Uri, UriKind
-using System.Windows; // Window
+using System;
+using System.Windows;
 
 namespace SDKSample
 {

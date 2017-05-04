@@ -173,7 +173,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A data-bound control can request paging by adding the <xref:System.Web.UI.DataSourceCapabilities> field to the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method. If a data-bound control requests paging, but the <xref:System.Web.UI.DataSourceView.CanPage%2A> property returns `false`, the data source view throws an exception.  
+ A data-bound control can request paging by adding the <xref:System.Web.UI.DataSourceCapabilities.Page> field to the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method. If a data-bound control requests paging, but the <xref:System.Web.UI.DataSourceView.CanPage%2A> property returns `false`, the data source view throws an exception.  
   
  ]]></format>
         </remarks>
@@ -225,7 +225,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A data-bound control can request sorting by adding the <xref:System.Web.UI.DataSourceCapabilities> field to the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method. If a data-bound control requests sorting, but the <xref:System.Web.UI.DataSourceView.CanSort%2A> property returns `false`, the data source view throws an exception.  
+ A data-bound control can request sorting by adding the <xref:System.Web.UI.DataSourceCapabilities.Sort> field to the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method. If a data-bound control requests sorting, but the <xref:System.Web.UI.DataSourceView.CanSort%2A> property returns `false`, the data source view throws an exception.  
   
    
   

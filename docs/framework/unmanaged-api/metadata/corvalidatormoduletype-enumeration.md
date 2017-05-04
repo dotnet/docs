@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorValidatorModuleType enumeration [.NET Framework metadata]"
 ms.assetid: 748f1ab2-fbcb-4f55-89ec-8d23d81ebc80
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

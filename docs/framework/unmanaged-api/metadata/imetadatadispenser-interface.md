@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IMetaDataDispenser interface [.NET Framework metadata]"
 ms.assetid: 989840b3-9822-4ce5-a6c5-b375d3340a7a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

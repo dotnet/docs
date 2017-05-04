@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "ICorDebugComObjectValue::GetCachedInterfacePointers method [.NET Framework debugging]"
   - "GetCachedInterfacePointers method, ICorDebugComObjectValue interface [.NET Framework debugging]"
 ms.assetid: 08dbd558-bd39-4263-94c2-71e70687aaf0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

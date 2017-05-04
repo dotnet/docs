@@ -2,7 +2,7 @@
 Imports System
 Imports System.IO
 Imports System.Reflection
-Imports System.Security.Policy   ' For evidence object.
+Imports System.Security.Policy
 
 Module Example
    Public Sub Main()

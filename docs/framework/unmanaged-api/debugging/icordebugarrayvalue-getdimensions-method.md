@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugArrayValue::GetDimensions method [.NET Framework debugging]"
   - "GetDimensions method [.NET Framework debugging]"
 ms.assetid: 6c116592-134b-4ef2-a319-680e92d013aa
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

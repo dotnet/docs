@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DefineMemberRef method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineMemberRef method [.NET Framework metadata]"
 ms.assetid: 21b5bcb8-ea75-4962-8acc-ad17584061e5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

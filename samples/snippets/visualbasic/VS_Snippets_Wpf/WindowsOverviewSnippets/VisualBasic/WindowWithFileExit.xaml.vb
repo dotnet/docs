@@ -1,6 +1,6 @@
 '<SnippetWindowWithFileExitCODEBEHIND>
 
-Imports System.Windows ' window, RoutedEventArgs
+Imports System.Windows
 
 Namespace SDKSample
 	Partial Public Class WindowWithFileExit

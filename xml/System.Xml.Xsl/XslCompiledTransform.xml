@@ -66,12 +66,10 @@
   
  If the <see cref="Overload:System.Xml.Xsl.XslCompiledTransform.Load" /> method is called again in one thread while the <see cref="Overload:System.Xml.Xsl.XslCompiledTransform.Transform" /> method is being called in another thread, the <see cref="T:System.Xml.Xsl.XslCompiledTransform" /> object finishes executing the <see cref="Overload:System.Xml.Xsl.XslCompiledTransform.Transform" /> call by continuing to use the old state. The new state is used when the <see cref="Overload:System.Xml.Xsl.XslCompiledTransform.Load" /> method successfully completes.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  The <see cref="Overload:System.Xml.Xsl.XslCompiledTransform.Load" /> method is not thread safe when called simultaneously from multiple threads.  
   
-</para>  
-</block></threadsafe>
+</para></block></threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

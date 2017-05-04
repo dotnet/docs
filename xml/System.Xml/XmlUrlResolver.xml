@@ -43,11 +43,11 @@
  [!code-csharp[XmlCachingResolver_ex#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlCachingResolver_ex/CS/XmlCachingResolver_ex.cs#1)]
  [!code-vb[XmlCachingResolver_ex#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlCachingResolver_ex/VB/XmlCachingResolver_ex.vb#1)]  
   
- The caching behavior of the `XmlCachingResolver` class is implemented in the `GetEntity` method. This is done by creating new <xref:System.Net.WebRequest> and <xref:System.Net.Cache.HttpRequestCachePolicy> objects. The <xref:System.Net.Cache.HttpRequestCachePolicy> object is created using the <xref:System.Net.Cache.HttpRequestCacheLevel> member of the <xref:System.Net.Cache.HttpRequestCacheLevel> enumeration.  
+ The caching behavior of the `XmlCachingResolver` class is implemented in the `GetEntity` method. This is done by creating new <xref:System.Net.WebRequest> and <xref:System.Net.Cache.HttpRequestCachePolicy> objects. The <xref:System.Net.Cache.HttpRequestCachePolicy> object is created using the <xref:System.Net.Cache.HttpRequestCacheLevel.Default> member of the <xref:System.Net.Cache.HttpRequestCacheLevel> enumeration.  
   
  The <xref:System.Net.WebRequest.CachePolicy%2A> property of the <xref:System.Net.WebRequest> object is set with the <xref:System.Net.Cache.HttpRequestCachePolicy> object.  
   
- An instance of the `XmlCachingResolver` class is created with the `Boolean``enableHttpCaching`. When this value is set to `true`, the instance resolves a resource from the default cache if possible. When `enableHttpCaching` is set to `false`, the instance uses the default behavior and resolves resources from their source.  
+ An instance of the `XmlCachingResolver` class is created with the `Boolean` `enableHttpCaching`. When this value is set to `true`, the instance resolves a resource from the default cache if possible. When `enableHttpCaching` is set to `false`, the instance uses the default behavior and resolves resources from their source.  
   
 > [!NOTE]
 >  This example leverages the extensibility of the XML classes in the .NET Framework. Other classes can be extended and customized to suit the needs of a particular application.  

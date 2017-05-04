@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRHostProtectionManager interface [.NET Framework hosting]"
 ms.assetid: ce2770ae-23d0-45d9-8bcf-46504ac5020e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

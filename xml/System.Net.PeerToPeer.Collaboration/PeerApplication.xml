@@ -155,7 +155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use of this event requires a value of <xref:System.Security.Permissions.PermissionState> in the <xref:System.Security.Permissions.PermissionState> of the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> object that was created when the peer collaboration session began.  
+ Use of this event requires a value of <xref:System.Security.Permissions.PermissionState.Unrestricted> in the <xref:System.Security.Permissions.PermissionState> of the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> object that was created when the peer collaboration session began.  
   
  ]]></format>
         </remarks>
@@ -480,7 +480,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `Null` or <xref:System.String> values are not allowed.  
+ `Null` or <xref:System.String.Empty> values are not allowed.  
   
  ]]></format>
         </remarks>

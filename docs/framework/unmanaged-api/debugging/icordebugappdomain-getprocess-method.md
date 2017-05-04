@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetProcess method, ICorDebugAppDomain interface [.NET Framework debugging]"
   - "ICorDebugAppDomain::GetProcess method [.NET Framework debugging]"
 ms.assetid: 9d0b9628-a91c-40d0-b9bc-00b34a396b8f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

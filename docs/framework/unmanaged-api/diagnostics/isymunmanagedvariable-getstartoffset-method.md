@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetStartOffset method, ISymUnmanagedVariable interface [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetStartOffset method [.NET Framework debugging]"
 ms.assetid: 63021fc1-9c2d-4788-811f-fe8ca077206a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

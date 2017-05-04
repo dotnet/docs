@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetSectionBlock method [.NET Framework metadata]"
   - "ICeeGen::GetSectionBlock method [.NET Framework metadata]"
 ms.assetid: 05c78aaf-5bbd-497e-9ae2-55f4fae0c5fb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

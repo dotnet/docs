@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ProfilerAttachComplete method [.NET Framework profiling]"
   - "ICorProfilerCallback3::ProfilerAttachComplete method [.NET Framework profiling]"
 ms.assetid: 257d6076-06e0-4d93-bb33-651fbb2b92d7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

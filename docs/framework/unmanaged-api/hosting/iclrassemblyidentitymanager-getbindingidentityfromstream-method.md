@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetBindingIdentityFromStream method [.NET Framework hosting]"
   - "ICLRAssemblyIdentityManager::GetBindingIdentityFromStream method [.NET Framework hosting]"
 ms.assetid: 40123b30-a589-46b3-95d3-af7b2b0baa05
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

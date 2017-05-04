@@ -48,7 +48,7 @@
   
  The URI that is specified by <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> must use the `net.msmq scheme`.  
   
- If <xref:System.ServiceModel.Channels.MsmqBindingElementBase.DeadLetterQueue%2A> is set to <xref:System.ServiceModel.DeadLetterQueue> or <xref:System.ServiceModel.DeadLetterQueue>, then <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> must be set to `null`. If <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> is not `null`, then <xref:System.ServiceModel.Channels.MsmqBindingElementBase.DeadLetterQueue%2A> must be set to <xref:System.ServiceModel.DeadLetterQueue>.  
+ If <xref:System.ServiceModel.Channels.MsmqBindingElementBase.DeadLetterQueue%2A> is set to <xref:System.ServiceModel.DeadLetterQueue.None> or <xref:System.ServiceModel.DeadLetterQueue.System>, then <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> must be set to `null`. If <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> is not `null`, then <xref:System.ServiceModel.Channels.MsmqBindingElementBase.DeadLetterQueue%2A> must be set to <xref:System.ServiceModel.DeadLetterQueue.Custom>.  
   
  The <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> property can be set only on operating systems starting with [!INCLUDE[wv](~/includes/wv-md.md)].  
   
@@ -281,13 +281,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, the channel listener is faulted and a <xref:System.ServiceModel.ProtocolException> (wrapping a <xref:System.ServiceModel.MsmqPoisonMessageException>) is traced and thrown. The message is left in the queue and must be removed by some manual method. The <xref:System.ServiceModel.MsmqPoisonMessageException> contains a <xref:System.ServiceModel.MsmqPoisonMessageException.MessageLookupId%2A> that can be used to identify and manually remove the offending message from the poison-message queue.  
+ When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling.Fault>, the channel listener is faulted and a <xref:System.ServiceModel.ProtocolException> (wrapping a <xref:System.ServiceModel.MsmqPoisonMessageException>) is traced and thrown. The message is left in the queue and must be removed by some manual method. The <xref:System.ServiceModel.MsmqPoisonMessageException> contains a <xref:System.ServiceModel.MsmqPoisonMessageException.MessageLookupId%2A> that can be used to identify and manually remove the offending message from the poison-message queue.  
   
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, the message is dropped.  
+ When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling.Drop>, the message is dropped.  
   
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, a negative acknowledgment is sent to the client and the message is removed from the poison-message queue. This option is available only on Message Queuing 4.0.  
+ When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling.Reject>, a negative acknowledgment is sent to the client and the message is removed from the poison-message queue. This option is available only on Message Queuing 4.0.  
   
- When set to <xref:System.ServiceModel.ReceiveErrorHandling>, the message is moved to the final poison sub-queue. This option is available only on Message Queuing 4.0.  
+ When set to <xref:System.ServiceModel.ReceiveErrorHandling.Move>, the message is moved to the final poison sub-queue. This option is available only on Message Queuing 4.0.  
   
  ]]></format>
         </remarks>

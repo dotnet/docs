@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedScope::GetEndOffset method [.NET Framework debugging]"
   - "GetEndOffset method, ISymUnmanagedScope interface [.NET Framework debugging]"
 ms.assetid: 1d0b15c9-8059-435f-9fce-346a08b9bd36
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

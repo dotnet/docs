@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetCaller method, ICorDebugFrame interface [.NET Framework debugging]"
   - "ICorDebugFrame::GetCaller method [.NET Framework debugging]"
 ms.assetid: bfdc946b-8238-4eb9-8a85-884049fb0fd4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

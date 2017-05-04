@@ -2,7 +2,7 @@
 title: "METAHOST_POLICY_FLAGS Enumeration | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "METAHOST_POLICY_FLAGS enumeration [.NET Framework hosting]"
 ms.assetid: 3bb4b526-0118-42e2-ba59-c95648528ce9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

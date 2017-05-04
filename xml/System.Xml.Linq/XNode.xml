@@ -792,7 +792,7 @@ el1 is before el2
   
  Base64 and BinHex data are not supported. If you attempt to retrieve these types of data (for example, by calling <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A>), the reader will throw <xref:System.NotSupportedException>.  
   
- The `xml` declaration is not surfaced by the reader. While reading, you will not encounter a node of type <xref:System.Xml.XmlNodeType>.  
+ The `xml` declaration is not surfaced by the reader. While reading, you will not encounter a node of type <xref:System.Xml.XmlNodeType.XmlDeclaration>.  
   
    
   

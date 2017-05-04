@@ -521,7 +521,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSize%2A> is set to `true` and <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSizeMode%2A> is set to <xref:System.Windows.Forms.AutoSizeMode>, <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.EnableVisualResizing%2A> returns `false`. In all other conditions <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.EnableVisualResizing%2A> returns `true`.  
+ If <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSize%2A> is set to `true` and <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.AutoSizeMode%2A> is set to <xref:System.Windows.Forms.AutoSizeMode.GrowAndShrink>, <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.EnableVisualResizing%2A> returns `false`. In all other conditions <xref:System.Workflow.ComponentModel.Design.FreeformActivityDesigner.EnableVisualResizing%2A> returns `true`.  
   
  ]]></format>
         </remarks>

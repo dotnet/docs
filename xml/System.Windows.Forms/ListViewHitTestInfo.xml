@@ -103,7 +103,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property will return <xref:System.Windows.Forms.ListViewHitTestLocations> if the hit test indicates a position that is within the client area of the <xref:System.Windows.Forms.ListView> but is not located on a <xref:System.Windows.Forms.ListViewItem>.  
+ This property will return <xref:System.Windows.Forms.ListViewHitTestLocations.None> if the hit test indicates a position that is within the client area of the <xref:System.Windows.Forms.ListView> but is not located on a <xref:System.Windows.Forms.ListViewItem>.  
   
  ]]></format>
         </remarks>

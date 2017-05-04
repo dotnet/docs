@@ -25,7 +25,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.KeysConverter> class to convert a <xref:System.Windows.Forms.Keys> to a <xref:System.String>. This example assumes that you have a <xref:System.Windows.Forms.TextBox> named `TextBox1` on a <xref:System.Windows.Forms.Form> named `Form1`.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.KeysConverter> class to convert a <xref:System.Windows.Forms.Keys.KeyCode> to a <xref:System.String>. This example assumes that you have a <xref:System.Windows.Forms.TextBox> named `TextBox1` on a <xref:System.Windows.Forms.Form> named `Form1`.  
   
  [!code-csharp[SystemWindowsFormsKeys#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemWindowsFormsKeys/CS/Form1.cs#1)]
  [!code-vb[SystemWindowsFormsKeys#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemWindowsFormsKeys/VB/Form1.vb#1)]  
@@ -154,40 +154,23 @@
         <summary>Compares two key values for equivalence.</summary>
         <returns>An integer indicating the relationship between the two parameters.  
   
- <list type="table">  
-<listheader>  
-<term> Value Type  
+ <list type="table"><listheader><term> Value Type  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> A negative integer.  
+ </description></listheader><item><term> A negative integer.  
   
- </term>  
-<description> <paramref name="a" /> is less than <paramref name="b" />.  
+ </term><description><paramref name="a" /> is less than <paramref name="b" />.  
   
- </description>  
-</item>  
-<item>  
-<term> zero  
+ </description></item><item><term> zero  
   
- </term>  
-<description> <paramref name="a" /> equals <paramref name="b" />.  
+ </term><description><paramref name="a" /> equals <paramref name="b" />.  
   
- </description>  
-</item>  
-<item>  
-<term> A positive integer.  
+ </description></item><item><term> A positive integer.  
   
- </term>  
-<description> <paramref name="a" /> is greater than <paramref name="b" />.  
+ </term><description><paramref name="a" /> is greater than <paramref name="b" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

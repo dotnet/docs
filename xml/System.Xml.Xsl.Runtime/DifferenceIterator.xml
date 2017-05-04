@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Xsl.Runtime.DifferenceIterator.Current%2A> property is modified when the <xref:System.Xml.Xsl.Runtime.DifferenceIterator.MoveNext%2A> method sets the <xref:System.Xml.Xsl.Runtime.DifferenceIterator.Current%2A> property to the next node and returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult>; otherwise, the <xref:System.Xml.Xsl.Runtime.DifferenceIterator.Current%2A> property remains unchanged.  
+ The <xref:System.Xml.Xsl.Runtime.DifferenceIterator.Current%2A> property is modified when the <xref:System.Xml.Xsl.Runtime.DifferenceIterator.MoveNext%2A> method sets the <xref:System.Xml.Xsl.Runtime.DifferenceIterator.Current%2A> property to the next node and returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult.HaveCurrentNode>; otherwise, the <xref:System.Xml.Xsl.Runtime.DifferenceIterator.Current%2A> property remains unchanged.  
   
  ]]></format>
         </remarks>
@@ -108,15 +108,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult> if there are no more nodes.  
+ Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult.NoMoreNodes> if there are no more nodes.  
   
- Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult> if this function initializes the right, nested iterator.  
+ Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult.InitRightIterator> if this function initializes the right, nested iterator.  
   
- Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult> if the next node needs to be fetched from the left, nested iterator.  
+ Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult.NeedLeftNode> if the next node needs to be fetched from the left, nested iterator.  
   
- Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult> if the next node needs to be fetched from the right, nested iterator.  
+ Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult.NeedRightNode> if the next node needs to be fetched from the right, nested iterator.  
   
- Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult> if the iterator's <xref:System.Xml.Xsl.Runtime.DifferenceIterator.Current%2A> property is set to the next node in the iteration.  
+ Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult.HaveCurrentNode> if the iterator's <xref:System.Xml.Xsl.Runtime.DifferenceIterator.Current%2A> property is set to the next node in the iteration.  
   
  ]]></format>
         </remarks>

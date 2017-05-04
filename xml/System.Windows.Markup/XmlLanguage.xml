@@ -173,7 +173,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">No related non-neutral <see cref="T:System.Globalization.CultureInfo" /> is registered for the current <see cref="T:System.Windows.Markup.XmlLanguage" /> <see cref="P:System.Windows.Markup.XmlLanguage.IetfLanguageTag" />.</exception>
+        <exception cref="T:System.InvalidOperationException">No related non-neutral <see cref="T:System.Globalization.CultureInfo" /> is registered for the current <see cref="T:System.Windows.Markup.XmlLanguage" /><see cref="P:System.Windows.Markup.XmlLanguage.IetfLanguageTag" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IetfLanguageTag">

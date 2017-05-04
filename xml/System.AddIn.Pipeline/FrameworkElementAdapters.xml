@@ -12,7 +12,7 @@
   <Interfaces />
   <Docs>
     <summary>
-      <see cref="T:System.AddIn.Pipeline.FrameworkElementAdapters" /> is used by [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] add-ins to convert between a <see cref="T:System.Windows.FrameworkElement" /> and an <see cref="T:System.AddIn.Contract.INativeHandleContract" />.</summary>
+      <see cref="T:System.AddIn.Pipeline.FrameworkElementAdapters" /> is used by Windows Presentation Foundation (WPF) add-ins to convert between a <see cref="T:System.Windows.FrameworkElement" /> and an <see cref="T:System.AddIn.Contract.INativeHandleContract" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

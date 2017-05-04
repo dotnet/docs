@@ -23,15 +23,15 @@
   
 -   When it is applied to a script reference in an assembly, Auto is equivalent to Inherit. When only <xref:System.Web.UI.ScriptReference.Name%2A> is specified, it is used to reference the script. When <xref:System.Web.UI.ScriptReference.Name%2A> and the <xref:System.Web.UI.ScriptReference.Path%2A> property are both specified, the <xref:System.Web.UI.ScriptReference.Path%2A> property is used instead of <xref:System.Web.UI.ScriptReference.Name%2A>, but the Auto value is still equivalent to Inherit.  
   
- An error is thrown if the requested version of the script does not exist. For instance, an error is thrown if a reference is made to a standalone script file that is named CustomScript.js and <xref:System.Web.UI.ScriptMode> is set to Debug, but CustomScript.debug.js does not exist on the site. References to scripts in an assembly return the release version if the debug version does not exist.  
+ An error is thrown if the requested version of the script does not exist. For instance, an error is thrown if a reference is made to a standalone script file that is named CustomScript.js and <xref:System.Web.UI.ScriptMode.Inherit> is set to Debug, but CustomScript.debug.js does not exist on the site. References to scripts in an assembly return the release version if the debug version does not exist.  
   
 > [!NOTE]
->  When the `retail` attribute of the [deployment](http://msdn.microsoft.com/en-us/dbcc2c62-3159-4a62-9f1e-8cfe3b8b09dc) element of the Machine.config file is set to `true`, the release versions of client scripts are used throughout the Web site. The <xref:System.Web.UI.ScriptMode> values in the <xref:System.Web.UI.ScriptManager> and <xref:System.Web.UI.ScriptReference> properties are ignored.  
+>  When the `retail` attribute of the [deployment](http://msdn.microsoft.com/en-us/dbcc2c62-3159-4a62-9f1e-8cfe3b8b09dc) element of the Machine.config file is set to `true`, the release versions of client scripts are used throughout the Web site. The <xref:System.Web.UI.ScriptMode> values in the <xref:System.Web.UI.ScriptManager> and <xref:System.Web.UI.ScriptReference.Path%2A> properties are ignored.  
   
    
   
 ## Examples  
- The following example shows a page where the script versions are declaratively set to Release in the <xref:System.Web.UI.ScriptManager> control, but one script named CustomClient.js is declaratively set to Debug in the <xref:System.Web.UI.ScriptReference> control.  
+ The following example shows a page where the script versions are declaratively set to Release in the <xref:System.Web.UI.ScriptManager> control, but one script named CustomClient.js is declaratively set to Debug in the <xref:System.Web.UI.ScriptReference.Name%2A> control.  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptMode#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptMode/cs/Default.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptMode#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptMode/vb/Default.aspx#1)]  -->  

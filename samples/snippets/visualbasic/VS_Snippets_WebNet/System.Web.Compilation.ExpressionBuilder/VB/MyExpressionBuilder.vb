@@ -1,4 +1,4 @@
-﻿' <!--<snippet1>-->
+﻿' <Snippet1> 
 Imports System
 Imports System.CodeDom
 Imports System.Web.UI
@@ -19,15 +19,15 @@ Public Class MyExpressionBuilder
         Return expression
     End Function
 
-    ' <!--<snippet3>-->
+    ' <Snippet3>
     Public Overrides Function EvaluateExpression(ByVal target As Object, _
        ByVal entry As BoundPropertyEntry, ByVal parsedData As Object, _
        ByVal context As ExpressionBuilderContext) As Object
         Return GetEvalData(entry.Expression, target.GetType(), entry.Name)
     End Function
-    ' <!--</snippet3>-->
+    ' </Snippet3> 
 
-    ' <!--<snippet4>-->
+    ' <Snippet4> 
     Public Overrides Function GetCodeExpression(ByVal entry _
        As BoundPropertyEntry, ByVal parsedData As Object, ByVal context _
        As ExpressionBuilderContext) As CodeExpression
@@ -42,15 +42,15 @@ Public Class MyExpressionBuilder
            New CodeMethodInvokeExpression(New CodeTypeReferenceExpression _
            (MyBase.GetType()), "GetEvalData", expressionArray1))
     End Function
-    ' <!--</snippet4>-->
+    ' </Snippet4> 
 
-    ' <!--<snippet2>-->
+    ' <Snippet2>
     Public Overrides ReadOnly Property SupportsEvaluate() As Boolean
         Get
             Return True
         End Get
     End Property
-    ' <!--</snippet2>-->
+    ' </Snippet2>
 End Class
-' <!--</snippet1>-->
+' </Snippet1>
 

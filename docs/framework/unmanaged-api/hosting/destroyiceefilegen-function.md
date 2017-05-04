@@ -24,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "DestroyICeeFileGen function [.NET Framework hosting]"
 ms.assetid: dc1e2235-e721-4cb2-a0b8-6b0c030d7bab
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

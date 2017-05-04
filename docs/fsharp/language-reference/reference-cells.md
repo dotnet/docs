@@ -98,9 +98,9 @@ The following code examples demonstrate the use of reference cells in closures. 
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2207.fs)]
 
-## Consuming C#7 and VB15 `ref` returns
+## Consuming C# `ref` returns
 
-Starting with F# 4.1, you can consume `ref` returns generated in C#7 or VB15.  The result of such a call is a reference cell.
+Starting with F# 4.1, you can consume `ref` returns generated in C#.  The result of such a call is a `byref<_>` pointer.
 
 The following C# method:
 
@@ -135,7 +135,13 @@ let consumeRefReturn() =
     ()
 ```
 
-There is currently no way to generate a `ref` return in F#.  Only consumption is supported at this time.
+You can also declare functions which could take a `ref` return as input, for example:
+
+```fsharp
+let f (x: byref<int>) = &x
+```
+
+There is currently no way to generate a `ref` return in F# which could be consumed in C#.
 
 ## See Also
 [F# Language Reference](index.md)

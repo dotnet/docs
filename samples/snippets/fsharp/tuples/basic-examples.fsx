@@ -18,7 +18,7 @@
 (a + 1, b + 1)
 
 // Struct Tuple of floats
-struct(1.025f, 1.5f)
+struct (1.025f, 1.5f)
 
 //
 // Pattern matching
@@ -34,7 +34,7 @@ let print tuple1 =
 let (a, b) = (1, 2)
 
 // Or as a struct
-let struct(c, d) = struct(1, 2)
+let struct (c, d) = struct (1, 2)
 
 //
 // Pattern matching via function parameter
@@ -53,7 +53,7 @@ let getDistance ((x1,y1): float*float) ((x2,y2): float*float) =
 let (a, _) = (1, 2)
 
 // Or as a struct
-let struct(c, _) = struct(1, 2)
+let struct (c, _) = struct (1, 2)
 
 //
 // Copy values to struct tuple
@@ -63,7 +63,7 @@ let struct(c, _) = struct(1, 2)
 let (a, b) = (1, 2)
 
 // Construct a struct tuple from it
-let struct(c, d) = struct(a, b)
+let struct (c, d) = struct (a, b)
 
 //
 // Fst and Snd functions

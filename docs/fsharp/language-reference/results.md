@@ -14,7 +14,7 @@ ms.assetid: a15b5cf1-9055-4481-918c-4c8a051b5829
 
 # Results
 
-Starting with F# 4.1, there is a `Result<'T,'TFailure>` type which you can use for writing error-tolerant code which can be composed monadically.
+Starting with F# 4.1, there is a `Result<'T,'TFailure>` type which you can use for writing error-tolerant code which can be composed.
 
 ## Syntax
 
@@ -41,9 +41,6 @@ type Request = {
     Email: string
 }
 
-// Define an infix operator for Result.bind to compose
-let (<<=) input f = bind f input
-
 // Define some logic for what defines a valid name.
 //
 // Generates a Result wich is an Ok if the name valides;
@@ -66,23 +63,25 @@ let validateEmail req =
 let validateRequest req =
     req 
     |> validateName
-    >>= validateEmail // Note that the use of `>>=` allows you to "pipe" a result into another function!
-                      // It will short-circuit as an Error if the value is an Error.
+    |> Result.bind validateEmail // If `validateName` failed, it would short-circuit to the error case in Result.bind.                      
 
-// Now, create a Request and pattern match on the result.
-let req1 = { Name = "Phillip"; Email = "phillip@contoso.biz" }
-let res1 = validateRequest req1
-match res1 with
-| Ok req -> printfn "My request was valid! Name: %s Email %s" req1.Name req1.Email
-| Error e -> printfn "Error: %s" e
-// Prints " "My request was valid!  Name: Phillip Email: phillip@consoto.biz"
+let test() = 
+    // Now, create a Request and pattern match on the result.
+    let req1 = { Name = "Phillip"; Email = "phillip@contoso.biz" }
+    let res1 = validateRequest req1
+    match res1 with
+    | Ok req -> printfn "My request was valid! Name: %s Email %s" req1.Name req1.Email
+    | Error e -> printfn "Error: %s" e
+    // Prints " "My request was valid!  Name: Phillip Email: phillip@consoto.biz"
 
-let req2 = { Name = "Phillip"; Email = "phillip@bananas.biz" }
-let res2 = validateRequest req1
-match res2 with
-| Ok req -> printfn "My request was valid! Name: %s Email %s" req1.Name req1.Email
-| Error e -> printfn "Error: %s" e
-// Prints: "Error: No email from bananas.com is allowed."
+    let req2 = { Name = "Phillip"; Email = "phillip@bananas.biz" }
+    let res2 = validateRequest req1
+    match res2 with
+    | Ok req -> printfn "My request was valid! Name: %s Email %s" req1.Name req1.Email
+    | Error e -> printfn "Error: %s" e
+    // Prints: "Error: No email from bananas.com is allowed."
+
+test()
 ```
 
 As you can see, it's quite easy to chain together various validation functions if you force them all to return a `Result`.  This lets you break up functionality like this into small pieces which are as composable as you need them to be.  This also has the added value of *enforcing* the use of [pattern matching](pattern-matching.md) at the end of a round of validation, which in turns enforces a higher degree of program correctness.

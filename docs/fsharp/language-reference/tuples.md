@@ -51,7 +51,7 @@ Copying elements from a reference tuple into a struct tuple is also simple:
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L62-L66)]
 
-The functions `fst` and `snd` return the first and second elements of a tuple, respectively.
+The functions `fst` and `snd` (reference tuples only) return the first and second elements of a tuple, respectively.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L72-L73)]
 
@@ -83,11 +83,11 @@ When you write out the name of a type that is a tuple, you use the `*` symbol to
 int * float * string
 ```
 
-## Interoperation with C# and VB.NET Tuples
+## Interoperation with C# Tuples
 
-C# 7 and VB.NET 15 introduced tuples to their respective languages.  Tuples in both C# and VB.NET are structs, and are equivalent to struct tuples in F#.  If you need to interoperate with C# and VB.NET code which uses tuples, you must use struct tuples.
+C# 7 and VB.NET 15 introduced tuples to their respective languages.  Tuples in C# and are structs, and are equivalent to struct tuples in F#.  If you need to interoperate with C# uses tuples, you must use struct tuples.
 
-This is quite easy to do.  For example, imagine you have to pass a tuple to a C# class and then consume its result, which is also a tuple:
+This is easy to do.  For example, imagine you have to pass a tuple to a C# class and then consume its result, which is also a tuple:
 
 ```csharp
 namespace CSharpTupleInterop
@@ -105,28 +105,7 @@ In your F# code, you can then pass a struct tuple as the parameter and consume t
 ```fsharp
 open TupleInterop
 
-let struct(newX, newY) = Example.AddOneToXAndY(struct(1, 2))
-// newX is now 2, and newY is now 3
-```
-
-The same is true for VB.NET tuples:
-
-```vb
-Public Module Tuples
-
-    Public Function AddOneToXAndYFromVB(t As (x As Integer, y As Integer)) As (newX As Integer, newY As Integer)
-        Return (t.x + 1, t.y + 1)
-    End Function
-
-End Module
-```
-
-And the F# code is virtually the same:
-
-```fsharp
-open VBTuple // Assume the VB project is named this
-
-let struct(newX, newY) = Tuples.AddOneToXAndYFromVB(struct(1, 2))
+let struct (newX, newY) = Example.AddOneToXAndY(struct (1, 2))
 // newX is now 2, and newY is now 3
 ```
 

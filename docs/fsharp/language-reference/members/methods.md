@@ -102,7 +102,7 @@ Overloaded methods are methods that have identical names in a given type but tha
 
 ## Optional Arguments
 
-Starting with F# 4.1, you can also have optional arguments in methods.  You can also specify a default parameter value.  This is to help facilitate interoperation with C# and Visual Basic .NET code.  The following example demonstrates the syntax:
+Starting with F# 4.1, you can also have C#-style optional arguments with a default parameter value in methods.  This is to help facilitate interoperation with C# code.  The following example demonstrates the syntax:
 
 ```fsharp
 // A class with a method M, which takes in an optional integer argument.

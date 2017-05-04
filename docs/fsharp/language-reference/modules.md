@@ -89,7 +89,7 @@ If you want all the code in a file to be in a single outer module and you want i
 
 ## Module `rec`: allowing mutual recursive code at the module level
 
-F# 4.1 introduces the notion of modules which allow for all underlying code to be mutually recursive.  This is done via `module rec`.  Use of `module rec` can alleviate some pains in not being able to write mutually referential code between types and modules.  The following is an example of this:
+F# 4.1 introduces the notion of modules which allow for all contained code to be mutually recursive.  This is done via `module rec`.  Use of `module rec` can alleviate some pains in not being able to write mutually referential code between types and modules.  The following is an example of this:
 
 ```fsharp
 module rec RecursiveModule =
@@ -136,3 +136,5 @@ This capability is also possible in [Namespaces](namespaces.md) with F# 4.1.
 [F# Language Reference](index.md)
 
 [Namespaces](namespaces.md)
+
+[F# RFC FS-1009 - Allow mutually referential types and modules over larger scopes within files](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)

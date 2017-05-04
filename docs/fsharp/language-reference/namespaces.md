@@ -75,7 +75,7 @@ You can also use global to reference the top-level .NET namespace, for example, 
 
 ##
 
-F# 4.1 introduces the notion of namespaces which allow for all underlying code to be mutually recursive.  This is done via `namespace rec`.  Use of `namespace rec` can alleviate some pains in not being able to write mutually referential code between types and modules.  The following is an example of this:
+F# 4.1 introduces the notion of namespaces which allow for all contained code to be mutually recursive.  This is done via `namespace rec`.  Use of `namespace rec` can alleviate some pains in not being able to write mutually referential code between types and modules.  The following is an example of this:
 
 ```fsharp
 namespace rec MutualReferences
@@ -123,3 +123,5 @@ This feature is also available for top-level [Modules](modules.md) in F# 4.1 or 
 [F# Language Reference](index.md)
 
 [Modules](modules.md)
+
+[F# RFC FS-1009 - Allow mutually referential types and modules over larger scopes within files](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)

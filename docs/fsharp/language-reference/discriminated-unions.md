@@ -19,7 +19,7 @@ Discriminated unions provide support for values that can be one of a number of n
 ## Syntax
 
 ```fsharp
-[ struct-attribute ]
+[ attributes ]
 type type-name =
     | case-identifier1 [of [ fieldname1 : ] type1 [ * [ fieldname2 : ] type2 ...]
     | case-identifier2 [of [fieldname3 : ]type3 [ * [ fieldname4 : ]type4 ...]
@@ -96,9 +96,10 @@ type Multicase =
     | Case3 of double
 ```
 
->[!WARN] With the current release of F# 4.1, multicase struct unions have multiple bugs.  We do not recommend using them at this time.
+>[!WARN]
+With the initial release of F# 4.1, multicase struct unions have isues if the cases are of the same type.  This has since been fixed and is pending an update.
 
-Because these are value types and not reference types, there are extra considerations compared with reference Discriminated Unions:
+Because these are value types and not reference types, there are extra considerations compared with reference discriminated unions:
 
 1. They are copied as value types and have value type semantics.
 2. You cannot use a recursive type definition with a multicase struct Discriminated Union.
@@ -135,6 +136,15 @@ Discriminated unions work well if the nodes in the tree are heterogeneous. In th
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2006.fs)]
 
 When this code is executed, the value of `result` is 5.
+
+## Common Attributes
+
+The following attributes are commonly seen in Discriminated Unions:
+
+* `[RequireQualifiedAccess]`
+* `[NoEquality]`
+* `[NoComparison]`
+* `[Struct]` (F# 4.1 and higher)
 
 ## See Also
 [F# Language Reference](index.md)

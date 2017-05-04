@@ -14,7 +14,7 @@ ms.assetid: 5795ce1f-11bf-4798-9f1f-6e44ffa1477e
 
 # The Fixed Keyword
 
-F# 4.1 introduces the `fixed` keyword, which allows you to "pin" a local onto the stack to prevent it from being garbage-collected.  It is used for low-level programming scenarios.
+F# 4.1 introduces the `fixed` keyword, which allows you to "pin" a local onto the stack to prevent it from being collected or moved during garbage-collection.  It is used for low-level programming scenarios.
 
 ## Syntax
 
@@ -24,7 +24,11 @@ use ptr = fixed expression
 
 ## Remarks
 
-As you can see in the syntax example, something which is fixed via the `fixed` keyword is bound to an identifier via the `use` keyword.  The semantics of this are similar to resource management via the `use` keyword.  The pointer is fixed while it is in scope, and once it is out of scope, it is no longer fixed.  `fixed` cannot be used outside the context of a `use` binding.  You must bind the pointer to a name with `use`.
+This extends the syntax of expressions to allow extracting a pointer and binding it to a name which is prevented from being collected or moved during garbage-collection.  
+
+A pointer from an expression is fixed via the `fixed` keyword is bound to an identifier via the `use` keyword.  The semantics of this are similar to resource management via the `use` keyword.  The pointer is fixed while it is in scope, and once it is out of scope, it is no longer fixed.  `fixed` cannot be used outside the context of a `use` binding.  You must bind the pointer to a name with `use`.
+
+Use of `fixed` must occur within an expression in a function or a method.  It cannot be used at a script-level or module-level scope.
 
 Like all pointer code, this is an unsafe feature and will emit a warning when used.
 
@@ -48,12 +52,16 @@ let squareWithPointer (p: nativeptr<int>) =
 let pnt = { X = 1; Y = 2 }
 printfn "pnt before - X: %d Y: %d" pnt.X pnt.Y // prints 1 and 2
 
-// Fix the Y value
-use ptr = fixed &pnt.Y
+// Note that the use of 'fixed' is inside a function.
+// You cannot fix a pointer at a script-level or module-level scope.
+let doPointerWork() =
+    use ptr = fixed &pnt.Y
 
-// Square the Y value
-squareWithPointer ptr
-printfn "pnt after - X: %d Y: %d" pnt.X pnt.Y // prints 1 and 4
+    // Square the Y value
+    squareWithPointer ptr
+    printfn "pnt after - X: %d Y: %d" pnt.X pnt.Y // prints 1 and 4
+
+doPointerWork()
 ```
 
 ## See Also

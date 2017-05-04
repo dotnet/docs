@@ -9,10 +9,8 @@ type Customer =
       AccountNumber: uint32; }
 
 // A struct record.
-// The way you format the braces doesn't matter.
 [<Struct>]
-type StructPoint = { 
-    X : float
-    Y: float
-    Z: float; 
-}
+type StructPoint = 
+    { X: float
+      Y: float
+      Z: float }

@@ -23,8 +23,7 @@
 ## Examples  
  The following example shows how to use a <xref:System.Windows.Controls.GridViewRowPresenter> to style rows in a <xref:System.Windows.Controls.ListView> control.  
   
- <!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#GridViewRowPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyle/CS/Window1.xaml#gridviewrowpresenter)]  -->
- <!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#GridViewRowPresenter](~/samples/snippets/xaml/VS_Snippets_Wpf/ListViewItemStyle/XAML/Window1.xaml#gridviewrowpresenter)]  -->  
+ [!code-xml[ListViewItemStyleSnippet#GridViewRowPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyleSnippet/CS/Window1.xaml#gridviewrowpresenter)]   
   
  ]]></format>
     </remarks>
@@ -88,8 +87,7 @@
 ## Remarks  
  The typical usage of the <xref:System.Windows.Controls.GridViewRowPresenter> in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] is to place it in a <xref:System.Windows.Controls.ControlTemplate> of a control. The template binds the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> property to a property of the control by using [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md). The following example shows how to bind the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> property of a <xref:System.Windows.Controls.GridViewRowPresenter> to the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.ListViewItem> control.  
   
- <!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#ControlTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyle/CS/Window1.xaml#controltemplate)]  -->
- <!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#ControlTemplate](~/samples/snippets/xaml/VS_Snippets_Wpf/ListViewItemStyle/XAML/Window1.xaml#controltemplate)]  -->  
+ [!code-xml[ListViewItemStyleSnippet#ControlTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyleSnippet/CS/Window1.xaml#controltemplate)]   
   
 <a name="xamlTextUsage_Content"></a>   
 ## XAML Text Usage  

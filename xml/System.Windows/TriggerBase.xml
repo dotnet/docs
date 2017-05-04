@@ -37,7 +37,6 @@
  The <xref:System.Windows.EventTrigger> class allows you to apply changes when an event occurs. The following example contains two <xref:System.Windows.EventTrigger> objects, one of which occurs when the mouse enters the element and the other occurs when the mouse leaves the element.  
   
  [!code-xml[StyleEventTriggerAnimation#EventTriggerSnippet](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleEventTriggerAnimation/CS/Default.xaml#eventtriggersnippet)]
- <!-- TODO: review snippet reference [!code-xml[StyleEventTriggerAnimation#EventTriggerSnippet](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleEventTriggerAnimation/XAML/Default.xaml#eventtriggersnippet)]  -->  
   
  These are also the <xref:System.Windows.DataTrigger> and the <xref:System.Windows.MultiDataTrigger> classes. These are similar to <xref:System.Windows.Trigger> and <xref:System.Windows.MultiTrigger> except that they are for data-bound properties.  
   

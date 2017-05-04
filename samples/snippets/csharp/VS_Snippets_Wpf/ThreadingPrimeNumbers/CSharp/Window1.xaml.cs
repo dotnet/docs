@@ -35,11 +35,11 @@ namespace SDKSamples
             {
                 continueCalculating = true;
                 startStopButton.Content = "Stop";
-                //<SnippetThreadingPrimeNumberBeingInvoke>
+                //<SnippetThreadingPrimeNumberBeginInvoke>
                 startStopButton.Dispatcher.BeginInvoke(
                     DispatcherPriority.Normal,
                     new NextPrimeDelegate(CheckNextNumber));
-                //</SnippetThreadingPrimeNumberBeingInvoke>
+                //</SnippetThreadingPrimeNumberBeginInvoke>
             }
         }
         //</SnippetThreadingPrimeNumberStartOrStop>

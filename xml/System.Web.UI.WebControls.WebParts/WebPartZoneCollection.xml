@@ -47,6 +47,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneCollection.%23ctor%2A> constructor is used by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, by other controls in the Web Parts control set, or by custom developer code, to create a read-only collection of the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls that exist on a Web Parts page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebPartZoneCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -284,22 +301,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneCollection.%23ctor%2A> constructor is used by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, by other controls in the Web Parts control set, or by custom developer code, to create a read-only collection of the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls that exist on a Web Parts page.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

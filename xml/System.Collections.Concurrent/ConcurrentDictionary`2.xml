@@ -328,6 +328,27 @@
           <paramref name="concurrencyLevel" /> or <paramref name="capacity" /> is less than 1.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddOrUpdate">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key does not already exist, or updates a key/value pair in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key already exists.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call the <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A> method:  
+  
+ [!code-csharp[System.Collections.Concurrent.ConcurrentDictionary#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentdictionary/cs/concdictionary.cs#3)]
+ [!code-vb[System.Collections.Concurrent.ConcurrentDictionary#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentdictionary/vb/concdictionary.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddOrUpdate">
       <MemberSignature Language="C#" Value="public TValue AddOrUpdate (TKey key, Func&lt;TKey,TValue&gt; addValueFactory, Func&lt;TKey,TValue,TValue&gt; updateValueFactory);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TValue AddOrUpdate(!TKey key, class System.Func`2&lt;!TKey, !TValue&gt; addValueFactory, class System.Func`3&lt;!TKey, !TValue, !TValue&gt; updateValueFactory) cil managed" />
@@ -558,6 +579,27 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetOrAdd">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key does not already exist.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call the <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> method:  
+  
+ [!code-csharp[System.Collections.Concurrent.ConcurrentDictionary#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentdictionary/cs/concdictionary.cs#3)]
+ [!code-vb[System.Collections.Concurrent.ConcurrentDictionary#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentdictionary/vb/concdictionary.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetOrAdd">
       <MemberSignature Language="C#" Value="public TValue GetOrAdd (TKey key, Func&lt;TKey,TValue&gt; valueFactory);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TValue GetOrAdd(!TKey key, class System.Func`2&lt;!TKey, !TValue&gt; valueFactory) cil managed" />
@@ -1686,47 +1728,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddOrUpdate">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Concurrent</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key does not already exist, or updates a key/value pair in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key already exists.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to call the <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A> method:  
-  
- [!code-csharp[System.Collections.Concurrent.ConcurrentDictionary#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentdictionary/cs/concdictionary.cs#3)]
- [!code-vb[System.Collections.Concurrent.ConcurrentDictionary#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentdictionary/vb/concdictionary.vb#3)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetOrAdd">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Concurrent</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a key/value pair to the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> if the key does not already exist.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to call the <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> method:  
-  
- [!code-csharp[System.Collections.Concurrent.ConcurrentDictionary#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentdictionary/cs/concdictionary.cs#3)]
- [!code-vb[System.Collections.Concurrent.ConcurrentDictionary#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentdictionary/vb/concdictionary.vb#3)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

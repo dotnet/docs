@@ -2533,6 +2533,24 @@ Task t Status: RanToCompletion, Result: 42
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Run">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Queues the specified work to run on the ThreadPool and returns a task or <see cref="T:System.Threading.Tasks.Task`1" /> handle for that work.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Threading.Tasks.Task.Run%2A> method provides a set of overloads that make it easy to start a task by using default values. It is a lightweight alternative to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> overloads.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Run">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task Run (Action action);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task Run(class System.Action action) cil managed" />
@@ -4540,23 +4558,5 @@ Task t Status: RanToCompletion, Result: 42
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Run">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.Tasks</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Queues the specified work to run on the ThreadPool and returns a task or <see cref="T:System.Threading.Tasks.Task`1" /> handle for that work.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Threading.Tasks.Task.Run%2A> method provides a set of overloads that make it easy to start a task by using default values. It is a lightweight alternative to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> overloads.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -15,6 +15,23 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Abort">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Aborts the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Abort">
       <MemberSignature Language="C#" Value="public void Abort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abort() cil managed" />
@@ -637,22 +654,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Abort">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Aborts the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

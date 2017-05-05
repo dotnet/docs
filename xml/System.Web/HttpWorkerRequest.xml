@@ -2489,6 +2489,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadEntityBody">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Overloaded. Reads request data from the client (when not preloaded).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
+  
+ Use this overload to specify the response for message bodies greater than 2 GB.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadEntityBody">
       <MemberSignature Language="C#" Value="public virtual int ReadEntityBody (byte[] buffer, int size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ReadEntityBody(unsigned int8[] buffer, int32 size) cil managed" />
@@ -3058,24 +3077,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ReadEntityBody">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Overloaded. Reads request data from the client (when not preloaded).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
-  
- Use this overload to specify the response for message bodies greater than 2 GB.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

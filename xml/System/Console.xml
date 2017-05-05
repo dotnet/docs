@@ -3701,6 +3701,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified data, followed by the current line terminator, to the standard output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default line terminator is a string whose value is a carriage return followed by a line feed ("\r\n" in C#, or `vbCrLf` in Visual Basic). You can change the line terminator by setting the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property of the <xref:System.Console.Out%2A> property to another string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteLine">
       <MemberSignature Language="C#" Value="public static void WriteLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine() cil managed" />
@@ -4787,22 +4804,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteLine">
-      <AssemblyInfo>
-        <AssemblyName>System.Console</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the specified data, followed by the current line terminator, to the standard output stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default line terminator is a string whose value is a carriage return followed by a line feed ("\r\n" in C#, or `vbCrLf` in Visual Basic). You can change the line terminator by setting the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property of the <xref:System.Console.Out%2A> property to another string.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

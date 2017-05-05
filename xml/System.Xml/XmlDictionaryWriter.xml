@@ -99,6 +99,37 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateBinaryWriter">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The binary format only supports one text node as the attribute value and therefore buffers the values written to it to emit a single node, as shown in the following sample code.  
+  
+```  
+XmlWriter binarywriter = XmlDictionaryWriter.CreateBinaryWriter(Stream.Null);  
+binarywriter.WriteStartAttribute("StartAttribute");  
+string largeStr = new string('r', 100000);  
+for (int i = 0; i < 10000; i++)   
+{  
+    binarywriter.WriteValue(largeStr);  
+}  
+binarywriter.WriteEndAttribute();  
+  
+```  
+  
+ In the previous sample the code buffers about 1 GB of memory, while in the other writers it writes the values as they are provided.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateBinaryWriter">
       <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryWriter CreateBinaryWriter (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateBinaryWriter(class System.IO.Stream stream) cil managed" />
@@ -269,6 +300,24 @@
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateMtomWriter">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes XML in the Message Transmission Optimization Mechanism (MTOM) format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ MTOM allows users to optimize the transmission of raw binary data within SOAP messages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateMtomWriter">
       <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryWriter CreateMtomWriter (System.IO.Stream stream, System.Text.Encoding encoding, int maxSizeInBytes, string startInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateMtomWriter(class System.IO.Stream stream, class System.Text.Encoding encoding, int32 maxSizeInBytes, string startInfo) cil managed" />
@@ -2110,6 +2159,23 @@
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteXmlAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a standard XML attribute in the current element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A standard XML attribute is one with the prefix "xml" in any casing. Examples are `xml:space` and `xml:lang`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteXmlAttribute">
       <MemberSignature Language="C#" Value="public virtual void WriteXmlAttribute (string localName, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXmlAttribute(string localName, string value) cil managed" />
@@ -2242,71 +2308,5 @@
           <paramref name="namespaceUri" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateMtomWriter">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes XML in the Message Transmission Optimization Mechanism (MTOM) format.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- MTOM allows users to optimize the transmission of raw binary data within SOAP messages.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteXmlAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a standard XML attribute in the current element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A standard XML attribute is one with the prefix "xml" in any casing. Examples are `xml:space` and `xml:lang`.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateBinaryWriter">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The binary format only supports one text node as the attribute value and therefore buffers the values written to it to emit a single node, as shown in the following sample code.  
-  
-```  
-XmlWriter binarywriter = XmlDictionaryWriter.CreateBinaryWriter(Stream.Null);  
-binarywriter.WriteStartAttribute("StartAttribute");  
-string largeStr = new string('r', 100000);  
-for (int i = 0; i < 10000; i++)   
-{  
-    binarywriter.WriteValue(largeStr);  
-}  
-binarywriter.WriteEndAttribute();  
-  
-```  
-  
- In the previous sample the code buffers about 1 GB of memory, while in the other writers it writes the values as they are provided.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

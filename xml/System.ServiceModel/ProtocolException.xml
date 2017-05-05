@@ -25,6 +25,28 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ProtocolException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you want to pass an error message to the user, use the <xref:System.ServiceModel.ProtocolException.%23ctor%28System.String%29> constructor.  
+  
+ If you want to pass an error message and a reference to the inner exception that is the cause of the exception to the user, use the <xref:System.ServiceModel.ProtocolException.%23ctor%28System.String%2CSystem.Exception%29> constructor.  
+  
+ If you want to pass serialization information and streaming context, use the <xref:System.ServiceModel.ProtocolException.%23ctor%28System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext%29> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ProtocolException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -127,27 +149,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ProtocolException" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you want to pass an error message to the user, use the <xref:System.ServiceModel.ProtocolException.%23ctor%28System.String%29> constructor.  
-  
- If you want to pass an error message and a reference to the inner exception that is the cause of the exception to the user, use the <xref:System.ServiceModel.ProtocolException.%23ctor%28System.String%2CSystem.Exception%29> constructor.  
-  
- If you want to pass serialization information and streaming context, use the <xref:System.ServiceModel.ProtocolException.%23ctor%28System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext%29> constructor.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

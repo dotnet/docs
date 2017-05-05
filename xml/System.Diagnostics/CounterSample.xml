@@ -301,7 +301,7 @@
         <param name="other">To be added.</param>
         <summary>Indicates whether the specified <see cref="T:System.Diagnostics.CounterSample" /> structure is equal to the current <see cref="T:System.Diagnostics.CounterSample" /> structure.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="sample" /> is equal to the current instance; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="other" /> is equal to the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -331,7 +331,7 @@
         <param name="obj">To be added.</param>
         <summary>Indicates whether the specified structure is a <see cref="T:System.Diagnostics.CounterSample" /> structure and is identical to the current <see cref="T:System.Diagnostics.CounterSample" /> structure.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Diagnostics.CounterSample" /> structure and is identical to the current instance; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Diagnostics.CounterSample" /> structure and is identical to the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

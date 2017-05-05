@@ -58,7 +58,7 @@
 ## Examples  
  The following shows a <xref:System.Windows.Controls.Button> <xref:System.Windows.Style> that sets the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.Button>:  
   
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#buttonct)]  -->  
+ [!code-xml[StylingIntroSample_snippet#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#buttonct)]     
   
  When this gets applied, the <xref:System.Windows.Controls.Button> appears as an <xref:System.Windows.Shapes.Ellipse>:  
   

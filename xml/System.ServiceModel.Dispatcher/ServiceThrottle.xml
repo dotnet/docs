@@ -32,7 +32,7 @@
 ## Examples  
  The following code example shows the typical use of the <xref:System.ServiceModel.Dispatcher.ServiceThrottle> by referencing the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior> in an application configuration file. In this case, the values that are specified establish, at most, one message processing at one time from one connection to one <xref:System.ServiceModel.InstanceContext>. Real-world usage must be determined through experience.  
   
- <!-- TODO: review snippet reference [!code-csharp[ServiceThrottlingBehavior#3](~/samples/snippets/csharp/VS_Snippets_CFX/servicethrottlingbehavior/cs/hostapplication.exe.config#3)]  -->  
+ [!code-xml[ServiceThrottlingBehavior#3](~/samples/snippets/csharp/VS_Snippets_CFX/servicethrottlingbehavior/cs/hostapplication.exe.config#3)]   
   
  ]]></format>
     </remarks>
@@ -67,7 +67,7 @@
 ## Examples  
  The following code example shows the typical use of the <xref:System.ServiceModel.Dispatcher.ServiceThrottle> by referencing the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior> in an application configuration file. In this case, the values that are specified establish, at most, one message processing at one time from one connection to one <xref:System.ServiceModel.InstanceContext>. Real-world usage must be determined through experience.  
   
- <!-- TODO: review snippet reference [!code-csharp[ServiceThrottlingBehavior#3](~/samples/snippets/csharp/VS_Snippets_CFX/servicethrottlingbehavior/cs/hostapplication.exe.config#3)]  -->  
+ [!code-xml[ServiceThrottlingBehavior#3](~/samples/snippets/csharp/VS_Snippets_CFX/servicethrottlingbehavior/cs/hostapplication.exe.config#3)]   
   
  ]]></format>
         </remarks>
@@ -102,7 +102,7 @@
 ## Examples  
  The following code example shows the typical use of the <xref:System.ServiceModel.Dispatcher.ServiceThrottle> by referencing the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior> in an application configuration file. In this case, the values that are specified establish, at most, one message processing at one time from one connection to one <xref:System.ServiceModel.InstanceContext>. Real-world usage must be determined through experience.  
   
- <!-- TODO: review snippet reference [!code-csharp[ServiceThrottlingBehavior#3](~/samples/snippets/csharp/VS_Snippets_CFX/servicethrottlingbehavior/cs/hostapplication.exe.config#3)]  -->  
+ [!code-xml[ServiceThrottlingBehavior#3](~/samples/snippets/csharp/VS_Snippets_CFX/servicethrottlingbehavior/cs/hostapplication.exe.config#3)]   
   
  ]]></format>
         </remarks>
@@ -141,7 +141,7 @@
 ## Examples  
  The following code example shows the typical use of the <xref:System.ServiceModel.Dispatcher.ServiceThrottle> by referencing the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior> in an application configuration file. In this case, the values that are specified establish, at most, one message processing at one time from one connection to one <xref:System.ServiceModel.InstanceContext>. Real-world usage must be determined through experience.  
   
- <!-- TODO: review snippet reference [!code-csharp[ServiceThrottlingBehavior#3](~/samples/snippets/csharp/VS_Snippets_CFX/servicethrottlingbehavior/cs/hostapplication.exe.config#3)]  -->  
+ [!code-xml[ServiceThrottlingBehavior#3](~/samples/snippets/csharp/VS_Snippets_CFX/servicethrottlingbehavior/cs/hostapplication.exe.config#3)]   
   
  ]]></format>
         </remarks>

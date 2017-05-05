@@ -450,7 +450,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Password reset is the ability for ASP.NET membership to replace the current password for a user name with a new, randomly generated password when a user has forgotten their password or the current password is no longer valid. This is especially useful when password format is set to <xref:System.Web.Security.MembershipPasswordFormat>, as users cannot retrieve hashed password values.  
+ Password reset is the ability for ASP.NET membership to replace the current password for a user name with a new, randomly generated password when a user has forgotten their password or the current password is no longer valid. This is especially useful when password format is set to <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, as users cannot retrieve hashed password values.  
   
    
   
@@ -503,7 +503,7 @@
 ## Remarks  
  If <xref:System.Web.Security.Membership.EnablePasswordRetrieval%2A> is `false`, the underlying membership provider may throw a <xref:System.Web.HttpException>.  
   
- The providers that are included with the .NET Framework support multiple password formats to enhance password security. If the password format is set to <xref:System.Web.Security.MembershipPasswordFormat>, then users will not be able to retrieve their existing password from the database. The <xref:System.Web.Security.MembershipPasswordFormat> password format provides one-way encoding of password values. Passwords are "hashed" and compared to values stored in the database for authentication. "Hashed" values cannot be un-encoded to retrieve the original password value. For more information, see <xref:System.Web.Security.MembershipPasswordFormat>.  
+ The providers that are included with the .NET Framework support multiple password formats to enhance password security. If the password format is set to <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, then users will not be able to retrieve their existing password from the database. The <xref:System.Web.Security.MembershipPasswordFormat.Hashed> password format provides one-way encoding of password values. Passwords are "hashed" and compared to values stored in the database for authentication. "Hashed" values cannot be un-encoded to retrieve the original password value. For more information, see <xref:System.Web.Security.MembershipPasswordFormat>.  
   
    
   

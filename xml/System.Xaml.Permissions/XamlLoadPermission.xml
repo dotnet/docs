@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Security.Permissions.PermissionState> sets the return for <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> to `true` in the created instance. Any call to this constructor sets the <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> collection to `null` because it is not relevant if permissions are being reported rather than <xref:System.Xaml.Permissions.XamlAccessLevel>.  
+ <xref:System.Security.Permissions.PermissionState.Unrestricted> sets the return for <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> to `true` in the created instance. Any call to this constructor sets the <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> collection to `null` because it is not relevant if permissions are being reported rather than <xref:System.Xaml.Permissions.XamlAccessLevel>.  
   
  ]]></format>
         </remarks>

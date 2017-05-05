@@ -28,15 +28,15 @@
   
 -   Inherit-only ACEs inside object ACLs are removed.  
   
--   <xref:System.Security.AccessControl.PropagationFlags>, <xref:System.Security.AccessControl.PropagationFlags>, <xref:System.Security.AccessControl.InheritanceFlags>, and <xref:System.Security.AccessControl.InheritanceFlags> flags on all ACEs in leaf object ACLs are cleared.  
+-   <xref:System.Security.AccessControl.PropagationFlags.InheritOnly>, <xref:System.Security.AccessControl.PropagationFlags.NoPropagateInherit>, <xref:System.Security.AccessControl.InheritanceFlags.ContainerInherit>, and <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit> flags on all ACEs in leaf object ACLs are cleared.  
   
--   ACEs that have an <xref:System.Security.AccessControl.PropagationFlags> flag in the absence of the <xref:System.Security.AccessControl.InheritanceFlags> or <xref:System.Security.AccessControl.InheritanceFlags> flag are meaningless; they are removed.  
+-   ACEs that have an <xref:System.Security.AccessControl.PropagationFlags.InheritOnly> flag in the absence of the <xref:System.Security.AccessControl.InheritanceFlags.ContainerInherit> or <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit> flag are meaningless; they are removed.  
   
--   The <xref:System.Security.AccessControl.PropagationFlags> flag in the absence of the <xref:System.Security.AccessControl.InheritanceFlags> or <xref:System.Security.AccessControl.InheritanceFlags> flag can be removed.  
+-   The <xref:System.Security.AccessControl.PropagationFlags.NoPropagateInherit> flag in the absence of the <xref:System.Security.AccessControl.InheritanceFlags.ContainerInherit> or <xref:System.Security.AccessControl.InheritanceFlags.ObjectInherit> flag can be removed.  
   
--   ACEs that have an <xref:System.Security.AccessControl.AuditFlags> value of <xref:System.Security.AccessControl.AuditFlags> or <xref:System.Security.AccessControl.AuditFlags> in discretionary access control lists (DACLs) are removed.  
+-   ACEs that have an <xref:System.Security.AccessControl.AuditFlags> value of <xref:System.Security.AccessControl.AuditFlags.Success> or <xref:System.Security.AccessControl.AuditFlags.Failure> in discretionary access control lists (DACLs) are removed.  
   
--   Any audit ACE that does not specify either <xref:System.Security.AccessControl.AuditFlags> or <xref:System.Security.AccessControl.AuditFlags> is removed.  
+-   Any audit ACE that does not specify either <xref:System.Security.AccessControl.AuditFlags.Success> or <xref:System.Security.AccessControl.AuditFlags.Failure> is removed.  
   
 -   On DACLs, SystemAudit and SystemAlarm ACEs are removed.  
   

@@ -94,9 +94,9 @@
 ## Remarks  
  The <xref:System.Web.UI.VerificationAttribute.%23ctor%2A> constructor of the <xref:System.Web.UI.VerificationAttribute> class specifies the minimal amount of information needed to define a verification rule. The following default values for the <xref:System.Web.UI.VerificationAttribute> instance are assumed:  
   
--   The <xref:System.Web.UI.VerificationAttribute.VerificationRule%2A> property is set as <xref:System.Web.UI.VerificationRule>.  
+-   The <xref:System.Web.UI.VerificationAttribute.VerificationRule%2A> property is set as <xref:System.Web.UI.VerificationRule.Required>.  
   
--   The <xref:System.Web.UI.VerificationAttribute.VerificationConditionalOperator%2A> property is set as <xref:System.Web.UI.VerificationConditionalOperator>.  
+-   The <xref:System.Web.UI.VerificationAttribute.VerificationConditionalOperator%2A> property is set as <xref:System.Web.UI.VerificationConditionalOperator.Equals>.  
   
 -   The <xref:System.Web.UI.VerificationAttribute.GuidelineUrl%2A> property is set as an empty string ("").  
   
@@ -141,11 +141,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `conditionalProperty` parameter is another property that is used as part of the conditional expression to evaluate the verification rule. For example, if the rule parameter is <xref:System.Web.UI.VerificationRule> then the related property specified by `conditionalProperty` must not be an empty string ("").  
+ The `conditionalProperty` parameter is another property that is used as part of the conditional expression to evaluate the verification rule. For example, if the rule parameter is <xref:System.Web.UI.VerificationRule.NotEmptyString> then the related property specified by `conditionalProperty` must not be an empty string ("").  
   
  The following default values for the <xref:System.Web.UI.VerificationAttribute> instance are assumed:  
   
--   The <xref:System.Web.UI.VerificationAttribute.VerificationConditionalOperator%2A> property is set as <xref:System.Web.UI.VerificationConditionalOperator>.  
+-   The <xref:System.Web.UI.VerificationAttribute.VerificationConditionalOperator%2A> property is set as <xref:System.Web.UI.VerificationConditionalOperator.Equals>.  
   
 -   The <xref:System.Web.UI.VerificationAttribute.GuidelineUrl%2A> property is set as an empty string ("").  
   
@@ -404,7 +404,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.VerificationAttribute.VerificationConditionalOperator%2A> property can be set when the <xref:System.Web.UI.VerificationAttribute> instance is created, but is optional. If you use a constructor that does not take a `conditionalOperator` parameter, the default value of <xref:System.Web.UI.VerificationConditionalOperator> is used.  
+ The <xref:System.Web.UI.VerificationAttribute.VerificationConditionalOperator%2A> property can be set when the <xref:System.Web.UI.VerificationAttribute> instance is created, but is optional. If you use a constructor that does not take a `conditionalOperator` parameter, the default value of <xref:System.Web.UI.VerificationConditionalOperator.Equals> is used.  
   
  ]]></format>
         </remarks>
@@ -454,7 +454,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.VerificationAttribute.VerificationRule%2A> property can be set when the <xref:System.Web.UI.VerificationAttribute> instance is created, but is optional. If you use a constructor that does not take a `rule` parameter, the default value of <xref:System.Web.UI.VerificationRule> is used.  
+ The <xref:System.Web.UI.VerificationAttribute.VerificationRule%2A> property can be set when the <xref:System.Web.UI.VerificationAttribute> instance is created, but is optional. If you use a constructor that does not take a `rule` parameter, the default value of <xref:System.Web.UI.VerificationRule.Required> is used.  
   
  ]]></format>
         </remarks>

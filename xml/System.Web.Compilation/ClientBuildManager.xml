@@ -711,6 +711,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="PrecompileApplication">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Precompiles an ASP.NET application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled.  
+  
+ The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
+  
+ The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
+  
+ A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PrecompileApplication">
       <MemberSignature Language="C#" Value="public void PrecompileApplication ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrecompileApplication() cil managed" />
@@ -851,28 +874,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="PrecompileApplication">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Precompiles an ASP.NET application.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled.  
-  
- The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
-  
- The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
-  
- A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

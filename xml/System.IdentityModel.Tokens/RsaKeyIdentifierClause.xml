@@ -144,7 +144,7 @@
         <param name="clause">To be added.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified key identifier clause.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is of type <see cref="T:System.IdentityModel.Tokens.RsaKeyIdentifierClause" /> and the arrays returned by the <see cref="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.GetModulus" /> and <see cref="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.GetExponent" /> methods for the <paramref name="keyIdentifierClause" /> parameter are identical to the current instance; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="clause" /> is of type <see cref="T:System.IdentityModel.Tokens.RsaKeyIdentifierClause" /> and the arrays returned by the <see cref="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.GetModulus" /> and <see cref="M:System.IdentityModel.Tokens.RsaKeyIdentifierClause.GetExponent" /> methods for the <paramref name="clause" /> parameter are identical to the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

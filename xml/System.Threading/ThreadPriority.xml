@@ -31,7 +31,7 @@
   
  Threads are scheduled for execution based on their priority. The scheduling algorithm used to determine the order of thread execution varies with each operating system. The operating system can also adjust the thread priority dynamically as the user interface's focus is moved between the foreground and the background.  
   
- The priority of a thread does not affect the thread's state; the state of the thread must be <xref:System.Threading.ThreadState> before the operating system can schedule it.  
+ The priority of a thread does not affect the thread's state; the state of the thread must be <xref:System.Threading.ThreadState.Running> before the operating system can schedule it.  
   
    
   

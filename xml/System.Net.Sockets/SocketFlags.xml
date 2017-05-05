@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example sends data and specifies None for <xref:System.Net.Sockets.SocketFlags>.  
+ The following example sends data and specifies None for <xref:System.Net.Sockets.SocketFlags.None>.  
   
  [!code-cpp[Socket_Sync_Send_Receive#3](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Sync_Send_Receive/CPP/source.cpp#3)]
  [!code-csharp[Socket_Sync_Send_Receive#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Sync_Send_Receive/CS/source.cs#3)]

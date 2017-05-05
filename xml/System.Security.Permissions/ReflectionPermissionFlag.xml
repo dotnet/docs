@@ -41,7 +41,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Security.Permissions.ReflectionPermissionFlag> enumeration to initialize a new instance of the <xref:System.Security.Permissions.ReflectionPermission> class that represents the right to perform restricted member access. This example is part of a larger example that is provided for the <xref:System.Security.Permissions.ReflectionPermission> class.  
+ The following example shows how to use the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> enumeration to initialize a new instance of the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> class that represents the right to perform restricted member access. This example is part of a larger example that is provided for the <xref:System.Security.Permissions.ReflectionPermissionFlag.AllFlags> class.  
   
  For an example that shows how to use the RestrictedMemberAccess flag with Internet code, see [Walkthrough: Emitting Code in Partial Trust Scenarios](~/docs/framework/reflection-and-codedom/walkthrough-emitting-code-in-partial-trust-scenarios.md).  
   

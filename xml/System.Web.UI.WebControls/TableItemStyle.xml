@@ -179,10 +179,10 @@
   
 |Value|Description|  
 |-----------|-----------------|  
-|<xref:System.Web.UI.WebControls.HorizontalAlign>|The horizontal alignment is not set.|  
-|<xref:System.Web.UI.WebControls.HorizontalAlign>|The contents of a cell are left justified within the cell.|  
-|<xref:System.Web.UI.MobileControls.Alignment>|The contents of a cell are centered within the cell.|  
-|<xref:System.Web.UI.WebControls.HorizontalAlign>|The contents of a cell are right justified within the cell.|  
+|<xref:System.Web.UI.WebControls.HorizontalAlign.NotSet>|The horizontal alignment is not set.|  
+|<xref:System.Web.UI.WebControls.HorizontalAlign.Left>|The contents of a cell are left justified within the cell.|  
+|<xref:System.Web.UI.MobileControls.Alignment.Center>|The contents of a cell are centered within the cell.|  
+|<xref:System.Web.UI.WebControls.HorizontalAlign.Right>|The contents of a cell are right justified within the cell.|  
   
  The value of this property is stored in view state.  
   
@@ -277,10 +277,10 @@
   
 |Vertical Alignment|Description|  
 |------------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.VerticalAlign>|The vertical alignment is not set.|  
-|<xref:System.Web.UI.WebControls.VerticalAlign>|The contents of the cell are aligned with the upper edge of the cell.|  
-|<xref:System.Web.UI.WebControls.VerticalAlign>|The contents of the cell are aligned with the center of the cell.|  
-|<xref:System.Web.UI.WebControls.VerticalAlign>|The contents of the cell are aligned with the lower edge of the cell.|  
+|<xref:System.Web.UI.WebControls.VerticalAlign.NotSet>|The vertical alignment is not set.|  
+|<xref:System.Web.UI.WebControls.VerticalAlign.Top>|The contents of the cell are aligned with the upper edge of the cell.|  
+|<xref:System.Web.UI.WebControls.VerticalAlign.Middle>|The contents of the cell are aligned with the center of the cell.|  
+|<xref:System.Web.UI.WebControls.VerticalAlign.Bottom>|The contents of the cell are aligned with the lower edge of the cell.|  
   
  The value of this property is stored in view state.  
   

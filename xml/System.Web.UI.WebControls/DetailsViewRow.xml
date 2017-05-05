@@ -20,20 +20,20 @@
   
 |Row type|Description|  
 |--------------|-----------------|  
-|<xref:System.Web.UI.WebControls.DataControlRowType>|A data row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
-|<xref:System.Web.UI.WebControls.DataControlRowType>|The empty data row in the <xref:System.Web.UI.WebControls.DetailsView> control. The empty data row is displayed in a <xref:System.Web.UI.WebControls.DetailsView> control when there are no records to display.|  
-|<xref:System.Web.UI.WebControls.DataControlRowType>|The footer row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
-|<xref:System.Web.UI.WebControls.DataControlRowType>|The header row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
-|<xref:System.Web.UI.WebControls.DataControlRowType>|A pager row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType.DataRow>|A data row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType.EmptyDataRow>|The empty data row in the <xref:System.Web.UI.WebControls.DetailsView> control. The empty data row is displayed in a <xref:System.Web.UI.WebControls.DetailsView> control when there are no records to display.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType.Footer>|The footer row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType.Header>|The header row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType.Pager>|A pager row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
   
  To determine the row type of a <xref:System.Web.UI.WebControls.DetailsViewRow> object, use the <xref:System.Web.UI.WebControls.DetailsViewRow.RowType%2A> property. A <xref:System.Web.UI.WebControls.DetailsViewRow> object also has a state associated with it. The state can be a bitwise combination of the values in the following table.  
   
 |State value|Description|  
 |-----------------|-----------------|  
-|<xref:System.Web.UI.WebControls.DataControlRowState>|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is an alternate row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
-|<xref:System.Web.UI.WebControls.DataControlRowState>|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is in edit mode.|  
-|<xref:System.Web.UI.WebControls.DataControlRowState>|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is in insert mode.|  
-|<xref:System.Web.UI.WebControls.DataControlRowState>|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is in its normal (default) state.|  
+|<xref:System.Web.UI.WebControls.DataControlRowState.Alternate>|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is an alternate row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowState.Edit>|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is in edit mode.|  
+|<xref:System.Web.UI.WebControls.DataControlRowState.Insert>|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is in insert mode.|  
+|<xref:System.Web.UI.WebControls.DataControlRowState.Normal>|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is in its normal (default) state.|  
   
  To determine the state of a <xref:System.Web.UI.WebControls.DetailsViewRow> object, use the <xref:System.Web.UI.WebControls.DetailsViewRow.RowState%2A> property.  
   

@@ -353,7 +353,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this property cannot find a <xref:System.ComponentModel.LicenseManager.CurrentContext%2A> value, it returns <xref:System.ComponentModel.LicenseUsageMode>.  
+ If this property cannot find a <xref:System.ComponentModel.LicenseManager.CurrentContext%2A> value, it returns <xref:System.ComponentModel.LicenseUsageMode.Runtime>.  
   
  ]]></format>
         </remarks>

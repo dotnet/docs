@@ -164,32 +164,19 @@
   
  The following table shows the combinations that cause <see langword="HasFeature" /> to return <see langword="true" />.  
   
- <list type="table">  
-<listheader>  
-<term> strFeature  
+ <list type="table"><listheader><term> strFeature  
   
- </term>  
-<description> strVersion  
+ </term><description> strVersion  
   
- </description>  
-</listheader>  
-<item>  
-<term> XML  
+ </description></listheader><item><term> XML  
   
- </term>  
-<description> 1.0  
+ </term><description> 1.0  
   
- </description>  
-</item>  
-<item>  
-<term> XML  
+ </description></item><item><term> XML  
   
- </term>  
-<description> 2.0  
+ </term><description> 2.0  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

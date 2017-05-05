@@ -36,7 +36,7 @@
 ## Remarks  
  An <xref:System.UnauthorizedAccessException> exception is typically thrown by a method that wraps a Windows API call. To find the reasons for the exception, examine the text of the exception object's <xref:System.Exception.Message%2A> property.  
   
- <xref:System.UnauthorizedAccessException> uses the `HRESULT``COR_E_UNAUTHORIZEDACCESS`, which has the value 0x80070005.  
+ <xref:System.UnauthorizedAccessException> uses the `HRESULT` `COR_E_UNAUTHORIZEDACCESS`, which has the value 0x80070005.  
   
    
   

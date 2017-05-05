@@ -1497,7 +1497,7 @@ False
 ## Remarks  
  This property corresponds to the "Password" and "pwd" keys within the connection string.  
   
- If <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Password%2A> has not been set and you retrieve the value, the return value is <xref:System.String>. To reset the password for the connection string, pass null to the Item property.  
+ If <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Password%2A> has not been set and you retrieve the value, the return value is <xref:System.String.Empty>. To reset the password for the connection string, pass null to the Item property.  
   
    
   
@@ -2040,40 +2040,23 @@ Unable to retrieve value for null key.
         <summary>Gets or sets a string value that indicates the type system the application expects.</summary>
         <value>The following table shows the possible values for the <see cref="P:System.Data.SqlClient.SqlConnectionStringBuilder.TypeSystemVersion" /> property:  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] 2005  
+ </description></listheader><item><term> [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] 2005  
   
- </term>  
-<description> Uses the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] 2005 type system. No conversions are made for the current version of ADO.NET.  
+ </term><description> Uses the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] 2005 type system. No conversions are made for the current version of ADO.NET.  
   
- </description>  
-</item>  
-<item>  
-<term> SQL Server 2008  
+ </description></item><item><term> SQL Server 2008  
   
- </term>  
-<description> Uses the SQL Server 2008 type system.  
+ </term><description> Uses the SQL Server 2008 type system.  
   
- </description>  
-</item>  
-<item>  
-<term> Latest  
+ </description></item><item><term> Latest  
   
- </term>  
-<description> Use the latest version than this client-server pair can handle. This will automatically move forward as the client and server components are upgraded.  
+ </term><description> Use the latest version than this client-server pair can handle. This will automatically move forward as the client and server components are upgraded.  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

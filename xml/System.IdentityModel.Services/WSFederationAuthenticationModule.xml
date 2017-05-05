@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> is an HTTP module which is used to secure an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] application by enforcing  federated authentication settings on incoming requests. The <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> is the main module that WIF offers out of the box for handling claims-based identity access in [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] applications.  
+    <summary>The <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> is an HTTP module which is used to secure an ASP.NET application by enforcing  federated authentication settings on incoming requests. The <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> is the main module that WIF offers out of the box for handling claims-based identity access in ASP.NET applications.  
   
  The <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> raises several events, which allows ASP.NET developers to change the default behavior and control the details of how authentication and claims processing take place. The <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> functionality is divided into task-specific methods.</summary>
     <remarks>
@@ -182,6 +182,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CanReadSignInResponse">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the specified HTTP request is a WS-Federation sign-in response message. If the message is a WS-Federation sign-out clean-up message (“wsignoutcleanup1.0”), this method processes the request.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A sign-in response message is sent to the relying party (RP) by a security token service (STS) in response to a sign-in request message.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CanReadSignInResponse">
       <MemberSignature Language="C#" Value="public bool CanReadSignInResponse (System.Web.HttpRequestBase request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanReadSignInResponse(class System.Web.HttpRequestBase request) cil managed" />
@@ -1871,6 +1888,25 @@
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SignOut">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Signs out of the current session.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Deletes the current session.  
+  
+ No sign-out request message (“wsignout1.0”) is sent to the security token service (STS). To sign-out at the STS using WS-Federation protocol, use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SignOut">
       <MemberSignature Language="C#" Value="public virtual void SignOut ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SignOut() cil managed" />
@@ -2146,41 +2182,5 @@
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CanReadSignInResponse">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the specified HTTP request is a WS-Federation sign-in response message. If the message is a WS-Federation sign-out clean-up message (“wsignoutcleanup1.0”), this method processes the request.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A sign-in response message is sent to the relying party (RP) by a security token service (STS) in response to a sign-in request message.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SignOut">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Signs out of the current session.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Deletes the current session.  
-  
- No sign-out request message (“wsignout1.0”) is sent to the security token service (STS). To sign-out at the STS using WS-Federation protocol, use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

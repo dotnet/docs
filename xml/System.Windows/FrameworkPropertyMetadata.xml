@@ -832,7 +832,7 @@
 ## Remarks  
  This property reports `false` for one of two possible conditions: either data binding to a dependency property is not allowed because the dependency property is read-only (as reported in the dependency property identifier, not the metadata), or the value of another metadata property, <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A>, is set to `true` in this metadata. This property is exposed as a convenience so that callers do not have to check both <xref:System.Windows.DependencyProperty.ReadOnly%2A> and <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A>.  
   
- If you are attempting to create metadata that specifies that an otherwise read/write property should not support data binding, specify the flag <xref:System.Windows.FrameworkPropertyMetadataOptions> (note the slight naming convention difference versus <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A>).  
+ If you are attempting to create metadata that specifies that an otherwise read/write property should not support data binding, specify the flag <xref:System.Windows.FrameworkPropertyMetadataOptions.NotDataBindable> (note the slight naming convention difference versus <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A>).  
   
 <a name="xamlTextUsage_IsDataBindingAllowed"></a>   
 ## XAML Text Usage  

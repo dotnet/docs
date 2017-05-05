@@ -82,13 +82,13 @@
 ## Remarks  
  Typically, applications do not directly construct <xref:System.Speech.Synthesis.TtsEngine.FragmentState> objects. Instead, <xref:System.Speech.Synthesis.TtsEngine.FragmentState> instances are created by applications using the members of the <xref:System.Speech.Synthesis> name space.  
   
- If the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value specified by the `action` argument is <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction>, the value supplied by the `emphasis` argument is either:  
+ If the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value specified by the `action` argument is <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction.Silence>, the value supplied by the `emphasis` argument is either:  
   
 -   If positive, the time in millisecond to pause  
   
 -   If negative a member of the <xref:System.Speech.Synthesis.TtsEngine.EmphasisBreak>enumeration  
   
- If the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value specified by the `action` argument is not <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction>`emphasis` argument must be of type <xref:System.Speech.Synthesis.TtsEngine.EmphasisWord>.  
+ If the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value specified by the `action` argument is not <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction.Silence>`emphasis` argument must be of type <xref:System.Speech.Synthesis.TtsEngine.EmphasisWord>.  
   
  If the value of the `duration` argument and The <xref:System.Speech.Synthesis.TtsEngine.Prosody.Duration%2A> property or the <xref:System.Speech.Synthesis.TtsEngine.Prosody> object specified by the `prosody` argument differ, the value on the <xref:System.Speech.Synthesis.TtsEngine.Prosody> object is used.  
   
@@ -153,13 +153,13 @@
 ## Remarks  
  The interpretation of the value returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> depends on the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value returned by the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> property on the current <xref:System.Speech.Synthesis.TtsEngine.FragmentState>.  
   
-1.  If the value of <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> is <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction>  
+1.  If the value of <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> is <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction.Silence>  
   
     -   If <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> is positive, the value returned should be interpreted as the length of the silence in milliseconds.  
   
     -   If <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> is negative, the value returned should be interpreted as a member of the <xref:System.Speech.Synthesis.TtsEngine.EmphasisBreak>.  
   
-     Emphasis information returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> when the property <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> is <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> corresponds to the attributes of the `<break>` element of SSML input to a speech synthesizer engine.  
+     Emphasis information returned by <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> when the property <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> is <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction.Silence> corresponds to the attributes of the `<break>` element of SSML input to a speech synthesizer engine.  
   
 2.  For all other values of <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A>, the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> values should be interpreted as being of <xref:System.Speech.Synthesis.TtsEngine.EmphasisWord>.  
   

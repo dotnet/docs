@@ -47,48 +47,27 @@
   
  When you inherit from the <see cref="T:System.Data.IDbCommand" /> interface, you should implement the following constructors:  
   
- <list type="table">  
-<listheader>  
-<term> Item  
+ <list type="table"><listheader><term> Item  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> PrvCommand()  
+ </description></listheader><item><term> PrvCommand()  
   
- </term>  
-<description> Initializes a new instance of the PrvCommand class.  
+ </term><description> Initializes a new instance of the PrvCommand class.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvCommand(string cmdText)  
+ </description></item><item><term> PrvCommand(string cmdText)  
   
- </term>  
-<description> Initializes a new instance of the PrvCommand class with the text of the query.  
+ </term><description> Initializes a new instance of the PrvCommand class with the text of the query.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvCommand(string cmdText, PrvConnection connection)  
+ </description></item><item><term> PrvCommand(string cmdText, PrvConnection connection)  
   
- </term>  
-<description> Initializes a new instance of the PrvCommand class with the text of the query and a PrvConnection.  
+ </term><description> Initializes a new instance of the PrvCommand class with the text of the query and a PrvConnection.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvCommand(string cmdText, PrvConnection connection, PrvTransaction transaction)  
+ </description></item><item><term> PrvCommand(string cmdText, PrvConnection connection, PrvTransaction transaction)  
   
- </term>  
-<description> Initializes a new instance of the PrvCommand class with the text of the query, a PrvConnection, and the PrvTransaction.  
+ </term><description> Initializes a new instance of the PrvCommand class with the text of the query, a PrvConnection, and the PrvTransaction.  
   
- </description>  
-</item>  
-</list></para>
+ </description></item></list></para>
     </block>
   </Docs>
   <Members>
@@ -419,7 +398,7 @@
  When the <xref:System.Data.IDbCommand.CommandType%2A> property is set to `StoredProcedure`, the <xref:System.Data.IDbCommand.CommandText%2A> property should be set to the name of the stored procedure. The command executes this stored procedure when you call <xref:System.Data.IDbCommand.ExecuteReader%2A>.  
   
 > [!NOTE]
->  Use <xref:System.Data.CommandBehavior> to retrieve large values and binary data. Otherwise, an <xref:System.OutOfMemoryException> might occur and the connection will be closed.  
+>  Use <xref:System.Data.CommandBehavior.SequentialAccess> to retrieve large values and binary data. Otherwise, an <xref:System.OutOfMemoryException> might occur and the connection will be closed.  
   
  While the <xref:System.Data.IDataReader> is in use, the associated <xref:System.Data.IDbConnection> is busy serving the <xref:System.Data.IDataReader>. While in this state, no other operations can be performed on the <xref:System.Data.IDbConnection> other than closing it. This is the case until the <xref:System.Data.IDataReader.Close%2A> method of the DataReader is called. If the DataReader is created with <xref:System.Data.CommandBehavior> set to `CloseConnection`, closing the DataReader closes the connection automatically.  
   

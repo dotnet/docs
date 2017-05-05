@@ -218,7 +218,7 @@ ftp://myUrl/%2E%2E/%2E%2E
   
  This constructor does not ensure that the <xref:System.Uri> refers to an accessible resource.  
   
- This constructor assumes that the `string` parameter references an absolute URI and is equivalent to calling the <xref:System.Uri.%23ctor%2A> constructor with <xref:System.UriKind> set to <xref:System.UriKind>. If the `string` parameter passed to the constructor is a relative URI, this constructor will throw a <xref:System.UriFormatException>.  
+ This constructor assumes that the `string` parameter references an absolute URI and is equivalent to calling the <xref:System.Uri.%23ctor%2A> constructor with <xref:System.UriKind> set to <xref:System.UriKind.Absolute>. If the `string` parameter passed to the constructor is a relative URI, this constructor will throw a <xref:System.UriFormatException>.  
   
    
   
@@ -234,14 +234,13 @@ ftp://myUrl/%2E%2E/%2E%2E
         <exception cref="T:System.ArgumentNullException">
           <paramref name="uriString" /> is <see langword="null" />.</exception>
         <exception cref="T:System.UriFormatException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
   
-</para>  
-</block>  
-  
- <paramref name="uriString" /> is empty.  
+</para>
+          </block>
+          <paramref name="uriString" /> is empty.  
   
  -or-  
   
@@ -512,7 +511,7 @@ ftp://myUrl/%2E%2E/%2E%2E
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Relative and absolute URIs have different restrictions on their format. For example, a relative URI does not require a scheme or an authority. The value you specify in `uriKind` must match the type of URI passed in `uriString`. However, if <xref:System.UriKind> is specified, the URI string can be relative or absolute.  
+ Relative and absolute URIs have different restrictions on their format. For example, a relative URI does not require a scheme or an authority. The value you specify in `uriKind` must match the type of URI passed in `uriString`. However, if <xref:System.UriKind.RelativeOrAbsolute> is specified, the URI string can be relative or absolute.  
   
  ]]></format>
         </remarks>
@@ -521,14 +520,13 @@ ftp://myUrl/%2E%2E/%2E%2E
         <exception cref="T:System.ArgumentNullException">
           <paramref name="uriString" /> is <see langword="null" />.</exception>
         <exception cref="T:System.UriFormatException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
   
-</para>  
-</block>  
-  
- <paramref name="uriString" /> contains a relative URI and <paramref name="uriKind" /> is <see cref="F:System.UriKind.Absolute" />.  
+</para>
+          </block>
+          <paramref name="uriString" /> contains a relative URI and <paramref name="uriKind" /> is <see cref="F:System.UriKind.Absolute" />.  
   
  or  
   
@@ -640,12 +638,12 @@ ftp://myUrl/%2E%2E/%2E%2E
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="baseUri" /> is not an absolute <see cref="T:System.Uri" /> instance.</exception>
         <exception cref="T:System.UriFormatException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The URI formed by combining <paramref name="baseUri" /> and <paramref name="relativeUri" /> is empty or contains only spaces.  
   
@@ -753,12 +751,12 @@ ftp://myUrl/%2E%2E/%2E%2E
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="baseUri" /> is not an absolute <see cref="T:System.Uri" /> instance.</exception>
         <exception cref="T:System.UriFormatException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The URI formed by combining <paramref name="baseUri" /> and <paramref name="relativeUri" /> is empty or contains only spaces.  
   
@@ -1270,40 +1268,23 @@ ftp://myUrl/%2E%2E/%2E%2E
         <summary>Compares the specified parts of two URIs using the specified comparison rules.</summary>
         <returns>An <see cref="T:System.Int32" /> value that indicates the lexical relationship between the compared <see cref="T:System.Uri" /> components.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> <paramref name="uri1" /> is less than <paramref name="uri2" />.  
+ </term><description><paramref name="uri1" /> is less than <paramref name="uri2" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <paramref name="uri1" /> equals <paramref name="uri2" />.  
+ </term><description><paramref name="uri1" /> equals <paramref name="uri2" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> <paramref name="uri1" /> is greater than <paramref name="uri2" />.  
+ </term><description><paramref name="uri1" /> is greater than <paramref name="uri2" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1544,12 +1525,12 @@ ftp://myUrl/%2E%2E/%2E%2E
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stringToEscape" /> is <see langword="null" />.</exception>
         <exception cref="T:System.UriFormatException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The length of <paramref name="stringToEscape" /> exceeds 32766 characters.</exception>
       </Docs>
@@ -1647,12 +1628,12 @@ ftp://myUrl/%2E%2E/%2E%2E
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stringToEscape" /> is <see langword="null" />.</exception>
         <exception cref="T:System.UriFormatException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The length of <paramref name="stringToEscape" /> exceeds 32766 characters.</exception>
       </Docs>
@@ -1788,16 +1769,16 @@ ftp://myUrl/%2E%2E/%2E%2E
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.UriComponents>, <xref:System.UriComponents>, <xref:System.UriComponents>, <xref:System.UriComponents>, <xref:System.UriComponents>, <xref:System.UriComponents>, and <xref:System.UriComponents> components do not include the delimiter. You can combine the <xref:System.UriComponents> flag (using the bitwise OR operator) with any of those values to get the value with the delimiter. For all other <xref:System.UriComponents> values, and combinations of values, the delimiters are included in the returned value.  
+ The <xref:System.UriComponents.Query>, <xref:System.UriComponents.Fragment>, <xref:System.UriComponents.Scheme>, <xref:System.UriComponents.UserInfo>, <xref:System.UriComponents.Host>, <xref:System.UriComponents.Port>, and <xref:System.UriComponents.Path> components do not include the delimiter. You can combine the <xref:System.UriComponents.KeepDelimiter> flag (using the bitwise OR operator) with any of those values to get the value with the delimiter. For all other <xref:System.UriComponents> values, and combinations of values, the delimiters are included in the returned value.  
   
- The components are returned in the order that they appear in the URI. For example, if <xref:System.UriComponents> is specified, it appears first.  
+ The components are returned in the order that they appear in the URI. For example, if <xref:System.UriComponents.Scheme> is specified, it appears first.  
   
  When International Resource Identifier (IRI) and Internationalized Domain Name (IDN) support are enabled, the number of characters returned in the <xref:System.String> increases. Punycode names used to support IRI contain only ASCII characters and always start with the xn-- prefix. When IRI and IDN are enabled, Unicode surrogate characters are handled correctly by the <xref:System.Uri.GetComponents%2A> method.  
   
  For more information on IRI support, see the Remarks section for the <xref:System.Uri> class.  
   
 > [!NOTE]
->  If the <xref:System.Uri.GetComponents%2A> method is called with `format` set to <xref:System.UriFormat> , you cannot use the return value as an argument to a <xref:System.Uri.%23ctor%2A> constructor to create an equivalent <xref:System.Uri>.  
+>  If the <xref:System.Uri.GetComponents%2A> method is called with `format` set to <xref:System.UriFormat.Unescaped> , you cannot use the return value as an argument to a <xref:System.Uri.%23ctor%2A> constructor to create an equivalent <xref:System.Uri>.  
   
  ]]></format>
         </remarks>
@@ -1880,15 +1861,15 @@ ftp://myUrl/%2E%2E/%2E%2E
   
  <xref:System.Uri.GetLeftPart%2A> includes delimiters in the following cases:  
   
--   <xref:System.UriPartial> includes the scheme delimiter.  
+-   <xref:System.UriPartial.Scheme> includes the scheme delimiter.  
   
--   <xref:System.UriPartial> does not include the path delimiter.  
+-   <xref:System.UriPartial.Authority> does not include the path delimiter.  
   
--   <xref:System.UriPartial> includes any delimiters in the original URI up to the query or fragment delimiter.  
+-   <xref:System.UriPartial.Path> includes any delimiters in the original URI up to the query or fragment delimiter.  
   
--   <xref:System.UriPartial> includes the <xref:System.UriPartial>, plus the query and its delimiter.  
+-   <xref:System.UriPartial.Query> includes the <xref:System.UriPartial.Path>, plus the query and its delimiter.  
   
- The following examples show a URI and the results of calling <xref:System.Uri.GetLeftPart%2A> with <xref:System.UriPartial>, <xref:System.UriPartial>, <xref:System.UriPartial>, or <xref:System.UriPartial>.  
+ The following examples show a URI and the results of calling <xref:System.Uri.GetLeftPart%2A> with <xref:System.UriPartial.Scheme>, <xref:System.UriPartial.Authority>, <xref:System.UriPartial.Path>, or <xref:System.UriPartial.Query>.  
   
 |URI|Scheme|Authority|Path|Query|  
 |---------|------------|---------------|----------|-----------|  

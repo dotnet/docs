@@ -86,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The property should be accessed only after the <xref:System.ServiceModel.ServiceHost> has successfully opened. When the <xref:System.ServiceModel.ServiceHost> is in <xref:System.ServiceModel.CommunicationState> state, the <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> is being generated and added to the collection.  
+ The property should be accessed only after the <xref:System.ServiceModel.ServiceHost> has successfully opened. When the <xref:System.ServiceModel.ServiceHost> is in <xref:System.ServiceModel.CommunicationState.Opening> state, the <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> is being generated and added to the collection.  
   
  ]]></format>
         </remarks>

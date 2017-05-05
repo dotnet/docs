@@ -32,7 +32,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an open connection to a [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] database. This class cannot be inherited.</summary>
+    <summary>Represents an open connection to a SQL Server database. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -1040,7 +1040,7 @@ End Module
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can set the amount of time a connection waits to time out by using the `Connect``Timeout` or `Connection Timeout` keywords in the connection string. A value of 0 indicates no limit, and should be avoided in a <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> because an attempt to connect waits indefinitely.  
+ You can set the amount of time a connection waits to time out by using the `Connect Timeout` or `Connection Timeout` keywords in the connection string. A value of 0 indicates no limit, and should be avoided in a <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> because an attempt to connect waits indefinitely.  
   
    
   
@@ -1433,6 +1433,24 @@ End Module
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns schema information for the data source of this <see cref="T:System.Data.SqlClient.SqlConnection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to retrieve schema information for more than one versioned stored procedure, the schema for the latest one only is returned. For more information on versioned stored procedures, see [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSchema">
       <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchema() cil managed" />
@@ -1886,7 +1904,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After calling <xref:System.Data.SqlClient.SqlConnection.OpenAsync%2A>, <xref:System.Data.SqlClient.SqlConnection.State%2A> must return <xref:System.Data.ConnectionState> until the returned <xref:System.Threading.Tasks.Task> is completed. Then, if the connection was successful, <xref:System.Data.SqlClient.SqlConnection.State%2A> must return <xref:System.Data.ConnectionState>. If the connection fails, <xref:System.Data.SqlClient.SqlConnection.State%2A> must return <xref:System.Data.ConnectionState>.  
+ After calling <xref:System.Data.SqlClient.SqlConnection.OpenAsync%2A>, <xref:System.Data.SqlClient.SqlConnection.State%2A> must return <xref:System.Data.ConnectionState.Connecting> until the returned <xref:System.Threading.Tasks.Task> is completed. Then, if the connection was successful, <xref:System.Data.SqlClient.SqlConnection.State%2A> must return <xref:System.Data.ConnectionState.Open>. If the connection fails, <xref:System.Data.SqlClient.SqlConnection.State%2A> must return <xref:System.Data.ConnectionState.Closed>.  
   
  A call to <xref:System.Data.SqlClient.SqlConnection.Close%2A> will attempt to cancel or close the corresponding <xref:System.Data.SqlClient.SqlConnection.OpenAsync%2A> call.  
   
@@ -2255,23 +2273,5 @@ class Program {
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetSchema">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns schema information for the data source of this <see cref="T:System.Data.SqlClient.SqlConnection" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you attempt to retrieve schema information for more than one versioned stored procedure, the schema for the latest one only is returned. For more information on versioned stored procedures, see [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] Books Online.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

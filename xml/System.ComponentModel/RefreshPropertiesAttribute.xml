@@ -105,7 +105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Specify this attribute on a property to query again and refresh all properties in the <xref:System.Windows.Forms.PropertyGrid> when the property value changes. The <xref:System.Windows.Forms.PropertyGrid> caches data. The <xref:System.ComponentModel.RefreshProperties> mode causes the Properties window to query each property again and refresh its view.  
+ Specify this attribute on a property to query again and refresh all properties in the <xref:System.Windows.Forms.PropertyGrid> when the property value changes. The <xref:System.Windows.Forms.PropertyGrid> caches data. The <xref:System.ComponentModel.RefreshProperties.All> mode causes the Properties window to query each property again and refresh its view.  
   
  ]]></format>
         </remarks>

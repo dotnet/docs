@@ -27,7 +27,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.TcpListener> class provides simple methods that listen for and accept incoming connection requests in blocking synchronous mode. You can use either a <xref:System.Net.Sockets.TcpClient> or a <xref:System.Net.Sockets.Socket> to connect with a <xref:System.Net.Sockets.TcpListener>. Create a <xref:System.Net.Sockets.TcpListener> using an <xref:System.Net.IPEndPoint>, a Local IP address and port number, or just a port number. Specify <xref:System.Net.IPAddress.Any> for the local IP address and 0 for the local port number if you want the underlying service provider to assign those values for you. If you choose to do this, you can use the <xref:System.Net.Sockets.TcpListener.LocalEndpoint%2A> property to identify the assigned information, after the socket has connected.  
   
- Use the <xref:System.Net.Sockets.TcpListener.Start%2A> method to begin listening for incoming connection requests. <xref:System.Net.Sockets.TcpListener.Start%2A> will queue incoming connections until you either call the <xref:System.Net.Sockets.TcpListener.Stop%2A> method or it has queued <xref:System.Net.Sockets.SocketOptionName>. Use either <xref:System.Net.Sockets.TcpListener.AcceptSocket%2A> or <xref:System.Net.Sockets.TcpListener.AcceptTcpClient%2A> to pull a connection from the incoming connection request queue. These two methods will block. If you want to avoid blocking, you can use the <xref:System.Net.Sockets.TcpListener.Pending%2A> method first to determine if connection requests are available in the queue.  
+ Use the <xref:System.Net.Sockets.TcpListener.Start%2A> method to begin listening for incoming connection requests. <xref:System.Net.Sockets.TcpListener.Start%2A> will queue incoming connections until you either call the <xref:System.Net.Sockets.TcpListener.Stop%2A> method or it has queued <xref:System.Net.Sockets.SocketOptionName.MaxConnections>. Use either <xref:System.Net.Sockets.TcpListener.AcceptSocket%2A> or <xref:System.Net.Sockets.TcpListener.AcceptTcpClient%2A> to pull a connection from the incoming connection request queue. These two methods will block. If you want to avoid blocking, you can use the <xref:System.Net.Sockets.TcpListener.Pending%2A> method first to determine if connection requests are available in the queue.  
   
  Call the <xref:System.Net.Sockets.TcpListener.Stop%2A> method to close the <xref:System.Net.Sockets.TcpListener>.  
   
@@ -450,9 +450,9 @@
 ## Remarks  
  The <xref:System.Net.Sockets.TcpListener.AllowNatTraversal%2A> method is used to enable or disable NAT traversal for a <xref:System.Net.Sockets.TcpListener> instance. NAT traversal may be provided using Teredo, 6to4, or an ISATAP tunnel.  
   
- When the `allowed` parameter is false, the <xref:System.Net.Sockets.SocketOptionName> option on the associated socket is set to <xref:System.Net.Sockets.IPProtectionLevel>. This explicitly disables NAT traversal for a <xref:System.Net.Sockets.TcpListener> instance.  
+ When the `allowed` parameter is false, the <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel> option on the associated socket is set to <xref:System.Net.Sockets.IPProtectionLevel.EdgeRestricted>. This explicitly disables NAT traversal for a <xref:System.Net.Sockets.TcpListener> instance.  
   
- When the `allowed` parameter is true, the <xref:System.Net.Sockets.SocketOptionName> option on the associated socket is set to <xref:System.Net.Sockets.IPProtectionLevel>. This may allow NAT traversal for a <xref:System.Net.Sockets.TcpListener> depending on firewall rules in place on the system.  
+ When the `allowed` parameter is true, the <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel> option on the associated socket is set to <xref:System.Net.Sockets.IPProtectionLevel.Unrestricted>. This may allow NAT traversal for a <xref:System.Net.Sockets.TcpListener> depending on firewall rules in place on the system.  
   
  The <xref:System.Net.Sockets.TcpListener.AllowNatTraversal%2A> method must be invoked prior to calling the <xref:System.Net.Sockets.TcpListener.Start%2A> method to begin listening for incoming connection requests (before the socket is bound). If <xref:System.Net.Sockets.TcpListener.AllowNatTraversal%2A> method is called after the <xref:System.Net.Sockets.TcpListener.Start%2A> method, then an <xref:System.InvalidOperationException> will be thrown.  
   
@@ -915,7 +915,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Net.Sockets.TcpListener.Server%2A> property. The underlying <xref:System.Net.Sockets.Socket> is retrieved and the <xref:System.Net.Sockets.SocketOptionName><xref:System.Net.Sockets.Socket> option is configured to time out after 10 seconds if data still remains in the network buffer after the connection is closed.  
+ The following code example demonstrates the use of the <xref:System.Net.Sockets.TcpListener.Server%2A> property. The underlying <xref:System.Net.Sockets.Socket> is retrieved and the <xref:System.Net.Sockets.SocketOptionName.Linger><xref:System.Net.Sockets.Socket> option is configured to time out after 10 seconds if data still remains in the network buffer after the connection is closed.  
   
  [!code-csharp[TcpListenerProtectedMembers1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/TcpListenerProtectedMembers1/CS/source.cs#1)]
  [!code-vb[TcpListenerProtectedMembers1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/TcpListenerProtectedMembers1/VB/source.vb#1)]  

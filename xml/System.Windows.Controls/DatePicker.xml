@@ -1166,7 +1166,7 @@ DatePicker with dates that are not selectable
    
   
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.DatePicker> that has the date August 10, 2009 selected.  The example also binds the <xref:System.Windows.Controls.DatePicker.Text%2A?displayProperty=fullName> property to a <xref:System.Windows.Controls.TextBlock>. Because the <xref:System.Windows.Controls.DatePicker.SelectedDateFormat%2A> property is set to <xref:System.Windows.Controls.DatePickerFormat>, the <xref:System.Windows.Controls.DatePicker> and <xref:System.Windows.Controls.TextBlock> displays the date using unabbreviated days of the week and month names even if the user enters a short form of a date.  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> that has the date August 10, 2009 selected.  The example also binds the <xref:System.Windows.Controls.DatePicker.Text%2A?displayProperty=fullName> property to a <xref:System.Windows.Controls.TextBlock>. Because the <xref:System.Windows.Controls.DatePicker.SelectedDateFormat%2A> property is set to <xref:System.Windows.Controls.DatePickerFormat.Long>, the <xref:System.Windows.Controls.DatePicker> and <xref:System.Windows.Controls.TextBlock> displays the date using unabbreviated days of the week and month names even if the user enters a short form of a date.  
   
  [!code-xml[DatePickerSnippets#5](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#5)]  
   

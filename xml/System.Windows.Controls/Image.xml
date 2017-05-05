@@ -376,7 +376,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A value of <xref:System.Windows.Media.Stretch> will cause your image to stretch to completely fill the output area. When the output area and the image have different aspect ratios, the image is distorted by this stretching. To make an <xref:System.Windows.Controls.Image> preserve the aspect ratio of the image, set this property to <xref:System.Windows.Media.Stretch> (default) or <xref:System.Windows.Media.Stretch>.  
+ A value of <xref:System.Windows.Media.Stretch.Fill> will cause your image to stretch to completely fill the output area. When the output area and the image have different aspect ratios, the image is distorted by this stretching. To make an <xref:System.Windows.Controls.Image> preserve the aspect ratio of the image, set this property to <xref:System.Windows.Media.Stretch.Uniform> (default) or <xref:System.Windows.Media.Stretch.UniformToFill>.  
   
 <a name="dependencyPropertyInfo_Stretch"></a>   
 ## Dependency Property Information  

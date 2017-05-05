@@ -56,7 +56,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default media values are <xref:System.Security.Permissions.MediaPermissionAudio>, <xref:System.Security.Permissions.MediaPermissionImage>, and <xref:System.Security.Permissions.MediaPermissionVideo>.  
+ The default media values are <xref:System.Security.Permissions.MediaPermissionAudio.AllAudio>, <xref:System.Security.Permissions.MediaPermissionImage.NoImage>, and <xref:System.Security.Permissions.MediaPermissionVideo.NoVideo>.  
   
    
   
@@ -89,7 +89,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default is <xref:System.Security.Permissions.MediaPermissionAudio>.  
+ The default is <xref:System.Security.Permissions.MediaPermissionAudio.SafeAudio>.  
   
    
   
@@ -150,7 +150,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default is <xref:System.Security.Permissions.MediaPermissionImage>.  
+ The default is <xref:System.Security.Permissions.MediaPermissionImage.SafeImage>.  
   
    
   
@@ -183,7 +183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default is <xref:System.Security.Permissions.MediaPermissionVideo>.  
+ The default is <xref:System.Security.Permissions.MediaPermissionVideo.SafeVideo>.  
   
    
   

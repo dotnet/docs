@@ -569,32 +569,19 @@
         <summary>Gets the error message and the string representation of the invalid argument value, or only the error message if the argument value is null.</summary>
         <value>The text message for this exception. The value of this property takes one of two forms, as follows.  
   
- <list type="table">  
-<listheader>  
-<term> Condition  
+ <list type="table"><listheader><term> Condition  
   
- </term>  
-<description> Value  
+ </term><description> Value  
   
- </description>  
-</listheader>  
-<item>  
-<term> The <paramref name="actualValue" /> is <see langword="null" />.  
+ </description></listheader><item><term> The <paramref name="actualValue" /> is <see langword="null" />.  
   
- </term>  
-<description> The <paramref name="message" /> string passed to the constructor.  
+ </term><description> The <paramref name="message" /> string passed to the constructor.  
   
- </description>  
-</item>  
-<item>  
-<term> The <paramref name="actualValue" /> is not <see langword="null" />.  
+ </description></item><item><term> The <paramref name="actualValue" /> is not <see langword="null" />.  
   
- </term>  
-<description> The <paramref name="message" /> string appended with the string representation of the invalid argument value.  
+ </term><description> The <paramref name="message" /> string appended with the string representation of the invalid argument value.  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

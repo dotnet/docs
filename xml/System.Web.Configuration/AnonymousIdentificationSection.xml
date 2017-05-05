@@ -82,10 +82,10 @@
 ## Remarks  
  The <xref:System.Web.Configuration.AnonymousIdentificationSection.Cookieless%2A> property defines when a cookie should be used to maintain information about the user.  
   
- When the <xref:System.Web.Configuration.AnonymousIdentificationSection.Cookieless%2A> property is set to <xref:System.Web.HttpCookieMode>, the user's identifier is stored in a cookie. For more information, refer to <xref:System.Web.HttpCookieMode>.  
+ When the <xref:System.Web.Configuration.AnonymousIdentificationSection.Cookieless%2A> property is set to <xref:System.Web.HttpCookieMode.UseCookies>, the user's identifier is stored in a cookie. For more information, refer to <xref:System.Web.HttpCookieMode>.  
   
 > [!NOTE]
->  ASP.NET stores the user's anonymous identifier within the URI path (that is, it runs in cookieless mode) if the <xref:System.Web.Configuration.AnonymousIdentificationSection.Cookieless%2A> property is set to one of the following values: <xref:System.Web.HttpCookieMode>; <xref:System.Web.HttpCookieMode> when the browser profile indicates that cookies are not supported; or <xref:System.Web.HttpCookieMode> when the auto-detection process determines that the browser does not support cookies. Finally, if the size of the URI and the anonymous identifier exceeds the allowed length, the anonymous identifier is not applied.  
+>  ASP.NET stores the user's anonymous identifier within the URI path (that is, it runs in cookieless mode) if the <xref:System.Web.Configuration.AnonymousIdentificationSection.Cookieless%2A> property is set to one of the following values: <xref:System.Web.HttpCookieMode.UseUri>; <xref:System.Web.HttpCookieMode.UseDeviceProfile> when the browser profile indicates that cookies are not supported; or <xref:System.Web.HttpCookieMode.AutoDetect> when the auto-detection process determines that the browser does not support cookies. Finally, if the size of the URI and the anonymous identifier exceeds the allowed length, the anonymous identifier is not applied.  
   
    
   

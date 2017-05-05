@@ -3278,7 +3278,7 @@ The goal is to save this file, then open and decode it as a binary stream.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default normalization form is <xref:System.Text.NormalizationForm>, which uses full canonical decomposition, followed by the replacement of sequences with their primary composites, if possible.  
+ The default normalization form is <xref:System.Text.NormalizationForm.FormC>, which uses full canonical decomposition, followed by the replacement of sequences with their primary composites, if possible.  
   
  ]]></format>
         </remarks>
@@ -3318,7 +3318,7 @@ The goal is to save this file, then open and decode it as a binary stream.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default normalization form is <xref:System.Text.NormalizationForm>, which uses full canonical decomposition, followed by the replacement of sequences with their primary composites, if possible.  
+ The default normalization form is <xref:System.Text.NormalizationForm.FormC>, which uses full canonical decomposition, followed by the replacement of sequences with their primary composites, if possible.  
   
  ]]></format>
         </remarks>

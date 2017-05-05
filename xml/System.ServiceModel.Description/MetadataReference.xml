@@ -27,7 +27,7 @@
 ## Remarks  
  When using [!INCLUDE[indigo1](~/includes/indigo1-md.md)], a metadata endpoint can be created for any service. The endpoint can be queried for metadata that allows a client to communicate with the endpoint. For example, a metadata endpoint can return a Web Services Description Language (WSDL) document that describes the methods and data types of a service.  
   
- The <xref:System.ServiceModel.Description.MetadataReference> class is used with WS-MetadataExchange responses where references are directly encoded as `<mex:MetadataReference>` or `<mex:MetadataLocation``>`.  
+ The <xref:System.ServiceModel.Description.MetadataReference> class is used with WS-MetadataExchange responses where references are directly encoded as `<mex:MetadataReference>` or `<mex:MetadataLocation>`.  
   
  Metadata documents can reference many other documents that describe types and those documents can contain even more references. The <xref:System.ServiceModel.Description.MetadataReference> class represents a single endpoint that returns a document that can itself contain multiple WSDL or XSD items as well as other metadata references to other WS-MetadataExchange endpoints.  
   

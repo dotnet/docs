@@ -63,9 +63,9 @@
   
 |XmlNamespaceScope value|xmlns:xml|xmlns:xmlns|xmlns=""|  
 |-----------------------------|---------------|-----------------|---------------|  
-|<xref:System.Xml.XmlNamespaceScope>|yes|no|no|  
-|<xref:System.Xml.XmlNamespaceScope>|no|no|no|  
-|<xref:System.Xml.XmlNamespaceScope>|no|no|yes|  
+|<xref:System.Xml.XmlNamespaceScope.All>|yes|no|no|  
+|<xref:System.Xml.XmlNamespaceScope.ExcludeXml>|no|no|no|  
+|<xref:System.Xml.XmlNamespaceScope.Local>|no|no|yes|  
   
  ]]></format>
         </remarks>

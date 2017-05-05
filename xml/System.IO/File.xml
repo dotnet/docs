@@ -628,7 +628,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare>; no other process or code can access the created file until the original file handle is closed.  
+ The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare.None>; no other process or code can access the created file until the original file handle is closed.  
   
  This method is equivalent to the <xref:System.IO.File.Create%28System.String%2CSystem.Int32%29> method overload using the default buffer size.  
   
@@ -702,7 +702,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare>; no other process or code can access the created file until the original file handle is closed.  
+ The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare.None>; no other process or code can access the created file until the original file handle is closed.  
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
@@ -886,7 +886,7 @@
       </Parameters>
       <Docs>
         <param name="path">The file to be opened for writing.</param>
-        <summary>Creates or opens a file for writing UTF-8 encoded text.</summary>
+        <summary>Creates or opens a file for writing UTF-8 encoded text. If the file already exists, its contents are overwritten.</summary>
         <returns>A <see cref="T:System.IO.StreamWriter" /> that writes to the specified file using UTF-8 encoding.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1205,6 +1205,24 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAccessControl">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Security.AccessControl.FileSecurity" /> object that encapsulates the access control list (ACL) entries for a specified file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.FileInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for a specified file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetAccessControl">
       <MemberSignature Language="C#" Value="public static System.Security.AccessControl.FileSecurity GetAccessControl (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.FileSecurity GetAccessControl(string path) cil managed" />
@@ -1233,7 +1251,7 @@
   
  An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
- In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
+ In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes>, deny <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> on the parent directory.  
   
    
   
@@ -1295,7 +1313,7 @@
   
  An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
- In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
+ In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes>, deny <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> on the parent directory.  
   
  ]]></format>
         </remarks>
@@ -2094,7 +2112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with a <xref:System.IO.FileMode> value of <xref:System.IO.FileMode>, a <xref:System.IO.FileAccess> value of <xref:System.IO.FileAccess> and a <xref:System.IO.FileShare> value of <xref:System.IO.FileShare>.  
+ This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with a <xref:System.IO.FileMode> value of <xref:System.IO.FileMode.Open>, a <xref:System.IO.FileAccess> value of <xref:System.IO.FileAccess.Read> and a <xref:System.IO.FileShare> value of <xref:System.IO.FileShare.Read>.  
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
@@ -2224,7 +2242,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with file mode set to <xref:System.IO.FileMode>, the access set to <xref:System.IO.FileAccess>, and the share mode set to <xref:System.IO.FileShare>.  
+ This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with file mode set to <xref:System.IO.FileMode.OpenOrCreate>, the access set to <xref:System.IO.FileAccess.Write>, and the share mode set to <xref:System.IO.FileShare.None>.  
   
  The <xref:System.IO.File.OpenWrite%2A> method opens a file if one already exists for the file path, or creates a new file if one does not exist. For an existing file, it does not append the new text to the existing text. Instead, it overwrites the existing characters with the new characters. If you overwrite a longer string (such as “This is a test of the OpenWrite method”) with a shorter string (such as “Second run”), the file will contain a mix of the strings (“Second runtest of the OpenWrite method”).  
   
@@ -2787,6 +2805,24 @@
  The caller does not have the required permission.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Replace">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces the contents of a specified file with the contents of another file, deleting the original file, and creating a backup of the replaced file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.File.Replace%2A> methods replace the contents of a specified file with the contents of another file.  They also create a backup of the file that was replaced.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public static void Replace (string sourceFileName, string destinationFileName, string destinationBackupFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Replace(string sourceFileName, string destinationFileName, string destinationBackupFileName) cil managed" />
@@ -3002,7 +3038,7 @@
   
 5.  Set the destination <xref:System.Security.AccessControl.FileSecurity> object to the destination file using the <xref:System.IO.File.SetAccessControl%2A> method.  
   
- In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
+ In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes>, deny <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> on the parent directory.  
   
    
   
@@ -3070,7 +3106,7 @@
 ## Remarks  
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- Certain file attributes, such as <xref:System.IO.FileAttributes> and <xref:System.IO.FileAttributes>, can be combined. Other attributes, such as <xref:System.IO.FileAttributes>, must be used alone.  
+ Certain file attributes, such as <xref:System.IO.FileAttributes.Hidden> and <xref:System.IO.FileAttributes.ReadOnly>, can be combined. Other attributes, such as <xref:System.IO.FileAttributes.Normal>, must be used alone.  
   
  It is not possible to change the compression status of a <xref:System.IO.File> object using the <xref:System.IO.File.SetAttributes%2A> method.  
   
@@ -3955,41 +3991,5 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to write to a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Replace">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Replaces the contents of a specified file with the contents of another file, deleting the original file, and creating a backup of the replaced file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IO.File.Replace%2A> methods replace the contents of a specified file with the contents of another file.  They also create a backup of the file that was replaced.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetAccessControl">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Security.AccessControl.FileSecurity" /> object that encapsulates the access control list (ACL) entries for a specified file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.IO.FileInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for a specified file.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

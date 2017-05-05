@@ -142,6 +142,25 @@
         <exception cref="T:System.ArgumentException">The selected value starts with the reserved prefix "config" or "lock".</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BaseAdd">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Configuration.ConfigurationElement" /> to an <see cref="T:System.Configuration.ConfigurationElementCollection" /> instance when overridden in a derived class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.ConfigurationElementCollection.BaseAdd%2A> method to add a new <xref:System.Configuration.ConfigurationElement> to the collection. Override in a derived class if custom behavior is required when the element is added.  
+  
+ When adding, an element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BaseAdd">
       <MemberSignature Language="C#" Value="protected virtual void BaseAdd (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void BaseAdd(class System.Configuration.ConfigurationElement element) cil managed" />
@@ -582,7 +601,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The type will be either a <xref:System.Configuration.ConfigurationElementCollectionType> or an <xref:System.Configuration.ConfigurationElementCollectionType> field. For more information, see <xref:System.Configuration.ConfigurationElementCollectionType>.  
+ The type will be either a <xref:System.Configuration.ConfigurationElementCollectionType.BasicMap> or an <xref:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap> field. For more information, see <xref:System.Configuration.ConfigurationElementCollectionType>.  
   
    
   
@@ -637,6 +656,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateNewElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, creates a new <see cref="T:System.Configuration.ConfigurationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override the <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> method to create custom <xref:System.Configuration.ConfigurationElement> objects of a specific type. When a collection is loaded from the configuration file, <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> is called to create individual elements. <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> must be overridden in classes that derive from the <xref:System.Configuration.ConfigurationElementCollection> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateNewElement">
       <MemberSignature Language="C#" Value="protected abstract System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
@@ -1214,7 +1250,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you add a duplicate element, an exception is thrown if the <xref:System.Configuration.ConfigurationElementCollection.CollectionType%2A> value of the element is either <xref:System.Configuration.ConfigurationElementCollectionType> or <xref:System.Configuration.ConfigurationElementCollectionType>.  
+ When you add a duplicate element, an exception is thrown if the <xref:System.Configuration.ConfigurationElementCollection.CollectionType%2A> value of the element is either <xref:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap> or <xref:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMapAlternate>.  
   
  Note that elements with identical keys and values are not considered duplicates, and are accepted silently. Only elements with identical keys but different values are considered duplicates. For more information, see the Remarks section for the <xref:System.Configuration.ConfigurationElementCollection.BaseAdd%2A> method.  
   
@@ -1250,47 +1286,11 @@
 ## Remarks  
  The <xref:System.Configuration.ConfigurationElementCollection.Unmerge%2A> method reverses the effect of merging configuration information from different levels of the configuration hierarchy. This allows configuration set at the current hierarchy level to be differentiated from that set at parent levels, before serialization.  
   
- <xref:System.Configuration.ConfigurationElementCollection.Unmerge%2A> is called by the system on a new temporary element to compare the parent object and the source object. Based on the <xref:System.Configuration.ConfigurationSaveMode> value, it then sets the temporary object to contain the data that needs to be serialized. For details about save modes, see <xref:System.Configuration.ConfigurationSaveMode>.  
+ <xref:System.Configuration.ConfigurationElementCollection.Unmerge%2A> is called by the system on a new temporary element to compare the parent object and the source object. Based on the <xref:System.Configuration.ConfigurationSaveMode> value, it then sets the temporary object to contain the data that needs to be serialized. For details about save modes, see <xref:System.Configuration.ConfigurationSaveMode.Minimal>.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateNewElement">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, creates a new <see cref="T:System.Configuration.ConfigurationElement" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Override the <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> method to create custom <xref:System.Configuration.ConfigurationElement> objects of a specific type. When a collection is loaded from the configuration file, <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> is called to create individual elements. <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> must be overridden in classes that derive from the <xref:System.Configuration.ConfigurationElementCollection> class.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BaseAdd">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Configuration.ConfigurationElement" /> to an <see cref="T:System.Configuration.ConfigurationElementCollection" /> instance when overridden in a derived class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Configuration.ConfigurationElementCollection.BaseAdd%2A> method to add a new <xref:System.Configuration.ConfigurationElement> to the collection. Override in a derived class if custom behavior is required when the element is added.  
-  
- When adding, an element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

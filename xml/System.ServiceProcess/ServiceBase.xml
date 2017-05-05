@@ -632,7 +632,7 @@
 > [!CAUTION]
 >  Do not use the constructor to perform processing that should be in <xref:System.ServiceProcess.ServiceBase.OnStart%2A>. Use <xref:System.ServiceProcess.ServiceBase.OnStart%2A> to handle all initialization of your service. The constructor is called when the application's executable runs, not when the service runs. The executable runs before <xref:System.ServiceProcess.ServiceBase.OnStart%2A>. When you continue, for example, the constructor is not called again because the SCM already holds the object in memory. If <xref:System.ServiceProcess.ServiceBase.OnStop%2A> releases resources allocated in the constructor rather than in <xref:System.ServiceProcess.ServiceBase.OnStart%2A>, the needed resources would not be created again the second time the service is called.  
   
- Services can be set to start automatically when the computer reboots by setting the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> on the service's installer to <xref:System.ServiceProcess.ServiceStartMode>. In such a situation, <xref:System.ServiceProcess.ServiceBase.OnStart%2A> would be called at system startup.  
+ Services can be set to start automatically when the computer reboots by setting the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> on the service's installer to <xref:System.ServiceProcess.ServiceStartMode.Automatic>. In such a situation, <xref:System.ServiceProcess.ServiceBase.OnStart%2A> would be called at system startup.  
   
  <xref:System.ServiceProcess.ServiceBase.OnStart%2A> is expected to be overridden in the derived class. For the service to be useful, <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> should both be implemented in your service class.  
   

@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies a mapping on a per-assembly basis between a XAML namespace and a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] namespace, which is then used for type resolution by a XAML object writer or XAML schema context.</summary>
+    <summary>Specifies a mapping on a per-assembly basis between a XAML namespace and a CLR namespace, which is then used for type resolution by a XAML object writer or XAML schema context.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

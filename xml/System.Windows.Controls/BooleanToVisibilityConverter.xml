@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Controls.BooleanToVisibilityConverter> class to convert a Boolean to and from a <xref:System.Windows.Visibility> value. The <xref:System.Windows.Controls.BooleanToVisibilityConverter.Convert%2A> method returns <xref:System.Windows.Visibility?displayProperty=fullName> when `true` is passed in or <xref:System.Windows.Visibility?displayProperty=fullName> when `false` is passed in. Note that the <xref:System.Windows.Visibility?displayProperty=fullName> value hides the control and does not reserve space for it in a layout. When you call the <xref:System.Windows.Controls.BooleanToVisibilityConverter.ConvertBack%2A> method and specify a reference to an object, it returns `true` if the object is <xref:System.Windows.Visibility>; otherwise, it returns `false`.  
+ Use the <xref:System.Windows.Controls.BooleanToVisibilityConverter> class to convert a Boolean to and from a <xref:System.Windows.Visibility> value. The <xref:System.Windows.Controls.BooleanToVisibilityConverter.Convert%2A> method returns <xref:System.Windows.Visibility?displayProperty=fullName> when `true` is passed in or <xref:System.Windows.Visibility?displayProperty=fullName> when `false` is passed in. Note that the <xref:System.Windows.Visibility?displayProperty=fullName> value hides the control and does not reserve space for it in a layout. When you call the <xref:System.Windows.Controls.BooleanToVisibilityConverter.ConvertBack%2A> method and specify a reference to an object, it returns `true` if the object is <xref:System.Windows.Visibility.Visible>; otherwise, it returns `false`.  
   
  ]]></format>
     </remarks>

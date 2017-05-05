@@ -1232,7 +1232,7 @@ Directory::CreateDirectory("Public\\Html");
   
  An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
- In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
+ In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes>, deny <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> on the parent directory.  
   
    
   
@@ -1293,7 +1293,7 @@ Directory::CreateDirectory("Public\\Html");
   
  An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
- In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
+ In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes>, deny <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> on the parent directory.  
   
  ]]></format>
         </remarks>
@@ -1593,7 +1593,7 @@ Directory::CreateDirectory("Public\\Html");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns all subdirectories directly under the specified directory that match the specified search pattern. If the specified directory has no subdirectories, or no subdirectories match the `searchPattern` parameter, this method returns an empty array. Only the top directory is searched. If you want to search the subdirectories as well, use the <xref:System.IO.Directory.GetDirectories%28System.String%2CSystem.String%2CSystem.IO.SearchOption%29> method and specify <xref:System.IO.SearchOption> in the `searchOption` parameter.  
+ This method returns all subdirectories directly under the specified directory that match the specified search pattern. If the specified directory has no subdirectories, or no subdirectories match the `searchPattern` parameter, this method returns an empty array. Only the top directory is searched. If you want to search the subdirectories as well, use the <xref:System.IO.Directory.GetDirectories%28System.String%2CSystem.String%2CSystem.IO.SearchOption%29> method and specify <xref:System.IO.SearchOption.AllDirectories> in the `searchOption` parameter.  
   
  `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
@@ -2768,7 +2768,7 @@ Directory::CreateDirectory("Public\\Html");
   
 5.  Set the destination <xref:System.Security.AccessControl.DirectorySecurity> object to the destination file using the <xref:System.IO.Directory.SetAccessControl%2A> method.  
   
- In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
+ In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes>, deny <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> on the parent directory.  
   
    
   

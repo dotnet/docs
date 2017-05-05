@@ -35,7 +35,7 @@
 ## Remarks  
  <xref:System.ComponentModel.EditorBrowsableAttribute> is a hint to a designer indicating whether a property or method is to be displayed. You can use this type in a visual designer or text editor to determine what is visible to the user. For example, the IntelliSense engine in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses this attribute to determine whether to show a property or method.  
   
- In [!INCLUDE[csprcs](~/includes/csprcs-md.md)], you can control when advanced properties appear in IntelliSense and the Properties Window with the **Hide Advanced Members** setting under **Tools &#124; Options &#124; Text Editor &#124; C#**. The corresponding <xref:System.ComponentModel.EditorBrowsableState> is <xref:System.ComponentModel.EditorBrowsableState>.  
+ In [!INCLUDE[csprcs](~/includes/csprcs-md.md)], you can control when advanced properties appear in IntelliSense and the Properties Window with the **Hide Advanced Members** setting under **Tools &#124; Options &#124; Text Editor &#124; C#**. The corresponding <xref:System.ComponentModel.EditorBrowsableState> is <xref:System.ComponentModel.EditorBrowsableState.Advanced>.  
   
 > [!NOTE]
 >  In [!INCLUDE[csprcs](~/includes/csprcs-md.md)], <xref:System.ComponentModel.EditorBrowsableAttribute> does not suppress members from a class in the same assembly.  

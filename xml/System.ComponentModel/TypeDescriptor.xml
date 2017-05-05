@@ -356,7 +356,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method can be called from partially trusted code. If <xref:System.Security.Permissions.TypeDescriptorPermissionFlags> is defined, the caller can register a provider for the specified instance if its type is also partially trusted.  
+ This method can be called from partially trusted code. If <xref:System.Security.Permissions.TypeDescriptorPermissionFlags.RestrictedRegistrationAccess> is defined, the caller can register a provider for the specified instance if its type is also partially trusted.  
   
  Use the <xref:System.ComponentModel.TypeDescriptor.AddProvider%28System.ComponentModel.TypeDescriptionProvider%2CSystem.Object%29> method if you do not need to call from partially trusted code.  
   
@@ -405,7 +405,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method can be called from partially trusted code. If <xref:System.Security.Permissions.TypeDescriptorPermissionFlags> is defined, the caller can register a provider for the specified type if it is also partially trusted.  
+ This method can be called from partially trusted code. If <xref:System.Security.Permissions.TypeDescriptorPermissionFlags.RestrictedRegistrationAccess> is defined, the caller can register a provider for the specified type if it is also partially trusted.  
   
  Use the <xref:System.ComponentModel.TypeDescriptor.AddProvider%28System.ComponentModel.TypeDescriptionProvider%2CSystem.Type%29> method if you do not need to call from partially trusted code.  
   
@@ -3102,7 +3102,7 @@
 ## Remarks  
  This method removes a type description provider previously added with the <xref:System.ComponentModel.TypeDescriptor.AddProvider%28System.ComponentModel.TypeDescriptionProvider%2CSystem.Object%29> method. Removing a provider causes a <xref:System.ComponentModel.TypeDescriptor.Refreshed> event to be raised for the associated object.  
   
- This method can be called from partially trusted code. If <xref:System.Security.Permissions.TypeDescriptorPermissionFlags> is defined, the caller can register a provider for the specified instance if its type is also partially trusted.  
+ This method can be called from partially trusted code. If <xref:System.Security.Permissions.TypeDescriptorPermissionFlags.RestrictedRegistrationAccess> is defined, the caller can register a provider for the specified instance if its type is also partially trusted.  
   
  Use the <xref:System.ComponentModel.TypeDescriptor.RemoveProvider%28System.ComponentModel.TypeDescriptionProvider%2CSystem.Object%29> method if you do not need to call from partially trusted code.  
   
@@ -3153,7 +3153,7 @@
 ## Remarks  
  This method removes a type description provider previously added with the <xref:System.ComponentModel.TypeDescriptor.AddProvider%28System.ComponentModel.TypeDescriptionProvider%2CSystem.Type%29> method. Removing a provider causes a <xref:System.ComponentModel.TypeDescriptor.Refreshed> event to be raised for the associated type.  
   
- This method can be called from partially trusted code. If <xref:System.Security.Permissions.TypeDescriptorPermissionFlags> is defined, the caller can unregister a provider for the specified type if it is also partially trusted.  
+ This method can be called from partially trusted code. If <xref:System.Security.Permissions.TypeDescriptorPermissionFlags.RestrictedRegistrationAccess> is defined, the caller can unregister a provider for the specified type if it is also partially trusted.  
   
  Use the <xref:System.ComponentModel.TypeDescriptor.RemoveProvider%28System.ComponentModel.TypeDescriptionProvider%2CSystem.Type%29> method if you do not need to call from partially trusted code.  
   

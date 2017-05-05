@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>When applied to a service operation, indicates the ASP.NET output cache profile in the configuration file that should be used by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to cache responses from the operation in the ASP .NET Output Cache.</summary>
+    <summary>When applied to a service operation, indicates the ASP.NET output cache profile in the configuration file that should be used by WCF to cache responses from the operation in the ASP .NET Output Cache.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

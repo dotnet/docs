@@ -60,7 +60,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel>.  
+ This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel.Default>.  
   
    
   
@@ -100,7 +100,7 @@
 ## Remarks  
  The cache synchronization date allows you to specify an absolute date when cached contents must be revalidated. If the cache entry was last revalidated prior to the cache synchronization date, revalidation with the server occurs. If the cache entry was revalidated after the cache synchronization date and there are no server revalidation requirements that make the cached entry invalid, the entry from the cache is used. If the cache synchronization date is set to a future date, the entry is revalidated every time it is requested, until the cache synchronization date passes.  
   
- This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel>. The <xref:System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate%2A> property is initialized to `cacheSyncDate`.  
+ This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel.Default>. The <xref:System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate%2A> property is initialized to `cacheSyncDate`.  
   
    
   
@@ -180,9 +180,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `cacheAgeControl` value defines the meaning of the `ageOrFreshOrStale` parameter value and is used to set the associated property. For example, when you specify <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set to the value of the `ageOrFreshOrStale` parameter.  
+ The `cacheAgeControl` value defines the meaning of the `ageOrFreshOrStale` parameter value and is used to set the associated property. For example, when you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxStale>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set to the value of the `ageOrFreshOrStale` parameter.  
   
- This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel>.  
+ This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel.Default>.  
   
    
   
@@ -225,11 +225,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `cacheAgeControl` value is used to interpret the meaning of the `freshOrStale` parameter value and set the associated property. For example, when you specify <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set to the value of the `freshOrStale` parameter. When you specify <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is set using the value of the `maxAge` parameter and the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set using the value of the `freshOrStale` parameter.  
+ The `cacheAgeControl` value is used to interpret the meaning of the `freshOrStale` parameter value and set the associated property. For example, when you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxStale>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set to the value of the `freshOrStale` parameter. When you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMaxStale>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is set using the value of the `maxAge` parameter and the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set using the value of the `freshOrStale` parameter.  
   
- Note that unless you specify <xref:System.Net.Cache.HttpCacheAgeControl> or <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is not set.  
+ Note that unless you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMaxStale> or <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMinFresh>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is not set.  
   
- This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel>.  
+ This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel.Default>.  
   
    
   
@@ -274,11 +274,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `cacheAgeControl` value is used to interpret the meaning of the `freshOrStale` parameter value and set the associated property. For example, when you specify <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set to the value of the `freshOrStale` parameter. When you specify <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is set using the value of the `maxAge` parameter and the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set using the value of the `freshOrStale` parameter.  
+ The `cacheAgeControl` value is used to interpret the meaning of the `freshOrStale` parameter value and set the associated property. For example, when you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxStale>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set to the value of the `freshOrStale` parameter. When you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMaxStale>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is set using the value of the `maxAge` parameter and the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set using the value of the `freshOrStale` parameter.  
   
- Note that unless you specify <xref:System.Net.Cache.HttpCacheAgeControl> or <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is not set.  
+ Note that unless you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMaxStale> or <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMinFresh>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is not set.  
   
- This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate%2A> property to `cacheSyncDate`, and initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel>.  
+ This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate%2A> property to `cacheSyncDate`, and initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel.Default>.  
   
    
   
@@ -354,7 +354,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Applications typically use <xref:System.Net.Cache.HttpRequestCacheLevel> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request. The default policy for the application domain can be set using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or by settings in the machine or application configuration files. For more information, see [\&lt;requestCaching\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
+ Applications typically use <xref:System.Net.Cache.HttpRequestCacheLevel.Default> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request. The default policy for the application domain can be set using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or by settings in the machine or application configuration files. For more information, see [\&lt;requestCaching\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
   
    
   

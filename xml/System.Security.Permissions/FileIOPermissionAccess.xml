@@ -27,7 +27,7 @@
  This enumeration is used with the <xref:System.Security.Permissions.FileIOPermission> class.  
   
 > [!NOTE]
->  Although NoAccess and AllAccess are members of <xref:System.Security.Permissions.FileIOPermissionAccess>, they are not valid for use as the parameter for <xref:System.Security.Permissions.FileIOPermission.GetPathList%2A> because they describe no file access types or all file access types, respectively, and <xref:System.Security.Permissions.FileIOPermission.GetPathList%2A> expects a single file access type.  
+>  Although NoAccess and AllAccess are members of <xref:System.Security.Permissions.FileIOPermissionAccess.NoAccess>, they are not valid for use as the parameter for <xref:System.Security.Permissions.FileIOPermission.GetPathList%2A> because they describe no file access types or all file access types, respectively, and <xref:System.Security.Permissions.FileIOPermission.GetPathList%2A> expects a single file access type.  
   
 > [!NOTE]
 >  Giving Write access to an assembly is similar to granting it Full Trust. If an application should not write to the file system it should not have Write access.  

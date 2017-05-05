@@ -23,7 +23,7 @@
   <Interfaces />
   <Docs>
     <typeparam name="TChannel">The type of channel to create.</typeparam>
-    <summary>A class for accessing [!INCLUDE[indigo1](~/includes/indigo1-md.md)] Web services on a client.</summary>
+    <summary>A class for accessing Windows Communication Foundation (WCF) Web services on a client.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -293,7 +293,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this method is called, if the <xref:System.ServiceModel.Web.WebChannelFactory%601> is not already associated with a binding a new <xref:System.ServiceModel.WebHttpBinding> is created based on the URI scheme of the remote address. Bindings with an HTTPS remote address are appropriately configured with the <xref:System.ServiceModel.WebHttpSecurity.Mode%2A> property set to <xref:System.ServiceModel.WebHttpSecurityMode> and the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property set to `None`. The <xref:System.ServiceModel.Web.WebChannelFactory%601> adds an instance of <xref:System.ServiceModel.Description.WebHttpBehavior> to the endpoint if one does not already exist.  
+ When this method is called, if the <xref:System.ServiceModel.Web.WebChannelFactory%601> is not already associated with a binding a new <xref:System.ServiceModel.WebHttpBinding> is created based on the URI scheme of the remote address. Bindings with an HTTPS remote address are appropriately configured with the <xref:System.ServiceModel.WebHttpSecurity.Mode%2A> property set to <xref:System.ServiceModel.WebHttpSecurityMode.Transport> and the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property set to `None`. The <xref:System.ServiceModel.Web.WebChannelFactory%601> adds an instance of <xref:System.ServiceModel.Description.WebHttpBehavior> to the endpoint if one does not already exist.  
   
  ]]></format>
         </remarks>

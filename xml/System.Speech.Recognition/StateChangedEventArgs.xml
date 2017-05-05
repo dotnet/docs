@@ -20,7 +20,7 @@
   
  <xref:System.Speech.Recognition.SpeechRecognizer.State%2A> is a read-only property. A shared speech recognizer's state cannot be changed programmatically. Users can change a shared speech recognizer's state using the Speech Recognition user interface (UI) or through the **Speech Recognition** member of the Windows **Control Panel**.  
   
- Both the **On** and **Sleep** settings in the Speech Recognition UI correspond to the `Listening` state. The **Off** setting in the Speech Recognition UI corresponds to <xref:System.Speech.Recognition.RecognizerState>.  
+ Both the **On** and **Sleep** settings in the Speech Recognition UI correspond to the `Listening` state. The **Off** setting in the Speech Recognition UI corresponds to <xref:System.Speech.Recognition.RecognizerState.Stopped>.  
   
    
   

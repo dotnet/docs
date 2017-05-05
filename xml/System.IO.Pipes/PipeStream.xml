@@ -64,7 +64,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor uses a pipe transmission mode of <xref:System.IO.Pipes.PipeTransmissionMode>.  
+ This constructor uses a pipe transmission mode of <xref:System.IO.Pipes.PipeTransmissionMode.Byte>.  
   
  ]]></format>
         </remarks>
@@ -818,7 +818,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is relevant if the pipe's <xref:System.IO.Pipes.PipeStream.ReadMode%2A> property was set to <xref:System.IO.Pipes.PipeTransmissionMode> by the most recent call to <xref:System.IO.Pipes.PipeStream.Read%2A> or <xref:System.IO.Pipes.PipeStream.EndRead%2A>.  
+ This property is relevant if the pipe's <xref:System.IO.Pipes.PipeStream.ReadMode%2A> property was set to <xref:System.IO.Pipes.PipeTransmissionMode.Message> by the most recent call to <xref:System.IO.Pipes.PipeStream.Read%2A> or <xref:System.IO.Pipes.PipeStream.EndRead%2A>.  
   
  ]]></format>
         </remarks>
@@ -1103,7 +1103,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode> mode message transmission.  
+ Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode.Message> mode message transmission.  
   
  ]]></format>
         </remarks>
@@ -1286,7 +1286,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode> mode message transmission.  
+ Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode.Message> mode message transmission.  
   
  ]]></format>
         </remarks>

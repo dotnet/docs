@@ -651,7 +651,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that calls the <xref:System.Reflection.MethodBase.Invoke%28System.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method overload, passing <xref:System.Reflection.BindingFlags> for `invokeAttr` and `null` for `binder` and `culture`.  
+ This is a convenience method that calls the <xref:System.Reflection.MethodBase.Invoke%28System.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method overload, passing <xref:System.Reflection.BindingFlags.Default> for `invokeAttr` and `null` for `binder` and `culture`.  
   
  If the invoked method throws an exception, the <xref:System.Exception.GetBaseException%2A?displayProperty=fullName> method returns the exception.  
   
@@ -679,12 +679,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.TargetException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch <see cref="T:System.Exception" /> instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The <paramref name="obj" /> parameter is <see langword="null" /> and the method is not static.  
   
@@ -703,12 +703,12 @@
  The current instance is a <see cref="T:System.Reflection.Emit.DynamicMethod" /> that contains unverifiable code. See the "Verification" section in Remarks for <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
         <exception cref="T:System.Reflection.TargetParameterCountException">The <paramref name="parameters" /> array does not have the correct number of arguments.</exception>
         <exception cref="T:System.MethodAccessException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.MemberAccessException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The caller does not have permission to execute the method or constructor that is represented by the current instance.</exception>
         <exception cref="T:System.InvalidOperationException">The type that declares the method is an open generic type. That is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" /> for the declaring type.</exception>
@@ -945,7 +945,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Reflection.MethodBase.IsConstructor%2A> property returns `false` for a <xref:System.Reflection.Emit.ConstructorBuilder> object in a dynamic type, unless the <xref:System.Reflection.MethodAttributes?displayProperty=fullName> flag was included in the `attributes` parameter when the constructor was defined. Omitting the <xref:System.Reflection.MethodAttributes> flag does not affect the correctness of the emitted constructor.  
+>  The <xref:System.Reflection.MethodBase.IsConstructor%2A> property returns `false` for a <xref:System.Reflection.Emit.ConstructorBuilder> object in a dynamic type, unless the <xref:System.Reflection.MethodAttributes?displayProperty=fullName> flag was included in the `attributes` parameter when the constructor was defined. Omitting the <xref:System.Reflection.MethodAttributes.RTSpecialName> flag does not affect the correctness of the emitted constructor.  
   
  ]]></format>
         </remarks>
@@ -1282,7 +1282,7 @@
  When a member in a derived class is declared with the C# `new` modifier or the Visual Basic `Shadows` modifier, it can hide a member of the same name in the base class. C# hides base class members by signature. That is, if the base class member has multiple overloads, the only one that is hidden is the one that has the identical signature. By contrast, Visual Basic hides all the base class overloads. Thus, <xref:System.Reflection.MethodBase.IsHideBySig%2A> returns `false` on a member declared with the Visual Basic `Shadows` modifier, and `true` on a member declared with the C# `new` modifier.  
   
 > [!WARNING]
->  This property does not determine whether a method has the <xref:System.Reflection.MethodAttributes> attribute. A method that is declared with either the `new` or the `Shadows` modifier will have the <xref:System.Reflection.MethodAttributes> attribute, but only methods declared with `new` (that is, only C# methods) will have the <xref:System.Reflection.MethodBase.IsHideBySig%2A> property set to `true`.  To determine whether a method has the <xref:System.Reflection.MethodAttributes> attribute, use code similar to the following: `if ((myMethodInfo.Attributes & MethodAttributes.VtableLayoutMask) == MethodAttributes.NewSlot)` in C# or `If (myMethodInfo.Attributes And MethodAttributes.VtableLayoutMask) = MethodAttributes.NewSlot` in Visual Basic. Note, however, that although all methods declared with `new` or `Shadows` have the <xref:System.Reflection.MethodAttributes> attribute, not all methods that have the <xref:System.Reflection.MethodAttributes> attribute are declared with `new` or `Shadows`.  
+>  This property does not determine whether a method has the <xref:System.Reflection.MethodAttributes.NewSlot> attribute. A method that is declared with either the `new` or the `Shadows` modifier will have the <xref:System.Reflection.MethodAttributes.NewSlot> attribute, but only methods declared with `new` (that is, only C# methods) will have the <xref:System.Reflection.MethodBase.IsHideBySig%2A> property set to `true`.  To determine whether a method has the <xref:System.Reflection.MethodAttributes.NewSlot> attribute, use code similar to the following: `if ((myMethodInfo.Attributes & MethodAttributes.VtableLayoutMask) == MethodAttributes.NewSlot)` in C# or `If (myMethodInfo.Attributes And MethodAttributes.VtableLayoutMask) = MethodAttributes.NewSlot` in Visual Basic. Note, however, that although all methods declared with `new` or `Shadows` have the <xref:System.Reflection.MethodAttributes.NewSlot> attribute, not all methods that have the <xref:System.Reflection.MethodAttributes.NewSlot> attribute are declared with `new` or `Shadows`.  
   
    
   
@@ -1537,7 +1537,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.MethodAttributes> bit is set to flag members that are treated in a special way by some compilers (such as property accessors and operator overloading methods).  
+ The <xref:System.Reflection.MethodAttributes.SpecialName> bit is set to flag members that are treated in a special way by some compilers (such as property accessors and operator overloading methods).  
   
    
   

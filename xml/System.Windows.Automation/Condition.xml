@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Base type for conditions used in filtering when searching for elements in the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree.</summary>
+    <summary>Base type for conditions used in filtering when searching for elements in the UI Automation tree.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This condition exists only for symmetry with <xref:System.Windows.Automation.Condition>. It will never enable a match with [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements, and it cannot usefully be combined with any other condition.  
+ This condition exists only for symmetry with <xref:System.Windows.Automation.Condition.TrueCondition>. It will never enable a match with [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements, and it cannot usefully be combined with any other condition.  
   
  ]]></format>
         </remarks>

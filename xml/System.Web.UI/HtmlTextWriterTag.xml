@@ -20,7 +20,7 @@
    
   
 ## Examples  
- The following example demonstrates the use of the <xref:System.Web.UI.HtmlTextWriterTag> enumeration. The Img field is used during rendering of an <xref:System.Web.UI.HtmlTextWriter> named `writer`.  
+ The following example demonstrates the use of the <xref:System.Web.UI.HtmlTextWriterTag> enumeration. The Img field is used during rendering of an <xref:System.Web.UI.HtmlTextWriterTag.Img> named `writer`.  
   
  [!code-cpp[System.Web.UI.HtmlTextWriter#3](~/samples/snippets/cpp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CPP/htmltextwriter.cpp#3)]
  [!code-csharp[System.Web.UI.HtmlTextWriter#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CS/htmltextwriter.cs#3)]

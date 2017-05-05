@@ -315,9 +315,9 @@
 ## Remarks  
  The value of the <xref:System.Security.Cryptography.CspKeyContainerInfo.KeyNumber%2A> property is derived from the <xref:System.Security.Cryptography.CspParameters.KeyNumber> field of the <xref:System.Security.Cryptography.CspParameters> object that was used to initialize the <xref:System.Security.Cryptography.CspKeyContainerInfo> object.  
   
- An exchange key is an asymmetric key pair used to encrypt session keys so that they can be safely stored and exchanged with other users.  The <xref:System.Security.Cryptography.KeyNumber> value specifies an exchange key.  This value corresponds to the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
+ An exchange key is an asymmetric key pair used to encrypt session keys so that they can be safely stored and exchanged with other users.  The <xref:System.Security.Cryptography.KeyNumber.Exchange> value specifies an exchange key.  This value corresponds to the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
   
- A signature key is an asymmetric key pair used for authenticating (digitally signed) messages or files.  The <xref:System.Security.Cryptography.KeyNumber> value specifies a signature key.  This value corresponds to the `AT_SIGNATURE` value used in CAPI.  
+ A signature key is an asymmetric key pair used for authenticating (digitally signed) messages or files.  The <xref:System.Security.Cryptography.KeyNumber.Signature> value specifies a signature key.  This value corresponds to the `AT_SIGNATURE` value used in CAPI.  
   
    
   

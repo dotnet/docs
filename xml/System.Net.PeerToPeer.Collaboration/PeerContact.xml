@@ -110,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the peer collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -205,6 +205,23 @@
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the <see cref="P:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName" /> of this <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object is equivalent to the name of another object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns `true` if the specified <xref:System.Object> has the same <xref:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName%2A> as the current instance, otherwise `false`. This method also returns `false` if passed parameters are `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (System.Net.PeerToPeer.Collaboration.PeerContact other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Net.PeerToPeer.Collaboration.PeerContact other) cil managed" />
@@ -340,6 +357,23 @@
 -   Parameter is not a valid <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.FromXml(System.Security.SecurityElement)" /> object.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetApplications">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> objects that were registered by the remote peer into the local cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class.  This functionality is not exposed on any other type of peer for security reasons.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetApplications">
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetApplications ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetApplications() cil managed" />
@@ -678,6 +712,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invite">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an invitation to join into peer collaboration activity sponsored by the sender.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The caller is not required to sign-in to the <xref:System.Net.PeerToPeer.Collaboration> infrastructure for this method to complete successfully. A <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse> from the invitee is not the same as the invitee accepting the invitation to collaborate. If an invitation is sent to a remote peer that has not installed the application, the invitation is automatically declined.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Invite">
       <MemberSignature Language="C#" Value="public override System.Net.PeerToPeer.Collaboration.PeerInvitationResponse Invite ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.PeerToPeer.Collaboration.PeerInvitationResponse Invite() cil managed" />
@@ -793,7 +844,7 @@
 ## Remarks  
  The caller is not required to sign-in to the <xref:System.Net.PeerToPeer.Collaboration> infrastructure for this method to complete successfully. A <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse> from the invitee is not the same as the invitee accepting the invitation to collaborate. If an invitation is sent to a remote peer that has not installed the application, the invitation is automatically declined.  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the peer collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -855,6 +906,28 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InviteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous invitation operation for an endpoint to join a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" /> application sponsored by the sender of the invitation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The caller is not required to sign-in to the <xref:System.Net.PeerToPeer.Collaboration> infrastructure for this method to complete successfully. A <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse> from the invitee is not the same as the invitee accepting the invitation to collaborate. If an invitation is sent to a remote peer that has not installed the application, the invitation is automatically declined.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>Additional overloads are defined on the <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> class instead of the subclasses <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> and <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />.  
+  
+ Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
+        </block>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InviteAsync">
       <MemberSignature Language="C#" Value="public override void InviteAsync (object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InviteAsync(object userToken) cil managed" />
@@ -1137,7 +1210,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the peer collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -1371,7 +1444,7 @@
   
  To monitor these changes, it is recommended that the user subscribe to the relevant events; for example, <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint.NameChanged>.  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the peer collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -1400,7 +1473,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this property to <xref:System.Net.PeerToPeer.Collaboration.SubscriptionType>means the remote peer specified by this <xref:System.Net.PeerToPeer.Collaboration.PeerContact> can see the registered applications, objects and presence information for the user or application that owns the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> in which this <xref:System.Net.PeerToPeer.Collaboration.PeerContact> object resides.  
+ Setting this property to <xref:System.Net.PeerToPeer.Collaboration.SubscriptionType.Allowed>means the remote peer specified by this <xref:System.Net.PeerToPeer.Collaboration.PeerContact> can see the registered applications, objects and presence information for the user or application that owns the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> in which this <xref:System.Net.PeerToPeer.Collaboration.PeerContact> object resides.  
   
  This property has no effect on a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> instance that represents the local or "Me" contact, since a contact is always subscribed to itself.  
   
@@ -1435,7 +1508,7 @@
 ## Remarks  
  The <xref:System.Net.PeerToPeer.Collaboration.PeerContact.SubscribeCompleted> event is raised upon completion of this operation. If collaboration activities are not required to be asynchronous, the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> method should be used instead.  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the peer collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -1466,7 +1539,7 @@
 ## Remarks  
  When this event is raised, the error property on the <xref:System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs> object should be examined to determine whether the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.SubscribeAsync%2A> process completed successfully.  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the peer collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -1567,85 +1640,12 @@
 ## Remarks  
  If the calling peer is not subscribed to the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> specified the result is a no-op. A calling peer can verify whether it is subscribed to events for the peer identified by this instance with the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.IsSubscribed%2A> property.  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the peer collaboration session begins.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the <see cref="P:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName" /> of this <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object is equivalent to the name of another object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Returns `true` if the specified <xref:System.Object> has the same <xref:System.Net.PeerToPeer.Collaboration.PeerContact.PeerName%2A> as the current instance, otherwise `false`. This method also returns `false` if passed parameters are `null`.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Invite">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends an invitation to join into peer collaboration activity sponsored by the sender.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The caller is not required to sign-in to the <xref:System.Net.PeerToPeer.Collaboration> infrastructure for this method to complete successfully. A <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse> from the invitee is not the same as the invitee accepting the invitation to collaborate. If an invitation is sent to a remote peer that has not installed the application, the invitation is automatically declined.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="InviteAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous invitation operation for an endpoint to join a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" /> application sponsored by the sender of the invitation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The caller is not required to sign-in to the <xref:System.Net.PeerToPeer.Collaboration> infrastructure for this method to complete successfully. A <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse> from the invitee is not the same as the invitee accepting the invitation to collaborate. If an invitation is sent to a remote peer that has not installed the application, the invitation is automatically declined.  
-  
- ]]></format>
-        </remarks>
-        <block subset="none" type="usage">
-          <para>Additional overloads are defined on the <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> class instead of the subclasses <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> and <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />.  
-  
- Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
-        </block>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetApplications">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> objects that were registered by the remote peer into the local cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class.  This functionality is not exposed on any other type of peer for security reasons.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -53,6 +53,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone that contains <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls is typically the control that creates a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object, through the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts%2A> method. However, you can also create your own <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object for other programmatic purposes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CatalogPartCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -268,7 +285,7 @@
  [!code-csharp[WebParts_CatalogPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/CS/catalogpartcollectioncs.aspx#2)]
  [!code-vb[WebParts_CatalogPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/VB/catalogpartcollectionvb.aspx#2)]  
   
- After you load the page in a browser, you can switch the page into catalog mode by selecting **Catalog** in the **Display Mode** drop-down list control. Clicking the **Display CatalogPart Properties** button accesses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object and displays certain properties of the contained <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. Click the **Page Catalog** link to display the contents of the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control. Note that it has only a title and no border, because its <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeType%2A> property value was changed to <xref:System.Web.UI.WebControls.WebParts.PartChromeType> in the code that used the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.IndexOf%2A> property to retrieve the control.  
+ After you load the page in a browser, you can switch the page into catalog mode by selecting **Catalog** in the **Display Mode** drop-down list control. Clicking the **Display CatalogPart Properties** button accesses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object and displays certain properties of the contained <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. Click the **Page Catalog** link to display the contents of the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control. Note that it has only a title and no border, because its <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeType%2A> property value was changed to <xref:System.Web.UI.WebControls.WebParts.PartChromeType.TitleOnly> in the code that used the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.IndexOf%2A> property to retrieve the control.  
   
  ]]></format>
         </remarks>
@@ -356,22 +373,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone that contains <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls is typically the control that creates a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object, through the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts%2A> method. However, you can also create your own <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object for other programmatic purposes.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

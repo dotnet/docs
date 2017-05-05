@@ -184,12 +184,12 @@
   
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod> value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|No derivation method specified.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by Substitution.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by Extension.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by Restriction.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by List.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by Union.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.None>|No derivation method specified.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Substitution>|Derived by Substitution.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Extension>|Derived by Extension.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Restriction>|Derived by Restriction.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.List>|Derived by List.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Union>|Derived by Union.|  
   
  ]]></format>
         </remarks>
@@ -231,23 +231,23 @@
   
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod> value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Overrides the schema `blockDefault` setting allowing any derivations by restriction, extension, or substitution to take place.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|No derivation method is specified. This is the default. Derivation rules are taken from the schema blockDefault setting.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Substitution.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Extension.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Restriction.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|`#all`. Cannot be replaced by a type derived by any derivation method.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Empty>|Overrides the schema `blockDefault` setting allowing any derivations by restriction, extension, or substitution to take place.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.None>|No derivation method is specified. This is the default. Derivation rules are taken from the schema blockDefault setting.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Substitution>|Cannot be replaced by a type derived by Substitution.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Extension>|Cannot be replaced by a type derived by Extension.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Restriction>|Cannot be replaced by a type derived by Restriction.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.All>|`#all`. Cannot be replaced by a type derived by any derivation method.|  
   
  The following table shows the values that this property can contain for complex type.  
   
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod> value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Overrides the schema `blockDefault` setting allowing any derivations by restriction, extension, or substitution to take place.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|No derivation method is specified. This is the default. Derivation rules are taken from the schema `blockDefault` setting.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Substitution.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Extension.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Restriction.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|`#all`. Cannot be replaced by a type derived by any derivation method.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Empty>|Overrides the schema `blockDefault` setting allowing any derivations by restriction, extension, or substitution to take place.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.None>|No derivation method is specified. This is the default. Derivation rules are taken from the schema `blockDefault` setting.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Substitution>|Cannot be replaced by a type derived by Substitution.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Extension>|Cannot be replaced by a type derived by Extension.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Restriction>|Cannot be replaced by a type derived by Restriction.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.All>|`#all`. Cannot be replaced by a type derived by any derivation method.|  
   
  ]]></format>
         </remarks>

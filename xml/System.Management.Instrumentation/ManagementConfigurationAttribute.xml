@@ -84,7 +84,7 @@ public double ReadableWritableProperty
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there is a commit method defined, it is responsible for updating all read-write WMI properties that use the <xref:System.Management.Instrumentation.ManagementConfigurationType> mode. It is identified by the <xref:System.Management.Instrumentation.ManagementCommitAttribute>.  
+ If there is a commit method defined, it is responsible for updating all read-write WMI properties that use the <xref:System.Management.Instrumentation.ManagementConfigurationType.OnCommit> mode. It is identified by the <xref:System.Management.Instrumentation.ManagementCommitAttribute>.  
   
  ]]></format>
         </remarks>

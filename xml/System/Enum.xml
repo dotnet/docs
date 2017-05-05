@@ -291,44 +291,27 @@
         <summary>Compares this instance to a specified object and returns an indication of their relative values.</summary>
         <returns>A signed number that indicates the relative values of this instance and <paramref name="target" />.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The value of this instance is less than the value of <paramref name="target" />.  
+ </term><description> The value of this instance is less than the value of <paramref name="target" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> The value of this instance is equal to the value of <paramref name="target" />.  
+ </term><description> The value of this instance is equal to the value of <paramref name="target" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> The value of this instance is greater than the value of <paramref name="target" />.  
+ </term><description> The value of this instance is greater than the value of <paramref name="target" />.  
   
  -or-  
   
  <paramref name="target" /> is <see langword="null" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -125,7 +125,7 @@
   
  You do not need to use the <xref:System.Xml.Serialization.XmlReflectionMember> class and its properties directly.  
   
- See the <xref:System.Xml.Serialization.XmlMembersMapping> class for the cases when a member corresponds to a `<part>` element defined in a Web Services Description Language (WSDL) document. Note, however, that with a wrapped binding between a WSDL operation and a .NET Framework method (indicated by the <xref:System.Web.Services.Protocols.SoapParameterStyle> enumeration member), the method parameters and return value do not appear in the WSDL document.  
+ See the <xref:System.Xml.Serialization.XmlMembersMapping> class for the cases when a member corresponds to a `<part>` element defined in a Web Services Description Language (WSDL) document. Note, however, that with a wrapped binding between a WSDL operation and a .NET Framework method (indicated by the <xref:System.Web.Services.Protocols.SoapParameterStyle.Wrapped> enumeration member), the method parameters and return value do not appear in the WSDL document.  
   
  When a Web service method is being reflected, the return type's <xref:System.Xml.Serialization.XmlReflectionMember.MemberName%2A> property becomes the method name (made unique from other member names, if necessary) with "Result" appended.  
   
@@ -162,7 +162,7 @@
   
  You do not need to use the <xref:System.Xml.Serialization.XmlReflectionMember> class and its properties directly.  
   
- See the <xref:System.Xml.Serialization.XmlMembersMapping> class for the cases when a member corresponds to a part element defined in a Web Services Description Language (WSDL) document. Note, however, that with a wrapped binding between a WSDL operation and a .NET Framework method (indicated by the <xref:System.Web.Services.Protocols.SoapParameterStyle> enumeration member), the method parameters and return value do not appear in the WSDL document.  
+ See the <xref:System.Xml.Serialization.XmlMembersMapping> class for the cases when a member corresponds to a part element defined in a Web Services Description Language (WSDL) document. Note, however, that with a wrapped binding between a WSDL operation and a .NET Framework method (indicated by the <xref:System.Web.Services.Protocols.SoapParameterStyle.Wrapped> enumeration member), the method parameters and return value do not appear in the WSDL document.  
   
  ]]></format>
         </remarks>

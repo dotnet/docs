@@ -267,18 +267,18 @@
 ## Remarks  
  The <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property returns a value based on the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> value and the capabilities of the browser.  
   
--   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true`.  
+-   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode.UseCookies>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true`.  
   
--   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
+-   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode.UseUri>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
   
--   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true` if the browser supports cookies and cookies are enabled; otherwise, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
+-   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode.AutoDetect>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true` if the browser supports cookies and cookies are enabled; otherwise, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
   
--   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true` if the <xref:System.Web.HttpRequest.Browser%2A> for the current <xref:System.Web.HttpContext.Request%2A> supports both cookies and redirecting with cookies; otherwise, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
+-   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode.UseDeviceProfile>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true` if the <xref:System.Web.HttpRequest.Browser%2A> for the current <xref:System.Web.HttpContext.Request%2A> supports both cookies and redirecting with cookies; otherwise, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
   
    
   
 ## Examples  
- The following code example sets the `cookieless` attribute to <xref:System.Web.HttpCookieMode> in the Web.config file. This configuration will result in the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property returning `false`.  
+ The following code example sets the `cookieless` attribute to <xref:System.Web.HttpCookieMode.UseUri> in the Web.config file. This configuration will result in the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property returning `false`.  
   
 ```  
 <authentication mode="Forms">  
@@ -901,6 +901,35 @@
         <exception cref="T:System.Web.HttpException">The return URL specified in the query string contains a protocol other than HTTP: or HTTPS:.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RedirectToLoginPage">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects the browser to the login URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method redirects the browser to the <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A>.  
+  
+ The <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method does not clear the forms-authentication cookie. You can use the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method in conjunction with the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method to log one user out and allow a different user to log in.  
+  
+ Unlike the <xref:System.Web.HttpResponse.Redirect%2A?displayProperty=fullName> method, this method does not end the request by calling <xref:System.Web.HttpResponse.End%2A?displayProperty=fullName>. This means that code that follows the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method call will run.  
+  
+   
+  
+## Examples  
+ The following code example clears the forms-authentication cookie using the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method and redirects the user to the login page using the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.FormsAuthentication#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/CS/signoutcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.FormsAuthentication#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/VB/signoutvb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RedirectToLoginPage">
       <MemberSignature Language="C#" Value="public static void RedirectToLoginPage ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RedirectToLoginPage() cil managed" />
@@ -1047,6 +1076,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetAuthCookie">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an authentication ticket for the supplied user name and adds it to the cookies collection of the response, or to the URL if you are using cookieless authentication.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.SetAuthCookie%2A> method adds a forms-authentication ticket to either the cookies collection or the URL if <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> is `false`. The forms-authentication ticket supplies forms-authentication information to the next request made by the browser. With forms authentication, you can use the <xref:System.Web.Security.FormsAuthentication.SetAuthCookie%2A> method when you want to authenticate a user but still retain control of the navigation with redirects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetAuthCookie">
       <MemberSignature Language="C#" Value="public static void SetAuthCookie (string userName, bool createPersistentCookie);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAuthCookie(string userName, bool createPersistentCookie) cil managed" />
@@ -1241,51 +1287,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetAuthCookie">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an authentication ticket for the supplied user name and adds it to the cookies collection of the response, or to the URL if you are using cookieless authentication.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.SetAuthCookie%2A> method adds a forms-authentication ticket to either the cookies collection or the URL if <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> is `false`. The forms-authentication ticket supplies forms-authentication information to the next request made by the browser. With forms authentication, you can use the <xref:System.Web.Security.FormsAuthentication.SetAuthCookie%2A> method when you want to authenticate a user but still retain control of the navigation with redirects.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RedirectToLoginPage">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Redirects the browser to the login URL.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method redirects the browser to the <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A>.  
-  
- The <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method does not clear the forms-authentication cookie. You can use the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method in conjunction with the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method to log one user out and allow a different user to log in.  
-  
- Unlike the <xref:System.Web.HttpResponse.Redirect%2A?displayProperty=fullName> method, this method does not end the request by calling <xref:System.Web.HttpResponse.End%2A?displayProperty=fullName>. This means that code that follows the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method call will run.  
-  
-   
-  
-## Examples  
- The following code example clears the forms-authentication cookie using the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method and redirects the user to the login page using the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.FormsAuthentication#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/CS/signoutcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.FormsAuthentication#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/VB/signoutvb.aspx#2)]  -->  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

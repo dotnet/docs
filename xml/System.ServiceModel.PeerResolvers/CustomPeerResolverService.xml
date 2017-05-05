@@ -233,6 +233,23 @@
         <exception cref="T:System.InvalidOperationException">An attempt to set the property was made after a call to <see cref="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Open" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Register">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a peer with the custom peer resolver service.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To register a peer node in a specific mesh, a correctly-formed <xref:System.ServiceModel.PeerResolvers.RegisterInfo> object must be supplied to one of the overloads for this method. This object contains the specific details necessary to register the registration entry requesting registration, including a GUID that uniquely identifies the registration entry, the mesh ID, and an endpoint address.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Register">
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.PeerResolvers.RegisterResponseInfo Register (System.ServiceModel.PeerResolvers.RegisterInfo registerInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.PeerResolvers.RegisterResponseInfo Register(class System.ServiceModel.PeerResolvers.RegisterInfo registerInfo) cil managed" />
@@ -381,22 +398,5 @@
         <exception cref="T:System.InvalidOperationException">A registration entry with the same GUID already exists in the lookup table, or the custom peer resolver service has not been started with a previous call to <see cref="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Open" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Register">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers a peer with the custom peer resolver service.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To register a peer node in a specific mesh, a correctly-formed <xref:System.ServiceModel.PeerResolvers.RegisterInfo> object must be supplied to one of the overloads for this method. This object contains the specific details necessary to register the registration entry requesting registration, including a GUID that uniquely identifies the registration entry, the mesh ID, and an endpoint address.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

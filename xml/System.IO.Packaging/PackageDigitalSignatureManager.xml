@@ -244,7 +244,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default hash algorithm identifier for the standard digital signature manager is <xref:System.Security.Cryptography.Xml.SignedXml> (<xref:System.Security.Cryptography.SHA1>—Secure Hash Algorithm version 1.0).  
+ The default hash algorithm identifier for the standard digital signature manager is <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA1Url> (<xref:System.Security.Cryptography.SHA1>—Secure Hash Algorithm version 1.0).  
   
  Unless explicitly set otherwise, this property gets the same value as <xref:System.IO.Packaging.PackageDigitalSignatureManager.DefaultHashAlgorithm%2A>.  
   
@@ -387,6 +387,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Sign">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Signs a list of package parts with a specified X.509 certificate.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the steps to digitally sign a list of parts within a <xref:System.IO.Packaging.Package>.  For the complete sample, see [Creating a Package with a Digital Signature Sample](http://go.microsoft.com/fwlink/?LinkID=159966).  
+  
+ [!code-csharp[PackageDigitalSignature#PackageDigSigSign](~/samples/snippets/csharp/VS_Snippets_Wpf/PackageDigitalSignature/CSharp/PackageDigitalSignature.cs#packagedigsigsign)]
+ [!code-vb[PackageDigitalSignature#PackageDigSigSign](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PackageDigitalSignature/visualbasic/packagedigitalsignature.vb#packagedigsigsign)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Sign">
       <MemberSignature Language="C#" Value="public System.IO.Packaging.PackageDigitalSignature Sign (System.Collections.Generic.IEnumerable&lt;Uri&gt; parts);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.PackageDigitalSignature Sign(class System.Collections.Generic.IEnumerable`1&lt;class System.Uri&gt; parts) cil managed" />
@@ -816,25 +836,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Sign">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Signs a list of package parts with a specified X.509 certificate.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows the steps to digitally sign a list of parts within a <xref:System.IO.Packaging.Package>.  For the complete sample, see [Creating a Package with a Digital Signature Sample](http://go.microsoft.com/fwlink/?LinkID=159966).  
-  
- [!code-csharp[PackageDigitalSignature#PackageDigSigSign](~/samples/snippets/csharp/VS_Snippets_Wpf/PackageDigitalSignature/CSharp/PackageDigitalSignature.cs#packagedigsigsign)]
- [!code-vb[PackageDigitalSignature#PackageDigSigSign](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PackageDigitalSignature/visualbasic/packagedigitalsignature.vb#packagedigsigsign)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

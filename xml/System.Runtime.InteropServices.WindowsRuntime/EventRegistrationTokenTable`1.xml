@@ -24,7 +24,7 @@
   <Interfaces />
   <Docs>
     <typeparam name="T">The type of the event handler delegate for a particular event.</typeparam>
-    <summary>Stores mappings between delegates and event tokens, to support the implementation of a [!INCLUDE[wrt](~/includes/wrt-md.md)] event in managed code.</summary>
+    <summary>Stores mappings between delegates and event tokens, to support the implementation of a Windows Runtime event in managed code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

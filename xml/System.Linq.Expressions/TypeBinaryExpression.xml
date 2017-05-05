@@ -36,7 +36,7 @@
   
  Use the <xref:System.Linq.Expressions.Expression.TypeIs%2A> factory method to create a <xref:System.Linq.Expressions.TypeBinaryExpression>.  
   
- The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.TypeBinaryExpression> object is <xref:System.Linq.Expressions.ExpressionType>.  
+ The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.TypeBinaryExpression> object is <xref:System.Linq.Expressions.ExpressionType.TypeIs>.  
   
    
   

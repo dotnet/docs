@@ -317,7 +317,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns `null` for <xref:System.Net.NetworkInformation.NetworkInterfaceType> interfaces.  
+ This property returns `null` for <xref:System.Net.NetworkInformation.NetworkInterfaceType.Loopback> interfaces.  
   
  For a detailed description of the information available for an interface that supports IPv4, see the <xref:System.Net.NetworkInformation.IPv4InterfaceProperties> class documentation. Note that the object returned by the <xref:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv4Properties%2A> method reflects the configuration as of the time the object is created. This information is not updated dynamically.  
   

@@ -1236,6 +1236,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAccessControl">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the access control list (ACL) entries for the current directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.IO.DirectoryInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for the current file.  
+  
+ For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetAccessControl">
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.DirectorySecurity GetAccessControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.AccessControl.DirectorySecurity GetAccessControl() cil managed" />
@@ -1312,52 +1332,19 @@
   
  Exceptions  
   
- <list type="table">  
-<listheader>  
-<term> Exception type  
+ <list type="table"><listheader><term> Exception type  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="T:System.SystemException" />  
+ </description></listheader><item><term><see cref="T:System.SystemException" /></term><description> The directory could not be found or modified.  
   
- </term>  
-<description> The directory could not be found or modified.  
+ </description></item><item><term><see cref="T:System.UnauthorizedAccessException" /></term><description> The current process does not have access to open the directory.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.UnauthorizedAccessException" />  
+ </description></item><item><term><see cref="T:System.IO.IOException" /></term><description> An I/O error occurred while opening the directory.  
   
- </term>  
-<description> The current process does not have access to open the directory.  
+ </description></item><item><term><see cref="T:System.PlatformNotSupportedException" /></term><description> The current operating system is not Microsoft Windows 2000 or later.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.IO.IOException" />  
-  
- </term>  
-<description> An I/O error occurred while opening the directory.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.PlatformNotSupportedException" />  
-  
- </term>  
-<description> The current operating system is not Microsoft Windows 2000 or later.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.UnauthorizedAccessException" />  
-  
- </term>  
-<description> The directory is read-only.  
+ </description></item><item><term><see cref="T:System.UnauthorizedAccessException" /></term><description> The directory is read-only.  
   
  -or-  
   
@@ -1367,9 +1354,7 @@
   
  The caller does not have the required permission.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2405,25 +2390,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetAccessControl">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the access control list (ACL) entries for the current directory.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use <xref:System.IO.DirectoryInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for the current file.  
-  
- For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

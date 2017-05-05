@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.NetworkStream> class provides methods for sending and receiving data over <xref:System.Net.Sockets.SocketType> sockets in blocking mode. For more information about blocking versus nonblocking <xref:System.Net.Sockets.Socket>s, see [Using an Asynchronous Client Socket](~/docs/framework/network-programming/using-an-asynchronous-client-socket.md). You can use the <xref:System.Net.Sockets.NetworkStream> class for both synchronous and asynchronous data transfer. For more information about synchronous and asynchronous communication, see [Sockets](~/docs/framework/network-programming/sockets.md).  
+ The <xref:System.Net.Sockets.NetworkStream> class provides methods for sending and receiving data over <xref:System.Net.Sockets.SocketType.Stream> sockets in blocking mode. For more information about blocking versus nonblocking <xref:System.Net.Sockets.Socket>s, see [Using an Asynchronous Client Socket](~/docs/framework/network-programming/using-an-asynchronous-client-socket.md). You can use the <xref:System.Net.Sockets.NetworkStream> class for both synchronous and asynchronous data transfer. For more information about synchronous and asynchronous communication, see [Sockets](~/docs/framework/network-programming/sockets.md).  
   
  To create a <xref:System.Net.Sockets.NetworkStream>, you must provide a connected <xref:System.Net.Sockets.Socket>. You can also specify what <xref:System.IO.FileAccess> permission the <xref:System.Net.Sockets.NetworkStream> has over the provided <xref:System.Net.Sockets.Socket>. By default, closing the <xref:System.Net.Sockets.NetworkStream> does not close the provided <xref:System.Net.Sockets.Socket>. If you want the <xref:System.Net.Sockets.NetworkStream> to have permission to close the provided <xref:System.Net.Sockets.Socket>, you must specify `true` for the value of the `ownsSocket` parameter.  
   
@@ -38,7 +38,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Net.Sockets.NetworkStream> from a connected <xref:System.Net.Sockets.SocketType><xref:System.Net.Sockets.Socket> and perform basic synchronous blocking I/O.  
+ The following code example demonstrates how to create a <xref:System.Net.Sockets.NetworkStream> from a connected <xref:System.Net.Sockets.SocketType.Stream><xref:System.Net.Sockets.Socket> and perform basic synchronous blocking I/O.  
   
  [!code-cpp[NetworkStream_Synch_SendAndReceive#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NetworkStream_Synch_SendAndReceive/CPP/source.cpp#2)]
  [!code-csharp[NetworkStream_Synch_SendAndReceive#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NetworkStream_Synch_SendAndReceive/CS/source.cs#2)]
@@ -184,7 +184,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.NetworkStream> is created with the specified access to the specified <xref:System.Net.Sockets.Socket>. With this constructor, the <xref:System.Net.Sockets.NetworkStream> does not own the underlying <xref:System.Net.Sockets.Socket>, so calling the <xref:System.Net.Sockets.NetworkStream.Close%2A> method does not close the underlying <xref:System.Net.Sockets.Socket>.  
   
- The `access` parameter sets the <xref:System.Net.Sockets.NetworkStream.CanRead%2A> and <xref:System.Net.Sockets.NetworkStream.CanWrite%2A> properties of the <xref:System.Net.Sockets.NetworkStream>. If you specify <xref:System.IO.FileAccess>, then the <xref:System.Net.Sockets.NetworkStream> allows calls to the <xref:System.Net.Sockets.NetworkStream.Write%2A> method. If you specify <xref:System.IO.FileAccess>, then the <xref:System.Net.Sockets.NetworkStream> allows calls to the <xref:System.Net.Sockets.NetworkStream.Read%2A> method. If you specify <xref:System.IO.FileAccess>, both method calls are allowed.  
+ The `access` parameter sets the <xref:System.Net.Sockets.NetworkStream.CanRead%2A> and <xref:System.Net.Sockets.NetworkStream.CanWrite%2A> properties of the <xref:System.Net.Sockets.NetworkStream>. If you specify <xref:System.IO.FileAccess.Write>, then the <xref:System.Net.Sockets.NetworkStream> allows calls to the <xref:System.Net.Sockets.NetworkStream.Write%2A> method. If you specify <xref:System.IO.FileAccess.Read>, then the <xref:System.Net.Sockets.NetworkStream> allows calls to the <xref:System.Net.Sockets.NetworkStream.Read%2A> method. If you specify <xref:System.IO.FileAccess.ReadWrite>, both method calls are allowed.  
   
    
   
@@ -239,7 +239,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.NetworkStream> is created with read/write access to the specified <xref:System.Net.Sockets.Socket>. If the value of the `ownsSocket` parameter is `true`, the <xref:System.Net.Sockets.NetworkStream> takes ownership of the underlying <xref:System.Net.Sockets.Socket>, and calling the <xref:System.Net.Sockets.NetworkStream.Close%2A> method also closes the underlying <xref:System.Net.Sockets.Socket>.  
   
- The `access` parameter sets the <xref:System.Net.Sockets.NetworkStream.CanRead%2A> and <xref:System.Net.Sockets.NetworkStream.CanWrite%2A> properties of the <xref:System.Net.Sockets.NetworkStream>. If you specify <xref:System.IO.FileAccess>, then the <xref:System.Net.Sockets.NetworkStream> allows calls to the <xref:System.Net.Sockets.NetworkStream.Write%2A> method. If you specify <xref:System.IO.FileAccess>, then the <xref:System.Net.Sockets.NetworkStream> allows calls to the <xref:System.Net.Sockets.NetworkStream.Read%2A> method. If you specify <xref:System.IO.FileAccess>, both method calls are allowed.  
+ The `access` parameter sets the <xref:System.Net.Sockets.NetworkStream.CanRead%2A> and <xref:System.Net.Sockets.NetworkStream.CanWrite%2A> properties of the <xref:System.Net.Sockets.NetworkStream>. If you specify <xref:System.IO.FileAccess.Write>, then the <xref:System.Net.Sockets.NetworkStream> allows calls to the <xref:System.Net.Sockets.NetworkStream.Write%2A> method. If you specify <xref:System.IO.FileAccess.Read>, then the <xref:System.Net.Sockets.NetworkStream> allows calls to the <xref:System.Net.Sockets.NetworkStream.Read%2A> method. If you specify <xref:System.IO.FileAccess.ReadWrite>, both method calls are allowed.  
   
    
   

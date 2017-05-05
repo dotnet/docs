@@ -1187,7 +1187,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.TextBoxBase.IsInputKey%2A> method returns `true` when the `keyData` parameter includes the <xref:System.Windows.Forms.Keys> value and the <xref:System.Windows.Forms.TextBoxBase.AcceptsTab%2A> property is `true`. <xref:System.Windows.Forms.TextBoxBase.IsInputKey%2A> returns `false` if `keyData` contains both <xref:System.Windows.Forms.Keys> and <xref:System.Windows.Forms.Keys>.  
+ The <xref:System.Windows.Forms.TextBoxBase.IsInputKey%2A> method returns `true` when the `keyData` parameter includes the <xref:System.Windows.Forms.Keys.Tab> value and the <xref:System.Windows.Forms.TextBoxBase.AcceptsTab%2A> property is `true`. <xref:System.Windows.Forms.TextBoxBase.IsInputKey%2A> returns `false` if `keyData` contains both <xref:System.Windows.Forms.Keys.Tab> and <xref:System.Windows.Forms.Keys.Control>.  
   
  ]]></format>
         </remarks>

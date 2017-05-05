@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- When a workflow change occurs during the execution of a workflow instance and a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> associated with the workflow instance includes a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> configured for the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> event, the runtime tracking infrastructure sets <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> to <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs> in the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> that it sends to the tracking service.  
+ When a workflow change occurs during the execution of a workflow instance and a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> associated with the workflow instance includes a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> configured for the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Changed> event, the runtime tracking infrastructure sets <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> to <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs> in the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> that it sends to the tracking service.  
   
 > [!NOTE]
 >  <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs> is used only by the runtime tracking service to pass information in a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord>.  

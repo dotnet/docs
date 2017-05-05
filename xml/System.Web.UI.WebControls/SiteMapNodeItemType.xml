@@ -30,7 +30,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method after creating a <xref:System.Web.UI.WebControls.SiteMapNodeItem> within the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method. This code example is part of a larger code example provided for the <xref:System.Web.UI.WebControls.SiteMapPath> class.  
+ The following code example demonstrates how to call the <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method after creating a <xref:System.Web.UI.WebControls.SiteMapNodeItem> within the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method. This code example is part of a larger code example provided for the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> class.  
   
  [!code-csharp[Urtue.Samples.Alexkr.DropDownNavigationPath_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.DropDownNavigationPath_1/CS/dropdownnavigationpath.cs#3)]
  [!code-vb[Urtue.Samples.Alexkr.DropDownNavigationPath_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.DropDownNavigationPath_1/VB/dropdownnavigationpath.vb#3)]  

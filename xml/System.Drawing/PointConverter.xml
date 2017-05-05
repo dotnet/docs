@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.PointConverter> class is typically used for creating a design-time experience for controls that have properties that are of type <xref:System.Drawing.GraphicsUnit>, and is used to convert points to strings for display in a designer and to convert strings entered in a designer to a <xref:System.Drawing.GraphicsUnit> object. Access this class through the <xref:System.ComponentModel.TypeDescriptor> object.  
+ The <xref:System.Drawing.PointConverter> class is typically used for creating a design-time experience for controls that have properties that are of type <xref:System.Drawing.GraphicsUnit.Point>, and is used to convert points to strings for display in a designer and to convert strings entered in a designer to a <xref:System.Drawing.GraphicsUnit.Point> object. Access this class through the <xref:System.ComponentModel.TypeDescriptor> object.  
   
    
   

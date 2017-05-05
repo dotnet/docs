@@ -110,6 +110,29 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Match">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, tests whether a message or a buffered message satisfies the criteria of a filter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The difference between the two overloads is that one takes a <xref:System.ServiceModel.Channels.Message> parameter and is not permitted to examine the body. The other takes a <xref:System.ServiceModel.Channels.MessageBuffer> parameter and can examine any part of the message. Message headers are automatically buffered and can be inspected by a filter without being consumed. But if the body is to be inspected by a filter, then the entire message must be buffered because an unbuffered message body can be consumed by a query and its contents destroyed.  
+  
+ Use <xref:System.ServiceModel.Dispatcher.MessageFilter.Match%2A> if examination of the body is not required. Use <xref:System.ServiceModel.Dispatcher.MessageFilter.Match%2A> if examination of the message body is required.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Null" /> messages are invalid, and should cause an <see cref="T:System.ArgumentNullException" /> to be thrown.</para>
+        </block>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Match">
       <MemberSignature Language="C#" Value="public abstract bool Match (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
@@ -173,28 +196,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Match">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, tests whether a message or a buffered message satisfies the criteria of a filter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The difference between the two overloads is that one takes a <xref:System.ServiceModel.Channels.Message> parameter and is not permitted to examine the body. The other takes a <xref:System.ServiceModel.Channels.MessageBuffer> parameter and can examine any part of the message. Message headers are automatically buffered and can be inspected by a filter without being consumed. But if the body is to be inspected by a filter, then the entire message must be buffered because an unbuffered message body can be consumed by a query and its contents destroyed.  
-  
- Use <xref:System.ServiceModel.Dispatcher.MessageFilter.Match%2A> if examination of the body is not required. Use <xref:System.ServiceModel.Dispatcher.MessageFilter.Match%2A> if examination of the message body is required.  
-  
- ]]></format>
-        </remarks>
-        <block subset="none" type="overrides">
-          <para>
-            <see langword="Null" /> messages are invalid, and should cause an <see cref="T:System.ArgumentNullException" /> to be thrown.</para>
-        </block>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

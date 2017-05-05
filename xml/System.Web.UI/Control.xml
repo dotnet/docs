@@ -1476,6 +1476,23 @@ span#ProductIDLabel { background-color: white; }
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetRouteUrl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the URL that corresponds to a set of route parameters, and optionally to a route name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetRouteUrl">
       <MemberSignature Language="C#" Value="public string GetRouteUrl (object routeParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetRouteUrl(object routeParameters) cil managed" />
@@ -3921,22 +3938,5 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetRouteUrl">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the URL that corresponds to a set of route parameters, and optionally to a route name.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

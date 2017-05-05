@@ -2137,6 +2137,25 @@ From i As Integer In objects
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Distinct&lt;TSource&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns distinct elements from a sequence.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The result sequence is unordered.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Distinct&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;TSource&gt; Distinct&lt;TSource&gt; (this System.Collections.Generic.IEnumerable&lt;TSource&gt; source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; Distinct&lt;TSource&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source) cil managed" />
@@ -10779,24 +10798,5 @@ From i As Integer In objects
           <paramref name="first" /> or <paramref name="second" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Distinct&lt;TSource&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns distinct elements from a sequence.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The result sequence is unordered.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

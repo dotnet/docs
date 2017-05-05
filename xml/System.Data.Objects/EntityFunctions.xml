@@ -91,6 +91,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddHours">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddHours">
       <MemberSignature Language="C#" Value="public static Nullable&lt;DateTime&gt; AddHours (Nullable&lt;DateTime&gt; timeValue, Nullable&lt;int&gt; addValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; AddHours(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue, valuetype System.Nullable`1&lt;int32&gt; addValue) cil managed" />
@@ -205,6 +224,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddMicroseconds">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddMicroseconds">
       <MemberSignature Language="C#" Value="public static Nullable&lt;DateTime&gt; AddMicroseconds (Nullable&lt;DateTime&gt; timeValue, Nullable&lt;int&gt; addValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; AddMicroseconds(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue, valuetype System.Nullable`1&lt;int32&gt; addValue) cil managed" />
@@ -319,6 +357,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddMilliseconds">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddMilliseconds">
       <MemberSignature Language="C#" Value="public static Nullable&lt;DateTime&gt; AddMilliseconds (Nullable&lt;DateTime&gt; timeValue, Nullable&lt;int&gt; addValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; AddMilliseconds(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue, valuetype System.Nullable`1&lt;int32&gt; addValue) cil managed" />
@@ -433,6 +490,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddMinutes">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddMinutes">
       <MemberSignature Language="C#" Value="public static Nullable&lt;DateTime&gt; AddMinutes (Nullable&lt;DateTime&gt; timeValue, Nullable&lt;int&gt; addValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; AddMinutes(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue, valuetype System.Nullable`1&lt;int32&gt; addValue) cil managed" />
@@ -547,6 +623,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddMonths">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="AddMonths" /> function. For information about the canonical <see langword="AddMonths" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddMonths">
       <MemberSignature Language="C#" Value="public static Nullable&lt;DateTime&gt; AddMonths (Nullable&lt;DateTime&gt; dateValue, Nullable&lt;int&gt; addValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; AddMonths(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; dateValue, valuetype System.Nullable`1&lt;int32&gt; addValue) cil managed" />
@@ -623,6 +718,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddNanoseconds">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddNanoseconds">
       <MemberSignature Language="C#" Value="public static Nullable&lt;DateTime&gt; AddNanoseconds (Nullable&lt;DateTime&gt; timeValue, Nullable&lt;int&gt; addValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; AddNanoseconds(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue, valuetype System.Nullable`1&lt;int32&gt; addValue) cil managed" />
@@ -737,6 +851,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddSeconds">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddSeconds">
       <MemberSignature Language="C#" Value="public static Nullable&lt;DateTime&gt; AddSeconds (Nullable&lt;DateTime&gt; timeValue, Nullable&lt;int&gt; addValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; AddSeconds(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue, valuetype System.Nullable`1&lt;int32&gt; addValue) cil managed" />
@@ -851,6 +984,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddYears">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="AddYears" /> function. For information about the canonical <see langword="AddYears" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddYears">
       <MemberSignature Language="C#" Value="public static Nullable&lt;DateTime&gt; AddYears (Nullable&lt;DateTime&gt; dateValue, Nullable&lt;int&gt; addValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; AddYears(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; dateValue, valuetype System.Nullable`1&lt;int32&gt; addValue) cil managed" />
@@ -1105,6 +1257,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DiffDays">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="DiffDays" /> function. For information about the canonical <see langword="DiffDays" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DiffDays">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DiffDays (Nullable&lt;DateTime&gt; dateValue1, Nullable&lt;DateTime&gt; dateValue2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DiffDays(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; dateValue1, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; dateValue2) cil managed" />
@@ -1181,6 +1352,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DiffHours">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="DiffHours" /> function. For information about the canonical <see langword="DiffHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DiffHours">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DiffHours (Nullable&lt;DateTime&gt; timeValue1, Nullable&lt;DateTime&gt; timeValue2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DiffHours(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue1, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue2) cil managed" />
@@ -1295,6 +1485,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DiffMicroseconds">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="DiffMicroseconds" /> function. For information about the canonical <see langword="DiffMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DiffMicroseconds">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DiffMicroseconds (Nullable&lt;DateTime&gt; timeValue1, Nullable&lt;DateTime&gt; timeValue2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DiffMicroseconds(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue1, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue2) cil managed" />
@@ -1409,6 +1618,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DiffMilliseconds">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="DiffMilliseconds" /> function. For information about the canonical <see langword="DiffMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DiffMilliseconds">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DiffMilliseconds (Nullable&lt;DateTime&gt; timeValue1, Nullable&lt;DateTime&gt; timeValue2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DiffMilliseconds(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue1, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue2) cil managed" />
@@ -1523,6 +1751,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DiffMinutes">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="DiffMinutes" /> function. For information about the canonical <see langword="DiffMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DiffMinutes">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DiffMinutes (Nullable&lt;DateTime&gt; timeValue1, Nullable&lt;DateTime&gt; timeValue2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DiffMinutes(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue1, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue2) cil managed" />
@@ -1637,6 +1884,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DiffMonths">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="DiffMonths" /> function. For information about the canonical <see langword="DiffMonths" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DiffMonths">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DiffMonths (Nullable&lt;DateTime&gt; dateValue1, Nullable&lt;DateTime&gt; dateValue2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DiffMonths(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; dateValue1, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; dateValue2) cil managed" />
@@ -1713,6 +1979,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DiffNanoseconds">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="DiffNanoseconds" /> function. For information about the canonical <see langword="DiffNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DiffNanoseconds">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DiffNanoseconds (Nullable&lt;DateTime&gt; timeValue1, Nullable&lt;DateTime&gt; timeValue2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DiffNanoseconds(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue1, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue2) cil managed" />
@@ -1827,6 +2112,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DiffSeconds">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="DiffSeconds" /> function. For information about the canonical <see langword="DiffSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DiffSeconds">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DiffSeconds (Nullable&lt;DateTime&gt; timeValue1, Nullable&lt;DateTime&gt; timeValue2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DiffSeconds(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue1, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeValue2) cil managed" />
@@ -1941,6 +2245,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DiffYears">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="DiffYears" /> function. For information about the canonical <see langword="DiffYears" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DiffYears">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DiffYears (Nullable&lt;DateTime&gt; dateValue1, Nullable&lt;DateTime&gt; dateValue2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DiffYears(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; dateValue1, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; dateValue2) cil managed" />
@@ -2165,6 +2488,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StandardDeviation">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="StandardDeviation">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; StandardDeviation (System.Collections.Generic.IEnumerable&lt;decimal&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; StandardDeviation(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Decimal&gt; collection) cil managed" />
@@ -2437,6 +2777,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StandardDeviationP">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="StDevP" /> function, which returns the statistical standard deviation for a population. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="StandardDeviationP">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; StandardDeviationP (System.Collections.Generic.IEnumerable&lt;decimal&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; StandardDeviationP(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Decimal&gt; collection) cil managed" />
@@ -2709,6 +3066,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Truncate">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="Truncate" /> function. For information about the canonical <see langword="Truncate" /> function, see [Math Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/math-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Truncate">
       <MemberSignature Language="C#" Value="public static Nullable&lt;decimal&gt; Truncate (Nullable&lt;decimal&gt; value, Nullable&lt;int&gt; digits);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; Truncate(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; value, valuetype System.Nullable`1&lt;int32&gt; digits) cil managed" />
@@ -2787,6 +3163,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TruncateTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="TruncateTime" /> function. For information about the canonical <see langword="TruncateTime" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TruncateTime">
       <MemberSignature Language="C#" Value="public static Nullable&lt;DateTime&gt; TruncateTime (Nullable&lt;DateTime&gt; dateValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; TruncateTime(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; dateValue) cil managed" />
@@ -2859,6 +3254,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Var">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Var">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Var (System.Collections.Generic.IEnumerable&lt;decimal&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Var(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Decimal&gt; collection) cil managed" />
@@ -3131,6 +3543,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="VarP">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the canonical <see langword="VarP" /> function, which returns the statistical variance over a population. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This function is translated to a corresponding function in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="VarP">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; VarP (System.Collections.Generic.IEnumerable&lt;decimal&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; VarP(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Decimal&gt; collection) cil managed" />
@@ -3403,434 +3832,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="DiffNanoseconds">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="DiffNanoseconds" /> function. For information about the canonical <see langword="DiffNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TruncateTime">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="TruncateTime" /> function. For information about the canonical <see langword="TruncateTime" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Var">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DiffHours">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="DiffHours" /> function. For information about the canonical <see langword="DiffHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Truncate">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="Truncate" /> function. For information about the canonical <see langword="Truncate" /> function, see [Math Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/math-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DiffSeconds">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="DiffSeconds" /> function. For information about the canonical <see langword="DiffSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddMicroseconds">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddYears">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="AddYears" /> function. For information about the canonical <see langword="AddYears" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddMinutes">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DiffMicroseconds">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="DiffMicroseconds" /> function. For information about the canonical <see langword="DiffMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddHours">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DiffYears">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="DiffYears" /> function. For information about the canonical <see langword="DiffYears" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DiffMilliseconds">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="DiffMilliseconds" /> function. For information about the canonical <see langword="DiffMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="StandardDeviationP">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="StDevP" /> function, which returns the statistical standard deviation for a population. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DiffMonths">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="DiffMonths" /> function. For information about the canonical <see langword="DiffMonths" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddMilliseconds">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddSeconds">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DiffMinutes">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="DiffMinutes" /> function. For information about the canonical <see langword="DiffMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="VarP">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="VarP" /> function, which returns the statistical variance over a population. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddMonths">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="AddMonths" /> function. For information about the canonical <see langword="AddMonths" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DiffDays">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="DiffDays" /> function. For information about the canonical <see langword="DiffDays" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddNanoseconds">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="StandardDeviation">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This function is translated to a corresponding function in the database.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

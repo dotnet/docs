@@ -454,6 +454,30 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or <see cref="T:System.TimeSpan" /> object and returns an integer that indicates whether this instance is shorter than, equal to, or longer than the specified object or <see cref="T:System.TimeSpan" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The two overloads of the <xref:System.TimeSpan.CompareTo%2A> method return a signed number that indicates the relative value of this instance and the `value` argument, as shown in the following table.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|Less than zero|This instance is shorter than `value`.|  
+|Zero|This instance is the same as `value`.|  
+|Greater than zero|This instance is longer than `value`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CompareTo">
       <MemberSignature Language="C#" Value="public int CompareTo (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object value) cil managed" />
@@ -3857,29 +3881,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CompareTo">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares this instance to a specified object or <see cref="T:System.TimeSpan" /> object and returns an integer that indicates whether this instance is shorter than, equal to, or longer than the specified object or <see cref="T:System.TimeSpan" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The two overloads of the <xref:System.TimeSpan.CompareTo%2A> method return a signed number that indicates the relative value of this instance and the `value` argument, as shown in the following table.  
-  
-|Value|Description|  
-|-----------|-----------------|  
-|Less than zero|This instance is shorter than `value`.|  
-|Zero|This instance is the same as `value`.|  
-|Greater than zero|This instance is longer than `value`.|  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

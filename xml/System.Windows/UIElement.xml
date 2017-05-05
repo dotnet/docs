@@ -265,6 +265,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ApplyAnimationClock">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Applies an animation to a specified dependency property on this element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is sealed and cannot be overridden.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ApplyAnimationClock">
       <MemberSignature Language="C#" Value="public void ApplyAnimationClock (System.Windows.DependencyProperty dp, System.Windows.Media.Animation.AnimationClock clock);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyAnimationClock(class System.Windows.DependencyProperty dp, class System.Windows.Media.Animation.AnimationClock clock) cil managed" />
@@ -12376,22 +12393,5 @@ Image with an Elliptical Clip Region
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ApplyAnimationClock">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Applies an animation to a specified dependency property on this element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is sealed and cannot be overridden.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -64,7 +64,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> class using the specified key identifier clauses.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="clauses" /> is <see langword="null" />.</exception>
+          <paramref name="identifiers" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -87,7 +87,7 @@
         <summary>Adds a key identifier clause to the end of the list.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="clause" /> is <see langword="null" />.</exception>
+          <paramref name="item" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.IdentityModel.Tokens.SecurityKeyIdentifier.IsReadOnly" /> property is <see langword="true" />.</exception>
       </Docs>
     </Member>
@@ -251,11 +251,11 @@
         <value>The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> at the specified index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than 0.  
+          <paramref name="i" /> is less than 0.  
   
  -or-  
   
- <paramref name="index" /> is equal to or greater than <see cref="P:System.IdentityModel.Tokens.SecurityKeyIdentifier.Count" />.</exception>
+ <paramref name="i" /> is equal to or greater than <see cref="P:System.IdentityModel.Tokens.SecurityKeyIdentifier.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="MakeReadOnly">

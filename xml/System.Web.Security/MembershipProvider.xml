@@ -366,6 +366,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EncryptPassword">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encrypts a password.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a byte array that contains the encrypted password.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EncryptPassword">
       <MemberSignature Language="C#" Value="protected virtual byte[] EncryptPassword (byte[] password);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8[] EncryptPassword(unsigned int8[] password) cil managed" />
@@ -1279,22 +1296,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="EncryptPassword">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Encrypts a password.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns a byte array that contains the encrypted password.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -799,6 +799,24 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAccessControl">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Security.AccessControl.FileSecurity" /> object that encapsulates the access control list (ACL) entries for the file described by the current <see cref="T:System.IO.FileInfo" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.FileInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for the current file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetAccessControl">
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.FileSecurity GetAccessControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.AccessControl.FileSecurity GetAccessControl() cil managed" />
@@ -1431,6 +1449,24 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Replace">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces the contents of a specified file with the file described by the current <see cref="T:System.IO.FileInfo" /> object, deleting the original file, and creating a backup of the replaced file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.FileInfo.Replace%2A> methods when you need to quickly replace a file with the contents of the file described by the current <xref:System.IO.FileInfo> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public System.IO.FileInfo Replace (string destinationFileName, string destinationBackupFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.FileInfo Replace(string destinationFileName, string destinationBackupFileName) cil managed" />
@@ -1681,41 +1717,5 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetAccessControl">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Security.AccessControl.FileSecurity" /> object that encapsulates the access control list (ACL) entries for the file described by the current <see cref="T:System.IO.FileInfo" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.IO.FileInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for the current file.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Replace">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Replaces the contents of a specified file with the file described by the current <see cref="T:System.IO.FileInfo" /> object, deleting the original file, and creating a backup of the replaced file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.IO.FileInfo.Replace%2A> methods when you need to quickly replace a file with the contents of the file described by the current <xref:System.IO.FileInfo> object.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

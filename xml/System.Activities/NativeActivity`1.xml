@@ -68,6 +68,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CacheMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom activity authors can provide validation logic in an activity's <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CacheMetadata">
       <MemberSignature Language="C#" Value="protected override sealed void CacheMetadata (System.Activities.ActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.ActivityMetadata metadata) cil managed" />
@@ -327,22 +344,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CacheMetadata">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Custom activity authors can provide validation logic in an activity's <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

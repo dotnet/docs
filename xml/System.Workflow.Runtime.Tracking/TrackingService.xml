@@ -83,6 +83,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProfile">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Must be overridden in the derived class, and when implemented, gets the tracking profile for a specified workflow instance or workflow type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A tracking service is responsible for managing the tracking profiles available for specific workflow types and specific workflow instances. You can implement this management in whatever manner you choose. For example, you can return the same <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for every workflow <xref:System.Type> and workflow instance; or you can manage a sophisticated store of tracking profiles referenced by workflow instance, workflow <xref:System.Type>, and <xref:System.Version>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetProfile">
       <MemberSignature Language="C#" Value="protected abstract System.Workflow.Runtime.Tracking.TrackingProfile GetProfile (Guid workflowInstanceId);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Workflow.Runtime.Tracking.TrackingProfile GetProfile(valuetype System.Guid workflowInstanceId) cil managed" />
@@ -270,22 +287,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetProfile">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Must be overridden in the derived class, and when implemented, gets the tracking profile for a specified workflow instance or workflow type.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A tracking service is responsible for managing the tracking profiles available for specific workflow types and specific workflow instances. You can implement this management in whatever manner you choose. For example, you can return the same <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for every workflow <xref:System.Type> and workflow instance; or you can manage a sophisticated store of tracking profiles referenced by workflow instance, workflow <xref:System.Type>, and <xref:System.Version>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -79,6 +79,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyToRows">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Lets you access the rows processed during a batch update operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Handling Batch Update-related Events and Errors](http://msdn.microsoft.com/en-us/c8ff901d-f4b0-44d1-a912-078c985010d3).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyToRows">
       <MemberSignature Language="C#" Value="public void CopyToRows (System.Data.DataRow[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyToRows(class System.Data.DataRow[] array) cil managed" />
@@ -335,23 +353,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CopyToRows">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Lets you access the rows processed during a batch update operation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [Handling Batch Update-related Events and Errors](http://msdn.microsoft.com/en-us/c8ff901d-f4b0-44d1-a912-078c985010d3).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

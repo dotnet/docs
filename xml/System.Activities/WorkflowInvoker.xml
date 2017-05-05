@@ -65,6 +65,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginInvoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes a workflow asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginInvoke">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginInvoke (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginInvoke(class System.AsyncCallback callback, object state) cil managed" />
@@ -358,6 +375,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes a workflow synchronously and returns a dictionary of the root activity’s <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method blocks until the workflow has completed, including idle time. All workflow execution is guaranteed to execute on the invoking thread. To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.Invoke%2A> overloads that take a <xref:System.TimeSpan>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Invoke">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; Invoke ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Invoke() cil managed" />
@@ -900,6 +934,25 @@ The time allotted to this operation may have been a portion of a longer timeout.
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes a workflow asynchronously using the event-based asynchronous design pattern.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To be notified when the workflow is complete, handle <xref:System.Activities.WorkflowInvoker.InvokeCompleted>. To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> overloads that take a <xref:System.TimeSpan>.  
+  
+ This method invokes a workflow asynchronously using the event-based asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InvokeAsync">
       <MemberSignature Language="C#" Value="public void InvokeAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InvokeAsync() cil managed" />
@@ -1272,58 +1325,5 @@ The time allotted to this operation may have been a portion of a longer timeout.
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="BeginInvoke">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes a workflow asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Asynchronous Programming Overview](http://go.microsoft.com/fwlink/?LinkId=141764).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Invoke">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes a workflow synchronously and returns a dictionary of the root activity’s <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method blocks until the workflow has completed, including idle time. All workflow execution is guaranteed to execute on the invoking thread. To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.Invoke%2A> overloads that take a <xref:System.TimeSpan>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="InvokeAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes a workflow asynchronously using the event-based asynchronous design pattern.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To be notified when the workflow is complete, handle <xref:System.Activities.WorkflowInvoker.InvokeCompleted>. To configure a time-out interval in which the workflow must complete, use one of the <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> overloads that take a <xref:System.TimeSpan>.  
-  
- This method invokes a workflow asynchronously using the event-based asynchronous design pattern. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Event-based Asynchronous Pattern Overview](http://go.microsoft.com/fwlink/?LinkId=141765).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

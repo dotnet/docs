@@ -79,6 +79,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddNewProperty">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> to the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
+  
+ [!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
+ [!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddNewProperty">
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildProperty AddNewProperty (string propertyName, string propertyValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.BuildEngine.BuildProperty AddNewProperty(string propertyName, string propertyValue) cil managed" />
@@ -310,6 +330,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveProperty">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> from the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
+  
+ [!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
+ [!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveProperty">
       <MemberSignature Language="C#" Value="public void RemoveProperty (Microsoft.Build.BuildEngine.BuildProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveProperty(class Microsoft.Build.BuildEngine.BuildProperty property) cil managed" />
@@ -432,45 +472,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddNewProperty">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a new <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> to the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
-  
- [!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
- [!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveProperty">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> from the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
-  
- [!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
- [!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

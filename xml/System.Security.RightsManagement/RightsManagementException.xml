@@ -25,6 +25,26 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException>.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RightsManagementException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -305,25 +325,5 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException>.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -10,6 +10,10 @@
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -39,6 +43,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -77,6 +90,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -119,6 +141,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -165,6 +196,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -215,6 +255,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -269,6 +318,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -327,6 +385,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -389,6 +456,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -457,6 +533,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -529,6 +614,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -605,6 +699,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -685,6 +788,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -769,6 +881,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -857,6 +978,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -940,6 +1070,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1036,6 +1175,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1136,6 +1284,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1240,6 +1397,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1348,6 +1514,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1460,6 +1635,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1567,6 +1751,15 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1687,6 +1880,10 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1&gt;</ReturnType>
       </ReturnValue>
@@ -1716,6 +1913,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2&gt;</ReturnType>
@@ -1748,6 +1949,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3&gt;</ReturnType>
@@ -1782,6 +1987,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4&gt;</ReturnType>
@@ -1818,6 +2027,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5&gt;</ReturnType>
@@ -1856,6 +2069,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6&gt;</ReturnType>
@@ -1896,6 +2113,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7&gt;</ReturnType>
@@ -1938,6 +2159,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8&gt;&gt;</ReturnType>
@@ -1982,6 +2207,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9&gt;&gt;</ReturnType>
@@ -2028,6 +2257,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10&gt;&gt;</ReturnType>
@@ -2076,6 +2309,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11&gt;&gt;</ReturnType>
@@ -2126,6 +2363,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12&gt;&gt;</ReturnType>
@@ -2178,6 +2419,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13&gt;&gt;</ReturnType>
@@ -2232,6 +2477,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14&gt;&gt;</ReturnType>
@@ -2288,6 +2537,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15&gt;&gt;&gt;</ReturnType>
@@ -2346,6 +2599,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16&gt;&gt;&gt;</ReturnType>
@@ -2406,6 +2663,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17&gt;&gt;&gt;</ReturnType>
@@ -2468,6 +2729,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17,T18&gt;&gt;&gt;</ReturnType>
@@ -2532,6 +2797,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17,T18,T19&gt;&gt;&gt;</ReturnType>
@@ -2598,6 +2867,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17,T18,T19,T20&gt;&gt;&gt;</ReturnType>
@@ -2666,6 +2939,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17,T18,T19,T20,T21&gt;&gt;&gt;</ReturnType>
@@ -2737,6 +3014,10 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1&gt;</ReturnType>
       </ReturnValue>
@@ -2766,6 +3047,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2&gt;</ReturnType>
@@ -2798,6 +3083,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3&gt;</ReturnType>
@@ -2832,6 +3121,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4&gt;</ReturnType>
@@ -2868,6 +3161,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5&gt;</ReturnType>
@@ -2906,6 +3203,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6&gt;</ReturnType>
@@ -2946,6 +3247,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7&gt;</ReturnType>
@@ -2988,6 +3293,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8&gt;&gt;</ReturnType>
@@ -3032,6 +3341,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9&gt;&gt;</ReturnType>
@@ -3078,6 +3391,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10&gt;&gt;</ReturnType>
@@ -3126,6 +3443,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11&gt;&gt;</ReturnType>
@@ -3176,6 +3497,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12&gt;&gt;</ReturnType>
@@ -3228,6 +3553,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13&gt;&gt;</ReturnType>
@@ -3282,6 +3611,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14&gt;&gt;</ReturnType>
@@ -3338,6 +3671,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15&gt;&gt;&gt;</ReturnType>
@@ -3396,6 +3733,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15,T16&gt;&gt;&gt;</ReturnType>
@@ -3456,6 +3797,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15,T16,T17&gt;&gt;&gt;</ReturnType>
@@ -3518,6 +3863,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15,T16,T17,T18&gt;&gt;&gt;</ReturnType>
@@ -3582,6 +3931,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15,T16,T17,T18,T19&gt;&gt;&gt;</ReturnType>
@@ -3648,6 +4001,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15,T16,T17,T18,T19,T20&gt;&gt;&gt;</ReturnType>
@@ -3716,6 +4073,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15,T16,T17,T18,T19,T20,T21&gt;&gt;&gt;</ReturnType>

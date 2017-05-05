@@ -28,6 +28,24 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="BeginReceive">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous receive operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginReceive%2A> method when you want the application processing to continue without waiting for the request to be received. Use the synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> method when it is acceptable for the current thread to be blocked until the request message is received or the interval of time specified by the `timeout` has been exceeded. The asynchronous operation is available with or without an explicit timeout.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginReceive">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginReceive(class System.AsyncCallback callback, object state) cil managed" />
@@ -352,6 +370,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Receive">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.ServiceProcess.TimeoutException">The operation did not complete with the timeout interval.</exception>
+        <exception cref="T:System.ServiceModel.CommunicationException">The input channel failed.</exception>
+        <exception cref="T:System.ServiceModel.CommunicationObjectAbortedException">The input channel has been aborted.</exception>
+        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The input channel faulted.</exception>
+        <summary>Returns a message received by the input channel, if one is available with an interval of time that is explicitly or implicitly defined.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> method when it is acceptable for the current thread to be blocked until it receives the request message or exceeds the interval of time specified by `timeout`. Use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginReceive%2A> method when you need the application processing to continue without waiting for the request to be received.  
+  
+ The synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> operation is available with or without an explicit timeout.  
+  
+ If a message is not available, it blocks until one is available or until the timeout is exceeded.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Receive">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Receive ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Receive() cil managed" />
@@ -530,49 +574,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Receive">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.ServiceProcess.TimeoutException">The operation did not complete with the timeout interval.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationException">The input channel failed.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectAbortedException">The input channel has been aborted.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The input channel faulted.</exception>
-        <summary>Returns a message received by the input channel, if one is available with an interval of time that is explicitly or implicitly defined.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> method when it is acceptable for the current thread to be blocked until it receives the request message or exceeds the interval of time specified by `timeout`. Use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginReceive%2A> method when you need the application processing to continue without waiting for the request to be received.  
-  
- The synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> operation is available with or without an explicit timeout.  
-  
- If a message is not available, it blocks until one is available or until the timeout is exceeded.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginReceive">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous receive operation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginReceive%2A> method when you want the application processing to continue without waiting for the request to be received. Use the synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> method when it is acceptable for the current thread to be blocked until the request message is received or the interval of time specified by the `timeout` has been exceeded. The asynchronous operation is available with or without an explicit timeout.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

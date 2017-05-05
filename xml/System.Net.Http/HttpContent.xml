@@ -46,6 +46,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyToAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serialize the HTTP content into a stream of bytes and copies it to the stream object provided as the <paramref name="stream" /> parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation does not block.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyToAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CopyToAsync (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CopyToAsync(class System.IO.Stream stream) cil managed" />
@@ -245,6 +264,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadIntoBufferAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serialize the HTTP content to a memory buffer as an asynchronous operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation will not block.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LoadIntoBufferAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task LoadIntoBufferAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task LoadIntoBufferAsync() cil managed" />
@@ -525,43 +563,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CopyToAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Serialize the HTTP content into a stream of bytes and copies it to the stream object provided as the <paramref name="stream" /> parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation does not block.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="LoadIntoBufferAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Serialize the HTTP content to a memory buffer as an asynchronous operation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This operation will not block.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

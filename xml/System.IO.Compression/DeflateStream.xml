@@ -46,6 +46,24 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.DeflateStream" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using the <xref:System.IO.Compression.DeflateStream> class to compress a file larger than 4 GB will cause an exception.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DeflateStream (System.IO.Stream stream, System.IO.Compression.CompressionLevel compressionLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, valuetype System.IO.Compression.CompressionLevel compressionLevel) cil managed" />
@@ -592,9 +610,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+          <paramref name="async_result" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="asyncResult" /> did not originate from a <see cref="M:System.IO.Compression.DeflateStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> method on the current stream.</exception>
+          <paramref name="async_result" /> did not originate from a <see cref="M:System.IO.Compression.DeflateStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> method on the current stream.</exception>
         <exception cref="T:System.SystemException">An exception was thrown during a call to <see cref="M:System.Threading.WaitHandle.WaitOne" />.</exception>
         <exception cref="T:System.InvalidOperationException">The stream is <see langword="null" />.</exception>
       </Docs>
@@ -635,9 +653,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+          <paramref name="async_result" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="asyncResult" /> did not originate from a <see cref="M:System.IO.Compression.DeflateStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> method on the current stream.</exception>
+          <paramref name="async_result" /> did not originate from a <see cref="M:System.IO.Compression.DeflateStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> method on the current stream.</exception>
         <exception cref="T:System.Exception">An exception was thrown during a call to <see cref="M:System.Threading.WaitHandle.WaitOne" />.</exception>
         <exception cref="T:System.InvalidOperationException">The end write call is invalid.</exception>
       </Docs>
@@ -965,23 +983,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Compression</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.DeflateStream" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Using the <xref:System.IO.Compression.DeflateStream> class to compress a file larger than 4 GB will cause an exception.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

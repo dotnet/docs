@@ -49,6 +49,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceData">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace data to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.IisTraceListener.TraceData%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceData">
       <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object data) cil managed" />
@@ -131,6 +148,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace and event information to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.IisTraceListener.TraceEvent%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceEvent">
       <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType severity, int32 id, string message) cil managed" />
@@ -215,6 +249,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a message, a category name, or the value of an object's <see cref="M:System.Object.ToString" /> method to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.IisTraceListener.Write%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string message) cil managed" />
@@ -333,56 +384,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TraceEvent">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes trace and event information to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.IisTraceListener.TraceEvent%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TraceData">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes trace data to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.IisTraceListener.TraceData%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a message, a category name, or the value of an object's <see cref="M:System.Object.ToString" /> method to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.IisTraceListener.Write%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

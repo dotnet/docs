@@ -23,6 +23,23 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> class. The Context property must be set on the object prior to calling <see cref="M:System.DirectoryServices.AccountManagement.Principal.Save" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The computer principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ComputerPrincipal (System.DirectoryServices.AccountManagement.PrincipalContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.PrincipalContext context) cil managed" />
@@ -315,22 +332,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> class. The Context property must be set on the object prior to calling <see cref="M:System.DirectoryServices.AccountManagement.Principal.Save" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The computer principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -26,6 +26,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelListenerBase" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor> constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ChannelListenerBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -370,22 +387,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelListenerBase" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor> constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

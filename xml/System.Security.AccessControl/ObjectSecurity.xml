@@ -1089,6 +1089,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetSecurityDescriptorBinaryForm">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the security descriptor for this <see cref="T:System.Security.AccessControl.ObjectSecurity" /> object from the specified binary data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the security descriptor represented by the binary data contains `null` for its discretionary access control list (DACL), a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
+  
+ This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetSecurityDescriptorBinaryForm">
       <MemberSignature Language="C#" Value="public void SetSecurityDescriptorBinaryForm (byte[] binaryForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSecurityDescriptorBinaryForm(unsigned int8[] binaryForm) cil managed" />
@@ -1161,6 +1180,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetSecurityDescriptorSddlForm">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the security descriptor for this <see cref="T:System.Security.AccessControl.ObjectSecurity" /> object from the specified Security Descriptor Definition Language (SDDL) string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the security descriptor represented by the SDDL string contains `null` for its discretionary access control list (DACL), a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
+  
+ This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetSecurityDescriptorSddlForm">
       <MemberSignature Language="C#" Value="public void SetSecurityDescriptorSddlForm (string sddlForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSecurityDescriptorSddlForm(string sddlForm) cil managed" />
@@ -1279,43 +1317,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetSecurityDescriptorBinaryForm">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the security descriptor for this <see cref="T:System.Security.AccessControl.ObjectSecurity" /> object from the specified binary data.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the security descriptor represented by the binary data contains `null` for its discretionary access control list (DACL), a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
-  
- This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetSecurityDescriptorSddlForm">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the security descriptor for this <see cref="T:System.Security.AccessControl.ObjectSecurity" /> object from the specified Security Descriptor Definition Language (SDDL) string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the security descriptor represented by the SDDL string contains `null` for its discretionary access control list (DACL), a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
-  
- This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

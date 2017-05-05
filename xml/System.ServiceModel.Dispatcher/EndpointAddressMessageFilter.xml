@@ -170,6 +170,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Match">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tests whether a message or buffered message satisfies the criteria of the endpoint filter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The difference between the two overloads of the <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.Match%2A> method is that the one that takes the <xref:System.ServiceModel.Channels.MessageBuffer> parameter is permitted to examine the body of a message when testing for a match, while the one that takes the <xref:System.ServiceModel.Channels.Message> parameter is not.  
+  
+ <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.Match%2A> does not test the contents of the body of a message, so these two methods are equivalent.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Match">
       <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
@@ -234,24 +253,5 @@
           <paramref name="messageBuffer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Match">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Tests whether a message or buffered message satisfies the criteria of the endpoint filter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The difference between the two overloads of the <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.Match%2A> method is that the one that takes the <xref:System.ServiceModel.Channels.MessageBuffer> parameter is permitted to examine the body of a message when testing for a match, while the one that takes the <xref:System.ServiceModel.Channels.Message> parameter is not.  
-  
- <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.Match%2A> does not test the contents of the body of a message, so these two methods are equivalent.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

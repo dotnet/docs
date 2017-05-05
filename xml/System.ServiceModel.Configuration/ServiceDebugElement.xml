@@ -40,8 +40,7 @@
 ## Examples  
  The following code example shows how to use a configuration file to enable the HTML help page feature and return exception information inside a SOAP fault back to the client for debugging purposes (in addition to enabling metadata support).  
   
- <!-- TODO: review snippet reference [!code[ServiceDebugBehaviorConfig#1](~/samples/snippets/common/VS_Snippets_CFX/servicedebugbehaviorconfig/common/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-csharp[ServiceDebugBehaviorConfig#1](~/samples/snippets/csharp/VS_Snippets_CFX/servicedebugbehaviorconfig/cs/hostapplication.exe.config#1)]  -->  
+ [!code-xml[ServiceDebugBehaviorConfig#1](~/samples/snippets/csharp/VS_Snippets_CFX/servicedebugbehaviorconfig/cs/hostapplication.exe.config#1)]   
   
  ]]></format>
     </remarks>

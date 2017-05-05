@@ -79,9 +79,7 @@
   
  The underlying binding must support flowed transactions for the following code example to execute properly. To support flowed transactions using the <xref:System.ServiceModel.WSHttpBinding>, for example, set the <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> property to `true` in code or in an application configuration file. The following code example shows the configuration file for the preceding sample.  
   
- <!-- TODO: review snippet reference [!code[OperationBehaviorAttribute1#1](~/samples/snippets/common/VS_Snippets_CFX/operationbehaviorattribute1/common/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-csharp[OperationBehaviorAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[OperationBehaviorAttribute1#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/hostapplication.exe.config#1)]  -->  
+ [!code-xml[OperationBehaviorAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#1)]   
   
  ]]></format>
     </remarks>
@@ -437,9 +435,7 @@ public void MyMethod()
   
  Setting this property to `true` can also be done using an application configuration file and the [\&lt;serviceDebug\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicedebug.md) element, as the following code example shows.  
   
- <!-- TODO: review snippet reference [!code-csharp[OperationBehaviorAttribute1#10](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#10)]  -->
- <!-- TODO: review snippet reference [!code-vb[OperationBehaviorAttribute1#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/hostapplication.exe.config#10)]  -->  
-  
+ [!code-xml[OperationBehaviorAttribute1#10](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#10)]   
    
   
 ## Examples  
@@ -458,9 +454,7 @@ public void MyMethod()
   
  The underlying binding must support flowed transactions for the following code example to execute properly. To support flowed transactions using the <xref:System.ServiceModel.WSHttpBinding>, for example, set the <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> property to `true` in code or in an application configuration file. The following code example shows the configuration file for the preceding sample.  
   
- <!-- TODO: review snippet reference [!code[OperationBehaviorAttribute1#1](~/samples/snippets/common/VS_Snippets_CFX/operationbehaviorattribute1/common/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-csharp[OperationBehaviorAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[OperationBehaviorAttribute1#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/hostapplication.exe.config#1)]  -->  
+ [!code-xml[OperationBehaviorAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#1)]   
   
  ]]></format>
         </remarks>
@@ -517,9 +511,7 @@ public void MyMethod()
   
  The underlying binding must support flowed transactions for the following code example to execute properly. To support flowed transactions using the <xref:System.ServiceModel.WSHttpBinding>, for example, set the <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> property to `true` in code or in an application configuration file. The following code example shows the configuration file for the preceding sample.  
   
- <!-- TODO: review snippet reference [!code[OperationBehaviorAttribute1#1](~/samples/snippets/common/VS_Snippets_CFX/operationbehaviorattribute1/common/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-csharp[OperationBehaviorAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[OperationBehaviorAttribute1#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/hostapplication.exe.config#1)]  -->  
+ [!code-xml[OperationBehaviorAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#1)]   
   
  ]]></format>
         </remarks>
@@ -636,9 +628,7 @@ public void MyMethod()
   
  The underlying binding must support flowed transactions for the following code example to execute properly. To support flowed transactions using the <xref:System.ServiceModel.WSHttpBinding>, for example, set the <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> property to `true` in code or in an application configuration file. The following code example shows a configuration file for the preceding sample.  
   
- <!-- TODO: review snippet reference [!code[SBA.Transactions#1](~/samples/snippets/common/VS_Snippets_CFX/sba.transactions/common/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-csharp[SBA.Transactions#1](~/samples/snippets/csharp/VS_Snippets_CFX/sba.transactions/cs/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[SBA.Transactions#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sba.transactions/vb/hostapplication.exe.config#1)]  -->  
+ [!code-xml[SBA.Transactions#1](~/samples/snippets/csharp/VS_Snippets_CFX/sba.transactions/cs/hostapplication.exe.config#1)]   
   
  ]]></format>
         </remarks>
@@ -900,9 +890,7 @@ public void MyMethod()
   
  The underlying binding must support flowed transactions for the following code example to execute properly. To support flowed transactions using the <xref:System.ServiceModel.WSHttpBinding>, for example, set the <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> property to `true` in code or in an application configuration file. The following code example shows a configuration file for the preceding sample.  
   
- <!-- TODO: review snippet reference [!code[SBA.Transactions#1](~/samples/snippets/common/VS_Snippets_CFX/sba.transactions/common/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-csharp[SBA.Transactions#1](~/samples/snippets/csharp/VS_Snippets_CFX/sba.transactions/cs/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[SBA.Transactions#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sba.transactions/vb/hostapplication.exe.config#1)]  -->  
+ [!code-xml[SBA.Transactions#1](~/samples/snippets/csharp/VS_Snippets_CFX/sba.transactions/cs/hostapplication.exe.config#1)]   
   
  ]]></format>
         </remarks>

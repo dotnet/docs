@@ -39,7 +39,7 @@
   
  The following code example shows how to register <xref:System.ServiceModel.Description.IPolicyImportExtension> implementations using the `<policyImporters>` configuration section.  
   
- <!-- TODO: review snippet reference [!code[S_UEPolicyConversionContext#100](~/samples/snippets/common/VS_Snippets_CFX/s_uepolicyconversioncontext/common/app.config#100)]  -->  
+ [!code-xml[S_UEPolicyConversionContext#100](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/common/app.config#100)]   
   
  The following code example demonstrates how a custom binding element can implement <xref:System.ServiceModel.Description.IPolicyExportExtension> to attach a custom policy assertion to the binding assertions.  
   
@@ -134,7 +134,7 @@
   
  The following code example shows how to register <xref:System.ServiceModel.Description.IPolicyImportExtension> implementations using the `<policyImporters>` configuration section.  
   
- <!-- TODO: review snippet reference [!code[S_UEPolicyConversionContext#100](~/samples/snippets/common/VS_Snippets_CFX/s_uepolicyconversioncontext/common/app.config#100)]  -->  
+ [!code-xml[S_UEPolicyConversionContext#100](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/common/app.config#100)]   
   
  The following code example demonstrates how a custom binding element can implement <xref:System.ServiceModel.Description.IPolicyExportExtension> to attach a custom policy assertion to the binding assertions.  
   

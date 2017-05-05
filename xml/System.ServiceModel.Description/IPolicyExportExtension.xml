@@ -41,13 +41,11 @@
   
  The following example shows the host configuration file that loads the custom policy exporter.  
   
- <!-- TODO: review snippet reference [!code[CustomPolicySample#3](~/samples/snippets/common/VS_Snippets_CFX/custompolicysample/common/app.config#3)]  -->
- <!-- TODO: review snippet reference [!code-csharp[CustomPolicySample#3](~/samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/app.config#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomPolicySample#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/custompolicysample/vb/app.config#3)]  -->  
+ [!code-xml[CustomPolicySample#3](~/samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/app.config#3)]   
   
  The following example shows the custom assertion in the WSDL file.  
   
- <!-- TODO: review snippet reference [!code[CustomPolicySample#16](~/samples/snippets/common/VS_Snippets_CFX/custompolicysample/common/tempuri.org.wsdl#16)]  -->  
+ [!code-xml[CustomPolicySample#16](~/samples/snippets/common/VS_Snippets_CFX/custompolicysample/common/tempuri.org.wsdl#16)]   
   
  ]]></format>
     </remarks>
@@ -94,13 +92,11 @@
   
  The following example shows the host configuration file that loads the custom policy exporter.  
   
- <!-- TODO: review snippet reference [!code[CustomPolicySample#3](~/samples/snippets/common/VS_Snippets_CFX/custompolicysample/common/app.config#3)]  -->
- <!-- TODO: review snippet reference [!code-csharp[CustomPolicySample#3](~/samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/app.config#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomPolicySample#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/custompolicysample/vb/app.config#3)]  -->  
+ [!code-xml[CustomPolicySample#3](~/samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/app.config#3)]   
   
  The following example shows the custom assertion in the WSDL file.  
   
- <!-- TODO: review snippet reference [!code[CustomPolicySample#16](~/samples/snippets/common/VS_Snippets_CFX/custompolicysample/common/tempuri.org.wsdl#16)]  -->  
+ [!code-xml[CustomPolicySample#16](~/samples/snippets/common/VS_Snippets_CFX/custompolicysample/common/tempuri.org.wsdl#16)]    
   
  ]]></format>
         </remarks>

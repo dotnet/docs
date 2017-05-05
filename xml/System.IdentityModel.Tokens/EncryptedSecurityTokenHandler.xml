@@ -201,7 +201,7 @@
   
  -or-  
   
- The <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />Referenced through the <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandler.ContainingCollection" /> property is unable to find a <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" /> that can read the decrypted XML and return a <see cref="T:System.IdentityModel.Tokens.SecurityToken" />.</exception>
+ The <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />referenced through the <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandler.ContainingCollection" /> property is unable to find a <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" /> that can read the decrypted XML and return a <see cref="T:System.IdentityModel.Tokens.SecurityToken" />.</exception>
         <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> is not found inside the XML pointed to by the reader.  
   
  -or-  

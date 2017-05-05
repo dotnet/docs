@@ -1962,7 +1962,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="sourceDirectoryName" /> or <paramref name="destinationDirectoryName" /> is <see langword="Nothing" /> or an empty string.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The directory does not exist.</exception>
-        <exception cref="T:System.IO.IOException">The target directory already exists and o<paramref name="verwrite" /> is set to <see langword="False" />.</exception>
+        <exception cref="T:System.IO.IOException">The target directory already exists and <paramref name="overwrite" /> is set to <see langword="False" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The path exceeds the system-defined maximum length.</exception>
         <exception cref="T:System.InvalidOperationException">The operation is cyclic.</exception>
         <exception cref="T:System.NotSupportedException">A file or directory name in the path contains a colon (:) or is in an invalid format.</exception>
@@ -2018,7 +2018,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="sourceDirectoryName" /> or <paramref name="destinationDirectoryName" /> is <see langword="Nothing" /> or an empty string.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The directory does not exist.</exception>
-        <exception cref="T:System.IO.IOException">The target directory already exists and o<paramref name="verwrite" /> is set to <see langword="False" />.</exception>
+        <exception cref="T:System.IO.IOException">The target directory already exists and <paramref name="overwrite" /> is set to <see langword="False" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The path exceeds the system-defined maximum length.</exception>
         <exception cref="T:System.InvalidOperationException">The operation is cyclic.</exception>
         <exception cref="T:System.NotSupportedException">A file or directory name in the path contains a colon (:) or is in an invalid format.</exception>

@@ -2,7 +2,7 @@
 title: "ICorDebugStepper::IsActive Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsActive method, ICorDebugStepper interface [.NET Framework debugging]"
   - "ICorDebugStepper::IsActive method [.NET Framework debugging]"
 ms.assetid: 8b35e7a9-b40e-40a9-8d8e-b82e823fc575
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

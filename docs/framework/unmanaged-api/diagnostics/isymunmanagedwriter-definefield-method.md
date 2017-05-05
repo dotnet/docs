@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter::DefineField method [.NET Framework debugging]"
   - "DefineField method, ISymUnmanagedWriter interface [.NET Framework debugging]"
 ms.assetid: c6a1f797-dbf4-40f5-ab99-d9b4bfb26148
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

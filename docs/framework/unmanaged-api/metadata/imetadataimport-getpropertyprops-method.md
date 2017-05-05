@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetPropertyProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetPropertyProps method [.NET Framework metadata]"
 ms.assetid: dc0ff3e6-7e7d-4f6c-948d-52b28f5cb78c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

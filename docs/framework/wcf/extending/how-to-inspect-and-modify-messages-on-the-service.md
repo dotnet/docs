@@ -42,6 +42,8 @@ You can inspect or modify the incoming or outgoing messages across a [!INCLUDE[i
  [!code-vb[Interceptors#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#8)]  
   
  [!code-xml[Interceptors#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/hostapplication.exe.config#9)]     
+
+
   
 ## See Also  
  <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=fullName>   

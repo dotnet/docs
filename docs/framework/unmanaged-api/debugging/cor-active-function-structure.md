@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_ACTIVE_FUNCTION structure [.NET Framework debugging]"
 ms.assetid: ed86185f-2152-459c-961f-10c06d62e83f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

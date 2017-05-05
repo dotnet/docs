@@ -32,8 +32,8 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # C# Language Specification
-The C# Language Specification is the definitive source for C# syntax and usage. This specification contains detailed information about all aspects of the language, including many points that the documentation for Visual C# doesn't cover.  
-  
+The C# Language Specification is the definitive source for C# syntax and usage. This specification contains detailed information about all aspects of the language, including many points that the documentation for Visual C# doesn't cover.
+
 You can download version 5.0 of this specification from the [Microsoft Download Center](http://www.microsoft.com/download/details.aspx?id=7029). If you've installed Visual Studio 2015, you can also find the specification on your computer in the Program Files (x86)/Microsoft Visual Studio 14.0/VC#/Specifications/1033 folder. If you have another version of Visual Studio installed or if you installed Visual Studio in a language other than English, change the path as appropriate.
 
 Version 6.0 of the specification is not currently available, but an unofficial draft exists in [the dotnet/csharplang GitHub repository](https://github.com/dotnet/csharplang/blob/master/spec/README.md).

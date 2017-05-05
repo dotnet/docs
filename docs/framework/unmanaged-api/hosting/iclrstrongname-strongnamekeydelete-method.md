@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "StrongNameKeyDelete method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameKeyDelete method [.NET Framework hosting]"
 ms.assetid: 0163412f-f617-4428-89e0-03992fec31e8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

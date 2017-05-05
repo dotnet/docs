@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::GetSigFromToken method [.NET Framework metadata]"
   - "GetSigFromToken method [.NET Framework metadata]"
 ms.assetid: ab894dc4-f7b6-4afc-bfcb-582a4b7e53a2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

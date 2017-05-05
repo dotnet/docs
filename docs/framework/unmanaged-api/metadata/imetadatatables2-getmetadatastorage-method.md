@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetMetaDataStorage method [.NET Framework metadata]"
   - "IMetaDataTables2::GetMetaDataStorage method [.NET Framework metadata]"
 ms.assetid: 667a6d1e-753d-4ea2-8fd8-a8337d1bb9cd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

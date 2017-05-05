@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugExceptionObjectValue interface [.NET Framework debugging]"
 ms.assetid: 43416dd5-8892-4106-9f59-f9143b19ddb4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

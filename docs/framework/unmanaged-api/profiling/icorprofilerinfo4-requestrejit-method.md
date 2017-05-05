@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "RequestReJIT method, ICorProfilerInfo4 interface [.NET Framework profiling]"
   - "ICorProfilerInfo4::RequestReJIT method [.NET Framework profiling]"
 ms.assetid: 781ed736-f30c-4816-920e-3552e36542c6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

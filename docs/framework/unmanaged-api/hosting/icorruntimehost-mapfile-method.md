@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorRuntimeHost::MapFile method [.NET Framework hosting]"
   - "MapFile method [.NET Framework hosting]"
 ms.assetid: 45ae0502-0a31-4342-b7e3-f36e1cf738f3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

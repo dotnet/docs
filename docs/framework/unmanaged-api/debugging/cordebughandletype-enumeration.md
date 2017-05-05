@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugHandleType enumeration [.NET Framework debugging]"
 ms.assetid: 84296b55-c2c5-424c-ac9c-8e28e2895945
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

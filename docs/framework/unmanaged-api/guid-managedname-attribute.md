@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GUID_ManagedName attribute"
 ms.assetid: 11e18095-e444-47bc-aff6-b887ac5dc01e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

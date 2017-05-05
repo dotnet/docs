@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataTables::GetUserStringHeapSize method [.NET Framework metadata]"
   - "GetUserStringHeapSize method [.NET Framework metadata]"
 ms.assetid: cba9e4d6-9461-4420-9614-96ff7039ec9c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

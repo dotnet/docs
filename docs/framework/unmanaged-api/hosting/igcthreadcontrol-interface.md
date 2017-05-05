@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IGCThreadControl interface [.NET Framework hosting]"
 ms.assetid: 3ff04d75-85ac-4df9-886d-dbaa037c0552
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

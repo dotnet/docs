@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "FindTypeDefByName method [.NET Framework metadata]"
   - "IMetaDataImport::FindTypeDefByName method [.NET Framework metadata]"
 ms.assetid: f4c2cd88-ac28-4bad-9ab1-2cf9d2de41e6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

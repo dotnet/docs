@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DefineTypeRefByName method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineTypeRefByName method [.NET Framework metadata]"
 ms.assetid: c30a4ce3-2d3e-411a-98df-e62ac4a5dd50
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

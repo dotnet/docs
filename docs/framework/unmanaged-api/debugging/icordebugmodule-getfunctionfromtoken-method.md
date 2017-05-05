@@ -2,7 +2,7 @@
 title: "ICorDebugModule::GetFunctionFromToken Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetFunctionFromToken method, ICorDebugModule interface [.NET Framework debugging]"
   - "ICorDebugModule::GetFunctionFromToken method [.NET Framework debugging]"
 ms.assetid: 6fe12194-4ef7-43c1-9570-ade35ccf127a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

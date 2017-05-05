@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetNumTables method [.NET Framework metadata]"
   - "IMetaDataTables::GetNumTables method [.NET Framework metadata]"
 ms.assetid: 8196f2a3-bbf2-45d3-a6cd-74502c356644
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

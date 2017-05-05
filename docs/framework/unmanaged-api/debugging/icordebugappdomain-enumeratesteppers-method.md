@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugAppDomain::EnumerateSteppers method [.NET Framework debugging]"
   - "EnumerateSteppers method [.NET Framework debugging]"
 ms.assetid: 3f3c4503-570e-44c1-ae6a-a3c6b840c732
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "NewArray method [.NET Framework debugging]"
   - "ICorDebugEval::NewArray method [.NET Framework debugging]"
 ms.assetid: cc79a67d-5368-434d-a943-209db90491b9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

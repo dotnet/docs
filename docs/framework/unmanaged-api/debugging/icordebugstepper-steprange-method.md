@@ -2,7 +2,7 @@
 title: "ICorDebugStepper::StepRange Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "StepRange method [.NET Framework debugging]"
   - "ICorDebugStepper::StepRange method [.NET Framework debugging]"
 ms.assetid: b9776112-6e6d-4708-892a-8873db02e16f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

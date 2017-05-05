@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EmitAssembly method"
 ms.assetid: 605ff39e-e5cc-4bff-8196-e8d68a9715b9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

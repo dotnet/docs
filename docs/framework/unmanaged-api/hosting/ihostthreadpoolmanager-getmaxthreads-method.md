@@ -2,7 +2,7 @@
 title: "IHostThreadPoolManager::GetMaxThreads Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostThreadPoolManager::GetMaxThreads method [.NET Framework hosting]"
   - "GetMaxThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"
 ms.assetid: db268876-6178-4a81-aca3-318ee7f96001
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

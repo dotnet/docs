@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ResetENCLog method [.NET Framework metadata]"
   - "IMetaDataEmit2::ResetENCLog method [.NET Framework metadata]"
 ms.assetid: 44b9fd76-a022-4e9a-aea3-dec5411a9c22
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

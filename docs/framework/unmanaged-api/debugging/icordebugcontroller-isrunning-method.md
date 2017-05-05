@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsRunning method [.NET Framework debugging]"
   - "ICorDebugController::IsRunning method [.NET Framework debugging]"
 ms.assetid: b33ff059-40c4-4dfe-9cb2-21bfed2de0b0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -2,7 +2,7 @@
 title: "ICorDebugThread2::GetConnectionID Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread2::GetConnectionID method [.NET Framework debugging]"
   - "GetConnectionID method [.NET Framework debugging]"
 ms.assetid: 9c76b587-f941-4fa1-8b86-f3494fb10c8e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

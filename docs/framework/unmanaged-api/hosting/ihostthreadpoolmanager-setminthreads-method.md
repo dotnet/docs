@@ -2,7 +2,7 @@
 title: "IHostThreadPoolManager::SetMinThreads Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetMinThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"
   - "IHostThreadPoolManager::SetMinThreads method [.NET Framework hosting]"
 ms.assetid: 10409db9-9fd2-4e4d-b8cd-cf6fec0afaa2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

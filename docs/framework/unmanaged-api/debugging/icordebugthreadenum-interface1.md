@@ -2,7 +2,7 @@
 title: "ICorDebugThreadEnum Interface1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugThreadEnum interface [.NET Framework debugging]"
 ms.assetid: 796de687-7dd4-4b7b-a10b-8bf22dc7779f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

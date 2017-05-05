@@ -2,7 +2,7 @@
 title: "Custom Composite Designers - Workflow Item Presenter | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -67,7 +67,7 @@ The <xref:System.Activities.Presentation.WorkflowItemPresenter> is a key type in
 </sap:ActivityDesigner>  
 ```  
   
- Note the use of WPF data binding to bind to `ModelItem.Body`. `ModelItem` is the property on <xref:System.Activities.Presentation.WorkflowElementDesigner> that refers to the underlying object the designer is being used for, in this case, **SimpleNativeActivity**.  
+ Note the use of WPF data binding to bind to `ModelItem.Body`. `ModelItem` is the property on <xref:System.Activities.Presentation.ActivityDesigner> that refers to the underlying object the designer is being used for, in this case, **SimpleNativeActivity**.  
   
 #### To setup, build, and run the sample  
   

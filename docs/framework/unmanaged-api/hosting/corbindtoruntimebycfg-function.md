@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorBindToRuntimeByCfg function [.NET Framework hosting]"
 ms.assetid: ded1e492-a782-4185-9c66-709e421c1782
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

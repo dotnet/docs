@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetLocale method, ICLRTaskManager interface [.NET Framework hosting]"
   - "ICLRTaskManager::SetLocale method [.NET Framework hosting]"
 ms.assetid: ed16bb7f-4206-43a8-b9e9-c5737b69e3af
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

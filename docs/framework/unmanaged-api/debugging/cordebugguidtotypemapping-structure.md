@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugGuidToTypeMapping structure [.NET Framework debugging]"
 ms.assetid: 57dbccd9-b16d-4da3-ae25-7a2cf9adf679
+topic_type: 
+  - "apiref"
 caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"

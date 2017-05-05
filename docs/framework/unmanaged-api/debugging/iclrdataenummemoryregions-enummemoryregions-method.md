@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRDataEnumMemoryRegions::EnumMemoryRegions method [.NET Framework debugging]"
   - "EnumMemoryRegions method [.NET Framework debugging]"
 ms.assetid: 22d2e339-f174-40b5-a478-0b744501566f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

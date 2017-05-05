@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostIoCompletionManager::InitializeHostOverlapped method [.NET Framework hosting]"
   - "InitializeHostOverlapped method [.NET Framework hosting]"
 ms.assetid: c35199bf-bc47-4901-b467-4e8a37644bbb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

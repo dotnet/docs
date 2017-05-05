@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataDispenserEx::SetOption method [.NET Framework metadata]"
   - "SetOption method [.NET Framework metadata]"
 ms.assetid: 9f1c7ccd-7fb2-41d8-aa00-24b823376527
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"

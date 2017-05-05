@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IMetaDataError interface [.NET Framework metadata]"
 ms.assetid: 0020b62c-ea88-40c7-a9ee-16b064f81624
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,7 +2,7 @@
 title: "ICorDebugProcess5::EnumerateHeap Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumerateHeap method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::EnumerateHeap method [.NET Framework debugging]"
 ms.assetid: b0192104-6073-4089-a4df-dc29ee033074
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

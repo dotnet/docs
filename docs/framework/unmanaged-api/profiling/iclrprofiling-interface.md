@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IClrProfiling interface [.NET Framework profiling]"
 ms.assetid: 8b53ccc6-1b5e-4b30-a100-c9683d553f5a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

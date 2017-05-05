@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "AssemblyAttributesGoHere type"
   - "Alink API, AssemblyAttributesGoHere type"
 ms.assetid: 7b26fcb6-94f4-4f09-933e-b33efe451f4f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateValueForType method [.NET Framework debugging]"
   - "ICorDebugEval2::CreateValueForType method [.NET Framework debugging]"
 ms.assetid: ea38ae20-7e0a-427a-be77-d78fae719d82
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

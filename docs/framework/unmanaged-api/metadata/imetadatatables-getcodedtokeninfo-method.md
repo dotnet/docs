@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetCodedTokenInfo method [.NET Framework metadata]"
   - "IMetaDataTables::GetCodedTokenInfo method [.NET Framework metadata]"
 ms.assetid: 31214d3a-715e-49af-92b3-0fd11e4f218a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

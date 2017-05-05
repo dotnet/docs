@@ -57,7 +57,7 @@ This article helps you get started deploying the .NET Framework with your applic
   
     -   [Using InstallShield](../../../docs/framework/deployment/deployment-guide-for-developers.md#installshield) in a setup and deployment project  
   
-    -   [Using a Visual Studio ClickOnce application](../../../docs/framework/deployment/deployment-guide-for-developers.md#clickonce)  
+    -   [Using a Visual Studio ClickOnce application](../../../docs/framework/deployment/deployment-guide-for-developers.md#clickonce-deployment)  
   
     -   [Creating a WiX installation package](../../../docs/framework/deployment/deployment-guide-for-developers.md#wix)  
   

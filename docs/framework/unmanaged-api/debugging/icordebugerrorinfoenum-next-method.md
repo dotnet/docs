@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Next method, ICorDebugErrorInfoEnum interface [.NET Framework debugging]"
   - "ICorDebugErrorInfoEnum::Next method [.NET Framework debugging]"
 ms.assetid: 41c09512-e8fe-4a82-90c5-6b39c18682da
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -2,7 +2,7 @@
 title: "ITypeNameBuilder::OpenGenericArgument Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameBuilder::OpenGenericArgument method [.NET Framework hosting]"
   - "OpenGenericArgument method [.NET Framework hosting]"
 ms.assetid: 476feeac-e8e9-46cf-9f8d-be103181d0ab
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

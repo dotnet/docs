@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IInstallReferenceEnum::GetNextInstallReferenceItem method [.NET Framework fusion]"
   - "GetNextInstallReferenceItem method [.NET Framework fusion]"
 ms.assetid: ce969c9d-6538-4c34-8784-148ffd99fe7a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

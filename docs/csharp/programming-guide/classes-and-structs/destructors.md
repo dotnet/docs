@@ -50,13 +50,17 @@ Destructors are used to destruct instances of classes.
   
 -   A destructor does not take modifiers or have parameters.  
   
- For example, the following is a declaration of a destructor for the class `Car`:  
+ For example, the following is a declaration of a destructor for the `Car` class.
   
  [!code-cs[csProgGuideObjects#86](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/destructors_1.cs)]  
+
+A destructor can also be implemented as an expression body definition, as the following example shows.
+
+[!code-cs[expression-bodied-destructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-destructor.cs#1)]  
   
- The destructor implicitly calls <xref:System.Object.Finalize%2A> on the base class of the object. Therefore, the previous destructor code is implicitly translated to the following code:  
+ The destructor implicitly calls <xref:System.Object.Finalize%2A> on the base class of the object. Therefore, a call to a destructor is implicitly translated to the following code:  
   
-```  
+```cs  
 protected override void Finalize()  
 {  
     try  

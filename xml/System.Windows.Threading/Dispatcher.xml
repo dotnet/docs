@@ -41,13 +41,13 @@
   
  First, a delegate is created that accepts no arguments.  
   
- <!-- TODO: review snippet reference [!code-csharp[ThreadingPrimeNumber#ThreadingPrimeNumberInit](~/samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumber/CSharp/Window1.xaml.cs#threadingprimenumberinit)]  -->
- <!-- TODO: review snippet reference [!code-vb[ThreadingPrimeNumber#ThreadingPrimeNumberInit](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumber/visualbasic/mainwindow.xaml.vb#threadingprimenumberinit)]  -->  
+ [!code-csharp[ThreadingPrimeNumbers#ThreadingPrimeNumberInit](~/samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml.cs#threadingprimenumberinit)] 
+ [!code-vb[ThreadingPrimeNumbers#ThreadingPrimeNumberInit](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumbers/visualbasic/mainwindow.xaml.vb#threadingprimenumberinit)]   
   
  Next, <xref:System.Windows.Threading.Dispatcher.BeginInvoke%28System.Windows.Threading.DispatcherPriority%2CSystem.Delegate%29> is called.  This call to <xref:System.Windows.Threading.Dispatcher.BeginInvoke%28System.Windows.Threading.DispatcherPriority%2CSystem.Delegate%29> takes two parameters: the priority, which is set to <xref:System.Windows.Threading.DispatcherPriority?displayProperty=fullName>, and the callback, which is passed in through an instance of the delegate `NextPrimeDelegate`.  
   
- <!-- TODO: review snippet reference [!code-csharp[ThreadingPrimeNumber#ThreadingPrimeNumberBeingInvoke](~/samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumber/CSharp/Window1.xaml.cs#threadingprimenumberbeinginvoke)]  -->
- <!-- TODO: review snippet reference [!code-vb[ThreadingPrimeNumber#ThreadingPrimeNumberBeingInvoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumber/visualbasic/mainwindow.xaml.vb#threadingprimenumberbeinginvoke)]  -->  
+ [!code-csharp[ThreadingPrimeNumbers#ThreadingPrimeNumberBeginInvoke](~/samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml.cs#threadingprimenumberbegininvoke)] 
+ [!code-vb[ThreadingPrimeNumbers#ThreadingPrimeNumberBeginInvoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumbers/visualbasic/mainwindow.xaml.vb#threadingprimenumberbegininvoke)]   
   
  ]]></format>
     </remarks>
@@ -199,13 +199,13 @@
   
  First, a delegate is created that accepts no arguments.  
   
- <!-- TODO: review snippet reference [!code-csharp[ThreadingPrimeNumber#ThreadingPrimeNumberInit](~/samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumber/CSharp/Window1.xaml.cs#threadingprimenumberinit)]  -->
- <!-- TODO: review snippet reference [!code-vb[ThreadingPrimeNumber#ThreadingPrimeNumberInit](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumber/visualbasic/mainwindow.xaml.vb#threadingprimenumberinit)]  -->  
+ [!code-csharp[ThreadingPrimeNumbers#ThreadingPrimeNumberInit](~/samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml.cs#threadingprimenumberinit)] 
+ [!code-vb[ThreadingPrimeNumbers#ThreadingPrimeNumberInit](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumbers/visualbasic/mainwindow.xaml.vb#threadingprimenumberinit)]   
   
  Next, <xref:System.Windows.Threading.Dispatcher.BeginInvoke%28System.Windows.Threading.DispatcherPriority%2CSystem.Delegate%29> is called.  Because every <xref:System.Windows.Threading.DispatcherObject> has a property that returns the <xref:System.Windows.Threading.Dispatcher> it is associated with, the desired <xref:System.Windows.Threading.Dispatcher> is obtained by querying the <xref:System.Windows.Threading.DispatcherObject>, in this case a <xref:System.Windows.Controls.Button> named `startStopButton`.   The call to <xref:System.Windows.Threading.Dispatcher.BeginInvoke%28System.Windows.Threading.DispatcherPriority%2CSystem.Delegate%29> takes two parameters: the priority, which is set to <xref:System.Windows.Threading.DispatcherPriority?displayProperty=fullName>, and the callback, which is passed in through an instance of the delegate `NextPrimeDelegate`.  
   
- <!-- TODO: review snippet reference [!code-csharp[ThreadingPrimeNumber#ThreadingPrimeNumberBeingInvoke](~/samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumber/CSharp/Window1.xaml.cs#threadingprimenumberbeinginvoke)]  -->
- <!-- TODO: review snippet reference [!code-vb[ThreadingPrimeNumber#ThreadingPrimeNumberBeingInvoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumber/visualbasic/mainwindow.xaml.vb#threadingprimenumberbeinginvoke)]  -->  
+ [!code-csharp[ThreadingPrimeNumbers#ThreadingPrimeNumberBeginInvoke](~/samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml.cs#threadingprimenumberbegininvoke)] 
+ [!code-vb[ThreadingPrimeNumbers#ThreadingPrimeNumberBeginInvoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumbers/visualbasic/mainwindow.xaml.vb#threadingprimenumberbegininvoke)]   
   
  ]]></format>
         </remarks>

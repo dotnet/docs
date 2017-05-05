@@ -27,7 +27,7 @@
  <xref:System.CodeDom.CodeTypeConstructor> can be used to represent the static constructor for a class. A static constructor is called once when the type is loaded.  
   
 > [!NOTE]
->  Not all languages support static constructors. Support for static constructors can be checked by calling <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag to determine if static constructors are supported by the code generator for a particular language.  
+>  Not all languages support static constructors. Support for static constructors can be checked by calling <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> with the <xref:System.CodeDom.Compiler.GeneratorSupport.StaticConstructors> flag to determine if static constructors are supported by the code generator for a particular language.  
   
    
   

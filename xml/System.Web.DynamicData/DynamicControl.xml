@@ -53,13 +53,13 @@
   
  The <xref:System.Web.DynamicData.DynamicControl> control supports different display modes. To specify the mode in which to display the <xref:System.Web.DynamicData.DynamicControl> control, set the <xref:System.Web.DynamicData.DynamicControl.Mode%2A> property. The following table shows the different modes.  
   
- <xref:System.Web.UI.WebControls.DataBoundControlMode>  
+ <xref:System.Web.UI.WebControls.DataBoundControlMode.ReadOnly>  
  for display mode. This prevents the user from modifying the values of a record or a data field. It can be used in any of the templates.  
   
- <xref:System.Web.UI.WebControls.DataBoundControlMode>  
+ <xref:System.Web.UI.WebControls.DataBoundControlMode.Edit>  
  for edit mode. This enables users to update the values of an existing record. It is used in the edit template (typically named `EditItemTemplate`).  
   
- <xref:System.Web.UI.WebControls.DataBoundControlMode>  
+ <xref:System.Web.UI.WebControls.DataBoundControlMode.Insert>  
  for insert mode. This enables users to enter values for a new record. It is used in the insert template (typically named `InsertItemTemplate`).  
   
  You can hide a <xref:System.Web.DynamicData.DynamicControl> control in a data-bound control by setting the <xref:System.Web.UI.Control.Visible%2A> property to `false`.  
@@ -344,7 +344,7 @@
 ## Remarks  
  Use the <xref:System.Web.DynamicData.DynamicControl.DataFormatString%2A> property to specify a custom display format for the values displayed in the <xref:System.Web.DynamicData.DynamicControl> control. If the <xref:System.Web.DynamicData.DynamicControl.DataFormatString%2A> property is not set, the field value is displayed without any special formatting.  
   
- By default, the formatting string is applied to the field value only when the <xref:System.Web.DynamicData.DynamicControl.Mode%2A> property is set to <xref:System.Web.UI.WebControls.DataBoundControlMode>. To apply the formatting string to the field value while in edit mode, set the <xref:System.Web.DynamicData.DynamicControl.ApplyFormatInEditMode%2A> property to `true`.  
+ By default, the formatting string is applied to the field value only when the <xref:System.Web.DynamicData.DynamicControl.Mode%2A> property is set to <xref:System.Web.UI.WebControls.DataBoundControlMode.ReadOnly>. To apply the formatting string to the field value while in edit mode, set the <xref:System.Web.DynamicData.DynamicControl.ApplyFormatInEditMode%2A> property to `true`.  
   
  The display format that you specify using the <xref:System.Web.DynamicData.DynamicControl.DataFormatString%2A> property is specific to this instance of the <xref:System.Web.DynamicData.DynamicControl> control. You can also change the display format for a data field across the entire application by applying the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> to your data model and setting the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString%2A?displayProperty=fullName> named parameter in the constructor. For more information, see [ASP.NET Dynamic Data](http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512).  
   
@@ -472,9 +472,9 @@
   
 |Mode|Description|  
 |----------|-----------------|  
-|<xref:System.Web.UI.WebControls.DataBoundControlMode>|for display mode. This prevents the user from modifying the values of a record or a data field. It can be used in any of the templates. This is the default value.|  
-|<xref:System.Web.UI.WebControls.DataBoundControlMode>|for edit mode. This enables users to update the values of an existing record. It is used in the `EditItemTemplate` template.|  
-|<xref:System.Web.UI.WebControls.DataBoundControlMode>|for insert mode. This enables users to enter values for a new record. It is used in the `InsertItemTemplate` template.|  
+|<xref:System.Web.UI.WebControls.DataBoundControlMode.ReadOnly>|for display mode. This prevents the user from modifying the values of a record or a data field. It can be used in any of the templates. This is the default value.|  
+|<xref:System.Web.UI.WebControls.DataBoundControlMode.Edit>|for edit mode. This enables users to update the values of an existing record. It is used in the `EditItemTemplate` template.|  
+|<xref:System.Web.UI.WebControls.DataBoundControlMode.Insert>|for insert mode. This enables users to enter values for a new record. It is used in the `InsertItemTemplate` template.|  
   
  ]]></format>
         </remarks>

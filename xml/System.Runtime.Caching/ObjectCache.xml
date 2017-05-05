@@ -33,12 +33,9 @@
     <block subset="none" type="overrides">
       <para>Because the <see cref="T:System.Runtime.Caching.ObjectCache" /> type represents only common cache functions, there is no requirement for how an <see cref="T:System.Runtime.Caching.ObjectCache" /> instance must be instantiated and obtained. In addition, there is no requirement that concrete implementations of the <see cref="T:System.Runtime.Caching.ObjectCache" /> class must be singletons.  
   
- <block subset="none" type="note">  
-<para>  
- <see cref="T:System.Runtime.Caching.MemoryCache" /> is not a singleton, but you should create only a few or potentially only one <see cref="T:System.Runtime.Caching.MemoryCache" /> instance and code that caches items should use those instances.  
+ <block subset="none" type="note"><para><see cref="T:System.Runtime.Caching.MemoryCache" /> is not a singleton, but you should create only a few or potentially only one <see cref="T:System.Runtime.Caching.MemoryCache" /> instance and code that caches items should use those instances.  
   
-</para>  
-</block>  
+</para></block>  
   
  When you inherit from the <see cref="T:System.Runtime.Caching.ObjectCache" /> class, you must override its methods.</para>
     </block>
@@ -59,6 +56,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, inserts a cache entry into the cache, without requiring that an existing cache entry with a matching key be returned.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads try to insert a cache entry into the cache, without overwriting or removing an existing cache entry that has the same key. The cache entry can be a typed <xref:System.Runtime.Caching.CacheItem> object or a generic object.  
+  
+ The <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads and the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads have one significant difference. When these methods insert a cache entry, if a matching entry is found in the cache, the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads return the existing cache entry, but the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads do not. Having these different method overloads enables callers to optimize their code based on whether they need the existing cache entry. In distributed caches, returning an existing value by using the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method might be more expensive than returning a Boolean value by using <xref:System.Runtime.Caching.ObjectCache.Add%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public virtual bool Add (System.Runtime.Caching.CacheItem item, System.Runtime.Caching.CacheItemPolicy policy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Add(class System.Runtime.Caching.CacheItem item, class System.Runtime.Caching.CacheItemPolicy policy) cil managed" />
@@ -163,6 +179,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddOrGetExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, tries to insert a cache entry into the cache, and returns an existing cache entry with a matching key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads insert an entry into the cache. If a cache entry with a matching key already exists, they return the existing entry. The cache entry can be a <xref:System.Runtime.Caching.CacheItem> object or a generic object.  
+  
+ There is one difference between the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> overloads and the <xref:System.Runtime.Caching.ObjectCache.Add%2A> overloads. When these overloaded methods try to insert a cache entry, if an existing entry is found that has a key that matches an existing inserted cache entry, the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> overloads return the existing cache entry. The <xref:System.Runtime.Caching.ObjectCache.Add%2A> overloads do not.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddOrGetExisting">
       <MemberSignature Language="C#" Value="public abstract System.Runtime.Caching.CacheItem AddOrGetExisting (System.Runtime.Caching.CacheItem value, System.Runtime.Caching.CacheItemPolicy policy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Caching.CacheItem AddOrGetExisting(class System.Runtime.Caching.CacheItem value, class System.Runtime.Caching.CacheItemPolicy policy) cil managed" />
@@ -705,6 +740,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Set">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, inserts a cache entry into the cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The typical behavior of the <xref:System.Runtime.Caching.ObjectCache.Set%2A> overload methods is an insert-or-update operation. A cache entry is either inserted as a new entry if the specified entry does not exist, or the cache entry is updated with a new value if it already exists.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Set">
       <MemberSignature Language="C#" Value="public abstract void Set (System.Runtime.Caching.CacheItem item, System.Runtime.Caching.CacheItemPolicy policy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Set(class System.Runtime.Caching.CacheItem item, class System.Runtime.Caching.CacheItemPolicy policy) cil managed" />
@@ -854,60 +906,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddOrGetExisting">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Caching</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, tries to insert a cache entry into the cache, and returns an existing cache entry with a matching key.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads insert an entry into the cache. If a cache entry with a matching key already exists, they return the existing entry. The cache entry can be a <xref:System.Runtime.Caching.CacheItem> object or a generic object.  
-  
- There is one difference between the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> overloads and the <xref:System.Runtime.Caching.ObjectCache.Add%2A> overloads. When these overloaded methods try to insert a cache entry, if an existing entry is found that has a key that matches an existing inserted cache entry, the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> overloads return the existing cache entry. The <xref:System.Runtime.Caching.ObjectCache.Add%2A> overloads do not.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Set">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Caching</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, inserts a cache entry into the cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The typical behavior of the <xref:System.Runtime.Caching.ObjectCache.Set%2A> overload methods is an insert-or-update operation. A cache entry is either inserted as a new entry if the specified entry does not exist, or the cache entry is updated with a new value if it already exists.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Caching</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, inserts a cache entry into the cache, without requiring that an existing cache entry with a matching key be returned.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads try to insert a cache entry into the cache, without overwriting or removing an existing cache entry that has the same key. The cache entry can be a typed <xref:System.Runtime.Caching.CacheItem> object or a generic object.  
-  
- The <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads and the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads have one significant difference. When these methods insert a cache entry, if a matching entry is found in the cache, the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads return the existing cache entry, but the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads do not. Having these different method overloads enables callers to optimize their code based on whether they need the existing cache entry. In distributed caches, returning an existing value by using the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method might be more expensive than returning a Boolean value by using <xref:System.Runtime.Caching.ObjectCache.Add%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

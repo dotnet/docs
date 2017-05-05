@@ -1,5 +1,5 @@
 //<SnippetMarkupAndCodeBehindWindowCODEBEHIND>
-using System.Windows; // Window
+using System.Windows;
 
 namespace SDKSample
 {

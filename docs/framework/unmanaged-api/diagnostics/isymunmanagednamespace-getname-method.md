@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedNamespace::GetName method [.NET Framework debugging]"
   - "GetName method, ISymUnmanagedNamespace interface [.NET Framework debugging]"
 ms.assetid: 657bf91d-005a-4ea4-9298-04d1291c0bc3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

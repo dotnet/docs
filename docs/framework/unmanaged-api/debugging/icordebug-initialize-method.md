@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Initialize method, ICorDebug interface [.NET Framework debugging]"
   - "ICorDebug::Initialize method [.NET Framework debugging]"
 ms.assetid: 6fae3b23-5c9f-47c0-85d8-6bb75e050786
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

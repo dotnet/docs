@@ -2,7 +2,7 @@
 title: "ICorDebugProcess5::GetTypeID Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess5::GetTypeID method [.NET Framework debugging]"
   - "GetTypeID method, ICorDebugProcess5 interface [.NET Framework debugging]"
 ms.assetid: 47dbaea4-8857-462e-93ba-fff880fc9e50
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

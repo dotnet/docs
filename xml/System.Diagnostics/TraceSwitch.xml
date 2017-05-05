@@ -363,7 +363,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Diagnostics.TraceSwitch.TraceError%2A>, <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A>, <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A>, and <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A> properties in conjunction with the <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes to emit all messages with a specified importance or greater. When the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to the highest importance, <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>, <xref:System.Diagnostics.TraceLevel> ,  only error-handling messages are emitted.  
+ You can use the <xref:System.Diagnostics.TraceSwitch.TraceError%2A>, <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A>, <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A>, and <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A> properties in conjunction with the <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes to emit all messages with a specified importance or greater. When the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to the highest importance, <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>, <xref:System.Diagnostics.TraceLevel.Error> ,  only error-handling messages are emitted.  
   
    
   

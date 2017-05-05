@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A token that is returned when an event handler is added to a [!INCLUDE[wrt](~/includes/wrt-md.md)] event. The token is used to remove the event handler from the event at a later time.</summary>
+    <summary>A token that is returned when an event handler is added to a Windows Runtime event. The token is used to remove the event handler from the event at a later time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

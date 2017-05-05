@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- One of the ways to specify a binding source is to use the <xref:System.Windows.Data.Binding.RelativeSource%2A?displayProperty=fullName> property. This is the property type of that property. <xref:System.Windows.Data.RelativeSource> is simultaneously a markup extension implementation and a data object. When the extension returns itself (see <xref:System.Windows.Data.RelativeSource.ProvideValue%2A>), the relevant information is contained in the data. The main purpose of the markup extension is to allow a variable-argument constructor syntax in attribute form, so that the <xref:System.Windows.Data.RelativeSourceMode> mode can be defined inline with the two extra arguments for ancestor type and level that the other modes do not require.  
+ One of the ways to specify a binding source is to use the <xref:System.Windows.Data.Binding.RelativeSource%2A?displayProperty=fullName> property. This is the property type of that property. <xref:System.Windows.Data.RelativeSource> is simultaneously a markup extension implementation and a data object. When the extension returns itself (see <xref:System.Windows.Data.RelativeSource.ProvideValue%2A>), the relevant information is contained in the data. The main purpose of the markup extension is to allow a variable-argument constructor syntax in attribute form, so that the <xref:System.Windows.Data.RelativeSourceMode.FindAncestor> mode can be defined inline with the two extra arguments for ancestor type and level that the other modes do not require.  
   
  For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
   
@@ -109,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `ancestorType` and `ancestorLevel` have no relevance if given as parameters for a `mode` other than <xref:System.Windows.Data.RelativeSourceMode>. Do not use this signature for the other <xref:System.Windows.Data.RelativeSourceMode> values.  
+ `ancestorType` and `ancestorLevel` have no relevance if given as parameters for a `mode` other than <xref:System.Windows.Data.RelativeSourceMode.FindAncestor>. Do not use this signature for the other <xref:System.Windows.Data.RelativeSourceMode> values.  
   
    
   
@@ -142,7 +142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Data.RelativeSource.Mode%2A> property is not set explicitly, setting the <xref:System.Windows.Data.RelativeSource.AncestorType%2A> or the <xref:System.Windows.Data.RelativeSource.AncestorLevel%2A> property will implicitly lock the <xref:System.Windows.Data.RelativeSource.Mode%2A> property value to <xref:System.Windows.Data.RelativeSourceMode>.  
+ If the <xref:System.Windows.Data.RelativeSource.Mode%2A> property is not set explicitly, setting the <xref:System.Windows.Data.RelativeSource.AncestorType%2A> or the <xref:System.Windows.Data.RelativeSource.AncestorLevel%2A> property will implicitly lock the <xref:System.Windows.Data.RelativeSource.Mode%2A> property value to <xref:System.Windows.Data.RelativeSourceMode.FindAncestor>.  
   
 <a name="xamlTextUsage_AncestorLevel"></a>   
 ## XAML Text Usage  
@@ -179,7 +179,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Data.RelativeSource.Mode%2A> property is not set explicitly, setting the <xref:System.Windows.Data.RelativeSource.AncestorType%2A> or the <xref:System.Windows.Data.RelativeSource.AncestorLevel%2A> property will implicitly lock the <xref:System.Windows.Data.RelativeSource.Mode%2A> property value to <xref:System.Windows.Data.RelativeSourceMode>.  
+ If the <xref:System.Windows.Data.RelativeSource.Mode%2A> property is not set explicitly, setting the <xref:System.Windows.Data.RelativeSource.AncestorType%2A> or the <xref:System.Windows.Data.RelativeSource.AncestorLevel%2A> property will implicitly lock the <xref:System.Windows.Data.RelativeSource.Mode%2A> property value to <xref:System.Windows.Data.RelativeSourceMode.FindAncestor>.  
   
 <a name="xamlTextUsage_AncestorType"></a>   
 ## XAML Text Usage  
@@ -222,7 +222,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is read-only after initialization. If this property is not set explicitly, setting the <xref:System.Windows.Data.RelativeSource.AncestorType%2A> or the <xref:System.Windows.Data.RelativeSource.AncestorType%2A> and the <xref:System.Windows.Data.RelativeSource.AncestorLevel%2A> properties will implicitly lock this property value to <xref:System.Windows.Data.RelativeSourceMode>.  
+ This property is read-only after initialization. If this property is not set explicitly, setting the <xref:System.Windows.Data.RelativeSource.AncestorType%2A> or the <xref:System.Windows.Data.RelativeSource.AncestorType%2A> and the <xref:System.Windows.Data.RelativeSource.AncestorLevel%2A> properties will implicitly lock this property value to <xref:System.Windows.Data.RelativeSourceMode.FindAncestor>.  
   
 <a name="xamlTextUsage_Mode"></a>   
 ## XAML Text Usage  
@@ -252,7 +252,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Three of the four <xref:System.Windows.Data.RelativeSourceMode> values, <xref:System.Windows.Data.RelativeSourceMode>, <xref:System.Windows.Data.RelativeSourceMode>, or <xref:System.Windows.Data.RelativeSourceMode>, can produce a <xref:System.Windows.Data.RelativeSource> that is wholly static, containing no unique private values. All uses of the static property can share the same object, eliminating the need to allocate separate objects for each use. Therefore, using the static property reduces memory usage.  
+ Three of the four <xref:System.Windows.Data.RelativeSourceMode> values, <xref:System.Windows.Data.RelativeSourceMode.PreviousData>, <xref:System.Windows.Data.RelativeSourceMode.Self>, or <xref:System.Windows.Data.RelativeSourceMode.TemplatedParent>, can produce a <xref:System.Windows.Data.RelativeSource> that is wholly static, containing no unique private values. All uses of the static property can share the same object, eliminating the need to allocate separate objects for each use. Therefore, using the static property reduces memory usage.  
   
 <a name="xamlTextUsage_PreviousData"></a>   
 ## XAML Text Usage  
@@ -285,7 +285,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Data.RelativeSource> is simultaneously a markup extension implementation and a data object. When the extension returns itself, the relevant information is contained in the data. The main purpose of the markup extension is to allow a variable-argument constructor syntax in attribute form so that the <xref:System.Windows.Data.RelativeSourceMode> mode can be defined inline, with the two extra arguments for ancestor type and level that the other modes do not require.  
+ <xref:System.Windows.Data.RelativeSource> is simultaneously a markup extension implementation and a data object. When the extension returns itself, the relevant information is contained in the data. The main purpose of the markup extension is to allow a variable-argument constructor syntax in attribute form so that the <xref:System.Windows.Data.RelativeSourceMode.FindAncestor> mode can be defined inline, with the two extra arguments for ancestor type and level that the other modes do not require.  
   
  ]]></format>
         </remarks>
@@ -310,7 +310,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Three of the four <xref:System.Windows.Data.RelativeSourceMode> values, <xref:System.Windows.Data.RelativeSourceMode>, <xref:System.Windows.Data.RelativeSourceMode>, or <xref:System.Windows.Data.RelativeSourceMode>, can produce a <xref:System.Windows.Data.RelativeSource> that is wholly static, containing no unique private values. All uses of the static property can share the same object, eliminating the need to allocate separate objects for each use. Therefore, using the static property reduces memory usage.  
+ Three of the four <xref:System.Windows.Data.RelativeSourceMode> values, <xref:System.Windows.Data.RelativeSourceMode.PreviousData>, <xref:System.Windows.Data.RelativeSourceMode.Self>, or <xref:System.Windows.Data.RelativeSourceMode.TemplatedParent>, can produce a <xref:System.Windows.Data.RelativeSource> that is wholly static, containing no unique private values. All uses of the static property can share the same object, eliminating the need to allocate separate objects for each use. Therefore, using the static property reduces memory usage.  
   
 <a name="xamlTextUsage_Self"></a>   
 ## XAML Text Usage  
@@ -448,7 +448,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Three of the four <xref:System.Windows.Data.RelativeSourceMode> values, <xref:System.Windows.Data.RelativeSourceMode>, <xref:System.Windows.Data.RelativeSourceMode>, or <xref:System.Windows.Data.RelativeSourceMode>, can produce a <xref:System.Windows.Data.RelativeSource> that is wholly static, containing no unique private values. All uses of the static property can share the same object, eliminating the need to allocate separate objects for each use. Therefore, using the static property reduces memory usage.  
+ Three of the four <xref:System.Windows.Data.RelativeSourceMode> values, <xref:System.Windows.Data.RelativeSourceMode.PreviousData>, <xref:System.Windows.Data.RelativeSourceMode.Self>, or <xref:System.Windows.Data.RelativeSourceMode.TemplatedParent>, can produce a <xref:System.Windows.Data.RelativeSource> that is wholly static, containing no unique private values. All uses of the static property can share the same object, eliminating the need to allocate separate objects for each use. Therefore, using the static property reduces memory usage.  
   
 <a name="xamlTextUsage_TemplatedParent"></a>   
 ## XAML Text Usage  

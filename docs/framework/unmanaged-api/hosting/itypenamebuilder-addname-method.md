@@ -2,7 +2,7 @@
 title: "ITypeNameBuilder::AddName Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameBuilder::AddName method [.NET Framework hosting]"
   - "AddName method [.NET Framework hosting]"
 ms.assetid: be2f6e55-f46d-49aa-b477-80fd7e4515f7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

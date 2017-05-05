@@ -56,7 +56,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The exception returned by this constructor has its <xref:System.Net.Mail.SmtpException.StatusCode%2A> property set to <xref:System.Net.Mail.SmtpStatusCode>.  
+ The exception returned by this constructor has its <xref:System.Net.Mail.SmtpException.StatusCode%2A> property set to <xref:System.Net.Mail.SmtpStatusCode.GeneralFailure>.  
   
    
   

@@ -270,7 +270,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The objects returned by this method include connections in all TCP states except the <xref:System.Net.NetworkInformation.TcpState> state. You can check the state of a connection by calling <xref:System.Net.NetworkInformation.TcpConnectionInformation.State%2A>.  
+ The objects returned by this method include connections in all TCP states except the <xref:System.Net.NetworkInformation.TcpState.Listen> state. You can check the state of a connection by calling <xref:System.Net.NetworkInformation.TcpConnectionInformation.State%2A>.  
   
  The TCP protocol is defined in IETF RFC 793. Note that the objects returned by this method reflect the connections as of the time the array is created. This information is not updated dynamically.  
   
@@ -317,7 +317,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The objects returned by this method include listeners in all TCP states except the <xref:System.Net.NetworkInformation.TcpState> state.  
+ The objects returned by this method include listeners in all TCP states except the <xref:System.Net.NetworkInformation.TcpState.Listen> state.  
   
  The TCP protocol is defined in IETF RFC 793. Note that the objects returned by this method reflect the connections as of the time the array is created. This information is not updated dynamically.  
   

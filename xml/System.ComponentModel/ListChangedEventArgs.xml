@@ -69,7 +69,7 @@
 ## Remarks  
  This constructor can be used only if the schema of the object has changed.  
   
- The `listChangedType` parameter should be <xref:System.ComponentModel.ListChangedType>, <xref:System.ComponentModel.ListChangedType>, or <xref:System.ComponentModel.ListChangedType>.  
+ The `listChangedType` parameter should be <xref:System.ComponentModel.ListChangedType.PropertyDescriptorAdded>, <xref:System.ComponentModel.ListChangedType.PropertyDescriptorChanged>, or <xref:System.ComponentModel.ListChangedType.PropertyDescriptorDeleted>.  
   
  ]]></format>
         </remarks>

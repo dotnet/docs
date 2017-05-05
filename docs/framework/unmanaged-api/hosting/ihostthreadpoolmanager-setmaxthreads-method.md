@@ -2,7 +2,7 @@
 title: "IHostThreadPoolManager::SetMaxThreads Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostThreadPoolManager::SetMaxThreads method [.NET Framework hosting]"
   - "SetMaxThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"
 ms.assetid: 77cfd347-95c2-4425-b807-4ecc2a8d4578
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

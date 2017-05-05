@@ -1,13 +1,13 @@
-using System; // EventArgs
-using System.Collections.Generic; // IList<T>
-using System.ComponentModel; // ICollectionView
-using System.IO; // Stream, FileStream, FileMode
-using System.Windows; // Window
-using System.Windows.Annotations; // Annotation, AnnotationService, IAnchorInfo, TextAnchor
-using System.Windows.Annotations.Storage; // AnnotationStore, StoreContentChangedEventHandler, StoreContentChangedEventArgs, XmlStreamStore
-using System.Windows.Controls; // SelectionChangedEventArgs
-using System.Windows.Data; // CollectionViewSource
-using System.Windows.Documents; // TextPointer
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.IO;
+using System.Windows;
+using System.Windows.Annotations;
+using System.Windows.Annotations.Storage;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
 
 namespace FlowDocumentAnnotatedViewer
 {

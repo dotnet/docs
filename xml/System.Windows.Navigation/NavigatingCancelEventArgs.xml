@@ -168,13 +168,13 @@
 ## Remarks  
  The types of navigation that can occur are:  
   
--   Navigating to new content (<xref:System.Windows.Navigation.NavigationMode>).  
+-   Navigating to new content (<xref:System.Windows.Navigation.NavigationMode.New>).  
   
--   Navigating to the previous item in back navigation history (<xref:System.Windows.Navigation.NavigationMode>).  
+-   Navigating to the previous item in back navigation history (<xref:System.Windows.Navigation.NavigationMode.Back>).  
   
--   Navigating to the next item in forward navigation history (<xref:System.Windows.Navigation.NavigationMode>).  
+-   Navigating to the next item in forward navigation history (<xref:System.Windows.Navigation.NavigationMode.Forward>).  
   
--   Refreshing existing content (<xref:System.Windows.Navigation.NavigationMode>).  
+-   Refreshing existing content (<xref:System.Windows.Navigation.NavigationMode.Refresh>).  
   
  ]]></format>
         </remarks>

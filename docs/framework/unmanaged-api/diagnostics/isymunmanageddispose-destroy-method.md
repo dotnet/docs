@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedDispose::Destroy method [.NET Framework debugging]"
   - "Destroy method [.NET Framework debugging]"
 ms.assetid: a854ab9f-d2ba-470e-867f-808c1e7bd07a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

@@ -492,6 +492,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a property, attribute, or child element of this <see cref="T:System.Configuration.ConfigurationElement" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to get or set the values of a <xref:System.Configuration.ConfigurationProperty> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="protected object this[System.Configuration.ConfigurationProperty property] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(class System.Configuration.ConfigurationProperty)" />
@@ -522,9 +539,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">
-          <paramref name="prop" /> is <see langword="null" /> or does not exist within the element.</exception>
+          <paramref name="property" /> is <see langword="null" /> or does not exist within the element.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">
-          <paramref name="prop" /> is read only or locked.</exception>
+          <paramref name="property" /> is read only or locked.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1160,22 +1177,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets a property, attribute, or child element of this <see cref="T:System.Configuration.ConfigurationElement" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method to get or set the values of a <xref:System.Configuration.ConfigurationProperty> object.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

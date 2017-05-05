@@ -40,7 +40,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this field is <xref:System.Reflection.PropertyAttributes> if this <xref:System.AddIn.Contract.Automation.RemotePropertyData> describes a property of a COM object.  
+ The value of this field is <xref:System.Reflection.PropertyAttributes.None> if this <xref:System.AddIn.Contract.Automation.RemotePropertyData> describes a property of a COM object.  
   
  ]]></format>
         </remarks>

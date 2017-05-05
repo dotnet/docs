@@ -49,7 +49,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns <xref:System.Data.Metadata.Edm.DataSpace> for <xref:System.Data.Metadata.Edm.ObjectItemCollection>; <xref:System.Data.Metadata.Edm.DataSpace> for <xref:System.Data.Metadata.Edm.EdmItemCollection>; and <xref:System.Data.Metadata.Edm.DataSpace> for <xref:System.Data.Mapping.StorageMappingItemCollection>.  
+ This property returns <xref:System.Data.Metadata.Edm.DataSpace.OSpace> for <xref:System.Data.Metadata.Edm.ObjectItemCollection>; <xref:System.Data.Metadata.Edm.DataSpace.CSpace> for <xref:System.Data.Metadata.Edm.EdmItemCollection>; and <xref:System.Data.Metadata.Edm.DataSpace.CSSpace> for <xref:System.Data.Mapping.StorageMappingItemCollection>.  
   
  ]]></format>
         </remarks>

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Wait method, IHostAutoEvent interface [.NET Framework hosting]"
   - "IHostAutoEvent::Wait method [.NET Framework hosting]"
 ms.assetid: 535d51c5-9112-401b-8c36-85f35d7ee609
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

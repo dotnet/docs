@@ -49,7 +49,7 @@
 ## Remarks  
  Instances of this type either have no access to the resource(s) protected by the permission, or they have unrestricted full access to those resources.  
   
- If state is <xref:System.Security.Permissions.PermissionState>, the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> instance passes all demands. If state contains any other value, the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> instance fails all demands.  
+ If state is <xref:System.Security.Permissions.PermissionState.Unrestricted>, the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> instance passes all demands. If state contains any other value, the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> instance fails all demands.  
   
  ]]></format>
         </remarks>

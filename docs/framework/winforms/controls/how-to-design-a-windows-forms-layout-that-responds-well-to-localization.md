@@ -2,7 +2,7 @@
 title: "How to: Design a Windows Forms Layout that Responds Well to Localization | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo::GetAppDomainInfo method [.NET Framework profiling]"
   - "GetAppDomainInfo method [.NET Framework profiling]"
 ms.assetid: a6bf5a04-e03e-44f0-917a-96f6a6d3cc96
+topic_type: 
+  - "apiref"
 caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"

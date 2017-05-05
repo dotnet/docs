@@ -333,7 +333,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Block>|  
+|Identifier field|<xref:System.Windows.Documents.Block.ClearFloatersProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
   
  ]]></format>
@@ -381,14 +381,14 @@
  The flow direction of content typically corresponds to the innate flow direction of the language being represented.  Hebrew and Arabic are examples of languages that naturally flow from right to left.  English, German, and Russian are examples of languages that naturally flow from left to right.  
   
 > [!NOTE]
->  **The value of this property is not automatically changed to match the language used by the operating system. If you need to use a different value th**a**n the default of** <xref:System.Windows.FlowDirection>**, you must specify it yourself.**  
+>  **The value of this property is not automatically changed to match the language used by the operating system. If you need to use a different value th**a**n the default of** <xref:System.Windows.FlowDirection.LeftToRight>**, you must specify it yourself.**  
   
 <a name="dependencyPropertyInfo_FlowDirection"></a>   
 ## Dependency Property Information  
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Block>|  
+|Identifier field|<xref:System.Windows.Documents.Block.FlowDirectionProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A>|  
   
    
@@ -741,7 +741,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> property to determine how the line boxes are created for text lines of a <xref:System.Windows.Controls.TextBlock>. The first <xref:System.Windows.Controls.TextBlock> has a <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> value of <xref:System.Windows.LineStackingStrategy> and the second <xref:System.Windows.Controls.TextBlock> has a value of <xref:System.Windows.LineStackingStrategy>.  
+ The following example shows how to use the <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> property to determine how the line boxes are created for text lines of a <xref:System.Windows.Controls.TextBlock>. The first <xref:System.Windows.Controls.TextBlock> has a <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> value of <xref:System.Windows.LineStackingStrategy.MaxHeight> and the second <xref:System.Windows.Controls.TextBlock> has a value of <xref:System.Windows.LineStackingStrategy.BlockLineHeight>.  
   
  [!code-xml[FlowMiscSnippets_snip#LineStackingStrategyExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/linestackingstrategyexample.xaml#linestackingstrategyexamplewholepage)]  
   
@@ -1185,15 +1185,15 @@
   
  [!code-xml[BlockSnippets#_Block_TextAlignmentXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_textalignmentxaml)]  
   
- The following figure shows how the preceding example renders with <xref:System.Windows.TextAlignment> text alignment (the default).  
+ The following figure shows how the preceding example renders with <xref:System.Windows.TextAlignment.Left> text alignment (the default).  
   
  ![Screenshot: TextAlign property value of Left](~/add/media/flowdoc-textalign-left.png "Screenshot: TextAlign property value of Left")  
   
- The following figure shows how the same example renders with <xref:System.Windows.TextAlignment> text alignment.  
+ The following figure shows how the same example renders with <xref:System.Windows.TextAlignment.Right> text alignment.  
   
  ![Screenshot: TextAlign value of Right](~/add/media/flowdoc-textalign-right.png "Screenshot: TextAlign value of Right")  
   
- The following figure shows how the same example renders with <xref:System.Windows.TextAlignment> text alignment.  
+ The following figure shows how the same example renders with <xref:System.Windows.TextAlignment.Center> text alignment.  
   
  ![Screenshot: TextAlign property value of Center](~/add/media/flowdoc-textalign-center.png "Screenshot: TextAlign property value of Center")  
   

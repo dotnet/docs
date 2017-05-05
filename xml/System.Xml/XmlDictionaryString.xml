@@ -155,7 +155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property must be greater than 0 and less than <xref:System.Int32> / 4.  
+ This property must be greater than 0 and less than <xref:System.Int32.MaxValue> / 4.  
   
  ]]></format>
         </remarks>

@@ -25,7 +25,7 @@
     <param name="wParam">The message's wParam value.</param>
     <param name="lParam">The message's lParam value.</param>
     <param name="handled">A value that indicates whether the message was handled. Set the value to <see langword="true" /> if the message was handled; otherwise, <see langword="false" />.</param>
-    <summary>Represents the method that handles [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] window messages.</summary>
+    <summary>Represents the method that handles Win32 window messages.</summary>
     <returns>The appropriate return value depends on the particular message. See the message documentation details for the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] message being handled.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  

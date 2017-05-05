@@ -35,6 +35,28 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PaperSize" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.Drawing.Printing.PaperSize> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Drawing.Printing.PaperSize.Kind%2A>|<xref:System.Drawing.Printing.PaperKind?displayProperty=fullName>|  
+|<xref:System.Drawing.Printing.PaperSize.PaperName%2A>|<xref:System.String.Empty?displayProperty=fullName>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PaperSize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -73,7 +95,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Drawing.Printing.PaperSize> created with this constructor always has its <xref:System.Drawing.Printing.PaperSize.Kind%2A> property set to <xref:System.Drawing.Printing.PaperKind>. The <xref:System.Drawing.Printing.PaperSize.Width%2A> and <xref:System.Drawing.Printing.PaperSize.Height%2A> property values can be set only for custom <xref:System.Drawing.Printing.PaperSize> objects.  
+ A <xref:System.Drawing.Printing.PaperSize> created with this constructor always has its <xref:System.Drawing.Printing.PaperSize.Kind%2A> property set to <xref:System.Drawing.Printing.PaperKind.Custom>. The <xref:System.Drawing.Printing.PaperSize.Width%2A> and <xref:System.Drawing.Printing.PaperSize.Height%2A> property values can be set only for custom <xref:System.Drawing.Printing.PaperSize> objects.  
   
    
   
@@ -159,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can set the paper name only if the <xref:System.Drawing.Printing.PaperSize.Kind%2A> property is set to <xref:System.Drawing.Printing.PaperKind>.  
+ You can set the paper name only if the <xref:System.Drawing.Printing.PaperSize.Kind%2A> property is set to <xref:System.Drawing.Printing.PaperKind.Custom>.  
   
    
   
@@ -198,122 +220,122 @@
   
 |Integer|PaperSize member|  
 |-------------|----------------------|  
-|1|<xref:System.Drawing.Printing.PaperKind>|  
-|2|<xref:System.Drawing.Printing.PaperKind>|  
-|3|<xref:System.Drawing.Printing.PaperKind>|  
-|4|<xref:System.Drawing.Printing.PaperKind>|  
-|5|<xref:System.Drawing.Printing.PaperKind>|  
-|6|<xref:System.Drawing.Printing.PaperKind>|  
-|7|<xref:System.Drawing.Printing.PaperKind>|  
-|8|<xref:System.Drawing.Printing.PaperKind>|  
-|9|<xref:System.Drawing.Printing.PaperKind>|  
-|10|<xref:System.Drawing.Printing.PaperKind>|  
-|11|<xref:System.Drawing.Printing.PaperKind>|  
-|12|<xref:System.Drawing.Printing.PaperKind>|  
-|13|<xref:System.Drawing.Printing.PaperKind>|  
-|14|<xref:System.Drawing.Printing.PaperKind>|  
-|15|<xref:System.Drawing.Printing.PaperKind>|  
-|16|<xref:System.Drawing.Printing.PaperKind>|  
-|17|<xref:System.Drawing.Printing.PaperKind>|  
-|18|<xref:System.Drawing.Printing.PaperKind>|  
-|19|<xref:System.Drawing.Printing.PaperKind>|  
-|20|<xref:System.Drawing.Printing.PaperKind>|  
-|21|<xref:System.Drawing.Printing.PaperKind>|  
-|22|<xref:System.Drawing.Printing.PaperKind>|  
-|23|<xref:System.Drawing.Printing.PaperKind>|  
-|24|<xref:System.Drawing.Printing.PaperKind>|  
-|25|<xref:System.Drawing.Printing.PaperKind>|  
-|26|<xref:System.Drawing.Printing.PaperKind>|  
-|27|<xref:System.Drawing.Printing.PaperKind>|  
-|28|<xref:System.Drawing.Printing.PaperKind>|  
-|29|<xref:System.Drawing.Printing.PaperKind>|  
-|30|<xref:System.Drawing.Printing.PaperKind>|  
-|31|<xref:System.Drawing.Printing.PaperKind>|  
-|32|<xref:System.Drawing.Printing.PaperKind>|  
-|33|<xref:System.Drawing.Printing.PaperKind>|  
-|34|<xref:System.Drawing.Printing.PaperKind>|  
-|35|<xref:System.Drawing.Printing.PaperKind>|  
-|36|<xref:System.Drawing.Printing.PaperKind>|  
-|37|<xref:System.Drawing.Printing.PaperKind>|  
-|38|<xref:System.Drawing.Printing.PaperKind>|  
-|39|<xref:System.Drawing.Printing.PaperKind>|  
-|40|<xref:System.Drawing.Printing.PaperKind>|  
-|41|<xref:System.Drawing.Printing.PaperKind>|  
-|42|<xref:System.Drawing.Printing.PaperKind>|  
-|43|<xref:System.Drawing.Printing.PaperKind>|  
-|44|<xref:System.Drawing.Printing.PaperKind>|  
-|45|<xref:System.Drawing.Printing.PaperKind>|  
-|46|<xref:System.Drawing.Printing.PaperKind>|  
-|47|<xref:System.Drawing.Printing.PaperKind>|  
-|50|<xref:System.Drawing.Printing.PaperKind>|  
-|51|<xref:System.Drawing.Printing.PaperKind>|  
-|52|<xref:System.Drawing.Printing.PaperKind>|  
-|53|<xref:System.Drawing.Printing.PaperKind>|  
-|54|<xref:System.Drawing.Printing.PaperKind>|  
-|55|<xref:System.Drawing.Printing.PaperKind>|  
-|56|<xref:System.Drawing.Printing.PaperKind>|  
-|57|<xref:System.Drawing.Printing.PaperKind>|  
-|58|<xref:System.Drawing.Printing.PaperKind>|  
-|59|<xref:System.Drawing.Printing.PaperKind>|  
-|60|<xref:System.Drawing.Printing.PaperKind>|  
-|61|<xref:System.Drawing.Printing.PaperKind>|  
-|62|<xref:System.Drawing.Printing.PaperKind>|  
-|63|<xref:System.Drawing.Printing.PaperKind>|  
-|64|<xref:System.Drawing.Printing.PaperKind>|  
-|65|<xref:System.Drawing.Printing.PaperKind>|  
-|66|<xref:System.Drawing.Printing.PaperKind>|  
-|67|<xref:System.Drawing.Printing.PaperKind>|  
-|68|<xref:System.Drawing.Printing.PaperKind>|  
-|69|<xref:System.Drawing.Printing.PaperKind>|  
-|70|<xref:System.Drawing.Printing.PaperKind>|  
-|71|<xref:System.Drawing.Printing.PaperKind>|  
-|72|<xref:System.Drawing.Printing.PaperKind>|  
-|73|<xref:System.Drawing.Printing.PaperKind>|  
-|74|<xref:System.Drawing.Printing.PaperKind>|  
-|75|<xref:System.Drawing.Printing.PaperKind>|  
-|76|<xref:System.Drawing.Printing.PaperKind>|  
-|77|<xref:System.Drawing.Printing.PaperKind>|  
-|78|<xref:System.Drawing.Printing.PaperKind>|  
-|79|<xref:System.Drawing.Printing.PaperKind>|  
-|80|<xref:System.Drawing.Printing.PaperKind>|  
-|81|<xref:System.Drawing.Printing.PaperKind>|  
-|82|<xref:System.Drawing.Printing.PaperKind>|  
-|83|<xref:System.Drawing.Printing.PaperKind>|  
-|84|<xref:System.Drawing.Printing.PaperKind>|  
-|85|<xref:System.Drawing.Printing.PaperKind>|  
-|86|<xref:System.Drawing.Printing.PaperKind>|  
-|87|<xref:System.Drawing.Printing.PaperKind>|  
-|88|<xref:System.Drawing.Printing.PaperKind>|  
-|89|<xref:System.Drawing.Printing.PaperKind>|  
-|90|<xref:System.Drawing.Printing.PaperKind>|  
-|91|<xref:System.Drawing.Printing.PaperKind>|  
-|92|<xref:System.Drawing.Printing.PaperKind>|  
-|93|<xref:System.Drawing.Printing.PaperKind>|  
-|94|<xref:System.Drawing.Printing.PaperKind>|  
-|95|<xref:System.Drawing.Printing.PaperKind>|  
-|96|<xref:System.Drawing.Printing.PaperKind>|  
-|97|<xref:System.Drawing.Printing.PaperKind>|  
-|98|<xref:System.Drawing.Printing.PaperKind>|  
-|99|<xref:System.Drawing.Printing.PaperKind>|  
-|100|<xref:System.Drawing.Printing.PaperKind>|  
-|101|<xref:System.Drawing.Printing.PaperKind>|  
-|102|<xref:System.Drawing.Printing.PaperKind>|  
-|103|<xref:System.Drawing.Printing.PaperKind>|  
-|104|<xref:System.Drawing.Printing.PaperKind>|  
-|105|<xref:System.Drawing.Printing.PaperKind>|  
-|106|<xref:System.Drawing.Printing.PaperKind>|  
-|107|<xref:System.Drawing.Printing.PaperKind>|  
-|108|<xref:System.Drawing.Printing.PaperKind>|  
-|109|<xref:System.Drawing.Printing.PaperKind>|  
-|110|<xref:System.Drawing.Printing.PaperKind>|  
-|111|<xref:System.Drawing.Printing.PaperKind>|  
-|112|<xref:System.Drawing.Printing.PaperKind>|  
-|113|<xref:System.Drawing.Printing.PaperKind>|  
-|114|<xref:System.Drawing.Printing.PaperKind>|  
-|115|<xref:System.Drawing.Printing.PaperKind>|  
-|116|<xref:System.Drawing.Printing.PaperKind>|  
-|117|<xref:System.Drawing.Printing.PaperKind>|  
-|118|<xref:System.Drawing.Printing.PaperKind>|  
+|1|<xref:System.Drawing.Printing.PaperKind.Letter>|  
+|2|<xref:System.Drawing.Printing.PaperKind.LetterSmall>|  
+|3|<xref:System.Drawing.Printing.PaperKind.Tabloid>|  
+|4|<xref:System.Drawing.Printing.PaperKind.Ledger>|  
+|5|<xref:System.Drawing.Printing.PaperKind.Legal>|  
+|6|<xref:System.Drawing.Printing.PaperKind.Statement>|  
+|7|<xref:System.Drawing.Printing.PaperKind.Executive>|  
+|8|<xref:System.Drawing.Printing.PaperKind.A3>|  
+|9|<xref:System.Drawing.Printing.PaperKind.A4>|  
+|10|<xref:System.Drawing.Printing.PaperKind.A4Small>|  
+|11|<xref:System.Drawing.Printing.PaperKind.A5>|  
+|12|<xref:System.Drawing.Printing.PaperKind.B4>|  
+|13|<xref:System.Drawing.Printing.PaperKind.B5>|  
+|14|<xref:System.Drawing.Printing.PaperKind.Folio>|  
+|15|<xref:System.Drawing.Printing.PaperKind.Quarto>|  
+|16|<xref:System.Drawing.Printing.PaperKind.Standard10x14>|  
+|17|<xref:System.Drawing.Printing.PaperKind.Standard11x17>|  
+|18|<xref:System.Drawing.Printing.PaperKind.Note>|  
+|19|<xref:System.Drawing.Printing.PaperKind.Number9Envelope>|  
+|20|<xref:System.Drawing.Printing.PaperKind.Number10Envelope>|  
+|21|<xref:System.Drawing.Printing.PaperKind.Number11Envelope>|  
+|22|<xref:System.Drawing.Printing.PaperKind.Number12Envelope>|  
+|23|<xref:System.Drawing.Printing.PaperKind.Number14Envelope>|  
+|24|<xref:System.Drawing.Printing.PaperKind.CSheet>|  
+|25|<xref:System.Drawing.Printing.PaperKind.DSheet>|  
+|26|<xref:System.Drawing.Printing.PaperKind.ESheet>|  
+|27|<xref:System.Drawing.Printing.PaperKind.DLEnvelope>|  
+|28|<xref:System.Drawing.Printing.PaperKind.C5Envelope>|  
+|29|<xref:System.Drawing.Printing.PaperKind.C3Envelope>|  
+|30|<xref:System.Drawing.Printing.PaperKind.C4Envelope>|  
+|31|<xref:System.Drawing.Printing.PaperKind.C6Envelope>|  
+|32|<xref:System.Drawing.Printing.PaperKind.C65Envelope>|  
+|33|<xref:System.Drawing.Printing.PaperKind.B4Envelope>|  
+|34|<xref:System.Drawing.Printing.PaperKind.B5Envelope>|  
+|35|<xref:System.Drawing.Printing.PaperKind.B6Envelope>|  
+|36|<xref:System.Drawing.Printing.PaperKind.ItalyEnvelope>|  
+|37|<xref:System.Drawing.Printing.PaperKind.MonarchEnvelope>|  
+|38|<xref:System.Drawing.Printing.PaperKind.PersonalEnvelope>|  
+|39|<xref:System.Drawing.Printing.PaperKind.USStandardFanfold>|  
+|40|<xref:System.Drawing.Printing.PaperKind.GermanStandardFanfold>|  
+|41|<xref:System.Drawing.Printing.PaperKind.GermanLegalFanfold>|  
+|42|<xref:System.Drawing.Printing.PaperKind.IsoB4>|  
+|43|<xref:System.Drawing.Printing.PaperKind.JapanesePostcard>|  
+|44|<xref:System.Drawing.Printing.PaperKind.Standard9x11>|  
+|45|<xref:System.Drawing.Printing.PaperKind.Standard10x11>|  
+|46|<xref:System.Drawing.Printing.PaperKind.Standard15x11>|  
+|47|<xref:System.Drawing.Printing.PaperKind.InviteEnvelope>|  
+|50|<xref:System.Drawing.Printing.PaperKind.LetterExtra>|  
+|51|<xref:System.Drawing.Printing.PaperKind.LegalExtra>|  
+|52|<xref:System.Drawing.Printing.PaperKind.TabloidExtra>|  
+|53|<xref:System.Drawing.Printing.PaperKind.A4Extra>|  
+|54|<xref:System.Drawing.Printing.PaperKind.LetterTransverse>|  
+|55|<xref:System.Drawing.Printing.PaperKind.A4Transverse>|  
+|56|<xref:System.Drawing.Printing.PaperKind.LetterExtraTransverse>|  
+|57|<xref:System.Drawing.Printing.PaperKind.APlus>|  
+|58|<xref:System.Drawing.Printing.PaperKind.BPlus>|  
+|59|<xref:System.Drawing.Printing.PaperKind.LetterPlus>|  
+|60|<xref:System.Drawing.Printing.PaperKind.A4Plus>|  
+|61|<xref:System.Drawing.Printing.PaperKind.A5Transverse>|  
+|62|<xref:System.Drawing.Printing.PaperKind.B5Transverse>|  
+|63|<xref:System.Drawing.Printing.PaperKind.A3Extra>|  
+|64|<xref:System.Drawing.Printing.PaperKind.A5Extra>|  
+|65|<xref:System.Drawing.Printing.PaperKind.B5Extra>|  
+|66|<xref:System.Drawing.Printing.PaperKind.A2>|  
+|67|<xref:System.Drawing.Printing.PaperKind.A3Transverse>|  
+|68|<xref:System.Drawing.Printing.PaperKind.A3ExtraTransverse>|  
+|69|<xref:System.Drawing.Printing.PaperKind.JapanesePostcard>|  
+|70|<xref:System.Drawing.Printing.PaperKind.A6>|  
+|71|<xref:System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber2>|  
+|72|<xref:System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber3>|  
+|73|<xref:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber3>|  
+|74|<xref:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber4>|  
+|75|<xref:System.Drawing.Printing.PaperKind.LetterRotated>|  
+|76|<xref:System.Drawing.Printing.PaperKind.A3Rotated>|  
+|77|<xref:System.Drawing.Printing.PaperKind.A4Rotated>|  
+|78|<xref:System.Drawing.Printing.PaperKind.A5Rotated>|  
+|79|<xref:System.Drawing.Printing.PaperKind.B4JisRotated>|  
+|80|<xref:System.Drawing.Printing.PaperKind.B5JisRotated>|  
+|81|<xref:System.Drawing.Printing.PaperKind.JapanesePostcardRotated>|  
+|82|<xref:System.Drawing.Printing.PaperKind.JapaneseDoublePostcardRotated>|  
+|83|<xref:System.Drawing.Printing.PaperKind.A6Rotated>|  
+|84|<xref:System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber2Rotated>|  
+|85|<xref:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber3Rotated>|  
+|86|<xref:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber4Rotated>|  
+|87|<xref:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber4Rotated>|  
+|88|<xref:System.Drawing.Printing.PaperKind.B6Jis>|  
+|89|<xref:System.Drawing.Printing.PaperKind.B6JisRotated>|  
+|90|<xref:System.Drawing.Printing.PaperKind.Standard12x11>|  
+|91|<xref:System.Drawing.Printing.PaperKind.JapaneseEnvelopeYouNumber4>|  
+|92|<xref:System.Drawing.Printing.PaperKind.JapaneseEnvelopeYouNumber4Rotated>|  
+|93|<xref:System.Drawing.Printing.PaperKind.Prc16K>|  
+|94|<xref:System.Drawing.Printing.PaperKind.Prc32K>|  
+|95|<xref:System.Drawing.Printing.PaperKind.Prc32KBig>|  
+|96|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber1>|  
+|97|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber2>|  
+|98|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber3>|  
+|99|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber4>|  
+|100|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber5>|  
+|101|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber6>|  
+|102|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber7>|  
+|103|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber8>|  
+|104|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber9>|  
+|105|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber10>|  
+|106|<xref:System.Drawing.Printing.PaperKind.Prc16KRotated>|  
+|107|<xref:System.Drawing.Printing.PaperKind.Prc32KRotated>|  
+|108|<xref:System.Drawing.Printing.PaperKind.Prc32KBigRotated>|  
+|109|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber1Rotated>|  
+|110|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber2Rotated>|  
+|111|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber3Rotated>|  
+|112|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber4Rotated>|  
+|113|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber5Rotated>|  
+|114|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber6Rotated>|  
+|115|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber7Rotated>|  
+|116|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber8Rotated>|  
+|117|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber9Rotated>|  
+|118|<xref:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber10Rotated>|  
 |Greater than 118|A custom paper size|  
   
  ]]></format>
@@ -365,27 +387,5 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.PaperSize.Kind" /> property is not set to <see cref="F:System.Drawing.Printing.PaperKind.Custom" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PaperSize" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows initial property values for an instance of <xref:System.Drawing.Printing.PaperSize> class.  
-  
-|Property|Initial value|  
-|--------------|-------------------|  
-|<xref:System.Drawing.Printing.PaperSize.Kind%2A>|<xref:System.Drawing.Printing.PaperKind?displayProperty=fullName>|  
-|<xref:System.Drawing.Printing.PaperSize.PaperName%2A>|<xref:System.String.Empty?displayProperty=fullName>|  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

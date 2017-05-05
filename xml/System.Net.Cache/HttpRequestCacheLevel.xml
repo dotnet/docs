@@ -24,7 +24,7 @@
   
  This BypassCache value is the default cache behavior specified in the machine configuration file that ships with the .NET Framework. No entries are taken from caches, added to caches, or removed from caches between the client and server.  
   
- The <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A?displayProperty=fullName> property is used to get or set the default cache policy for <xref:System.Net.HttpWebRequest> instances. The <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=fullName> property is used to get or set the default cache policy for a <xref:System.Net.WebRequest> instances. The <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=fullName> property is used to get or set the cache policy for a specific request.  
+ The <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A?displayProperty=fullName> property is used to get or set the default cache policy for <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A?displayProperty=fullName> instances. The <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=fullName> property is used to get or set the default cache policy for a <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=fullName> instances. The <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=fullName> property is used to get or set the cache policy for a specific request.  
   
  A copy of a resource is only added to the cache if the response stream for the resource is retrieved and read to the end of the stream. So another request for the same resource could use a cached copy, depending on the default cache policy level for this request.  
   

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorRuntimeHost::CreateDomainEx method [.NET Framework hosting]"
   - "CreateDomainEx method [.NET Framework hosting]"
 ms.assetid: 1bdde382-f8ba-4cc8-94b2-d1ac919c585e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

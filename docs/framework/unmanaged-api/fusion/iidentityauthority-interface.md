@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IIdentityAuthority interface [.NET Framework fusion]"
 ms.assetid: 6277f914-51a8-49be-bec6-52d6d648527d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

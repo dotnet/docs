@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IBindingDisplay::GetCurrentDisplay method [.NET Framework debugging]"
   - "GetCurrentDisplay method [.NET Framework debugging]"
 ms.assetid: d28eeea4-c4e0-40d4-91de-198d98cfa13c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

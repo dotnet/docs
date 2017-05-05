@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRAssemblyIdentityManager::GetReferenceAssembliesFromFile method [.NET Framework hosting]"
   - "GetReferenceAssembliesFromFile method [.NET Framework hosting]"
 ms.assetid: eed63d31-d977-4c7d-9443-f9d37a2a7d81
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

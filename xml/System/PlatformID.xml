@@ -42,7 +42,7 @@
    
   
 ## Examples  
- The following example demonstrates using the <xref:System.PlatformID> class to identify the currently executing operating system.  
+ The following example demonstrates using the <xref:System.PlatformID.Win32S> class to identify the currently executing operating system.  
   
  [!code-cpp[PlatformID.class#1](~/samples/snippets/cpp/VS_Snippets_CLR/platformID.class/CPP/pid.cpp#1)]
  [!code-csharp[PlatformID.class#1](~/samples/snippets/csharp/VS_Snippets_CLR/platformID.class/CS/pid.cs#1)]

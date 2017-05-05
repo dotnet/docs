@@ -1140,6 +1140,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateProjectInstance">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a project instance based on this project, but completely disconnected from it.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Can be used to build independently. The original project is evaluated before creating the instance, if necessary, so that the original project is marked as unmodified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateProjectInstance">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.ProjectInstance CreateProjectInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Execution.ProjectInstance CreateProjectInstance() cil managed" />
@@ -2386,22 +2403,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateProjectInstance">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a project instance based on this project, but completely disconnected from it.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Can be used to build independently. The original project is evaluated before creating the instance, if necessary, so that the original project is marked as unmodified.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

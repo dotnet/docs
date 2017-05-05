@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ASM_DISPLAY_FLAGS enumeration [.NET Framework fusion]"
 ms.assetid: dbade6c9-9d26-4a79-9fd2-46108edd12d7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

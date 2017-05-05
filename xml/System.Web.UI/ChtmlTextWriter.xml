@@ -257,7 +257,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.ChtmlTextWriter.OnStyleAttributeRender%2A> method returns `false` when `key` is equal to the <xref:System.Web.UI.HtmlTextWriterStyle> field and the value is `"line-through"`.  
+ The <xref:System.Web.UI.ChtmlTextWriter.OnStyleAttributeRender%2A> method returns `false` when `key` is equal to the <xref:System.Web.UI.HtmlTextWriterStyle.TextDecoration> field and the value is `"line-through"`.  
   
  ]]></format>
         </remarks>

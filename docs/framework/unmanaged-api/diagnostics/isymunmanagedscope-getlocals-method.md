@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetLocals method [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetLocals method [.NET Framework debugging]"
 ms.assetid: 17c45f15-8c44-44da-b070-f902077b36e4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

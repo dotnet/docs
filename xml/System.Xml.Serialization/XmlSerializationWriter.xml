@@ -624,6 +624,24 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromEnum">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Takes a numeric enumeration value and returns a string that consists of delimited identifiers that represent the enumeration members that have been set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromEnum">
       <MemberSignature Language="C#" Value="protected static string FromEnum (long value, string[] values, long[] ids);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string FromEnum(int64 value, string[] values, int64[] ids) cil managed" />
@@ -3620,23 +3638,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="FromEnum">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Takes a numeric enumeration value and returns a string that consists of delimited identifiers that represent the enumeration members that have been set.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

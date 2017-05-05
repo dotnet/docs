@@ -13,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a mechanism whereby types can declare that they can receive an expression (or another class) from a markup extension, where the output is a different property type than the target property. Do not use for [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] implementations; see Remarks.</summary>
+    <summary>Provides a mechanism whereby types can declare that they can receive an expression (or another class) from a markup extension, where the output is a different property type than the target property. Do not use for .NET Framework 4 implementations; see Remarks.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

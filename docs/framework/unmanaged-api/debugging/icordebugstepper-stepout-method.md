@@ -2,7 +2,7 @@
 title: "ICorDebugStepper::StepOut Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugStepper::StepOut method [.NET Framework debugging]"
   - "StepOut method [.NET Framework debugging]"
 ms.assetid: aae0f48c-4ede-4256-9251-a7fc85a229dc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

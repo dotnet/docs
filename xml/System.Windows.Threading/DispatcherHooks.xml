@@ -142,7 +142,7 @@
 ## Remarks  
  Typically, this event occurs during a call to <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>.  
   
- This event can occur during a call to <xref:System.Windows.Threading.Dispatcher.Invoke%2A> if any priority other than <xref:System.Windows.Threading.DispatcherPriority> is specified, or if the destination dispatcher is owned by a different thread.  
+ This event can occur during a call to <xref:System.Windows.Threading.Dispatcher.Invoke%2A> if any priority other than <xref:System.Windows.Threading.DispatcherPriority.Send> is specified, or if the destination dispatcher is owned by a different thread.  
   
  Any thread can post operations; therefore, this event can be raised by any thread.  
   

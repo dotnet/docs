@@ -67,8 +67,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="certificate" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">The <paramref name="certificate" /> public key is <see langword="null" />.</exception>
+          <paramref name="cert" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <paramref name="cert" /> public key is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The certificate's public key cannot be accessed.</exception>
       </Docs>
     </Member>

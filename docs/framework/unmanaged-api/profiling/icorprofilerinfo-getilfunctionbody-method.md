@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetILFunctionBody method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetILFunctionBody method [.NET Framework profiling]"
 ms.assetid: e29b46bc-5fdc-4894-b0c2-619df4b65ded
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostTask::SetPriority method [.NET Framework hosting]"
   - "SetPriority method [.NET Framework hosting]"
 ms.assetid: cd8c379b-c7a0-434f-8e23-899bd26be75d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

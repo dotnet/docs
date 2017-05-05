@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "UpdateSymbolStore method [.NET Framework debugging]"
   - "ISymUnmanagedReader::UpdateSymbolStore method [.NET Framework debugging]"
 ms.assetid: 4a17d723-86b9-4f27-bd0d-b70c3259011c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

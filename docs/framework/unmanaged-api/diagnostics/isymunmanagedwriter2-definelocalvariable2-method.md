@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter2::DefineLocalVariable2 method [.NET Framework debugging]"
   - "DefineLocalVariable2 method [.NET Framework debugging]"
 ms.assetid: e774eefe-858c-4362-8d2d-28ebf2ba1a24
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

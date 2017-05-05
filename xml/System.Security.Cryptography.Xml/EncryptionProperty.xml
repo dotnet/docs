@@ -73,12 +73,12 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="elementProperty" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The <see cref="P:System.Xml.XmlElement.LocalName" /> property of the <paramref name="elementProperty" /> parameter is not "EncryptionProperty".  
+        <exception cref="T:System.ArgumentNullException">The <paramref name="elemProp" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The <see cref="P:System.Xml.XmlElement.LocalName" /> property of the <paramref name="elemProp" /> parameter is not "EncryptionProperty".  
   
  -or-  
   
- The <see cref="P:System.Xml.XmlElement.NamespaceURI" /> property of the <paramref name="elementProperty" /> parameter is not "http://www.w3.org/2001/04/xmlenc#".</exception>
+ The <see cref="P:System.Xml.XmlElement.NamespaceURI" /> property of the <paramref name="elemProp" /> parameter is not "http://www.w3.org/2001/04/xmlenc#".</exception>
       </Docs>
     </Member>
     <Member MemberName="GetXml">

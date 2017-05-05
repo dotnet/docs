@@ -786,9 +786,9 @@
   
 |Current mode|Mode can be raised to|  
 |------------------|---------------------------|  
-|<xref:System.DirectoryServices.ActiveDirectory.ForestMode>|<xref:System.DirectoryServices.ActiveDirectory.ForestMode><br /><br /> <xref:System.DirectoryServices.ActiveDirectory.ForestMode>|  
-|<xref:System.DirectoryServices.ActiveDirectory.ForestMode>|<xref:System.DirectoryServices.ActiveDirectory.ForestMode>|  
-|<xref:System.DirectoryServices.ActiveDirectory.ForestMode>|None|  
+|<xref:System.DirectoryServices.ActiveDirectory.ForestMode.Windows2000Forest>|<xref:System.DirectoryServices.ActiveDirectory.ForestMode.Windows2003InterimForest><br /><br /> <xref:System.DirectoryServices.ActiveDirectory.ForestMode.Windows2003Forest>|  
+|<xref:System.DirectoryServices.ActiveDirectory.ForestMode.Windows2003InterimForest>|<xref:System.DirectoryServices.ActiveDirectory.ForestMode.Windows2003Forest>|  
+|<xref:System.DirectoryServices.ActiveDirectory.ForestMode.Windows2003Forest>|None|  
   
  ]]></format>
         </remarks>

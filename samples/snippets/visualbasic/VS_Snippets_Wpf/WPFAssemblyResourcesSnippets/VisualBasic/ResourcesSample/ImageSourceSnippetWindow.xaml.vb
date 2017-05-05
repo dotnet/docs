@@ -1,10 +1,10 @@
 '<SnippetSetImageSourceCODEBEHIND1>
 
-Imports System ' Uri
-Imports System.Windows.Media.Imaging ' BitmapImage
+Imports System
+Imports System.Windows.Media.Imaging
 '</SnippetSetImageSourceCODEBEHIND1>
-Imports System.IO ' Stream
-Imports System.Windows.Resources ' StreamResourceInfo
+Imports System.IO
+Imports System.Windows.Resources
 Imports System.Windows
 Imports System.Windows.Controls
 

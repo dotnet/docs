@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostGCManager::ThreadIsBlockingForSuspension method [.NET Framework hosting]"
   - "ThreadIsBlockingForSuspension method [.NET Framework hosting]"
 ms.assetid: 2657d45d-26d2-4d0a-8473-32b652e3321d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -323,7 +323,7 @@
   
     1.  Is hosted by another navigator.  
   
-    2.  Has its <xref:System.Windows.Controls.Frame.JournalOwnership%2A> property set to <xref:System.Windows.Navigation.JournalOwnership>.  
+    2.  Has its <xref:System.Windows.Controls.Frame.JournalOwnership%2A> property set to <xref:System.Windows.Navigation.JournalOwnership.UsesParentJournal>.  
   
 -   Is not part of content that is hosted by a navigator.  
   

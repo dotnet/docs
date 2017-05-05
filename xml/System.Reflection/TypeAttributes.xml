@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Some of the members of the <xref:System.Reflection.TypeAttributes> enumeration are masks that represent a set of mutually exclusive attributes. For example, the VisibilityMask member includes the NotPublic, Public, NestedPublic, NestedPrivate, NestedFamily, NestedAssembly, NestedFamANDAssem, and NestedFamORAssem members,  Because each attribute set includes a member whose underlying value is zero, you should first `And` the value of the mask with the specific <xref:System.Reflection.TypeAttributes> value retrieved from a property such as <xref:System.Type.Attributes%2A?displayProperty=fullName>. The following table lists the masks and the individual members that they include:  
+ Some of the members of the <xref:System.Reflection.TypeAttributes> enumeration are masks that represent a set of mutually exclusive attributes. For example, the VisibilityMask member includes the NotPublic, Public, NestedPublic, NestedPrivate, NestedFamily, NestedAssembly, NestedFamANDAssem, and NestedFamORAssem members,  Because each attribute set includes a member whose underlying value is zero, you should first `And` the value of the mask with the specific <xref:System.Reflection.TypeAttributes.VisibilityMask?displayProperty=fullName> value retrieved from a property such as <xref:System.Type.Attributes%2A?displayProperty=fullName>. The following table lists the masks and the individual members that they include:  
   
 |Mask|Includes|  
 |----------|--------------|  

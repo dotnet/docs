@@ -139,7 +139,7 @@ ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.ComponentModel.Design.Serialization.MemberRelationship> is assigned to the source, any existing relationship is removed.  
+ If <xref:System.ComponentModel.Design.Serialization.MemberRelationship.Empty> is assigned to the source, any existing relationship is removed.  
   
  ]]></format>
         </remarks>
@@ -211,7 +211,7 @@ ms[titleLabel, titleLabelText] = new MemberRelationship(form, formText);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.MemberRelationshipService.SetRelationship%2A> method clears any existing relationship if the relationship parameter is <xref:System.ComponentModel.Design.Serialization.MemberRelationship>. The default implementation stores relationships in a dictionary using weak references so the relationship table does not keep objects alive.  
+ The <xref:System.ComponentModel.Design.Serialization.MemberRelationshipService.SetRelationship%2A> method clears any existing relationship if the relationship parameter is <xref:System.ComponentModel.Design.Serialization.MemberRelationship.Empty>. The default implementation stores relationships in a dictionary using weak references so the relationship table does not keep objects alive.  
   
  ]]></format>
         </remarks>

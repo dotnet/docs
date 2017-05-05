@@ -92,15 +92,15 @@
 ## Remarks  
  This property is used to set the `MessageCredentialType` that is used to authenticate the caller at the service. Valid types are:  
   
--   <xref:System.ServiceModel.MessageCredentialType>  
+-   <xref:System.ServiceModel.MessageCredentialType.Certificate>  
   
--   <xref:System.ServiceModel.MessageCredentialType>  
+-   <xref:System.ServiceModel.MessageCredentialType.IssuedToken>  
   
--   <xref:System.ServiceModel.MessageCredentialType>  
+-   <xref:System.ServiceModel.MessageCredentialType.None>  
   
--   <xref:System.ServiceModel.MessageCredentialType>  
+-   <xref:System.ServiceModel.MessageCredentialType.UserName>  
   
--   <xref:System.ServiceModel.MessageCredentialType>  
+-   <xref:System.ServiceModel.MessageCredentialType.Windows>  
   
    
   

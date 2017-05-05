@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataAssemblyImport::GetAssemblyRefProps method [.NET Framework metadata]"
   - "GetAssemblyRefProps method [.NET Framework metadata]"
 ms.assetid: 5c6b7fb4-cbca-4479-b650-ab9a99732ea0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

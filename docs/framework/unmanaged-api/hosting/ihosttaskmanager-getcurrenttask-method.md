@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetCurrentTask method, IHostTaskManager interface [.NET Framework hosting]"
   - "IHostTaskManager::GetCurrentTask method [.NET Framework hosting]"
 ms.assetid: f17bca49-90bd-4dee-a5e1-b9a57ea46f85
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

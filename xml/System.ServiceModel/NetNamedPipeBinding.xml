@@ -22,7 +22,7 @@
 ## Remarks  
  The <xref:System.ServiceModel.NetNamedPipeBinding> generates a run-time communication stack by default, which uses transport security, named pipes for message delivery, and a binary message encoding. This binding is an appropriate [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system-provided choice for on-machine communication. It also supports transactions.  
   
- The default configuration for the <xref:System.ServiceModel.NetNamedPipeBinding> is similar to the configuration provided by the <xref:System.ServiceModel.NetTcpBinding>, but it is simpler because the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implementation is only meant for on-machine use and consequently there are fewer exposed features. The most notable difference is that the <xref:System.ServiceModel.SecurityMode> setting only offers the <xref:System.ServiceModel.SecurityMode> and <xref:System.ServiceModel.SecurityMode> options. SOAP security support is not an included option. The security behavior is configurable using the optional `securityMode` parameter in <xref:System.ServiceModel.NetNamedPipeBinding.%23ctor%28System.ServiceModel.NetNamedPipeSecurityMode%29> the constructor.  
+ The default configuration for the <xref:System.ServiceModel.NetNamedPipeBinding> is similar to the configuration provided by the <xref:System.ServiceModel.NetTcpBinding>, but it is simpler because the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implementation is only meant for on-machine use and consequently there are fewer exposed features. The most notable difference is that the <xref:System.ServiceModel.SecurityMode> setting only offers the <xref:System.ServiceModel.SecurityMode.None> and <xref:System.ServiceModel.SecurityMode.Transport> options. SOAP security support is not an included option. The security behavior is configurable using the optional `securityMode` parameter in <xref:System.ServiceModel.NetNamedPipeBinding.%23ctor%28System.ServiceModel.NetNamedPipeSecurityMode%29> the constructor.  
   
    
   
@@ -39,6 +39,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetNamedPipeBinding" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The security behavior is configurable using the optional `securityMode` parameter in the constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NetNamedPipeBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -55,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default security mode used is <xref:System.ServiceModel.NetNamedPipeSecurityMode>.  
+ The default security mode used is <xref:System.ServiceModel.NetNamedPipeSecurityMode.Transport>.  
   
    
   
@@ -87,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor when you want to configure the security explicitly. The default is <xref:System.ServiceModel.NetNamedPipeSecurityMode> when using the default constructor.  
+ Use this constructor when you want to configure the security explicitly. The default is <xref:System.ServiceModel.NetNamedPipeSecurityMode.Transport> when using the default constructor.  
   
    
   
@@ -682,7 +699,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- It is possible to stream only the incoming or the outgoing messages by specifying, respectively, <xref:System.ServiceModel.TransferMode> or <xref:System.ServiceModel.TransferMode>.  
+ It is possible to stream only the incoming or the outgoing messages by specifying, respectively, <xref:System.ServiceModel.TransferMode.StreamedRequest> or <xref:System.ServiceModel.TransferMode.StreamedResponse>.  
   
    
   
@@ -695,22 +712,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetNamedPipeBinding" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The security behavior is configurable using the optional `securityMode` parameter in the constructor.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -143,7 +143,7 @@ internal static string stringFromWordArray(ReadOnlyCollection<RecognizedWordUnit
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `text` or `pronunciation` are `null`, "", or <xref:System.String> and the <xref:System.Speech.Recognition.RecognizedWordUnit> is used in a recognition operation, the recognition engine will generate appropriate values in any output <xref:System.Speech.Recognition.RecognizedWordUnit> instance.  
+ If `text` or `pronunciation` are `null`, "", or <xref:System.String.Empty> and the <xref:System.Speech.Recognition.RecognizedWordUnit> is used in a recognition operation, the recognition engine will generate appropriate values in any output <xref:System.Speech.Recognition.RecognizedWordUnit> instance.  
   
  Direct construction of <xref:System.Speech.Recognition.RecognizedWordUnit> instances is typically used only when emulating recognition operations using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods of the <xref:System.Speech.Recognition.SpeechRecognitionEngine> class and the <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognize%2A> or <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync%2A> methods of the <xref:System.Speech.Recognition.SpeechRecognizer> class.  
   

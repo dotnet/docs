@@ -658,7 +658,7 @@
 ## Remarks  
  An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a color-remap table for the default category, a different color-remap table for the bitmap category, and still a different color-remap table for the pen category.  
   
- When you call the <xref:System.Drawing.Imaging.ImageAttributes.GetAdjustedPalette%2A> method, you can specify the adjustment category that is used to adjust the palette colors. For example, if you pass <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.GetAdjustedPalette%2A> method, the adjustment settings of the bitmap category are used to adjust the palette colors.  
+ When you call the <xref:System.Drawing.Imaging.ImageAttributes.GetAdjustedPalette%2A> method, you can specify the adjustment category that is used to adjust the palette colors. For example, if you pass <xref:System.Drawing.Imaging.ColorAdjustType.Bitmap> to the <xref:System.Drawing.Imaging.ImageAttributes.GetAdjustedPalette%2A> method, the adjustment settings of the bitmap category are used to adjust the palette colors.  
   
  ]]></format>
         </remarks>
@@ -688,7 +688,7 @@
 ## Remarks  
  A color-remap table is an array of <xref:System.Drawing.Imaging.ColorMap> structures. Each <xref:System.Drawing.Imaging.ColorMap> structure has two <xref:System.Drawing.Color> objects: one that specifies an old color and one that specifies a corresponding new color. During rendering, any color that matches one of the old colors in the remap table is changed to the corresponding new color.  
   
- Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetBrushRemapTable%2A> method has the same effect as passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetRemapTable%2A> method. The specified remap table applies to items in metafiles that are filled with a brush.  
+ Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetBrushRemapTable%2A> method has the same effect as passing <xref:System.Drawing.Imaging.ColorAdjustType.Brush> to the <xref:System.Drawing.Imaging.ImageAttributes.SetRemapTable%2A> method. The specified remap table applies to items in metafiles that are filled with a brush.  
   
  This method is intended to be used only with metafiles.  
   
@@ -780,7 +780,7 @@
   
  The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
   
- As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color key for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetColorKey%2A> method, none of the default adjustment settings will apply to pens.  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color key for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType.Pen> to the <xref:System.Drawing.Imaging.ImageAttributes.SetColorKey%2A> method, none of the default adjustment settings will apply to pens.  
   
    
   
@@ -901,7 +901,7 @@
   
  The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
   
- As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color-adjustment and grayscale-adjustment matrices for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrices%2A> method, none of the default adjustment settings will apply to pens.  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color-adjustment and grayscale-adjustment matrices for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType.Pen> to the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrices%2A> method, none of the default adjustment settings will apply to pens.  
   
  ]]></format>
         </remarks>
@@ -1025,7 +1025,7 @@
   
  The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
   
- As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color-adjustment matrix for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%2A> method, none of the default adjustment settings will apply to pens.  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color-adjustment matrix for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType.Pen> to the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%2A> method, none of the default adjustment settings will apply to pens.  
   
    
   
@@ -1118,7 +1118,7 @@
   
  The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
   
- As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the gamma value for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetGamma%2A> method, none of the default adjustment settings will apply to pens.  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the gamma value for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType.Pen> to the <xref:System.Drawing.Imaging.ImageAttributes.SetGamma%2A> method, none of the default adjustment settings will apply to pens.  
   
  Gamma values outside the usual range may be useful for old CRT monitors or for monitors that are in unusual lighting conditions, such as industrial environments or window displays.  
   
@@ -1234,7 +1234,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method to convert an image to a CMYK color space and examine the intensities of one of the CMYK color channels. For example, suppose you create an <xref:System.Drawing.Imaging.ImageAttributes> object and set its bitmap output channel to <xref:System.Drawing.Imaging.ColorChannelFlag>. If you pass the path of that <xref:System.Drawing.Imaging.ImageAttributes> object to the <xref:System.Drawing.Graphics.DrawImage%2A> method, the cyan component of each pixel is calculated, and each pixel in the rendered image is a shade of gray that indicates the intensity of its cyan channel. Similarly, you can render images that indicate the intensities of the magenta, yellow, and black channels.  
+ You can use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method to convert an image to a CMYK color space and examine the intensities of one of the CMYK color channels. For example, suppose you create an <xref:System.Drawing.Imaging.ImageAttributes> object and set its bitmap output channel to <xref:System.Drawing.Imaging.ColorChannelFlag.ColorChannelC>. If you pass the path of that <xref:System.Drawing.Imaging.ImageAttributes> object to the <xref:System.Drawing.Graphics.DrawImage%2A> method, the cyan component of each pixel is calculated, and each pixel in the rendered image is a shade of gray that indicates the intensity of its cyan channel. Similarly, you can render images that indicate the intensities of the magenta, yellow, and black channels.  
   
  An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify an output channel for the default category and a different output channel for the bitmap category.  
   
@@ -1276,13 +1276,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method to convert an image to a CMYK color space and examine the intensities of one of the CMYK color channels. For example, suppose you create an <xref:System.Drawing.Imaging.ImageAttributes> object and set its bitmap output channel to <xref:System.Drawing.Imaging.ColorChannelFlag>. If you pass the path of that <xref:System.Drawing.Imaging.ImageAttributes> object to the <xref:System.Drawing.Graphics.DrawImage%2A> method, the cyan component of each pixel is calculated, and each pixel in the rendered image is a shade of gray that indicates the intensity of its cyan channel. Similarly, you can render images that indicate the intensities of the magenta, yellow, and black channels.  
+ You can use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method to convert an image to a CMYK color space and examine the intensities of one of the CMYK color channels. For example, suppose you create an <xref:System.Drawing.Imaging.ImageAttributes> object and set its bitmap output channel to <xref:System.Drawing.Imaging.ColorChannelFlag.ColorChannelC>. If you pass the path of that <xref:System.Drawing.Imaging.ImageAttributes> object to the <xref:System.Drawing.Graphics.DrawImage%2A> method, the cyan component of each pixel is calculated, and each pixel in the rendered image is a shade of gray that indicates the intensity of its cyan channel. Similarly, you can render images that indicate the intensities of the magenta, yellow, and black channels.  
   
  An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify an output channel for the default category and a different output channel for the bitmap category.  
   
  The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the bitmap category, the default settings apply to the bitmap category.  
   
- As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the output channel for the bitmap category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method, none of the default adjustment settings will apply to bitmaps.  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the output channel for the bitmap category by passing <xref:System.Drawing.Imaging.ColorAdjustType.Bitmap> to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method, none of the default adjustment settings will apply to bitmaps.  
   
    
   
@@ -1324,7 +1324,7 @@
   
 2.  Create an <xref:System.Drawing.Imaging.ImageAttributes> object.  
   
-3.  Pass <xref:System.Drawing.Imaging.ColorChannelFlag> to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
+3.  Pass <xref:System.Drawing.Imaging.ColorChannelFlag.ColorChannelC> to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
   
 4.  Pass the path name of a color profile file to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannelColorProfile%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
   
@@ -1370,7 +1370,7 @@
   
 2.  Create an <xref:System.Drawing.Imaging.ImageAttributes> object.  
   
-3.  Pass <xref:System.Drawing.Imaging.ColorChannelFlag> to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
+3.  Pass <xref:System.Drawing.Imaging.ColorChannelFlag.ColorChannelC> to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
   
 4.  Pass the path name of a color profile file to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannelColorProfile%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
   
@@ -1382,7 +1382,7 @@
   
  The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the bitmap category, the default settings apply to the bitmap category.  
   
- As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the output channel color-profile file for the bitmap category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannelColorProfile%2A> method, none of the default adjustment settings will apply to bitmaps.  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the output channel color-profile file for the bitmap category by passing <xref:System.Drawing.Imaging.ColorAdjustType.Bitmap> to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannelColorProfile%2A> method, none of the default adjustment settings will apply to bitmaps.  
   
  ]]></format>
         </remarks>
@@ -1465,7 +1465,7 @@
   
  The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
   
- As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color-remap table for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetRemapTable%2A> method, none of the default adjustment settings will apply to pens.  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color-remap table for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType.Pen> to the <xref:System.Drawing.Imaging.ImageAttributes.SetRemapTable%2A> method, none of the default adjustment settings will apply to pens.  
   
    
   
@@ -1553,7 +1553,7 @@
   
  The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
   
- As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the threshold for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetThreshold%2A> method, none of the default adjustment settings will apply to pens.  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the threshold for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType.Pen> to the <xref:System.Drawing.Imaging.ImageAttributes.SetThreshold%2A> method, none of the default adjustment settings will apply to pens.  
   
    
   
@@ -1586,7 +1586,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetWrapMode%28System.Drawing.Drawing2D.WrapMode%29> method is equivalent to calling <xref:System.Drawing.Imaging.ImageAttributes.SetWrapMode%28System.Drawing.Drawing2D.WrapMode%2CSystem.Drawing.Color%29> and passing <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> for the `color` parameter. <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> specifies the color of pixels outside of a rendered image. This color is visible if the mode parameter is set to <xref:System.Drawing.Drawing2D.WrapMode> and the source rectangle passed to the <xref:System.Drawing.Graphics.DrawImage%2A> method is larger than the image itself.  
+ Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetWrapMode%28System.Drawing.Drawing2D.WrapMode%29> method is equivalent to calling <xref:System.Drawing.Imaging.ImageAttributes.SetWrapMode%28System.Drawing.Drawing2D.WrapMode%2CSystem.Drawing.Color%29> and passing <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> for the `color` parameter. <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> specifies the color of pixels outside of a rendered image. This color is visible if the mode parameter is set to <xref:System.Drawing.Drawing2D.WrapMode.Clamp> and the source rectangle passed to the <xref:System.Drawing.Graphics.DrawImage%2A> method is larger than the image itself.  
   
    
   
@@ -1595,7 +1595,7 @@
   
 1.  Opens an <xref:System.Drawing.Image> from the Circle3.jpg file (a small, red-filled circle) and draws it to the screen.  
   
-2.  Creates an <xref:System.Drawing.Imaging.ImageAttributes> object and sets the <xref:System.Drawing.Drawing2D.WrapMode> enumeration to <xref:System.Drawing.Drawing2D.WrapMode>.  
+2.  Creates an <xref:System.Drawing.Imaging.ImageAttributes> object and sets the <xref:System.Drawing.Drawing2D.WrapMode> enumeration to <xref:System.Drawing.Drawing2D.WrapMode.Tile>.  
   
 3.  Creates a <xref:System.Drawing.TextureBrush> using the image from the Circle3.jpg file.  
   

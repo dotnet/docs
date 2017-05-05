@@ -79,7 +79,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling the <xref:System.Diagnostics.DebuggableAttribute.%23ctor%28System.Diagnostics.DebuggableAttribute.DebuggingModes%29> constructor with a `modes` parameter value of <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> is equivalent to calling the <xref:System.Diagnostics.DebuggableAttribute.%23ctor%28System.Boolean%2CSystem.Boolean%29> constructor with an `isJITTrackingEnabled` parameter value of `true`.  
+ Calling the <xref:System.Diagnostics.DebuggableAttribute.%23ctor%28System.Diagnostics.DebuggableAttribute.DebuggingModes%29> constructor with a `modes` parameter value of <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes.Default> is equivalent to calling the <xref:System.Diagnostics.DebuggableAttribute.%23ctor%28System.Boolean%2CSystem.Boolean%29> constructor with an `isJITTrackingEnabled` parameter value of `true`.  
   
  ]]></format>
         </remarks>

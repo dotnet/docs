@@ -87,13 +87,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling the <xref:System.Data.Objects.ObjectStateManager.ChangeObjectState%2A> method to change the state of an object to <xref:System.Data.EntityState> does not cause related objects in a constrained relationship to be deleted.  
+ Calling the <xref:System.Data.Objects.ObjectStateManager.ChangeObjectState%2A> method to change the state of an object to <xref:System.Data.EntityState.Deleted> does not cause related objects in a constrained relationship to be deleted.  
   
  Changing the state of an object does not affect related objects in the object graph.  
   
- When you change the <xref:System.Data.EntityState> of an entity object entry to <xref:System.Data.EntityState>, all the properties of the object are marked as modified, regardless of the current or original values.  
+ When you change the <xref:System.Data.EntityState> of an entity object entry to <xref:System.Data.EntityState.Modified>, all the properties of the object are marked as modified, regardless of the current or original values.  
   
- When the <xref:System.Data.EntityState> of an entity object entry is changed to <xref:System.Data.EntityState>, <xref:System.Data.EntityState>, or <xref:System.Data.EntityState>, the relationship entries for the object are also updated.  
+ When the <xref:System.Data.EntityState> of an entity object entry is changed to <xref:System.Data.EntityState.Added>, <xref:System.Data.EntityState.Deleted>, or <xref:System.Data.EntityState.Detached>, the relationship entries for the object are also updated.  
   
  ]]></format>
         </remarks>
@@ -109,6 +109,23 @@
  When <paramref name="state" /> is not a valid <see cref="T:System.Data.EntityState" /> value.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ChangeRelationshipState">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the state of the specified relationship between two entity objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not supported for relationships based on a foreign key association.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ChangeRelationshipState">
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectStateEntry ChangeRelationshipState (object sourceEntity, object targetEntity, string navigationProperty, System.Data.EntityState relationshipState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectStateEntry ChangeRelationshipState(object sourceEntity, object targetEntity, string navigationProperty, valuetype System.Data.EntityState relationshipState) cil managed" />
@@ -550,7 +567,7 @@
 ## Remarks  
  The <xref:System.Data.Objects.ObjectStateManager.GetRelationshipManager%2A> method is used to obtain the <xref:System.Data.Objects.DataClasses.RelationshipManager> for objects that are persistence ignorant. When objects implement <xref:System.Data.Objects.DataClasses.IEntityWithRelationships> or inherit from <xref:System.Data.Objects.DataClasses.EntityObject>, the <xref:System.Data.Objects.DataClasses.RelationshipManager> is accessed from the <xref:System.Data.Objects.DataClasses.IEntityWithRelationships.RelationshipManager%2A> property.  
   
- The <xref:System.Data.Objects.DataClasses.RelationshipManager> cannot be returned when the object is in a <xref:System.Data.EntityState> state.  
+ The <xref:System.Data.Objects.DataClasses.RelationshipManager> cannot be returned when the object is in a <xref:System.Data.EntityState.Detached> state.  
   
  Calling the <xref:System.Data.Objects.ObjectStateManager.TryGetRelationshipManager%2A> method is the same as calling the <xref:System.Data.Objects.ObjectStateManager.GetRelationshipManager%2A> method, except that this method returns `false` instead of raising an exception.  
   
@@ -558,22 +575,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ChangeRelationshipState">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Changes the state of the specified relationship between two entity objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for relationships based on a foreign key association.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

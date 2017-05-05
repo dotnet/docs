@@ -33,7 +33,7 @@
   
  For Arabic cultures, more language versions of the Gregorian calendar are available. For example, you can use the French version of <xref:System.Globalization.GregorianCalendar> using the MiddleEastFrench value.  
   
- A culture that supports <xref:System.Globalization.GregorianCalendar> might not support all language versions of <xref:System.Globalization.GregorianCalendar>. The <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=fullName> and <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=fullName> properties specify the calendars supported by that culture. If <xref:System.Globalization.GregorianCalendar> is supported, <xref:System.Globalization.GregorianCalendar.CalendarType%2A> can be used to determine which language versions of <xref:System.Globalization.GregorianCalendar> are supported.  
+ A culture that supports <xref:System.Globalization.GregorianCalendarTypes.MiddleEastFrench> might not support all language versions of <xref:System.Globalization.GregorianCalendar>. The <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=fullName> and <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=fullName> properties specify the calendars supported by that culture. If <xref:System.Globalization.GregorianCalendar> is supported, <xref:System.Globalization.GregorianCalendar.CalendarType%2A> can be used to determine which language versions of <xref:System.Globalization.GregorianCalendar.CalendarType%2A> are supported.  
   
    
   

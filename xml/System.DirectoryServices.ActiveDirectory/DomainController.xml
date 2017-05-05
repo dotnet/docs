@@ -799,7 +799,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the replication will only occur with the other domain controllers in the same site. If the `options` parameter contains the <xref:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions> value, then the replication will occur with all domain controllers in the forest.  
+ By default, the replication will only occur with the other domain controllers in the same site. If the `options` parameter contains the <xref:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.CrossSite> value, then the replication will occur with all domain controllers in the forest.  
   
  ]]></format>
         </remarks>

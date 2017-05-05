@@ -501,7 +501,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.TextFormatting.TextLine.IsTruncated%2A> property value is set only when the <xref:System.Windows.TextWrapping> property of <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> is set to <xref:System.Windows.TextWrapping>, and a single word is wider than the formatting paragraph width. In such situation, <xref:System.Windows.Media.TextFormatting.TextFormatter> truncates the line in the middle of the word to honor the desired behavior specified by <xref:System.Windows.TextWrapping> setting.  
+ The <xref:System.Windows.Media.TextFormatting.TextLine.IsTruncated%2A> property value is set only when the <xref:System.Windows.TextWrapping> property of <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> is set to <xref:System.Windows.TextWrapping.Wrap>, and a single word is wider than the formatting paragraph width. In such situation, <xref:System.Windows.Media.TextFormatting.TextFormatter> truncates the line in the middle of the word to honor the desired behavior specified by <xref:System.Windows.TextWrapping.Wrap> setting.  
   
  ]]></format>
         </remarks>

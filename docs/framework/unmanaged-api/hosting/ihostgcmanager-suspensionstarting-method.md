@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SuspensionStarting method, IHostGCManager interface [.NET Framework hosting]"
   - "IHostGCManager::SuspensionStarting method [.NET Framework hosting]"
 ms.assetid: c381f524-94cf-4fa2-9298-50f847a03431
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

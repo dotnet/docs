@@ -125,7 +125,7 @@
         <returns>The local name of the node at the specified position. <see cref="F:System.String.Empty" /> is returned if the node does not have a local name, for example if the current position references a text node.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="nodePosition" /> is invalid.</exception>
+          <paramref name="node_position" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -146,7 +146,7 @@
       <Docs>
         <param name="node_position">To be added.</param>
         <summary>When overridden in a derived class, returns the name of the node at the specified position.</summary>
-        <returns>The name of the node at <paramref name="nodePosition" />. <see cref="F:System.String.Empty" /> is returned if the node does not have a name.</returns>
+        <returns>The name of the node at <paramref name="node_position" />. <see cref="F:System.String.Empty" /> is returned if the node does not have a name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -156,7 +156,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="nodePosition" /> is invalid.</exception>
+          <paramref name="node_position" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNamespace">
@@ -177,10 +177,10 @@
       <Docs>
         <param name="node_position">To be added.</param>
         <summary>When overridden in a derived class, returns the namespace of the node at the specified position.</summary>
-        <returns>The namespace of the node at <paramref name="nodePosition" />. <see cref="F:System.String.Empty" /> is returned if the node does not have a namespace.</returns>
+        <returns>The namespace of the node at <paramref name="node_position" />. <see cref="F:System.String.Empty" /> is returned if the node does not have a namespace.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="nodePosition" /> is invalid.</exception>
+          <paramref name="node_position" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNodeType">
@@ -204,7 +204,7 @@
         <returns>One of the <see cref="T:System.Xml.XPath.XPathNodeType" /> values that indicate the type of the XML node.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="nodePosition" /> is invalid.</exception>
+          <paramref name="node_position" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -225,7 +225,7 @@
       <Docs>
         <param name="node_position">To be added.</param>
         <summary>When overridden in a derived class, returns the text value of the node at the specified position.</summary>
-        <returns>The text value of the node at <paramref name="nodePosition" />. <see cref="F:System.String.Empty" /> is returned if the node does not have a text value.</returns>
+        <returns>The text value of the node at <paramref name="node_position" />. <see cref="F:System.String.Empty" /> is returned if the node does not have a text value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -235,7 +235,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="nodePosition" /> is invalid.</exception>
+          <paramref name="node_position" /> is invalid.</exception>
       </Docs>
     </Member>
   </Members>

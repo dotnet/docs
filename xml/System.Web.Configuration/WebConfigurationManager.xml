@@ -55,12 +55,10 @@
   
  If your application needs read-only access to its own configuration, it is recommended you use the <see cref="Overload:System.Web.Configuration.WebConfigurationManager.GetSection" /> methods. These methods provide access to the cached configuration values for the current application, which has better performance than the <see cref="T:System.Configuration.Configuration" /> class.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  If you use a static <see langword="GetSection" /> method that takes a <paramref name="path" /> parameter, the path parameter must refer to the application in which the code is running; otherwise, the parameter is ignored and configuration information for the currently-running application is returned.  
   
-</para>  
-</block>  
+</para></block>  
   
  You use one of the <see cref="Overload:System.Configuration.Configuration.Save" /> methods to write configuration information. Note that the user or process that writes must have the following permissions:  
   
@@ -545,6 +543,31 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenMappedWebConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens the Web-application configuration file as a <see cref="T:System.Configuration.Configuration" /> object using the specified file mapping to allow read or write operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the mapping mechanism when you need to map your virtual directory hierarchy to a physical directory.  
+  
+   
+  
+## Examples  
+ The following example shows how to map a virtual directory hierarchy to a physical one. The example shown here is used in the overloaded members.  
+  
+ [!code-csharp[System.Web.Configuration.WebConfigurationManager#20](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebConfigurationManager/CS/WebConfigurationManager.cs#20)]
+ [!code-vb[System.Web.Configuration.WebConfigurationManager#20](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebConfigurationManager/VB/WebConfigurationManager.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenMappedWebConfiguration">
       <MemberSignature Language="C#" Value="public static System.Configuration.Configuration OpenMappedWebConfiguration (System.Web.Configuration.WebConfigurationFileMap fileMap, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Configuration OpenMappedWebConfiguration(class System.Web.Configuration.WebConfigurationFileMap fileMap, string path) cil managed" />
@@ -952,30 +975,5 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Could not load a valid configuration file.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="OpenMappedWebConfiguration">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens the Web-application configuration file as a <see cref="T:System.Configuration.Configuration" /> object using the specified file mapping to allow read or write operations.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You use the mapping mechanism when you need to map your virtual directory hierarchy to a physical directory.  
-  
-   
-  
-## Examples  
- The following example shows how to map a virtual directory hierarchy to a physical one. The example shown here is used in the overloaded members.  
-  
- [!code-csharp[System.Web.Configuration.WebConfigurationManager#20](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebConfigurationManager/CS/WebConfigurationManager.cs#20)]
- [!code-vb[System.Web.Configuration.WebConfigurationManager#20](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebConfigurationManager/VB/WebConfigurationManager.vb#20)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

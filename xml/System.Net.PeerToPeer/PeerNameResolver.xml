@@ -108,6 +108,29 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Resolve">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves a <see cref="T:System.Net.PeerToPeer.PeerName" /> object to a <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> using the PNRP protocol.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method associates peer names to clouds. Calling the <xref:System.Net.PeerToPeer.PeerNameResolver> method is similar to calling the <xref:System.Net.PeerToPeer.PeerNameResolver.Resolve%2A> method for each peer name record in the <xref:System.Net.PeerToPeer.PeerNameRecordCollection>. Note that using the Resolve method on an individual peer name record does not invalidate resolving multiple peer names.  
+  
+ For every <xref:System.Net.PeerToPeer.PeerNameResolver.Resolve%2A> method, there is an equivalent <xref:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync%2A> method.  They are identical in the parameters they are passed, except that the ResolveAsync method includes a system token in its parameter list for asynchronous event handling.  
+  
+ If the <xref:System.Net.PeerToPeer.Cloud> parameter is not supplied, the method uses the <xref:System.Net.PeerToPeer.Cloud.Available> shortcut to fill in cloud parameters.  If the `maxRecords` parameter is missing, the default value of zero causes an <xref:System.ArgumentOutOfRangeException> exception to be thrown.  
+  
+ This event will also be raised if the resolve operation completes in error or is canceled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Resolve">
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.PeerNameRecordCollection Resolve (System.Net.PeerToPeer.PeerName peerName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.PeerNameRecordCollection Resolve(class System.Net.PeerToPeer.PeerName peerName) cil managed" />
@@ -283,6 +306,25 @@
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The supplied peer name cannot be resolved.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolveAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>These methods begin an asynchronous resolution operation for the specified <see cref="T:System.Net.PeerToPeer.PeerName" /> in all clouds known to the calling peer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For every <xref:System.Net.PeerToPeer.PeerNameResolver.Resolve%2A> method, there is an equivalent <xref:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync%2A> method, which is used when asynchronous processing is required.  They are identical in the parameters they are passed, except that ResolveAsync includes a system token in its parameter list for event handling.  
+  
+ If a parameter mismatch occurs between the Resolve method and the ResolveAsync method, and the <xref:System.Net.PeerToPeer.Cloud> parameter is not supplied, the method uses the <xref:System.Net.PeerToPeer.Cloud.Available> shortcut to fill in cloud parameters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ResolveAsync">
       <MemberSignature Language="C#" Value="public void ResolveAsync (System.Net.PeerToPeer.PeerName peerName, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResolveAsync(class System.Net.PeerToPeer.PeerName peerName, object userState) cil managed" />
@@ -554,47 +596,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ResolveAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>These methods begin an asynchronous resolution operation for the specified <see cref="T:System.Net.PeerToPeer.PeerName" /> in all clouds known to the calling peer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For every <xref:System.Net.PeerToPeer.PeerNameResolver.Resolve%2A> method, there is an equivalent <xref:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync%2A> method, which is used when asynchronous processing is required.  They are identical in the parameters they are passed, except that ResolveAsync includes a system token in its parameter list for event handling.  
-  
- If a parameter mismatch occurs between the Resolve method and the ResolveAsync method, and the <xref:System.Net.PeerToPeer.Cloud> parameter is not supplied, the method uses the <xref:System.Net.PeerToPeer.Cloud.Available> shortcut to fill in cloud parameters.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Resolve">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Resolves a <see cref="T:System.Net.PeerToPeer.PeerName" /> object to a <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> using the PNRP protocol.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method associates peer names to clouds. Calling the <xref:System.Net.PeerToPeer.PeerNameResolver> method is similar to calling the <xref:System.Net.PeerToPeer.PeerNameResolver.Resolve%2A> method for each peer name record in the <xref:System.Net.PeerToPeer.PeerNameRecordCollection>. Note that using the Resolve method on an individual peer name record does not invalidate resolving multiple peer names.  
-  
- For every <xref:System.Net.PeerToPeer.PeerNameResolver.Resolve%2A> method, there is an equivalent <xref:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync%2A> method.  They are identical in the parameters they are passed, except that the ResolveAsync method includes a system token in its parameter list for asynchronous event handling.  
-  
- If the <xref:System.Net.PeerToPeer.Cloud> parameter is not supplied, the method uses the <xref:System.Net.PeerToPeer.Cloud.Available> shortcut to fill in cloud parameters.  If the `maxRecords` parameter is missing, the default value of zero causes an <xref:System.ArgumentOutOfRangeException> exception to be thrown.  
-  
- This event will also be raised if the resolve operation completes in error or is canceled.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

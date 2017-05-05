@@ -31,7 +31,7 @@
    
   
 ## Examples  
- The following example sets the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A> property to one of the <xref:System.ServiceModel.AuditLogLocation> values.  
+ The following example sets the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A> property to one of the <xref:System.ServiceModel.AuditLogLocation.Default> values.  
   
  [!code-csharp[AuditingSecurityEvents#1](~/samples/snippets/csharp/VS_Snippets_CFX/auditingsecurityevents/cs/auditingsecurityevents.cs#1)]
  [!code-vb[AuditingSecurityEvents#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/auditingsecurityevents/vb/auditingsecurityevents.vb#1)]  

@@ -47,32 +47,19 @@
   
  When you inherit from the <see cref="T:System.Data.IDbConnection" /> interface, you should implement the following constructors:  
   
- <list type="table">  
-<listheader>  
-<term> Item  
+ <list type="table"><listheader><term> Item  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> PrvConnection()  
+ </description></listheader><item><term> PrvConnection()  
   
- </term>  
-<description> Initializes a new instance of the PrvConnection class.  
+ </term><description> Initializes a new instance of the PrvConnection class.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvConnection(string connectionString)  
+ </description></item><item><term> PrvConnection(string connectionString)  
   
- </term>  
-<description> Initializes a new instance of the PrvConnection class when given a string containing the connection string.  
+ </term><description> Initializes a new instance of the PrvConnection class when given a string containing the connection string.  
   
- </description>  
-</item>  
-</list></para>
+ </description></item></list></para>
     </block>
   </Docs>
   <Members>

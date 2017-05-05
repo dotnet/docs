@@ -2,7 +2,7 @@
 title: "LPTHREAD_START_ROUTINE Function Pointer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "LPTHREAD_START_ROUTINE function pointer [.NET Framework hosting]"
 ms.assetid: 7b9b93b0-fe92-42ba-8693-701168a29dde
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetArrayOrPointerType method [.NET Framework debugging]"
   - "ICorDebugAppDomain2::GetArrayOrPointerType method [.NET Framework debugging]"
 ms.assetid: 97e493f5-3a62-4ec7-b42f-4af57bf71f57
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -38,7 +38,7 @@
 |<xref:System.Windows.Forms.Design.Behavior.SnapLine.Filter%2A>|Defines custom categories of snaplines. This is an optional string.|  
 |<xref:System.Windows.Forms.Design.Behavior.SnapLine.IsHorizontal%2A> and <xref:System.Windows.Forms.Design.Behavior.SnapLine.IsVertical%2A>|Indicates whether a snapline has horizontal or vertical orientation, respectively.|  
   
- The <xref:System.Windows.Forms.Design.ControlDesigner> class stores snaplines for its corresponding control type in the <xref:System.Windows.Forms.Design.ControlDesigner.SnapLines%2A> property. This base class handling of snaplines will suffice for the majority of controls, as it defines the <xref:System.Windows.Forms.Design.Behavior.SnapLineType>, <xref:System.Windows.Forms.Design.Behavior.SnapLineType>, <xref:System.Windows.Forms.Design.Behavior.SnapLineType>, and <xref:System.Windows.Forms.Design.Behavior.SnapLineType> snaplines, which are aligned along the edges of the control. When you are developing a custom control, if this default organization does not suffice, override the <xref:System.Windows.Forms.Design.ControlDesigner.SnapLines%2A> property of the class derived from <xref:System.Windows.Forms.Design.ControlDesigner>. For example, you may want to align the horizontal snaplines of text-based controls, such as labels, with the top and base lines of the text (instead of the top and bottom edges of the control).  
+ The <xref:System.Windows.Forms.Design.ControlDesigner> class stores snaplines for its corresponding control type in the <xref:System.Windows.Forms.Design.ControlDesigner.SnapLines%2A> property. This base class handling of snaplines will suffice for the majority of controls, as it defines the <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Left>, <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Right>, <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Top>, and <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Bottom> snaplines, which are aligned along the edges of the control. When you are developing a custom control, if this default organization does not suffice, override the <xref:System.Windows.Forms.Design.ControlDesigner.SnapLines%2A> property of the class derived from <xref:System.Windows.Forms.Design.ControlDesigner>. For example, you may want to align the horizontal snaplines of text-based controls, such as labels, with the top and base lines of the text (instead of the top and bottom edges of the control).  
   
  The <xref:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType%2A> class cannot be derived from.  
   
@@ -48,6 +48,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should only explicitly create snaplines to replace or supplement the default snapline behavior offered by the visual designer. To create a snapline, you should instance a snapline and then add it to the <xref:System.Windows.Forms.Design.ControlDesigner.SnapLines%2A> property of the <xref:System.Windows.Forms.Design.ControlDesigner> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SnapLine (System.Windows.Forms.Design.Behavior.SnapLineType type, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.Design.Behavior.SnapLineType type, int32 offset) cil managed" />
@@ -69,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor sets the <xref:System.Windows.Forms.Design.Behavior.SnapLine.Filter%2A> property to `null` and the <xref:System.Windows.Forms.Design.Behavior.SnapLine.Priority%2A> property to <xref:System.Windows.Forms.Design.Behavior.SnapLinePriority>.  
+ This constructor sets the <xref:System.Windows.Forms.Design.Behavior.SnapLine.Filter%2A> property to `null` and the <xref:System.Windows.Forms.Design.Behavior.SnapLine.Priority%2A> property to <xref:System.Windows.Forms.Design.Behavior.SnapLinePriority.Low>.  
   
  ]]></format>
         </remarks>
@@ -98,7 +115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor sets the <xref:System.Windows.Forms.Design.Behavior.SnapLine.Priority%2A> property to <xref:System.Windows.Forms.Design.Behavior.SnapLinePriority>.  
+ This constructor sets the <xref:System.Windows.Forms.Design.Behavior.SnapLine.Priority%2A> property to <xref:System.Windows.Forms.Design.Behavior.SnapLinePriority.Low>.  
   
  ]]></format>
         </remarks>
@@ -239,7 +256,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The following snapline types are horizontal: <xref:System.Windows.Forms.Design.Behavior.SnapLineType>, <xref:System.Windows.Forms.Design.Behavior.SnapLineType>, <xref:System.Windows.Forms.Design.Behavior.SnapLineType>, and <xref:System.Windows.Forms.Design.Behavior.SnapLineType>.  
+ The following snapline types are horizontal: <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Top>, <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Bottom>, <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Horizontal>, and <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Baseline>.  
   
  ]]></format>
         </remarks>
@@ -265,7 +282,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The following snapline types are vertical: <xref:System.Windows.Forms.Design.Behavior.SnapLineType>, <xref:System.Windows.Forms.Design.Behavior.SnapLineType>, and <xref:System.Windows.Forms.Design.Behavior.SnapLineType>.  
+ The following snapline types are vertical: <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Left>, <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Right>, and <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Vertical>.  
   
  ]]></format>
         </remarks>
@@ -371,7 +388,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Visual designers use the <xref:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType%2A> property to direct snap alignment operations. Typically only snaplines that are similarly oriented can snap to each other. For example, two snaplines of type <xref:System.Windows.Forms.Design.Behavior.SnapLineType> can snap together, but a <xref:System.Windows.Forms.Design.Behavior.SnapLineType> and a <xref:System.Windows.Forms.Design.Behavior.SnapLineType> snapline cannot.  
+ Visual designers use the <xref:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType%2A> property to direct snap alignment operations. Typically only snaplines that are similarly oriented can snap to each other. For example, two snaplines of type <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Horizontal> can snap together, but a <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Horizontal> and a <xref:System.Windows.Forms.Design.Behavior.SnapLineType.Vertical> snapline cannot.  
   
  This property is initialized during construction and cannot be changed thereafter.  
   
@@ -405,22 +422,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You should only explicitly create snaplines to replace or supplement the default snapline behavior offered by the visual designer. To create a snapline, you should instance a snapline and then add it to the <xref:System.Windows.Forms.Design.ControlDesigner.SnapLines%2A> property of the <xref:System.Windows.Forms.Design.ControlDesigner> class.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

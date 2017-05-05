@@ -257,7 +257,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property uses values from the <xref:System.Security.Cryptography.X509Certificates.X509RevocationFlag> enumeration. <xref:System.Security.Cryptography.X509Certificates.X509RevocationFlag> is the default value.  
+ This property uses values from the <xref:System.Security.Cryptography.X509Certificates.X509RevocationFlag> enumeration. <xref:System.Security.Cryptography.X509Certificates.X509RevocationFlag.ExcludeRoot> is the default value.  
   
    
   
@@ -302,7 +302,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property uses values from the <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> enumeration. <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> is the default value.  
+ This property uses values from the <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> enumeration. <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.Online> is the default value.  
   
    
   

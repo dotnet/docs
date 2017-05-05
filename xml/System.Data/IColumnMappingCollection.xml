@@ -41,24 +41,15 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Data.IColumnMappingCollection" /> interface, you should implement the following constructor:  
   
- <list type="table">  
-<listheader>  
-<term> Item  
+ <list type="table"><listheader><term> Item  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> ColumnMappingCollection()  
+ </description></listheader><item><term> ColumnMappingCollection()  
   
- </term>  
-<description> Creates an empty ColumnMappingCollection class.  
+ </term><description> Creates an empty ColumnMappingCollection class.  
   
- </description>  
-</item>  
-</list></para>
+ </description></item></list></para>
     </block>
   </Docs>
   <Members>

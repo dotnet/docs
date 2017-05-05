@@ -112,9 +112,9 @@
   
 |<xref:System.Xml.Schema.XmlSchemaForm> Value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
-|<xref:System.Xml.Schema.XmlSchemaForm>|The attribute form is not specified in schema.|  
-|<xref:System.Xml.Schema.XmlSchemaForm>|Attributes from the target namespace must be qualified with the namespace prefix.|  
-|<xref:System.Xml.Schema.XmlSchemaForm>|Attributes from the target namespace are not required to be qualified with the namespace prefix.|  
+|<xref:System.Xml.Schema.XmlSchemaForm.None>|The attribute form is not specified in schema.|  
+|<xref:System.Xml.Schema.XmlSchemaForm.Qualified>|Attributes from the target namespace must be qualified with the namespace prefix.|  
+|<xref:System.Xml.Schema.XmlSchemaForm.Unqualified>|Attributes from the target namespace are not required to be qualified with the namespace prefix.|  
   
  This value is the global default for all attributes declared in the target namespace. Individual attributes can override this setting for the local scope using the `form` attribute.  
   
@@ -228,6 +228,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Compile">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compiles the XML Schema Object Model (SOM) into schema information for validation. Used to check the syntactic and semantic structure of the programmatically built SOM. Semantic validation checking is performed during compilation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Compile">
       <MemberSignature Language="C#" Value="public void Compile (System.Xml.Schema.ValidationEventHandler validationEventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Compile(class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
@@ -350,9 +370,9 @@
   
 |<xref:System.Xml.Schema.XmlSchemaForm> Value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
-|<xref:System.Xml.Schema.XmlSchemaForm>|The element form is not specified in the schema.|  
-|<xref:System.Xml.Schema.XmlSchemaForm>|Elements from the target namespace must be qualified with the namespace prefix.|  
-|<xref:System.Xml.Schema.XmlSchemaForm>|Elements from the target namespace are not required to be qualified with the namespace prefix.|  
+|<xref:System.Xml.Schema.XmlSchemaForm.None>|The element form is not specified in the schema.|  
+|<xref:System.Xml.Schema.XmlSchemaForm.Qualified>|Elements from the target namespace must be qualified with the namespace prefix.|  
+|<xref:System.Xml.Schema.XmlSchemaForm.Unqualified>|Elements from the target namespace are not required to be qualified with the namespace prefix.|  
   
  This value is the global default for all elements declared in the target namespace. Individual elements can override this setting for the local scope by using the `form` attribute.  
   
@@ -1113,25 +1133,5 @@ schema.Includes.Add(include);
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Compile">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compiles the XML Schema Object Model (SOM) into schema information for validation. Used to check the syntactic and semantic structure of the programmatically built SOM. Semantic validation checking is performed during compilation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=fullName> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "Silverlight, remote debugging"
   - "CreateCoreClrDebugTarget function"
 ms.assetid: 1cf4ca8e-d9bb-4633-9adf-5e24315bf87a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -34,7 +34,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Security.AccessControl.FileSystemRights> enumeration to specify an access rule and then remove the access rule from a file.  You must supply a valid user or group account to run this example.  
+ The following code example uses the <xref:System.Security.AccessControl.FileSystemRights.FullControl> enumeration to specify an access rule and then remove the access rule from a file.  You must supply a valid user or group account to run this example.  
   
  [!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
  [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ReJITCompilationStarted method, ICorProfilerCallback4 interface [.NET Framework profiling]"
   - "ICorProfilerCallback4::ReJITCompilationStarted method [.NET Framework profiling]"
 ms.assetid: 512fdd00-262a-4456-a075-365ef4133c4d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,7 +2,7 @@
 title: "ICorDebugNativeFrame::GetRegisterSet Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugNativeFrame::GetRegisterSet method [.NET Framework debugging]"
   - "GetRegisterSet method, ICorDebugNativeFrame interface [.NET Framework debugging]"
 ms.assetid: 6f309b5f-5556-4f1e-b1dd-4fe97fc81d01
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

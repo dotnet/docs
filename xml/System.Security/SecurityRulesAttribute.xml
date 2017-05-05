@@ -56,7 +56,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you specify the `ruleSet` parameter, use <xref:System.Security.SecurityRuleSet> for .NET Framework version 2.0 rules or <xref:System.Security.SecurityRuleSet> for [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] rules. For more information about <xref:System.Security.SecurityRuleSet> behavior, see [Security-Transparent Code, Level 1](~/docs/framework/misc/security-transparent-code-level-1.md). For information about <xref:System.Security.SecurityRuleSet> behavior, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
+ When you specify the `ruleSet` parameter, use <xref:System.Security.SecurityRuleSet.Level1> for .NET Framework version 2.0 rules or <xref:System.Security.SecurityRuleSet.Level2> for [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] rules. For more information about <xref:System.Security.SecurityRuleSet.Level1> behavior, see [Security-Transparent Code, Level 1](~/docs/framework/misc/security-transparent-code-level-1.md). For information about <xref:System.Security.SecurityRuleSet.Level2> behavior, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
   
  ]]></format>
         </remarks>

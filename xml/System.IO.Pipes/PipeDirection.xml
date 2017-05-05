@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Anonymous pipes must have a pipe direction of In or Out. A <xref:System.IO.Pipes.PipeDirection> value of InOut is not supported by anonymous pipes because they are defined to be one-way only.  
+ Anonymous pipes must have a pipe direction of In or Out. A <xref:System.IO.Pipes.PipeDirection.In> value of InOut is not supported by anonymous pipes because they are defined to be one-way only.  
   
  ]]></format>
     </remarks>

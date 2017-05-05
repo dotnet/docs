@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugErrorInfoEnum interface [.NET Framework debugging]"
 ms.assetid: a5ff40b0-d04e-40d5-a007-cc6ee7c3a9ae
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

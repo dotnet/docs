@@ -360,7 +360,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control calls this method to convert a cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewImageCell.FormattedValueType%2A> property. The control passes the cell value to this method in the `value` parameter.  
   
- If the `context` parameter value includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value, this method returns the value of the <xref:System.Windows.Forms.DataGridViewImageCell.Description%2A> property for copying to the Clipboard. Otherwise, the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event occurs.  
+ If the `context` parameter value includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent> value, this method returns the value of the <xref:System.Windows.Forms.DataGridViewImageCell.Description%2A> property for copying to the Clipboard. Otherwise, the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event occurs.  
   
  A <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler can modify both `value` and `cellStyle`. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object.  
   

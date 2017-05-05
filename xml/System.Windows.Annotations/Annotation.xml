@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a user annotation in the [!INCLUDE[TLA#tla_caf](~/includes/tlasharptla-caf-md.md)].</summary>
+    <summary>Represents a user annotation in the Microsoft Annotations Framework.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -357,7 +357,7 @@
 ## Remarks  
   
 > [!NOTE]
->  <xref:System.Windows.Annotations.Annotation.Id%2A> returns <xref:System.Guid> if the annotation was instantiated by using the default <xref:System.Windows.Annotations.Annotation> constructor without parameters.  An <xref:System.Windows.Annotations.Annotation> constructor with parameters should be used to correctly instantiate a new annotation with a valid [!INCLUDE[TLA2#tla_guid](~/includes/tla2sharptla-guid-md.md)].  
+>  <xref:System.Windows.Annotations.Annotation.Id%2A> returns <xref:System.Guid.Empty> if the annotation was instantiated by using the default <xref:System.Windows.Annotations.Annotation> constructor without parameters.  An <xref:System.Windows.Annotations.Annotation> constructor with parameters should be used to correctly instantiate a new annotation with a valid [!INCLUDE[TLA2#tla_guid](~/includes/tla2sharptla-guid-md.md)].  
   
  ]]></format>
         </remarks>

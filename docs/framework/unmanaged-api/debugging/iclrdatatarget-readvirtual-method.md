@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ReadVirtual method, ICLRDataTarget interface [.NET Framework debugging]"
   - "ICLRDataTarget::ReadVirtual method [.NET Framework debugging]"
 ms.assetid: da3769eb-1828-4aa1-b9ed-db4842136a43
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

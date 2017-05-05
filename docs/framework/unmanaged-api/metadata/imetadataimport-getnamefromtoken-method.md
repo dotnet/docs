@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetNameFromToken method [.NET Framework metadata]"
   - "IMetaDataImport::GetNameFromToken method [.NET Framework metadata]"
 ms.assetid: 32114ecf-8916-4ab2-a201-179c017344f1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

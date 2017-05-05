@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetModuleInfo method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetModuleInfo method [.NET Framework profiling]"
 ms.assetid: 5a90d16f-7929-4987-8f83-a631becf564d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,7 +2,7 @@
 title: "ICorDebugThread3::CreateStackWalk Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateStackWalk method [.NET Framework debugging]"
   - "ICorDebugThread3::CreateStackWalk method [.NET Framework debugging]"
 ms.assetid: c55e35d9-f9aa-4268-94b5-dce44c61acf2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -259,11 +259,11 @@
 ## Remarks  
  By default, a <xref:System.Windows.Media.Effects.ShaderEffect> renders in hardware when there is a capable hardware accelerator; otherwise, it renders in software. The <xref:System.Windows.Media.Effects.PixelShader.ShaderRenderMode%2A> property alters this behavior, based on its value.  
   
- If set to <xref:System.Windows.Media.Effects.ShaderRenderMode>, and there is no capable hardware available, the entire <xref:System.Windows.Media.Effects.ShaderEffect> is ignored.  
+ If set to <xref:System.Windows.Media.Effects.ShaderRenderMode.HardwareOnly>, and there is no capable hardware available, the entire <xref:System.Windows.Media.Effects.ShaderEffect> is ignored.  
   
- If set to <xref:System.Windows.Media.Effects.ShaderRenderMode>, the <xref:System.Windows.Media.Effects.ShaderEffect> always renders using software rendering.  
+ If set to <xref:System.Windows.Media.Effects.ShaderRenderMode.SoftwareOnly>, the <xref:System.Windows.Media.Effects.ShaderEffect> always renders using software rendering.  
   
- If set to <xref:System.Windows.Media.Effects.ShaderRenderMode>, the <xref:System.Windows.Media.Effects.ShaderEffect> has the default behavior.  
+ If set to <xref:System.Windows.Media.Effects.ShaderRenderMode.Auto>, the <xref:System.Windows.Media.Effects.ShaderEffect> has the default behavior.  
   
  ]]></format>
         </remarks>

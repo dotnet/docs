@@ -1,5 +1,5 @@
 //<SnippetCustomTypePageFunctionCODEBEHIND1>
-using System.Windows.Navigation; // PageFunction
+using System.Windows.Navigation;
 
 namespace SDKSample
 {

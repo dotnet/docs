@@ -64,7 +64,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes all fields to their default values. <xref:System.Net.CookieContainer> is used to initialize <xref:System.Net.CookieContainer.Capacity%2A>, <xref:System.Net.CookieContainer.DefaultCookieLengthLimit> is used for <xref:System.Net.CookieContainer.MaxCookieSize%2A>, and <xref:System.Net.CookieContainer.DefaultPerDomainCookieLimit> is used for <xref:System.Net.CookieContainer.PerDomainCapacity%2A>.  
+ The default constructor initializes all fields to their default values. <xref:System.Net.CookieContainer.DefaultCookieLimit> is used to initialize <xref:System.Net.CookieContainer.Capacity%2A>, <xref:System.Net.CookieContainer.DefaultCookieLengthLimit> is used for <xref:System.Net.CookieContainer.MaxCookieSize%2A>, and <xref:System.Net.CookieContainer.DefaultPerDomainCookieLimit> is used for <xref:System.Net.CookieContainer.PerDomainCapacity%2A>.  
   
  ]]></format>
         </remarks>
@@ -395,7 +395,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value of this property is <xref:System.Net.CookieContainer>. If <xref:System.Net.CookieContainer.Count%2A> equals or exceeds <xref:System.Net.CookieContainer.Capacity%2A>, one or more <xref:System.Net.Cookie> instances are removed from the container. Enough instances are removed to bring <xref:System.Net.CookieContainer.Count%2A> below <xref:System.Net.CookieContainer.Capacity%2A> as follows: if there are expired <xref:System.Net.Cookie> instances in scope, they are cleaned up. If not, then the least recently used <xref:System.Net.CookieCollection> is found and removed from the container.  
+ The default value of this property is <xref:System.Net.CookieContainer.DefaultCookieLimit>. If <xref:System.Net.CookieContainer.Count%2A> equals or exceeds <xref:System.Net.CookieContainer.Capacity%2A>, one or more <xref:System.Net.Cookie> instances are removed from the container. Enough instances are removed to bring <xref:System.Net.CookieContainer.Count%2A> below <xref:System.Net.CookieContainer.Capacity%2A> as follows: if there are expired <xref:System.Net.Cookie> instances in scope, they are cleaned up. If not, then the least recently used <xref:System.Net.CookieCollection> is found and removed from the container.  
   
  ]]></format>
         </remarks>

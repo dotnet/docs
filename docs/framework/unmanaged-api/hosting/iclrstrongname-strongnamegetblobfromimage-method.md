@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "StrongNameGetBlobFromImage method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameGetBlobFromImage method [.NET Framework hosting]"
 ms.assetid: 0f5a2ec8-e776-4fd8-bda6-937b6834575a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

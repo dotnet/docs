@@ -707,7 +707,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines the alignment of the background image for the chart area, and is only applied when the <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode>.  
+ This property determines the alignment of the background image for the chart area, and is only applied when the <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode.Unscaled>.  
   
  For more information about the available alignments, see the <xref:System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle> enumeration topic.  
   
@@ -792,7 +792,7 @@
   
  For more information about the available wrapping modes, see the <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode> enumeration topic.  
   
- If the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode>, the location where the image is drawn is determined by the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.BackImageAlignment%2A> property setting.  
+ If the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode.Unscaled>, the location where the image is drawn is determined by the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.BackImageAlignment%2A> property setting.  
   
  ]]></format>
         </remarks>

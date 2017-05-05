@@ -821,6 +821,26 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to read the file specified by the <paramref name="filename" /> parameter. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the current <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  <xref:System.Security.Cryptography.X509Certificates.X509Certificate> implements the <xref:System.IDisposable> interface starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate> class does not implement this interface, and therefore the `Dispose` method does not exist.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
@@ -1040,7 +1060,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `contentType` parameter accepts only the following values of the <xref:System.Security.Cryptography.X509Certificates.X509ContentType> enumeration: <xref:System.Security.Cryptography.X509Certificates.X509ContentType>, <xref:System.Security.Cryptography.X509Certificates.X509ContentType>, and <xref:System.Security.Cryptography.X509Certificates.X509ContentType>.  Passing any other value causes a <xref:System.Security.Cryptography.CryptographicException> to be thrown.  
+ The `contentType` parameter accepts only the following values of the <xref:System.Security.Cryptography.X509Certificates.X509ContentType> enumeration: <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>, <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>, and <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs12>.  Passing any other value causes a <xref:System.Security.Cryptography.CryptographicException> to be thrown.  
   
    
   
@@ -1091,7 +1111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `contentType` parameter accepts only the following values of the <xref:System.Security.Cryptography.X509Certificates.X509ContentType> enumeration: <xref:System.Security.Cryptography.X509Certificates.X509ContentType>, <xref:System.Security.Cryptography.X509Certificates.X509ContentType>, and <xref:System.Security.Cryptography.X509Certificates.X509ContentType>.  Passing any other value causes a <xref:System.Security.Cryptography.CryptographicException> to be thrown.  
+ The `contentType` parameter accepts only the following values of the <xref:System.Security.Cryptography.X509Certificates.X509ContentType> enumeration: <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>, <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>, and <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs12>.  Passing any other value causes a <xref:System.Security.Cryptography.CryptographicException> to be thrown.  
   
 > [!IMPORTANT]
 >  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening the assembly in a text editor such as Notepad.exe.  
@@ -1146,7 +1166,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `contentType` parameter accepts only the following values of the <xref:System.Security.Cryptography.X509Certificates.X509ContentType> enumeration: <xref:System.Security.Cryptography.X509Certificates.X509ContentType>, <xref:System.Security.Cryptography.X509Certificates.X509ContentType>, and <xref:System.Security.Cryptography.X509Certificates.X509ContentType>.  Passing any other value causes a <xref:System.Security.Cryptography.CryptographicException> to be thrown.  
+ The `contentType` parameter accepts only the following values of the <xref:System.Security.Cryptography.X509Certificates.X509ContentType> enumeration: <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>, <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>, and <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs12>.  Passing any other value causes a <xref:System.Security.Cryptography.CryptographicException> to be thrown.  
   
 > [!IMPORTANT]
 >  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening the assembly in a text editor such as Notepad.exe.  
@@ -2444,25 +2464,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the current <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  <xref:System.Security.Cryptography.X509Certificates.X509Certificate> implements the <xref:System.IDisposable> interface starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate> class does not implement this interface, and therefore the `Dispose` method does not exist.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

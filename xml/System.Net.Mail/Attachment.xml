@@ -72,7 +72,7 @@
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Net.Mime.ContentType.MediaType%2A>|<xref:System.Net.Mime.MediaTypeNames.Text.Plain>.|  
-|<xref:System.Net.Mail.AttachmentBase.TransferEncoding%2A>|<xref:System.Net.Mime.TransferEncoding>.|  
+|<xref:System.Net.Mail.AttachmentBase.TransferEncoding%2A>|<xref:System.Net.Mime.TransferEncoding.QuotedPrintable>.|  
   
    
   
@@ -116,7 +116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mail.AttachmentBase.TransferEncoding%2A> property is set to <xref:System.Net.Mime.TransferEncoding>.  
+ The <xref:System.Net.Mail.AttachmentBase.TransferEncoding%2A> property is set to <xref:System.Net.Mime.TransferEncoding.Base64>.  
   
  If the stream's <xref:System.IO.Stream.CanSeek%2A> property is `false`, the attachment and the <xref:System.Net.Mail.MailMessage> that contains it are not reusable. You must supply a stream that can be searched to reuse an attachment.  
   
@@ -164,7 +164,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `name` is not `null` or equal to <xref:System.String?displayProperty=fullName> (""), the <xref:System.Net.Mime.ContentType> for this attachment is constructed with the <xref:System.Net.Mime.ContentType.Name%2A> property set to `name`. The <xref:System.Net.Mail.AttachmentBase.TransferEncoding%2A> property is set to <xref:System.Net.Mime.TransferEncoding>.  
+ If `name` is not `null` or equal to <xref:System.String?displayProperty=fullName> (""), the <xref:System.Net.Mime.ContentType> for this attachment is constructed with the <xref:System.Net.Mime.ContentType.Name%2A> property set to `name`. The <xref:System.Net.Mail.AttachmentBase.TransferEncoding%2A> property is set to <xref:System.Net.Mime.TransferEncoding.Base64>.  
   
  If the stream's <xref:System.IO.Stream.CanSeek%2A> property is `false`, the attachment and the <xref:System.Net.Mail.MailMessage> that contains it are not reusable. You must supply a stream that can be searched in order to reuse an attachment.  
   
@@ -285,7 +285,7 @@
 ## Remarks  
  If `mediaType` is not `null` or equal to <xref:System.String?displayProperty=fullName> (""), it is used to construct the <xref:System.Net.Mime.ContentType> class associated with this attachment.  
   
- If `mediaType` and `name` both contain <xref:System.Net.Mime.ContentType.Name%2A> information, the value specified in `name` is used. The <xref:System.Net.Mail.AttachmentBase.TransferEncoding%2A> property is set to <xref:System.Net.Mime.TransferEncoding>.  
+ If `mediaType` and `name` both contain <xref:System.Net.Mime.ContentType.Name%2A> information, the value specified in `name` is used. The <xref:System.Net.Mail.AttachmentBase.TransferEncoding%2A> property is set to <xref:System.Net.Mime.TransferEncoding.Base64>.  
   
  If the stream's <xref:System.IO.Stream.CanSeek%2A> property is `false`, the attachment and the <xref:System.Net.Mail.MailMessage> that contains it are not reusable. You must supply a stream that can be searched in order to reuse an attachment.  
   

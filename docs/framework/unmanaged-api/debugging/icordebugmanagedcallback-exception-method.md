@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Exception method, ICorDebugManagedCallback interface [.NET Framework debugging]"
   - "ICorDebugManagedCallback::Exception method [.NET Framework debugging]"
 ms.assetid: ab18a509-dff3-4930-b585-bd15e0414176
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IAssemblyEnum interface [.NET Framework fusion]"
 ms.assetid: 634ef9f9-e94b-4776-a9e1-866df9a76c8f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumMethodImpls method [.NET Framework metadata]"
   - "IMetaDataImport::EnumMethodImpls method [.NET Framework metadata]"
 ms.assetid: 4e0f865d-88b5-44bd-be35-492622e5e08e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

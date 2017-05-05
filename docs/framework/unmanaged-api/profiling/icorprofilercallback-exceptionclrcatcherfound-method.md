@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::ExceptionCLRCatcherFound method [.NET Framework profiling]"
   - "ExceptionCLRCatcherFound method [.NET Framework profiling]"
 ms.assetid: 73fe8b4b-8f9a-4ba5-a10c-b26521396a66
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

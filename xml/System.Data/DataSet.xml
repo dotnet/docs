@@ -438,12 +438,10 @@
         <summary>Copies both the structure and data for this <see cref="T:System.Data.DataSet" />.</summary>
         <returns>A new <see cref="T:System.Data.DataSet" /> with the same structure (table schemas, relations, and constraints) and data as this <see cref="T:System.Data.DataSet" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  If these classes have been subclassed, the copy will also be of the same subclasses.  
   
-</para>  
-</block></returns>
+</para></block></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -457,6 +455,37 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateDataReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.DataTableReader" /> with one result set per <see cref="T:System.Data.DataTable" />, in the same sequence as the tables appear in the <see cref="P:System.Data.DataSet.Tables" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In order to ensure the order of the result sets within the returned <xref:System.Data.DataTableReader>, if a <xref:System.Data.DataTable> within the <xref:System.Data.DataSet> is empty, it will be represented by an empty result set within the returned `DataTableReader`.  
+  
+   
+  
+## Examples  
+ This example, a Console application, creates three <xref:System.Data.DataTable> instances and adds each to a <xref:System.Data.DataSet>. The example calls the <xref:System.Data.DataSet.CreateDataReader%2A> method and displays the contents of the returned <xref:System.Data.DataTableReader>. Note that the order of the result sets in the `DataTableReader` is controlled by the order of the `DataTable` instances passed as parameters.  
+  
+> [!NOTE]
+>  This example shows how to use one of the overloaded versions of `CreateDataReader`. For other examples that might be available, see the individual overload topics.  
+  
+ [!code-csharp[DataWorks DataSet.CreateDataReader#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataSet.CreateDataReader/CS/source.cs#1)]
+ [!code-vb[DataWorks DataSet.CreateDataReader#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataSet.CreateDataReader/VB/source.vb#1)]  
+  
+ The example displays the following code in the Console window:  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateDataReader">
       <MemberSignature Language="C#" Value="public System.Data.DataTableReader CreateDataReader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTableReader CreateDataReader() cil managed" />
@@ -626,6 +655,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DetermineSchemaSerializationMode">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines the <see cref="P:System.Data.DataSet.SchemaSerializationMode" /> for a <see cref="T:System.Data.DataSet" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be called when deserializing a typed <xref:System.Data.DataSet> to determine its <xref:System.Data.DataSet.SchemaSerializationMode%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DetermineSchemaSerializationMode">
       <MemberSignature Language="C#" Value="protected System.Data.SchemaSerializationMode DetermineSchemaSerializationMode (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance valuetype System.Data.SchemaSerializationMode DetermineSchemaSerializationMode(class System.Xml.XmlReader reader) cil managed" />
@@ -1032,7 +1079,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method is identical to calling <xref:System.Data.DataSet.WriteXml%2A> with <xref:System.Data.XmlWriteMode> set to <xref:System.Data.XmlWriteMode>.  
+ Calling this method is identical to calling <xref:System.Data.DataSet.WriteXml%2A> with <xref:System.Data.XmlWriteMode> set to <xref:System.Data.XmlWriteMode.IgnoreSchema>.  
   
  <xref:System.Data.DataSet.GetXml%2A> returns XML as a string, and therefore requires more overhead than <xref:System.Data.DataSet.WriteXml%2A> to write XML to a file.  
   
@@ -1776,6 +1823,48 @@ class Program {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Fills a <see cref="T:System.Data.DataSet" /> with values from a data source using the supplied <see cref="T:System.Data.IDataReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataTable.Load%2A> method provides a technique for filling a single <xref:System.Data.DataTable> with data, retrieved from an <xref:System.Data.IDataReader> instance. This method provides the same functionality, but allows you to load multiple result sets from an `IDataReader` into multiple tables within a `DataSet`.  
+  
+ If the `DataSet` already contains rows, the incoming data from the data source is merged with the existing rows.  
+  
+ The `Load` method can be used in several common scenarios, all centered around getting data from a specified data source and adding it to the current data container (in this case, a `DataSet`). These scenarios describe standard usage for a `DataSet`, describing its update and merge behavior.  
+  
+ A `DataSet` synchronizes or updates with a single primary data source. The `DataSet` tracks changes, allowing synchronization with the primary data source. In addition, a `DataSet` can accept incremental data from one or more secondary data sources. The `DataSet` isn't responsible for tracking changes in order to allow synchronization with the secondary data source.  
+  
+ Given these two hypothetical data sources, a user is likely to require one of the following behaviors:  
+  
+-   Initialize `DataSet` from a primary data source. In this scenario, the user wants to initialize an empty `DataSet` with values from the primary data source. One or more DataTable's contents are modified. Later the user intends to propagate changes back to the primary data source.  
+  
+-   Preserve changes and re-synchronize from the primary data source. In this scenario, the user wants to take the `DataSet` filled in the previous scenario and perform an incremental synchronization with the primary data source, preserving modifications made in the `DataSet`.  
+  
+-   Incremental data feed from secondary data sources. In this scenario, the user wants to merge changes from one or more secondary data sources, and propagate those changes back to the primary data source.  
+  
+ The `Load` method makes all these scenarios possible. This method allows you to specify a load option parameter, indicating how rows already in a <xref:System.Data.DataTable> combine with rows being loaded. The following table describes the three load options provided by the <xref:System.Data.LoadOption> enumeration. In each case, the description indicates the behavior when the primary key of a row in the incoming data matches the primary key of an existing row.  
+  
+|Load Option|Description|  
+|-----------------|-----------------|  
+|`PreserveChanges` (default)|Updates the original version of the row with the value of the incoming row.|  
+|`OverwriteChanges`|Updates the current and original versions of the row with the value of the incoming row.|  
+|`Upsert`|Updates the current version of the row with the value of the incoming row.|  
+  
+ In general, the `PreserveChanges` and `OverwriteChanges` options are intended for scenarios in which the user needs to synchronize the `DataSet` and its changes with the primary data source. The `Upsert` option facilitates aggregating changes from one or more secondary data sources.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, System.Data.DataTable[] tables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Data.IDataReader reader, valuetype System.Data.LoadOption loadOption, class System.Data.DataTable[] tables) cil managed" />
@@ -1989,7 +2078,7 @@ class Program {
  By default, setting the <xref:System.Data.DataSet.Locale%2A> for a <xref:System.Data.DataSet> also sets the <xref:System.Data.DataSet.Locale%2A> for each <xref:System.Data.DataTable> object in that `DataSet` to the same value.  
   
 > [!NOTE]
->  In columns that contain expressions, the <xref:System.StringComparison> is used. The <xref:System.StringComparison> is ignored.  
+>  In columns that contain expressions, the <xref:System.StringComparison.InvariantCulture> is used. The <xref:System.StringComparison.CurrentCulture> is ignored.  
   
    
   
@@ -3588,15 +3677,15 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Data.DataSet> serializes its schema and instance data by default in Web services and remoting scenarios. Setting the <xref:System.Data.DataSet.SchemaSerializationMode%2A> property of a typed `DataSet` to <xref:System.Data.SchemaSerializationMode> causes schema information to be excluded from the serialization payload.  
+ A <xref:System.Data.DataSet> serializes its schema and instance data by default in Web services and remoting scenarios. Setting the <xref:System.Data.DataSet.SchemaSerializationMode%2A> property of a typed `DataSet` to <xref:System.Data.SchemaSerializationMode.ExcludeSchema> causes schema information to be excluded from the serialization payload.  
   
- <xref:System.Data.SchemaSerializationMode> is supported only for a typed `DataSet`. For an un-typed `DataSet` this property can only be set to <xref:System.Data.SchemaSerializationMode>.  
+ <xref:System.Data.SchemaSerializationMode.ExcludeSchema> is supported only for a typed `DataSet`. For an un-typed `DataSet` this property can only be set to <xref:System.Data.SchemaSerializationMode.IncludeSchema>.  
   
- <xref:System.Data.SchemaSerializationMode> should only be used in cases where the schema information of the underlying typed `DataTables`, `DataRelations` and `Constraints` has not been modified. If modifications have occurred, complete schema information should be serialized with <xref:System.Data.SchemaSerializationMode>.  
+ <xref:System.Data.SchemaSerializationMode.ExcludeSchema> should only be used in cases where the schema information of the underlying typed `DataTables`, `DataRelations` and `Constraints` has not been modified. If modifications have occurred, complete schema information should be serialized with <xref:System.Data.SchemaSerializationMode.IncludeSchema>.  
   
- <xref:System.Data.SchemaSerializationMode> is supported in version 2.0 of the .NET Framework or later.  
+ <xref:System.Data.SchemaSerializationMode.ExcludeSchema> is supported in version 2.0 of the .NET Framework or later.  
   
- When <xref:System.Data.SchemaSerializationMode> is set, only the top level runtime properties present on the <xref:System.Data.DataSet> are serialized. In addition, they are serialized only if they happen to be different from the default values. None of the `Tables`, `Relations` or `Constraints` are serialized. The serialized runtime properties include <xref:System.Data.DataSet.DataSetName%2A>, <xref:System.Data.DataSet.Namespace%2A>, <xref:System.Data.DataSet.Prefix%2A>, <xref:System.Data.DataSet.Locale%2A>, <xref:System.Data.DataSet.EnforceConstraints%2A>, and <xref:System.Data.DataSet.CaseSensitive%2A>. These properties are serialized to make sure that overall runtime data integrity is preserved.  
+ When <xref:System.Data.SchemaSerializationMode.ExcludeSchema> is set, only the top level runtime properties present on the <xref:System.Data.DataSet> are serialized. In addition, they are serialized only if they happen to be different from the default values. None of the `Tables`, `Relations` or `Constraints` are serialized. The serialized runtime properties include <xref:System.Data.DataSet.DataSetName%2A>, <xref:System.Data.DataSet.Namespace%2A>, <xref:System.Data.DataSet.Prefix%2A>, <xref:System.Data.DataSet.Locale%2A>, <xref:System.Data.DataSet.EnforceConstraints%2A>, and <xref:System.Data.DataSet.CaseSensitive%2A>. These properties are serialized to make sure that overall runtime data integrity is preserved.  
   
  ]]></format>
         </remarks>
@@ -4570,96 +4659,5 @@ class Program {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateDataReader">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Data.DataTableReader" /> with one result set per <see cref="T:System.Data.DataTable" />, in the same sequence as the tables appear in the <see cref="P:System.Data.DataSet.Tables" /> collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In order to ensure the order of the result sets within the returned <xref:System.Data.DataTableReader>, if a <xref:System.Data.DataTable> within the <xref:System.Data.DataSet> is empty, it will be represented by an empty result set within the returned `DataTableReader`.  
-  
-   
-  
-## Examples  
- This example, a Console application, creates three <xref:System.Data.DataTable> instances and adds each to a <xref:System.Data.DataSet>. The example calls the <xref:System.Data.DataSet.CreateDataReader%2A> method and displays the contents of the returned <xref:System.Data.DataTableReader>. Note that the order of the result sets in the `DataTableReader` is controlled by the order of the `DataTable` instances passed as parameters.  
-  
-> [!NOTE]
->  This example shows how to use one of the overloaded versions of `CreateDataReader`. For other examples that might be available, see the individual overload topics.  
-  
- [!code-csharp[DataWorks DataSet.CreateDataReader#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataSet.CreateDataReader/CS/source.cs#1)]
- [!code-vb[DataWorks DataSet.CreateDataReader#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataSet.CreateDataReader/VB/source.vb#1)]  
-  
- The example displays the following code in the Console window:  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DetermineSchemaSerializationMode">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines the <see cref="P:System.Data.DataSet.SchemaSerializationMode" /> for a <see cref="T:System.Data.DataSet" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can be called when deserializing a typed <xref:System.Data.DataSet> to determine its <xref:System.Data.DataSet.SchemaSerializationMode%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Load">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Fills a <see cref="T:System.Data.DataSet" /> with values from a data source using the supplied <see cref="T:System.Data.IDataReader" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataTable.Load%2A> method provides a technique for filling a single <xref:System.Data.DataTable> with data, retrieved from an <xref:System.Data.IDataReader> instance. This method provides the same functionality, but allows you to load multiple result sets from an `IDataReader` into multiple tables within a `DataSet`.  
-  
- If the `DataSet` already contains rows, the incoming data from the data source is merged with the existing rows.  
-  
- The `Load` method can be used in several common scenarios, all centered around getting data from a specified data source and adding it to the current data container (in this case, a `DataSet`). These scenarios describe standard usage for a `DataSet`, describing its update and merge behavior.  
-  
- A `DataSet` synchronizes or updates with a single primary data source. The `DataSet` tracks changes, allowing synchronization with the primary data source. In addition, a `DataSet` can accept incremental data from one or more secondary data sources. The `DataSet` isn't responsible for tracking changes in order to allow synchronization with the secondary data source.  
-  
- Given these two hypothetical data sources, a user is likely to require one of the following behaviors:  
-  
--   Initialize `DataSet` from a primary data source. In this scenario, the user wants to initialize an empty `DataSet` with values from the primary data source. One or more DataTable's contents are modified. Later the user intends to propagate changes back to the primary data source.  
-  
--   Preserve changes and re-synchronize from the primary data source. In this scenario, the user wants to take the `DataSet` filled in the previous scenario and perform an incremental synchronization with the primary data source, preserving modifications made in the `DataSet`.  
-  
--   Incremental data feed from secondary data sources. In this scenario, the user wants to merge changes from one or more secondary data sources, and propagate those changes back to the primary data source.  
-  
- The `Load` method makes all these scenarios possible. This method allows you to specify a load option parameter, indicating how rows already in a <xref:System.Data.DataTable> combine with rows being loaded. The following table describes the three load options provided by the <xref:System.Data.LoadOption> enumeration. In each case, the description indicates the behavior when the primary key of a row in the incoming data matches the primary key of an existing row.  
-  
-|Load Option|Description|  
-|-----------------|-----------------|  
-|`PreserveChanges` (default)|Updates the original version of the row with the value of the incoming row.|  
-|`OverwriteChanges`|Updates the current and original versions of the row with the value of the incoming row.|  
-|`Upsert`|Updates the current version of the row with the value of the incoming row.|  
-  
- In general, the `PreserveChanges` and `OverwriteChanges` options are intended for scenarios in which the user needs to synchronize the `DataSet` and its changes with the primary data source. The `Upsert` option facilitates aggregating changes from one or more secondary data sources.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

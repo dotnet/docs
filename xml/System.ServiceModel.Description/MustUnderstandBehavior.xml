@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Instructs [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to disable the mandatory processing of headers not in the <see cref="P:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders" /> collection that must be understood according to the SOAP 1.1 and 1.2 specifications.</summary>
+    <summary>Instructs Windows Communication Foundation (WCF) to disable the mandatory processing of headers not in the <see cref="P:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders" /> collection that must be understood according to the SOAP 1.1 and 1.2 specifications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

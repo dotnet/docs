@@ -47,7 +47,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.FormViewPagerRow.%23ctor%2A> constructor calls the base class constructor, <xref:System.Web.UI.WebControls.FormViewRow.%23ctor%2A>, with the specified parameters. For a <xref:System.Web.UI.WebControls.FormViewPagerRow> control in a <xref:System.Web.UI.WebControls.FormView> control, the call is made  `rowType` equal to <xref:System.Web.UI.WebControls.DataControlRowType> and `rowState` equal to <xref:System.Web.UI.WebControls.DataControlRowState>.  
+ The <xref:System.Web.UI.WebControls.FormViewPagerRow.%23ctor%2A> constructor calls the base class constructor, <xref:System.Web.UI.WebControls.FormViewRow.%23ctor%2A>, with the specified parameters. For a <xref:System.Web.UI.WebControls.FormViewPagerRow> control in a <xref:System.Web.UI.WebControls.FormView> control, the call is made  `rowType` equal to <xref:System.Web.UI.WebControls.DataControlRowType.Pager> and `rowState` equal to <xref:System.Web.UI.WebControls.DataControlRowState.Normal>.  
   
  ]]></format>
         </remarks>

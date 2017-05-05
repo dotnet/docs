@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "_EFN_GetManagedExcepStack function [.NET Framework debugging]"
 ms.assetid: 21ceed9e-62b2-4024-b027-6d095109955a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

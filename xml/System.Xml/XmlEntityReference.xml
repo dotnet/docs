@@ -76,7 +76,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A networked XML document is comprised of chunks of data aggregated using various World Wide Web Consortium (W3C) standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from. If there is no base URI for the nodes being returned (maybe they were parsed from an in-memory string), <xref:System.String> is returned.  
+ A networked XML document is comprised of chunks of data aggregated using various World Wide Web Consortium (W3C) standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from. If there is no base URI for the nodes being returned (maybe they were parsed from an in-memory string), <xref:System.String.Empty> is returned.  
   
  `BaseURI` walks the node tree looking for entity reference boundaries, so if entities are expanded, this information is not preserved and this property returns the location of the XmlDocument in all cases.  
   

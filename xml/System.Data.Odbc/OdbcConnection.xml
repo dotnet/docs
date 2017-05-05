@@ -717,7 +717,7 @@ driver-defined-attribute-keyword ::= identifier
  When `collectionName` is null, the <xref:System.Data.DataTable> contains information about all available metadata and any restrictions.  
   
 > [!NOTE]
->  All restrictions that apply to the `SQLStatistics` method also apply to the `ODBCConnection.GetSchema("`indexes`")` collection.  
+>  All restrictions that apply to the `SQLStatistics` method also apply to the `ODBCConnection.GetSchema("indexes")` collection.  
   
  ]]></format>
         </remarks>

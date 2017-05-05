@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorRuntimeHost::NextDomain method [.NET Framework hosting]"
   - "NextDomain method [.NET Framework hosting]"
 ms.assetid: fe07a05b-f6d6-44b5-ab01-b9a6eb15c350
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

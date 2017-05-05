@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.FormsAuthenticationModule> sets the current <xref:System.Web.HttpContext.User%2A?displayProperty=fullName> property to an <xref:System.Security.Principal.IPrincipal> object that represents the user identity for the current request when the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode> in the [authentication Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/27bc0ba9-f23a-45f3-ae42-dbe7916e3ee2) element of the application's configuration file.  
+ The <xref:System.Web.Security.FormsAuthenticationModule> sets the current <xref:System.Web.HttpContext.User%2A?displayProperty=fullName> property to an <xref:System.Security.Principal.IPrincipal> object that represents the user identity for the current request when the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode.Forms> in the [authentication Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/27bc0ba9-f23a-45f3-ae42-dbe7916e3ee2) element of the application's configuration file.  
   
  The <xref:System.Web.Security.FormsAuthenticationModule> exposes an <xref:System.Web.Security.FormsAuthenticationModule.Authenticate> event that enables you to provide a custom <xref:System.Security.Principal.IPrincipal> object for the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext>. The <xref:System.Web.Security.FormsAuthenticationModule.Authenticate> event is accessed by specifying a subroutine named **FormsAuthentication_OnAuthenticate** in the Global.asax file for your ASP.NET application.  
   
@@ -87,7 +87,7 @@
   
  You can use the <xref:System.Web.Security.FormsAuthenticationEventArgs><xref:System.Web.Security.FormsAuthenticationEventArgs.User%2A> property supplied to the **FormsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object. If you do not specify a value for the <xref:System.Web.Security.FormsAuthenticationEventArgs.User%2A> property during the **FormsAuthentication_OnAuthenticate** event, the identity supplied by the forms authentication ticket in the cookie or URL is used.  
   
- The **FormsAuthentication_OnAuthenticate** event is only raised when the authentication mode is set to <xref:System.Web.Configuration.AuthenticationMode> in the [authentication Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/27bc0ba9-f23a-45f3-ae42-dbe7916e3ee2) element of the application's configuration file and the <xref:System.Web.Security.FormsAuthenticationModule> is an active HTTP module for the application.  
+ The **FormsAuthentication_OnAuthenticate** event is only raised when the authentication mode is set to <xref:System.Web.Configuration.AuthenticationMode.Forms> in the [authentication Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/27bc0ba9-f23a-45f3-ae42-dbe7916e3ee2) element of the application's configuration file and the <xref:System.Web.Security.FormsAuthenticationModule> is an active HTTP module for the application.  
   
    
   

@@ -627,7 +627,7 @@
   
 -   You have defined another constructor and you also want a default constructor that simply calls the base class constructor.  
   
--   You want to set the attributes on the default constructor to something other than <xref:System.Reflection.MethodAttributes>, <xref:System.Reflection.MethodAttributes>, <xref:System.Reflection.MethodAttributes>, <xref:System.Reflection.MethodAttributes>, and <xref:System.Reflection.MethodAttributes>.  
+-   You want to set the attributes on the default constructor to something other than <xref:System.Reflection.MethodAttributes.PrivateScope>, <xref:System.Reflection.MethodAttributes.Public>, <xref:System.Reflection.MethodAttributes.HideBySig>, <xref:System.Reflection.MethodAttributes.SpecialName>, and <xref:System.Reflection.MethodAttributes.RTSpecialName>.  
   
    
   

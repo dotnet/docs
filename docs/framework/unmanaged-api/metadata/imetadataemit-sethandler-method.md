@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::SetHandler method [.NET Framework metadata]"
   - "SetHandler method [.NET Framework metadata]"
 ms.assetid: c6c1aaaf-e2cd-407c-b73e-fbe6ffd83bb3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

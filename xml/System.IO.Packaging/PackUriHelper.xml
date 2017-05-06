@@ -128,6 +128,40 @@
           <paramref name="firstPartUri" /> or <paramref name="secondPartUri" /> is not a valid part [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] syntax.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new pack URI.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table illustrates sample cases for the <xref:System.IO.Packaging.PackUriHelper.Create%2A> method.  
+  
+|`packageUri`|`partUri`|`fragment`|Returned pack URI|  
+|------------------|---------------|----------------|-----------------------|  
+|http://www.proseware.com/mypackage.pkg|/page1.xaml|#intro|pack://http:,,www.proseware.com,mypackage.pkg/page1.xaml#intro|  
+|http://www.proseware.com/mypackage.pkg|/page2.xaml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/page2.xaml|  
+|http://www.proseware.com/mypackage.pkg|/a/page4.xaml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/a/page4.xaml|  
+|http://www.proseware.com/mypackage.pkg|/%41/%61.xml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/A/a.xml|  
+|http://www.proseware.com/mypackage.pkg|/%25XY.xml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/%25XY.xml|  
+|http://www.proseware.com/mypackage.pkg|/a/page5.xaml|#summary|pack://http:,,www.proseware.com,mypackage.pkg/a/page5.xaml#summary|  
+|http://www.proseware.com/packages.aspx?pkg04|/page1.xaml|#intro|pack://http:,,www.proseware.com,packages.aspx%3fpkg04/page1.xaml#intro|  
+|http://www.proseware.com/mypackage.pkg|**null**|**null**|pack://http:,,www.proseware.com,mypackage.pkg|  
+|ftp://ftp.proseware.com/packages/mypackage1.abc|/a/mydoc.xaml|**null**|pack://ftp:,,ftp.proseware.com,packages,mypackage1.abc/a/mydoc.xaml|  
+|file:///d:/packages/mypackage2.pkg|/a/bar.xaml|#xref|pack://file:,,,d:,packages,mypackage2.pkg/a/bar.xaml#xref|  
+  
+ Composing a pack URI is a multi-step process.  For example, one step in forming a pack URI is to replace the forward slash (/) characters of the `packageUri` with commas (,).  
+  
+ For more information on string conversion and how pack URIs are formed, see Appendix A.4 "String Conversion Examples" and Appendix B.3 "Composing a Pack URI" in the Open Packaging Conventions specification available for download at [Specifications and License Downloads](http://go.microsoft.com/fwlink/?LinkID=71255).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static Uri Create (Uri packageUri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Uri Create(class System.Uri packageUri) cil managed" />
@@ -749,39 +783,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new pack URI.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table illustrates sample cases for the <xref:System.IO.Packaging.PackUriHelper.Create%2A> method.  
-  
-|`packageUri`|`partUri`|`fragment`|Returned pack URI|  
-|------------------|---------------|----------------|-----------------------|  
-|http://www.proseware.com/mypackage.pkg|/page1.xaml|#intro|pack://http:,,www.proseware.com,mypackage.pkg/page1.xaml#intro|  
-|http://www.proseware.com/mypackage.pkg|/page2.xaml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/page2.xaml|  
-|http://www.proseware.com/mypackage.pkg|/a/page4.xaml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/a/page4.xaml|  
-|http://www.proseware.com/mypackage.pkg|/%41/%61.xml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/A/a.xml|  
-|http://www.proseware.com/mypackage.pkg|/%25XY.xml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/%25XY.xml|  
-|http://www.proseware.com/mypackage.pkg|/a/page5.xaml|#summary|pack://http:,,www.proseware.com,mypackage.pkg/a/page5.xaml#summary|  
-|http://www.proseware.com/packages.aspx?pkg04|/page1.xaml|#intro|pack://http:,,www.proseware.com,packages.aspx%3fpkg04/page1.xaml#intro|  
-|http://www.proseware.com/mypackage.pkg|**null**|**null**|pack://http:,,www.proseware.com,mypackage.pkg|  
-|ftp://ftp.proseware.com/packages/mypackage1.abc|/a/mydoc.xaml|**null**|pack://ftp:,,ftp.proseware.com,packages,mypackage1.abc/a/mydoc.xaml|  
-|file:///d:/packages/mypackage2.pkg|/a/bar.xaml|#xref|pack://file:,,,d:,packages,mypackage2.pkg/a/bar.xaml#xref|  
-  
- Composing a pack URI is a multi-step process.  For example, one step in forming a pack URI is to replace the forward slash (/) characters of the `packageUri` with commas (,).  
-  
- For more information on string conversion and how pack URIs are formed, see Appendix A.4 "String Conversion Examples" and Appendix B.3 "Composing a Pack URI" in the Open Packaging Conventions specification available for download at [Specifications and License Downloads](http://go.microsoft.com/fwlink/?LinkID=71255).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

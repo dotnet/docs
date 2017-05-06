@@ -2380,6 +2380,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates and returns a new <see cref="T:System.Data.DataTable" /> based on rows in an existing <see cref="T:System.Data.DataView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Data.DataTable> maintains the values of the following properties from the source <xref:System.Data.DataTable>: <xref:System.Data.DataTable.Namespace%2A>, <xref:System.Data.DataTable.Prefix%2A>, <xref:System.Data.DataTable.CultureInfo%2A>, and <xref:System.Data.DataTable.CaseSensitive%2A>. Each column in the resulting <xref:System.Data.DataTable> contains an identical copy of all the corresponding properties in the underlying <xref:System.Data.DataTable>.  
+  
+ The <xref:System.Data.DataRow> instances in the returned `DataTable` will contain values that are consistent with CLR semantics. That is, for all data types besides user-defined types, the corresponding column values are copied by value. For user-defined data types, the column data is copied by reference.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToTable">
       <MemberSignature Language="C#" Value="public System.Data.DataTable ToTable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable ToTable() cil managed" />
@@ -2714,25 +2734,5 @@ New table name: UniqueData
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToTable">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates and returns a new <see cref="T:System.Data.DataTable" /> based on rows in an existing <see cref="T:System.Data.DataView" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.Data.DataTable> maintains the values of the following properties from the source <xref:System.Data.DataTable>: <xref:System.Data.DataTable.Namespace%2A>, <xref:System.Data.DataTable.Prefix%2A>, <xref:System.Data.DataTable.CultureInfo%2A>, and <xref:System.Data.DataTable.CaseSensitive%2A>. Each column in the resulting <xref:System.Data.DataTable> contains an identical copy of all the corresponding properties in the underlying <xref:System.Data.DataTable>.  
-  
- The <xref:System.Data.DataRow> instances in the returned `DataTable` will contain values that are consistent with CLR semantics. That is, for all data types besides user-defined types, the corresponding column values are copied by value. For user-defined data types, the column data is copied by reference.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

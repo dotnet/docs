@@ -84,7 +84,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="securityMode" /> specified is not a valid <see cref="T:System.ServiceModel.WebHttpSecurityMode" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="mode" /> specified is not a valid <see cref="T:System.ServiceModel.WebHttpSecurityMode" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

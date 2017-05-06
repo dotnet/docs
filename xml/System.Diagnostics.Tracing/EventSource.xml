@@ -1422,6 +1422,40 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an event by using the provided event identifier and optional arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `WriteEvent` method provides overloads with combinations of string and integer arguments. If none of these combinations match the parameters for the call, the compiler uses the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%28System.Int32%2CSystem.Object%5B%5D%29?displayProperty=fullName> overload, which is considerably slower than the other overloads. See the overload page for details.  
+  
+ In all cases, the `eventid` parameter should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ You can also create a custom overload by using the <xref:System.Diagnostics.Tracing.EventSource.WriteEventCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteEvent">
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId) cil managed" />
@@ -2640,39 +2674,5 @@ class AnotherEventSource : EventSource {
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteEvent">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes an event by using the provided event identifier and optional arguments.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `WriteEvent` method provides overloads with combinations of string and integer arguments. If none of these combinations match the parameters for the call, the compiler uses the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%28System.Int32%2CSystem.Object%5B%5D%29?displayProperty=fullName> overload, which is considerably slower than the other overloads. See the overload page for details.  
-  
- In all cases, the `eventid` parameter should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
-  
- When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
-  
-```  
-[Event(2, Level = EventLevel.Informational)]  
-public void Info1(string arg1)  
-{  
- base.WriteEvent(2, arg1);  
-}  
-```  
-  
- You can also create a custom overload by using the <xref:System.Diagnostics.Tracing.EventSource.WriteEventCore%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

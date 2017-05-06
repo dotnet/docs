@@ -35,6 +35,28 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PaperSize" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.Drawing.Printing.PaperSize> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Drawing.Printing.PaperSize.Kind%2A>|<xref:System.Drawing.Printing.PaperKind?displayProperty=fullName>|  
+|<xref:System.Drawing.Printing.PaperSize.PaperName%2A>|<xref:System.String.Empty?displayProperty=fullName>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PaperSize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -365,27 +387,5 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Printing.PaperSize.Kind" /> property is not set to <see cref="F:System.Drawing.Printing.PaperKind.Custom" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PaperSize" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table shows initial property values for an instance of <xref:System.Drawing.Printing.PaperSize> class.  
-  
-|Property|Initial value|  
-|--------------|-------------------|  
-|<xref:System.Drawing.Printing.PaperSize.Kind%2A>|<xref:System.Drawing.Printing.PaperKind?displayProperty=fullName>|  
-|<xref:System.Drawing.Printing.PaperSize.PaperName%2A>|<xref:System.String.Empty?displayProperty=fullName>|  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

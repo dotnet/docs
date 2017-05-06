@@ -212,6 +212,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="erase">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes elements from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::erase (STL/CLR)](http://msdn.microsoft.com/library/1d2a79aa-62f7-461c-8f7c-7b660eb189be), [hash_multimap::erase (STL/CLR)](http://msdn.microsoft.com/library/663c67f6-8070-47db-abdc-58f7ace69736), [hash_set::erase (STL/CLR)](http://msdn.microsoft.com/library/620998a0-00c9-4be6-899b-2d71661375b6), and [hash_multiset::erase (STL/CLR)](http://msdn.microsoft.com/library/bddd329d-aece-4b93-8355-005351c3aa45).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="erase">
       <MemberSignature Language="C#" Value="public int erase (TKey _Keyval);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 erase(!TKey _Keyval) cil managed" />
@@ -322,6 +339,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="insert">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds elements to the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::insert (STL/CLR)](http://msdn.microsoft.com/library/52926ec7-ad4e-4791-a043-46136ee40a69), [hash_multimap::insert (STL/CLR)](http://msdn.microsoft.com/library/51cd98b0-c959-4a44-b914-582c00681bd7), [hash_set::insert (STL/CLR)](http://msdn.microsoft.com/library/0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7), and [hash_multiset::insert (STL/CLR)](http://msdn.microsoft.com/library/e7254f30-a514-4ddc-bf53-38aafbe9e8eb).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="insert">
       <MemberSignature Language="C#" Value="public void insert (System.Collections.Generic.IEnumerable&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class System.Collections.Generic.IEnumerable`1&lt;!TValue&gt; _Right) cil managed" />
@@ -663,39 +697,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="erase">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes elements from the container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [hash_map::erase (STL/CLR)](http://msdn.microsoft.com/library/1d2a79aa-62f7-461c-8f7c-7b660eb189be), [hash_multimap::erase (STL/CLR)](http://msdn.microsoft.com/library/663c67f6-8070-47db-abdc-58f7ace69736), [hash_set::erase (STL/CLR)](http://msdn.microsoft.com/library/620998a0-00c9-4be6-899b-2d71661375b6), and [hash_multiset::erase (STL/CLR)](http://msdn.microsoft.com/library/bddd329d-aece-4b93-8355-005351c3aa45).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="insert">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds elements to the container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [hash_map::insert (STL/CLR)](http://msdn.microsoft.com/library/52926ec7-ad4e-4791-a043-46136ee40a69), [hash_multimap::insert (STL/CLR)](http://msdn.microsoft.com/library/51cd98b0-c959-4a44-b914-582c00681bd7), [hash_set::insert (STL/CLR)](http://msdn.microsoft.com/library/0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7), and [hash_multiset::insert (STL/CLR)](http://msdn.microsoft.com/library/e7254f30-a514-4ddc-bf53-38aafbe9e8eb).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

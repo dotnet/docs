@@ -238,7 +238,7 @@
         <param name="skiClause">To be added.</param>
         <summary>Returns a value indicating whether the key identifier for this instance is equal to the specified key identifier.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is one of the <see cref="T:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" />, <see cref="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" />, <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" />, or <see cref="T:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause" /> types and the key identifier clauses match; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="skiClause" /> is one of the <see cref="T:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" />, <see cref="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" />, <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" />, or <see cref="T:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause" /> types and the key identifier clauses match; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

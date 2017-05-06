@@ -27,6 +27,25 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="AddCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the contents of the provided attributes to the attribute table that created this builder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an attribute conflicts with another attribute already included in the table, the last attribute added replaces previous attributes.  
+  
+ Attributes can be added only to the type specified by <xref:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.CallbackType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddCustomAttributes">
       <MemberSignature Language="C#" Value="public void AddCustomAttributes (Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Attribute[] attributes) cil managed" />
@@ -250,24 +269,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddCustomAttributes">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the contents of the provided attributes to the attribute table that created this builder.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an attribute conflicts with another attribute already included in the table, the last attribute added replaces previous attributes.  
-  
- Attributes can be added only to the type specified by <xref:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.CallbackType%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

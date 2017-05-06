@@ -35,6 +35,29 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.SqlPersistenceProviderFactory" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Overloads of the constructor for the <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> class provide parameters for setting the following:  
+  
+-   The connection string used for accessing the SQL database.  
+  
+-   The lock time-out used for defining lock ownership duration.  
+  
+-   Whether the persistence data is serialized as XML or binary data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlPersistenceProviderFactory (System.Collections.Specialized.NameValueCollection parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.NameValueCollection parameters) cil managed" />
@@ -547,28 +570,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.SqlPersistenceProviderFactory" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Overloads of the constructor for the <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> class provide parameters for setting the following:  
-  
--   The connection string used for accessing the SQL database.  
-  
--   The lock time-out used for defining lock ownership duration.  
-  
--   Whether the persistence data is serialized as XML or binary data.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -129,7 +129,7 @@
       <Docs>
         <param name="identifier">To be added.</param>
         <summary>Creates a <see cref="T:System.IdentityModel.Claims.Claim" /> object that represents a deny-only specified security identifier (SID).</summary>
-        <returns>A <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the SID specified in the <paramref name="sid" /> parameter.</returns>
+        <returns>A <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the SID specified in the <paramref name="identifier" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -147,7 +147,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sid" /> is <see langword="null" />.</exception>
+          <paramref name="identifier" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateDnsClaim">

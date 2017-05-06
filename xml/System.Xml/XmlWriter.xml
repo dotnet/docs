@@ -272,6 +272,54 @@ async Task TestWriter(Stream stream)
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Xml.XmlWriter" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some of the <xref:System.Xml.XmlWriter.Create%2A> overloads include a `settings` parameter that accepts an <xref:System.Xml.XmlWriterSettings> object. You can use this object to:  
+  
+-   Specify which features you want supported on the created <xref:System.Xml.XmlWriter> object.  
+  
+-   Reuse the <xref:System.Xml.XmlWriterSettings> object to create multiple writer objects. The <xref:System.Xml.XmlWriterSettings> object is copied and marked read-only for each created writer. Changes to the settings on an <xref:System.Xml.XmlWriterSettings> instance do not affect existing writers with the same settings. Thus, you can use the same settings to create multiple writers with the same functionality. Or, you can modify the settings on an <xref:System.Xml.XmlWriterSettings> instance and create a new writer with a different set of features.  
+  
+-   Add features to an existing XML writer. The <xref:System.Xml.XmlWriter.Create%2A> method can accept another <xref:System.Xml.XmlWriter> object. The underlying <xref:System.Xml.XmlWriter> object does not have to be an XML writer created by the static <xref:System.Xml.XmlWriter.Create%2A> method. For example, you can specify a user-defined XML writer to add additional features to.  
+  
+-   Take full advantage of features such as better conformance checking and compliance to the [XML 1.0 recommendation](http://www.w3.org/TR/2006/REC-xml-20060816/) that are available only on <xref:System.Xml.XmlWriter> objects created by the static <xref:System.Xml.XmlWriter.Create%2A> method.  
+  
+ If you use a <xref:System.Xml.XmlWriter.Create%2A> overload that doesn't accept an <xref:System.Xml.XmlWriterSettings> object, the following default writer settings are used:  
+  
+|Setting|Default|  
+|-------------|-------------|  
+|<xref:System.Xml.XmlWriterSettings.CheckCharacters%2A>|`true`|  
+|<xref:System.Xml.XmlWriterSettings.CloseOutput%2A>|`false`|  
+|<xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A>|<xref:System.Xml.ConformanceLevel?displayProperty=fullName>|  
+|<xref:System.Xml.XmlWriterSettings.Encoding%2A>|<xref:System.Text.Encoding.UTF8?displayProperty=fullName>|  
+|<xref:System.Xml.XmlWriterSettings.Indent%2A>|`false`|  
+|<xref:System.Xml.XmlWriterSettings.IndentChars%2A>|Two spaces|  
+|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling.Default> (no removal)|  
+|<xref:System.Xml.XmlWriterSettings.NewLineChars%2A>|`\r\n` (carriage return, new line)|  
+|<xref:System.Xml.XmlWriterSettings.NewLineHandling%2A>|<xref:System.Xml.NewLineHandling?displayProperty=fullName>|  
+|<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A>|`false`|  
+|<xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration%2A>|`false`|  
+|<xref:System.Xml.XmlWriterSettings.OutputMethod%2A>|<xref:System.Xml.XmlOutputMethod?displayProperty=fullName>|  
+|<xref:System.Xml.XmlWriterSettings.WriteEndDocumentOnClose%2A>|`true`|  
+  
+> [!NOTE]
+>  Although the .NET Framework includes the <xref:System.Xml.XmlTextWriter> class, which is a concrete implementation of the <xref:System.Xml.XmlWriter> class, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Xml.XmlWriter Create (System.IO.Stream output);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlWriter Create(class System.IO.Stream output) cil managed" />
@@ -1164,6 +1212,26 @@ async Task TestWriter(Stream stream)
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteAttributeString">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>When overridden in a derived class, writes an attribute with the specified value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteElementStringAsync%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteAttributeString">
       <MemberSignature Language="C#" Value="public void WriteAttributeString (string localName, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAttributeString(string localName, string value) cil managed" />
@@ -2103,6 +2171,26 @@ async Task TestWriter(Stream stream)
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteElementString">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Writes an element containing a string value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteElementStringAsync%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteElementString">
       <MemberSignature Language="C#" Value="public void WriteElementString (string localName, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteElementString(string localName, string value) cil managed" />
@@ -2928,6 +3016,26 @@ async Task TestWriter(Stream stream)
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Copies everything from the source object to the current writer instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteNodeAsync%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteNode">
       <MemberSignature Language="C#" Value="public virtual void WriteNode (System.Xml.XmlReader reader, bool defattr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteNode(class System.Xml.XmlReader reader, bool defattr) cil managed" />
@@ -3097,6 +3205,26 @@ while (!reader.EOF){
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteNodeAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <summary>Asynchronously copies everything from the source object to the current writer instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the asynchronous version of <xref:System.Xml.XmlWriter.WriteNode%2A>, with the same functionality. To use this method, you must set the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteNodeAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteNodeAsync (System.Xml.XmlReader reader, bool defattr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteNodeAsync(class System.Xml.XmlReader reader, bool defattr) cil managed" />
@@ -3416,6 +3544,26 @@ writer.Close();
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteRaw">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>When overridden in a derived class, writes raw markup manually.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteRawAsync%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteRaw">
       <MemberSignature Language="C#" Value="public abstract void WriteRaw (string data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteRaw(string data) cil managed" />
@@ -3525,6 +3673,26 @@ writer.Close();
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteRawAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <summary>Asynchronously writes raw markup manually.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the asynchronous version of <xref:System.Xml.XmlWriter.WriteRaw%2A>, with the same functionality. To use this method, you must set the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteRawAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteRawAsync (string data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteRawAsync(string data) cil managed" />
@@ -3611,6 +3779,26 @@ writer.Close();
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteStartAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>When overridden in a derived class, writes the start of an attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteStartAttributeAsync%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteStartAttribute">
       <MemberSignature Language="C#" Value="public void WriteStartAttribute (string localName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartAttribute(string localName) cil managed" />
@@ -3796,6 +3984,26 @@ writer.Close();
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteStartDocument">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>When overridden in a derived class, writes the XML declaration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteStartDocumentAsync%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteStartDocument">
       <MemberSignature Language="C#" Value="public abstract void WriteStartDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteStartDocument() cil managed" />
@@ -3885,6 +4093,26 @@ writer.Close();
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteStartDocumentAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <summary>Asynchronously writes the XML declaration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the asynchronous version of <xref:System.Xml.XmlWriter.WriteStartDocument%2A>, with the same functionality. To use this method, you must set the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteStartDocumentAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteStartDocumentAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteStartDocumentAsync() cil managed" />
@@ -3964,6 +4192,26 @@ writer.Close();
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteStartElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>When overridden in a derived class, writes the specified start tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteStartElementAsync%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteStartElement">
       <MemberSignature Language="C#" Value="public void WriteStartElement (string localName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartElement(string localName) cil managed" />
@@ -4403,6 +4651,53 @@ test&lt;item&gt;test
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <summary>Writes a single simple-typed value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XmlWriter.WriteValue%2A> method accepts common language runtime (CLR) simple-typed values, converts them to their string representations according to the XML schema definition language (XSD) data type conversion rules, and writes them out by using the <xref:System.Xml.XmlWriter.WriteString%2A> method. This enables you to pipeline simple-type values with minimal reparsing overhead when passing data between <xref:System.Xml.XPath.XPathDocument>, <xref:System.Xml.XmlReader>, and <xref:System.Xml.XmlWriter> objects. This ability is also useful when dealing with CLR simple-types and an <xref:System.Xml.XmlWriter> instance. You can call the <xref:System.Xml.XmlWriter.WriteValue%2A> method to write the typed value instead of using the methods in the <xref:System.Xml.XmlConvert> class to convert the typed data to a string value before writing it out.  
+  
+ For asynchronous operations, convert the return value of <xref:System.Xml.XmlWriter.WriteValue%2A> to a string and use the <xref:System.Xml.XmlWriter.WriteStringAsync%2A> method.  
+  
+ The following table shows the default XSD data types that correspond to CLR types.  
+  
+ If the CLR object is a list type, such as <xref:System.Collections.IEnumerable>, <xref:System.Collections.IList>, or <xref:System.Collections.ICollection>, it is treated as an array of the value type.  
+  
+|CLR type|Default XSD data type|  
+|--------------|---------------------------|  
+|<xref:System.Boolean?displayProperty=fullName>|xsd:boolean|  
+|<xref:System.Byte?displayProperty=fullName>**|xsd:integer|  
+|<xref:System.Byte?displayProperty=fullName> array|xsd:base64Binary|  
+|<xref:System.Char?displayProperty=fullName>**|xsd:string|  
+|<xref:System.DateTime?displayProperty=fullName>|xsd:dateTime|  
+|<xref:System.Decimal?displayProperty=fullName>|xsd:decimal|  
+|<xref:System.Double?displayProperty=fullName>|xsd:double|  
+|<xref:System.Int16?displayProperty=fullName>**|xsd:integer|  
+|<xref:System.Int32?displayProperty=fullName>|xsd:integer|  
+|<xref:System.Int64?displayProperty=fullName>|xsd:integer|  
+|<xref:System.Single?displayProperty=fullName>|xsd:float|  
+|<xref:System.String?displayProperty=fullName>|xsd:string|  
+|<xref:System.IO.TextReader?displayProperty=fullName>|xsd:string|  
+|<xref:System.IO.BinaryReader?displayProperty=fullName>|xsd:base64Binary|  
+  
+ **These types are not CLS-compliant. They do not have corresponding <xref:System.Xml.XmlWriter.WriteValue%2A> methods.  
+  
+ If <xref:System.Xml.XmlWriter.WriteValue%2A> is called multiple times in succession, the values are not delimited by a space. You must call <xref:System.Xml.XmlWriter.WriteWhitespace%2A> between calls to <xref:System.Xml.XmlWriter.WriteValue%2A> to insert white space.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteValue">
       <MemberSignature Language="C#" Value="public virtual void WriteValue (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteValue(bool value) cil managed" />
@@ -5067,300 +5362,5 @@ test&lt;item&gt;test
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteElementString">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
-        <summary>Writes an element containing a string value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteElementStringAsync%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteAttributeString">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
-        <summary>When overridden in a derived class, writes an attribute with the specified value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteElementStringAsync%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteNode">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
-        <summary>Copies everything from the source object to the current writer instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteNodeAsync%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteRaw">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
-        <summary>When overridden in a derived class, writes raw markup manually.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteRawAsync%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteNodeAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
-        <summary>Asynchronously copies everything from the source object to the current writer instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the asynchronous version of <xref:System.Xml.XmlWriter.WriteNode%2A>, with the same functionality. To use this method, you must set the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to `true`.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteStartDocument">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
-        <summary>When overridden in a derived class, writes the XML declaration.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteStartDocumentAsync%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Xml.XmlWriter" /> instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Some of the <xref:System.Xml.XmlWriter.Create%2A> overloads include a `settings` parameter that accepts an <xref:System.Xml.XmlWriterSettings> object. You can use this object to:  
-  
--   Specify which features you want supported on the created <xref:System.Xml.XmlWriter> object.  
-  
--   Reuse the <xref:System.Xml.XmlWriterSettings> object to create multiple writer objects. The <xref:System.Xml.XmlWriterSettings> object is copied and marked read-only for each created writer. Changes to the settings on an <xref:System.Xml.XmlWriterSettings> instance do not affect existing writers with the same settings. Thus, you can use the same settings to create multiple writers with the same functionality. Or, you can modify the settings on an <xref:System.Xml.XmlWriterSettings> instance and create a new writer with a different set of features.  
-  
--   Add features to an existing XML writer. The <xref:System.Xml.XmlWriter.Create%2A> method can accept another <xref:System.Xml.XmlWriter> object. The underlying <xref:System.Xml.XmlWriter> object does not have to be an XML writer created by the static <xref:System.Xml.XmlWriter.Create%2A> method. For example, you can specify a user-defined XML writer to add additional features to.  
-  
--   Take full advantage of features such as better conformance checking and compliance to the [XML 1.0 recommendation](http://www.w3.org/TR/2006/REC-xml-20060816/) that are available only on <xref:System.Xml.XmlWriter> objects created by the static <xref:System.Xml.XmlWriter.Create%2A> method.  
-  
- If you use a <xref:System.Xml.XmlWriter.Create%2A> overload that doesn't accept an <xref:System.Xml.XmlWriterSettings> object, the following default writer settings are used:  
-  
-|Setting|Default|  
-|-------------|-------------|  
-|<xref:System.Xml.XmlWriterSettings.CheckCharacters%2A>|`true`|  
-|<xref:System.Xml.XmlWriterSettings.CloseOutput%2A>|`false`|  
-|<xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A>|<xref:System.Xml.ConformanceLevel?displayProperty=fullName>|  
-|<xref:System.Xml.XmlWriterSettings.Encoding%2A>|<xref:System.Text.Encoding.UTF8?displayProperty=fullName>|  
-|<xref:System.Xml.XmlWriterSettings.Indent%2A>|`false`|  
-|<xref:System.Xml.XmlWriterSettings.IndentChars%2A>|Two spaces|  
-|<xref:System.Xml.XmlWriterSettings.NamespaceHandling%2A>|<xref:System.Xml.NamespaceHandling.Default> (no removal)|  
-|<xref:System.Xml.XmlWriterSettings.NewLineChars%2A>|`\r\n` (carriage return, new line)|  
-|<xref:System.Xml.XmlWriterSettings.NewLineHandling%2A>|<xref:System.Xml.NewLineHandling?displayProperty=fullName>|  
-|<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A>|`false`|  
-|<xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration%2A>|`false`|  
-|<xref:System.Xml.XmlWriterSettings.OutputMethod%2A>|<xref:System.Xml.XmlOutputMethod?displayProperty=fullName>|  
-|<xref:System.Xml.XmlWriterSettings.WriteEndDocumentOnClose%2A>|`true`|  
-  
-> [!NOTE]
->  Although the .NET Framework includes the <xref:System.Xml.XmlTextWriter> class, which is a concrete implementation of the <xref:System.Xml.XmlWriter> class, we recommend that you create <xref:System.Xml.XmlWriter> instances by using the <xref:System.Xml.XmlWriter.Create%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteStartAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
-        <summary>When overridden in a derived class, writes the start of an attribute.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteStartAttributeAsync%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteStartDocumentAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
-        <summary>Asynchronously writes the XML declaration.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the asynchronous version of <xref:System.Xml.XmlWriter.WriteStartDocument%2A>, with the same functionality. To use this method, you must set the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to `true`.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteStartElement">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
-        <summary>When overridden in a derived class, writes the specified start tag.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteStartElementAsync%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
-        <summary>Writes a single simple-typed value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Xml.XmlWriter.WriteValue%2A> method accepts common language runtime (CLR) simple-typed values, converts them to their string representations according to the XML schema definition language (XSD) data type conversion rules, and writes them out by using the <xref:System.Xml.XmlWriter.WriteString%2A> method. This enables you to pipeline simple-type values with minimal reparsing overhead when passing data between <xref:System.Xml.XPath.XPathDocument>, <xref:System.Xml.XmlReader>, and <xref:System.Xml.XmlWriter> objects. This ability is also useful when dealing with CLR simple-types and an <xref:System.Xml.XmlWriter> instance. You can call the <xref:System.Xml.XmlWriter.WriteValue%2A> method to write the typed value instead of using the methods in the <xref:System.Xml.XmlConvert> class to convert the typed data to a string value before writing it out.  
-  
- For asynchronous operations, convert the return value of <xref:System.Xml.XmlWriter.WriteValue%2A> to a string and use the <xref:System.Xml.XmlWriter.WriteStringAsync%2A> method.  
-  
- The following table shows the default XSD data types that correspond to CLR types.  
-  
- If the CLR object is a list type, such as <xref:System.Collections.IEnumerable>, <xref:System.Collections.IList>, or <xref:System.Collections.ICollection>, it is treated as an array of the value type.  
-  
-|CLR type|Default XSD data type|  
-|--------------|---------------------------|  
-|<xref:System.Boolean?displayProperty=fullName>|xsd:boolean|  
-|<xref:System.Byte?displayProperty=fullName>**|xsd:integer|  
-|<xref:System.Byte?displayProperty=fullName> array|xsd:base64Binary|  
-|<xref:System.Char?displayProperty=fullName>**|xsd:string|  
-|<xref:System.DateTime?displayProperty=fullName>|xsd:dateTime|  
-|<xref:System.Decimal?displayProperty=fullName>|xsd:decimal|  
-|<xref:System.Double?displayProperty=fullName>|xsd:double|  
-|<xref:System.Int16?displayProperty=fullName>**|xsd:integer|  
-|<xref:System.Int32?displayProperty=fullName>|xsd:integer|  
-|<xref:System.Int64?displayProperty=fullName>|xsd:integer|  
-|<xref:System.Single?displayProperty=fullName>|xsd:float|  
-|<xref:System.String?displayProperty=fullName>|xsd:string|  
-|<xref:System.IO.TextReader?displayProperty=fullName>|xsd:string|  
-|<xref:System.IO.BinaryReader?displayProperty=fullName>|xsd:base64Binary|  
-  
- **These types are not CLS-compliant. They do not have corresponding <xref:System.Xml.XmlWriter.WriteValue%2A> methods.  
-  
- If <xref:System.Xml.XmlWriter.WriteValue%2A> is called multiple times in succession, the values are not delimited by a space. You must call <xref:System.Xml.XmlWriter.WriteWhitespace%2A> between calls to <xref:System.Xml.XmlWriter.WriteValue%2A> to insert white space.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteRawAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
-        <summary>Asynchronously writes raw markup manually.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the asynchronous version of <xref:System.Xml.XmlWriter.WriteRaw%2A>, with the same functionality. To use this method, you must set the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to `true`.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

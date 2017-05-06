@@ -265,6 +265,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Select">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uses an XPath data-binding expression at run time to return a list of nodes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the overloaded <xref:System.Web.UI.XPathBinder.Select%2A> method declaratively if you want to simplify the retrieval of a set of nodes using an XPath query. To do so, you must place the \<%# and %> tags, which are also used in standard ASP.NET data binding, around the XPath query.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Select">
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable Select (object container, string xPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerable Select(object container, string xPath) cil managed" />
@@ -377,22 +394,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Select">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Uses an XPath data-binding expression at run time to return a list of nodes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the overloaded <xref:System.Web.UI.XPathBinder.Select%2A> method declaratively if you want to simplify the retrieval of a set of nodes using an XPath query. To do so, you must place the \<%# and %> tags, which are also used in standard ASP.NET data binding, around the XPath query.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

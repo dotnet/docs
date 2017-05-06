@@ -522,6 +522,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetGroups">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of group objects that specify the groups of which the current principal is a member.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overloaded method only returns the groups of which the principal is directly a member; no recursive searches are performed. Recursive search results are available for user principal objects. For more information, see the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.GetAuthorizationGroups%2A> method.  
+  
+ If the principal store is AD DS, the list of groups contains the user's primary group that is identified by the primary group ID attribute in the AD DS object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetGroups">
       <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt; GetGroups ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.Principal&gt; GetGroups() cil managed" />
@@ -1001,24 +1020,5 @@
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetGroups">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a collection of group objects that specify the groups of which the current principal is a member.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overloaded method only returns the groups of which the principal is directly a member; no recursive searches are performed. Recursive search results are available for user principal objects. For more information, see the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.GetAuthorizationGroups%2A> method.  
-  
- If the principal store is AD DS, the list of groups contains the user's primary group that is identified by the primary group ID attribute in the AD DS object.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

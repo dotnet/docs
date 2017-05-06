@@ -310,6 +310,25 @@
           <paramref name="desiredAccess" /> is a value that can be applied only to a <see cref="T:System.Printing.PrintServer" /> object, not a <see cref="T:System.Printing.PrintQueue" /> object. For example, <see cref="F:System.Printing.PrintSystemDesiredAccess.AdministrateServer" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddJob">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a new print job into the queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unless the queue is paused or in an error state, the job prints when it reaches the top of the queue, so this is a printing function.  
+  
+ Other ways to print in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] include the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=fullName> method, which can be used with or without opening the dialog, and the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddJob">
       <MemberSignature Language="C#" Value="public System.Printing.PrintSystemJobInfo AddJob ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintSystemJobInfo AddJob() cil managed" />
@@ -1158,6 +1177,23 @@
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for permission to get print capabilities. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPrintCapabilitiesAsXml">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.IO.MemoryStream" /> object that specifies the printer's capabilities as an XML stream that complies with the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The XML schema used is called "PrintCapabilities," a part of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) system.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetPrintCapabilitiesAsXml">
       <MemberSignature Language="C#" Value="public System.IO.MemoryStream GetPrintCapabilitiesAsXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryStream GetPrintCapabilitiesAsXml() cil managed" />
@@ -3010,41 +3046,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddJob">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Inserts a new print job into the queue.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Unless the queue is paused or in an error state, the job prints when it reaches the top of the queue, so this is a printing function.  
-  
- Other ways to print in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] include the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=fullName> method, which can be used with or without opening the dialog, and the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetPrintCapabilitiesAsXml">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.IO.MemoryStream" /> object that specifies the printer's capabilities as an XML stream that complies with the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XML schema used is called "PrintCapabilities," a part of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) system.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

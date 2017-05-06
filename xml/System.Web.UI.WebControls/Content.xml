@@ -52,8 +52,7 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Web.UI.WebControls.Content> control to define the content for a master page. The first Web page is a master page and defines a content region using a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.MasterPage_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.MasterPage_1/CS/MasterPageSample_1cs.master#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.MasterPage_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.MasterPage_1/VB/MasterPageSample_1vb.master#1)]  -->  
+ [!code-xml[System.Web.UI.MasterPage_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.MasterPage_1/CS/MasterPageSample_1cs.master#1)]   
   
  The following code example demonstrates how to use a content page for the preceding master page. The text, markup, and any server controls that are defined within the <xref:System.Web.UI.WebControls.Content> control template are rendered to the <xref:System.Web.UI.WebControls.ContentPlaceHolder> on the master page.  
   

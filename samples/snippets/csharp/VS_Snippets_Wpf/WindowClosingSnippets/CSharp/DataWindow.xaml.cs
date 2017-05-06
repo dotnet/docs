@@ -1,4 +1,3 @@
-//<SnippetWindowClosingCODEBEHIND1>
 using System;
 using System.ComponentModel;
 using System.Windows;
@@ -9,7 +8,7 @@ namespace CSharp
     {
         // Is data dirty
         bool isDataDirty = false;
-        //</SnippetWindowClosingCODEBEHIND1>
+
         public DataWindow()
         {
             InitializeComponent();
@@ -20,7 +19,6 @@ namespace CSharp
             this.isDataDirty = true;
         }
 
-        //<SnippetWindowClosingCODEBEHIND2>
         void DataWindow_Closing(object sender, CancelEventArgs e)
         {
             MessageBox.Show("Closing called");
@@ -44,4 +42,3 @@ namespace CSharp
         }
     }
 }
-//</SnippetWindowClosingCODEBEHIND2>

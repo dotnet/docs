@@ -107,20 +107,11 @@ A new version of .NET Core could mean several things:
 
 Patch-level changes (no new APIs) are made to .NET Core libraries to fix bugs and improve performance and reliability. The various metapackages are updated to reference the updated .NET Core library packages. The metapackages are versioned as patch updates (x.y.z). Frameworks are not updated. A new .NET Core distribution is released with a matching version number to the `Microsoft.NETCore.App` metapackage.
 
-You can see patch updates demonstrated in the metapackage references of the following project file:
+Between the release of the `Microsoft.NETCore.App` metapackage for versions 1.0 and 1.1, the `NETStandard.Library` metapackage received a patch update from version 1.6.0 to 1.6.1:
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk.Web">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
-  </ItemGroup>
-</Project>
-```
+![A few dependencies of the Microsoft.NETCore.App 1.0 metapackage showing the NETStandard.Library metapackage versioned at 1.6.0.](./media/netcoreapp10deps.png)
+
+![A few dependencies of the Microsoft.NETCore.App 1.1 metapackage showing the NETStandard.Library metapackage versioned at 1.6.1.](./media/netcoreapp11deps.png)
 
 ### Shipping a minor release
 
@@ -132,6 +123,7 @@ You can see minor updates demonstrated in the following project file:
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+    <OutputType>exe</OutputType>
   </PropertyGroup>
 </Project>
 ```
@@ -146,6 +138,7 @@ You can see major updates demonstrated in the following project file. (Note that
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <OutputType>exe</OutputType>
   </PropertyGroup>
 </Project>
 

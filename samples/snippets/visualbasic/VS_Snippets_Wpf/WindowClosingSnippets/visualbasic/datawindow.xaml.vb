@@ -1,13 +1,15 @@
-Imports System
-Imports System.ComponentModel
-Imports System.Windows
+'<SnippetWindowClosingCODEBEHIND1>
+
+Imports System ' EventArgs
+Imports System.ComponentModel ' CancelEventArgs
+Imports System.Windows ' window
 
 Namespace VisualBasic
     Partial Public Class DataWindow
         Inherits Window
         ' Is data dirty
         Private isDataDirty As Boolean = False
-
+        '</SnippetWindowClosingCODEBEHIND1>
         Public Sub New()
             InitializeComponent()
         End Sub
@@ -16,7 +18,7 @@ Namespace VisualBasic
             Me.isDataDirty = True
         End Sub
 
-
+        '<SnippetWindowClosingCODEBEHIND2>
         Private Sub DataWindow_Closing(ByVal sender As Object, ByVal e As CancelEventArgs)
             MessageBox.Show("Closing called")
 
@@ -32,3 +34,4 @@ Namespace VisualBasic
         End Sub
     End Class
 End Namespace
+'</SnippetWindowClosingCODEBEHIND2>

@@ -156,7 +156,7 @@
       </Parameters>
       <Docs>
         <param name="sid">The <see cref="T:System.Security.Principal.SecurityIdentifier" /> for which to add an audit rule.</param>
-        <param name="rule">The <see cref="T:System.Security.AccessControl.ObjectAuditRule" />for the new audit rule.</param>
+        <param name="rule">The <see cref="T:System.Security.AccessControl.ObjectAuditRule" /> for the new audit rule.</param>
         <summary>Adds an audit rule to the current <see cref="T:System.Security.AccessControl.SystemAcl" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -537,7 +537,7 @@
       </Parameters>
       <Docs>
         <param name="sid">The <see cref="T:System.Security.Principal.SecurityIdentifier" /> for which to set an audit rule.</param>
-        <param name="rule">The <see cref="T:System.Security.AccessControl.ObjectAuditRule" />for which to set an audit rule.</param>
+        <param name="rule">The <see cref="T:System.Security.AccessControl.ObjectAuditRule" /> for which to set an audit rule.</param>
         <summary>Sets the specified audit rule for the specified <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>

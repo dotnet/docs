@@ -135,7 +135,7 @@ End Class
       <Docs>
         <param name="filename">The name of the file associated with the request.</param>
         <param name="url">The information regarding the URL of the current request.</param>
-        <param name="queryString">The entire query string sent with the request (everything after the<c>'?'</c>).</param>
+        <param name="queryString">The entire query string sent with the request (everything after the <c>'?'</c>).</param>
         <summary>Initializes an <see cref="T:System.Web.HttpRequest" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

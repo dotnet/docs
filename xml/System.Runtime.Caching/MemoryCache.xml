@@ -297,9 +297,9 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="value " />is not <see langword="null" />.</exception>
+          <paramref name="value" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">Both the absolute and sliding expiration values for the <see cref="T:System.Runtime.Caching.CacheItemPolicy" /> object are set to values other than the defaults of <see cref="F:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration" /> and <see cref="F:System.Runtime.Caching.ObjectCache.NoSlidingExpiration" /> fields. The <see cref="T:System.Runtime.Caching.MemoryCache" /> class cannot set expiration policy based on a combination of an absolute expiration and a sliding expiration. Only one expiration setting can be explicitly set when you use the <see cref="T:System.Runtime.Caching.MemoryCache" /> instance. The other expiration setting must be set to <see cref="F:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration" /> or <see cref="F:System.Runtime.Caching.ObjectCache.NoSlidingExpiration" /></exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Runtime.Caching.CacheItemPolicy.SlidingExpiration" /> property is set to a value less than <see cref="F:System.TimeSpan.Zero" />.  
   
@@ -420,7 +420,7 @@ private void btnGet_Click(object sender, EventArgs e)
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateCacheEntryChangeMonitor">
@@ -459,7 +459,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keys" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An item in the <paramref name="keys" /> collection is <see langword="null" />.</exception>
@@ -591,7 +591,7 @@ private void btnGet_Click(object sender, EventArgs e)
         <returns>A reference to the cache entry that is identified by <paramref name="key" />, if the entry exists; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
@@ -626,7 +626,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
@@ -652,7 +652,7 @@ private void btnGet_Click(object sender, EventArgs e)
         <returns>The number of entries in the cache.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -736,7 +736,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keys" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An individual key in the collection is <see langword="null" />.</exception>
@@ -884,7 +884,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
@@ -1023,7 +1023,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.  
   
@@ -1105,7 +1105,7 @@ private void btnGet_Click(object sender, EventArgs e)
   
  The <see cref="P:System.Runtime.Caching.CacheItemPolicy.Priority" /> property is not a value of the <see cref="T:System.Runtime.Caching.CacheItemPriority" /> enumeration.</exception>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">

@@ -3765,7 +3765,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.UI.Page.RegisterRequiresViewStateEncryption" /> method must be called before or during the page <see langword="PreRender" />phase in the page life cycle.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.UI.Page.RegisterRequiresViewStateEncryption" /> method must be called before or during the page <see langword="PreRender" /> phase in the page life cycle.</exception>
       </Docs>
     </Member>
     <Member MemberName="RegisterStartupScript">
@@ -5338,7 +5338,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value set is not a member of the <see cref="T:System.Web.UI.ViewStateEncryptionMode" /> enumeration.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.Page.ViewStateEncryptionMode" /> property can be set only in or before the page <see langword="PreRender" />phase in the page life cycle.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.Page.ViewStateEncryptionMode" /> property can be set only in or before the page <see langword="PreRender" /> phase in the page life cycle.</exception>
       </Docs>
     </Member>
     <Member MemberName="ViewStateUserKey">

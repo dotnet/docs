@@ -2809,7 +2809,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       </Parameters>
       <Docs>
         <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
-        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String " />value.</param>
+        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String" /> value.</param>
         <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
         <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
         <remarks>
@@ -2851,7 +2851,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       </Parameters>
       <Docs>
         <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
-        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String " />value.</param>
+        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String" /> value.</param>
         <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
         <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
         <remarks>
@@ -2893,7 +2893,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       </Parameters>
       <Docs>
         <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
-        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String " />value.</param>
+        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String" /> value.</param>
         <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
         <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
         <remarks>

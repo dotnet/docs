@@ -138,7 +138,7 @@ ns.Add("", "")
         <Parameter Name="namespaces" Type="System.Xml.Serialization.XmlSerializerNamespaces" />
       </Parameters>
       <Docs>
-        <param name="namespaces">An instance of the <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" />containing the namespace and prefix pairs.</param>
+        <param name="namespaces">An instance of the <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" /> containing the namespace and prefix pairs.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" /> class, using the specified instance of <see langword="XmlSerializerNamespaces" /> containing the collection of prefix and namespace pairs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

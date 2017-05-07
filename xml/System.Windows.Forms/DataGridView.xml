@@ -8586,7 +8586,7 @@
   
  The value of the <see cref="P:System.Windows.Forms.DataGridViewCellMouseEventArgs.RowIndex" /> property of <paramref name="e" /> is greater than the number of rows in the control minus one.</exception>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnCellMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.DataGridView.OnCellMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnCellMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.DataGridView.OnCellMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -9291,7 +9291,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The column indicated by the <see cref="P:System.Windows.Forms.DataGridViewColumnEventArgs.Column" /> property of <paramref name="e" /> does not belong to this <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnColumnContextMenuStripChanged(System.Windows.Forms.DataGridViewColumnEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.DataGridView.OnColumnContextMenuStripChanged(System.Windows.Forms.DataGridViewColumnEventArgs)" />method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnColumnContextMenuStripChanged(System.Windows.Forms.DataGridViewColumnEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.DataGridView.OnColumnContextMenuStripChanged(System.Windows.Forms.DataGridViewColumnEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -10031,7 +10031,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnCursorChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.DataGridView.OnCursorChanged(System.EventArgs)" />method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.DataGridView.OnCursorChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.DataGridView.OnCursorChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

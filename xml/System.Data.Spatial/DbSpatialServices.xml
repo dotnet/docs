@@ -1397,7 +1397,7 @@
       </Parameters>
       <Docs>
         <param name="geometryCollectionWellKnownBinary">A byte array that contains a well-known binary representation of the geometry value.</param>
-        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" />value should use.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" /> value should use.</param>
         <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> collection value based on the specified well-known binary value and coordinate system identifier (SRID).</summary>
         <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known binary value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>

@@ -66,7 +66,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="item " />is <see langword="null" />.</exception>
+          <paramref name="item" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="item" /> is empty.</exception>
       </Docs>
@@ -178,7 +178,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="serviceNames " />is <see langword="null" />.</exception>
+          <paramref name="serviceNames" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="serviceNames" /> is empty.</exception>
       </Docs>
@@ -220,7 +220,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="serviceNames " />is <see langword="null" />.</exception>
+          <paramref name="serviceNames" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="serviceNames" /> is empty.</exception>
       </Docs>

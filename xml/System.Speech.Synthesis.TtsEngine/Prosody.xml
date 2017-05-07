@@ -151,7 +151,7 @@
         <Parameter Name="points" Type="System.Speech.Synthesis.TtsEngine.ContourPoint[]" />
       </Parameters>
       <Docs>
-        <param name="points">A byte array of <see langword="ContourPoint " />objects.</param>
+        <param name="points">A byte array of <see langword="ContourPoint" /> objects.</param>
         <summary>Sets the <see langword="ContourPoints" /> of the <see langword="TextFragment" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>

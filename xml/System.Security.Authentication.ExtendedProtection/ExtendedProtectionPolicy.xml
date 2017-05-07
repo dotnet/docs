@@ -153,7 +153,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="policyEnforcement" /> is specified as <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="customChannelBinding " />is <see langword="null" />.</exception>
+          <paramref name="customChannelBinding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -195,7 +195,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="policyEnforcement" /> is specified as <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="customServiceNames " />is <see langword="null" /> or an empty list.</exception>
+          <paramref name="customServiceNames" /> is <see langword="null" /> or an empty list.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -237,7 +237,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="policyEnforcement" /> is specified as <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="customServiceNames " />is <see langword="null" /> or an empty list.</exception>
+          <paramref name="customServiceNames" /> is <see langword="null" /> or an empty list.</exception>
       </Docs>
     </Member>
     <Member MemberName="CustomChannelBinding">

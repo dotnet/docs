@@ -1212,7 +1212,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether a <see cref="T:System.Windows.Controls.Frame" /> isolates external [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] content within a partial trust security sandbox (with the default <see langword="Internet " />permission set).</summary>
+        <summary>Gets or sets whether a <see cref="T:System.Windows.Controls.Frame" /> isolates external [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] content within a partial trust security sandbox (with the default <see langword="Internet" /> permission set).</summary>
         <value>
           <see langword="true" /> if content is isolated within a partial trust security sandbox; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>

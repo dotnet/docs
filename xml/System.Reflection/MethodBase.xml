@@ -695,7 +695,7 @@
  -or-  
   
  A static constructor is invoked, and <paramref name="obj" /> is neither <see langword="null" /> nor an instance of the class that declared the constructor.</exception>
-        <exception cref="T:System.ArgumentException">The elements of the <paramref name="parameters" />array do not match the signature of the method or constructor reflected by this instance.</exception>
+        <exception cref="T:System.ArgumentException">The elements of the <paramref name="parameters" /> array do not match the signature of the method or constructor reflected by this instance.</exception>
         <exception cref="T:System.Reflection.TargetInvocationException">The invoked method or constructor throws an exception.  
   
  -or-  

@@ -136,7 +136,7 @@ ListBox
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="textBoxBase " />is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="textBoxBase" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetIsEnabled">
@@ -160,7 +160,7 @@ ListBox
         <returns>
           <see langword="true" /> if the spelling checker is enabled on the text-editing control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="textBoxBase " />is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="textBoxBase" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">

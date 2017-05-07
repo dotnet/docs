@@ -892,7 +892,7 @@
       </Parameters>
       <Docs>
         <param name="X">A <see cref="T:System.Double" /> that represents the X coordinate in pixels.</param>
-        <param name="ToScale">A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ScaleMode" /> enumeration that represents the Visual Basic 6.0 <see langword="ScaleMode " />to convert to.</param>
+        <param name="ToScale">A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ScaleMode" /> enumeration that represents the Visual Basic 6.0 <see langword="ScaleMode" /> to convert to.</param>
         <summary>Converts a pixel measurement to a Visual Basic 6.0 measurement for a given <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ScaleMode" />.</summary>
         <returns>A <see cref="T:System.Double" /> that contains the Visual Basic 6.0 value for the specified <see langword="ScaleMode" />.</returns>
         <remarks>
@@ -930,7 +930,7 @@
       </Parameters>
       <Docs>
         <param name="Y">A <see cref="T:System.Double" /> that represents the Y coordinate in pixels.</param>
-        <param name="ToScale">A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ScaleMode" /> enumeration that represents the Visual Basic 6.0 <see langword="ScaleMode " />to convert to.</param>
+        <param name="ToScale">A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ScaleMode" /> enumeration that represents the Visual Basic 6.0 <see langword="ScaleMode" /> to convert to.</param>
         <summary>Converts a pixel measurement to a Visual Basic 6.0 measurement for a given <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ScaleMode" />.</summary>
         <returns>A <see cref="T:System.Double" /> that contains the Visual Basic 6.0 value for the specified <see langword="ScaleMode" />.</returns>
         <remarks>
@@ -2567,7 +2567,7 @@
       </Parameters>
       <Docs>
         <param name="Y">A <see cref="T:System.Double" /> that represents the Y coordinate.</param>
-        <param name="FromScale">A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ScaleMode" /> enumeration that represents the Visual Basic 6.0 <see langword="ScaleMode " />to convert from.</param>
+        <param name="FromScale">A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ScaleMode" /> enumeration that represents the Visual Basic 6.0 <see langword="ScaleMode" /> to convert from.</param>
         <summary>Converts a Visual Basic 6.0 measurement to a pixel measurement for a given <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ScaleMode" />.</summary>
         <returns>A <see cref="T:System.Double" /> that contains the pixel value for the specified <see langword="ScaleMode" />.</returns>
         <remarks>

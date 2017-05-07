@@ -142,7 +142,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="logStore" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="bufferSize " />is negative or zero.  
+          <paramref name="bufferSize" /> is negative or zero.  
   
  -or-  
   
@@ -1500,7 +1500,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
   
  The request could not be performed because of an I/O device error.</exception>
         <exception cref="T:System.InvalidOperationException">
-          <see langword="End " />has already been called for this asynchronous operation.</exception>
+          <see langword="End" /> has already been called for this asynchronous operation.</exception>
         <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
         <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>

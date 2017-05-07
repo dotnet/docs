@@ -331,8 +331,8 @@
       <Docs>
         <param name="context">The current <see cref="T:System.Web.HttpContext" /> object that references server objects used to process HTTP requests (for example, the <see cref="P:System.Web.HttpContext.Request" /> and <see cref="P:System.Web.HttpContext.Response" /> properties).</param>
         <param name="id">The session identifier.</param>
-        <param name="redirected">When this method returns, contains a Boolean value that is<see langword=" true" /> if the response is redirected to the current URL with the session identifier added to the URL; otherwise, <see langword="false" />.</param>
-        <param name="cookieAdded">When this method returns, contains a Boolean value that is<see langword=" true" /> if a cookie has been added to the HTTP response; otherwise, <see langword="false" />.</param>
+        <param name="redirected">When this method returns, contains a Boolean value that is <see langword="true" /> if the response is redirected to the current URL with the session identifier added to the URL; otherwise, <see langword="false" />.</param>
+        <param name="cookieAdded">When this method returns, contains a Boolean value that is <see langword="true" /> if a cookie has been added to the HTTP response; otherwise, <see langword="false" />.</param>
         <summary>Saves a newly created session identifier to the HTTP response.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

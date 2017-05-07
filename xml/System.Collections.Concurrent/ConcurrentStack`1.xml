@@ -697,7 +697,7 @@
         <Parameter Name="result" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="result">When this method returns, <c>result</c> contains an object from the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" />or an unspecified value if the operation failed.</param>
+        <param name="result">When this method returns, <c>result</c> contains an object from the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> or an unspecified value if the operation failed.</param>
         <summary>Attempts to return an object from the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> without removing it.</summary>
         <returns>true if and object was returned successfully; otherwise, false.</returns>
         <remarks>To be added.</remarks>

@@ -151,7 +151,7 @@
         <Parameter Name="identifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifier">A name that will not be available within the <see cref="T:System.Xml.Serialization.CodeIdentifiers" />instance's scope.</param>
+        <param name="identifier">A name that will not be available within the <see cref="T:System.Xml.Serialization.CodeIdentifiers" /> instance's scope.</param>
         <summary>Prevents a specified name from being used within the <see cref="T:System.Xml.Serialization.CodeIdentifiers" /> instance's scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -248,7 +248,7 @@
         <summary>[Supported in the .NET Framework 4.5.2 and later versions]  
   
  Registers a callback that the ASP.NET runtime will invoke immediately before response headers are sent for this request.</summary>
-        <returns>Returns  an<see cref="T:System.Web.ISubscriptionToken" /> object that represents the subscription to the OnSendingHeaders pseudo event..</returns>
+        <returns>Returns  an <see cref="T:System.Web.ISubscriptionToken" /> object that represents the subscription to the OnSendingHeaders pseudo event..</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

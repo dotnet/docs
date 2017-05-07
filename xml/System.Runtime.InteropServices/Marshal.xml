@@ -1702,7 +1702,7 @@
       <Docs>
         <param name="o">The RCW to be released.</param>
         <summary>Releases all references to a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW) by setting its reference count to 0.</summary>
-        <returns>The new value of the reference count of the RCW associated with the <paramref name="o" />parameter, which is 0 (zero) if the release is successful.</returns>
+        <returns>The new value of the reference count of the RCW associated with the <paramref name="o" /> parameter, which is 0 (zero) if the release is successful.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

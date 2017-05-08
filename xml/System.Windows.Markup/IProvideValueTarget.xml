@@ -78,7 +78,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value returned by <xref:System.Windows.Markup.IProvideValueTarget.TargetObject%2A> is the actual reference, not a type system identifier or other identifier. The value can also be `null`; see Remarks in <xref:System.Windows.Markup.IProvideValueTarget>.  
+ The value returned by <xref:System.Windows.Markup.IProvideValueTarget.TargetObject%2A> is the actual reference, not a type system identifier or other identifier. The value can also be `null`; see <xref:System.Windows.Markup.IProvideValueTarget>.  
   
 > [!IMPORTANT]
 >  When using the service, it is particularly important not to modify the object referenced by the <xref:System.Windows.Markup.IProvideValueTarget.TargetObject%2A> property, or other objects referenced by that object as properties that are not specifically the value-conversion case you are handling. For WPF specifically, changing the target object could cause unexpected changes that would invalidate the WPF  property system.  
@@ -106,7 +106,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value can also be `null`; see Remarks in <xref:System.Windows.Markup.IProvideValueTarget>.  
+ The value can also be `null`; see <xref:System.Windows.Markup.IProvideValueTarget>.  
   
 ## WPF Usage Notes  
  For a dependency property, the default WPF service may return a <xref:System.Windows.DependencyProperty>, such that the markup extension or type converter can use metadata. Otherwise, the returned object can be a <xref:System.Reflection.PropertyInfo> for a CLR property.  

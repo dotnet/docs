@@ -329,7 +329,7 @@
       <Docs>
         <param name="condition">The conditional expression to evaluate. If the condition is <see langword="true" />, the specified messages are not sent and the message box is not displayed.</param>
         <param name="message">The message to send to the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection.</param>
-        <param name="detailMessageFormat">The composite format string (see Remarks) to send to the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection. This message contains text intermixed with zero or more format items, which correspond to objects in the <c>args</c> array.</param>
+        <param name="detailMessageFormat">The composite format string to send to the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection. This message contains text intermixed with zero or more format items, which correspond to objects in the <c>args</c> array.</param>
         <param name="args">An object array that contains zero or more objects to format.</param>
         <summary>Checks for a condition; if the condition is <see langword="false" />, outputs two messages (simple and formatted) and displays a message box that shows the call stack.</summary>
         <remarks>
@@ -872,7 +872,7 @@ End of list of errors
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks) that contains text intermixed with zero or more format items, which correspond to objects in the <c>args</c> array.</param>
+        <param name="format">A composite format string that contains text intermixed with zero or more format items, which correspond to objects in the <c>args</c> array.</param>
         <param name="args">An object array containing zero or more objects to format.</param>
         <summary>Writes a formatted string followed by a line terminator to the trace listeners in the <see cref="P:System.Diagnostics.Debug.Listeners" /> collection.</summary>
         <remarks>
@@ -1702,7 +1702,7 @@ Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks) that contains text intermixed with zero or more format items, which correspond to objects in the <c>args</c> array.</param>
+        <param name="format">A composite format string that contains text intermixed with zero or more format items, which correspond to objects in the <c>args</c> array.</param>
         <param name="args">An object array that contains zero or more objects to format.</param>
         <summary>Writes a formatted message followed by a line terminator to the trace listeners in the <see cref="P:System.Diagnostics.Debug.Listeners" /> collection.</summary>
         <remarks>

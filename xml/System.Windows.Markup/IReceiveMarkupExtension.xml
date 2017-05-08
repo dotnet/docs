@@ -13,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a mechanism whereby types can declare that they can receive an expression (or another class) from a markup extension, where the output is a different property type than the target property. Do not use for .NET Framework 4 implementations; see Remarks.</summary>
+    <summary>Provides a mechanism whereby types can declare that they can receive an expression (or another class) from a markup extension, where the output is a different property type than the target property. Do not use for .NET Framework 4 implementations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -49,7 +49,7 @@
         <param name="property">The name of the target property.</param>
         <param name="markupExtension">The markup extension instance of the incoming data.</param>
         <param name="serviceProvider">Can provide additional services that should be performed when processing the markup extension data for a property value.</param>
-        <summary>Provides the handling for markup extensions that provide property values. Do not use for [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] implementations; see Remarks in <see cref="T:System.Windows.Markup.IReceiveMarkupExtension" />.</summary>
+        <summary>Provides the handling for markup extensions that provide property values. Do not use for [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] implementations; see <see cref="T:System.Windows.Markup.IReceiveMarkupExtension" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -208,7 +208,7 @@
         <param name="declaringType">The <see cref="T:System.Xaml.XamlType" /> information for the declaring type.</param>
         <param name="isAttachable">
           <see langword="true" /> to indicate that the member is attachable; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class using a string name and declaring <see cref="T:System.Xaml.XamlType" /> information. A <see cref="T:System.Xaml.XamlMember" /> that is constructed with this signature has significant limitations; see Remarks.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class using a string name and declaring <see cref="T:System.Xaml.XamlType" /> information. A <see cref="T:System.Xaml.XamlMember" /> that is constructed with this signature has significant limitations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1172,7 +1172,7 @@
       <Parameters />
       <Docs>
         <summary>Returns the <see cref="T:System.Xaml.XamlType" /> of the type where the <see cref="T:System.Xaml.XamlMember" /> can exist.</summary>
-        <returns>The type where the <see cref="T:System.Xaml.XamlMember" /> can exist. See Remarks.</returns>
+        <returns>The type where the <see cref="T:System.Xaml.XamlMember" /> can exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1199,8 +1199,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member. See Remarks.</summary>
-        <returns>The <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member. See Remarks.</returns>
+        <summary>Returns the <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member.</summary>
+        <returns>The <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1529,7 +1529,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="T:System.Xaml.XamlType" /> of the type where the <see cref="T:System.Xaml.XamlMember" /> can exist.</summary>
-        <value>The type where the <see cref="T:System.Xaml.XamlMember" /> can exist. See Remarks.</value>
+        <value>The type where the <see cref="T:System.Xaml.XamlMember" /> can exist.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1584,7 +1584,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member.</summary>
-        <value>The <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member. See Remarks.</value>
+        <value>The <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1619,7 +1619,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> object, which can be used for type conversion construction of XAML declared objects.</summary>
-        <value>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> value, with a <see cref="T:System.ComponentModel.TypeConverter" /> constraint on the generic. See Remarks.</value>
+        <value>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> value, with a <see cref="T:System.ComponentModel.TypeConverter" /> constraint on the generic.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1691,7 +1691,7 @@
 ## Remarks  
  Calling <xref:System.Xaml.XamlMember.ValueSerializer%2A> invokes <xref:System.Xaml.XamlMember.LookupValueSerializer%2A> or a specific override of that method. This behavior occurs when the initial internal reflection logic has not already set the information.  
   
- Not all cases that return a non-null property value for <xref:System.Xaml.XamlMember.ValueSerializer%2A> are necessarily a working <xref:System.Windows.Markup.ValueSerializer>. See Remarks in <xref:System.Xaml.XamlMember.TypeConverter%2A>; the same considerations apply to <xref:System.Xaml.XamlMember.ValueSerializer%2A>.  
+ Not all cases that return a non-null property value for <xref:System.Xaml.XamlMember.ValueSerializer%2A> are necessarily a working <xref:System.Windows.Markup.ValueSerializer>. See <xref:System.Xaml.XamlMember.TypeConverter%2A>; the same considerations apply to <xref:System.Xaml.XamlMember.ValueSerializer%2A>.  
   
  ]]></format>
         </remarks>

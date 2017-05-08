@@ -376,7 +376,7 @@
   
  -or-  
   
- <paramref name="declaringType" /> is not compatible with <paramref name="handle" />. For example, <paramref name="declaringType" /> is the runtime type handle of the generic type definition, and <paramref name="handle" /> comes from a constructed type. See Remarks.</exception>
+ <paramref name="declaringType" /> is not compatible with <paramref name="handle" />. For example, <paramref name="declaringType" /> is the runtime type handle of the generic type definition, and <paramref name="handle" /> comes from a constructed type.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
       </Docs>
     </Member>

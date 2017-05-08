@@ -292,7 +292,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than the length of the parameters array.</exception>
-        <exception cref="T:System.InvalidOperationException">Accessing this property when in parameters are not available. For details see the Remarks section.</exception>
+        <exception cref="T:System.InvalidOperationException">Accessing this property when in parameters are not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetOutParameterValue">
@@ -333,7 +333,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is greater than the length of the parameters array.</exception>
-        <exception cref="T:System.InvalidOperationException">Accessing this property when out parameters are not available. For details see the Remarks section.</exception>
+        <exception cref="T:System.InvalidOperationException">Accessing this property when out parameters are not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetReturnValue">
@@ -374,7 +374,7 @@
   
  OR  
   
- The return value is not available. For details see the Remarks section</exception>
+ The return value is not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="Headers">

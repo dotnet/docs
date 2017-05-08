@@ -2791,7 +2791,7 @@ July, 2009
         <Parameter Name="format" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="format">A standard date and time format string (see Remarks).</param>
+        <param name="format">A standard date and time format string.</param>
         <summary>Converts the value of this instance to all the string representations supported by the specified standard date and time format specifier.</summary>
         <returns>A string array where each element is the representation of the value of this instance formatted with the <paramref name="format" /> standard date and time format specifier.</returns>
         <remarks>
@@ -3010,7 +3010,7 @@ juillet 2009
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">A date and time format string (see Remarks).</param>
+        <param name="format">A date and time format string.</param>
         <param name="provider">An object that supplies culture-specific formatting information about this instance.</param>
         <summary>Converts the value of this instance to all the string representations supported by the specified standard date and time format specifier and culture-specific formatting information.</summary>
         <returns>A string array where each element is the representation of the value of this instance formatted with one of the standard date and time format specifiers.</returns>
@@ -4055,7 +4055,7 @@ juillet 2009
   
  `DateTime.Parse(String s, IFormatProvider provider, DateTypeStyles styles)`  
  For the conversion, uses the formatting conventions of a specified culture and interprets the string based on specified style flags ([example](#Parse3_Example)).  
-  
+
 <a name="Params"></a>   
 ## Parameters  
  This is a complete list of parameters for the <xref:System.DateTime.Parse%2A> method. For the parameters used by each overload, see the overload syntax above.  
@@ -6238,7 +6238,7 @@ An object that is equivalent to the date and time contained in `s`.
         <Parameter Name="format" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="format">A standard or custom date and time format string (see Remarks).</param>
+        <param name="format">A standard or custom date and time format string.</param>
         <summary>Converts the value of the current <see cref="T:System.DateTime" /> object to its equivalent string representation using the specified format and the formatting conventions of the current culture.</summary>
         <returns>A string representation of value of the current <see cref="T:System.DateTime" /> object as specified by <paramref name="format" />.</returns>
         <remarks>
@@ -6652,7 +6652,7 @@ An object that is equivalent to the date and time contained in `s`.
       </Parameters>
       <Docs>
         <param name="s">A string containing a date and time to convert.</param>
-        <param name="format">The required format of <c>s</c>. See the Remarks section for more information.</param>
+        <param name="format">The required format of <c>s</c>.</param>
         <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.</param>
         <param name="style">A bitwise combination of one or more enumeration values that indicate the permitted format of <c>s</c>.</param>
         <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <c>s</c>, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if either the <c>s</c> or <c>format</c> parameter is <see langword="null" />, is an empty string, or does not contain a date and time that correspond to the pattern specified in <c>format</c>. This parameter is passed uninitialized.</param>
@@ -6755,7 +6755,7 @@ An object that is equivalent to the date and time contained in `s`.
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert.</param>
-        <param name="formats">An array of allowable formats of <c>s</c>. See the Remarks section for more information.</param>
+        <param name="formats">An array of allowable formats of <c>s</c>.</param>
         <param name="provider">An object that supplies culture-specific format information about <c>s</c>.</param>
         <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
         <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <c>s</c>, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if <c>s</c> or <c>formats</c> is <see langword="null" />, <c>s</c> or an element of <c>formats</c> is an empty string, or the format of <c>s</c> is not exactly as specified by at least one of the format patterns in <c>formats</c>. This parameter is passed uninitialized.</param>

@@ -149,7 +149,7 @@
       <Docs>
         <param name="innerStream">A <see cref="T:System.IO.Stream" /> object used by the <see cref="T:System.Net.Security.NegotiateStream" /> for sending and receiving data.</param>
         <param name="leaveInnerStreamOpen">
-          <see langword="true" /> to indicate that closing this <see cref="T:System.Net.Security.NegotiateStream" /> has no effect on <c>innerstream</c>; <see langword="false" /> to indicate that closing this <see cref="T:System.Net.Security.NegotiateStream" /> also closes <c>innerStream</c>. See the Remarks section for more information.</param>
+          <see langword="true" /> to indicate that closing this <see cref="T:System.Net.Security.NegotiateStream" /> has no effect on <c>innerstream</c>; <see langword="false" /> to indicate that closing this <see cref="T:System.Net.Security.NegotiateStream" /> also closes <c>innerStream</c>.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Security.NegotiateStream" /> class using the specified <see cref="T:System.IO.Stream" /> and stream closure behavior.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

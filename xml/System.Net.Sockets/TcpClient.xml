@@ -247,7 +247,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="hostname" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="port" /> parameter is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="Active">
@@ -327,7 +327,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -382,7 +382,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="address" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
@@ -441,7 +441,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="addresses" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
@@ -498,7 +498,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="host" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
@@ -636,7 +636,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="remoteEp" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.TcpClient" /> is closed.</exception>
       </Docs>
     </Member>
@@ -690,7 +690,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="address" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="port" /> is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.TcpClient" /> is closed.</exception>
       </Docs>
@@ -744,7 +744,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="ipAddresses" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets that use the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> flag or the <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> flag.</exception>
@@ -802,7 +802,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="hostname" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="port" /> parameter is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.TcpClient" /> is closed.</exception>
       </Docs>
@@ -857,7 +857,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="address" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="port" /> is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.TcpClient" /> is closed.</exception>
       </Docs>
@@ -912,7 +912,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="ipAddresses" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets that use the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> flag or the <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> flag.</exception>
@@ -970,7 +970,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="hostname" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="port" /> parameter is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.TcpClient" /> is closed.</exception>
       </Docs>
@@ -1140,7 +1140,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="asyncResult" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="asyncResult" /> parameter was not returned by a call to a <see cref="Overload:System.Net.Sockets.TcpClient.BeginConnect" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Net.Sockets.TcpClient.EndConnect(System.IAsyncResult)" /> method was previously called for the asynchronous connection.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" />. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The underlying <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>

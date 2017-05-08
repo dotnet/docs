@@ -248,7 +248,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">The accepting socket is not listening for connections. You must call <see cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" /> and <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" /> before calling <see cref="M:System.Net.Sockets.Socket.Accept" />.</exception>
       </Docs>
@@ -318,7 +318,7 @@
  You must call the <see cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" /> and <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" /> method before calling the <see cref="M:System.Net.Sockets.Socket.AcceptAsync(System.Net.Sockets.SocketAsyncEventArgs)" /> method.  
   
  This exception also occurs if the socket is already connected or a socket operation was already in progress using the specified <paramref name="e" /> parameter.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
@@ -411,7 +411,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -489,7 +489,7 @@
  The accepted socket is bound.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="receiveSize" /> is less than 0.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginAccept">
@@ -571,7 +571,7 @@
  The accepted socket is bound.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="receiveSize" /> is less than 0.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginAccept">
@@ -655,7 +655,7 @@
  The accepted socket is bound.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="receiveSize" /> is less than 0.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
@@ -727,7 +727,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> is <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />ing.</exception>
@@ -802,7 +802,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="address" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Net.Sockets.Socket" /> is not in the socket family.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
@@ -879,7 +879,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="addresses" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets that use <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
@@ -1017,7 +1017,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The operating system is Windows 2000 or earlier, and this method requires Windows XP.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> object has been closed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
@@ -1086,7 +1086,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
@@ -1159,7 +1159,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
@@ -1246,7 +1246,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1332,7 +1332,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1436,7 +1436,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> is less than 0.  
   
@@ -1527,7 +1527,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> is less than 0.  
   
@@ -2114,7 +2114,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> is less than 0.  
   
@@ -2197,7 +2197,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="localEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the host defined by <paramref name="localEP" />. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" /></permission>
@@ -2244,7 +2244,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -2449,7 +2449,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> is <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />ing.</exception>
@@ -2517,7 +2517,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="address" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets in the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> families.</exception>
         <exception cref="T:System.ArgumentException">The length of <paramref name="address" /> is zero.</exception>
@@ -2585,7 +2585,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="addresses" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets in the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> families.</exception>
         <exception cref="T:System.ArgumentException">The length of <paramref name="address" /> is zero.</exception>
@@ -2655,7 +2655,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="host" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets in the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> families.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> is <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />ing.</exception>
@@ -2729,7 +2729,7 @@
         <exception cref="T:System.ArgumentException">An argument is not valid. This exception occurs if multiple buffers are specified, the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.BufferList" /> property is not null.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="e" /> parameter cannot be null and the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" /> cannot be null.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> is listening or a socket operation was already in progress using the <see cref="T:System.Net.Sockets.SocketAsyncEventArgs" /> object specified in the <paramref name="e" /> parameter.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method. This exception also occurs if the local endpoint and the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" /> are not the same address family.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
@@ -2807,7 +2807,7 @@
         <exception cref="T:System.ArgumentException">An argument is not valid. This exception occurs if multiple buffers are specified, the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.BufferList" /> property is not null.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="e" /> parameter cannot be null and the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" /> cannot be null.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> is listening or a socket operation was already in progress using the <see cref="T:System.Net.Sockets.SocketAsyncEventArgs" /> object specified in the <paramref name="e" /> parameter.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method. This exception also occurs if the local endpoint and the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" /> are not the same address family.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
@@ -2913,7 +2913,7 @@
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">This method requires Windows 2000 or earlier, or the exception will be thrown.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> object has been closed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="DisconnectAsync">
@@ -3089,7 +3089,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This property can be set only for sockets in the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> families.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3339,7 +3339,7 @@
           <paramref name="asyncResult" /> was not created by a call to <see cref="M:System.Net.Sockets.Socket.BeginAccept(System.AsyncCallback,System.Object)" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" /> method was previously called.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" /> See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" /></exception>
       </Docs>
     </Member>
     <Member MemberName="EndAccept">
@@ -3404,7 +3404,7 @@
           <paramref name="asyncResult" /> was not created by a call to <see cref="M:System.Net.Sockets.Socket.BeginAccept(System.AsyncCallback,System.Object)" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" /> method was previously called.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" />. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndConnect">
@@ -3463,7 +3463,7 @@
           <paramref name="result" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginConnect(System.Net.EndPoint,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" /> was previously called for the asynchronous connection.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3520,7 +3520,7 @@
           <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginDisconnect(System.Boolean,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndDisconnect(System.IAsyncResult)" /> was previously called for the asynchronous connection.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.Net.WebException">The disconnect request has timed out.</exception>
       </Docs>
     </Member>
@@ -3590,7 +3590,7 @@
           <paramref name="result" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" /> was previously called for the asynchronous read.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3651,7 +3651,7 @@
           <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" /> was previously called for the asynchronous read.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3716,7 +3716,7 @@
           <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndReceiveFrom(System.IAsyncResult,System.Net.EndPoint@)" /> was previously called for the asynchronous read.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3777,7 +3777,7 @@
           <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginReceiveMessageFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndReceiveMessageFrom(System.IAsyncResult,System.Net.Sockets.SocketFlags@,System.Net.EndPoint@,System.Net.Sockets.IPPacketInformation@)" /> was previously called for the asynchronous read.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3848,7 +3848,7 @@
           <paramref name="result" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" /> was previously called for the asynchronous send.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3912,7 +3912,7 @@
           <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" /> was previously called for the asynchronous send.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -4037,7 +4037,7 @@
           <paramref name="result" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndSendTo(System.IAsyncResult)" /> was previously called for the asynchronous send.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -4179,7 +4179,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.  
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.  
   
  -or-  
   
@@ -4240,7 +4240,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.  
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.  
   
  \- or -  
   
@@ -4303,7 +4303,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.  
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.  
   
  \- or -  
   
@@ -4388,7 +4388,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to change the blocking mode without using the <see cref="P:System.Net.Sockets.Socket.Blocking" /> property.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
@@ -4449,7 +4449,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to change the blocking mode without using the <see cref="P:System.Net.Sockets.Socket.Blocking" /> property.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to execute unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
@@ -4615,7 +4615,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -4668,7 +4668,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -4764,7 +4764,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" />. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -5039,7 +5039,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
@@ -5098,7 +5098,7 @@
         </remarks>
         <altCompliant cref="M:System.Net.Sockets.Socket.Receive(System.Byte[])" />
         <exception cref="T:System.ArgumentNullException">The <paramref name="buffer" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -5167,7 +5167,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
@@ -5247,7 +5247,7 @@
  -or-  
   
  <paramref name="buffers" />.Count is zero.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
       </Docs>
@@ -5321,7 +5321,7 @@
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="size" /> exceeds the size of <paramref name="buffer" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
@@ -5395,7 +5395,7 @@
  -or-  
   
  <paramref name="buffers" />.Count is zero.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
       </Docs>
@@ -5649,7 +5649,7 @@
         <exception cref="T:System.InvalidOperationException">A socket operation was already in progress using the <see cref="T:System.Net.Sockets.SocketAsyncEventArgs" /> object specified in the <paramref name="e" /> parameter.</exception>
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReceiveBufferSize">
@@ -5772,7 +5772,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
@@ -5855,7 +5855,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
@@ -6057,7 +6057,7 @@
   
  -or-  
   
- An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+ An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
       </Docs>
@@ -6229,7 +6229,7 @@
   
  -or-  
   
- An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+ An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">The operating system is Windows 2000 or earlier, and this method requires Windows XP.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
@@ -6399,7 +6399,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -6479,7 +6479,7 @@
  -and-  
   
  The <paramref name="checkError" /> parameter is <see langword="null" /> or empty.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -6546,7 +6546,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -6678,7 +6678,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -6740,7 +6740,7 @@
           <paramref name="buffers" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="buffers" /> is empty.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -6819,7 +6819,7 @@
   
  -or-  
   
- An operating system error occurs while accessing the socket. See the Remarks section for more information.</exception>
+ An operating system error occurs while accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -6888,7 +6888,7 @@
           <paramref name="buffers" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="buffers" /> is empty.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -6983,7 +6983,7 @@
   
  -or-  
   
- An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />. See the Remarks section for more information.</exception>
+ An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -7080,7 +7080,7 @@
   
  -or-  
   
- An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />. See the Remarks section for more information.</exception>
+ An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -7253,7 +7253,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> object is not in blocking mode and cannot accept this synchronous call.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file <paramref name="fileName" /> was not found.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="SendFile">
@@ -7325,7 +7325,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> object is not in blocking mode and cannot accept this synchronous call.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file <paramref name="fileName" /> was not found.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="SendPacketsAsync">
@@ -7514,7 +7514,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -7587,7 +7587,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -7663,7 +7663,7 @@
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="size" /> exceeds the size of <paramref name="buffer" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -7759,7 +7759,7 @@
   
  -or-  
   
- An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />. See the Remarks section for more information.</exception>
+ An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
       </Docs>
@@ -7971,7 +7971,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> object has been closed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetSocketOption">
@@ -8028,7 +8028,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -8152,7 +8152,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -8209,7 +8209,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="optionValue" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -8285,7 +8285,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>

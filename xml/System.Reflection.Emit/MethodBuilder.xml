@@ -1056,7 +1056,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases. This property is not supported in dynamic assemblies. See Remarks.</exception>
+        <exception cref="T:System.NotSupportedException">In all cases. This property is not supported in dynamic assemblies.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -1082,7 +1082,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases. This property is not supported in dynamic assemblies. See Remarks.</exception>
+        <exception cref="T:System.NotSupportedException">In all cases. This property is not supported in dynamic assemblies.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -1108,7 +1108,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">In all cases. This property is not supported in dynamic assemblies. See Remarks.</exception>
+        <exception cref="T:System.NotSupportedException">In all cases. This property is not supported in dynamic assemblies.</exception>
       </Docs>
     </Member>
     <Member MemberName="MakeGenericMethod">

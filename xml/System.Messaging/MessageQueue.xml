@@ -201,7 +201,7 @@
         <Parameter Name="sharedModeDenyReceive" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="path">The location of the queue referenced by this <see cref="T:System.Messaging.MessageQueue" />, which can be "." for the local computer. For information about the proper syntax for this parameter, see the Remarks section.</param>
+        <param name="path">The location of the queue referenced by this <see cref="T:System.Messaging.MessageQueue" />, which can be "." for the local computer.</param>
         <param name="sharedModeDenyReceive">
           <see langword="true" /> to grant exclusive read access to the first application that accesses the queue; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueue" /> class that references the Message Queuing queue at the specified path and with the specified read-access restriction.</summary>

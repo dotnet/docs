@@ -114,7 +114,7 @@
   
  The default is <see langword="false" />.  
   
- Do not routinely ask to rehandle a routed event. For more information, see Remarks.</param>
+ Do not routinely ask to rehandle a routed event.</param>
         <summary>Adds a routed event handler for a specified routed event, adding the handler to the handler collection on the current element. Specify <paramref name="handledEventsToo" /> as <see langword="true" /> to have the provided handler be invoked for routed event that had already been marked as handled by another element along the event route.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -977,7 +977,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the element can receive focus.</summary>
         <value>
-          <see langword="true" /> if the element is focusable; otherwise <see langword="false" />. The default is <see langword="false" />; however, see Remarks.</value>
+          <see langword="true" /> if the element is focusable; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

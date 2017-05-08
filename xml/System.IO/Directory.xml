@@ -519,14 +519,14 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of directories in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of directories in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns an enumerable collection of directory names that match a search pattern in a specified path.</summary>
         <returns>An enumerable collection of the full names (including paths) for the directories in the directory specified by <paramref name="path" /> and that match the specified search pattern.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -602,7 +602,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of directories in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of directories in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or should include all subdirectories.  
   
  The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
@@ -612,7 +612,7 @@ Directory::CreateDirectory("Public\\Html");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -755,14 +755,14 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of files in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of files in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns an enumerable collection of file names that match a search pattern in a specified path.</summary>
         <returns>An enumerable collection of the full names (including paths) for the files in the directory specified by <paramref name="path" /> and that match the specified search pattern.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -851,7 +851,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of files in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of files in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or should include all subdirectories.  
   
  The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
@@ -861,7 +861,7 @@ Directory::CreateDirectory("Public\\Html");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1004,14 +1004,14 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of file-system entries in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of file-system entries in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns an enumerable collection of file names and directory names that  match a search pattern in a specified path.</summary>
         <returns>An enumerable collection of file-system entries in the directory specified by <paramref name="path" /> and that match the specified search pattern.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`..  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`..  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1087,7 +1087,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against file-system entries in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against file-system entries in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values  that specifies whether the search operation should include only the current directory or should include all subdirectories.  
   
  The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
@@ -1097,7 +1097,7 @@ Directory::CreateDirectory("Public\\Html");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1586,7 +1586,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of subdirectories in <c>path</c>. This parameter can contain a combination of valid literal and wildcard characters (see Remarks), but doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of subdirectories in <c>path</c>. This parameter can contain a combination of valid literal and wildcard characters, but it doesn't support regular expressions.</param>
         <summary>Returns the names of subdirectories (including their paths) that match the specified search pattern in the specified directory.</summary>
         <returns>An array of the full names (including paths) of the subdirectories that match the search pattern in the specified directory, or an empty array if no directories are found.</returns>
         <remarks>
@@ -1595,7 +1595,7 @@ Directory::CreateDirectory("Public\\Html");
 ## Remarks  
  This method returns all subdirectories directly under the specified directory that match the specified search pattern. If the specified directory has no subdirectories, or no subdirectories match the `searchPattern` parameter, this method returns an empty array. Only the top directory is searched. If you want to search the subdirectories as well, use the <xref:System.IO.Directory.GetDirectories%28System.String%2CSystem.String%2CSystem.IO.SearchOption%29> method and specify <xref:System.IO.SearchOption.AllDirectories> in the `searchOption` parameter.  
   
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1667,7 +1667,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of subdirectories in <c>path</c>. This parameter can contain a combination of valid literal and wildcard characters (see Remarks), but doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of subdirectories in <c>path</c>. This parameter can contain a combination of valid literal and wildcard characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include all subdirectories or only the current directory.</param>
         <summary>Returns the names of the subdirectories (including their paths) that match the specified search pattern in the specified directory, and optionally searches subdirectories.</summary>
         <returns>An array of the full names (including paths) of the subdirectories that match the specified criteria, or an empty array if no directories are found.</returns>
@@ -1677,7 +1677,7 @@ Directory::CreateDirectory("Public\\Html");
 ## Remarks  
  The `path` parameter can specify relative or absolute path information, and is not case-sensitive. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1880,7 +1880,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of files in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of files in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns the names of files (including their paths) that match the specified search pattern in the specified directory.</summary>
         <returns>An array of the full names (including paths) for the files in the specified directory that match the specified search pattern, or an empty array if no files are found.</returns>
         <remarks>
@@ -1889,7 +1889,7 @@ Directory::CreateDirectory("Public\\Html");
 ## Remarks  
  The returned file names are appended to the supplied `path` parameter and the order of the returned file names is not guaranteed; use the <xref:System.Array.Sort%2A> method if a specific sort order is required.  
   
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1978,7 +1978,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of files in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of files in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include all subdirectories or only the current directory.</param>
         <summary>Returns the names of files (including their paths) that match the specified search pattern in the specified directory, using a value to determine whether to search subdirectories.</summary>
         <returns>An array of the full names (including paths) for the files in the specified directory that match the specified search pattern and option, or an empty array if no files are found.</returns>
@@ -1988,7 +1988,7 @@ Directory::CreateDirectory("Public\\Html");
 ## Remarks  
  The returned file names are appended to the supplied  parameter `path` and the order of the returned file names is not guaranteed; use the <xref:System.Array.Sort%2A> method if a specific sort order is required.  
   
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -2138,7 +2138,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of file and directories in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of file and directories in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns an array of file names and directory names that that match a search pattern in a specified path.</summary>
         <returns>An array of file names and directory names that match the specified search criteria, or an empty array if no files or directories are found.</returns>
         <remarks>
@@ -2147,7 +2147,7 @@ Directory::CreateDirectory("Public\\Html");
 ## Remarks  
  The order of the returned file and directory names is not guaranteed; use the <xref:System.Array.Sort%2A> method if a specific sort order is required.  
   
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -2227,7 +2227,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of files and directories in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of files and directories in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or should include all subdirectories.  
   
  The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
@@ -2239,7 +2239,7 @@ Directory::CreateDirectory("Public\\Html");
 ## Remarks  
  The order of the returned file and directory names is not guaranteed; use the <xref:System.Array.Sort%2A> method if a specific sort order is required.  
   
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  

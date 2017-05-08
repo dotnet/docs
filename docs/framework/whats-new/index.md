@@ -120,7 +120,7 @@ Starting with the .NET Framework 4.7, WCF allows you to configure TSL 1.1 or TLS
 
 **Improved reliability of WCF applications and WCF serialization**
 
-WCF includes a number of code changes that eliminate race conditions, thereby improving improving performance and the reliability of serialization options. These include:
+WCF includes a number of code changes that eliminate race conditions, thereby improving performance and the reliability of serialization options. These include:
 
 - Better support for mixing asynchronous and synchronous code in calls to **SocketConnection.BeginRead** and **SocketConnection.Read**.
 - Improved reliability when aborting a connection with **SharedConnectionListener** and **DuplexChannelBinder**.

@@ -174,7 +174,7 @@ public class Employees
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the type of the database column.</summary>
-        <value>See Remarks.</value>
+        <value>String value that specifies the exact text that defines the column in a Transact-SQL table declaration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

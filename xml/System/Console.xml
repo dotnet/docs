@@ -3280,7 +3280,7 @@
         <Parameter Name="arg0" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">An object to write using <c>format</c>.</param>
         <summary>Writes the text representation of the specified object to the standard output stream using the specified format information.</summary>
         <remarks>
@@ -3361,7 +3361,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg">An array of objects to write using <c>format</c>.</param>
         <summary>Writes the text representation of the specified array of objects to the standard output stream using the specified format information.</summary>
         <remarks>
@@ -3491,7 +3491,7 @@
         <Parameter Name="arg1" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to write using <c>format</c>.</param>
         <param name="arg1">The second object to write using <c>format</c>.</param>
         <summary>Writes the text representation of the specified objects to the standard output stream using the specified format information.</summary>
@@ -3569,7 +3569,7 @@
         <Parameter Name="arg2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to write using <c>format</c>.</param>
         <param name="arg1">The second object to write using <c>format</c>.</param>
         <param name="arg2">The third object to write using <c>format</c>.</param>
@@ -3650,7 +3650,7 @@
         <Parameter Name="arg3" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to write using <c>format</c>.</param>
         <param name="arg1">The second object to write using <c>format</c>.</param>
         <param name="arg2">The third object to write using <c>format</c>.</param>
@@ -4378,7 +4378,7 @@
         <Parameter Name="arg0" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">An object to write using <c>format</c>.</param>
         <summary>Writes the text representation of the specified object, followed by the current line terminator, to the standard output stream using the specified format information.</summary>
         <remarks>
@@ -4459,7 +4459,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg">An array of objects to write using <c>format</c>.</param>
         <summary>Writes the text representation of the specified array of objects, followed by the current line terminator, to the standard output stream using the specified format information.</summary>
         <remarks>
@@ -4590,7 +4590,7 @@
         <Parameter Name="arg1" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to write using <c>format</c>.</param>
         <param name="arg1">The second object to write using <c>format</c>.</param>
         <summary>Writes the text representation of the specified objects, followed by the current line terminator, to the standard output stream using the specified format information.</summary>
@@ -4669,7 +4669,7 @@
         <Parameter Name="arg2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to write using <c>format</c>.</param>
         <param name="arg1">The second object to write using <c>format</c>.</param>
         <param name="arg2">The third object to write using <c>format</c>.</param>
@@ -4751,7 +4751,7 @@
         <Parameter Name="arg3" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to write using <c>format</c>.</param>
         <param name="arg1">The second object to write using <c>format</c>.</param>
         <param name="arg2">The third object to write using <c>format</c>.</param>

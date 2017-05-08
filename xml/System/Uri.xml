@@ -399,7 +399,7 @@ ftp://myUrl/%2E%2E/%2E%2E
       <Docs>
         <param name="uriString">The URI.</param>
         <param name="dontEscape">
-          <see langword="true" /> if <c>uriString</c> is completely escaped; otherwise, <see langword="false" />. See Remarks.</param>
+          <see langword="true" /> if <c>uriString</c> is completely escaped; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class with the specified URI, with explicit control of character escaping.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -837,7 +837,7 @@ ftp://myUrl/%2E%2E/%2E%2E
         <param name="baseUri">The base URI.</param>
         <param name="relativeUri">The relative URI to add to the base URI.</param>
         <param name="dontEscape">
-          <see langword="true" /> if <c>uriString</c> is completely escaped; otherwise, <see langword="false" />. See Remarks.</param>
+          <see langword="true" /> if <c>uriString</c> is completely escaped; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class based on the specified base and relative URIs, with explicit control of character escaping.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

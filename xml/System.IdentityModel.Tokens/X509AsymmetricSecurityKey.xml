@@ -339,7 +339,7 @@
         <param name="algorithm">The cryptographic algorithm.</param>
         <summary>Gets a value that indicates whether the specified algorithm is supported by this class.</summary>
         <returns>
-          <see langword="true" /> when the specified algorithm is <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl" />, <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url" />, <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl" />, <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url" />, or <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" /> and the public key is of the right type; otherwise, <see langword="false" />. See the remarks for details.</returns>
+          <see langword="true" /> when the specified algorithm is <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl" />, <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url" />, <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl" />, <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url" />, or <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" /> and the public key is of the right type; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

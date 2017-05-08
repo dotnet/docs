@@ -543,7 +543,7 @@ Label11="Mobile Phone:"
       </Parameters>
       <Docs>
         <param name="resourceName">The name of a resource.</param>
-        <param name="resourceType">When this method returns, contains a string that represents the type name of the retrieved resource (see the Remarks section for details). This parameter is passed uninitialized.</param>
+        <param name="resourceType">When this method returns, contains a string that represents the type name of the retrieved resource. This parameter is passed uninitialized.</param>
         <param name="resourceData">When this method returns, contains a byte array that is the binary representation of the retrieved type. This parameter is passed uninitialized.</param>
         <summary>Retrieves the type name and data of a named resource from an open resource file or stream.</summary>
         <remarks>

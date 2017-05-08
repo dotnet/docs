@@ -1055,7 +1055,7 @@ ShowNumbers.exe
         <param name="createIfNotExists">
           <see langword="true" /> to load the resource set, if it has not been loaded yet; otherwise, <see langword="false" />.</param>
         <param name="tryParents">
-          <see langword="true" /> to use resource fallback to load an appropriate resource if the resource set cannot be found; <see langword="false" /> to bypass the resource fallback process. (See the Remarks section.)</param>
+          <see langword="true" /> to use resource fallback to load an appropriate resource if the resource set cannot be found; <see langword="false" /> to bypass the resource fallback process.</param>
         <summary>Retrieves the resource set for a particular culture.</summary>
         <returns>The resource set for the specified culture.</returns>
         <remarks>

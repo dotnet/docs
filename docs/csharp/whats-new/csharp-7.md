@@ -47,18 +47,18 @@ in this version.
 Previously, you would need to separate the declaration of the out variable
 and its initialization into two different statements:
 
-[!code-csharp[OutVariableOldStyle](../../../samples/snippets/csharp/new-in-7/program.cs#03_OutVariableOldStyle "classic out variable declaration")]
+[!code-csharp[OutVariableOldStyle](../../../samples/snippets/csharp/new-in-7/Program.cs#03_OutVariableOldStyle "classic out variable declaration")]
 
 You can now declare `out` variables in the argument list of a method call,
 rather than writing a separate declaration statement:
 
-[!code-csharp[OutVariableDeclarations](../../../samples/snippets/csharp/new-in-7/program.cs#01_OutVariableDeclarations "Out variable declarations")]
+[!code-csharp[OutVariableDeclarations](../../../samples/snippets/csharp/new-in-7/Program.cs#01_OutVariableDeclarations "Out variable declarations")]
 
 You may want to specify the type of the `out` variable for clarity,
 as shown above. However, the language does support using an implicitly
 typed local variable:
 
-[!code-csharp[OutVarVariableDeclarations](../../../samples/snippets/csharp/new-in-7/program.cs#02_OutVarVariableDeclarations "Implicitly typed Out variable")]
+[!code-csharp[OutVarVariableDeclarations](../../../samples/snippets/csharp/new-in-7/Program.cs#02_OutVarVariableDeclarations "Implicitly typed Out variable")]
 
 * The code is easier to read. 
     - You declare the out variable where you use it, not on another line above.
@@ -98,14 +98,14 @@ The fields are not validated, and you cannot define your own methods
 
 You can create a tuple by assigning each member to a value:
 
-[!code-csharp[UnnamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#04_UnnamedTuple "Unnamed tuple")]
+[!code-csharp[UnnamedTuple](../../../samples/snippets/csharp/new-in-7/Program.cs#04_UnnamedTuple "Unnamed tuple")]
 
 That assignment creates a tuple whose members are `Item1` and `Item2`,
 following the existing @System.Tuple syntax.
 You can modify that assignment to create a tuple that provides semantic
 names to each of the members of the tuple:
 
-[!code-csharp[NamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#05_NamedTuple "Named tuple")]
+[!code-csharp[NamedTuple](../../../samples/snippets/csharp/new-in-7/Program.cs#05_NamedTuple "Named tuple")]
 
 > [!NOTE]
 > The new tuples features require the `System.ValueTuple` type. For Visual Studio 2017,
@@ -115,12 +115,12 @@ The `namedLetters` tuple contains fields referred to as `Alpha` and
 `Beta`. In a tuple assignment, you can also specify the names of the fields
 on the right-hand side of the assignment:
 
-[!code-csharp[ImplicitNamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
+[!code-csharp[ImplicitNamedTuple](../../../samples/snippets/csharp/new-in-7/Program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
 
 The language allows you to specify names for the fields on both the
 left and right-hand side of the assignment:
 
-[!code-csharp[NamedTupleConflict](../../../samples/snippets/csharp/new-in-7/program.cs#07_NamedTupleConflict "Named tuple conflict")]
+[!code-csharp[NamedTupleConflict](../../../samples/snippets/csharp/new-in-7/Program.cs#07_NamedTupleConflict "Named tuple conflict")]
 
 The line above generates a warning, `CS8123`, telling you that the names on the right
 side of the assignment, `Alpha` and `Beta` are ignored because they conflict
@@ -137,7 +137,7 @@ It is a simpler, lightweight syntax to define a data structure that carries
 more than one value. The example method below returns the minimum and maximum
 values found in a sequence of integers:
 
-[!code-csharp[TupleReturningMethod](../../../samples/snippets/csharp/new-in-7/program.cs#08_TupleReturningMethod "Tuple returning method")]
+[!code-csharp[TupleReturningMethod](../../../samples/snippets/csharp/new-in-7/Program.cs#08_TupleReturningMethod "Tuple returning method")]
 
 Using tuples in this way offers several advantages:
 
@@ -149,13 +149,13 @@ The declaration for the method provides the names for the fields of the
 tuple that is returned. When you call the method, the return value is a 
 tuple whose fields are `Max` and `Min`:
 
-[!code-csharp[CallingTupleMethod](../../../samples/snippets/csharp/new-in-7/program.cs#09_CallingTupleMethod "Calling a tuple returning method")]
+[!code-csharp[CallingTupleMethod](../../../samples/snippets/csharp/new-in-7/Program.cs#09_CallingTupleMethod "Calling a tuple returning method")]
 
 There may be times when you want to unpackage the members of a tuple that
 were returned from a method.  You can do that by declaring separate variables
 for each of the values in the tuple. This is called *deconstructing* the tuple:
 
-[!code-csharp[CallingWithDeconstructor](../../../samples/snippets/csharp/new-in-7/program.cs#10_CallingWithDeconstructor "Deconstructing a tuple")]
+[!code-csharp[CallingWithDeconstructor](../../../samples/snippets/csharp/new-in-7/Program.cs#10_CallingWithDeconstructor "Deconstructing a tuple")]
 
 <!-- Add wildcards here, if they are in C# 7
 -->
@@ -171,12 +171,12 @@ the `X` and `Y` coordinates:
  
 You can extract the individual fields by assigning a tuple to a `Point`:
 
-[!code-csharp[DeconstructPoint](../../../samples/snippets/csharp/new-in-7/program.cs#12_DeconstructPoint "Deconstruct a point")]
+[!code-csharp[DeconstructPoint](../../../samples/snippets/csharp/new-in-7/Program.cs#12_DeconstructPoint "Deconstruct a point")]
 
 You are not bound by the names defined in the `Deconstruct` method. You
 can rename the extract variables as part of the assignment:  
 
-[!code-csharp[DeconstructNames](../../../samples/snippets/csharp/new-in-7/program.cs#13_DeconstructNames "Deconstruct with new names")]
+[!code-csharp[DeconstructNames](../../../samples/snippets/csharp/new-in-7/Program.cs#13_DeconstructNames "Deconstruct with new names")]
 
 You can learn more in depth about tuples in the
 [tuples topic](../tuples.md).
@@ -300,7 +300,7 @@ Second, this method is returning the indices to the item in the matrix.
 That leads callers to write code that uses those indices to dereference
 the matrix and modify a single element:
 
-[!code-csharp[UpdateItemFromIndices](../../../samples/snippets/csharp/new-in-7/program.cs#21_UpdateItemFromIndices "Update Item From Indices")]
+[!code-csharp[UpdateItemFromIndices](../../../samples/snippets/csharp/new-in-7/Program.cs#21_UpdateItemFromIndices "Update Item From Indices")]
 
 You'd rather write a method that returns a *reference*
 to the element of the matrix that you want to change. You could only accomplish
@@ -340,7 +340,7 @@ Now that the method returns a reference to the integer value in the
 matrix, you need to modify where it's called.  The `var` declaration
 means that `valItem` is now an `int` rather than a tuple:
 
-[!code-csharp[AssignRefReturnToValue](../../../samples/snippets/csharp/new-in-7/program.cs#23_AssignRefReturnToValue "Assign ref return to value")]
+[!code-csharp[AssignRefReturnToValue](../../../samples/snippets/csharp/new-in-7/Program.cs#23_AssignRefReturnToValue "Assign ref return to value")]
 
 The second `WriteLine` statement in the example above prints out the value `42`,
 not `24`. The variable `valItem` is an `int`, not a `ref int`. The `var`
@@ -353,7 +353,7 @@ In order to get the result you want, you need to add the `ref` modifier
 to the local variable declaration to make the variable a reference when
 the return value is a reference:
 
-[!code-csharp[AssignRefReturn](../../../samples/snippets/csharp/new-in-7/program.cs#24_AssignRefReturn "Assign ref return")]
+[!code-csharp[AssignRefReturn](../../../samples/snippets/csharp/new-in-7/Program.cs#24_AssignRefReturn "Assign ref return")]
 
 Now, the second `WriteLine` statement in the example above will print 
 out the value `24`, indicating that the storage in the matrix has been
@@ -404,7 +404,7 @@ Let's start with an iterator method:
 
 Examine the code below that calls the iterator method incorrectly:
 
-[!code-csharp[CallIteratorMethod](../../../samples/snippets/csharp/new-in-7/program.cs#26_CallIteratorMethod "Call iterator method")]
+[!code-csharp[CallIteratorMethod](../../../samples/snippets/csharp/new-in-7/Program.cs#26_CallIteratorMethod "Call iterator method")]
 
 The exception is thrown when `resultSet` is iterated, not when `resultSet` is created.
 In this contained example, most developers could quickly diagnose the

@@ -31,7 +31,10 @@ Public Class Form1
     '/ </summary>
     Protected Overloads Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing Then
-            If (components IsNot Nothing) Then
+            If fnt IsNot Nothing Then
+                fnt.Dispose()
+            End If
+            If components IsNot Nothing Then
                 components.Dispose()
             End If
         End If
@@ -65,6 +68,7 @@ Public Class Form1
     ' This example assumes that the Form_Load event handler method is connected 
     ' to the Load event of the form.
     Private pictureBox1 As New PictureBox()
+    Private fnt as New Font("Arial", 10)
 
     Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ' Dock the PictureBox to the form and set its background to white.
@@ -84,7 +88,7 @@ Public Class Form1
 
         ' Draw a string on the PictureBox.
         g.DrawString("This is a diagonal line drawn on the control", _
-            New Font("Arial", 10), Brushes.Red, New PointF(30.0F, 30.0F))
+            fnt, Brushes.Red, New PointF(30.0F, 30.0F))
         ' Draw a line in the PictureBox.
         g.DrawLine(System.Drawing.Pens.Red, pictureBox1.Left, _ 
             pictureBox1.Top, pictureBox1.Right, pictureBox1.Bottom)

@@ -13,7 +13,7 @@ ms.assetid: "18cf7a4b-29f0-4b14-85b8-80af754aabd8"
 ---
 # Ref returns and ref locals
 
-Starting with C# 7, C# supports reference return values (ref returns). A reference return value allows a method to to return a reference to an object, rather than a value, back to a caller. 
+Starting with C# 7, C# supports reference return values (ref returns). A reference return value allows a method to return a reference to an object, rather than a value, back to a caller. 
 
 ## What is a reference return value?
 
@@ -25,7 +25,7 @@ Most developers are familiar with passing an argument to a called method *by ref
 
 - Modifications to the method's return value by the caller are reflected in the state of the object whose method was called.
 
-Reference return values can produce more compact code, as well as allow an object to expose only the individual items of an object, such as an array or a collection object, that are of interest to the caller. This reduces the likelihood that the caller will inadvertently modify the object's state.
+Reference return values can produce more compact code, as well as allow an object to expose only the individual data items, such as an array element, that are of interest to the caller. This reduces the likelihood that the caller will inadvertently modify the object's state.
 
 There are some restrictions on the value that a method can return as a reference return value. These include:
 

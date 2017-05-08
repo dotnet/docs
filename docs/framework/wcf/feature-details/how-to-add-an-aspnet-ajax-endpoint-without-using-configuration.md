@@ -83,7 +83,6 @@ manager: "erikre"
 1.  The endpoint is configured at an empty address relative to the .svc file, so the service is now available and can be invoked by sending requests to service.svc/\<operation> - for example, service.svc/Add for the `Add` operation. You can use it by entering the service URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [AJAX Service Without Configuration](../../../../docs/framework/wcf/samples/ajax-service-without-configuration.md).  
   
 ## Example  
-<!-- TODO: review snippet reference  [!CODE [Microsoft.Win32.RegistryKey#4](Microsoft.Win32.RegistryKey#4)]  -->  
   
  The automatically-configured endpoint is created at an empty address relative to the base URL. A configuration file can also be added and used with this approach. If the configuration file contains endpoint definitions, these endpoints are added to the automatically-configured endpoint.  
   

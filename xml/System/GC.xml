@@ -471,9 +471,9 @@
         <param name="generation">The number of the oldest generation to be garbage collected.</param>
         <param name="mode">An enumeration value that specifies whether the garbage collection is forced (<see cref="F:System.GCCollectionMode.Default" /> or <see cref="F:System.GCCollectionMode.Forced" />) or optimized (<see cref="F:System.GCCollectionMode.Optimized" />).</param>
         <param name="blocking">
-          <see langword="true" /> to perform a blocking garbage collection; <see langword="false" /> to perform a background garbage collection where possible. See the Remarks section for more information.</param>
+          <see langword="true" /> to perform a blocking garbage collection; <see langword="false" /> to perform a background garbage collection where possible.</param>
         <param name="compacting">
-          <see langword="true" /> to compact the small object heap; <see langword="false" /> to sweep only. See the Remarks section for more information.</param>
+          <see langword="true" /> to compact the small object heap; <see langword="false" /> to sweep only.</param>
         <summary>Forces a garbage collection from generation 0 through a specified generation, at a time specified by a <see cref="T:System.GCCollectionMode" /> value, with values that specify whether the collection should be blocking and compacting.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -589,7 +589,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The garbage collector is not in no GC region latency mode. See the Remarks section for more information.  
+        <exception cref="T:System.InvalidOperationException">The garbage collector is not in no GC region latency mode.  
   
  -or-  
   

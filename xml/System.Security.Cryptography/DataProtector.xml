@@ -53,8 +53,8 @@
       </Parameters>
       <Docs>
         <param name="applicationName">The name of the application.</param>
-        <param name="primaryPurpose">The primary purpose for the protected data. See Remarks for additional important information.</param>
-        <param name="specificPurposes">The specific purposes for the protected data. See Remarks for additional important information.</param>
+        <param name="primaryPurpose">The primary purpose for the protected data.</param>
+        <param name="specificPurposes">The specific purposes for the protected data.</param>
         <summary>Creates a new instance of the <see cref="T:System.Security.Cryptography.DataProtector" /> class by using the provided application name, primary purpose, and specific purposes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

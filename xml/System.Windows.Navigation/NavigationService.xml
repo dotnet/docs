@@ -308,7 +308,7 @@
       <Docs>
         <param name="dependencyObject">The <see cref="T:System.Windows.DependencyObject" /> in content that is hosted by a navigator.</param>
         <summary>Gets a reference to the <see cref="T:System.Windows.Navigation.NavigationService" /> for the navigator whose content contains the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>A reference to the <see cref="T:System.Windows.Navigation.NavigationService" /> for the navigator whose content contains the specified <see cref="T:System.Windows.DependencyObject" />; can be <see langword="null" /> in some cases (see Remarks).</returns>
+        <returns>A reference to the <see cref="T:System.Windows.Navigation.NavigationService" /> for the navigator whose content contains the specified <see cref="T:System.Windows.DependencyObject" />; can be <see langword="null" /> in some cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

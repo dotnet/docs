@@ -318,7 +318,7 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="inherit">This argument is ignored for objects of this type. See Remarks.</param>
+        <param name="inherit">This argument is ignored for objects of this type.</param>
         <summary>Gets all the custom attributes defined on this parameter.</summary>
         <returns>An array that contains all the custom attributes applied to this parameter.</returns>
         <remarks>
@@ -366,7 +366,7 @@
       </Parameters>
       <Docs>
         <param name="attributeType">The custom attributes identified by type.</param>
-        <param name="inherit">This argument is ignored for objects of this type. See Remarks.</param>
+        <param name="inherit">This argument is ignored for objects of this type.</param>
         <summary>Gets the custom attributes of the specified type or its derived types that are applied to this parameter.</summary>
         <returns>An array that contains the custom attributes of the specified type or its derived types.</returns>
         <remarks>
@@ -573,7 +573,7 @@
       </Parameters>
       <Docs>
         <param name="attributeType">The <see langword="Type" /> object to search for.</param>
-        <param name="inherit">This argument is ignored for objects of this type. See Remarks.</param>
+        <param name="inherit">This argument is ignored for objects of this type.</param>
         <summary>Determines whether the custom attribute of the specified type or its derived types is applied to this parameter.</summary>
         <returns>
           <see langword="true" /> if one or more instances of <paramref name="attributeType" /> or its derived types are applied to this parameter; otherwise, <see langword="false" />.</returns>

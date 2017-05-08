@@ -403,7 +403,7 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">The name of the assembly where the type named <c>typeName</c> is sought. For more information, see the Remarks section. If <c>assemblyName</c> is <see langword="null" />, the executing assembly is searched.</param>
+        <param name="assemblyName">The name of the assembly where the type named <c>typeName</c> is sought. If <c>assemblyName</c> is <see langword="null" />, the executing assembly is searched.</param>
         <param name="typeName">The fully qualified name of the preferred type.</param>
         <summary>Creates an instance of the type whose name is specified, using the named assembly and default constructor.</summary>
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>

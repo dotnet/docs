@@ -565,14 +565,14 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <summary>Returns an enumerable collection of directory information that matches a specified search pattern.</summary>
         <returns>An enumerable collection of directories that matches <paramref name="searchPattern" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -641,7 +641,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
         <summary>Returns an enumerable collection of directory information that matches a specified search pattern and search subdirectory option.</summary>
         <returns>An enumerable collection of directories that matches <paramref name="searchPattern" /> and <paramref name="searchOption" />.</returns>
@@ -649,7 +649,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -805,14 +805,14 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <summary>Returns an enumerable collection of file information that matches a search pattern.</summary>
         <returns>An enumerable collection of files that matches <paramref name="searchPattern" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -891,7 +891,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
         <summary>Returns an enumerable collection of file information that matches a specified search pattern and search subdirectory option.</summary>
         <returns>An enumerable collection of files that matches <paramref name="searchPattern" /> and <paramref name="searchOption" />.</returns>
@@ -899,7 +899,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1040,14 +1040,14 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <summary>Returns an enumerable collection of file system information that matches a specified search pattern.</summary>
         <returns>An enumerable collection of file system information objects that matches <paramref name="searchPattern" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1116,7 +1116,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
         <summary>Returns an enumerable collection of file system information that matches a specified search pattern and search subdirectory option.</summary>
         <returns>An enumerable collection of file system information objects that matches <paramref name="searchPattern" /> and <paramref name="searchOption" />.</returns>
@@ -1124,7 +1124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1457,14 +1457,14 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <summary>Returns an array of directories in the current <see cref="T:System.IO.DirectoryInfo" /> matching the given search criteria.</summary>
         <returns>An array of type <see langword="DirectoryInfo" /> matching <paramref name="searchPattern" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1535,7 +1535,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories.</param>
         <summary>Returns an array of directories in the current <see cref="T:System.IO.DirectoryInfo" /> matching the given search criteria and using a value to determine whether to search subdirectories.</summary>
         <returns>An array of type <see langword="DirectoryInfo" /> matching <paramref name="searchPattern" />.</returns>
@@ -1543,7 +1543,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1690,14 +1690,14 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <summary>Returns a file list from the current directory matching the given search pattern.</summary>
         <returns>An array of type <see cref="T:System.IO.FileInfo" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1796,7 +1796,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories.</param>
         <summary>Returns a file list from the current directory matching the given search pattern and using a value to determine whether to search subdirectories.</summary>
         <returns>An array of type <see cref="T:System.IO.FileInfo" />.</returns>
@@ -1967,14 +1967,14 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories and files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories and files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <summary>Retrieves an array of strongly typed <see cref="T:System.IO.FileSystemInfo" /> objects representing the files and subdirectories that match the specified search criteria.</summary>
         <returns>An array of strongly typed <see langword="FileSystemInfo" /> objects matching the search criteria.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -2052,7 +2052,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories and filesa.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories and filesa.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
         <summary>Retrieves an array of <see cref="T:System.IO.FileSystemInfo" /> objects that represent the files and subdirectories matching the specified search criteria.</summary>
         <returns>An array of file system entries that match the search criteria.</returns>
@@ -2060,7 +2060,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  

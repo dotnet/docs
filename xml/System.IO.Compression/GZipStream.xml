@@ -328,7 +328,7 @@
         <param name="count">The maximum number of bytes to read.</param>
         <param name="cback">To be added.</param>
         <param name="state">To be added.</param>
-        <summary>Begins an asynchronous read operation. (Consider using the <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" /> method instead; see the Remarks section.)</summary>
+        <summary>Begins an asynchronous read operation. (Consider using the <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
         <returns>An object that represents the asynchronous read operation, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -393,7 +393,7 @@
         <param name="count">The maximum number of bytes to write.</param>
         <param name="cback">To be added.</param>
         <param name="state">To be added.</param>
-        <summary>Begins an asynchronous write operation. (Consider using the <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" /> method instead; see the Remarks section.)</summary>
+        <summary>Begins an asynchronous write operation. (Consider using the <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
         <returns>An  object that represents the asynchronous write operation, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -579,7 +579,7 @@
       </Parameters>
       <Docs>
         <param name="async_result">To be added.</param>
-        <summary>Waits for the pending asynchronous read to complete. (Consider using the the <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" /> method instead; see the Remarks section.)</summary>
+        <summary>Waits for the pending asynchronous read to complete. (Consider using the the <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
         <returns>The number of bytes read from the stream, between 0 (zero) and the number of bytes you requested. <see cref="T:System.IO.Compression.GZipStream" /> returns 0 only at the end of the stream; otherwise, it blocks until at least one byte is available.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -630,7 +630,7 @@
       </Parameters>
       <Docs>
         <param name="async_result">To be added.</param>
-        <summary>Handles the end of an asynchronous write operation. (Consider using the <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" /> method instead; see the Remarks section.)</summary>
+        <summary>Handles the end of an asynchronous write operation. (Consider using the <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

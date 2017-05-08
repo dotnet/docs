@@ -5152,7 +5152,7 @@
         <Parameter Name="format" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="format">A standard or custom numeric format string (see Remarks).</param>
+        <param name="format">A standard or custom numeric format string.</param>
         <summary>Converts the numeric value of this instance to its equivalent string representation, using the specified format.</summary>
         <returns>The string representation of the value of this instance as specified by <paramref name="format" />.</returns>
         <remarks>
@@ -5225,7 +5225,7 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">A numeric format string (see Remarks).</param>
+        <param name="format">A numeric format string.</param>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
         <summary>Converts the numeric value of this instance to its equivalent string representation using the specified format and culture-specific format information.</summary>
         <returns>The string representation of the value of this instance as specified by <paramref name="format" /> and <paramref name="provider" />.</returns>
